@@ -5,7 +5,8 @@ You can find all the fault localization files are generated under folder the bui
 ```
 start_initial.py Project Bug
 For example: start_initial.py Chart 1
-The FL related files are generated under Chart1/build/sfl/txt. The ranking list is generated in ochiai.ranking.csv.
+The FL related files are generated under Chart1/build/sfl/txt. 
+The ranking list is generated in ochiai.ranking.csv.
 ```
 
 ### run_gzoltar_fl.sh 
