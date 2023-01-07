@@ -88,11 +88,13 @@ if __name__ == '__main__':
             os.system("mkdir -p "+bug_representation_path)
         diagnosis = getDiagnosis(project,bug)
         with open(bug_representation_path+'/bugs.csv', 'w') as csvfile:
-            csvfile.write('bug\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\n')
+            csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\tpatch\n')
         with open(FL_file,"r") as fl:
             lines = fl.readlines()
+            count=0
             for line in lines:
                 if ";" in line and ":" in line and "#" in line:
+                    count=count+1
                     suspiciousness =  line.split(";")[1]
                     suspiciousness=suspiciousness.replace("\n","").replace("\r","")
                     if float(suspiciousness) > suspiciousness_threshold:
@@ -104,12 +106,12 @@ if __name__ == '__main__':
                             buggy_class = "projects/"+project+bug+"/source/"+buggy_class
                             
                         
-                        tool_path = "./tool/context.jar "
-                        results = os.popen("java -jar "+tool_path +buggy_class +" test-"+buggy_line).read()
+                        utils_path = "./utils/context.jar "
+                        results = os.popen("java -jar "+utils_path +buggy_class +" test-"+buggy_line).read()
                         results = str(results)
                         if "[CLASS]" in results and "startline:" in results:
                             results = results.split("[CLASS]")[1]
-                            meta = "[CLASS] " + results.split("startline:")[0]
+                            meta = " [CLASS] " + results.split("startline:")[0]
                             start_no =  results.split("startline:")[1].split("endline:")[0]
                             end_no =  results.split("endline:")[1].replace("\n","").replace("\r","")
                             
@@ -117,10 +119,9 @@ if __name__ == '__main__':
                             endbuggycode=int(buggy_line)+int(endbuggycode)
                             sample='[BUG] [BUGGY] ' + buggycode + diagnosis+ ' [CONTEXT] ' + contextcode + meta 
                             sample = sample.replace('\r','').replace('\n','').replace('\t','').replace('  ',' ')
-                            sample = sample +'\t'+buggy_class+'\t'+suspiciousness+'\t'+buggy_line+'\t'+str(endbuggycode)
+                            sample = str(count)+'\t'+sample +'\t'+buggy_class+'\t'+suspiciousness+'\t'+buggy_line+'\t'+str(endbuggycode)+'\t'
                             
-                            print(sample)
-                            
+                            print(sample)                            
                             
                             with open(bug_representation_path+'/bugs.csv','a') as bugrep:
                                 bugrep.write(sample+'\n')
