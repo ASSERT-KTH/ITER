@@ -7,7 +7,7 @@ if __name__ == '__main__':
     bug=sys.argv[2]
     
     #checkout the project
-    checkout_project="defects4j checkout -p " + project +" -v "+ bug+"b  -w ./"+project+bug
+    checkout_project="defects4j checkout -p " + project +" -v "+ bug+"b  -w ./projects/"+project+bug
     os.system(checkout_project)
     
     #get project information
@@ -38,10 +38,10 @@ if __name__ == '__main__':
     print("*********source_files:*******"+source_files)
     
     #copy run.sh to the target project
-    os.system("cp run_gzoltar_fl.sh ./"+project+bug)
+    os.system("cp run_gzoltar_fl.sh ./projects/"+project+bug)
        
     #compile target project
-    os.chdir("./"+project+bug)
+    os.chdir("./projects/"+project+bug)
     os.system("defects4j compile")
     
     #execute the Gzoltar FL

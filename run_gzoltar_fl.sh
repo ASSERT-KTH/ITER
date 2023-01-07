@@ -29,12 +29,12 @@ die() {
 GZOLTAR_VERSION="1.7.4-SNAPSHOT"
 
 # Check whether GZOLTAR_CLI_JAR is set
-export GZOLTAR_CLI_JAR="$SCRIPT_DIR/../gzoltar/lib/gzoltarcli.jar"
+export GZOLTAR_CLI_JAR="$SCRIPT_DIR/../../gzoltar/lib/gzoltarcli.jar"
 [ "$GZOLTAR_CLI_JAR" != "" ] || die "GZOLTAR_CLI is not set!"
 [ -s "$GZOLTAR_CLI_JAR" ] || die "$GZOLTAR_CLI_JAR does not exist or it is empty! Please go to '$SCRIPT_DIR/..' and run 'mvn clean install'."
 
 # Check whether GZOLTAR_AGENT_RT_JAR is set
-export GZOLTAR_AGENT_RT_JAR="$SCRIPT_DIR/../gzoltar/lib/gzoltaragent.jar"
+export GZOLTAR_AGENT_RT_JAR="$SCRIPT_DIR/../../gzoltar/lib/gzoltaragent.jar"
 [ "$GZOLTAR_AGENT_RT_JAR" != "" ] || die "GZOLTAR_AGENT_RT_JAR is not set!"
 [ -s "$GZOLTAR_AGENT_RT_JAR" ] || die "$GZOLTAR_AGENT_RT_JAR does not exist or it is empty! Please go to '$SCRIPT_DIR/..' and run 'mvn clean install'."
 
