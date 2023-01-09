@@ -1,3 +1,6 @@
+### set up 
+export PATH = $PATH:your/path/defects4j/framework/bin
+configure JAVA_HOME to jdk1.8
 
 ### start_initial.py 
 With this script, we get the initial status of the bug.

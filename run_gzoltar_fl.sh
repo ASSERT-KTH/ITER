@@ -112,10 +112,6 @@ TEST_DIR="$SCRIPT_DIR/build-tests"
 #
 
 echo "Compile source and test cases ..."
-echo "build directory: " + $BUILD_DIR
-echo "src directory: " + $SRC_DIR
-echo "test directory: " + $TEST_DIR
-echo "=================================="
 
 #javac "$SRC_DIR/org/gzoltar/examples/CharacterCounter.java" -d "$BUILD_DIR" || die "Failed to compile source code!"
 #javac -cp $JUNIT_JAR:$BUILD_DIR "$TEST_DIR/org/gzoltar/examples/CharacterCounterTest.java" -d "$BUILD_DIR" || die "Failed to compile test cases!"
@@ -127,12 +123,15 @@ echo "=================================="
 echo "Collect list of unit test cases to run ..."
 
 UNIT_TESTS_FILE="$BUILD_DIR/tests.txt"
-
+    
 java -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR \
   com.gzoltar.cli.Main listTestMethods $TEST_DIR \
     --outputFile "$UNIT_TESTS_FILE" \
-    --includes "$FAILTESTS#*" || die "Collection of unit test cases has failed!"
+    --includes "$FAILTESTS" || die "Collection of unit test cases has failed!"
 [ -s "$UNIT_TESTS_FILE" ] || die "$UNIT_TESTS_FILE does not exist or it is empty!"
+
+
+
 
 #
 # Collect coverage

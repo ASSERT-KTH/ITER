@@ -6,9 +6,13 @@ if __name__ == '__main__':
     project=sys.argv[1]
     bug=sys.argv[2]
     
+    if os.path.exists("./projects/"+project+bug):
+        os.system("rm -rf ./projects/"+project+bug)
+    
     #checkout the project
     checkout_project="defects4j checkout -p " + project +" -v "+ bug+"b  -w ./projects/"+project+bug
     os.system(checkout_project)
+
     
     #get project information
     project_info="defects4j info -p "+ project +" -b " +bug
@@ -25,7 +29,9 @@ if __name__ == '__main__':
         if "::" in t:
             t = t.split("::")[0]
             t = t.replace("\n","").replace("\r","")
-            fail_tests+=t   
+            if t not in fail_tests:
+                fail_tests+=t+"#*:" 
+    fail_tests = fail_tests[:len(fail_tests)-1]
     print("*********fail_tests:*******"+fail_tests)
     
     
@@ -34,7 +40,9 @@ if __name__ == '__main__':
     for s in sources:
         s =s.split("--")[0]
         s = s.replace("\n","").replace("\r","")
-        source_files+=s   
+        if s not in source_files:
+            source_files+=s+":" 
+    source_files = source_files[:len(source_files)-1]
     print("*********source_files:*******"+source_files)
     
     #copy run.sh to the target project
@@ -46,5 +54,8 @@ if __name__ == '__main__':
     
     #execute the Gzoltar FL
     os.system("./run_gzoltar_fl.sh --instrumentation online --failtests "+fail_tests+" --sourcefiles "+source_files)
+    with open("./FL_execution.txt","w") as fl_file:
+        fl_file.write("./run_gzoltar_fl.sh --instrumentation online --failtests "+fail_tests+" --sourcefiles "+source_files)
+        
     
     
