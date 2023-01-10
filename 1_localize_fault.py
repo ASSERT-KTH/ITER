@@ -14,6 +14,9 @@ if __name__ == '__main__':
     os.system(checkout_project)
 
     
+        
+    
+    
     #get project information
     project_info="defects4j info -p "+ project +" -b " +bug
     infos = os.popen(project_info).read()
@@ -32,7 +35,6 @@ if __name__ == '__main__':
             if t not in fail_tests:
                 fail_tests+=t+"#*:" 
     fail_tests = fail_tests[:len(fail_tests)-1]
-    print("*********fail_tests:*******"+fail_tests)
     
     
     source_files = ""
@@ -43,19 +45,35 @@ if __name__ == '__main__':
         if s not in source_files:
             source_files+=s+":" 
     source_files = source_files[:len(source_files)-1]
-    print("*********source_files:*******"+source_files)
     
     #copy run.sh to the target project
     os.system("cp run_gzoltar_fl.sh ./projects/"+project+bug)
-       
+    
+    
     #compile target project
     os.chdir("./projects/"+project+bug)
     os.system("defects4j compile")
     
+    
+    currentpath=os.path.dirname(os.path.realpath(__file__))
+    print("currentpath:"+currentpath)
+    #create build folder
+    if "Cli" in project:
+        if os.path.exists("./target"):
+            os.system("mkdir build")
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")
+
+    
     #execute the Gzoltar FL
-    os.system("./run_gzoltar_fl.sh --instrumentation online --failtests "+fail_tests+" --sourcefiles "+source_files)
+    fl_result = os.popen("./run_gzoltar_fl.sh --instrumentation online --failtests "+fail_tests+" --sourcefiles "+source_files).read()
+    print(fl_result)
     with open("./FL_execution.txt","w") as fl_file:
         fl_file.write("./run_gzoltar_fl.sh --instrumentation online --failtests "+fail_tests+" --sourcefiles "+source_files)
+    with open("./FL_result.txt","w") as fl_result_file:
+        fl_result_file.write(fl_result)
         
     
     

@@ -144,7 +144,11 @@ if __name__ == '__main__':
                         buggy_line = line.split(":")[1].split(";")[0]
                         buggy_class=buggy_class+".java"                  
                         if os.path.exists("projects/"+project+bug+"/source/"+buggy_class):
+                            print("projects/"+project+bug+"/source/"+buggy_class)
                             buggy_class = "projects/"+project+bug+"/source/"+buggy_class
+                        elif os.path.exists("projects/"+project+bug+"/src/java/"+buggy_class):
+                            print("projects/"+project+bug+"/src/java/"+buggy_class)
+                            buggy_class = "projects/"+project+bug+"/src/java/"+buggy_class
                             
                         
                         utils_path = "./utils/context.jar "

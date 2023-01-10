@@ -207,25 +207,25 @@ def run_test():
 
 
 if __name__ == '__main__':
-#     for i in range(26,27):
-#         os.system("./1_localize_fault.py Chart "+str(i))
-#         os.system("./2_bug_representation.py Chart "+str(i)+" 0.1  0 ")
+    for i in range(,6):
+        os.system("./1_localize_fault.py Cli "+str(i))
+        os.system("./2_bug_representation.py Cli "+str(i)+" 0.1  0 ")
         
-    project=sys.argv[1]
-    bug=sys.argv[2]
-    rounds=sys.argv[3]  
-    warnings.filterwarnings('ignore')
-    SEED=42
-    LEARNING_RATE = 1e-4
-    VALID_BATCH_SIZE = 1
-    MAX_LEN = 384
-    PATCH_LEN = 76 
-    device = 'cuda' if cuda.is_available() else 'cpu'
+#     project=sys.argv[1]
+#     bug=sys.argv[2]
+#     rounds=sys.argv[3]  
+#     warnings.filterwarnings('ignore')
+#     SEED=42
+#     LEARNING_RATE = 1e-4
+#     VALID_BATCH_SIZE = 1
+#     MAX_LEN = 384
+#     PATCH_LEN = 76 
+#     device = 'cuda' if cuda.is_available() else 'cpu'
 
-    TEST_PATH='repair_iteration/'+project+bug+'/iteration_'+rounds+'/bugs.csv'
-    print(TEST_PATH)
+#     TEST_PATH='repair_iteration/'+project+bug+'/iteration_'+rounds+'/bugs.csv'
+#     print(TEST_PATH)
     
-    run_test()
+#     run_test()
     
     
     
