@@ -1,0 +1,56 @@
+compilation error,[CE] illegal start of type,,super();
+compilation error,[CE] illegal start of type,,super(); this.rangeBounds = new Range(0.0, 0.0);
+compilation error,[CE] illegal start of type,,this.rangeBounds = new DefaultBoxAndWhiskerCategoryDataset();
+compilation error,[CE] illegal start of type,,super(); DefaultBoxAndWhiskerCategoryDataset = new DefaultBoxAndWhiskerCategoryDataset();
+compilation error,[CE] illegal start of type,,this.rangeBounds = new Range(0.0, 0.0);
+compilation error,[CE] illegal start of type,,super(); this.data = new KeyedObjects2D();
+compilation error,[CE] illegal start of type,,this.data = new DefaultBoxAndWhiskerCategoryDataset();
+compilation error,[CE] illegal start of type,,this.data = new KeyedObjects2D();
+compilation error,[CE] illegal start of type,,super(); DefaultBoxAndWhiskerCategoryDataset = new DefaultBoxAndWhiskerCategoryDataset(this);
+compilation error,[CE] illegal start of type,,this.rangeBounds = new DefaultBoxAndWhiskerCategoryDataset(this);
+patch is same with buggy,,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = c;
+compilation error,[CE] cannot find symbol b,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = b;
+compilation error,[CE] cannot find symbol t,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = t;
+compilation error,[CE] cannot find symbol d,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = d;
+compilation error,[CE] cannot find symbol l,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = l;
+compilation error,[CE] cannot find symbol p,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = p;
+compilation error,[CE] cannot find symbol s,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = s;
+compilation error,[CE] cannot find symbol a,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = a;
+compilation error,[CE] cannot find symbol gs,this.maximumRangeValueColumn = c; ,this.maximumRangeValueColumn = gs;
+patch is same with buggy,,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = r;
+compilation error,[CE] possible loss of precision,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = maxval;
+compilation error,[CE] ';' expected,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = r, maxval;
+compilation error,[CE] ';' expected,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = r);
+compilation error,[CE] ';' expected,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = r, c;
+compilation error,[CE] cannot find symbol l,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = l;
+compilation error,[CE] possible loss of precision,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = minval;
+compilation error,[CE] cannot find symbol t,this.maximumRangeValueRow = r; ,this.maximumRangeValueRow = t;
+patch is same with buggy,,public DefaultBoxAndWhiskerCategoryDataset() { ,public DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] modifier final not allowed here,public DefaultBoxAndWhiskerCategoryDataset() { ,final DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] illegal start of type,public DefaultBoxAndWhiskerCategoryDataset() { ,this.DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] modifier final not allowed here,public DefaultBoxAndWhiskerCategoryDataset() { ,final public DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] modifier final not allowed here,public DefaultBoxAndWhiskerCategoryDataset() { ,public final DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] modifier static,final not allowed here,public DefaultBoxAndWhiskerCategoryDataset() { ,static final DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] ';' expected,public DefaultBoxAndWhiskerCategoryDataset() { ,public DefaultBoxAndWhiskerCategoryDataset() }
+compilation error,[CE] modifier static,final not allowed here,public DefaultBoxAndWhiskerCategoryDataset() { ,final static DefaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] illegal start of type,public DefaultBoxAndWhiskerCategoryDataset() { ,this.defaultBoxAndWhiskerCategoryDataset() {
+compilation error,[CE] ';' expected,public DefaultBoxAndWhiskerCategoryDataset() { ,public DefaultBoxAndWhiskerCategoryDataset() >>
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(minval > this.maximumRangeValue) { this.maximumRangeValue = r; this.maximumRangeValueColumn = c; }
+compilation error,[CE] not a statement,,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValue = r; this.maxim
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValueColumn = c; }
+compilation error,[CE] not a statement,,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValue = r; this.maxim
+compilation error,[CE] not a statement,,if(Double.isNaN(this.maximumRangeValue)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValue = minval; this.maximumRangeValu
+compilation error,[CE] not a statement,,if(Double.isNaN(this.maximumRangeValue)) { if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r; this.maxim
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValueColumn = r;
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValue = minval; this.maximumRangeValueColumn =
+compilation error,[CE] not a statement,,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValue = minval; this.maxim
+compilation error,[CE] cannot find symbol,,maxval = item.getMaxRangeValue().doubleValue();
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(item.getMaxOutlier()!= null) { maxval = item.getMaxOutlier().doubleValue(); }
+compilation error,[CE] illegal start of expression,,if(item.getRangeIncludesZero()) { if(Double.isNaN(this.maximumRangeValue)) { maxval = item.getMaxRangeValue(); }
+compilation error,[CE] illegal start of expression,,if(item.getRangeIncludesZero()) { if(Double.isNaN(this.maximumRangeValue)) { maxval = item.getMaxOutlier().doubleValue(); }
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(item.getMinOutlier()!= null) { maxval = item.getMaxOutlier().doubleValue(); }
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(item.getMaxOutlier() == null) { maxval = item.getMaxOutlier().doubleValue(); }
+compilation error,[CE] illegal start of expression,,if(item.getRangeIncludesZero()) { if(Double.isNaN(this.maximumRangeValue)) { maxval = item.getMaxRangeValue().doubleValue(); }
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(item.getMinOutlier() == null) { maxval = item.getMaxOutlier().doubleValue(); }
+compilation error,[CE] illegal start of expression,,if(Double.isNaN(this.maximumRangeValue)) { if(item.getMinimumRangeValue()!= null) { maxval = item.getMaximumRangeValue(); }
+compilation error,[CE] cannot find symbol,,item.getMinimumRangeValue().doubleValue();

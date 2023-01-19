@@ -1,0 +1,5 @@
+compilation error,[CE] incompatible types,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.iterator();
+compilation error,[CE] cannot find symbol,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.next();
+patch is same with buggy,,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.listIterator();
+compilation error,[CE] cannot find symbol,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.emptyList();
+compilation error,[CE] no suitable method found for listIterator(<null>),ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.listIterator(null);

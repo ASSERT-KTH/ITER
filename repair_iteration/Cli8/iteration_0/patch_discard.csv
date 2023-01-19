@@ -1,0 +1,8 @@
+patch is same with buggy,,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, nextLineTabStop);
+compilation error,[CE] cannot find symbol firstLineTabStop,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, firstLineTabStop);
+compilation error,[CE] cannot find symbol lastLineTabStop,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, lastLineTabStop);
+compilation error,[CE] method findWrapPos in class HelpFormatter cannot be applied to given types;,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, padding);
+compilation error,[CE] cannot find symbol nextLineTabStop,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, this.nextLineTabStop);
+compilation error,[CE] cannot find symbol followingLineTabStop,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, followingLineTabStop);
+compilation error,[CE] ';' expected,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, nextLineTabStop)
+compilation error,[CE] ';' expected,pos = findWrapPos(text, width, nextLineTabStop); ,pos = findWrapPos(text, width, nextLineTabStop), padding);

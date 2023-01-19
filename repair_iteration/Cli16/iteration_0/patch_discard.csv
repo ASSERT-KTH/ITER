@@ -1,0 +1,40 @@
+patch is same with buggy,,this.name = name; ,this.name = name;
+compilation error,[CE] cannot find symbol j,this.name = name; ,this.name = name &&(j == null && j.hasNext())? name : j.next();
+compilation error,[CE] cannot find symbol j,this.name = name; ,this.name = name &&(j == null && j.hasNext())||(j.hasNext() == newAnonymous);
+compilation error,[CE] cannot find symbol j,this.name = name; ,this.name = name &&(j == null && j.hasNext())||(j.hasNext() == null);
+compilation error,[CE] cannot find symbol j,this.name = name; ,this.name = name &&(j!= null && j.hasNext())||(j.hasNext() == null);
+compilation error,[CE] cannot find symbol j,this.name = name; ,this.name = name &&(j!= null && j.hasNext())||(i.hasNext() == null);
+compilation error,[CE] cannot find symbol,this.name = name; ,this.name = name && isSimpleName()? name : Names.newHashMap();
+compilation error,[CE] cannot find symbol j,this.name = name; ,this.name = name &&(j == null && j.hasNext())||(j.next() == null);
+compilation error,[CE] cannot find symbol,this.name = name; ,this.name = name && isSimpleName()? name :(String)null;
+compilation error,[CE] ';' expected,this.name = name; ,this.name = name &&(j!= null && j.hasNext())||(j.hasNext() == null));
+compilation error,[CE] incomparable types: int and <null>,,if(id!= null) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getOptionalId(); if(id == null) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getId(); if(id == null) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getOptionalId(); if(id!= null) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getOptionalId(); if(id == null) { return id; }
+compilation error,[CE] ,,if(id!= null) { for(int id = getId(); id++) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getOptionalId(); if(id!= null) { return id; }
+compilation error,[CE] method arraycopy in class System cannot be applied to given types;,,System.arraycopy(id, 0, id, 0, null);
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getId(); if(id == null) { return id; }
+compilation error,[CE] illegal start of expression,,if(id!= null) { int id = getOptionalId(); if(id == null) { throw new IllegalStateException(""); }
+compilation error,[CE] cannot find symbol,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.iterator(); i.hasNext();) {
+patch is same with buggy,,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = prefixes.iterator(); i.hasNext();) {
+compilation error,[CE] cannot find symbol triggers,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = triggers.iterator(); i.hasNext();) {
+compilation error,[CE] cannot find symbol,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.itsiterator(); i.hasNext();) {
+compilation error,[CE] ';' expected,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.startsWith(prefix)); i.hasNext();) {
+compilation error,[CE] cannot find symbol,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.next(); i.hasNext();) {
+compilation error,[CE] cannot find symbol,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.getImplicitReturn(); i.hasNext();) {
+compilation error,[CE] cannot find symbol,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.getPrefix(); i.hasNext();) {
+compilation error,[CE] cannot find symbol,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.iterators(); i.hasNext();) {
+compilation error,[CE] illegal start of expression,for (final Iterator i = prefixes.iterator(); i.hasNext();) { ,for(final Iterator i = trigger.iterator(); i.hasNext();) }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferenceName(), option); }
+compilation error,[CE] illegal start of expression,,if(option.hasArg()) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferenceName(), option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreviousName(), option); }
+compilation error,[CE] illegal start of expression,,if(option.hasArg()) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferredName(), option); }
+compilation error,[CE] illegal start of expression,,if(option.hasArg()) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getCommandName(), option); }
+compilation error,[CE] 'else' without 'if',,else if(option.hasOptions()) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferenceName(), option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferredName(), option); }
+compilation error,[CE] illegal start of expression,,if(option.hasArg()) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreviousName(), option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getDefaultName(), option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getCommandName(), option); }

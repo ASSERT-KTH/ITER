@@ -1,0 +1,10 @@
+patch is same with buggy,,this.domain = domain; ,this.domain = domain;
+compilation error,[CE] incompatible types,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION;
+compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAIN_DESCRIPTION;
+compilation error,[CE] incompatible types,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION || DEFAULT_RANGE_DESCRIPTION;
+compilation error,[CE] ';' expected,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION;
+compilation error,[CE] incompatible types,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION * DUPLICATE_DOMAIN_DESCRIPTION;
+compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAINE_DESCRIPTION;
+compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAIN_DECRIPTION;
+compilation error,[CE] ';' expected,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAIN_DECRIPTION;

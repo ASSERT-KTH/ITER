@@ -1,0 +1,11 @@
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.NEGATIVE);
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.NEGATIVE_OPTIONS);
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.NEGATIVE_OPTION);
+compilation error,[CE] class or interface expected,,OptionGroup = optionGroup.getOptionGroup();
+compilation error,[CE] class or interface expected,,OptionGroup = OptionGroup.getOptionGroup();
+compilation error,[CE] class or interface expected,,OptionGroup.setOptionGroup(OptionGroup.NEGATIVE);
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.NOT_OBJECT);
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.FUNCTION);
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.NOT_OPTION);
+compilation error,[CE] class or interface expected,,OptionGroup.addOption(OptionGroup.NEGATIVE_INFINITY);
+patch is same with buggy,,if (selected == null || selected.equals(option.getOpt())) { ,if(selected == null || selected.equals(option.getOpt())) {

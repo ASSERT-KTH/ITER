@@ -1,0 +1,439 @@
+patch is same with buggy,634,replace,, this.rangeAxisLocations  =  new  ObjectList();    ,this.rangeAxisLocations = new ObjectList();
+compilation error,634,replace,[CE] incompatible types, this.rangeAxisLocations  =  new  ObjectList();    ,this.rangeAxisLocations = new ArrayList();
+increase failing tests,634,replace, [FE] NullPointerException, this.rangeAxisLocations  =  new  ObjectList();    ,this.domainAxisLocations = new ObjectList();
+compilation error,1536,add,[CE] illegal start of expression,   ,if(indices == null || indices.size() == 0) {
+compilation error,1536,add,[CE] illegal start of expression,   ,if(indexes == null || indices.size() == 0) {
+compilation error,1536,add,[CE] illegal start of expression,   ,if(indices == null || indexes.size() == 0) {
+patch is same with buggy,1543,replace,, HashSet  set  =  new  HashSet(80);    ,HashSet set = new HashSet(80);
+increase failing tests,4330,replace, [FE] NullPointerException, if(this.datasets!=  null  ||  this.datasets.size()  ==  0)  {    ,if(this.datasets == null || this.datasets.size() == 0) {
+patch is same with buggy,4330,replace,, if(this.datasets!=  null  ||  this.datasets.size()  ==  0)  {    ,if(this.datasets!= null || this.datasets.size() == 0) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(!(this.annotations!= null)&& this.annotations.contains(null)) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(!(this.annotations!= null)&& this.annotations.contains(null))) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(!(this.annotations!= null)&& this.annotations.contains(null)) }
+compilation error,1383,add,[CE] illegal start of expression,   ,if(this.datasets.size() > 0) {
+compilation error,1383,add,[CE] illegal start of expression,   ,if(this.datasets.size() > 1) {
+compilation error,1383,add,[CE] illegal start of expression,   ,if(this.datasets.size() > index) {
+patch is same with buggy,624,replace,, this.axisOffset  =  new  RectangleInsets(4.0,  4.0,  4.0,  4.0);    ,this.axisOffset = new RectangleInsets(4.0, 4.0, 4.0, 4.0);
+patch is same with buggy,332,replace,, final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,final Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_CROSSHAIR_STROKE;
+compilation error,332,replace,[CE] self-reference in initializer, final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,static Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_CROSSHAIR_STROKE;
+increase failing tests,332,replace, [FE] NullPointerException, final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,final Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_GRIDLINE_STROKE;
+compilation error,4393,add,[CE] unreachable statement,   ,return result == 0? 1 : 0;
+compilation error,4393,add,[CE] unreachable statement,   ,return result!= 0? 1 : 0;
+patch is same with buggy,4427,replace,, Range  result  =  new  Range(0,  2);    ,Range result = new Range(0, 2);
+compilation error,1543,add,[CE] variable count is already defined in method checkAxisIndices(List),   ,final Integer count = indices.size();
+compilation error,1543,add,[CE] variable count is already defined in method checkAxisIndices(List),   ,final int count = indices.size();
+compilation error,1543,add,[CE] generics are not supported in -source 1.4,   ,final List <?> count = indices.size();
+compilation error,388,add,[CE] illegal start of type,   ,return quadrantOrigin.doubleValue();
+compilation error,388,add,[CE] illegal start of type,   ,return QuadrantOrigin.doubleValue();
+compilation error,388,add,[CE] illegal start of type,   ,return quadrantOrigin.getValue();
+compilation error,4434,add,[CE] illegal start of expression,   ,if(isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(!isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(isDomainAxis || mappedDatasets.contains(getDatasetsMappedToDomainAxis())) {
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size();
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size() - 1;
+compilation error,4384,add,[CE] illegal start of expression,   ,if(this.domainAxes!= null) { if(result > 0) { result = this.domainAxes.size() - 1; }
+compilation error,4410,add,[CE] illegal start of expression,   ,if(parent instanceof XYPlot && parent instanceof XYPlot) {
+compilation error,4410,add,[CE] illegal start of expression,   ,if(parent instanceof XYPlot || parent instanceof XYPlot) {
+compilation error,4410,add,[CE] illegal start of expression,   ,if(!(parent instanceof XYPlot)&& parent instanceof XYPlot)) {
+compilation error,1463,replace,[CE] cannot find symbol axisIndices, List  axisIndices  =  new  java.util.ArrayList(3);    ,axisIndices.add(new Integer(axisIndex));
+compilation error,1463,replace,[CE] cannot find symbol axisIndices, List  axisIndices  =  new  java.util.ArrayList(3);    ,axisIndices = new ArrayList();
+compilation error,566,add,[CE] illegal start of type,   ,= new XYPlot();
+compilation error,566,add,[CE] illegal start of type,   ,= new XYPlot(getXYPlot());
+compilation error,566,add,[CE] illegal start of type,   ,= new XYPlot(XYLocation.SECOND);
+compilation error,4427,add,[CE] variable result is already defined in method getDataRange(ValueAxis),   ,Range result = new Range(0, 1);
+compilation error,4427,add,[CE] variable result is already defined in method getDataRange(ValueAxis),   ,Range result = new Range(1, 1);
+compilation error,4427,add,[CE] constructor Range in class Range cannot be applied to given types;,   ,Range result = new Range(axis, 0);
+patch is same with buggy,4438,replace,, if(this.annotations!=  null  ||  this.annotations.size()  >  0)  {    ,if(this.annotations!= null || this.annotations.size() > 0) {
+patch is same with buggy,4415,replace,, return  result  <  0?  1  :  result;    ,return result < 0? 1 : result;
+compilation error,504,add,[CE] variable domainCrosshairLockedOnData is already defined in class XYPlot,   ,protected boolean domainCrosshairLockedOnData = true;
+compilation error,504,add,[CE] variable domainCrosshairLockedOnData is already defined in class XYPlot,   ,protected boolean domainCrosshairLockedOnData = false;
+compilation error,504,add,[CE] illegal start of type,   ,return super.getDataItem(domainCrosshairLockedOnData);
+compilation error,4328,add,[CE] variable mappedAxes is already defined in method getDatasetsMappedToDomainAxis(Integer),   ,List mappedAxes =(List)this.datasetToDomainAxesMap.get(new Integer(2));
+compilation error,4328,add,[CE] variable mappedAxes is already defined in method getDatasetsMappedToDomainAxis(Integer),   ,List mappedAxes =(List)this.datasetToDomainAxesMap.get(new Integer(0));
+compilation error,4328,add,[CE] cannot find symbol mappedAxes,   ,mappedAxes =(List)this.datasetToDomainAxesMap.get(new Integer(0));
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size();
+compilation error,4384,add,[CE] illegal start of expression,   ,if(this.domainAxes!= null) { if(result > 0) { result = this.domainAxes.size(); }
+compilation error,4384,add,[CE] illegal start of expression,   ,if(this.domainAxes!= null) { if(result > 0) { result = this.domainAxes.size() + 1; }
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(0.0, 4.0);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,public transient Point2D quadrantOrigin = new Point2D.Double(0.0, 4.0);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(0.0, 5.0);
+compilation error,1543,replace,[CE] variable count is already defined in method checkAxisIndices(List), HashSet  set  =  new  HashSet(32,  indices.size());    ,int count = indices.size();
+compilation error,1543,replace,[CE] generics are not supported in -source 1.4, HashSet  set  =  new  HashSet(32,  indices.size());    ,List <?> indices = Lists.newArrayList(80);
+compilation error,1543,replace,[CE] generics are not supported in -source 1.4, HashSet  set  =  new  HashSet(32,  indices.size());    ,List <?> indices = Lists.newArrayList();
+compilation error,1543,add,[CE] variable count is already defined in method checkAxisIndices(List),   ,int count = indices.size();
+compilation error,1543,add,[CE] generics are not supported in -source 1.4,   ,List <?> indices = Lists.newArrayList();
+compilation error,1543,add,[CE] generics are not supported in -source 1.4,   ,List <?> count = indices.size();
+compilation error,1463,replace,[CE] cannot find symbol axisIndices, ArrayList  axisIndices  =  new  ArrayList();    ,axisIndices = new ArrayList(10);
+compilation error,1463,replace,[CE] cannot find symbol axisIndices, ArrayList  axisIndices  =  new  ArrayList();    ,axisIndices.add(new ArrayList(10));
+compilation error,4328,replace,[CE] cannot find symbol axisIndex, new  Integer(i);    ,new Integer(this.axisIndex);
+compilation error,4328,replace,[CE] no suitable constructor found for Integer(Integer), new  Integer(i);    ,new Integer(axisIndex);
+compilation error,4328,replace,[CE] no suitable constructor found for Integer(ObjectList), new  Integer(i);    ,new Integer(this.datasets);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(2.0, 2.0);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(1.0, 1.0);
+compilation error,630,add,[CE] 'else' without 'if',   ,else if(this.backgroundDomainMarkers == null) { this.foregroundDomainMarkers = new HashMap(); } else { this.backgroundDomainMarkers = new HashMap(); }
+compilation error,4427,add,[CE] variable result is already defined in method getDataRange(ValueAxis),   ,Range result = new Range(0, 2);
+compilation error,4427,add,[CE] variable result is already defined in method getDataRange(ValueAxis),   ,Range result = new Range(0, 3);
+compilation error,4427,add,[CE] variable result is already defined in method getDataRange(ValueAxis),   ,Range result = new Range(1, 2);
+patch is same with buggy,1463,replace,, List  axisIndices  =  new  java.util.ArrayList(axisIndex  +  1);    ,List axisIndices = new java.util.ArrayList(axisIndex + 1);
+patch is same with buggy,1269,replace,, for(int  i  =  2;  i  <  this.rangeAxes.size();  i++)  {    ,for(int i = 2; i < this.rangeAxes.size(); i++) {
+patch is same with buggy,1543,replace,, HashSet  set  =  new  HashSet(32,  indices.size());    ,HashSet set = new HashSet(32, indices.size());
+increase failing tests,1543,replace, [FE] IllegalArgumentException, HashSet  set  =  new  HashSet(32,  indices.size());    ,HashSet set = new HashSet(32, indices.size() - 1);
+patch is same with buggy,4433,replace,, int  domainIndex  =  getDomainAxisIndex(axis)/  2;    ,int domainIndex = getDomainAxisIndex(axis)/ 2;
+compilation error,4433,replace,[CE] no suitable constructor found for Integer(float), int  domainIndex  =  getDomainAxisIndex(axis)/  2;    ,float domainIndex = getDomainAxisIndex(axis)/ 2;
+patch is same with buggy,1543,replace,, HashSet  set  =  new  HashSet(8);    ,HashSet set = new HashSet(8);
+patch is same with buggy,1463,replace,, ArrayList  axisIndices  =  new  java.util.ArrayList(axisIndex);    ,ArrayList axisIndices = new java.util.ArrayList(axisIndex);
+compilation error,1463,replace,[CE] cannot find symbol nullPointerException, ArrayList  axisIndices  =  new  java.util.ArrayList(axisIndex);    ,ArrayList axisIndices = new java.util.ArrayList(axisIndex, nullPointerException);
+compilation error,1463,replace,[CE] no suitable constructor found for ArrayList(int,<null>), ArrayList  axisIndices  =  new  java.util.ArrayList(axisIndex);    ,ArrayList axisIndices = new java.util.ArrayList(axisIndex, null);
+compilation error,970,add,[CE] class or interface expected,   ,if(axis!= null) { axis.configure(); } ; }
+compilation error,970,add,[CE] illegal start of type,   ,if(axis!= null) { axis.configure(); } ; } ; }
+compilation error,970,add,[CE] class or interface expected,   ,if(axis!= null) { axis.configure(); } ; } ;
+patch is same with buggy,624,replace,, this.axisOffset  =  new  RectangleInsets(4.0,  4.0,  4.0,  4.0);    ,this.axisOffset = new RectangleInsets(4.0, 4.0, 4.0, 4.0);
+patch is same with buggy,969,replace,, for(int  i  =  2;  i  <  this.domainAxes.size();  i++)  {    ,for(int i = 2; i < this.domainAxes.size(); i++) {
+compilation error,625,add,[CE] no suitable constructor found for RectangleInsets(double,double,double),   ,this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0);
+compilation error,566,replace,[CE] cannot assign a value to final variable seriesRenderingOrder, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,public final SeriesRenderingOrder seriesRenderingOrder = getSeriesRenderingOrder();
+compilation error,566,replace,[CE] cannot find symbol, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,public SeriesRenderingOrder seriesRenderingOrder = getSerialRenderingOrder();
+compilation error,1543,replace,[CE] generics are not supported in -source 1.4, HashSet  set  =  new  HashSet(1);    ,List <?> indices = Lists.newArrayList();
+compilation error,1543,replace,[CE] variable count is already defined in method checkAxisIndices(List), HashSet  set  =  new  HashSet(1);    ,int count = indices.size();
+compilation error,1543,replace,[CE] generics are not supported in -source 1.4, HashSet  set  =  new  HashSet(1);    ,List <?> indices = Lists.newArrayList(1);
+compilation error,4438,add,[CE] illegal start of expression,   ,if(this.annotations!= null || this.annotations.size() > 0) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(this.annotations == null || this.annotations.size() > 0) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(this.annotations!= null) {
+patch is same with buggy,1637,replace,, if(existing!=  null)  {  existing.addChangeListener(null);  }  else  {  throw  new  NullPointerException( " ");  }    ,if(existing!= null) { existing.addChangeListener(null); } else { throw new NullPointerException(" "); }
+patch is same with buggy,657,replace,, this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);  this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);    ,this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT); this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);
+increase failing tests,657,replace, [FE] NullPointerException, this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);  this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);    ,this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT); this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);
+increase failing tests,657,replace, [FE] NullPointerException, this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);  this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);    ,this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT); this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT);
+increase failing tests,332,replace, [FE] NullPointerException, final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_GRIDLINE_STROKE;
+compilation error,332,replace,[CE] self-reference in initializer, final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_CROSSHAIR_STROKE;
+increase failing tests,332,replace, [FE] NullPointerException, final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,Stroke DEFAULT_GRIDLINE_STROKE = DEFAULT_CROSSHAIR_STROKE;
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,List axisIndices = new java.util.ArrayList(3);
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,List axisIndices = new java.util.ArrayList(4);
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,List axisIndices = new java.util.ArrayList(axisIndex);
+compilation error,4393,add,[CE] unreachable statement,   ,return result == 0? 1 : 0;
+compilation error,4393,add,[CE] unreachable statement,   ,return result!= 0? 1 : 0;
+compilation error,4393,add,[CE] incompatible types,   ,return 0? 1 : 0;
+patch is same with buggy,4410,replace,, if(parent  instanceof  XYPlot  &&  parent  instanceof  XYPlot)  {    ,if(parent instanceof XYPlot && parent instanceof XYPlot) {
+compilation error,4410,replace,[CE] illegal start of expression, if(parent  instanceof  XYPlot  &&  parent  instanceof  XYPlot)  {    ,if(!(parent instanceof XYPlot)&&(parent instanceof XYPlot))) {
+compilation error,970,add,[CE] class or interface expected,   ,if(axis!= null) { axis.configure(); } ; }
+compilation error,970,add,[CE] illegal start of type,   ,if(axis!= null) { axis.configure(); } ; } ; }
+compilation error,970,add,[CE] class or interface expected,   ,if(axis!= null) { axis.configure(); } ; } ;
+compilation error,4384,add,[CE] illegal start of expression,   ,if(this.domainAxes!= null) { if(result > 0) { result = this.domainAxes.size(); }
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size();
+patch is same with buggy,336,replace,, public  static  final  Paint  DEFAULT_CROSSHAIR_PAINT  =  Color.white;    ,public static final Paint DEFAULT_CROSSHAIR_PAINT = Color.white;
+patch is same with buggy,625,replace,, this.axisOffset  =  new  RectangleInsets(2.0,  5.0,  5.0,  5.0);    ,this.axisOffset = new RectangleInsets(2.0, 5.0, 5.0, 5.0);
+patch is same with buggy,4328,replace,, List  mappedAxes  =(List)this.datasetToDomainAxesMap.get(new  Integer(1));    ,List mappedAxes =(List)this.datasetToDomainAxesMap.get(new Integer(1));
+compilation error,4328,replace,[CE] no suitable constructor found for Integer(Integer), new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(axisIndex);
+compilation error,4328,replace,[CE] cannot find symbol axisIndex, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.axisIndex);
+compilation error,4328,replace,[CE] ';' expected, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(axisIndex));
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,public transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0);
+compilation error,388,add,[CE] variable quadrantOrigin is already defined in class XYPlot,   ,private transient Point2D quadrantOrigin = new Point2D.Double(1.0, 0.0);
+compilation error,4415,add,[CE] illegal start of expression,   ,if(result!= 0) { int result = getRangeAxisIndex(); if(result > 0) { return result; }
+compilation error,4415,add,[CE] illegal start of expression,   ,if(result!= 0) { int result = getRangeAxisIndex(); if(result > 0.0) { return result; }
+compilation error,4415,add,[CE] illegal start of expression,   ,if(result!= 0) { int result = getRangeAxisIndex(); if(result > -1) { return result; }
+patch is same with buggy,624,replace,, this.axisOffset  =  new  RectangleInsets(5.0,  5.0,  5.0,  5.0);    ,this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0, 5.0);
+compilation error,4433,add,[CE] variable domainIndex is already defined in method getDataRange(ValueAxis),   ,int domainIndex = getDomainAxisIndex(axis)/ 2;
+compilation error,4433,add,[CE] ';' expected,   ,Range ValueAxis axis = getDomainAxis(axis);
+compilation error,4433,add,[CE] ';' expected,   ,Range ValueAxis axis = getDomainAxis();
+patch is same with buggy,4415,replace,, return  result!=  0?  1  :  result;    ,return result!= 0? 1 : result;
+compilation error,630,replace,[CE] 'else' without 'if', if(this.backgroundDomainMarkers  ==  null)  {  this.foregroundDomainMarkers  =  new  HashMap();  }  else  {  this.foregroundDomainMarkers  =  new  HashMap();  }    ,else if(this.foregroundDomainMarkers!= null) { this.foregroundDomainMarkers = new HashMap(); } else { this.foregroundDomainMarkers = new HashMap(); }
+compilation error,1543,replace,[CE] cannot find symbol indexes, HashSet  set  =  new  HashSet(32,  indices.size());    ,final HashSet set = new HashSet(indices.size(), indexes.size());
+patch is same with buggy,624,replace,, this.weight  =  0;//  only  relevant  when  this  is  a  subplot  this.axisOffset  =  new  RectangleInsets(5.0,  5.0,  5.0,  5.0);    ,this.weight = 0;// only relevant when this is a subplot this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0, 5.0);
+compilation error,1463,replace,[CE] cannot find symbol axisIndices, ArrayList  axisIndices  =  new  java.util.ArrayList(axisIndex);    ,axisIndices.add(new Integer(axisIndex));
+compilation error,566,add,[CE] generics are not supported in -source 1.4,   ,static SeriesRenderingOrder seriesRenderingOrder = new XYPlot < XYPlot>();
+compilation error,566,add,[CE] generics are not supported in -source 1.4,   ,static final SeriesRenderingOrder seriesRenderingOrder = new XYPlot < XYPlot>();
+compilation error,566,add,[CE] variable seriesRenderingOrder is already defined in class XYPlot,   ,static final SeriesRenderingOrder seriesRenderingOrder = new XYPlot();
+compilation error,4327,replace,[CE] ')' expected, for(int  i  =  1;  i  <  this.datasetToDomainAxesMap.size();  i++)  {    ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(new Integer(i)); }
+increase failing tests,4327,replace, [FE] ClassCastException, for(int  i  =  1;  i  <  this.datasetToDomainAxesMap.size();  i++)  {    ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap); }
+compilation error,4327,replace,[CE] '(' or '[' expected, for(int  i  =  1;  i  <  this.datasetToDomainAxesMap.size();  i++)  {    ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(new Integer
+patch is same with buggy,625,replace,, this.axisOffset  =  new  RectangleInsets(2.0,  5.0,  5.0,  5.0);    ,this.axisOffset = new RectangleInsets(2.0, 5.0, 5.0, 5.0);
+compilation error,4451,add,[CE] variable rangeIndex is already defined in method getDataRange(ValueAxis),   ,int rangeIndex = getRangeAxisIndex(axis)/ 2;
+compilation error,4451,add,[CE] method getRangeAxisCount in class XYPlot cannot be applied to given types;,   ,int rangeIndex = getRangeAxisCount(axis)/ 2;
+compilation error,4451,add,[CE] variable rangeIndex is already defined in method getDataRange(ValueAxis),   ,int rangeIndex = getRangeAxisIndex(axis) / 2;
+compilation error,4433,replace,[CE] no suitable constructor found for Integer(float), int  domainIndex  =  getDomainAxisIndex(axis)/  1;    ,float domainIndex = getDomainAxisIndex(axis)/ 1;
+compilation error,4433,replace,[CE] no suitable constructor found for Integer(long), int  domainIndex  =  getDomainAxisIndex(axis)/  1;    ,long domainIndex = getDomainAxisIndex(axis)/ 1;
+patch is same with buggy,4434,replace,, if(isDomainAxis)  {    ,if(isDomainAxis) {
+compilation error,4452,add,[CE] illegal start of expression,   ,if(!isDomainAxis) {
+compilation error,4452,add,[CE] illegal start of expression,   ,if(isDomainAxis || isDomainAxis) {
+compilation error,4452,add,[CE] illegal start of expression,   ,if(isDomainAxis || isDomainBoundsInfo) {
+patch is same with buggy,4427,replace,, Range  result  =  new  Range(0,  1);    ,Range result = new Range(0, 1);
+patch is same with buggy,332,replace,, Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_CROSSHAIR_STROKE;
+increase failing tests,332,replace, [FE] NullPointerException, Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_GRIDLINE_STROKE;
+increase failing tests,332,replace, [FE] NullPointerException, Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_CROSSHAIR_STROKE;    ,Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_GLIDLINE_STROKE;
+compilation error,624,add,[CE] possible loss of precision,   ,this.weight = 0.0;// only relevant when this is a subplot this.axisOffset = new RectangleInsets(4.0, 4.0, 4.0, 4.0);
+compilation error,4415,add,[CE] unreachable statement,   ,return result == 0? 1 : 0;
+compilation error,4415,add,[CE] unreachable statement,   ,return result == 0? 1 : 0;
+compilation error,660,add,[CE] '(' or '[' expected,   ,if(domainAxis!= null) { domainAxis.setPlot(new XYPlot()); } else { this.domainAxisLocations = new AxisLocation.BOTTOM_OR_LEFT); if(domainAxis!= null) { domainAx
+patch is same with buggy,625,replace,, this.axisOffset  =  new  RectangleInsets(0.0,  4.0,  4.0,  4.0);    ,this.axisOffset = new RectangleInsets(0.0, 4.0, 4.0, 4.0);
+patch is same with buggy,326,replace,, public  static  final  Paint  DEFAULT_GRIDLINE_PAINT  =  Color.black;    ,public static final Paint DEFAULT_GRIDLINE_PAINT = Color.black;
+compilation error,644,add,[CE] cannot find symbol annotationLists,   ,this.annotationLists = new java.util.ArrayList(64);
+compilation error,4407,replace,[CE] cannot find symbol valueAxis, if(axis!=  null)  {    ,if(valueAxis == null) {
+compilation error,4407,replace,[CE] parent has private access in Plot, if(axis!=  null)  {    ,if(parent!= null) {
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,ArrayList axisIndices = new ArrayList(32);
+compilation error,1463,add,[CE] cannot find symbol axisIndices,   ,axisIndices.add(new Integer(axisIndex));
+compilation error,1463,add,[CE] cannot find symbol axisIndices,   ,axisIndices = new ArrayList(32);
+compilation error,4452,add,[CE] illegal start of expression,   ,if(rangeIndex < getDatasetCount()) {
+compilation error,4452,add,[CE] illegal start of expression,   ,if(rangeIndex < 0) {
+compilation error,4452,add,[CE] illegal start of expression,   ,if(rangeIndex >= getDatasetCount()) {
+compilation error,624,add,[CE] no suitable constructor found for RectangleInsets(double,double,double),   ,this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0);
+compilation error,504,add,[CE] illegal start of type,   ,return super.domainCrosshairLockedOnData;
+compilation error,504,add,[CE] illegal start of type,   ,return super.domainCrosshairLockedOnData();
+compilation error,504,add,[CE] illegal start of type,   ,return super.domainCrosshairLockedOnData = true;
+patch is same with buggy,644,replace,, this.annotations  =  new  java.util.ArrayList(64);    ,this.annotations = new java.util.ArrayList(64);
+patch is same with buggy,4327,replace,, for(int  i  =  1;  i  <  this.datasetToDomainAxesMap.size();  i++)  {    ,for(int i = 1; i < this.datasetToDomainAxesMap.size(); i++) {
+compilation error,625,add,[CE] no suitable constructor found for RectangleInsets(double,double,double),   ,this.axisOffset = new RectangleInsets(0.0, 0.0, 0.0);
+compilation error,1543,replace,[CE] variable indices is already defined in method checkAxisIndices(List), HashSet  set  =  new  HashSet(1);    ,List indices = new ArrayList(9);
+patch is same with buggy,388,replace,, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(2.0,  0.0);    ,private transient Point2D quadrantOrigin = new Point2D.Double(2.0, 0.0);
+patch is same with buggy,326,replace,, public  static  final  Paint  DEFAULT_GRIDLINE_PAINT  =  Color.RED;    ,public static final Paint DEFAULT_GRIDLINE_PAINT = Color.RED;
+patch is same with buggy,4434,replace,, if(!isDomainAxis)  {    ,if(!isDomainAxis) {
+compilation error,4434,replace,[CE] cannot find symbol getDatasetsMappedToDomainAxis, if(!isDomainAxis)  {    ,if(!isDomainAxis || mappedDatasets.contains(getDatasetsMappedToDomainAxis)) {
+compilation error,326,add,[CE] illegal start of type,   ,return new Paint(Paint.BLOCK, DEFAULT_GRIDLINE_PAINT);
+compilation error,326,add,[CE] illegal start of type,   ,return new Color(Paint.BLOCK, DEFAULT_GRIDLINE_PAINT);
+compilation error,326,add,[CE] illegal start of type,   ,return new Color(Paint.BLOCK, DEFAULT_GRIDLINE_PAINT, Color.RED);
+patch is same with buggy,566,replace,, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,static SeriesRenderingOrder seriesRenderingOrder = SeriesRenderingOrder.REVERSE;
+compilation error,566,replace,[CE] cannot assign a value to final variable seriesRenderingOrder, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,final static SeriesRenderingOrder seriesRenderingOrder = SeriesRenderingOrder.REVERSE;
+compilation error,566,replace,[CE] cannot assign a value to final variable seriesRenderingOrder, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,final SeriesRenderingOrder seriesRenderingOrder = SeriesRenderingOrder.REVERSE;
+compilation error,4330,add,[CE] illegal start of expression,   ,if(this.datasets == null) {
+compilation error,4330,add,[CE] illegal start of expression,   ,if(this.datasets!= null) {
+compilation error,4330,add,[CE] illegal start of expression,   ,if(this.datasets!= null || this.datasets.size() == 0) {
+patch is same with buggy,1463,replace,, List  axisIndices  =  new  java.util.ArrayList(3);    ,List axisIndices = new java.util.ArrayList(3);
+increase failing tests,4436,add, [FE] ClassCastException,   ,mappedDatasets.add(getDatasetsMappedToDomainAxis(new Integer(domainIndex + 1)));
+patch is same with buggy,630,replace,, if(this.backgroundDomainMarkers  ==  null)  {  this.foregroundDomainMarkers  =  new  HashMap();  }  else  {  this.backgroundDomainMarkers  =  new  HashMap();  }    ,if(this.backgroundDomainMarkers == null) { this.foregroundDomainMarkers = new HashMap(); } else { this.backgroundDomainMarkers = new HashMap(); }
+increase failing tests,630,replace, [FE] NullPointerException, if(this.backgroundDomainMarkers  ==  null)  {  this.foregroundDomainMarkers  =  new  HashMap();  }  else  {  this.backgroundDomainMarkers  =  new  HashMap();  }    ,if(this.backgroundDomainMarkers!= null) { this.foregroundDomainMarkers = new HashMap(); } else { this.backgroundDomainMarkers = new HashMap(); }
+patch is same with buggy,625,replace,, this.axisOffset  =  new  RectangleInsets(8.0,  8.0,  8.0,  4.0);    ,this.axisOffset = new RectangleInsets(8.0, 8.0, 8.0, 4.0);
+patch is same with buggy,625,replace,, this.axisOffset  =  new  RectangleInsets(2.0,  4.0,  4.0,  5.0);    ,this.axisOffset = new RectangleInsets(2.0, 4.0, 4.0, 5.0);
+compilation error,4451,add,[CE] variable rangeIndex is already defined in method getDataRange(ValueAxis),   ,int rangeIndex = getRangeAxisIndex(axis)/ 2;
+compilation error,4451,add,[CE] variable rangeIndex is already defined in method getDataRange(ValueAxis),   ,int rangeIndex = getRangeAxisIndex(axis) / 2;
+compilation error,4451,add,[CE] ';' expected,   ,Range ValueAxis axis = getRangeAxisIndex(axis);
+patch is same with buggy,388,replace,, public  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  0.0);    ,public transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0);
+compilation error,559,add,[CE] variable datasetRenderingOrder is already defined in class XYPlot,   ,static final DatasetRenderingOrder datasetRenderingOrder = DatasetRenderingOrder.RANGE;
+compilation error,559,add,[CE] variable datasetRenderingOrder is already defined in class XYPlot,   ,static DatasetRenderingOrder datasetRenderingOrder = DatasetRenderingOrder.EXPECTED;
+compilation error,559,add,[CE] variable datasetRenderingOrder is already defined in class XYPlot,   ,static DatasetRenderingOrder datasetRenderingOrder = DatasetRenderingOrder.EXPECT;
+compilation error,4434,add,[CE] illegal start of expression,   ,if(domainIndex == 0) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(domainIndex!= 0) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(domainIndex < 0) {
+patch is same with buggy,388,replace,, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(1.0,  1.0);    ,private transient Point2D quadrantOrigin = new Point2D.Double(1.0, 1.0);
+compilation error,326,replace,[CE] illegal start of type, public  static  final  Paint  DEFAULT_GRIDLINE_PAINT  =  Color.green;    ,return new Paint(DEFAULT_GRIDLINE_PAINT, Color.black);
+compilation error,326,replace,[CE] illegal start of type, public  static  final  Paint  DEFAULT_GRIDLINE_PAINT  =  Color.green;    ,return new Color(Paint.DEFAULT_GRIDLINE_PAINT, Color.black);
+compilation error,326,replace,[CE] illegal start of type, public  static  final  Paint  DEFAULT_GRIDLINE_PAINT  =  Color.green;    ,return new Color(Paint.DEFAULT_GRIDLINE_PAINT);
+patch is same with buggy,1463,replace,, ArrayList  axisIndices  =  new  ArrayList();    ,ArrayList axisIndices = new ArrayList();
+compilation error,1463,replace,[CE] cannot find symbol, ArrayList  axisIndices  =  new  ArrayList();    ,ArrayList axisIndices = new ArrayListWithCapacity(2);
+increase failing tests,657,replace, [FE] NullPointerException, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT); this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);
+increase failing tests,657,replace, [FE] NullPointerException, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT); this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);
+increase failing tests,657,replace, [FE] NullPointerException, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT); this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT);
+compilation error,336,add,[CE] illegal start of type,   ,return new Color(Paint.DEFAULT_CROSSHAIR_PAINT, DEFAULT_CROSSHAIR_PAINT);
+compilation error,336,add,[CE] illegal start of type,   ,return new Color(Paint.DEFAULT_CROSSHAIR_PAINT);
+compilation error,336,add,[CE] illegal start of type,   ,return new Color(Paint.DEFAULT_CROSSHAIR_PAINT, Color.white);
+compilation error,644,add,[CE] cannot find symbol annotationLists,   ,this.annotationLists = new java.util.ArrayList(0);
+compilation error,388,add,[CE] illegal start of type,   ,return quadrantOrigin.doubleValue();
+compilation error,388,add,[CE] illegal start of type,   ,return QuadrantOrigin.doubleValue();
+compilation error,388,add,[CE] illegal start of type,   ,return quadrantOrigin.getValue();
+compilation error,4451,replace,[CE] no suitable constructor found for Integer(float), int  rangeIndex  =  getRangeAxisIndex(axis)/  1;    ,float rangeIndex = getRangeAxisIndex(axis)/ 2;
+compilation error,4451,replace,[CE] no suitable constructor found for Integer(long), int  rangeIndex  =  getRangeAxisIndex(axis)/  1;    ,long rangeIndex = getRangeAxisIndex(axis)/ 1;
+compilation error,644,replace,[CE] cannot find symbol annotationLists, this.annotations  =  new  java.util.ArrayList(64);    ,this.annotationLists = new java.util.ArrayList(2);
+compilation error,4438,replace,[CE] cannot find symbol annotation, if(this.annotations!=  null  ||  this.annotations.size()  ==  0)  {    ,if(!includedAnnotations.contains(annotation)) {
+patch is same with buggy,1747,replace,, result  =(XYItemRenderer)this.renderers.get(1);    ,result =(XYItemRenderer)this.renderers.get(1);
+compilation error,326,add,[CE] illegal start of type,   ,return new Paint(DEFAULT_GRIDLINE_PAINT, Color.green);
+compilation error,326,add,[CE] illegal start of type,   ,return new Paint(DEFAULT_GRIDLINE_PAINT, Color.red);
+compilation error,326,add,[CE] illegal start of type,   ,return new Color(Paint.DEFAULT_GRIDLINE_PAINT, Color.green);
+patch is same with buggy,624,replace,, this.weight  =  0;//  only  valid  when  this  is  a  subplot  this.axisOffset  =  new  RectangleInsets(4.0,  5.0,  4.0,  4.0);    ,this.weight = 0;// only valid when this is a subplot this.axisOffset = new RectangleInsets(4.0, 5.0, 4.0, 4.0);
+compilation error,624,replace,[CE] possible loss of precision, this.weight  =  0;//  only  valid  when  this  is  a  subplot  this.axisOffset  =  new  RectangleInsets(4.0,  5.0,  4.0,  4.0);    ,this.weight = 0.0;// only valid when this is a subplot this.axisOffset = new RectangleInsets(4.0, 4.0, 4.0, 4.0);
+compilation error,644,add,[CE] cannot find symbol annotationLists,   ,this.annotationLists = new java.util.ArrayList(10);
+compilation error,1543,add,[CE] variable indices is already defined in method checkAxisIndices(List),   ,List indices = new ArrayList(8);
+compilation error,1543,add,[CE] variable set is already defined in method checkAxisIndices(List),   ,HashSet set = new HashSet(8);
+compilation error,1543,add,[CE] variable indices is already defined in method checkAxisIndices(List),   ,List indices = new ArrayList(indexes.size());
+patch is same with buggy,644,replace,, this.annotations  =  new  java.util.ArrayList(0);    ,this.annotations = new java.util.ArrayList(0);
+patch is same with buggy,332,replace,, Stroke  DEFAULT_CROSSHAIR_STROKE  =  DEFAULT_GRIDLINE_STROKE;    ,Stroke DEFAULT_CROSSHAIR_STROKE = DEFAULT_GRIDLINE_STROKE;
+patch is same with buggy,660,replace,, if(domainAxis!=  null)  {  domainAxis.setPlot(new  XYPlot());  }    ,if(domainAxis!= null) { domainAxis.setPlot(new XYPlot()); }
+compilation error,660,replace,[CE] illegal start of expression, if(domainAxis!=  null)  {  domainAxis.setPlot(new  XYPlot());  }    ,[Delete]
+patch is same with buggy,4436,replace,, mappedDatasets.addAll(getDatasetsMappedToDomainAxis(new  Integer(1)));    ,mappedDatasets.addAll(getDatasetsMappedToDomainAxis(new Integer(1)));
+compilation error,4327,add,[CE] ')' expected,   ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(new Integer(i)); }
+compilation error,4327,add,[CE] illegal start of expression,   ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap); }
+compilation error,4327,add,[CE] '(' or '[' expected,   ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(new Integer
+patch is same with buggy,332,replace,, public  static  final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  DeFAULT_GRIDLINE_STROKE;    ,public static final Stroke DEFAULT_CROSSHAIR_STROKE = DeFAULT_GRIDLINE_STROKE;
+patch is same with buggy,388,replace,, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,private transient Point2D quadrantOrigin = new Point2D.Double(0.0, 4.0);
+compilation error,969,add,[CE] illegal start of expression,   ,for(int i = 2; i < this.domainAxes.size(); i++) { if(this.domainAxes!= null) { this.domainAxes.set(i); }
+compilation error,969,add,[CE] illegal start of expression,   ,for(int i = 2; i < this.domainAxes.size(); i++) { if(this.domainAxes!= null) { this.domainAxes.set(i, null); }
+compilation error,969,add,[CE] illegal start of expression,   ,for(int i = 2; i < this.domainAxes.size(); i++) { if(this.domainAxes!= null) { this.domainAxes.remove(i); }
+compilation error,644,add,[CE] cannot find symbol annotationLists,   ,this.annotationLists = new java.util.ArrayList(11);
+patch is same with buggy,4328,replace,, List  mappedAxes  =(List)this.datasetToDomainAxesMap.get(new  Integer(2));    ,List mappedAxes =(List)this.datasetToDomainAxesMap.get(new Integer(2));
+compilation error,1747,add,[CE] class or interface expected,   ,if(result == null) { result = getRenderer(); } break; } if(result == null) { result = getRenderer(); } break; }
+patch is same with buggy,332,replace,, public  static  final  Stroke  DEFAULT_CROSSHAIR_STROKE  =  deFAULT_GLIDLINE_STROKE;    ,public static final Stroke DEFAULT_CROSSHAIR_STROKE = deFAULT_GLIDLINE_STROKE;
+increase failing tests,657,replace, [FE] NullPointerException, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);
+increase failing tests,657,replace, [FE] NullPointerException, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT);
+increase failing tests,657,replace, [FE] NullPointerException, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT);
+compilation error,4415,replace,[CE] incompatible types, return  result!=  0?  1  :  result;    ,return 0? 1 : 0;
+patch is same with buggy,1536,replace,, if(indices  ==  null  ||  indices.size()  ==  0)  {    ,if(indices == null || indices.size() == 0) {
+compilation error,1536,replace,[CE] cannot find symbol indexes, if(indices  ==  null  ||  indices.size()  ==  0)  {    ,if(indexes == null || indices.size() == 0) {
+compilation error,1536,replace,[CE] cannot find symbol indexes, if(indices  ==  null  ||  indices.size()  ==  0)  {    ,if(indices == null || indexes.size() == 0) {
+patch is same with buggy,1463,replace,, List  axisIndices  =  new  java.util.ArrayList(4);    ,List axisIndices = new java.util.ArrayList(4);
+compilation error,4434,add,[CE] illegal start of expression,   ,if(!isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(!isDomainAxis || mappedDatasets.contains(getDatasetsMappedToDomainAxis())) {
+patch is same with buggy,4327,replace,, for(int  i  =  2;  i  <  this.datasets.size();  i++)  {    ,for(int i = 2; i < this.datasets.size(); i++) {
+patch is same with buggy,4438,replace,, if(this.annotations!=  null  ||  this.annotations.size()  ==  0)  {    ,if(this.annotations!= null || this.annotations.size() == 0) {
+patch is same with buggy,559,replace,, static  DatasetRenderingOrder  datasetRenderingOrder  =  DatasetRenderingOrder.REVERSE;    ,static DatasetRenderingOrder datasetRenderingOrder = DatasetRenderingOrder.REVERSE;
+compilation error,559,replace,[CE] cannot assign a value to final variable datasetRenderingOrder, static  DatasetRenderingOrder  datasetRenderingOrder  =  DatasetRenderingOrder.REVERSE;    ,final static DatasetRenderingOrder datasetRenderingOrder = DatasetRenderingOrder.REVERSE;
+compilation error,559,replace,[CE] ';' expected, static  DatasetRenderingOrder  datasetRenderingOrder  =  DatasetRenderingOrder.REVERSE;    ,dynamic DatasetRenderingOrder datasetRenderingOrder = DatasetRenderingOrder.REVERSE;
+patch is same with buggy,1543,replace,, HashSet  set  =  new  HashSet(0);    ,HashSet set = new HashSet(0);
+compilation error,4407,add,[CE] illegal start of expression,   ,if(valueAxis == null) {
+compilation error,4407,add,[CE] illegal start of expression,   ,if(axis == null) {
+compilation error,4407,add,[CE] illegal start of expression,   ,if(valueAxis!= null) {
+patch is same with buggy,624,replace,, this.axisOffset  =  new  RectangleInsets(4.0,  5.0,  4.0,  4.0);    ,this.axisOffset = new RectangleInsets(4.0, 5.0, 4.0, 4.0);
+compilation error,4433,replace,[CE] ';' expected, int  domainIndex  =  getDomainAxisIndex(axis)/  1;    ,Range ValueAxis axis = getDomainAxis(axis);
+patch is same with buggy,4393,replace,, return  result!=  0?  1  :  result;    ,return result!= 0? 1 : result;
+compilation error,504,add,[CE] illegal start of type,   ,return super.domainCrosshairLockedOn;
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,List axisIndices = new java.util.ArrayList(4);
+compilation error,1463,add,[CE] cannot find symbol axisIndices,   ,if(axisIndices == null) { List axisIndices = new java.util.ArrayList(4); }
+compilation error,1463,add,[CE] ')' expected,   ,if(axisIndices == null) { List axisIndices = new java.util.ArrayList(4); } else { mapDatasetToDomainAxes(axisIndex, axisIndices); axisIndices.add(new Integer(
+patch is same with buggy,4393,replace,, return  result  <  0?  1  :  result;    ,return result < 0? 1 : result;
+increase failing tests,4436,add, [FE] ClassCastException,   ,mappedDatasets.add(getDatasetsMappedToDomainAxis(new Integer(0)));
+compilation error,4328,replace,[CE] cannot find symbol mappedAxes, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.datasetToDomainAxesMap.size() - 1);
+compilation error,4328,replace,[CE] cannot find symbol mappedAxes, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.datasetToDomainAxesMap.size() + 1);
+compilation error,4328,replace,[CE] cannot find symbol axisIndex, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.datasetToDomainAxesMap.size(), this.axisIndex);
+patch is same with buggy,326,replace,, public  static  final  Paint  DEFAULT_GRIDLINE_PAINT  =  Color.green;    ,public static final Paint DEFAULT_GRIDLINE_PAINT = Color.green;
+patch is same with buggy,4452,replace,, if(rangeIndex  <  getDatasetCount())  {    ,if(rangeIndex < getDatasetCount()) {
+compilation error,4440,add,[CE] variable iterator is already defined in method getDataRange(ValueAxis),   ,final Iterator iterator = includedAnnotations.iterator();
+compilation error,4440,add,[CE] incompatible types,   ,final Iterator iterator =(XYAnnotation)includedAnnotations.iterator();
+compilation error,4440,add,[CE] cannot find symbol annotation,   ,final Iterator iterator =(XYAnnotation)includedAnnotations.get(annotation);
+patch is same with buggy,4452,replace,, if(isDomainAxis  ||  isDomainAxis)  {    ,if(isDomainAxis || isDomainAxis) {
+compilation error,4452,replace,[CE] cannot find symbol isDomainAxisLocal, if(isDomainAxis  ||  isDomainAxis)  {    ,if(isDomainAxis || isDomainAxisLocal) {
+compilation error,4327,add,[CE] illegal start of expression,   ,for(int i = 0; i < this.datasets.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxisMap); }
+compilation error,4327,add,[CE] not a statement,   ,List this.datasetToDomainAxesMap =(List)this.datasetToDomainAxesMap.get(new Integer(i));
+compilation error,4327,add,[CE] ')' expected,   ,for(int i = 0; i < this.datasets.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxisMap.get(new Integer(i)); }
+patch is same with buggy,657,replace,, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT); this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT);
+compilation error,657,replace,[CE] ')' expected, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,if(domainAxisLocations!= null) { this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT); this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR_RIGHT
+compilation error,657,replace,[CE] ')' expected, this.domainAxisLocations.set(0,  AxisLocation.BOTTOM_OR_LEFT);  this.rangeAxisLocations.set(0,  AxisLocation.BOTTOM_OR_RIGHT);    ,if(domainAxisLocations!= null) { this.domainAxisLocations.set(0, AxisLocation.BOTTOM_OR_LEFT); this.rangeAxisLocations.set(0, AxisLocation.BOTTOM_OR
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,ArrayList axisIndices = new java.util.ArrayList(axisIndex);
+compilation error,1463,add,[CE] cannot find symbol axisIndices,   ,axisIndices = new java.util.ArrayList(axisIndex);
+compilation error,1463,add,[CE] cannot find symbol axisIndices,   ,axisIndices.add(new Integer(axisIndex));
+patch is same with buggy,504,replace,, public  boolean  domainCrosshairLockedOnData  =  true;    ,public boolean domainCrosshairLockedOnData = true;
+compilation error,504,replace,[CE] cannot assign a value to final variable domainCrosshairLockedOnData, public  boolean  domainCrosshairLockedOnData  =  true;    ,public final boolean domainCrosshairLockedOnData = true;
+patch is same with buggy,4440,replace,, final  Iterator  iterator  =  includedAnnotations.iterator();    ,final Iterator iterator = includedAnnotations.iterator();
+compilation error,4440,replace,[CE] cannot find symbol XYAnnotations, final  Iterator  iterator  =  includedAnnotations.iterator();    ,final Iterator iterator = XYAnnotations.iterator();
+compilation error,4440,replace,[CE] cannot find symbol XYIterator, final  Iterator  iterator  =  includedAnnotations.iterator();    ,final Iterator iterator = XYIterator.iterator();
+patch is same with buggy,504,replace,, protected  boolean  domainCrosshairLockedOnData  =  true;    ,protected boolean domainCrosshairLockedOnData = true;
+compilation error,504,replace,[CE] cannot assign a value to final variable domainCrosshairLockedOnData, protected  boolean  domainCrosshairLockedOnData  =  true;    ,protected final boolean domainCrosshairLockedOnData = true;
+compilation error,4415,replace,[CE] illegal start of expression, return  result!=  0?  1  :  result;    ,if(result > 0) { int result = getRangeAxisIndex(); if(result > 0) { return result; }
+compilation error,4415,replace,[CE] illegal start of expression, return  result!=  0?  1  :  result;    ,if(result > 0) { int result = getRangeAxisIndex(); if(result < 0) { return result; }
+compilation error,4415,replace,[CE] illegal start of expression, return  result!=  0?  1  :  result;    ,if(result > 0) { int result = getRangeAxisIndex(); if(result > 0) { result = ValueAxis.ZERO; }
+compilation error,504,replace,[CE] cannot find symbol domainCrosshairLockedOnData, protected  boolean  domainCrosshairLockedOn  =  false;    ,protected boolean domainCrosshairLockedOn = true;
+patch is same with buggy,504,replace,, protected  boolean  domainCrosshairLockedOn  =  false;    ,protected boolean domainCrosshairLockedOn = false;
+compilation error,504,replace,[CE] cannot find symbol domainCrosshairLockedOnData, protected  boolean  domainCrosshairLockedOn  =  false;    ,protected final boolean domainCrosshairLockedOn = false;
+patch is same with buggy,630,replace,, if(this.backgroundDomainMarkers  ==  null)  {  this.foregroundDomainMarkers  =  new  HashMap();  }  else  {  this.foregroundDomainMarkers  =  new  HashMap();  }    ,if(this.backgroundDomainMarkers == null) { this.foregroundDomainMarkers = new HashMap(); } else { this.foregroundDomainMarkers = new HashMap(); }
+compilation error,4393,add,[CE] illegal start of expression,   ,if(result!= 0) { int result = getDomainAxisIndex(); if(result > 0) { return result; }
+compilation error,4393,add,[CE] illegal start of expression,   ,if(result!= 0) { int result = getDomainAxisIndex(); if(result > 0) { result = Integer.MAX_VALUE; }
+compilation error,4393,add,[CE] illegal start of expression,   ,if(result!= 0) { int result = getDomainAxisIndex(); if(result > 0) { result = ValueAxis.ZERO; }
+patch is same with buggy,4384,replace,, if(this.domainAxes!=  null)  {  int  result  =  this.domainAxes.size();  }    ,if(this.domainAxes!= null) { int result = this.domainAxes.size(); }
+patch is same with buggy,4384,replace,, if(this.domainAxes!=  null)  {  int  result  =  this.domainAxes.size();  }    ,if(this.domainAxes!= null) { int result = this.domainAxes.size(); }
+patch is same with buggy,4436,replace,, mappedDatasets.addAll(getDatasetsMappedToDomainAxis(new  Integer(domainIndex  +  2)));    ,mappedDatasets.addAll(getDatasetsMappedToDomainAxis(new Integer(domainIndex + 2)));
+increase failing tests,4436,replace, [FE] ClassCastException, mappedDatasets.addAll(getDatasetsMappedToDomainAxis(new  Integer(domainIndex  +  2)));    ,mappedDatasets.add(getDatasetsMappedToDomainAxis(new Integer(domainIndex + 1)));
+patch is same with buggy,4327,replace,, for(int  i  =  0;  i  <=  this.datasetToDomainAxesMap.size();  i++)  {    ,for(int i = 0; i <= this.datasetToDomainAxesMap.size(); i++) {
+compilation error,1269,add,[CE] illegal start of expression,   ,for(int i = 2; i < this.rangeAxes.size(); i++) { if(this.rangeAxes.get(i)!= null) { this.rangeAxes.set(i, null); }
+compilation error,1269,add,[CE] illegal start of expression,   ,for(int i = 2; i < this.rangeAxes.size(); i++) { if(this.rangeAxes.get(i)!= null) { this.rangeAxes.set(i); }
+compilation error,1269,add,[CE] illegal start of expression,   ,for(int i = 2; i < this.rangeAxes.size(); i++) { if(this.rangeAxes.get(i)!= null) { this.rangeAxes.remove(i); }
+patch is same with buggy,644,replace,, this.annotations  =  new  java.util.ArrayList(0);    ,this.annotations = new java.util.ArrayList(0);
+patch is same with buggy,644,replace,, this.annotations  =  new  java.util.ArrayList(0);    ,this.annotations = new java.util.ArrayList(0);
+patch is same with buggy,970,replace,, ValueAxis  axis  =(ValueAxis)this.domainAxes.get(1);    ,ValueAxis axis =(ValueAxis)this.domainAxes.get(1);
+compilation error,4393,replace,[CE] illegal start of expression, return  result!=  0?  1  :  result;    ,if(result > 0) { int result = getDomainAxisIndex(); if(result > 0) { return result; }
+compilation error,4393,replace,[CE] illegal start of expression, return  result!=  0?  1  :  result;    ,if(result > 0) { int result = getDomainAxisIndex(); if(result < 0) { return result; }
+compilation error,4393,replace,[CE] illegal start of expression, return  result!=  0?  1  :  result;    ,if(result > 0) { int result = getDomainAxisIndex(); if(result > 0) { result = ValueAxis.ZERO; }
+compilation error,1543,replace,[CE] variable indices is already defined in method checkAxisIndices(List), HashSet  set  =  new  HashSet(8);    ,List indices = new ArrayList(2);
+compilation error,1543,replace,[CE] generics are not supported in -source 1.4, HashSet  set  =  new  HashSet(8);    ,List <?> indices = Lists.newArrayList();
+compilation error,1543,replace,[CE] generics are not supported in -source 1.4, HashSet  set  =  new  HashSet(8);    ,List <?> indices = Lists.newArrayList(0);
+patch is same with buggy,624,replace,, this.axisOffset  =  new  RectangleInsets(5.0,  5.0,  5.0,  5.0);    ,this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0, 5.0);
+patch is same with buggy,1383,replace,, if(this.datasets.size()  >  0)  {    ,if(this.datasets.size() > 0) {
+compilation error,4438,replace,[CE] illegal start of expression, if(this.annotations!=  null  ||  this.annotations.size()  >  0)  {    ,if(!(this.annotations instanceof XYAnnotationBoundsInfo)) : includedAnnotations.add(annotation); if(!(this.annotations instanceof XYAnnotationBoundsInfo)) { includedAnnotations.add(annotation); }
+compilation error,4438,replace,[CE] illegal start of expression, if(this.annotations!=  null  ||  this.annotations.size()  >  0)  {    ,if(!(this.annotations instanceof XYAnnotationBoundsInfo)) : includedAnnotations.add(annotation); if(!(this.annotations instanceof XYAnnotationBoundsInfo)) {
+compilation error,4438,replace,[CE] illegal start of expression, if(this.annotations!=  null  ||  this.annotations.size()  >  0)  {    ,if(!(this.annotations instanceof XYAnnotationBoundsInfo)) &&(includedAnnotations.contains(annotation))) {
+patch is same with buggy,624,replace,, this.axisOffset  =  new  RectangleInsets(5.0,  5.0,  5.0,  5.0);    ,this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0, 5.0);
+compilation error,4438,replace,[CE] cannot find symbol, if(this.annotations!=  null  ||  this.annotations.size()  ==  0)  {    ,if(!(this.annotations instanceof XYAnnotationInfo)) {
+compilation error,4407,add,[CE] illegal start of expression,   ,if(axis == null) {
+compilation error,4407,add,[CE] illegal start of expression,   ,if(valueAxis == null) {
+compilation error,4407,add,[CE] illegal start of expression,   ,if(axis!= null) {
+compilation error,4328,replace,[CE] method get in interface Map cannot be applied to given types;, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.datasetToDomainAxesMap.get());
+compilation error,4328,replace,[CE] cannot find symbol mappedAxes, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.datasetToDomainAxesMap.size() + 1);
+compilation error,4328,replace,[CE] cannot find symbol mappedAxes, new  Integer(this.datasetToDomainAxesMap.size());    ,new Integer(this.datasetToDomainAxesMap.size() - 1);
+compilation error,388,replace,[CE] illegal start of type, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,return new Point2D.Double(0.0, 0.0);
+compilation error,388,replace,[CE] illegal start of type, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,return new Point2D.Double(quarantOrigin.getX(), quadrantOrigin.getY());
+compilation error,388,replace,[CE] illegal start of type, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,return new Point2D.Double(Quarter.MAX_VALUE, 0.0);
+compilation error,4438,add,[CE] illegal start of expression,   ,if(!(this.annotations!= null)&& this.annotations.contains(null)) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(!(this.annotations!= null) && this.annotations.contains(null)) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(!(this.annotations!= null)|| this.annotations.contains(null)) {
+compilation error,1747,replace,[CE] package This does not exist, result  =(XYItemRenderer)this.renderers.get(1);    ,result =(XYItemRenderer)This.renderers.get(0);
+compilation error,4433,add,[CE] variable domainIndex is already defined in method getDataRange(ValueAxis),   ,int domainIndex = getDomainAxisIndex(axis)/ 2;
+compilation error,4433,add,[CE] cannot find symbol,   ,int domainIndex = axis.getLength();
+compilation error,4433,add,[CE] variable domainIndex is already defined in method getDataRange(ValueAxis),   ,int domainIndex = getDomainAxisIndex(axis) / 2;
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size();
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size() + 1;
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size() + 2;
+compilation error,4415,replace,[CE] cannot find symbol, return  result!=  0?  1  :  result;    ,result = ValueAxis.valueOf(axis);
+compilation error,4415,replace,[CE] cannot find symbol, return  result!=  0?  1  :  result;    ,result = ValueAxis.valueToJava2(axis);
+compilation error,4415,replace,[CE] cannot find symbol, return  result!=  0?  1  :  result;    ,result = axis == null? ValueAxis.valueOf(axis): axis.value();
+patch is same with buggy,4452,replace,, if(rangeIndex  <  getDatasetCount())  {    ,if(rangeIndex < getDatasetCount()) {
+compilation error,4452,replace,[CE] cannot find symbol, if(rangeIndex  <  getDatasetCount())  {    ,if(rangeIndex < getRangeLength()) {
+increase failing tests,1543,replace, [FE] IllegalArgumentException, HashSet  set  =  new  HashSet(1);    ,HashSet set = new HashSet(indices);
+patch is same with buggy,388,replace,, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(2.0,  0.0);    ,private transient Point2D quadrantOrigin = new Point2D.Double(2.0, 0.0);
+compilation error,1637,add,[CE] not a statement,   ,if(existing!= null) { existing.addChangeListener(null); bodied else { throw new NullPointerException(" "); }
+compilation error,1637,add,[CE] ,   ,if(existing!= null) { existing.addChangeListener(null); } else if throw new NullPointerException(" "); }
+compilation error,4440,add,[CE] variable iterator is already defined in method getDataRange(ValueAxis),   ,final Iterator iterator = includedAnnotations.iterator();
+compilation error,4440,add,[CE] incompatible types,   ,final Iterator iterator =(XYAnnotationBoundsInfo)includedAnnotations.iterator();
+compilation error,4440,add,[CE] incompatible types,   ,final Iterator iterator =(XYAnnotation)includedAnnotations.iterator();
+compilation error,4384,replace,[CE] cannot find symbol domainAxises, int  result  =  this.domainAxes.size()  -  1;    ,int result = this.domainAxises.size();
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,ArrayList axisIndices = new java.util.ArrayList(axisIndex);
+compilation error,1463,add,[CE] cannot find symbol axisIndices,   ,axisIndices = new java.util.ArrayList(axisIndex);
+compilation error,1463,add,[CE] variable axisIndices is already defined in method mapDatasetToDomainAxis(int,int),   ,ArrayList axisIndices = new java.util.ArrayList();
+compilation error,4410,add,[CE] illegal start of expression,   ,if(axis instanceof XYPlot && parent instanceof XYPlot) {
+compilation error,4410,add,[CE] illegal start of expression,   ,if(parent instanceof XYPlot && parent instanceof ValueAxis) {
+compilation error,4410,add,[CE] illegal start of expression,   ,if(axis instanceof XYPlot) {
+patch is same with buggy,624,replace,, this.weight  =  0;//  only  relevant  when  this  is  a  subplot  this.axisOffset  =  new  RectangleInsets(5.0,  5.0,  5.0,  5.0);    ,this.weight = 0;// only relevant when this is a subplot this.axisOffset = new RectangleInsets(5.0, 5.0, 5.0, 5.0);
+compilation error,388,replace,[CE] illegal start of type, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,return new Point2D.Double(quadrantOrigin);
+compilation error,388,replace,[CE] illegal start of type, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,return new Point2D.Double(quarantOrigin.getX(), quadrantOrigin.getY());
+compilation error,388,replace,[CE] illegal start of type, private  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  4.0);    ,return new Point2D.Double(Quarter.MAX_VALUE, quadrantOrigin);
+compilation error,4415,add,[CE] cannot find symbol,   ,result = ValueAxis.valueOf(axis);
+compilation error,4415,add,[CE] cannot find symbol,   ,result = axis == null? ValueAxis.valueOf(axis): axis.valueOf(axis);
+compilation error,4415,add,[CE] cannot find symbol,   ,result = axis == null? ValueAxis.valueOf(axis): axis.value();
+patch is same with buggy,4434,replace,, if(!isDomainAxis)  {    ,if(!isDomainAxis) {
+compilation error,4434,replace,[CE] cannot find symbol, if(!isDomainAxis)  {    ,if(!isDomainAxis ||!Integer.isInfinite(domainIndex)) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(this.annotations!= null && this.annotations.size() > 0) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(this.annotations!= null || this.annotations.size() > 0) {
+compilation error,4438,add,[CE] illegal start of expression,   ,if(this.annotations!= null) {
+compilation error,624,add,[CE] no suitable constructor found for RectangleInsets(double,double,double),   ,this.weight = new RectangleInsets(5.0, 5.0, 5.0);
+compilation error,624,add,[CE] possible loss of precision,   ,this.weight = 0.0;
+compilation error,624,add,[CE] no suitable constructor found for RectangleInsets(double,double,double),   ,this.weight = new RectangleInsets(0.0, 0.0, 0.0);
+increase failing tests,969,add, [FE] NullPointerException,   ,this.domainAxes.clear();
+compilation error,969,add,[CE] cannot find symbol i,   ,super.setDomainAxes(this.domainAxes.get(i));
+compilation error,969,add,[CE] cannot find symbol,   ,super.setDomainAxes(this.domainAxes.size());
+compilation error,4434,add,[CE] illegal start of expression,   ,if(!isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(!isDomainAxis ||!includeAnnotations.contains(domainIndex)) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(isDomainAxis) {
+patch is same with buggy,625,replace,, this.axisOffset  =  new  RectangleInsets(8.0,  8.0,  8.0,  4.0);    ,this.axisOffset = new RectangleInsets(8.0, 8.0, 8.0, 4.0);
+compilation error,4327,add,[CE] ')' expected,   ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(new Integer(i)); }
+compilation error,4327,add,[CE] ')' expected,   ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(i); }
+compilation error,4327,add,[CE] ')' expected,   ,for(int i = 0; i < this.datasetToDomainAxesMap.size(); i++) { if(axisIndex.equals(ZERO)) { result.add(this.datasetToDomainAxesMap.get(new Integer(i));
+patch is same with buggy,1536,replace,, if(indices  ==  null  ||  indices.size()  ==  0)  {    ,if(indices == null || indices.size() == 0) {
+compilation error,1536,replace,[CE] cannot find symbol indexes, if(indices  ==  null  ||  indices.size()  ==  0)  {    ,if(indexes == null || indices.size() == 0) {
+compilation error,1543,replace,[CE] variable count is already defined in method checkAxisIndices(List), HashSet  set  =  new  HashSet(1);    ,int count = indices.size();
+compilation error,1543,replace,[CE] variable count is already defined in method checkAxisIndices(List), HashSet  set  =  new  HashSet(1);    ,int count = indexes.size();
+compilation error,970,add,[CE] cannot find symbol axis,   ,axis =(ValueAxis)this.domainAxes.get(0);
+compilation error,970,add,[CE] cannot find symbol axis,   ,axis = this.domainAxes.get(0);
+compilation error,970,add,[CE] cannot find symbol axis,   ,axis =(ValueAxis)this.domainAxes.clone();
+compilation error,4434,add,[CE] illegal start of expression,   ,if(domainIndex == 0) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(domainIndex!= 0) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(domainIndex == getDomainCount()) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(!isDomainAxis) {
+compilation error,4434,add,[CE] illegal start of expression,   ,if(isDomainAxis || mappedDatasets.contains(getDatasetsMappedToDomainAxis())) {
+compilation error,566,replace,[CE] cannot assign a value to final variable seriesRenderingOrder, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,static final SeriesRenderingOrder seriesRenderingOrder = SeriesRenderingOrder.REVERSE;
+compilation error,566,replace,[CE] cannot assign a value to final variable seriesRenderingOrder, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,final static SeriesRenderingOrder seriesRenderingOrder = SeriesRenderingOrder.REVERSE;
+compilation error,566,replace,[CE] incompatible types, static  SeriesRenderingOrder  seriesRenderingOrder  =  SeriesRenderingOrder.REVERSE;    ,static SeriesRenderingOrder seriesRenderingOrder = SeriesRenderingOrder.REVERSE? SeriesRenderingOrder.FALSE : SeriesRenderingOrder.REVERSE;
+compilation error,332,add,[CE] illegal start of type,   ,return Stroke.newStroke(0, DEFAULT_CROSSHAIR_STROKE);
+compilation error,332,add,[CE] illegal start of type,   ,return Stroke.newStroke("");
+compilation error,332,add,[CE] illegal start of type,   ,return new Stroke("");
+compilation error,4427,replace,[CE] constructor Range in class Range cannot be applied to given types;, Range  result  =  new  Range(0,  1);    ,Range result = new Range(axis, 0);
+compilation error,4427,replace,[CE] constructor Range in class Range cannot be applied to given types;, Range  result  =  new  Range(0,  1);    ,Range result = new Range(axis, 1);
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size() - 1;
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size() - 2;
+compilation error,4384,add,[CE] variable result is already defined in method getDomainAxisIndex(ValueAxis),   ,int result = this.domainAxes.size();
+patch is same with buggy,388,replace,, public  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  0.0);    ,public transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0);
+compilation error,388,replace,[CE] no suitable constructor found for Double(double,double,double), public  transient  Point2D  quadrantOrigin  =  new  Point2D.Double(0.0,  0.0);    ,public transient Point2D quadrantOrigin = new Point2D.Double(0.0, 0.0, 0.0);

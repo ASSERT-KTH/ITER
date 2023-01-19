@@ -1,0 +1,80 @@
+patch is same with buggy,,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType h = contentConstraint.getHeightConstraintType();
+compilation error,[CE] cannot find symbol contentsConstraint,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType h = contentsConstraint.getHeightConstraintType();
+compilation error,[CE] cannot find symbol,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType h = contentConstraint.getheightConstraintType();
+compilation error,[CE] variable w is already defined in method arrange(BlockContainer,Graphics2D,RectangleConstraint),LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType w = contentConstraint.getHeightConstraintType();
+compilation error,[CE] cannot find symbol,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LesngthConstraintType h = contentConstraint.getHeightConstraintType();
+compilation error,[CE] cannot find symbol,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,lengthConstraintType h = contentConstraint.getHeightConstraintType();
+compilation error,[CE] cannot find symbol,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType h = contentConstraint.getHEightConstraintType();
+compilation error,[CE] cannot find symbol,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType h = contentConstraint.getWeightConstraintType();
+compilation error,[CE] cannot find symbol,LengthConstraintType h = contentConstraint.getHeightConstraintType(); ,LengthConstraintType h = contentConstraint.getHightConstraintType();
+patch is same with buggy,,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D size = this.leftBlock.arrange(g2, c3);
+patch is same with buggy,,Size2D size = this.leftBlock.arrange(g2, c3); ,Size 2D size = this.leftBlock.arrange(g2, c3);
+compilation error,[CE] package the does not exist,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D size = the.leftBlock.arrange(g2, c3);
+compilation error,[CE] cannot find symbol,Size2D size = this.leftBlock.arrange(g2, c3); ,size2D size = this.leftBlock.arrange(g2, c3);
+patch is same with buggy,,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D size =this.leftBlock.arrange(g2, c3);
+compilation error,[CE] package a does not exist,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D size = a.leftBlock.arrange(g2, c3);
+compilation error,[CE] cannot find symbol,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D size = this.leftBlock.arrarange(g2, c3);
+compilation error,[CE] cannot find symbol size,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D sizes = this.leftBlock.arrange(g2, c3);
+compilation error,[CE] cannot find symbol size,Size2D size = this.leftBlock.arrange(g2, c3); ,Size2D dimension = this.leftBlock.arrange(g2, c3);
+compilation error,[CE] cannot find symbol,Size2D size = this.leftBlock.arrange(g2, c3); ,Größe2D size = this.leftBlock.arrange(g2, c3);
+patch is same with buggy,,h[2] = constraint.getHeight() - h[1] - h[0]; ,h[2] = constraint.getHeight() - h[1] - h[0];
+compilation error,[CE] cannot find symbol,h[2] = constraint.getHeight() - h[1] - h[0]; ,h[2] = constraint.getHEight() - h[1] - h[0];
+compilation error,[CE] cannot find symbol,h[2] = constraint.getHeight() - h[1] - h[0]; ,h[2] = constraint.getheight() - h[1] - h[0];
+compilation error,[CE] cannot find symbol he,h[2] = constraint.getHeight() - h[1] - h[0]; ,he[2] = constraint.getHeight() - h[1] - h[0];
+compilation error,[CE] cannot find symbol constraints,h[2] = constraint.getHeight() - h[1] - h[0]; ,h[2] = constraints.getHeight() - h[1] - h[0];
+patch is same with buggy,,RectangleConstraint c4 = new RectangleConstraint(width - w[2]  - w[3], null, LengthConstraintType.FIXED, 0.0, null,   LengthConstraintType.NONE); ,RectangleConstraint c4 = new RectangleConstraint(width - w[2] - w[3], null, LengthConstraintType.FIXED, 0.0, null, LengthConstraintType.NONE);
+compilation error,[CE] ')' expected,RectangleConstraint c4 = new RectangleConstraint(width - w[2]  - w[3], null, LengthConstraintType.FIXED, 0.0, null,   LengthConstraintType.NONE); ,RectangleConstraint c4 = new RectangleConstraint(width - w[2] - w[3], null, LengthConstraintType.FIXED, 0.0, null, LengthConstraintType.NONE
+compilation error,[CE] cannot find symbol Null,RectangleConstraint c4 = new RectangleConstraint(width - w[2]  - w[3], null, LengthConstraintType.FIXED, 0.0, null,   LengthConstraintType.NONE); ,RectangleConstraint c4 = new RectangleConstraint(width - w[2] - w[3], Null, LengthConstraintType.FIXED, 0.0, null, LengthConstraintType.NONE);
+compilation error,[CE] cannot find symbol length,RectangleConstraint c4 = new RectangleConstraint(width - w[2]  - w[3], null, LengthConstraintType.FIXED, 0.0, null,   LengthConstraintType.NONE); ,RectangleConstraint c4 = new RectangleConstraint(width - w[2] - w[3], null, LengthConstraintType.FIXED, 0.0, length, LengthConstraintType.NONE);
+compilation error,[CE] cannot find symbol x,RectangleConstraint c4 = new RectangleConstraint(width - w[2]  - w[3], null, LengthConstraintType.FIXED, 0.0, null,   LengthConstraintType.NONE); ,RectangleConstraint c4 = new RectangleConstraint(width - x[2] - x[3], null, LengthConstraintType.FIXED, 0.0, null, LengthConstraintType.NONE);
+compilation error,[CE] cannot find symbol LesngthConstraintType,RectangleConstraint c4 = new RectangleConstraint(width - w[2]  - w[3], null, LengthConstraintType.FIXED, 0.0, null,   LengthConstraintType.NONE); ,RectangleConstraint c4 = new RectangleConstraint(width - w[2] - w[3], null, LengthConstraintType.FIXED, 0.0, null, LesngthConstraintType.NONE);
+patch is same with buggy,,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight()));
+compilation error,[CE] ';' expected,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWidth())), container.calculateTotalHeight(contentSize.getHeight()));
+compilation error,[CE] ';' expected,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container).calculateTotalHeight(contentSize.getHeight()));
+compilation error,[CE] cannot find symbol,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight()));
+compilation error,[CE] no suitable constructor found for Size2D(BlockContainer,double,double),return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container, container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight()));
+compilation error,[CE] cannot find symbol,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalheight(contentSize.getHeight()));
+compilation error,[CE] cannot find symbol,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHEight(contentSize.getHeight()));
+compilation error,[CE] cannot find symbol,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(contentSize.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight()));
+compilation error,[CE] cannot find symbol,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getheight()));
+compilation error,[CE] cannot find symbol,return new Size2D(container.calculateTotalWidth(contentSize.getWidth()), container.calculateTotalHeight(contentSize.getHeight())); ,return new Size2D(container.calculateTotalWidth(contentSize.getWeight()), container.calculateTotalHeight(contentSize.getHeight()));
+patch is same with buggy,,w[4] = size.width; ,w[4] = size.width;
+compilation error,[CE] ')' expected,w[4] = size.width; ,if(w[4] = size.width;
+compilation error,[CE] array required, but double found,w[4] = size.width; ,width[4] = size.width;
+patch is same with buggy,,w[4] = size.width; ,w[ 4] = size.width;
+compilation error,[CE] cannot find symbol wid,w[4] = size.width; ,wid[4] = size.width;
+compilation error,[CE] ')' expected,,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeNN(container, g2); } else if(h == LengthConstraintType.RANGE
+compilation error,[CE] ')' expected,,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeFN(container, g2); } else if(h == LengthConstraintType.RANGE
+compilation error,[CE] 'else' without 'if',,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeNN(container, g2); } else if(h == LengthConstraintType.RANGE)
+compilation error,[CE] ')' expected,,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeFN(container, g2, constraint); } else if(h == LengthConstraintType.RANGE
+compilation error,[CE] 'else' without 'if',,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeFN(container, g2); } else if(h == LengthConstraintType.RANGE)
+compilation error,[CE] ')' expected,,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeFF(container, g2); } else if(h == LengthConstraintType.RANGE
+compilation error,[CE] ')' expected,,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeNN(container, g2, constraint); } else if(h == LengthConstraintType.RANGE
+compilation error,[CE] 'else' without 'if',,else if(w == LengthConstraintType.NONE) { if(h == LengthConstraintType.NONE) { contentSize = arrangeNN(container, g2); } else if(h == LengthConstraintType.RANGE)
+compilation error,[CE] ')' expected,,else if(w == LengthConstraintType.FIXED) { if(h == LengthConstraintType.NONE) { contentSize = arrangeFN(container, g2, constraint); } else if(w == LengthConstraintType.RANGE
+compilation error,[CE] 'else' without 'if',,if(w == LengthConstraintType.NONE) { if(h == LengthConstraintType.NONE) { contentSize = arrangeFN(container, g2, constraint); } else if(w == LengthConstraintType.RANGE)
+compilation error,[CE] illegal start of expression,,if(constraint.getHeight() == LengthConstraintType.FIXED) { w[0] = constraint.getWidth(); if(this.bottomBlock!= null) { w[1] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getWidth() > LengthConstraintType.FIXED) { w[0] = constraint.getWidth(); if(this.bottomBlock!= null) { w[1] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(this.bottomBlock!= null) { w[0] = constraint.getWidth(); if(this.topBlock!= null) { LengthConstraintType.RANGE = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getHeight() == LengthConstraintType.RANGE) { w[0] = constraint.getWidth(); if(this.bottomBlock!= null) { w[1] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getHeight() == LengthConstraintType.FIXED) { w[0] = constraint.getWidth(); if(this.topBlock!= null) { w[1] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getWidth() > LengthConstraintType.FIXED) { w[0] = constraint.getWidth(); if(this.topBlock!= null) { w[1] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getHeight() == LengthConstraintType.FIXED) { w[0] = constraint.getWidth(); if(this.bottomBlock!= null) { w[0] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getWidth() > 1) { w[0] = constraint.getHeight(); if(this.bottomBlock!= null) { w[1] = constraint.getHeight(); }
+compilation error,[CE] illegal start of expression,,if(constraint.getWidth() > LengthConstraintType.FIXED) { w[0] = constraint.getHeight(); if(this.bottomBlock!= null) { w[1] = constraint.getHeight(); }
+patch is same with buggy,,double[] h = new double[5]; ,double[] h = new double[5];
+patch is same with buggy,,double[] h = new double[5]; ,double[] h = new double [5];
+patch is same with buggy,,double[] h = new double[5]; ,double[] h = new double[ 5];
+compilation error,[CE] unclosed string literal,double[] h = new double[5]; ,double[] h = new double[5";
+compilation error,[CE] cannot find symbol h,double[] h = new double[5]; ,double[] height = new double[5];
+patch is same with buggy,,this.rightBlock = block; ,this.rightBlock = block;
+compilation error,[CE] cannot find symbol BLOCK,this.rightBlock = block; ,if(edge == RectangleEdge.BLOCK) { this.rightBlock = block; } else if(edge == RectangleEdge.RIGHT) { this.rightBlock = block; }
+increase failing tests, [FE] AssertionFailedError,this.rightBlock = block; ,if(edge == RectangleEdge.BOTTOM) { this.rightBlock = block; } else if(edge == RectangleEdge.LEFT) { this.rightBlock = block; }
+compilation error,[CE] not a statement,this.rightBlock = block; ,if(edge == RectangleEdge.RIGHT) { this.rightBlock = block; } else { RectangleEdge.LEFT) { this.rightBlock = block; }
+patch is same with buggy,,this.rightBlock = null; ,this.rightBlock = null;
+compilation error,[CE] cannot find symbol nextBlock,this.rightBlock = null; ,if(this.rightBlock!= null) { this.rightBlock = null; } else { this.rightBlock = null; nextBlock = new Block(topBlock, leftBlock); this.rightBlock = null; }
+compilation error,[CE] continue outside of loop,this.rightBlock = null; ,if(this.rightBlock!= null) { this.rightBlock = null; } else { this.rightBlock = null; continue; }
+increase failing tests, [FE] StackOverflowError,this.rightBlock = null; ,if(this.rightBlock!= null) { this.rightBlock = null; } else { this.rightBlock = null; clear(); }
+compilation error,[CE] cannot find symbol,this.rightBlock = null; ,if(this.rightBlock!= null) { this.rightBlock = null; } else { this.rightBlock = null; super.clear(); clear(); }
+compilation error,[CE] cannot find symbol block,this.rightBlock = null; ,if(this.rightBlock!= null) { this.rightBlock = null; } else { this.rightBlock = null; block = new Block(topBlock, leftBlock); block.setPaint(this.rightBlock); clear(); }
+compilation error,[CE] generics are not supported in -source 1.4,this.rightBlock = null; ,if(this.rightBlock!= null) { this.rightBlock = null; } else { this.rightBlock = null; <

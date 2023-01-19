@@ -1,0 +1,101 @@
+compilation error,[CE] illegal start of expression,} ,if(trigger.endsWith(prefix)) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,} ,if(trigger.endsWith(prefix)) { return true; }
+compilation error,[CE] illegal start of expression,} ,for(final Iterator i = prefixes.iterator(); i.hasNext();) { Preconditions.checkArgument(trigger.startsWith(prefix)); }
+compilation error,[CE] illegal start of expression,} ,for(final Iterator i = prefixes.iterator(); i.hasNext();) { if(trigger.startsWith(prefix)) { return true; }
+compilation error,[CE] illegal start of expression,} ,if(trigger.startsWith(prefix)) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,} ,for(final Iterator i = prefixes.iterator(); i.hasNext();) { Preconditions.checkState(trigger.startsWith(prefix)); }
+compilation error,[CE] illegal start of expression,} ,for(final Iterator i = prefixes.iterator(); i.hasNext();) { if(trigger.endsWith(prefix)) { return true; }
+compilation error,[CE] illegal start of expression,} ,if(trigger.startsWith(prefix)) { return true; }
+compilation error,[CE] illegal start of expression,} ,for(final Iterator i = prefixes.iterator(); i.hasNext();) { Preconditions.checkArgument(trigger.endsWith(prefix)); }
+compilation error,[CE] illegal start of expression,} ,if(trigger.endsWith(prefix)) { for(final Iterator i = prefixes.iterator(); i.hasNext();) { return true; }
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = rootOption.getDefaultValues();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.get(rootOption);
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = options.getDefaultValues();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.values();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.size();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.get(rootOption.getDefaultValues());
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.getDefaultValues();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.get(defaultValues);
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.get(defaultValues.size() - 1);
+compilation error,[CE] cannot assign a value to final variable defaultSwitches,,this.defaultSwitches = defaultValues.get(rootOption);
+compilation error,[CE] variable defaultValues is already defined in method getValues(Option,List),,final Map < String, Object> defaultValues = options.get(defaultValues);
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.size() > 0) { return defaultValues; }
+compilation error,[CE] variable defaultValues is already defined in method getValues(Option,List),,final Set < String> defaultValues = options.get(defaultValues);
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.size() == 0) { return defaultValues; }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.isEmpty()) { return defaultValues; }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.size() > 0) { this.defaultValues = defaultValues.get(option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.size() > 0) { this.defaultValues = defaultValues; }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.size() > 0) { defaultValues = defaultValues.get(option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { if(defaultValues.size() > 0) { defaultValues = defaultValues; }
+compilation error,[CE] variable defaultValues is already defined in method getValues(Option,List),,final Set < String> defaultValues = new ArrayList < String>(defaultValues.size());
+compilation error,[CE] cannot find symbol prefix,,for(final Iterator i = prefixes.iterator(); i.hasNext();) { Preconditions.checkArgument(trigger.startsWith(prefix)); }
+compilation error,[CE] illegal start of expression,,for(final Iterator i = prefixes.iterator(); i.hasNext();) { if(trigger.startsWith(prefix)) { return true; }
+compilation error,[CE] cannot find symbol prefix,,Preconditions.checkArgument(trigger.startsWith(prefix));
+compilation error,[CE] cannot find symbol prefix,,for(final Iterator i = prefixes.iterator(); i.hasNext();) { Preconditions.checkState(trigger.startsWith(prefix)); }
+compilation error,[CE] cannot find symbol prefix,,if(trigger.endsWith(prefix)) { throw new IllegalArgumentException(""); }
+compilation error,[CE] cannot find symbol prefix,,if(trigger.startsWith(prefix)) { throw new IllegalArgumentException(""); }
+compilation error,[CE] illegal start of expression,,if(trigger.endsWith(prefix)) { for(final Iterator i = prefixes.iterator(); i.hasNext();) { return true; }
+compilation error,[CE] illegal start of expression,,if(trigger.endsWith(prefix)) { for(final Iterator i = prefixes.iterator(); i.hasNext();) { throw new IllegalArgumentException(""); }
+compilation error,[CE] cannot find symbol prefix,,for(final Iterator i = prefixes.iterator(); i.hasNext();) { Preconditions.checkArgument(trigger.endsWith(prefix)); }
+compilation error,[CE] illegal start of expression,,if(trigger.startsWith(prefix)) { for(final Iterator i = prefixes.iterator(); i.hasNext();) { throw new IllegalArgumentException(""); }
+compilation error,[CE] <identifier> expected,,final WriteableCommandLineImpl(rootOption, arguments);
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = rootOption.getDefaultValues();
+compilation error,[CE] <identifier> expected,,final WriteableCommandLineImpl(rootOption, arguments); this.defaultValues = rootOption.getDefaultValues();
+compilation error,[CE] <identifier> expected,,final WriteableCommandLineImpl(rootOption, arguments); this.defaultValues = options.getDefaultValues();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues =(DefaultValues)defaultValues.clone(); this.defaultValues = defaultValues.clone();
+compilation error,[CE] <identifier> expected,,final WriteableCommandLineImpl(rootOption, arguments); this.defaultValues = defaultValues;
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues =(DefaultValues)defaultValues.clone();
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = defaultValues.get(rootOption);
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues =(DefaultValues)defaultValues.get(rootOption);
+compilation error,[CE] cannot assign a value to final variable defaultValues,,this.defaultValues = options.getDefaultValues();
+compilation error,[CE] illegal start of type,,if(optionToProperties == null) { optionToProperties = new HashMap(); }
+compilation error,[CE] illegal start of type,,if(optionToProperties == null) { optionToProperties.putAll(optionToProperties); }
+compilation error,[CE] <identifier> expected,,writeableCommandLineImpl =(WriteableCommandLineImpl)optionToProperties.clone();
+compilation error,[CE] <identifier> expected,,writeableCommandLineImpl =(writeableCommandLineImpl)optionToProperties.clone();
+compilation error,[CE] illegal start of type,,if(optionToProperties == null) { optionToProperties.putAll(optionToProperties); } else { optionToProperties.putAll(optionToProperties); }
+compilation error,[CE] illegal start of type,,return new WriteableCommandLineImpl(optionToProperties.size());
+compilation error,[CE] illegal start of type,,return new WriteableCommandLineImpl(optionToProperties.size(), optionToProperties.size());
+compilation error,[CE] illegal start of type,,if(optionToProperties == null) { optionToProperties.put(optionToProperties.get(), optionToProperties); }
+compilation error,[CE] <identifier> expected,,writeableCommandLineImpl =(WriteableCommandLineImpl)optionToProperties.get(optionToProperties);
+compilation error,[CE] illegal start of type,,if(optionToProperties == null) { optionToProperties = new HashMap(); options.put(optionToProperties, true); }
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)prefixes.get(prefix);
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)prefixes.get(prefix).toLowerCase();
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)prefixes.iterator();
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)prefixes.get(prefix).toLowerCase(); Preconditions.checkArgument(trigger.startsWith(prefix));
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)prefixes.iterator(); Preconditions.checkArgument(trigger.startsWith(prefix));
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)prefixes.iterator(); Preconditions.checkArgument(trigger.startsWith(prefix)|| trigger.startsWith(prefix));
+compilation error,[CE] variable trigger is already defined in method looksLikeOption(String),,final String trigger =(String)prefixes.iterator(); Preconditions.checkArgument(trigger.startsWith(prefix));
+compilation error,[CE] variable trigger is already defined in method looksLikeOption(String),,final String trigger = prefix.toLowerCase(); Preconditions.checkArgument(trigger.startsWith(prefix));
+compilation error,[CE] variable trigger is already defined in method looksLikeOption(String),,final String trigger =(String)prefixes.iterator();
+compilation error,[CE] variable prefix is already defined in method looksLikeOption(String),,final String prefix =(String)i.next(); Preconditions.checkArgument(trigger.startsWith(prefix));
+compilation error,[CE] illegal start of expression,,if(valueList == null) { for(Option option : defaultValues) { valueList.add(option); }
+compilation error,[CE] incompatible types,,if(valueList == null) { valueList = defaultValues.get(option); }
+compilation error,[CE] incompatible types,,if(valueList == null) { valueList = defaultValues.values(); }
+compilation error,[CE] incompatible types,,if(valueList == null) { valueList = defaultValues.get(defaultValues); }
+compilation error,[CE] incompatible types,,if(defaultValues!= null) { valueList = defaultValues.values(); }
+compilation error,[CE] illegal start of expression,,for(Option option : defaultValues) { if(valueList == null) { valueList = defaultValues.get(option); }
+compilation error,[CE] incompatible types,,if(defaultValues!= null) { valueList = defaultValues.get(option); }
+compilation error,[CE] illegal start of expression,,for(Option option : defaultValues) { if(valueList == null) { valueList = options.get(option); }
+compilation error,[CE] illegal start of expression,,for(Option option : defaultValues) { if(valueList == null) { valueList = defaultValues; }
+compilation error,[CE] illegal start of expression,,for(Option option : defaultValues) { if(valueList == null) { valueList = defaultValues.values(); }
+compilation error,[CE] cannot find symbol,,defaultValues.add(defaultValues);
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferenceName(), option); }
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferredName(), option); }
+compilation error,[CE] illegal start of expression,,if(defaultValues!= null) { defaultValues = defaultValues.get(defaultValues); for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { options.add(defaultValues); }
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreferenceName(), defaultValues); }
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getDefaultName(), defaultValues); }
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getName(), option); }
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.getPreviousName(), option); }
+compilation error,[CE] illegal start of expression,,if(option!= null) { for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { options.add(option); }
+compilation error,[CE] ')' expected,,if(defaultValues!= null) { defaultValues = defaultValues.get(defaultValues); for(Iterator i = option.getTriggers().iterator(); i.hasNext();) { nameToOption.put(option.get
+compilation error,[CE] illegal start of type,,return new WriteableCommandLineImpl(switches.size() - 1);
+compilation error,[CE] illegal start of type,,this.commandLineImpl = SerialUtilities.writeCommandLineImpl(this.commandLineImpl);
+compilation error,[CE] illegal start of type,,return new WriteableCommandLineImpl(switches.size());
+compilation error,[CE] <identifier> expected,,writeableCommandLineImpl = new WriteableCommandLineImpl();
+compilation error,[CE] illegal start of type,,this.switches = new HashMap();
+compilation error,[CE] illegal start of type,,return new WriteableCommandLineImpl(switches.size() -1);
+compilation error,[CE] illegal start of type,,this.commandLineImpl = SerialUtilities.writeCommandLineImpl(this.commandLineImpl, 0);
+compilation error,[CE] <identifier> expected,,writeableCommandLineImpl = new WriteableCommandLineImpl(switches.size() - 1);
+compilation error,[CE] <identifier> expected,,writeableCommandLineImpl = new WriteableCommandLineImpl(switches.size());
+compilation error,[CE] illegal start of type,,return new WriteableCommandLineImpl(switches.size(), switches.size());
+compilation error,[CE] cannot find symbol,,defaultValues.add(defaultValues);

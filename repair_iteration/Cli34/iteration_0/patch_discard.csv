@@ -1,0 +1,7 @@
+compilation error,[CE] illegal start of expression,,if(argName!= null) { for(int i = 0; i < argName; ++i) { optionBuilder.reset(); }
+compilation error,[CE] illegal start of expression,,if(argName!= null) { for(int i = 0; i < argName.length(); ++i) { optionBuilder.reset(); }
+compilation error,[CE] illegal start of expression,,if(argName!= null) { for(int i = 0; i < argName; ++i) { description.append('n'); }
+compilation error,[CE] illegal start of expression,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { optionBuilder.reset(); }
+compilation error,[CE] illegal start of expression,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { optionBuilder.setRequired(required); }
+compilation error,[CE] illegal start of expression,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { type = Integer.MIN_VALUE; }
+compilation error,[CE] not a statement,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { required; }

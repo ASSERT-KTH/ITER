@@ -1,0 +1,17 @@
+name,outcome,runtime,stacktrace
+org.apache.commons.cli.ValueTest#testShortOptionalArgValues,PASS,5182970,
+org.apache.commons.cli.ValueTest#testLongOptionalArgValue,PASS,3435448,
+org.apache.commons.cli.ValueTest#testPropertyOverrideValues,PASS,6185460,
+org.apache.commons.cli.ValueTest#testShortOptionalArgNoValue,PASS,6838846,
+org.apache.commons.cli.ValueTest#testLongWithArg,PASS,6647637,
+org.apache.commons.cli.ValueTest#testPropertyOptionSingularValue,PASS,8964666,
+org.apache.commons.cli.ValueTest#testPropertyOptionMultipleValues,PASS,10067869,
+org.apache.commons.cli.ValueTest#testPropertyOptionFlags,FAIL,11440098,junit.framework.AssertionFailedError at junit.framework.Assert.fail(Assert.java:55) at junit.framework.Assert.assertTrue(Assert.java:22) at junit.framework.Assert.assertTrue(Assert.java:31) at junit.framework.TestCase.assertTrue(TestCase.java:201) at org.apache.commons.cli.ValueTest.testPropertyOptionFlags(ValueTest.java:215) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at junit.framework.TestCase.runTest(TestCase.java:176) at junit.framework.TestCase.runBare(TestCase.java:141) at junit.framework.TestResult$1.protect(TestResult.java:122) at junit.framework.TestResult.runProtected(TestResult.java:142) at junit.framework.TestResult.run(TestResult.java:125) at junit.framework.TestCase.run(TestCase.java:129) at junit.framework.TestSuite.runTest(TestSuite.java:252) at junit.framework.TestSuite.run(TestSuite.java:247) at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86) at org.junit.runner.JUnitCore.run(JUnitCore.java:137) at org.junit.runner.JUnitCore.run(JUnitCore.java:115) at com.gzoltar.internal.core.test.junit.JUnitTestTask.call(JUnitTestTask.java:67) at com.gzoltar.internal.core.test.junit.JUnitTestTask.call(JUnitTestTask.java:27) at java.util.concurrent.FutureTask.run(FutureTask.java:266) at java.lang.Thread.run(Thread.java:750)
+org.apache.commons.cli.ValueTest#testLongOptionalNArgValues,PASS,8955483,
+org.apache.commons.cli.ValueTest#testShortWithArg,PASS,5897145,
+org.apache.commons.cli.ValueTest#testLongOptionalArgValues,PASS,7121196,
+org.apache.commons.cli.ValueTest#testShortOptionalNArgValues,PASS,9131528,
+org.apache.commons.cli.ValueTest#testLongNoArg,PASS,6668476,
+org.apache.commons.cli.ValueTest#testShortNoArg,PASS,8101390,
+org.apache.commons.cli.ValueTest#testLongOptionalNoValue,PASS,8068682,
+org.apache.commons.cli.ValueTest#testShortOptionalArgValue,PASS,8765895,

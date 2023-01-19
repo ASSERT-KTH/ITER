@@ -1,0 +1,15 @@
+compilation error,253,add,[CE] illegal start of expression,   ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); >>
+compilation error,250,add,[CE] incompatible types,   ,this.baseItemLabelGenerator = new ObjectList();
+compilation error,250,add,[CE] cannot find symbol itemListGeneratorList,   ,this.itemListGeneratorList = new ObjectList();
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  }    ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); }
+patch is same with buggy,250,replace,, this.itemLabelGeneratorList  =  new  ObjectList();    ,this.itemLabelGeneratorList = new ObjectList();
+compilation error,250,replace,[CE] illegal start of expression, this.itemLabelGeneratorList  =  new  ObjectList();    ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); } else { this.itemLabelGeneratorList = new ObjectList(); itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator =
+compilation error,1795,replace,[CE] cannot find symbol, CategoryPlot  cp  =  getPlot();    ,CategoryPlot cp = plot.getPlot();
+patch is same with buggy,1795,replace,, CategoryPlot  cp  =  getPlot();    ,CategoryPlot cp = getPlot();
+compilation error,1795,replace,[CE] cannot find symbol, CategoryPlot  cp  =  getPlot();    ,CategoryPlot cp = this.plot.getPlot();
+compilation error,1792,add,[CE] illegal start of expression,   ,if(result!= null) {
+compilation error,1792,add,[CE] illegal start of expression,   ,if(result == null) {
+compilation error,1792,add,[CE] illegal start of expression,   ,if(this.plot!= null) {
+patch is same with buggy,1792,replace,, if(result!=  null)  {    ,if(result!= null) {
+compilation error,1795,add,[CE] cannot find symbol,   ,CategoryPlot cp = this.plot.getPlot();
+compilation error,1795,add,[CE] cannot find symbol,   ,CategoryPlot cp = plot.getPlot();

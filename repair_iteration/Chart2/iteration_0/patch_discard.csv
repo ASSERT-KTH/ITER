@@ -1,0 +1,291 @@
+patch is same with buggy,779,replace,,if (minimum > maximum) { ,if(minimum > maximum) {
+increase failing tests,779,replace, [FE] NullPointerException,if (minimum > maximum) { ,if(minimum > maximum || maximum > minimum) {
+patch is same with buggy,752,replace,,for (int series = 0; series < seriesCount; series++) { ,for(int series = 0; series < seriesCount; series++) {
+patch is same with buggy,752,replace,,for (int series = 0; series < seriesCount; series++) { ,for (int series = 0; series < seriesCount; series++) {
+compilation error,752,replace,[CE] cannot find symbol SeriesCount,for (int series = 0; series < seriesCount; series++) { ,for(int series = 0; series < SeriesCount; series++) {
+compilation error,1283,add,[CE] cannot find symbol Minimum,,Minimum = Math.min(minimum, maximum);
+increase failing tests,1283,add, [FE] NullPointerException,,minimum = Math.min(minimum, maximum);
+compilation error,1283,add,[CE] cannot find symbol Minimum,,Minimum = Math.min(minimum, Maximum.POSITIVE_INFINITY);
+patch is same with buggy,747,replace,,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount();
+increase failing tests,747,replace, [FE] NullPointerException,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount() - 1;
+compilation error,753,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,753,add,[CE] ';' expected,,Range XYDataset dataset = Sets.newHashSet();
+compilation error,753,add,[CE] ';' expected,,Range XYDataset dataset =(Range)getDataset(series);
+compilation error,1243,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = ixyd.getStartYValue(series, item);
+compilation error,1243,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,Double lvalue = ixyd.getStartYValue(series, item);
+compilation error,1243,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = ixyd.getStartXValue(series, item);
+patch is same with buggy,746,replace,,double maximum = Double.NEGATIVE_INFINITY; ,double maximum = Double.NEGATIVE_INFINITY;
+increase failing tests,746,replace, [FE] AssertionFailedError,double maximum = Double.NEGATIVE_INFINITY; ,double maximum = Double.POSITIVE_INFINITY;
+compilation error,1233,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,1233,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,1233,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = getDataset(dataset);
+patch is same with buggy,756,replace,,uvalue = intervalXYData.getEndXValue(series, item); ,uvalue = intervalXYData.getEndXValue(series, item);
+compilation error,756,replace,[CE] non-static variable this cannot be referenced from a static context,uvalue = intervalXYData.getEndXValue(series, item); ,uvalue = this.intervalXYData.getEndXValue(series, item);
+increase failing tests,756,replace, [FE] AssertionFailedError,uvalue = intervalXYData.getEndXValue(series, item); ,uvalue = intervalXYData.getEndXValue(series, item)+ 1;
+compilation error,742,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = dataset.getDataset(series);
+compilation error,742,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = getDataset(dataset);
+compilation error,742,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = dataset.getRange();
+compilation error,1241,add,[CE] variable ixyd is already defined in method iterateRangeBounds(XYDataset,boolean),,Range ixyd = getRange();
+compilation error,1241,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,XYDataset dataset = getDataset(series);
+compilation error,1241,add,[CE] variable ixyd is already defined in method iterateRangeBounds(XYDataset,boolean),,Range ixyd = getRange(series, item);
+increase failing tests,750,replace, [FE] NullPointerException,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(includeInterval || dataset instanceof IntervalXYDataset) {
+patch is same with buggy,750,replace,,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(includeInterval && dataset instanceof IntervalXYDataset) {
+increase failing tests,750,replace, [FE] AssertionFailedError,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(!includeInterval && dataset instanceof IntervalXYDataset) {
+patch is same with buggy,1233,replace,,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount();
+compilation error,1233,replace,[CE] cannot find symbol series,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount(series);
+compilation error,1233,replace,[CE] cannot find symbol,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getRowCount();
+patch is same with buggy,1242,replace,,double lvalue = ixyd.getStartYValue(series, item); ,double lvalue = ixyd.getStartYValue(series, item);
+increase failing tests,1242,replace, [FE] NullPointerException,double lvalue = ixyd.getStartYValue(series, item); ,double lvalue = ixyd.getStartXValue(series, item);
+increase failing tests,1242,replace, [FE] AssertionFailedError,double lvalue = ixyd.getStartYValue(series, item); ,double lvalue = ixyd.getEndYValue(series, item);
+compilation error,751,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,751,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,751,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = Sets.newHashSet();
+compilation error,754,add,[CE] illegal start of expression,,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); if(!Double.isNaN(uvalue)) { maximum = Math.max(maximum, uvalue); }
+compilation error,754,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,754,add,[CE] illegal start of expression,,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); if(!Double.isNaN(uvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,779,add,[CE] illegal start of expression,,if(minimum > maximum) { if(includeInterval) { return new Range(minimum, maximum); }
+compilation error,779,add,[CE] illegal start of expression,,if(minimum > maximum) { if(!includeInterval) { return new Range(minimum, maximum); }
+compilation error,779,add,[CE] illegal start of expression,,if(minimum > maximum) { if(includeInterval) { return null; }
+patch is same with buggy,1238,replace,,IntervalXYDataset ixyd = (IntervalXYDataset) dataset; ,IntervalXYDataset ixyd =(IntervalXYDataset)dataset;
+compilation error,1238,replace,[CE] non-static variable this cannot be referenced from a static context,IntervalXYDataset ixyd = (IntervalXYDataset) dataset; ,IntervalXYDataset ixyd =(IntervalXYDataset)this.dataset;
+patch is same with buggy,1238,replace,,IntervalXYDataset ixyd = (IntervalXYDataset) dataset; ,IntervalXYDataset ixyd = (IntervalXYDataset)dataset;
+compilation error,746,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,746,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = getDataset(dataset);
+compilation error,746,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDatasetRange(dataset);
+patch is same with buggy,754,replace,,for (int item = 0; item < itemCount; item++) { ,for(int item = 0; item < itemCount; item++) {
+patch is same with buggy,754,replace,,for (int item = 0; item < itemCount; item++) { ,for (int item = 0; item < itemCount; item++) {
+increase failing tests,754,replace, [FE] AssertionFailedError,for (int item = 0; item < itemCount; item++) { ,for(int item = 1; item < itemCount; item++) {
+compilation error,752,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,752,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,752,add,[CE] ';' expected,,Range XYDataset dataset =(Range)getDataset(dataset);
+compilation error,1239,add,[CE] ';' expected,,Range XYDataset ixyd = getDataset(dataset);
+compilation error,1239,add,[CE] variable ixyd is already defined in method iterateRangeBounds(XYDataset,boolean),,Range ixyd = getYDataset(dataset);
+compilation error,1239,add,[CE] ';' expected,,Range XYDataset ixyd = dataset.getDataset(series);
+patch is same with buggy,755,replace,,lvalue = intervalXYData.getStartXValue(series, item); ,lvalue = intervalXYData.getStartXValue(series, item);
+compilation error,755,replace,[CE] cannot find symbol,lvalue = intervalXYData.getStartXValue(series, item); ,lvalue = intervalXYData.getstartXValue(series, item);
+compilation error,755,replace,[CE] ';' expected,lvalue = intervalXYData.getStartXValue(series, item); ,lvalue = intervalXYData.getStartXValue(series, item));
+compilation error,1231,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,1231,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,1231,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,1238,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,1238,add,[CE] ';' expected,,Range XYDataset dataset = Sets.newHashSet();
+compilation error,1238,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,1232,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,1232,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDatasetRange(dataset);
+compilation error,1232,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDatasetEntry(dataset);
+patch is same with buggy,757,replace,,if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(lvalue)) {
+compilation error,757,replace,[CE] no suitable method found for isNaN(double,double),if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(minimum, lvalue)) {
+patch is same with buggy,1241,replace,,for (int item = 0; item < itemCount; item++) { ,for(int item = 0; item < itemCount; item++) {
+patch is same with buggy,1241,replace,,for (int item = 0; item < itemCount; item++) { ,for (int item = 0; item < itemCount; item++) {
+increase failing tests,1241,replace, [FE] NullPointerException,for (int item = 0; item < itemCount; item++) { ,for(int item = 1; item < itemCount; item++) {
+patch is same with buggy,1232,replace,,double maximum = Double.NEGATIVE_INFINITY; ,double maximum = Double.NEGATIVE_INFINITY;
+increase failing tests,1232,replace, [FE] AssertionFailedError,double maximum = Double.NEGATIVE_INFINITY; ,double maximum = Double.POSITIVE_INFINITY;
+patch is same with buggy,1283,replace,,if (minimum == Double.POSITIVE_INFINITY) { ,if(minimum == Double.POSITIVE_INFINITY) {
+increase failing tests,1283,replace, [FE]  double),if (minimum == Double.POSITIVE_INFINITY) { ,if(maximum == Double.POSITIVE_INFINITY) {
+increase failing tests,1283,replace, [FE]  double),if (minimum == Double.POSITIVE_INFINITY) { ,if(minimum!= Double.POSITIVE_INFINITY) {
+compilation error,765,replace,[CE] illegal start of expression,} ,if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); maximum = Math.max(maximum, uvalue); }
+compilation error,765,replace,[CE] 'else' without 'if',} ,minimum = Math.min(minimum, lvalue); maximum = Math.max(maximum, uvalue);
+compilation error,765,replace,[CE] illegal start of expression,} ,if(!Double.isNaN(lvalue)) { if(!Double.isNaN(maximum)) { minimum = Math.min(minimum, lvalue); maximum = Math.max(maximum, uvalue); }
+increase failing tests,760,replace, [FE] AssertionFailedError,if (!Double.isNaN(uvalue)) { ,if(!Double.isNaN(uvalue)|| Double.isNaN(uvalue)) {
+compilation error,1240,add,[CE] ';' expected,,Range XYDataset ixyd = getDataset(dataset);
+compilation error,1240,add,[CE] ';' expected,,Range XYDataset ixyd = getDataset(series);
+compilation error,1240,add,[CE] ';' expected,,Range XYDataset ixyd = DatasetUtilities.getDataset(dataset);
+compilation error,1284,replace,[CE] non-static variable this cannot be referenced from a static context,return null; ,return this;
+increase failing tests,1284,replace, [FE] NullPointerException,return null; ,return new Range(minimum, maximum);
+compilation error,1284,replace,[CE] cannot find symbol maximal,return null; ,return new Range(minimum, maximal);
+compilation error,750,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,750,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,750,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,1242,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = ixyd.getStartYValue(series, item);
+compilation error,1242,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = ixyd.getStartXValue(series, item);
+compilation error,1242,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,XYDataset dataset = getDataset(series);
+compilation error,755,add,[CE] 'else' without 'if',,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); if(!Double.isNaN(uvalue)) { maximum = Math.max(maximum, uvalue); }
+compilation error,755,add,[CE] 'else' without 'if',,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,755,add,[CE] 'else' without 'if',,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); if(!Double.isNaN(uvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,760,add,[CE] variable uvalue is already defined in method iterateDomainBounds(XYDataset,boolean),,Number uvalue = dataset.getValue(series, item);
+compilation error,760,add,[CE] variable uvalue is already defined in method iterateDomainBounds(XYDataset,boolean),,double uvalue = dataset.getXValue(series, 0);
+compilation error,760,add,[CE] variable uvalue is already defined in method iterateDomainBounds(XYDataset,boolean),,Object uvalue = dataset.getValue(series, item);
+patch is same with buggy,1239,replace,,for (int series = 0; series < seriesCount; series++) { ,for(int series = 0; series < seriesCount; series++) {
+patch is same with buggy,1239,replace,,for (int series = 0; series < seriesCount; series++) { ,for (int series = 0; series < seriesCount; series++) {
+compilation error,1239,replace,[CE] cannot find symbol SeriesCount,for (int series = 0; series < seriesCount; series++) { ,for(int series = 0; series < SeriesCount; series++) {
+compilation error,747,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = getDataset(dataset);
+compilation error,747,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,747,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+patch is same with buggy,1231,replace,,double minimum = Double.POSITIVE_INFINITY; ,double minimum = Double.POSITIVE_INFINITY;
+patch is same with buggy,742,replace,,if (dataset == null) { ,if(dataset == null) {
+compilation error,742,replace,[CE] cannot find symbol Feature,if (dataset == null) { ,if(dataset == null || isEnabled(Feature.QUOTE_FIELD_NAMES)) {
+compilation error,742,replace,[CE] illegal start of expression,if (dataset == null) { ,if(dataset == null || isEnabled(Feature.QUOTE_FIELD_NAMES))) {
+compilation error,1213,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,1213,add,[CE] ';' expected,,Range XYDataset dataset = getDataset();
+compilation error,1213,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(getRange());
+compilation error,757,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = getSeriesCount();
+compilation error,757,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getSeriesCount();
+compilation error,757,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = Math.min(series, 0);
+compilation error,745,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,745,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = getDataset(dataset);
+compilation error,745,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset =(Range)dataset.getRange();
+patch is same with buggy,745,replace,,double minimum = Double.POSITIVE_INFINITY; ,double minimum = Double.POSITIVE_INFINITY;
+compilation error,726,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+compilation error,726,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset),,XYDataset dataset = getDataset(dataset);
+compilation error,726,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset); iterateDomainBounds(dataset, false);
+compilation error,780,replace,[CE] non-static variable this cannot be referenced from a static context,return null; ,return this;
+compilation error,780,replace,[CE] cannot find symbol maximal,return null; ,return new Range(minimum, maximal);
+compilation error,726,replace,[CE] non-static variable this cannot be referenced from a static context,return iterateDomainBounds(dataset, true); ,return iterateDomainBounds(this.dataset, true);
+patch is same with buggy,726,replace,,return iterateDomainBounds(dataset, true); ,return iterateDomainBounds(dataset, true);
+compilation error,1284,add,[CE] illegal start of expression,,if(includeInterval) { if(!IncludeInterval) { return new Range(minimum, maximum); }
+compilation error,1284,add,[CE] illegal start of expression,,if(includeInterval) { if(this.minimum > maximum) { return new Range(minimum, maximum); }
+compilation error,1284,add,[CE] illegal start of expression,,if(includeInterval) { if(!IncludeInterval) { throw new IllegalArgumentException(""); }
+compilation error,1247,add,[CE] variable uvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,int uvalue = dataset.getValue(series);
+compilation error,1247,add,[CE] variable uvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double uvalue = dataset.getValue();
+compilation error,1247,add,[CE] variable uvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double uvalue = dataset.getValue(series);
+increase failing tests,1213,replace, [FE] AssertionFailedError,return iterateRangeBounds(dataset, true); ,return iterateRangeBounds(dataset, false);
+compilation error,1213,replace,[CE] non-static variable this cannot be referenced from a static context,return iterateRangeBounds(dataset, true); ,return iterateRangeBounds(this.dataset, true);
+patch is same with buggy,1213,replace,,return iterateRangeBounds(dataset, true); ,return iterateRangeBounds(dataset, true);
+compilation error,1240,replace,[CE] method getItemCount in interface XYDataset cannot be applied to given types;,int itemCount = dataset.getItemCount(series); ,int itemCount = dataset.getItemCount(series, 0);
+compilation error,1240,replace,[CE] non-static variable this cannot be referenced from a static context,int itemCount = dataset.getItemCount(series); ,int itemCount = this.dataset.getItemCount(series);
+patch is same with buggy,1240,replace,,int itemCount = dataset.getItemCount(series); ,int itemCount = dataset.getItemCount(series);
+increase failing tests,1236,replace, [FE] AssertionFailedError,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(includeInterval || dataset instanceof IntervalXYDataset) {
+patch is same with buggy,1236,replace,,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(includeInterval && dataset instanceof IntervalXYDataset) {
+increase failing tests,1236,replace, [FE] AssertionFailedError,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(!includeInterval && dataset instanceof IntervalXYDataset) {
+patch is same with buggy,751,replace,,IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset; ,IntervalXYDataset intervalXYData =(IntervalXYDataset)dataset;
+compilation error,751,replace,[CE] non-static variable this cannot be referenced from a static context,IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset; ,IntervalXYDataset intervalXYData =(IntervalXYDataset)this.dataset;
+patch is same with buggy,751,replace,,IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset; ,IntervalXYDataset intervalXYData = (IntervalXYDataset)dataset;
+increase failing tests,1247,replace, [FE] NullPointerException,if (!Double.isNaN(uvalue)) { ,if(!Double.isNaN(maximum)) {
+compilation error,756,add,[CE] variable lvalue is already defined in method iterateDomainBounds(XYDataset,boolean),,Range lvalue = intervalXYData.getStartXValue(series, item);
+compilation error,756,add,[CE] variable lvalue is already defined in method iterateDomainBounds(XYDataset,boolean),,Number lvalue = intervalXYData.getStartXValue(series, item);
+compilation error,753,replace,[CE] method getItemCount in interface XYDataset cannot be applied to given types;,int itemCount = dataset.getItemCount(series); ,int itemCount = dataset.getItemCount(series, 0);
+compilation error,753,replace,[CE] non-static variable this cannot be referenced from a static context,int itemCount = dataset.getItemCount(series); ,int itemCount = this.dataset.getItemCount(series);
+patch is same with buggy,753,replace,,int itemCount = dataset.getItemCount(series); ,int itemCount = dataset.getItemCount(series);
+compilation error,765,add,[CE] variable lvalue might not have been initialized,,if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); maximum = Math.max(maximum, uvalue); }
+compilation error,765,add,[CE] illegal start of expression,,if(Double.isNaN(lvalue)) { if(!Double.isNaN(uvalue)) { return; }
+compilation error,765,add,[CE] illegal start of expression,,if(!Double.isNaN(lvalue)) { if(!Double.isNaN(uvalue)) { return; }
+compilation error,1244,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = dataset.getValue();
+compilation error,1244,add,[CE] not a statement,,double = Double.parseDouble(dataset);
+compilation error,1244,add,[CE] not a statement,,double = Double.parseDouble(dataset, dataset);
+compilation error,1252,add,[CE] illegal start of expression,,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,1252,add,[CE] illegal start of expression,,if(includeInterval) { if(!Double.isNaN(lvalue)) { return; }
+compilation error,1252,add,[CE] illegal start of expression,,if(includeInterval) { if(!Double.isNaN(lvalue)) { throw new IllegalArgumentException(""); }
+increase failing tests,1243,replace, [FE] AssertionFailedError,double uvalue = ixyd.getEndYValue(series, item); ,double uvalue = ixyd.getEndXValue(series, item);
+patch is same with buggy,1243,replace,,double uvalue = ixyd.getEndYValue(series, item); ,double uvalue = ixyd.getEndYValue(series, item);
+compilation error,1243,replace,[CE] cannot find symbol xxyd,double uvalue = ixyd.getEndYValue(series, item); ,double uvalue = xxyd.getEndXValue(series, item);
+compilation error,1236,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,1236,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(series);
+compilation error,1236,add,[CE] ';' expected,,Range XYDataset dataset = getDataset(dataset);
+patch is same with buggy,1244,replace,,if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(lvalue)) {
+increase failing tests,1244,replace, [FE] NullPointerException,if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(lvalue)|| Double.isNaN(uvalue)) {
+compilation error,1244,replace,[CE] no suitable method found for isNaN(double,double),if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(minimum, lvalue)) {
+compilation error,780,add,[CE] no suitable method found for iterateDomainBounds(double,double),,iterateDomainBounds(minimum, maximum); if(includeInterval) { return new Range(minimum, maximum); }
+compilation error,780,add,[CE] no suitable method found for iterateDomainBounds(double,double),,iterateDomainBounds(minimum, maximum);
+compilation error,780,add,[CE] illegal start of expression,,if(includeInterval) { if(!isDomainBounds()) { return new Range(minimum, maximum); }
+compilation error,1252,replace,[CE] illegal start of expression,} ,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,1252,replace,[CE] illegal start of expression,} ,if(includeInterval) { if(!Double.isNaN(lvalue)) { return; }
+compilation error,1252,replace,[CE] illegal start of expression,} ,if(includeInterval) { if(!Double.isNaN(lvalue)) { throw new IllegalArgumentException(""); }
+compilation error,726,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset),,XYDataset dataset = getDataset(dataset);
+compilation error,726,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset),,XYDataset dataset = loadDataset(dataset);
+compilation error,726,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset),,XYDataset dataset = getDataset();
+compilation error,751,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getSeriesCount();
+compilation error,751,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.iterateDomainBounds(dataset);
+compilation error,751,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,726,replace,[CE] non-static variable this cannot be referenced from a static context,return iterateDomainBounds(dataset, true); ,return iterateDomainBounds(this.dataset, true);
+compilation error,726,replace,[CE] cannot find symbol,return iterateDomainBounds(dataset, true); ,return iterateDomainBoundsWithOutput(dataset, false);
+compilation error,1236,add,[CE] variable seriesCount is already defined in method iterateRangeBounds(XYDataset,boolean),,int seriesCount = dataset.getSeriesCount();
+compilation error,1236,add,[CE] variable seriesCount is already defined in method iterateRangeBounds(XYDataset,boolean),,int seriesCount = dataset.getRangeCount();
+compilation error,1236,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,1213,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset),,XYDataset dataset = getDataset(dataset);
+compilation error,1213,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset),,XYDataset dataset = new XYDataset(dataset.size());
+compilation error,1213,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset),,XYDataset dataset = new XYDataset(getXValue());
+compilation error,754,add,[CE] variable itemCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int itemCount = intervalXYData.getItemCount(series);
+compilation error,754,add,[CE] variable itemCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int itemCount = dataset.getItemCount(series);
+compilation error,754,add,[CE] variable itemCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int itemCount = this.dataset.size();
+compilation error,752,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getSeriesCount();
+compilation error,752,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getRowCount();
+compilation error,752,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getSeriesCount();
+compilation error,780,replace,[CE] non-static variable this cannot be referenced from a static context,return null; ,return this;
+patch is same with buggy,760,replace,,if (!Double.isNaN(uvalue)) { ,if(!Double.isNaN(uvalue)) {
+increase failing tests,760,replace, [FE] AssertionFailedError,if (!Double.isNaN(uvalue)) { ,if(!Double.isNaN(uvalue)|| Double.isNaN(uvalue)) {
+increase failing tests,746,replace, [FE] AssertionFailedError,double maximum = Double.NEGATIVE_INFINITY; ,double maximum = Double.POSITIVE_INFINITY;
+patch is same with buggy,1238,replace,,IntervalXYDataset ixyd = (IntervalXYDataset) dataset; ,IntervalXYDataset ixyd =(IntervalXYDataset)dataset;
+compilation error,1238,replace,[CE] cannot find symbol,IntervalXYDataset ixyd = (IntervalXYDataset) dataset; ,IntervalXYDataset ixyd =(IntervalXYDataset)dataset.getRangeAxis();
+compilation error,1238,replace,[CE] cannot find symbol,IntervalXYDataset ixyd = (IntervalXYDataset) dataset; ,IntervalXYDataset ixyd =(IntervalXYDataset)dataset.getRangeCount();
+compilation error,1247,add,[CE] variable uvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double uvalue = dataset.getValue(series, itemCount);
+compilation error,1247,add,[CE] variable uvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double uvalue = dataset.getValue(series, item);
+compilation error,1247,add,[CE] variable uvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,int uvalue = dataset.getValue(series, itemCount);
+compilation error,780,add,[CE] illegal start of expression,,if(includeInterval) { if(!includeInterval) { return new Range(minimum, maximum); }
+compilation error,780,add,[CE] illegal start of expression,,if(includeInterval) { if(getMaximumBounds()!= 0) { return new Range(minimum, maximum); }
+compilation error,780,add,[CE] illegal start of expression,,if(includeInterval) { if(!IncludeInterval) { return new Range(minimum, maximum); }
+compilation error,1242,add,[CE] cannot find symbol,,Item ixyd = this.dataset.getItemCount(series);
+compilation error,1242,add,[CE] cannot find symbol,,Item ixyd = DatasetUtilities.iterateRangeBounds(series, item);
+compilation error,1242,add,[CE] cannot find symbol,,Item ixyd =(Item)dataset.getItemCount(series);
+compilation error,747,replace,[CE] cannot find symbol,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getRowCount();
+patch is same with buggy,747,replace,,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount();
+increase failing tests,747,replace, [FE] NullPointerException,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount() - 1;
+compilation error,750,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getSeriesCount();
+compilation error,750,add,[CE] variable seriesCount is already defined in method iterateDomainBounds(XYDataset,boolean),,int seriesCount = dataset.getRowCount();
+compilation error,750,add,[CE] variable includeInterval is already defined in method iterateDomainBounds(XYDataset,boolean),,boolean includeInterval = dataset.getSeriesCount() > 0;
+increase failing tests,1283,add, [FE] AssertionFailedError,,minimum = Math.min(minimum, maximum);
+compilation error,1283,add,[CE] cannot find symbol Maximum,,minimum = Math.min(minimum, Maximum.POSITIVE_INFINITY);
+compilation error,1283,add,[CE] cannot find symbol data,,maximum = Math.max(maximum, data.length);
+compilation error,765,add,[CE] illegal start of expression,,if(includeInterval) { if(dataset.getXValue(series, item)!= dataset.getXValue(series, item)) { minimum = Math.min(minimum, 0); maximum = Math.max(maximum, uvalue); }
+compilation error,765,add,[CE] 'else' without 'if',,for(int series = 0; series < dataset.getSeriesCount(); series++) { if(!Double.isNaN(series)) { minimum = Math.min(minimum, 0); maximum = Math.max(maximum, 0); }
+compilation error,765,add,[CE] illegal start of expression,,if(includeInterval) { if(dataset.getXValue(series, item)!= dataset.getXValue(series, item)) { minimum = Math.min(minimum, lvalue); maximum = Math.max(maximum, uvalue); }
+patch is same with buggy,779,replace,,if (minimum > maximum) { ,if(minimum > maximum) {
+increase failing tests,779,replace, [FE] NullPointerException,if (minimum > maximum) { ,if(minimum <= maximum) {
+patch is same with buggy,751,replace,,IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset; ,IntervalXYDataset intervalXYData =(IntervalXYDataset)dataset;
+patch is same with buggy,751,replace,,IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset; ,IntervalXYDataset intervalXYData = (IntervalXYDataset)dataset;
+compilation error,751,replace,[CE] cannot find symbol,IntervalXYDataset intervalXYData = (IntervalXYDataset) dataset; ,IntervalXYDataset intervalXYData =(IntervalXYDataset)dataset.getRangeCount();
+compilation error,745,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,745,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,XYDataset dataset =(XYDataset)getDataset(dataset);
+compilation error,745,add,[CE] cannot find symbol,,int seriesCount = dataset.getRowCount();
+compilation error,1244,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = getValue(dataset.getBounds());
+compilation error,1244,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = dataset.getValue(dataset.getBounds());
+compilation error,1244,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = getValue(dataset.getItemCount(0));
+compilation error,756,add,[CE] variable lvalue is already defined in method iterateDomainBounds(XYDataset,boolean),,long lvalue = intervalXYData.getStartXValue(series, item);
+compilation error,742,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset = getDataset(dataset);
+compilation error,742,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Range dataset =(Range)getDataset(dataset);
+compilation error,742,add,[CE] variable dataset is already defined in method iterateDomainBounds(XYDataset,boolean),,Dataset dataset = getDataset(dataset);
+compilation error,1284,add,[CE] illegal start of expression,,if(includeInterval) { if(!includeInterval) { return new Range(minimum, maximum); }
+compilation error,1284,add,[CE] illegal start of expression,,if(includeInterval) { if(!IncludeInterval) { return new Range(minimum, maximum); }
+compilation error,1284,add,[CE] illegal start of expression,,if(includeInterval) { if(!includeInterval) { throw new NullPointerException(""); }
+patch is same with buggy,753,replace,,int itemCount = dataset.getItemCount(series); ,int itemCount = dataset.getItemCount(series);
+compilation error,753,replace,[CE] non-static variable this cannot be referenced from a static context,int itemCount = dataset.getItemCount(series); ,int itemCount = this.dataset.getItemCount(series);
+compilation error,753,replace,[CE] method getItemCount in interface XYDataset cannot be applied to given types;,int itemCount = dataset.getItemCount(series); ,int itemCount = dataset.getItemCount(series, 0);
+increase failing tests,750,replace, [FE] AssertionFailedError,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(dataset instanceof IntervalXYDataset) {
+increase failing tests,750,replace, [FE] NullPointerException,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(includeInterval || dataset instanceof IntervalXYDataset) {
+increase failing tests,750,replace, [FE] AssertionFailedError,if (includeInterval && dataset instanceof IntervalXYDataset) { ,if(!includeInterval && dataset instanceof IntervalXYDataset) {
+patch is same with buggy,754,replace,,for (int item = 0; item < itemCount; item++) { ,for(int item = 0; item < itemCount; item++) {
+increase failing tests,754,replace, [FE] NullPointerException,for (int item = 0; item < itemCount; item++) { ,for(int item = 0; item < seriesCount; item++) {
+compilation error,754,replace,[CE] cannot find symbol itemsCount,for (int item = 0; item < itemCount; item++) { ,for(int item = 0; item < itemsCount; item++) {
+compilation error,1233,replace,[CE] cannot find symbol,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getRangeCount();
+patch is same with buggy,1233,replace,,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount();
+increase failing tests,1233,replace, [FE] NullPointerException,int seriesCount = dataset.getSeriesCount(); ,int seriesCount = dataset.getSeriesCount() - 1;
+compilation error,1243,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = ixyd.getStartYValue(series, item);
+compilation error,1243,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,Double lvalue = ixyd.getStartYValue(series, item);
+compilation error,1243,add,[CE] variable lvalue is already defined in method iterateRangeBounds(XYDataset,boolean),,double lvalue = ixyd.getStartXValue(series, item);
+compilation error,1240,add,[CE] variable ixyd is already defined in method iterateRangeBounds(XYDataset,boolean),,Range ixyd = DatasetUtilities.iterateRangeBounds(dataset, series);
+compilation error,1240,add,[CE] variable ixyd is already defined in method iterateRangeBounds(XYDataset,boolean),,Range ixyd = DatasetUtilities.getDatasetRange(dataset);
+compilation error,1240,add,[CE] variable ixyd is already defined in method iterateRangeBounds(XYDataset,boolean),,Range ixyd = DatasetUtilities.iterateRangeBounds(dataset);
+increase failing tests,1213,replace, [FE] NullPointerException,return iterateRangeBounds(dataset, true); ,return iterateRangeBounds(dataset, false);
+compilation error,1213,replace,[CE] non-static variable this cannot be referenced from a static context,return iterateRangeBounds(dataset, true); ,return iterateRangeBounds(this.dataset, true);
+compilation error,1213,replace,[CE] cannot find symbol,return iterateRangeBounds(dataset, true); ,return iterateRangeBoundsWithOutsets(dataset, true);
+patch is same with buggy,745,replace,,double minimum = Double.POSITIVE_INFINITY; ,double minimum = Double.POSITIVE_INFINITY;
+increase failing tests,745,replace, [FE] AssertionFailedError,double minimum = Double.POSITIVE_INFINITY; ,double minimum = Double.POSITIVE_INFINITY / Double.POSITIVE_INFINITY;
+increase failing tests,745,replace, [FE] AssertionFailedError,double minimum = Double.POSITIVE_INFINITY; ,double minimum = Double.POSITIVE_INFINITY / Double.NEGATIVE_INFINITY;
+compilation error,1233,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.iterateRangeBounds(dataset);
+compilation error,1233,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.getDataset(dataset);
+compilation error,1233,add,[CE] variable dataset is already defined in method iterateRangeBounds(XYDataset,boolean),,Range dataset = DatasetUtilities.iterateRangeBounds(dataset, false);
+compilation error,1252,add,[CE] illegal start of expression,,if(includeInterval) { if(dataset instanceof Range) { minimum = Math.min(minimum, dataset.getItemCount(series, 0)); }
+compilation error,1252,add,[CE] illegal start of expression,,if(includeInterval) { if(dataset instanceof Range) { minimum = Math.min(minimum, dataset.getLength()); }
+compilation error,1252,add,[CE] illegal start of expression,,if(includeInterval) { if(dataset instanceof Range) { minimum = Math.min(minimum, dataset.getRangeBounds()); }
+compilation error,1241,add,[CE] variable itemCount is already defined in method iterateRangeBounds(XYDataset,boolean),,int itemCount = ixyd.getItemCount(series);
+compilation error,1241,add,[CE] variable itemCount is already defined in method iterateRangeBounds(XYDataset,boolean),,int itemCount = ixyd.getItemCount();
+compilation error,1241,add,[CE] variable itemCount is already defined in method iterateRangeBounds(XYDataset,boolean),,int itemCount = ixyd.getItemCount(0);
+compilation error,1284,replace,[CE] non-static variable this cannot be referenced from a static context,return null; ,return this;
+increase failing tests,1284,replace, [FE]  double),return null; ,return new Range(minimum, maximum);
+increase failing tests,1284,replace, [FE] NullPointerException,return null; ,throw new NullPointerException("");
+increase failing tests,1247,replace, [FE] NullPointerException,if (!Double.isNaN(uvalue)) { ,if(!Double.isNaN(uvalue)|| Double.isNaN(uvalue)) {
+compilation error,779,add,[CE] cannot find symbol,,minimum = Math.min(minimum, getMaximum());
+compilation error,779,add,[CE] cannot find symbol,,maximum = Math.max(maximum, getMaximum());
+compilation error,779,add,[CE] cannot find symbol data,,minimum = Math.min(minimum, data.length);
+patch is same with buggy,1244,replace,,if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(lvalue)) {
+compilation error,1244,replace,[CE] no suitable method found for isNaN(double,double),if (!Double.isNaN(lvalue)) { ,if(!Double.isNaN(minimum, lvalue)) {
+compilation error,753,add,[CE] variable series is already defined in method iterateDomainBounds(XYDataset,boolean),,int series = dataset.getSeriesCount();

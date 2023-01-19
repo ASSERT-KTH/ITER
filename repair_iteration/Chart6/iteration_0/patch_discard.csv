@@ -1,0 +1,11 @@
+patch is same with buggy,,super(); ,super();
+compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR, false));
+compilation error,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_LOAD_FACTOR, false));
+compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR));
+compilation error,[CE] cannot find symbol AsertionFailedError,super(); ,super(AsertionFailedError? null : AssertionFailedError.getErrorList());
+compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR, null));
+compilation error,[CE] <identifier> expected,super(); ,super(AsertionFailedError? null : AssertionFailedError.false());
+compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR, true));
+compilation error,[CE] cannot find symbol AsertionFailedError,super(); ,super(AsertionFailedError? null : AssertionFailedError());
+compilation error,[CE] cannot find symbol AsertionFailedError,super(); ,super(AsertionFailedError? null : AssertionFailedError.getErrorInfo());
+patch is same with buggy,,if (!(obj instanceof ShapeList)) { ,if(!(obj instanceof ShapeList)) {

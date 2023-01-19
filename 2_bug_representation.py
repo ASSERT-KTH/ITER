@@ -66,7 +66,8 @@ def getDiagnosis_fromFL(test_path):
 def getContext(buggy_class,buggy_line,start_no,end_no):
     
     buggycode = ""
-    contextcode = ""
+    contextcode_replace = ""
+    contextcode_add=""
     endbuggyline= 0
     if int(buggy_line) - int(start_no)>10:
         start_no=int(buggy_line)-10
@@ -84,6 +85,7 @@ def getContext(buggy_class,buggy_line,start_no,end_no):
                 if  l.startswith('/') or l.startswith('*'):
                     l = ' '
                 l = l.replace('  ','').replace('\r','').replace('\n','')
+                l_add = l
                 if i == int(buggy_line)-1:
                     if buggycode in "":
                         buggycode=l
@@ -92,16 +94,21 @@ def getContext(buggy_class,buggy_line,start_no,end_no):
                         if not buggycode.endswith(";") and not buggycode.endswith("{") and not buggycode.endswith("}") :
                             buggycode+=lines[i+1]
                             endbuggyline=1
+                            buggycode=buggycode.strip()
+                            buggycode=buggycode.replace("  "," ")
                             if not buggycode.endswith(";") and not buggycode.endswith("{") and not buggycode.endswith("}") :
                                 buggycode+=lines[i+2]
                                 endbuggyline=2
                         
                     l='[BUGGY] '+buggycode + ' [BUGGY] '
+                    l_add = '[BUGGY]  [BUGGY] '+buggycode
 
                 
-                contextcode+=l+' '
+                contextcode_replace+=l+' '
+                contextcode_add+=l_add+' '
+
     
-    return buggycode,contextcode,endbuggyline
+    return buggycode,contextcode_replace,contextcode_add, endbuggyline
 
 
 if __name__ == '__main__':
@@ -109,7 +116,7 @@ if __name__ == '__main__':
     bug=sys.argv[2]
     suspiciousness_threshold=sys.argv[3]
     suspiciousness_threshold=float(suspiciousness_threshold)
-    rounds=sys.argv[4]
+    rounds='0'
 
     
     FL_file = "./projects/"+project+bug+"/build/sfl/txt/ochiai.ranking.csv"
@@ -128,7 +135,7 @@ if __name__ == '__main__':
         failing_test_number, diagnosis = getDiagnosis_fromFL(TEST_file)
         print(failing_test_number)
         with open(bug_representation_path+'/bugs.csv', 'w') as csvfile:
-            csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\tfailing_test_number\tpatch\n')
+            csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\tfailing_test_number\taction\tpatch\n')
         
         with open(FL_file,"r") as fl:
             lines = fl.readlines()
@@ -149,6 +156,9 @@ if __name__ == '__main__':
                         elif os.path.exists("projects/"+project+bug+"/src/java/"+buggy_class):
                             print("projects/"+project+bug+"/src/java/"+buggy_class)
                             buggy_class = "projects/"+project+bug+"/src/java/"+buggy_class
+                        elif os.path.exists("projects/"+project+bug+"/src/main/java/"+buggy_class):
+                            print("projects/"+project+bug+"/src/main/java/"+buggy_class)
+                            buggy_class = "projects/"+project+bug+"/src/main/java/"+buggy_class
                             
                         
                         utils_path = "./utils/context.jar "
@@ -157,21 +167,45 @@ if __name__ == '__main__':
                         if "[CLASS]" in results and "startline:" in results:
                             results = results.split("[CLASS]")[1]
                             meta = " [CLASS] " + results.split("startline:")[0]
-                            start_no =  results.split("startline:")[1].split("endline:")[0]
+                            if 'NullPointerException' in diagnosis:
+                                start_no = buggy_line
+                            else:
+                                start_no =  results.split("startline:")[1].split("endline:")[0]
                             end_no =  results.split("endline:")[1].replace("\n","").replace("\r","")
                             
-                            buggycode,contextcode,endbuggycode = getContext(buggy_class,buggy_line,start_no,end_no)
+                            buggycode,contextcode_replace,contextcode_add,endbuggycode = getContext(buggy_class,buggy_line,start_no,end_no)
                             endbuggycode=int(buggy_line)+int(endbuggycode)
                             buggycode = buggycode.replace("  "," ")
                             buggycode = buggycode.replace("  "," ")
-                            sample='[BUG] [BUGGY] ' + buggycode + diagnosis+ ' [CONTEXT] ' + contextcode + meta 
-                            sample = sample.replace('\r','').replace('\n','').replace('\t','').replace('  ',' ')
-                            sample = str(count)+'\t'+sample +'\t'+buggy_class+'\t'+suspiciousness+'\t'+buggy_line+'\t'+str(endbuggycode)+'\t'+str(failing_test_number)+'\t'
                             
-                            print(sample)                            
+                            #representation of replace
+                            if 'NullPointerException' in diagnosis:
+                                sample_replace='[BUG] [BUGGY] '+buggycode + diagnosis+ ' [CONTEXT] ' + contextcode_replace + meta.split('[VARIABLES]')[0]
+                            else:
+                                sample_replace='[BUG] [BUGGY] ' + buggycode + diagnosis+ ' [CONTEXT] ' + contextcode_replace + meta 
+                            sample_replace = sample_replace.replace('\r','').replace('\n','').replace('\t','').replace('  ',' ')
+                            
+                            sample_replace = str(count)+'\t'+sample_replace +'\t'+buggy_class+'\t'+suspiciousness+'\t'+buggy_line+'\t'+str(endbuggycode)+'\t'+str(failing_test_number)+'\t'+'replace'+'\t'
+                            print(sample_replace)     
+
+                                
+                            #representation of add
+                            count+=1
+                            if 'NullPointerException' in diagnosis:
+                                sample_add='[BUG] [BUGGY] ' + diagnosis+ ' [CONTEXT] ' + contextcode_add + meta.split('[VARIABLES]')[0]
+                            else:
+                                sample_add='[BUG] [BUGGY] ' + diagnosis+ ' [CONTEXT] ' + contextcode_add + meta
+                                
+                            sample_add = sample_add.replace('\r','').replace('\n','').replace('\t','').replace('  ',' ')
+                            sample_add = str(count)+'\t'+sample_add +'\t'+buggy_class+'\t'+suspiciousness+'\t'+buggy_line+'\t'+str(endbuggycode)+'\t'+str(failing_test_number)+'\t'+'add'+'\t'
+                            print(sample_add)     
+
+
+                            
                             
                             with open(bug_representation_path+'/bugs.csv','a') as bugrep:
-                                bugrep.write(sample+'\n')
+                                bugrep.write(sample_replace+'\n')
+                                bugrep.write(sample_add+'\n')
                             
                         
 

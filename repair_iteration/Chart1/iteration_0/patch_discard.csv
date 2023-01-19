@@ -1,0 +1,91 @@
+patch is same with buggy,1791,replace,,LegendItemCollection result = new LegendItemCollection(); ,LegendItemCollection result = new LegendItemCollection();
+compilation error,1791,replace,[CE] constructor LegendItemCollection in class LegendItemCollection cannot be applied to given types;,LegendItemCollection result = new LegendItemCollection(); ,LegendItemCollection result = new LegendItemCollection(this.legendItemLabelGenerator);
+compilation error,1791,replace,[CE] cannot find symbol legendItem,LegendItemCollection result = new LegendItemCollection(); ,LegendItemCollection result = new LegendItemCollection(this.legendItem);
+patch is same with buggy,250,replace,,this.itemLabelGeneratorList = new ObjectList(); ,this.itemLabelGeneratorList = new ObjectList();
+compilation error,250,replace,[CE] incompatible types,this.itemLabelGeneratorList = new ObjectList(); ,this.itemLabelGeneratorList = new ArrayList();
+compilation error,250,replace,[CE] no suitable constructor found for ObjectList(ObjectList),this.itemLabelGeneratorList = new ObjectList(); ,this.itemLabelGeneratorList = new ObjectList(this.itemLabelGeneratorList);
+patch is same with buggy,1796,replace,,CategoryDataset dataset = this.plot.getDataset(index); ,CategoryDataset dataset = this.plot.getDataset(index);
+patch is same with buggy,251,replace,,this.toolTipGeneratorList = new ObjectList(); ,this.toolTipGeneratorList = new ObjectList();
+increase failing tests,251,replace, [FE] NullPointerException,this.toolTipGeneratorList = new ObjectList(); ,this.itemLabelGeneratorList = new ObjectList();
+compilation error,251,replace,[CE] cannot find symbol itemToolTipGeneratorList,this.toolTipGeneratorList = new ObjectList(); ,this.itemToolTipGeneratorList = new ObjectList();
+compilation error,1793,replace,[CE] incompatible types,return result; ,return this.plot;
+compilation error,1793,replace,[CE] cannot find symbol item,return result; ,return result.item;
+patch is same with buggy,1793,replace,,return result; ,return result;
+compilation error,297,replace,[CE] illegal start of expression,} ,super.setPlot(plot);
+compilation error,297,replace,[CE] illegal start of expression,} ,this.itemLabelGeneratorList = Lists.newArrayList();
+compilation error,297,replace,[CE] illegal start of expression,} ,this.itemLabelGeneratorList.add(plot);
+compilation error,251,add,[CE] incompatible types,,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,251,add,[CE] incompatible types,,this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,1792,replace,[CE] cannot find symbol,if (this.plot == null) { ,if(this.plot!= null || result == this.plot.getItemCount()) {
+compilation error,1792,replace,[CE] cannot find symbol,if (this.plot == null) { ,if(this.plot!= null || this.plot.getItemCount() == 0) {
+compilation error,1796,add,[CE] illegal start of expression,,if(index!= 0) { if(plot.getRowRenderingOrder().equals(SortOrder.ASCENDING)) { result.add(item); }
+compilation error,1796,add,[CE] illegal start of expression,,if(index!= 0) { if(plot.getRowRenderingOrder().equals(SortOrder.ASCENDING)) { return result; }
+compilation error,1796,add,[CE] illegal start of expression,,if(index!= 0) { if(plot.getSeriesRenderingOrder().equals(SortOrder.ASCENDING)) { result.add(series); }
+compilation error,253,add,[CE] incompatible types,,this.itemLabelGeneratorList = new ObjectList(); this.baseURLGenerator = new ObjectList();
+compilation error,253,add,[CE] incompatible types,,this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+patch is same with buggy,253,replace,,this.legendItemLabelGenerator = new StandardCategorySeriesLabelGenerator(); ,this.legendItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,253,replace,[CE] cannot find symbol,this.legendItemLabelGenerator = new StandardCategorySeriesLabelGenerator(); ,this.legendItemLabelGenerator = new BasicCategorySeriesLabelGenerator();
+compilation error,249,add,[CE] illegal start of type,,super();
+compilation error,249,add,[CE] illegal start of type,,super(); this.itemLabelGeneratorList = new ObjectList();
+compilation error,249,add,[CE] illegal start of type,,this.itemLabelGeneratorList = new ObjectList();
+compilation error,250,add,[CE] incompatible types,,super(); this.itemLabelGeneratorList = new ArrayList();
+compilation error,257,replace,[CE] illegal start of expression,} ,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,257,replace,[CE] illegal start of expression,} ,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new BaseItemLabelGenerator();
+compilation error,257,replace,[CE] illegal start of expression,} ,this.itemLabelGeneratorList = new ObjectList();
+patch is same with buggy,1797,replace,,if (dataset != null) { ,if(dataset!= null) {
+compilation error,1797,replace,[CE] cannot find symbol,if (dataset != null) { ,if(dataset == null || dataset.getSeriesCount()!= 0) {
+compilation error,297,add,[CE] cannot find symbol,,plot.setAnnotations(itemLabelGeneratorList.size() - 1);
+compilation error,297,add,[CE] cannot find symbol,,plot.setAnnotations(itemLabelGeneratorList);
+compilation error,297,add,[CE] no suitable method found for get(ObjectList),,plot.setAnnotations(itemLabelGeneratorList.get(itemLabelGeneratorList));
+compilation error,1797,add,[CE] illegal start of expression,,if(dataset!= null) { if(plot.getSeriesRenderingOrder().equals(SortOrder.ASCENDING)) { result.add(series); }
+compilation error,1797,add,[CE] ';' expected,,if(dataset!= null) { for(int seriesCount = dataset.getSeriesCount(); i++) { result.add(series); }
+compilation error,1797,add,[CE] illegal start of expression,,if(dataset!= null) { if(plot.getSeriesRenderingOrder().equals(SortOrder.ASCENDING)) { result.add(item); }
+patch is same with buggy,256,replace,,this.foregroundAnnotations = new ArrayList(); ,this.foregroundAnnotations = new ArrayList();
+compilation error,256,replace,[CE] no suitable constructor found for ArrayList(ObjectList),this.foregroundAnnotations = new ArrayList(); ,this.foregroundAnnotations = new ArrayList(this.itemLabelGeneratorList);
+compilation error,256,replace,[CE] no suitable constructor found for ArrayList(CategoryItemLabelGenerator),this.foregroundAnnotations = new ArrayList(); ,this.foregroundAnnotations = new ArrayList(this.baseItemLabelGenerator);
+compilation error,1795,replace,[CE] cannot find symbol series,int index = this.plot.getIndexOf(this); ,int index = this.plot.getIndexOf(this.series);
+compilation error,1795,replace,[CE] method getIndexOf in class CategoryPlot cannot be applied to given types;,int index = this.plot.getIndexOf(this); ,int index = this.plot.getIndexOf(this.legendItemLabelGenerator);
+compilation error,1795,replace,[CE] cannot find symbol itemLabelGenerator,int index = this.plot.getIndexOf(this); ,int index = this.plot.getIndexOf(this.itemLabelGenerator);
+compilation error,1798,replace,[CE] method add in class LegendItemCollection cannot be applied to given types;,return result; ,return result.add(dataset);
+compilation error,1798,replace,[CE] incompatible types,return result; ,return this.plot;
+compilation error,1798,replace,[CE] cannot find symbol item,return result; ,return result.item;
+compilation error,252,add,[CE] incompatible types,,this.baseToolTipGenerator = new ObjectList();
+compilation error,252,add,[CE] cannot find symbol,,this.baseToolTipGenerator = new StandardCategorySeriesToolTipGenerator();
+patch is same with buggy,252,replace,,this.urlGeneratorList = new ObjectList(); ,this.urlGeneratorList = new ObjectList();
+compilation error,252,replace,[CE] incompatible types,this.urlGeneratorList = new ObjectList(); ,this.urlGeneratorList = new ArrayList();
+compilation error,252,replace,[CE] cannot find symbol URLGeneratorList,this.urlGeneratorList = new ObjectList(); ,this.URLGeneratorList = new ObjectList();
+compilation error,296,add,[CE] cannot find symbol,,plot.setAnnotation(itemLabelGeneratorList.size() - 1);
+compilation error,296,add,[CE] method addChangeListener in class Plot cannot be applied to given types;,,plot.addChangeListener(this);
+compilation error,296,add,[CE] cannot find symbol,,plot.setAnnotation(itemLabelGeneratorList.newInstance());
+compilation error,1793,add,[CE] cannot find symbol,,result.add(this.plot.getLegendItem());
+compilation error,1793,add,[CE] cannot find symbol item,,result.add(item);
+compilation error,1793,add,[CE] method add in class LegendItemCollection cannot be applied to given types;,,result.add(this.plot.getLegendItems());
+compilation error,256,add,[CE] incompatible types,,this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,256,add,[CE] incompatible types,,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+patch is same with buggy,255,replace,,this.backgroundAnnotations = new ArrayList(); ,this.backgroundAnnotations = new ArrayList();
+compilation error,255,replace,[CE] no suitable constructor found for ArrayList(CategoryItemLabelGenerator),this.backgroundAnnotations = new ArrayList(); ,this.backgroundAnnotations = new ArrayList(this.baseItemLabelGenerator);
+compilation error,255,replace,[CE] no suitable constructor found for ArrayList(CategorySeriesLabelGenerator),this.backgroundAnnotations = new ArrayList(); ,this.backgroundAnnotations = new ArrayList(this.legendItemLabelGenerator);
+compilation error,1791,add,[CE] cannot find symbol itemLabelGenerator,,LegendItem item = getLegendItem(this.itemLabelGenerator);
+compilation error,1791,add,[CE] no suitable method found for getLegendItem(ObjectList),,LegendItem item = getLegendItem(this.itemLabelGeneratorList);
+patch is same with buggy,296,replace,,this.plot = plot; ,this.plot = plot;
+compilation error,296,replace,[CE] ';' expected,this.plot = plot; ,this.plot = plot, plot.getRowKey();
+compilation error,296,replace,[CE] ';' expected,this.plot = plot; ,this.plot = plot, plot.getRowInfo();
+compilation error,293,add,[CE] cannot find symbol,,plot.setPlot(this);
+compilation error,293,add,[CE] cannot find symbol,,plot.setAnnotations(this);
+compilation error,293,add,[CE] cannot find symbol,,plot.setAnnotation(this);
+compilation error,249,replace,[CE] modifier final not allowed here,protected AbstractCategoryItemRenderer() { ,protected final AbstractCategoryItemRenderer() {
+patch is same with buggy,249,replace,,protected AbstractCategoryItemRenderer() { ,protected AbstractCategoryItemRenderer() {
+compilation error,249,replace,[CE] modifier final not allowed here,protected AbstractCategoryItemRenderer() { ,final protected AbstractCategoryItemRenderer() {
+compilation error,255,add,[CE] incompatible types,,this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,255,add,[CE] incompatible types,,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,257,add,[CE] incompatible types,,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,257,add,[CE] incompatible types,,this.baseItemLabelGenerator = new StandardCategorySeriesLabelGenerator();
+compilation error,257,add,[CE] cannot find symbol,,this.itemLabelGeneratorList = new ObjectList(); this.baseItemLabelGenerator = new BaseItemLabelGenerator();
+patch is same with buggy,293,replace,,if (plot == null) { ,if(plot == null) {
+compilation error,293,replace,[CE] cannot find symbol,if (plot == null) { ,if(plot == null || plot.getLineno() == 0) {
+compilation error,293,replace,[CE] cannot find symbol,if (plot == null) { ,if(plot == null || plot.getLineno()!= 0) {
+compilation error,1798,add,[CE] method add in class LegendItemCollection cannot be applied to given types;,,result.add(dataset);
+compilation error,1798,add,[CE] cannot find symbol,,result.remove(dataset);
+compilation error,1798,add,[CE] cannot find symbol,,result.remove(0);
+compilation error,1795,add,[CE] cannot find symbol,,CategoryPlot p = plot.getPlot();
+compilation error,1795,add,[CE] cannot find symbol,,CategoryPlot cp = plot.getPlot();

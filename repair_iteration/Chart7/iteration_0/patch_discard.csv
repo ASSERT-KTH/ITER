@@ -1,0 +1,44 @@
+patch is same with buggy,103,replace,,private int minEndIndex = -1; ,private int minEndIndex = -1;
+compilation error,103,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,private int minEndIndex = -1; ,private long minEndIndex = -1;
+compilation error,294,add,[CE] illegal start of expression,,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd(); if(middle > minMiddle) { this.minMiddleIndex = index; }
+compilation error,294,add,[CE] illegal start of expression,,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); if(middle > minMiddle) { this.minMiddleIndex =
+compilation error,277,replace,[CE] cannot find symbol maxStart,if (start > maxStart) { ,if(maxStart > this.maxStart) {
+compilation error,277,replace,[CE] cannot find symbol minStart,if (start > maxStart) { ,if(maxStart > minStart) {
+compilation error,277,replace,[CE] cannot find symbol maxEnd,if (start > maxStart) { ,if(maxStart > maxEnd) {
+patch is same with buggy,266,replace,,if (start < minStart) { ,if(start < minStart) {
+increase failing tests,266,replace, [FE] AssertionFailedError,if (start < minStart) { ,if(index < minStart) {
+compilation error,266,replace,[CE] cannot find symbol interval,if (start < minStart) { ,if(interval < minStart) {
+patch is same with buggy,332,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
+increase failing tests,332,replace, [FE]  Size,this.maxEndIndex = index; ,this.maxEndIndex = index + 1;
+compilation error,332,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex));
+compilation error,332,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex), null);
+compilation error,332,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(end));
+increase failing tests,248,replace, [FE] NullPointerException,fireSeriesChanged(); ,updateBounds(item.getPeriod(), this.data.size() - 1);
+compilation error,248,replace,[CE] bad operand types for binary operator '-',fireSeriesChanged(); ,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
+patch is same with buggy,248,replace,,fireSeriesChanged(); ,fireSeriesChanged();
+patch is same with buggy,246,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,246,replace,[CE] no suitable method found for add(TimePeriodValue,int),this.data.add(item); ,this.data.add(item, this.data.size() - 1);
+increase failing tests,246,replace, [FE] AssertionFailedError,this.data.add(item); ,this.data.remove(item);
+compilation error,269,replace,[CE] 'else' without 'if',} ,fireSeriesChanged();
+compilation error,269,replace,[CE] 'else' without 'if',} ,data.add(start, new TimePeriod(period, getDataItem(start)));
+compilation error,269,replace,[CE] 'else' without 'if',} ,data.add(start, new TimePeriod(period, getDataItem(start), index));
+compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd(); if(middle > minMiddle) { this.minMiddleIndex = index; }
+compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); if(middle > minMiddle) { this.minMiddleIndex =
+compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = index; if(middle > minMiddle) { this.minMiddleIndex = index; }
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex));
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), null);
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), end);
+compilation error,248,add,[CE] bad operand types for binary operator '-',,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
+compilation error,280,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, maxStart));
+compilation error,280,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, end));
+compilation error,314,add,[CE] cannot find symbol,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getTime();
+compilation error,314,add,[CE] incompatible types,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd();
+compilation error,314,add,[CE] illegal start of expression,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getTime();.getTime();
+compilation error,205,add,[CE] no suitable method found for add(int),,this.data.add(index);
+compilation error,205,add,[CE] method set in interface List cannot be applied to given types;,,this.data.set(index);
+patch is same with buggy,363,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,String),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,int),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, this.data.size());
+increase failing tests,243,add, [FE] AssertionFailedError,,this.data.add(item);
+compilation error,243,add,[CE] method setValue in class TimePeriodValue cannot be applied to given types;,,item.setValue(item);
+increase failing tests,243,add, [FE] NullPointerException,,item.setValue(item.getValue());
