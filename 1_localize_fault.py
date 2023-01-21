@@ -13,10 +13,7 @@ if __name__ == '__main__':
     checkout_project="defects4j checkout -p " + project +" -v "+ bug+"b  -w ./projects/"+project+bug
     os.system(checkout_project)
 
-    
-        
-    
-    
+   
     #get project information
     project_info="defects4j info -p "+ project +" -b " +bug
     infos = os.popen(project_info).read()
@@ -58,13 +55,31 @@ if __name__ == '__main__':
     currentpath=os.path.dirname(os.path.realpath(__file__))
     print("currentpath:"+currentpath)
     #create build folder
-    if "Cli" in project:
+    if "Cli" in project or 'Math' in project or 'Time' in project:
         if os.path.exists("./target"):
             os.system("mkdir build")
             os.system("mkdir build-tests")
             os.system("cp -rf ./target/classes/*" + "  ./build/")
             os.system("cp -rf ./target/test-classes/*" + "  ./build/")
             os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")
+
+    if "Closure" in project:
+        if os.path.exists("./build/classes"):
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./build/classes/*" + "  ./build/")
+            os.system("cp -rf ./build/test/*" + "  ./build/")
+            os.system("cp -rf ./build/test/*" + "  ./build-tests/")
+#             os.system("cp -rf ./build/lib/*" + "  ./lib/")
+#             os.system("cp -rf ./lib/classes/*" + "  ./lib/")
+    if "Lang" in project:
+        if os.path.exists("./target"):
+            os.system("mkdir build")
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/tests/*" + "  ./build/")
+            os.system("cp -rf ./target/tests/*" + "  ./build-tests/")
+
+            
 
     
     #execute the Gzoltar FL

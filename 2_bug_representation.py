@@ -13,7 +13,7 @@ def getDiagnosis(project,bug):
     
     print(result)
     resultLines = str(result).split('\\')
-    
+    print
     for l in resultLines:
         if '-' in l and '::' in l and failingtest  in '':
             failingtest = l.split('::')[1]
@@ -48,16 +48,19 @@ def getDiagnosis_fromFL(test_path):
             if "FAIL" in l:
                 fail_count+=1
                 if diagnosis in "":
-                    diagnosis=l.split(",")[-1]
+                    failingtest=l.split(",")[0]
+                    failingtest=failingtest.split("#")[1]
+                    print(l)
+                    diagnosis=l.split(",")[3]
                     if "at" in diagnosis:
                         diagnosis = diagnosis.split(" at")[0]
+                        diagnosis=str(diagnosis)
                         if ":" in diagnosis:
                             diagnosis = diagnosis.split(":")[0]
                         if "." in diagnosis:
                             diagnosis = diagnosis.split(".")[-1]
-                            print(diagnosis)
 
-    diagnosis = ' [FE] ' + diagnosis
+    diagnosis = ' [FE] ' + diagnosis +' '+failingtest 
     diagnosis = diagnosis.replace("\r","").replace("\n","")
     return fail_count,diagnosis
 
@@ -114,8 +117,8 @@ def getContext(buggy_class,buggy_line,start_no,end_no):
 if __name__ == '__main__':
     project=sys.argv[1]
     bug=sys.argv[2]
-    suspiciousness_threshold=sys.argv[3]
-    suspiciousness_threshold=float(suspiciousness_threshold)
+#     suspiciousness_threshold=sys.argv[3]
+#     suspiciousness_threshold=float(suspiciousness_threshold)
     rounds='0'
 
     
@@ -145,7 +148,7 @@ if __name__ == '__main__':
                     count=count+1
                     suspiciousness =  line.split(";")[1]
                     suspiciousness=suspiciousness.replace("\n","").replace("\r","")
-                    if float(suspiciousness) > suspiciousness_threshold:
+                    if count < 21:
                         buggy_class = line.split("#")[0]
                         buggy_class=buggy_class.replace(".","/").replace("$","/")
                         buggy_line = line.split(":")[1].split(";")[0]

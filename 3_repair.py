@@ -19,21 +19,21 @@ def inRevertList(save_to_revert,patch_revert):
     if not os.path.exists(patch_revert):
         with open(patch_revert, 'w') as revertlist:
             revertlist.write(save_to_revert+'\n')
+        return flag
         
-    else:
-        
+    else:        
         with open(patch_revert, 'r') as revertlist:
             lines = revertlist.readlines()
             for line in lines:
                 line=line.replace('\n','')
                 if save_to_revert in line and line in save_to_revert:
                     flag = True
-                    break
+                    return flag
     if not flag:
         with open(patch_revert, 'a') as revertlist:
             revertlist.write(save_to_revert+'\n')
             
-    return flag
+        return flag
               
 
 
@@ -61,7 +61,8 @@ def getBugInfo(bugid):
                 endbuggycode = l.split('\t')[5]
                 failing_test_number=l.split('\t')[6]   
                 action=l.split('\t')[7]
-                return buggy_class,suspiciousness,buggy_line,endbuggycode,failing_test_number,original_buggy,original_bug_represent,action
+                previous_patch=l.split('\t')[8]
+                return buggy_class,suspiciousness,buggy_line,endbuggycode,failing_test_number,original_buggy,original_bug_represent,action,previous_patch
 
 
 def compilation_info():
@@ -103,10 +104,11 @@ def compilation_info():
 
 
 
-def test_execute_info():   
+def test_execute_info(project):   
     currentpath=os.path.dirname(os.path.realpath(__file__))
     failing_test_count=0
     diagnosis = ""
+    failingtest=""
     if os.path.exists('./build/tests.txt'):
         os.system('rm -rf ./build/tests.txt')
     
@@ -115,13 +117,31 @@ def test_execute_info():
         
     if os.path.exists('./build/sfl'):
         os.system('rm -rf ./build/sfl')
-        
-        
+    
+#     if "Cli" in project or 'Math' in project:
+    if "Cli" in project or 'Math' in project or 'Time' in project:
+        if os.path.exists("./target/classes") and os.path.exists("./target/test-classes"):
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")    
+    
+    if "Lang" in project:
+        if os.path.exists("./target") and os.path.exists("./target/tests"):
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/tests/*" + "  ./build/")
+            os.system("cp -rf ./target/tests/*" + "  ./build-tests/")
+
+    
     with open("FL_execution.txt","r") as exec_script:
         
         exec_FL = exec_script.readlines()[0]
-        exec_result = os.popen(exec_FL).read()
-
+        exec_result = os.popen('timeout 120 '+ exec_FL).read()
+        #if time out
+        if 'DONE' not in exec_result:
+            failing_test_count=1
+            return failing_test_count, 'timeout'
+            
+        print(exec_result)
         if 'Run test methods in isolation' in str(exec_result):
             test_result = str(exec_result).split('Run test methods in isolation')[1]
             results = test_result.split('\n')
@@ -135,16 +155,22 @@ def test_execute_info():
             for l in lines:
                 if "FAIL" in l:
                     if diagnosis in "":
-                        diagnosis=l.split(",")[-1]
+                        failingtest=l.split(",")[0]
+                        failingtest=failingtest.split("#")[1]
+                        print(l)
+                        diagnosis=l.split(",")[3]
                         if "at" in diagnosis:
                             diagnosis = diagnosis.split(" at")[0]
+                            diagnosis=str(diagnosis)
                             if ":" in diagnosis:
                                 diagnosis = diagnosis.split(":")[0]
                             if "." in diagnosis:
                                 diagnosis = diagnosis.split(".")[-1]
 
 
-        diagnosis = ' [FE] ' + diagnosis
+        diagnosis = ' [FE] ' + diagnosis+' '+failingtest 
+        diagnosis = diagnosis.replace("\r","").replace("\n","")
+
     
                     
     return failing_test_count, diagnosis
@@ -152,19 +178,21 @@ def test_execute_info():
         
         
 
-def executePatch(originFile,patch,startNo,endNo,action):  
+def executePatch(originFile,patch,startNo,endNo,action,project):  
+    
+    print('executePatch',action)
     
     if 'replace' in action:
-        result, diagnosis, failing_test_count = replace_action(originFile,patch,startNo,endNo)
+        result, diagnosis, failing_test_count = replace_action(originFile,patch,startNo,endNo,project)
     
     elif 'add' in action:
-        result, diagnosis, failing_test_count = add_action(originFile,patch,startNo,endNo)
+        result, diagnosis, failing_test_count = add_action(originFile,patch,startNo,endNo,project)
     
         
     return result, diagnosis, failing_test_count,action
     
 
-def replace_action(originFile,patch,startNo,endNo):   
+def replace_action(originFile,patch,startNo,endNo,project):   
     filename = originFile.split('/')[-1]
     project_bug = originFile.split('/')[1]   
     diagnosis=''    
@@ -197,7 +225,7 @@ def replace_action(originFile,patch,startNo,endNo):
     failing_test_count='None'
     #execute tests
     if "OK" in exec_result: 
-        failing_test_count, diagnosis = test_execute_info()
+        failing_test_count, diagnosis = test_execute_info(project)
         if failing_test_count==0:
             exec_result = 'plausible'
         else:
@@ -215,7 +243,7 @@ def replace_action(originFile,patch,startNo,endNo):
 
 
 
-def add_action(originFile,patch,startNo,endNo):   
+def add_action(originFile,patch,startNo,endNo,project):   
     filename = originFile.split('/')[-1]
     project_bug = originFile.split('/')[1]   
     diagnosis=''    
@@ -248,7 +276,7 @@ def add_action(originFile,patch,startNo,endNo):
     failing_test_count='None'
     #execute tests
     if "OK" in exec_result: 
-        failing_test_count, diagnosis = test_execute_info()
+        failing_test_count, diagnosis = test_execute_info(project)
         if failing_test_count==0:
             exec_result = 'plausible'
             print('plausible patch found:')
@@ -272,8 +300,8 @@ def add_action(originFile,patch,startNo,endNo):
     
 
 
-def test( model, tokenizer, device, loader):    
-    return_sequences = 3
+def test( model, tokenizer, device, loader, index,project):    
+    return_sequences = 5
     model.eval()
     identicalset=[]
     
@@ -301,86 +329,107 @@ def test( model, tokenizer, device, loader):
                 target = [tokenizer.decode(t, skip_special_tokens=True, clean_up_tokenization_spaces=True)for t in y]
                 target = target[0]
                 
-                buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,original_buggy,old_BR,action = getBugInfo(bugid.item())
+                buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,original_buggy,old_BR,action,previous_patch = getBugInfo(bugid.item())
                 
                 patch_path=TEST_PATH.replace("bugs.csv","patches.csv")
                 patch_minimization=TEST_PATH.replace("bugs.csv","patch_discard.csv")
                 patch_revert=TEST_PATH.replace("bugs.csv","revert.csv")
+                patch_plausible=TEST_PATH.replace("bugs.csv","plausible.csv")
+
 
                 if not os.path.exists(patch_path):
                     with open(patch_path, 'w') as csvfile:
-                        csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\tfailing_test_number\toriginal_buggy\taction\tpatch\texecution_result\tdiagnosis\tprevious_bug_id\toriginal_failing_test_number\n')
+                        csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\toriginal_failing_test_number\toriginal_buggy\taction\tpatch\texecution_result\tdiagnosis\tprevious_bug_id\tnew_failing_test_number\n')
                                                                                       
                 for i in range(0,return_sequences):
                     #avoid the prediction is same with buggy
                     original_buggy_no_space=original_buggy.replace(" ","")
                     prediction_no_space = preds[i].replace(" ","")
+                    prediction=preds[i]                                                       
+
+                    #perform the deletion action
+                    if i==return_sequences-1 and 'replace' in action:
+                        prediction=" "
+                    if 'add' in action:
+                        prediction=previous_patch+'  '+prediction
+                    prediction=prediction.replace('\n','')    
                     
                     print('buggy line NB: '+buggy_line)
                     print('- '+original_buggy)
-                    print('+ '+preds[i])
-
-
+                    print('+ '+prediction)
+                    
+                    if i==0:
+                        #create a regression list with original buggy 
+                        save_original_buggy=buggy_class+buggy_line+original_buggy
+                        save_original_buggy=save_original_buggy.replace(' ','')                    
+                    
                     #patch minimization
                     # Rule 1: discard the patch is same with buggy code
-                    if original_buggy_no_space in prediction_no_space and prediction_no_space  in original_buggy_no_space:
-                        
-                        with open(patch_minimization, 'a') as patch_minimization_file:
-                            patch_minimization_file.write('patch is same with buggy,'+buggy_line+','+action+',,'+original_buggy+','+preds[i]+'\n')
+                    inRevertList(save_original_buggy,patch_revert)
+                    #create a regression list with prediction                             
+                    save_to_revert=buggy_class+buggy_line+prediction
+                    save_to_revert=save_to_revert.replace(' ','')
+                    #patch minimization
+                    # Rule: patch revert to previous patch or buggy code 
+                   
+                    existFlag = inRevertList(save_to_revert,patch_revert)
+                    if existFlag:
+                        print('in revertion list, will not be executed')
+                        print('='*50)                        
 
-                    else:
-                        prediction=preds[i]                                                       
-                        execution_result,diagnosis,failing_test_number,action = executePatch(buggy_class,prediction,buggy_line,endbuggycode,action)                        
+                    elif not existFlag:
+                        execution_result,diagnosis,new_failing_test_number,action = executePatch(buggy_class,prediction,buggy_line,endbuggycode,action,project)                        
 
                         #patch minimization
                         # Rule 2: discard the patch with compilation error                                   
                         print(execution_result, diagnosis)
-                        print('='*20)
+                        print('='*50)
+                        print(' '*50)
 
-                        if '[CE]' in diagnosis:
+#                         if '[CE]' in diagnosis:
 
-                            with open(patch_minimization, 'a') as patch_minimization_file:
-                                patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+preds[i]+'\n')
-                      
+#                             with open(patch_minimization, 'a') as patch_minimization_file:
+#                                 patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+
 
                          #patch minimization
-                         # Rule 4: discard the patch with increase failing test number                       
-                        elif 'compilable' in execution_result and 'None' not in original_failing_test_number and int(original_failing_test_number)<int(failing_test_number):
+                             # Rule 4: discard the patch with increase failing test number                      
+                        print('new_failing_test_number:',new_failing_test_number)
+                        print('original_failing_test_number:',original_failing_test_number)
+
+                        if 'compilable' in execution_result and 'None' not in str(new_failing_test_number) and int(original_failing_test_number)<int(new_failing_test_number):
+
                             with open(patch_minimization, 'a') as patch_minimization_file:
-                                patch_minimization_file.write('increase failing tests,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+preds[i]+'\n')
-                            
-                                                     
-                        #patch minimization
-                        # Rule 5: patch revert to previous patch or buggy code   
-                        
+                                patch_minimization_file.write('increase failing tests,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+
+
                         else:
-                            new_bugid = int(bugid.item()-1)*int(return_sequences)*2+i+1 
-                            
+                            new_bugid = int(_)*int(return_sequences)*int(index)*2+i+1 
+
                             #new bug representation based on new prediction
                             BR_context=old_BR.split('[CONTEXT]')[1]
                             context_parts = BR_context.split('[BUGGY]') 
-                            new_BR_replace = '[BUG] [BUGGY] '+prediction+' '+diagnosis+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
-                            new_BR_add = '[BUG] [BUGGY] '+diagnosis+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
-                                                        
-                            #create a regression list with prediction  
-                            save_original_buggy=buggy_class+buggy_line+original_buggy
-                            save_original_buggy=save_original_buggy.replace(' ','')
-                            inRevertList(save_original_buggy,patch_revert)
-                            
-                            
+                            if len(context_parts)>2:
+                                new_BR_replace = '[BUG] [BUGGY] '+prediction+' '+diagnosis+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
+                                new_BR_add = '[BUG] [BUGGY] '+diagnosis+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
 
+                                new_BR_replace=new_BR_replace.replace('  ',' ')
+                                new_BR_add=new_BR_add.replace('  ',' ')
 
-                            save_to_revert=buggy_class+buggy_line+prediction
-                            save_to_revert=save_to_revert.replace(' ','')
-                            print('prediction:'+prediction)
+                                if 'plausible' in execution_result:
+                                    with open(patch_plausible, 'a') as csvfile:
+                                        filewriter = csv.writer(csvfile, delimiter='\t',escapechar=' ',quoting=csv.QUOTE_NONE)
+                                        filewriter.writerow([str(new_bugid),old_BR,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,action,prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
+                                else:  
+                                    print('write to patches.csv:'+save_to_revert)
+                                    with open(patch_path, 'a') as csvfile:
+                                        filewriter = csv.writer(csvfile, delimiter='\t',escapechar=' ',quoting=csv.QUOTE_NONE)
+                                        if 'compilable' in execution_result:
+                                            filewriter.writerow([str(new_bugid),new_BR_add,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'add',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
+                                            filewriter.writerow([str(new_bugid+1),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
+                                        else:
+                                            filewriter.writerow([str(new_bugid),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
 
-                            if not inRevertList(save_to_revert,patch_revert):
-                                print('write to patch:'+save_to_revert)
-                                with open(patch_path, 'a') as csvfile:
-                                    filewriter = csv.writer(csvfile, delimiter='\t',escapechar=' ',quoting=csv.QUOTE_NONE)
-                                    filewriter.writerow([str(new_bugid),new_BR_add,buggy_class,suspiciousness,buggy_line,endbuggycode,failing_test_number,'add',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),original_failing_test_number]) 
-                                    filewriter.writerow([str(new_bugid+1),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),original_failing_test_number]) 
-                                                               
 
 
 
@@ -399,14 +448,20 @@ def getGeneratorDataLoader(filepath,tokenizer,batchsize):
     return target_loader
 
         
-def run_test():
-    for m in [5,10]:
+def run_test(project):
+    for m in [5,8,10]:
         gen = T5ForConditionalGeneration.from_pretrained('./SelfAPR/model_SelfAPR/SelfAPR'+str(m),output_hidden_states=True)       
         gen_tokenizer = T5Tokenizer.from_pretrained('./SelfAPR/model_SelfAPR/SelfAPR'+str(m),truncation=True)
         gen_tokenizer.add_tokens(['[PATCH]','[BUG]','{', '}','<','^','<=','>=','==','!=','<<','>>','[CE]','[FE]','[CONTEXT]','[BUGGY]','[CLASS]','[METHOD]','[RETURN_TYPE]','[VARIABLES]','[Delete]'])   
         gen = gen.to(device)       
         test_loader=getGeneratorDataLoader(TEST_PATH,gen_tokenizer,1)
-        test(gen, gen_tokenizer, device, test_loader)
+        if m == 5:
+            index=1
+        elif m == 8:
+            index=2
+        elif m == 10:
+            index=3
+        test(gen, gen_tokenizer, device, test_loader, index,project)
 
 
 
@@ -423,10 +478,10 @@ if __name__ == '__main__':
     PATCH_LEN = 128 
     device = 'cuda' if cuda.is_available() else 'cpu'
 
-    for rounds in range(0,10):
+    for rounds in range(0,5):
         print('Iteration '+str(rounds)+'  '+project+bug)
         TEST_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds)+'/bugs.csv'
-        run_test()       
+        run_test(project)       
         PATCH_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds)+'/patches.csv'
         REVERT_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds)+'/revert.csv'
         NEXT_REVERT_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds+1)+'/revert.csv'
