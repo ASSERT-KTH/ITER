@@ -1,0 +1,24 @@
+increase failing tests,325,replace, [FE] AssertionError testWeightedVariance,var = evaluate(values, weights, m, begin, length); ,var = evaluate(values, m, begin, length);
+increase failing tests,325,replace, [FE] NumberIsTooLargeException testWeightedVariance,var = evaluate(values, weights, m, begin, length); ,var = evaluate(values, m, begin, length + 1);
+increase failing tests,325,replace, [FE] AssertionError testWeightedVariance,var = evaluate(values, weights, m, begin, length); , 
+increase failing tests,328,replace, [FE] AssertionError testWeightedVariance,return var; ,return var + 1;
+increase failing tests,328,replace, [FE] AssertionError testWeightedVariance,return var; ,return var = 0.0;
+increase failing tests,328,replace, [FE] AssertionError testWeightedVariance,return var; ,return var *(0);
+increase failing tests,324,replace, [FE] ArrayIndexOutOfBoundsException testWeightedVariance,double m = mean.evaluate(values, weights, begin, length); ,double m = mean.evaluate(values, weights, begin, length + 1);
+increase failing tests,328,add, [FE] StackOverflowError testWeightedVariance,,  var = evaluate(values, weights, begin, length);
+increase failing tests,323,add, [FE] StackOverflowError testWeightedVariance,,  var = evaluate(values, weights, begin, length);
+increase failing tests,320,add, [FE] StackOverflowError testWeightedVariance,,  var = evaluate(values, weights, begin, length);
+increase failing tests,322,replace, [FE] AssertionError testWeightedVariance,} else if (length > 1) { ,} else if(length == 1) {
+increase failing tests,322,replace, [FE] AssertionError testWeightedVariance,} else if (length > 1) { ,} else if(length < 1) {
+increase failing tests,319,add, [FE] StackOverflowError testWeightedVariance,,  var = evaluate(values, weights, begin, length);
+increase failing tests,370,replace, [FE] AssertionError testWeightedConsistency,return evaluate(values, weights, 0, values.length); ,return evaluate(values, weights, 0, values.length - 1);
+increase failing tests,370,replace, [FE] ArrayIndexOutOfBoundsException testWeightedConsistency,return evaluate(values, weights, 0, values.length); ,return evaluate(values, weights, 0, values.length, weights.length);
+increase failing tests,370,replace, [FE] ArrayIndexOutOfBoundsException testWeightedConsistency,return evaluate(values, weights, 0, values.length); ,return evaluate(values, weights, 0, values.length + 1);
+increase failing tests,323,add, [FE] StackOverflowError testWeightedVariance,,  evaluate(values, weights, begin, length);
+increase failing tests,318,add, [FE] AssertionError testWeightedVariance,,  System.arraycopy(values, begin, weights, begin, length);
+increase failing tests,319,add, [FE] StackOverflowError testWeightedVariance,,  evaluate(values, weights, begin, length);
+increase failing tests,320,replace, [FE] AssertionError testWeightedVariance,if (length == 1) { ,if(test(values, weights, begin, length)&& length > 1) {
+increase failing tests,320,replace, [FE] AssertionError testWeightedVariance,if (length == 1) { ,if(test(values, begin, length)&& length > 1) {
+increase failing tests,323,add, [FE] StackOverflowError testWeightedVariance,,  clear(); var = evaluate(values, weights, begin, length);
+increase failing tests,370,replace, [FE] MathIllegalArgumentException testWeightedConsistency,return evaluate(values, weights, 0, values.length); ,return evaluate(values, weights, 0, values.length, 0);
+increase failing tests,325,replace, [FE] AssertionError testWeightedVariance,var = evaluate(values, weights, m, begin, length); ,var = evaluate(values, m, begin, length)- 1;

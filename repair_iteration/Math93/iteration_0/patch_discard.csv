@@ -1,0 +1,34 @@
+compilation error,397,replace,[CE] ';' expected,double logSum = 0; ,double logSum -= 0;
+compilation error,397,replace,[CE] cannot find symbol logSum,double logSum = 0; , 
+compilation error,350,add,[CE] incompatible types,,  long[] factorials = Math.round(factorialDouble(n));
+compilation error,350,add,[CE] variable factorials might not have been initialized,,  long[] factorials =(long[])factorials.clone();
+compilation error,350,add,[CE] incompatible types,,  long[] factorials = Math.round(factorials[n]);
+compilation error,350,add,[CE] variable factorials might not have been initialized,,  long[] factorials =(long[])factorials.clone(); result = Math.round(result);
+compilation error,350,add,[CE] incompatible types,,  long[] factorials = Math.round(factorialDouble(n + 1));
+increase failing tests,401,replace, [FE] ArrayIndexOutOfBoundsException testFactorialFail,return logSum; ,return logSum /(Math.rint(logSum));
+increase failing tests,401,replace, [FE] ArrayIndexOutOfBoundsException testFactorialFail,return logSum; ,return logSum -(Math.rint(logSum));
+compilation error,401,replace,[CE] cannot find symbol i,return logSum; ,return i;
+compilation error,401,replace,[CE] ';' expected,return logSum; ,return logSum +(Math.rint(logSum)/ n));
+compilation error,401,replace,[CE] missing return statement,return logSum; , 
+increase failing tests,399,add, [FE] ArrayIndexOutOfBoundsException testFactorialFail,,  logSum -= Math.log(( double)i);
+compilation error,394,add,[CE] illegal start of expression,,  if(factorials == null) { if(n > 0) { throw new IllegalArgumentException(""); }
+compilation error,394,add,[CE] illegal start of expression,,  if(factorials == null) { for(int i = 0; i < n; i++) { logSum += Math.log(( double)i); }
+compilation error,394,add,[CE] illegal start of expression,,  if(factorials == null) { for(int i = 0; i < n; i++) { logSum += Math.log(( int)i); }
+compilation error,394,add,[CE] illegal start of expression,,  if(factorials == null) { for(int i = 0, n = factorials.length; i < n; i++) { logSum += Math.log(( double)i); }
+compilation error,394,add,[CE] illegal start of expression,,  if(factorials == null) { for(int i = 0, n = factorials.length; i < 0; i++) { logSum += Math.log(( double)i); }
+compilation error,345,add,[CE] variable factorials might not have been initialized,,  long[] factorials =(long[])factorials.clone();
+compilation error,345,add,[CE] incompatible types,,  final long[] factorials = Math.round(factorials[n]);
+compilation error,345,add,[CE] incompatible types,,  long[] factorials = Math.round(factorials[n]);
+compilation error,345,add,[CE] no suitable method found for round(long[],int),,  long[] factorials = Math.round(factorials, n);
+increase failing tests,345,add, [FE] NegativeArraySizeException testFactorialFail,,  long[] factorials = new long[n];
+compilation error,350,replace,[CE] inconvertible types,return factorials[n]; ,return result +(long[])factorials[n];
+increase failing tests,374,replace, [FE] IllegalArgumentException testFactorialFail,if (n < 0) { ,if(n >= 0) {
+compilation error,374,replace,[CE] illegal start of type,if (n < 0) { , 
+increase failing tests,345,replace, [FE] ArrayIndexOutOfBoundsException testFactorialFail,long result = Math.round(factorialDouble(n)); ,long result = Math.round(factorialDouble(n + 1));
+increase failing tests,345,replace, [FE] ArrayIndexOutOfBoundsException testFactorialFail,long result = Math.round(factorialDouble(n)); ,long result = Math.round(factorialDouble(n - 1));
+compilation error,397,add,[CE] illegal start of expression,,  if(factorials == null) { if(n > 0) { throw new IllegalArgumentException(""); }
+compilation error,397,add,[CE] illegal start of expression,,  if(factorials == null) { if(n > 0) { throw new IllegalArgumentException("must have n > 0 for n!"); }
+compilation error,397,add,[CE] illegal start of expression,,  if(factorials == null) { for(int i = 2; i < n; i++) { logSum += Math.log(( double)i); }
+compilation error,397,add,[CE] illegal start of expression,,  if(factorials == null) { if(n > 0) { throw new IllegalArgumentException("must have n > 0 for n."); }
+compilation error,397,add,[CE] illegal start of expression,,  if(factorials == null) { for(int i = 2; i < n; i++) { logSum += Math.log(( int)i); }
+increase failing tests,398,add, [FE] ArrayIndexOutOfBoundsException testFactorialFail,,  logSum -= Math.log(( double)n);

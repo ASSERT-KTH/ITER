@@ -1,11 +1,229 @@
-patch is same with buggy,,super(); ,super();
-compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR, false));
-compilation error,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_LOAD_FACTOR, false));
-compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR));
-compilation error,[CE] cannot find symbol AsertionFailedError,super(); ,super(AsertionFailedError? null : AssertionFailedError.getErrorList());
-compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR, null));
-compilation error,[CE] <identifier> expected,super(); ,super(AsertionFailedError? null : AssertionFailedError.false());
-compilation error,[CE] cannot find symbol DEFAULT_ERROR,super(); ,super(AsertionFailedError.make(ShapeList.DEFAULT_ERROR, true));
-compilation error,[CE] cannot find symbol AsertionFailedError,super(); ,super(AsertionFailedError? null : AssertionFailedError());
-compilation error,[CE] cannot find symbol AsertionFailedError,super(); ,super(AsertionFailedError? null : AssertionFailedError.getErrorInfo());
-patch is same with buggy,,if (!(obj instanceof ShapeList)) { ,if(!(obj instanceof ShapeList)) {
+compilation error,165,add,[CE] cannot find symbol,,stream.setIndex(index);
+compilation error,139,add,[CE] cannot find symbol,,stream.writeInt(0, shape.length()); SerialUtilities.writeShape(shape, stream);
+compilation error,105,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).equals(this.obj)) { return false; }
+compilation error,105,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).equals(this)) { return false; }
+compilation error,105,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj)) { return false; }
+patch is same with buggy,59,replace,,super(); ,super();
+compilation error,59,replace,[CE] no suitable constructor found for AbstractObjectList(String),super(); ,super(" < ");
+compilation error,133,add,[CE] cannot find symbol shape,,stream.defaultWriteObject(); SerialUtilities.writeShape(this.shape, stream);
+compilation error,133,add,[CE] cannot find symbol shape,,SerialUtilities.writeShape(this.shape, stream);
+compilation error,81,add,[CE] cannot find symbol,,super.setShape(shape);
+compilation error,81,add,[CE] cannot find symbol,,super.setShape(index, shape);
+compilation error,81,add,[CE] illegal start of expression,,if(shape!= null) { if(!shape.isEmpty()) { return; }
+compilation error,121,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <? super.hashCode() : 0); if(!shapeList.isEmpty()) { return 0; }
+compilation error,121,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <? super.hashCode() : 0); if(!getClass().isArray()) { return 0; }
+compilation error,82,replace,[CE] illegal start of expression,} ,if(shape!= null) { if(!shape.isEmpty()) { throw new IllegalArgumentException(""); }
+compilation error,82,replace,[CE] illegal start of expression,} ,if(shape!= null) { if(!shape.isEmpty()) { return; }
+compilation error,82,replace,[CE] illegal start of expression,} , 
+patch is same with buggy,133,replace,,stream.defaultWriteObject(); ,stream.defaultWriteObject();
+compilation error,133,replace,[CE] method defaultWriteObject in class ObjectOutputStream cannot be applied to given types;,stream.defaultWriteObject(); ,stream.defaultWriteObject(this);
+compilation error,60,add,[CE] cannot find symbol Feature,,if(isEnabled(Feature.FLUSH_PASSED_TO_STREAM)) { throw new IllegalArgumentException(""); }
+compilation error,60,add,[CE] cannot find symbol Feature,,if(isEnabled(Feature.FLUSH_PASSED_TO_STREAM)) { throw new IllegalStateException(""); }
+compilation error,60,add,[CE] cannot find symbol Feature,,if(isEnabled(Feature.FLUSH_PASSED_TO_STREAM)) { throw new IllegalArgumentException(""); } else { Preconditions.checkNotNull(this, true); }
+patch is same with buggy,121,replace,,return super.hashCode(); ,return super.hashCode();
+patch is same with buggy,162,replace,,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count; i++) {
+patch is same with buggy,162,replace,,for (int i = 0; i < count; i++) { , 
+patch is same with buggy,70,replace,,return (Shape) get(index); ,return(Shape)get(index);
+compilation error,70,replace,[CE] missing return statement,return (Shape) get(index); , 
+patch is same with buggy,139,replace,,stream.writeInt(i); ,stream.writeInt(i);
+compilation error,139,replace,[CE] method writeInt in class ObjectOutputStream cannot be applied to given types;,stream.writeInt(i); ,stream.writeInt(0, i);
+compilation error,136,add,[CE] cannot find symbol shape,,SerialUtilities.writeShape(this.shape, stream);
+compilation error,136,add,[CE] cannot find symbol shape,,SerialUtilities.writeShape(shape, stream);
+compilation error,136,add,[CE] cannot find symbol shape,,SerialUtilities.writeShape(this.shape);
+compilation error,160,add,[CE] variable stream is already defined in method readObject(ObjectInputStream),,Object stream = SerialUtilities.readShape(stream);
+patch is same with buggy,161,replace,,int count = stream.readInt(); ,int count = stream.readInt();
+compilation error,161,replace,[CE] cannot find symbol count,int count = stream.readInt(); , 
+patch is same with buggy,160,replace,,stream.defaultReadObject(); ,stream.defaultReadObject();
+compilation error,160,replace,[CE] cannot find symbol,stream.defaultReadObject(); ,stream.defaultReadInt();
+compilation error,137,add,[CE] cannot find symbol shape,,stream.writeInt(i); SerialUtilities.writeShape(this.shape, stream);
+compilation error,137,add,[CE] cannot find symbol shape,,stream.writeInt(i); SerialUtilities.writeShape(shape, stream);
+patch is same with buggy,137,replace,,Shape shape = getShape(i); ,Shape shape = getShape(i);
+compilation error,137,replace,[CE] cannot find symbol,Shape shape = getShape(i); ,Shape shape =(Shape)this.getObject(i);
+patch is same with buggy,138,replace,,if (shape != null) { ,if(shape!= null) {
+compilation error,138,replace,[CE] 'else' without 'if',if (shape != null) { , 
+compilation error,134,replace,[CE] incompatible types,int count = size(); ,int count = size() > 0;
+compilation error,134,replace,[CE] cannot find symbol count,int count = size(); , 
+compilation error,60,replace,[CE] illegal start of expression,} ,if(!isShape()) { ShapeList = new ShapeList(); if(getErrorCount() > 0) { throw new IllegalArgumentException(""); }
+compilation error,60,replace,[CE] illegal start of expression,} ,if(!isShape()) { ShapeList = new ShapeList(); if(getErrorCount() > 0) { return null; }
+compilation error,164,add,[CE] cannot find symbol shape,,shape =(Shape)stream.readObject();
+compilation error,164,add,[CE] inconvertible types,,int shape =(Shape)stream.readInt();
+patch is same with buggy,165,replace,,setShape(index, SerialUtilities.readShape(stream)); ,setShape(index, SerialUtilities.readShape(stream));
+patch is same with buggy,163,replace,,int index = stream.readInt(); ,int index = stream.readInt();
+compilation error,163,replace,[CE] method readInt in class ObjectInputStream cannot be applied to given types;,int index = stream.readInt(); ,int index = stream.readInt(i);
+compilation error,163,replace,[CE] cannot find symbol index,int index = stream.readInt(); , 
+compilation error,163,add,[CE] method readInt in class ObjectInputStream cannot be applied to given types;,,stream.readInt(i);
+patch is same with buggy,81,replace,,set(index, shape); ,set(index, shape);
+increase failing tests,81,replace, [FE] StackOverflowError,set(index, shape); ,setShape(index, shape);
+compilation error,135,add,[CE] illegal start of expression,,if(count > 0) { for(int i = 0; i < count; i++) { Shape shape = getShape(i); if(shape!= null) { stream.writeInt(-1); }
+compilation error,135,add,[CE] illegal start of expression,,if(count > 0) { for(int i = 0; i < count; i++) { Shape shape = getShape(i); if(shape!= null) { stream.writeInt(-i); }
+compilation error,135,add,[CE] illegal start of expression,,if(count > 0) { for(int i = 0; i < count; i++) { SerialUtilities.writeShape(shape, stream); }
+compilation error,82,add,[CE] illegal start of expression,,if(shape!= null) { if(!shape.isEmpty()) { setShape(shape); }
+compilation error,138,add,[CE] illegal start of expression,,if(shape!= null) { if(stream.writeInt(i)) { stream.writeInt(-1); }
+patch is same with buggy,143,replace,,stream.writeInt(-1); ,stream.writeInt(-1);
+patch is same with buggy,143,replace,,stream.writeInt(-1); , 
+patch is same with buggy,140,replace,,SerialUtilities.writeShape(shape, stream); ,SerialUtilities.writeShape(shape, stream);
+compilation error,140,replace,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,SerialUtilities.writeShape(shape, stream); ,SerialUtilities.writeShape(shape, i);
+compilation error,108,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).equals(this.obj)) { return false; }
+compilation error,108,add,[CE] illegal start of expression,,if(obj instanceof List) { if(!(( List)obj).equals(this.obj)) { return false; }
+compilation error,108,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj))) { return false; }
+compilation error,70,add,[CE] illegal start of expression,,if(index < 0) { if(getShape() == null) { return new Shape(this, index); }
+compilation error,70,add,[CE] illegal start of expression,,if(index < 0) { if(getShape()!= null) { return new Shape(this, index); }
+compilation error,70,add,[CE] illegal start of expression,,if(index < 0) { if(!getShape()) { return null; }
+compilation error,161,add,[CE] generics are not supported in -source 1.4,,ShapeList < ShapeList> setShape(stream);
+compilation error,161,add,[CE] generics are not supported in -source 1.4,,ShapeList < ShapeList> setShape(Stream.readInt());
+compilation error,161,add,[CE] generics are not supported in -source 1.4,,ShapeList < ShapeList> setShape(stream.readInt());
+patch is same with buggy,105,replace,,if (obj == this) { ,if(obj == this) {
+patch is same with buggy,111,replace,,return super.equals(obj); ,return super.equals(obj);
+compilation error,111,replace,[CE] ';' expected,return super.equals(obj); ,return super.equals(obj)&&!(( ShapeList)obj).equals(this.obj));
+compilation error,111,replace,[CE] missing return statement,return super.equals(obj); , 
+compilation error,134,add,[CE] cannot find symbol shape,,SerialUtilities.writeShape(this.shape, stream);
+compilation error,134,add,[CE] cannot find symbol shape,,SerialUtilities.writeShape(this.shape);
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).equals(this.obj)) { return false; }
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).equals(this.object)) { return false; }
+compilation error,111,add,[CE] illegal start of expression,,if(!(obj instanceof ShapeList)) { if(!(( ShapeList)obj).equals(this.obj)) { return false; }
+compilation error,140,add,[CE] ')' expected,,if(shape!= null) { for(int i = 0; i < size(); i++) { Shape shape = getShape(i); if(shape instanceof SerialUtilities.writeShape(shape, stream); }
+compilation error,140,add,[CE] ')' expected,,if(shape!= null) { for(int i = 0; i < stream.size(); i++) { Shape shape = getShape(i); if(shape instanceof SerialUtilities.writeShape(shape, stream); }
+patch is same with buggy,164,replace,,if (index != -1) { ,if(index!= -1) {
+patch is same with buggy,108,replace,,if (!(obj instanceof ShapeList)) { ,if(!(obj instanceof ShapeList)) {
+compilation error,59,add,[CE] constructor ShapeList in class ShapeList cannot be applied to given types;,,this(null);
+compilation error,59,add,[CE] constructor ShapeList in class ShapeList cannot be applied to given types;,,this(new ShapeList());
+compilation error,162,add,[CE] generics are not supported in -source 1.4,,ShapeList < ShapeList> setShape(count, SerialUtilities.readShape(stream));
+compilation error,162,add,[CE] generics are not supported in -source 1.4,,ShapeList < ShapeList> setShape(0, SerialUtilities.readShape(stream));
+compilation error,162,add,[CE] generics are not supported in -source 1.4,,ShapeList < ShapeList> setShape(count, SerialUtilities.readShape(stream)); if(count!= 0) { setShape(count, SerialUtilities.readShape(stream)); }
+patch is same with buggy,136,replace,,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count; i++) {
+patch is same with buggy,136,replace,,for (int i = 0; i < count; i++) { , 
+compilation error,134,replace,[CE] cannot find symbol,int count = size(); ,int count = getCount();
+compilation error,140,add,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,,SerialUtilities.writeShape(shape);
+patch is same with buggy,133,replace,,stream.defaultWriteObject(); ,stream.defaultWriteObject();
+compilation error,133,add,[CE] cannot find symbol shape,,stream.defaultWriteObject(); this.shape = SerialUtilities.writeShape(stream);
+patch is same with buggy,137,replace,,Shape shape = getShape(i); ,Shape shape = getShape(i);
+compilation error,137,replace,[CE] cannot find symbol shape,Shape shape = getShape(i); ,StaxUtil.sanitizeShape(this.shape);
+patch is same with buggy,164,replace,,if (index != -1) { ,if(index!= -1) {
+compilation error,81,add,[CE] cannot find symbol Validate,,Validate.notNull(shape);
+compilation error,81,add,[CE] cannot find symbol Validate,,Validate.notNull(shape); this.index = index;
+compilation error,162,add,[CE] method setShape in class ShapeList cannot be applied to given types;,,setShape(( Class)stream.readObject());
+compilation error,162,add,[CE] method setShape in class ShapeList cannot be applied to given types;,,setShape(( Object)stream.readObject());
+patch is same with buggy,163,replace,,int index = stream.readInt(); ,int index = stream.readInt();
+patch is same with buggy,139,replace,,stream.writeInt(i); ,stream.writeInt(i);
+patch is same with buggy,143,replace,,stream.writeInt(-1); ,stream.writeInt(-1);
+compilation error,143,replace,[CE] method writeInt in class ObjectOutputStream cannot be applied to given types;,stream.writeInt(-1); ,stream.writeInt(-1, stream);
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).getClass().equals(this.getClass())) { return false; }
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof List) { if(!(( List)obj).equals(this.list)) { return false; }
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(( ShapeList)obj).getClass().equals(this.getClass())) { return true; }
+patch is same with buggy,59,replace,,super(); ,super();
+compilation error,59,replace,[CE] generics are not supported in -source 1.4,super(); ,super(new HashMap < String,Object>());
+patch is same with buggy,121,replace,,return super.hashCode(); ,return super.hashCode();
+patch is same with buggy,138,replace,,if (shape != null) { ,if(shape!= null) {
+compilation error,60,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <? extends:) { if(!hasAnyShapeList()) { throw new IllegalArgumentException(""); }
+compilation error,60,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <? extends:) { if(!setErrorEscaped()) { throw new IllegalArgumentException(""); }
+compilation error,60,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <? extends:) { if(!hasNext()) { throw new IllegalArgumentException(""); }
+patch is same with buggy,111,replace,,return super.equals(obj); ,return super.equals(obj);
+compilation error,108,add,[CE] cannot find symbol,,if(obj == null)return false; if(obj instanceof List) { return true; }
+compilation error,108,add,[CE] illegal start of expression,,if(obj == null) { if(obj instanceof ShapeList) { return false; }
+patch is same with buggy,105,replace,,if (obj == this) { ,if(obj == this) {
+compilation error,105,replace,[CE] cannot find symbol,if (obj == this) { ,if(obj == this ||!(obj instanceof List)) {
+patch is same with buggy,108,replace,,if (!(obj instanceof ShapeList)) { , 
+compilation error,82,add,[CE] for-each loops are not supported in -source 1.4,,if(shape!= null) { for(Shape shape : getShapes()) { setShape(shape); }
+compilation error,82,add,[CE] for-each loops are not supported in -source 1.4,,if(shape!= null) { int index = shape.getIndex(); for(Shape shape : shape.getShape()) { setIncludeShape(index, shape); }
+compilation error,82,add,[CE] for-each loops are not supported in -source 1.4,,if(shape!= null) { int index = shape.getIndex(); for(Shape shape : shape.getShape()) { setIncludeShape(shape); }
+compilation error,160,add,[CE] cannot find symbol shape,,stream.defaultReadObject(); this.shape = SerialUtilities.readShape(stream);
+compilation error,160,add,[CE] cannot find symbol shape,,stream.defaultReadObject(); this.shape =(Shape)stream.readObject();
+increase failing tests,105,add, [FE] AssertionFailedError,,if(obj == this)return true; if(obj instanceof ShapeList) { return false; }
+increase failing tests,105,add, [FE] AssertionFailedError,,if(obj == null)return false; if(obj instanceof ShapeList) { return false; }
+compilation error,121,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <?>, ClassUtils.hashCode(getEmptyClass())) { if(!getMask()) { return 0; }
+compilation error,121,add,[CE] generics are not supported in -source 1.4,,for(ShapeList <?>, ClassUtils.hashCode(getClass()): 0) { if(!getMask()) { return 0; }
+compilation error,134,add,[CE] cannot find symbol shape,,stream.writeInt(this.shape);
+compilation error,134,add,[CE] method getShape in class ShapeList cannot be applied to given types;,,stream.writeInt(this.getShape());
+patch is same with buggy,162,replace,,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count; i++) {
+patch is same with buggy,162,replace,,for (int i = 0; i < count; i++) { ,for(int i=0; i < count; i++) {
+patch is same with buggy,136,replace,,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count; i++) {
+compilation error,136,replace,[CE] size has private access in AbstractObjectList,for (int i = 0; i < count; i++) { ,for(int i = 0; i < size; i++) {
+patch is same with buggy,160,replace,,stream.defaultReadObject(); ,stream.defaultReadObject();
+compilation error,160,replace,[CE] cannot find symbol,stream.defaultReadObject(); ,stream.printStackTrace();
+patch is same with buggy,160,replace,,stream.defaultReadObject(); , 
+compilation error,59,add,[CE] generics are not supported in -source 1.4,,this(new HashMap < String,Object>());
+compilation error,59,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(this);
+compilation error,60,replace,[CE] generics are not supported in -source 1.4,} ,for(ShapeList <? extends JsonDeserializer <? } :) { if(!isEnabled(Feature.FLUSH_PASSED_TO_STREAM)) { return ShapeList.newInstance(); }
+compilation error,60,replace,[CE] generics are not supported in -source 1.4,} ,for(ShapeList <? extends JsonDeserializer <? >> :) { if(!isEnabled(Feature.FLUSH_PASSED_TO_STREAM)) { return ShapeList.newInstance(); }
+patch is same with buggy,140,replace,,SerialUtilities.writeShape(shape, stream); ,SerialUtilities.writeShape(shape, stream);
+compilation error,140,replace,[CE] cannot find symbol,SerialUtilities.writeShape(shape, stream); ,SerialUtilities.writeshape(shape, stream);
+compilation error,82,replace,[CE] illegal start of expression,} ,if(shape!= null) { throw new IllegalArgumentException(""); }
+patch is same with buggy,165,replace,,setShape(index, SerialUtilities.readShape(stream)); ,setShape(index, SerialUtilities.readShape(stream));
+compilation error,165,replace,[CE] method setShape in class ShapeList cannot be applied to given types;,setShape(index, SerialUtilities.readShape(stream)); ,setShape(index, SerialUtilities.readShape(stream), stream);
+patch is same with buggy,161,replace,,int count = stream.readInt(); ,int count = stream.readInt();
+compilation error,70,add,[CE] cannot find symbol Validate,,Validate.notNull(index);
+compilation error,70,add,[CE] cannot find symbol Preconditions,,Preconditions.checkArgument(index >= 0);
+compilation error,70,add,[CE] cannot find symbol Preconditions,,Preconditions.checkArgument(index < 0);
+patch is same with buggy,81,replace,,set(index, shape); ,set(index, shape);
+compilation error,81,replace,[CE] cannot find symbol,set(index, shape); ,setIndex(index, shape);
+patch is same with buggy,121,replace,,return super.hashCode(); ,return super.hashCode();
+compilation error,163,add,[CE] cannot find symbol,,Shape shape = getImpl(i);
+compilation error,136,add,[CE] method getShape in class ShapeList cannot be applied to given types;,,SerialUtilities.writeShape(this.getShape(stream));
+compilation error,136,add,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,,SerialUtilities.writeShape(getShape(count));
+compilation error,136,add,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,,SerialUtilities.writeShape(this.getShape(count));
+compilation error,121,add,[CE] illegal start of expression,,if(this.hashCode == 0) { if(!super.hashCode()) { return 0; }
+compilation error,121,add,[CE] illegal start of expression,,if(this.hashCode == 0) { if(!isEmpty()) { return 0; }
+compilation error,121,add,[CE] illegal start of expression,,if(this.hashCode == 0) { if(!isShape()) { return 0; }
+compilation error,134,add,[CE] method getShape in class ShapeList cannot be applied to given types;,,SerialUtilities.writeShape(this.getShape(stream));
+compilation error,134,add,[CE] method getShape in class ShapeList cannot be applied to given types;,,SerialUtilities.writeShape(getShape(stream));
+compilation error,133,add,[CE] method getShape in class ShapeList cannot be applied to given types;,,SerialUtilities.writeShape(this.getShape(stream));
+compilation error,82,add,[CE] for-each loops are not supported in -source 1.4,,if(this.shape!= null) { for(Shape shape : this.shapes) { super.setShape(shape); }
+compilation error,82,add,[CE] for-each loops are not supported in -source 1.4,,if(this.shape!= null) { for(Shape shape : this.shapes) { set(shape, index, shape); }
+compilation error,82,add,[CE] for-each loops are not supported in -source 1.4,,if(this.shape!= null) { for(Shape shape : this.shapes) { super.setShape(shape, index); }
+patch is same with buggy,160,replace,,stream.defaultReadObject(); ,stream.defaultReadObject();
+compilation error,160,replace,[CE] not a statement,stream.defaultReadObject(); ,stream.defaultReadObject() &&(StreamUtilities.isShape(stream)|| stream.readBoolean()));
+compilation error,82,replace,[CE] illegal start of expression,} ,if(index < 0 && index < shape.getLength()) { ShapeUtilities.setShape(shape, index, shape); } else { Preconditions.checkNotNull(index, shape); }
+compilation error,82,replace,[CE] illegal start of expression,} ,if(index < 0 && index < shape.getLength()) { ShapeUtilities.setShape(shape); } else { Preconditions.checkNotNull(index, shape); }
+compilation error,70,add,[CE] method getShape in class ShapeList cannot be applied to given types;,,Preconditions.checkArgument(!getShape().isEmpty());
+compilation error,70,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(index);
+patch is same with buggy,162,replace,,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count; i++) {
+compilation error,162,replace,[CE] ';' expected,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count, but i++) {
+patch is same with buggy,162,replace,,for (int i = 0; i < count; i++) { , 
+increase failing tests,108,replace, [FE] AssertionFailedError,if (!(obj instanceof ShapeList)) { ,if(!(obj instanceof ShapeList)|| super.equals(obj)) {
+patch is same with buggy,59,replace,,super(); ,super();
+compilation error,59,replace,[CE] no suitable constructor found for AbstractObjectList(String),super(); ,super("[weight=1]:");
+compilation error,135,add,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,,SerialUtilities.writeShape(this.getShape(count));
+patch is same with buggy,140,replace,,SerialUtilities.writeShape(shape, stream); ,SerialUtilities.writeShape(shape, stream);
+compilation error,140,replace,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,SerialUtilities.writeShape(shape, stream); ,SerialUtilities.writeShape(shape, 10);
+compilation error,162,add,[CE] inconvertible types,,int shape =(Shape)stream.readInt();
+compilation error,81,add,[CE] cannot find symbol shape,,Preconditions.checkArgument(!this.shape.isEmpty());
+compilation error,81,add,[CE] cannot find symbol,,Preconditions.checkArgument(!this.isShape());
+compilation error,108,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(obj instanceof List)) { return false; }
+compilation error,108,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(obj instanceof Number)) { return false; }
+compilation error,108,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(obj instanceof Rectangle)) { return false; }
+patch is same with buggy,133,replace,,stream.defaultWriteObject(); ,stream.defaultWriteObject();
+compilation error,60,add,[CE] generics are not supported in -source 1.4,,this.shapeList = new HashMap < String,Object>();
+compilation error,60,add,[CE] generics are not supported in -source 1.4,,this.shapeList = new HashMap < Node, Branch>();
+compilation error,60,add,[CE] generics are not supported in -source 1.4,,if(isEmpty()) { for(Map.Entry < K, V >> : getClass()) { addChangeListener(this); }
+compilation error,59,add,[CE] generics are not supported in -source 1.4,,this(new HashMap < K, V>());
+patch is same with buggy,105,replace,,if (obj == this) { ,if(obj == this) {
+patch is same with buggy,105,replace,,if (obj == this) { , 
+patch is same with buggy,70,replace,,return (Shape) get(index); ,return(Shape)get(index);
+compilation error,70,replace,[CE] method get in class AbstractObjectList cannot be applied to given types;,return (Shape) get(index); ,return(Shape)get(index, null);
+patch is same with buggy,81,replace,,set(index, shape); ,set(index, shape);
+patch is same with buggy,143,replace,,stream.writeInt(-1); ,stream.writeInt(-1);
+patch is same with buggy,143,replace,,stream.writeInt(-1); ,stream.writeInt(-1);
+patch is same with buggy,111,replace,,return super.equals(obj); ,return super.equals(obj);
+compilation error,161,add,[CE] cannot find symbol shape,,this.shape = SerialUtilities.readShape(stream);
+compilation error,164,add,[CE] incompatible types,,int shape =(Shape)stream.readObject();
+patch is same with buggy,136,replace,,for (int i = 0; i < count; i++) { ,for(int i = 0; i < count; i++) {
+compilation error,105,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(obj instanceof List)) { return false; }
+compilation error,105,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(obj instanceof Number)) { return false; }
+compilation error,105,add,[CE] illegal start of expression,,if(obj instanceof ShapeList) { if(!(obj instanceof UnknownType)) { return false; }
+compilation error,139,add,[CE] cannot find symbol,,stream.writeInt(i); if(!shape.isEmpty()) { throw new IllegalArgumentException(""); }
+patch is same with buggy,164,replace,,if (index != -1) { ,if(index!= -1) {
+compilation error,165,add,[CE] cannot find symbol shape,,this.shape = SerialUtilities.readShape(stream);
+patch is same with buggy,138,replace,,if (shape != null) { ,if(shape!= null) {
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList && super.equals(obj)) { if(!(obj instanceof List)) { return false; }
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList && super.equals(obj)) { if(!(obj instanceof InstanceObject)) { return false; }
+compilation error,111,add,[CE] illegal start of expression,,if(obj instanceof ShapeList && super.equals(obj)) { if(!(obj instanceof Enum)) { return false; }
+patch is same with buggy,163,replace,,int index = stream.readInt(); ,int index = stream.readInt();
+patch is same with buggy,161,replace,,int count = stream.readInt(); ,int count = stream.readInt();
+patch is same with buggy,137,replace,,Shape shape = getShape(i); ,Shape shape = getShape(i);
+patch is same with buggy,137,replace,,Shape shape = getShape(i); ,Shape shape = getShape(i);
+patch is same with buggy,165,replace,,setShape(index, SerialUtilities.readShape(stream)); ,setShape(index, SerialUtilities.readShape(stream));
+compilation error,165,replace,[CE] method setShape in class ShapeList cannot be applied to given types;,setShape(index, SerialUtilities.readShape(stream)); ,setShape(index, SerialUtilities.readShape(stream), i);
+compilation error,60,replace,[CE] generics are not supported in -source 1.4,} ,this.shapeList = new HashMap < String,JavaType>();
+patch is same with buggy,139,replace,,stream.writeInt(i); ,stream.writeInt(i);
+compilation error,137,add,[CE] method writeShape in class SerialUtilities cannot be applied to given types;,,stream.writeInt(i); SerialUtilities.writeShape(getShape(i));
+patch is same with buggy,135,replace,,stream.writeInt(count); ,stream.writeInt(count);

@@ -1,1 +1,5 @@
-patch is same with buggy,,if (token.length() == 2) { ,if(token.length() == 2) {
+compilation error,238,replace,[CE] class, interface, or enum expected,else if (stopAtNonOption) { , 
+compilation error,170,add,[CE] cannot find symbol,,  tokens.add(iter.getValue());
+compilation error,170,add,[CE] cannot find symbol,,  tokens.add(iter.getLocalMillis());
+increase failing tests,170,add, [FE] AssertionFailedError testStopBursting,,  tokens.clear();
+increase failing tests,170,add, [FE] NoSuchElementException testStopBursting,,  tokens.add(iter.next());

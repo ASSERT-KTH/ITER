@@ -1,0 +1,159 @@
+patch is same with buggy,279,replace,, while(!done  &&  iterator1.isDone())  {  ,while(!done && iterator1.isDone()) {
+increase failing tests,268,replace, [FE] AssertionFailedError, if(p2  ==  null  ||  p1.equals(p2))  {  ,if(p1 == null || p2.equals(p2)) {
+patch is same with buggy,268,replace,, if(p2  ==  null  ||  p1.equals(p2))  {  , 
+patch is same with buggy,265,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,265,replace,[CE] illegal start of type, p1.equals(p2);  ,if(p1.equals(p2)) { p1.equals(p2); } else { p1.equals(p2); }
+compilation error,291,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2))) { return false; }
+increase failing tests,271,replace, [FE] AssertionFailedError, if(p1.getWindingRule()!=  p2.getWindingRule()  ||  p2.getWindingRule()!=  p1.getWindingRule())  {  ,if(!p1.equals(p2)) {
+compilation error,271,replace,[CE] cannot find symbol, if(p1.getWindingRule()!=  p2.getWindingRule()  ||  p2.getWindingRule()!=  p1.getWindingRule())  {  ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getEndingRule()!= p2.getWindingRule()) {
+patch is same with buggy,284,replace,, int  seg2  =  iterator1.currentSegment(d2);  ,int seg2 = iterator1.currentSegment(d2);
+patch is same with buggy,271,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,271,replace,[CE] illegal start of type, p1.equals(p2);  ,if(p1.equals(p2)) { p1.equals(p2); }
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.getWindingRule()!= p2.getWindingRule() || p.getWindingRule()!= p1.getWindingRule()) {
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getWindingRule()!= p1.getWindingRule()) {
+patch is same with buggy,280,replace,, done  =  iterator1.isDone()  &&  iterator2.isDone();  ,done = iterator1.isDone() && iterator2.isDone();
+compilation error,280,replace,[CE] illegal start of type, done  =  iterator1.isDone()  &&  iterator2.isDone();  ,done = iterator1.isDone() || iterator2.isDone();
+patch is same with buggy,291,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+increase failing tests,291,replace, [FE] AssertionFailedError, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d2, d1)) { return false; }
+patch is same with buggy,268,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,268,replace,[CE] illegal start of type, p1.equals(p2);  ,if(p1.equals(p2)) { p1.equals(p2); }
+compilation error,274,add,[CE] cannot find symbol, ,pathIterator iterator = p1.getPathIterator(null);
+compilation error,279,replace,[CE] bad operand types for binary operator '+', while(!done  &&  iterator1.isDone())  {  ,while(!done &&!done + 1) {
+compilation error,292,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)) { return false; >>
+compilation error,292,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)) } return false; }
+patch is same with buggy,271,replace,, if(p1.getWindingRule()!=  p2.getWindingRule()  ||  p2.getWindingRule()!=  p1.getWindingRule())  {  ,if(p1.getWindingRule()!= p2.getWindingRule() || p2.getWindingRule()!= p1.getWindingRule()) {
+patch is same with buggy,265,replace,, if(p1  ==  null  ||  p2  ==  null)  {  ,if(p1 == null || p2 == null) {
+compilation error,389,add,[CE] illegal start of type, ,return Double.valueOf(SQRT2);
+compilation error,389,add,[CE] illegal start of type, ,return Double.valueOf(sqrt2);
+compilation error,291,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2))) { return true; }
+patch is same with buggy,280,replace,, if(iterator1.isDone()!=  iterator2.isDone()  ||  done)  {  ,if(iterator1.isDone()!= iterator2.isDone() || done) {
+compilation error,280,replace,[CE] bad operand types for binary operator '>', if(iterator1.isDone()!=  iterator2.isDone()  ||  done)  {  ,if(iterator1.isDone()!= iterator2.isDone() || done > 0) {
+compilation error,279,add,[CE] illegal start of expression, ,while(!done &&!done)) {
+patch is same with buggy,292,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+increase failing tests,292,replace, [FE] AssertionFailedError, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d2, d1)) { return false; }
+patch is same with buggy,292,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  , 
+compilation error,288,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)||!Arrays.equals(d1, d2)) }
+compilation error,265,add,[CE] illegal start of expression, ,if(p1 == null || p2.equals(p2)) {
+compilation error,265,add,[CE] illegal start of expression, ,if(p1 == null || p2!= null) {
+compilation error,295,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)) { return false; >>
+compilation error,295,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)) } return false; }
+patch is same with buggy,278,replace,, while(!iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[6];  d2  =  new  double[6];  }  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[6]; }
+patch is same with buggy,278,replace,, while(!iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[6];  d2  =  new  double[6];  }  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[6]; }
+compilation error,279,add,[CE] illegal start of expression, ,while(!done && iterator1.isDone()) }
+compilation error,278,add,[CE] variable done is already defined in method equal(GeneralPath,GeneralPath), ,boolean done = iterator2.isDone() || iterator2.isDone();
+compilation error,278,add,[CE] variable done is already defined in method equal(GeneralPath,GeneralPath), ,final boolean done = iterator1.isDone() || iterator2.isDone();
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.equals(p2)) }
+patch is same with buggy,293,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+increase failing tests,293,replace, [FE] ArrayIndexOutOfBoundsException, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d2, d1)) { return false; }
+compilation error,265,add,[CE] illegal start of expression, ,if(p1 == null || p2.equals(p1)) }
+patch is same with buggy,295,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+patch is same with buggy,295,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+compilation error,280,add,[CE] variable done is already defined in method equal(GeneralPath,GeneralPath), ,boolean done = iterator1.isDone() && iterator2.isDone();
+patch is same with buggy,278,replace,, boolean  done  =  iterator1.isDone()  ||  iterator2.isDone();  ,boolean done = iterator1.isDone() || iterator2.isDone();
+patch is same with buggy,293,replace,, done  =  iterator1.isDone()  ||  iterator2.isDone();  ,done = iterator1.isDone() || iterator2.isDone();
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) } d1 = new double[6]; d2 = new double[6]; }
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[6]; >>
+patch is same with buggy,274,replace,, PathIterator  iterator  =  p1.getPathIterator(null);  ,PathIterator iterator = p1.getPathIterator(null);
+compilation error,268,add,[CE] illegal start of expression, ,if(p2 == null || p1.equals(p2)) }
+compilation error,280,add,[CE] illegal start of expression, ,if(iterator1.isDone() == iterator2.isDone() || done) {
+compilation error,280,add,[CE] ')' expected, ,if(iterator1.isDone() { iterator2.isDone() || done) {
+patch is same with buggy,389,replace,, private  static  final  double  SQRT2  =(float)Math.pow(2.0,  0.5);  ,private static final double SQRT2 =(float)Math.pow(2.0, 0.5);
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getWindingRule() == p2.getWindingRule()) {
+compilation error,293,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2))) { return false; }
+compilation error,293,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)) } return false; }
+compilation error,271,add,[CE] ')' expected, ,if(p1.equals(p2);
+compilation error,268,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(p1 == null) { return false; }
+compilation error,268,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(p1 == null) { return true; }
+patch is same with buggy,280,replace,, done  =  iterator1.isDone()  &&  iterator2.isDone();  ,done = iterator1.isDone() && iterator2.isDone();
+compilation error,271,add,[CE] illegal start of expression, ,if(p1!= null) {
+patch is same with buggy,295,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+compilation error,295,replace,[CE] missing return statement, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d2, d1)) { return false; }
+compilation error,278,replace,[CE] cannot assign a value to final variable done, boolean  done  =  iterator1.isDone()  ||  iterator2.isDone();  ,final boolean done = iterator1.isDone() && iterator2.isDone();
+patch is same with buggy,278,replace,, boolean  done  =  iterator1.isDone()  ||  iterator2.isDone();  , 
+patch is same with buggy,288,replace,, if(!Arrays.equals(d1,  d2)||!Arrays.equals(d1,  d2))  {  , 
+patch is same with buggy,389,replace,, private  static  final  double  SQRT2  =(float)Math.pow(2.0,  0.5);  ,private static final double SQRT2 =(float)Math.pow(2.0, 0.5);
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getSegmentCount()!= p2.getSegmentCount()) {
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getPosition()!= p1.getPosition()) {
+compilation error,274,add,[CE] no suitable method found for getPathIterator(<null>,GeneralPath), ,PathIterator iterator = p1.getPathIterator(null, p2);
+patch is same with buggy,280,replace,, if(iterator1.isDone()!=  iterator2.isDone()  ||  done)  {  ,if(iterator1.isDone()!= iterator2.isDone() || done) {
+increase failing tests,291,replace, [FE] AssertionFailedError, if(!Arrays.equals(d1,  d2))  {  return  true;  }  ,if(!Arrays.equals(d2, d1)) { return true; }
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[7]; d2 = new double[7];
+compilation error,265,add,[CE] illegal start of expression, ,if(p1 == null || p1.equals(p2)) {
+increase failing tests,268,replace, [FE] AssertionFailedError, if(p2  ==  null  ||  p1.equals(p2))  {  ,if(p1!= null || p1.equals(p2)) {
+patch is same with buggy,268,replace,, if(p2  ==  null  ||  p1.equals(p2))  {  ,if(p2 == null || p1.equals(p2)) {
+compilation error,279,add,[CE] not a statement, ,iterator1.isDone() && iterator2.isDone();
+compilation error,271,replace,[CE] cannot find symbol, if(p1.getWindingRule()!=  p2.getWindingRule()  ||  p2.getWindingRule()!=  p1.getWindingRule())  {  ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getEntryRule()!= p2.getWindingRule()) {
+patch is same with buggy,274,replace,, PathIterator  iterator  =  p1.getPathIterator(null);  ,PathIterator iterator = p1.getPathIterator(null);
+patch is same with buggy,268,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,268,replace,[CE] illegal start of type, p1.equals(p2);  ,p1.equals(p2, p1);
+increase failing tests,292,add, [FE] AssertionFailedError, ,iterator2.next(); if(!Arrays.equals(d2, d1)) { return false; }
+compilation error,291,replace,[CE] illegal start of expression, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(d2!= d1) { if(!Arrays.equals(d2, d1)) { return false; }
+patch is same with buggy,293,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+compilation error,389,add,[CE] illegal start of type, ,return new double(SQRT2);
+patch is same with buggy,271,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,271,replace,[CE] illegal start of type, p1.equals(p2);  ,p1.equals(p2, p1);
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(p1.equals(p2)) { return false; }
+patch is same with buggy,279,replace,, while(!done  &&  iterator1.isDone())  {  ,while(!done && iterator1.isDone()) {
+compilation error,279,replace,[CE] cannot find symbol, while(!done  &&  iterator1.isDone())  {  ,while(!done && iterator1.hasDone()) {
+compilation error,293,replace,[CE] cannot find symbol, done  =  iterator1.isDone()  ||  iterator2.isDone();  ,done = iterator1.isFinished() && iterator2.isDone();
+patch is same with buggy,293,replace,, done  =  iterator1.isDone()  ||  iterator2.isDone();  , 
+compilation error,280,add,[CE] incompatible types, ,iterator1 = iterator2.isDone();
+patch is same with buggy,265,replace,, if(p1  ==  null  ||  p2  ==  null)  {  ,if(p1 == null || p2 == null) {
+compilation error,284,add,[CE] illegal start of expression, ,if(seg1!= seg2) { int seg2 = iterator2.currentSegment(d2); if(seg1!= seg2) { return true; }
+compilation error,284,add,[CE] illegal start of expression, ,if(seg1!= seg2) { int seg2 = iterator2.currentSegment(d2); if(seg1!= seg2) { return false; }
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.getWindingRule()!= p2.getWindingRule() || p1.getEntry()!= p2.getEntry()) {
+compilation error,268,add,[CE] illegal start of expression, ,if(p1!= null || p2.equals(p1)) {
+compilation error,268,add,[CE] illegal start of expression, ,if(p1 == null || p2.equals(p1)) {
+compilation error,279,add,[CE] illegal start of expression, ,if(d1!= d2) { if(iterator1.isDone()) { return false; }
+compilation error,279,add,[CE] illegal start of expression, ,if(d1!= d2) { if(iterator1.isDone()) { return true; }
+compilation error,278,replace,[CE] not a statement, while(!iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[6];  d2  =  new  double[6];  }  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[6]; meanwhile
+patch is same with buggy,265,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,265,replace,[CE] illegal start of type, p1.equals(p2);  ,p1.equals(p2, p1);
+compilation error,291,add,[CE] illegal start of type, ,if(!Arrays.equals(d2, d1)) return true; }
+compilation error,265,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(p1.equals(p2)) { return false; }
+compilation error,265,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(p1.equals(p2)) { return true; }
+compilation error,284,add,[CE] variable seg2 is already defined in method equal(GeneralPath,GeneralPath), ,double seg2 = iterator2.currentSegment(d2);
+compilation error,284,add,[CE] variable d2 is already defined in method equal(GeneralPath,GeneralPath), ,double d2 = iterator2.currentSegment(d2);
+compilation error,288,replace,[CE] no suitable method found for equals(int,double[]), if(!Arrays.equals(d1,  d2)||!Arrays.equals(d1,  d2))  {  ,if(!Arrays.equals(d1, d2)&&!Arrays.equals(seg1, d2)) {
+compilation error,288,replace,[CE] no suitable method found for equals(int), if(!Arrays.equals(d1,  d2)||!Arrays.equals(d1,  d2))  {  ,if(!Arrays.equals(d1, d2)&&!Arrays.equals(seg1)) {
+patch is same with buggy,280,replace,, if(iterator1.isDone()!=  iterator2.isDone()  ||  done)  {  ,if(iterator1.isDone()!= iterator2.isDone() || done) {
+patch is same with buggy,265,replace,, if(p1  ==  null  ||  p2  ==  null)  {  ,if(p1 == null || p2 == null) {
+compilation error,389,add,[CE] illegal start of type, ,return Math.sqrt(SquareUtilities.toShape(getImplicitShape()));
+compilation error,389,add,[CE] illegal start of type, ,return Math.sqrt(SquareUtilities.toShape(getInstance()));
+compilation error,389,add,[CE] illegal start of type, ,return Math.sqrt(Square.toString(0.0, 1.0));
+compilation error,280,add,[CE] illegal start of expression, ,if(iterator1.isDone()!= iterator2.isDone() &&!done) {
+patch is same with buggy,271,replace,, if(p1.getWindingRule()!=  p2.getWindingRule()  ||  p2.getWindingRule()!=  p1.getWindingRule())  {  ,if(p1.getWindingRule()!= p2.getWindingRule() || p2.getWindingRule()!= p1.getWindingRule()) {
+patch is same with buggy,271,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,271,replace,[CE] ')' expected, p1.equals(p2);  ,p1.equals(p2.equals(p1);
+compilation error,280,add,[CE] illegal start of expression, ,if(iterator1.isDone()) { if(!done && iterator2.isDone()) { return false; }
+compilation error,280,add,[CE] illegal start of expression, ,if(iterator1.hasDone()) { if(!done && iterator2.hasDone()) { return false; }
+compilation error,291,replace,[CE] illegal start of expression, if(!Arrays.equals(d1,  d2))  {  return  true;  }  ,[Delete]
+patch is same with buggy,279,replace,, while(!done  &&  iterator1.isDone())  {  ,while(!done && iterator1.isDone()) {
+compilation error,279,replace,[CE] cannot find symbol sqrt1Done, while(!done  &&  iterator1.isDone())  {  ,while(!done &&!done &&!sqrt1Done &&!sqrt2Done) {
+compilation error,279,replace,[CE] cannot find symbol since, while(!done  &&  iterator1.isDone())  {  ,while(!done &&!done &&!since) {
+patch is same with buggy,268,replace,, if(p2  ==  null  ||  p1.equals(p2))  {  ,if(p2 == null || p1.equals(p2)) {
+increase failing tests,268,replace, [FE] AssertionFailedError, if(p2  ==  null  ||  p1.equals(p2))  {  ,if(p2!= null || p1.equals(p2)) {
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.isWindingRule()!= p2.isWindingRule()) {
+compilation error,268,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(p1.equals(p2)) { return false; }
+compilation error,268,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(!p1.equals(p2)) { return false; }
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.isWindingRule()!= p2.isWindingRule() || p1.isWindingRule()!= p2.getWindingRule()) {
+patch is same with buggy,278,replace,, while(!iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[6];  d2  =  new  double[6];  }  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[6]; }
+patch is same with buggy,278,replace,, while(!iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[6];  d2  =  new  double[6];  }  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[6]; }
+patch is same with buggy,295,replace,, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d1, d2)) { return false; }
+patch is same with buggy,389,replace,, private  static  final  double  SQRT2  =(float)Math.pow(2.0,  0.5);  ,private static final double SQRT2 =(float)Math.pow(2.0, 0.5);
+patch is same with buggy,293,replace,, done  =  iterator1.isDone()  ||  iterator2.isDone();  , 
+patch is same with buggy,280,replace,, done  =  iterator1.isDone()  &&  iterator2.isDone();  ,done = iterator1.isDone() && iterator2.isDone();
+increase failing tests,292,replace, [FE] AssertionFailedError, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,if(!Arrays.equals(d2, d2)) { return false; }
+compilation error,293,replace,[CE] illegal start of expression, if(!Arrays.equals(d1,  d2))  {  return  false;  }  ,[Delete]
+patch is same with buggy,265,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,265,replace,[CE] ')' expected, p1.equals(p2);  ,p1.equals(p2.equals(p1);
+compilation error,279,add,[CE] illegal start of expression, ,while(!done && iterator2.isDone()) {
+compilation error,279,add,[CE] illegal start of expression, ,while(!done &&!done) { if(d1!= d2) { return false; }
+compilation error,271,add,[CE] illegal start of expression, ,if(p1.equals(p2)) { if(!p1.equals(p2)) { return false; }
+compilation error,288,add,[CE] illegal start of expression, ,if(!Arrays.equals(d1, d2)||!Arrays.equals(seg2, d1)) {
+patch is same with buggy,268,replace,, p1.equals(p2);  ,p1.equals(p2);
+compilation error,268,replace,[CE] illegal start of type, p1.equals(p2);  ,p1.equals(p2.equals(p1));
+patch is same with buggy,274,replace,, PathIterator  iterator  =  p1.getPathIterator(null);  ,PathIterator iterator = p1.getPathIterator(null);
+compilation error,291,add,[CE] cannot find symbol d, ,if(!Arrays.equals(d2, d)) { return false; }
+compilation error,291,add,[CE] illegal start of expression, ,if(!Arrays.equals(d2, d1)) } return false; }
+compilation error,265,add,[CE] illegal start of expression, ,if(p1 == null || p2.equals) {

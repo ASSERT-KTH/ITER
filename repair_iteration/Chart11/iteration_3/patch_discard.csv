@@ -1,0 +1,44 @@
+compilation error,278,replace,[CE] cannot find symbol done, final  boolean  before  =  iterator1.isDone()  ||  iterator2.isDone();  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[3]; }
+patch is same with buggy,279,replace,, while(!done  &&!done  &&  iterator1.isDone())  ,while(!done &&!done && iterator1.isDone())
+patch is same with buggy,389,replace,, private  static  final  double  SQRT2  =(double)Math.pow(2.0,  1.5);  ,private static final double SQRT2 =(double)Math.pow(2.0, 1.5);
+patch is same with buggy,265,replace,, if(p1  ==  null  &&  p2!=  null)  {  ,if(p1 == null && p2!= null) {
+compilation error,279,add,[CE] illegal start of expression, ,while(!done &&!done && iterator1.isDone()) { if(iterator1.isDone()!= iterator2.isDone()) { return false; }
+compilation error,279,add,[CE] illegal start of expression, ,while(!done &&!done && iterator1.isDone()) { if(iterator1.isDone()!= iterator2.isDone()) { return false;
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[7]; d2 = new double[6]; >>
+patch is same with buggy,279,replace,, while(!done  &&  iterator1.isDone()  &&  iterator2.isDone())  {  ,while(!done && iterator1.isDone() && iterator2.isDone()) {
+compilation error,271,replace,[CE] illegal start of type, p2.equals(p1);  ,if(p1.equals(p2)) { p2.equals(p1); }
+compilation error,279,add,[CE] '.class' expected, ,while(boolean done && iterator1.isDone() || iterator2.isDone())
+patch is same with buggy,278,replace,, final  boolean  before  =  iterator1.isDone()  ||  iterator2.isDone();  ,final boolean before = iterator1.isDone() || iterator2.isDone();
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) } d1 = new double[7]; d2 = new double[4]; }
+compilation error,265,add,[CE] illegal start of expression, ,if(p1!= null && p2!= null) {
+compilation error,278,add,[CE] cannot find symbol iterator3, ,boolean before = iterator3.isDone() || iterator2.isDone();
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) } d1 = new double[7]; d2 = new double[6]; }
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[0]; d2 = new double[0];
+compilation error,278,add,[CE] not a statement, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[1]; d2 = new double[1]; presumably
+compilation error,278,add,[CE] not a statement, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[1]; d2 = new double[1]; presumably }
+compilation error,278,replace,[CE] cannot find symbol, final  boolean  before  =  iterator1.isDone()  ||  iterator2.isDone();  ,final boolean before = iterator1.isDouble() && iterator2.isDone();
+patch is same with buggy,278,replace,, final  boolean  before  =  iterator1.isDone()  ||  iterator2.isDone();  , 
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[5]; d2 = new double[6];
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[5];
+compilation error,389,add,[CE] illegal start of type, ,return Double.valueOf(SQRT2)+ Math.pow(2.0, 5.0);
+compilation error,278,replace,[CE] illegal start of expression, boolean  before  =  iterator2.isDone()  ||  iterator2.isDone();  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[0]; d2 = new double[4];
+compilation error,278,replace,[CE] cannot find symbol done, boolean  before  =  iterator2.isDone()  ||  iterator2.isDone();  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[0]; d2 = new double[4]; }
+compilation error,389,add,[CE] illegal start of type, ,return Double.valueOf(SQRT2)+ Math.pow(2.0, 2.0);
+compilation error,389,add,[CE] illegal start of type, ,return Double.valueOf(SQRT2)+ Math.pow(2.0, 1.0);
+compilation error,278,add,[CE] illegal start of expression, ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[7]; d2 = new double[6];
+patch is same with buggy,279,replace,, while(!done  &&  iterator1.isDone()  &&  iterator2.isDone())  {  ,while(!done && iterator1.isDone() && iterator2.isDone()) {
+compilation error,279,replace,[CE] illegal start of expression, while(!done  &&  iterator1.isDone()  &&  iterator2.isDone())  {  ,while(!done && iterator1.isDone() && iterator2.isDone()), d1!= d2 = d1.doubleValue();
+compilation error,278,replace,[CE] not a statement, final  boolean  before  =  iterator1.isDone()  ||  iterator2.isDone();  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[0]; d2 = new double[0]; meanwhile
+compilation error,278,replace,[CE] illegal start of expression, boolean  before  =  iterator2.isDone()  ||  iterator2.isDone();  ,while(!iterator1.isDone() && iterator2.isDone()) { d1 = new double[6]; d2 = new double[3];
+compilation error,278,replace,[CE] cannot find symbol done, boolean  before  =  iterator2.isDone()  ||  iterator2.isDone();  ,final boolean after = iterator1.isDone() && iterator2.isDone();
+patch is same with buggy,389,replace,, private  static  final  double  SQRT2  =(double)Math.pow(2.0,  1.5);  ,private static final double SQRT2 =(double)Math.pow(2.0, 1.5);
+patch is same with buggy,271,replace,, p2.equals(p1);  ,p2.equals(p1);
+patch is same with buggy,278,replace,, final  boolean  before  =  iterator1.isDone()  ||  iterator2.isDone();  ,final boolean before = iterator1.isDone() || iterator2.isDone();
+compilation error,279,add,[CE] illegal start of expression, ,while(!done && iterator1.isDone() && iterator2.isDone()) }
+compilation error,279,add,[CE] generics are not supported in -source 1.4, ,while(!done && iterator1.isDone() && iterator2.isDone()) <
+compilation error,265,add,[CE] illegal start of expression, ,if(p1 == null && p2.equals) {
+patch is same with buggy,265,replace,, if(p1  ==  null  &&  p2!=  null)  {  , 
+patch is same with buggy,279,replace,, while(!done  &&!done  &&  iterator1.isDone())  ,while(!done &&!done && iterator1.isDone())
+patch is same with buggy,389,replace,, private  static  final  double  SQRT2  =(double)Math.pow(2.0,  1.5);  ,private static final double SQRT2 =(double)Math.pow(2.0, 1.5);
+compilation error,278,replace,[CE] cannot find symbol done, boolean  before  =  iterator2.isDone()  ||  iterator2.isDone();  ,final boolean after = iterator1.isDone() || iterator2.isDone();
+patch is same with buggy,279,replace,, while(!done  &&  iterator1.isDone()  &&  iterator2.isDone())  {  ,while(!done && iterator1.isDone() && iterator2.isDone()) {

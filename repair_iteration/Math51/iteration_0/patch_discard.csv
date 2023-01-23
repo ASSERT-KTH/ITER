@@ -1,0 +1,70 @@
+compilation error,124,add,[CE] cannot find symbol,,  final int relativeAccuracy = f.getAbsoluteAccuracy();
+compilation error,124,add,[CE] no suitable method found for min(double,double,double),,  final int relativeAccuracy = Math.min(max, min, startValue); if(relativeAccuracy > 0) { return solve(min, max, startValue); }
+compilation error,124,add,[CE] no suitable method found for min(double,double,double),,  final int relativeAccuracy = Math.min(max, min, startValue);
+compilation error,124,add,[CE] no suitable method found for abs(double,double),,  final int relativeAccuracy = Math.abs(min, startValue); if(relativeAccuracy > 1) { return solve(min, max, startValue); }
+compilation error,124,add,[CE] no suitable method found for abs(double,double),,  final int relativeAccuracy = Math.abs(min, startValue);
+compilation error,160,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = atol -(( f1 *(f0 - f1)) /(f1 - f0));
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(rtol);
+compilation error,160,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = atol -(( f1 *(x0 - x0)) /(f1 - f0));
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(atol);
+increase failing tests,171,replace, [FE] TooManyEvaluationsException testIssue631,if (f1 * fx < 0) { ,if(f1 * fx > 0) {
+increase failing tests,171,replace, [FE] AssertionError testIssue631,if (f1 * fx < 0) { ,if(x1 * fx > 0) {
+increase failing tests,171,replace, [FE] AssertionError testIssue631,if (f1 * fx < 0) { ,if(x0 * fx > 0) {
+compilation error,171,replace,[CE] incomparable types: boolean and int,if (f1 * fx < 0) { ,if(f1 > fx % 2 == 0) {
+compilation error,171,replace,[CE] 'else' without 'if',if (f1 * fx < 0) { , 
+increase failing tests,174,replace, [FE] TooManyEvaluationsException testIssue631,x0 = x1; ,x0 = f1;
+compilation error,174,replace,[CE] cannot find symbol x2,x0 = x1; ,x0 = x2;
+increase failing tests,174,replace, [FE] TooManyEvaluationsException testIssue631,x0 = x1; , 
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(!inverted) { return x1; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(f0 == 0.0) { return x1; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(inverted) { return x1; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(!inverted) { return x0; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(f0 == 0.0) { return x; }
+compilation error,161,replace,[CE] method computeObjectiveValue in class BaseAbstractUnivariateRealSolver<FUNC> cannot be applied to given types;,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(x, inverted);
+compilation error,161,replace,[CE] method computeObjectiveValue in class BaseAbstractUnivariateRealSolver<FUNC> cannot be applied to given types;,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(x, rtol);
+increase failing tests,161,replace, [FE] TooManyEvaluationsException testIssue631,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(x)- 1;
+compilation error,161,replace,[CE] cannot find symbol fx,final double fx = computeObjectiveValue(x); , 
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAttributeAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAtomicAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAttributesAccuracy();
+compilation error,150,replace,[CE] cannot find symbol atol,final double atol = getAbsoluteAccuracy(); , 
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = f0 -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = rtol -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = x0 -(( f1 *(x1 - x0)) /(f1 - x0));
+compilation error,161,add,[CE] illegal start of expression,,  if(inverted) { rtol = computeRelativeAccuracy(x); if(rtol == false) { return rtol; }
+compilation error,161,add,[CE] illegal start of expression,,  if(inverted) { rtol = computeRelativeAccuracy(x); if(rtol!= false) { return rtol; }
+compilation error,161,add,[CE] illegal start of expression,,  if(inverted) { inverted = false; if(inverted) { return rtol; }
+compilation error,161,add,[CE] illegal start of expression,,  if(inverted) { rtol = inverted; if(rtol!= false) { return rtol; }
+compilation error,161,add,[CE] illegal start of expression,,  if(inverted) { rtol = inverted; if(rtol == false) { return rtol; }
+increase failing tests,166,replace, [FE] AssertionError testIssue631,if (fx == 0.0) { ,if(fx < 0.0) {
+increase failing tests,166,replace, [FE] AssertionError testIssue631,if (fx == 0.0) { ,if(fx <= 0.0) {
+increase failing tests,166,replace, [FE] TooManyEvaluationsException testIssue631,if (fx == 0.0) { ,if(fx >= 0.0) {
+compilation error,166,replace,[CE] class, interface, or enum expected,if (fx == 0.0) { , 
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbsoluteAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAttributeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol);
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy();
+increase failing tests,171,add, [FE] TooManyEvaluationsException testIssue631,,  inverted =!inverted;
+compilation error,171,add,[CE] no suitable method found for getRelativeAccuracy(double),,  Method method = getRelativeAccuracy(x);
+compilation error,171,add,[CE] illegal start of expression,,  if(inverted) { inverted =!inverted; if(f0 * fx > 0) { break; }
+compilation error,171,add,[CE] illegal start of expression,,  if(inverted) { inverted =!inverted; if(fx > 0.0) { return fx; }
+compilation error,171,add,[CE] illegal start of expression,,  if(inverted) { inverted =!inverted; if(f1 > f0) { return x; }
+compilation error,124,replace,[CE] no suitable method found for solve(double,UnivariateRealFunction,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, f, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,replace,[CE] no suitable method found for solve(UnivariateRealFunction,int,double,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(f, maxEval, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,replace,[CE] no suitable method found for solve(double,UnivariateRealFunction,double,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, f, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,151,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRadiusAccuracy();
+compilation error,151,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRrelativeAccuracy();
+compilation error,151,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRawAccuracy();
+compilation error,174,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx); break;
+compilation error,174,add,[CE] ';' expected,,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx)); break;
+compilation error,174,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY / fx; break;
+compilation error,174,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY *(f1 + fx); break;
+compilation error,174,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx);
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbsoluteAccuracy();
+compilation error,150,add,[CE] variable rtol is already defined in method doSolve(),,  final double rtol = getRelativeAccuracy();
+compilation error,150,add,[CE] variable fx is already defined in method doSolve(),,  final double fx = getRelativeAccuracy();
+compilation error,150,add,[CE] cannot find symbol,,  final double rtol = getRadiusValueAccuracy();
+compilation error,166,add,[CE] illegal start of expression,,  if(inverted) { if(fx > 0.0) { return x; }

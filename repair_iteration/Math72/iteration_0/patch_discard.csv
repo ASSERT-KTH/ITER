@@ -1,0 +1,18 @@
+compilation error,102,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  final double min = f.value(min); initial = f.value(max);
+compilation error,102,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  final double min = f.value(min);
+compilation error,102,add,[CE] cannot find symbol,,  super.setValue(f.value(min), max);
+compilation error,102,add,[CE] method value in interface UnivariateRealFunction cannot be applied to given types;,,  super.setValue(f.value(min, initial));
+increase failing tests,102,add, [FE] AssertionFailedError testInitialGuess,,  if(f.value(min) == max) { setResult(min, 1); }
+compilation error,185,replace,[CE] double cannot be dereferenced,ret = max; ,ret = max.length;
+compilation error,116,add,[CE] no suitable method found for setResult(double,double),,  setResult(initial, yMin);
+compilation error,116,add,[CE] no suitable method found for setResult(double,double),,  setResult(initial, max);
+compilation error,116,add,[CE] cannot find symbol xInitial,,  setResult(xInitial, yMin);
+compilation error,116,add,[CE] cannot find symbol,,  SetResult(initial, 0);
+compilation error,107,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max);
+compilation error,107,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(yInitial) < functionValueAccuracy);
+compilation error,107,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(yInitial) <= functionValueAccuracy);
+increase failing tests,107,add, [FE] AssertionFailedError testBadEndpoints,,  double functionValueAccuracy = Math.abs(yInitial);
+compilation error,107,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(yInitial) >= functionValueAccuracy);
+compilation error,102,replace,[CE] no suitable method found for setResult(double,double),clearResult(); ,setResult(min, max);
+compilation error,102,replace,[CE] cannot find symbol,clearResult(); ,checkResult();
+compilation error,115,replace,[CE] cannot find symbol xMin,setResult(yMin, 0); ,setResult(xMin, 0);

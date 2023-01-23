@@ -1,0 +1,39 @@
+compilation error,180,add,[CE] unreachable statement, ,return(pattern  ==  null)?  null  :  parsePattern;  Pattern pattern = getParsePattern();
+compilation error,180,add,[CE] unreachable statement, ,return(pattern  ==  null)?  null  :  this.formatPattern;  Pattern pattern = getParsePattern();
+compilation error,538,add,[CE] unreachable statement, ,return  new  CopyQuotedStrategy(formatField.substring(1));  return new CopyQuotedStrategy(formatField.substring(2));
+compilation error,180,replace,[CE] bad operand types for binary operator '+', return(Pattern)this.parsePattern;  ,return(Pattern)this.parsePattern + 1;
+compilation error,289,add,[CE] cannot find symbol, ,pos.setIndex(offset+matcher.start()  +  1);  pos.setValue(offset+matcher.start());
+compilation error,180,replace,[CE] missing return statement, return(this.parsePattern!=  null)?  null  :  this.parsePattern;  ,Pattern parsePattern = getParsePattern(); if(this.parsePattern!= null) { return parsePattern; }
+compilation error,180,replace,[CE] bad operand types for binary operator '<', return(this.parsePattern!=  null)?  null  :  this.parsePattern;  ,return(this.parsePattern < null)? null : this.parsePattern;
+compilation error,289,replace,[CE] cannot find symbol, pos.setIndex(offset+matcher.start());  pos.setIndex(offset+matcher.start());  ,pos.setIndex(offset+matcher.size()); pos.setIndex(offset+matcher.start());
+compilation error,180,replace,[CE] missing return statement, return(this.parsePattern  ==  null)?  null  :  this.parsePattern;  ,Pattern parsePattern =(Pattern)this.parsePattern;
+compilation error,180,add,[CE] unreachable statement, ,return(pattern  ==  null)?  null  :  this.parsePattern;  Pattern pattern = getParsePattern();
+increase failing tests,538,replace, [FE] StringIndexOutOfBoundsException testLocaleMatches, return  new  CopyQuotedStrategy(formatField.substring(1));  ,return new CopyQuotedStrategy(formatField.substring(2));
+compilation error,538,replace,[CE] empty character literal, return  new  CopyQuotedStrategy(formatField.substring(1));  ,return new CopyQuotedStrategy(formatField.substring(1), ''');
+compilation error,180,replace,[CE] ';' expected, return(pattern  ==  null)?  null  :  this.parsePattern;  ,if(formatPattern == null) { if(tzNames.containsKey(this.parsePattern)) { return parsePattern; }
+compilation error,180,add,[CE] method getParsePattern in class FastDateParser cannot be applied to given types;, ,return(pattern  ==  null)?  null  :  this.parsePattern;  Pattern pattern = getParsePattern(locale);
+compilation error,180,replace,[CE] cannot find symbol, return(this.parsePattern  ==  null)?  null  :  this.parsePattern;  ,return(this.parsePattern == null)? null : this.parsePattern.getParsePattern();
+compilation error,538,add,[CE] unreachable statement, ,return  new  CopyQuotedStrategy(formatField.substring(1));  return getStrategy(formatField.substring(2));
+compilation error,180,add,[CE] ';' expected, ,return(pattern  ==  null)?  null  :  this.formatPattern;  for(String pattern : getParsePattern()) { if(pattern == null) { return parsePattern; }
+compilation error,180,replace,[CE] ';' expected, return(this.parsePattern  ==  null)?  null  :  this.parsePattern;  ,if(this.parsePattern!= null) { Pattern parsePattern = new Pattern(tz.getParsePattern()); if(parsePattern!= null) { return parsePattern; }
+compilation error,289,replace,[CE] cannot find symbol, pos.setIndex(offset+matcher.start());  pos.setIndex(offset+matcher.start());  ,pos.setIndex(offset+matcher.indexOf(this));
+compilation error,180,add,[CE] unreachable statement, ,return(pattern  ==  null)?  null  :  parsePattern;  Pattern pattern =(pattern == null)? null : parsePattern;
+compilation error,289,add,[CE] variable offset is already defined in method parse(String,ParsePosition), ,pos.setIndex(offset+matcher.start()  +  1);  int offset = matcher.getOffset(); pos.setIndex(offset+matcher.start() + 1);
+compilation error,180,replace,[CE] cannot find symbol currentPattern, return(Pattern)this.parsePattern;  ,return(Pattern)this.parsePattern && Pattern.class.isAssignableFrom(currentPattern);
+compilation error,538,replace,[CE] constructor CopyQuotedStrategy in class CopyQuotedStrategy cannot be applied to given types;, return  new  CopyQuotedStrategy(formatField.substring(1));  ,return new CopyQuotedStrategy(formatField.substring(1), 2);
+compilation error,180,replace,[CE] cannot find symbol paramPattern, return(pattern  ==  null)?  null  :  parsePattern;  ,return(paramPattern == null)? null : parsePattern;
+compilation error,180,replace,[CE] ';' expected, return(this.parsePattern  ==  null)?  null  :  this.parsePattern;  ,return(this.parsePattern == null)? null : this.parsePattern);
+compilation error,289,replace,[CE] cannot find symbol strategy, pos.setIndex(offset+matcher.start()  +  1);  ,pos.setIndex(offset+strategy.start() + 1);
+compilation error,180,replace,[CE] cannot find symbol parasePattern, return(pattern  ==  null)?  null  :  this.parsePattern;  ,return(parasePattern == null)? null : this.parsePattern;
+compilation error,289,replace,[CE] cannot find symbol strategie, pos.setIndex(offset+matcher.start());  pos.setIndex(offset+matcher.start());  ,pos.setIndex(offset+strategie.start()); pos.setIndex(offset+matcher.start());
+compilation error,538,add,[CE] unreachable statement, ,return  new  CopyQuotedStrategy(formatField.substring(1));  if(formatField.length() == 2) { return new CopyQuotedStrategy(formatField.substring(2)); } else { return new CopyQuotedStrategy(formatField.substring(3)); }
+compilation error,180,add,[CE] method getParsePattern in class FastDateParser cannot be applied to given types;, ,return(pattern  ==  null)?  null  :  this.formatPattern;  Pattern pattern = getParsePattern(locale); if(pattern == null) { return parsePattern; }
+increase failing tests,538,replace, [FE] StringIndexOutOfBoundsException testLocaleMatches, return  new  CopyQuotedStrategy(formatField.substring(1));  ,return new CopyQuotedStrategy(formatField.substring(3));
+compilation error,538,replace,[CE] empty character literal, return  new  CopyQuotedStrategy(formatField.substring(1));  ,return new CopyQuotedStrategy(formatField, ''');
+compilation error,180,replace,[CE] missing return statement, return(this.parsePattern  ==  null)?  null  :  this.parsePattern;  ,parsePattern =(Pattern)getParsePattern();
+compilation error,180,replace,[CE] clone() has protected access in Object, return(pattern  ==  null)?  null  :  this.parsePattern;  ,parsePattern =(pattern == null)? null : parsePattern.clone();
+compilation error,289,add,[CE] cannot find symbol i, ,pos.setIndex(offset+matcher.start()  +  1);  pos.setIndex(offset+matcher.group(i));
+compilation error,180,add,[CE] method getParsePattern in class FastDateParser cannot be applied to given types;, ,return(pattern  ==  null)?  null  :  parsePattern;  Pattern pattern = getParsePattern(locale);
+compilation error,180,replace,[CE] cannot find symbol parasePattern, return(pattern  ==  null)?  null  :  this.formatPattern;  ,return(parasePattern == null)? null : this.formatPattern;
+compilation error,180,replace,[CE] cannot find symbol, return(this.parsePattern!=  null)?  null  :  this.parsePattern;  ,parsePattern =(pattern == null)? null : parsePattern.get();
+compilation error,180,replace,[CE] cannot find symbol ParsePattern, return(Pattern)this.parsePattern;  ,return(Pattern)ParsePattern.peek();

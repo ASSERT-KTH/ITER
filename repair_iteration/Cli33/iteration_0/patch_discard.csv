@@ -1,0 +1,163 @@
+increase failing tests,529,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printWrapped(pw, width, footer);
+compilation error,529,add,[CE] cannot find symbol,,  if(( cmdLineSyntax.isAssignableFrom(footer)) ||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, footer); }
+increase failing tests,529,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(footer.trim().length() > 0) { printWrapped(pw, width, footer); }
+compilation error,716,replace,[CE] illegal start of expression,} ,if(text!= null) { printWrapped(pw, width, 0, text); }
+compilation error,716,replace,[CE] illegal start of expression,} ,pw.append(text);
+compilation error,716,replace,[CE] illegal start of expression,} ,if(text!= null) { printWrapped(pw, width, 0, text); } else { FormatUtils.appendPadding(pw, width, text, 1); }
+compilation error,716,replace,[CE] illegal start of expression,} ,pw.append('n');
+compilation error,716,replace,[CE] illegal start of expression,} , 
+compilation error,513,replace,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,Comparator),printUsage(pw, width, cmdLineSyntax, options); ,printUsage(pw, width, cmdLineSyntax, options, optionComparator);
+compilation error,513,replace,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int),printUsage(pw, width, cmdLineSyntax, options); ,printUsage(pw, width, cmdLineSyntax, options, leftPad);
+compilation error,513,replace,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,String),printUsage(pw, width, cmdLineSyntax, options); ,printUsage(pw, width, cmdLineSyntax, options, footer);
+increase failing tests,513,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printUsage(pw, width, cmdLineSyntax, options); , 
+increase failing tests,527,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if ((footer != null) && (footer.trim().length() > 0)) { ,if(( footer == null)&&(footer.trim().length() > 0)) {
+compilation error,527,replace,[CE] class or interface expected,if ((footer != null) && (footer.trim().length() > 0)) { , 
+increase failing tests,522,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( header!= null)&&(header.trim().length() > 0)) { printWrapped(pw, width, header); }
+increase failing tests,522,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printWrapped(pw, width, header);
+compilation error,522,add,[CE] illegal start of expression,,  if(( header!= null)&&(header.trim().length() > 0)) } printWrapped(pw, width, header); }
+compilation error,513,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,Options),,  printWrapped(pw, width, cmdLineSyntax, options);
+increase failing tests,513,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printWrapped(pw, width, cmdLineSyntax);
+compilation error,513,add,[CE] variable pw is already defined in method printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean),,  PrintWriter pw =(Printer)optionComparator.getOptions();
+compilation error,513,add,[CE] variable pw is already defined in method printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean),,  PrintWriter pw =(Printer)optionComparator.newInstance();
+compilation error,513,add,[CE] variable pw is already defined in method printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean),,  PrintWriter pw = new PrintWriter(defaultUsage);
+increase failing tests,520,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( header!= null)&&(header.trim().length() > 0)) { printWrapped(pw, width, header); }
+compilation error,520,add,[CE] no suitable method found for printWrapped(PrintWriter,int,int),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, descPad); }
+compilation error,520,add,[CE] no suitable method found for printWrapped(PrintWriter,int,int),,  if(( header!= null)&&(header.trim().length() > 0)) { printWrapped(pw, width, descPad); }
+increase failing tests,520,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printWrapped(pw, width, cmdLineSyntax);
+increase failing tests,520,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( header!= null)&&(header.trim().length() > 0)) { printWrapped(pw, width, cmdLineSyntax); }
+compilation error,715,replace,[CE] cannot find symbol,printWrapped(pw, width, 0, text); ,if(pw.getWidth() > width) { printWrapped(pw, width, 0, text); }
+compilation error,715,replace,[CE] cannot find symbol,printWrapped(pw, width, 0, text); ,if(pw.getWidth() > width) { printWrapped(pw, width, 0, text); } else { pw.print(text); }
+increase failing tests,715,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, 0, text); , 
+increase failing tests,527,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, footer); }
+increase failing tests,527,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, header); }
+increase failing tests,527,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length()!= 0)) { printWrapped(pw, width, footer); }
+compilation error,511,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,Options),,  printWrapped(pw, width, cmdLineSyntax, options);
+increase failing tests,511,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printWrapped(pw, width, cmdLineSyntax);
+compilation error,511,add,[CE] variable pw is already defined in method printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean),,  PrintWriter pw =(Printer)optionComparator.getOptions();
+compilation error,511,add,[CE] variable pw is already defined in method printHelp(PrintWriter,int,String,String,Options,int,int,String,boolean),,  PrintWriter pw = new PrintWriter(defaultWidth, cmdLineSyntax.length());
+compilation error,925,add,[CE] ';' expected,,  pos = text.indexOf('n', startPos));
+compilation error,925,add,[CE] ';' expected,,  pos = text.indexOf('t', startPos));
+compilation error,925,add,[CE] illegal start of expression,,  if(text.charAt(pos) == 'n') { pos = text.charAt(pos); if(pos == width) { return -1; }
+compilation error,925,add,[CE] illegal start of expression,,  if(text.charAt(pos) == 'n') { pos++; if(startPos >= width) { return -1; }
+compilation error,925,add,[CE] illegal start of expression,,  if(text.charAt(pos) == 'n') { pos = text.charAt(pos); if(pos == width) { return 0; }
+compilation error,525,add,[CE] bad operand types for binary operator '!=',,  if(( leftPad!= null)&&(descPad.trim().length() > 0)) { printWrapped(pw, width, descPad); }
+compilation error,525,add,[CE] bad operand types for binary operator '!=',,  if(( leftPad!= null)&&(leftPad.trim().length() > 0)) { printWrapped(pw, width, descPad); }
+increase failing tests,525,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, header); }
+compilation error,525,add,[CE] no suitable method found for printWrapped(PrintWriter,int,int),,  if(( cmdLineSyntax == null)&&(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, descPad); }
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, cmdLineSyntax, leftPad, descPad);
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, optionComparator, leftPad, descPad);
+compilation error,525,replace,[CE] no suitable method found for printUsage(PrintWriter,int,Options,int,int),printOptions(pw, width, options, leftPad, descPad); ,printUsage(pw, width, options, leftPad, descPad);
+increase failing tests,520,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if ((header != null) && (header.trim().length() > 0)) { ,if(( header == null)&&(header.trim().length() > 0)) {
+compilation error,529,replace,[CE] ';' expected,printWrapped(pw, width, footer); ,printWrapped(pw, width, footer), defaultLeftPad);
+increase failing tests,529,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, footer); ,printWrapped(pw, width, footer.toLowerCase());
+compilation error,511,replace,[CE] incompatible types,if (autoUsage) { ,if(options) {
+compilation error,511,replace,[CE] cannot find symbol autoUsage,if (autoUsage) { ,if(this.autoUsage) {
+increase failing tests,511,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if (autoUsage) { ,if(!autoUsage) {
+compilation error,511,replace,[CE] cannot find symbol printUsage,if (autoUsage) { ,if(printUsage) {
+increase failing tests,925,replace, [FE] StringIndexOutOfBoundsException testIndentedHeaderAndFooter,return pos + 1; ,return pos + width;
+increase failing tests,925,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,return pos + 1; ,return pos + 2;
+compilation error,716,add,[CE] no suitable method found for write(int,String),,  if(text!= null) { printWrapped(pw, width, 0, text); } else { pw.write(defaultWidth, text); }
+compilation error,715,add,[CE] illegal start of expression,,  if(text!= null) { if(width > width) { printWrapped(pw, width, 0, text); }
+compilation error,715,add,[CE] cannot find symbol,,  if(text.equals(pw.getText())) { printWrapped(pw, width, 0, text); }
+compilation error,715,add,[CE] illegal start of expression,,  if(text.length() > 0) { if(width > width) { printWrapped(pw, width, 0, text); }
+compilation error,715,add,[CE] illegal start of expression,,  if(text.equals(pw.getText())) { text = pw.getText(); if(text!= null) { printWrapped(pw, width, 0, text); }
+compilation error,715,add,[CE] illegal start of expression,,  if(text.equals(pw.getText())) { text = pw.getText(); if(text.equals("")) { printWrapped(pw, width, 0, text); }
+increase failing tests,529,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, footer); ,printWrapped(pw, width, footer + 1);
+compilation error,529,replace,[CE] cannot find symbol feeter,printWrapped(pw, width, footer); ,printWrapped(pw, width, feeter);
+compilation error,529,replace,[CE] no suitable method found for printWrapped(PrintWriter,int,int),printWrapped(pw, width, footer); ,printWrapped(pw, width, footer.length());
+increase failing tests,511,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  pw.println(cmdLineSyntax);
+compilation error,511,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,Comparator),,  printWrapped(pw, width, cmdLineSyntax, optionComparator);
+compilation error,511,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,String),,  printWrapped(pw, width, cmdLineSyntax, footer);
+compilation error,925,add,[CE] illegal start of expression,,  if(startPos >= width) { if(pos == text.length()) { return -1; }
+compilation error,925,add,[CE] illegal start of expression,,  if(text.indexOf('t', startPos) == -1) { pos = text.indexOf('n', startPos); if(pos >= width) { return -1; }
+compilation error,925,add,[CE] illegal start of expression,,  if(c == 'r' || c == 'n') { if(startPos >= width) { return -1; }
+compilation error,925,add,[CE] illegal start of expression,,  if(c == 'r' || c == 'n') { if(pos == startPos) { return -1; }
+compilation error,925,add,[CE] illegal start of expression,,  if(text.indexOf('t', startPos) == -1) { pos = text.indexOf('t', startPos); if(pos >= width) { return -1; }
+compilation error,513,replace,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),printUsage(pw, width, cmdLineSyntax, options); ,printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad);
+compilation error,513,replace,[CE] no suitable method found for printUsage(PrintWriter,int,String,int,int),printUsage(pw, width, cmdLineSyntax, options); ,printUsage(pw, width, cmdLineSyntax, leftPad, descPad);
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() == 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.length() == 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Comparator),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() == 0)) { printUsage(pw, width, cmdLineSyntax, optionComparator); }
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,String),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() == 0)) { printUsage(pw, width, cmdLineSyntax, defaultNewLine); }
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,String),,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.length() == 0)) { printUsage(pw, width, cmdLineSyntax, defaultNewLine); }
+compilation error,520,add,[CE] illegal start of expression,,  if(( header!= null)&&(header.trim().length() > 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad);
+compilation error,520,add,[CE] illegal start of expression,,  if(( header!= null)&&(header.trim().length() > 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); if(( header!= null)&&(header.trim().length() >
+compilation error,520,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( header!= null)&&(header.trim().length() > 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+compilation error,520,add,[CE] ')' expected,,  if(( header!= null)&&(header.trim().length() > 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); if(( header!= null)&&(header.trim().length() > 0
+increase failing tests,716,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  pw.print(text);
+increase failing tests,716,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  pw.println(text);
+increase failing tests,716,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  pw.println();
+compilation error,716,add,[CE] cannot find symbol,,  pw.println(new TextWriter(width, width + 1));
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, cmdLineSyntax, options, leftPad, descPad);
+compilation error,525,replace,[CE] cannot find symbol,printOptions(pw, width, options, leftPad, descPad); ,printUsageOptions(pw, width, options, leftPad, descPad);
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, defaultDescPad, options, leftPad, descPad);
+compilation error,525,add,[CE] bad operand types for binary operator '!=',,  if(( leftPad!= null)&&(leftPad.trim().length() > 0)) { printUsage(pw, width, leftPad, descPad); }
+compilation error,525,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( cmdLineSyntax!= null)&&(cmdLineSyntax.length() > 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+compilation error,525,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.length() == 0)) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+compilation error,525,add,[CE] bad operand types for binary operator '!=',,  if(( leftPad!= null)&&(descPad.trim().length() > 0)) { printUsage(pw, width, cmdLineSyntax, leftPad, descPad); }
+compilation error,525,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad);
+compilation error,716,replace,[CE] illegal start of expression,} ,printWrapped(pw, width, 0, text);
+increase failing tests,511,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if (autoUsage) { ,if(( cmdLineSyntax == null)||(cmdLineSyntax.length() == 0)) {
+increase failing tests,511,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if (autoUsage) { ,if(( cmdLineSyntax == null)||(cmdLineSyntax.trim().length() == 0)) {
+increase failing tests,511,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if (autoUsage) { ,if(( cmdLineSyntax!= null)||(cmdLineSyntax.length() == 0)) {
+increase failing tests,511,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if (autoUsage) { ,if(( cmdLineSyntax == null)||(cmdLineSyntax.trim().length() > 0)) {
+compilation error,925,replace,[CE] ';' expected,return pos + 1; ,return pos + 1 +(( pos = text.indexOf('t', startPos)) == -1 && pos <= width)));
+compilation error,925,replace,[CE] ';' expected,return pos + 1; ,return pos + 1 +(( pos = text.indexOf('n', startPos)) == -1 && pos <= width)));
+compilation error,925,replace,[CE] ';' expected,return pos + 1; ,return pos + 1 +(( pos = text.indexOf('n', startPos))!= -1 && pos <= width)));
+increase failing tests,522,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, header); ,printWrapped(pw, width, header + 1);
+compilation error,522,replace,[CE] cannot find symbol,printWrapped(pw, width, header); ,printUnwrapped(pw, width, header);
+increase failing tests,529,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, footer); }
+compilation error,529,add,[CE] ')' expected,,  if(( cmdLineSyntax.indexOf(')') >= 0) { printWrapped(pw, width, cmdLineSyntax); }
+increase failing tests,529,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.length() > 0)) { printWrapped(pw, width, header); }
+increase failing tests,529,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.indexOf(footer)) >= 0) { printWrapped(pw, width, footer); }
+increase failing tests,522,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( header!= null)&&(header.trim().length() > 0)) { printUsage(pw, width, header); }
+increase failing tests,522,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printUsage(pw, width, header);
+compilation error,522,add,[CE] cannot find symbol,,  if(( header!= null)&&(header.trim().length() > 0)) { printIndent(pw, width, header); }
+compilation error,522,add,[CE] cannot find symbol,,  if(( header!= null)&&(header.trim().length() > 0)) { printNull(); }
+increase failing tests,715,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  pw.print(text);
+compilation error,715,add,[CE] cannot find symbol text,,  pw.print(this.text);
+increase failing tests,715,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  pw.println(text);
+compilation error,715,replace,[CE] no suitable method found for printWrapped(PrintWriter,int,int,String,String),printWrapped(pw, width, 0, text); ,printWrapped(pw, width, 0, text, DEFAULT_SYNTAX_PREFIX);
+compilation error,715,replace,[CE] cannot find symbol DEFAULT_SYNTAX_PAD,printWrapped(pw, width, 0, text); ,printWrapped(pw, width, 0, text, DEFAULT_SYNTAX_PAD);
+compilation error,715,replace,[CE] no suitable method found for printWrapped(PrintWriter,int,int,String,int),printWrapped(pw, width, 0, text); ,printWrapped(pw, width, 0, text, DEFAULT_DESC_PAD);
+compilation error,513,add,[CE] no suitable method found for printHelp(PrintWriter,int,String,Options),,  printHelp(pw, width, cmdLineSyntax, options);
+compilation error,527,replace,[CE] illegal start of expression,if ((footer != null) && (footer.trim().length() > 0)) { ,if(( footer!= null)&&(footer.trim().length() > 0)) }
+compilation error,715,add,[CE] cannot find symbol,,  if(text!= null) { text = pw.getText(); } else { pw.println(text); }
+compilation error,715,add,[CE] cannot find symbol,,  if(text!= null) { text = pw.getWrappedText(); } else { pw.println(text); }
+increase failing tests,715,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(text!= null) { printWrapped(pw, width, 0, text); } else { pw.println(text); }
+increase failing tests,925,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,return pos + 1; ,return pos + 3;
+compilation error,716,add,[CE] cannot find symbol,,  if(text!= null) { text = pw.getWrappedText(); } else { pw.println(text); }
+increase failing tests,716,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(text!= null) { printWrapped(pw, width, 0, text); } else { pw.println(text); }
+compilation error,716,add,[CE] cannot find symbol,,  if(text!= null) { text = pw.getText(); } else { pw.println(text); }
+increase failing tests,522,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, header); ,printWrapped(pw, width, header +" vs");
+increase failing tests,522,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, header); ,printWrapped(pw, width, header +" -" + header);
+increase failing tests,715,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,printWrapped(pw, width, 0, text); ,printWrapped(pw, width, 0, text + 1);
+compilation error,715,replace,[CE] cannot find symbol,printWrapped(pw, width, 0, text); ,printWrapped(pw, width, 0, new Text(text));
+compilation error,715,replace,[CE] no suitable method found for printWrapped(PrintWriter,int,int,<null>,String),printWrapped(pw, width, 0, text); ,printWrapped(pw, width, 0, null, text);
+compilation error,529,add,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,,  printOptions(pw, width, footer, options, leftPad, descPad);
+increase failing tests,529,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printWrapped(pw, width, footer); pw.flush();
+compilation error,529,add,[CE] no suitable method found for printHelp(PrintWriter,int,String,Options,int,int),,  printHelp(pw, width, footer, options, leftPad, descPad);
+compilation error,529,add,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,,  printOptions(pw, width, footer, options, leftPad, descPad); pw.flush();
+compilation error,525,add,[CE] cannot find symbol,,  if(( options!= null)&&(options.trim().length() > 0)) { printUsage(pw, width, options, leftPad, descPad); }
+compilation error,525,add,[CE] cannot find symbol,,  if(( optionComparator!= null)&&(optionComparator.trim().length() > 0)) { printUsage(pw, width, options, leftPad, descPad); }
+compilation error,525,add,[CE] cannot find symbol,,  if(( optionComparator!= null)&&(optionComparator.trim().length() > 0)) { printUsage(pw, width, optionComparator); }
+compilation error,525,add,[CE] bad operand types for binary operator '!=',,  if(( descPad!= null)&&(descPad.trim().length() > 0)) { printUsage(pw, width, descPad); }
+compilation error,525,add,[CE] bad operand types for binary operator '!=',,  if(( leftPad!= null)&&(descPad.trim().length() > 0)) { printUsage(pw, width, descPad); }
+compilation error,511,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,Options,int,int),,  printWrapped(pw, width, cmdLineSyntax, options, leftPad, descPad);
+compilation error,513,replace,[CE] no suitable method found for printUsage(PrintWriter,int,String,String),printUsage(pw, width, cmdLineSyntax, options); ,printUsage(pw, width, cmdLineSyntax, footer);
+compilation error,925,add,[CE] ';' expected,,  if(((pos = text.indexOf('n', startPos))!= -1 && pos <= width)||(( pos = text.indexOf('t', startPos))!= -1 && pos <= width)) { return 0
+compilation error,529,replace,[CE] ';' expected,printWrapped(pw, width, footer); ,printWrapped(pw, width, footer), descPad);
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, options, leftPad, descPad, defaultLeftPad);
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, options, leftPad, descPad, defaultDescPad);
+compilation error,525,replace,[CE] method printOptions in class HelpFormatter cannot be applied to given types;,printOptions(pw, width, options, leftPad, descPad); ,printOptions(pw, width, options, leftPad, descPad, optionComparator);
+compilation error,513,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,Options),,  if(( cmdLineSyntax!= null)&&(cmdLineSyntax.trim().length() > 0)) { printWrapped(pw, width, cmdLineSyntax, options); }
+increase failing tests,513,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.trim().length() > 0)) { printWrapped(pw, width, cmdLineSyntax); }
+compilation error,513,add,[CE] no suitable method found for printWrapped(PrintWriter,int,String,Options),,  if(( cmdLineSyntax!= null)||(cmdLineSyntax.trim().length() > 0)) { printWrapped(pw, width, cmdLineSyntax, options); }
+increase failing tests,513,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( cmdLineSyntax!= null)&&(cmdLineSyntax.trim().length() > 0)) { printWrapped(pw, width, cmdLineSyntax); }
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.contains(""))) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+compilation error,527,add,[CE] no suitable method found for printUsage(PrintWriter,int,String,Options,int,int),,  if(( cmdLineSyntax == null)||(cmdLineSyntax.contains("-"))) { printUsage(pw, width, cmdLineSyntax, options, leftPad, descPad); }
+increase failing tests,527,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printOptions(pw, width, options, leftPad, descPad);
+increase failing tests,520,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printOptions(pw, width, options, leftPad, descPad);
+increase failing tests,520,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  printOptions(pw, width, options, leftPad, descPad); if(( header!= null)&&(header.trim().length() > 0)) { printWrapped(pw, width, header); }
+increase failing tests,520,add, [FE] ComparisonFailure testIndentedHeaderAndFooter,,  if(( header!= null)&&(header.trim().length() > 0)) { printUsage(pw, width, cmdLineSyntax); }
+increase failing tests,511,replace, [FE] ComparisonFailure testIndentedHeaderAndFooter,if (autoUsage) { ,if(( cmdLineSyntax!= null)||(cmdLineSyntax.trim().length() == 0)) {

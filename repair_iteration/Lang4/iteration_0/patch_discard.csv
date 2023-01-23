@@ -1,0 +1,10 @@
+increase failing tests,52,replace, [FE] ArrayIndexOutOfBoundsException testBasicLookup,final int sz = seq[0].length(); ,final int sz = seq[2].length();
+increase failing tests,52,replace, [FE] AssertionError testBasicLookup,final int sz = seq[0].length(); ,final int sz = seq[0].length() + 1;
+increase failing tests,51,replace, [FE] AssertionError testBasicLookup,this.lookupMap.put(seq[0], seq[1]); , 
+increase failing tests,53,replace, [FE] AssertionError testBasicLookup,if (sz < _shortest) { ,if(sz > _shortest) {
+increase failing tests,52,add, [FE] ArrayIndexOutOfBoundsException testBasicLookup,,  _longest = seq[2].length();
+increase failing tests,52,add, [FE] ArrayIndexOutOfBoundsException testBasicLookup,,  this.lookupMap.put(seq[1], seq[2]);
+increase failing tests,49,replace, [FE] AssertionError testBasicLookup,if (lookup != null) { ,if(lookup == null) {
+increase failing tests,52,replace, [FE] ArrayIndexOutOfBoundsException testBasicLookup,final int sz = seq[0].length(); ,final int sz = seq[3].length();
+increase failing tests,53,replace, [FE] AssertionError testBasicLookup,if (sz < _shortest) { ,if(sz >= _shortest) {
+increase failing tests,52,add, [FE] ArrayIndexOutOfBoundsException testBasicLookup,,  this.lookupMap.put(seq[2], seq[3]);

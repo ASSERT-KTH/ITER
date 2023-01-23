@@ -1,0 +1,33 @@
+compilation error,212,add,[CE] cannot find symbol i,,  iTypes[i] = types[i].getRangeDurationType().getField(iChronology);
+compilation error,176,add,[CE] cannot find symbol,,  iValues = createValues(values);
+compilation error,219,add,[CE] variable types is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  DateTimeFieldType[] types =(DateTimeFieldType[])this.values.clone(); if(types[i - 1].getRangeDurationType() == null) { throw new IllegalArgumentException(""); }
+compilation error,248,add,[CE] variable values is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  int[] values =(int[])this.values.clone();
+compilation error,228,replace,[CE] possible loss of precision,return 1; ,return -1L;
+compilation error,227,replace,[CE] cannot find symbol Token,if (durationField.isSupported()) { ,if(durationField.getType() == Token.FUNCTION || durationField.isSupported()) {
+compilation error,251,add,[CE] variable iChronology might already have been assigned,,  iChronology = chronology.withUTC();
+compilation error,213,add,[CE] variable iChronology might already have been assigned,,  iChronology = chronology.withUTC();
+compilation error,248,replace,[CE] bad operand types for binary operator '+',iTypes = (DateTimeFieldType[]) types.clone(); ,iTypes =(DateTimeFieldType[])types.clone() + 1;
+compilation error,250,add,[CE] variable iChronology might already have been assigned,,  iChronology = chronology.withUTC();
+increase failing tests,213,replace, [FE] NullPointerException testConstructor_TypeArray_intArray,for (int i = 0; i < types.length; i++) { ,for(int i = 1; i < types.length; i++) {
+compilation error,250,replace,[CE] cannot find symbol values,iValues = (int[]) values.clone(); ,iValues =(int[])this.values.clone();
+compilation error,249,replace,[CE] method validate in class Chronology cannot be applied to given types;,chronology.validate(this, values); ,chronology.validate(this, iTypes);
+compilation error,249,add,[CE] inconvertible types,,  iValues =(DateTimeFieldType[])values.clone();
+compilation error,248,replace,[CE] inconvertible types,iTypes = (DateTimeFieldType[]) types.clone(); ,iTypes =(int[])types.clone();
+increase failing tests,213,replace, [FE] AssertionFailedError testConstructorEx8_TypeArray_intArray,for (int i = 0; i < types.length; i++) { ,for(int i = 0; i < types.length - 1; i++) {
+compilation error,250,replace,[CE] inconvertible types,iValues = (int[]) values.clone(); ,iValues =(DateTimeFieldType[])values.clone();
+compilation error,249,replace,[CE] variable iChronology might already have been assigned,chronology.validate(this, values); ,chronology.validate(this, values); iChronology = DateTimeUtils.getChronology(chronology).withUTC();
+compilation error,251,add,[CE] variable iChronology might already have been assigned,,  chronology.validate(this, values); iChronology = chronology.withUTC();
+compilation error,213,add,[CE] variable iChronology might already have been assigned,,  iChronology = DateTimeUtils.getChronology(chronology).withUTC();
+compilation error,249,add,[CE] variable iChronology might already have been assigned,,  iChronology = chronology.withUTC();
+compilation error,250,add,[CE] variable iChronology might already have been assigned,,  iChronology = DateTimeUtils.getChronology(chronology).withUTC();
+compilation error,212,replace,[CE] cannot find symbol,DurationField lastUnitField = null; ,DurationField lastUnitField = iChronology.getDurationType();
+compilation error,227,replace,[CE] bad operand types for binary operator '>',if (durationField.isSupported()) { ,if(durationField.isSupported() > 0) {
+compilation error,212,add,[CE] variable iChronology might already have been assigned,,  iChronology = DateTimeUtils.getChronology(chronology).withUTC();
+compilation error,228,replace,[CE] cannot find symbol Token,return 1; ,return 1 -(durationField.getType() == Token.FUNCTION || durationField.getType() == Token.DEC);
+compilation error,227,add,[CE] cannot find symbol,,  checkAlterDurationField();
+compilation error,176,add,[CE] cannot find symbol iPartial,,  iPartial =(Partial)values.clone();
+compilation error,248,add,[CE] variable iChronology might already have been assigned,,  iChronology = chronology.withUTC();
+compilation error,227,replace,[CE] cannot find symbol,if (durationField.isSupported()) { ,if(durationField.getDurationField() == null || durationField.isSupported()) {
+compilation error,249,add,[CE] variable values is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  int[] values =(int[])values.clone();
+compilation error,212,replace,[CE] cannot find symbol i,DurationField lastUnitField = null; ,DurationField lastUnitField = types[i];
+increase failing tests,228,replace, [FE] AssertionFailedError testConstructorEx8_TypeArray_intArray,return 1; ,return -1;

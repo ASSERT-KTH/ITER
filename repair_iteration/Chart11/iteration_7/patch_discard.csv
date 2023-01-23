@@ -1,0 +1,4 @@
+compilation error,279,add,[CE] '.class' expected, ,while(boolean done && iterator1.isDone() && iterator1.isDone())
+compilation error,279,replace,[CE] illegal start of type, while(!done  &&  iterator1.isDone()  &&  iterator1.isDone())  ,while(!done && iterator1.isDone() && iterator3.isDone())
+compilation error,279,replace,[CE] '.class' expected, while(!done  &&  iterator1.isDone()  &&  iterator1.isDone())  ,while(boolean done = iterator1.isDone() && iterator2.isDone()) {
+compilation error,279,add,[CE] illegal start of expression, ,while(!done && iterator1.isDone() && iterator2.isDone()) { int seg1 = iterator1.currentSegment(d1);

@@ -1,0 +1,11 @@
+increase failing tests,108,replace, [FE] AssertionError testSampling,nextGaussian = r * FastMath.sin(alpha); ,nextGaussian = random * FastMath.sin(alpha);
+increase failing tests,108,replace, [FE] AssertionError testSampling,nextGaussian = r * FastMath.sin(alpha); ,nextGaussian = alpha * FastMath.sin(r);
+increase failing tests,108,replace, [FE] AssertionError testSampling,nextGaussian = r * FastMath.sin(alpha); ,nextGaussian = x * FastMath.sin(alpha);
+compilation error,101,add,[CE] double cannot be dereferenced,,  final double nextGaussian = random.next();
+compilation error,101,add,[CE] double cannot be dereferenced,,  final double nextGaussian = random.doubleValue();
+compilation error,101,add,[CE] double cannot be dereferenced,,  final double nextGaussian = random.nextDouble();
+compilation error,101,add,[CE] cannot find symbol Random,,  final double nextGaussian = Random.doubleValue();
+compilation error,101,add,[CE] cannot find symbol,,  final double nextGaussian = super.nextGaussian();
+increase failing tests,87,replace, [FE] AssertionError testSampling,final long high = ((long) next(26)) << 26; ,final long high =(( long)next(26)) << 16;
+increase failing tests,87,replace, [FE] AssertionError testSampling,final long high = ((long) next(26)) << 26; ,final long high =(( long)next(26)) << 24;
+compilation error,87,replace,[CE] cannot find symbol high,final long high = ((long) next(26)) << 26; , 

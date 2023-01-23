@@ -1,0 +1,198 @@
+compilation error,540,add,[CE] variable k is already defined in method gcd(int,int),,  final int k = Math.min(p, q);
+compilation error,540,add,[CE] variable k is already defined in method gcd(int,int),,  final int k = Math.abs(p);
+compilation error,540,add,[CE] variable k is already defined in method gcd(int,int),,  final int k =(int)Math.abs(p);
+compilation error,540,add,[CE] possible loss of precision,,  final int k = Math.log(p);
+compilation error,540,add,[CE] variable k is already defined in method gcd(int,int),,  final int k =(int)Math.log(p);
+increase failing tests,542,replace, [FE] ArithmeticException testBinomialCoefficient,if ((u == 0) || (v == 0)) { ,if(u > 0 || v < 0) {
+increase failing tests,542,replace, [FE] ArithmeticException testBinomialCoefficient,if ((u == 0) || (v == 0)) { ,if(u > q || v < 0) {
+compilation error,542,replace,[CE] illegal start of type,if ((u == 0) || (v == 0)) { , 
+compilation error,714,replace,[CE] missing return statement,return lcm; , 
+compilation error,711,add,[CE] ';' expected,,  a = Math.abs(mulAndCheck(a, b), a));
+compilation error,711,add,[CE] cannot find symbol lcm,,  lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));
+compilation error,711,add,[CE] ';' expected,,  lcm = Math.abs(mulAndCheck(a, b), a));
+compilation error,711,add,[CE] ';' expected,,  a = Math.sqrt(Math.abs(b), a));
+compilation error,711,add,[CE] ';' expected,,  lcm = Math.abs(mulAndCheck(a / gcd(a, b)), b));
+compilation error,713,add,[CE] ';' expected,,  int a = Math.abs(mulAndCheck(a, b), a));
+compilation error,713,add,[CE] ';' expected,,  int eps = Math.abs(mulAndCheck(a, b), a));
+compilation error,713,add,[CE] ';' expected,,  a = Math.abs(mulAndCheck(a, b), a));
+compilation error,713,add,[CE] ';' expected,,  int gcd(a, b), a);
+compilation error,542,add,[CE] illegal start of expression,,  if(u > 0) { if(v < 0) { return(Math.abs(u)- Math.abs(v)); }
+compilation error,542,add,[CE] illegal start of expression,,  if(u > 0) { if(v < 0) { return(Math.abs(u)+ Math.abs(v)); }
+compilation error,542,add,[CE] illegal start of expression,,  if(u > 0) { if(v <= 0) { return(Math.abs(u)- Math.abs(v)); }
+compilation error,542,add,[CE] illegal start of expression,,  if(u > 0) { if(v < 0) { return(Math.abs(u)/ q); }
+compilation error,551,add,[CE] unreachable statement,,  return(Math.abs(u)+ Math.abs(v));
+compilation error,551,add,[CE] unreachable statement,,  return(Math.abs(u)- Math.abs(v));
+compilation error,551,add,[CE] ';' expected,,  return(Math.abs(u)- Math.abs(v)));
+compilation error,543,add,[CE] illegal start of expression,,  if(u > 0 || v < 0) { if(!Math.abs(u)) { u = -u; }
+compilation error,543,add,[CE] illegal start of expression,,  if(u > 0 || v < 0) { if(!MathUtils.isEmpty(u)) { u = -u; }
+compilation error,543,add,[CE] illegal start of expression,,  if(u > 0 || v < 0) { if(!Math.abs(u)) { u = -u; if(v > 0) { u = -v; }
+compilation error,543,add,[CE] illegal start of expression,,  if(u > 0 || v < 0) { if(!Math.abs(u)) { u = Math.abs(v); }
+compilation error,543,add,[CE] illegal start of expression,,  if(u > 0 || v < 0) { if(!math.abs(u)) { u = -u; }
+compilation error,710,replace,[CE] illegal start of type,if (a==0 || b==0){ , 
+compilation error,541,add,[CE] illegal start of expression,,  if(q < 0) { if(u > 0 || u > 0) { return(Math.abs(u)+ Math.abs(q)); }
+compilation error,541,add,[CE] illegal start of expression,,  if(q < 0) { if(u > 0 || v < 0) { return(Math.abs(u)+ Math.abs(q)); }
+compilation error,541,add,[CE] illegal start of expression,,  if(q < 0) { if(u > 0) { return(Math.abs(u)+ Math.abs(q)); }
+compilation error,541,add,[CE] illegal start of expression,,  if(q < 0) { if(u > 0 || v < 0) { return(Math.abs(u)- Math.abs(q)); }
+compilation error,541,add,[CE] illegal start of expression,,  if(q < 0) { if(u > 0) { return(Math.abs(u)- Math.abs(q)); }
+compilation error,550,replace,[CE] illegal start of type,if (u > 0) { , 
+compilation error,713,replace,[CE] possible loss of precision,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,float lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));
+compilation error,713,replace,[CE] illegal start of type,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,int lcm = Math.min(mulAndCheck(a / gcd(a, b), b));
+compilation error,713,replace,[CE] illegal start of type,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));
+compilation error,551,replace,[CE] illegal start of type,u = -u; ,u = -u + 1;
+compilation error,551,replace,[CE] illegal start of type,u = -u; ,u = -u * Math.log(q);
+compilation error,551,replace,[CE] illegal start of type,u = -u; ,u = -u *(q + 1);
+compilation error,711,replace,[CE] illegal start of type,return 0; ,throw new IllegalArgumentException("");
+compilation error,711,replace,[CE] illegal start of type,return 0; ,throw new IllegalStateException("");
+compilation error,711,replace,[CE] illegal start of type,return 0; ,throw new UnsupportedOperationException("");
+compilation error,711,replace,[CE] illegal start of type,return 0; ,throw new IOException("");
+compilation error,541,replace,[CE] illegal start of type,int v = q; ,int v = p;
+compilation error,541,replace,[CE] illegal start of type,int v = q; ,int v = q + 1;
+compilation error,541,replace,[CE] illegal start of type,int v = q; ,int v = q * p;
+compilation error,550,add,[CE] illegal start of type,,  if(v > 0) { if(u > 0 && v <= 0) { return(Math.abs(u)- Math.abs(v)); }
+compilation error,550,add,[CE] illegal start of type,,  if(u > 0) { if(v > 0) { return(Math.abs(v)+ Math.abs(q)); }
+compilation error,550,add,[CE] illegal start of type,,  if(u > 0) { if(v > 0) { return(Math.abs(v)- Math.abs(q)); }
+compilation error,550,add,[CE] illegal start of type,,  if(u > 0) { if(v > 0) { return(Math.abs(v)- u); }
+compilation error,714,add,[CE] illegal start of type,,  if(lcm!= 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); if(lcm == 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b)
+compilation error,714,add,[CE] illegal start of type,,  if(lcm!= 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); if(lcm == 0) { lcm++; }
+compilation error,714,add,[CE] illegal start of type,,  if(lcm!= 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); if(lcm == 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)
+compilation error,714,add,[CE] illegal start of type,,  if(lcm!= 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); if(lcm == 0) { lcm--; }
+compilation error,714,add,[CE] illegal start of type,,  if(lcm!= 0) { lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); if(lcm == 0) { lcm = Math.abs(mulAndCheck(a - b), b); }
+compilation error,710,add,[CE] illegal start of type,,  int a = Math.abs(mulAndCheck(a, b), a));
+compilation error,710,add,[CE] illegal start of expression,,  if(a!= 0) { if(b == 0) { return 0; }
+compilation error,710,add,[CE] illegal start of expression,,  if(a <= 0) { if(b == 0) { return 0; }
+compilation error,710,add,[CE] illegal start of expression,,  if(a!= 0 || b == 0) { if(a > 0 || b < 0) { return 0; }
+compilation error,710,add,[CE] illegal start of expression,,  if(a <= 0 || b == 0) { if(a > 0 || b < 0) { return 0; }
+compilation error,540,replace,[CE] illegal start of expression,int u = p; ,int u = p - 1;
+compilation error,540,replace,[CE] illegal start of expression,int u = p; ,int u = p + 1;
+compilation error,540,replace,[CE] illegal start of expression,int u = p; ,int u = p - q;
+compilation error,714,add,[CE] illegal start of expression,,  System.arraycopy(x, 0, lcm, 0, lcm);
+compilation error,714,add,[CE] illegal start of expression,,  if(lcm!= 0) { if(lcm == -1) { lcm = 0; }
+compilation error,714,add,[CE] illegal start of expression,,  if(lcm == 0) { if(lcm == -1) { lcm = 0; }
+compilation error,714,add,[CE] illegal start of expression,,  if(lcm!= 0) { if(lcm == a) { lcm = 0; }
+compilation error,714,add,[CE] illegal start of expression,,  if(lcm == 0) { if(lcm == a) { lcm = 0; }
+compilation error,541,replace,[CE] illegal start of expression,int v = q; ,int v = q - 1;
+compilation error,551,add,[CE] illegal start of expression,,  u =(Math.abs(u)- Math.abs(q));
+compilation error,551,add,[CE] illegal start of expression,,  u =(Math.abs(u)+ Math.abs(q));
+compilation error,551,add,[CE] ';' expected,,  u = make u positive if(u > 0) {
+compilation error,551,add,[CE] ';' expected,,  u =(Math.abs(u)/ q);
+compilation error,551,add,[CE] ';' expected,,  u =(Math.abs(u)- Math.abs(v));
+compilation error,714,replace,[CE] ';' expected,return lcm; ,return(lcm == 0)? 0 : lcm;
+compilation error,714,replace,[CE] ';' expected,return lcm; ,return lcm - 1;
+compilation error,714,replace,[CE] ';' expected,return lcm; ,return(lcm == 0)? 1 : 0;
+compilation error,714,replace,[CE] ';' expected,return lcm; ,return lcm -(Math.rint(a, b), eps));
+compilation error,711,add,[CE] ';' expected,,  int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));
+compilation error,711,add,[CE] ')' expected,,  int lcm = Math.sqrt(Math.abs(a)/ gcd(a, b), b);
+compilation error,711,add,[CE] ')' expected,,  int lcm = Math.sqrt(Math.abs(a - b));
+compilation error,711,add,[CE] ')' expected,,  int lcm = Math.abs(mulAndCheck(a, a), b);
+compilation error,711,add,[CE] ')' expected,,  int lcm = Math.sqrt(Math.abs(a - b), b);
+compilation error,710,add,[CE] ')' expected,,  if(a == 0) { if(a == 0) { return 0; }
+compilation error,710,add,[CE] ')' expected,,  if(Math.abs(a) < Math.abs(b)) { if(a == 0) { return 0; }
+compilation error,710,add,[CE] ')' expected,,  if(a!= 0) { if(a == 0) { return 0; }
+compilation error,710,add,[CE] ')' expected,,  if(Math.abs(a) < Math.abs(b)) { if(a == 0 || b == 0) { return 0; }
+compilation error,710,add,[CE] ')' expected,,  if(Math.abs(a) < Math.abs(b)) { if(a == 0 && b <= 0) { return 0; }
+compilation error,542,add,[CE] ')' expected,,  final int u = Math.min(u, q);
+compilation error,542,add,[CE] ')' expected,,  final int u =(int)Math.min(u, q);
+compilation error,542,add,[CE] ')' expected,,  final int u =(int)Math.log(q)/ LOG_INFINITY;
+compilation error,542,add,[CE] ')' expected,,  if(u < 0) { if(u == 0) { return Math.min(u, v); }
+compilation error,542,add,[CE] ')' expected,,  final int u =(int)Math.log(q);
+compilation error,543,replace,[CE] ')' expected,return (Math.abs(u) + Math.abs(v)); ,return(Math.abs(u)+ Math.abs(v)- 1);
+compilation error,551,replace,[CE] array dimension missing,u = -u; ,u = -u.negatives();
+compilation error,551,replace,[CE] array dimension missing,u = -u; ,u = -u.negate();
+compilation error,542,replace,[CE] array dimension missing,if ((u == 0) || (v == 0)) { ,if(u * v == 0) {
+compilation error,542,replace,[CE] array dimension missing,if ((u == 0) || (v == 0)) { ,if(u == p || v == 0) {
+compilation error,542,replace,[CE] array dimension missing,if ((u == 0) || (v == 0)) { ,if(u >= p || v == 0) {
+compilation error,542,replace,[CE] array dimension missing,if ((u == 0) || (v == 0)) { ,if(u * v == p) {
+compilation error,711,replace,[CE] array dimension missing,return 0; ,throw new IllegalArgumentException("Function values at endpoints do not have different signs.");
+compilation error,711,replace,[CE] array dimension missing,return 0; ,throw new IllegalArgumentException("Function values at endpoints do not have different signs." +" Endpoints: [" + a +"," + b +"]");
+compilation error,711,replace,[CE] array dimension missing,return 0; ,throw new IllegalArgumentException("Function tests at endpoints do not have different signs.");
+compilation error,543,add,[CE] array dimension missing,,  final int u = Math.min(u, q);
+compilation error,543,add,[CE] array dimension missing,,  if(u > 0) { if(Math.abs(u) < Math.abs(q)) { u = p; if(v < 0) { u = -u; }
+compilation error,543,add,[CE] array dimension missing,,  if(u > 0) { if(Math.abs(u) < Math.abs(q)) { u = -u; if(v < 0) { u = -u; }
+compilation error,543,add,[CE] array dimension missing,,  if(u > 0) { if(Math.abs(u) < Math.abs(v)) { u = -u; }
+compilation error,543,add,[CE] array dimension missing,,  if(u > 0) { if(Math.abs(u) < Math.abs(v)) { u = p; if(u < 0) { u = -u; }
+compilation error,713,add,[CE] array dimension missing,,  if(a!= b) { if(Math.abs(mulAndCheck(a / gcd(a, b), b)) { return 0; }
+compilation error,713,add,[CE] array dimension missing,,  if(a!= b) { if(Math.abs(mulAndCheck(a, b), b)) { return 0; }
+compilation error,713,add,[CE] array dimension missing,,  if(a!= b) { if(Math.abs(mulAndCheck(a - gcd(a, b), b)) { return 0; }
+compilation error,713,add,[CE] array dimension missing,,  if(a!= b) { if(Math.abs(mulAndCheck(a, b), b)) { return Integer.MIN_VALUE; }
+compilation error,713,add,[CE] array dimension missing,,  if(a!= b) { if(Math.abs(mulAndCheck(a, b), b)) { return 1; }
+compilation error,550,add,[CE] array dimension missing,,  if(u > 0) { if(u > 0) { u = -u; }
+compilation error,550,add,[CE] array dimension missing,,  if(u > 0) { int u = p; if(u > 0) { u = -u; }
+compilation error,550,add,[CE] array dimension missing,,  if(u > 0) { if(u > 0) { u = -u; if(v > 0) { u = -u; }
+compilation error,550,add,[CE] array dimension missing,,  if(u > 0) { if(u > 0) { u = -u; if(u > 0) { u = -u; }
+compilation error,550,add,[CE] array dimension missing,,  if(u > 0) { int u = p; if(u == 0) { u = -u; }
+compilation error,540,add,[CE] array dimension missing,,  final int k = Math.log(p)/ q;
+compilation error,540,add,[CE] array dimension missing,,  final gcd(p, q);
+compilation error,550,replace,[CE] array dimension missing,if (u > 0) { ,int u > 0) {
+compilation error,713,replace,[CE] array dimension missing,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), false));
+compilation error,713,replace,[CE] array dimension missing,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)+ 1);
+compilation error,710,replace,[CE] array dimension missing,if (a==0 || b==0){ ,if(a == b || a == 0) {
+compilation error,710,replace,[CE] array dimension missing,if (a==0 || b==0){ ,if(a == lcm || b == 0) {
+compilation error,710,replace,[CE] array dimension missing,if (a==0 || b==0){ ,if(a == 0.0 || b == 0) {
+compilation error,540,replace,[CE] array dimension missing,int u = p; ,int u = p * q;
+compilation error,541,add,[CE] array dimension missing,,  int k = p + 1;
+compilation error,541,add,[CE] array dimension missing,,  int k = p;
+compilation error,541,add,[CE] array dimension missing,,  int u = p;
+compilation error,541,add,[CE] array dimension missing,,  int u = p * Math.log(q);
+compilation error,541,add,[CE] array dimension missing,,  final int k = p + 1;
+compilation error,550,add,[CE] array dimension missing,,  u = make u negative if(u > 0) {
+compilation error,550,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v))? 1 : 0;
+compilation error,550,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v))? 0 : u;
+compilation error,550,add,[CE] array dimension missing,,  u = make u negative? -u : -Math.abs(v)- 1;
+compilation error,550,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v)) ;
+compilation error,711,replace,[CE] array dimension missing,return 0; ,throw new IllegalArgumentException("Math.abs(a / gcd(a, b), b) < 0);
+compilation error,714,replace,[CE] array dimension missing,return lcm; ,return(lcm == 0)? a : lcm;
+compilation error,714,replace,[CE] array dimension missing,return lcm; ,return(lcm == 1)? 0 : lcm;
+compilation error,714,replace,[CE] array dimension missing,return lcm; ,return lcm == 0? a : lcm;
+compilation error,714,replace,[CE] array dimension missing,return lcm; ,return lcm == 0? -1 : lcm;
+compilation error,710,replace,[CE] array dimension missing,if (a==0 || b==0){ ,if(a >= 0 || b == 0) {
+compilation error,710,replace,[CE] array dimension missing,if (a==0 || b==0){ ,if(a < 0 || b == 0) {
+compilation error,551,replace,[CE] array dimension missing,u = -u; ,u = -u, q;
+compilation error,551,replace,[CE] array dimension missing,u = -u; ,u = -u.long;
+compilation error,542,add,[CE] array dimension missing,,  if(u > 0) { if(v < 0) { return Math.sqrt(-u); }
+compilation error,542,add,[CE] array dimension missing,,  if(u > 0) { if(v < 0) { return Math.sqrt(Math.abs(u)- Math.abs(v)); }
+compilation error,542,add,[CE] array dimension missing,,  if(u > 0) { if(v < 0) { return Math.sqrt(Math.abs(u)+ gcd(v)); }
+compilation error,542,add,[CE] array dimension missing,,  if(u > 0) { if(v >= 0) { return Math.sqrt(-u); }
+compilation error,542,add,[CE] array dimension missing,,  if(u > 0) { if(v == 0) { return Math.sqrt(-u); }
+compilation error,711,add,[CE] array dimension missing,,  if(Math.abs(a) < Math.abs(b)) { a = 0; b = 0; }
+compilation error,711,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a), b));
+compilation error,711,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a)+ Math.abs(b));
+compilation error,711,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a)* Math.log(b)) - 1;
+compilation error,711,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a)+ Math.log(b));
+compilation error,713,replace,[CE] array dimension missing,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)> 0);
+compilation error,713,replace,[CE] array dimension missing,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)); ,int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b)* lcm);
+compilation error,541,add,[CE] array dimension missing,,  int k = q;
+compilation error,541,add,[CE] array dimension missing,,  int k = k;
+compilation error,541,add,[CE] array dimension missing,,  int k = k + 1;
+compilation error,541,add,[CE] array dimension missing,,  int k = k +(Math.abs(p)+ gcd(q));
+compilation error,541,add,[CE] array dimension missing,,  int k = k +(Math.abs(p) < Math.abs(q));
+compilation error,710,add,[CE] array dimension missing,,  if(Math.abs(a) < Math.abs(b)) { if(a == 0 || b > 0) { return 0; }
+compilation error,710,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a), b);
+compilation error,543,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v))? -1 : +1;
+compilation error,543,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v))? -1 : -1;
+compilation error,543,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v))? 0 : u;
+compilation error,543,add,[CE] array dimension missing,,  u =(Math.abs(u)+ 1)* q);
+compilation error,543,add,[CE] array dimension missing,,  u =(Math.abs(u)+ Math.abs(v))? 1 : 0;
+compilation error,540,add,[CE] array dimension missing,,  final int k =(int)Math.log(p)/ q);
+compilation error,540,add,[CE] array dimension missing,,  final int k = Math.min(k, p);
+compilation error,540,add,[CE] array dimension missing,,  final int k =(int)Math.floor(p);
+compilation error,543,replace,[CE] array dimension missing,return (Math.abs(u) + Math.abs(v)); ,return(Math.abs(u)+ Math.log(v));
+compilation error,543,replace,[CE] array dimension missing,return (Math.abs(u) + Math.abs(v)); ,return(Math.abs(u)* Math.log(v));
+compilation error,713,add,[CE] array dimension missing,,  int gcd = Math.abs(mulAndCheck(a, b), b);
+compilation error,713,add,[CE] array dimension missing,,  int gcd = Math.sqrt(Math.abs(a), b));
+compilation error,713,add,[CE] array dimension missing,,  int gcd = Math.sqrt(Math.abs(a), b);
+compilation error,713,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a), b);
+compilation error,713,add,[CE] array dimension missing,,  a = Math.sqrt(Math.abs(a), b));
+compilation error,541,replace,[CE] array dimension missing,int v = q; ,int v = q.length;
+compilation error,541,replace,[CE] array dimension missing,int v = q; ,int v = q, p;
+compilation error,540,replace,[CE] array dimension missing,int u = p; ,int u = p + 2;
+compilation error,714,add,[CE] array dimension missing,,  if(lcm == 0) { lcm = Math.sqrt(Math.abs(lcm)/ GSRS(a, b)); if(lcm == 0) { lcm = gcd(a, b); }
+compilation error,714,add,[CE] array dimension missing,,  if(lcm == 0) { if(Math.abs(lcm - 1) == Math.abs(lcm - 1)) { lcm = Math.sqrt(Math.abs(lcm - 1)); }
+compilation error,714,add,[CE] array dimension missing,,  lcm = Math.sqrt(Math.abs(lcm)/ GSRS(a, b));
+compilation error,714,add,[CE] array dimension missing,,  if(lcm == 0) { if(Math.abs(lcm - 1) == Math.abs(lcm - 1)) { lcm = Math.abs(mulAndCheck(lcd, a, b), b); }
+compilation error,714,add,[CE] array dimension missing,,  if(lcm == 0) { if(Math.abs(lcm - 1) == Math.abs(lcm - 1)) { lcm = Math.sqrt(Math.abs(lcm - 1), b)); }
+compilation error,551,add,[CE] array dimension missing,,  return(Math.abs(u)+ Math.abs(q));
+compilation error,551,add,[CE] array dimension missing,,  u = make u negative if(u > 0) {
+compilation error,551,add,[CE] array dimension missing,,  return(Math.abs(u)- Math.abs(q));
+compilation error,550,replace,[CE] array dimension missing,if (u > 0) { ,if(u >= 0) {
+compilation error,542,replace,[CE] array dimension missing,if ((u == 0) || (v == 0)) { ,if(u * v == q) {
+compilation error,542,replace,[CE] array dimension missing,if ((u == 0) || (v == 0)) { ,if(u * v == 0 || v == eps) {

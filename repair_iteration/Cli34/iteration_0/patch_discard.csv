@@ -1,7 +1,193 @@
-compilation error,[CE] illegal start of expression,,if(argName!= null) { for(int i = 0; i < argName; ++i) { optionBuilder.reset(); }
-compilation error,[CE] illegal start of expression,,if(argName!= null) { for(int i = 0; i < argName.length(); ++i) { optionBuilder.reset(); }
-compilation error,[CE] illegal start of expression,,if(argName!= null) { for(int i = 0; i < argName; ++i) { description.append('n'); }
-compilation error,[CE] illegal start of expression,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { optionBuilder.reset(); }
-compilation error,[CE] illegal start of expression,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { optionBuilder.setRequired(required); }
-compilation error,[CE] illegal start of expression,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { type = Integer.MIN_VALUE; }
-compilation error,[CE] not a statement,,if(argName!= null && argName.length() > 0) { for(int i = 0; i < argName; ++i) { required; }
+increase failing tests,257,replace, [FE] NullPointerException testGetParsedOptionValue,return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES; ,return numberOfArgs > 0 && numberOfArgs == UNLIMITED_VALUES;
+increase failing tests,257,replace, [FE] AssertionFailedError testGetParsedOptionValue,return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES; ,return numberOfArgs > 0 || numberOfArgs!= UNLIMITED_VALUES;
+compilation error,257,replace,[CE] missing return statement,return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES; , 
+increase failing tests,150,replace, [FE] AssertionFailedError testGetParsedOptionValue,OptionBuilder.required = true; ,OptionBuilder.required = false;
+compilation error,150,replace,[CE] incompatible types,OptionBuilder.required = true; ,OptionBuilder.required ="required";
+compilation error,150,replace,[CE] incompatible types,OptionBuilder.required = true; ,OptionBuilder.required = null;
+increase failing tests,150,replace, [FE] AssertionFailedError testGetParsedOptionValue,OptionBuilder.required = true; , 
+increase failing tests,178,replace, [FE] NullPointerException testGetParsedOptionValue,return opt; ,return this.longOpt;
+increase failing tests,178,replace, [FE] NullPointerException testGetParsedOptionValue,return opt; ,return longOpt;
+compilation error,178,replace,[CE] missing return statement,return opt; , 
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOptionBuilder();
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptionBuilder().withType(newType);
+increase failing tests,292,add, [FE] StackOverflowError testGetParsedOptionValue,,  OptionBuilder instance = withType(newType);
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptionBuilder().with(newType);
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = withOption(newType);
+compilation error,111,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.getOption(argName);
+compilation error,111,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.build();
+compilation error,111,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.createOption(argName);
+compilation error,111,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.createOptionBuilder();
+compilation error,111,add,[CE] cannot find symbol optionBuilder,,  OptionBuilder instance = optionBuilder.hasArg();
+compilation error,294,replace,[CE] incompatible types,return instance; ,return newType;
+compilation error,294,replace,[CE] incompatible types,return instance; ,return type;
+compilation error,294,replace,[CE] incompatible types,return instance; ,return(newType == type)? type : newType;
+compilation error,294,replace,[CE] incompatible types,return instance; ,return(newType == null)? type : newType;
+compilation error,294,replace,[CE] missing return statement,return instance; , 
+compilation error,178,add,[CE] method get in interface List cannot be applied to given types;,,  longOpt =(String)this.values.get(opt);
+increase failing tests,178,add, [FE] AssertionFailedError testGetParsedOptionValue,,  longOpt = getValue();
+compilation error,178,add,[CE] method get in interface List cannot be applied to given types;,,  longOpt = this.values.get(opt);
+increase failing tests,178,add, [FE] AssertionFailedError testGetParsedOptionValue,,  longOpt =(String)this.values.get(0);
+compilation error,178,add,[CE] cannot find symbol,,  longOpt = getValue(); opt.addChildToBack(this);
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRawClass();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getClass();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRValues();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getValues();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRValues().class();
+compilation error,208,add,[CE] cannot find symbol,,  longOpt = this.values.getLongOpt();
+compilation error,208,add,[CE] method get in interface List cannot be applied to given types;,,  longOpt =(String)this.values.get(opt);
+increase failing tests,208,add, [FE] AssertionFailedError testGetParsedOptionValue,,  longOpt = getValue();
+increase failing tests,208,add, [FE] StackOverflowError testGetParsedOptionValue,,  longOpt = getLongOpt();
+compilation error,208,add,[CE] cannot find symbol,,  longOpt = getValues().toLongOpt();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptionBuilder();
+compilation error,150,add,[CE] cannot find symbol options,,  OptionBuilder instance = options.getOptionBuilder();
+compilation error,150,add,[CE] cannot find symbol option,,  OptionBuilder instance = option.getOptionBuilder();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.getOption(argName);
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptionBuilder().isRequired();
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOptionBuilder();
+increase failing tests,294,add, [FE] StackOverflowError testGetParsedOptionValue,,  OptionBuilder instance = withType(newType);
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOption(type);
+compilation error,294,add,[CE] non-static variable this cannot be referenced from a static context,,  OptionBuilder instance = newType.withOption(this);
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder instance = withOption(newType);
+compilation error,288,add,[CE] generics are not supported in -source 1.4,,  if(required!= null) { Class <?> longOpt = getValues(); if(longOpt.isRequired()) { required = true; }
+compilation error,288,add,[CE] generics are not supported in -source 1.4,,  if(!required.isEmpty()) { Class <?> longOpt = getValues(); if(longOpt!= null) { required = true; }
+compilation error,288,add,[CE] generics are not supported in -source 1.4,,  if(required!= null) { Class <?> longOpt = getLongOpt(); if(longOpt.isRequired()) { required = true; }
+compilation error,288,add,[CE] generics are not supported in -source 1.4,,  if(required!= null) { Class <?> longOpt = getValues(); if(longOpt!= null) { required = true; }
+compilation error,288,add,[CE] generics are not supported in -source 1.4,,  if(required!= null) { Class <?> longOpt = getValues(); if(longOpt.isRequired()) { optionalArg = true; }
+compilation error,113,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.getOption(argName);
+compilation error,113,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.build();
+compilation error,113,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.getOption(argName); optionBuilder.isRequired();
+compilation error,113,add,[CE] no suitable method found for hasArg(OptionBuilder),,  OptionBuilder.hasArg(instance);
+compilation error,113,add,[CE] cannot find symbol,,  OptionBuilder instance = Option.getOption(argName); optionBuilder.hasArg();
+compilation error,113,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return this.argName;
+compilation error,113,replace,[CE] cannot find symbol optionBuilder,return instance; ,return optionBuilder;
+compilation error,113,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return this.optionalArg;
+compilation error,113,replace,[CE] cannot find symbol UNLIMITED_ARGUMENTS,return instance; ,return OptionBuilder.UNLIMITED_ARGUMENTS;
+increase failing tests,188,replace, [FE] NullPointerException testGetParsedOptionValue,return type; ,return type!= null? null : type;
+compilation error,208,replace,[CE] cannot find symbol LongOpt,return longOpt; ,return(longOpt == null)? LongOpt.NULL : longOpt;
+increase failing tests,208,replace, [FE] AssertionFailedError testGetParsedOptionValue,return longOpt; ,return(longOpt == null)? longOpt : getLongOpt();
+compilation error,208,replace,[CE] cannot find symbol Op,return longOpt; ,return(longOpt == null)? longOpt : Op.NONE;
+increase failing tests,292,replace, [FE] NullPointerException testGetParsedOptionValue,OptionBuilder.type = newType; ,OptionBuilder.type = type;
+compilation error,292,replace,[CE] non-static variable this cannot be referenced from a static context,OptionBuilder.type = newType; ,OptionBuilder.type = newType == null? this : newType;
+compilation error,288,replace,[CE] ';' expected,return required; ,return(required == null)||(valuesep!= null &&!valuesep.equals(this.valuesep)));
+compilation error,288,replace,[CE] bad operand types for binary operator '==',return required; ,return(required == null)||(valuesep!= null &&!valuesep.equals(this.valuesep));
+compilation error,288,replace,[CE] bad operand types for binary operator '==',return required; ,return(required == null)||(valuesep!= null && values.size() > 0);
+compilation error,257,add,[CE] incompatible types,,  int numberOfArgs = getValues();
+increase failing tests,257,add, [FE] NullPointerException testGetParsedOptionValue,,  int numberOfArgs = this.values.size();
+compilation error,257,add,[CE] cannot find symbol,,  int numberOfArgs = getValues().size();
+increase failing tests,257,add, [FE] NullPointerException testGetParsedOptionValue,,  int numberOfArgs = this.values.indexOf(argName);
+compilation error,257,add,[CE] cannot find symbol,,  int numberOfArgs = getNumberOfLinks();
+compilation error,113,add,[CE] no suitable method found for hasArg(int),,  OptionBuilder.hasArg(numberOfArgs);
+compilation error,113,add,[CE] not a statement,,  OptionBuilder.isRequired()? OptionBuilder.hasArg(numberOfArgs): null;
+compilation error,113,add,[CE] no suitable method found for hasArg(int),,  OptionBuilder.hasArg(numberOfArgs - 1);
+compilation error,113,add,[CE] not a statement,,  OptionBuilder.isRequired()? OptionBuilder.instance : null;
+compilation error,288,replace,[CE] bad operand types for binary operator '!=',return required; ,return(this.required!= null && this.numberOfArgs > 0)||(numberOfArgs == UNLIMITED_VALUES);
+compilation error,288,replace,[CE] bad operand types for binary operator '!=',return required; ,return(this.required!= null && this.numberOfArgs > 0);
+compilation error,288,replace,[CE] bad operand types for binary operator '!=',return required; ,return(this.required!= null && this.numberOfArgs > 0)||(valuesep == null && this.numberOfArgs.size() > 0);
+compilation error,178,add,[CE] cannot find symbol,,  opt =(String)this.opt.getOpt();
+compilation error,178,add,[CE] cannot find symbol,,  opt =(Option)this.opt.getOpt();
+increase failing tests,178,add, [FE] StackOverflowError testGetParsedOptionValue,,  opt = getOpt();
+compilation error,178,add,[CE] cannot find symbol,,  opt =(String)this.values.getEmptyValue();
+compilation error,178,add,[CE] cannot find symbol opts,,  opt =(String)this.opts.get();
+compilation error,294,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return(newType == type)? this : new OptionBuilder(this, newType);
+compilation error,294,replace,[CE] incompatible types,return instance; ,return(newType == type)? type : null;
+compilation error,294,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return(newType == null)? type : new OptionBuilder(this, newType);
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder.instance = newType.getOptions();
+increase failing tests,294,add, [FE] StackOverflowError testGetParsedOptionValue,,  OptionBuilder.instance = withType(newType);
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOptions().newInstance();
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder.instance = newType.getOptions().newInstance();
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOptions();
+increase failing tests,257,replace, [FE] NullPointerException testGetParsedOptionValue,return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES; ,return this.numberOfArgs > 0 && numberOfArgs == UNLIMITED_VALUES;
+increase failing tests,257,replace, [FE] AssertionFailedError testGetParsedOptionValue,return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES; ,return numberOfArgs > 0 && numberOfArgs!= UNLIMITED_VALUES;
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getType();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getType(argName);
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getValueType();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRawType();
+increase failing tests,208,replace, [FE] AssertionFailedError testGetParsedOptionValue,return longOpt; ,return(longOpt == null)? longOpt :(longOpt == null)? longOpt : getLongOpt();
+compilation error,208,add,[CE] cannot find symbol,,  longOpt =(String)this.opt.getLongOpt();
+compilation error,208,add,[CE] method getLongOpt in class Option cannot be applied to given types;,,  longOpt = getLongOpt(opt);
+compilation error,208,add,[CE] cannot find symbol,,  longOpt =(String)this.values.getRawClass().getLongOpt();
+compilation error,208,add,[CE] cannot find symbol,,  longOpt = getLongOptDescription();
+compilation error,208,add,[CE] cannot find symbol,,  longOpt =(String)this.values.get(opt.getLongOpt());
+compilation error,113,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return this.numberOfArgs;
+compilation error,113,replace,[CE] incompatible types,return instance; ,return(numberOfArgs == 0)? Integer.MAX_VALUE : Integer.MAX_VALUE;
+compilation error,113,replace,[CE] incompatible types,return instance; ,return(numberOfArgs == 0)? Integer.MAX_VALUE : Integer.MIN_VALUE;
+compilation error,111,replace,[CE] possible loss of precision,OptionBuilder.numberOfArgs = 1; ,OptionBuilder.numberOfArgs = 1L;
+compilation error,257,add,[CE] cannot find symbol,,  int numberOfArgs = getArguments();
+compilation error,257,add,[CE] cannot find symbol,,  int numberOfArgs = getNumberOfArgs();
+compilation error,257,add,[CE] cannot find symbol,,  int numberOfArgs = getArgCount();
+compilation error,288,add,[CE] illegal start of expression,,  if(required!= null) { if(!required.isRequired()) { throw new IllegalArgumentException(""); }
+compilation error,288,add,[CE] illegal start of expression,,  if(required!= null) { required = true; if(required!= null) { throw new IllegalArgumentException(""); }
+compilation error,288,add,[CE] illegal start of expression,,  if(required!= null) { if(!required.isRequired()) { required = true; }
+compilation error,288,add,[CE] illegal start of expression,,  if(required!= null) { if(!required.isRequired()) { throw new UnsupportedOperationException(""); }
+compilation error,288,add,[CE] illegal start of expression,,  if(required!= null) { if(!required.isRequired()) { throw new UnsupportedOptException(""); }
+compilation error,150,replace,[CE] cannot find symbol,OptionBuilder.required = true; ,OptionBuilder.required =(optionalArg)required;
+increase failing tests,292,add, [FE] StackOverflowError testGetParsedOptionValue,,  OptionBuilder.instance = withType(newType);
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOptions().newInstance();
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOptions();
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = withType(newType.getRequired());
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptions().iterator().next();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptions().iterator().isRequired();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getDefaultOptionBuilder();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptions().iterator().hasNext();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getOptions().newInstance();
+compilation error,111,add,[CE] non-static variable this cannot be referenced from a static context,,  OptionBuilder.instance =(OptionBuilder)this.argName.clone();
+compilation error,111,add,[CE] non-static variable this cannot be referenced from a static context,,  OptionBuilder instance =(OptionBuilder)this.argName.clone();
+compilation error,111,add,[CE] clone() has protected access in Object,,  OptionBuilder instance =(OptionBuilder)argName.clone();
+compilation error,111,add,[CE] no suitable method found for hasArg(String),,  OptionBuilder.hasArg(argName);
+compilation error,111,add,[CE] cannot find symbol optionalArgs,,  OptionBuilder instance =(OptionBuilder)optionalArgs.clone();
+compilation error,292,replace,[CE] cannot find symbol,OptionBuilder.type = newType; ,OptionBuilder.type = newType.getRequired();
+compilation error,292,replace,[CE] cannot find symbol,OptionBuilder.type = newType; ,OptionBuilder.type = newType == null? getType() : newType;
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance =(OptionBuilder)enabledByDefault();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = getRequired();
+compilation error,150,add,[CE] cannot find symbol,,  OptionBuilder instance = new OptionBuilder(getArgs());
+compilation error,292,replace,[CE] '(' or '[' expected,OptionBuilder.type = newType; ,OptionBuilder.type =(newType == type? this : new Type);
+increase failing tests,292,replace, [FE] NullPointerException testGetParsedOptionValue,OptionBuilder.type = newType; ,OptionBuilder.type = newType == null? newType : type;
+compilation error,257,add,[CE] incompatible types,,  int numberOfArgs = this.getValues();
+compilation error,257,add,[CE] cannot find symbol ARG,,  int numberOfArgs = this.values.indexOf(ARG);
+compilation error,113,add,[CE] clone() has protected access in Object,,  OptionBuilder.argName =(OptionBuilder)argName.clone();
+compilation error,113,add,[CE] cannot find symbol,,  OptionBuilder.argName =(OptionBuilder)ArgName.class.getSimpleName();
+compilation error,113,add,[CE] cannot find symbol,,  OptionBuilder.argName =(OptionBuilder)argName.get();
+compilation error,208,add,[CE] cannot find symbol,,  longOpt = getValue(opt.getLongOpt());
+increase failing tests,208,add, [FE] AssertionFailedError testGetParsedOptionValue,,  longOpt = getValue(String.valueOf(opt));
+increase failing tests,208,add, [FE] AssertionFailedError testGetParsedOptionValue,,  longOpt =(String)this.values.get(0);
+compilation error,208,add,[CE] cannot find symbol,,  longOpt = getValue(opt.getKey());
+compilation error,150,replace,[CE] cannot find symbol optionalArgs,OptionBuilder.required = true; ,OptionBuilder.required =(optionalArgs == null)? false : OptionBuilder.required = true;
+compilation error,150,replace,[CE] cannot find symbol optionalArgs,OptionBuilder.required = true; ,OptionBuilder.required =(optionalArgs!= null)? false : OptionBuilder.required = true;
+compilation error,150,replace,[CE] cannot find symbol optionalArgs,OptionBuilder.required = true; ,OptionBuilder.required =(optionalArgs == null)? false : OptionBuilder.required;
+compilation error,288,add,[CE] cannot find symbol,,  required = getValue(opt.getKey());
+compilation error,288,add,[CE] incompatible types,,  required = getValues();
+compilation error,288,add,[CE] bad operand types for binary operator '!=',,  if(required!= null) { required = true; }
+compilation error,288,add,[CE] bad operand types for binary operator '!=',,  if(required!= null) { required = getRequired(); }
+compilation error,288,add,[CE] bad operand types for binary operator '!=',,  if(required!= null) { required.setLength(0); }
+compilation error,113,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return this.instance;
+compilation error,113,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return this.arguments;
+increase failing tests,188,replace, [FE] NullPointerException testGetParsedOptionValue,return type; ,return(this.type!= null? null : this.type);
+compilation error,178,add,[CE] cannot find symbol,,  opt.addValue(String.valueOf("opt"));
+compilation error,178,add,[CE] cannot find symbol,,  opt =(String)this.valuesept();
+compilation error,178,add,[CE] cannot find symbol,,  longOpt = getOpt(opt.getKey());
+compilation error,178,add,[CE] cannot find symbol,,  opt.addValue(String.valueOf("0"));
+compilation error,178,add,[CE] cannot find symbol,,  opt.addValue(String.valueOf('.'));
+increase failing tests,292,add, [FE] StackOverflowError testGetParsedOptionValue,,  OptionBuilder instance =(OptionBuilder)withType(newType);
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOwner().withType(newType);
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = newType.getOwnerClass().getOptionBuilder();
+compilation error,292,add,[CE] cannot find symbol,,  OptionBuilder instance = newOptionBuilder(newType.getRequiredArgs());
+compilation error,178,replace,[CE] ,return opt; ,return(this.opt == null? this.opt.getOpt() :"null";
+compilation error,178,replace,[CE] cannot find symbol,return opt; ,return(this.opt == null? this.opt.getOpt() : option.getOpt());
+compilation error,294,add,[CE] clone() has protected access in Object,,  OptionBuilder.instance =(OptionBuilder)type.clone();
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder.instance = newType.getRequired();
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder.instance = getRequiredArgs();
+compilation error,294,add,[CE] cannot find symbol,,  OptionBuilder.instance =(OptionBuilder)type.withType(newType);
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRawClass().getType();
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRawClass(); if(type!= null) { type = new Class <?>(type); }
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getRawClass(); if(type!= null) { type = new Class <?>(0, type); }
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getClass().getDeclaredClass(); if(type!= null) { type = new Class <?>(0L : type); }
+compilation error,188,add,[CE] generics are not supported in -source 1.4,,  Class <?> type = getClass().getDeclaredClass(); if(type!= null) { type = new Class <?>(0L, UNLIMITED_VALUES); }
+compilation error,294,replace,[CE] non-static variable this cannot be referenced from a static context,return instance; ,return(newType == type)? this : instance;
+compilation error,294,replace,[CE] incompatible types,return instance; ,return(newType == type)? null : newType;
+compilation error,294,replace,[CE] incompatible types for ?: neither is a subtype of the other,return instance; ,return(newType == type)? instance : newType;
+compilation error,288,replace,[CE] ')' expected,return required; ,return(this.required } null && this.numberOfArgs > 0)||(numberOfArgs == UNLIMITED_VALUES);
+compilation error,288,replace,[CE] bad operand types for binary operator '!=',return required; ,return(this.required!= null && this.numberOfArgs > 0)||(valuesep == null &&!valuesep.isEmpty());
+compilation error,208,replace,[CE] cannot find symbol,return longOpt; ,return(this.longOpt == null? this.longOpt : new String(opt.getLongOpt()));
+compilation error,208,replace,[CE] cannot find symbol,return longOpt; ,return(this.longOpt == null)? this.longOpt : new String(opt.getLongOpt());
+compilation error,208,replace,[CE] inconvertible types,return longOpt; ,return(this.longOpt == null)? this.longOpt :(( Number)longOpt).getLongOpt();
+compilation error,111,add,[CE] cannot find symbol,,  OptionBuilder instance =(OptionBuilder)ArgName.class.getSimpleName();

@@ -1,0 +1,18 @@
+patch is same with buggy,96,replace,, this.value  =  value  /  2;  ,this.value = value / 2;
+compilation error,96,add,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke,float), ,if(this.value!= value) { this.value = value * 2.0; } else { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,add,[CE] no suitable constructor found for Double(double,Stroke,Stroke,Paint,float), ,if(this.value!= value) { this.value = value * 2.0; } else { this.value = new Double(value, stroke, outlineStroke, outlinePaint, alpha); }
+patch is same with buggy,96,replace,, this.value  =  value  /  2.0  +  1;  ,this.value = value / 2.0 + 1;
+compilation error,96,replace,[CE] cannot find symbol, this.value  =  value  /  1;  ,if(outlineStroke!= null) { this.value = outlineStroke.get(stroke); } else { this.value = value / 2; }
+patch is same with buggy,96,replace,, this.value  =  value  /  2;  ,this.value = value / 2;
+compilation error,96,add,[CE] bad operand types for binary operator '/', ,this.value = stroke / 2.0 + 1;
+patch is same with buggy,96,replace,, this.value  =  value  /  2.0  +  1;  , 
+compilation error,96,add,[CE] bad operand types for binary operator '*', ,if(this.value!= value) { this.value = value * 2.0; } else { this.value =(value * outlineStroke); }
+compilation error,96,add,[CE] incompatible types, ,this.value = outlineStroke? stroke : outlineStroke;
+compilation error,96,add,[CE] bad operand types for binary operator '/', ,this.value = outlineStroke / stroke;
+compilation error,96,add,[CE] no suitable constructor found for ValueMarker(double,Stroke,Paint,Stroke,float), ,if(this.value!= value) { this.value = value / 1; } else { this.value = new ValueMarker(this.value, stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,add,[CE] no suitable constructor found for ValueMarker(ValueMarker,Stroke,Paint,Stroke,float), ,if(this.value!= value) { this.value = value / 1; } else { this.value = new ValueMarker(this, stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,add,[CE] no suitable constructor found for ValueMarker(double,Stroke,Paint,Stroke,float), ,if(this.value!= value) { this.value = value * 2.0; } else { this.value = new ValueMarker(this.value, stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,add,[CE] no suitable constructor found for ValueMarker(ValueMarker,Stroke,Paint,Stroke,float), ,if(this.value!= value) { this.value = value * 2.0; } else { this.value = new ValueMarker(this, stroke, outlinePaint, outlineStroke, alpha); }
+patch is same with buggy,96,replace,, this.value  =  value  /  2;  ,this.value = value / 2;
+compilation error,96,replace,[CE] no suitable constructor found for ValueMarker(double,Stroke,Paint,Stroke,float), this.value  =  value  /  1;  ,if(value < 0.0) { this.value = value / 2; } else { this.value = new ValueMarker(1.0, stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,replace,[CE] ';' expected, this.value  =  value  /  2.0  +  1;  ,this.value = value / 2.0, 0.0;

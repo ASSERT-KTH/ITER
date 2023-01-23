@@ -1,0 +1,206 @@
+increase failing tests,175,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,x0 = x1; ,x0 = f1;
+compilation error,175,replace,[CE] cannot find symbol x2,x0 = x1; ,x0 = x2;
+increase failing tests,175,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,x0 = x1; , 
+compilation error,167,add,[CE] illegal start of expression,,  if(inverted) { if(fx > 0.0) { return x; }
+compilation error,167,add,[CE] illegal start of expression,,  if(fx < 0.0) { if(!inverted) { return x; }
+compilation error,167,add,[CE] illegal start of expression,,  if(fx > 0.0) { if(!inverted) { return x; }
+compilation error,167,add,[CE] illegal start of expression,,  if(inverted) { if(fx > 0) { return x; }
+compilation error,167,add,[CE] illegal start of expression,,  if(fx < 0.0) { if(fx > 0.0) { return x; }
+compilation error,152,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRadiusAccuracy();
+compilation error,152,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRrelativeAccuracy();
+compilation error,152,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRawAccuracy();
+compilation error,152,replace,[CE] cannot find symbol rtol,final double rtol = getRelativeAccuracy(); , 
+compilation error,161,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = atol -(( f1 *(f0 - f1)) /(f1 - f0));
+compilation error,161,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = atol -(( f1 *(atol - f0)) /(f1 - f0));
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(rtol);
+compilation error,161,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = atol -(( f1 *(x0 - x0)) /(f1 - f0));
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(atol);
+compilation error,175,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx); break;
+compilation error,175,add,[CE] ';' expected,,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx)); break;
+compilation error,175,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx);
+compilation error,175,add,[CE] ';' expected,,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY /(f1 + fx));
+compilation error,175,add,[CE] variable inverted is already defined in method doSolve(),,  boolean inverted = isInverted()? REGULA_FALSI : DEFAULT_ABSOLUTE_ACCURACY / fx; break;
+compilation error,125,replace,[CE] no suitable method found for solve(double,UnivariateRealFunction,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, f, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,replace,[CE] ')' expected,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(maxEval, UnivariateRealFunction f, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,replace,[CE] no suitable method found for solve(UnivariateRealFunction,int,double,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(f, maxEval, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,replace,[CE] missing return statement,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); , 
+compilation error,151,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAttributeAccuracy();
+compilation error,151,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAtomicAccuracy();
+compilation error,151,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAttitudeAccuracy();
+compilation error,151,replace,[CE] cannot find symbol atol,final double atol = getAbsoluteAccuracy(); , 
+compilation error,150,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(relativeAccuracy == 0.0) { return x1; }
+compilation error,150,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(!inverted) { return x1; }
+compilation error,150,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(relativeAccuracy == 0.0) { return x0; }
+compilation error,150,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(inverted) { return x1; }
+compilation error,150,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(relativeAccuracy == 0.0) { return x; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { rtol = computeRelativeAccuracy(x); if(rtol == false) { return rtol; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { rtol = computeRelativeAccuracy(x); if(rtol!= false) { return rtol; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { inverted = false; if(inverted) { return rtol; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(rtol == false) { return rtol; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { rtol = computeRelativeAccuracy(x); if(rtol == inverted) { return rtol; }
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbsoluteAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAttributeAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol);
+increase failing tests,156,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,boolean inverted = false; ,boolean inverted = true;
+compilation error,156,replace,[CE] cannot assign a value to final variable inverted,boolean inverted = false; ,final boolean inverted = false;
+compilation error,156,replace,[CE] cannot assign a value to final variable inverted,boolean inverted = false; ,final boolean inverted = true;
+compilation error,156,replace,[CE] cannot find symbol inverted,boolean inverted = false; , 
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(f1 * fx > 0) {
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(x1 * fx > 0) {
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(x0 * fx > 0) {
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(f1 > 0) {
+compilation error,172,replace,[CE] 'else' without 'if',if (f1 * fx < 0) { , 
+increase failing tests,167,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (fx == 0.0) { ,if(fx < 0.0) {
+increase failing tests,167,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (fx == 0.0) { ,if(fx <= 0.0) {
+increase failing tests,167,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (fx == 0.0) { ,if(fx >= 0.0) {
+compilation error,162,replace,[CE] method computeObjectiveValue in class BaseAbstractUnivariateRealSolver<FUNC> cannot be applied to given types;,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(x, inverted);
+compilation error,162,replace,[CE] method computeObjectiveValue in class BaseAbstractUnivariateRealSolver<FUNC> cannot be applied to given types;,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(x, rtol);
+increase failing tests,162,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(x)- 1;
+increase failing tests,172,add, [FE] java.lang.Exception: Unexpected exception testIssue631,,  inverted =!inverted;
+compilation error,172,add,[CE] no suitable method found for getRelativeAccuracy(double),,  Method method = getRelativeAccuracy(x);
+compilation error,172,add,[CE] illegal start of expression,,  if(inverted) { inverted =!inverted; if(f0 * fx > 0) { break; }
+compilation error,172,add,[CE] illegal start of expression,,  if(inverted) { inverted =!inverted; if(f1 > f0) { return x; }
+compilation error,172,add,[CE] illegal start of expression,,  if(inverted) { inverted =!inverted; if(fx > 0.0) { return fx; }
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol); atol = computeRelativeAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeRelativeAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol);
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol); atol = calculateRelativeAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getTotalFunctionValueAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFinalAccuracy();
+compilation error,125,add,[CE] no suitable method found for solve(double,double,double,AllowedSolution),,  solve(min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,add,[CE] cannot find symbol,,  final int relativeAccuracy = f.getAbsoluteAccuracy();
+compilation error,125,add,[CE] no suitable method found for solve(double,double,double),,  solve(min, max, startValue);
+compilation error,125,add,[CE] cannot find symbol ILLINOIS,,  solve(min, max, startValue, ILLINOIS);
+compilation error,125,add,[CE] cannot find symbol ALL_SIDE,,  solve(min, max, startValue, AllowedSolution.ALL_SIDE);
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = f0 -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = rtol -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = x0 -(( f1 *(x1 - x0)) /(f1 - x0));
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbsoluteAccuracy();
+compilation error,151,add,[CE] variable rtol is already defined in method doSolve(),,  final double rtol = getRelativeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getFunctionValueAccuracy();
+compilation error,151,add,[CE] cannot find symbol,,  final double rtol = getRadicalAccuracy();
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(f0 * fx < 0) {
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(fx * f1 > 0) {
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(x0 * fx < 0) {
+compilation error,151,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAbsoluteAccessuracy();
+compilation error,162,replace,[CE] cannot find symbol,final double fx = computeObjectiveValue(x); ,final double fx = computeNegativeValue(x);
+compilation error,162,replace,[CE] cannot find symbol,final double fx = computeObjectiveValue(x); ,final double fx = computeLowerBound(x);
+compilation error,162,replace,[CE] cannot find symbol,final double fx = computeObjectiveValue(x); ,final double fx = computeLowerCase(x);
+compilation error,125,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumSize(); solve(min, max, startValue, Integer.MAX_VALUE);
+compilation error,125,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumFunction(); solve(min, max, startValue, Integer.MAX_VALUE);
+compilation error,125,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, startValue, maxEval);
+compilation error,125,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumFunction(); solve(min, max, startValue);
+compilation error,125,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumSize(); solve(min, max, startValue);
+compilation error,156,replace,[CE] ';' expected,boolean inverted = false; ,boolean inverted =(atol > 0.0)&& rtol < 0.0)&&(rtol < 0.0)&& rtol <= 1.0;
+compilation error,156,replace,[CE] ';' expected,boolean inverted = false; ,boolean inverted =(atol > 0.0)&& rtol <= 0.0)&&(rtol < 0.0)&& rtol <= 1.0;
+compilation error,156,replace,[CE] ';' expected,boolean inverted = false; ,boolean inverted =(atol > 0.0)&& rtol < 0.0)&&(rtol < 0.0)&& rtol <= 1.0);
+compilation error,150,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFullAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAlternativeAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy(); atol = getAbsoluteAccuracy();
+compilation error,175,add,[CE] illegal start of expression,,  if(inverted) { if(x > 0) { return x; }
+compilation error,175,add,[CE] illegal start of expression,,  if(inverted) { if(!inverted) { return x; }
+compilation error,175,add,[CE] illegal start of expression,,  if(inverted) { System.arraycopy(x0, 0, x1, 0, fx); x1 = x0; x0 = x1; x1 = x0; x1 = x2; x1 = x1; x0 = x1; x1 = x0;
+compilation error,175,add,[CE] illegal start of expression,,  if(inverted) { System.arraycopy(x0, 0, x1, 0, fx); x1 = x0; x0 = x1; x1 = x0; x1 = x2; x0 = x1; x1 = x1; x1 = x0;
+compilation error,152,replace,[CE] cannot find symbol Atol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRelativeAccuracy() + Atol.POSITIVE_INFINITY;
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 =(atol > rtol)? atol : rtol;
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : rtol;
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : getAbstractAccuracy();
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 =(atol > rtol)? atol : getAbstractAccuracy();
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : inverted;
+compilation error,150,add,[CE] cannot find symbol,,  ensureBracketing(x0, x1);
+compilation error,150,add,[CE] cannot find symbol,,  setResult(x0, x1);
+compilation error,150,add,[CE] illegal start of expression,,  if(f0 == 0.0) { if(f0 == 0.0) { return f0; }
+compilation error,150,add,[CE] illegal start of expression,,  if(f0 == 0.0) { if(f0 == 0.0) { return x1; }
+compilation error,150,add,[CE] illegal start of expression,,  if(x0 == x1) { if(!inverted) { return false; }
+compilation error,167,add,[CE] illegal start of expression,,  if(x < 0.0) { if(fx == 0.0) { return x; }
+compilation error,167,add,[CE] illegal start of expression,,  if(x == 0.0) { if(fx == 0.0) { return x; }
+compilation error,167,add,[CE] illegal start of expression,,  if(x == 0) { if(fx == 0.0) { return x; }
+compilation error,167,add,[CE] double cannot be dereferenced,,  System.arraycopy(x, 0, x, 0, fx.length);
+compilation error,167,add,[CE] illegal start of expression,,  if(x < 0.0) { if(fx == 0.0) { return 0; }
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x0 - x1)) /(f1 - x0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( 1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x1 - x0)) /(f1 - f0));
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAlternativeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbstractAccuracy();
+compilation error,162,add,[CE] illegal start of expression,,  if(rtol!= 0.0) { if(rtol == 0.0) { return rtol; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(x == 0.0) { return x; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(x < 0.0) { return x; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(x < 0) { return x; }
+compilation error,162,add,[CE] illegal start of expression,,  if(rtol!= 0.0) { if(rtol == Inverted) { return rtol; }
+increase failing tests,175,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,x0 = x1; ,x0 = x1 + 1;
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = Math.max(relativeAccuracy * Math.abs(fx));
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = Math.max(relativeAccuracy * Math.abs(fx), absoluteAccuracy);
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = computeLowerBound(x);
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = Math.max(relativeAccuracy * Math.abs(x), absoluteAccuracy);
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = getRelativeAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbstractAccuracy(); atol = getRelativeAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbstractAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy(); atol = getAbsoluteAccuracy();
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = Math.max(rtol, atol);
+compilation error,125,replace,[CE] cannot find symbol minEval,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(minEval, f, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,replace,[CE] no suitable method found for solve(double,double,UnivariateRealFunction,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, max, f, AllowedSolution.ANY_SIDE);
+compilation error,150,add,[CE] cannot find symbol,,  clearResult(); verifyBracketing(x0, x1);
+compilation error,150,add,[CE] cannot find symbol,,  ensureStub(x0, x1);
+compilation error,150,add,[CE] cannot find symbol,,  clearResult();
+increase failing tests,167,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (fx == 0.0) { ,if(x <= 0.0) {
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = Math.max(fx, DEFAULT_ABSOLUTE_ACCURACY);
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = Math.max(relativeAccuracy * Math.abs(x));
+compilation error,172,add,[CE] variable f1 is already defined in method doSolve(),,  double f1 = computeRelativeAccuracy(x);
+compilation error,125,replace,[CE] no suitable method found for solve(double,double,UnivariateRealFunction,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, max, f, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,replace,[CE] no suitable method found for solve(double,int,UnivariateRealFunction,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, maxEval, f, startValue, AllowedSolution.ANY_SIDE);
+compilation error,125,replace,[CE] cannot find symbol minEval,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(minEval, f, startValue, max, min, f, AllowedSolution.ANY_SIDE);
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, absoluteAccuracy);
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, atol);
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, absoluteAccuracy); atol = rtol;
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, absoluteAccuracy); atol = Math.abs(rtol);
+compilation error,161,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = atol * atol + inverted;
+compilation error,125,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, max, startValue);
+compilation error,125,add,[CE] no suitable method found for solve(double,double,UnivariateRealFunction),,  solve(min, startValue, f);
+compilation error,125,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, startValue, f);
+compilation error,125,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, startValue);
+compilation error,125,add,[CE] cannot find symbol,,  checkAndUpdate(min, startValue, f);
+compilation error,167,add,[CE] ';' expected,,  fx = Math.exp(-fx * Math.log(x)) / DEFAULT_ABSOLUTE_ACCURACY);
+compilation error,167,add,[CE] cannot assign a value to final variable fx,,  fx = Math.max(relativeAccuracy * Math.abs(x), absoluteAccuracy);
+compilation error,167,add,[CE] cannot find symbol,,  setResult(x, fx);
+compilation error,167,add,[CE] cannot assign a value to final variable fx,,  fx = Math.max(relativeAccuracy * Math.abs(x));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = rtol -(( f1 *(x1 - x0)) /(f1 - f0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( rtol *(x1 - x0)) /(f1 - f0));
+increase failing tests,161,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = x0 -(( f1 *(x1 - x0)) /(f1 - f0));
+compilation error,150,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFunctionalValueAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFunctionMaximumAccuracy();
+compilation error,150,replace,[CE] no suitable method found for getFunctionValueAccuracy(double),final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFunctionValueAccuracy(x0);
+compilation error,156,replace,[CE] not a statement,boolean inverted = false; ,last boolean inverted = false;
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(f1 > f0) {
+increase failing tests,172,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,if (f1 * fx < 0) { ,if(f1 * f0 > 0) {
+compilation error,156,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = Math.max(atol, rtol);
+compilation error,156,add,[CE] cannot find symbol,,  setResult(atol, rtol); return true;
+compilation error,156,add,[CE] variable x0 is already defined in method doSolve(),,  final double x0 = Math.max(rtol, atol);
+compilation error,156,add,[CE] cannot find symbol,,  setResult(atol, rtol);
+increase failing tests,162,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double fx = computeObjectiveValue(x); ,final double fx = computeObjectiveValue(rtol);
+compilation error,162,replace,[CE] cannot find symbol,final double fx = computeObjectiveValue(x); ,final double fx = computeIntegerValue(rtol);
+compilation error,162,replace,[CE] cannot find symbol,final double fx = computeObjectiveValue(x); ,final double fx = computeIntegerValue(x);
+compilation error,162,replace,[CE] cannot find symbol,final double fx = computeObjectiveValue(x); ,final double fx = computeMeanValue(rtol);
+compilation error,175,add,[CE] illegal start of expression,,  if(method == DEFAULT_ABSOLUTE_ACCURACY) { if(x1 > x0) { return DEFAULT_ABSOLUTE_ACCURACY; }
+compilation error,175,add,[CE] incomparable types: Method and double,,  if(method == DEFAULT_ABSOLUTE_ACCURACY) { return DEFAULT_ABSOLUTE_ACCURACY; } else { return Inverted.MAX_VALUE; }
+compilation error,175,add,[CE] incomparable types: Method and double,,  if(method == DEFAULT_ABSOLUTE_ACCURACY) { return DEFAULT_ABSOLUTE_ACCURACY; } else { break; }
+compilation error,175,add,[CE] illegal start of expression,,  if(method == DEFAULT_ABSOLUTE_ACCURACY) { if(x1 > x0) { return DEFAULT_ABSOLUTE_ACCURacy; }
+compilation error,175,add,[CE] incomparable types: Method and double,,  if(method == DEFAULT_ABSOLUTE_ACCURACY) { return DEFAULT_ABSOLUTE_ACCURACY; } else { return Method.INVALID; }
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getMinimumValueAccuracy();
+compilation error,152,add,[CE] variable x0 is already defined in method doSolve(),,  final double x0 = getMinimumValueAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getDelativeAccuracy();
+compilation error,152,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy(); atol = computeObjectiveAccuracy(atol);
+increase failing tests,175,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,x0 = x1; ,x0 = x;
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(rtol == 0.0) { return rtol; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(rtol == 0.0) { return RTOL; }
+compilation error,162,add,[CE] illegal start of expression,,  if(inverted) { if(x < 0.0) { return rtol; }
+compilation error,162,add,[CE] cannot find symbol,,  setResult(x, inverted); return rtol;
+compilation error,162,add,[CE] cannot find symbol,,  setResult(x, inverted);
+compilation error,151,add,[CE] variable x0 is already defined in method doSolve(),,  final double x0 = getMinimumValueAccuracy();
+compilation error,151,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = getRelativeAccuracy();
+compilation error,151,add,[CE] cannot find symbol,,  setResult(x0, ftol);
+compilation error,152,replace,[CE] variable rtol might not have been initialized,final double rtol = getRelativeAccuracy(); ,final double rtol = getRelativeAccuracy() * Math.abs(atol - rtol);

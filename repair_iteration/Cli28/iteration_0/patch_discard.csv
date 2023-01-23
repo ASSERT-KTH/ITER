@@ -1,10 +1,141 @@
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < Option>(); if(requiredOptions.size() > 0) { requiredOptions.addAll(options.getOptions()); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < RequiredOptions>(); if(requiredOptions.size() > 0) { requiredOptions.addAll(options.getOptions()); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < Option>(); if(requiredOptions.size() > 0) { requiredOptions.addAll(options.getRequiredOptions); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < RequiredOptions>(); if(requiredOptions.size() == 0) { requiredOptions.addAll(options.getOptions()); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < RequiredOptions>(); if(requiredOptions.size() > 0) { requiredOptions.addAll(options.getRequiredOptions); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(options.contains(requiredOptions)) { requiredOptions = new ArrayList < Option>(); if(requiredOptions.size() > 0) { requiredOptions.addAll(options.getOptions()); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < RequiredOptions>(); if(requiredOptions.size() == 0) { requiredOptions.addAll(options.getRequiredOptions); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(options.contains(requiredOptions)) { requiredOptions = new ArrayList < Option>(); if(requiredOptions.size() == 0) { requiredOptions.addAll(options.getOptions()); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(options.contains(requiredOptions)) { requiredOptions = new ArrayList < Option>(); }
-compilation error,[CE] generics are not supported in -source 1.4,,if(requiredOptions!= null) { requiredOptions = new ArrayList < Option>(); if(requiredOptions.size() > 0) { requiredOptions.addAll(options.getRequiredOptions()); }
+compilation error,268,add,[CE] cannot find symbol,,  properties.add(opt);
+compilation error,268,add,[CE] variable properties is already defined in method processProperties(Properties),,  Properties properties = options.getProperty(option);
+increase failing tests,268,add, [FE] MissingOptionException testPropertyOptionSingularValue,,  if(opt.hasArg()) { requiredOptions.add(opt); }
+increase failing tests,268,add, [FE] java.lang.IndexOutOfBoundsException: Index: 0 testPropertyOptionSingularValue,,  if(opt.hasArg()) { requiredOptions.remove(0); }
+compilation error,169,add,[CE] not a statement,,  cmd.addArg("--"); stopAtNonOption;
+increase failing tests,293,add, [FE] UnsupportedOperationException testPropertyOptionSingularValue,,  opt.addValue(value);
+compilation error,293,add,[CE] cannot find symbol,,  opt.addOption(value);
+compilation error,293,add,[CE] incompatible types,,  option = options.getOption(value);
+compilation error,293,add,[CE] no suitable method found for addOption(String),,  options.addOption(value);
+increase failing tests,270,replace, [FE] AssertionFailedError testPropertyOptionSingularValue,if (opt.hasArg()) { ,if(!opt.hasArg()) {
+compilation error,270,replace,[CE] class or interface expected,if (opt.hasArg()) { , 
+compilation error,272,replace,[CE] cannot find symbol,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(option.getValues() == null || opt.getValues().length == 0) {
+increase failing tests,272,replace, [FE] NullPointerException testPropertyOptionSingularValue,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(value == null || opt.getValues().length == 0) {
+compilation error,272,replace,[CE] class or interface expected,if (opt.getValues() == null || opt.getValues().length == 0)  { , 
+compilation error,268,replace,[CE] incompatible types,String value = properties.getProperty(option); ,String value = properties.get(option);
+compilation error,268,replace,[CE] cannot find symbol,String value = properties.getProperty(option); ,String value = options.getProperty(option);
+compilation error,268,replace,[CE] cannot find symbol,String value = properties.getProperty(option); ,String value = properties.getKey(option);
+compilation error,272,add,[CE] cannot find symbol,,  opt.addArg(value);
+compilation error,272,add,[CE] cannot find symbol,,  value = properties.getArg(option);
+increase failing tests,272,add, [FE] UnsupportedOperationException testPropertyOptionSingularValue,,  opt.addValue(value);
+compilation error,272,add,[CE] cannot find symbol Opt,,  Opt.addArg(value);
+compilation error,272,add,[CE] cannot find symbol,,  opt = opt.getArg();
+compilation error,276,replace,[CE] method addValueForProcessing in class Option cannot be applied to given types;,opt.addValueForProcessing(value); ,opt.addValueForProcessing(value, properties);
+increase failing tests,276,replace, [FE] ComparisonFailure testPropertyOptionSingularValue,opt.addValueForProcessing(value); ,opt.addValue(value);
+compilation error,276,replace,[CE] cannot find symbol,opt.addValueForProcessing(value); ,opt.addValueForProcesing(value, properties);
+increase failing tests,276,replace, [FE] ComparisonFailure testPropertyOptionSingularValue,opt.addValueForProcessing(value); , 
+increase failing tests,270,add, [FE] UnsupportedOperationException testPropertyOptionSingularValue,,  opt.addValue(value);
+compilation error,270,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(opt.hasArg()) { return; }
+compilation error,270,add,[CE] variable exp is already defined in method processProperties(Properties),,  boolean exp = options.hasOption(option)&& opt.hasArg();
+compilation error,270,add,[CE] variable exp is already defined in method processProperties(Properties),,  boolean exp = options.hasOption(option);
+compilation error,293,replace,[CE] method addOption in class CommandLine cannot be applied to given types;,cmd.addOption(opt); ,cmd.addOption(value);
+compilation error,293,replace,[CE] method addOption in class CommandLine cannot be applied to given types;,cmd.addOption(opt); ,cmd.addOption(opt, value);
+compilation error,293,replace,[CE] cannot find symbol,cmd.addOption(opt); ,cmd.addValue(value);
+compilation error,293,replace,[CE] method addOption in class CommandLine cannot be applied to given types;,cmd.addOption(opt); ,cmd.addOption(option);
+compilation error,284,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value))) { break; }
+compilation error,284,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"false".equalsIgnoreCase(value))) { break; }
+compilation error,284,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value))) { break; }
+compilation error,284,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"false".equalsIgnoreCase(value))) } break; }
+compilation error,103,add,[CE] cannot find symbol,,  cmd.parse(options, arguments, properties);
+compilation error,103,add,[CE] generics are not supported in -source 1.4,,  cmd.parse(options, arguments, properties); requiredOptions = new ArrayList < Option>();
+compilation error,103,add,[CE] cannot find symbol,,  cmd.parse(options, arguments, properties); requiredOptions.clear();
+compilation error,103,add,[CE] cannot find symbol,,  cmd.parse(options, arguments, properties); requiredOptions = options.getRequiredOptions();
+compilation error,103,add,[CE] generics are not supported in -source 1.4,,  cmd.parse(options, arguments, properties); requiredOptions = new ArrayList < CommandLine>();
+increase failing tests,169,replace, [FE] NullPointerException testPropertyOptionSingularValue,arguments = new String[0]; ,arguments = new String[1];
+increase failing tests,169,replace, [FE] NullPointerException testPropertyOptionSingularValue,arguments = new String[0]; ,arguments = new String[2];
+increase failing tests,169,replace, [FE] NullPointerException testPropertyOptionSingularValue,arguments = new String[0]; ,arguments = new String[4];
+compilation error,265,replace,[CE] cannot find symbol,Option opt = getOptions().getOption(option); ,Option opt = options().getOption(option);
+compilation error,265,replace,[CE] cannot find symbol,Option opt = getOptions().getOption(option); ,Option opt = getOptions().getOption(option, options.getKey());
+compilation error,265,replace,[CE] cannot find symbol opt,Option opt = getOptions().getOption(option); , 
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValues();
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getKey();
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValue(value);
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValues().toString();
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value =(String)opt.getValues();
+compilation error,265,add,[CE] method addOption in class CommandLine cannot be applied to given types;,,  cmd.addOption(option);
+increase failing tests,265,add, [FE] MissingOptionException testPropertyOptionSingularValue,,  requiredOptions.add(option);
+compilation error,265,add,[CE] cannot find symbol,,  cmd.addValue(option);
+compilation error,265,add,[CE] cannot find symbol,,  options.add(option);
+compilation error,103,replace,[CE] cannot find symbol,return parse(options, arguments, properties, false); ,return parseOptions(options, arguments, properties, true);
+compilation error,103,replace,[CE] no suitable method found for parse(Options,String[],Properties,<null>),return parse(options, arguments, properties, false); ,return parse(options, arguments, properties, null);
+compilation error,284,replace,[CE] illegal start of expression,else if (!("yes".equalsIgnoreCase(value)  || "true".equalsIgnoreCase(value)   || "1".equalsIgnoreCase(value))) ,else if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value))) {
+compilation error,284,replace,[CE] illegal start of expression,else if (!("yes".equalsIgnoreCase(value)  || "true".equalsIgnoreCase(value)   || "1".equalsIgnoreCase(value))) ,else if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"2".equalsIgnoreCase(value))) {
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValue(opt.getKey());
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValue();
+compilation error,293,replace,[CE] cannot find symbol,cmd.addOption(opt); ,cmd.addChildToFront(opt);
+compilation error,293,replace,[CE] method addOption in class CommandLine cannot be applied to given types;,cmd.addOption(opt); ,cmd.addOption(opt, true);
+compilation error,103,add,[CE] cannot find symbol,,  requiredOptions.remove(options.getKey());
+compilation error,103,add,[CE] cannot find symbol,,  cmd.parse(options, arguments, properties, false);
+increase failing tests,103,add, [FE] NullPointerException testPropertyOverrideValues,,  requiredOptions.remove(arguments);
+compilation error,103,add,[CE] cannot find symbol,,  cmd.parse(options, arguments, properties, true);
+compilation error,270,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(opt.getValues() == null || opt.getValues().length == 0) { continue; }
+compilation error,270,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(opt.getValues() == null || opt.getValues().length == 0) { addValueForProcessing(value); }
+compilation error,270,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(opt.getValues() == null || opt.getValues().length == 0) { return; }
+compilation error,270,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(opt.getValues() == null) { continue; }
+increase failing tests,169,replace, [FE] NullPointerException testPropertyOptionSingularValue,arguments = new String[0]; ,arguments = new String[7];
+increase failing tests,169,replace, [FE] NullPointerException testPropertyOptionSingularValue,arguments = new String[0]; ,arguments = new String[8];
+compilation error,268,replace,[CE] cannot find symbol,String value = properties.getProperty(option); ,String value = opt.getProperty(option);
+compilation error,268,replace,[CE] cannot find symbol property,String value = properties.getProperty(option); ,String value = opt.getProperty(property);
+compilation error,276,replace,[CE] cannot find symbol,opt.addValueForProcessing(value); ,opt.addValueToProcessing(value, properties);
+compilation error,276,replace,[CE] cannot find symbol property,opt.addValueForProcessing(value); ,opt.addValueForProcessing(value, property);
+increase failing tests,293,add, [FE] UnsupportedOperationException testPropertyOptionSingularValue,,  if(opt.hasArg()) { opt.addValue(value); }
+compilation error,293,add,[CE] variable opt is already defined in method processProperties(Properties),,  if(opt.hasArg()) { Option opt = options.getOption(opt); }
+increase failing tests,293,add, [FE] AssertionFailedError testPropertyOptionSingularValue,,  if(opt.hasArg()) { continue; }
+compilation error,265,add,[CE] cannot find symbol,,  option = cmd.getOption(option);
+compilation error,265,add,[CE] cannot find symbol,,  e.removeFirstElement();
+compilation error,265,add,[CE] method processOption in class Parser cannot be applied to given types;,,  processOption(option);
+increase failing tests,268,add, [FE] UnsupportedOperationException testPropertyOptionSingularValue,,  opt.addValue(opt.getKey());
+compilation error,268,add,[CE] cannot find symbol,,  opt.addValueToProcessing(opt);
+compilation error,268,add,[CE] cannot find symbol value,,  opt.addValue(value);
+compilation error,268,add,[CE] cannot find symbol,,  opt.addValueFor(opt.getKey());
+increase failing tests,268,add, [FE] AssertionFailedError testPropertyOptionSingularValue,,  if(opt.hasArg()) { continue; }
+compilation error,272,add,[CE] cannot find symbol,,  opt.addValueForArgualProperty(value);
+compilation error,272,add,[CE] cannot find symbol,,  opt.addValueForArg(value);
+compilation error,272,add,[CE] cannot find symbol,,  opt = getOptions().getArg(value);
+compilation error,265,replace,[CE] cannot find symbol,Option opt = getOptions().getOption(option); ,Option opt = getOptions().createOption(option);
+compilation error,265,replace,[CE] cannot find symbol,Option opt = getOptions().getOption(option); ,Option opt = getOptions().removeOption(option);
+compilation error,284,add,[CE] illegal start of expression,,  if(opt.hasArg()) { String value = opt.getValue(); if(value!= null) { break; }
+compilation error,284,add,[CE] ,,  opt.addValueForProcessing(value);
+compilation error,284,add,[CE] cannot find symbol,,  if(opt.hasArg()) { opt.addValueForAssignmentToName(value); }
+compilation error,284,add,[CE] illegal start of expression,,  if(opt.hasArg()) { if(opt.hasArg()) { break; }
+increase failing tests,284,add, [FE] AssertionFailedError testPropertyOptionMultipleValues,,  if(opt.hasArg()) { opt.addValueForProcessing(value); }
+increase failing tests,272,replace, [FE] NullPointerException testPropertyOptionSingularValue,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(opt.getValues()!= null || opt.getValues().length == 0) {
+compilation error,272,replace,[CE] method hasOption in class Options cannot be applied to given types;,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(options.hasOption(opt)&&(opt.getValues() == null || opt.getValues().length == 0)) {
+compilation error,169,add,[CE] method addArg in class CommandLine cannot be applied to given types;,,  cmd.addArg(arguments);
+compilation error,169,add,[CE] not a statement,,  cmd.addArg(""); stopAtNonOption;
+compilation error,284,replace,[CE] ,else if (!("yes".equalsIgnoreCase(value)  || "true".equalsIgnoreCase(value)   || "1".equalsIgnoreCase(value))) ,else if(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value)||"1".equalsIgnoreCas
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValues().substring(0, opt.getValues().length);
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValues().substring(0, opt.getValues().length).trim();
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValues().substring(0, opt.getKey());
+compilation error,276,add,[CE] variable value is already defined in method processProperties(Properties),,  String value = opt.getValues().substring(0, opt.getValues().length - 1);
+compilation error,272,add,[CE] cannot find symbol,,  opt.addValueForArgs(value);
+compilation error,272,add,[CE] cannot find symbol,,  opt.addValueForArgument(value);
+compilation error,284,add,[CE] ,,  if("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value)
+compilation error,284,add,[CE] ,,  if("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value)||"2".equalsIgnoreCase(value)
+compilation error,284,add,[CE] ,,  if(( opt.getValues() == null)||("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value))
+increase failing tests,284,add, [FE] AssertionFailedError testPropertyOptionSingularValue,,  if("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value));
+increase failing tests,293,add, [FE] IllegalArgumentException testPropertyOptionSingularValue,,  if(opt.hasArg()) { throw new IllegalArgumentException(""); }
+increase failing tests,293,add, [FE] RuntimeException testPropertyOptionSingularValue,,  if(opt.hasArg()) { throw new RuntimeException(""); }
+compilation error,103,replace,[CE] cannot find symbol mapping,return parse(options, arguments, properties, false); ,return parse(options, arguments, properties, false, options.mapping);
+increase failing tests,268,add, [FE] RuntimeException testPropertyOptionSingularValue,,  if(opt.hasArg()) { throw new RuntimeException(""); }
+increase failing tests,268,add, [FE] ComparisonFailure testPropertyOptionSingularValue,,  opt.addValueForProcessing(option);
+compilation error,268,add,[CE] 'try' without 'catch' or 'finally',,  if(opt.hasArg()) { try { opt.addValueForProcessing(value); }
+compilation error,268,add,[CE] 'try' without 'catch' or 'finally',,  if(opt.hasArg()) { try { opt.addValueForProcessing(option); }
+increase failing tests,268,add, [FE] AssertionFailedError testPropertyOptionMultipleValues,,  cmd.addOption(opt);
+increase failing tests,270,add, [FE] RuntimeException testPropertyOptionSingularValue,,  if(opt.hasArg()) { throw new RuntimeException(""); }
+compilation error,270,add,[CE] cannot find symbol,,  boolean exp = options.isRequired(option);
+compilation error,270,replace,[CE] cannot find symbol,if (opt.hasArg()) { ,if(option.hasArg() && value!= null) {
+increase failing tests,270,replace, [FE] AssertionFailedError testPropertyOptionSingularValue,if (opt.hasArg()) { ,if(opt.hasArg() && value == null) {
+increase failing tests,272,replace, [FE] ComparisonFailure testPropertyOptionSingularValue,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(( opt.getValues() == null || opt.getValues().length == 0)&&!opt.hasArg()) {
+increase failing tests,272,replace, [FE] ComparisonFailure testPropertyOptionSingularValue,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(( opt.getValues() == null || opt.getValues().length == 0)&&!opt.hasOptionalArg()) {
+compilation error,272,replace,[CE] cannot find symbol,if (opt.getValues() == null || opt.getValues().length == 0)  { ,if(( opt.getValues() == null || opt.getValues().length == 0)&&!Options.isRequired(value)) {
+compilation error,265,add,[CE] cannot find symbol,,  e.removeProperty(option);
+compilation error,265,add,[CE] method processOption in class Parser cannot be applied to given types;,,  processOption(e, cmd);
+compilation error,169,replace,[CE] incompatible types,arguments = new String[0]; ,arguments = new ArrayList[0];
+compilation error,169,add,[CE] incompatible types,,  cmd.addArg(""); requiredOptions = options.getOptions();
+compilation error,169,add,[CE] cannot find symbol,,  cmd.addArg(""); requiredOptions = options.getAllRequiredOptions();
+compilation error,103,add,[CE] cannot find symbol,,  cmd.parseOptions(options, arguments, properties);
+compilation error,103,add,[CE] cannot find symbol,,  requiredOptions.clear(); cmd.parse(options, arguments, properties, true);
+compilation error,268,replace,[CE] incompatible types,String value = properties.getProperty(option); ,String value = properties!= null? properties.getProperty(option): properties.get(option);
+compilation error,265,replace,[CE] method getOption in class Options cannot be applied to given types;,Option opt = getOptions().getOption(option); ,Option opt = getOptions().getOption(option, e);
+compilation error,265,replace,[CE] method getOption in class Options cannot be applied to given types;,Option opt = getOptions().getOption(option); ,Option opt = getOptions().getOption(option, option);

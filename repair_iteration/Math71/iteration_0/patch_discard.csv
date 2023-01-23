@@ -1,0 +1,10 @@
+compilation error,101,add,[CE] method sanityChecks in class AbstractIntegrator cannot be applied to given types;,,  sanityChecks(t0, y0, t, y);
+compilation error,101,add,[CE] cannot find symbol yDotK,,  sanityChecks(t0, y0, t, yDotK);
+increase failing tests,101,add, [FE] AssertionFailedError testMissedEndEvent,,  System.arraycopy(c, 0, y0, 0, y0.length);
+increase failing tests,101,add, [FE] AssertionFailedError testMissedEndEvent,,  System.arraycopy(c, 0, y, 0, y.length);
+compilation error,101,add,[CE] method sanityChecks in class AbstractIntegrator cannot be applied to given types;,,  sanityChecks(equations, t0, y, t);
+increase failing tests,107,replace, [FE] AssertionFailedError testMissedEndEvent,if (y != y0) { ,if(forward) {
+compilation error,107,replace,[CE] bad operand types for binary operator '>',if (y != y0) { ,if(forward > 0) {
+compilation error,107,replace,[CE] bad operand types for binary operator '>',if (y != y0) { ,if(forward ||(y!= y0)||(y > y0)) {
+compilation error,107,replace,[CE] bad operand types for binary operator '>',if (y != y0) { ,if(forward ||(y!= y0)||(y > t0)) {
+compilation error,107,replace,[CE] illegal start of type,if (y != y0) { , 

@@ -1,0 +1,153 @@
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  -  pos);  ,out.write(len - consumed);
+compilation error,86,replace,[CE] class, interface, or enum expected,   pos  +=  input.length();  ,pos += consumed.length();
+compilation error,84,replace,[CE] class, interface, or enum expected, while(pos  >  len)  {  ,int pos = input.length();
+compilation error,86,add,[CE] cannot find symbol consume, ,    out.write(len  -  pos);  if(pos > len) { consume = input.length(); continue; }
+compilation error,83,replace,[CE] cannot find symbol output, int  len  =  input.length()  -  2;  ,int len = output.length();
+compilation error,54,replace,[CE] ';' expected, if(input  ==  null  ||  input.length()  ==  2)  {  ,int len = input, input.length();
+compilation error,108,replace,[CE] cannot find symbol newArray, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  *  1];  ,System.arraycopy(translators, 0, newArray, 1, translators.length);
+compilation error,109,replace,[CE] cannot find symbol tranlators,   System.arraycopy(translators,  0,  newArray,  0,  translators.length);  ,System.arraycopy(tranlators, 0, newArray, 1, translators.length);
+compilation error,58,add,[CE] cannot find symbol, ,StringWriter  writer  =  new  StringWriter(input.length());  input = input.substring(0, input.length() - 2);
+compilation error,79,replace,[CE] cannot find symbol length, if(input  ==  null  ||  out  ==  null)  {  ,if(input == out || input.length < 0) {
+compilation error,83,replace,[CE] cannot find symbol len,   pos  =  input.length();  ,pos = input.length() + 1;
+compilation error,108,add,[CE] variable newArray is already defined in method with(CharSequenceTranslator...), ,CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  *  1];  System.arraycopy(translators, 0, newArray, 1, translators.length);
+compilation error,83,replace,[CE] ';' expected, int  len  =  input.length()  -  1;  ,int len = input.length() pos;
+compilation error,86,replace,[CE] class, interface, or enum expected, if(consumed  <  0)  {  ,if(consume > 0) { consume = input.length; continue; }
+compilation error,110,add,[CE] cannot find symbol Translators, ,    System.arraycopy(translators,  0,  newArray,  0,  translators.length);  System.arraycopy(Translators, 0, newArray, 1, translators.length);
+compilation error,110,replace,[CE] cannot find symbol tranlators, System.arraycopy(translators,  0,  newArray,  1,  translators.length  -  1);  ,System.arraycopy(tranlators, 0, newArray, 1, translators.length - 1);
+compilation error,83,replace,[CE] variable pos is already defined in method translate(CharSequence,Writer), int  len  =  input.length()  -  1;  ,int pos = input.length();
+compilation error,58,replace,[CE] cannot find symbol, StringWriter  writer  =  new  StringWriter(input.length()  +  2);  ,input = input.next();
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write( "Sequence: ");  ,pos = input.size();
+compilation error,109,add,[CE] cannot find symbol system, ,newArray[0]  =  null;  System.arraycopy(translators, 0, newArray, 1, translators.length); system.arraycopy(translators, 0, newArray, 1, translators.length);
+compilation error,84,add,[CE] unexpected type, ,    pos  +=  input.length();  pos++= input.length();
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  +  pos);  ,out.write(pos + len);
+compilation error,54,replace,[CE] ')' expected, if(input  ==  null  ||  input.charAt(input.length()  -  1)!=  0)  {  ,if(input == null || input.charAt(input.length() 1)!= 0) {
+compilation error,83,replace,[CE] variable pos is already defined in method translate(CharSequence,Writer), int  len  =  input.length()  -  2;  ,int pos = input.length() - pos;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  ,out.write(c);
+compilation error,86,replace,[CE] class, interface, or enum expected,   pos  =  input.length();  ,pos = input.length() + 1;
+compilation error,83,replace,[CE] cannot find symbol len,   pos+=  input.length();  ,pos+= input.length() + 1;
+compilation error,108,add,[CE] variable newArray is already defined in method with(CharSequenceTranslator...), ,CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  +  2];  System.arraycopy(translators, 0, newArray, 1, translators.length);
+compilation error,109,replace,[CE] ')' expected,   System.arraycopy(translators,  0,  newArray,  1,  translators.length);  ,System.arraycopy(translators, 0, newArray, 1, translators.length + 1]);
+compilation error,83,add,[CE] unexpected type, ,    pos+=  input.length();  pos++= input.length();
+compilation error,58,add,[CE] variable writer is already defined in method translate(CharSequence), ,StringWriter  writer  =  new  StringWriter(input.length()  +  2);  StringWriter writer = new StringWriter(input.length());
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  consumed  =  input.length();  ,pos += input.length(); continue;
+compilation error,83,add,[CE] variable pos is already defined in method translate(CharSequence,Writer), ,    pos  =  input.length();  int pos = input.length();
+compilation error,79,replace,[CE] cannot find symbol consume, if(input  ==  null  ||  out  ==  null)  {  ,if(input == out || consume > 0 || out == null) {
+compilation error,86,add,[CE] int cannot be dereferenced, ,    out.write(len);  consumed  =  input.length();  pos += consumed.length;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  ,pos += consumed;
+compilation error,84,replace,[CE] class, interface, or enum expected,   pos  +=  input.length();  ,pos += input.length() * 2;
+compilation error,58,add,[CE] cannot find symbol, ,    input  =  input.toString();  input = input.substring(0, input.length() - 2);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write( "Sequence: ");  ,out.write("Sequence:" + pos);
+compilation error,109,add,[CE] cannot find symbol Translators, ,    System.arraycopy(translators,  0,  newArray,  0,  translators.length);  System.arraycopy(Translators, 0, newArray, 1, translators.length);
+compilation error,86,replace,[CE] cannot find symbol consume, if(consumed  <=  0)  {  ,if(consume < 0) {
+compilation error,58,replace,[CE] cannot find symbol, StringWriter  writer  =  new  StringWriter(input.length()  -  2);  ,StringWriter writer = new StringWriter(input.length()).writeEndsWith("n");
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  consumed  =  input.length();  ,out.write(len + consumed); consumed = input.length();
+compilation error,109,replace,[CE] cannot find symbol ArrayUtilities, newArray[0]  =  null;  ,newArray[0] = ArrayUtilities.EMPTY_ARRAY;
+compilation error,58,replace,[CE] ')' expected, StringWriter  writer  =  new  StringWriter(input.length()  +  2);  ,StringWriter writer = new StringWriter(input.length();
+compilation error,79,replace,[CE] cannot find symbol consumed, if(input  ==  out)  {  ,if(input == out || consumed > 0) {
+compilation error,83,add,[CE] variable pos is already defined in method translate(CharSequence,Writer), ,int  len  =  input.length()  -  1;  int pos = input.length();
+compilation error,110,replace,[CE] cannot find symbol Translators,   System.arraycopy(translators,  0,  newArray,  0,  translators.length);  ,System.arraycopy(Translators, 0, newArray, 1, translators.length);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  -  pos);  ,pos += len;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  +  pos);  ,out.write("Sequence =");
+compilation error,86,replace,[CE] cannot find symbol consume, if(consumed  <  0)  {  ,if(consume > 0 || consumed < 0) {
+compilation error,94,replace,[CE] cannot find symbol consumption, for(int  pt  =  0;  pt  <  len;  pt++)  {  ,for(int pt = 0; pt < consumption; pt++) {
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  consumed  =  input.length();  ,out.write(len - 1); consumed = input.length();
+compilation error,86,replace,[CE] class, interface, or enum expected, if(consumed  <  0)  {  ,out.write("");
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  -  pos);  ,out.write(len - 1, consumed);
+compilation error,109,add,[CE] cannot find symbol translateds, ,    System.arraycopy(translators,  0,  newArray,  0,  translators.length);  System.arraycopy(translateds, 0, newArray, 1, translators.length);
+compilation error,110,replace,[CE] cannot find symbol trances, System.arraycopy(translators,  0,  newArray,  1,  translators.length  -  1);  ,System.arraycopy(trances, 0, newArray, 1, translators.length - 1);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write( "Sequence: ");  ,pos = input.length() - 1;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write( "Sequence: ");  ,out.write("Sequence:" + pos +" -");
+compilation error,83,replace,[CE] cannot find symbol len,   pos  =  input.length();  ,pos = input.length() - 1;
+compilation error,83,add,[CE] variable pt is already defined in method translate(CharSequence,Writer), ,    pos  =  input.length();  int pt = input.length();
+compilation error,58,replace,[CE] ')' expected, StringWriter  writer  =  new  StringWriter(input.length()  +  2);  ,StringWriter writer = new StringWriter(introspect(input.length());
+compilation error,54,replace,[CE] bad operand types for binary operator '<', if(input  ==  null  ||  input.length()  ==  0)  {  ,if(input < null || input.length() == 0) {
+compilation error,86,replace,[CE] class, interface, or enum expected,   pos  =  input.length();  ,pos = input.length() + len;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  +  pos);  ,out.write(len + pt);
+compilation error,58,add,[CE] cannot find symbol, ,    input  =  input.toString();  input.setCharAt(0, input.length() - 1);
+compilation error,83,replace,[CE] cannot find symbol len, int  len  =  input.length()  -  2;  ,int pt = input.length() - pos;
+compilation error,79,replace,[CE] cannot find symbol length, if(input  ==  out)  {  ,if(input == out || input.length == 0) {
+compilation error,83,replace,[CE] cannot find symbol Preconditions, int  len  =  input.length()  -  2;  ,int len = input.length(); Preconditions.checkNotNull(input, pos);
+compilation error,86,replace,[CE] class, interface, or enum expected,   pos  +=  input.length();  ,pos += consume.length();
+compilation error,110,add,[CE] cannot find symbol translateds, ,    System.arraycopy(translators,  0,  newArray,  0,  translators.length);  System.arraycopy(translateds, 0, newArray, 1, translators.length);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  ,out.write(Integer.toString(consume));
+compilation error,108,add,[CE] variable newArray is already defined in method with(CharSequenceTranslator...), ,CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  +  2];  final CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length + 1];
+compilation error,83,add,[CE] variable len is already defined in method translate(CharSequence,Writer), ,int  len  =  input.length()  -  1;  int pt = input.length();
+compilation error,108,replace,[CE] cannot find symbol newArray, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  *  1];  ,System.arraycopy(translators, 0, newArray, 0, translators.length);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  -  pos);  ,out.write("Sequence transpos:");
+compilation error,109,replace,[CE] cannot find symbol Translator, newArray[0]  =  null;  ,newArray[0] = Translator.newInstance(translators);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  consumed  =  input.length();  ,out.write(input); pos += consumed.length;
+compilation error,84,replace,[CE] cannot find symbol max, while(pos+len  <  len)  {  ,while(pos+len > max) {
+compilation error,84,replace,[CE] class, interface, or enum expected, while(pos  >  len)  {  ,out.write(input); pos += len;
+compilation error,84,replace,[CE] class, interface, or enum expected,   pos  +=  input.length();  ,pos += input.length() - 1;
+compilation error,108,replace,[CE] cannot find symbol translateds, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  -  1];  ,CharSequenceTranslator[] newArray = new CharSequenceTranslator[translateds.length - 1];
+compilation error,79,replace,[CE] cannot find symbol output, if(input  ==  null  ||  out  ==  null)  {  ,if(input == output) {
+compilation error,58,add,[CE] variable writer is already defined in method translate(CharSequence), ,StringWriter  writer  =  new  StringWriter(input.length()  +  2);  final StringWriter writer = new StringWriter(input.length());
+compilation error,58,replace,[CE] cannot find symbol, StringWriter  writer  =  new  StringWriter(input.length()  +  2);  ,input = input.getChars(0, 0);
+compilation error,58,add,[CE] variable writer is already defined in method translate(CharSequence), ,StringWriter  writer  =  new  StringWriter(input.length());  final StringWriter writer = new StringWriter(input.length());
+compilation error,108,replace,[CE] ']' expected, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  +  2];  ,CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length [0];
+compilation error,108,replace,[CE] ')' expected, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  -  1];  ,System.arraycopy(translators, 0, newArray, 0, translators.length / 1]);
+compilation error,83,replace,[CE] no suitable method found for write(CharSequence), int  len  =  input.length()  -  1;  ,out.write(input); pos += input.length();
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  +  pos);  ,out.write('n');
+compilation error,83,add,[CE] no suitable method found for write(CharSequence), ,    pos+=  input.length();  out.write(input);
+compilation error,83,replace,[CE] cannot find symbol len,   pos+=  input.length();  ,pos+= input.length() - 1;
+compilation error,86,add,[CE] cannot find symbol consume, ,    out.write(len  -  pos);  out.write(Integer.toString(consume));
+compilation error,108,add,[CE] variable newArray is already defined in method with(CharSequenceTranslator...), ,CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  *  1];  System.arraycopy(translators, 0, newArray, 0, translators.length);
+compilation error,58,replace,[CE] cannot find symbol,   input  =  input.toString();  ,input = input.getChars(0, input.length() - 1);
+compilation error,110,add,[CE] cannot find symbol trances, ,System.arraycopy(translators,  0,  newArray,  1,  translators.length  +  1);  System.arraycopy(trances, 0, newArray, 1, translators.length);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  ,out.write(len - 1);
+compilation error,84,add,[CE] no suitable method found for write(CharSequence), ,    pos  +=  input.length();  out.write(input);
+compilation error,58,replace,[CE] cannot find symbol, StringWriter  writer  =  new  StringWriter(input.length()  -  2);  ,StringWriter writer = new StringWriter(input.length()).
+compilation error,83,replace,[CE] cannot find symbol len,   pos  =  input.length();  ,pos = input.length() - 2;
+compilation error,83,replace,[CE] ';' expected, int  len  =  input.length()  -  1;  ,int len = input.length(), pos + 1;
+compilation error,110,add,[CE] inconvertible types, ,System.arraycopy(translators,  0,  newArray,  1,  translators.length  +  2);  newArray[1] =(CharSequenceTranslator)translators.clone();
+compilation error,86,replace,[CE] class, interface, or enum expected, if(consumed  <  0)  {  ,out.write('[');
+compilation error,108,replace,[CE] cannot find symbol, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  -  1];  ,final CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length / 2].arraycopy(translators, 0, newArray, 1, translators.length);
+compilation error,86,replace,[CE] class, interface, or enum expected,   pos  +=  input.length();  ,pos += input.length(len);
+compilation error,86,replace,[CE] class, interface, or enum expected,   pos  =  input.length();  ,pos = input.length() - 2;
+compilation error,83,replace,[CE] unexpected type,   pos+=  input.length();  ,pos+1 = input.length();
+compilation error,108,add,[CE] variable newArray is already defined in method with(CharSequenceTranslator...), ,CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  +  2];  final CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length + 3];
+compilation error,86,add,[CE] empty character literal, ,if(consumed  >  0)  {  out.write('');
+compilation error,109,add,[CE] cannot find symbol Translators, ,    System.arraycopy(translators,  0,  newArray,  2,  translators.length);  System.arraycopy(Translators, 0, newArray, 2, translators.length);
+compilation error,86,replace,[CE] unclosed character literal,   out.write(len  +  pos);  ,out.write('ufffd');
+compilation error,109,add,[CE] cannot find symbol translated, ,    System.arraycopy(translators,  0,  newArray,  0,  translators.length);  System.arraycopy(translated, 0, newArray, 1, translators.length);
+compilation error,110,replace,[CE] cannot find symbol Translators, System.arraycopy(translators,  0,  newArray,  1,  translators.length  -  1);  ,System.arraycopy(Translators, 0, newArray, 1, translators.length - 1);
+compilation error,83,add,[CE] variable pt is already defined in method translate(CharSequence,Writer), ,    pos+=  input.length();  int pt = input.length();
+compilation error,79,replace,[CE] cannot find symbol length, if(input  ==  null  ||  out  ==  null)  {  ,if(input == input || input.length == 2) {
+compilation error,110,replace,[CE] cannot find symbol tranlators, System.arraycopy(translators,  0,  newArray,  1,  translators.length  +  1);  ,System.arraycopy(tranlators, 0, newArray, 1, translators.length + 1);
+compilation error,58,replace,[CE] cannot find symbol writer, StringWriter  writer  =  new  StringWriter(input.length()  +  2);  ,writer = new StringWriter(input.length() + 2);
+compilation error,84,replace,[CE] class, interface, or enum expected, while(pos  >  len)  {  ,char[] c = input.charAt(pos + len); out.write(c);
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  -  pos);  ,out.write(input);
+compilation error,83,replace,[CE] cannot find symbol len, int  len  =  input.length()  -  1;  ,int pt = input.length() - 2;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  +  pos);  ,out.write(len + pos, consumed);
+compilation error,83,replace,[CE] cannot find symbol len, int  len  =  input.length()  -  2;  ,int pt = input.length() + pos;
+compilation error,83,replace,[CE] ';' expected, int  len  =  input.length()  -  2;  ,int len = input.length() but pos++;
+compilation error,84,add,[CE] no suitable method found for write(CharSequence), ,    pos  +=  input.length();  out.write(input); pos += input.length();
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  consumed  =  input.length();  ,out.write(input); pos += input.length;
+compilation error,86,add,[CE] empty character literal, ,    out.write(len  -  pos);  out.write('');
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write( "Sequence: ");  ,out.write("Sequence: n");
+compilation error,54,replace,[CE] cannot find symbol Input, if(input  ==  null  ||  input.charAt(input.length()  -  1)!=  0)  {  ,if(Input.isEmpty() || input.length() == 0) {
+compilation error,58,add,[CE] variable writer is already defined in method translate(CharSequence), ,StringWriter  writer  =  new  StringWriter(input.length()  +  2);  writer = new StringWriter(input.length() + 2);
+compilation error,108,replace,[CE] bad operand types for binary operator '+', CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  -  1];  ,CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length - 1] + translators;
+compilation error,58,replace,[CE] cannot find symbol,   input  =  input.toString();  ,input = input.trim();
+compilation error,83,add,[CE] cannot find symbol pt, ,    pos  =  input.length();  pt = input.length();
+compilation error,108,replace,[CE] cannot find symbol, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  *  1];  ,Arrays.fill(new Array[translators.length - 1]);
+compilation error,58,replace,[CE] cannot find symbol writer, StringWriter  writer  =  new  StringWriter(input.length()  +  2);  ,StringWriter author = new StringWriter(input.length());
+compilation error,86,add,[CE] empty character literal, ,    out.write(len);  consumed  =  input.length();  out.write('');
+compilation error,86,replace,[CE] empty character literal,   out.write(len);  ,out.write('');
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write( "Sequence: ");  ,out.write(input); pos = input.length();
+compilation error,110,replace,[CE] inconvertible types, System.arraycopy(translators,  0,  newArray,  1,  translators.length  +  1);  ,newArray[1] =(CharSequenceTranslator)translators.clone(); System.arraycopy(translators, 0, newArray, 1, translators.length - 1);
+compilation error,86,replace,[CE] '.class' expected,   out.write(len);  ,out.write(int);
+compilation error,108,replace,[CE] ']' expected, CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  /  1];  ,CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length [1];
+compilation error,83,add,[CE] variable len is already defined in method translate(CharSequence,Writer), ,int  len  =  input.length()  -  1;  int pt = input.length() - 1;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len  -  pos);  ,out.write(len - pos + 1);
+compilation error,109,replace,[CE] cannot find symbol Arrays, newArray[0]  =  null;  ,newArray[0] = Arrays.copyOf(translators, 0, newArray, 1, translators.length);
+compilation error,84,replace,[CE] class, interface, or enum expected,   pos  +=  input.length();  ,pos += input.length* 2;
+compilation error,86,replace,[CE] class, interface, or enum expected,   out.write(len);  consumed  =  input.length();  ,out.write(len + pos); consumed = input.length();
+compilation error,94,replace,[CE] cannot find symbol c, for(int  pt  =  0;  pt  <  len;  pt++)  {  ,for(int pt = 0; pt < c.length; pt++) {
+compilation error,109,add,[CE] inconvertible types, ,newArray[0]  =  null;  newArray[1] =(CharSequenceTranslator)translators.clone();
+compilation error,108,add,[CE] variable newArray is already defined in method with(CharSequenceTranslator...), ,CharSequenceTranslator[]  newArray  =  new  CharSequenceTranslator[translators.length  *  1];  final CharSequenceTranslator[] newArray = new CharSequenceTranslator[translators.length * 2];
+compilation error,83,replace,[CE] cannot find symbol chars, int  len  =  input.length()  -  pos;  ,int len = input.length() - chars.length;
+compilation error,110,add,[CE] inconvertible types, ,System.arraycopy(translators,  0,  newArray,  1,  translators.length  +  1);  newArray[1] =(CharSequenceTranslator)translators.clone();
+compilation error,58,add,[CE] variable writer is already defined in method translate(CharSequence), ,StringWriter  writer  =  new  StringWriter(input.length());  writer = new StringWriter(input.length());
+compilation error,58,add,[CE] cannot find symbol, ,    input  =  input.toString();  input = input.getChars(0, input.length() - 2);
+compilation error,79,replace,[CE] incomparable types: CharSequence and int, if(input  ==  out)  {  ,if(input == 0 || input == out) {

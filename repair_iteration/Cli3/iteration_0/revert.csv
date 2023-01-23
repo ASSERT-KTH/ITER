@@ -1,0 +1,6 @@
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java64
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java64Stringstr=getText();if(PatternOptionBuilder.STRING_VALUE==clazz){returncreateString(str);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java64Stringstr=createString(clazz);if(PatternOptionBuilder.STRING_VALUE==clazz){returncreateString(str);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java64Stringstr=(String)PatternOptionBuilder.STRING_VALUE.clone();if(clazz==STRING_VALUE){returncreateString(str);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java64Stringstr=(String)PatternOptionBuilder.STRING_VALUE.clone();
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java64Stringstr=(String)PatternOptionBuilder.STRING_VALUE.clone();clazz=clazz.getAnnotation(String.class);

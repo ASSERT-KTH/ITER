@@ -1,0 +1,167 @@
+increase failing tests,986,replace, [FE] IllegalArgumentException testOperate,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() ||(v.length!= 0 && v.length > 0)||(v.length!= this.getRowDimension())) {
+increase failing tests,986,replace, [FE] IllegalArgumentException testOperate,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() ||(v.length + 1)!= this.getRowDimension()) {
+increase failing tests,986,replace, [FE] IllegalArgumentException testOperate,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() ||(v.length > 0)||(v.length!= this.getRowDimension())) {
+compilation error,986,replace,[CE] illegal start of type,if (v.length != this.getColumnDimension()) { , 
+compilation error,997,add,[CE] cannot find symbol i,,  sum = sum.add(data[row][i].multiply(v[i]));
+compilation error,997,add,[CE] cannot find symbol i,,  out[row] = sum.add(data[row][i].multiply(v[i]));
+compilation error,997,add,[CE] cannot find symbol i,,  sum = sum.add(data[row][i].multiply(v[i])); sum = sum;
+compilation error,997,add,[CE] ';' expected,,  out[row][i].multiply(v[i])); sum = sum;
+compilation error,997,add,[CE] ';' expected,,  out[row][i].multiply(v[i]));
+increase failing tests,993,replace, [FE] AssertionFailedError testOperate,BigDecimal sum = ZERO; ,BigDecimal sum = ONE;
+compilation error,993,replace,[CE] incompatible types,BigDecimal sum = ZERO; ,BigDecimal sum = 0;
+compilation error,993,replace,[CE] incompatible types,BigDecimal sum = ZERO; ,BigDecimal sum ="";
+compilation error,993,replace,[CE] cannot find symbol sum,BigDecimal sum = ZERO; , 
+compilation error,990,add,[CE] variable nRows is already defined in method operate(BigDecimal[]),,  final int nRows = this.getRowDimension();
+compilation error,990,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  final int row = this.getRowDimension();
+compilation error,990,add,[CE] variable nCols is already defined in method operate(BigDecimal[]),,  final int nCols = this.getColumnDimension();
+compilation error,992,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  int row = this.getRowDimension();
+compilation error,992,add,[CE] ';' expected,,  int row = data[row][0].multiply(v[0]));
+compilation error,992,add,[CE] ';' expected,,  int row = data[row][0].multiply(v[nRows]));
+increase failing tests,991,replace, [FE] ArrayIndexOutOfBoundsException testOperate,final BigDecimal[] out = new BigDecimal[v.length]; ,final BigDecimal[] out = new BigDecimal[v.length - 1];
+increase failing tests,991,replace, [FE] NullPointerException testOperate,final BigDecimal[] out = new BigDecimal[v.length]; ,final BigDecimal[] out = new BigDecimal[v.length + 1];
+compilation error,991,replace,[CE] ']' expected,final BigDecimal[] out = new BigDecimal[v.length]; ,final BigDecimal[] out = new BigDecimal[v.length [nCols];
+compilation error,991,replace,[CE] cannot find symbol out,final BigDecimal[] out = new BigDecimal[v.length]; , 
+compilation error,993,add,[CE] ';' expected,,  data[row][row].multiply(v[row]));
+compilation error,993,add,[CE] ';' expected,,  Data[row][row].multiply(v[row]));
+compilation error,993,add,[CE] ';' expected,,  out[row][0].multiply(v[row]));
+compilation error,993,add,[CE] ';' expected,,  v[row][0].multiply(v[row]));
+increase failing tests,997,replace, [FE] AssertionFailedError testOperate,out[row] = sum; ,out[row] = ZERO;
+compilation error,997,replace,[CE] incompatible types,out[row] = sum; ,out[row] = v.length;
+compilation error,997,replace,[CE] incompatible types,out[row] = sum; ,out[row] = v;
+compilation error,774,add,[CE] variable nRows is already defined in method operate(double[]),,  final int nRows = this.getRowDimension();
+compilation error,774,add,[CE] variable nRows is already defined in method operate(double[]),,  int nRows = this.getRowDimension();
+compilation error,774,add,[CE] variable v is already defined in method operate(double[]),,  final int v = this.getColumnDimension();
+compilation error,774,add,[CE] cannot find symbol,,  super.operate(v);
+increase failing tests,774,add, [FE] ArrayIndexOutOfBoundsException testMath209,,  if(v.length!= 1) { throw new IllegalArgumentException(""); }
+compilation error,994,replace,[CE] incompatible types,for (int i = 0; i < nCols; i++) { ,for(int i = 0; i >> nCols; i++) {
+increase failing tests,994,replace, [FE] ArrayIndexOutOfBoundsException testOperate,for (int i = 0; i < nCols; i++) { ,for(int i = 0; i <= nCols; i++) {
+compilation error,994,replace,[CE] illegal start of type,for (int i = 0; i < nCols; i++) { , 
+compilation error,991,add,[CE] variable nRows is already defined in method operate(BigDecimal[]),,  final int nRows = this.getRowDimension();
+compilation error,991,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  final int row = this.getRowDimension();
+increase failing tests,991,add, [FE] ArrayIndexOutOfBoundsException testMath209,,  final int nSum = this.getColumnDimension();
+compilation error,991,add,[CE] variable nCols is already defined in method operate(BigDecimal[]),,  final int nCols = this.getColumnDimension();
+compilation error,991,add,[CE] illegal start of expression,,  if(v.length!= nCols) { if(v.length!= nRows) { throw new IllegalArgumentException(""); }
+compilation error,995,replace,[CE] no suitable method found for multiply(BigDecimal,int),sum = sum.add(data[row][i].multiply(v[i])); ,sum = sum.add(data[row][i].multiply(v[i], i));
+increase failing tests,995,replace, [FE] AssertionFailedError testOperate,sum = sum.add(data[row][i].multiply(v[i])); ,sum = sum.add(data[row][i].subtract(v[i]));
+compilation error,995,replace,[CE] cannot find symbol total,sum = sum.add(data[row][i].multiply(v[i])); ,sum = total.add(data[row][i].multiply(v[i]));
+increase failing tests,995,replace, [FE] AssertionFailedError testOperate,sum = sum.add(data[row][i].multiply(v[i])); , 
+increase failing tests,989,replace, [FE] ArrayIndexOutOfBoundsException testOperate,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension() + 1;
+compilation error,989,replace,[CE] method getRowDimension in class BigMatrixImpl cannot be applied to given types;,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension(v.length);
+compilation error,989,replace,[CE] array required, but int found,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension() [v.length];
+compilation error,989,replace,[CE] cannot find symbol nRows,final int nRows = this.getRowDimension(); , 
+compilation error,986,add,[CE] illegal start of expression,,  if(v.length!= 0) { if(v.length!= this.getColumnDimension()) { throw new IllegalArgumentException(""); }
+compilation error,986,add,[CE] illegal start of expression,,  if(v.length!= 0) { if(v.length!= this.getRowDimension()) { throw new IllegalArgumentException(""); }
+compilation error,986,add,[CE] illegal start of expression,,  if(v.length!= this.getColumnDimension()) { if(v.length!= this.getRowDimension()) { throw new IllegalArgumentException(""); }
+increase failing tests,986,add, [FE] ArrayIndexOutOfBoundsException testMath209,,  if(v.length!= this.getColumnDimension()) { throw new IllegalArgumentException(""); }
+increase failing tests,986,add, [FE] IllegalArgumentException testOperate,,  if(v.length!= 0) { throw new IllegalArgumentException(""); }
+increase failing tests,990,replace, [FE] ArrayIndexOutOfBoundsException testOperate,final int nCols = this.getColumnDimension(); ,final int nCols = this.getColumnDimension() + 1;
+compilation error,990,replace,[CE] cannot find symbol,final int nCols = this.getColumnDimension(); ,final int nCols = this.getEntryColumnDimension();
+compilation error,990,replace,[CE] cannot find symbol nCols,final int nCols = this.getColumnDimension(); ,final int nCOLs = this.getColumnDimension();
+compilation error,989,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  final int row = this.getRowDimension();
+compilation error,989,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final int[][] v = this.getColumnDimension();
+compilation error,989,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  int row = this.getRowDimension();
+increase failing tests,989,add, [FE] ArrayIndexOutOfBoundsException testMath209,,  if(v.length!= this.getColumnDimension()) { throw new IllegalArgumentException(""); }
+increase failing tests,774,replace, [FE] ArrayIndexOutOfBoundsException testMath209,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension() + 1;
+compilation error,774,replace,[CE] possible loss of precision,final int nRows = this.getRowDimension(); ,final char nRows = this.getRowDimension();
+compilation error,994,add,[CE] variable out is already defined in method operate(BigDecimal[]),,  BigDecimal[][] out = new BigDecimal[v.length];
+compilation error,994,add,[CE] ';' expected,,  out[row][row].multiply(v[row]));
+compilation error,994,add,[CE] ';' expected,,  data[row][row].multiply(v[row]));
+compilation error,994,add,[CE] ';' expected,,  Data[row][row].multiply(v[row]));
+increase failing tests,992,replace, [FE] ArrayIndexOutOfBoundsException testOperate,for (int row = 0; row < nRows; row++) { ,for(int row = 0; row <= nRows; row++) {
+compilation error,995,add,[CE] ']' expected,,  BigDecimal[][] data[row][i].multiply(v[i]));
+compilation error,995,add,[CE] ';' expected,,  BigDecimal[][] out = data[row][i].multiply(v[i]));
+compilation error,995,add,[CE] ';' expected,,  sum = data[row][i].multiply(v[i]));
+increase failing tests,995,add, [FE] AssertionFailedError testOperate,,  sum = data[row][i].multiply(v[i]);
+compilation error,997,add,[CE] cannot find symbol i,,  data[row][i] = data[row][i].subtract(this.getColumnDimension());
+compilation error,997,add,[CE] cannot find symbol i,,  out[row] = data[row][i].subtract(sum);
+compilation error,997,add,[CE] cannot find symbol i,,  out[row] = data[row][i].multiply(v[row]);
+compilation error,989,replace,[CE] array required, but int found,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension() [0];
+compilation error,990,replace,[CE] cannot find symbol nSum,final int nCols = this.getColumnDimension(); ,final int nCols = this.getColumnDimension() || nSum = this.getColumnDimension();
+compilation error,990,replace,[CE] bad operand types for binary operator '||',final int nCols = this.getColumnDimension(); ,final int nCols = this.getColumnDimension() || nRows > 0? 1 : 0;
+compilation error,774,add,[CE] variable row is already defined in method operate(double[]),,  final int row = this.getRowDimension();
+compilation error,774,add,[CE] variable row is already defined in method operate(double[]),,  int row = this.getRowDimension();
+compilation error,993,add,[CE] cannot find symbol column,,  data[row][row] = data[row][row].divide(v[row], column);
+increase failing tests,993,add, [FE] AssertionFailedError testOperate,,  data[row][row] = data[row][row].divide(v[row], scale, roundingMode);
+increase failing tests,993,add, [FE] AssertionFailedError testOperate,,  data[row][row] = data[row][row].subtract(v[row]);
+compilation error,993,add,[CE] cannot find symbol column,,  data[row][row] = data[row][row].divide(v, column);
+compilation error,993,add,[CE] cannot find symbol column,,  data[row][row] = data[row][row].divide(v[row], column, nCols);
+compilation error,994,replace,[CE] int cannot be dereferenced,for (int i = 0; i < nCols; i++) { ,for(int i = 0; i < nCols.length; i++) {
+increase failing tests,986,replace, [FE] IllegalArgumentException testOperate,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() ||(v.length!= 0 && v.length > 0)) {
+compilation error,986,replace,[CE] cannot find symbol,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() || v.length!= this.getEndColumnDimension()) {
+compilation error,997,replace,[CE] cannot find symbol column,out[row] = sum; ,out[row] = sum.toArray(new BigDecimal[row][column]);
+compilation error,997,replace,[CE] cannot find symbol i,out[row] = sum; ,out[row] = sum.toArray(new BigDecimal[row][i]);
+compilation error,995,add,[CE] cannot find symbol Data,,  Data[row][i] = data[row][i].divide(v[i], scale, roundingMode);
+increase failing tests,995,add, [FE] AssertionFailedError testOperate,,  data[row][i] = data[row][i].divide(v[i], scale, roundingMode);
+compilation error,995,add,[CE] cannot find symbol column,,  data[row][i] = data[row][i].divide(v[i], column);
+compilation error,774,replace,[CE] cannot find symbol,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimensionType();
+increase failing tests,992,add, [FE] ArrayStoreException testOperate,,  System.arraycopy(data, 0, out, 0, v.length);
+increase failing tests,992,add, [FE] ArrayStoreException testOperate,,  System.arraycopy(data, 0, out, 0, nRows);
+compilation error,992,add,[CE] illegal start of expression,,  Data[row][] data = this.getDataRef();
+compilation error,995,replace,[CE] no suitable method found for multiply(BigDecimal,BigDecimal),sum = sum.add(data[row][i].multiply(v[i])); ,sum = sum.add(data[row][i].multiply(v[i], data[row][i]));
+compilation error,995,replace,[CE] no suitable method found for add(BigDecimal,int),sum = sum.add(data[row][i].multiply(v[i])); ,sum = sum.add(data[row][i].multiply(v[i]), nRows);
+compilation error,995,replace,[CE] ')' expected,sum = sum.add(data[row][i].multiply(v[i])); ,sum = sum.add(data[row][i].multiply(v[i]);
+compilation error,992,replace,[CE] ')' expected,for (int row = 0; row < nRows; row++) { ,for(int row = 0; row < nRows; row++]) {
+compilation error,986,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  int row = this.getRowDimension();
+compilation error,986,add,[CE] variable row is already defined in method operate(BigDecimal[]),,  int row =(int)this.getRowDimension();
+increase failing tests,986,add, [FE] ArrayStoreException testOperate,,  System.arraycopy(data, 0, v, 0, v.length);
+compilation error,986,add,[CE] cannot find symbol Validate,,  Validate.isTrue(v.length!= 0);
+compilation error,986,add,[CE] cannot find symbol Validate,,  Validate.isTrue(v.length == 0);
+compilation error,991,add,[CE] incompatible types,,  final int[] row = this.getRowDimension();
+compilation error,991,replace,[CE] cannot find symbol,final BigDecimal[] out = new BigDecimal[v.length]; ,final BigDecimal[] out = new BigDecimal[v.length].divide(nCols, nRows);
+compilation error,993,replace,[CE] cannot find symbol,BigDecimal sum = ZERO; ,BigDecimal sum = ZERO.parseBigDecimal(v);
+compilation error,993,replace,[CE] cannot find symbol ZERO_SMALL,BigDecimal sum = ZERO; ,BigDecimal sum = ZERO_SMALL;
+increase failing tests,994,add, [FE] ArrayStoreException testOperate,,  System.arraycopy(data, 0, out, 0, v.length);
+compilation error,994,add,[CE] incompatible types,,  BigDecimal[][] data =(data == null)? data[row][0] : data[row];
+compilation error,994,add,[CE] variable out is already defined in method operate(BigDecimal[]),,  BigDecimal[][] out = data[row][row].multiply(v[row]);
+compilation error,994,add,[CE] incompatible types,,  BigDecimal[][] data =(data == null)? data[row][0] : data.length;
+increase failing tests,990,replace, [FE] ArrayIndexOutOfBoundsException testOperate,final int nCols = this.getColumnDimension(); ,final int nCols = this.getColumnDimension() + v.length;
+compilation error,990,replace,[CE] method getColumnDimension in class BigMatrixImpl cannot be applied to given types;,final int nCols = this.getColumnDimension(); ,final int nCols = this.getColumnDimension(v.length);
+compilation error,990,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final BigDecimal[][] v =(BigDecimal[])this.getDataRef();
+compilation error,990,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  BigDecimal[][] v =(BigDecimal[])this.getDataRef();
+compilation error,990,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final BigDecimal[][] v = this.getDataRef();
+compilation error,994,add,[CE] cannot find symbol column,,  BigDecimal[][] d = data[row][column].multiply(data[row][column]);
+compilation error,994,add,[CE] incompatible types,,  BigDecimal[][] d = data[row][data.length];
+compilation error,994,add,[CE] incompatible types,,  BigDecimal[][] d = data[row][0].multiply(v[row]);
+compilation error,994,add,[CE] ';' expected,,  BigDecimal[][] d = data[row][column].multiply(data[row][column]));
+compilation error,994,add,[CE] cannot find symbol column,,  BigDecimal[][] d = data[row][column].multiply(data[row][0], data[row][1]);
+compilation error,986,replace,[CE] cannot find symbol,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() ||!BigDecimal.isNaN(v.length)) {
+compilation error,986,replace,[CE] cannot find symbol,if (v.length != this.getColumnDimension()) { ,if(v.length!= this.getColumnDimension() ||!BigDecimal.isNone()) {
+compilation error,986,add,[CE] cannot find symbol Arrays,,  Arrays.sort(v);
+compilation error,986,add,[CE] no suitable method found for copyIn(BigDecimal[]),,  this.copyIn(v);
+compilation error,997,replace,[CE] ';' expected,out[row] = sum; ,out[row] = sum.multiply(data[row][i].multiply(v[i])));
+compilation error,997,replace,[CE] cannot find symbol i,out[row] = sum; ,out[row] = data[row][i];
+compilation error,997,replace,[CE] cannot find symbol i,out[row] = sum; ,out[row] = sum.multiply(data[row][i].multiply(v[i]));
+compilation error,993,add,[CE] inconvertible types,,  BigDecimal[][] data =(BigDecimal[])this.getDataRef();
+compilation error,993,add,[CE] cannot find symbol,,  BigDecimal[][] data =(BigDecimal[])v.get(row);
+compilation error,993,add,[CE] cannot find symbol,,  BigDecimal[][] data =(BigDecimal[])v.getDataRef();
+compilation error,993,add,[CE] cannot find symbol,,  BigDecimal[][] data =(BigDecimal[])data[row].multiply(v[row]);
+compilation error,989,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final BigDecimal[][] v =(BigDecimal[])this.getDataRef();
+compilation error,989,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final BigDecimal[][] v = this.getDataRef();
+compilation error,989,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final BigDecimal[][] v =(BigDecimal[])this.getData();
+compilation error,995,replace,[CE] no suitable method found for multiply(BigDecimal,BigDecimal),sum = sum.add(data[row][i].multiply(v[i])); ,sum = sum.add(data[row][i].multiply(v[i], out[i]));
+compilation error,991,replace,[CE] cannot find symbol,final BigDecimal[] out = new BigDecimal[v.length]; ,final bigDecimal[] out = new BigDecimal[v.length];
+compilation error,991,replace,[CE] ';' expected,final BigDecimal[] out = new BigDecimal[v.length]; ,final BigDecimal[] out = new BigDecimal[v].length];
+compilation error,991,replace,[CE] illegal start of expression,final BigDecimal[] out = new BigDecimal[v.length]; ,static final BigDecimal[] out = new BigDecimal[v.length];
+compilation error,993,replace,[CE] ';' expected,BigDecimal sum = ZERO; ,BigDecimal sum -= ZERO;
+compilation error,993,replace,[CE] cannot find symbol,BigDecimal sum = ZERO; ,BigDecimal sum = ZERO.toBigDecimal(data[row][row]);
+compilation error,993,replace,[CE] no suitable method found for toString(BigDecimal),BigDecimal sum = ZERO; ,BigDecimal sum = ZERO.toString(data[row][row]);
+increase failing tests,995,add, [FE] AssertionFailedError testOperate,,  data[row][i] = data[row][i].multiply(v[i]);
+compilation error,995,add,[CE] cannot find symbol Data,,  Data[row][i] = data[row][i].multiply(v[i]);
+compilation error,995,add,[CE] incompatible types,,  BigDecimal[][] d = data[row][i].multiply(v[i]);
+compilation error,995,add,[CE] ';' expected,,  BigDecimal[][] d = data[row][i].multiply(v[i]));
+compilation error,995,add,[CE] ';' expected,,  BigDecimal[][] v =(BigDecimal[])v.get[i].multiply(v[i]));
+compilation error,992,add,[CE] cannot find symbol,,  Data[][] data = out.toArray(new BigDecimal[v.length]);
+compilation error,992,add,[CE] cannot find symbol,,  BigDecimal[][] data = out.toArray(new BigDecimal[v.length]);
+compilation error,991,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  BigDecimal[][] v =(BigDecimal[])this.getDataRef();
+compilation error,991,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  final BigDecimal[][] v =(BigDecimal[])this.getDataRef();
+compilation error,991,add,[CE] variable v is already defined in method operate(BigDecimal[]),,  BigDecimal[][] v =(BigDecimal[])this.getEntry(nRows, nCols);
+compilation error,992,replace,[CE] incompatible types,for (int row = 0; row < nRows; row++) { ,for(int row = 0; row >> nRows; row++) {
+compilation error,997,add,[CE] ';' expected,,  out[i] = data[row][i].multiply(v[i]));
+compilation error,997,add,[CE] ';' expected,,  data[row][i].multiply(v[i]));
+compilation error,997,add,[CE] ';' expected,,  out[row] = data[row][i].multiply(v[i]));
+compilation error,997,add,[CE] cannot find symbol i,,  out[i] = data[row][i].multiply(v[i]);
+increase failing tests,989,replace, [FE] ArrayIndexOutOfBoundsException testOperate,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension() + v.length;
+increase failing tests,774,replace, [FE] ArrayIndexOutOfBoundsException testOperate,final int nRows = this.getRowDimension(); ,final int nRows = this.getRowDimension() * 1000;
+compilation error,774,add,[CE] variable v is already defined in method operate(double[]),,  final double[][] v = this.getData();
+compilation error,774,add,[CE] ';' expected,,  final int v.length = this.getColumnDimension();
+compilation error,774,add,[CE] variable v is already defined in method operate(double[]),,  final double[][] v =(double[])this.getData();

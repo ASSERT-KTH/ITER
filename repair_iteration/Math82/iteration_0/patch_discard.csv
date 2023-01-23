@@ -1,0 +1,16 @@
+increase failing tests,150,replace, [FE] NullPointerException testMath272,for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) { ,for(int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth(); i++) {
+increase failing tests,150,replace, [FE] AssertionError testUnboundedSolution,for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) { ,for(int i = tableau.getNumObjectiveFunctions(); i < tableau.getHeight(); i++) {
+increase failing tests,147,replace, [FE] NullPointerException testRestrictVariablesToNonNegative,if (tableau.getNumArtificialVariables() > 0) { ,if(tableau.getNumArtificialVariables() == 0) {
+increase failing tests,155,replace, [FE] NullPointerException testRestrictVariablesToNonNegative,return true; ,return false;
+increase failing tests,151,add, [FE] AssertionError testMath286,,  double epsilon = tableau.getHeight();
+increase failing tests,151,add, [FE] AssertionError testSingleVariableAndConstraint,,  double epsilon = tableau.getWidth();
+increase failing tests,151,add, [FE] MatrixIndexException testRestrictVariablesToNonNegative,,  double epsilon = tableau.getEntry(i, i);
+increase failing tests,152,replace, [FE] AssertionError testRestrictVariablesToNonNegative,return false; ,return true;
+increase failing tests,152,replace, [FE] IllegalArgumentException testRestrictVariablesToNonNegative,return false; ,throw new IllegalArgumentException("");
+increase failing tests,152,replace, [FE] IllegalStateException testRestrictVariablesToNonNegative,return false; ,throw new IllegalStateException("");
+increase failing tests,152,replace, [FE] AssertionError testRestrictVariablesToNonNegative,return false; ,return i > 0;
+increase failing tests,151,replace, [FE] NullPointerException testRestrictVariablesToNonNegative,if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) { ,if(MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon)!= 0) {
+increase failing tests,151,replace, [FE] NullPointerException testRestrictVariablesToNonNegative,if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) { ,if(MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) <= 0) {
+increase failing tests,151,replace, [FE] NullPointerException testRestrictVariablesToNonNegative,if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) { ,if(MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) == 0) {
+increase failing tests,147,replace, [FE] NullPointerException testRestrictVariablesToNonNegative,if (tableau.getNumArtificialVariables() > 0) { ,if(tableau.getNumArtificialVariables() <= 0) {
+increase failing tests,169,replace, [FE] IllegalArgumentException testSingleVariableAndConstraint,return; ,throw new IllegalArgumentException("");

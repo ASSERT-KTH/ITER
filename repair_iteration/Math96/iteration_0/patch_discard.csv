@@ -1,0 +1,171 @@
+compilation error,266,replace,[CE] incompatible types,return ret; ,return NaN;
+compilation error,266,replace,[CE] incomparable types: boolean and <null>,return ret; ,return ret == null? NaN : ret;
+compilation error,266,replace,[CE] incomparable types: boolean and <null>,return ret; ,return ret == null? Double.NaN : Double.NaN;
+compilation error,266,replace,[CE] incomparable types: boolean and <null>,return ret; ,return ret!= null? NaN : ret;
+compilation error,266,replace,[CE] missing return statement,return ret; , 
+compilation error,277,add,[CE] ';' expected,,  if(isNaN()) { if(isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,277,add,[CE] ';' expected,,  if(MathUtils.hash(real)) { if(isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,277,add,[CE] ';' expected,,  if(isNaN()) { if(!isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real); }
+compilation error,277,add,[CE] illegal start of expression,,  if(MathUtils.hash(real)) { if(isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real); }
+compilation error,280,replace,[CE] ';' expected,return 37 * (17 * MathUtils.hash(imaginary) + MathUtils.hash(real)); ,return 37 * 17 * MathUtils.hash(imaginary)+ MathUtils.hash(real));
+compilation error,280,replace,[CE] missing return statement,return 37 * (17 * MathUtils.hash(imaginary) + MathUtils.hash(real)); , 
+compilation error,250,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(other)) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary())
+compilation error,250,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,250,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(other)) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getReal())
+compilation error,250,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(other)) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.get
+increase failing tests,363,replace, [FE] AssertionFailedError testPow,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(real * rhs.real - real * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real);
+increase failing tests,363,replace, [FE] AssertionFailedError testExp,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(real * rhs.imaginary - imaginary * rhs.real, real * rhs.imaginary + imaginary * rhs.real);
+increase failing tests,363,replace, [FE] AssertionFailedError testExp,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(imaginary * rhs.real - real * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real);
+compilation error,363,replace,[CE] missing return statement,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); , 
+compilation error,255,replace,[CE] cannot find symbol,if (rhs.isNaN()) { ,if(rhs.isNaN() || other.isNaN()) {
+increase failing tests,255,replace, [FE] AssertionFailedError testEqualsTrue,if (rhs.isNaN()) { ,if(!rhs.isNaN()) {
+compilation error,255,replace,[CE] 'try' without 'catch', 'finally' or resource declarations,if (rhs.isNaN()) { , 
+compilation error,277,replace,[CE] class expected,if (isNaN()) { ,if(isNaN() || double.hashCode() == 0) {
+compilation error,280,add,[CE] not a statement,,  MathUtils.hash(imaginary)+ MathUtils.hash(real));
+compilation error,280,add,[CE] ';' expected,,  if(isNaN()) { if(isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,280,add,[CE] ';' expected,,  if(isNaN()) { double d = getDenominator(); if(d == 0.0) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,280,add,[CE] ';' expected,,  if(isNaN()) { if(!isNaN()) { return 37 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { double d = getDenominator(); if(d == 0.0) { return 37 * MathUtils.hash(imaginary); }
+compilation error,263,replace,[CE] ')' expected,} ,ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,263,replace,[CE] ')' expected,} ,ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,263,replace,[CE] illegal start of expression,} , 
+compilation error,258,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,258,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,263,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(other) == Double.doubleToRawLongBits(rhs.getImaginary())) &&(Double.doubleToRawLongBits(other) == Double.doubleToRawL
+compilation error,254,replace,[CE] cannot find symbol complex,Complex rhs = (Complex)other; ,Complex rhs =(Complex)other.complex;
+compilation error,254,replace,[CE] cannot find symbol,Complex rhs = (Complex)other; ,Complex rhs =(Complex)other.getComplex();
+compilation error,254,replace,[CE] cannot find symbol rhs,Complex rhs = (Complex)other; , 
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(other) == Double.doubleToRawLongBits(other));
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary()));
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal()));
+compilation error,363,add,[CE] <identifier> expected,,  if(Double.isNaN(real)|| Double.isInfinite(imaginary)|| Double.isInfinite(rhs.imaginary)) { double c = rhs.double; if(c == 0.0) { return NaN; }
+compilation error,363,add,[CE] <identifier> expected,,  if(Double.isNaN(real)|| Double.isInfinite(imaginary)|| Double.isInfinite(rhs.imaginary)) { double c = rhs.double; if(c!= 0.0) { return NaN; }
+compilation error,250,replace,[CE] incomparable types: Class<CAP#1> and double,} else if (other == null) { ,} else if(other == null || other.getClass()!= 0.0) {
+compilation error,250,replace,[CE] incomparable types: Class<CAP#1> and boolean,} else if (other == null) { ,} else if(other == null || other.getClass()!= ret) {
+compilation error,250,replace,[CE] cannot find symbol,} else if (other == null) { ,} else if(other == null || other.isComplex()) {
+compilation error,258,replace,[CE] ')' expected,ret = (Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) && (Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary())); ,ret =(Double.doubleToRawLongBits(real)!= Double.doubleToRawLongBits(rhs.getReal())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,266,add,[CE] ')' expected,,  ret = this.isNaN(); ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,266,add,[CE] ')' expected,,  ret = this.isNaN(); ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,266,add,[CE] <identifier> expected,,  ret = this.isNaN(); ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) &&(Double.doubleToRawLongBits(imaginary) == Double.double
+compilation error,266,add,[CE] ')' expected,,  ret = this.isNaN(); ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(imaginary)) &&(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,266,add,[CE] <identifier> expected,,  ret = this.isNaN(); ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) &&(Double.doubleToRawLongBits(imaginary) == Double.double
+compilation error,248,add,[CE] illegal start of expression,,  if(other instanceof Complex) { if(this.isNaN()) { ret = false; }
+compilation error,248,add,[CE] illegal start of expression,,  if(other instanceof Complex) { if(this.isNaN() || this.isNaN()) { ret = false; }
+compilation error,248,add,[CE] illegal start of expression,,  if(other instanceof Complex) { if(this.isNaN() || other.isNaN()) { ret = false; }
+compilation error,248,add,[CE] illegal start of expression,,  if(other instanceof Complex) { if(this.isNaN()) { ret = this; }
+increase failing tests,248,replace, [FE] StackOverflowError testEqualsClass,if (this == other) { ,if(this == other ||!this.equals(other)) {
+increase failing tests,248,replace, [FE] AssertionFailedError testEqualsClass,if (this == other) { ,if(this == other ||!this.isNaN()) {
+compilation error,255,add,[CE] 'catch' without 'try',,  if(rhs.isNaN()) { if(Double.isNaN(real)) { ret = this; }
+compilation error,255,add,[CE] incompatible types,,  if(rhs.isNaN() || rhs.isNaN()) { ret = this; }
+compilation error,255,add,[CE] cannot find symbol,,  if(rhs.isNaN() || rhs.isSingleton()) { ret = this.isNaN(); }
+compilation error,248,replace,[CE] cannot find symbol isNaN,if (this == other) { ,if(this == other || this.isNaN) {
+compilation error,250,replace,[CE] cannot find symbol,} else if (other == null) { ,} else if(other == null || other.isNaN()) {
+compilation error,250,replace,[CE] incomparable types: Class<CAP#1> and Complex,} else if (other == null) { ,} else if(other == null || other.getClass()!= this) {
+increase failing tests,250,replace, [FE] AssertionFailedError testMath221,} else if (other == null) { ,} else if(other == null || this.isNaN()) {
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(!isNaN()) { return 37 * MathUtils.hash(imaginary); }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 17; }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(d == 0.0) { return 37 * hashCode(); }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * hashCode(); }
+compilation error,248,add,[CE] illegal start of expression,,  if(this == other) { if(other == null) { ret = this; }
+compilation error,248,add,[CE] illegal start of expression,,  if(this.isNaN()) { if(other == null) { ret = this; }
+compilation error,248,add,[CE] illegal start of expression,,  if(this == other) { ret = this.isNaN(); if(other == null) { ret = this; }
+compilation error,248,add,[CE] illegal start of expression,,  if(this == other) { if(other == this) { ret = this; }
+compilation error,248,add,[CE] illegal start of expression,,  if(this == other) { ret = this.isNaN(); if(other == null) { ret = false; }
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 0; }
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * MathUtils.hash(imaginary); }
+compilation error,277,add,[CE] cannot find symbol,,  Complex INF = MathUtils.hash(getImplicitReturn());
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 20; }
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 7; }
+increase failing tests,266,add, [FE] AssertionFailedError testEqualsSame,,  ret = this.isNaN();
+compilation error,266,add,[CE] ';' expected,,  if(Double.isNaN(real)) { ret = Double.doubleToRawLongBits(imaginary)- Double.doubleToRawLongBits(rhs.getImaginary())&&!Double.doubleToRawLongBits
+compilation error,266,add,[CE] ';' expected,,  if(Double.isNaN(real)) { ret = Double.doubleToRawLongBits(imaginary)- Double.doubleToRawLongBits(rhs.getImaginary())); } else { ret = NaN; }
+compilation error,266,add,[CE] ';' expected,,  if(Double.isNaN(real)) { ret = Double.doubleToRawLongBits(imaginary)- Double.doubleToRawLongBits(rhs.getImaginary())&&!Double.doubleToRawL
+compilation error,266,add,[CE] incompatible types,,  if(Double.isNaN(real)|| Double.isInfinite(imaginary)) { ret = NaN; }
+compilation error,266,replace,[CE] cannot find symbol denominator,return ret; ,return ret * denominator;
+compilation error,266,replace,[CE] incomparable types: boolean and Complex,return ret; ,return ret == NaN? Double.doubleToRawLongBits(real): NaN;
+compilation error,266,replace,[CE] incomparable types: boolean and Complex,return ret; ,return ret == NaN? Double.parseDouble(real): NaN;
+compilation error,266,replace,[CE] incomparable types: boolean and Complex,return ret; ,return ret!= NaN? Double.parseDouble(real): NaN;
+compilation error,255,add,[CE] 'catch' without 'try',,  if(rhs.isNaN()) { if(this.isNaN()) { ret = this; }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(rhs.getReal()!= null) { if(this.isNaN()) { ret = this; }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(rhs.isNaN()) { if(!rhs.isNaN()) { ret = this; }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(rhs.getReal()!= null) { if(!rhs.isNaN()) { ret = this; }
+compilation error,254,add,[CE] method doubleToRawLongBits in class Double cannot be applied to given types;,,  Double c = Double.doubleToRawLongBits(other); ret = this.isCase();
+compilation error,254,add,[CE] method doubleToRawLongBits in class Double cannot be applied to given types;,,  Double c = Double.doubleToRawLongBits(other); if(c == null) { ret = c; }
+compilation error,254,add,[CE] incompatible types,,  Double c = Double.doubleToRawLongBits(getReal()); ret = this.isCase();
+compilation error,254,add,[CE] method doubleToRawLongBits in class Double cannot be applied to given types;,,  Double c = Double.doubleToRawLongBits(other); if(c == null) { ret = this; }
+increase failing tests,263,add, [FE] StackOverflowError testEqualsClass,,  if(other == null) { ret = this.equals(other); } else { ret = this.equals(other); }
+compilation error,263,add,[CE] illegal start of expression,,  if(other == null) { ret = this.isNaN(); if(other.isNaN()) { ret = this.isNaN(); }
+compilation error,263,add,[CE] incompatible types,,  if(other == null) { ret = this.equals(other); } else { ret = this; ret = this; }
+compilation error,263,add,[CE] cannot find symbol rhs,,  if(other == null) { ret = this.equals(other); } else { rhs = other; ret = this; }
+increase failing tests,250,add, [FE] AssertionFailedError testEqualsSame,,  if(other == null) { ret = this.isNaN(); } else { ret = this.isNaN(); }
+increase failing tests,250,add, [FE] AssertionFailedError testEqualsSame,,  if(other!= null) { ret = this.isNaN(); } else { ret = this.isNaN(); }
+increase failing tests,250,add, [FE] AssertionFailedError testEqualsSame,,  ret = this.isNaN();
+compilation error,277,replace,[CE] bad operand types for binary operator '||',if (isNaN()) { ,if(isNaN() || MathUtils.hash(imaginary)) {
+compilation error,277,replace,[CE] bad operand types for binary operator '||',if (isNaN()) { ,if(isNaN() || MathUtils.hash(real)) {
+compilation error,277,replace,[CE] cannot find symbol,if (isNaN()) { ,if(isNaN() || isDynamic()) {
+compilation error,258,replace,[CE] ')' expected,ret = (Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) && (Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary())); ,ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())||(Double.doubleToRawLongBits(imaginary) == Double.doubleToRawL
+compilation error,258,add,[CE] ')' expected,,  ret =(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())|| Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isNaN(real)|| Double.isInfinite(imaginary)|| Double.isInfinite(rhs.imaginary)) { if(!Double.isNaN(real)) { return NaN; }
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isInfinite(rhs.real)|| Double.isInfinite(rhs.imaginary)) { if(Double.isNaN(real)|| Double.isInfinite(rhs.imaginary)) { return NaN; }
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isInfinite(rhs.real)|| Double.isInfinite(rhs.imaginary)) { if(Double.isNaN(real)|| Double.isNaN(imaginary)) { return NaN; }
+compilation error,363,replace,[CE] cannot find symbol actual,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(real * rhs.real - imaginary * rhs.imaginary, actual * rhs.imaginary + imaginary * rhs.real);
+compilation error,363,replace,[CE] cannot find symbol Real,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(real * rhs.real - imaginary * rhs.imaginary, Real * rhs.imaginary + imaginary * rhs.real);
+compilation error,363,replace,[CE] cannot find symbol complex,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(complex * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real);
+compilation error,254,replace,[CE] cannot find symbol rhs,Complex rhs = (Complex)other; ,Complex rhs =(Complex)other.rhs;
+compilation error,254,replace,[CE] : expected,Complex rhs = (Complex)other; ,Complex rhs = isNaN()?(Complex)other;
+compilation error,254,replace,[CE] cannot find symbol,Complex rhs = (Complex)other; ,Complex rhs = isComplex(other)? (Complex)other : null;
+compilation error,258,add,[CE] ';' expected,,  ret = Double.doubleToRawLongBits(other) == Double.doubleToRawLongBits(rhs.getImaginary()));
+compilation error,258,add,[CE] 'catch' without 'try',,  if(rhs.isNaN()) { if(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) { ret = this.isNaN(); }
+compilation error,258,add,[CE] 'catch' without 'try',,  if(rhs.isNaN()) { if(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) { ret = this; }
+compilation error,258,add,[CE] ';' expected,,  ret = Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary()));
+compilation error,258,add,[CE] ';' expected,,  ret = Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary()));
+compilation error,250,replace,[CE] incomparable types: Class<CAP#1> and double,} else if (other == null) { ,} else if(other == null || other.getClass()!= real) {
+compilation error,250,replace,[CE] incomparable types: Class<CAP#1> and int,} else if (other == null) { ,} else if(other == null || other.getClass()!= 0) {
+compilation error,250,replace,[CE] incomparable types: Class<CAP#1> and Complex,} else if (other == null) { ,} else if(other == null || other.getClass()!= ZERO) {
+compilation error,277,replace,[CE] class expected,if (isNaN()) { ,if(isNaN() || double.isNaN()) {
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isInfinite(imaginary)|| Double.isInfinite(rhs.imaginary)) { if(Double.isInfinite(real)|| Double.isInfinite(imaginary)) { return NaN; }
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isNaN(real)|| Double.isNaN(imaginary)) { if(Double.isNaN(imaginary)) { return NaN; }
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isInfinite(imaginary)|| Double.isInfinite(rhs.imaginary)) { if(Double.isNaN(real)|| Double.isNaN(imaginary)) { return NaN; }
+compilation error,363,add,[CE] illegal start of expression,,  if(Double.isInfinite(imaginary)|| Double.isInfinite(rhs.imaginary)) { if(Double.isInfinite(real)|| Double.isInfinite(imaginary)) { return INF; }
+compilation error,266,replace,[CE] incomparable types: boolean and int,return ret; ,return ret!= 0? Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(imaginary): ret;
+compilation error,266,replace,[CE] incomparable types: boolean and <null>,return ret; ,return ret == null? Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(imaginary): ret;
+compilation error,266,replace,[CE] incomparable types: boolean and int,return ret; ,return ret == 0? Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(imaginary): ret;
+compilation error,266,replace,[CE] incomparable types: boolean and <null>,return ret; ,return ret == null? Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary()): ret;
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * (17 + MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * 17 + MathUtils.hash(imaginary); }
+compilation error,277,add,[CE] incompatible types,,  Complex INF = 37 * MathUtils.hash(imaginary);
+compilation error,277,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * 17 + MathUtils.hash(imaginary).hashCode(); }
+increase failing tests,363,replace, [FE] AssertionFailedError testExp,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(imaginary * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real);
+compilation error,363,replace,[CE] cannot find symbol actual,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.real); ,return createComplex(real * rhs.real - imaginary * rhs.imaginary, real * rhs.imaginary + imaginary * rhs.actual);
+increase failing tests,255,replace, [FE] AssertionFailedError testEqualsTrue,if (rhs.isNaN()) { ,if(rhs.isNaN() ||!Double.isNaN(real)) {
+compilation error,263,replace,[CE] illegal start of expression,} ,if(other == null) { if(Double.isNaN(real)|| Double.isNaN(imaginary)) { ret = this.isNaN(); }
+compilation error,263,replace,[CE] illegal start of expression,} ,if(other == null) { if(Double.isNaN(real)|| Double.isNaN(imaginary)) { ret = this; }
+compilation error,263,replace,[CE] illegal start of expression,} ,if(other == null) { if(!isNaN()) { ret = this.isNaN(); }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * (17 + MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * (17 * MathUtils.hash(imaginary)+ MathUtils.hash(real)); }
+compilation error,280,add,[CE] illegal start of expression,,  if(isNaN()) { if(isNaN()) { return 37 * 17 + MathUtils.hash(imaginary); }
+compilation error,280,add,[CE] ';' expected,,  return 37 * 17 + MathUtils.hash(imaginary)+ MathUtils.hash(real));
+compilation error,263,add,[CE] illegal start of expression,,  if(other == null) { ret = this.isNaN(); if(denominator!= null) { ret = this.isNaN(); }
+compilation error,263,add,[CE] illegal start of expression,,  if(other == null) { ret = this.isNaN(); if(ex.isNaN()) { ret = this.isNaN(); }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(this.isNaN()) { if(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) { ret = this.isNaN(); }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(this.isNaN()) { if(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getImaginary())) { ret = this; }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(this.isNaN()) { if(rhs.isNaN()) { ret = this; }
+compilation error,255,add,[CE] 'catch' without 'try',,  if(this.isNaN()) { if(Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) { ret = this.isNaN(); }
+compilation error,266,add,[CE] ';' expected,,  ret = Double.doubleToRawLongBits(other) == Double.doubleToRawLongBits(rhs.getImaginary()));
+compilation error,266,add,[CE] ';' expected,,  ret = Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary()));
+compilation error,266,add,[CE] method doubleToRawLongBits in class Double cannot be applied to given types;,,  ret = Double.doubleToRawLongBits(other) == Double.doubleToRawLongBits(rhs.getImaginary());
+compilation error,266,add,[CE] cannot find symbol rhs,,  ret = Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary());
+compilation error,248,add,[CE] method doubleToRawLongBits in class Double cannot be applied to given types;,,  double c = Double.doubleToRawLongBits(other);
+compilation error,248,add,[CE] variable ret is already defined in method equals(Object),,  boolean ret = this.isNaN();
+compilation error,248,add,[CE] illegal start of expression,,  if(this == other) { if(this.isNaN()) { throw new IllegalArgumentException(""); }
+compilation error,254,replace,[CE] ';' expected,Complex rhs = (Complex)other; ,Complex rhs = isNaN()?(Complex)other : Complex);
+compilation error,250,add,[CE] 'else' without 'if',,  if(other == null) { ret = false; } else { Complex rhs = other.getComplex(); if(rhs.isNaN()) { ret = this.isNaN(); }
+increase failing tests,250,add, [FE] AssertionFailedError testEqualsSame,,  if(other == null) { ret = this.isNaN(); } else { ret = false; }
+compilation error,250,add,[CE] 'else' without 'if',,  if(other == null) { ret = false; } else { Complex INF = other.getINF(); if(this.isNaN()) { ret = this.isNaN(); }
+compilation error,250,add,[CE] 'else' without 'if',,  if(other == null) { ret = false; } else { Complex rhs = other.getComplex(); if(this.isNaN()) { ret = this.isNaN(); }
+compilation error,250,add,[CE] 'else' without 'if',,  if(other == null) { ret = false; } else { Complex rhs = other.getComplex(); if(rhs.isInfinite()) { ret = this.isInfinite(); }
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(this.isNaN()) == Double.doubleToRawLongBits(other.getImaginary());
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(this.getImaginary()) == Double.doubleToRawLongBits(other.getImaginary());
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(this.getImaginary()) == Double.doubleToRawLongBits(other.getImaginary()));
+compilation error,254,add,[CE] not a statement,,  Double.doubleToRawLongBits(this) == Double.doubleToRawLongBits(other));

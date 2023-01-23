@@ -1,0 +1,134 @@
+increase failing tests,361,add, [FE] AssertionFailedError testParseNegativeImaginary,,  pos.setIndex(initialIndex);
+compilation error,361,add,[CE] unreachable statement,,  pos.setIndex(initialIndex); return null;
+compilation error,361,add,[CE] unreachable statement,,  pos.setErrorIndex(startIndex); return null;
+compilation error,59,replace,[CE] illegal start of expression,} ,setImaginaryCharacter(imaginaryCharacter);
+compilation error,59,replace,[CE] illegal start of expression,} ,this.imaginaryCharacter = getImaginaryCharacter();
+compilation error,59,replace,[CE] illegal start of expression,} ,this(imaginaryCharacter, getImaginaryNumberFormat());
+compilation error,59,replace,[CE] illegal start of expression,} ,this(DEFAULT_IMAGINARY_CHARACTER, getImaginaryCharacter());
+compilation error,59,replace,[CE] illegal start of expression,} , 
+increase failing tests,349,replace, [FE] AssertionFailedError testParseSimpleWithDecimals,sign = 1; ,sign = 0;
+increase failing tests,349,replace, [FE] AssertionFailedError testParseSimpleWithDecimals,sign = 1; ,sign = -1;
+increase failing tests,349,replace, [FE] AssertionFailedError testParseSimpleWithDecimals,sign = 1; ,sign = 2;
+increase failing tests,349,replace, [FE] AssertionFailedError testParseSimpleWithDecimals,sign = 1; , 
+compilation error,58,replace,[CE] cannot reference this before supertype constructor has been called,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, getImaginaryCharacter());
+compilation error,58,replace,[CE] cannot reference this before supertype constructor has been called,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, getImaginaryFormat());
+compilation error,58,replace,[CE] cannot find symbol,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, getImaginaryCharacterFormat());
+compilation error,58,replace,[CE] cannot reference realFormat before supertype constructor has been called,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, realFormat, getDefaultNumberFormat());
+compilation error,350,replace,[CE] cannot find symbol,break; ,pos.removeIndex(startIndex); break;
+compilation error,350,replace,[CE] cannot find symbol,break; ,pos.removeIndex(startIndex);
+increase failing tests,350,replace, [FE] AssertionFailedError testParseSimpleWithDecimals,break; , 
+increase failing tests,350,add, [FE] AssertionFailedError testParseSimpleWithDecimals,,  pos.setIndex(initialIndex);
+increase failing tests,350,add, [FE] AssertionFailedError testParseSimpleWithDecimals,,  pos.setIndex(initialIndex); pos.setErrorIndex(startIndex);
+compilation error,350,add,[CE] unreachable statement,,  pos.setIndex(initialIndex); return null;
+compilation error,350,add,[CE] unreachable statement,,  pos.setIndex(initialIndex); pos.setErrorIndex(startIndex); return null;
+compilation error,350,add,[CE] unreachable statement,,  pos.setIndex(startIndex); return null;
+compilation error,374,add,[CE] variable startIndex is already defined in method parse(String,ParsePosition),,  int startIndex = pos.getIndex();
+compilation error,374,add,[CE] unreachable statement,,  pos.setErrorIndex(startIndex); return null;
+compilation error,374,add,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,,  parseAndIgnoreWhitespace(source, im);
+compilation error,361,replace,[CE] cannot find symbol,parseAndIgnoreWhitespace(source, pos); ,parseIgnoreWhitespace(source, pos);
+compilation error,361,replace,[CE] cannot find symbol,parseAndIgnoreWhitespace(source, pos); ,parseWhitespace(source, pos);
+compilation error,361,replace,[CE] cannot find symbol,parseAndIgnoreWhitespace(source, pos); ,parseBoundsAndIgnoreWhitespace(source, pos);
+increase failing tests,365,add, [FE] AssertionFailedError testParseNegativeImaginary,,  pos.setIndex(initialIndex);
+compilation error,365,add,[CE] unreachable statement,,  pos.setErrorIndex(startIndex); return null;
+compilation error,365,add,[CE] incompatible types,,  pos.setErrorIndex(startIndex); return im;
+compilation error,365,add,[CE] incompatible types,,  pos.setIndex(initialIndex); return im;
+increase failing tests,374,replace, [FE] StringIndexOutOfBoundsException testParseNegativeImaginary,int n = getImaginaryCharacter().length(); ,int n = getImaginaryCharacter().length() + 1;
+compilation error,374,replace,[CE] no suitable method found for lastIndexOf(Number),int n = getImaginaryCharacter().length(); ,int n = getImaginaryCharacter().lastIndexOf(im);
+compilation error,374,replace,[CE] cannot find symbol,int n = getImaginaryCharacter().length(); ,int n = getRealFormat().length();
+compilation error,237,add,[CE] non-static variable imaginaryCharacter cannot be referenced from a static context,,  System.arraycopy(imaginaryCharacter, getDefaultNumberFormat(), DEFAULT_IMAGINARY_CHARACTER);
+compilation error,237,add,[CE] illegal start of expression,,  if(DEFAULT_IMAGINARY_CHARACTER == null) { String format = DEFAULT_IMAGINARY_CHARACTER.toString(); if(imaginaryCharacter!= null) { format = DEFAULT_IMAGINARY_CHARACTER.toString(); }
+compilation error,237,add,[CE] illegal start of expression,,  if(DEFAULT_IMAGINARY_CHARACTER == null) { String format = DEFAULT_IMAGINARY_CHARACTER.toString(); if(imaginaryCharacter!= null) { return format; }
+compilation error,237,add,[CE] ';' expected,,  if(DEFAULT_IMAGINARY_CHARACTER == null) { String format = DEFAULT_IMAGINARY_CHARACTER.toString(); if(imaginaryCharacter!= null) { format = DEFAULT_IMAGINARY_CHARACTER.toString()
+compilation error,237,add,[CE] illegal start of expression,,  if(DEFAULT_IMAGINARY_CHARACTER!= null) { String format = DEFAULT_IMAGINARY_CHARACTER.toString(); if(imaginaryCharacter == null) { return format; }
+compilation error,237,replace,[CE] no suitable method found for getDefaultNumberFormat(Locale,String),return getDefaultNumberFormat(Locale.getDefault()); ,return getDefaultNumberFormat(Locale.getDefault(), DEFAULT_IMAGINARY_CHARACTER);
+compilation error,237,replace,[CE] cannot find symbol DateTimeUtils,return getDefaultNumberFormat(Locale.getDefault()); ,return getDefaultNumberFormat(DateTimeUtils.currentTimeMillis());
+compilation error,237,replace,[CE] non-static variable realFormat cannot be referenced from a static context,return getDefaultNumberFormat(Locale.getDefault()); ,return getDefaultNumberFormat(DEFAULT_IMAGINARY_CHARACTER, realFormat);
+compilation error,59,add,[CE] call to this must be first statement in constructor,,  this(imaginaryCharacter, getImaginaryFormat());
+compilation error,59,add,[CE] call to this must be first statement in constructor,,  this(imaginaryCharacter, getImaginaryNumberFormat(), false);
+compilation error,349,add,[CE] unreachable statement,,  return new Complex(re.doubleValue(), 0.0);
+increase failing tests,349,add, [FE] AssertionFailedError testParseSimpleWithDecimals,,  pos.setIndex(initialIndex);
+increase failing tests,349,add, [FE] AssertionFailedError testParseSimpleWithDecimals,,  pos.setIndex(initialIndex); pos.setErrorIndex(startIndex);
+compilation error,349,add,[CE] unreachable statement,,  pos.setIndex(initialIndex); return null;
+compilation error,349,add,[CE] duplicate case label,,  return new Complex(re.doubleValue(), 0.0); case '-' : sign = -1;
+increase failing tests,364,add, [FE] AssertionFailedError testParseNegativeImaginary,,  pos.setIndex(initialIndex);
+compilation error,364,add,[CE] unreachable statement,,  pos.setIndex(initialIndex); return null;
+compilation error,364,add,[CE] unreachable statement,,  pos.setErrorIndex(startIndex); return null;
+compilation error,375,replace,[CE] method getIndex in class ParsePosition cannot be applied to given types;,startIndex = pos.getIndex(); ,startIndex = pos.getIndex(n);
+compilation error,375,replace,[CE] method getIndex in class ParsePosition cannot be applied to given types;,startIndex = pos.getIndex(); ,startIndex = pos.getIndex(initialIndex);
+compilation error,375,replace,[CE] method getIndex in class ParsePosition cannot be applied to given types;,startIndex = pos.getIndex(); ,startIndex = pos.getIndex(n + 1);
+compilation error,375,replace,[CE] method getIndex in class ParsePosition cannot be applied to given types;,startIndex = pos.getIndex(); ,startIndex = pos.getIndex(startIndex);
+increase failing tests,375,replace, [FE] AssertionFailedError testParseNegativeImaginary,startIndex = pos.getIndex(); , 
+increase failing tests,365,replace, [FE] AssertionFailedError testParseNegativeImaginary,if (im == null) { ,if(im!= null) {
+increase failing tests,365,replace, [FE] AssertionFailedError testParseNegativeImaginary,if (im == null) { ,if(im!= null || imaginaryCharacter == null) {
+compilation error,365,replace,[CE] cannot find symbol,if (im == null) { ,if(im!= null || im.length() == 0) {
+compilation error,58,add,[CE] cannot reference realFormat before supertype constructor has been called,,  this(DEFAULT_IMAGINARY_CHARACTER, realFormat);
+compilation error,58,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,58,add,[CE] no suitable constructor found for ComplexFormat(String,boolean),,  this(DEFAULT_IMAGINARY_CHARACTER, false);
+compilation error,364,replace,[CE] no suitable method found for parseNumber(String,NumberFormat,String),Number im = parseNumber(source, getRealFormat(), pos); ,Number im = parseNumber(source, getRealFormat(), DEFAULT_IMAGINARY_CHARACTER);
+compilation error,364,replace,[CE] no suitable method found for parseNumber(String,NumberFormat,String),Number im = parseNumber(source, getRealFormat(), pos); ,Number im = parseNumber(source, getRealFormat(), imaginaryCharacter);
+compilation error,375,add,[CE] variable startIndex is already defined in method parse(String,ParsePosition),,  int startIndex = pos.getIndex();
+compilation error,375,add,[CE] variable n is already defined in method parse(String,ParsePosition),,  int n = getRealFormat().charAt(0);
+compilation error,375,add,[CE] variable sign is already defined in method parse(String,ParsePosition),,  int sign = pos.getIndex();
+compilation error,375,add,[CE] unreachable statement,,  pos.setErrorIndex(n); return null;
+compilation error,58,replace,[CE] cannot find symbol DEFAULT_FIELD_NAMES,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_FIELD_NAMES, getDefaultNumberFormat());
+compilation error,58,replace,[CE] cannot find symbol DEFAULT_FIELD_NAMES,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_FIELD_NAMES, getImaginaryCharacter());
+compilation error,364,replace,[CE] no suitable method found for parseNumber(String,String,ParsePosition),Number im = parseNumber(source, getRealFormat(), pos); ,Number im = parseNumber(source, getImaginaryCharacter(), pos);
+compilation error,364,replace,[CE] cannot find symbol,Number im = parseNumber(source, getRealFormat(), pos); ,Number im = parseNumber(source, getImaginaryParameter(), pos);
+compilation error,361,add,[CE] variable pos is already defined in method parse(String,ParsePosition),,  ParsePosition pos = parse(source, getImaginaryCharacter());
+compilation error,361,add,[CE] variable pos is already defined in method parse(String,ParsePosition),,  ParsePosition pos = parse(source, getImaginaryCharacter(), pos);
+compilation error,361,add,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,,  parseAndIgnoreWhitespace(source, getImaginaryCharacter(), pos);
+increase failing tests,374,replace, [FE] AssertionFailedError testParseNegativeImaginary,int n = getImaginaryCharacter().length(); ,int n = getImaginaryCharacter().length() - 1;
+increase failing tests,365,replace, [FE] AssertionFailedError testParseNegativeImaginary,if (im == null) { ,if(im == null || pos.getIndex()!= initialIndex) {
+compilation error,365,replace,[CE] cannot find symbol,if (im == null) { ,if(im == null || im.isNumber()) {
+compilation error,365,replace,[CE] cannot find symbol,if (im == null) { ,if(im == null ||!re.isNumber()) {
+compilation error,374,add,[CE] variable startIndex is already defined in method parse(String,ParsePosition),,  int startIndex = parseIntPrimitive(source, pos);
+compilation error,375,replace,[CE] cannot find symbol,startIndex = pos.getIndex(); ,startIndex = pos.indexOf(n);
+compilation error,350,add,[CE] cannot find symbol endIndex,,  parseAndIgnoreWhitespace(source, startIndex, endIndex); pos.setIndex(initialIndex);
+compilation error,350,add,[CE] cannot find symbol endIndex,,  parseAndIgnoreWhitespace(source, startIndex, endIndex);
+compilation error,361,replace,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,parseAndIgnoreWhitespace(source, pos); ,parseAndIgnoreWhitespace(source, pos, startIndex);
+compilation error,361,replace,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,parseAndIgnoreWhitespace(source, pos); ,parseAndIgnoreWhitespace(source, startIndex);
+compilation error,237,replace,[CE] bad operand types for binary operator '-',return getDefaultNumberFormat(Locale.getDefault()); ,return getDefaultNumberFormat(Locale.getDefault() - 1);
+compilation error,237,replace,[CE] bad operand types for binary operator '+',return getDefaultNumberFormat(Locale.getDefault()); ,return getDefaultNumberFormat(Locale.getDefault() + 1);
+compilation error,59,add,[CE] call to this must be first statement in constructor,,  this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_FIELD_NAMES);
+compilation error,59,add,[CE] call to this must be first statement in constructor,,  this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_NUMBER_FORMAT);
+compilation error,364,add,[CE] unreachable statement,,  parseAndIgnoreWhitespace(source, pos); return null;
+compilation error,237,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(DEFAULT_IMAGINARY_CHARACTER);
+compilation error,237,add,[CE] illegal start of expression,,  if(imaginaryCharacter!= null) { if(getImaginaryCharacter().equals(DEFAULT_IMAGINARY_CHARACTER)) { return getImaginaryNumberFormat(DeFAULT_IMAGINARY_CHARACTER); }
+compilation error,237,add,[CE] illegal start of expression,,  if(imaginaryCharacter == null) { if(getImaginaryCharacter().equals(DEFAULT_IMAGINARY_CHARACTER)) { return getImaginaryNumberFormat(DeFAULT_IMAGINARY_CHARACTER); }
+compilation error,237,add,[CE] illegal start of expression,,  if(imaginaryCharacter!= null) { if(getImaginaryCharacter().equals(DEFAULT_IMAGINARY_CHARACTER)) { throw new IllegalArgumentException(""); }
+compilation error,237,add,[CE] illegal start of expression,,  if(imaginaryCharacter == null) { if(getImaginaryCharacter().equals(DEFAULT_IMAGINARY_CHARACTER)) { throw new IllegalArgumentException(""); }
+compilation error,58,add,[CE] no suitable constructor found for ComplexFormat(String,String),,  this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_IMAGINARY_CHARACTER);
+compilation error,58,add,[CE] cannot find symbol DEFAULT_IMAGINARY_FORMAT,,  this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_IMAGINARY_FORMAT);
+compilation error,58,add,[CE] cannot find symbol DEFAULT_FIELD_NAMES,,  this(DEFAULT_IMAGINARY_CHARACTER, DEFAULT_FIELD_NAMES);
+compilation error,365,add,[CE] unreachable statement,,  pos.setIndex(initialIndex); return null;
+increase failing tests,375,add, [FE] AssertionFailedError testParseNegativeImaginary,,  pos.setIndex(initialIndex);
+compilation error,375,add,[CE] cannot find symbol,,  pos.setCharacter(im.toCharArray());
+compilation error,349,add,[CE] cannot find symbol endIndex,,  parseAndIgnoreWhitespace(source, startIndex, endIndex);
+compilation error,349,add,[CE] cannot find symbol endIndex,,  parseAndIgnoreWhitespace(source, startIndex, endIndex); pos.setIndex(initialIndex);
+compilation error,349,add,[CE] cannot find symbol endIndex,,  parseAndIgnoreWhitespace(source, startIndex, endIndex); pos.setIndex(startIndex);
+compilation error,349,add,[CE] cannot find symbol endIndex,,  parseAndIgnoreWhitespace(source, startIndex, endIndex); pos.setErrorIndex(startIndex);
+compilation error,364,add,[CE] cannot find symbol,,  parseAndIgnoreImaginaryCharacter(source, pos);
+increase failing tests,350,replace, [FE] AssertionFailedError testParseSimpleWithDecimals,break; ,pos.setErrorIndex(startIndex);
+compilation error,58,add,[CE] call to this must be first statement in constructor,,  this(DEFAULT_IMAGINARY_CHARACTER, NumberFormat.getInstance());
+compilation error,58,add,[CE] call to this must be first statement in constructor,,  this(DEFAULT_IMAGINARY_CHARACTER, NumberFormat.getNumberInstance());
+increase failing tests,374,replace, [FE] AssertionFailedError testParseNegativeImaginary,int n = getImaginaryCharacter().length(); ,int n = getImaginaryCharacter().length() + sign;
+increase failing tests,374,replace, [FE] StringIndexOutOfBoundsException testParseNegativeImaginary,int n = getImaginaryCharacter().length(); ,int n = getImaginaryCharacter().length() - 2;
+compilation error,59,add,[CE] method setImaginaryCharacter in class ComplexFormat cannot be applied to given types;,,  setImaginaryCharacter(DEFAULT_IMAGINARY_CHARACTER, getImaginaryCharacter());
+compilation error,350,add,[CE] cannot find symbol im,,  pos.setIndex(initialIndex); return new Complex(re.doubleValue(), im.doubleValue(), 0.0);
+increase failing tests,350,add, [FE] AssertionFailedError testParseSimpleWithDecimals,,  parseAndIgnoreWhitespace(source, pos); pos.setIndex(initialIndex);
+increase failing tests,349,add, [FE] AssertionFailedError testParseSimpleWithDecimals,,  parseAndIgnoreWhitespace(source, pos); pos.setIndex(initialIndex);
+compilation error,349,add,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,,  parseAndIgnoreWhitespace(source, startIndex, pos); pos.setErrorIndex(startIndex);
+compilation error,365,add,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,,  parseAndIgnoreWhitespace(source, im, pos);
+compilation error,58,replace,[CE] cannot reference imaginaryCharacter before supertype constructor has been called,this(DEFAULT_IMAGINARY_CHARACTER, getDefaultNumberFormat()); ,this(DEFAULT_IMAGINARY_CHARACTER, imaginaryCharacter, getDefaultNumberFormat());
+compilation error,237,add,[CE] illegal start of expression,,  if(DeFAULT_IMAGINARY_CHARACTER == null) { String imaginaryCharacter = getImaginaryCharacter(); if(imaginaryCharacter == null) { return getImaginaryCharacterFormat(imaginaryCharacter); }
+compilation error,237,add,[CE] illegal start of expression,,  if(DeFAULT_IMAGINARY_CHARACTER == null) { String imaginaryCharacter = getImaginaryCharacter(); if(imaginaryCharacter!= null) { return getImaginaryCharacterFormat(imaginaryCharacter); }
+compilation error,237,add,[CE] illegal start of expression,,  if(DeFAULT_IMAGINARY_CHARACTER == null) { String imaginaryCharacter = getImaginaryCharacter(); if(imaginaryCharacter == null) { return getImaginaryCharacterFormat(realFormat); }
+compilation error,237,add,[CE] illegal start of expression,,  if(DeFAULT_IMAGINARY_CHARACTER == null) { String imaginaryCharacter = getImaginaryCharacter(); if(imaginaryCharacter == null) { return false; }
+increase failing tests,361,add, [FE] AssertionFailedError testParseNegativeImaginary,,  parseNextCharacter(source, pos);
+compilation error,364,replace,[CE] cannot find symbol,Number im = parseNumber(source, getRealFormat(), pos); ,Number im = parseNumber(source, getDecimalFormat(), pos);
+compilation error,365,replace,[CE] cannot find symbol,if (im == null) { ,if(im == null || im.length() == 0) {
+increase failing tests,365,replace, [FE] AssertionFailedError testParseNegativeImaginary,if (im == null) { ,if(im == null || im.intValue()!= 0) {
+compilation error,361,replace,[CE] method parseAndIgnoreWhitespace in class ComplexFormat cannot be applied to given types;,parseAndIgnoreWhitespace(source, pos); ,parseAndIgnoreWhitespace(source, startIndex, pos);
+compilation error,375,add,[CE] variable c is already defined in method parse(String,ParsePosition),,  char c = getImaginaryCharacter().charAt(n);
+increase failing tests,375,replace, [FE] AssertionFailedError testParseNegativeImaginary,startIndex = pos.getIndex(); ,startIndex = pos.getIndex() - n;
+increase failing tests,375,replace, [FE] StringIndexOutOfBoundsException testParseNegativeImaginary,startIndex = pos.getIndex(); ,startIndex = pos.getIndex() + n;

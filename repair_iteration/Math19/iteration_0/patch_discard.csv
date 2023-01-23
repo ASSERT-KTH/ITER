@@ -1,0 +1,186 @@
+compilation error,515,add,[CE] illegal start of expression,,  if(hasFiniteBounds) { if(!Double.isInfinite(uB[i])|| Double.isInfinite(uB[i])) { hasFiniteBounds = false; }
+compilation error,515,add,[CE] illegal start of expression,,  if(hasFiniteBounds) { if(!Double.isInfinite(uB[i])|| Double.isInfinite(uB[i])) { hasFiniteBounds = true; }
+compilation error,515,add,[CE] illegal start of expression,,  if(hasFiniteBounds) { if(!Double.isInfinite(uB[i])|| Double.isInfinite(uB[i])) { haveFiniteBounds = false; }
+compilation error,515,add,[CE] illegal start of expression,,  if(hasFiniteBounds) { if(!Double.isInfinite(uB[i])|| Double.isInfinite(uB[i])) { haveFiniteBounds = true; }
+compilation error,515,add,[CE] illegal start of expression,,  if(hasFiniteBounds) { if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasFiniteBounds = false; }
+compilation error,570,add,[CE] no suitable method found for max(int,double[]),,  double[][] boundaries = Math.max(lambda, guess);
+compilation error,570,add,[CE] no suitable method found for max(int,boolean),,  double[][] boundaries = Math.max(lambda, false);
+compilation error,570,add,[CE] incompatible types,,  double[][] boundaries = Math.max(guess.length, lambda);
+compilation error,570,add,[CE] no suitable method found for max(int),,  double[][] boundaries = Math.max(lambda);
+compilation error,570,add,[CE] no suitable method found for max(int,boolean),,  double[][] bounds = Math.max(lambda, false);
+compilation error,536,replace,[CE] cannot find symbol borders,boundaries[0] = lB; ,borders[0] = lB;
+compilation error,536,replace,[CE] cannot find symbol pcCol,boundaries[0] = lB; ,boundaries[0] = pcCol;
+increase failing tests,536,replace, [FE] OutOfRangeException testConstrainedRosen,boundaries[0] = lB; ,boundaries[0] = uB;
+increase failing tests,536,replace, [FE] NullPointerException testConstrainedRosen,boundaries[0] = lB; , 
+compilation error,514,add,[CE] illegal start of expression,,  if(hasInfiniteBounds) { if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; }
+compilation error,514,add,[CE] cannot find symbol hasInfiniteBounds,,  if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; }
+compilation error,514,add,[CE] cannot find symbol hasInfiniteBounds,,  if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; break; }
+compilation error,514,add,[CE] illegal start of expression,,  if(hasInfiniteBounds) { if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; }
+compilation error,514,add,[CE] illegal start of expression,,  if(hasInfiniteBounds) { if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; break; }
+compilation error,536,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(); }
+compilation error,536,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(); }
+compilation error,536,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,536,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,536,add,[CE] illegal start of expression,,  if(hasInfiniteBounds) { if(!hasInfiniteBounds) { boundaries[2][] = lB; }
+compilation error,521,replace,[CE] incompatible types,for (int i = 0; i < lB.length; i++) { ,for(int i = 0; i >> lB.length; i++) {
+increase failing tests,521,replace, [FE] ArrayIndexOutOfBoundsException testConstrainedRosen,for (int i = 0; i < lB.length; i++) { ,for(int i = 0; i <= lB.length; i++) {
+compilation error,521,replace,[CE] illegal start of type,for (int i = 0; i < lB.length; i++) { , 
+compilation error,247,replace,[CE] illegal start of expression,} ,this.isRepairMode();
+compilation error,247,replace,[CE] illegal start of expression,} ,if(isRepairMode) { for(int i = 0; i < this.statisticsSigmaHistory.size(); i++) { setImpl(i, null); }
+compilation error,247,replace,[CE] illegal start of expression,} ,if(isRepairMode) { for(int i = 0; i < this.datasets.size(); i++) { setImpl(i, null); }
+compilation error,247,replace,[CE] illegal start of expression,} ,this.statisticsMeanHistory = getStatisticsMean();
+compilation error,247,replace,[CE] illegal start of expression,} , 
+compilation error,570,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(3. * Math.log(guess));
+compilation error,570,replace,[CE] possible loss of precision,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 *(2.5 * Math.log(dimension));
+compilation error,570,replace,[CE] ';' expected,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 1 +(int)3. * Math.log(dimension));
+compilation error,570,replace,[CE] <identifier> expected,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(3). * Math.log(guess));
+increase failing tests,246,replace, [FE] NoDataException testMath864,this(0); ,this(1);
+increase failing tests,514,replace, [FE] AssertionError testUnsupportedBoundaries1,hasFiniteBounds = true; ,hasFiniteBounds = false;
+increase failing tests,514,replace, [FE] AssertionError testUnsupportedBoundaries1,hasFiniteBounds = true; ,hasFiniteBounds = false; lB[i] = uB[i];
+compilation error,514,replace,[CE] double cannot be dereferenced,hasFiniteBounds = true; ,hasFiniteBounds = false; lB[i] = uB[i].infinite();
+compilation error,514,replace,[CE] incompatible types,hasFiniteBounds = true; ,hasFiniteBounds = false; lB[i] = getLowerBound();
+compilation error,521,add,[CE] cannot assign a value to final variable length,,  lB.length = lB.length; hasFiniteBounds = true; break;
+compilation error,521,add,[CE] cannot assign a value to final variable length,,  lB.length = lB.length;
+compilation error,521,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = lB.substring(0, i);
+compilation error,521,add,[CE] cannot assign a value to final variable length,,  lB.length = lB.length; hasFiniteBounds = true;
+compilation error,521,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = lB.substring(0, i)+ 1;
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,double,RandomGenerator,boolean),,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,double,RandomGenerator,boolean),,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR, true);
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,boolean),,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,int,double,RandomGenerator,boolean),,  this(lambda, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,int,RandomGenerator,boolean),,  this(lambda, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, false);
+compilation error,246,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(double,RandomGenerator),,  this(DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR);
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(boolean,RandomGenerator),,  this(DEFAULT_ISACTIVECMA, DEFAULT_RANDOMGENERATOR);
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(double),,  this(DEFAULT_STOPFITNESS);
+compilation error,246,add,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,,  this(DEFAULT_ISACTIVECMA, DEFAULT_LOAD_FACTOR);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_STOPFITNESS);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_ISACTIVECMA);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_ISACTIVECMA, false);
+compilation error,537,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(); }
+compilation error,537,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(); }
+compilation error,537,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(!hasFiniteBounds) { throw new MathUnsupportedOperationException(); }
+compilation error,537,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,537,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,535,replace,[CE] cannot find symbol borders,boundaries = new double[2][]; ,borders = new double[2][];
+increase failing tests,535,replace, [FE] ArrayIndexOutOfBoundsException testConstrainedRosen,boundaries = new double[2][]; ,boundaries = new double[0][];
+compilation error,535,replace,[CE] cannot find symbol bounds,boundaries = new double[2][]; ,bounds = new double[2][];
+increase failing tests,535,replace, [FE] NullPointerException testConstrainedRosen,boundaries = new double[2][]; , 
+increase failing tests,537,replace, [FE] OutOfRangeException testConstrainedRosen,boundaries[1] = uB; ,boundaries[1] = lB;
+compilation error,537,replace,[CE] cannot find symbol b,boundaries[1] = uB; ,boundaries[1] = b;
+compilation error,537,replace,[CE] incompatible types,boundaries[1] = uB; ,boundaries[1] = cs;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getFixedBounds();
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? DEFAULT_ISACTIVECMA : null;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? DEFAULT_STOPFITNESS : null;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = new double[2][];
+compilation error,253,replace,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,boolean,int,int,boolean),this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, false);
+compilation error,253,replace,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,double,int,int,boolean),this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_STOPFITNESS, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, false);
+compilation error,253,replace,[CE] illegal start of expression,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT,
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, DEFAULT_
+compilation error,536,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { for(RealMatrix B : getDeepestCommonParameters()) { boundaries[0] = lB; borders[1] = uB; }
+compilation error,536,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { for(RealMatrix B : getDeepestCommonParameters()) { boundaries[0] = lB; boundary[1] = uB; }
+compilation error,536,add,[CE] cannot find symbol bounds,,  Arrays.sort(bounds);
+compilation error,247,add,[CE] cannot find symbol,,  setFixedOptimizer(new DoubleInputStreamReader());
+compilation error,247,add,[CE] cannot find symbol DEFAULT_FIELD_NAME,,  setFieldOptimizer(DEFAULT_FIELD_NAME);
+compilation error,247,add,[CE] cannot find symbol,,  setFields();
+compilation error,247,add,[CE] cannot find symbol DEFAULT_FIELD_NAMES,,  setFieldOptimizer(DEFAULT_FIELD_NAMES);
+compilation error,247,add,[CE] cannot find symbol,,  setFieldOptimizer(getCrc());
+compilation error,521,add,[CE] cannot find symbol i,,  lB[i] = lB[i];
+compilation error,521,add,[CE] no suitable method found for sort(double[],int),,  Arrays.sort(lB, 0);
+compilation error,521,add,[CE] no suitable method found for sort(double[],double[]),,  Arrays.sort(lB, uB);
+compilation error,246,replace,[CE] no suitable constructor found for CMAESOptimizer(boolean),this(0); ,this(DEFAULT_ISACTIVECMA);
+compilation error,246,replace,[CE] no suitable constructor found for CMAESOptimizer(boolean,int),this(0); ,this(DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY);
+compilation error,535,add,[CE] cannot find symbol,,  double[][] boundaries = getBounds();
+compilation error,535,add,[CE] cannot find symbol,,  double[][] boundaries = getField().getBounds();
+increase failing tests,535,add, [FE] AssertionError testInputSigmaOutOfRange,,  double[][] boundaries = new double[2][0];
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getFieldValues();
+compilation error,246,add,[CE] cannot find symbol DEFAULT_RANDOMGONALONLY,,  this(DEFAULT_ISACTIVECMA, DEFAULT_RANDOMGONALONLY);
+compilation error,246,add,[CE] cannot find symbol,,  Preconditions.checkNotNull(getCmDimensions());
+compilation error,570,add,[CE] cannot find symbol,,  double[][] boundaries = Math.exp(getBounds());
+compilation error,570,add,[CE] incompatible types,,  double[][] boundaries = Math.abs(lambda);
+compilation error,570,add,[CE] no suitable method found for max(int,boolean),,  double[] boundaries = Math.max(lambda, false);
+compilation error,570,add,[CE] incompatible types,,  double[][] boundaries = Math.max(lambda, 0);
+compilation error,537,replace,[CE] cannot find symbol borders,boundaries[1] = uB; ,borders[1] = lB;
+compilation error,537,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(lB == uB) { throw new MathUnsupportedOperationException(""); }
+compilation error,537,add,[CE] 'else' without 'if',,  if(!hasInfiniteBounds) { if(!hasInfiniteBounds) { return; }
+compilation error,514,add,[CE] illegal start of expression,,  if(init == lB[i]) { if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) {
+compilation error,514,add,[CE] illegal start of expression,,  if(init == lB[i]) { if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) {
+compilation error,514,add,[CE] illegal start of expression,,  if(init == lB[i]) { if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; }
+compilation error,514,add,[CE] illegal start of expression,,  if(init == lB[i]) { if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { throw new IllegalArgumentException(""); }
+compilation error,514,add,[CE] illegal start of expression,,  if(init == lB[i]) { if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { haveInfiniteBounds = true; }
+compilation error,253,replace,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,boolean,int,int,int,boolean),this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, lambda, false);
+compilation error,253,replace,[CE] cannot find symbol DEFAULT_ISAGONALONLY,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, lambda, false);
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOM
+increase failing tests,570,replace, [FE] NegativeArraySizeException testMath864,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 256 +(int)(3. * Math.log(lambda));
+compilation error,570,replace,[CE] illegal start of expression,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 256 +(int)(. * Math.log(guess));
+compilation error,570,replace,[CE] illegal start of expression,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = lm +(int)(. * Math.log(guess.length));
+compilation error,570,replace,[CE] illegal start of expression,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 0 +(int)(. * Math.log(guess));
+increase failing tests,535,replace, [FE] ArrayIndexOutOfBoundsException testConstrainedRosen,boundaries = new double[2][]; ,boundaries = new double[1][];
+compilation error,535,replace,[CE] cannot find symbol borders,boundaries = new double[2][]; ,borders = new double[1][];
+compilation error,514,replace,[CE] cannot find symbol hasInfiniteBounds,hasFiniteBounds = true; ,hasInfiniteBounds = false;
+compilation error,515,add,[CE] cannot find symbol hasInfiniteBounds,,  lB[i] = lB[i]; hasInfiniteBounds = false;
+increase failing tests,515,add, [FE] AssertionError testUnsupportedBoundaries1,,  if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasFiniteBounds = false; }
+increase failing tests,515,add, [FE] IllegalArgumentException testConstrainedRosen,,  if(!Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { throw new IllegalArgumentException(""); }
+increase failing tests,515,add, [FE] AssertionError testUnsupportedBoundaries1,,  lB[i] = lB[i]; hasFiniteBounds = false;
+compilation error,515,add,[CE] cannot find symbol data,,  if(!Double.isInfinite(uB[i])|| Double.isInfinite(lB[i])) { hasFiniteBounds = true; hasFiniteBounds = false; Arrays.sort(this.data); }
+compilation error,253,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,253,add,[CE] no suitable constructor found for BaseAbstractMultivariateSimpleBoundsOptimizer(int),,  super(lambda);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda!= 0);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda >= 0);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda == 0);
+compilation error,535,add,[CE] no suitable method found for sort(double[],double[]),,  Arrays.sort(lB, uB);
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getFixedBounds(); hasInfiniteBounds = false;
+compilation error,535,add,[CE] no suitable method found for sort(double[],double[]),,  Arrays.sort(lB, uB); hasInfiniteBounds = false;
+increase failing tests,535,add, [FE] StackOverflowError testConstrainedRosen,,  checkParameters();
+compilation error,515,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = lB.toString(); hasInfiniteBounds = false;
+compilation error,515,add,[CE] cannot find symbol,,  checkFiniteBounds(lB[i], uB[i]);
+compilation error,515,add,[CE] cannot find symbol,,  checkFiniteBounds(lB, uB);
+compilation error,515,add,[CE] cannot find symbol,,  checkFixedBounds(lB, uB); hasInfiniteBounds = false;
+compilation error,515,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = lB.toString(); hasFiniteBounds = false;
+compilation error,247,add,[CE] cannot find symbol DateTimeZone,,  setStandardDeviation(DateTimeZone.getDefault());
+compilation error,247,add,[CE] cannot find symbol,,  setStandardCreation(createStandardCreation());
+compilation error,247,add,[CE] cannot return a value from method whose result type is void,,  return new CMAESOptimizer(this, false);
+compilation error,247,add,[CE] cannot return a value from method whose result type is void,,  return new CMAESOptimizer(this, true);
+compilation error,247,add,[CE] cannot find symbol,,  setStandardCreation(getCreator());
+compilation error,521,replace,[CE] cannot find symbol oB,for (int i = 0; i < lB.length; i++) { ,for(int i = 0; i < oB.length; i++) {
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLE
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFE
+compilation error,246,add,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,,  this(DEFAULT_ISACTIVECMA, DEFAULT_LOAD_FACTOR, false);
+compilation error,246,add,[CE] cannot find symbol DEFAULT_NAMELERATIONS,,  this(DEFAULT_ISACTIVECMA, DEFAULT_NAMELERATIONS);
+compilation error,514,replace,[CE] cannot find symbol hasFIniteBounds,hasFiniteBounds = true; ,hasFIniteBounds = false;
+compilation error,514,replace,[CE] unexpected type,hasFiniteBounds = true; ,!hasFiniteBounds = true;
+increase failing tests,537,add, [FE] MathUnsupportedOperationException testConstrainedRosen,,  if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(); }
+compilation error,537,add,[CE] 'else' without 'if',,  if(hasInfiniteBounds) { if(!isActive()) { throw new MathUnsupportedOperationException(""); }
+compilation error,537,add,[CE] no suitable constructor found for MathUnsupportedOperationException(String),,  if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,537,add,[CE] no suitable constructor found for MathUnsupportedOperationException(String),,  if(hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,536,add,[CE] cannot find symbol bounds,,  uUtil.checkParams(bounds[0], uB, false);
+compilation error,536,add,[CE] cannot find symbol bounds,,  uUtil.checkParams(bounds[0], uB);
+compilation error,536,add,[CE] cannot assign a value to final variable uB,,  uB = Math.pow(10, uB, 0, boundaries.length);
+compilation error,536,add,[CE] cannot assign a value to final variable uB,,  uB = Math.pow(10, uB, 0, boundaries[0]);
+compilation error,521,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = Double.valueOf(lB[i]);
+compilation error,521,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = getFixedUtilities().toArray(new Double[lB.length]);
+compilation error,521,add,[CE] variable uB is already defined in method checkParameters(),,  double[][] uB = getFixedUtilities();
+compilation error,521,add,[CE] variable uB is already defined in method checkParameters(),,  double uB = Double.valueOf(lB[i]);
+compilation error,521,add,[CE] ';' expected,,  lB[i] = lB[i] - 1];
+compilation error,247,replace,[CE] illegal start of expression,} ,peg(Calendar.getInstance());
+compilation error,247,replace,[CE] illegal start of expression,} ,peg(Calendar.getInput());
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda < 0);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(lambda);
+compilation error,570,add,[CE] cannot find symbol,,  setDefinedBounds(guess);
+compilation error,570,add,[CE] cannot find symbol math,,  double[][] boundaries = Math.max(math.length, guess);
+compilation error,570,add,[CE] cannot find symbol,,  setDefinedBounds(guess, false);
+compilation error,570,add,[CE] cannot find symbol g2,,  Arrays.fill(g2, guess);
+compilation error,570,add,[CE] cannot find symbol label,,  Arrays.sort(label);
+increase failing tests,515,replace, [FE] IllegalArgumentException testConstrainedRosen,break; ,throw new IllegalArgumentException("");
+compilation error,515,replace,[CE] package Statistics does not exist,break; ,if(!Double.isInfinite(lB[i])&&!Double.isInfinite(uB[i])) { break; } else { Statistics.Math.abs[i] = Math.abs(lB[i]); }
+compilation error,514,add,[CE] illegal start of expression,,  if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { Arrays.sort(lB[i]); if(hasInfiniteBounds) { hasInfiniteBounds = true; }
+compilation error,514,add,[CE] illegal start of expression,,  if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { Arrays.sort(lB[i]); if(!Double.isInfinite(uB[i])) {
+compilation error,514,add,[CE] illegal start of expression,,  if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { if(!Double.isInfinite(lB[i])) {
+compilation error,514,add,[CE] cannot find symbol hasInfiniteBounds,,  if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { hasInfiniteBounds = true; }
+compilation error,514,add,[CE] ';' expected,,  if(Double.isInfinite(lB[i])|| Double.isInfinite(uB[i])) { Arrays.sort(lB[i]); if(hasInfiniteBounds) { hasInfiniteBounds = true
+compilation error,536,replace,[CE] cannot find symbol i,boundaries[0] = lB; ,boundaries[0] = i;
+compilation error,570,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(0.5 * Math.log(guess));
+compilation error,570,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 3 +(int) (3. * Math.log(guess));
+compilation error,570,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(2.5 * Math.log(guess));

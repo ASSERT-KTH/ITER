@@ -1,0 +1,27 @@
+increase failing tests,828,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double ca = SPLIT_FACTOR * ai; ,final double ca = SPLIT_FACTOR * prodLowSum;
+increase failing tests,826,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,for (int i = 0; i < len; i++) { ,for(int i = 1; i < len; i++) {
+increase failing tests,817,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,if (len != b.length) { ,if(len == b.length) {
+increase failing tests,824,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,double prodLowSum = 0; ,double prodLowSum = 1;
+increase failing tests,824,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,double prodLowSum = 0; ,double prodLowSum = 2;
+increase failing tests,823,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double[] prodHigh = new double[len]; ,final double[] prodHigh = new double[len - 1];
+increase failing tests,827,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double ai = a[i]; ,final double ai = prodHigh[i];
+increase failing tests,827,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double ai = a[i]; ,final double ai = a[i] * SPLIT_FACTOR;
+increase failing tests,827,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double ai = a[i]; ,final double ai = b[i];
+increase failing tests,816,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,final int len = a.length; ,final int len = a.length - 1;
+increase failing tests,816,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,final int len = a.length; ,final int len = a.length * 2;
+increase failing tests,816,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,final int len = a.length; ,final int len = a.length - 2;
+increase failing tests,832,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double bi = b[i]; ,final double bi = a[i];
+increase failing tests,832,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double bi = b[i]; ,final double bi = prodHigh[i];
+increase failing tests,830,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double aLow = ai - aHigh; ,final double aLow = ca - aHigh;
+increase failing tests,830,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double aLow = ai - aHigh; ,final double aLow = ai - ai;
+increase failing tests,829,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double aHigh = ca - (ca - ai); ,final double aHigh = ca -(ai - ca);
+increase failing tests,830,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double aLow = ai - aHigh; ,final double aLow = ai - aHigh + 1;
+increase failing tests,832,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double bi = b[i]; ,final double bi = b[i] - 1;
+increase failing tests,832,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double bi = b[i]; ,final double bi = b[0];
+increase failing tests,817,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,if (len != b.length) { ,if(len!= 0 ||(a.length + len)> b.length) {
+increase failing tests,817,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,if (len != b.length) { ,if(len!= 0 ||(a.length < b.length - 1)||(b.length!= 0)) {
+increase failing tests,817,replace, [FE] DimensionMismatchException testLinearCombinationWithSingleElementArray,if (len != b.length) { ,if(len!= a.length || len < b.length ||(a.length + len)> b.length) {
+increase failing tests,829,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double aHigh = ca - (ca - ai); ,final double aHigh = ca -(ca - ai * ai);
+increase failing tests,823,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final double[] prodHigh = new double[len]; ,final double[] prodHigh = new double[1];
+increase failing tests,823,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationInfinite,final double[] prodHigh = new double[len]; ,final double[] prodHigh = new double[2];
+increase failing tests,816,replace, [FE] ArrayIndexOutOfBoundsException testLinearCombinationWithSingleElementArray,final int len = a.length; ,final int len = a.length * b.length;

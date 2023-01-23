@@ -1,0 +1,193 @@
+compilation error,124,add,[CE] no suitable method found for solve(double,double,double,AllowedSolution),,  solve(min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumFractionDigits();
+compilation error,124,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumSize();
+compilation error,124,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumFractionDigits(min, startValue);
+compilation error,124,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumFractionDigits(min, max);
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = f0 -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = x0 -(( f1 *(x1 - x0)) /(f1 - x0));
+compilation error,160,replace,[CE] cannot find symbol x,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); , 
+increase failing tests,155,replace, [FE] AssertionError testIssue631,boolean inverted = false; ,boolean inverted = true;
+compilation error,155,replace,[CE] cannot assign a value to final variable inverted,boolean inverted = false; ,final boolean inverted = false;
+compilation error,155,replace,[CE] cannot assign a value to final variable inverted,boolean inverted = false; ,final boolean inverted = true;
+compilation error,155,replace,[CE] cannot find symbol inverted,boolean inverted = false; , 
+compilation error,189,replace,[CE] method computeObjectiveValue in class BaseAbstractUnivariateRealSolver<FUNC> cannot be applied to given types;,f0 = computeObjectiveValue(x0); ,f0 = computeObjectiveValue(x0, atol);
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeRelativeAccuracy(x0);
+compilation error,149,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getTotalFunctionValueAccuracy();
+compilation error,149,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFullAccuracy();
+compilation error,149,replace,[CE] cannot find symbol ftol,final double ftol = getFunctionValueAccuracy(); , 
+compilation error,188,add,[CE] ';' expected,,  atol = Math.max(rtol - FastMath.abs(x1), atol));
+compilation error,188,add,[CE] ';' expected,,  double rtol = Math.max(rtol * FastMath.abs(x1), atol));
+compilation error,188,add,[CE] ';' expected,,  double rtol = Math.max(rtol - FastMath.abs(x1), atol));
+compilation error,188,add,[CE] ';' expected,,  double atol = Math.max(rtol - FastMath.abs(x1), atol));
+compilation error,188,add,[CE] ';' expected,,  double rtol = Math.max(rtol / FastMath.abs(x1), atol));
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAttributeAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAtomicAccuracy();
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAttributesAccuracy();
+compilation error,150,replace,[CE] cannot find symbol atol,final double atol = getAbsoluteAccuracy(); , 
+compilation error,124,replace,[CE] no suitable method found for solve(double,UnivariateRealFunction,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, f, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,replace,[CE] ')' expected,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(maxEval, UnivariateRealFunction f, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,replace,[CE] no suitable method found for solve(UnivariateRealFunction,int,double,double,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(f, maxEval, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,189,add,[CE] cannot find symbol,,  x0 = computeRelativeAccuracy(x1);
+compilation error,189,add,[CE] cannot find symbol,,  f1 = computeRelativeAccuracy(x0);
+compilation error,189,add,[CE] ';' expected,,  x0 = Math.max(rtol * FastMath.abs(x0), atol));
+compilation error,189,add,[CE] ';' expected,,  x0 = Math.max(rtol * FastMath.abs(x1), atol));
+compilation error,189,add,[CE] cannot find symbol,,  x0 = calculateRelativeAccuracy(x1);
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol); atol = computeRelativeAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol);
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol); atol = calculateRelativeAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeRelativeAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(ftol); atol = computeRelativeAccuracy();
+compilation error,237,add,[CE] incompatible types,,  AllowedSolution allowed = Math.max(rtol * FastMath.abs(x1), atol);
+compilation error,237,add,[CE] ';' expected,,  AllowedSolution allowed = Math.max(rtol * FastMath.abs(x1), atol));
+compilation error,237,add,[CE] ';' expected,,  AllowedSolution allowed = rtol * FastMath.abs(x1), atol);
+compilation error,237,add,[CE] ';' expected,,  allowed = Math.max(rtol * FastMath.abs(x1), atol));
+compilation error,237,add,[CE] incompatible types,,  AllowedSolution allowed = rtol * FastMath.abs(x1), atol;
+compilation error,237,replace,[CE] possible loss of precision,switch (allowed) { ,switch(atol) {
+compilation error,237,replace,[CE] incompatible types,switch (allowed) { ,switch(inverted) {
+compilation error,237,replace,[CE] incompatible types,switch (allowed) { ,switch(null) {
+compilation error,237,replace,[CE] cannot find symbol optional,switch (allowed) { ,switch(optional) {
+compilation error,239,replace,[CE] incompatible types,return x1; ,return(x0 - x1)? x1 : x0;
+compilation error,188,replace,[CE] relativeAccuracy has private access in BaseAbstractUnivariateRealSolver,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + x1 - FastMath.max(relativeAccuracy * FastMath.abs(x1), atol));
+compilation error,188,replace,[CE] relativeAccuracy has private access in BaseAbstractUnivariateRealSolver,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x1 + x1 - FastMath.max(relativeAccuracy * FastMath.abs(x1), atol));
+compilation error,151,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRadiusAccuracy();
+compilation error,151,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRrelativeAccuracy();
+compilation error,151,replace,[CE] cannot find symbol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRawAccuracy();
+compilation error,151,replace,[CE] cannot find symbol rtol,final double rtol = getRelativeAccuracy(); , 
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(!inverted) { return x1; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(f0 == 0.0) { return x1; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(!inverted) { return x0; }
+compilation error,149,add,[CE] illegal start of expression,,  if(f1 == 0.0) { if(inverted) { return x1; }
+compilation error,149,add,[CE] illegal start of expression,,  if(x1 > x0) { if(!inverted) { return x1; }
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = computeFunctionValue(rtol);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(rtol);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = computeFunctionValue(atol);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeFunctionValue(atol);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = atol *(rtol);
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbsoluteAccuracy();
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getFunctionValueAccuracy();
+compilation error,150,add,[CE] variable rtol is already defined in method doSolve(),,  final double rtol = getRelativeAccuracy();
+compilation error,150,add,[CE] variable fx is already defined in method doSolve(),,  final double fx = getRelativeAccuracy();
+compilation error,239,add,[CE] unreachable statement,,  return(f1 <= 0)? x1 : x0;
+compilation error,239,add,[CE] an enum switch case label must be the unqualified name of an enumeration constant,,  return inverted? x0 : x1; case STANDARD_SIDE: return(f1 <= 0)? x1 : x0;
+compilation error,239,add,[CE] an enum switch case label must be the unqualified name of an enumeration constant,,  return inverted? x0 : x1; case STANDARD_SIDE: return(f1 << 0)? x1 : x0;
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbsoluteAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAttributeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy(atol);
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = computeAbsoluteAccuracy();
+compilation error,237,add,[CE] incompatible types,,  boolean allowed = Math.max(rtol * FastMath.abs(x1), atol);
+compilation error,237,add,[CE] incompatible types,,  Method allowed = Math.max(rtol * FastMath.abs(x1), atol);
+compilation error,237,add,[CE] incompatible types,,  boolean allowed = Math.max(rtol * FastMath.abs(x0), atol);
+compilation error,237,add,[CE] incompatible types,,  Method allowed = Math.max(rtol * FastMath.abs(x0), atol);
+compilation error,237,add,[CE] ';' expected,,  boolean allowed = Math.max(rtol * FastMath.abs(x1), atol)) { case f0: return inverted;
+compilation error,188,replace,[CE] relativeAccuracy has private access in BaseAbstractUnivariateRealSolver,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + x1 - FastMath.max(relativeAccuracy * FastMath.abs(x1), absoluteAccuracy));
+compilation error,188,replace,[CE] ';' expected,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + x1)- FastMath.max(relativeAccuracy * FastMath.abs(x1), absoluteAccuracy));
+compilation error,188,replace,[CE] relativeAccuracy has private access in BaseAbstractUnivariateRealSolver,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + atol - FastMath.max(relativeAccuracy * FastMath.abs(x1), absoluteAccuracy));
+compilation error,188,replace,[CE] relativeAccuracy has private access in BaseAbstractUnivariateRealSolver,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + x1 - FastMath.max(relativeAccuracy * FastMath.abs(x1), relativeAccuracy));
+compilation error,150,replace,[CE] cannot find symbol,final double atol = getAbsoluteAccuracy(); ,final double atol = getAbsoluteAccessuracy();
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeFastValue(x0);
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeFactoryValue(x0);
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeFactory(x0);
+compilation error,239,add,[CE] unreachable statement,,  return(x0 == 0)? x0 : x1;
+compilation error,239,add,[CE] ';' expected,,  return(x0 == 0)? x0 : x1);
+compilation error,149,add,[CE] cannot find symbol,,  ensureBracketing(x0, x1);
+compilation error,149,add,[CE] cannot find symbol,,  ensureBracketing(x0, x1); System.arraycopy(x0, x1, f0, x1, DEFAULT_ABSOLUTE_ACCURACY);
+compilation error,149,add,[CE] cannot find symbol,,  setResult(x0, x1);
+compilation error,149,add,[CE] cannot find symbol,,  ensureBracketing(x0, x1); System.arraycopy(x0, x1, f0, x1, DEFAULT_ABSOLUTE_ACCURacy);
+compilation error,149,add,[CE] illegal start of expression,,  if(f0 == 0.0) { if(!f0.equals(x1)) { return x1; }
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : rtol;
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : getAbstractAccuracy();
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : inverted;
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)? atol : getAbsoluteAccuracy();
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 =(atol > rtol)/ atol;
+compilation error,237,replace,[CE] incompatible types,switch (allowed) { ,switch(false) {
+compilation error,155,replace,[CE] ';' expected,boolean inverted = false; ,boolean inverted =(atol > 0.0)&& rtol < 0.0)&&(rtol < 0.0)&& rtol <= 1.0;
+compilation error,124,replace,[CE] cannot find symbol minEval,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(minEval, f, min, max, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,replace,[CE] no suitable method found for solve(double,double,UnivariateRealFunction,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, max, f, startValue, AllowedSolution.ANY_SIDE);
+compilation error,149,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getInitialValueAccuracy();
+compilation error,124,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, startValue, maxEval);
+compilation error,124,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumFunction(); solve(min, max, startValue);
+compilation error,124,add,[CE] variable min is already defined in method solve(int,UnivariateRealFunction,double,double,double),,  final int min = f.getMinimumSize(); solve(min, max, startValue);
+compilation error,124,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, startValue, f);
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAlternativeAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy(); atol = getAbsoluteAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getFunctionValueAccuracy();
+compilation error,151,add,[CE] variable x0 is already defined in method doSolve(),,  final double x0 = Math.max(atol, DEFAULT_ABSOLUTE_ACCURACY);
+compilation error,189,add,[CE] cannot find symbol,,  x0 = computeRelativeAccuracy(x0);
+compilation error,189,add,[CE] cannot find symbol,,  x0 = computeNegativeValue(x0);
+compilation error,189,add,[CE] cannot find symbol,,  x0 = computeComparableValue(x0);
+compilation error,189,add,[CE] cannot find symbol,,  x0 = computeRelativeAccuracy(x0, atol);
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x0 - x1)) /(f1 - x0));
+increase failing tests,160,replace, [FE] java.lang.Exception: Unexpected exception testIssue631,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( 1 *(x1 - x0)) /(f1 - x0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = atol -(( f1 *(x1 - x0)) /(f1 - f0));
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbstractAccuracy(); atol = getRelativeAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbstractAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy(); atol = getAbsoluteAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getRelativeAccuracy(); atol = getAbstractAccuracy();
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAlternativeAccuracy();
+compilation error,150,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getAbstractAccuracy();
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.min(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,188,add,[CE] variable atol is already defined in method doSolve(),,  double atol = Math.min(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.min(relativeAccuracy * Math.abs(x0), absoluteAccuracy);
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.min(relativeAccuracy * Math.abs(x1), absoluteAccuracy); x0 = 0.5 *(x0 + x1);
+compilation error,151,replace,[CE] cannot find symbol Atol,final double rtol = getRelativeAccuracy(); ,final double rtol = getRelativeAccuracy() + Atol.POSITIVE_INFINITY;
+compilation error,155,replace,[CE] not a statement,boolean inverted = false; ,last boolean inverted = false;
+compilation error,189,add,[CE] ';' expected,,  x0 = Math.max(x0 - FastMath.abs(x0), atol));
+compilation error,189,add,[CE] absoluteAccuracy has private access in BaseAbstractUnivariateRealSolver,,  x0 = Math.max(x0 - FastMath.abs(x0), absoluteAccuracy);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, absoluteAccuracy);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, atol);
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = Math.max(rtol, absoluteAccuracy); atol = rtol;
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = atol * atol + inverted;
+compilation error,160,add,[CE] variable f0 is already defined in method doSolve(),,  double f0 = atol * atol + inverted;
+compilation error,124,replace,[CE] no suitable method found for solve(double,int,UnivariateRealFunction,double,AllowedSolution),return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(min, maxEval, f, startValue, AllowedSolution.ANY_SIDE);
+compilation error,124,replace,[CE] cannot find symbol minEval,return solve(maxEval, f, min, max, startValue, AllowedSolution.ANY_SIDE); ,return solve(minEval, f, startValue, max, min, f, AllowedSolution.ANY_SIDE);
+compilation error,151,replace,[CE] variable rtol might not have been initialized,final double rtol = getRelativeAccuracy(); ,final double rtol = getRelativeAccuracy() * Math.abs(atol - rtol);
+compilation error,237,replace,[CE] incompatible types,switch (allowed) { ,switch(true) {
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeRule(x0);
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeIntegerValue(x0);
+compilation error,189,replace,[CE] cannot find symbol,f0 = computeObjectiveValue(x0); ,f0 = computeRangeValue(x0);
+compilation error,188,replace,[CE] cannot find symbol max,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + max - FastMath.max(relativeAccuracy * FastMath.abs(x1), absoluteAccuracy));
+compilation error,188,replace,[CE] relativeAccuracy has private access in BaseAbstractUnivariateRealSolver,x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol)); ,x0 = 0.5 *(x0 + f1 - FastMath.max(relativeAccuracy * FastMath.abs(x1), absoluteAccuracy));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = rtol -(( f1 *(x1 - x0)) /(f1 - f0));
+increase failing tests,160,replace, [FE] TooManyEvaluationsException testSolutionRightSide,final double x = x1 - ((f1 * (x1 - x0)) / (f1 - f0)); ,final double x = x0 -(( f1 *(x1 - x0)) /(f1 - f0));
+compilation error,149,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFunctionalValueAccuracy();
+compilation error,149,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getFunctionMaximumAccuracy();
+compilation error,149,replace,[CE] cannot find symbol,final double ftol = getFunctionValueAccuracy(); ,final double ftol = getActualValueAccuracy();
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = Math.max(rtol, atol);
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = Math.max(atol, rtol);
+compilation error,155,add,[CE] cannot find symbol,,  setResult(atol, rtol);
+compilation error,155,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getFloatValueAccuracy();
+compilation error,155,add,[CE] cannot find symbol,,  setResult(atol, rtol); return true;
+compilation error,239,replace,[CE] incompatible types,return x1; ,return inverted;
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getMinimumValueAccuracy();
+compilation error,151,add,[CE] variable x0 is already defined in method doSolve(),,  final double x0 = getMinimumValueAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getActualAccuracy();
+compilation error,151,add,[CE] variable f0 is already defined in method doSolve(),,  final double f0 = getDelativeAccuracy();
+compilation error,150,add,[CE] variable x0 is already defined in method doSolve(),,  final double x0 = getMinimumValueAccuracy();
+compilation error,150,add,[CE] variable f1 is already defined in method doSolve(),,  final double f1 = getRelativeAccuracy();
+compilation error,150,add,[CE] cannot find symbol,,  setResult(x0, ftol);
+compilation error,239,add,[CE] illegal start of expression,,  ? x0 : x1;
+compilation error,239,add,[CE] no suitable constructor found for MathInternalError(String),,  if(x0 == 0) { throw new MathInternalError("Missing to set up fast enough method."); }
+compilation error,239,add,[CE] no suitable constructor found for MathInternalError(String),,  if(f0 == 0) { throw new MathInternalError("Missing to set up fast enough method."); }
+compilation error,239,add,[CE] no suitable constructor found for MathInternalError(String),,  if(x0 == 0) { throw new MathInternalError("Missing to use side-stripes."); }
+compilation error,124,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, max, startValue);
+compilation error,124,add,[CE] cannot find symbol,,  clearResult(); verifyInterval(min, startValue);
+compilation error,124,add,[CE] no suitable method found for solve(double,double,UnivariateRealFunction),,  solve(min, startValue, f);
+compilation error,124,add,[CE] cannot find symbol,,  checkAndUpdate(min, startValue, f);
+compilation error,237,add,[CE] ,,  if(rtol > FastMath.abs(x1), atol)) { throw new MathInternalError("Missing method."); }
+compilation error,237,add,[CE] ')' expected,,  if(rtol > FastMath.abs(x1), atol)) { allowedSolution = new Integer(false); }
+compilation error,237,add,[CE] ')' expected,,  if(rtol > FastMath.abs(x1), atol)) { allowableSolution = true; }
+compilation error,237,add,[CE] ')' expected,,  if(rtol > FastMath.abs(x1), atol)) { allowedSolution = true; }
+compilation error,237,add,[CE] ,,  if(rtol > FastMath.abs(x1), atol)) { throw new MathInternalError("Missing to use the supplied method."); }
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.abs(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.max(rtol * FastMath.abs(x1), absoluteAccuracy);
+compilation error,188,add,[CE] cannot assign a value to final variable atol,,  atol = Math.max(rtol / FastMath.abs(x1), absoluteAccuracy);
+compilation error,188,add,[CE] ';' expected,,  atol = Math.abs(relativeAccuracy * Math.abs(x1), absoluteAccuracy));
+compilation error,188,add,[CE] ';' expected,,  atol = Math.max(rtol / FastMath.abs(x1), absoluteAccuracy));
+compilation error,149,add,[CE] cannot find symbol,,  clearResult(); verifyBracketing(x0, x1);
+compilation error,149,add,[CE] cannot find symbol,,  ensureStub(x0, x1);
+compilation error,149,add,[CE] cannot find symbol,,  clearResult();

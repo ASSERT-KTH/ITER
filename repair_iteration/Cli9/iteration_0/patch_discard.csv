@@ -1,5 +1,18 @@
-compilation error,[CE] incompatible types,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.iterator();
-compilation error,[CE] cannot find symbol,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.next();
-patch is same with buggy,,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.listIterator();
-compilation error,[CE] cannot find symbol,ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.emptyList();
-compilation error,[CE] no suitable method found for listIterator(<null>),ListIterator iterator = tokenList.listIterator(); ,ListIterator iterator = tokenList.listIterator(null);
+increase failing tests,311,replace, [FE] junit.framework.ComparisonFailure: expected:<Missing [required options: f testMissingOptionsException,StringBuffer buff = new StringBuffer("Missing required option"); ,StringBuffer buff = new StringBuffer("Missing optional option");
+increase failing tests,311,replace, [FE] junit.framework.ComparisonFailure: expected:<Missing [required options: f testMissingOptionsException,StringBuffer buff = new StringBuffer("Missing required option"); ,StringBuffer buff = new StringBuffer("Missing option");
+increase failing tests,311,replace, [FE] junit.framework.ComparisonFailure: expected:<Missing [required options: f testMissingOptionsException,StringBuffer buff = new StringBuffer("Missing required option"); ,StringBuffer buff = new StringBuffer("Missing final option");
+increase failing tests,312,replace, [FE] junit.framework.ComparisonFailure: expected:<...sing required option[s: f testMissingOptionsException,buff.append(getRequiredOptions().size() == 1 ? "" : "s"); ,buff.append(getRequiredOptions().size() > 1? "" :"options");
+increase failing tests,312,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,buff.append(getRequiredOptions().size() == 1 ? "" : "s"); ,buff.append(getRequiredOptions().size() > 1? "" :"has options");
+increase failing tests,312,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,buff.append(getRequiredOptions().size() == 1 ? "" : "s"); ,buff.append(getRequiredOptions().size() > 1? "" :"is required");
+increase failing tests,312,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,buff.append(getRequiredOptions().size() == 1 ? "" : "s"); ,buff.append(getRequiredOptions().size() > 1? "" :"n");
+increase failing tests,312,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,buff.append(getRequiredOptions().size() == 1 ? "" : "s"); , 
+increase failing tests,46,add, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,,  cmd.setOptions(options);
+increase failing tests,46,add, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,,  cmd.addOption(options);
+increase failing tests,46,add, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,,  cmd.addOption(option);
+increase failing tests,46,add, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,,  cmd.addAllOptions(options);
+increase failing tests,46,add, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,,  cmd.addOption(this);
+increase failing tests,317,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,while (iter.hasNext()) { ,while(iter.next()) {
+increase failing tests,317,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,while (iter.hasNext()) { ,while(iter.hasNext() && requiredOptions.size() > 0) {
+increase failing tests,317,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,while (iter.hasNext()) { ,while(iter.hasNext()? buff.toString() :"next") {
+increase failing tests,317,replace, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,while (iter.hasNext()) { , 
+increase failing tests,319,add, [FE] junit.framework.ComparisonFailure: expected:<[Missing required options: f testMissingOptionsException,,  buff.append(iter.next());

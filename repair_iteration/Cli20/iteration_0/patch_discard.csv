@@ -1,0 +1,9 @@
+compilation error,273,add,[CE] reached end of file while parsing,,  if(stopAtNonOption) { if(options.hasOption(ch)) { tokens.add("-" + ch); }
+compilation error,273,add,[CE] reached end of file while parsing,,  if(stopAtNonOption) { if(options.hasOption(ch)) { tokens.add(token.substring(i + 1)); break; }
+increase failing tests,273,add, [FE] AssertionFailedError testStopBursting,,  tokens.add("-" + ch);
+compilation error,273,add,[CE] cannot find symbol,,  List < Option> options = options.getOption(ch);
+compilation error,273,add,[CE] cannot find symbol,,  List < Options> options = options.getOptions(ch);
+compilation error,271,add,[CE] cannot find symbol ch,,  tokens.add("-" + ch);
+compilation error,271,add,[CE] cannot find symbol,,  List < String> options = options.getOptions();
+compilation error,271,add,[CE] cannot find symbol,,  List < Options> options = options.getOptions();
+compilation error,271,add,[CE] cannot find symbol ch,,  List < Option> options = options.getOption(ch);

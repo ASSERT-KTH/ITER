@@ -1,0 +1,158 @@
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(3); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+patch is same with buggy,140,replace,, if(shape!=  null)  {  stream.writeInt(3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape!= null) { stream.writeInt(3); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+patch is same with buggy,140,replace,, stream.writeInt(++i  -  2);  SerialUtilities.writeShape(shape,  stream);  , 
+patch is same with buggy,140,replace,, stream.writeInt(++i  +  1);  ,stream.writeInt(++i + 1);
+compilation error,139,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(-i); SerialUtilities.writeShape(shape, stream); } else { SerialUtilities.writeShape(shape, stream); >>
+compilation error,139,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(-i); SerialUtilities.writeShape(shape, stream); >> else { SerialUtilities.writeShape(shape, stream); }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(+1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-i); >>
+compilation error,140,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else >> stream.writeInt(-i); }
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(i++);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  4);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(i++); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 4); }
+patch is same with buggy,140,replace,, if(shape!=  null)  {  stream.writeInt(i++);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  4);  }  ,if(shape!= null) { stream.writeInt(i++); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 4); }
+patch is same with buggy,165,replace,, double  shape  =(double)stream.readInt();  if(index  >  0)  {  return;  }  ,double shape =(double)stream.readInt(); if(index > 0) { return; }
+compilation error,165,replace,[CE] inconvertible types, double  shape  =(double)stream.readInt();  if(index  >  0)  {  return;  }  ,double shape =(double)stream.readObject(); if(index > 0) { return; }
+compilation error,165,add,[CE] illegal start of expression, ,if(i > 0) { return; >>
+compilation error,165,add,[CE] ';' expected, ,if(i > 0) { return; bodied
+compilation error,165,add,[CE] incompatible types, ,Double shape =(double)stream.readShort();
+compilation error,165,replace,[CE] possible loss of precision, long  shape  =  stream.readInt();  ,byte shape = stream.readInt();
+compilation error,139,add,[CE] 'else' without 'if', ,if(shape.getClass()!= null) { stream.writeInt(-2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-1);
+compilation error,165,add,[CE] cannot find symbol, ,Flo shape =(float)stream.readDouble();
+patch is same with buggy,139,replace,, if(shape.getClass()  ==  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  ,if(shape.getClass() == null) { stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); }
+patch is same with buggy,139,replace,, stream.writeInt(size()  -  1);  SerialUtilities.writeShape(shape,  stream);  ,stream.writeInt(size() - 1); SerialUtilities.writeShape(shape, stream);
+patch is same with buggy,165,replace,, double  shape  =(index  ==  0)?  stream.readDouble()  :  -1;  ,double shape =(index == 0)? stream.readDouble() : -1;
+compilation error,140,add,[CE] cannot find symbol SerialUtils, ,stream.writeInt(++i - 2); SerialUtils.writeShape(shape, stream);
+compilation error,140,replace,[CE] illegal start of expression, if(shape  ==  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape.isEmpty()) { if(shape == null) { stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+compilation error,140,replace,[CE] ')' expected, if(shape  ==  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape!= null) { if(stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(0);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  5);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+compilation error,165,add,[CE] illegal start of expression, ,double shape = stream.readShort(); if(index == -1)) { return; }
+compilation error,165,add,[CE] incompatible types, ,Double shape =(index > 0)? stream.readDouble() : -index;
+compilation error,140,replace,[CE] illegal start of expression, stream.writeInt(i  +  6);  SerialUtilities.writeShape(shape,  stream);  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(+1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-i); }
+compilation error,140,add,[CE] cannot find symbol serialUtilities, ,stream.writeInt(++i / 2); serialUtilities.writeShape(shape, stream);
+increase failing tests,105,add, [FE] AssertionFailedError, ,if(this!= null) { return false; }
+patch is same with buggy,139,replace,, stream.writeInt(i  +  1);  if(shape!=  null)  {  stream.writeInt(i  +  4);  }  ,stream.writeInt(i + 1); if(shape!= null) { stream.writeInt(i + 4); }
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  3);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(3); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 3); }
+patch is same with buggy,140,replace,, if(shape!=  null)  {  stream.writeInt(3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  3);  }  ,if(shape!= null) { stream.writeInt(3); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 3); }
+compilation error,139,replace,[CE] illegal start of expression, stream.writeInt(i  -  1);  if(shape!=  null)  {  stream.writeInt(i  +  3);  }  ,if(shape!= null) { stream.writeInt(i); if(shape!= null) { stream.writeInt(i + 1); }
+compilation error,140,add,[CE] ';' expected, ,stream.writeInt(++i + 1); SerialUtilities.writeShape(shape, stream), stream);
+compilation error,165,add,[CE] illegal start of expression, ,double shape = stream.readShort(); if(index!= -1)) { return; }
+compilation error,165,add,[CE] method getShape in class ShapeList cannot be applied to given types;, ,Shape shape = getShape(0, index * 3 + stream.readInt());
+compilation error,165,add,[CE] incompatible types, ,Double shape =(index == 0)? stream.readDouble() : -1;
+compilation error,139,replace,[CE] illegal start of expression, if(shape.getClass()!=  null)  {  stream.writeInt(i);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  6);  }  ,if(shape!= null) { if(shape.getClass()!= null) { stream.writeInt(i); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 6); }
+compilation error,139,add,[CE] illegal start of expression, ,if(shape.getClass()!= null) { stream.writeInt(i); SerialUtilities.writeShape(shape, stream); >> else { stream.writeInt(i + 6); }
+compilation error,139,add,[CE] illegal start of expression, ,if(shape.getClass()!= null) { stream.writeInt(i); SerialUtilities.writeShape(shape, stream); } else >> stream.writeInt(i + 6); }
+compilation error,105,replace,[CE] illegal start of type, if(this  ==  null)  {  if(!this.equals(obj))  return  true;  }  ,if(obj == null) { if(!this.equals(obj)) return true; }
+compilation error,105,replace,[CE] illegal start of type, if(this  ==  null)  {  if(!this.equals(obj))  return  true;  }  ,if(obj == this) { if(!this.equals(obj)) return true; }
+compilation error,139,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(i); SerialUtilities.writeShape(shape, stream); } else >> stream.writeInt(i + 6); }
+compilation error,139,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(i); SerialUtilities.writeShape(shape, stream); >> else { stream.writeInt(i + 6); }
+compilation error,165,add,[CE] incompatible types, ,double shape =(index << 0)? stream.readFloat() : -index;
+patch is same with buggy,139,replace,, stream.writeInt(i  +  2);  if(shape!=  null)  {  stream.writeInt(i  +  4);  }  ,stream.writeInt(i + 2); if(shape!= null) { stream.writeInt(i + 4); }
+patch is same with buggy,165,replace,, Shape  shape  =  getShape(i  *  4  +  stream.readInt());  , 
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(2);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-2);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(2); }
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(2);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-2);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(0); }
+patch is same with buggy,140,replace,, stream.writeInt(++i  /  2);  , 
+compilation error,165,replace,[CE] method getShape in class ShapeList cannot be applied to given types;, Shape  shape  =  getShape(index  -  stream.readInt());  ,Shape shape = getShape(index - 1, stream.readInt());
+patch is same with buggy,165,replace,, Shape  shape  =  getShape(index  -  stream.readInt());  , 
+patch is same with buggy,165,replace,, Shape  shape  =  getShape(i  *  3  +  stream.readInt());  if(index!=  -1)  {  return;  }  , 
+patch is same with buggy,140,replace,, stream.writeInt(++i  +  1);  SerialUtilities.writeShape(shape,  stream);  ,stream.writeInt(++i + 1); SerialUtilities.writeShape(shape, stream);
+compilation error,139,add,[CE] 'else' without 'if', ,if(shape.getClass()!= null) { stream.writeInt(-2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-2);
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(2);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-i);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-i); }
+patch is same with buggy,165,replace,, double  shape  =(index  ==  0)?  stream.readInt()  :  -index;  ,double shape =(index == 0)? stream.readInt() : -index;
+compilation error,139,add,[CE] illegal start of expression, ,if(shape!= null) { if(shape.getClass()!= null) { stream.writeInt(-2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-1); }
+patch is same with buggy,165,replace,, if(index  >  0)  {  return;  }  else  if(index  ==  stream.readInt())  {  throw  new  ClassNotFoundException( " ");  }  ,if(index > 0) { return; } else if(index == stream.readInt()) { throw new ClassNotFoundException(""); }
+patch is same with buggy,165,replace,, if(index  >  0)  {  return;  }  else  if(index  ==  stream.readInt())  {  throw  new  ClassNotFoundException( " ");  }  , 
+compilation error,140,replace,[CE] not a statement, if(shape!=  null)  {  stream.writeInt(-2);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  3);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt-2; SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 3); }
+patch is same with buggy,165,replace,, if(i  >  0)  {  return;  }  ,if(i > 0) { return; }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape == null) { stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); } else >> stream.writeInt(i + 1); }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape.isAssignableFrom(stream)) { if(shape!= null) { stream.writeInt(1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+compilation error,165,add,[CE] not a statement, ,if(index > 0) { return; bodied else if(index == stream.readInt()) { throw new ClassNotFoundException(" "); }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape!= null) { stream.writeInt(1); SerialUtilities.writeShape(shape, stream); >> else { stream.writeInt(i + 5); }
+patch is same with buggy,139,replace,, stream.writeInt(i  +  2);  if(shape!=  null)  {  stream.writeInt(i  +  5);  }  ,stream.writeInt(i + 2); if(shape!= null) { stream.writeInt(i + 5); }
+compilation error,165,add,[CE] method getShape in class ShapeList cannot be applied to given types;, ,Shape shape = getShape(0, index * 7 + stream.readInt());
+compilation error,165,add,[CE] method getShape in class ShapeList cannot be applied to given types;, ,Shape shape = getShape(index * 7 + stream.readInt(), index);
+patch is same with buggy,139,replace,, stream.writeInt(i  -  1);  if(shape!=  null)  {  stream.writeInt(i  +  3);  }  ,stream.writeInt(i - 1); if(shape!= null) { stream.writeInt(i + 3); }
+compilation error,165,replace,[CE] incompatible types for ?: neither is a subtype of the other, long  shape  =  stream.readInt();  ,double shape =(index > 0)? stream.readObject() : -index;
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(0);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  5);  }  ,if(shape.isEmpty()) { if(shape!= null) { stream.writeInt(0); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+patch is same with buggy,140,replace,, if(shape!=  null)  {  stream.writeInt(0);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  5);  }  ,if(shape!= null) { stream.writeInt(0); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+compilation error,139,replace,[CE] illegal start of expression, if(shape.getClass()  ==  null)  {  stream.writeInt(-i);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-1);  }  ,if(shape!= null) { if(shape.getClass() == null) { stream.writeInt(-i); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-1); }
+compilation error,139,replace,[CE] illegal start of expression, if(shape.getClass()  ==  null)  {  stream.writeInt(-i);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-1);  }  ,if(shape.getClass()!= null) { if(shape.getClass().getRawClass()!= null) { stream.writeInt(-i); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-1); }
+compilation error,165,add,[CE] illegal start of expression, ,double shape =(double)stream.readInt(); if(index > 0) } return; }
+compilation error,165,add,[CE] illegal start of expression, ,double shape =(double)stream.readInt(); if(index > 0) { return; >>
+compilation error,139,replace,[CE] illegal start of expression, stream.writeInt(size()  +  1);  if(shape!=  null)  {  stream.writeInt(size()  +  1);  }  else  {  stream.writeInt(-1);  }  ,stream.writeInt(size()); if(shape!= null) { stream.writeInt(size()); } else >> stream.writeInt(-1); }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index < 0) { return; if(index > 0) { return; } else if(index == stream.readInt()) { throw new ClassNotFoundException(" "); }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index < 0) { return; if(index > 0) { return; } else if(index == stream.readObject()) { throw new ClassNotFoundException(" "); }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index < 0) { return; if(index > 0) { return; } else if(index!= stream.readInt()) { throw new ClassNotFoundException(" "); }
+compilation error,139,add,[CE] illegal start of expression, ,<<
+compilation error,165,replace,[CE] bad operand types for binary operator '+', Shape  shape  =  getShape(i  *  4  +  stream.readInt());  ,Shape shape = getShape(index * 2 + stream.readObject()); if(index!= 0) { return; }
+patch is same with buggy,139,replace,, stream.writeInt(size()  -  1);  SerialUtilities.writeShape(shape,  stream);  , 
+patch is same with buggy,140,replace,, stream.writeInt(++i  /  2);  ,stream.writeInt(++i / 2);
+compilation error,165,add,[CE] possible loss of precision, ,int shape =(index > 0)? stream.readDouble() : -index;
+patch is same with buggy,165,replace,, double  shape  =(index  ==  0)?  stream.readInt()  :  -index;  ,double shape =(index == 0)? stream.readInt() : -index;
+compilation error,165,add,[CE] cannot find symbol, ,long shape = stream.readShape();
+compilation error,165,add,[CE] incompatible types, ,long shape = stream.readObject();
+compilation error,165,add,[CE] no suitable method found for readObject(int), ,stream.readObject(index);
+compilation error,165,add,[CE] illegal start of expression, ,if(i > 0) { return; &&(index!= -1)) { throw new ClassNotFoundException(""); }
+compilation error,165,add,[CE] illegal start of expression, ,if(i > 0) { return; &&(index!= -1)) { stream.readObject(); if(index == -1) { return; }
+compilation error,165,add,[CE] illegal start of expression, ,if(i > 0) { return; &&(index == -1)) { stream.readObject(); if(index!= -1) { return; }
+patch is same with buggy,105,replace,, if(this  ==  null)  {  return  false;  }  , 
+compilation error,139,add,[CE] method writeShape in class SerialUtilities cannot be applied to given types;, ,SerialUtilities.writeShape(shape.getClass(), stream);
+compilation error,165,add,[CE] method readShort in class ObjectInputStream cannot be applied to given types;, ,stream.readShort(index);
+compilation error,140,add,[CE] variable shape is already defined in method writeObject(ObjectOutputStream), ,Object shape = getShape(i);
+compilation error,165,add,[CE] bad operand types for binary operator '+', ,Shape shape = getShape(index * 2 + stream.readObject()); if(index!= -1) { return; }
+compilation error,165,replace,[CE] inconvertible types, double  shape  =(double)stream.readInt();  if(index  >  0)  {  return;  }  ,double shape =(double)stream.readObject(); if(index < 0) { return; }
+patch is same with buggy,105,replace,, if(this  ==  null)  {  if(!this.equals(obj))  return  true;  }  ,if(this == null) { if(!this.equals(obj)) return true; }
+compilation error,165,add,[CE] incompatible types, ,boolean shape =(double)stream.readShort();
+patch is same with buggy,165,replace,, double  shape  =(index  ==  0)?  stream.readDouble()  :  -1;  ,double shape =(index == 0)? stream.readDouble() : -1;
+patch is same with buggy,140,replace,, stream.writeInt(++i  +  1);  , 
+compilation error,140,replace,[CE] cannot find symbol, if(shape!=  null)  {  stream.writeInt(-2);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  3);  }  ,if(shape == null) { if(shape.length() > 0); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 3); }
+compilation error,165,add,[CE] illegal start of expression, ,if(index > 0) { return; &&(index!= stream.readInt())) { throw new ClassNotFoundException(""); }
+compilation error,165,add,[CE] illegal start of expression, ,if(index > 0) { return; &&(index < stream.readInt())) { throw new ClassNotFoundException(""); }
+patch is same with buggy,140,replace,, stream.writeInt(++i  /  2);  , 
+patch is same with buggy,165,replace,, double  shape  =(index  ==  0)?  stream.readInt()  :  -index;  ,double shape =(index == 0)? stream.readInt() : -index;
+patch is same with buggy,139,replace,, stream.writeInt(i  -  1);  if(shape!=  null)  {  stream.writeInt(i  +  3);  }  , 
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index < 0) { double shape = stream.readShort(); if(index!= -1) { return; }
+compilation error,139,replace,[CE] illegal start of expression, if(shape.getClass()!=  null)  {  stream.writeInt(i);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  6);  }  ,if(shape.getClass()!= getClass()) { if(shape.getClass()!= null) { stream.writeInt(i); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 6); }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index < stream.readInt()) { if(index == -1) { return; }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index == -1) { double shape = stream.readShort(); if(index == -1) { return; }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index == -1) { double shape = stream.readShort(); if(i > 0) { return; }
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(i++);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  4);  }  ,if(shape.length() == 0) { if(shape!= null) { stream.writeInt(i++); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 4); }
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(i++);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  4);  }  ,if(ShapeUtilities.isAssignableFrom(shape)) { if(shape!= null) { stream.writeInt(i++); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 4); }
+compilation error,165,replace,[CE] reached end of file while parsing, Shape  shape  =  getShape(i  *  4  +  stream.readInt());  ,if(index >= 0) { Shape shape = getShape(index * 2 + stream.readInt()); if(index!= 0) { return; }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index == SHORT_WRITE) { double shape = stream.readShort(); if(index == -1) { return; }
+compilation error,139,replace,[CE] illegal start of expression, if(shape.getClass()  ==  null)  {  stream.writeInt(-i);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-1);  }  ,if(shape.getClass()!= null) { if(shape.getClass() == null) { stream.writeInt(-i); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-1); }
+compilation error,165,add,[CE] ')' expected, ,long shape =(shape == null? getShape(index): stream.readInt();
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape.length() > 0) { if(shape!= null) { stream.writeInt(3); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+compilation error,140,replace,[CE] cannot find symbol, if(shape!=  null)  {  stream.writeInt(-3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  3);  }  ,if(shape == null) { if(shape.length() > 0); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+patch is same with buggy,140,replace,, stream.writeInt(++i  +  1);  , 
+patch is same with buggy,165,replace,, double  shape  =(double)stream.readInt();  if(index  >  0)  {  return;  }  ,double shape =(double)stream.readInt(); if(index > 0) { return; }
+compilation error,165,add,[CE] cannot find symbol shape, ,Arrays.sort(this.shape);
+compilation error,165,add,[CE] method readShape in class SerialUtilities cannot be applied to given types;, ,SerialUtilities.readShape(index, stream);
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(0);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  5);  }  ,if(shape.length() == 2) { if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+patch is same with buggy,139,replace,, stream.writeInt(i  +  2);  if(shape!=  null)  {  stream.writeInt(i  +  5);  }  ,stream.writeInt(i + 2); if(shape!= null) { stream.writeInt(i + 5); }
+compilation error,140,replace,[CE] illegal start of expression, if(shape  ==  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape.length() == 0) { if(shape == null) { stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+patch is same with buggy,140,replace,, if(shape  ==  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  1);  }  ,if(shape == null) { stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+patch is same with buggy,139,replace,, stream.writeInt(i  +  2);  if(shape!=  null)  {  stream.writeInt(i  +  4);  }  , 
+compilation error,165,replace,[CE] cannot find symbol, double  shape  =(index  ==  0)?  stream.readDouble()  :  -1;  ,double shape =(index == 0)? stream.readShape() : -1;
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(2);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-i);  }  ,if(i > 0) { if(shape!= null) { stream.writeInt(2); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-i); }
+compilation error,165,add,[CE] method getShape in class ShapeList cannot be applied to given types;, ,Shape shape = getShape(i * 4 + stream.readInt(), index);
+patch is same with buggy,139,replace,, if(shape.getClass()  ==  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  , 
+patch is same with buggy,139,replace,, stream.writeInt(size()  -  1);  SerialUtilities.writeShape(shape,  stream);  ,stream.writeInt(size() - 1); SerialUtilities.writeShape(shape, stream);
+compilation error,165,replace,[CE] reached end of file while parsing, Shape  shape  =  getShape(index  *  3  +  stream.readInt());  ,if(index == -1) { if(index == stream.readInt()) { return; }
+compilation error,165,replace,[CE] reached end of file while parsing, Shape  shape  =  getShape(index  *  3  +  stream.readInt());  ,if(index == -1) { if(index >= stream.readInt()) { return; }
+compilation error,139,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(-1);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(-1);  }  ,if(ShapeUtilities.isAssignableFrom(shape)) { if(shape!= null) { stream.writeInt(-1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-1); }
+patch is same with buggy,165,replace,, Shape  shape  =  getShape(index  *  3  +  stream.readInt());  , 
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(3);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  3);  }  ,if(ShapeUtilities.isShape(shape)) { if(shape!= null) { stream.writeInt(3); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 1); }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape.length() == 1) { if(shape!= null) { stream.writeInt(1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+compilation error,140,add,[CE] illegal start of expression, ,if(shape.length() > 0) { if(shape!= null) { stream.writeInt(1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+patch is same with buggy,105,replace,, if(this  ==  null)  {  return  false;  }  ,if(this == null) { return false; }
+compilation error,139,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(i);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  6);  }  ,if(ShapeUtilities.isLiteralValue(shape)) {
+compilation error,140,replace,[CE] illegal start of expression, if(shape!=  null)  {  stream.writeInt(0);  SerialUtilities.writeShape(shape,  stream);  }  else  {  stream.writeInt(i  +  5);  }  ,if(shape.length() == 1) { if(shape!= null) { stream.writeInt(0); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(i + 5); }
+compilation error,139,add,[CE] cannot find symbol StaxUtilities, ,stream.writeInt(size() - 1); StaxUtilities.writeShape(shape, stream);
+compilation error,140,replace,[CE] illegal start of expression, stream.writeInt(i  +  6);  SerialUtilities.writeShape(shape,  stream);  ,if(i > 0) { if(shape!= null) { stream.writeInt(+1); SerialUtilities.writeShape(shape, stream); } else { stream.writeInt(-i); }
+compilation error,165,add,[CE] method readString in class ObjectInputStream cannot be applied to given types;, ,double shape =(index == 0)? stream.readString() : -index;
+patch is same with buggy,139,replace,, stream.writeInt(i  +  7);  if(shape!=  null)  {  stream.writeInt(i  +  1);  }  , 
+patch is same with buggy,105,replace,, if(this  ==  null)  {  if(!this.equals(obj))  return  true;  }  ,if(this == null) { if(!this.equals(obj)) return true; }
+compilation error,139,replace,[CE] not a statement, stream.writeInt(size()  +  1);  if(shape!=  null)  {  stream.writeInt(size()  +  1);  }  else  {  stream.writeInt(-1);  }  ,stream.writeInt(size() + 1); if(shape!= null) { stream.writeInt(size() + 1); bodied else { stream.writeInt(-1); }
+compilation error,139,replace,[CE] '(' expected, stream.writeInt(size()  +  1);  if(shape!=  null)  {  stream.writeInt(size()  +  1);  }  else  {  stream.writeInt(-1);  }  ,stream.writeInt(size() + 1); if(shape!= null) { stream.writeInt(size() + 1); } else if!stream.writeInt(-1);
+patch is same with buggy,140,replace,, stream.writeInt(++i  -  2);  SerialUtilities.writeShape(shape,  stream);  , 
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index >= 0) { Shape shape = getShape(index * 2 + stream.readInt()); if(index!= -1) { return; }
+compilation error,165,add,[CE] reached end of file while parsing, ,if(index < 0) { Shape shape = getShape(index * 2 + stream.readInt()); if(index!= -1) { return; }

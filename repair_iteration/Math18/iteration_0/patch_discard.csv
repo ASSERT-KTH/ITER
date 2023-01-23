@@ -1,0 +1,183 @@
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? Double.MAX_VALUE : Double.POSITIVE_INFINITY;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.MAX_VALUE;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? DEFAULT_STOPFITNESS : null;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? DEFAULT_STOPFITNESS : BD.values();
+increase failing tests,246,replace, [FE] NoDataException testFitAccuracyDependsOnBoundary,this(0); ,this(1);
+increase failing tests,535,replace, [FE] ArrayIndexOutOfBoundsException testConstrainedRosen,boundaries = new double[2][]; ,boundaries = new double[0][];
+compilation error,535,replace,[CE] cannot find symbol borders,boundaries = new double[2][]; ,borders = new double[2][];
+increase failing tests,535,replace, [FE] ArrayIndexOutOfBoundsException testConstrainedRosen,boundaries = new double[2][]; ,boundaries = new double[1][];
+compilation error,536,replace,[CE] incompatible types,boundaries[0] = lB; ,boundaries[0] = lB.length;
+compilation error,536,replace,[CE] cannot find symbol pcCol,boundaries[0] = lB; ,boundaries[0] = pcCol;
+increase failing tests,536,replace, [FE] OutOfRangeException testConstrainedRosen,boundaries[0] = lB; ,boundaries[0] = uB;
+increase failing tests,536,replace, [FE] NullPointerException testConstrainedRosen,boundaries[0] = lB; , 
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_STOPFITNESS);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_ISACTIVECMA);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_ISACTIVECMA, DEFAULT_RANDOMGENERATOR);
+compilation error,247,add,[CE] cannot find symbol,,  setStatistics(DEFAULT_ISACTIVECMA, false);
+compilation error,751,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  BD = BD.multiply(arnormsInv, dimension, 1);
+compilation error,751,add,[CE] variable negcovMax is already defined in method updateCovariance(boolean,RealMatrix,RealMatrix,int[],RealMatrix),,  double negcovMax = Math.max(negccov - negminresidualvariance);
+compilation error,751,add,[CE] variable negcovMax is already defined in method updateCovariance(boolean,RealMatrix,RealMatrix,int[],RealMatrix),,  double negcovMax = Math.max(negccov, negalphaold);
+compilation error,751,add,[CE] no suitable method found for max(double),,  negcovMax = Math.max(negccov);
+compilation error,751,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  BD = BD.multiply(arnormsInv, dimension, 2);
+compilation error,583,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(3. * Math.log(guess));
+compilation error,583,replace,[CE] possible loss of precision,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 *(2.5 * Math.log(dimension));
+compilation error,583,replace,[CE] <identifier> expected,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(3). * Math.log(guess));
+compilation error,583,replace,[CE] possible loss of precision,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 *(3. * Math.log(dimension));
+increase failing tests,583,replace, [FE] NoDataException testFitAccuracyDependsOnBoundary,lambda = 4 + (int) (3. * Math.log(dimension)); , 
+compilation error,476,replace,[CE] undefined label: result,break generationLoop; ,break result;
+compilation error,476,replace,[CE] undefined label: resultLoop,break generationLoop; ,break resultLoop;
+compilation error,476,replace,[CE] undefined label: symbda,break generationLoop; ,break symbda;
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,double,RandomGenerator,boolean),,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,double,RandomGenerator,boolean),,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR, true);
+compilation error,253,add,[CE] cannot find symbol DEFAULT_DEFAGONALONLY,,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_DEFAGONALONLY, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,add,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,boolean),,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,add,[CE] cannot find symbol DEFAULT_DEFAGONALONLY,,  this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_DEFAGONALONLY, DEFAULT_RANDOMGENERATOR, true);
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.POSITIVE_INFINITY;
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.MAX_VALUE;
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds;
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? DEFAULT_STOPFITNESS : pcCol;
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = hasInfiniteBounds? DEFAULT_STOPFITNESS : uB;
+compilation error,482,replace,[CE] method exp in class Math cannot be applied to given types;,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(0.2+cs/damps, 1);
+compilation error,253,replace,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,boolean,int,int,boolean),this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, false);
+compilation error,253,replace,[CE] no suitable constructor found for CMAESOptimizer(int,<null>,int,RandomGenerator,double,int,int,boolean),this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_STOPFITNESS, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, false);
+compilation error,253,replace,[CE] illegal start of expression,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT,
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, DEFAULT_
+compilation error,459,replace,[CE] undefined label: bestFitness,break generationLoop; ,break bestFitness;
+compilation error,459,replace,[CE] undefined label: sigmaLoop,break generationLoop; ,break sigmaLoop;
+compilation error,459,replace,[CE] undefined label: historyLoop,break generationLoop; ,break historyLoop;
+compilation error,583,add,[CE] no suitable method found for max(int,double[]),,  double[][] boundaries = Math.max(lambda, guess);
+compilation error,583,add,[CE] incompatible types,,  double[][] boundaries = Math.exp(-lambda);
+compilation error,583,add,[CE] no suitable method found for max(int,boolean),,  double[][] boundaries = Math.max(lambda, false);
+compilation error,583,add,[CE] no suitable method found for max(int),,  double[][] boundaries = Math.max(lambda);
+compilation error,459,add,[CE] ';' expected,,  double diagD = Math.min(historyWorst, worstFitness)- Math.max(historyWorst, bestFitness)- stopTolFun);
+compilation error,459,add,[CE] ';' expected,,  double diagD = Math.min(historyWorst, bestFitness)- Math.max(historyWorst, worstFitness)- stopTolFun);
+compilation error,459,add,[CE] ';' expected,,  double diagD = Math.min(historyWorst, worstFitness)- Math.max(historyWorst, worstFitness)- stopTolFun);
+compilation error,246,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(double,RandomGenerator),,  this(DEFAULT_STOPFITNESS, DEFAULT_RANDOMGENERATOR);
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(double),,  this(DEFAULT_STOPFITNESS);
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(boolean,RandomGenerator),,  this(DEFAULT_ISACTIVECMA, DEFAULT_RANDOMGENERATOR);
+compilation error,246,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(DEFAULT_STOPFITNESS);
+compilation error,482,add,[CE] illegal start of expression,,  if(bestFitness > bestArx.getColumnSize()) { if(isActiveCMA) { break generationLoop; }
+compilation error,482,add,[CE] illegal start of expression,,  if(bestFitness > bestArx.getColumnCount() - 1) { if(isActiveCMA) { break generationLoop; }
+compilation error,482,add,[CE] illegal start of expression,,  if(bestFitness > bestArx.getColumnCount() - 1) { if(!isActiveCMA) { break generationLoop; }
+compilation error,482,add,[CE] illegal start of expression,,  if(bestFitness > bestArx) { if(isActiveCMA) { break generationLoop; }
+compilation error,482,add,[CE] not a statement,,  if(bestFitness > bestArx.getColumnSize()) { if(isActiveCMA) { generateStatistics; }
+compilation error,247,replace,[CE] illegal start of expression,} ,this.statisticsMeanHistory = getStatisticsMean();
+compilation error,476,add,[CE] no suitable method found for max(double[],double),,  bestFitness = Math.max(bestArx.getColumn(1), isMinimize? bestFitness : -bestFitness);
+compilation error,476,add,[CE] not a statement,,  isRepairMode? bestArx.getLineno() : bestArx.getCharno());
+compilation error,476,add,[CE] not a statement,,  isRepairMode? bestArx.getLineno() : bestArx.getColumnNumber(1);
+compilation error,476,add,[CE] not a statement,,  isRepairMode? bestArx.getLineno() : bestArx.getColumnNode());
+compilation error,476,add,[CE] not a statement,,  isRepairMode? bestArx.getLineno() : bestArx.getColumnNode();
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(boolean),,  this(DEFAULT_ISACTIVECMA);
+compilation error,246,add,[CE] no suitable constructor found for CMAESOptimizer(boolean,int),,  this(DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY);
+compilation error,246,add,[CE] cannot find symbol DEFAULT_FIELD_NAMES,,  this(DEFAULT_ISACTIVECMA, DEFAULT_FIELD_NAMES);
+compilation error,246,add,[CE] cannot find symbol DEFAULT_FIELD_NAME,,  this(DEFAULT_ISACTIVECMA, DEFAULT_FIELD_NAME);
+compilation error,535,replace,[CE] cannot find symbol borders,boundaries = new double[2][]; ,borders = new double[0][];
+compilation error,247,replace,[CE] illegal start of expression,} ,this(DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY);
+compilation error,247,replace,[CE] illegal start of expression,} ,setFixedOptimizer(DEFAULT_ISACTIVECMA);
+compilation error,247,replace,[CE] illegal start of expression,} ,setFixedOptimizer(new DoubleInputStreamReader());
+compilation error,247,replace,[CE] illegal start of expression,} ,this(DEFAULT_ISACTIVECMA);
+compilation error,583,add,[CE] incompatible types,,  double[][] boundaries = Math.abs(lambda);
+compilation error,583,add,[CE] incompatible types,,  double[][] boundaries = Math.exp(Math.abs(lambda));
+compilation error,583,add,[CE] cannot find symbol,,  double[][] boundaries = Math.exp(getBounds());
+compilation error,583,add,[CE] incompatible types,,  double[][] boundaries = Math.max(lambda, 0);
+compilation error,253,replace,[CE] cannot find symbol DEFAULT_FIELD_NAMES,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_FIELD_NAMES, DEFAULT_COUNT, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false);
+compilation error,253,replace,[CE] illegal start of expression,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_FIELD_NAMES, DEFAULT_COUNT, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR,
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_FIELD_NAMES, DEFAULT_COUNT, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getBinaryValues();
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getBounds();
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.valueOf(null);
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getBinaryValue(null);
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = getBinaryValue(cs);
+compilation error,476,replace,[CE] undefined label: pointValuePair,break generationLoop; ,break pointValuePair;
+compilation error,476,replace,[CE] undefined label: resultIndent,break generationLoop; ,break resultIndent;
+compilation error,751,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  if(arnormsInv == null) { BD = BD.multiply(arnormsInv, xold); BD = BD.multiply(arnormsInv, xold); }
+compilation error,751,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  if(arnormsInv == null) { BD = BD.multiply(arnormsInv); BD = BD.multiply(arnormsInv, negalphaold); }
+compilation error,751,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  if(arnormsInv == null) { BD = BD.multiply(arnormsInv); BD = BD.multiply(arnormsInv, xold); }
+compilation error,751,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  if(arnormsSorted == null) { BD = BD.multiply(arnormsInv); BD = BD.multiply(arnormsInv, negalphaold); }
+compilation error,751,add,[CE] bad operand types for binary operator '-',,  negcovMax = Math.max(negccov - bestArx, worstArx);
+increase failing tests,583,replace, [FE] NegativeArraySizeException testFitAccuracyDependsOnBoundary,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 256 +(int)(3. * Math.log(lambda));
+compilation error,583,replace,[CE] illegal start of expression,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 256 +(int)(. * Math.log(guess));
+compilation error,583,replace,[CE] illegal start of expression,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 0.5 +(int)(. * Math.log(guess.length));
+compilation error,583,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 256 +(int)(3. * Math.log(guess));
+compilation error,253,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,253,add,[CE] no suitable constructor found for BaseAbstractMultivariateSimpleBoundsOptimizer(int),,  super(lambda);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda!= 0);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda >= 0);
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda == 0);
+compilation error,459,replace,[CE] incomparable types: double and <null>,break generationLoop; ,if(historyWorst == null) { break generationLoop; }
+compilation error,459,add,[CE] illegal start of expression,,  for(int i = 0; i < dimension; i++) { if(historyWorst == historyWorst) { continue; }
+compilation error,459,add,[CE] illegal start of expression,,  for(int i = 0; i < dimension; i++) { if(historyWorst == historyWorst) { throw new IllegalArgumentException(""); }
+compilation error,459,add,[CE] double cannot be dereferenced,,  double diagD = historyWorst.doubleValue();
+compilation error,459,add,[CE] cannot find symbol,,  double diagD = getFieldType(historyWorst);
+compilation error,459,add,[CE] illegal start of expression,,  if(historyWorst == null) { if(historyWorst == historyWorst) { continue; }
+compilation error,536,replace,[CE] cannot find symbol borders,boundaries[0] = lB; ,borders[0] = lB;
+compilation error,247,add,[CE] cannot find symbol DEFAULT_FIELD_NAMES,,  setFieldOptimizer(DEFAULT_FIELD_NAMES);
+compilation error,247,add,[CE] cannot find symbol DEFAULT_FIELD_NAME,,  setFieldOptimizer(DEFAULT_FIELD_NAME);
+compilation error,751,replace,[CE] ';' expected,negccov = negcovMax; ,negccov =(negcovMax - negminresidualvariance));
+compilation error,751,replace,[CE] incompatible types,negccov = negcovMax; ,negccov =(negcovMax * negminresidualvariance)? negcovMax : negcovMax;
+compilation error,482,add,[CE] illegal start of expression,,  if(generateStatistics) { if(bestFitness > bestFitness) { throw new IllegalArgumentException(""); }
+compilation error,482,add,[CE] illegal start of expression,,  if(generateStatistics) { if(bestFitness == null) { throw new IllegalArgumentException(""); }
+compilation error,482,add,[CE] cannot find symbol,,  int[] dups = getDimensions();
+compilation error,482,add,[CE] illegal start of expression,,  if(generateStatistics) { if(bestFitness == null) { return; }
+compilation error,476,add,[CE] cannot find symbol,,  bestArx = current.getArx();
+compilation error,476,add,[CE] cannot find symbol FieldUtils,,  current.addLast(FieldUtils.safeMultiply(current, bestArx));
+compilation error,476,add,[CE] cannot find symbol FieldUtils,,  current.addLast(FieldUtils.safeMultiply(bestArx, current));
+compilation error,476,add,[CE] cannot find symbol FieldUtils,,  current.addLast(FieldUtils.safeMultiply(current, bestArx), isMinimize);
+compilation error,476,add,[CE] cannot find symbol FieldUtils,,  current.addLast(FieldUtils.safeMultiply(bestArx, bestFitness));
+compilation error,536,add,[CE] 'else' without 'if',,  for(int i = 0; i < boundaries.length; i++) { if(!hasInfiniteBounds) { throw new MathUnsupportedOperationException(""); }
+compilation error,536,add,[CE] 'else' without 'if',,  for(int i = 0; i < boundaries.length; i++) { if(Double.isInfinite(boundaries[0][i])) { throw new MathUnsupportedOperationException(""); }
+compilation error,536,add,[CE] 'else' without 'if',,  for(int i = 0; i < boundaries.length; i++) { if(Double.isInfinite(boundaries[0], uB)) { throw new MathUnsupportedOperationException(""); }
+compilation error,536,add,[CE] 'else' without 'if',,  for(int i = 0; i < boundaries.length; i++) { if(Double.isInfinite(boundaries[0][i])) { return; }
+compilation error,536,add,[CE] 'else' without 'if',,  for(int i = 0; i < boundaries.length; i++) { if(Double.isInfinite(boundaries[0][i])) { throw new MathUnsupportedOperationException(")"); }
+compilation error,482,replace,[CE] cannot find symbol dups,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(1.0+cs/dups);
+compilation error,482,replace,[CE] cannot find symbol duplicate,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(1.0+cs/duplicate);
+compilation error,482,replace,[CE] cannot find symbol dups,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(2.0+cs/dups);
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFEASABLE
+compilation error,253,replace,[CE] ')' expected,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,  DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false); ,this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_RANDOMGENERATOR, DEFAULT_STOPFITNESS, DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY, DEFAULT_CHECKFE
+compilation error,482,replace,[CE] cannot find symbol dups,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(0.2+cs/dups);
+compilation error,482,replace,[CE] cannot find symbol da,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(0.2+cs/da/4);
+compilation error,482,replace,[CE] cannot find symbol da,sigma = sigma * Math.exp(0.2+cs/damps); ,sigma = sigma * Math.exp(0.2+cs/da);
+compilation error,246,replace,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,this(0); ,this(DEFAULT_ISACTIVECMA, DEFAULT_LOAD_FACTOR);
+compilation error,247,replace,[CE] illegal start of expression,} ,setFixedOptimizer(getAutoRangeStickyZero());
+compilation error,247,replace,[CE] illegal start of expression,} ,return new CMAESOptimizer(this, false);
+compilation error,247,replace,[CE] illegal start of expression,} ,return new CMAESOptimizer(this, true);
+compilation error,247,replace,[CE] illegal start of expression,} ,return new CMAESOptimizer(this);
+compilation error,535,add,[CE] cannot find symbol,,  double[][] boundaries = getBounds();
+compilation error,535,add,[CE] no suitable method found for max(double[],double[]),,  double[][] boundaries = Math.max(boundaries[0], uB);
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double lB = Double.MAX_VALUE;
+compilation error,535,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.valueOf(uB);
+compilation error,535,add,[CE] no suitable method found for max(double[],int),,  double[][] boundaries = Math.max(boundaries[0], 0);
+compilation error,583,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(0.5 * Math.log(guess));
+compilation error,583,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 3 +(int) (3. * Math.log(guess));
+compilation error,583,replace,[CE] method log in class Math cannot be applied to given types;,lambda = 4 + (int) (3. * Math.log(dimension)); ,lambda = 4 +(int)(2.5 * Math.log(guess));
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double lB = Double.MAX_VALUE;
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.NaN;
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.valueOf(isInfinite());
+compilation error,536,add,[CE] variable lB is already defined in method checkParameters(),,  double[][] lB = Double.valueOf(uB);
+increase failing tests,751,add, [FE] IllegalArgumentException testFitAccuracyDependsOnBoundary,,  if(arnormsSorted == null) { BD = BD.multiply(arnormsSorted); BD = BD.multiply(arnormsSorted); } else { throw new IllegalArgumentException(""); }
+compilation error,751,add,[CE] final parameter bestArx may not be assigned,,  bestArx = BD.multiply(arnormsInv);
+compilation error,476,add,[CE] cannot find symbol,,  current.setOptionalArg(true);
+compilation error,476,add,[CE] cannot find symbol FieldUtils,,  current.addLast(FieldUtils.safeMultiply(bestArx, fitness));
+compilation error,476,add,[CE] cannot find symbol FieldUtils,,  current.addLast(FieldUtils.safeMultiply(bestArx, current), isMinimize);
+compilation error,246,add,[CE] cannot find symbol,,  setFixedOptimizer(getAutoRangeStickyZero());
+compilation error,246,add,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,,  this(DEFAULT_ISACTIVECMA, DEFAULT_LOAD_FACTOR, false);
+compilation error,247,add,[CE] cannot find symbol,,  setFixedOptimizer(getCrc());
+compilation error,247,add,[CE] cannot find symbol,,  setFixedOptimizer(getAutoRangeStandardOptimizer());
+compilation error,536,replace,[CE] cannot find symbol i,boundaries[0] = lB; ,boundaries[0] = i;
+compilation error,459,add,[CE] not a statement,,  if(bestFitness >= historyBest) { if(sigma*sqrtDiagC[i] == bestFitness) { stopTolHistFun; }
+compilation error,459,add,[CE] ')' expected,,  if(bestFitness >= historyWorst) { if(sigma*sqrtDiagC[i] == bestFitness]) { stopTolHistFun; }
+compilation error,459,add,[CE] illegal start of expression,,  if(historyWorst == historyWorst) { if(sigma*sqrtDiagC[i] == bestFitness) { stopTolHistFun = Math.sqrt(historyWorst); }
+compilation error,459,add,[CE] illegal start of expression,,  if(historyWorst == historyWorst) { if(sigma*sqrtDiagC[i] == bestFitness) { stopTolHistFun = Math.abs(historyWorst); }
+compilation error,459,add,[CE] not a statement,,  if(bestFitness >= historyWorst) { if(sigma*sqrtDiagC[i] == bestFitness) { stopTolHistFun; }
+compilation error,253,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(lambda < 0);
+compilation error,583,add,[CE] cannot find symbol math,,  double[][] boundaries = Math.max(math.length, guess);
+compilation error,583,add,[CE] no suitable method found for max(double[],int),,  double[][] boundaries = Math.max(boundaries[0], 0);
+compilation error,583,add,[CE] no suitable method found for max(double[][],double[]),,  double[][] boundaries = Math.max(boundaries, guess);
+compilation error,583,add,[CE] no suitable method found for max(double[][],int),,  double[][] boundaries = Math.max(boundaries, guess.length);
+compilation error,583,add,[CE] cannot find symbol math,,  double[][] boundaries = Math.max(math.length, 0.5);
+compilation error,482,add,[CE] ';' expected,,  sigma = sigma * Math.min(historyWorst, bestFitness) == 0);
+compilation error,482,add,[CE] ';' expected,,  sigma = sigma * Math.min(historyWorst, worstFitness) == 0);
+compilation error,482,add,[CE] ';' expected,,  sigma = sigma * Math.min(historyBest, bestFitness) == 0);

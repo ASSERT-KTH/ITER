@@ -1,0 +1,200 @@
+increase failing tests,517,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[pj] *= diag[pj] / dxNorm;
+compilation error,517,add,[CE] illegal start of expression,,  if(work1[pj] *= diag[pj] / dxNorm) { for(int i = 0; i < pj; ++i) { work2[pj] *= diag[pj] / dxNorm; }
+increase failing tests,517,add, [FE] AssertionFailedError testMinpackBrownDennis,,  diagR[pj] *= diag[pj] / dxNorm;
+increase failing tests,510,add, [FE] AssertionFailedError testMinpackBrownDennis,,  lmPar = Math.min(lmPar, parl);
+compilation error,510,add,[CE] variable dxNorm is already defined in method determineLMParameter(double[],double,double[],double[],double[],double[]),,  int[] dxNorm = Math.min(lmPar, parl);
+compilation error,510,add,[CE] method sqrt in class Math cannot be applied to given types;,,  lmPar = Math.sqrt(work1, parl);
+increase failing tests,510,add, [FE] AssertionFailedError testMinpackBrownDennis,,  lmPar = Math.min(lmPar, rank);
+increase failing tests,510,add, [FE] AssertionFailedError testMinpackBrownDennis,,  lmPar = Math.sqrt(parl);
+increase failing tests,510,replace, [FE] AssertionFailedError testMinpackBrownDennis,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < parl; ++j) {
+increase failing tests,510,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < lmPar; ++j) {
+compilation error,519,replace,[CE] array required, but double found,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum += diag[i][pj] * work1[permutation[i]];
+compilation error,519,replace,[CE] array required, but double found,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum += diagR[i][pj] * work1[permutation[i]];
+compilation error,519,replace,[CE] array required, but int found,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum += permutation[i][pj] * work1[permutation[i]];
+compilation error,519,replace,[CE] ';' expected,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum += permutation[i][pj] * work1[i]];
+increase failing tests,519,replace, [FE] AssertionFailedError testMinpackBrownDennis,sum += jacobian[i][pj] * work1[permutation[i]]; , 
+compilation error,514,add,[CE] illegal start of expression,,  if(work1[pj] == parl) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,514,add,[CE] illegal start of expression,,  if(work1[pj] == parl) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[pj]; }
+compilation error,514,add,[CE] cannot find symbol pj,,  work1[pj] *= diag[pj] / dxNorm;
+compilation error,514,add,[CE] ';' expected,,  if(work1[pj] == parl) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[pj]; ++i) {
+compilation error,514,add,[CE] ';' expected,,  if(work1[pj] == parl) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; ++i) {
+compilation error,518,add,[CE] illegal start of expression,,  if(work1[pj] *= diag[pj] / diagR[pj]) { sum2 = 0; for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[
+compilation error,518,add,[CE] illegal start of expression,,  if(work1[pj] *= diag[pj] / diagR[pj]) { sum2 = 0; for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,518,add,[CE] illegal start of expression,,  if(work1[pj] *= diag[pj]) { sum2 = 0; for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[pj]; }
+compilation error,518,add,[CE] ';' expected,,  if(work1[pj] *= diag[pj]) { sum2 = 0; for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; ++i) {
+compilation error,518,add,[CE] illegal start of expression,,  if(work1[pj] *= diag[pj]) { sum2 = 0; for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[pj];
+compilation error,516,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = diag[j];
+compilation error,516,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = work1[j];
+compilation error,516,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = diagR[j];
+compilation error,516,replace,[CE] cannot find symbol pj,int pj = permutation[j]; , 
+increase failing tests,518,replace, [FE] AssertionFailedError testMinpackBrownDennis,for (int i = 0; i < j; ++i) { ,for(int i = 0; i < pj; ++i) {
+increase failing tests,518,replace, [FE] AssertionFailedError testMinpackBrownDennis,for (int i = 0; i < j; ++i) { ,for(int i = 0; i < parl; ++i) {
+compilation error,518,replace,[CE] int cannot be dereferenced,for (int i = 0; i < j; ++i) { ,for(int i = 0; i < pj.length; ++i) {
+increase failing tests,521,replace, [FE] AssertionFailedError testMinpackBrownDennis,double s = (work1[pj] - sum) / diagR[pj]; ,double s =(work1[pj] - sum)/ diag[pj];
+compilation error,521,replace,[CE] bad operand types for binary operator '-',double s = (work1[pj] - sum) / diagR[pj]; ,double s =(diag[pj] - work1)/ diag[pj];
+compilation error,521,replace,[CE] bad operand types for binary operator '-',double s = (work1[pj] - sum) / diagR[pj]; ,double s =(work1[pj] - work2)/ diag[pj];
+increase failing tests,521,replace, [FE] AssertionFailedError testMinpackBrownDennis,double s = (work1[pj] - sum) / diagR[pj]; ,double s =(work1[pj] - delta)/ diag[pj];
+compilation error,521,replace,[CE] cannot find symbol s,double s = (work1[pj] - sum) / diagR[pj]; , 
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][pj];
+compilation error,519,add,[CE] ';' expected,,  sum += diag[i][pj] / diagR[i]];
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][pj] - work1[permutation[i]];
+compilation error,519,add,[CE] possible loss of precision,,  diagR[i] = work1[diagR[i]];
+compilation error,516,add,[CE] cannot find symbol pj,,  sum2 += diag[j] / diagR[pj];
+compilation error,516,add,[CE] cannot find symbol pj,,  sum2 += diag[pj] / diagR[pj];
+compilation error,516,add,[CE] cannot find symbol pj,,  sum2 += diag[pj] / dxNorm;
+increase failing tests,516,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum2 += diag[j] / dxNorm;
+increase failing tests,516,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum2 += diag[j] / diagR[j];
+increase failing tests,521,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum += diag[pj] / diagR[pj];
+increase failing tests,521,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum += diagR[pj] / diagR[pj];
+compilation error,521,add,[CE] ']' expected,,  diagR[pj] = work1[diagR[pj];
+compilation error,521,add,[CE] ']' expected,,  diagR[pj] = work2[diagR[pj];
+increase failing tests,521,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum += diagR[pj] - delta;
+compilation error,511,add,[CE] ']' expected,,  int[] diag =(int[j] - work1)/ diagR[j];
+increase failing tests,511,add, [FE] AssertionFailedError testMinpackBrownDennis,,  diagR[j] = work1[j] * diagR[j];
+compilation error,511,add,[CE] ']' expected,,  int[] diag =(int[j] - sum)/ diagR[j];
+compilation error,511,add,[CE] ']' expected,,  int[] diag =(int[j] - work2)/ diagR[j];
+increase failing tests,515,replace, [FE] AssertionFailedError testMinpackBrownDennis,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < parl; ++j) {
+compilation error,515,replace,[CE] cannot find symbol pj,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < pj; ++j) {
+increase failing tests,515,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < dxNorm; ++j) {
+increase failing tests,515,replace, [FE] AssertionFailedError testMinpackBrownDennis,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j <= parl; ++j) {
+compilation error,515,replace,[CE] <identifier> expected,for (int j = 0; j < solvedCols; ++j) { , 
+compilation error,515,add,[CE] ';' expected,,  if(diagR[pj]!= work1[pj]) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[pj]; ++i) {
+compilation error,515,add,[CE] illegal start of expression,,  if(diagR[pj]!= work1[pj]) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / diagR[pj]; }
+compilation error,515,add,[CE] ';' expected,,  if(diagR[pj]!= work1[pj]) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; ++i) {
+compilation error,515,add,[CE] illegal start of expression,,  if(diagR[pj]!= work1[pj]) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,515,add,[CE] cannot find symbol pj,,  diagR[pj] = work1[pj] * diag[pj] / diagR[pj];
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] > work2[pj]) { for(int i = 0; i < pj; ++i) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj > work1[pj]) { for(int i = 0; i < pj; ++i) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] > work2[pj]) { for(int i = 0; i < pj; ++i) { work2[pj] *= diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj > work1[pj]) { for(int i = 0; i < pj; ++i) { work2[pj] *= diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj > work1[pj]) { for(int i = 0; i < pj; ++i) { work2[pj] *= diag[pj]; }
+compilation error,514,replace,[CE] cannot find symbol pj,sum2 = 0; ,sum2 =(work1[pj] - work1[pj])/ diagR[pj];
+increase failing tests,517,replace, [FE] AssertionFailedError testMinpackBrownDennis,double sum = 0; ,double sum =(work1[pj] - work2[pj])/ diagR[pj];
+compilation error,517,replace,[CE] bad operand types for binary operator '-',double sum = 0; ,double sum =(work1[pj] - work2)/ diagR[pj];
+increase failing tests,517,replace, [FE] AssertionFailedError testMinpackBrownDennis,double sum = 0; ,double sum =(pj > work1[pj])? 0 : pj;
+compilation error,511,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = diag[j];
+compilation error,511,replace,[CE] array required, but double found,int pj = permutation[j]; ,int pj = parl[j];
+compilation error,511,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = work1[j];
+compilation error,511,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = permutation[j] - parl;
+increase failing tests,512,replace, [FE] AssertionFailedError testMinpackBrownDennis,work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= diag[pj] / parl;
+increase failing tests,512,replace, [FE] AssertionFailedError testMinpackBrownDennis,work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= diagR[pj] / dxNorm;
+compilation error,512,replace,[CE] array required, but double found,work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= parl[pj] / diagR[pj];
+compilation error,510,replace,[CE] cannot find symbol relatedCols,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < relatedCols; ++j) {
+compilation error,515,replace,[CE] cannot find symbol alphaSize,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < alphaSize; ++j) {
+increase failing tests,517,replace, [FE] AssertionFailedError testMinpackBrownDennis,double sum = 0; ,double sum = 0 + diagR[pj];
+increase failing tests,517,replace, [FE] AssertionFailedError testMinpackBrownDennis,double sum = 0; ,double sum = 0 + diagR[j];
+compilation error,516,add,[CE] cannot find symbol pj,,  sum2 += diag[j] * work1[pj] / dxNorm;
+increase failing tests,516,add, [FE] AssertionFailedError testMinpackBrownDennis,,  diagR[j] = work1[j] * diagR[j];
+compilation error,516,add,[CE] cannot find symbol pj,,  sum2 += diag[j] * work1[pj] / diagR[j];
+increase failing tests,516,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum2 += diag[j] * work1[j] / dxNorm;
+increase failing tests,516,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum2 += diag[j] * work1[j] / diagR[j];
+increase failing tests,518,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,for (int i = 0; i < j; ++i) { ,for(int i = 0; j < diagR.length; ++i) {
+increase failing tests,518,replace, [FE] AssertionFailedError testMinpackBrownDennis,for (int i = 0; i < j; ++i) { ,for(int i = 0; i < diagR.length; ++i) {
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] == parl) { for(int j = 0; j < parl; ++j) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] == parl) { for(int i = 0; i < parl; ++i) { work1[pj] *= diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] == work2[pj]) { for(int i = 0; i < parl; ++i) { sum += diag[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] == parl) { for(int j = 0; j < parl; ++j) { work1[pj] *= delta[pj] / dxNorm; }
+compilation error,512,add,[CE] illegal start of expression,,  if(work1[pj] == parl) { for(int i = 0; i < parl; ++i) { work1[pj] *= delta[pj] / dxNorm; }
+increase failing tests,518,add, [FE] AssertionFailedError testMinpackBrownDennis,,  diagR[pj] = work1[pj] * diagR[pj];
+compilation error,518,add,[CE] ']' expected,,  diagR[pj] = diagR[pj] * work1[permutation[pj];
+increase failing tests,518,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[pj] = diagR[pj];
+increase failing tests,518,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[pj] = diagR[pj] * parl;
+increase failing tests,518,add, [FE] AssertionFailedError testMinpackBrownDennis,,  diagR[pj] = diagR[pj] - work1[pj];
+compilation error,510,add,[CE] cannot find symbol solveCols,,  int solvedCols = Math.min(solveCols, parl);
+compilation error,510,add,[CE] incompatible types,,  int[] solvedCols = diag.length;
+compilation error,510,add,[CE] cannot find symbol solveCols,,  int solvedCols = Math.min(solveCols, rank);
+compilation error,510,add,[CE] cannot find symbol solveCols,,  int[] solvedCols = Math.min(solveCols, parl);
+compilation error,510,add,[CE] incompatible types,,  int[] solvedCols = diag.length - 1;
+compilation error,515,add,[CE] illegal start of expression,,  if(rank == parl) { for(int j = 0; j < parl; ++j) { sum2 += diag[pj] * work1[pj]; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank == parl) { for(int j = 0; j < solvedCols; ++j) { sum += diag[pj] * work1[pj]; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank == parl) { for(int j = 0; j < parl; ++j) { sum += diag[pj] * work1[pj]; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank == parl) { for(int j = 0; j < solvedCols; ++j) { sum += diagR[pj] * work1[pj]; }
+compilation error,515,add,[CE] cannot find symbol pj,,  parl = diagR[pj] * work1[pj] / diagR[pj];
+compilation error,521,replace,[CE] bad operand types for binary operator '-',double s = (work1[pj] - sum) / diagR[pj]; ,double s =(work1[pj] - diag)/ sum[pj];
+compilation error,521,replace,[CE] bad operand types for binary operator '-',double s = (work1[pj] - sum) / diagR[pj]; ,double s =(diagR[pj] - work1)/ diag[pj];
+compilation error,519,replace,[CE] array required, but double found,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum -= diagR[i][pj] * work1[permutation[i]];
+increase failing tests,516,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,int pj = permutation[j]; ,int pj = permutation[j] - 1;
+increase failing tests,516,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,int pj = permutation[j]; ,int pj = permutation[j] + 1;
+compilation error,516,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = permutation[j] / diagR[j];
+increase failing tests,516,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,int pj = permutation[j]; ,int pj = permutation[j + 1];
+increase failing tests,511,replace, [FE] ArrayIndexOutOfBoundsException testMinpackBrownDennis,int pj = permutation[j]; ,int pj = permutation[j] - 1;
+compilation error,511,replace,[CE] cannot find symbol param,int pj = permutation[j]; ,int pj = param[j];
+increase failing tests,521,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum = sum + diagR[pj] * work1[pj];
+increase failing tests,521,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum += diagR[pj] * work1[pj];
+compilation error,521,add,[CE] bad operand types for binary operator '*',,  sum = sum + diagR[pj] * work3;
+compilation error,521,add,[CE] bad operand types for binary operator '*',,  sum += diagR[pj] * work3;
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = parl.parseDouble(work1[pj]);
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = parl.parseDouble(diagR[pj]);
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = parl.parseDouble(work1, work2, diagR[pj]);
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = parl.parseDouble(work1[pj], diagR[pj]);
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = parl.argumentsToJava2D(work1[pj]);
+increase failing tests,519,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[i] = work1[i] / diagR[i];
+increase failing tests,519,add, [FE] AssertionFailedError testMinpackBrownDennis,,  diagR[i] = work1[i] * diagR[i];
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][0] * work1[pj] / diagR[0];
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][0] * work1[pj];
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][0] * work1[pj] / dxNorm;
+compilation error,514,replace,[CE] cannot find symbol sum,sum2 = 0; ,sum2 =(parl == 0)? sum / diagR[pj] : diagR;
+compilation error,511,add,[CE] variable dxNorm is already defined in method determineLMParameter(double[],double,double[],double[],double[],double[]),,  int[] dxNorm = Math.min(dxNorm.length, parl);
+compilation error,511,add,[CE] variable dxNorm is already defined in method determineLMParameter(double[],double,double[],double[],double[],double[]),,  int[] dxNorm = Math.abs(diagR[j]);
+compilation error,511,add,[CE] variable dxNorm is already defined in method determineLMParameter(double[],double,double[],double[],double[],double[]),,  int[] dxNorm = Math.min(dxNorm, parl);
+compilation error,511,add,[CE] incompatible types,,  int[] work = diagR[j];
+compilation error,511,add,[CE] variable dxNorm is already defined in method determineLMParameter(double[],double,double[],double[],double[],double[]),,  int[] dxNorm = Math.min(dxNorm.length, j);
+increase failing tests,517,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[pj] *= diagR[pj] / dxNorm;
+increase failing tests,517,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[pj] *= diag[pj] / diagR[pj];
+compilation error,512,replace,[CE] bad operand types for binary operator '/',work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= diagR[pj] / diagR;
+compilation error,512,replace,[CE] array required, but double found,work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= parl[pj] / diagR;
+compilation error,512,replace,[CE] bad operand types for binary operator '/',work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= diagR[pj] / lmDir;
+compilation error,514,add,[CE] cannot find symbol pj,,  work1[pj] = diag[pj] * parl;
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = Math.max(parl, work1[pj]);
+compilation error,514,add,[CE] not a statement,,  work1[pj] * diag[pj] / dxNorm;
+compilation error,514,add,[CE] cannot find symbol pj,,  parl = pj - work1[pj] / diagR[pj];
+compilation error,514,add,[CE] not a statement,,  work1[pj] * diag[pj] - diagR[pj];
+compilation error,519,add,[CE] double cannot be dereferenced,,  sum += diag[i].doubleValue();
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][pj] * work1[i];
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][0];
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][pj] *(work1[i] - work2);
+compilation error,519,add,[CE] array required, but double found,,  sum += diag[i][pj] *(work1[i] - work3);
+compilation error,515,replace,[CE] cannot find symbol relatedCols,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < relatedCols; ++j) {
+compilation error,511,replace,[CE] possible loss of precision,int pj = permutation[j]; ,double pj = permutation[j];
+compilation error,511,add,[CE] cannot find symbol,,  int[] permutation = getPermutation();
+compilation error,511,add,[CE] cannot find symbol,,  int[] permutation = getPermutation(j);
+compilation error,511,add,[CE] double cannot be dereferenced,,  int[] permutation = diag[j].length;
+compilation error,511,add,[CE] incompatible types,,  int[] permutation = diag[j];
+compilation error,511,add,[CE] incompatible types,,  int[] permutation = Math.round(diag.length);
+compilation error,521,add,[CE] array required, but double found,,  sum += diag[pj][0] * work3;
+increase failing tests,521,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum -= diagR[pj] / diagR[pj];
+compilation error,521,add,[CE] bad operand types for binary operator '*',,  sum -= diagR[pj] * work3;
+compilation error,521,add,[CE] array required, but double found,,  sum += diag[pj][pj] * work3;
+compilation error,521,add,[CE] array required, but double found,,  sum += diag[pj][0] * work1[pj];
+compilation error,518,replace,[CE] cannot find symbol pars,for (int i = 0; i < j; ++i) { ,for(int i = 0; i < pars; ++i) {
+compilation error,512,replace,[CE] bad operand types for binary operator '/',work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= diag[pj] / work3;
+compilation error,512,replace,[CE] bad operand types for binary operator '/',work1[pj] *= diag[pj] / dxNorm; ,work1[pj] *= diag[pj] / work2;
+compilation error,516,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = permutation[j] - diagR[j];
+compilation error,516,replace,[CE] possible loss of precision,int pj = permutation[j]; ,int pj = permutation[j] - work1[j];
+compilation error,521,replace,[CE] bad operand types for binary operator '-',double s = (work1[pj] - sum) / diagR[pj]; ,double s =(work1[pj] - work3)/ diag[pj];
+compilation error,521,replace,[CE] bad operand types for binary operator '-',double s = (work1[pj] - sum) / diagR[pj]; ,double s =(work1[pj] - diag)/ work2[pj];
+increase failing tests,510,add, [FE] AssertionFailedError testMinpackBrownDennis,,  lmPar = Math.abs(parl);
+increase failing tests,510,add, [FE] AssertionFailedError testMinpackBrownDennis,,  lmPar = parl;
+compilation error,515,add,[CE] illegal start of expression,,  if(rank > parl) { if(work1[j] == 0) { sum2 += diag[pj] * work3; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank > parl) { for(int j = 0; j < diagR[0]; ++j) { sum2 += diag[pj] * work3; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank > parl) { for(int j = 0; j < diagR[0]; ++j) { sum2 += diag[0]; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank > parl) { for(int j = 0; j < diagR[0]; ++j) { sum += diag[0]; }
+compilation error,515,add,[CE] illegal start of expression,,  if(rank > parl) { for(int j = 0; j < diagR[0]; ++j) { sum += diag[0] * work3; }
+increase failing tests,517,replace, [FE] AssertionFailedError testMinpackBrownDennis,double sum = 0; ,double sum =(pj > work1[pj])? work1[pj] : 0;
+increase failing tests,517,replace, [FE] NullPointerException testMinpackBrownDennis,double sum = 0; ,double sum =(pj > work1[pj])? work1[pj] : null;
+increase failing tests,517,replace, [FE] AssertionFailedError testMinpackBrownDennis,double sum = 0; ,double sum =(pj > diagR[0])? work1[pj] : 0;
+compilation error,518,add,[CE] ']' expected,,  sum += diag[pj] * work1[permutation[pj] / diagR[pj];
+increase failing tests,518,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum += diag[pj] * work1[pj] / diagR[pj];
+compilation error,518,add,[CE] ']' expected,,  sum += diag[pj] * work1[permutation[pj];
+compilation error,518,add,[CE] ']' expected,,  sum += diag[pj] * work1[permutation[pj] - diagR[pj];
+increase failing tests,518,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum += diag[pj] * work1[pj];
+increase failing tests,516,add, [FE] AssertionFailedError testMinpackBrownDennis,,  sum2 += Math.abs(diag[j] / work1[j]);
+increase failing tests,517,add, [FE] AssertionFailedError testMinpackBrownDennis,,  work1[pj] *= diag[pj] / diagR[j];
+compilation error,510,replace,[CE] cannot find symbol alphaSize,for (int j = 0; j < solvedCols; ++j) { ,for(int j = 0; j < alphaSize; ++j) {
+compilation error,512,add,[CE] illegal start of expression,,  if(pj > parl) { if(work1[pj] == 0) { work2[pj] = diag[pj]; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj >= diagR.length) { if(work1[pj] == parl) { work2[pj] = work3; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj >= diagR.length) { if(work1[pj] == parl) { work2[pj] = work1[pj]; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj > parl) { if(work1[pj] == null) { work2[pj] = diag[pj]; }
+compilation error,512,add,[CE] illegal start of expression,,  if(pj > parl) { if(work1[pj] == null) { work2[pj] = parl; }
+compilation error,519,replace,[CE] array required, but double found,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum += work1[i][pj] * diag[permutation[i]];
+compilation error,519,replace,[CE] array required, but double found,sum += jacobian[i][pj] * work1[permutation[i]]; ,sum -= diag[i][pj] * work1[permutation[i]];

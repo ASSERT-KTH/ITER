@@ -1,0 +1,25 @@
+compilation error,279,add,[CE] '.class' expected, ,while(boolean done && iterator1.isDone() || iterator1.isDone())
+compilation error,389,add,[CE] illegal start of type, ,return new ShapeUtils.getShape(SQRT2);
+compilation error,278,add,[CE] illegal start of expression, ,while(iterator1.isDone() && iterator2.isDone()) } d1 = new double[4]; d2 = new double[3]; }
+compilation error,278,add,[CE] illegal start of expression, ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[3]; >>
+patch is same with buggy,278,replace,, while(iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[4];  d2  =  new  double[3];  }  ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[3]; }
+patch is same with buggy,278,replace,, while(iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[4];  d2  =  new  double[3];  }  ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[3]; }
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  ,public static final double SQRT2 =(double)Math.pow(2.0, 2.0);
+compilation error,279,add,[CE] '.class' expected, ,while(boolean done && iterator2.isDone() && iterator1.isDone())
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  ,public static final double SQRT2 =(double)Math.pow(2.0, 2.0);
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  , 
+patch is same with buggy,279,replace,, while(!done  &&  iterator2.isDone()  &&  iterator1.isDone())  , 
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  ,public static final double SQRT2 =(double)Math.pow(2.0, 2.0);
+compilation error,279,add,[CE] illegal start of expression, ,while(!done && iterator2.isDone() && iterator1.isDone()) {
+compilation error,278,replace,[CE] illegal start of expression, while(iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[4];  d2  =  new  double[3];  }  ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[3];
+compilation error,278,replace,[CE] illegal start of expression, while(iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[4];  d2  =  new  double[3];  }  ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[0]; d2 = new double[0];
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  ,public static final double SQRT2 =(double)Math.pow(2.0, 2.0);
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  , 
+compilation error,278,add,[CE] illegal start of expression, ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[5];
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  ,public static final double SQRT2 =(double)Math.pow(2.0, 2.0);
+patch is same with buggy,278,replace,, while(iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[4];  d2  =  new  double[3];  }  ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[3]; }
+patch is same with buggy,278,replace,, while(iterator1.isDone()  &&  iterator2.isDone())  {  d1  =  new  double[4];  d2  =  new  double[3];  }  ,while(iterator1.isDone() && iterator2.isDone()) { d1 = new double[4]; d2 = new double[3]; }
+compilation error,389,add,[CE] illegal start of type, ,return Math.sqrt(SquareUtilities.toShape(getArgumentFlag(SKIP_SIZE)));
+compilation error,279,replace,[CE] illegal start of expression, while(!done  &&  iterator2.isDone()  &&  iterator1.isDone())  ,while(!done && iterator1.isDone() && iterator2.isDone()),
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  , 
+patch is same with buggy,389,replace,, public  static  final  double  SQRT2  =(double)Math.pow(2.0,  2.0);  ,public static final double SQRT2 =(double)Math.pow(2.0, 2.0);

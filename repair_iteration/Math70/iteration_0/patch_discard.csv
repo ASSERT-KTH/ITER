@@ -1,0 +1,153 @@
+compilation error,79,replace,[CE] cannot find symbol,clearResult(); ,ensureInterval(min,max);
+compilation error,79,replace,[CE] cannot find symbol,clearResult(); ,verifyResult();
+increase failing tests,66,add, [FE] StackOverflowError testMath369,,  solve(min, max);
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = Math.min(min, max); solve(min, max);
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = solve(min, max);
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = Math.min(min, max);
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = Math.min(min, max); solveMin(min, max);
+increase failing tests,66,replace, [FE] StackOverflowError testMath369,return solve(f, min, max); ,return solve(min, max);
+compilation error,66,replace,[CE] no suitable method found for solve(double,UnivariateRealFunction,double),return solve(f, min, max); ,return solve(min, f, max);
+increase failing tests,66,replace, [FE] MathRuntimeException$4 testMath369,return solve(f, min, max); ,return solve(min, min, max);
+compilation error,53,add,[CE] call to super must be first statement in constructor,,  super();
+compilation error,53,add,[CE] cannot find symbol,,  Preconditions.checkNotNull(BisectionSolver.size());
+compilation error,53,add,[CE] cannot find symbol SIZE,,  Preconditions.checkNotNull(BisectionSolver.SIZE);
+compilation error,53,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(BisectionSolver.class);
+compilation error,53,add,[CE] call to this must be first statement in constructor,,  this(null, null);
+compilation error,85,replace,[CE] no suitable method found for setResult(double,double),int i = 0; ,double i = 0;
+compilation error,85,replace,[CE] no suitable method found for setResult(double,long),int i = 0; ,long i = 0;
+compilation error,85,replace,[CE] cannot find symbol i,int i = 0; , 
+compilation error,79,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,79,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max); fm = UnivariateRealSolverUtils.midpoint(min, max);
+increase failing tests,79,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,79,add,[CE] cannot find symbol fm,,  min = UnivariateRealSolverUtils.midpoint(min, max); fm = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  super();
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.PI);
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.pow(10, 1E-6));
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.pow(10, 1E-6), true);
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.pow(10, 0));
+compilation error,86,add,[CE] possible loss of precision,,  i = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,86,add,[CE] variable i is already defined in method solve(UnivariateRealFunction,double,double),,  int i = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,86,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,86,add,[CE] incompatible types,,  f = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,86,add,[CE] possible loss of precision,,  solve(min, max); i = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,72,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.min(min, max); initial = Math.max(initial, max);
+compilation error,72,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.min(initial, max); solve(min, max);
+compilation error,80,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max); fm = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,80,add,[CE] cannot find symbol fm,,  min = UnivariateRealSolverUtils.midpoint(min, max); fm = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,80,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max);
+increase failing tests,80,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.midpoint(min, max);
+increase failing tests,52,replace, [FE] NullPointerException testMath369,super(100, 1E-6); ,super(100, 0E-6);
+increase failing tests,86,replace, [FE] MaxIterationsExceededException testMath369,while (i < maximalIterationCount) { ,while(i > maximalIterationCount) {
+increase failing tests,86,replace, [FE] MaxIterationsExceededException testMath369,while (i < maximalIterationCount) { ,while(i >= maximalIterationCount) {
+compilation error,87,replace,[CE] cannot find symbol UnvariateRealSolverUtils,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnvariateRealSolverUtils.midpoint(min, max);
+increase failing tests,87,replace, [FE] NullPointerException testMath369,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnivariateRealSolverUtils.midpoint(min, min);
+increase failing tests,87,replace, [FE] NullPointerException testMath369,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnivariateRealSolverUtils.midpoint(min, max)+ 1;
+compilation error,87,replace,[CE] variable m might not have been initialized,m = UnivariateRealSolverUtils.midpoint(min, max); , 
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { if(fm * fmin > 0.0) { m = f.value(max); }
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { if(fm * fmin > 0.0) { max = m; }
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { if(fm * fmin > 0.0) { min = m; }
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) < 0.0) { if(fm * fmin > 0.0) { m = f.value(max); }
+compilation error,72,replace,[CE] cannot find symbol minimum,return solve(min, max); ,return solve(minimum, max);
+compilation error,88,replace,[CE] cannot find symbol fmax,fmin = f.value(min); ,if(fmin > 0.0) { fmin = f.value(min); } else { fmax = f.value(max); }
+increase failing tests,88,replace, [FE] NullPointerException testMath369,fmin = f.value(min); ,fmin = f.value(m);
+compilation error,88,replace,[CE] cannot find symbol fmax,fmin = f.value(min); ,if(fmin > max) { fmin = f.value(min); } else { fmax = f.value(max); }
+compilation error,80,replace,[CE] cannot find symbol,verifyInterval(min,max); ,ensureInterval(min,max);
+compilation error,80,replace,[CE] cannot find symbol,verifyInterval(min,max); ,checkInterval(min,max);
+compilation error,80,replace,[CE] ';' expected,verifyInterval(min,max); ,verifyInterval(min,max), max);
+compilation error,85,add,[CE] variable max is already defined in method solve(UnivariateRealFunction,double,double),,  double max = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,85,add,[CE] incompatible types,,  f = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,85,add,[CE] variable max is already defined in method solve(UnivariateRealFunction,double,double),,  double max = UnivariateRealSolverUtils.midpoint(min, max); min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,85,add,[CE] variable max is already defined in method solve(UnivariateRealFunction,double,double),,  double max = UnivariateRealSolverUtils.midpoint(min, max); fm = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,85,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  int min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,87,add,[CE] incompatible types,,  f = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,87,add,[CE] incompatible types,,  f = UnivariateRealSolverUtils.midpoint(min, max); min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,87,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max); fm = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,87,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,88,add,[CE] cannot find symbol fmax,,  fmax = f.value(max);
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { fmin = f.value(max); if(fm * fmin > 0.0) { max = f; }
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { fmin = f.value(max); if(fm * fmin > 0.0) { max = m; }
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { fmin = f.value(max); if(fm * fmin > 0.0) { min = f.value(max); }
+compilation error,88,add,[CE] reached end of file while parsing,,  if(f.value(max) == 0.0) { fmin = f.value(max); if(fm * fmin > 0.0) { max = f.value(max); }
+compilation error,85,replace,[CE] method floor in class Math cannot be applied to given types;,int i = 0; ,int i =(int)Math.floor(min, max);
+compilation error,87,replace,[CE] ';' expected,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnivariateRealSolverUtils.midpoint(min, max), true);
+compilation error,87,replace,[CE] cannot find symbol clarity,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnivariateRealSolverUtils.midpoint(clarity, min, max);
+increase failing tests,66,add, [FE] StackOverflowError testMath369,,  double f = Math.min(min, max); solve(min, max);
+increase failing tests,66,add, [FE] StackOverflowError testMath369,,  double f = Math.max(min, max); solve(min, max);
+increase failing tests,66,add, [FE] StackOverflowError testMath369,,  double f = solve(min, max);
+compilation error,53,add,[CE] cannot find symbol,,  Preconditions.checkNotNull(BisectionSolver.create());
+compilation error,53,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(Math.PI);
+compilation error,53,add,[CE] cannot find symbol instance,,  Preconditions.checkNotNull(BisectionSolver.instance);
+compilation error,53,add,[CE] cannot find symbol BisectionStdImpl,,  Preconditions.checkNotNull(BisectionStdImpl);
+increase failing tests,88,replace, [FE] NullPointerException testMath369,fmin = f.value(min); ,fmin = f.value(min + 1);
+increase failing tests,88,replace, [FE] NullPointerException testMath369,fmin = f.value(min); ,fmin = f.value(max);
+increase failing tests,88,replace, [FE] NullPointerException testMath369,fmin = f.value(min); ,fmin = f.value(min)- 1;
+compilation error,72,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.min(relativeAccuracy * Math.abs(min), absoluteAccuracy); solve(max, min);
+compilation error,72,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.min(relativeAccuracy * Math.abs(min), absoluteAccuracy);
+compilation error,72,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.min(relativeAccuracy * Math.abs(min), absoluteAccuracy); solve(max, initial);
+compilation error,72,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.min(relativeAccuracy * Math.abs(min), absoluteAccuracy); solve(max, f);
+compilation error,79,replace,[CE] cannot find symbol,clearResult(); ,validateInterval(min,max);
+increase failing tests,79,add, [FE] MathRuntimeException$4 testMath369,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = 0;
+increase failing tests,79,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min,max);
+compilation error,79,add,[CE] cannot find symbol m,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = m;
+increase failing tests,79,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = f.value(max);
+compilation error,80,replace,[CE] cannot find symbol,verifyInterval(min,max); ,validateInterval(min,max);
+compilation error,80,replace,[CE] no suitable method found for setResult(double,double),verifyInterval(min,max); ,setResult(min,max);
+compilation error,86,add,[CE] reached end of file while parsing,,  for(int i = 0; i < maximalIterationCount; i++) { if(fm * fmin > 0.0) { min = UnivariateRealSolverUtils.midpoint(min, max); }
+compilation error,86,add,[CE] reached end of file while parsing,,  for(int i = 0; i < maximalIterationCount; i++) { if(fm * fmin > 0.0) { max = UnivariateRealSolverUtils.midpoint(min, max); }
+compilation error,86,add,[CE] reached end of file while parsing,,  for(int i = 0; i < maximalIterationCount; i++) { if(fmin * fmin > 0.0) { min = UnivariateRealSolverUtils.midpoint(min, max); }
+compilation error,85,add,[CE] variable fm might not have been initialized,,  fmin = UnivariateRealSolverUtils.midpoint(min, max); max = fm;
+compilation error,85,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  double min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,66,replace,[CE] cannot find symbol,return solve(f, min, max); ,return resolve(min, max);
+compilation error,80,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  int min = UnivariateRealSolverUtils.midpoint(min,max);
+compilation error,80,add,[CE] cannot find symbol fmin,,  fmin = UnivariateRealSolverUtils.midpoint(min,max);
+compilation error,80,add,[CE] cannot find symbol m,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = m;
+increase failing tests,80,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min,max);
+increase failing tests,87,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.midpoint(min, max);
+increase failing tests,87,add, [FE] NullPointerException testMath369,,  fmin = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.midpoint(min, max);
+increase failing tests,87,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.midpoint(max, min);
+increase failing tests,87,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,52,add,[CE] '.' expected,,  Preconditions.checkNotNull(super);
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(BisectionSolver.create());
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(super());
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(BisectionSolver.instance);
+compilation error,86,replace,[CE] variable m might not have been initialized,while (i < maximalIterationCount) { ,while(m > maximalIterationCount) {
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = Math.min(min, Math.max(min, max), 0); solve(min, max);
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = Math.max(min, max); solve(min, max);
+compilation error,66,add,[CE] variable min is already defined in method solve(double,double),,  double min = Math.min(min, Math.max(min, max), 0.0); solve(min, max);
+compilation error,86,replace,[CE] cannot find symbol minimalIterationCount,while (i < maximalIterationCount) { ,while(i < minimalIterationCount) {
+compilation error,87,replace,[CE] ';' expected,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnivariateRealSolverUtils.midpoint(min, max), min);
+compilation error,87,replace,[CE] ';' expected,m = UnivariateRealSolverUtils.midpoint(min, max); ,m = UnivariateRealSolverUtils.midpoint(min, max), min + 1;
+increase failing tests,87,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min, max); m = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,87,add,[CE] cannot find symbol,,  min = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.value(max);
+compilation error,88,add,[CE] ')' expected,,  if(f.value(max) == 0.0) { throw new IllegalArgumentException("Function values at endpoints do not have different signs." +" Endpoints: [" + f.value(max)+" Values: [" + f.value(min)+"," +
+compilation error,88,add,[CE] ,,  if(f.value(max) == 0.0) { throw new IllegalArgumentException("Function values at endpoints do not have different signs." +" Endpoints: [" + f.value(max)+" Values: [" + f.value(min); }
+compilation error,88,add,[CE] ')' expected,,  if(f.value(max) == 0.0) { throw new IllegalStateException("Function values at endpoints do not have different signs." +" Endpoints: [" + f.value(max)+" Values: [" + f.value(min)+"," +
+compilation error,88,add,[CE] ')' expected,,  if(f.value(max) == 0.0) { throw new IllegalStateException("Function values at endpoints do not have different signs." +" Endpoints: [" + f.value(max)+" Values: [" + f.value(x)+"," +
+compilation error,88,add,[CE] unclosed string literal,,  if(f.value(max) == 0.0) { throw new IllegalArgumentException("Function values at endpoints do not have different signs." +" Endpoints: [" + f.value(max)+" Values: [" + f.value(min)+" value
+compilation error,80,add,[CE] cannot find symbol m,,  min = UnivariateRealSolverUtils.midpoint(min,max); m = UnivariateRealSolverUtils.midpoint(min,max);
+increase failing tests,80,add, [FE] NullPointerException testMath369,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = f.value(max);
+increase failing tests,80,add, [FE] MathRuntimeException$4 testMath369,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = 0;
+compilation error,80,add,[CE] ')' expected,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = Math.max(max;
+compilation error,86,add,[CE] variable i is already defined in method solve(UnivariateRealFunction,double,double),,  int i = minimalIterationCount * UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,86,add,[CE] variable i is already defined in method solve(UnivariateRealFunction,double,double),,  int i = minimalIterationCount;
+compilation error,86,add,[CE] possible loss of precision,,  i = UnivariateRealSolverUtils.midpoint(min, max); min = f.value(min);
+compilation error,85,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  int min = UnivariateRealSolverUtils.midpoint(min, max); max = UnivariateRealSolverUtils.midpoint(min, max);
+compilation error,85,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double),,  int min = UnivariateRealSolverUtils.midpoint(min, max); max = 0.0;
+compilation error,85,add,[CE] incompatible types,,  f = UnivariateRealSolverUtils.midpoint(min, max); min = f.value(min);
+compilation error,85,add,[CE] ')' expected,,  int min = UnivariateRealSolverUtils.midpoint(min, max); max = Math.max(max;
+compilation error,79,replace,[CE] cannot find symbol i,clearResult(); ,setResult(0, i);
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.abs(0, 100));
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.abs(1E-6));
+compilation error,52,add,[CE] no suitable constructor found for UnivariateRealSolverImpl(),,  Preconditions.checkNotNull(Math.abs(this));
+compilation error,66,replace,[CE] '.class' expected,return solve(f, min, max); ,return solve(min, double, min, max);
+compilation error,66,replace,[CE] '.class' expected,return solve(f, min, max); ,return solve(min, double, max);
+compilation error,53,replace,[CE] ';' expected,} ,Preconditions.checkArgument(isEnabled(Feature.AUTO_CLOSE_SOURCE));
+compilation error,53,replace,[CE] ';' expected,} ,Preconditions.checkArgument(isEnabled(Feature.AUTO_CLOSE_TARGET));
+compilation error,53,replace,[CE] unclosed string literal,} ,Preconditions.checkArgument("Bisection = new LinkedHashMap < String,Object>());
+compilation error,79,add,[CE] cannot find symbol m,,  min = UnivariateRealSolverUtils.midpoint(min,max); m = UnivariateRealSolverUtils.midpoint(min,max);
+compilation error,79,add,[CE] cannot find symbol maximumIterationCount,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = Math.max(maximumIterationCount);
+compilation error,79,add,[CE] ')' expected,,  min = UnivariateRealSolverUtils.midpoint(min,max); max = Math.max(max;
+compilation error,88,replace,[CE] cannot find symbol fmax,fmin = f.value(min); ,if(fmin < 0.0) { fmin = f.value(min); } else { fmax = f.value(max); }
+compilation error,88,replace,[CE] variable fmin might not have been initialized,fmin = f.value(min); ,if(fmin < 0.0) { fmin = f.value(min); } else { fmin = f.value(max); }
+compilation error,88,replace,[CE] ,fmin = f.value(min); ,if(fmin < 0.0) { fmin = f.value(min); } else { throw new IllegalArgumentException("Function values at endpoints do not have different signs." +" Endpoints: [" + min +"," + max +"]" +" Endpoints: [" + Math.max
+compilation error,53,add,[CE] cannot find symbol SuperClassUtil,,  Preconditions.checkArgument(!SuperClassUtil.isAssignmentOp());

@@ -1,0 +1,164 @@
+increase failing tests,164,add, [FE] AssertionFailedError testSwissFertility,,  int nObs = correlationMatrix.getColumnDimension();
+compilation error,164,add,[CE] cannot find symbol matrix,,  int numberOfObservations = matrix.getColumnDimension();
+compilation error,164,add,[CE] cannot assign a value to final variable nObs,,  nObs = matrix.getColumnDimension();
+compilation error,164,add,[CE] cannot find symbol matrix,,  int nObs = matrix.getColumnDimension();
+compilation error,164,add,[CE] cannot find symbol matrix,,  int numberOfObservations = matrix.getNumberOfObservations();
+compilation error,163,add,[CE] variable nVars is already defined in method getCorrelationPValues(),,  int nVars = matrix.getColumnDimension();
+compilation error,163,add,[CE] cannot find symbol matrix,,  int nObs = matrix.getColumnDimension();
+compilation error,163,add,[CE] cannot find symbol matrix,,  int numberOfObservations = matrix.getColumnDimension();
+compilation error,163,add,[CE] variable nVars is already defined in method getCorrelationPValues(),,  int nVars = matrix.getNumberOfObservations();
+compilation error,163,add,[CE] variable nVars is already defined in method getCorrelationPValues(),,  int nVars = correlationMatrix.getColumnDimension();
+increase failing tests,161,add, [FE] AssertionFailedError testSwissFertility,,  int nObs = correlationMatrix.getColumnDimension();
+compilation error,161,add,[CE] cannot find symbol matrix,,  int nObs = matrix.getColumnDimension();
+compilation error,161,add,[CE] cannot find symbol covarianceMatrix,,  int nObs = this.covarianceMatrix.getColumnDimension();
+compilation error,161,add,[CE] cannot find symbol,,  int nObs = getNumberOfObservations();
+compilation error,161,add,[CE] cannot find symbol matrix,,  int nObs = matrix.getNumberOfObservations();
+compilation error,165,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = new double[nVars][i - 1];
+compilation error,165,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = new double[nVars][i];
+compilation error,165,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = new double[nVars][i].doubleValue();
+compilation error,162,add,[CE] variable nVars is already defined in method getCorrelationPValues(),,  int nVars = correlationMatrix.getColumnDimension();
+compilation error,162,add,[CE] cannot find symbol,,  int numberOfObservations = tDistribution.getColumnDimension();
+compilation error,162,add,[CE] variable nVars is already defined in method getCorrelationPValues(),,  Integer nVars = correlationMatrix.getColumnDimension();
+compilation error,162,add,[CE] cannot find symbol matrix,,  int nVars = matrix.getColumnDimension();
+increase failing tests,166,replace, [FE] AssertionFailedError testSwissFertility,if (i == j) { ,if(i > j) {
+increase failing tests,166,replace, [FE] AssertionFailedError testSwissFertility,if (i == j) { ,if(i!= j) {
+compilation error,166,replace,[CE] 'else' without 'if',if (i == j) { , 
+increase failing tests,167,replace, [FE] AssertionFailedError testSwissFertility,out[i][j] = 0d; ,out[i][j] = 1;
+increase failing tests,167,replace, [FE] AssertionFailedError testSwissFertility,out[i][j] = 0d; ,out[i][j] = 1d;
+compilation error,69,add,[CE] ';' expected,,  this.correlationMatrix = Math.random(), data[nObs]);
+compilation error,69,add,[CE] incompatible types,,  this.correlationMatrix = Math.random();
+compilation error,69,add,[CE] ';' expected,,  this.correlationMatrix = Math.random(), data[0], 0, nObs);
+compilation error,69,add,[CE] RealMatrix is abstract; cannot be instantiated,,  this.correlationMatrix = new RealMatrix(data);
+compilation error,69,add,[CE] RealMatrix is abstract; cannot be instantiated,,  this.correlationMatrix = new RealMatrix(data, false);
+increase failing tests,165,replace, [FE] AssertionFailedError testSwissFertility,for (int j = 0; j < nVars; j++) { ,for(int j = 1; j < nVars; j++) {
+increase failing tests,165,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,for (int j = 0; j < nVars; j++) { ,for(int j = 0; j < nObs; j++) {
+compilation error,165,replace,[CE] cannot find symbol numberOfObservations,for (int j = 0; j < nVars; j++) { ,for(int j = 0; j < numberOfObservations; j++) {
+increase failing tests,161,replace, [FE] AssertionFailedError testSwissFertility,TDistribution tDistribution = new TDistributionImpl(nObs - 2); ,TDistribution tDistribution = new TDistributionImpl(nObs - 1);
+increase failing tests,161,replace, [FE] AssertionFailedError testSwissFertility,TDistribution tDistribution = new TDistributionImpl(nObs - 2); ,TDistribution tDistribution = new TDistributionImpl(nObs * 2);
+increase failing tests,161,replace, [FE] AssertionFailedError testSwissFertility,TDistribution tDistribution = new TDistributionImpl(nObs - 2); ,TDistribution tDistribution = new TDistributionImpl(nObs / 2);
+increase failing tests,161,replace, [FE] AssertionFailedError testSwissFertility,TDistribution tDistribution = new TDistributionImpl(nObs - 2); ,TDistribution tDistribution = new TDistributionImpl(nObs + 1);
+increase failing tests,163,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,double[][] out = new double[nVars][nVars]; ,double[][] out = new double[1][nVars];
+increase failing tests,163,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,double[][] out = new double[nVars][nVars]; ,double[][] out = new double[0][nVars];
+increase failing tests,163,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,double[][] out = new double[nVars][nVars]; ,double[][] out = new double[nVars][1];
+increase failing tests,163,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,double[][] out = new double[nVars][nVars]; ,double[][] out = new double[2][nVars];
+increase failing tests,164,replace, [FE] AssertionFailedError testSwissFertility,for (int i = 0; i < nVars; i++) { ,for(int i = 1; i < nVars; i++) {
+compilation error,164,replace,[CE] int cannot be dereferenced,for (int i = 0; i < nVars; i++) { ,for(int i = 0; i < nVars.length; i++) {
+increase failing tests,164,replace, [FE] MatrixIndexException testSwissFertility,for (int i = 0; i < nVars; i++) { ,for(int i = 0; i <= nVars; i++) {
+compilation error,68,replace,[CE] cannot reference correlationMatrix before supertype constructor has been called,this(new BlockRealMatrix(data)); ,this(new BlockRealMatrix(data, correlationMatrix));
+compilation error,68,replace,[CE] cannot reference nObs before supertype constructor has been called,this(new BlockRealMatrix(data)); ,this(new BlockRealMatrix(data, nObs));
+compilation error,68,replace,[CE] no suitable constructor found for BlockRealMatrix(double[][],boolean),this(new BlockRealMatrix(data)); ,this(new BlockRealMatrix(data, false));
+compilation error,68,replace,[CE] variable correlationMatrix might not have been initialized,this(new BlockRealMatrix(data)); , 
+compilation error,162,replace,[CE] cannot find symbol covarianceMatrix,int nVars = correlationMatrix.getColumnDimension(); ,int nVars = this.covarianceMatrix.getColumnDimension();
+compilation error,162,replace,[CE] cannot find symbol,int nVars = correlationMatrix.getColumnDimension(); ,int nVars = correlationMatrix.getVariance();
+compilation error,169,add,[CE] ';' expected,,  out[i][j] = tDistribution.cumulativeProbability(nVars));
+compilation error,166,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = matrix.getEntry(i, j);
+compilation error,166,add,[CE] possible loss of precision,,  i = correlationMatrix.getEntry(i, j);
+compilation error,166,add,[CE] variable i is already defined in method getCorrelationPValues(),,  int i = correlationMatrix.getEntry(i, j);
+compilation error,166,add,[CE] variable i is already defined in method getCorrelationPValues(),,  int i = correlationMatrix.getColumnDimension();
+compilation error,166,add,[CE] variable i is already defined in method getCorrelationPValues(),,  int i = correlationMatrix.getColumnDimension(j);
+compilation error,169,replace,[CE] cannot find symbol matrix,double r = correlationMatrix.getEntry(i, j); ,double r = matrix.getEntry(i, j);
+increase failing tests,169,replace, [FE] AssertionFailedError testSwissFertility,double r = correlationMatrix.getEntry(i, j); ,double r = correlationMatrix.getEntry(i, j + 1);
+compilation error,169,replace,[CE] cannot find symbol covarianceMatrix,double r = correlationMatrix.getEntry(i, j); ,double r = covarianceMatrix.getEntry(i, j);
+compilation error,69,replace,[CE] illegal start of expression,} ,this.correlationMatrix = new DoubleColumnRealMatrix(data);
+compilation error,167,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = matrix.getEntry(i, j);
+compilation error,167,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = new double[nVars][nVars];
+compilation error,68,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,68,add,[CE] cannot reference nObs before supertype constructor has been called,,  this(data, 0, data[0], 0, nObs);
+compilation error,68,add,[CE] call to this must be first statement in constructor,,  super(); this.nObs = 0;
+compilation error,68,add,[CE] incompatible types,,  super(); this.nObs = true;
+compilation error,68,add,[CE] no suitable constructor found for PearsonsCorrelation(double[][],int,int),,  this(data, 0, data.length);
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getEntry(i, j);
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getCorrelationPvalues();
+compilation error,167,add,[CE] cannot find symbol,,  CovarianceMatrix matrix = getCovarianceMatrix();
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getCorrelation(i, j);
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getCorrelationPValue(i);
+compilation error,167,replace,[CE] hexadecimal numbers must contain at least one hexadecimal digit,out[i][j] = 0d; ,out[i][j] = 0x;
+compilation error,162,replace,[CE] cannot find symbol,int nVars = correlationMatrix.getColumnDimension(); ,int nVars = tDistribution.getColumnDimension();
+compilation error,162,replace,[CE] cannot find symbol,int nVars = correlationMatrix.getColumnDimension(); ,int nVars = correlationMatrix.getVarCount();
+compilation error,162,replace,[CE] cannot find symbol,int nVars = correlationMatrix.getColumnDimension(); ,int nVars = tDistribution.getRowDimension();
+increase failing tests,169,replace, [FE] AssertionFailedError testSwissFertility,double r = correlationMatrix.getEntry(i, j); ,double r = correlationMatrix.getEntry(i, j)/ 2;
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getCorrelationPvalues();
+compilation error,169,add,[CE] cannot find symbol,,  CovarianceMatrix matrix = getCovarianceMatrix();
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getEntry(i, j);
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getCorrelationPValues();
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getCovariance();
+compilation error,164,replace,[CE] cannot find symbol numberOfObservations,for (int i = 0; i < nVars; i++) { ,for(int i = 0; i < numberOfObservations; i++) {
+compilation error,166,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations();
+compilation error,166,add,[CE] cannot find symbol matrix,,  int numberOfObservations = matrix.getNumberOfObservations();
+compilation error,166,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations(i);
+compilation error,166,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getEntry(i, j);
+compilation error,166,add,[CE] variable out is already defined in method getCorrelationPValues(),,  double[][] out = matrix.getCorrelationPvalues();
+increase failing tests,166,replace, [FE] AssertionFailedError testSwissFertility,if (i == j) { ,if(j!= i) {
+increase failing tests,163,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,double[][] out = new double[nVars][nVars]; ,double[][] out = new double[3][nVars];
+compilation error,68,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(data);
+compilation error,68,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(data!= null);
+compilation error,68,add,[CE] constructor Object in class Object cannot be applied to given types;,,  super(data);
+compilation error,69,replace,[CE] illegal start of expression,} ,this.correlationMatrix = getCorrelationMatrix();
+compilation error,69,replace,[CE] illegal start of expression,} ,this.correlationMatrix = Math.exp(getNarObj(), data);
+compilation error,69,replace,[CE] illegal start of expression,} ,this.correlationMatrix = Math.exp(-getNeighborElement(), data);
+compilation error,69,replace,[CE] illegal start of expression,} ,this.correlationMatrix = correlationMatrix.get(data);
+compilation error,163,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations();
+compilation error,163,add,[CE] cannot find symbol matrix,,  int numberOfObservations = matrix.getNumberOfObservations();
+compilation error,163,add,[CE] cannot find symbol,,  int numberOfObservations = tDistribution.getNumberOfObservations();
+compilation error,164,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations();
+increase failing tests,164,add, [FE] ArrayStoreException testSwissFertility,,  System.arraycopy(tDistribution, 0, out, 0, nVars);
+compilation error,164,add,[CE] cannot find symbol,,  int numberOfObservations = tDistribution.getNumberOfObservations();
+compilation error,164,add,[CE] cannot find symbol,,  CovarianceMatrix matrix = getCovarianceMatrix();
+compilation error,161,add,[CE] cannot find symbol,,  int nObs = correlationMatrix.getNumberOfObservations();
+compilation error,161,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations();
+compilation error,161,add,[CE] cannot find symbol covarianceMatrix,,  int nObs = this.covarianceMatrix.getNodeOfObservations();
+compilation error,69,add,[CE] variable nObs might already have been assigned,,  nObs = Math.max(nObs, data.length);
+compilation error,69,add,[CE] variable nObs might already have been assigned,,  nObs = Math.min(nObs, data.length);
+compilation error,69,add,[CE] method exp in class Math cannot be applied to given types;,,  this.correlationMatrix = Math.exp(this, data);
+compilation error,165,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations();
+compilation error,165,add,[CE] cannot find symbol matrix,,  int numberOfObservations = matrix.getNumberOfObservations();
+compilation error,165,add,[CE] cannot find symbol,,  out[i][0] = tDistribution.doubleValue();
+compilation error,165,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations(i);
+compilation error,162,add,[CE] cannot find symbol,,  int numberOfObservations = correlationMatrix.getNumberOfObservations();
+compilation error,162,add,[CE] cannot find symbol,,  int numberOfObservations = tDistribution.getNumberOfObservations();
+compilation error,68,add,[CE] RealMatrix is abstract; cannot be instantiated,,  super(); correlationMatrix = new RealMatrix(data);
+compilation error,68,add,[CE] RealMatrix is abstract; cannot be instantiated,,  super(); correlationMatrix = new RealMatrix(data, false);
+compilation error,68,add,[CE] no suitable constructor found for Double(double[][]),,  this(new Double(data));
+compilation error,68,add,[CE] RealMatrix is abstract; cannot be instantiated,,  super(); correlationMatrix = new RealMatrix(data, 0, data.length);
+compilation error,69,add,[CE] cannot find symbol,,  setNumberOfLinks(data);
+compilation error,69,add,[CE] no suitable constructor found for Double(double[][]),,  setNumberOfLinks(new Double(data));
+compilation error,69,add,[CE] cannot find symbol,,  setNobs(nObs);
+compilation error,69,add,[CE] cannot find symbol,,  setNumberOfLinks(1);
+compilation error,69,add,[CE] cannot find symbol,,  setNumberOfLinks(new Double(data.length));
+compilation error,164,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.setColumnDimension(nObs - 1);
+compilation error,164,add,[CE] cannot find symbol,,  int numberOfObservations = count(nVars - 1);
+compilation error,164,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.setColumnDimension(nVars - 1);
+compilation error,164,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.setColumnDimension(nObs + 1);
+compilation error,161,replace,[CE] cannot find symbol NumberOfObservations,TDistribution tDistribution = new TDistributionImpl(nObs - 2); ,TDistribution tDistribution = new TDistributionImpl(NumberOfObservations - 2);
+compilation error,164,replace,[CE] cannot find symbol numbersOfObservations,for (int i = 0; i < nVars; i++) { ,for(int i = 0; i < numbersOfObservations; i++) {
+compilation error,166,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.get(i);
+compilation error,166,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.validate(i, out[i][j]);
+compilation error,166,add,[CE] double cannot be dereferenced,,  covarianceMatrix.set(i, out[i][j].multiply(tDistribution.cumulativeProbability(i)));
+compilation error,166,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.set(i, out[i][j]);
+compilation error,166,add,[CE] cannot find symbol,,  covarianceMatrix.set(i, out[i][j].multiply(tDistribution.value(i)));
+compilation error,162,replace,[CE] cannot find symbol covarianceMatrix,int nVars = correlationMatrix.getColumnDimension(); ,int nVars = covarianceMatrix.getColumnDimension();
+compilation error,68,replace,[CE] no suitable constructor found for PearsonsCorrelation(BlockRealMatrix,boolean),this(new BlockRealMatrix(data)); ,this(new BlockRealMatrix(data), false);
+compilation error,161,add,[CE] cannot find symbol covarianceMatrix,,  int nObs = this.covarianceMatrix.getNumberOfObservations();
+compilation error,169,replace,[CE] cannot find symbol covarianceMatrix,double r = correlationMatrix.getEntry(i, j); ,double r = this.covarianceMatrix.getEntry(i, j);
+increase failing tests,166,replace, [FE] AssertionFailedError testSwissFertility,if (i == j) { ,if(i == j || i > 0) {
+increase failing tests,166,replace, [FE] AssertionFailedError testSwissFertility,if (i == j) { ,if(i == j || i!= nObs) {
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getValue(i, j);
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getColumnDimension();
+compilation error,167,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.get(i);
+compilation error,167,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.set(i, j);
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getColumnDimension();
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.getValue(i, j);
+compilation error,169,add,[CE] cannot find symbol matrix,,  out[i][j] = matrix.get(i);
+compilation error,169,add,[CE] cannot find symbol covarianceMatrix,,  covarianceMatrix.set(i, j);
+compilation error,165,replace,[CE] cannot find symbol numberOfObservations,for (int j = 0; j < nVars; j++) { ,for(int j = 0; j < numberOfObservations.length; j++) {
+compilation error,165,replace,[CE] cannot find symbol numbersOfObservations,for (int j = 0; j < nVars; j++) { ,for(int j = 0; j < numbersOfObservations; j++) {
+compilation error,165,add,[CE] cannot find symbol matrix,,  out[i][i] = matrix.get(i);
+compilation error,165,add,[CE] cannot find symbol matrix,,  out[i][0] = matrix.get(i);
+compilation error,165,add,[CE] cannot find symbol matrix,,  out[i][i] = matrix.getColumnDimension();
+compilation error,165,add,[CE] cannot find symbol matrix,,  nVars = matrix.getNumberOfObservations();
+compilation error,165,add,[CE] cannot find symbol matrix,,  out[i][i] = matrix.getValue(i);
+compilation error,167,replace,[CE] cannot find symbol value,out[i][j] = 0d; ,out[i][j] = value;
+compilation error,162,add,[CE] cannot find symbol numberOfObservations,,  int numberOfObservations = Math.abs(tDistribution.numberOfObservations);
+compilation error,162,add,[CE] cannot find symbol numberOfObservations,,  int numberOfObservations = Math.abs(tDistribution.numberOfObservations - 1);
+increase failing tests,163,replace, [FE] ArrayIndexOutOfBoundsException testSwissFertility,double[][] out = new double[nVars][nVars]; ,double[][] out = new double[nVars][0];
+compilation error,163,add,[CE] cannot find symbol numberOfObservations,,  int numberOfObservations = Math.max(nVars, tDistribution.numberOfObservations);

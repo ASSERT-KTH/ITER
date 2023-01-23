@@ -1,0 +1,9 @@
+compilation error,74,add,[CE] method evaluateNewSimplex in class MultiDirectional cannot be applied to given types;,,  double khi = evaluateNewSimplex(best, gamma, comparator);
+compilation error,74,add,[CE] incompatible types,,  double khi = evaluateNewSimplex(original, 1.0, comparator);
+compilation error,74,add,[CE] cannot find symbol,,  double khi = best.doubleValue();
+compilation error,74,add,[CE] method evaluateNewSimplex in class MultiDirectional cannot be applied to given types;,,  double khi = evaluateNewSimplex(best, 1.0, comparator);
+compilation error,74,add,[CE] incompatible types,,  double khi = evaluateNewSimplex(original, gamma, comparator);
+compilation error,70,add,[CE] incompatible types,,  final RealPointValuePair[] khi = evaluateNewSimplex(original, 1.0, comparator);
+increase failing tests,70,add, [FE] AssertionError testMinimizeMaximize,,  double khi = Math.random();
+compilation error,70,add,[CE] method evaluateNewSimplex in class MultiDirectional cannot be applied to given types;,,  final RealPointValuePair[] khi = evaluateNewSimplex(1.0, khi, comparator);
+compilation error,70,add,[CE] incompatible types,,  final RealPointValuePair[] khi = evaluateNewSimplex(original, 0.5, comparator);

@@ -1,0 +1,336 @@
+compilation error,740,add,[CE] ';' expected, ,long maximum = getTimePeriod(getItemCount() - 2)getSerialIndex();
+compilation error,174,add,[CE] illegal start of expression, ,if(range!= null) { this.range = range; } else { this.range = range; >>
+patch is same with buggy,880,replace,, fireSeriesChanged();  ,fireSeriesChanged();
+compilation error,880,replace,[CE] cannot find symbol, fireSeriesChanged();  ,ensureCapacity(getItemCount() - start);
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { this.domain = domain; } else { this.range = range; >>
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { this.domain = domain; >> else { this.range = range; }
+compilation error,739,replace,[CE] cannot find symbol latest, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximalItemAge = getTimePeriod(getItemCount() / 1).getSerialIndex();
+patch is same with buggy,739,replace,, long  maximumItemAge  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long maximumItemAge = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,880,replace,[CE] illegal start of expression, if(end  <  start)  {  throw  new  IllegalArgumentException( "Requires  start  <=  end.   ");  }  ,if(end > start) { if(end > end) { throw new IllegalArgumentException("Requires start <= end. "); }
+patch is same with buggy,857,replace,, Object  clone  =  createCopy(0,  getItemCount()  /  2  +  1);  ,Object clone = createCopy(0, getItemCount() / 2 + 1);
+compilation error,174,add,[CE] illegal start of expression, ,if(this.range!= null) { this.range = domain; >> else { this.range = range; }
+compilation error,173,replace,[CE] cannot find symbol itemCount, this.data  =  new  java.util.ArrayList();  ,this.itemCount = Integer.MAX_VALUE;
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,174,replace,, this.maximumItemCount  =  0;  ,this.maximumItemCount = 0;
+patch is same with buggy,740,replace,, boolean  removed  =(latest  >  0)&&(this.data.size()  >  this.maximumItemAge);  ,boolean removed =(latest > 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,174,add,[CE] incompatible types, ,this.maximumItemCount = new java.util.ArrayList(this.maximumItemCount);
+compilation error,174,add,[CE] cannot find symbol minimumItemCount, ,this.data = new java.util.ArrayList(this.minimumItemCount);
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( " ");  ,throw new IllegalArgumentException(" ");
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( " ");  ,throw new IllegalArgumentException( " ");
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( " ");  , 
+patch is same with buggy,880,replace,, System.err.println( "Requires  start  <=  0   ");  ,System.err.println("Requires start <= 0 ");
+patch is same with buggy,880,replace,, System.err.println( "Requires  start  <=  0   ");  ,System.err.println("Requires start <= 0");
+patch is same with buggy,740,replace,, boolean  removed  =(latest  >  0)&&(this.data.size()  >  this.maximumItemAge);  ,boolean removed =(latest > 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(false);// removeAgedItems(true); } if(notify) { fireSeriesChanged(); } ; } 
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(false);// removeAgedItems(true); } if(notify) { fireSeriesChanged(); } 
+compilation error,880,add,[CE] incompatible types, ,return new IllegalArgumentException( " ");
+compilation error,857,add,[CE] variable clone is already defined in method clone(), ,Object clone = createCopy(1, getItemCount() / 2 + 1);
+compilation error,174,add,[CE] illegal start of expression, ,if(domain == null) { this.domain = domain;!= else { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(domain == null) { this.domain = domain; >> else { this.range = range; }
+compilation error,739,add,[CE] ';' expected, ,long last = getTimePeriod(getItemCount() - 2)getSerialIndex();
+compilation error,739,add,[CE] not a statement, ,long final = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,740,add,[CE] cannot find symbol last, ,boolean removed =(last > 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,740,add,[CE] cannot find symbol latetest, ,boolean removed =(latetest > 0)&&(this.data.size() > this.maximumItemAge);
+patch is same with buggy,504,replace,, boolean  added  =  notify;  ,boolean added = notify;
+compilation error,504,replace,[CE] notify has private access in Series, boolean  added  =  notify;  ,boolean added = this.notify;
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+compilation error,174,add,[CE] cannot find symbol domino, ,this.domino = domain;
+compilation error,739,add,[CE] illegal start of expression, ,long maximum = getTimePeriod(getItemCount() - ).getSerialIndex();
+patch is same with buggy,173,replace,, this.data  =  new  java.util.ArrayList();  this.maximumItemCount  =  Integer.MAX_VALUE;  ,this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE;
+compilation error,173,replace,[CE] cannot find symbol minimumItemCount, this.data  =  new  java.util.ArrayList();  this.maximumItemCount  =  Integer.MAX_VALUE;  ,this.data = new java.util.ArrayList(); this.minimumItemCount = Integer.MAX_VALUE;
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; &/ removeAgedItems(true);// remove old items if required, // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; &/ removeAgedItems(true);// remove items if required, // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);// remove old items if required, // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; &/ removeAgedItems(false);// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,880,replace,[CE] cannot find symbol, System.err.println( "Failed  to  add  cloned  item. ");  ,super.setSeriesChanged(start);
+compilation error,504,add,[CE] cannot find symbol notification, ,boolean added = notification;
+compilation error,740,add,[CE] illegal start of expression, ,long maximal = getTimePeriod(getItemCount() - ).getSerialIndex();
+compilation error,740,add,[CE] possible loss of precision, ,int maximal = getTimePeriod(getItemCount() - 1).getSerialIndex();
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( "Requires  start  >=  0 ");  ,throw new IllegalArgumentException("Requires start >= 0 ");
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( "Requires  start  >=  0 ");  ,throw new IllegalArgumentException( "Requires start >= 0 ");
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( "Requires  start  >=  0 ");  , 
+patch is same with buggy,504,replace,, boolean  add  =  true;  ,boolean add = true;
+compilation error,504,replace,[CE] cannot find symbol added, boolean  add  =  true;  ,boolean add = false;
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(false); // remove old items if necessary, // don't notify anyone, because that // happens next anyway; }
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that // happens next anyway; }
+patch is same with buggy,511,replace,, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2);
+compilation error,511,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2 - 1);
+compilation error,173,replace,[CE] cannot find symbol domino, this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,this.domino = domain + DEFAULT_DOMAIN_DESCRIPTION + 1;
+compilation error,511,add,[CE] illegal start of expression, ,if(item.getPeriod().compareTo(last) > 0) { this.data.add(item); added = true; } else { RegularTimePeriod last = getTimePeriod(getItemCount() / 4);
+compilation error,238,replace,[CE] missing return statement, int  maximumItemAge  =  this.data.size();  ,long maximalItemAge = this.data.size();
+patch is same with buggy,238,replace,, int  maximumItemAge  =  this.data.size();  , 
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,175,replace,, this.maximumItemAge  =  Long.MAX_VALUE;  ,this.maximumItemAge = Long.MAX_VALUE;
+increase failing tests,175,replace, [FE] NullPointerException, this.maximumItemAge  =  Long.MAX_VALUE;  ,this.maximumItemAge = Integer.MAX_VALUE;
+compilation error,740,add,[CE] bad operand types for binary operator '&&', ,boolean removed =(latest >> 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,740,add,[CE] cannot find symbol last, ,boolean removed =(last < 0)&&(this.data.size() > this.maximumItemAge);
+patch is same with buggy,173,replace,, this.data  =  new  java.util.ArrayList();  ,this.data = new java.util.ArrayList();
+compilation error,173,replace,[CE] cannot find symbol, this.data  =  new  java.util.ArrayList();  ,this.data = new java.util.ArrayListWithCapacity(this.maximumItemCount);
+compilation error,238,replace,[CE] missing return statement, int  minimumItemAge  =  this.data.size();  ,long minimumItemAge = this.data.size();
+patch is same with buggy,238,replace,, int  minimumItemAge  =  this.data.size();  ,int minimumItemAge = this.data.size();
+patch is same with buggy,880,replace,, System.err.println(   "Requires  start  <=  end.   ");  ,System.err.println( "Requires start <= end. ");
+patch is same with buggy,880,replace,, System.err.println(   "Requires  start  <=  end.   ");  ,System.err.println("Requires start <= end. ");
+compilation error,740,add,[CE] cannot find symbol last, ,boolean removed =(last <= 0)&&(this.data.size() > this.maximumItemAge);
+patch is same with buggy,534,replace,, if(this.data.size()  >  this.maximumItemCount)  {  ,if(this.data.size() > this.maximumItemCount) {
+compilation error,534,replace,[CE] cannot find symbol, if(this.data.size()  >  this.maximumItemCount)  {  ,if(item.getItemCount() > this.maximumItemCount) {
+compilation error,238,add,[CE] cannot find symbol minimumItemCount, ,int minimumItemCount = this.data.get(this.minimumItemCount);
+compilation error,174,add,[CE] cannot find symbol maximalItemCount, ,this.maximumItemCount = maximalItemCount;
+patch is same with buggy,739,replace,, long  last  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long last = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; &/ removeAgedItems(true);// remove items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);// removeAgedItems(false); } if(notify) { fireSeriesChanged(); } 
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);// removeAgedItems(false); } if(notify) { fireSeriesChanged(); } ; } 
+patch is same with buggy,740,replace,, boolean  removed  =(this.data  ==  null)&&(this.data.size()  >  this.maximumItemAge);  , 
+patch is same with buggy,173,replace,, this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,this.domain = domain + DEFAULT_DOMAIN_DESCRIPTION + DEFAULT_RANGE_DESCRIPTION;
+compilation error,173,replace,[CE] bad operand types for binary operator '|', this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,this.domain = domain + DEFAULT_DOMAIN_DESCRIPTION | DEFAULT_RANGE_DESCRIPTION;
+compilation error,739,replace,[CE] ';' expected, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximumItemAge = getTimePeriod(getItemCount() - 2)getSerialIndex();
+compilation error,174,add,[CE] not a statement, ,if(this.domain!= null) { this.range = domain; } else { this.range = range; meanwhile
+compilation error,174,add,[CE] not a statement, ,if(this.domain!= null) { this.range = domain; } else { this.range = range; figured
+compilation error,174,add,[CE] not a statement, ,if(this.domain!= null) { this.range = domain; } else { this.range = range; meanwhile, this.timePeriodClass = timePeriodClass; }
+patch is same with buggy,174,replace,, if(range!=  null)  {  this.range  =  range;  }  else  {  this.range  =  range;  }  ,if(range!= null) { this.range = range; } else { this.range = range; }
+patch is same with buggy,174,replace,, if(range!=  null)  {  this.range  =  range;  }  else  {  this.range  =  range;  }  , 
+patch is same with buggy,740,replace,, long  maximal  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximal = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,740,replace,[CE] cannot find symbol removed, long  maximal  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximal = getTimePeriod(getItemCount() / 1).getSerialIndex();
+compilation error,543,add,[CE] illegal start of expression, ,if(!added) }
+patch is same with buggy,880,replace,, System.err.println( "Failed  to  add  cloned  item. ");  ,System.err.println("Failed to add cloned item.");
+compilation error,173,add,[CE] ';' expected, ,if(this.data == null) { this.data = new java.util.ArrayList(); } else { this.domain = domain; this.range = range; this.maximumItemCount = Integer.MAX_VALUE; this.maximumItemAge = Long.MAX
+compilation error,173,add,[CE] illegal start of expression, ,if(this.data == null) { this.data = new java.util.ArrayList(); } else { this.domain = domain; this.range = range; this.maximumItemCount = Integer.MAX_VALUE; this.maximumItemAge = Long.MAX_VALUE;
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; &/ removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+compilation error,540,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,512,replace,, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2);
+compilation error,512,replace,[CE] , RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() - 2);
+compilation error,543,replace,[CE] cannot find symbol notified, if(!added)  {  ,if(!notified) {
+patch is same with buggy,543,replace,, if(!added)  {  , 
+compilation error,880,add,[CE] not a statement, ,if(end < start) { throw new IllegalArgumentException( "Requires start <= end. "); bodied
+compilation error,880,add,[CE] not a statement, ,if(end < start) { throw new IllegalArgumentException( "Requires start <= end. "); delt
+compilation error,173,add,[CE] not a statement, ,if(domain!= null) { this.domain = domain; slated else { this.domain = domain; this.range = range; }
+compilation error,173,add,[CE] not a statement, ,if(domain!= null) { this.domain = domain; figured else { this.range = range; }
+compilation error,173,add,[CE] not a statement, ,if(domain!= null) { this.domain = domain; ella else { this.range = range; }
+patch is same with buggy,173,replace,, this.domain  =  domain;  this.timePeriodClass  =  timePeriodClass;  ,this.domain = domain; this.timePeriodClass = timePeriodClass;
+compilation error,173,replace,[CE] cannot find symbol timePeriodclass, this.domain  =  domain;  this.timePeriodClass  =  timePeriodClass;  ,this.domain = domain; this.timePeriodClass = timePeriodclass;
+compilation error,173,add,[CE] not a statement, ,if(this.domain!= null) { this.domain = domain; figured else { this.range = range; }
+compilation error,173,add,[CE] not a statement, ,if(this.domain!= null) { this.domain = domain; elle else { this.range = range; }
+compilation error,173,add,[CE] not a statement, ,if(this.domain!= null) { this.domain = domain; ella else { this.range = range; }
+compilation error,534,add,[CE] illegal start of expression, ,if(this.data.size() > this.maximumItemCount) }
+compilation error,534,add,[CE] illegal start of expression, ,if(this.data.size() > this.maximumItemCount) >>
+compilation error,174,add,[CE] cannot find symbol minimumItemCount, ,this.minimumItemCount = 0;
+compilation error,540,add,[CE] cannot find symbol, ,deleteAgedItems(false);// removeAgedItems(false);
+patch is same with buggy,174,replace,, this.domain  =  domain;  ,this.domain = domain;
+patch is same with buggy,536,replace,, if(getItemCount()  >  this.maximumItemCount  &&  getItemCount()  >  this.maximumItemCount)  {  ,if(getItemCount() > this.maximumItemCount && getItemCount() > this.maximumItemCount) {
+compilation error,536,replace,[CE] cannot find symbol minimumItemCount, if(getItemCount()  >  this.maximumItemCount  &&  getItemCount()  >  this.maximumItemCount)  {  ,if(getItemCount() > this.maximumItemCount && getItemCount() > this.minimumItemCount) {
+compilation error,536,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount && getItemCount() > this.maximumItemCount) }
+compilation error,536,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount && getItemCount() > this.maximumItemCount) >>
+patch is same with buggy,173,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+patch is same with buggy,173,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+compilation error,238,replace,[CE] missing return statement, int  minimumItemAge  =  this.data.size();  ,int minimumItemCount = this.data.size() - 1;
+compilation error,173,add,[CE] cannot find symbol domino, ,this.domino = domain + DEFAULT_DOMAIN_DESCRIPTION + DEFAULT_RANGE_DESCRIPTION;
+patch is same with buggy,511,replace,, RegularTimePeriod  last  =  getTimePeriod(getItemCount()  /  4);  ,RegularTimePeriod last = getTimePeriod(getItemCount() / 4);
+patch is same with buggy,739,replace,, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximum = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,739,replace,[CE] cannot find symbol latest, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximum = getTimePeriod(getItemCount() / 1).getSerialIndex();
+patch is same with buggy,173,replace,, this.data  =  new  java.util.ArrayList();  ,this.data = new java.util.ArrayList();
+compilation error,173,replace,[CE] cannot find symbol, this.data  =  new  java.util.ArrayList();  ,this.data = new java.util.ArrayListWithCapacity(2);
+patch is same with buggy,173,replace,, this.data  =  new  java.util.ArrayList();  this.maximumItemCount  =  Integer.MAX_VALUE;  ,this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE;
+patch is same with buggy,739,replace,, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximum = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,174,replace,[CE] illegal start of expression, this.maximumItemCount  =  0;  ,if(this.domain!= null) { this.data = new java.util.ArrayList(); if(this.domain!= null) { this.data = new java.util.ArrayList(); } else { this.domain = domain; this.timePeriodClass = timePeriodClass;
+compilation error,504,replace,[CE] cannot find symbol added, boolean  added  =  notify;  ,boolean added = this.added;
+compilation error,740,replace,[CE] cannot find symbol removed, long  maximal  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximum = getTimePeriod(getItemCount() / 2).getSerialIndex();
+compilation error,174,replace,[CE] illegal start of expression, this.maximumItemCount  =  0;  ,[Delete]
+compilation error,174,replace,[CE] illegal start of expression, this.maximumItemCount  =  0;  ,if(range!= null) { if(domain == null) { this.domain = domain; } else { this.range = range; }
+patch is same with buggy,238,replace,, int  minimumItemAge  =  this.data.size();  ,int minimumItemAge = this.data.size();
+compilation error,540,add,[CE] cannot find symbol, ,this.data.remove(0); removedAgedItems(true);// removeAgedItems(null);
+compilation error,238,add,[CE] cannot find symbol middleItemCount, ,int minimumItemCount = this.data.get(middleItemCount);
+compilation error,238,add,[CE] cannot find symbol middleItemAge, ,int minimumItemCount = this.data.get(middleItemAge);
+patch is same with buggy,174,replace,, this.domain  =  domain;  ,this.domain = domain;
+increase failing tests,739,add, [FE]  Size, ,long maximum = getTimePeriod(getItemCount() + 1).getSerialIndex();
+patch is same with buggy,740,replace,, boolean  removed  =(latest  >  0)&&(this.data.size()  >  this.maximumItemAge);  ,boolean removed =(latest > 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,739,replace,[CE] cannot find symbol latest, long  maximumItemAge  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long maximumItemAge = getTimePeriod(getItemCount() / 2).getSerialIndex();
+compilation error,173,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,173,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain == null) { this.domain = domain; this.range = range; }
+compilation error,173,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain == null) { throw new IllegalArgumentException(""); }
+patch is same with buggy,857,replace,, Object  clone  =  createCopy(0,  getItemCount()  /  2  +  1);  ,Object clone = createCopy(0, getItemCount() / 2 + 1);
+increase failing tests,857,replace, [FE]  Size, Object  clone  =  createCopy(0,  getItemCount()  /  2  +  1);  ,Object clone = createCopy(0, getItemCount() * 2 + 1);
+patch is same with buggy,880,replace,, System.err.println(   "Requires  start  <=  end.   ");  ,System.err.println("Requires start <= end. ");
+patch is same with buggy,880,replace,, System.err.println(   "Requires  start  <=  end.   ");  ,System.err.println("Requires start <= end.");
+patch is same with buggy,880,replace,, System.err.println( "Failed  to  add  cloned  item. ");  ,System.err.println("Failed to add cloned item.");
+compilation error,504,add,[CE] cannot find symbol alert, ,boolean added = alert;
+patch is same with buggy,740,replace,, boolean  removed  =(this.data  ==  null)&&(this.data.size()  >  this.maximumItemAge);  ,boolean removed =(this.data == null)&&(this.data.size() > this.maximumItemAge);
+compilation error,174,replace,[CE] illegal start of expression, this.maximumItemCount  =  0;  ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; } else { this.domain = domain; this.range = range; }
+compilation error,174,replace,[CE] illegal start of expression, if(range!=  null)  {  this.range  =  range;  }  else  {  this.range  =  range;  }  ,if(range!= null) { if(range!= null) { this.range = range; } else { this.range = range; }
+compilation error,174,replace,[CE] illegal start of expression, if(range!=  null)  {  this.range  =  range;  }  else  {  this.range  =  range;  }  ,if(range!= null) { this.range = range; if(timePeriodClass == DEFAULT_DOMAIN_DESCRIPTION) { this.range = range; }
+compilation error,173,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; this.range = range; }
+compilation error,173,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { throw new IllegalArgumentException(""); }
+compilation error,173,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(!this.domain.equals(domain)) { this.domain = domain; this.range = range; }
+compilation error,880,add,[CE] unreachable statement, ,throw new IllegalArgumentException("Requires end < 0. ");
+compilation error,174,add,[CE] illegal start of expression, ,if(range!= null) { if(range == null) { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(range!= null) { this.range = range; if(timePeriodClass!= null) { this.range = timePeriodClass; }
+compilation error,174,add,[CE] illegal start of expression, ,if(range!= null) { this.range = range; if(timePeriodClass!= null) { this.range = range; }
+compilation error,174,add,[CE] cannot find symbol itemCount, ,this.itemCount = 0;
+patch is same with buggy,740,replace,, boolean  removed  =(latest  >  0)&&(this.data.size()  >  this.maximumItemAge);  ,boolean removed =(latest > 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,880,replace,[CE] cannot find symbol series, System.err.println( "Failed  to  add  cloned  item. ");  ,series.removeChangeListener(start);
+increase failing tests,880,replace, [FE] AssertionFailedError, System.err.println( "Failed  to  add  cloned  item. ");  ,this.data.remove(start);
+compilation error,174,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain == null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(domain == null) { if(domain == null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(domain == null) { this.domain = domain; if(timePeriodClass == DEFAULT_DOMAIN_DESCRIPTION) { this.range = range; }
+compilation error,880,add,[CE] unreachable statement, ,throw new IllegalArgumentException("Requires end << 0. ");
+patch is same with buggy,238,replace,, int  maximumItemAge  =  this.data.size();  ,int maximumItemAge = this.data.size();
+compilation error,174,add,[CE] cannot find symbol DOMAIN, ,this.DOMAIN = domain;
+compilation error,534,add,[CE] not a statement, ,this.data.size() > this.maximumItemCount) {
+compilation error,740,add,[CE] cannot find symbol, ,long maximal = getTimePeriod(getItemCount() - 1).getMaximumItemAge();
+compilation error,880,add,[CE] illegal start of expression, ,if(start > end) { if(end > start) { throw new IllegalArgumentException(" "); }
+compilation error,880,add,[CE] illegal start of expression, ,if(start > end) { if(end > start) { throw new IllegalArgumentException(""); } else if(end > start) { throw new IllegalArgumentException(" "); }
+compilation error,173,add,[CE] cannot find symbol, ,if(this.domain!= null) { this.domain = domain; this.range = range; } else { this.data = new ArrayList(); }
+compilation error,173,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,[Delete]
+compilation error,173,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+compilation error,174,replace,[CE] '(' expected, this.domain  =  domain;  ,if(this.range!= null) { if(this.domain!= null) { this.range = domain; if else { this.range = range; this.timePeriodClass = timePeriodClass; }
+compilation error,174,replace,[CE] illegal start of expression, this.domain  =  domain;  ,if(this.range!= null) { if(this.domain!= null) { this.range = domain; } else { this.range = range; this.timePeriodClass = timePeriodClass; }
+compilation error,173,add,[CE] cannot find symbol itemCount, ,this.itemCount = domain + DEFAULT_DOMAIN_DESCRIPTION + DEFAULT_RANGE_DESCRIPTION;
+compilation error,173,add,[CE] cannot find symbol domin, ,this.domin = domain + DEFAULT_DOMAIN_DESCRIPTION + DEFAULT_RANGE_DESCRIPTION;
+patch is same with buggy,175,replace,, this.maximumItemAge  =  Long.MAX_VALUE;  ,this.maximumItemAge = Long.MAX_VALUE;
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.range = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range!= null) { this.range = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.range = domain; } else { this.range = range; this.timePeriodClass = timePeriodClass; }
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,536,replace,, if(getItemCount()  >  this.maximumItemCount  &&  getItemCount()  >  this.maximumItemCount)  {  ,if(getItemCount() > this.maximumItemCount && getItemCount() > this.maximumItemCount) {
+compilation error,880,add,[CE] int cannot be dereferenced, ,System.err.println("Requires start >= 0".equals(start + end.getClass().getName()));
+patch is same with buggy,740,replace,, long  maximal  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximal = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,543,add,[CE] cannot find symbol b, ,if(!added) { this.data.add(item); b.addChangeListener(this); }
+compilation error,543,add,[CE] cannot find symbol b, ,if(!added) { this.data.add(item); b.append('n'); }
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+compilation error,512,replace,[CE] , RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2 - 1);
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; if(!this.domain.equals("")) { this.domain = domain; this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; if(!this.domain.equals("")) { throw new IllegalArgumentException(""); }
+compilation error,174,add,[CE] cannot find symbol itemCount, ,this.itemCount = java.util.ArrayList();
+patch is same with buggy,173,replace,, this.domain  =  domain;  this.timePeriodClass  =  timePeriodClass;  ,this.domain = domain; this.timePeriodClass = timePeriodClass;
+compilation error,173,replace,[CE] cannot find symbol domino, this.domain  =  domain;  this.timePeriodClass  =  timePeriodClass;  ,this.domino = domain; this.timePeriodClass = timePeriodClass;
+compilation error,173,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+compilation error,173,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; this.range = range; } else {
+increase failing tests,740,add, [FE]  Size, ,long maximum = getTimePeriod(getItemCount() + 2).getSerialIndex();
+increase failing tests,512,add, [FE] AssertionFailedError, ,if(item.getPeriod().compareTo(last) > 0) { this.data.add(item); added = true; }
+compilation error,512,add,[CE] cannot find symbol first, ,if(item.getPeriod().compareTo(first) > 0) { this.data.add(item); added = true; }
+compilation error,174,replace,[CE] incompatible types, this.domain  =  domain;  ,this.maximumItemCount = timePeriodClass;
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; } else { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { this.domain = domain; if(!this.domain.equals("")) { this.domain = domain; }
+compilation error,175,add,[CE] cannot find symbol itemCount, ,this.itemCount = Integer.MAX_VALUE;
+compilation error,504,replace,[CE] cannot find symbol added, boolean  add  =  true;  ,boolean add = notify;
+patch is same with buggy,504,replace,, boolean  add  =  true;  , 
+compilation error,511,add,[CE] cannot find symbol, ,regularTimePeriod last = getTimePeriod(getItemCount() / 4);
+patch is same with buggy,880,replace,, System.err.println( "Requires  start  <=  0   ");  ,System.err.println("Requires start <= 0");
+patch is same with buggy,880,replace,, System.err.println( "Requires  start  <=  0   ");  ,System.err.println("Requires start <= 0 ");
+compilation error,880,add,[CE] not a statement, ,if(end < start) { throw new IllegalArgumentException("Requires start <= end. "); meanwhile
+patch is same with buggy,880,replace,, fireSeriesChanged();  ,fireSeriesChanged();
+compilation error,880,replace,[CE] cannot find symbol, fireSeriesChanged();  ,ensureSeriesChanged();
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range!= null) { this.range = domain; } else { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.range!= null) { if(this.domain!= null) { this.range = domain; }
+increase failing tests,504,add, [FE] SeriesException, ,boolean add = true; this.data.add(item);
+patch is same with buggy,174,replace,, this.maximumItemCount  =  0;  ,this.maximumItemCount = 0;
+compilation error,540,add,[CE] cannot find symbol b, ,b.append(item.getPeriod());// removeAgedItems(false);
+patch is same with buggy,534,replace,, if(this.data.size()  >  this.maximumItemCount)  {  ,if(this.data.size() > this.maximumItemCount) {
+compilation error,540,add,[CE] cannot find symbol, ,this.data.remove(0); removedItems(true);// removeAgedItems(true);
+compilation error,511,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() * 2);
+patch is same with buggy,173,replace,, this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,this.domain = domain + DEFAULT_DOMAIN_DESCRIPTION + DEFAULT_RANGE_DESCRIPTION;
+compilation error,173,replace,[CE] bad operand types for binary operator '/', this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,this.domain = domain + DEFAULT_DOMAIN_DESCRIPTION / DEFAULT_RANGE_DESCRIPTION;
+patch is same with buggy,175,replace,, this.maximumItemAge  =  Long.MAX_VALUE;  ,this.maximumItemAge = Long.MAX_VALUE;
+compilation error,857,add,[CE] cannot find symbol, ,Object clone = createColpy(0, getItemCount() / 2);
+compilation error,174,replace,[CE] no suitable constructor found for ArrayList(long), this.domain  =  domain;  ,this.data = new java.util.ArrayList(this.maximumItemAge);
+compilation error,880,add,[CE] unclosed string literal, ,System.err.println("Requires start >= 0". ");
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,880,replace,, if(end  <  start)  {  throw  new  IllegalArgumentException( "Requires  start  <=  end.   ");  }  ,if(end < start) { throw new IllegalArgumentException("Requires start <= end. "); }
+patch is same with buggy,880,replace,, if(end  <  start)  {  throw  new  IllegalArgumentException( "Requires  start  <=  end.   ");  }  , 
+compilation error,238,replace,[CE] missing return statement, int  minimumItemAge  =  this.data.size();  ,int minimumItemAge = this.data.size() - 1;
+patch is same with buggy,238,replace,, int  minimumItemAge  =  this.data.size();  , 
+compilation error,238,add,[CE] cannot find symbol minimumItemCount, ,int maximumItemCount = this.data.get(minimumItemCount);
+increase failing tests,173,replace, [FE] StackOverflowError, this.data  =  new  java.util.ArrayList();  ,this.domain = domain; this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+compilation error,173,replace,[CE] incompatible types, this.data  =  new  java.util.ArrayList();  ,this.domain = new java.util.ArrayList(); this.maximumItemAge = Long.MAX_VALUE;
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( " ");  ,throw new IllegalArgumentException("");
+compilation error,540,add,[CE] cannot find symbol, ,this.data.add(item); removedAgedItems(false);
+patch is same with buggy,534,replace,, if(this.data.size()  >  this.maximumItemCount)  {  ,if(this.data.size() > this.maximumItemCount) {
+increase failing tests,739,add, [FE]  Size, ,long last = getTimePeriod(getItemCount() + 2).getSerialIndex();
+compilation error,540,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount) { removeAgedItems(false);// removeAgedItems(true); }
+compilation error,540,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount) { removeAgedItems(false);// removeAgedItems(true); } else { this.data.add(item); }
+compilation error,540,add,[CE] illegal start of expression, ,if(item.getPeriod().equals(this.data.get(item))) { removeAgedItems(false);// removeAgedItems(true); }
+compilation error,173,add,[CE] cannot find symbol, ,this.data = new ArrayList();
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range == null) { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range == null) { this.range = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range == null) { throw new IllegalArgumentException(""); }
+compilation error,540,add,[CE] cannot find symbol value, ,this.data.add(item); b.setValue(value);
+compilation error,540,add,[CE] cannot find symbol b, ,b.append(item.getPeriod()).append('n'); b.append(getItemCount() - 1);
+patch is same with buggy,173,replace,, this.domain  =  domain;  this.timePeriodClass  =  timePeriodClass;  ,this.domain = domain; this.timePeriodClass = timePeriodClass;
+compilation error,173,replace,[CE] incompatible types, this.domain  =  domain;  this.timePeriodClass  =  timePeriodClass;  ,this.domain = domain; this.timePeriodClass = timePeriodClass? timePeriodClass : null;
+compilation error,174,add,[CE] no suitable method found for getDataItem(Comparable), ,this.data = getDataItem(name);
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+compilation error,173,add,[CE] cannot find symbol, ,if(!this.data.contains(name)) { this.data = new ArrayList(); } else { this.data.add(name); }
+compilation error,173,add,[CE] cannot find symbol, ,if(!this.data.contains(name)) { this.data = new ArrayList(); } else { this.data = new ArrayList(); }
+patch is same with buggy,880,replace,, System.err.println( "Failed  to  add  cloned  item. ");  ,System.err.println("Failed to add cloned item.");
+patch is same with buggy,540,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,504,add,[CE] variable added is already defined in method add(TimeSeriesDataItem,boolean), ,final boolean added = notify;
+patch is same with buggy,173,replace,, this.data  =  new  java.util.ArrayList();  this.maximumItemCount  =  Integer.MAX_VALUE;  ,this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE;
+compilation error,173,replace,[CE] possible loss of precision, this.data  =  new  java.util.ArrayList();  this.maximumItemCount  =  Integer.MAX_VALUE;  ,this.data = new java.util.ArrayList(); this.maximumItemCount = Long.MAX_VALUE;
+compilation error,880,replace,[CE] no suitable method found for add(int), System.err.println( "Failed  to  add  cloned  item. ");  ,this.data.add(-start);
+increase failing tests,173,replace, [FE] NullPointerException, this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,if(domain == null) { this.domain = domain; this.range = range; } else { this.data.add(name); }
+patch is same with buggy,536,replace,, if(getItemCount()  >  this.maximumItemCount  &&  getItemCount()  >  this.maximumItemCount)  {  ,if(getItemCount() > this.maximumItemCount && getItemCount() > this.maximumItemCount) {
+patch is same with buggy,238,replace,, int  maximumItemAge  =  this.data.size();  ,int maximumItemAge = this.data.size();
+patch is same with buggy,511,replace,, RegularTimePeriod  last  =  getTimePeriod(getItemCount()  /  4);  ,RegularTimePeriod last = getTimePeriod(getItemCount() / 4);
+increase failing tests,238,add, [FE] StackOverflowError, ,int maximumItemAge = getItemCount();
+compilation error,504,add,[CE] incompatible types, ,Boolean add = true;
+compilation error,173,add,[CE] illegal start of expression, ,if(timePeriodClass.isArray()) { if(this.domain!= null) { throw new IllegalArgumentException(""); }
+compilation error,173,add,[CE] illegal start of expression, ,if(domain == null) { if(this.domain!= null) { throw new IllegalArgumentException(""); }
+compilation error,173,add,[CE] illegal start of expression, ,if(timePeriodClass.isArray()) { if(this.domain!= null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(timePeriodClass == null) { if(this.domain!= null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain == null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range!= null) { this.domain = domain; }
+compilation error,174,replace,[CE] '(' expected, if(range!=  null)  {  this.range  =  range;  }  else  {  this.range  =  range;  }  ,if(range!= null) { this.range = range; if else { this.range = range; }
+compilation error,174,replace,[CE] illegal start of expression, if(range!=  null)  {  this.range  =  range;  }  else  {  this.range  =  range;  }  ,if(range!= null) { this.range = range; if(bucket) { this.range = range; }
+compilation error,540,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount) { removeAgedItems(true);// removeAgedItems(false); }
+compilation error,540,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount) { removeAgedItems(true);// removeAgedItems(false); } else { this.data.add(item); }
+increase failing tests,739,add, [FE]  Size, ,long maximalItemAge = getTimePeriod(getItemCount() + 1).getSerialIndex();
+patch is same with buggy,880,replace,, System.err.println(   "Requires  start  <=  end.   ");  ,System.err.println("Requires start <= end.");
+patch is same with buggy,880,replace,, System.err.println(   "Requires  start  <=  end.   ");  ,System.err.println("Requires start <= end. ");
+compilation error,540,replace,[CE] illegal start of expression, removeAgedItems(false);//  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,if(getItemCount() > this.maximumItemCount) { removeAgedItems(false);// removeAgedItems(false); }
+patch is same with buggy,739,replace,, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximum = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,739,replace,[CE] cannot find symbol latest, long  maximum  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximum = getTimePeriod(getItemCount()).getSerialIndex();
+patch is same with buggy,504,replace,, boolean  added  =  notify;  ,boolean added = notify;
+patch is same with buggy,504,replace,, boolean  added  =  notify;  ,boolean added = notify;
+compilation error,174,add,[CE] illegal start of expression, ,if(this.data!= null) { if(this.domain!= null) { this.range = domain; }
+patch is same with buggy,173,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+patch is same with buggy,173,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  , 
+compilation error,174,add,[CE] cannot find symbol minimumItemCount, ,this.minimumItemCount = minimumItemCount;
+compilation error,174,add,[CE] illegal start of expression, ,if(domain == null) { if(domain == null) { this.domain = domain; } else { this.range = range; }
+patch is same with buggy,880,replace,, System.err.println( "Requires  start  <=  0   ");  ,System.err.println("Requires start <= 0 ");
+patch is same with buggy,880,replace,, System.err.println( "Requires  start  <=  0   ");  ,System.err.println("Requires start <= 0");
+increase failing tests,540,add, [FE] AssertionFailedError, ,this.data.add(item);// removeAgedItems(false);
+increase failing tests,540,add, [FE] AssertionFailedError, ,this.data.add(item);// removeAgedItems(true);
+patch is same with buggy,880,replace,, throw  new  IllegalArgumentException( "Requires  start  >=  0 ");  ,throw new IllegalArgumentException("Requires start >= 0 ");
+patch is same with buggy,880,replace,, fireSeriesChanged();  ,fireSeriesChanged();
+compilation error,174,replace,[CE] '(' expected, this.maximumItemCount  =  0;  ,if(this.domain!= null) { this.domain = domain; if else { this.range = range; }
+patch is same with buggy,740,replace,, long  maximal  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long maximal = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range == null) { this.domain = domain; }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range == null) { this.domain = domain; } else { this.range = range; }
+compilation error,740,add,[CE] cannot find symbol latex, ,boolean removed =(latex > 0)&&(this.data.size() > this.maximumItemAge);
+compilation error,174,add,[CE] cannot find symbol name, ,this.name = name;
+patch is same with buggy,739,replace,, long  last  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long last = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,173,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.equals("")) { throw new IllegalArgumentException(""); }
+compilation error,173,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.isArray()) { throw new IllegalArgumentException(""); }
+compilation error,173,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.isNull()) { throw new IllegalArgumentException(""); }
+compilation error,174,replace,[CE] '(' expected, this.domain  =  domain;  ,if(this.range!= null) { this.range = domain; if else { this.range = range; }
+compilation error,174,replace,[CE] , this.domain  =  domain;  ,this.range = domain; if else { this.range = range; }
+patch is same with buggy,857,replace,, Object  clone  =  createCopy(0,  getItemCount()  /  2  +  1);  ,Object clone = createCopy(0, getItemCount() / 2 + 1);
+compilation error,174,replace,[CE] '(' expected, this.domain  =  domain;  ,if(this.range!= null) { this.domain = domain; if else { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(domain!= null) { if(range == null) { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(domain!= null) { if(range < null) { this.range = range; }
+compilation error,174,add,[CE] illegal start of expression, ,if(domain!= null) { if(range == null) { this.range = range; } else { throw new IllegalArgumentException(""); }
+patch is same with buggy,174,replace,, this.maximumItemCount  =  0;  ,this.maximumItemCount = 0;
+patch is same with buggy,173,replace,, this.data  =  new  java.util.ArrayList();  ,this.data = new java.util.ArrayList();
+compilation error,740,add,[CE] cannot find symbol latex, ,boolean removed =(latex <= 0)&&(this.data.size() > this.maximumItemAge);
+patch is same with buggy,174,replace,, this.domain  =  domain;  ,this.domain = domain;
+compilation error,174,replace,[CE] '(' expected, this.domain  =  domain;  ,if(this.range!= null) { this.range = domain; if else { this.range = range; this.timePeriodClass = timePeriodClass; }
+patch is same with buggy,504,replace,, boolean  add  =  true;  ,boolean add = true;
+patch is same with buggy,173,replace,, this.domain  =  domain  +  DEFAULT_DOMAIN_DESCRIPTION  +  DEFAULT_RANGE_DESCRIPTION;  ,this.domain = domain + DEFAULT_DOMAIN_DESCRIPTION + DEFAULT_RANGE_DESCRIPTION;
+patch is same with buggy,740,replace,, boolean  removed  =(latest  >  0)&&(this.data.size()  >  this.maximumItemAge);  , 
+patch is same with buggy,739,replace,, long  maximumItemAge  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long maximumItemAge = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,174,replace,[CE] '(' expected, this.maximumItemCount  =  0;  ,if(range!= null) { this.domain = domain; if else { this.range = range; }
+patch is same with buggy,740,replace,, boolean  removed  =(this.data  ==  null)&&(this.data.size()  >  this.maximumItemAge);  ,boolean removed =(this.data == null)&&(this.data.size() > this.maximumItemAge);
+increase failing tests,543,add, [FE] AssertionFailedError, ,if(!added) { this.data.add(item); } else { this.data.add(item); }
+compilation error,511,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() - 1);

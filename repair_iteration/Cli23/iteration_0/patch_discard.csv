@@ -1,0 +1,7 @@
+compilation error,96,replace,[CE] incompatible types,public String defaultSyntaxPrefix = DEFAULT_SYNTAX_PREFIX; ,public String defaultSyntaxPrefix = DEFAULT_SYNTAX_PREFIX? DEFAULT_SYNTAX_PREFIX : Integer.MAX_VALUE;
+compilation error,96,replace,[CE] bad operand types for binary operator '*',public String defaultSyntaxPrefix = DEFAULT_SYNTAX_PREFIX; ,public String defaultSyntaxPrefix = DEFAULT_SYNTAX_PREFIX * 2;
+compilation error,96,replace,[CE] cannot find symbol defaultSyntaxPrefix,public String defaultSyntaxPrefix = DEFAULT_SYNTAX_PREFIX; , 
+compilation error,135,add,[CE] illegal start of type,,  super.setOptionComparator(optionComparator);
+compilation error,135,add,[CE] illegal start of type,,  return super.optionComparator();
+compilation error,135,add,[CE] illegal start of type,,  super.setOptions(optionComparator);
+compilation error,135,add,[CE] illegal start of type,,  return new OptionComparator();

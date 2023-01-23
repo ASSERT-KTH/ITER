@@ -1,0 +1,48 @@
+compilation error,502,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, weightedResiduals);
+compilation error,502,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, weightedResiduals, getWeight());
+compilation error,502,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, weightedResiduals, getWidth());
+compilation error,502,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, jacobianData.length);
+compilation error,502,add,[CE] cannot find symbol covar,,  System.arraycopy(weightedResiduals, 0, covar, getWeight());
+compilation error,141,add,[CE] cannot find symbol,,  int cols = jF.getJacobianEvaluations();
+compilation error,141,add,[CE] cannot find symbol,,  int jacobianEvaluations = jF.getJacobianEvaluations();
+compilation error,141,add,[CE] cannot find symbol,,  double[][] rows = jF.getJacobianEvaluations();
+compilation error,141,add,[CE] cannot find symbol,,  int jacobianEvaluations = this.weightedResidualJacobian.doubleValue();
+compilation error,141,add,[CE] cannot find symbol,,  int jacobianEvaluations = this.weightedResidualJacobian.getCols();
+compilation error,423,add,[CE] ';' expected,,  final PointVectorValuePair optimize(maxEval, f, weights, startPoint);
+compilation error,423,add,[CE] ';' expected,,  final PointVectorValuePair optimize(f, maxEval, weights, startPoint);
+compilation error,423,add,[CE] ';' expected,,  final PointVectorValuePair optimize(maxEval, f, weights, startPoint, false);
+compilation error,423,add,[CE] no suitable method found for min(int,double[],double[]),,  final int colls = Math.min(maxEval, weights, startPoint);
+compilation error,423,add,[CE] ';' expected,,  final PointVectorValuePair optimize(maxEval, f, weights, startPoint, true);
+compilation error,135,add,[CE] cannot find symbol,,  if(checker.getStdDevValue() == null) { double[][] weightedResidualJacobian = getWorthMatrixSqrt().getIndexOf(jF.getLeastSuperlativeity()); }
+compilation error,135,add,[CE] cannot find symbol,,  if(checker.getStdDevValue() == null) { double[][] weightedResidualJacobian = getWorthMatrixSqrt().getIndexOf(jF.getConvergence()); }
+compilation error,135,add,[CE] ';' expected,,  if(checker.getStdDevValue() == null) { double[][] weightedResidualJacobian = getWorthMatrixSqrt().getIndexOf(jF.getConvergence()), checker.get
+compilation error,135,add,[CE] illegal start of expression,,  if(checker.getStdDevValue() == null) { double[][] weightedResidualJacobian = getWorthMatrixSqrt().getIndexOf(jF.getConvergence()); } else { Preconditions.checkState(
+compilation error,135,add,[CE] ';' expected,,  if(checker.getStdDevValue() == null) { double[][] weightedResidualJacobian = getWorthMatrixSqrt().getIndexOf(jF.getConvergence()), checker.getOptional
+compilation error,505,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, weightedResiduals);
+compilation error,505,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, jacobianData.length);
+compilation error,505,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, getWidth());
+compilation error,505,add,[CE] cannot find symbol,,  weightedResiduals = getWidth();
+compilation error,505,add,[CE] cannot find symbol jTj,,  System.arraycopy(weightedResiduals, 0, jTj, 0, covar, getWeight());
+compilation error,496,replace,[CE] method toDifferentiableMultivariateVectorFunction in class FunctionUtils cannot be applied to given types;,return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData); ,return super.optimizeInternal(f, FunctionUtils.toDifferentiableMultivariateVectorFunction(maxEval), optData);
+compilation error,496,replace,[CE] cannot find symbol,return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData); ,return super.optimizeOptimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData);
+compilation error,496,replace,[CE] incompatible types,return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData); ,return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData[optData]);
+compilation error,496,replace,[CE] missing return statement,return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData); , 
+compilation error,508,add,[CE] cannot find symbol jTj,,  jTj = squareRoot(getWeight());
+compilation error,508,add,[CE] cannot find symbol jTj,,  jTj = squareRoot(getWidth());
+compilation error,508,add,[CE] cannot find symbol jTj,,  jTj = squareRoot(getHeight());
+compilation error,508,add,[CE] cannot find symbol JTj,,  JTj = squareRoot(getWeight());
+compilation error,508,add,[CE] incompatible types,,  weightedResiduals = squareRoot(getWeight());
+compilation error,135,replace,[CE] illegal start of expression,} ,this.weightMatrixSqrt = checker.getSize();
+compilation error,135,replace,[CE] illegal start of expression,} ,this.weightMatrixSqrt = jF.getWorthMatrixSqrt();
+compilation error,135,replace,[CE] illegal start of expression,} ,this.weightMatrixSqrt = jF.getSize();
+compilation error,135,replace,[CE] illegal start of expression,} ,this.weightMatrixSqrt = jF.getWorthMatrix();
+compilation error,562,replace,[CE] no suitable constructor found for EigenDecomposition(RealMatrix,double[]),final EigenDecomposition dec = new EigenDecomposition(m); ,final EigenDecomposition dec = new EigenDecomposition(m, weightedResiduals);
+compilation error,562,replace,[CE] cannot find symbol i,final EigenDecomposition dec = new EigenDecomposition(m); ,final EigenDecomposition dec = new EigenDecomposition(m, i);
+compilation error,562,replace,[CE] cannot find symbol weightedJacobianEvaluations,final EigenDecomposition dec = new EigenDecomposition(m); ,final EigenDecomposition dec = new EigenDecomposition(m, weightedJacobianEvaluations);
+compilation error,562,replace,[CE] cannot find symbol dec,final EigenDecomposition dec = new EigenDecomposition(m); , 
+compilation error,496,add,[CE] cannot find symbol,,  OptData[] optData = f.getOptimizationData();
+compilation error,496,add,[CE] cannot find symbol opt,,  optData[opt] = f.getValue();
+compilation error,496,add,[CE] cannot find symbol,,  OptData[] optData = f.getValue();
+compilation error,496,add,[CE] not a statement,,  optData[] = f.getValue();
+compilation error,496,add,[CE] cannot find symbol,,  OptData[] optData = f.getValues();
+compilation error,134,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(checker);

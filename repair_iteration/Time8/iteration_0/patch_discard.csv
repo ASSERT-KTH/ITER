@@ -1,0 +1,37 @@
+increase failing tests,290,replace, [FE] AssertionFailedError testForOffsetHours_int,offset = FieldUtils.safeMultiply(minutesOffset, DateTimeConstants.MILLIS_PER_MINUTE); ,offset = FieldUtils.safeMultiply(hoursOffset, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,290,replace, [FE] AssertionFailedError testForOffsetHours_int,offset = FieldUtils.safeMultiply(minutesOffset, DateTimeConstants.MILLIS_PER_MINUTE); ,offset = FieldUtils.safeMultiply(minutesOffset, DateTimeConstants.MILLIS_PER_MINUTE)+ 1;
+increase failing tests,290,replace, [FE] AssertionFailedError testForOffsetHours_int,offset = FieldUtils.safeMultiply(minutesOffset, DateTimeConstants.MILLIS_PER_MINUTE); , 
+compilation error,284,add,[CE] variable hoursInMinutes is already defined in method forOffsetHoursMinutes(int,int),,  int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,284,replace, [FE] AssertionFailedError testForOffsetHours_int,int hoursInMinutes = hoursOffset * 60; ,int hoursInMinutes = hoursOffset / 60;
+increase failing tests,284,replace, [FE] AssertionFailedError testForOffsetHours_int,int hoursInMinutes = hoursOffset * 60; ,int hoursInMinutes = offset * 60;
+increase failing tests,284,replace, [FE] AssertionFailedError testForOffsetHours_int,int hoursInMinutes = hoursOffset * 60; ,int hoursInMinutes = 60;
+compilation error,279,add,[CE] variable minutesOffset is already defined in method forOffsetHoursMinutes(int,int),,  int minutesOffset = Integer.parseInt(hoursOffset);
+compilation error,274,add,[CE] cannot find symbol offset,,  if(offset == 0) { throw new IllegalArgumentException(""); }
+increase failing tests,288,add, [FE] IllegalArgumentException testForOffsetHours_int,,  minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,288,add, [FE] IllegalArgumentException testForOffsetHours_int,,  minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE); offset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,288,add, [FE] IllegalArgumentException testForOffsetHours_int,,  hoursInMinutes = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+compilation error,294,add,[CE] cannot find symbol hoursInMinutes,,  offset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+compilation error,276,add,[CE] cannot find symbol offset,,  if(offset < 0) { return DateTimeZone.UTC; } if(hoursOffset == 0 || minutesOffset > 59) { throw new IllegalArgumentException(""); }
+compilation error,218,replace,[CE] cannot find symbol LONG,return DateTimeZone.UTC; ,return DateTimeZone.LONG;
+compilation error,282,add,[CE] variable hoursInMinutes is already defined in method forOffsetHoursMinutes(int,int),,  int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,285,add, [FE] IllegalArgumentException testForOffsetHours_int,,  offset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE); minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,285,add, [FE] IllegalArgumentException testForOffsetHours_int,,  hoursInMinutes = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE); offset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,285,add, [FE] IllegalArgumentException testForOffsetHours_int,,  minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,285,add, [FE] IllegalArgumentException testForOffsetHours_int,,  hoursInMinutes = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+compilation error,285,replace,[CE] ')' expected,if (hoursInMinutes < 0) { ,if(hoursInMinutes < 0 hoursOffset) {
+compilation error,218,add,[CE] cannot find symbol,,  id = printOffsetZone(id, offset);
+increase failing tests,304,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (millisOffset < -MAX_MILLIS || millisOffset > MAX_MILLIS) { ,if(millisOffset < 0 || millisOffset > MAX_MILLIS) {
+increase failing tests,304,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (millisOffset < -MAX_MILLIS || millisOffset > MAX_MILLIS) { ,if(millisOffset <= 0 || millisOffset > MAX_MILLIS) {
+increase failing tests,304,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (millisOffset < -MAX_MILLIS || millisOffset > MAX_MILLIS) { ,if(millisOffset < -1 || millisOffset > MAX_MILLIS) {
+increase failing tests,304,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (millisOffset < -MAX_MILLIS || millisOffset > MAX_MILLIS) { ,if(millisOffset < -0 || millisOffset > MAX_MILLIS) {
+compilation error,294,replace,[CE] method forOffsetHoursMinutes in class DateTimeZone cannot be applied to given types;,return forOffsetMillis(offset); ,return forOffsetHoursMinutes(offset);
+compilation error,307,replace,[CE] non-static method getOffset(long) cannot be referenced from a static context,String id = printOffset(millisOffset); ,String id = getOffset(millisOffset);
+increase failing tests,276,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (hoursOffset < -23 || hoursOffset > 23) { ,if(hoursOffset < 0 || hoursOffset > 23) {
+increase failing tests,276,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (hoursOffset < -23 || hoursOffset > 23) { ,if(hoursOffset < 0 || minutesOffset > 23) {
+increase failing tests,276,replace, [FE] IllegalArgumentException testForOffsetHours_int,if (hoursOffset < -23 || hoursOffset > 23) { ,if(hoursOffset < 0 || hoursOffset > 24) {
+compilation error,304,add,[CE] cannot find symbol,,  millisOffset = getOffsetForMillis(millisOffset);
+increase failing tests,290,add, [FE] IllegalArgumentException testForOffsetHours_int,,  minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,290,add, [FE] IllegalArgumentException testForOffsetHours_int,,  offset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE); minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,290,add, [FE] IllegalArgumentException testForOffsetHours_int,,  minutesOffset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE); offset = FieldUtils.safeMultiply(hoursInMinutes, DateTimeConstants.MILLIS_PER_MINUTE);
+increase failing tests,288,replace, [FE] IllegalArgumentException testForOffsetHours_int,minutesOffset = hoursInMinutes + minutesOffset; ,minutesOffset = hoursInMinutes / minutesOffset;
+increase failing tests,273,replace, [FE] AssertionFailedError testForOffsetHours_int,if (hoursOffset == 0 && minutesOffset == 0) { ,if(hoursOffset == 0 || minutesOffset == 0) {

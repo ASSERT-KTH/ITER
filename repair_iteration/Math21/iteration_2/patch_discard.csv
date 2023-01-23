@@ -1,0 +1,27 @@
+increase failing tests,72,replace, [FE] NonPositiveDefiniteMatrixException testMath789, [Delete]  ,c[i] = b[i];
+increase failing tests,72,replace, [FE] NonPositiveDefiniteMatrixException testMath789,     b[i]  =  b[i];  c[i]  =  c[i];  ,b[i] = c[i]; c[i] = b[i];
+increase failing tests,75,replace, [FE] ArrayIndexOutOfBoundsException testMath789, int  r  =(i  <  0)?  0  :  b.length;  ,int r =(order < 0)? 0 : b.length;
+increase failing tests,72,add, [FE] AssertionError testMath789, ,        b[i]    =    b[i];    c[i]  =  c[i];  b[i] = c[i];
+increase failing tests,70,replace, [FE] ArrayIndexOutOfBoundsException testMath789, int[]  index  =  new  int[order  /  1];  ,int[] index = new int[order / 2];
+increase failing tests,65,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  float  order  =  matrix.getSmallDimension();  ,final int order = matrix.getColumnDimension() + 1;
+increase failing tests,72,replace, [FE] NonPositiveDefiniteMatrixException testMath789, c[i]  =  matrix.getIntSize();  ,System.arraycopy(c, 0, b, 0, index.length);
+increase failing tests,72,replace, [FE] ArrayStoreException testMath789, c[i]  =  matrix.getIntSize();  ,System.arraycopy(index, 0, b, 0, index.length);
+increase failing tests,72,replace, [FE] ArrayIndexOutOfBoundsException testMath789, c[i]  =  matrix.getIntSize();  ,System.arraycopy(c, 0, b, 1, index.length);
+increase failing tests,71,replace, [FE] NonPositiveDefiniteMatrixException testMath789, for(int  i  =  0;  i  <  c.length;  ++i)  {  ,for(int i = 0; i < c.length - 1; ++i) {
+increase failing tests,71,replace, [FE] ArrayIndexOutOfBoundsException testMath789, for(int  i  =  0;  i  <  c.length;  ++i)  {  ,for(int i = 0; i < c.length + 1; ++i) {
+increase failing tests,72,replace, [FE] ArrayStoreException testMath789, c[i]  =  matrix.getIntSize();  ,System.arraycopy(c, 0, swap, 0, index.length);
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[order][a];  ,final double[][] b = new double[order][0];
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[order][a];  ,final double[][] b = new double[order][1];
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[order][a];  ,final double[][] b = new double[order][2];
+increase failing tests,76,replace, [FE] ArrayIndexOutOfBoundsException testMath789, for(boolean  loop  =  false;  loop  >=  0;)  {  ,for(boolean loop = false; r >= 0;) {
+increase failing tests,65,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  float  order  =  matrix.getSmallDimension();  ,final int order = matrix.getRowDimension() + 1;
+increase failing tests,72,replace, [FE] AssertionError testMath789,     b[i]  =  b[i];  c[i]  =  c[i];  ,b[i] = b[0]; c[i] = c[0];
+increase failing tests,75,replace, [FE] ArrayIndexOutOfBoundsException testMath789, int  order  =  matrix.getColumnDimension();  ,int r = matrix.getColumnDimension();
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[296][order];  ,final double[][] b = new double[296][0];
+increase failing tests,67,replace, [FE] AssertionError testMath789, double[][]  b  =  matrix.getSize();  ,double[][] b = matrix.getData();
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[128][order];  ,final double[][] b = new double[128][0];
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[128][order];  ,final double[][] b = new double[128][00];
+increase failing tests,72,replace, [FE] AssertionError testMath789,     b[i]  =  b[i];  c[i]  =  c[i];  ,b[i] = b[i]; c[i] = c[0];
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[284][order];  ,final double[][] b = new double[284][0];
+increase failing tests,65,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  float  order  =  matrix.getSmallDimension();  ,final int order = matrix.getColumnDimension() + 2;
+increase failing tests,65,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  float  order  =  matrix.getSmallDimension();  ,final int order = matrix.getColumnDimension() + 3;

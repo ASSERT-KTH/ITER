@@ -1,0 +1,73 @@
+compilation error,82,replace,[CE] cannot find symbol length,int pos = 0; ,int pos =(input == null)? 0 : input.length;
+compilation error,82,replace,[CE] cannot find symbol length,int pos = 0; ,int pos = input.length;
+compilation error,82,replace,[CE] cannot find symbol length,int pos = 0; ,int pos =(input!= null)? 0 : input.length;
+compilation error,82,replace,[CE] cannot find symbol pos,int pos = 0; , 
+compilation error,82,add,[CE] variable pt is already defined in method translate(CharSequence,Writer),,  int pt = input.length();
+compilation error,82,add,[CE] cannot find symbol,,  char[] pt = input.getCharacterIndex();
+compilation error,82,add,[CE] cannot find symbol,,  char[] pt = input.toCharArray();
+compilation error,82,add,[CE] cannot find symbol,,  char[] pt = input.getCharacterIndex(); out.write(c);
+compilation error,82,add,[CE] cannot find symbol,,  char[] pt = input.getCharacterCount();
+compilation error,79,add,[CE] variable pt is already defined in method translate(CharSequence,Writer),,  int pt = input.length();
+compilation error,79,add,[CE] cannot find symbol,,  input = input.getSequence();
+increase failing tests,79,add, [FE] ComparisonFailure testUnescapeJava,,  out.write('n');
+increase failing tests,79,add, [FE] ComparisonFailure testUnescapeJava,,  out.write('0');
+compilation error,79,add,[CE] cannot find symbol,,  input = input.getSequenceCount();
+compilation error,58,replace,[CE] cannot find symbol writer,StringWriter writer = new StringWriter(input.length() * 2); , 
+compilation error,59,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!Writer.isEmpty()) { writer = new StringWriter(input.length() * 2); }
+compilation error,59,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!writer.isEmpty()) { writer = new StringWriter(input.length() * 2); }
+compilation error,59,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(input.length() > 0) { writer = new StringWriter(input.charAt(input.length() - 1)); }
+compilation error,59,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(input.length() > 0) { writer = new StringWriter(input.charAt(input.length() - 2)); }
+compilation error,59,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!writer.isEmpty()) { writer = new StringWriter(input.toString()); }
+increase failing tests,88,replace, [FE] ComparisonFailure testUnescapeJava,out.write(c); ,out.write('0');
+increase failing tests,88,replace, [FE] ComparisonFailure testUnescapeJava,out.write(c); ,out.write(' ');
+increase failing tests,88,replace, [FE] ComparisonFailure testUnescapeJava,out.write(c); , 
+increase failing tests,54,add, [FE] NullPointerException testUnescapeJava,,  input = input.toString();
+compilation error,54,add,[CE] cannot find symbol,,  input = input.next();
+compilation error,54,add,[CE] cannot find symbol,,  input = input.getSequence();
+compilation error,54,add,[CE] cannot find symbol,,  input = input.getValue();
+compilation error,54,add,[CE] cannot find symbol,,  input = input.getSequenceCount();
+compilation error,76,add,[CE] illegal start of expression,,  if(input!= null) { if(out == null) { throw new IllegalArgumentException(""); }
+compilation error,76,add,[CE] illegal start of expression,,  if(input!= null) { if(out == null) { throw new IllegalArgumentException("The Writer must not be null."); }
+compilation error,76,add,[CE] illegal start of expression,,  if(input!= null) { if(out == null) { throw new IllegalArgumentException("The Writer must not be null"); }
+compilation error,76,add,[CE] illegal start of expression,,  if(input == null) { if(out == null) { throw new IllegalArgumentException(""); }
+compilation error,76,add,[CE] illegal start of expression,,  if(input == null) { if(out == null) { throw new IllegalArgumentException("The Writer must not be null."); }
+compilation error,58,add,[CE] cannot find symbol,,  input = input.substring(0, input.length() - 2);
+compilation error,58,add,[CE] cannot find symbol,,  input = input.next();
+compilation error,58,add,[CE] cannot find symbol,,  input = input.getSequence();
+compilation error,58,add,[CE] cannot find symbol,,  input = input.trim();
+compilation error,60,replace,[CE] cannot find symbol,return writer.toString(); ,return writer.substring(0, input.length() - 2);
+increase failing tests,60,replace, [FE] ComparisonFailure testUnescapeJava,return writer.toString(); ,return writer.toString() +":";
+compilation error,60,replace,[CE] cannot find symbol,return writer.toString(); ,return writer.substring(0, input.length() - 1);
+compilation error,60,replace,[CE] missing return statement,return writer.toString(); , 
+compilation error,76,replace,[CE] cannot find symbol length,if (out == null) { ,if(out == null || input.length < 0) {
+compilation error,76,replace,[CE] cannot find symbol length,if (out == null) { ,if(out == null || input.length == 0) {
+compilation error,76,replace,[CE] cannot find symbol length,if (out == null) { ,if(out == null || out.length < 0) {
+increase failing tests,54,replace, [FE] ComparisonFailure testUnescapeJava,if (input == null) { ,if(input == null || input.length() == 0) {
+increase failing tests,54,replace, [FE] AssertionFailedError testUnescapeJava,if (input == null) { ,if(input == null || input.charAt(input.length() - 1)!= 0) {
+increase failing tests,54,replace, [FE] ComparisonFailure testUnescapeHtml4,if (input == null) { ,if(input == null || input.length() == 2) {
+increase failing tests,88,add, [FE] ComparisonFailure testUnescapeJava,,  pos += Character.charCount(Character.codePointAt(input, pos));
+compilation error,88,add,[CE] method charCount in class Character cannot be applied to given types;,,  pos += Character.charCount(c);
+compilation error,88,add,[CE] cannot find symbol Consumed,,  pos += Character.charCount(c, Consumed.MAX_VALUE);
+compilation error,88,add,[CE] cannot find symbol Consumed,,  pos += Character.charCount(c, Consumed.POSITIVE_INFINITY);
+compilation error,88,add,[CE] cannot find symbol consume,,  pos += Character.charCount(Character.codePointAt(input, pos)); consume = pos;
+increase failing tests,79,replace, [FE] NullPointerException testUnescapeHtml4,if (input == null) { ,if(input == out) {
+compilation error,79,replace,[CE] cannot find symbol length,if (input == null) { ,if(input == null || input.length == 0) {
+compilation error,79,replace,[CE] cannot find symbol output,if (input == null) { ,if(input == null || output.length == 0) {
+compilation error,89,replace,[CE] 'else' without 'if',} ,pos += Character.charCount(Character.codePointAt(input, pos));
+compilation error,89,replace,[CE] 'else' without 'if',} ,pos += Character.charCount(Character.codePointAt(input, pos)); out.write(c);
+compilation error,89,replace,[CE] 'else' without 'if',} ,pos += Character.charCount(Character.codePointAt(input, pos)); consume++;
+compilation error,89,replace,[CE] 'else' without 'if',} ,pos += Character.charCount(c);
+compilation error,89,replace,[CE] 'else' without 'if',} , 
+increase failing tests,87,add, [FE] ComparisonFailure testUnescapeJava,,  pos += Character.charCount(input.length());
+compilation error,87,add,[CE] cannot find symbol Input,,  pos += Character.charCount(Input.toLowerCase(pos));
+compilation error,87,add,[CE] cannot find symbol Input,,  pos += Character.charCount(Input.toLowerCase(pos)); consume++;
+increase failing tests,87,add, [FE] ComparisonFailure testUnescapeJava,,  pos += Character.charCount(input.length()); out.write('0');
+compilation error,87,add,[CE] cannot find symbol Input,,  pos += Character.charCount(Input.toLowerCase(input));
+compilation error,60,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!writer.isEmpty()) { throw new RuntimeException(""); }
+compilation error,60,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!writer.isEmpty()) { writer = new StringWriter(input.length() * 2); }
+compilation error,60,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!writer.isEmpty()) { writer = new StringWriter(input.toString()); }
+compilation error,60,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(input.length() > 0) { writer = new StringWriter(input.toString()); }
+compilation error,60,add,[CE] 'catch' without 'try',,  if(writer!= null) { if(!writer.isEmpty()) { writer = new StringWriter(input.length()); }
+compilation error,89,add,[CE] cannot find symbol consume,,  pos += Character.charCount(Character.codePointAt(input, pos)); consume = pos;
+increase failing tests,87,replace, [FE] ComparisonFailure testUnescapeJava,char[] c = Character.toChars(Character.codePointAt(input, pos)); ,char[] c = Character.toChars(Character.codePointAt(input, consumed));
+increase failing tests,87,replace, [FE] ComparisonFailure testUnescapeJava,char[] c = Character.toChars(Character.codePointAt(input, pos)); ,char[] c = Character.toChars(Character.codePointAt(input, pos)+ 1);

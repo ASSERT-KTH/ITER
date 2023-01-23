@@ -1,0 +1,23 @@
+increase failing tests,316,replace, [FE] AssertionError testVectorTwoPairs,double u1u1 = u1.getNormSq(); ,double u1u1 = u2.getNormSq();
+compilation error,316,replace,[CE] cannot find symbol,double u1u1 = u1.getNormSq(); ,double u1u1 = u1.getRawNormSq();
+compilation error,316,replace,[CE] cannot find symbol,double u1u1 = u1.getNormSq(); ,double u1u1 = u1.getOrMath();
+compilation error,316,replace,[CE] cannot find symbol u1u1,double u1u1 = u1.getNormSq(); , 
+compilation error,328,add,[CE] variable u1u1 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double u1u1 = u1.dotProduct(u1);
+compilation error,328,add,[CE] cannot find symbol alpha,,  v2 = new Vector3D(alpha, v1, beta, v2);
+compilation error,328,add,[CE] variable u1u2 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double u1u2 = u1.dotProduct(u1);
+compilation error,328,add,[CE] variable u1u2 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double u1u2 = u1.dotProduct(u2);
+compilation error,328,add,[CE] cannot find symbol beta,,  v2 = new Vector3D(false, v1, beta, v2);
+compilation error,331,replace,[CE] cannot find symbol v1u1,double coeffV = v1v2 / u1u1; ,double coeffV = v1v2 / v1u1;
+compilation error,331,replace,[CE] cannot find symbol u1v2,double coeffV = v1v2 / u1u1; ,double coeffV = u1v2 / u1u1;
+compilation error,331,replace,[CE] cannot find symbol v1u2,double coeffV = v1v2 / u1u1; ,double coeffV = v1u2 / v1u1;
+compilation error,331,replace,[CE] cannot find symbol v1u2,double coeffV = v1v2 / u1u1; ,double coeffV = v1v2 / v1u2;
+compilation error,331,replace,[CE] cannot find symbol coeffV,double coeffV = v1v2 / u1u1; , 
+compilation error,319,add,[CE] variable v2v2 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double v2v2 = v2.getNormSq();
+compilation error,319,add,[CE] ')' expected,,  if(( u1u1 == 0)||(u2u1 == 0)||(v1v1 == 0)) { throw MathRuntimeException.createIllegalArgumentException(LocalizedFormats.ZERO_NORM_FOR_ROTATION_DEFINING_VECTOR
+compilation error,319,add,[CE] cannot find symbol v1u2,,  if(( u1u1 == 0)||(v1u2 == 0)) { throw MathRuntimeException(LocalizedFormats.ZERO_NORM_FOR_ROTATION_DEFINING_VECTOR); }
+compilation error,331,add,[CE] variable coeffV is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double coeffV = FastMath.sqrt(( u1u2 - u1u2)/ (v1v2 - v1v2));
+compilation error,331,add,[CE] cannot find symbol coeffV,,  coeffV = FastMath.sqrt(( u1u2 - u1u2)/ (v1v2 - v1v2));
+compilation error,331,add,[CE] ')' expected,,  double coeffV = FastMath.sqrt(( u1u2 - u1u2)/ (v1v2 - v1v2);
+compilation error,318,add,[CE] variable u1u2 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double u1u2 = u1.dotProduct(u1);
+compilation error,318,add,[CE] variable u1u2 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double u1u2 = u1.dotProduct(u2);
+compilation error,318,add,[CE] variable u1u2 is already defined in constructor Rotation(Vector3D,Vector3D,Vector3D,Vector3D),,  double u1u2 = u2.getNormSq();

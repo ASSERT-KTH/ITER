@@ -1,0 +1,14 @@
+increase failing tests,198,replace, [FE] NullPointerException testTridiagonal,squaredSecondary = new double[secondary.length]; ,squaredSecondary = new double[squaredSecondary.length];
+increase failing tests,198,replace, [FE] ArrayIndexOutOfBoundsException testTridiagonal,squaredSecondary = new double[secondary.length]; ,squaredSecondary = new double[secondary.length - 1];
+increase failing tests,193,replace, [FE] NullPointerException testTridiagonal,this.main= main.clone(); , 
+increase failing tests,193,add, [FE] NullPointerException testTridiagonal,,  super(); this.realEigenvalues = realEigenvalues.clone();
+increase failing tests,200,add, [FE] NullPointerException testTridiagonal,,  imagEigenvalues[i] = squaredSecondary[i];
+increase failing tests,200,replace, [FE] AssertionFailedError testTridiagonal,final double s = secondary[i]; ,final double s = squaredSecondary[i];
+increase failing tests,200,replace, [FE] AssertionFailedError testTridiagonal,final double s = secondary[i]; ,double s = squaredSecondary[i];
+increase failing tests,200,replace, [FE] AssertionFailedError testTridiagonal,final double s = secondary[i]; ,final Double s = squaredSecondary[i];
+increase failing tests,199,replace, [FE] AssertionFailedError testTridiagonal,for (int i = 0; i < squaredSecondary.length; ++i) { ,for(int i = 1; i < squaredSecondary.length; ++i) {
+increase failing tests,199,replace, [FE] AssertionFailedError testTridiagonal,for (int i = 0; i < squaredSecondary.length; ++i) { ,for(int i = 2; i < squaredSecondary.length; ++i) {
+increase failing tests,195,add, [FE] NullPointerException testTridiagonal,,  this.realEigenvalues = realEigenvalues.clone();
+increase failing tests,201,replace, [FE] AssertionFailedError testTridiagonal,squaredSecondary[i] = s * s; ,squaredSecondary[i] = s * splitTolerance;
+increase failing tests,199,replace, [FE] ArrayIndexOutOfBoundsException testTridiagonal,for (int i = 0; i < squaredSecondary.length; ++i) { ,for(int i = 0; i < main.length; ++i) {
+increase failing tests,204,add, [FE] ArrayIndexOutOfBoundsException testTridiagonal,,  this.main = squaredSecondary.clone();

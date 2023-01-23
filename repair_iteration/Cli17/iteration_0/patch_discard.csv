@@ -1,2 +1,29 @@
-patch is same with buggy,,tokens.add("-" + ch); ,tokens.add("-" + ch);
-compilation error,[CE] no suitable method found for add(String,boolean),tokens.add("-" + ch); ,tokens.add("-" + ch, stopAtNonOption);
+compilation error,300,add,[CE] 'else' without 'if',,  tokens.add("-" + ch); currentOption = options.getOption(ch);
+compilation error,300,add,[CE] 'else' without 'if',,  tokens.add("-" + ch);
+compilation error,300,add,[CE] 'else' without 'if',,  tokens.add(token.substring(i + 1)); currentOption = options.getOption(ch);
+compilation error,300,add,[CE] 'else' without 'if',,  tokens.add(token); currentOption = options.getOption(ch);
+increase failing tests,215,add, [FE] AssertionFailedError testStopBursting,,  tokens.add(currentOption.getValue());
+increase failing tests,215,add, [FE] AssertionFailedError testStopBursting,,  tokens.add(currentOption.getKey());
+compilation error,215,add,[CE] cannot find symbol,,  tokens.add(currentOption.getLeastSupertype("-"));
+compilation error,215,add,[CE] cannot find symbol,,  tokens.add(currentOption.getLeastSupertype("--"));
+compilation error,302,add,[CE] cannot find symbol,,  tokens.add(token); currentOption.setLength(0);
+compilation error,302,add,[CE] non-static method getOption(String) cannot be referenced from a static context,,  tokens.add(token); currentOption = Options.getOption(ch);
+compilation error,284,add,[CE] cannot find symbol ch,,  tokens.add("-" + ch);
+compilation error,284,add,[CE] cannot find symbol ch,,  tokens.add("-" + ch); currentOption = options.getOption(ch);
+compilation error,284,add,[CE] cannot find symbol ch,,  tokens.clear(); tokens.add("-" + ch);
+compilation error,284,add,[CE] cannot find symbol ch,,  tokens.add("-" + ch); tokens.add(token.substring(0, stopAtNonOption));
+compilation error,284,add,[CE] cannot find symbol ch,,  tokens.add("-" + ch); currentOption = options.getOption(token);
+compilation error,215,replace,[CE] cannot find symbol,tokens.add(value); ,tokens.add(currentOption.getLocalMillis());
+compilation error,175,replace,[CE] incompatible types,while (iter.hasNext()) { ,while(iter.next()) {
+increase failing tests,175,replace, [FE] AssertionFailedError testStopBursting,while (iter.hasNext()) { ,while(iter.hasNext() && tokens.contains(iter.next())) {
+compilation error,175,replace,[CE] cannot find symbol stopAtNonOption,while (iter.hasNext()) { ,while(iter.hasNext() && stopAtNonOption!= iter.next()) {
+compilation error,175,replace,[CE] class, interface, or enum expected,while (iter.hasNext()) { , 
+increase failing tests,217,add, [FE] AssertionFailedError testStopBursting,,  tokens.add("--"); tokens.add(value);
+increase failing tests,217,add, [FE] AssertionFailedError testStopBursting,,  tokens.add("--"); tokens.add(new String(value));
+increase failing tests,217,add, [FE] AssertionFailedError testStopBursting,,  tokens.add("--"); eatTheRest = false;
+compilation error,213,add,[CE] method getOption in class Options cannot be applied to given types;,,  tokens.add(value); currentOption = options.getOption(currentOption);
+compilation error,213,add,[CE] method getOption in class Options cannot be applied to given types;,,  tokens.add("-"); currentOption = options.getOption(currentOption);
+increase failing tests,213,add, [FE] AssertionFailedError testStopBursting,,  tokens.add(currentOption.toString());
+increase failing tests,213,add, [FE] AssertionFailedError testStopBursting,,  tokens.add(value); currentOption = null;
+increase failing tests,213,add, [FE] AssertionFailedError testStopBursting,,  tokens.add(currentOption.getKey());
+increase failing tests,284,replace, [FE] AssertionFailedError testStopBursting,for (int i = 1; i < token.length(); i++) { ,for(int i = 2; i < token.length(); i++) {

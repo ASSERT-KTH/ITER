@@ -1,0 +1,119 @@
+compilation error,173,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * sum);
+compilation error,173,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * an);
+compilation error,174,add,[CE] ';' expected,,  n = Math.log(a)- logGamma(a));
+compilation error,174,add,[CE] ';' expected,,  n = Math.log(an)/ HALF_LOG_2_PI);
+compilation error,169,add,[CE] not a statement,,  - regularizedGammaQ(a, x, epsilon, maxIterations));
+compilation error,169,add,[CE] no suitable method found for regularizedGammaQ(double,double,int),,  n = regularizedGammaQ(x, epsilon, maxIterations);
+compilation error,169,add,[CE] not a statement,,  - regularizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,169,add,[CE] cannot find symbol,,  n = RegularizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,162,replace,[CE] 'else' without 'if',} else if (a >= 1.0 && x > a) { ,else if(a >= 1.0 && x > a) {
+compilation error,168,add,[CE] cannot find symbol,,  ret = 1.0 - normalizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,168,add,[CE] ';' expected,,  ret = 1.0 - regularizedGammaQ(a, x, epsilon, maxIterations));
+compilation error,168,add,[CE] no suitable method found for regularizedGammaQ(double,double,int),,  ret = 1.0 - regularizedGammaQ(x, epsilon, maxIterations);
+compilation error,170,add,[CE] not a statement,,  - regularizedGammaQ(a, x, epsilon, maxIterations));
+compilation error,170,add,[CE] ';' expected,,  an = regularizedGammaQ(a, x, epsilon, maxIterations));
+compilation error,179,replace,[CE] 'else' without 'if',if (n >= maxIterations) { , 
+compilation error,182,replace,[CE] cannot find symbol Sum,ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum; ,ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * Sum;
+compilation error,182,replace,[CE] variable ret might not have been initialized,ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum; , 
+compilation error,171,replace,[CE] cannot find symbol maximalIterations,while (Math.abs(an) > epsilon && n < maxIterations) { ,while(Math.abs(an)> epsilon && n < maximalIterations) {
+compilation error,171,replace,[CE] illegal start of type,while (Math.abs(an) > epsilon && n < maxIterations) { , 
+compilation error,179,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * sum);
+increase failing tests,162,add, [FE] AssertionFailedError testRegularizedGammaPositivePositive,,  ret = regularizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,162,add,[CE] no suitable method found for regularizedGammaQ(double,double,int),,  ret = 1.0 - regularizedGammaQ(x, epsilon, maxIterations);
+compilation error,162,add,[CE] cannot find symbol,,  ret = RegularizedGammaQ(x, a, epsilon, maxIterations);
+compilation error,162,add,[CE] no suitable method found for regularizedGammaQ(double,double,int),,  ret = regularizedGammaQ(x, epsilon, maxIterations);
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series;
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series.double an = an; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / n; // n-th element in the series;
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series.double an = an; // partial sum while(Math.abs(an)> epsilon && n >> maxIterations) {
+compilation error,171,add,[CE] not a statement,,  - regularizedGammaQ(a, x, epsilon, maxIterations));
+compilation error,171,add,[CE] not a statement,,  - regularizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,171,add,[CE] not a statement,,  - regularizedGammaQ(a, x, epsilon, maxIterations), an);
+compilation error,177,add,[CE] illegal start of expression,,  if(an >= epsilon) { if(n > maxIterations) { throw new MaxIterationsExceededException(maxIterations); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an > epsilon) { if(n > maxIterations) { throw new MaxIterationsExceededException(maxIterations); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an > epsilon) { if(Math.abs(an) <= epsilon && n < maxIterations) { throw new MaxIterationsExceededException(maxIterations); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an > epsilon) { if(Math.abs(an)> epsilon) { throw new MaxIterationsExceededException(maxIterations); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an > epsilon) { if(Math.abs(an) <= epsilon && n < maxIterations) { throw new MaxIterationExceededException(maxIterations); }
+compilation error,170,replace,[CE] illegal start of type,double sum = an; // partial sum while (Math.abs(an) > epsilon && n < maxIterations) { ,double sum = a; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,170,replace,[CE] illegal start of type,double sum = an; // partial sum while (Math.abs(an) > epsilon && n < maxIterations) { ,double sum = 1.0; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,170,replace,[CE] illegal start of type,double sum = an; // partial sum while (Math.abs(an) > epsilon && n < maxIterations) { ,double sum = n; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,182,add,[CE] double cannot be dereferenced,,  sum = sum + an.doubleValue();
+compilation error,182,add,[CE] double cannot be dereferenced,,  sum = sum + an.doubleValue() * HALF_LOG_2_PI;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index * an = 1.0 / a; // n-th element in the series double sum = an; // partial sum
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index = 1.0 / a; // n-th element in the series double an = an; // partial sum
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index + an = 1.0 / a; // n-th element in the series double sum = an; // partial sum
+compilation error,182,replace,[CE] ')' expected,ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum; ,ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)/ sum;
+compilation error,182,replace,[CE] ';' expected,ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum; ,ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * sum, n;
+compilation error,170,replace,[CE] illegal start of type,double sum = an; // partial sum while (Math.abs(an) > epsilon && n < maxIterations) { ,double sum = 0.0; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,170,replace,[CE] illegal start of type,double sum = an; // partial sum while (Math.abs(an) > epsilon && n < maxIterations) { ,double sum = an; // sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,169,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(relativeAccuracy * Math.abs(x), epsilon, maxIterations);
+compilation error,169,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(relativeAccuracy * Math.abs(x)/ a);
+compilation error,169,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(relativeAccuracy * Math.abs(x));
+compilation error,174,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)));
+compilation error,174,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) / logGamma(a)));
+compilation error,174,add,[CE] method log in class Math cannot be applied to given types;,,  n = Math.log(x, epsilon, maxIterations);
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index = 1.0; // n-th element in the series;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index = a; // n-th element in the series;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index = 1.0 / a; // n-th element in the series;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index + an = 1.0 / a; // n-th element in the series;
+compilation error,177,add,[CE] illegal start of expression,,  if(an >= epsilon) { if(maxIterations > 1) { maxIterations = Math.abs(an); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an < epsilon) { if(maxIterations > 1) { maxIterations = Math.abs(an); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an >= epsilon) { if(maxIterations > 1) { maxIterations = Math.max(an, epsilon); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an >= epsilon) { if(n < maxIterations) { throw new MaxIterationExceededException(""); }
+compilation error,177,add,[CE] illegal start of expression,,  if(an >= epsilon) { if(n < maxIterations) { throw new MaxIterationExceededException("maximum number of entries must be > 0"); }
+compilation error,173,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)));
+compilation error,173,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) / logGamma(a)));
+compilation error,162,replace,[CE] cannot find symbol A,} else if (a >= 1.0 && x > a) { ,} else if(a >= 1.0 && x > A) {
+compilation error,171,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)));
+compilation error,171,replace,[CE] cannot find symbol maximumIterations,while (Math.abs(an) > epsilon && n < maxIterations) { ,while(Math.abs(an)> epsilon && n < maximumIterations) {
+compilation error,171,replace,[CE] cannot find symbol minIterations,while (Math.abs(an) > epsilon && n < maxIterations) { ,while(Math.abs(an)> epsilon && n < minIterations) {
+compilation error,182,add,[CE] ';' expected,,  sum = sum + Math.log(a)/ HALF_LOG_2_PI);
+compilation error,179,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(an, epsilon);
+compilation error,179,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(an, sum);
+compilation error,179,add,[CE] ';' expected,,  ret = Math.exp(-x +(a * Math.log(x)) - logGamma(a)));
+compilation error,170,add,[CE] ';' expected,,  n = Math.exp(-x +(a * Math.log(x)) - logGamma(a)));
+compilation error,170,add,[CE] ';' expected,,  ret = 1.0 / regularizedGammaQ(a, x, epsilon, maxIterations); an = an * x /(a + n));
+increase failing tests,162,add, [FE] AssertionFailedError testRegularizedGammaPositivePositive,,  ret = 1.0 / regularizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,162,add,[CE] cannot find symbol,,  ret = RegularizedGammaQ(a, x, epsilon, maxIterations);
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series; sum = an; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series: an; // partial sum while(Math.abs(an)> epsilon && n < maxIterations) {
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series; sum = an; // partial sum while(Math.abs(an) < epsilon && n < maxIterations) {
+compilation error,168,add,[CE] cannot find symbol,,  ret = 1.0 - regularizedGammaS(a, x, epsilon, maxIterations);
+compilation error,173,add,[CE] unclosed string literal,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new MaxIterationsExceededException("max
+compilation error,173,add,[CE] unclosed string literal,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new MaxIterationExceededException("max
+compilation error,173,add,[CE] illegal start of expression,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { n = n + 1.0; }
+compilation error,173,add,[CE] unclosed string literal,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new ClassExceededException("max
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current moment = a;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index = a;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current element index = 1.0 / a;
+compilation error,168,replace,[CE] cannot find symbol an,double n = 0.0; // current element index double an = 1.0 / a; // n-th element in the series  double sum = an; // partial sum ,double n = 1.0; // current day = a;
+compilation error,162,add,[CE] cannot find symbol,,  ret = RegularizedGammaP(a, x, epsilon, maxIterations);
+compilation error,162,add,[CE] cannot find symbol,,  if(a >= 1.0 && x < 1.0 &&!isVowel(x)) { ret = 1.0 - regularizedGammaQ(a, x, epsilon, maxIterations); }
+compilation error,174,add,[CE] illegal start of expression,,  while(Math.abs(an)> epsilon && n < maxIterations) { n = n + 1.0;
+compilation error,174,add,[CE] illegal start of expression,,  while(Math.abs(an)> epsilon && n < maxIterations) { n = n - 1.0;
+compilation error,174,add,[CE] illegal start of expression,,  while(Math.abs(an)> epsilon && n < maxIterations) { n++;
+compilation error,174,add,[CE] illegal start of expression,,  while(Math.abs(an)> epsilon && n < maxIterations) { n = n * 1.0;
+compilation error,179,replace,[CE] 'else' without 'if',if (n >= maxIterations) { ,else if(n >= maxIterations) {
+compilation error,168,add,[CE] cannot find symbol,,  ret = Math.exp(-x +(a << 1.0 / getSlope())* x)- 1;
+compilation error,168,add,[CE] cannot find symbol,,  ret = Math.exp(-x +(a >> 1.0 / getSlope())* x)- 1;
+compilation error,168,add,[CE] ';' expected,,  ret = 1.0 - regularizedGammaQ(a, x, epsilon, maxIterations), 0.0);
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / x; // n-th element in the series;
+compilation error,169,replace,[CE] illegal start of type,double an = 1.0 / a; // n-th element in the series double sum = an; // partial sum  while (Math.abs(an) > epsilon && n < maxIterations) { ,double an = 1.0 / a; // n-th element in the series.double an = an;
+compilation error,173,replace,[CE] ';' expected,n = n + 1.0; ,n = n + 1.0, an * x /(a + n).doubleValue();
+compilation error,173,replace,[CE] ';' expected,n = n + 1.0; ,n = n + 1.0, an * x /(a + n);
+compilation error,173,replace,[CE] ';' expected,n = n + 1.0; ,n = n + 1.0, an * x /(a + n)- 10.0);
+compilation error,182,replace,[CE] ')' expected,ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum; ,ret = Math.exp(-x +(a * Math.log(x), epsilon)- logGamma(a)) * sum;
+compilation error,169,add,[CE] variable ret might not have been initialized,,  n = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) / ret;
+compilation error,169,add,[CE] ';' expected,,  n = Math.exp(-x +(a * Math.log(x)) - logGamma(a)));
+compilation error,170,add,[CE] variable ret might not have been initialized,,  n = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * ret;
+compilation error,170,add,[CE] variable ret might not have been initialized,,  an = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) * ret;
+compilation error,170,add,[CE] variable ret might not have been initialized,,  n = Math.exp(-x +(a * Math.log(x)) - logGamma(a)) / ret;
+compilation error,179,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(Math.abs(an)/ epsilon);
+compilation error,179,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(Math.abs(an)% epsilon - 1.0);
+compilation error,179,add,[CE] variable maxIterations is already defined in method regularizedGammaP(double,double,double,int),,  int maxIterations = Math.max(Math.abs(an)/ epsilon, 1.0);
+compilation error,177,add,[CE] unclosed string literal,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new MaxIterationExceededException("max
+compilation error,177,add,[CE] illegal start of expression,,  while(Math.abs(an)> epsilon && n < maxIterations) { n = n + 1.0;
+compilation error,177,add,[CE] unclosed string literal,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new MaxIterationsExceededException("max
+compilation error,177,add,[CE] ,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new MaxIterationExceededException("")
+compilation error,177,add,[CE] unclosed string literal,,  if(Math.abs(an)> epsilon && n < maxIterations) { if(Math.abs(an)> epsilon && n < maxIterations) { throw new ClassExceededException("max

@@ -1,0 +1,8 @@
+increase failing tests,643,replace, [FE] MathIllegalStateException testCopy,if (n > 0) { ,if(n == 0) {
+increase failing tests,643,replace, [FE] AssertionError testOverrideMeanWithMathClass,if (n > 0) { ,if(n < 0) {
+increase failing tests,643,replace, [FE] AssertionError testOverrideMeanWithMathClass,if (n > 0) { ,if(n == 1) {
+increase failing tests,70,replace, [FE] NullArgumentException testProductAndGeometricMean,protected SecondMoment secondMoment = new SecondMoment(); ,protected SecondMoment secondMoment = new SecondMoment(this.secondMoment);
+increase failing tests,67,replace, [FE] AssertionError testGetSummary,protected long n = 0; ,protected int n = 1;
+increase failing tests,643,replace, [FE] MathIllegalStateException testCopy,if (n > 0) { ,if(n >= 0) {
+increase failing tests,70,replace, [FE] AssertionError testCopy,protected SecondMoment secondMoment = new SecondMoment(); ,protected static SecondMoment secondMoment = new SecondMoment();
+increase failing tests,67,replace, [FE] AssertionError testGetSummary,protected long n = 0; ,protected long n = 1;

@@ -1,0 +1,34 @@
+increase failing tests,433,replace, [FE] StackOverflowError,   ,TimeSeriesDataItem dummy = getDataItem(period);
+increase failing tests,561,add, [FE] SeriesException, ,add(period,  value,  false);  add(period, value, false);
+increase failing tests,561,add, [FE] SeriesException, ,add(period,  value,  false);  add(period, value, true);
+increase failing tests,506,add, [FE] SeriesException, ,    fireSeriesChanged();  this.data.add(item); fireSeriesChanged();
+increase failing tests,510,add, [FE] AssertionFailedError, ,    fireSeriesChanged();  fireSeriesChanged(); this.data.add(item);
+increase failing tests,603,replace, [FE]  Size,   item.setValue(value);  notify  =  true;  ,item.setValue(value); notify = false;
+increase failing tests,933,replace, [FE] IllegalArgumentException,   ,if(startIndex >= 0) { if(startIndex == 0) { emptyRange = true; }
+increase failing tests,510,replace, [FE] AssertionFailedError,   fireSeriesChanged();  ,this.data.add(item);
+increase failing tests,372,add, [FE] IllegalArgumentException, ,    getDataItem(index).getPeriod();  if(index >= 0) { throw new IllegalArgumentException(""); }
+increase failing tests,372,replace, [FE] ClassCastException,   ,return(RegularTimePeriod)this.data.get(index);
+increase failing tests,341,add, [FE]  Size, ,    this.data.get(index);  this.data.remove(index);
+increase failing tests,341,add, [FE]  Size, ,    this.data.get(index);  this.data.clear();
+increase failing tests,940,add, [FE] IllegalArgumentException, ,    endIndex  =  getIndex(end);  endIndex = getIndex(start);
+increase failing tests,941,add, [FE] IllegalArgumentException, ,    endIndex  =  getIndex(end);  endIndex = getIndex(start);
+increase failing tests,589,add, [FE] ClassCastException, ,    fireSeriesChanged();  this.data.add(period);
+increase failing tests,589,add, [FE] SeriesException, ,    fireSeriesChanged();  add(period, value);
+increase failing tests,933,replace, [FE] IllegalArgumentException,   while(startIndex  <  0)  {  startIndex  =  getIndex(start);  ,while(startIndex >= 0) { startIndex = getIndex(start);
+increase failing tests,177,replace, [FE] NullPointerException,   this.maximumItemCount  =  0;  ,this.maximumItemCount = Integer.MAX_VALUE;
+increase failing tests,515,add, [FE] ClassCastException, ,    fireSeriesChanged();  fireSeriesChanged(); this.data.add(last);
+increase failing tests,515,add, [FE] AssertionFailedError, ,    fireSeriesChanged();  fireSeriesChanged(); this.data.add(item);
+increase failing tests,144,add, [FE] ClassCastException, ,    fireSeriesChanged();  this.data.add(name); fireSeriesChanged();
+increase failing tests,144,add, [FE] ClassCastException, ,    fireSeriesChanged();  this.data.add(name);
+increase failing tests,588,add, [FE] SeriesException, ,add(period,  value,  false);  add(period, value, true);
+increase failing tests,588,add, [FE] SeriesException, ,add(period,  value,  false);  add(period, value, false);
+increase failing tests,507,replace, [FE] ArrayIndexOutOfBoundsException, int  count  =  getItemCount  -  1;  ,int count = this.maximumItemCount - 1;
+increase failing tests,935,replace, [FE] IllegalArgumentException,   if(this.data!=  null)  {  if(startIndex  ==  0)  {  emptyRange  =  true;  }  ,if(this.data == null) { if(startIndex == 0) { emptyRange = true; }
+increase failing tests,748,replace, [FE]  Size,   while((  latest  -  getTimePeriod(0).getSerialIndex())>  this.maximumItemAge)  {  this.data.remove(0);  ,while(( latest - getTimePeriod(1).getSerialIndex())> this.maximumItemAge) { this.data.remove(0);
+increase failing tests,741,replace, [FE] AssertionFailedError,   ,long latest = getTimePeriod(0).getSerialIndex();
+increase failing tests,175,replace, [FE] IllegalArgumentException,   this.domain  =  domain;  this.range  =  range;  ,if(domain == null) { this.domain = domain; this.range = range; } else { throw new IllegalArgumentException(""); }
+increase failing tests,748,replace, [FE] IllegalArgumentException,   while((  latest  -  getTimePeriod(0).getSerialIndex())>  this.maximumItemAge)  {  this.data.remove(0);  removed  =  true;  ,while(( latest - getTimePeriod(1).getSerialIndex())> this.maximumItemAge) { this.data.remove(0); removed = true;
+increase failing tests,175,replace, [FE] NullPointerException,   ,this.domain = domain; this.data.add(new java.util.ArrayList());
+increase failing tests,933,replace, [FE] IllegalArgumentException,   if(startIndex  <  0)  {  startIndex  =  -(startIndex  +  1);  if(startIndex  ==  this.data.size())  {  throw  new  IllegalArgumentException( " ");  }  ,if(startIndex > 0) { startIndex = -(startIndex + 1); if(startIndex == this.data.size()) { throw new IllegalArgumentException(" "); }
+increase failing tests,933,replace, [FE] IllegalArgumentException,   if(startIndex  <  0)  {  startIndex  =  -(startIndex  +  1);  if(startIndex  ==  this.data.size())  {  emptyRange  =  true;  }  ,if(startIndex > 0) { startIndex = -(startIndex + 1); if(startIndex == this.data.size()) { emptyRange = true; }
+increase failing tests,576,add, [FE] AssertionFailedError, ,    fireSeriesChanged();  this.data.add(item);

@@ -1,44 +1,766 @@
-patch is same with buggy,103,replace,,private int minEndIndex = -1; ,private int minEndIndex = -1;
-compilation error,103,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,private int minEndIndex = -1; ,private long minEndIndex = -1;
-compilation error,294,add,[CE] illegal start of expression,,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd(); if(middle > minMiddle) { this.minMiddleIndex = index; }
-compilation error,294,add,[CE] illegal start of expression,,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); if(middle > minMiddle) { this.minMiddleIndex =
-compilation error,277,replace,[CE] cannot find symbol maxStart,if (start > maxStart) { ,if(maxStart > this.maxStart) {
-compilation error,277,replace,[CE] cannot find symbol minStart,if (start > maxStart) { ,if(maxStart > minStart) {
-compilation error,277,replace,[CE] cannot find symbol maxEnd,if (start > maxStart) { ,if(maxStart > maxEnd) {
-patch is same with buggy,266,replace,,if (start < minStart) { ,if(start < minStart) {
-increase failing tests,266,replace, [FE] AssertionFailedError,if (start < minStart) { ,if(index < minStart) {
-compilation error,266,replace,[CE] cannot find symbol interval,if (start < minStart) { ,if(interval < minStart) {
-patch is same with buggy,332,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
-increase failing tests,332,replace, [FE]  Size,this.maxEndIndex = index; ,this.maxEndIndex = index + 1;
-compilation error,332,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex));
-compilation error,332,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex), null);
-compilation error,332,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(end));
-increase failing tests,248,replace, [FE] NullPointerException,fireSeriesChanged(); ,updateBounds(item.getPeriod(), this.data.size() - 1);
-compilation error,248,replace,[CE] bad operand types for binary operator '-',fireSeriesChanged(); ,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
-patch is same with buggy,248,replace,,fireSeriesChanged(); ,fireSeriesChanged();
-patch is same with buggy,246,replace,,this.data.add(item); ,this.data.add(item);
-compilation error,246,replace,[CE] no suitable method found for add(TimePeriodValue,int),this.data.add(item); ,this.data.add(item, this.data.size() - 1);
-increase failing tests,246,replace, [FE] AssertionFailedError,this.data.add(item); ,this.data.remove(item);
-compilation error,269,replace,[CE] 'else' without 'if',} ,fireSeriesChanged();
-compilation error,269,replace,[CE] 'else' without 'if',} ,data.add(start, new TimePeriod(period, getDataItem(start)));
-compilation error,269,replace,[CE] 'else' without 'if',} ,data.add(start, new TimePeriod(period, getDataItem(start), index));
-compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd(); if(middle > minMiddle) { this.minMiddleIndex = index; }
-compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); if(middle > minMiddle) { this.minMiddleIndex =
-compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = index; if(middle > minMiddle) { this.minMiddleIndex = index; }
-compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex));
-compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), null);
-compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), end);
-compilation error,248,add,[CE] bad operand types for binary operator '-',,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
-compilation error,280,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, maxStart));
-compilation error,280,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, end));
-compilation error,314,add,[CE] cannot find symbol,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getTime();
-compilation error,314,add,[CE] incompatible types,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd();
-compilation error,314,add,[CE] illegal start of expression,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getTime();.getTime();
-compilation error,205,add,[CE] no suitable method found for add(int),,this.data.add(index);
-compilation error,205,add,[CE] method set in interface List cannot be applied to given types;,,this.data.set(index);
-patch is same with buggy,363,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
-compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,String),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, DEFAULT_DOMAIN_DESCRIPTION);
-compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,int),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, this.data.size());
+compilation error,325,add,[CE] illegal start of expression,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getStart();.getTime();
+compilation error,325,add,[CE] illegal start of expression,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd();.getTime();
+compilation error,325,add,[CE] incompatible types,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd();
+compilation error,259,add,[CE] cannot find symbol,,long start = getDataItem(index).getPeriod().getTime();
+compilation error,259,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(index).getPeriod().getStart().getTime();
+compilation error,259,add,[CE] cannot find symbol index,,long start = getDataItem(this.index).getPeriod().getTime();
+compilation error,97,add,[CE] illegal start of type,,return new TimePeriodValues();
+compilation error,97,add,[CE] illegal start of type,,return TimePeriodValues.get(TimeZone.getDefault());
+compilation error,97,add,[CE] illegal start of type,,return TimePeriodValues.get(MinMiddleIndex);
+patch is same with buggy,286,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,286,replace,[CE] cannot find symbol s,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); , 
+patch is same with buggy,259,replace,,long start = period.getStart().getTime(); ,long start = period.getStart().getTime();
 increase failing tests,243,add, [FE] AssertionFailedError,,this.data.add(item);
 compilation error,243,add,[CE] method setValue in class TimePeriodValue cannot be applied to given types;,,item.setValue(item);
 increase failing tests,243,add, [FE] NullPointerException,,item.setValue(item.getValue());
+patch is same with buggy,274,replace,,if (this.maxStartIndex >= 0) { ,if(this.maxStartIndex >= 0) {
+increase failing tests,274,replace, [FE] ArrayIndexOutOfBoundsException,if (this.maxStartIndex >= 0) { ,if(this.maxStartIndex < 0) {
+compilation error,274,replace,[CE] illegal start of type,if (this.maxStartIndex >= 0) { , 
+increase failing tests,129,replace, [FE] AssertionFailedError,super(name); ,super(domain);
+compilation error,129,replace,[CE] no suitable constructor found for Series(),super(name); , 
+compilation error,249,replace,[CE] illegal start of expression,} ,fireSeriesChanged();
+compilation error,249,replace,[CE] illegal start of expression,} ,this.data.add(item); fireSeriesChanged();
+compilation error,249,replace,[CE] illegal start of expression,} , 
+compilation error,314,add,[CE] cannot find symbol,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getTime();
+compilation error,314,add,[CE] incompatible types,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd();
+compilation error,314,add,[CE] illegal start of expression,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getTime();.getTime();
+compilation error,115,replace,[CE] generics are not supported in -source 1.4,} ,this.data = new ArrayList < TimePeriodValue>();
+compilation error,115,replace,[CE] illegal start of expression,} ,this.data.add(name);
+compilation error,115,replace,[CE] illegal start of expression,} , 
+compilation error,377,replace,[CE] illegal start of expression,} ,fireSeriesChanged();
+compilation error,377,replace,[CE] illegal start of expression,} ,fireDatasetChanged();
+compilation error,377,replace,[CE] illegal start of expression,} , 
+patch is same with buggy,205,replace,,return (TimePeriodValue) this.data.get(index); ,return(TimePeriodValue)this.data.get(index);
+increase failing tests,205,replace, [FE] ArrayIndexOutOfBoundsException,return (TimePeriodValue) this.data.get(index); ,return(TimePeriodValue)this.data.get(index - 1);
+patch is same with buggy,205,replace,,return (TimePeriodValue) this.data.get(index); , 
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex));
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), null);
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), end);
+compilation error,91,add,[CE] illegal start of type,,return new TimePeriodValues();
+compilation error,91,add,[CE] illegal start of type,,return TimePeriodValues.get(TimeZone.getDefault());
+compilation error,91,add,[CE] illegal start of type,,return TimePeriodValues.get(MinStartIndex);
+compilation error,94,add,[CE] illegal start of type,,return new TimePeriodValues();
+compilation error,94,add,[CE] illegal start of type,,return TimePeriodValues.get(TimeZone.getDefault());
+compilation error,94,add,[CE] illegal start of type,,return new TimePeriodValues().getTime();
+patch is same with buggy,263,replace,,if (this.minStartIndex >= 0) { ,if(this.minStartIndex >= 0) {
+increase failing tests,263,replace, [FE] AssertionFailedError,if (this.minStartIndex >= 0) { ,if(this.minStartIndex >= index) {
+compilation error,263,replace,[CE] illegal start of type,if (this.minStartIndex >= 0) { , 
+compilation error,314,replace,[CE] <identifier> expected,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd() .getTime(); ,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd(), this.maxMiddleIndex.getTime();
+compilation error,314,replace,[CE] <identifier> expected,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd() .getTime(); ,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd(), this.maxEndIndex.getTime();
+compilation error,266,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = period.getEnd().getTime();
+compilation error,266,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = start +(( end - start)/ 2);
+compilation error,263,add,[CE] cannot find symbol maxMiddle,,long maxMiddleIndex = getDataItem(this.maxMiddle);
+compilation error,263,add,[CE] incompatible types,,long minMiddleIndex = getDataItem(this.minStartIndex);
+compilation error,263,add,[CE] incompatible types,,long maxMiddleIndex = getDataItem(this.minStartIndex);
+patch is same with buggy,97,replace,,private int minMiddleIndex = -1; ,private int minMiddleIndex = -1;
+increase failing tests,97,replace, [FE] AssertionFailedError,private int minMiddleIndex = -1; ,private int minMiddleIndex = 0;
+compilation error,205,add,[CE] no suitable method found for add(int),,this.data.add(index);
+compilation error,205,add,[CE] method set in interface List cannot be applied to given types;,,this.data.set(index);
+compilation error,291,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = s +(e - s)/ 2;
+compilation error,291,add,[CE] 'else' without 'if',,while(getPeriodType() == DateTimeConstants.MILLIS_PER_DAY) { minMiddle = s +(e - s)/ 2;
+patch is same with buggy,282,replace,,this.maxStartIndex = index; ,this.maxStartIndex = index;
+increase failing tests,282,replace, [FE] AssertionFailedError,this.maxStartIndex = index; , 
+compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd(); if(middle > minMiddle) { this.minMiddleIndex = index; }
+compilation error,294,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.minMiddleIndex = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); if(middle > minMiddle) { this.minMiddleIndex =
+compilation error,294,replace,[CE] illegal start of expression,} , 
+compilation error,267,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period.getStart(), index, start + 1);
+compilation error,267,add,[CE] cannot find symbol,,data = period.getDataItem(this.minStartIndex, index);
+compilation error,267,add,[CE] cannot find symbol,,data = period.getDataItem(this.minStartIndex);
+compilation error,308,replace,[CE] 'else' without 'if',} ,fireSeriesChanged();
+compilation error,308,replace,[CE] illegal start of expression,} ,if(middle > maxMiddle) { this.maxMiddleIndex = index; if(middle < minMiddle) { this.maxMiddleIndex = index; }
+compilation error,308,replace,[CE] illegal start of expression,} , 
+compilation error,328,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+compilation error,328,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), null);
+compilation error,328,add,[CE] cannot find symbol minimumEndIndex,,updateBounds(period, getDataItem(this.minimumEndIndex), null);
+compilation error,364,add,[CE] method setValue in class TimePeriodValue cannot be applied to given types;,,item.setValue(value);
+compilation error,364,add,[CE] method setValue in class TimePeriodValue cannot be applied to given types;,,item.setValue(value); fireSeriesChanged();
+compilation error,364,add,[CE] cannot find symbol,,item.addValue(value);
+patch is same with buggy,290,replace,,long minMiddle = s + (e - s) / 2; ,long minMiddle = s + (e - s)/ 2;
+patch is same with buggy,290,replace,,long minMiddle = s + (e - s) / 2; ,long minMiddle = s +(e - s)/ 2;
+compilation error,290,replace,[CE] cannot find symbol minMiddle,long minMiddle = s + (e - s) / 2; , 
+patch is same with buggy,324,replace,,if (this.maxEndIndex >= 0) { ,if(this.maxEndIndex >= 0) {
+increase failing tests,324,replace, [FE] ArrayIndexOutOfBoundsException,if (this.maxEndIndex >= 0) { ,if(this.maxEndIndex < 0) {
+compilation error,324,replace,[CE] illegal start of type,if (this.maxEndIndex >= 0) { , 
+patch is same with buggy,91,replace,,private int minStartIndex = -1; ,private int minStartIndex = -1;
+increase failing tests,91,replace, [FE] AssertionFailedError,private int minStartIndex = -1; ,private int minStartIndex = 0;
+compilation error,310,add,[CE] cannot find symbol,,updateBounds(period, getPeriodType(), 0);
+compilation error,310,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType());
+compilation error,310,add,[CE] cannot find symbol,,updateBounds(period, getPeriodType());
+increase failing tests,248,replace, [FE] NullPointerException,fireSeriesChanged(); ,updateBounds(item.getPeriod(), this.data.size() - 1);
+compilation error,248,replace,[CE] bad operand types for binary operator '-',fireSeriesChanged(); ,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
+patch is same with buggy,248,replace,,fireSeriesChanged(); , 
+compilation error,129,add,[CE] call to super must be first statement in constructor,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,129,add,[CE] cannot find symbol,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); name = new LinkedList();
+compilation error,129,add,[CE] incompatible types,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); name = new ArrayList();
+patch is same with buggy,94,replace,,private int maxStartIndex = -1; ,private int maxStartIndex = -1;
+increase failing tests,94,replace, [FE] AssertionFailedError,private int maxStartIndex = -1; ,private int maxStartIndex = 0;
+patch is same with buggy,106,replace,,private int maxEndIndex = -1; ,private int maxEndIndex = -1;
+compilation error,106,replace,[CE] cannot find symbol maxEndIndex,private int maxEndIndex = -1; , 
+patch is same with buggy,332,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
+increase failing tests,365,add, [FE] AssertionFailedError,,data.add(item); fireSeriesChanged();
+increase failing tests,365,add, [FE] AssertionFailedError,,data.add(item);
+compilation error,300,add,[CE] incompatible types,,long minMiddle = getDataItem(this.minMiddleIndex);
+compilation error,300,add,[CE] incompatible types,,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getStart();
+compilation error,300,add,[CE] incompatible types,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart();
+increase failing tests,246,add, [FE] AssertionFailedError,,this.data.add(item); updateBounds(item.getPeriod(), this.data.size() - 1);
+increase failing tests,246,add, [FE] AssertionFailedError,,this.data.add(item);
+patch is same with buggy,296,replace,,this.minMiddleIndex = index; ,this.minMiddleIndex = index;
+increase failing tests,296,replace, [FE] ArrayIndexOutOfBoundsException,this.minMiddleIndex = index; , 
+compilation error,280,replace,[CE] 'else' without 'if',} ,fireSeriesChanged();
+compilation error,280,replace,[CE] 'else' without 'if',} ,data.add(period, getPeriodType(), start, end);
+compilation error,280,replace,[CE] illegal start of expression,} , 
+compilation error,274,add,[CE] not a statement,,if(getPeriodType() == DEFAULT_DOMAIN_DESCRIPTION) { long minStart = getDataItem(this.minStartIndex).getPeriod().getStart().getTime(); if(start > minStart) { this
+compilation error,274,add,[CE] <identifier> expected,,if(getPeriodType() == DEFAULT_DOMAIN_DESCRIPTION) { long minStart = getDataItem(this.minStartIndex).getPeriod().getStart().getTime(); if(start > minStart) { this.
+compilation error,376,replace,[CE] no suitable method found for add(TimePeriodValue,Number),add(item); ,add(item, value);
+compilation error,376,replace,[CE] cannot find symbol,add(item); ,setValue(item);
+patch is same with buggy,376,replace,,add(item); , 
+compilation error,308,add,[CE] illegal start of expression,,if(middle > maxMiddle) { int index = getDataItem(this.minMiddleIndex).getPeriod().getIndex(); if(index > 0) { this.maxMiddleIndex = index; }
+compilation error,308,add,[CE] illegal start of expression,,if(middle > maxMiddle) { int index = getDataItem(this.minMiddleIndex).getPeriod().getIndex(); if(index < 0) { this.maxMiddleIndex = index; }
+patch is same with buggy,100,replace,,private int maxMiddleIndex = -1; ,private int maxMiddleIndex = -1;
+compilation error,100,replace,[CE] cannot find symbol maxMiddleIndex,private int maxMiddleIndex = -1; , 
+compilation error,319,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex));
+compilation error,319,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), end);
+patch is same with buggy,316,replace,,if (end < minEnd) { ,if(end < minEnd) {
+compilation error,316,replace,[CE] cannot find symbol maxMiddle,if (end < minEnd) { ,if(end < minEnd || end > maxMiddle) {
+compilation error,316,replace,[CE] illegal start of type,if (end < minEnd) { , 
+compilation error,296,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType());
+compilation error,296,add,[CE] cannot find symbol,,updateBounds(period, getPeriodType(), 0);
+compilation error,296,add,[CE] cannot find symbol,,updateBounds(period, getPeriodType());
+patch is same with buggy,267,replace,,this.minStartIndex = index; ,this.minStartIndex = index;
+increase failing tests,267,replace, [FE] AssertionFailedError,this.minStartIndex = index; ,this.minStartIndex = 0;
+compilation error,264,add,[CE] incompatible types,,long minMiddle = getDataItem(this.minStartIndex).getPeriod();
+compilation error,264,add,[CE] cannot find symbol,,long minMiddle = getDataItem(this.minStartIndex).getPeriod().getTime();
+compilation error,264,add,[CE] incompatible types,,long minStart = getDataItem(this.minStartIndex).getPeriod();
+patch is same with buggy,313,replace,,if (this.minEndIndex >= 0) { ,if(this.minEndIndex >= 0) {
+increase failing tests,313,replace, [FE] ArrayIndexOutOfBoundsException,if (this.minEndIndex >= 0) { ,if(this.minEndIndex < 0) {
+compilation error,313,replace,[CE] illegal start of type,if (this.minEndIndex >= 0) { , 
+patch is same with buggy,285,replace,,if (this.minMiddleIndex >= 0) { ,if(this.minMiddleIndex >= 0) {
+increase failing tests,285,replace, [FE] ArrayIndexOutOfBoundsException,if (this.minMiddleIndex >= 0) { ,if(index >= 0) {
+compilation error,285,replace,[CE] illegal start of type,if (this.minMiddleIndex >= 0) { , 
+compilation error,332,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex));
+compilation error,332,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex), null);
+compilation error,332,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(end));
+patch is same with buggy,264,replace,,long minStart = getDataItem(this.minStartIndex).getPeriod() .getStart().getTime(); ,long minStart = getDataItem(this.minStartIndex).getPeriod().getStart().getTime();
+patch is same with buggy,264,replace,,long minStart = getDataItem(this.minStartIndex).getPeriod() .getStart().getTime(); ,long minStart = getDataItem(this.minStartIndex).getPeriod().getStart().getTime();
+compilation error,247,add,[CE] method setValue in class TimePeriodValue cannot be applied to given types;,,item.setValue(this.data.size() - 1);
+increase failing tests,247,add, [FE] AssertionFailedError,,this.data.add(item);
+compilation error,330,replace,[CE] 'else' without 'if',} ,fireSeriesChanged();
+compilation error,330,replace,[CE] 'else' without 'if',} ,data.add(period, getPeriod());
+compilation error,330,replace,[CE] illegal start of expression,} , 
+patch is same with buggy,291,replace,,if (middle < minMiddle) { ,if(middle < minMiddle) {
+compilation error,291,replace,[CE] cannot find symbol minEnd,if (middle < minMiddle) { ,if(minMiddle < minEnd) {
+compilation error,277,replace,[CE] cannot find symbol maxStart,if (start > maxStart) { ,if(maxStart > this.maxStart) {
+compilation error,277,replace,[CE] cannot find symbol minStart,if (start > maxStart) { ,if(maxStart > minStart) {
+compilation error,277,replace,[CE] illegal start of type,if (start > maxStart) { , 
+compilation error,271,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType(), start, minStart);
+compilation error,271,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType());
+compilation error,271,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType(), start, index);
+compilation error,278,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+patch is same with buggy,305,replace,,if (middle > maxMiddle) { ,if(middle > maxMiddle) {
+compilation error,305,replace,[CE] cannot find symbol minEnd,if (middle > maxMiddle) { ,if(maxMiddle > minEnd) {
+compilation error,305,replace,[CE] illegal start of type,if (middle > maxMiddle) { , 
+compilation error,277,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+compilation error,277,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(this.maxStartIndex).getPeriod().getEnd().getTime();
+compilation error,277,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(this.minStartIndex).getPeriod().getStart().getTime();
+compilation error,269,replace,[CE] 'else' without 'if',} ,fireSeriesChanged();
+compilation error,269,replace,[CE] 'else' without 'if',} ,data.add(start, new TimePeriod(period, getDataItem(start)));
+compilation error,269,replace,[CE] illegal start of expression,} , 
+compilation error,130,add,[CE] cannot find symbol,,setPeriodIndex(domain);
+compilation error,275,add,[CE] illegal start of expression,,long minStart = getDataItem(this.minStartIndex).getPeriod();.getStart().getTime();
+compilation error,275,add,[CE] incompatible types,,long minStart = getDataItem(this.minStartIndex).getPeriod();
+compilation error,275,add,[CE] illegal start of expression,,long minStart = getDataItem(this.minStartIndex).getPeriod();.getEnd().getTime();
+compilation error,302,add,[CE] variable maxMiddle is already defined in method updateBounds(TimePeriod,int),,long maxMiddle = s +(s - s)/ 2;
+compilation error,302,add,[CE] bad operand types for binary operator '/',,long maxMiddle = s +(getDataItem(this.minMiddleIndex)/ 2);
+compilation error,133,replace,[CE] illegal start of expression,} ,this.domain = domain; this.range = range;
+compilation error,133,replace,[CE] illegal start of expression,} ,fireSeriesChanged();
+compilation error,133,replace,[CE] illegal start of expression,} , 
+compilation error,133,add,[CE] cannot find symbol,,setPeriodIndex(domain, this.data.size() - 1);
+patch is same with buggy,325,replace,,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd() .getTime(); ,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,325,replace,,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd() .getTime(); ,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,302,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+compilation error,260,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = period.getStart().getTime();
+compilation error,260,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = period.getEnd().getTime();
+compilation error,260,add,[CE] variable minStart is already defined in method updateBounds(TimePeriod,int),,long minStart = period.getStart().getTime();
+compilation error,288,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = s +(s - s)/ 2;
+compilation error,288,add,[CE] bad operand types for binary operator '/',,long minMiddle = s +(getDataItem(this.minMiddleIndex)/ 2);
+patch is same with buggy,306,replace,,this.maxMiddleIndex = index; ,this.maxMiddleIndex = index;
+compilation error,132,add,[CE] cannot find symbol,,this.minMiddleIndex = getMinimumIndex();
+compilation error,132,add,[CE] cannot find symbol,,this.minEndIndex = Math.min(0, name.length() - 1);
+compilation error,132,add,[CE] possible loss of precision,,this.minMiddleIndex = Math.min(0.0, 0.0);
+patch is same with buggy,132,replace,,this.data = new ArrayList(); ,this.data = new ArrayList();
+compilation error,132,replace,[CE] cannot find symbol,this.data = new ArrayList(); ,this.data = new LinkedList();
+compilation error,316,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,316,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart().getTime();
+compilation error,313,add,[CE] variable minEnd is already defined in method updateBounds(TimePeriod,int),,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,313,add,[CE] incompatible types,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getStart();
+compilation error,313,add,[CE] cannot find symbol,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getMinEnd().getTime();
+patch is same with buggy,304,replace,,long maxMiddle = s + (e - s) / 2; ,long maxMiddle = s + (e - s)/ 2;
+patch is same with buggy,304,replace,,long maxMiddle = s + (e - s) / 2; ,long maxMiddle = s +(e - s)/ 2;
+compilation error,552,add,[CE] cannot find symbol,,int result = getDataItemCount(); this.maxMiddleIndex = getDataItemCount();
+compilation error,552,add,[CE] cannot find symbol,,int index = getIndex(this.maxMiddleIndex);
+compilation error,552,add,[CE] cannot find symbol,,int result = getDataItemCount() - this.maxMiddleIndex;
+patch is same with buggy,321,replace,,this.minEndIndex = index; ,this.minEndIndex = index;
+compilation error,114,replace,[CE] cannot find symbol DEFAULT_END_INDEX,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, DEFAULT_END_INDEX);
+patch is same with buggy,114,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,114,replace,[CE] no suitable constructor found for Series(),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); , 
+compilation error,103,add,[CE] illegal start of type,,return TimePeriodValues.get(TimeZone.getDefault());
+compilation error,103,add,[CE] illegal start of type,,return TimePeriodValues.valueOf(minEndIndex);
+compilation error,103,add,[CE] illegal start of type,,return new TimePeriodValues();
+patch is same with buggy,288,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,327,replace,,if (end > maxEnd) { ,if(end > maxEnd) {
+compilation error,327,replace,[CE] illegal start of type,if (end > maxEnd) { , 
+compilation error,376,add,[CE] cannot find symbol,,item.addValue(value);
+increase failing tests,376,add, [FE]  Size,,this.data.add(item);
+patch is same with buggy,300,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,269,add,[CE] TimePeriod is abstract; cannot be instantiated,,updateBounds(start, new TimePeriod(period.getStart(), this.minStartIndex));
+compilation error,269,add,[CE] TimePeriod is abstract; cannot be instantiated,,updateBounds(start, new TimePeriod(period.getStart(), getDataItem(this.minStartIndex)));
+patch is same with buggy,317,replace,,this.minEndIndex = index; ,this.minEndIndex = index;
+patch is same with buggy,328,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
+compilation error,363,add,[CE] no suitable method found for add(TimePeriod,Double),,this.data.add(period, new Double(value));
+increase failing tests,363,add, [FE] ClassCastException,,this.data.add(period);
+increase failing tests,363,add, [FE] AssertionFailedError,,add(period, new Double(value));
+patch is same with buggy,261,replace,,long middle = start + ((end - start) / 2); ,long middle = start +(( end - start)/ 2);
+patch is same with buggy,261,replace,,long middle = start + ((end - start) / 2); ,long middle = start + (( end - start)/ 2);
+compilation error,261,replace,[CE] cannot find symbol middle,long middle = start + ((end - start) / 2); , 
+patch is same with buggy,552,replace,,return this.maxMiddleIndex; ,return this.maxMiddleIndex;
+compilation error,292,add,[CE] incompatible types,,data = getDataItem(this.minMiddleIndex);
+compilation error,292,add,[CE] incompatible types,,data = getDataItem(this.minMiddleIndex).getPeriod().getStart();
+compilation error,292,add,[CE] incompatible types,,data = getDataItem(this.minMiddleIndex).getPeriod().getEnd();
+patch is same with buggy,275,replace,,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); ,long maxStart = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+compilation error,275,replace,[CE] possible loss of precision,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); ,int maxStart = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+patch is same with buggy,275,replace,,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); , 
+compilation error,114,add,[CE] generics are not supported in -source 1.4,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); data = new ArrayList < TimePeriodValue>();
+compilation error,114,add,[CE] generics are not supported in -source 1.4,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); data = new ArrayList < TimePeriodValues>();
+compilation error,324,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,306,add,[CE] incompatible types,,data = getDataItem(this.minMiddleIndex);
+compilation error,306,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minMiddleIndex), e);
+compilation error,306,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minMiddleIndex));
+patch is same with buggy,260,replace,,long end = period.getEnd().getTime(); ,long end = period.getEnd().getTime();
+compilation error,330,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex));
+compilation error,330,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.maxEndIndex), end);
+increase failing tests,375,add, [FE] ClassCastException,,this.data.add(period);
+compilation error,375,add,[CE] no suitable constructor found for Double(Number),,this.data.add(period, new Double(value));
+compilation error,375,add,[CE] cannot find symbol,,this.data.add(period, new Value(value));
+compilation error,285,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,285,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = getDataItem(this.maxStartIndex).getPeriod().getEnd().getTime();
+compilation error,285,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+compilation error,282,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, index));
+compilation error,282,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType());
+compilation error,282,add,[CE] cannot find symbol,,this.data.add(period, getPeriodType(start, index));
+patch is same with buggy,243,replace,,if (item == null) { ,if(item == null) {
+increase failing tests,243,replace, [FE] IllegalArgumentException,if (item == null) { ,if(item == null || item.getPeriod()!= null) {
+compilation error,106,add,[CE] illegal start of type,,return TimePeriodValues.get(TimeZone.getDefault());
+compilation error,106,add,[CE] illegal start of type,,return new TimePeriodValues();
+compilation error,106,add,[CE] illegal start of type,,return TimePeriodValues.getInstance();
+compilation error,280,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, maxStart));
+compilation error,280,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(start, end));
+increase failing tests,247,replace, [FE] AssertionFailedError,updateBounds(item.getPeriod(), this.data.size() - 1); ,updateBounds(item.getPeriod(), this.data.size());
+increase failing tests,247,replace, [FE]  Size,updateBounds(item.getPeriod(), this.data.size() - 1); ,updateBounds(item.getPeriod(), this.data.size() + 1);
+compilation error,319,replace,[CE] 'else' without 'if',} ,data.add(period, getDataItem(this.minEndIndex), end);
+compilation error,261,add,[CE] variable minStart is already defined in method updateBounds(TimePeriod,int),,long minStart = start +(( end - start)/ 2);
+compilation error,261,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = period.getStart().getTime();
+compilation error,261,add,[CE] incompatible types,,long minStart = getDataItem(this.minStartIndex);
+patch is same with buggy,131,replace,,this.range = range; ,this.range = range;
+patch is same with buggy,131,replace,,this.range = range; ,this.range = range;
+compilation error,131,add,[CE] cannot find symbol,,this.minEndIndex = getMinimumIndex();
+increase failing tests,131,add, [FE] AssertionFailedError,,this.minMiddleIndex = minMiddleIndex + 1;
+patch is same with buggy,278,replace,,this.maxStartIndex = index; ,this.maxStartIndex = index;
+increase failing tests,278,replace, [FE] AssertionFailedError,this.maxStartIndex = index; ,this.maxStartIndex = 0;
+compilation error,286,add,[CE] incompatible types,,long minMiddle = getDataItem(this.minMiddleIndex);
+compilation error,286,add,[CE] cannot find symbol,,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getTime();
+compilation error,286,add,[CE] incompatible types,,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getStart();
+patch is same with buggy,130,replace,,this.domain = domain; ,this.domain = domain;
+compilation error,100,add,[CE] illegal start of type,,return TimePeriodValues.get(TimeZone.getDefault());
+compilation error,100,add,[CE] illegal start of type,,return new TimePeriodValues();
+compilation error,100,add,[CE] illegal start of type,,return TimePeriodValues.valueOf(getPeriodType());
+patch is same with buggy,103,replace,,private int minEndIndex = -1; ,private int minEndIndex = -1;
+compilation error,364,replace,[CE] no suitable method found for add(TimePeriodValue,double),add(item); ,add(item, value);
+patch is same with buggy,364,replace,,add(item); ,add(item);
+patch is same with buggy,363,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,String),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,327,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+compilation error,327,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.maxEndIndex).getPeriod().getEnd();
+compilation error,327,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.maxEndIndex).getPeriod().getStart();
+patch is same with buggy,375,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,375,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,Number,String),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,299,add,[CE] incompatible types,,long maxMiddle = getDataItem(this.minMiddleIndex);
+compilation error,299,add,[CE] incompatible types,,long s = getDataItem(this.minMiddleIndex);
+compilation error,299,add,[CE] incompatible types,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart();
+patch is same with buggy,266,replace,,if (start < minStart) { ,if(start < minStart) {
+increase failing tests,266,replace, [FE] AssertionFailedError,if (start < minStart) { ,if(index < minStart) {
+patch is same with buggy,310,replace,,this.maxMiddleIndex = index; ,this.maxMiddleIndex = index;
+compilation error,305,add,[CE] illegal start of expression,,if(middle > minMiddle) { if(middle > maxMiddle) { this.maxMiddleIndex = index; }
+compilation error,305,add,[CE] illegal start of expression,,if(middle > maxMiddle) { if(this.minMiddleIndex > index) { this.maxMiddleIndex = index; }
+compilation error,305,add,[CE] illegal start of expression,,if(middle > minMiddle) { if(middle > maxMiddle) { this.data.get(index); }
+patch is same with buggy,271,replace,,this.minStartIndex = index; ,this.minStartIndex = index;
+patch is same with buggy,246,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,246,replace,[CE] no suitable method found for add(TimePeriodValue,int),this.data.add(item); ,this.data.add(item, this.data.size() - 1);
+patch is same with buggy,292,replace,,this.minMiddleIndex = index; ,this.minMiddleIndex = index;
+increase failing tests,292,replace, [FE] AssertionFailedError,this.minMiddleIndex = index; ,this.minMiddleIndex = 0;
+patch is same with buggy,299,replace,,if (this.maxMiddleIndex >= 0) { ,if(this.maxMiddleIndex >= 0) {
+compilation error,317,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex));
+compilation error,317,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), null);
+compilation error,317,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), 0);
+compilation error,310,add,[CE] cannot find symbol e,,updateBounds(period, getDataItem(this.minMiddleIndex), e);
+increase failing tests,310,add, [FE] ClassCastException,,this.data.add(index, period);
+compilation error,310,add,[CE] cannot find symbol,,updateBounds(period, getPeriodType(), e);
+patch is same with buggy,376,replace,,add(item); ,add(item);
+patch is same with buggy,317,replace,,this.minEndIndex = index; ,this.minEndIndex = index;
+compilation error,290,add,[CE] variable middle is already defined in method updateBounds(TimePeriod,int),,long middle = s +(e - s)/ 2;
+compilation error,288,add,[CE] illegal start of expression,,.getTime();
+compilation error,288,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = s +(minMiddle - s)/ 2;
+compilation error,288,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = s +(this.minMiddleIndex - this.maxStartIndex)/ 2;
+compilation error,308,replace,[CE] 'else' without 'if',} ,this.data.add(middle, -e);
+compilation error,91,add,[CE] variable minStartIndex is already defined in class TimePeriodValues,,private final int minStartIndex = DateTimeUtils.currentTimeMillis();
+compilation error,91,add,[CE] variable minStartIndex is already defined in class TimePeriodValues,,private final int minStartIndex = DateTimeUtils.getInstantValue(getMillis());
+compilation error,91,add,[CE] variable minStartIndex is already defined in class TimePeriodValues,,private final int minStartIndex = DateTimeUtils.getInstantValue(getPeriodType());
+compilation error,299,add,[CE] cannot find symbol s,,long minMiddle = s +(e - minMiddle)/ 2;
+compilation error,299,add,[CE] cannot find symbol s,,long maxMiddle = s +(e - minMiddle)/ 2;
+compilation error,299,add,[CE] cannot find symbol s,,long maxMiddle = s +(e - s)/ 2;
+patch is same with buggy,286,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,286,replace,[CE] <identifier> expected,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart(), this.maxStartIndex.getTime();
+compilation error,324,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart().getTime();
+compilation error,304,add,[CE] cannot find symbol minEnd,,long minMiddle = s +(e - minEnd)/ 2;
+compilation error,304,add,[CE] variable middle is already defined in method updateBounds(TimePeriod,int),,long middle = s +(e - s)/ 2;
+compilation error,266,add,[CE] variable middle is already defined in method updateBounds(TimePeriod,int),,long middle = start +(( end - start)/ 2);
+increase failing tests,292,replace, [FE] AssertionFailedError,this.minMiddleIndex = index; ,this.minMiddleIndex = index - 1;
+increase failing tests,292,replace, [FE]  Size,this.minMiddleIndex = index; ,this.minMiddleIndex = index + 1;
+patch is same with buggy,292,replace,,this.minMiddleIndex = index; , 
+patch is same with buggy,266,replace,,if (start < minStart) { ,if(start < minStart) {
+compilation error,282,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(start).getPeriod().getStart().getTime();
+compilation error,282,add,[CE] no suitable method found for add(long,int),,this.data.add(start, index);
+compilation error,314,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart();
+compilation error,314,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart().getTime();
+compilation error,314,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex);
+patch is same with buggy,275,replace,,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); ,long maxStart = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+increase failing tests,275,replace, [FE] AssertionFailedError,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); ,long maxStart = getDataItem(index).getPeriod().getStart().getTime();
+patch is same with buggy,275,replace,,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); , 
+patch is same with buggy,300,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,300,replace,[CE] <identifier> expected,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart(), this.maxMiddleIndex.getTime();
+compilation error,205,add,[CE] incompatible types,,TimePeriodValues data =(TimePeriodValue)this.data.get(index);
+compilation error,205,add,[CE] not a statement,,TimePeriodValues this =(TimePeriodValue)this.data.get(index);
+increase failing tests,205,add, [FE]  Size,,this.data.remove(index);
+compilation error,115,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,,firePropertyChange("TimePeriodValues", name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,115,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,,firePropertyChange("TimePeriodValues", name);
+compilation error,115,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,,firePropertyChange("TimePeriodValues:" + name);
+patch is same with buggy,324,replace,,if (this.maxEndIndex >= 0) { ,if(this.maxEndIndex >= 0) {
+increase failing tests,324,replace, [FE] ArrayIndexOutOfBoundsException,if (this.maxEndIndex >= 0) { ,if(index >= 0) {
+compilation error,114,add,[CE] generics are not supported in -source 1.4,,this(new ArrayList < Comparable>());
+compilation error,114,add,[CE] no suitable constructor found for TimePeriodValues(Comparable,String),,this(name, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,365,replace,[CE] illegal start of expression,} ,setValue(item);
+compilation error,133,replace,[CE] illegal start of expression,} ,this.data.add(new TimePeriodValues(name, domain, range));
+compilation error,133,replace,[CE] illegal start of expression,} ,this.data.add(new TimePeriodValues(name), domain, range);
+patch is same with buggy,261,replace,,long middle = start + ((end - start) / 2); ,long middle = start +(( end - start)/ 2);
+patch is same with buggy,261,replace,,long middle = start + ((end - start) / 2); ,long middle = start + (( end - start)/ 2);
+patch is same with buggy,313,replace,,if (this.minEndIndex >= 0) { ,if(this.minEndIndex >= 0) {
+increase failing tests,313,replace, [FE] ArrayIndexOutOfBoundsException,if (this.minEndIndex >= 0) { ,if(this.maxMiddleIndex >= 0) {
+patch is same with buggy,310,replace,,this.maxMiddleIndex = index; , 
+compilation error,285,add,[CE] incompatible types,,long minMiddle = getDataItem(this.minMiddleIndex);
+compilation error,248,add,[CE] cannot find symbol,,updateBounds(item.getRange(), this.data.size() - 1);
+compilation error,129,replace,[CE] cannot find symbol Domain,super(name); ,super(name, Domain.DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,377,add,[CE] cannot find symbol,,setValue(item);
+compilation error,130,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(range);
+compilation error,130,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(range); this.domain = domain;
+compilation error,130,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(domain);
+compilation error,302,add,[CE] illegal start of expression,,.getTime();
+compilation error,302,add,[CE] variable minMiddle might not have been initialized,,long minMiddle = s +(minMiddle - s)/ 2;
+patch is same with buggy,316,replace,,if (end < minEnd) { ,if(end < minEnd) {
+compilation error,316,replace,[CE] cannot find symbol maxEnd,if (end < minEnd) { ,if(end < minEnd || end > maxEnd) {
+compilation error,259,add,[CE] incompatible types,,long start = getDataItem(index).getPeriod();
+patch is same with buggy,130,replace,,this.domain = domain; ,this.domain = domain;
+patch is same with buggy,260,replace,,long end = period.getEnd().getTime(); ,long end = period.getEnd().getTime();
+compilation error,300,add,[CE] cannot find symbol s,,long minMiddle = s +(e - minMiddle)/ 2;
+compilation error,300,add,[CE] cannot find symbol,,long minMiddle = period.getMiddle();
+compilation error,275,add,[CE] incompatible types,,long minStart = getDataItem(this.minStartIndex).getPeriod().getStart();
+compilation error,330,add,[CE] cannot find symbol,,updateBounds(this.data, getPeriod(), end, index);
+compilation error,330,add,[CE] no suitable method found for add(int,long),,this.data.add(index, end);
+compilation error,296,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(middle));
+compilation error,296,add,[CE] no suitable method found for add(long),,this.data.add(middle);
+compilation error,296,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(middle), null);
+compilation error,292,add,[CE] no suitable method found for add(int,long),,this.data.add(index, minMiddle);
+compilation error,292,add,[CE] cannot find symbol,,this.data.add(index, new Period(middle));
+compilation error,328,add,[CE] no suitable method found for add(int,long),,this.data.add(index, end);
+compilation error,328,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(end).getPeriod().getEnd().getTime();
+compilation error,328,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.maxEndIndex).getPeriod().getEnd();
+patch is same with buggy,285,replace,,if (this.minMiddleIndex >= 0) { ,if(this.minMiddleIndex >= 0) {
+compilation error,306,add,[CE] no suitable method found for add(int,long),,this.data.add(index, maxMiddle);
+compilation error,306,add,[CE] no suitable method found for add(int,long),,this.data.add(index, -e);
+compilation error,306,add,[CE] cannot find symbol,,this.data.add(index, new Period(middle, e));
+compilation error,269,add,[CE] cannot find symbol,,updateBounds(start, new Period(this.minStartIndex, this.maxStartIndex));
+compilation error,269,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(start, index, minStart);
+compilation error,269,add,[CE] no suitable method found for add(long),,this.data.add(start);
+patch is same with buggy,306,replace,,this.maxMiddleIndex = index; , 
+compilation error,319,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this.minEndIndex, index, end);
+compilation error,319,add,[CE] no suitable method found for add(int,long),,this.data.add(index, end);
+compilation error,100,replace,[CE] possible loss of precision,private int maxMiddleIndex = -1; ,private long maxMiddleIndex = 0;
+compilation error,278,add,[CE] no suitable method found for add(long),,this.data.add(start);
+compilation error,278,add,[CE] cannot find symbol,,this.data.add(start, new Period(this.minStartIndex, this.maxStartIndex));
+compilation error,278,add,[CE] no suitable method found for add(long,int),,this.data.add(start, index);
+compilation error,114,replace,[CE] no suitable constructor found for TimePeriodValues(Comparable,String,String,String),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,114,replace,[CE] no suitable constructor found for TimePeriodValues(Comparable,String,String,boolean),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, false);
+compilation error,332,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(end).getPeriod().getEnd().getTime();
+compilation error,332,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,304,replace,,long maxMiddle = s + (e - s) / 2; ,long maxMiddle = s +(e - s)/ 2;
+patch is same with buggy,304,replace,,long maxMiddle = s + (e - s) / 2; , 
+compilation error,97,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,private int minMiddleIndex = -1; ,private long minMiddleIndex = -1;
+patch is same with buggy,259,replace,,long start = period.getStart().getTime(); ,long start = period.getStart().getTime();
+compilation error,277,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = period.getStart().getTime();
+compilation error,277,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = period.getStartMiddle().getTime();
+compilation error,277,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = period.getStart().getEnd();
+compilation error,286,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,321,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(end).getPeriod().getEnd().getTime();
+compilation error,321,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,363,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,int),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, this.data.size() - 1);
+patch is same with buggy,205,replace,,return (TimePeriodValue) this.data.get(index); ,return(TimePeriodValue)this.data.get(index);
+increase failing tests,365,add, [FE] AssertionFailedError,,add(item);
+compilation error,97,add,[CE] illegal start of type,,return new TimePeriodValues(this.getTime());
+compilation error,97,add,[CE] illegal start of type,,return new TimePeriodValues(getTimePeriodType());
+patch is same with buggy,291,replace,,if (middle < minMiddle) { ,if(middle < minMiddle) {
+increase failing tests,291,replace, [FE] AssertionFailedError,if (middle < minMiddle) { ,if(e < minMiddle) {
+compilation error,133,add,[CE] illegal start of expression,,if(range!= null) { for(int i = 0, minStartIndex = minStartIndex; i < maxStartIndex; i++) { this.data.add(i); }
+compilation error,133,add,[CE] illegal start of expression,,if(this.domain!= null) { for(int i = 0, minStartIndex = minStartIndex; i < minEndIndex; i++) { this.data.add(i); }
+compilation error,133,add,[CE] illegal start of expression,,if(this.domain!= null) { for(int i = 0, minStartIndex = minStartIndex; i < this.maxEndIndex; i++) { this.data.add(i); }
+patch is same with buggy,274,replace,,if (this.maxStartIndex >= 0) { ,if(this.maxStartIndex >= 0) {
+increase failing tests,274,replace, [FE] ArrayIndexOutOfBoundsException,if (this.maxStartIndex >= 0) { ,if(index >= 0) {
+patch is same with buggy,364,replace,,add(item); ,add(item);
+compilation error,364,replace,[CE] cannot find symbol,add(item); ,setValue(item);
+increase failing tests,282,replace, [FE] AssertionFailedError,this.maxStartIndex = index; ,this.maxStartIndex = index + 1;
+increase failing tests,282,replace, [FE] AssertionFailedError,this.maxStartIndex = index; ,this.maxStartIndex = index - 1;
+patch is same with buggy,282,replace,,this.maxStartIndex = index; , 
+increase failing tests,321,replace, [FE] AssertionFailedError,this.minEndIndex = index; ,this.minEndIndex = index + 1;
+patch is same with buggy,321,replace,,this.minEndIndex = index; , 
+patch is same with buggy,132,replace,,this.data = new ArrayList(); ,this.data = new ArrayList();
+patch is same with buggy,327,replace,,if (end > maxEnd) { ,if(end > maxEnd) {
+increase failing tests,246,add, [FE]  Size,,this.data.remove(0);
+compilation error,314,replace,[CE] ';' expected,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd() .getTime(); ,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd(), period.getTime();
+increase failing tests,264,replace, [FE] AssertionFailedError,long minStart = getDataItem(this.minStartIndex).getPeriod() .getStart().getTime(); ,long minStart = getDataItem(index).getPeriod().getStart().getTime();
+patch is same with buggy,264,replace,,long minStart = getDataItem(this.minStartIndex).getPeriod() .getStart().getTime(); , 
+compilation error,260,add,[CE] cannot find symbol,,long minStartIndex = getDataItem(index).getStart().getTime();
+compilation error,260,add,[CE] cannot find symbol,,long minStartIndex = getDataItem(index).getPeriod().getTime();
+compilation error,552,add,[CE] cannot find symbol,,int index = getRange().getIndex(this.maxMiddleIndex);
+compilation error,552,add,[CE] cannot find symbol,,int index = getChronology().indexOf(this.maxMiddleIndex);
+compilation error,552,add,[CE] cannot find symbol maxMiddle,,int index = getChronology().indexOf(this.maxMiddle);
+increase failing tests,243,add, [FE] NullPointerException,,updateBounds(item.getPeriod(), this.data.size() - 1);
+increase failing tests,243,add, [FE] NullPointerException,,this.data.add(item); updateBounds(item.getPeriod(), this.data.size() - 1);
+compilation error,313,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart().getTime();
+compilation error,313,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,313,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.getStart()).getPeriod().getEnd().getTime();
+compilation error,132,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(range);
+compilation error,132,add,[CE] possible loss of precision,,this.minMiddleIndex = Math.min(0.0, minMiddleIndex);
+compilation error,132,add,[CE] cannot find symbol min,,this.minMiddleIndex = Math.min(min, range.getMinimumIndex() - 1);
+compilation error,327,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart().getTime();
+compilation error,327,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,327,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd();
+patch is same with buggy,131,replace,,this.range = range; ,this.range = range;
+compilation error,131,replace,[CE] bad operand types for binary operator '-',this.range = range; ,this.range = range - 1;
+compilation error,291,add,[CE] long cannot be dereferenced,,long midMiddle = minMiddle + e.getEnd().getTime();
+compilation error,291,add,[CE] long cannot be dereferenced,,long midMiddle = minMiddle + e.getSize();
+patch is same with buggy,243,replace,,if (item == null) { ,if(item == null) {
+compilation error,243,replace,[CE] bad operand types for binary operator '==',if (item == null) { ,if(item == null || item.getPeriod() == this.data.size()) {
+compilation error,106,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,private int maxEndIndex = -1; ,private long maxEndIndex = -1;
+compilation error,308,add,[CE] cannot find symbol,,updateBounds(period, getPeriodType(), e);
+compilation error,308,add,[CE] cannot find symbol,,period.update(middle, e);
+compilation error,308,add,[CE] cannot find symbol,,updateBounds(period, getPeriod(), e);
+patch is same with buggy,305,replace,,if (middle > maxMiddle) { ,if(middle > maxMiddle) {
+compilation error,325,add,[CE] incompatible types,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getStart();
+compilation error,325,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getStart();
+compilation error,552,replace,[CE] cannot find symbol minEnd,return this.maxMiddleIndex; ,return this.maxMiddleIndex /(this.minEnd - this.maxEnd);
+compilation error,305,add,[CE] possible loss of precision,,int minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+compilation error,305,add,[CE] incompatible types,,int minMiddle = getDataItem(this.minMiddleIndex);
+compilation error,305,add,[CE] possible loss of precision,,int minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,280,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(start, index, this.data.size() - 1);
+compilation error,280,add,[CE] no suitable method found for add(long),,this.data.add(start);
+compilation error,103,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,private int minEndIndex = -1; ,private long minEndIndex = -1;
+patch is same with buggy,103,replace,,private int minEndIndex = -1; , 
+increase failing tests,296,replace, [FE] AssertionFailedError,this.minMiddleIndex = index; ,this.minMiddleIndex = index + 1;
+increase failing tests,296,replace, [FE] AssertionFailedError,this.minMiddleIndex = index; ,this.minMiddleIndex = index - 1;
+patch is same with buggy,296,replace,,this.minMiddleIndex = index; , 
+compilation error,316,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = period.getStart().getEnd();
+compilation error,316,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getPeriod().getStart().getTime();
+compilation error,316,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getPeriod().getEnd().getTime();
+compilation error,247,add,[CE] cannot find symbol,,updateBounds(item.getSeries(), this.data.size() - 1);
+compilation error,247,add,[CE] method get in interface List cannot be applied to given types;,,item.setValue(this.data.get(item));
+compilation error,247,add,[CE] cannot find symbol,,updateBounds(item.getSeries(), null);
+compilation error,100,add,[CE] illegal start of type,,return TimePeriodValues.getTime();
+compilation error,100,add,[CE] variable maxMiddleIndex is already defined in class TimePeriodValues,,private int maxMiddleIndex = getMaxMiddleIndex();
+compilation error,100,add,[CE] variable maxMiddleIndex is already defined in class TimePeriodValues,,private int maxMiddleIndex = Math.max(maxMiddleIndex, -1);
+patch is same with buggy,290,replace,,long minMiddle = s + (e - s) / 2; ,long minMiddle = s +(e - s)/ 2;
+patch is same with buggy,290,replace,,long minMiddle = s + (e - s) / 2; ,long minMiddle = s + (e - s)/ 2;
+compilation error,317,add,[CE] no suitable method found for add(int,long),,this.data.add(index, end);
+compilation error,317,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this.minEndIndex, index, end);
+compilation error,317,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+increase failing tests,332,replace, [FE] AssertionFailedError,this.maxEndIndex = index; ,this.maxEndIndex = index + 1;
+patch is same with buggy,332,replace,,this.maxEndIndex = index; , 
+compilation error,325,replace,[CE] cannot find symbol,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd() .getTime(); ,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEndIndex().getTime();
+compilation error,325,replace,[CE] cannot find symbol,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd() .getTime(); ,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().setIndex(index);
+patch is same with buggy,375,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,375,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,Number,int),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, this.data.size() - 1);
+compilation error,106,add,[CE] variable maxEndIndex is already defined in class TimePeriodValues,,private final int maxEndIndex = DateTimeUtils.currentTimeMillis();
+compilation error,106,add,[CE] variable maxEndIndex is already defined in class TimePeriodValues,,private final int maxEndIndex = DateTimeUtils.getChronology(getBase());
+compilation error,261,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = start +(( end - start)/ 2);
+compilation error,261,add,[CE] cannot find symbol,,long maxStart = getDataItem(index).getMaxStart().getTime();
+compilation error,261,add,[CE] incompatible types,,long maxStart = getDataItem(index);
+compilation error,294,replace,[CE] 'else' without 'if',} ,period.updateBounds(middle, e);
+increase failing tests,271,replace, [FE]  Size,this.minStartIndex = index; ,this.minStartIndex = index + 1;
+increase failing tests,271,replace, [FE] AssertionFailedError,this.minStartIndex = index; ,this.minStartIndex = index - 1;
+patch is same with buggy,271,replace,,this.minStartIndex = index; , 
+compilation error,103,add,[CE] variable minEndIndex is already defined in class TimePeriodValues,,private final int minEndIndex = DateTimeUtils.getInstantMillis(getPeriod());
+compilation error,103,add,[CE] variable minEndIndex is already defined in class TimePeriodValues,,private final int minEndIndex = DateTimeUtils.getInstantMillis(getPeriodType());
+compilation error,103,add,[CE] variable minEndIndex is already defined in class TimePeriodValues,,private final int minEndIndex = DateTimeUtils.currentTimeMillis();
+compilation error,294,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this.minMiddleIndex, index, minMiddle, e);
+compilation error,294,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this.minMiddleIndex, index, minMiddle);
+compilation error,131,add,[CE] cannot find symbol minimumIndex,,this.minimumIndex = Math.min(minimumIndex, minStartIndex); this.maxMiddleIndex = Math.max(maxMiddleIndex, minEndIndex);
+compilation error,131,add,[CE] cannot find symbol minimumIndex,,this.minimumIndex = Math.min(minimumIndex, minStartIndex);
+compilation error,274,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(this.minStartIndex).getPeriod().getStart().getTime();
+compilation error,375,add,[CE] no suitable method found for add(TimePeriod,Number),,this.data.add(period, value);
+compilation error,375,add,[CE] cannot find symbol,,super.addValue(period, value);
+increase failing tests,267,replace, [FE] AssertionFailedError,this.minStartIndex = index; ,this.minStartIndex = index + 1;
+increase failing tests,267,replace, [FE] AssertionFailedError,this.minStartIndex = index; ,this.minStartIndex = index - 1;
+patch is same with buggy,267,replace,,this.minStartIndex = index; , 
+patch is same with buggy,246,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,94,replace,[CE] cannot find symbol DateTimeUtils,private int maxStartIndex = -1; ,private int maxStartIndex = DateTimeUtils.currentTimeMillis();
+compilation error,94,add,[CE] variable maxStartIndex is already defined in class TimePeriodValues,,private int maxStartIndex = getMaximumValues();
+compilation error,94,add,[CE] variable maxStartIndex is already defined in class TimePeriodValues,,private final int maxStartIndex = getMaximumValues();
+compilation error,94,add,[CE] variable maxStartIndex is already defined in class TimePeriodValues,,private int maxStartIndex = Math.max(maxStartIndex, -1);
+patch is same with buggy,263,replace,,if (this.minStartIndex >= 0) { ,if(this.minStartIndex >= 0) {
+patch is same with buggy,248,replace,,fireSeriesChanged(); ,fireSeriesChanged();
+compilation error,247,replace,[CE] cannot find symbol,updateBounds(item.getPeriod(), this.data.size() - 1); ,updateBounds(this.data.getPeriod(), this.data.size());
+compilation error,129,add,[CE] no suitable constructor found for Series(),,Preconditions.checkNotNull(name); this.domain = domain;
+compilation error,129,add,[CE] no suitable constructor found for Series(),,Preconditions.checkNotNull(name);
+compilation error,129,add,[CE] no suitable constructor found for Series(),,Preconditions.checkNotNull(domain);
+increase failing tests,277,replace, [FE] AssertionFailedError,if (start > maxStart) { ,if(maxStart > this.maxStartIndex) {
+compilation error,271,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(start).getPeriod().getStart().getTime();
+compilation error,271,add,[CE] no suitable method found for add(long),,this.data.add(start);
+compilation error,280,replace,[CE] 'else' without 'if',} ,period.updateBounds(start, index);
+compilation error,267,add,[CE] no suitable method found for add(long),,this.data.add(start);
+compilation error,267,add,[CE] no suitable method found for remove(long),,this.data.remove(start);
+increase failing tests,267,add, [FE]  Size,,this.data.remove(index);
+patch is same with buggy,288,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,302,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,299,replace,,if (this.maxMiddleIndex >= 0) { ,if(this.maxMiddleIndex >= 0) {
+patch is same with buggy,328,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
+compilation error,263,add,[CE] not a statement,,int this.minStartIndex = index;
+compilation error,263,add,[CE] not a statement,,int this.minStartIndex = getDataItem(index);
+compilation error,263,add,[CE] variable index is already defined in method updateBounds(TimePeriod,int),,int index = indexOf(this.data.size() - 1);
+compilation error,264,add,[CE] incompatible types,,long maxStart = getDataItem(this.maxStartIndex).getPeriod();
+compilation error,264,add,[CE] incompatible types,,long maxStart = getDataItem(this.maxStartIndex);
+compilation error,264,add,[CE] variable start is already defined in method updateBounds(TimePeriod,int),,long start = getDataItem(this.minStartIndex).getPeriod();
+compilation error,91,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,private int minStartIndex = -1; ,private long minStartIndex = -1;
+patch is same with buggy,91,replace,,private int minStartIndex = -1; , 
+increase failing tests,278,replace, [FE] AssertionFailedError,this.maxStartIndex = index; ,this.maxStartIndex = index + 1;
+patch is same with buggy,278,replace,,this.maxStartIndex = index; ,this.maxStartIndex = index;
+compilation error,321,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(period).getPeriod().getEnd().getTime();
+compilation error,321,add,[CE] cannot find symbol minEnd,,updateBounds(period, getDataItem(this.minEndIndex), end, minEnd);
+compilation error,321,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(end), getPeriod(), end.getTime());
+patch is same with buggy,325,replace,,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd() .getTime(); ,long maxEnd = getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+compilation error,376,replace,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,add(item); ,updateBounds(item, value);
+compilation error,278,add,[CE] cannot find symbol,,updateBounds(start, new Period(start, maxStart));
+compilation error,278,add,[CE] TimePeriod is abstract; cannot be instantiated,,updateBounds(start, new TimePeriod(start, maxStart));
+compilation error,278,add,[CE] cannot find symbol,,updateBounds(start, new Date());
+patch is same with buggy,271,replace,,this.minStartIndex = index; ,this.minStartIndex = index;
+compilation error,296,add,[CE] cannot find symbol s,,updateBounds(period, getDataItem(s), e);
+compilation error,296,add,[CE] cannot find symbol s,,updateBounds(period, getDataItem(s), false);
+patch is same with buggy,261,replace,,long middle = start + ((end - start) / 2); ,long middle = start +(( end - start)/ 2);
+patch is same with buggy,261,replace,,long middle = start + ((end - start) / 2); ,long middle = start + (( end - start)/ 2);
+compilation error,292,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(index, new TimePeriod(period, s, e));
+increase failing tests,292,add, [FE] ClassCastException,,this.data.add(index, period);
+compilation error,292,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this, period, s, e);
+patch is same with buggy,304,replace,,long maxMiddle = s + (e - s) / 2; ,long maxMiddle = s +(e - s)/ 2;
+compilation error,304,replace,[CE] cannot find symbol minStart,long maxMiddle = s + (e - s) / 2; ,long maxMiddle = s +(e - minStart)/ 2;
+patch is same with buggy,304,replace,,long maxMiddle = s + (e - s) / 2; , 
+compilation error,114,replace,[CE] no suitable constructor found for TimePeriodValues(Comparable,String,String,Comparable),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, name);
+compilation error,302,add,[CE] cannot find symbol minStart,,long minMiddle = s +(this.minMiddleIndex - minStart)/ 2;
+compilation error,302,add,[CE] cannot find symbol minStart,,long minMiddle = s +(minMiddleIndex - minStart)/ 2;
+compilation error,94,add,[CE] illegal start of type,,return UnsupportedOperation.getInstance();
+compilation error,94,add,[CE] illegal start of type,,return TimePeriodValues.valueOf(getStart());
+compilation error,94,add,[CE] illegal start of type,,return new TimePeriodValue(getTime());
+compilation error,130,add,[CE] cannot find symbol,,setPeriodIndex(minEndIndex); this.data = new ArrayList();
+compilation error,130,add,[CE] cannot find symbol,,setPeriodIndex(minEndIndex); this.domain = domain;
+compilation error,271,add,[CE] cannot find symbol,,updateBounds(start, new Period(start, minStart));
+compilation error,271,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(start, getDataItem(period).getPeriod(), start + 1);
+patch is same with buggy,285,replace,,if (this.minMiddleIndex >= 0) { ,if(this.minMiddleIndex >= 0) {
+increase failing tests,285,replace, [FE] AssertionFailedError,if (this.minMiddleIndex >= 0) { ,if(this.minMiddleIndex >= index) {
+patch is same with buggy,130,replace,,this.domain = domain; ,this.domain = domain;
+patch is same with buggy,130,replace,,this.domain = domain; ,this.domain= domain;
+compilation error,267,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(start, index, middle);
+compilation error,267,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, start, middle, index);
+compilation error,267,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, start, index);
+patch is same with buggy,552,replace,,return this.maxMiddleIndex; , 
+compilation error,264,replace,[CE] ';' expected,long minStart = getDataItem(this.minStartIndex).getPeriod() .getStart().getTime(); ,long minStart = getDataItem(this.minStartIndex).getPeriod(), period.getStart().getTime();
+compilation error,91,add,[CE] illegal start of type,,return UnsupportedOperation.getInstance();
+compilation error,91,add,[CE] illegal start of type,,return new TimePeriodValue(getTime());
+compilation error,91,add,[CE] illegal start of type,,return new TimePeriodValues(getTime(), getTimePeriodType());
+compilation error,364,replace,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,add(item); ,updateBounds(item, value);
+patch is same with buggy,305,replace,,if (middle > maxMiddle) { ,if(middle > maxMiddle) {
+compilation error,261,add,[CE] cannot find symbol,,long maxStart = period.getMaxStart().getTime();
+compilation error,261,add,[CE] cannot find symbol,,long maxStart = period.getMiddle().getTime();
+patch is same with buggy,267,replace,,this.minStartIndex = index; ,this.minStartIndex = index;
+compilation error,365,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(item.getPeriod(), value);
+compilation error,365,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(item.getPeriod(), new Double(value));
+patch is same with buggy,327,replace,,if (end > maxEnd) { ,if(end > maxEnd) {
+compilation error,327,replace,[CE] cannot find symbol minEnd,if (end > maxEnd) { ,if(end < minEnd) {
+patch is same with buggy,205,replace,,return (TimePeriodValue) this.data.get(index); ,return(TimePeriodValue)this.data.get(index);
+patch is same with buggy,205,replace,,return (TimePeriodValue) this.data.get(index); , 
+patch is same with buggy,129,replace,,super(name); ,super(name);
+patch is same with buggy,363,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,363,replace,[CE] no suitable constructor found for TimePeriodValue(TimePeriod,double,<null>),TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, null);
+patch is same with buggy,243,replace,,if (item == null) { ,if(item == null) {
+compilation error,243,replace,[CE] bad operand types for binary operator '!=',if (item == null) { ,if(item == null || item.getPeriod()!= this.data.size()) {
+compilation error,100,add,[CE] illegal start of type,,return UnsupportedOperation.getInstance();
+compilation error,100,add,[CE] illegal start of type,,return new TimePeriodValue(getTime());
+compilation error,100,add,[CE] illegal start of type,,return TimePeriodValues.valueOf(getStart());
+compilation error,115,add,[CE] Comparable is abstract; cannot be instantiated,,firePropertyChange("TimePeriodValues", new Comparable(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION));
+compilation error,115,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,,firePropertyChange("TimePeriodValue", name);
+compilation error,269,add,[CE] cannot find symbol,,updateBounds(start, new Period(start, minStart));
+compilation error,269,add,[CE] TimePeriod is abstract; cannot be instantiated,,updateBounds(start, new TimePeriod(start, minStart));
+compilation error,280,replace,[CE] 'else' without 'if',} ,updateBounds(start, new TimePeriod(start, maxStart));
+patch is same with buggy,94,replace,,private int maxStartIndex = -1; ,private int maxStartIndex = -1;
+patch is same with buggy,263,replace,,if (this.minStartIndex >= 0) { ,if(this.minStartIndex >= 0) {
+compilation error,308,replace,[CE] 'else' without 'if',} ,updateBounds(period, getDataItem(s), e);
+compilation error,131,add,[CE] incompatible types,,this.minEndIndex = minEndIndex; this.maxEndIndex = range;
+patch is same with buggy,306,replace,,this.maxMiddleIndex = index; ,this.maxMiddleIndex = index;
+patch is same with buggy,259,replace,,long start = period.getStart().getTime(); ,long start = period.getStart().getTime();
+compilation error,103,add,[CE] illegal start of type,,return new TimePeriodValue(getTime());
+compilation error,103,add,[CE] illegal start of type,,return new TimePeriodValue(getTime(), getTimePeriodType());
+compilation error,103,add,[CE] illegal start of type,,return TimePeriodValues.valueOf(getStart());
+compilation error,377,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(item.getPeriod(), value);
+compilation error,377,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(item.getPeriod(), this.data);
+compilation error,306,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(index, new TimePeriod(period, s, e));
+compilation error,306,add,[CE] cannot find symbol minMiddle,,this.data.add(index, new TimePeriod(period, e, minMiddle));
+compilation error,306,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(index, new TimePeriod(period, s, e), true);
+patch is same with buggy,313,replace,,if (this.minEndIndex >= 0) { ,if(this.minEndIndex >= 0) {
+patch is same with buggy,332,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
+compilation error,365,replace,[CE] illegal start of expression,} ,updateBounds(item.getPeriod(), value); fireSeriesChanged();
+compilation error,247,add,[CE] bad operand types for binary operator '-',,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
+compilation error,288,add,[CE] variable minMiddle is already defined in method updateBounds(TimePeriod,int),,long minMiddle = s +(this.minMiddleIndex - minMiddle)/ 2;
+compilation error,288,add,[CE] cannot find symbol minStart,,long minMiddle = s +(this.minMiddleIndex - minStart)/ 2;
+compilation error,248,replace,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,fireSeriesChanged(); ,updateBounds(item.getPeriod(), null);
+patch is same with buggy,324,replace,,if (this.maxEndIndex >= 0) { ,if(this.maxEndIndex >= 0) {
+increase failing tests,324,replace, [FE] ArrayIndexOutOfBoundsException,if (this.maxEndIndex >= 0) { ,if(this.minEndIndex >= 0) {
+compilation error,330,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(end), getPeriod().getEnd(), TimePeriodType.standard());
+compilation error,330,add,[CE] illegal start of expression,,updateBounds(period, getDataItem(end), getPeriod().getEnd(),.getTime());
+patch is same with buggy,300,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,300,replace,[CE] cannot find symbol,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getSize().getTime();
+compilation error,375,add,[CE] no suitable constructor found for TimePeriodValue(Number),,this.data.add(period, new TimePeriodValue(value));
+compilation error,375,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(period, new TimePeriod(value));
+compilation error,133,replace,[CE] illegal start of expression,} ,firePropertyChange("TimePeriod", name, domain, range);
+compilation error,133,replace,[CE] illegal start of expression,} ,firePropertyChange("TimePeriod", name);
+patch is same with buggy,274,replace,,if (this.maxStartIndex >= 0) { ,if(this.maxStartIndex >= 0) {
+increase failing tests,274,replace, [FE] ArrayIndexOutOfBoundsException,if (this.maxStartIndex >= 0) { ,if(this.minStartIndex >= 0) {
+compilation error,247,replace,[CE] cannot find symbol Item,updateBounds(item.getPeriod(), this.data.size() - 1); ,updateBounds(Item.getPeriod(), this.data.size());
+compilation error,290,add,[CE] cannot find symbol minMiddle,,long maxMiddle = s +(e - minMiddle)/ 2;
+compilation error,328,add,[CE] cannot find symbol,,updateBounds(this.data, new java.util.TimePeriod(end, minEnd, this.maxEndIndex));
+compilation error,328,add,[CE] cannot find symbol,,updateBounds(this.data, new java.util.TimePeriod(end, minStart));
+compilation error,328,add,[CE] cannot find symbol,,updateBounds(this.data, new java.util.TimePeriod(end, minEnd));
+compilation error,310,add,[CE] cannot find symbol s,,updateBounds(period, getDataItem(s), false);
+compilation error,310,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(middle), null);
+compilation error,310,add,[CE] cannot find symbol s,,updateBounds(period, getDataItem(s), null);
+patch is same with buggy,91,replace,,private int minStartIndex = -1; ,private int minStartIndex = -1;
+compilation error,106,add,[CE] illegal start of type,,return UnsupportedOperation.getInstance();
+compilation error,106,add,[CE] illegal start of type,,return TimePeriodValues.valueOf(getStart());
+compilation error,106,add,[CE] illegal start of type,,return new TimePeriodValue(getTime());
+patch is same with buggy,260,replace,,long end = period.getEnd().getTime(); ,long end = period.getEnd().getTime();
+patch is same with buggy,328,replace,,this.maxEndIndex = index; ,this.maxEndIndex = index;
+compilation error,282,add,[CE] cannot find symbol,,updateBounds(start, new Period(start, maxStart));
+compilation error,282,add,[CE] no suitable method found for add(long),,this.data.add(start);
+compilation error,282,add,[CE] cannot find symbol maxStart,,updateBounds(start, new TimePeriod(start, maxStart));
+compilation error,317,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this.data, getDataItem(this.minEndIndex));
+compilation error,317,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(this.data, getDataItem(this.minEndIndex), false);
+compilation error,317,add,[CE] TimePeriod is abstract; cannot be instantiated,,updateBounds(this.data, new TimePeriod(period, minEnd, index));
+compilation error,294,replace,[CE] 'else' without 'if',} ,updateBounds(period, getDataItem(s), e);
+compilation error,299,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(-index - 1, new TimePeriod(this.minMiddleIndex, this.maxMiddleIndex));
+compilation error,299,add,[CE] cannot find symbol minMiddle,,this.data.add(-index - 1, new TimePeriod(this.minMiddleIndex, minMiddle));
+compilation error,299,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(-index - 1, new TimePeriod(period, index));
+compilation error,248,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(item.getValue(), this.data.size() - 1);
+increase failing tests,259,add, [FE] ClassCastException,,this.data.add(period);
+compilation error,259,add,[CE] cannot find symbol,,checkPeriod(period);
+compilation error,259,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.set(index, new TimePeriod(period));
+increase failing tests,246,add, [FE] AssertionFailedError,,updateBounds(item.getPeriod(), this.data.size() - 1);
+compilation error,246,add,[CE] bad operand types for binary operator '-',,updateBounds(item.getPeriod() - 1, this.data.size() - 1);
+patch is same with buggy,314,replace,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd() .getTime(); ,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,314,replace,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd() .getTime(); ,long minEnd = getDataItem(period).getPeriod().getEnd().getTime();
+patch is same with buggy,314,replace,,long minEnd = getDataItem(this.minEndIndex).getPeriod().getEnd() .getTime(); , 
+patch is same with buggy,310,replace,,this.maxMiddleIndex = index; ,this.maxMiddleIndex = index;
+patch is same with buggy,321,replace,,this.minEndIndex = index; ,this.minEndIndex = index;
+patch is same with buggy,282,replace,,this.maxStartIndex = index; ,this.maxStartIndex = index;
+compilation error,114,add,[CE] generics are not supported in -source 1.4,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); firePropertyChange("TimePeriodValues", new ArrayList < Comparable>());
+compilation error,114,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION); firePropertyChange("TimePeriodValues:" + name);
+increase failing tests,286,add, [FE] AssertionFailedError,,this.minMiddleIndex = index;
+patch is same with buggy,278,replace,,this.maxStartIndex = index; ,this.maxStartIndex = index;
+patch is same with buggy,296,replace,,this.minMiddleIndex = index; ,this.minMiddleIndex = index;
+compilation error,319,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(end), getPeriod(), end.getTime());
+compilation error,319,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(this.minEndIndex), end, minEnd);
+patch is same with buggy,97,replace,,private int minMiddleIndex = -1; , 
+compilation error,294,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, getDataItem(s), e, minMiddle);
+patch is same with buggy,106,replace,,private int maxEndIndex = -1; ,private int maxEndIndex = -1;
+compilation error,133,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,,firePropertyChange("TimePeriodValues", name);
+patch is same with buggy,375,replace,,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value);
+compilation error,375,replace,[CE] cannot find symbol dataArea,TimePeriodValue item = new TimePeriodValue(period, value); ,TimePeriodValue item = new TimePeriodValue(period, value, dataArea);
+patch is same with buggy,103,replace,,private int minEndIndex = -1; ,private int minEndIndex = -1;
+compilation error,308,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;,,updateBounds(period, data, s, e);
+compilation error,313,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.period).getPeriod().getEnd().getTime();
+compilation error,313,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.data).getPeriod().getEnd().getTime();
+compilation error,305,add,[CE] illegal start of expression,,if(middle > minMiddle) { if(middle < this.minMiddleIndex) { this.minMiddleIndex = index; }
+compilation error,305,add,[CE] illegal start of expression,,if(middle > minMiddle) { if(middle >= this.minMiddleIndex) { this.minMiddleIndex = index; }
+compilation error,305,add,[CE] illegal start of expression,,if(middle > minMiddle) { if(this.minMiddleIndex >= 0) { this.minMiddleIndex = index; }
+compilation error,280,add,[CE] cannot find symbol,,updateBounds(start, new Period(start, maxStart));
+compilation error,264,add,[CE] cannot find symbol,,long maxStart = getDataItem(this.maxStartIndex).getPeriod().getTime();
+compilation error,264,add,[CE] cannot find symbol,,long minStart = getDataItem(this.minStartIndex).getPeriod().getTime();
+compilation error,264,add,[CE] cannot find symbol,,long maxStart = getDataItem(this.minStartIndex).getPeriod().getTime();
+patch is same with buggy,246,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,246,replace,[CE] bad operand type TimePeriodValue for unary operator '-',this.data.add(item); ,this.data.add(-item);
+patch is same with buggy,286,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,286,replace,[CE] cannot find symbol,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); ,long s = getDataItem(this.minMiddleIndex).getPeriod().start().getTime();
+patch is same with buggy,286,replace,,long s = getDataItem(this.minMiddleIndex).getPeriod().getStart() .getTime(); , 
+compilation error,132,add,[CE] possible loss of precision,,this.minStartIndex = Math.min(0.0, minStartIndex); this.maxStartIndex = Math.max(this.maxStartIndex, this.minEndIndex);
+compilation error,132,add,[CE] possible loss of precision,,this.minStartIndex = Math.min(0.0, minStartIndex); this.maxStartIndex = Math.max(0.0, maxStartIndex);
+compilation error,132,add,[CE] cannot find symbol,,this.minStartIndex = getMinimumIndex(); this.maxStartIndex = getMaxStartIndex();
+patch is same with buggy,316,replace,,if (end < minEnd) { ,if(end < minEnd) {
+compilation error,552,add,[CE] no suitable method found for add(int),,this.data.add(getMaxMiddleIndex());
+compilation error,552,add,[CE] cannot find symbol,,checkPeriod(getMaxMiddleIndex());
+compilation error,552,add,[CE] cannot find symbol,,checkPeriod(getMaxMiddle());
+compilation error,115,replace,[CE] illegal start of expression,} ,peg(Calendar.getInstance());
+compilation error,205,add,[CE] not a statement,,for(TimePeriodValue : getDataItem(index)) { if(!(this.data == null)) { this.data.add(getDataItem(index)); }
+compilation error,205,add,[CE] not a statement,,for(TimePeriodValue : getDataItem(index)) { if(this.data!= null) { this.data.add(getDataItem(index)); }
+compilation error,205,add,[CE] no suitable constructor found for TimePeriodValue(int),,this.data.add(new TimePeriodValue(index));
+increase failing tests,364,add, [FE] AssertionFailedError,,this.data.add(item);
+compilation error,97,add,[CE] illegal start of type,,return UnsupportedOperation.getInstance();
+compilation error,97,add,[CE] illegal start of type,,return new TimePeriodValue(getTime());
+compilation error,97,add,[CE] illegal start of type,,return new TimePeriodValue(getTime(), getTimePeriodType());
+compilation error,277,replace,[CE] cannot find symbol minStart,if (start > maxStart) { ,if(start < minStart) {
+compilation error,277,replace,[CE] cannot find symbol minStart,if (start > maxStart) { ,if(start >= minStart) {
+compilation error,100,replace,[CE] possible loss of precision,private int maxMiddleIndex = -1; ,private long maxMiddleIndex = -1;
+patch is same with buggy,100,replace,,private int maxMiddleIndex = -1; , 
+patch is same with buggy,266,replace,,if (start < minStart) { ,if(start < minStart) {
+patch is same with buggy,302,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,132,replace,,this.data = new ArrayList(); ,this.data = new ArrayList();
+patch is same with buggy,291,replace,,if (middle < minMiddle) { ,if(middle < minMiddle) {
+increase failing tests,291,replace, [FE] AssertionFailedError,if (middle < minMiddle) { ,if(middle < minMiddle || e > s) {
+compilation error,263,add,[CE] cannot find symbol,,long maxStart = getDataItem(this.maxStartIndex).getPeriod().getTime();
+compilation error,263,add,[CE] cannot find symbol,,long maxStart = getDataItem(index).getPeriod().getTime();
+compilation error,263,add,[CE] variable maxStart is already defined in method updateBounds(TimePeriod,int),,long maxStart = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+patch is same with buggy,290,replace,,long minMiddle = s + (e - s) / 2; ,long minMiddle = s +(e - s)/ 2;
+patch is same with buggy,290,replace,,long minMiddle = s + (e - s) / 2; ,long minMiddle = s + (e - s)/ 2;
+compilation error,332,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(index, new TimePeriod(period, start, end));
+compilation error,332,add,[CE] ';' expected,,updateBounds(period, getDataItem(end)).getPeriod().getEnd(), -start);
+compilation error,332,add,[CE] ';' expected,,updateBounds(period, getDataItem(end)).getPeriod().getEnd(), -index);
+compilation error,377,replace,[CE] illegal start of expression,} ,updateBounds(item.getPeriod(), this.data.size() - 1); fireSeriesChanged();
+patch is same with buggy,131,replace,,this.range = range; ,this.range = range;
+compilation error,314,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int),,long end = getDataItem(this.minEndIndex).getPeriod().getEnd().getTime();
+compilation error,129,add,[CE] no suitable constructor found for TimePeriodValues(),,this();
+compilation error,129,add,[CE] generics are not supported in -source 1.4,,this(name, new ArrayList < TimePeriodValues>());
+compilation error,129,add,[CE] generics are not supported in -source 1.4,,this(name, new ArrayList < TimePeriodValue>());
+patch is same with buggy,317,replace,,this.minEndIndex = index; ,this.minEndIndex = index;
+patch is same with buggy,275,replace,,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); ,long maxStart = getDataItem(this.maxStartIndex).getPeriod().getStart().getTime();
+compilation error,275,replace,[CE] <identifier> expected,long maxStart = getDataItem(this.maxStartIndex).getPeriod() .getStart().getTime(); ,long maxStart = getDataItem(this.maxStartIndex).getPeriod(), 0.getStart().getTime();
+patch is same with buggy,288,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,288,replace,,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); ,long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+compilation error,285,add,[CE] cannot find symbol,,long minMiddle = getDataItem(this.minMiddleIndex).getPeriod().getTime();
+patch is same with buggy,292,replace,,this.minMiddleIndex = index; ,this.minMiddleIndex = index;
+compilation error,300,add,[CE] TimePeriod is abstract; cannot be instantiated,,this.data.add(-index - 1, new TimePeriod(this.minMiddleIndex, this.maxMiddleIndex));
+increase failing tests,300,add, [FE] AssertionFailedError,,this.minMiddleIndex = index;
+compilation error,300,add,[CE] cannot find symbol minMiddle,,this.data.add(-index - 1, new TimePeriod(this.minMiddleIndex, minMiddle));
+compilation error,330,replace,[CE] ';' expected,} ,updateBounds(period, getDataItem(end)).getPeriod().getEnd(), -1);
+compilation error,363,add,[CE] cannot find symbol,,checkPeriod(period);
+compilation error,243,add,[CE] method setValue in class TimePeriodValue cannot be applied to given types;,,item.setValue(getItemCount() - 1);

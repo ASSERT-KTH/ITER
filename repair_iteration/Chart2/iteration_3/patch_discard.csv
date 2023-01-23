@@ -1,0 +1,75 @@
+increase failing tests,760,replace, [FE] NullPointerException, if(!Double.isNaN(uvalue)||  Double.isNaN(itemCount))  {  ,if(!Double.isNaN(uvalue)&& Double.isNaN(itemCount)) {
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)||  Double.isNaN(itemCount))  {  ,if(!Double.isNaN(uvalue)|| Double.isNaN(itemCount)) {
+increase failing tests,746,replace, [FE] AssertionFailedError, double  maximum  =  Math.max(2.0,  1.0);  ,double maximum = Math.max(10.0, 1.0);
+compilation error,760,add,[CE] 'else' without 'if', ,if(!Double.isNaN(uvalue)|| Double.isInfinite(itemCount)) {
+compilation error,760,add,[CE] 'else' without 'if', ,if(!Double.isNaN(uvalue)&& Double.isInfinite(seriesCount)) {
+compilation error,1244,add,[CE] 'else' without 'if', ,if(!Double.isNaN(lvalue)&&!Double.isNaN(maximum)) {
+compilation error,746,add,[CE] variable minimum is already defined in method iterateDomainBounds(XYDataset,boolean), ,double minimum = Math.min(2.0, 1.0);
+compilation error,746,add,[CE] variable minimum is already defined in method iterateDomainBounds(XYDataset,boolean), ,double minimum = Math.max(2.0, 1.0);
+patch is same with buggy,746,replace,, double  maximum  =  Math.max(2.0,  1.0);  ,double maximum = Math.max(2.0, 1.0);
+patch is same with buggy,756,replace,, lvalue  =  intervalXYData.getStartXValue(series,  item);  if(!Double.isNaN(lvalue))  {  minimum  =  Math.min(minimum,  lvalue);  }  ,lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+patch is same with buggy,756,replace,, lvalue  =  intervalXYData.getStartXValue(series,  item);  if(!Double.isNaN(lvalue))  {  minimum  =  Math.min(minimum,  lvalue);  }  ,lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -  1 ");  ,throw new NullPointerException(" - 1 ");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -  1 ");  ,throw new NullPointerException(" - 1");
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  - ");  }  ,if(!includeInterval) { throw new NullPointerException(" -"); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  - ");  }  , 
+patch is same with buggy,745,replace,, double  minimum  =  Double.POSITIVE_INFINITY  *  2;  ,double minimum = Double.POSITIVE_INFINITY * 2;
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)||  Double.isInfinite(seriesCount))  {  ,if(!Double.isNaN(uvalue)|| Double.isInfinite(seriesCount)) {
+patch is same with buggy,756,replace,, if(!includeInterval)  {  lvalue  =  intervalXYData.getStartXValue(series,  item);  }  ,if(!includeInterval) { lvalue = intervalXYData.getStartXValue(series, item); }
+patch is same with buggy,756,replace,, if(!includeInterval)  {  lvalue  =  intervalXYData.getStartXValue(series,  item);  }  , 
+patch is same with buggy,745,replace,, double  minimum  =  Double.POSITIVE_INFINITY  *  2;  ,double minimum = Double.POSITIVE_INFINITY * 2;
+increase failing tests,760,replace, [FE] NullPointerException, if(!Double.isNaN(uvalue)||  Double.isInfinite(seriesCount))  {  ,if(!Double.isNaN(uvalue)&& Double.isInfinite(lvalue)) {
+increase failing tests,756,add, [FE] AssertionFailedError, ,uvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.max(minimum, lvalue); }
+compilation error,1247,add,[CE] 'else' without 'if', ,if(includeInterval &&!Double.isNaN(uvalue)||!Double.isNaN(maximum)) {
+patch is same with buggy,742,replace,, if(dataset  ==  null  ||  dataset.getSeriesCount()  <  1)  {  throw  new  IllegalArgumentException( "Null  'dataset'  argument.   ");  }  ,if(dataset == null || dataset.getSeriesCount() < 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+increase failing tests,760,replace, [FE] NullPointerException, if(!Double.isNaN(uvalue)&&!Double.isInfinite(itemCount))  {  ,if(!Double.isNaN(uvalue)&&!Double.isInfinite(maximum)) {
+compilation error,746,add,[CE] variable minimum is already defined in method iterateDomainBounds(XYDataset,boolean), ,double minimum = Math.min(1.0, 1.0);
+compilation error,1247,add,[CE] 'else' without 'if', ,if(includeInterval &&!Double.isNaN(uvalue)||!Double.isInfinite(uvalue)) {
+patch is same with buggy,1247,replace,, if(includeInterval  &&!Double.isNaN(uvalue)||  Double.isInfinite(uvalue))  {  ,if(includeInterval &&!Double.isNaN(uvalue)|| Double.isInfinite(uvalue)) {
+patch is same with buggy,1247,replace,, if(includeInterval  &&!Double.isNaN(uvalue)||  Double.isInfinite(uvalue))  {  , 
+compilation error,760,add,[CE] 'else' without 'if', ,if(!Double.isNaN(uvalue)||!Double.isInfinite(itemCount)) {
+compilation error,1247,add,[CE] 'else' without 'if', ,if(!Double.isNaN(uvalue)||!Double.isNaN(range)) {
+patch is same with buggy,746,replace,, double  maximum  =  Math.max(2.0,  1.0);  ,double maximum = Math.max(2.0, 1.0);
+compilation error,1244,add,[CE] 'else' without 'if', ,if(lvalue < 0.0) { if(!Double.isNaN(minimum)&&!Double.isNaN(uvalue)) {
+increase failing tests,742,add, [FE] IllegalArgumentException, ,if(dataset == null || dataset.getSeriesCount() % 2 == 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -  1 ");  ,throw new NullPointerException(" - 1");
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)&&!Double.isInfinite(itemCount))  {  , 
+compilation error,760,add,[CE] 'else' without 'if', ,if(uvalue!= 0.0) {
+patch is same with buggy,745,replace,, double  minimum  =  Double.POSITIVE_INFINITY  *  2;  ,double minimum = Double.POSITIVE_INFINITY * 2;
+patch is same with buggy,756,replace,, if(!includeInterval)  {  lvalue  =  intervalXYData.getStartXValue(series,  item);  }  ,if(!includeInterval) { lvalue = intervalXYData.getStartXValue(series, item); }
+compilation error,756,add,[CE] 'else' without 'if', ,if(includeInterval) { if(intervalXYData.getStartXValue(series, item)) { minimum = Math.max(minimum, lvalue); }
+compilation error,756,add,[CE] 'else' without 'if', ,if(includeInterval) { if(!Double.isNaN(lvalue)) { minimum = Math.max(minimum, lvalue); }
+compilation error,756,add,[CE] cannot find symbol, ,boolean includesInterval = intervalXYData.isIncludeInterval(series, item);
+patch is same with buggy,746,replace,, double  maximum  =  Math.max(2.0,  1.0);  ,double maximum = Math.max(2.0, 1.0);
+patch is same with buggy,745,replace,, double  minimum  =  Double.POSITIVE_INFINITY  *  2;  ,double minimum = Double.POSITIVE_INFINITY * 2;
+patch is same with buggy,742,replace,, if(dataset  ==  null  ||  dataset.getSeriesCount()  <  1)  {  throw  new  IllegalArgumentException( "Null  'dataset'  argument.   ");  }  ,if(dataset == null || dataset.getSeriesCount() < 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)||  Double.isNaN(itemCount))  {  ,if(!Double.isNaN(uvalue)|| Double.isNaN(itemCount)) {
+compilation error,780,add,[CE] incompatible types, ,if(!includeInterval) { return new NullPointerException(" -"); }
+patch is same with buggy,756,replace,, lvalue  =  intervalXYData.getStartXValue(series,  item);  if(!Double.isNaN(lvalue))  {  minimum  =  Math.min(minimum,  lvalue);  }  ,lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)||  Double.isInfinite(seriesCount))  {  ,if(!Double.isNaN(uvalue)|| Double.isInfinite(seriesCount)) {
+compilation error,780,add,[CE] incompatible types, ,return new NullPointerException(" - 1 ");
+compilation error,756,add,[CE] cannot find symbol, ,intervalXYData.setXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.max(minimum, lvalue); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  - ");  }  ,if(!includeInterval) { throw new NullPointerException(" -"); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  - ");  }  , 
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)&&!Double.isInfinite(itemCount))  {  , 
+patch is same with buggy,746,replace,, double  maximum  =  Math.max(2.0,  1.0);  ,double maximum = Math.max(2.0, 1.0);
+patch is same with buggy,745,replace,, double  minimum  =  Double.POSITIVE_INFINITY  *  2;  ,double minimum = Double.POSITIVE_INFINITY * 2;
+compilation error,756,add,[CE] 'else' without 'if', ,if(!includeInterval) { lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+patch is same with buggy,756,replace,, lvalue  =  intervalXYData.getStartXValue(series,  item);  if(!Double.isNaN(lvalue))  {  minimum  =  Math.min(minimum,  lvalue);  }  ,lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,756,replace,[CE] not a statement, lvalue  =  intervalXYData.getStartXValue(series,  item);  if(!Double.isNaN(lvalue))  {  minimum  =  Math.min(minimum,  lvalue);  }  ,lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); Afterward
+patch is same with buggy,760,replace,, if(!Double.isNaN(uvalue)||  Double.isNaN(itemCount))  {  ,if(!Double.isNaN(uvalue)|| Double.isNaN(itemCount)) {
+patch is same with buggy,742,replace,, if(dataset  ==  null  ||  dataset.getSeriesCount()  <  1)  {  throw  new  IllegalArgumentException( "Null  'dataset'  argument.   ");  }  ,if(dataset == null || dataset.getSeriesCount() < 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+patch is same with buggy,742,replace,, if(dataset  ==  null  ||  dataset.getSeriesCount()  <  1)  {  throw  new  IllegalArgumentException( "Null  'dataset'  argument.   ");  }  ,if(dataset == null || dataset.getSeriesCount() < 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+compilation error,760,add,[CE] 'else' without 'if', ,if(Double.isNaN(uvalue)|| Double.isNaN(itemCount)) {
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -  1 ");  ,throw new NullPointerException(" - 1 ");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -  1 ");  ,throw new NullPointerException(" - 1");
+patch is same with buggy,746,replace,, double  maximum  =  Math.max(2.0,  1.0);  ,double maximum = Math.max(2.0, 1.0);
+patch is same with buggy,756,replace,, if(!includeInterval)  {  lvalue  =  intervalXYData.getStartXValue(series,  item);  }  ,if(!includeInterval) { lvalue = intervalXYData.getStartXValue(series, item); }
+patch is same with buggy,756,replace,, if(!includeInterval)  {  lvalue  =  intervalXYData.getStartXValue(series,  item);  }  , 
+compilation error,760,add,[CE] 'else' without 'if', ,if(Double.isNaN(uvalue)|| Double.isInfinite(seriesCount)) {
+compilation error,742,add,[CE] bad operand types for binary operator , ,if(dataset == null || dataset.getSeriesCount() >> 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+increase failing tests,742,add, [FE] NullPointerException, ,if(dataset == null || dataset.getSeriesCount() % 2!= 1) { throw new IllegalArgumentException("Null 'dataset' argument. "); }
+compilation error,1247,add,[CE] 'else' without 'if', ,if(!Double.isNaN(uvalue)&&!Double.isNaN(itemCount)) {
+patch is same with buggy,745,replace,, double  minimum  =  Double.POSITIVE_INFINITY  *  2;  ,double minimum = Double.POSITIVE_INFINITY * 2;
+increase failing tests,1244,replace, [FE] NullPointerException, if(!Double.isNaN(minimum)&&!Double.isNaN(uvalue))  {  ,if(Double.isNaN(lvalue)&&!Double.isNaN(uvalue)) {
+patch is same with buggy,1247,replace,, if(includeInterval  &&!Double.isNaN(uvalue)||  Double.isInfinite(uvalue))  {  ,if(includeInterval &&!Double.isNaN(uvalue)|| Double.isInfinite(uvalue)) {

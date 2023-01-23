@@ -1,0 +1,163 @@
+compilation error,221,replace,[CE] 'else' without 'if',break; ,if(rule == null)break; break; } else { rule = new TwelveHourField(selectNumberRule(Calendar.MINUTE, tokenLen)); break; }
+compilation error,220,replace,[CE] bad operand types for binary operator '+',rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); ,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)+ 1);
+compilation error,220,replace,[CE] variable rule might not have been initialized,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); , 
+increase failing tests,250,add, [FE] ComparisonFailure testCalendarTimezoneRespected,,  if(tokenLen >= 2) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; }
+increase failing tests,250,add, [FE] ComparisonFailure testCalendarTimezoneRespected,,  if(tokenLen >= 1) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 2) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; case 'f': // am/pm marker(text): new TwentyFourHourField(selectNumberRu
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 2) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; case 'f': // am/pm marker(text): new TwentyFourHourField(selectNumberRule(Calendar.
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 2) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; case 'f': // am/pm marker(text): new TwentyFourHourField(selectNumberRule
+increase failing tests,1081,add, [FE] NullPointerException testCalendarTimezoneRespected,,  value = cTimeZoneDisplayCache.putIfAbsent(key, value);
+compilation error,1081,add,[CE] incompatible types,,  key = tz.getDisplayName(daylight, style, locale);
+compilation error,1081,add,[CE] no suitable method found for putIfAbsent(TimeZoneDisplayKey),,  value = cTimeZoneDisplayCache.putIfAbsent(key);
+compilation error,1081,add,[CE] no suitable method found for putIfAbsent(String),,  value = cTimeZoneDisplayCache.putIfAbsent(value);
+compilation error,220,add,[CE] incompatible types,,  tokenLen = selectNumberRule(Calendar.HOUR, tokenLen);
+compilation error,264,replace,[CE] cannot find symbol mDaylight,,rule = new Rule(mDaylight, mStandard, mValue);
+compilation error,264,replace,[CE] cannot find symbol mValue,,rule = new Rule(mValue, mLocale, TimeZone.HORT);
+compilation error,264,replace,[CE] cannot find symbol mRule,,rule = new Rule(mRule, mDaylight, mStandard);
+compilation error,264,replace,[CE] cannot find symbol mRule,,rule = new Rule(mRule, mDaylight, mStandard, mValue);
+compilation error,264,add,[CE] cannot find symbol mValue,,  rule = new Rule(mValue, mLocale, TimeZone.MEDIUM);
+compilation error,262,add,[CE] cannot find symbol HORT,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.HORT);
+compilation error,262,add,[CE] cannot find symbol MEDIUM,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.MEDIUM);
+compilation error,262,add,[CE] cannot find symbol mStyle,,  rule = new TimeZoneNameRule(mTimeZone, mStyle, TimeZone.SHORT);
+compilation error,262,add,[CE] cannot find symbol DECIMAL,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.DECIMAL);
+compilation error,1080,add,[CE] incompatible types,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key);
+compilation error,1080,add,[CE] incompatible types,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key); key = tz.getDisplayName(daylight, style, locale);
+compilation error,1080,add,[CE] cannot find symbol,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.getIfAbsent(key);
+compilation error,1080,add,[CE] incompatible types,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key); key = cTimeZoneDisplayCache.getIfAbsent(key);
+compilation error,1080,add,[CE] incompatible types,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key); key = cTimeZoneDisplayCache.get(key);
+increase failing tests,259,replace, [FE] ComparisonFailure testCalendarTimezoneRespected,if (tokenLen >= 4) { ,if(tokenLen >= 3) {
+increase failing tests,259,replace, [FE] ComparisonFailure testCalendarTimezoneRespected,if (tokenLen >= 4) { ,if(tokenLen >= 5) {
+increase failing tests,259,replace, [FE] ComparisonFailure testCalendarTimezoneRespected,if (tokenLen >= 4) { ,if(tokenLen >= 1) {
+compilation error,259,replace,[CE] 'else' without 'if',if (tokenLen >= 4) { , 
+compilation error,262,replace,[CE] ')' expected,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT); ,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT;
+increase failing tests,262,replace, [FE] ComparisonFailure testCalendarTimezoneRespected,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT); ,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT + tokenLen);
+compilation error,1080,replace,[CE] no suitable method found for putIfAbsent(TimeZoneDisplayKey),String value = cTimeZoneDisplayCache.get(key); ,String value = cTimeZoneDisplayCache.putIfAbsent(key);
+compilation error,1080,replace,[CE] variable value might not have been initialized,String value = cTimeZoneDisplayCache.get(key); ,String value = cTimeZoneDisplayCache.put(key, value);
+compilation error,1080,replace,[CE] variable value might not have been initialized,String value = cTimeZoneDisplayCache.get(key); ,String value = cTimeZoneDisplayCache.putIfAbsent(key, value);
+compilation error,251,add,[CE] cannot find symbol,,  rule.add(selectNumberRule(Calendar.AM_PM, tokenLen));
+compilation error,251,add,[CE] ';' expected,,  rule.selectNumberRule(Calendar.AM_PM, tokenLen));
+compilation error,251,add,[CE] method selectNumberRule in class FastDatePrinter cannot be applied to given types;,,  rule.add(selectNumberRule(Calendar.AM_PM), tokenLen);
+compilation error,251,add,[CE] cannot find symbol PM_PM,,  rule.add(selectNumberRule(Calendar.PM_PM, tokenLen));
+compilation error,251,add,[CE] cannot find symbol am,,  rule.setTime(am/pm, tokenLen);
+compilation error,250,replace,[CE] constructor TextField in class TextField cannot be applied to given types;,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings, tokenLen);
+compilation error,250,replace,[CE] bad operand types for binary operator '-',rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings - 1);
+compilation error,250,replace,[CE] ';' expected,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings), tokenLen);
+increase failing tests,1081,replace, [FE] NullPointerException testCalendarTimezoneRespected,if (value == null) { ,if(value!= null) {
+compilation error,1081,replace,[CE] boolean cannot be dereferenced,if (value == null) { ,if(value!= null ||!daylight.equals(tz.getDisplayName())) {
+compilation error,1081,replace,[CE] cannot find symbol,if (value == null) { ,if(value!= null ||!tz.isDisplayName(daylight, style, locale)) {
+compilation error,259,add,[CE] cannot find symbol ZONE,,  tokenLen = selectNumberRule(Calendar.ZONE, tokenLen);
+compilation error,259,add,[CE] incompatible types,,  tokenLen = selectNumberRule(Calendar.DAY_OF_MONTH, tokenLen);
+compilation error,259,add,[CE] incompatible types,,  tokenLen = selectNumberRule(Calendar.MINUTE, tokenLen);
+compilation error,259,add,[CE] ';' expected,,  tokenLen = selectNumberRule(Calendar.MINUTE, tokenLen));
+compilation error,259,add,[CE] incompatible types,,  tokenLen = selectNumberRule(Calendar.SHORT, tokenLen);
+compilation error,221,add,[CE] cannot find symbol,,  rule = new TwentyHourField(selectNumberRule(Calendar.HOUR, tokenLen));
+compilation error,221,add,[CE] cannot find symbol,,  rule = new TwoHourField(selectNumberRule(Calendar.MINUTE, tokenLen));
+compilation error,1079,replace,[CE] cannot find symbol sunlight,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale); ,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, sunlight, style, locale);
+compilation error,1079,replace,[CE] bad operand types for binary operator '+',TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale); ,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale + 1);
+compilation error,1079,replace,[CE] cannot find symbol key,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale); , 
+compilation error,251,replace,[CE] unreachable statement,break; ,if(tokenLen >= 1) { break; } else { rule = new TwentyFourHourField(selectNumberRule(Calendar.HOUR_OF_DAY, tokenLen)); break; break; }
+compilation error,251,replace,[CE] unreachable statement,break; ,if(tokenLen >= 1) { break; } else { rule = new TwentyFourHourField(selectNumberRule(Calendar.MILLISECOND, tokenLen)); break; break; }
+compilation error,251,replace,[CE] unreachable statement,break; ,if(tokenLen >= 1) { break; } else { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; break; }
+compilation error,1079,add,[CE] incompatible types,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(daylight);
+compilation error,1079,add,[CE] cannot find symbol key,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key);
+compilation error,1079,add,[CE] cannot find symbol green,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(green);
+compilation error,1079,add,[CE] method get in interface Map<K,V> cannot be applied to given types;,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(daylight, style, locale);
+compilation error,1079,add,[CE] cannot find symbol timeZone,,  ConcurrentMap cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(timeZone);
+compilation error,1080,replace,[CE] method get in interface Map<K,V> cannot be applied to given types;,String value = cTimeZoneDisplayCache.get(key); ,String value = cTimeZoneDisplayCache.get(key, daylight);
+compilation error,1080,replace,[CE] ')' expected,String value = cTimeZoneDisplayCache.get(key); ,String value = cTimeZoneDisplayCache.get(key;
+compilation error,1080,replace,[CE] non-static variable this cannot be referenced from a static context,String value = cTimeZoneDisplayCache.get(key); ,String value = cTimeZoneDisplayCache.get(key, this.mValue);
+compilation error,1081,replace,[CE] cannot find symbol,if (value == null) { ,if(value == null ||!tz.isDisplayName(daylight, style, locale)) {
+compilation error,1081,replace,[CE] cannot find symbol,if (value == null) { ,if(value == null ||!tz.isDisplayName(daylight)) {
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 4) { if(selectNumberRule(Calendar.AM_PM, AmPmStrings)) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 2) { if(selectNumberRule(Calendar.AM_PM, AmPmStrings)) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break; }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 4) { if(selectNumberRule(Calendar.AM_PM, AmPmStrings)) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); }
+compilation error,250,add,[CE] method selectNumberRule in class FastDatePrinter cannot be applied to given types;,,  if(tokenLen >= 4) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, AmPmStrings)); }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 2) { if(selectNumberRule(Calendar.AM_PM, AmPmStrings)) { rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); }
+compilation error,251,add,[CE] method selectNumberRule in class FastDatePrinter cannot be applied to given types;,,  rule = selectNumberRule(Calendar.AM_PM, AmPmStrings);
+compilation error,251,add,[CE] cannot find symbol amPmStrings,,  rule = selectNumberRule(Calendar.AM_PM, amPmStrings);
+compilation error,251,add,[CE] method selectNumberRule in class FastDatePrinter cannot be applied to given types;,,  rule.add(selectNumberRule(Calendar.AM_PM, AmPmStrings));
+increase failing tests,251,add, [FE] ComparisonFailure testCalendarTimezoneRespected,,  rule = selectNumberRule(Calendar.AM_PM, tokenLen);
+compilation error,251,add,[CE] cannot find symbol amPmStrings,,  rule.add(selectNumberRule(Calendar.AM_PM, amPmStrings));
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = mTimeZone.getTimeZone();
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = mTimeZone.getTime();
+compilation error,259,add,[CE] orphaned case,,  if(mTimeZone.isLocal()) { if(tokenLen >= 2) { rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT); }
+compilation error,259,add,[CE] orphaned case,,  if(mTimeZone.isLocal()) { if(tokenLen >= 0) { rule = new TimeZoneNameRule(mTimeZone.SHORT, mLocale); }
+compilation error,259,add,[CE] orphaned case,,  if(mTimeZone.isLocal()) { if(tokenLen >= 2) { rule = new TimeZoneNameRule(mTimeZone.SHORT, mLocale); }
+compilation error,250,replace,[CE] cannot find symbol,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings.class);
+compilation error,250,replace,[CE] ')' expected,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings.14);
+compilation error,250,replace,[CE] cannot find symbol UTF8,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings.UTF8);
+compilation error,250,replace,[CE] cannot find symbol UTF,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings.UTF-8);
+compilation error,251,replace,[CE] cannot find symbol AM_OF_DAY,break; ,rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_OF_DAY, tokenLen)); break;
+increase failing tests,251,replace, [FE] ComparisonFailure testCalendarTimezoneRespected,break; ,rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, tokenLen)); break;
+compilation error,251,replace,[CE] cannot find symbol AM_AM,break; ,rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_AM, tokenLen)); break;
+compilation error,251,replace,[CE] cannot find symbol amPmStrings,break; ,rule = new TwentyFourHourField(selectNumberRule(Calendar.AM_PM, amPmStrings)); break;
+compilation error,221,replace,[CE] ')' expected,break; ,switch(selectNumberRule(Calendar.HOUR, tokenLen) { break;
+compilation error,262,add,[CE] cannot find symbol CENTER,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.CENTER);
+compilation error,262,add,[CE] cannot find symbol DOUBLE,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.DOUBLE);
+compilation error,262,add,[CE] variable rule is already defined in method parsePattern(),,  Rule rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.HORT);
+compilation error,1080,add,[CE] cannot find symbol,,  ConcurrentMap cTimeZoneDisplayCache = createConcurrentMap(daylight, style, locale);
+compilation error,1080,add,[CE] cannot find symbol,,  cTimeZoneDisplayCache.put(key, new TimeZoneDisplayName(daylight, style, locale));
+compilation error,1080,add,[CE] cannot find symbol,,  ConcurrentMap cTimeZoneDisplayCache = createConcurrentMap(daylight, style, locale); key = cTimeZoneDisplayCache.get(key);
+compilation error,1080,add,[CE] incompatible types,,  key = tz.getDisplayName(daylight, style, locale);
+compilation error,1079,replace,[CE] non-static variable mLocale cannot be referenced from a static context,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale); ,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale, mLocale);
+compilation error,264,replace,[CE] variable tokenLen is already defined in method parsePattern(),,int tokenLen = mTimeZone.getValue(mStyle, mLocale);
+compilation error,264,replace,[CE] variable tokenLen is already defined in method parsePattern(),,int tokenLen = mTimeZone.getValue(mField);
+compilation error,264,replace,[CE] variable tokenLen is already defined in method parsePattern(),,int tokenLen = mTimeZone.getValue(mStyle);
+compilation error,264,replace,[CE] variable tokenLen is already defined in method parsePattern(),,int tokenLen = mTimeZone.getValue();
+compilation error,264,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = mTimeZone.getValue(mField, mLocale);
+compilation error,262,replace,[CE] cannot find symbol FIRST,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT); ,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.FIRST);
+compilation error,262,replace,[CE] cannot find symbol SMALL,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT); ,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SMALL);
+increase failing tests,262,replace, [FE] ComparisonFailure testCalendarTimezoneRespected,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT); ,rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.SHORT + 1);
+increase failing tests,1081,add, [FE] NullPointerException testCalendarTimezoneRespected,,  cTimeZoneDisplayCache.put(key, value);
+compilation error,1081,add,[CE] illegal start of expression,,  if(value == null) { if(daylight!= null) { return tz.getDisplayName(daylight, style, locale); }
+compilation error,1081,add,[CE] cannot find symbol,,  tz.setDisplayName(daylight, style, locale);
+compilation error,1081,add,[CE] illegal start of expression,,  if(value == null) { if(tz.getDisplayName(daylight, style, locale)!= 0) { return key; }
+compilation error,1079,add,[CE] incompatible types,,  tz = tz.getDisplayName(daylight, style, locale);
+compilation error,1079,add,[CE] cannot find symbol key,,  cTimeZoneDisplayCache.put(key, new TimeZoneDisplayName(daylight, style, locale));
+compilation error,1079,add,[CE] cannot find symbol,,  ConcurrentMap cTimeZoneDisplayCache = createConcurrentMap(daylight, style, locale);
+compilation error,1079,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(tz);
+compilation error,220,replace,[CE] cannot find symbol amPosition,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); ,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, amPosition));
+compilation error,220,replace,[CE] cannot find symbol amPmStrings,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); ,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, amPmStrings));
+compilation error,220,replace,[CE] cannot find symbol amPosition,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); ,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen), amPosition);
+compilation error,262,add,[CE] cannot find symbol FLOAT,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.FLOAT);
+compilation error,262,add,[CE] cannot find symbol DEC,,  rule = new TimeZoneNameRule(mTimeZone, mLocale, TimeZone.DEC);
+compilation error,1080,add,[CE] incompatible types,,  ConcurrentMap < String, TimeZoneDisplayKey> cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key);
+compilation error,1080,add,[CE] cannot find symbol Maps,,  ConcurrentMap < String, TimeZoneDisplayKey> cTimeZoneDisplayCache = Maps.newHashMap();
+compilation error,1080,add,[CE] cannot find symbol,,  ContextMap < String, TimeZoneDisplayKey> cTimeZoneDisplayCache = Maps.newHashMap();
+compilation error,1080,add,[CE] cannot find symbol Maps,,  ConcurrentMap cTimeZoneDisplayCache = Maps.newHashMap();
+compilation error,1080,add,[CE] not a statement,,  ConcurrentMap } String, TimeZoneDisplayKey> cTimeZoneDisplayCache = cTimeZoneDisplayCache.get(key);
+compilation error,1079,add,[CE] cannot find symbol,,  ContextMap < String, TimeZoneDisplayKey> cTimeZoneDisplayCache = Maps.newHashMap();
+compilation error,1079,add,[CE] cannot find symbol Maps,,  ConcurrentMap cTimeZoneDisplayCache = Maps.newHashMap();
+compilation error,1079,add,[CE] cannot find symbol Maps,,  ConcurrentMap < TimeZoneDisplayKey, TimeZoneDisplayKey> cTimeZoneDisplayCache = Maps.newHashMap();
+compilation error,1079,add,[CE] cannot find symbol,,  ConcurrentMap cTimeZoneDisplayCache = createConcurrentMap();
+compilation error,1079,add,[CE] cannot find symbol,,  ConcurrentMap < TimeZoneDisplayKey, TimeZoneDisplayKey> cTimeZoneDisplayCache = getTimeZoneDisplayCache();
+compilation error,1079,replace,[CE] bad operand types for binary operator '-',TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale); ,TimeZoneDisplayKey key = new TimeZoneDisplayKey(tz, daylight, style, locale - 1);
+compilation error,220,replace,[CE] cannot find symbol amPattern,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); ,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen), amPattern);
+compilation error,220,replace,[CE] constructor TwelveHourField in class TwelveHourField cannot be applied to given types;,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen)); ,rule = new TwelveHourField(selectNumberRule(Calendar.HOUR, tokenLen), 12);
+compilation error,251,replace,[CE] cannot find symbol call,break; ,if(tokenLen >= 24) { break; } else { Preconditions.checkState(isRegistered(call, text)); break; }
+compilation error,251,replace,[CE] cannot find symbol call,break; ,if(tokenLen >= 2) { break; } else { Preconditions.checkState(isRegistered(call, text)); break; }
+compilation error,251,replace,[CE] cannot find symbol call,break; ,if(tokenLen >= 4) { break; } else { Preconditions.checkState(isRegistered(call, text)); break; }
+compilation error,1081,add,[CE] cannot find symbol cTimeZoneNameRule,,  cTimeZoneNameRule.put(key, value);
+compilation error,1081,add,[CE] cannot find symbol,,  tz.setDisplayName(daylight, style, locale); value = tz.getDisplayName(daylight, style, locale);
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 10) { if(selectNumberRule(Calendar.AM_PM, tokenLen)) { throw new IllegalArgumentException(""); }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 10) { if(selectNumberRule(Calendar.AM_PM, amPmStrings)) { throw new IllegalArgumentException(""); }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 5) { if(selectNumberRule(Calendar.AM_PM, amPmStrings)) { throw new IllegalArgumentException(""); }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 5) { if(selectNumberRule(Calendar.AM_PM, tokenLen)) { return; }
+compilation error,250,add,[CE] orphaned case,,  if(tokenLen >= 10) { if(selectNumberRule(Calendar.AM_PM, tokenLen)) { return; }
+compilation error,264,add,[CE] cannot find symbol mStyle,,  return rule.parsePattern(mStyle, mLocale);
+compilation error,264,add,[CE] cannot find symbol,,  int len = mRules.size();
+compilation error,264,add,[CE] cannot find symbol mStyle,,  return rule.parse(mPattern, mStyle, tokenLen);
+compilation error,264,add,[CE] cannot find symbol mRule,,  int len = mRule.size();
+compilation error,264,add,[CE] cannot find symbol,,  return rule.parse(mPattern);
+compilation error,1080,replace,[CE] non-static variable this cannot be referenced from a static context,String value = cTimeZoneDisplayCache.get(key); ,String value = this.cTimeZoneDisplayCache.get(key);
+compilation error,1080,replace,[CE] cannot find symbol,String value = cTimeZoneDisplayCache.get(key); ,String value = key.getTimeZoneDisplayName(daylight, style, locale);
+compilation error,220,add,[CE] bad operand types for binary operator '+',,  tokenLen += selectNumberRule(Calendar.HOUR, tokenLen);
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = mTimeZone.getTimeZoneLen();
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = TimeZone.getTimeZoneLen(tokenLen);
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = TimeZone.getTimeZoneLen(value);
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = TimeZone.getTimeZone(mLocale);
+compilation error,259,add,[CE] variable tokenLen is already defined in method parsePattern(),,  int tokenLen = TimeZone.getTimeZoneLen(mLocale);
+compilation error,1081,replace,[CE] cannot find symbol,if (value == null) { ,if(value == null ||!tz.isDisplayName()) {
+compilation error,1081,replace,[CE] cannot find symbol,if (value == null) { ,if(value == null ||!tz.isRequired()) {
+compilation error,250,replace,[CE] cannot find symbol amPmStrings,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings, amPmStrings);
+compilation error,250,replace,[CE] constructor TextField in class TextField cannot be applied to given types;,rule = new TextField(Calendar.AM_PM, AmPmStrings); ,rule = new TextField(Calendar.AM_PM, AmPmStrings, 0);

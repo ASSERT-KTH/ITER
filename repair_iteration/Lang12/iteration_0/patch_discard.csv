@@ -1,0 +1,34 @@
+increase failing tests,233,add, [FE] OutOfMemoryError testExceptions,,  count = Integer.MAX_VALUE;
+compilation error,233,add,[CE] cannot find symbol NumberInput,,  count = NumberInput.parseInt(chars, start, 0);
+increase failing tests,233,add, [FE] OutOfMemoryError testExceptions,,  count = Integer.MAX_VALUE - 1;
+compilation error,233,add,[CE] cannot find symbol buffer,,  char ch = buffer[count];
+compilation error,233,add,[CE] cannot find symbol ch,,  count = Integer.MAX_VALUE; ch = buffer[0];
+increase failing tests,233,replace, [FE] IllegalArgumentException testLANG805,end = Integer.MAX_VALUE; ,end = Integer.MIN_VALUE;
+increase failing tests,233,replace, [FE] IllegalArgumentException testLANG805,end = Integer.MAX_VALUE; ,end = Integer.MAX_VALUE + 1;
+compilation error,225,replace,[CE] cannot find symbol ch,if (count == 0) { ,if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) {
+compilation error,225,replace,[CE] ')' expected,if (count == 0) { ,if(( letters && Character.isLetter(ch)||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) {
+compilation error,225,replace,[CE] no suitable method found for isLetter(char[]),if (count == 0) { ,if(( letters && Character.isLetter(chars)) ||(numbers && Character.isDigit(chars)) ||(!letters &&!numbers)) {
+compilation error,225,replace,[CE] illegal start of type,if (count == 0) { , 
+increase failing tests,232,add, [FE] OutOfMemoryError testExceptions,,  count = Integer.MAX_VALUE;
+compilation error,232,add,[CE] cannot find symbol NumberInput,,  count = NumberInput.parseInt(chars, start, end);
+compilation error,232,add,[CE] cannot find symbol buffer,,  char ch = fill(buffer, start, end);
+compilation error,232,add,[CE] cannot find symbol buffer,,  char ch = buffer[0];
+compilation error,232,add,[CE] cannot find symbol buffer,,  count = NumberInput.parseInt(buffer, start, end);
+increase failing tests,241,add, [FE] ArrayIndexOutOfBoundsException testExceptions,,  System.arraycopy(buffer, start, buffer, 0, count);
+compilation error,241,add,[CE] cannot find symbol gap,,  chars[count] = buffer[random.nextInt(gap)+ start];
+compilation error,241,add,[CE] cannot find symbol gap,,  chars[count] = buffer[random.nextInt(gap)+ 1];
+increase failing tests,241,add, [FE] ArrayIndexOutOfBoundsException testExceptions,,  System.arraycopy(buffer, start, buffer, 0, count); chars = buffer;
+increase failing tests,241,add, [FE] ArrayIndexOutOfBoundsException testExceptions,,  chars[0] = buffer[0];
+increase failing tests,231,replace, [FE] IllegalArgumentException testLANG805,if (start == 0 && end == 0) { ,if(count == 0 && end == 0) {
+increase failing tests,231,replace, [FE] IllegalArgumentException testLANG805,if (start == 0 && end == 0) { ,if(count < 0 && end == 0) {
+increase failing tests,231,replace, [FE] IllegalArgumentException testLANG805,if (start == 0 && end == 0) { ,if(count == 0 && end < 0) {
+increase failing tests,231,replace, [FE] IllegalArgumentException testLANG805,if (start == 0 && end == 0) { ,if(count == 0) {
+compilation error,231,replace,[CE] illegal start of type,if (start == 0 && end == 0) { , 
+compilation error,231,add,[CE] variable end is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int end = chars[count - 1];
+compilation error,231,add,[CE] variable ch is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  char ch = chars[count - 1];
+compilation error,231,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start = chars[count - 1];
+compilation error,231,add,[CE] variable end is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int end = chars[count];
+compilation error,231,add,[CE] variable end is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int end = chars[count - start];
+compilation error,240,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars.length;
+compilation error,240,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = NumberInput.parseInt(letters, end);
+compilation error,240,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars[count-1];

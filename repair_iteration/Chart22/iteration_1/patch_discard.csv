@@ -1,0 +1,531 @@
+patch is same with buggy,371,replace,, if(index  <  0  ||  index  >=  getColumnIndex(columnKey))  {  ,if(index < 0 || index >= getColumnIndex(columnKey)) {
+patch is same with buggy,76,replace,, this.rowKeys  =  new  java.util.ArrayList();  ,this.rowKeys = new java.util.ArrayList();
+compilation error,375,replace,[CE] cannot find symbol iterator, this.rows.remove(index);  ,this.columnKeys.remove(columnKey); if(index == 0) { throw new UnknownKeyException("Column key(" + columnKey + ")not recognised. "); }
+patch is same with buggy,226,replace,, int  column  =  this.columnKeys.indexOf(columnKey)+  1;  ,int column = this.columnKeys.indexOf(columnKey)+ 1;
+patch is same with buggy,226,replace,, int  column  =  this.columnKeys.indexOf(columnKey)+  1;  ,int column = this.columnKeys.indexOf(columnKey) + 1;
+patch is same with buggy,226,replace,, int  column  =  this.columnKeys.indexOf(columnKey)+  1;  , 
+compilation error,356,add,[CE] generics are not supported in -source 1.4, ,List < Column> rowKeys = Lists.newArrayList();
+compilation error,356,add,[CE] no suitable method found for remove(int,int), ,this.rowKeys.remove(columnIndex, 0);
+compilation error,150,add,[CE] generics are not supported in -source 1.4, ,this.rowKeys.add(new ArrayList < Comparable>());
+compilation error,300,replace,[CE] cannot find symbol allNull, this.columnKeys.remove(columnKey);  ,this.rowKeys.remove(columnKey);
+patch is same with buggy,271,replace,, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex);
+compilation error,271,replace,[CE] no suitable method found for add(int), this.rowKeys.remove(rowIndex);  ,this.rowKeys.add(rowIndex);
+patch is same with buggy,233,replace,, return  rowData.getObject(column);  ,return rowData.getObject(column);
+patch is same with buggy,378,replace,, rowData.removeValue(index);  ,rowData.removeValue(index);
+patch is same with buggy,376,replace,, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  ,KeyedObjects rowKeys =(KeyedObjects)iterator.next();
+compilation error,233,add,[CE] ';' expected, ,Return rowData.getObject(column);
+compilation error,233,add,[CE] cannot find symbol rowdata, ,return rowdata.getObject(column);
+patch is same with buggy,330,replace,, if(this.rowKeys!=  null)  {  this.rowKeys.remove(rowIndex);  }  ,if(this.rowKeys!= null) { this.rowKeys.remove(rowIndex); }
+compilation error,370,add,[CE] cannot find symbol index, ,if(index < 0) { throw new UnknownKeyException("Column key( " + columnKey + ") not recognised. "); }
+compilation error,297,add,[CE] generics are not supported in -source 1.4, ,List < KeyedObjects> rowKeys = this.rowKeys.remove(rowKey);
+compilation error,174,replace,[CE] no suitable method found for add(int), KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rows.get(column);  ,this.rowKeys.add(column);
+compilation error,306,add,[CE] cannot find symbol, ,row.removeObject(columnKey);
+compilation error,306,add,[CE] method setObject in class KeyedObjects cannot be applied to given types;, ,row.setObject(columnKey);
+patch is same with buggy,227,replace,, if(column  <=  0)  {  ,if(column <= 0) {
+compilation error,222,add,[CE] illegal start of expression, ,if(row <= 0) {
+patch is same with buggy,278,replace,, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey);
+compilation error,278,replace,[CE] no suitable method found for add(Comparable,KeyedObjects), this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey, row);
+compilation error,88,replace,[CE] cannot find symbol rowCount, this.rowKeys.size();  ,this.rowKeys.remove(this.rowCount);
+compilation error,88,replace,[CE] missing return statement, this.rowKeys.size();  ,this.rowKeys.remove(this.rowKeys.size() - 1);
+patch is same with buggy,222,replace,, if(row  >=  0)  {  , 
+compilation error,215,add,[CE] illegal start of expression, ,if(rowKey == null || columnKey!= null) {
+compilation error,215,add,[CE] illegal start of expression, ,if(rowKey!= null || columnKey == null) {
+patch is same with buggy,302,replace,, KeyedObjects  row  =(KeyedObjects)this.rows.get(rowIndex  -  1);  ,KeyedObjects row =(KeyedObjects)this.rows.get(rowIndex - 1);
+compilation error,187,replace,[CE] generics are not supported in -source 1.4, this.columnKeys.remove(key);  ,this.rowKeys.add(new ArrayList < Comparable>());
+patch is same with buggy,250,replace,, setObject(object,  rowKey,  columnKey);  ,setObject(object, rowKey, columnKey);
+compilation error,250,replace,[CE] illegal start of expression, setObject(object,  rowKey,  columnKey);  ,if(columnKeys.size() > 0) { setObject(object, rowKey, columnKey); } else { addObject(object, rowKey, columnKey); }
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  ,this.columnKeys.remove(rowKey); this.columnKeys.remove(index);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  ,this.columnKeys.remove(rowKey);
+patch is same with buggy,302,replace,, int  columnIndex  =  getColumnIndex(columnKey);  ,int columnIndex = getColumnIndex(columnKey);
+compilation error,302,replace,[CE] method getColumnIndex in class KeyedObjects2D cannot be applied to given types;, int  columnIndex  =  getColumnIndex(columnKey);  ,int columnIndex = getColumnIndex(columnKey, allNull);
+compilation error,115,add,[CE] illegal start of expression, ,if(rowData!= null) { if(rowData.getObject(row)) { this.columnKeys.get(column); }
+compilation error,115,add,[CE] illegal start of expression, ,if(rowData!= null) { if(rowData.getIndex(row) == 0) { result = rowData.getObject(row); }
+patch is same with buggy,174,replace,, return(Comparable)this.columnKeys.get(column  -  1);  ,return(Comparable)this.columnKeys.get(column - 1);
+compilation error,231,add,[CE] illegal start of expression, ,if(row > 0) {
+compilation error,231,add,[CE] illegal start of expression, ,if(column > 0) {
+compilation error,187,add,[CE] unreachable statement, ,return(this.rowKeys == null)? this.rowKeys.indexOf(key): 0;
+compilation error,370,add,[CE] cannot find symbol ColumnKey, ,this.columnKeys.remove(ColumnKey);
+patch is same with buggy,300,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,330,replace,[CE] illegal start of expression, if(this.rowKeys!=  null)  {  this.rowKeys.remove(rowIndex);  }  ,if(this.rowKeys!= null) { this.rowKeys.remove(rowIndex); } else { this.rows.remove(rowIndex); rowKeys.remove(rowIndex); columnKeys.remove(rowIndex);
+compilation error,330,replace,[CE] illegal start of expression, if(this.rowKeys!=  null)  {  this.rowKeys.remove(rowIndex);  }  ,if(this.rowKeys == null) { this.rowKeys.remove(rowIndex); } else { this.rows.remove(rowIndex); rowKeys.remove(rowIndex); columnKeys.remove(rowIndex);
+compilation error,174,replace,[CE] missing return statement, this.rowKeys.remove(column);  ,KeyedObjects2D columnKeys =(KeyedObjects2D)this.rowKeys.get(column);
+patch is same with buggy,375,replace,, Iterator  iterator  =(this.rows!=  null)?  null  :  this.rows.iterator();  , 
+patch is same with buggy,345,replace,, this.rowKeys.remove(index);  ,this.rowKeys.remove(index);
+compilation error,345,replace,[CE] no suitable method found for remove(int,Comparable), this.rowKeys.remove(index);  ,this.rowKeys.remove(index, rowKey);
+compilation error,304,add,[CE] illegal start of expression, ,for(int item = 0, itemCount = row.getItemCount(); item > 0;
+compilation error,304,add,[CE] illegal start of expression, ,for(int item = 0, itemCount = row.getItemCount(); item >= 0;
+patch is same with buggy,174,replace,, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rows.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rows.get(column);
+compilation error,174,replace,[CE] missing return statement, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rows.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rows.get(column - 1);
+patch is same with buggy,187,replace,, this.columnKeys.add(key);  ,this.columnKeys.add(key);
+compilation error,312,add,[CE] illegal start of expression, ,if(this.rowKeys!= null) }
+compilation error,312,add,[CE] illegal start of expression, ,if(this.rowKeys!= null) >>
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rows.remove(rowKey);  ,rowKeys.remove(index); this.rows.remove(index);
+patch is same with buggy,377,replace,, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  ,KeyedObjects rowKeys =(KeyedObjects)iterator.next();
+patch is same with buggy,377,replace,, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  ,KeyedObjects rowKeys =(KeyedObjects) iterator.next();
+patch is same with buggy,377,replace,, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  , 
+compilation error,375,replace,[CE] illegal start of expression, Iterator  iterator  =(this.rows!=  null)?  null  :  this.rows.iterator();  ,static final Iterator iterator = this.rows.iterator();
+increase failing tests,113,replace, [FE] AssertionFailedError, Object  result  =  this.rows!=  null?  null  :  this.rows.get(row);  ,Object result = this.rows == null? null : this.rows.get(row);
+patch is same with buggy,113,replace,, Object  result  =  this.rows!=  null?  null  :  this.rows.get(row);  , 
+patch is same with buggy,279,replace,, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey);
+compilation error,356,replace,[CE] cannot find symbol rowIndex, this.columnKeys.remove(columnIndex);  ,this.rowKeys.remove(rowIndex);
+compilation error,378,add,[CE] cannot find symbol columnData, ,columnData.removeValue(index);
+increase failing tests,330,add, [FE] AssertionFailedError, ,if(this.columnKeys!= null) { this.columnKeys.remove(rowIndex); }
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rowKeys.remove(rowKey);  ,rowKeys.remove(getColumnIndex(rowKey));
+increase failing tests,77,add, [FE] NullPointerException, ,this.rows = new java.util.ArrayList(this.rows);
+increase failing tests,77,add, [FE] NullPointerException, ,this.rowKeys = new java.util.ArrayList(this.rows);
+compilation error,357,add,[CE] cannot find symbol listKeys, ,listKeys.remove(columnKey);
+compilation error,306,add,[CE] illegal start of expression, ,if(row.getObject(item) == null || row.getObject(item) == null) {
+compilation error,377,add,[CE] cannot find symbol rowKey, ,KeyedObjects rowKeys =(KeyedObjects)iterator.next(); this.rows.remove(rowKey);
+compilation error,377,add,[CE] incompatible types, ,List rowKeys =(KeyedObjects)iterator.next(); this.rows.remove(columnKey);
+compilation error,221,add,[CE] cannot find symbol row, ,if(row < 0) { throw new UnknownKeyException("Row key(" + rowKey + ")not recognised. "); }
+compilation error,332,add,[CE] no suitable method found for remove(List,boolean), ,this.columnKeys.remove(columnKeys, false);
+patch is same with buggy,113,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(row);
+compilation error,113,replace,[CE] cannot find symbol result, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(column);
+compilation error,222,replace,[CE] illegal start of type, if(row  >=  0)  {  throw  new  UnknownKeyException( "Row  key( "  +  rowKey  + ")not  recognised. ");  }  ,if(row > 0) { throw new UnknownKeyException("Row key(" + rowKey + ")not recognised."); }
+patch is same with buggy,222,replace,, if(row  >=  0)  {  throw  new  UnknownKeyException( "Row  key( "  +  rowKey  + ")not  recognised. ");  }  ,if(row >= 0) { throw new UnknownKeyException("Row key(" + rowKey + ")not recognised."); }
+compilation error,312,add,[CE] cannot find symbol allNull, ,this.rowKeys.remove(rowIndex); if(this.allNull) { this.rowKeys.remove(rowIndex); }
+patch is same with buggy,265,replace,, if(columnKey  ==  null  ||  rowKey.equals(columnKey))  {  ,if(columnKey == null || rowKey.equals(columnKey)) {
+patch is same with buggy,218,replace,, if(columnKey  ==  null  ||  columnKey.equals(rowKey))  {  ,if(columnKey == null || columnKey.equals(rowKey)) {
+patch is same with buggy,187,replace,, return(this.columnKeys  ==  null)?  this.columnKeys.indexOf(key):  0;  ,return(this.columnKeys == null)? this.columnKeys.indexOf(key): 0;
+patch is same with buggy,187,replace,, return(this.columnKeys  ==  null)?  this.columnKeys.indexOf(key):  0;  ,return(this.columnKeys == null)? this.columnKeys.indexOf(key): 0;
+compilation error,174,add,[CE] unreachable statement, ,return(Comparable)this.rowKeys.get(column + 1);
+patch is same with buggy,370,replace,, this.rows.remove(columnKey);  ,this.rows.remove(columnKey);
+compilation error,370,replace,[CE] cannot find symbol ColumnKey, this.rows.remove(columnKey);  ,this.rows.remove(ColumnKey);
+patch is same with buggy,370,replace,, this.rows.remove(columnKey);  , 
+patch is same with buggy,379,replace,, this.rows.remove(rowData);  ,this.rows.remove(rowData);
+compilation error,379,replace,[CE] illegal start of expression, this.rows.remove(rowData);  ,this.rows.remove(rowData, index);
+patch is same with buggy,222,replace,, if(row  <  0)  {  throw  new  UnknownKeyException( "Row  key( "  +  rowKey  + ")not  recognised. ");  }  ,if(row < 0) { throw new UnknownKeyException("Row key(" + rowKey + ")not recognised."); }
+increase failing tests,269,add, [FE]  Size, ,this.rowKeys.add(rowKey);
+compilation error,378,add,[CE] cannot find symbol, ,rowData.removeValue(columnKey); if(rowData.getValue(columnKey) == null) { throw new UnknownKeyException("Column key(" + columnKey + ")not recognised."); }
+compilation error,378,add,[CE] cannot find symbol, ,rowData.removeValue(columnKey); if(rowData.getValue(columnKey)!= null) { throw new UnknownKeyException("Column key(" + columnKey + ")not recognised."); }
+compilation error,375,add,[CE] not a statement, ,Iterator this.rows =(this.rows!= null)? null : this.rows.iterator();
+compilation error,375,add,[CE] ';' expected, ,Iterator iterator = this.rows!= null)? null : this.rows.iterator();
+patch is same with buggy,124,replace,, return  result  ==  null?  null  :  result;  ,return result == null? null : result;
+patch is same with buggy,124,replace,, return  result  ==  null?  null  :  result;  ,return result == null? null : result;
+patch is same with buggy,371,replace,, this.rows.remove(index);  ,this.rows.remove(index);
+compilation error,371,replace,[CE] illegal start of type, this.rows.remove(index);  ,this.rows.remove(index - 1);
+patch is same with buggy,312,replace,, if(!allNull)  {  ,if(!allNull) {
+compilation error,174,add,[CE] unreachable statement, ,return(Comparable)this.rowKeys.get(column - 1);
+compilation error,174,add,[CE] illegal start of expression, ,if(this.columnKeys!= null) { rowKeys = this.columnKeys.get(column - 1); if(rowKeys.size() == column) { return(Comparable)this.rowKeys.get(column - 1); }
+compilation error,174,add,[CE] illegal start of expression, ,if(this.columnKeys!= null) { rowKeys = this.columnKeys.get(column - 1); if(rowKeys.size() == column) { return(Comparable)this.rows.get(column - 1); }
+increase failing tests,250,add, [FE] StackOverflowError, ,addObject(object, rowKey, columnKey);
+compilation error,250,add,[CE] method setObject in class KeyedObjects2D cannot be applied to given types;, ,setObject(object, columnKey);
+compilation error,280,add,[CE] illegal start of expression, ,if(columnIndex < 0 && rowIndex > this.columnKeys.size()) {
+compilation error,280,add,[CE] ')' expected, ,if(columnIndex < 0 && rowIndex с this.columnKeys.size()) {
+patch is same with buggy,227,replace,, if(column  <=  0)  {  ,if(column <= 0) {
+patch is same with buggy,77,replace,, this.rowKeys  =  new  java.util.ArrayList();  ,this.rowKeys = new java.util.ArrayList();
+compilation error,77,replace,[CE] cannot find symbol, this.rowKeys  =  new  java.util.ArrayList();  ,if(this.rowKeys == null) { this.rowKeys = new java.util.ArrayList(); } else { this.columnKeys = new java.util.ArrayList(); this.rows = new ArrayList(); }
+compilation error,371,replace,[CE] illegal start of type, this.rowKeys.remove(index);  ,if(index >= 0) { throw new UnknownKeyException("Index is less than 1:" + columnKey); }
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,218,add,[CE] illegal start of expression, ,if(columnKey == null || columnKey.equals(rowKey)) }
+compilation error,218,add,[CE] illegal start of expression, ,if(columnKey!= null || columnKey.equals(rowKey)) {
+compilation error,300,replace,[CE] cannot find symbol allNull, this.rowKeys.remove(rowKey);  ,setObject(null, columnKey, rowKey);
+patch is same with buggy,232,replace,, KeyedObjects  rowData  =(KeyedObjects)this.rows.get(0);  ,KeyedObjects rowData =(KeyedObjects)this.rows.get(0);
+patch is same with buggy,306,replace,, this.columnKeys.remove(item);  ,this.columnKeys.remove(item);
+compilation error,306,replace,[CE] illegal start of type, this.columnKeys.remove(item);  ,this.columnKeys.remove(item, row.getColumnKey(columnKey));
+patch is same with buggy,357,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,357,replace,[CE] no suitable method found for remove(Comparable,int), this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey, columnIndex);
+patch is same with buggy,117,replace,, if(columnKey!=  null  &&  rowData!=  null)  {  ,if(columnKey!= null && rowData!= null) {
+compilation error,306,add,[CE] cannot find symbol, ,this.columnKeys.remove(row.getColumnKey(item));
+compilation error,306,add,[CE] no suitable method found for remove(int,Object), ,this.columnKeys.remove(item, row.getObject(columnKey));
+compilation error,344,replace,[CE] cannot find symbol index, this.rowKeys.remove(rowKey);  rowKeys.remove(rowKey);  ,this.rowKeys.remove(getColumnIndex(rowKey));
+patch is same with buggy,304,replace,, for(int  item  =  0,  itemCount  =  row.getItemCount();  item  <  0;  ,for(int item = 0, itemCount = row.getItemCount(); item < 0;
+patch is same with buggy,174,replace,, return(Comparable)this.columnKeys.get(column  -  1);  ,return(Comparable)this.columnKeys.get(column - 1);
+compilation error,304,add,[CE] method get in interface List cannot be applied to given types;, ,if(row.getObject(columnKey)!= null) { this.columnKeys.remove(columnKey); } else { row =(KeyedObjects)this.columnKeys.get(columnKey); allNull = false; break; }
+compilation error,304,add,[CE] method get in interface List cannot be applied to given types;, ,if(row.getObject(columnKey)!= null) { this.columnKeys.remove(columnKey); } else { row =(KeyedObjects)this.columnKeys.get(columnKey); allNull = true; break; }
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rows.remove(rowKey);  ,rowKeys.remove(index); rowKeys.remove(columnKey);
+compilation error,301,replace,[CE] cannot find symbol rowIndex, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(0);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(1);
+patch is same with buggy,301,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(0);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(0);
+compilation error,279,add,[CE] illegal start of expression, ,if(columnKey.isEmpty()) { this.columnKeys.add(columnKey); } else { this.columnKeys.add(columnKey); if(columnIndex < 0) { this.columnKeys.add(columnKey); }
+compilation error,279,add,[CE] illegal start of expression, ,if(columnKey.isEmpty()) { this.columnKeys.add(columnKey); } else { this.columnKeys.add(columnKey); if(columnIndex >= 0) { this.columnKeys.add(columnKey); }
+compilation error,232,add,[CE] no suitable method found for add(int), ,this.rows.add(row);
+compilation error,304,add,[CE] method get in interface List cannot be applied to given types;, ,if(rowIndex >= 0) { this.columnKeys.remove(rowIndex); } else { row =(KeyedObjects)this.columnKeys.get(columnKey); allNull = false; break; }
+compilation error,304,add,[CE] method get in interface List cannot be applied to given types;, ,if(rowIndex >= 0) { this.columnKeys.remove(rowIndex); } else { row =(KeyedObjects)this.columnKeys.get(columnKey); allNull = true; break; }
+compilation error,304,replace,[CE] ';' expected, this.columnKeys.remove(columnKey);  ,row.setObject(columnKey, rowIndex);
+patch is same with buggy,174,replace,, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rowKeys.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rowKeys.get(column);
+increase failing tests,114,add, [FE] UnknownKeyException, ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(column);
+compilation error,218,add,[CE] illegal start of expression, ,if(columnKey == null || columnKey!= null) {
+compilation error,218,add,[CE] illegal start of expression, ,if(columnKey!= null || columnKey == null) {
+compilation error,314,replace,[CE] cannot find symbol item,   ,row.removeValue(item);
+patch is same with buggy,265,replace,, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey);
+compilation error,265,replace,[CE] illegal start of type, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey, object);
+patch is same with buggy,302,replace,, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex);
+compilation error,302,replace,[CE] no suitable method found for remove(int,boolean), this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex, allNull);
+compilation error,332,replace,[CE] illegal start of expression, this.columnKeys.remove(columnKeys);  ,this.columnKeys.remove(columnKeys.size() - 1);
+compilation error,332,replace,[CE] illegal start of expression, this.columnKeys.remove(columnKeys);  ,this.columnKeys.remove(columnKeys.size());
+patch is same with buggy,332,replace,, this.columnKeys.remove(columnKeys);  , 
+compilation error,265,add,[CE] illegal start of expression, ,if(columnKey == null || columnKey.equals(columnKey)) {
+compilation error,265,add,[CE] illegal start of expression, ,if(columnKey == null || rowKey.equals(columnKey)) }
+patch is same with buggy,77,replace,, this.columnKeys  =  new  java.util.ArrayList();  ,this.columnKeys = new java.util.ArrayList();
+compilation error,77,replace,[CE] cannot find symbol, this.columnKeys  =  new  java.util.ArrayList();  ,if(this.columnKeys!= null) { this.columnKeys = new ArrayList(); } else { this.rowKeys = new ArrayList(); columnKeys = new ArrayList(); }
+patch is same with buggy,314,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,314,replace,[CE] illegal start of expression, this.columnKeys.remove(columnKey);  ,if(this.columnKeys!= null) { this.columnKeys.remove(rowIndex); } else { this.columnKeys.remove(columnKey); if(allNull) { this.columnKeys.remove(
+compilation error,300,replace,[CE] cannot assign a value to final variable allNull, boolean  allNull  =  false;  ,final boolean allNull = false;
+patch is same with buggy,300,replace,, boolean  allNull  =  false;  , 
+patch is same with buggy,378,replace,, rowData.removeValue(columnKey);  ,rowData.removeValue(columnKey);
+compilation error,378,replace,[CE] cannot find symbol, rowData.removeValue(columnKey);  ,rowData.addValue(columnKey);
+compilation error,356,add,[CE] variable columnKey is already defined in method removeColumn(int), ,Comparable columnKey =(Comparable)this.columnKeys.get(columnIndex);
+patch is same with buggy,304,replace,, for(int  item  =  0,  itemCount  =  row.getItemCount();  item  <  0;  , 
+patch is same with buggy,356,replace,, this.columnKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex);
+compilation error,371,replace,[CE] illegal start of type, this.rows.remove(index);  ,this.columnKeys.add(columnKey);
+patch is same with buggy,114,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(row);
+patch is same with buggy,114,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  , 
+compilation error,371,add,[CE] illegal start of expression, ,if(index >= 0 || index >= getColumnCount()) {
+compilation error,371,add,[CE] illegal start of expression, ,if(index < 0 || index >= getRowCount()) {
+patch is same with buggy,344,replace,, this.rowKeys.remove(getRowIndex(rowKey));  ,this.rowKeys.remove(getRowIndex(rowKey));
+patch is same with buggy,346,replace,, rowKeys.remove(index);  rowKeys.remove(rowKey);  ,rowKeys.remove(index); rowKeys.remove(rowKey);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rowKeys.remove(rowKey);  ,rowKeys.remove(index + 1); rowKeys.remove(rowKey);
+patch is same with buggy,345,replace,, rowKeys.remove(index);  ,rowKeys.remove(index);
+patch is same with buggy,346,replace,, rowKeys.remove(index);  ,rowKeys.remove(index);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  ,rowKeys.remove(index - 1);
+patch is same with buggy,314,replace,, this.rows.remove(rowIndex  -  1);  ,this.rows.remove(rowIndex - 1);
+compilation error,314,replace,[CE] cannot find symbol itemCount, this.rows.remove(rowIndex  -  1);  ,this.rows.remove(itemCount - 1);
+patch is same with buggy,371,replace,, this.rowKeys.remove(index);  ,this.rowKeys.remove(index);
+compilation error,371,replace,[CE] illegal start of type, this.rowKeys.remove(index);  ,this.rowKeys.remove(index - 1);
+compilation error,314,add,[CE] cannot find symbol itemCount, ,row.removeValue(itemCount);
+compilation error,357,replace,[CE] no suitable method found for remove(int,Comparable), rowKeys.remove(columnKey);  ,this.columnKeys.remove(columnIndex, columnKey);
+compilation error,313,replace,[CE] cannot find symbol item,   ,this.rowKeys.add(item); rowIndex++;
+increase failing tests,113,add, [FE] AssertionFailedError, ,KeyedObjects rowsKeys =(KeyedObjects)this.rows.get(column);
+compilation error,375,replace,[CE] cannot find symbol iterator, this.columnKeys.remove(columnKey);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(index - 1);
+compilation error,375,replace,[CE] cannot find symbol iterator, this.columnKeys.remove(columnKey);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(index + 1);
+compilation error,306,replace,[CE] illegal start of type, this.columnKeys.remove(item);  ,row.removeObject(columnKey, item);
+patch is same with buggy,306,replace,, if(row.getObject(item)  ==  null)  {  ,if(row.getObject(item) == null) {
+increase failing tests,377,add, [FE] AssertionFailedError, ,KeyedObjects rowKeys =(KeyedObjects)iterator.next(); this.rows.add(columnKey);
+increase failing tests,271,add, [FE]  Size, ,this.rowKeys.remove(rowIndex); if(rowIndex >= 0) { this.rowKeys.remove(rowIndex); }
+compilation error,271,add,[CE] no suitable method found for add(int), ,this.rowKeys.remove(rowIndex); if(rowIndex >= 0) { this.rows.add(rowIndex); }
+patch is same with buggy,376,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,376,replace,[CE] illegal start of type, this.columnKeys.remove(columnKey);  ,this.columnKeys.add(columnKey);
+compilation error,231,add,[CE] illegal start of expression, ,if(this.rowKeys == null) {
+compilation error,231,add,[CE] illegal start of expression, ,if(this.rowKeys!= null) }
+patch is same with buggy,346,replace,, rowKeys.remove(index);  ,rowKeys.remove(index);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  ,rowKeys.remove(index); columns.remove(rowKey);
+compilation error,312,add,[CE] illegal start of expression, ,if(!allNull) }
+compilation error,312,add,[CE] illegal start of expression, ,if(!allNull) >>
+patch is same with buggy,174,replace,, this.rowKeys.remove(column);  ,this.rowKeys.remove(column);
+patch is same with buggy,314,replace,, this.columnKeys.remove(rowIndex);  allNull  =  true;  ,this.columnKeys.remove(rowIndex); allNull = true;
+increase failing tests,88,add, [FE]  Size, ,this.rowKeys.add(this.rowKeys);
+compilation error,231,add,[CE] illegal start of expression, ,if(column >= 0) {
+compilation error,231,add,[CE] illegal start of expression, ,if(column!= 0) {
+increase failing tests,314,add, [FE]  Size, ,this.columnKeys.remove(columnKey); if(allNull) { this.rows.remove(rowIndex); }
+patch is same with buggy,232,replace,, KeyedObjects  rowData  =(KeyedObjects)this.rows.get(column);  ,KeyedObjects rowData =(KeyedObjects)this.rows.get(column);
+patch is same with buggy,357,replace,, System.arraycopy(columnKey,  0,  columnKey,  0,  columnIndex);  ,System.arraycopy(columnKey, 0, columnKey, 0, columnIndex);
+compilation error,262,add,[CE] illegal start of expression, ,if(rowKey == null || columnKey!= null) {
+compilation error,262,add,[CE] illegal start of expression, ,if(rowKey!= null || columnKey == null) {
+compilation error,302,add,[CE] cannot find symbol, ,keyedObjects row =(KeyedObjects)this.rows.get(rowIndex - 1);
+compilation error,314,add,[CE] incompatible types, ,if(this.columnKeys.remove(rowIndex)) { this.columnKeys.remove(rowIndex); } if(allNull) { this.columnKeys.remove(rowIndex); }
+compilation error,314,add,[CE] incompatible types, ,if(this.columnKeys.remove(rowIndex)) { this.columnKeys.remove(rowIndex); }
+compilation error,120,add,[CE] incompatible types, ,result = rowData.getIndex(columnKey);
+increase failing tests,304,add, [FE] AssertionFailedError, ,this.columnKeys.remove(columnKey); allNull = false;
+compilation error,304,add,[CE] break outside switch or loop, ,this.columnKeys.remove(columnKey); allNull = false; break;
+compilation error,301,add,[CE] incompatible types, ,List rowKeys =(KeyedObjects)this.rows.get(1);
+patch is same with buggy,356,replace,, this.columnKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex);
+compilation error,356,replace,[CE] cannot find symbol columnKey, this.columnKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex - 1);
+compilation error,115,replace,[CE] illegal start of type, this.columnKeys.get(column);  ,this.columnKeys.remove(column);
+compilation error,115,replace,[CE] illegal start of type, this.columnKeys.get(column);  ,this.columnKeys.add(column);
+patch is same with buggy,115,replace,, this.columnKeys.get(column);  , 
+compilation error,375,add,[CE] incompatible types, ,final List iterator = this.rows.iterator();
+patch is same with buggy,232,replace,, this.rows.remove(row);  ,this.rows.remove(row);
+compilation error,232,replace,[CE] no suitable method found for add(int,int), this.rows.remove(row);  ,this.rows.add(0, row);
+patch is same with buggy,356,replace,, this.columnKeys.remove(columnIndex);  rowKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex); rowKeys.remove(columnIndex);
+compilation error,356,replace,[CE] cannot find symbol columnKey, this.columnKeys.remove(columnIndex);  rowKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex); this.rows.remove(columnIndex);
+compilation error,304,add,[CE] illegal start of expression, ,for(int item = 0, itemCount = row.getItemCount(); item <= itemCount;
+compilation error,357,replace,[CE] cannot find symbol rowIndex, this.columnKeys.remove(columnKey);  ,this.rowKeys.remove(rowIndex);
+compilation error,150,add,[CE] illegal start of expression, ,if(this.rowKeys!= null) { if(this.rowKeys.indexOf(key) == 0) { return(this.rowKeys == null)? this.rowKeys.indexOf(key): 0; }
+compilation error,150,add,[CE] illegal start of expression, ,if(this.rowKeys!= null) { if(this.rowKeys.indexOf(key) < 0) { return(this.rowKeys == null)? this.rowKeys.indexOf(key): 0; }
+compilation error,150,add,[CE] illegal start of expression, ,if(this.rowKeys!= null) { if(this.rowKeys.indexOf(key) == 0) { return this.rowKeys.indexOf(key); }
+patch is same with buggy,150,replace,, this.rowKeys.add(key);  ,this.rowKeys.add(key);
+patch is same with buggy,300,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,312,replace,[CE] class or interface expected, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(item);
+patch is same with buggy,150,replace,, return  this.rowKeys.indexOf(key)+  1;  ,return this.rowKeys.indexOf(key)+ 1;
+patch is same with buggy,346,replace,, rowKeys.remove(index);  rows.remove(rowKey);  ,rowKeys.remove(index); rows.remove(rowKey);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rows.remove(rowKey);  ,rowKeys.remove(index - 1); rows.remove(rowKey);
+patch is same with buggy,221,replace,, int  row  =  this.rows.indexOf(rowKey);  ,int row = this.rows.indexOf(rowKey);
+compilation error,314,add,[CE] cannot find symbol, ,this.columnKeys.remove(rowIndex); ALL NULL = true;
+increase failing tests,314,add, [FE] ArrayIndexOutOfBoundsException, ,this.rowKeys.remove(rowIndex); allNull = true;
+patch is same with buggy,300,replace,, setObject(null,  rowKey,  columnKey);  ,setObject(null, rowKey, columnKey);
+compilation error,300,replace,[CE] cannot find symbol allNull, setObject(null,  rowKey,  columnKey);  ,if(rowKey!= null) { setObject(null, columnKey, rowKey); }
+compilation error,312,replace,[CE] class or interface expected, this.rowKeys.add(row);  ,this.rowKeys.add(rowKey);
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey); rowKeys.remove(rowKey);
+compilation error,344,replace,[CE] cannot find symbol index, this.rowKeys.remove(rowKey);  rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey); this.rowKeys.remove(rowKey);
+patch is same with buggy,269,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+patch is same with buggy,375,replace,, this.rows.clear();  ,this.rows.clear();
+increase failing tests,330,add, [FE]  Size, ,if(this.rowKeys!= null) { this.rowKeys.remove(rowIndex); } else { this.rows.remove(rowIndex); columnKeys.remove(rowIndex); rowKeys.remove(rowIndex); }
+compilation error,305,add,[CE] ';' expected, ,itemCount++) { if(row.getObject(item)!= null) { allNull = false; break; }
+compilation error,305,add,[CE] ';' expected, ,itemCount++) { if(row.getObject(item)!= null) { allNull = true; break; }
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,344,replace,[CE] no suitable method found for remove(Comparable,Comparable), this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey, rowKey);
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  , 
+compilation error,297,add,[CE] no suitable method found for remove(Comparable,Comparable), ,this.columnKeys.remove(rowKey, columnKey);
+compilation error,297,add,[CE] cannot find symbol ColumnKey, ,this.columnKeys.remove(ColumnKey);
+compilation error,120,replace,[CE] variable result is already defined in method getObject(int,int), result  =  rowData.getObject(index);  ,if(columnKey!= null) { Object result = rowData.getObject(columnKey); } if(index >= 0) { result = rowData.getIndex(columnKey); }
+compilation error,120,replace,[CE] illegal start of expression, result  =  rowData.getObject(index);  ,if(index >= 0) { result = rowData.getObject(columnKey); } else { this.columnKeys =(Comparable)this.columnKeys.get(column); if(index == 0) { result = rowData.getIndex(columnKey); }
+compilation error,265,add,[CE] illegal start of type, ,if(columnKey == null) { throw new IllegalArgumentException("Null 'columnKey' argument. "); } this.columnKeys.add(columnKey); }
+compilation error,265,add,[CE] illegal start of type, ,if(columnKey!= null) { throw new IllegalArgumentException("Null 'columnKey' argument. "); } this.columnKeys.add(columnKey); }
+compilation error,278,add,[CE] variable object is already defined in method setObject(Object,Comparable,Comparable), ,this.columnKeys.add(columnKey); Object object = this.rows.get(columnKey);
+compilation error,278,add,[CE] cannot find symbol Arrays, ,this.columnKeys.add(columnKey); Arrays.sort(this.columnKeys, object);
+compilation error,187,replace,[CE] generics are not supported in -source 1.4, this.columnKeys.indexOf(key);  ,if(this.rowKeys!= null) { this.rowKeys = new ArrayList < Comparable>(); if(this.rowKeys.indexOf(key) == this.rows.size()) { this.rows.add(key); }
+patch is same with buggy,305,replace,, itemCount++)  {  ,itemCount++) {
+compilation error,305,replace,[CE] ')' expected, itemCount++)  {  ,itemCount++ -= row.getObject(item);
+patch is same with buggy,75,replace,, super();  this.columnKeys  =  new  java.util.ArrayList();  ,super(); this.columnKeys = new java.util.ArrayList();
+compilation error,375,replace,[CE] incompatible types, this.rows.remove(index);  ,List rowKeys =(KeyedObjects)this.rows.get(index);
+patch is same with buggy,75,replace,, super();  ,super();
+compilation error,75,replace,[CE] constructor Object in class Object cannot be applied to given types;, super();  ,super("KeyedObjects2D");
+compilation error,375,replace,[CE] generics are not supported in -source 1.4, this.columnKeys.remove(columnKey);  ,List < KeyedObject> rows =(List)this.rows.get(index); this.rows.clear();
+compilation error,117,add,[CE] illegal start of expression, ,if(columnKey!= null && rowData == null) {
+compilation error,117,add,[CE] illegal start of expression, ,if(columnKey == null && rowData!= null) {
+increase failing tests,304,add, [FE] AssertionFailedError, ,row.setObject(columnKey, columnKey);
+patch is same with buggy,187,replace,, this.columnKeys.remove(key);  ,this.columnKeys.remove(key);
+patch is same with buggy,304,replace,, this.columnKeys.remove(columnKey);  allNull  =  true;  ,this.columnKeys.remove(columnKey); allNull = true;
+compilation error,376,add,[CE] cannot find symbol rowData, ,this.columnKeys.remove(columnKey); if(iterator.hasNext()) { rowData =(KeyedObjects)iterator.next(); rowData.removeValue(columnKey); }
+compilation error,376,add,[CE] incompatible types, ,this.columnKeys.remove(columnKey); if(iterator.hasNext()) { this.rows =(KeyedObjects)iterator.next(); rowData.removeValue(columnKey); }
+patch is same with buggy,370,replace,, int  index  =  getRowIndex(columnKey);  ,int index = getRowIndex(columnKey);
+patch is same with buggy,231,replace,, if(column  ==  0)  {  ,if(column == 0) {
+patch is same with buggy,75,replace,, super();  this.rowKeys  =  new  java.util.ArrayList();  ,super(); this.rowKeys = new java.util.ArrayList();
+compilation error,344,replace,[CE] cannot find symbol index, this.rowKeys.remove(rowKey);  rowKeys.remove(rowKey);  ,rowKeys.remove(getRowIndex(rowKey));
+compilation error,297,add,[CE] method get in interface List cannot be applied to given types;, ,KeyedObjects row =(KeyedObjects)this.columnKeys.get(columnKey);
+patch is same with buggy,76,replace,, this.rows  =  new  java.util.ArrayList();  ,this.rows = new java.util.ArrayList();
+compilation error,312,replace,[CE] class or interface expected, this.rowKeys.remove(rowIndex);  ,this.rowKeys.add(columnKey);
+patch is same with buggy,297,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,297,replace,[CE] no suitable method found for remove(Comparable,Comparable), this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey, columnKey);
+patch is same with buggy,314,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+patch is same with buggy,344,replace,, int  index  =  getColumnIndex(rowKey);  ,int index = getColumnIndex(rowKey);
+compilation error,377,add,[CE] cannot find symbol, ,KeyedObjects rowKeys =(KeyedObjects)iterator.ext();
+patch is same with buggy,304,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,304,replace,[CE] ';' expected, this.columnKeys.remove(columnKey);  ,this.columnKeys.add(columnKey);
+patch is same with buggy,215,replace,, if(rowKey  ==  null  ||  columnKey  ==  null)  {  ,if(rowKey == null || columnKey == null) {
+increase failing tests,120,replace, [FE] ArrayIndexOutOfBoundsException, result  =  rowData.getObject(index);  ,result = rowData.getObject(index - 1);
+increase failing tests,120,replace, [FE]  Size, result  =  rowData.getObject(index);  ,result = rowData.getObject(index + 1);
+compilation error,306,replace,[CE] illegal start of type, row.setObject(columnKey,  rowKey);  ,row.setObject(rowKey, columnKey);
+compilation error,227,add,[CE] illegal start of expression, ,if(column == 0) {
+increase failing tests,75,replace, [FE] NullPointerException, super();  this.rowKeys  =  new  java.util.ArrayList();  ,this.rows = new java.util.ArrayList();
+patch is same with buggy,375,replace,, this.rows.remove(index);  ,this.rows.remove(index);
+compilation error,356,replace,[CE] cannot find symbol, Comparable  columnKey  =(Comparable)this.columnKeys.remove(columnIndex);  ,Comparable columnKey =(Comparable)this.columnKeys.get(columnIndex).remove();
+compilation error,304,replace,[CE] ';' expected, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(rowIndex, row.getColumnKey());
+compilation error,124,add,[CE] not a statement, ,result == null? null : result;
+patch is same with buggy,262,replace,, if(rowKey  ==  null  ||  columnKey  ==  null)  {  ,if(rowKey == null || columnKey == null) {
+compilation error,226,add,[CE] illegal start of expression, ,if(column > 0) { throw new UnknownKeyException( "Column key( " + columnKey + ") not recognised. "); &!int column = this.columnKeys.indexOf(columnKey)+ 1; }
+compilation error,226,add,[CE] not a statement, ,if(column > 0) { throw new UnknownKeyException( "Column key( " + columnKey + ") not recognised. "); ridden else if(column < 0) { throw new UnknownKeyException( "Column key( " + rowKey + ") not recognised
+patch is same with buggy,357,replace,, rowKeys.remove(columnKey);  ,rowKeys.remove(columnKey);
+patch is same with buggy,345,replace,, this.rowKeys.remove(index);  rowKeys.remove(index);  ,this.rowKeys.remove(index); rowKeys.remove(index);
+compilation error,371,add,[CE] illegal start of expression, ,if(index <= 0 || index >= getColumnCount()) {
+compilation error,187,add,[CE] generics are not supported in -source 1.4, ,if(this.rowKeys!= null) { this.rowKeys = new ArrayList < Comparable>(); if(this.rowKeys.size() > 0) { this.rowKeys = new ArrayList < Comparable>(); }
+patch is same with buggy,300,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,344,replace,[CE] generics are not supported in -source 1.4, this.rowKeys.remove(rowKey);  ,List < Row> rowKeys = Lists.newArrayList();
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+increase failing tests,280,replace, [FE] UnknownKeyException, if(columnIndex  <  0  &&  rowIndex  <  this.columnKeys.size())  {  ,if(columnIndex >= 0 && columnIndex < this.columnKeys.size()) {
+patch is same with buggy,280,replace,, if(columnIndex  <  0  &&  rowIndex  <  this.columnKeys.size())  {  , 
+patch is same with buggy,375,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,375,replace,[CE] cannot find symbol iterator, this.columnKeys.remove(columnKey);  ,this.columnKeys.add(columnKey);
+compilation error,302,replace,[CE] cannot find symbol row, int  columnIndex  =  getColumnIndex(columnKey);  ,this.rows.remove(rowIndex);
+patch is same with buggy,222,replace,, if(row  >=  0)  {  ,if(row >= 0) {
+patch is same with buggy,345,replace,, this.rowKeys.remove(index);  rowKeys.remove(index);  ,this.rowKeys.remove(index); rowKeys.remove(index);
+compilation error,265,add,[CE] illegal start of expression, ,if(columnKey!= null || rowKey.equals(columnKey)) {
+compilation error,265,add,[CE] illegal start of expression, ,if(columnKey == null || columnKey.equals(object)) {
+patch is same with buggy,221,replace,, int  row  =  this.rows.indexOf(rowKey);  ,int row = this.rows.indexOf(rowKey);
+compilation error,312,add,[CE] illegal start of expression, ,if(!this.rowKeys.containsKey(rowIndex)) {
+compilation error,174,add,[CE] ';' expected, ,if(this.columnKeys!= null) { for(int column = this.columnKeys.size() - 1); columnKeys.add(column); }
+compilation error,174,add,[CE] cannot find symbol row, ,if(this.columnKeys!= null) { List rowKeys =(List)this.columnKeys.get(column); columnKeys.add(row); columnKeys.add(row); }
+compilation error,371,add,[CE] cannot find symbol rowkeys, ,this.rowkeys.remove(index);
+compilation error,88,replace,[CE] missing return statement, this.rowKeys.size();  ,this.rowKeys.clear();
+compilation error,88,replace,[CE] no suitable method found for add(int), this.rowKeys.size();  ,this.rowKeys.add(this.rowKeys.size() - 1);
+compilation error,306,add,[CE] cannot find symbol, ,row.remove(item);
+patch is same with buggy,218,replace,, if(columnKey  ==  null  ||  columnKey.equals(rowKey))  {  ,if(columnKey == null || columnKey.equals(rowKey)) {
+patch is same with buggy,376,replace,, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  ,KeyedObjects rowKeys =(KeyedObjects)iterator.next();
+patch is same with buggy,75,replace,, super();  this.rowKeys  =  new  java.util.ArrayList();  ,super(); this.rowKeys = new java.util.ArrayList();
+compilation error,221,add,[CE] cannot find symbol row, ,KeyedObjects rowData =(KeyedObjects)this.rows.get(row);
+patch is same with buggy,226,replace,, int  column  =  this.columnKeys.indexOf(columnKey)+  1;  ,int column = this.columnKeys.indexOf(columnKey)+ 1;
+patch is same with buggy,226,replace,, int  column  =  this.columnKeys.indexOf(columnKey)+  1;  ,int column = this.columnKeys.indexOf(columnKey) + 1;
+compilation error,226,add,[CE] illegal start of expression, ,if(column < 0) { throw new UnknownKeyException( "Column key( " + columnKey + ") not recognised. "); if(column >= 0) { throw new UnknownKeyException("Column key( " + columnKey + ") not recognised. "); }
+compilation error,226,add,[CE] illegal start of expression, ,if(column < 0) { throw new UnknownKeyException("Column key( " + columnKey + ") not recognised. "); if(column!= 0) { throw new UnknownKeyException("Column key( " + columnKey + ") not recognised. "); }
+patch is same with buggy,371,replace,, this.rows.remove(index);  ,this.rows.remove(index);
+compilation error,174,replace,[CE] cannot find symbol row, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rows.get(column);  ,this.rowKeys.add(row);
+compilation error,304,replace,[CE] ';' expected, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(rowIndex, rowKey);
+compilation error,378,add,[CE] cannot find symbol, ,rowData.getValue(index);
+patch is same with buggy,371,replace,, this.rows.remove(index);  ,this.rows.remove(index);
+compilation error,371,replace,[CE] illegal start of type, this.rows.remove(index);  ,this.rows.remove(index, columnKey);
+compilation error,306,replace,[CE] illegal start of type, row.setObject(columnKey,  rowKey);  ,row.setObject(null, rowKey, columnKey);
+compilation error,99,replace,[CE] missing return statement, this.columnKeys.size();  ,this.columnKeys.clear();
+patch is same with buggy,113,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(row);
+compilation error,113,replace,[CE] method get in interface List cannot be applied to given types;, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(row, column);
+patch is same with buggy,113,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  , 
+patch is same with buggy,75,replace,, super();  this.columnKeys  =  new  java.util.ArrayList();  ,super(); this.columnKeys = new java.util.ArrayList();
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey); rowKeys.remove(rowKey);
+patch is same with buggy,278,replace,, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey);
+patch is same with buggy,75,replace,, super();  ,super();
+compilation error,75,replace,[CE] cannot find symbol, super();  ,super(java.util.ArrayList());
+compilation error,313,add,[CE] variable rowIndex is already defined in method removeObject(Comparable,Comparable), ,int rowIndex = row.getIndex(item); this.rows.remove(rowIndex);
+patch is same with buggy,279,replace,, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey);
+compilation error,330,add,[CE] illegal start of expression, ,if(this.rows!= null) { if(this.rows.size() > 0) { this.rows.remove(rowIndex); }
+compilation error,330,add,[CE] illegal start of expression, ,if(this.rows!= null) { if(this.rows.containsKey(rowIndex)) { this.rows.remove(rowIndex); }
+patch is same with buggy,117,replace,, if(columnKey!=  null  &&  rowData!=  null)  {  ,if(columnKey!= null && rowData!= null) {
+compilation error,124,add,[CE] not a statement, ,result == null? null : result.getObject();
+compilation error,124,add,[CE] cannot find symbol, ,return result == null? null : result.getObject();
+patch is same with buggy,370,replace,, this.rows.remove(columnKey);  ,this.rows.remove(columnKey);
+compilation error,120,replace,[CE] bad operand types for binary operator '==', result  =  rowData.getObject(index);  ,if(rowData.getObject(index) == 0) { result = rowData.getObject(index); }
+compilation error,222,add,[CE] illegal start of expression, ,if(row < 0) { throw new UnknownKeyException("Row key(" + rowKey +")not recognised."); if(row >= 0) {
+compilation error,222,add,[CE] illegal start of expression, ,if(row < 0) { throw new UnknownKeyException("Row key(" + rowKey +")not recognised."); if(row >> 0) {
+compilation error,332,add,[CE] cannot find symbol columnIndex, ,this.columnKeys.remove(columnIndex);
+compilation error,356,add,[CE] illegal start of expression, ,if(columnIndex < this.columnKeys.size()) { for(int columnIndex = columnIndex - 1; columnIndex < this.rows.size(); columnIndex++) { removeColumn(columnKey); }
+patch is same with buggy,265,replace,, this.columnKeys.add(columnKey);  ,this.columnKeys.add(columnKey);
+patch is same with buggy,306,replace,, this.columnKeys.remove(item);  ,this.columnKeys.remove(item);
+compilation error,306,replace,[CE] illegal start of type, this.columnKeys.remove(item);  ,this.columnKeys.remove(item, rowKey);
+compilation error,344,add,[CE] cannot find symbol index, ,System.arraycopy(rowKeys, 0, index, rowKey.length);
+compilation error,344,add,[CE] cannot find symbol index, ,System.arraycopy(rowKeys, 0, index, rowKey);
+patch is same with buggy,376,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,376,replace,[CE] illegal start of type, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(column);
+patch is same with buggy,76,replace,, this.rowKeys  =  new  java.util.ArrayList();  ,this.rowKeys = new java.util.ArrayList();
+increase failing tests,76,replace, [FE] NullPointerException, this.rowKeys  =  new  java.util.ArrayList();  ,this.rowKeys = new java.util.ArrayList(this.rowKeys);
+compilation error,330,replace,[CE] illegal start of expression, if(this.rowKeys!=  null)  {  this.rowKeys.remove(rowIndex);  }  ,if(this.rowKeys == null) { if(this.rowKeys!= null) { this.rowKeys.remove(rowIndex); }
+compilation error,279,add,[CE] illegal start of expression, ,if(this.columnKeys!= null) { int columnIndex = this.columnKeys.indexOf(columnKey); if(columnIndex < 0) { this.columnKeys.add(columnKey); }
+compilation error,279,add,[CE] illegal start of expression, ,if(this.columnKeys!= null) { int columnIndex = this.columnKeys.indexOf(columnKey); if(columnIndex >= 0) { this.columnKeys.add(columnKey); }
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,344,replace,[CE] method get in interface List cannot be applied to given types;, this.rowKeys.remove(rowKey);  ,List rowKeys =(List)this.rowKeys.get(rowKey);
+compilation error,312,replace,[CE] class or interface expected, this.rowKeys.add(row);  ,this.rowKeys.add(rowIndex, rowKey);
+patch is same with buggy,312,replace,, this.rowKeys.add(row);  , 
+patch is same with buggy,301,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(0);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(0);
+compilation error,357,replace,[CE] cannot find symbol rowIndex, this.columnKeys.remove(columnKey);  ,this.rows.remove(rowIndex);
+compilation error,297,add,[CE] method get in interface List cannot be applied to given types;, ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(columnKey);
+patch is same with buggy,375,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,375,replace,[CE] cannot find symbol iterator, this.columnKeys.remove(columnKey);  ,this.rows.remove(columnKey);
+patch is same with buggy,345,replace,, this.rowKeys.remove(index);  ,this.rowKeys.remove(index);
+patch is same with buggy,187,replace,, this.columnKeys.add(key);  ,this.columnKeys.add(key);
+patch is same with buggy,300,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+patch is same with buggy,377,replace,, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  ,KeyedObjects rowKeys =(KeyedObjects)iterator.next();
+compilation error,377,replace,[CE] cannot find symbol, KeyedObjects  rowKeys  =(KeyedObjects)iterator.next();  ,KeyedObjects rowKeys =(KeyedObjects)iterator.current();
+patch is same with buggy,378,replace,, rowData.removeValue(index);  ,rowData.removeValue(index);
+patch is same with buggy,356,replace,, Comparable  columnKey  =(Comparable)this.columnKeys.remove(columnIndex);  ,Comparable columnKey =(Comparable)this.columnKeys.remove(columnIndex);
+patch is same with buggy,356,replace,, this.columnKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex);
+compilation error,356,replace,[CE] cannot find symbol rowKey, this.columnKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex, rowKey);
+compilation error,77,add,[CE] cannot find symbol, ,if(this.rowKeys!= null) { this.rows = new ArrayList(); this.columnKeys = new ArrayList(); }
+patch is same with buggy,302,replace,, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex);
+compilation error,302,replace,[CE] no suitable method found for remove(int,Comparable), this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex, rowKey);
+patch is same with buggy,357,replace,, System.arraycopy(columnKey,  0,  columnKey,  0,  columnIndex);  ,System.arraycopy(columnKey, 0, columnKey, 0, columnIndex);
+patch is same with buggy,371,replace,, this.rowKeys.remove(index);  ,this.rowKeys.remove(index);
+patch is same with buggy,304,replace,, this.columnKeys.remove(columnKey);  allNull  =  true;  ,this.columnKeys.remove(columnKey); allNull = true;
+compilation error,117,add,[CE] illegal start of expression, ,if(columnKey!= null && columnData!= null) {
+patch is same with buggy,215,replace,, if(rowKey  ==  null  ||  columnKey  ==  null)  {  ,if(rowKey == null || columnKey == null) {
+patch is same with buggy,300,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,300,replace,[CE] no suitable method found for remove(Comparable,Comparable), this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey, columnKey);
+patch is same with buggy,269,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+patch is same with buggy,300,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+patch is same with buggy,265,replace,, if(columnKey  ==  null  ||  rowKey.equals(columnKey))  {  ,if(columnKey == null || rowKey.equals(columnKey)) {
+compilation error,302,add,[CE] incompatible types, ,List row =(KeyedObjects)this.rows.get(rowIndex - 1);
+compilation error,187,add,[CE] generics are not supported in -source 1.4, ,if(this.rowKeys!= null) { List rowKeys = getRowKeys(); if(rows!= null) { this.rows = new ArrayList < Comparable>(); }
+compilation error,187,add,[CE] generics are not supported in -source 1.4, ,if(this.rowKeys!= null) { List rowKeys = getRowKeys(); if(rows == null) { this.rows = new ArrayList < Comparable>(); }
+compilation error,222,add,[CE] not a statement, ,if(row < 0) { throw new UnknownKeyException("Row key( " + rowKey + ")not recognised. "); bodied
+compilation error,187,add,[CE] method get in interface List cannot be applied to given types;, ,this.columnKeys =(List)this.columnKeys.get(key);
+compilation error,187,add,[CE] inconvertible types, ,this.columnKeys =(List)this.columnKeys.indexOf(key);
+compilation error,187,add,[CE] method get in interface List cannot be applied to given types;, ,this.rowKeys =(List)this.columnKeys.get(key);
+patch is same with buggy,304,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,304,replace,[CE] ';' expected, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(rowKey);
+patch is same with buggy,370,replace,, this.rows.remove(columnKey);  ,this.rows.remove(columnKey);
+compilation error,370,replace,[CE] cannot find symbol rowKey, this.rows.remove(columnKey);  ,this.rows.remove(rowKey);
+compilation error,379,replace,[CE] illegal start of expression, this.rows.remove(rowData);  ,this.rows.remove(rowData.index);
+patch is same with buggy,379,replace,, this.rows.remove(rowData);  , 
+compilation error,304,add,[CE] incompatible types, ,this.columnKeys =(KeyedObjects)this.columnKeys.remove(rowIndex);
+compilation error,304,add,[CE] incompatible types, ,this.columnKeys =(KeyedObjects)this.columnKeys.get(rowIndex);
+patch is same with buggy,345,replace,, this.rowKeys.remove(index);  ,this.rowKeys.remove(index);
+patch is same with buggy,174,replace,, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rowKeys.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rowKeys.get(column);
+compilation error,174,replace,[CE] cannot find symbol row, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rowKeys.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rowKeys.get(row);
+compilation error,265,add,[CE] method get in interface List cannot be applied to given types;, ,this.columnKeys.add(columnKey); KeyedObjects row =(KeyedObjects)this.columnKeys.get(rowKey);
+patch is same with buggy,314,replace,, this.rows.remove(rowIndex  -  1);  ,this.rows.remove(rowIndex - 1);
+compilation error,314,replace,[CE] cannot find symbol item, this.rows.remove(rowIndex  -  1);  ,this.rows.remove(item - 1);
+patch is same with buggy,371,replace,, if(index  <  0  ||  index  >=  getColumnIndex(columnKey))  {  ,if(index < 0 || index >= getColumnIndex(columnKey)) {
+increase failing tests,300,add, [FE] UnknownKeyException, ,this.rows.remove(rowKey);
+compilation error,232,add,[CE] incompatible types, ,List rowData =(KeyedObjects)this.rows.get(row);
+patch is same with buggy,114,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(row);
+compilation error,114,replace,[CE] method get in interface List cannot be applied to given types;, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  ,KeyedObjects rowKeys =(KeyedObjects)this.rows.get(row, column);
+patch is same with buggy,114,replace,, KeyedObjects  rowKeys  =(KeyedObjects)this.rows.get(row);  , 
+compilation error,357,add,[CE] method getRowKeys in class KeyedObjects2D cannot be applied to given types;, ,List rowKeys = getRowKeys(columnIndex);
+patch is same with buggy,344,replace,, this.rowKeys.remove(rowKey);  ,this.rowKeys.remove(rowKey);
+compilation error,344,replace,[CE] cannot find symbol index, this.rowKeys.remove(rowKey);  ,this.rows.remove(rowKey);
+compilation error,306,add,[CE] illegal start of expression, ,if(row.getObject(columnKey)!= null) {
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rows.remove(rowKey);  ,this.rows.remove(index);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rows.remove(rowKey);  ,this.rowKeys.remove(rowKey); this.rows.remove(index);
+compilation error,77,add,[CE] cannot find symbol, ,if(this.rowKeys!= null) { this.rowKeys = new ArrayList(); this.columnKeys = new ArrayList(); }
+patch is same with buggy,306,replace,, if(row.getObject(item)  ==  null)  {  ,if(row.getObject(item) == null) {
+patch is same with buggy,344,replace,, this.rowKeys.remove(getRowIndex(rowKey));  ,this.rowKeys.remove(getRowIndex(rowKey));
+compilation error,344,replace,[CE] no suitable method found for remove(int,Comparable), this.rowKeys.remove(getRowIndex(rowKey));  ,this.rowKeys.remove(getRowIndex(rowKey), rowKey);
+patch is same with buggy,300,replace,, setObject(null,  rowKey,  columnKey);  ,setObject(null, rowKey, columnKey);
+compilation error,378,replace,[CE] cannot find symbol column, rowData.removeValue(columnKey);  ,if(index < 0) { rowData.removeValue(columnKey); } else { this.rows.remove(column); rowData.removeValue(index); }
+compilation error,378,replace,[CE] cannot find symbol, rowData.removeValue(index);  this.rows.remove(columnKey);  ,if(index < rowData.size()) { rowData.removeValue(index); this.rows.remove(columnKey); }
+compilation error,271,add,[CE] cannot find symbol rowkeys, ,this.rowkeys.remove(rowIndex);
+patch is same with buggy,312,replace,, if(!allNull)  {  ,if(!allNull) {
+compilation error,271,replace,[CE] variable row might not have been initialized, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex - 1);
+compilation error,174,add,[CE] incompatible types, ,List rowKeys =(KeyedObjects2D)this.rows.get(column);
+compilation error,301,add,[CE] method get in interface List cannot be applied to given types;, ,List rowKeys =(KeyedObjects)this.rows.get(rowKey);
+compilation error,120,replace,[CE] illegal start of expression, result  =  rowData.getObject(index);  ,if(index < column) { if(rowData.getIndex(column) == index) { result = rowData.getObject(columnKey); }
+compilation error,120,replace,[CE] illegal start of expression, result  =  rowData.getObject(index);  ,if(index < row) { if(rowData.getIndex(column) == index) { result = rowData.getObject(columnKey); }
+patch is same with buggy,77,replace,, this.columnKeys  =  new  java.util.ArrayList();  ,this.columnKeys = new java.util.ArrayList();
+compilation error,124,replace,[CE] cannot find symbol, return  result  ==  null?  null  :  result;  ,return result == null? null : result.getValue();
+compilation error,356,replace,[CE] cannot find symbol columnKey, this.columnKeys.remove(columnIndex);  ,this.rows.remove(columnIndex);
+compilation error,280,add,[CE] illegal start of expression, ,if(columnIndex >= 0 && rowIndex < this.columnKeys.size()) {
+compilation error,280,add,[CE] illegal start of expression, ,if(columnIndex >> 0 && rowIndex < this.columnKeys.size()) {
+patch is same with buggy,300,replace,, boolean  allNull  =  false;  ,boolean allNull = false;
+increase failing tests,314,add, [FE]  Size, ,this.columnKeys.remove(rowIndex + 1);
+compilation error,314,add,[CE] no suitable method found for remove(int,Comparable), ,this.columnKeys.remove(rowIndex, rowKey);
+patch is same with buggy,357,replace,, rowKeys.remove(columnKey);  ,rowKeys.remove(columnKey);
+compilation error,120,add,[CE] illegal start of expression, ,if(this.rowKeys.containsKey(column)) { if(index >= 0) { result = rowData.getObject(index); }
+compilation error,120,add,[CE] illegal start of expression, ,if(index < columnKey.length) { if(rowData.getIndex(index) == 0) { result = rowData.getObject(column); }
+compilation error,120,add,[CE] illegal start of expression, ,if(index < columnKey.length) { if(rowData.getIndex(index) == 0) { result = rowData.getObject(index); }
+patch is same with buggy,174,replace,, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rows.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rows.get(column);
+compilation error,174,replace,[CE] cannot find symbol row, KeyedObjects2D  rowKeys  =(KeyedObjects2D)this.rows.get(column);  ,KeyedObjects2D rowKeys =(KeyedObjects2D)this.rows.get(row);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rowKeys.remove(rowKey);  ,rowKeys.remove(getRowIndex(index));
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rowKeys.remove(rowKey);  ,rowKeys.remove(getRowIndex(index), rowKey);
+compilation error,115,add,[CE] variable rowData is already defined in method getObject(int,int), ,KeyedObjects rowData =(KeyedObjects)this.columnKeys.get(column);
+patch is same with buggy,356,replace,, this.columnKeys.remove(columnIndex);  rowKeys.remove(columnIndex);  ,this.columnKeys.remove(columnIndex); rowKeys.remove(columnIndex);
+compilation error,371,add,[CE] illegal start of expression, ,if(index < 0) { if(index == this.rows.size()) { throw new UnknownKeyException(""); }
+compilation error,312,add,[CE] ')' expected, ,if(this.rowKeys { null) {
+compilation error,99,add,[CE] for-each loops are not supported in -source 1.4, ,for(List rowKeys : getRowKeys()) { if(this.rowKeys.size() > 0) { return this.rowKeys.size(); }
+compilation error,99,add,[CE] for-each loops are not supported in -source 1.4, ,for(List rowKeys : getRowKeys()) { if(this.rowKeys.size() == 0) { return this.rowKeys.size(); }
+compilation error,99,add,[CE] for-each loops are not supported in -source 1.4, ,for(List rowKeys : getRowKeys()) { if(this.rowKeys.size() > 0) { this.rowKeys =(List)this.columnKeys.get(row); }
+compilation error,187,replace,[CE] method get in interface List cannot be applied to given types;, this.columnKeys.indexOf(key);  ,List rowKeys =(List)this.rows.get(key);
+compilation error,187,replace,[CE] missing return statement, this.columnKeys.indexOf(key);  ,List rowKeys = getRowKeys();
+compilation error,115,replace,[CE] illegal start of type, this.columnKeys.get(column);  ,this.columnKeys.put(row, rowData);
+compilation error,113,add,[CE] incompatible types, ,List rowKeys =(KeyedObjects)this.rows.get(row);
+compilation error,304,add,[CE] variable item is already defined in method removeObject(Comparable,Comparable), ,int item = 0, itemCount = row.getItemCount();
+compilation error,304,add,[CE] illegal start of expression, ,for(int item = 0, itemCount = row.getItemCount(); item >= itemCount;) { if(row.getObject(item)!= null) { allNull = false; }
+patch is same with buggy,262,replace,, if(rowKey  ==  null  ||  columnKey  ==  null)  {  ,if(rowKey == null || columnKey == null) {
+patch is same with buggy,314,replace,, this.columnKeys.remove(columnKey);  , 
+patch is same with buggy,77,replace,, this.rowKeys  =  new  java.util.ArrayList();  ,this.rowKeys = new java.util.ArrayList();
+compilation error,233,add,[CE] illegal start of expression, ,if(rowData!= null) { if(rowKey.equals(rowKey)) { throw new UnknownKeyException("Row key(" + rowKey +")not recognised."); }
+compilation error,233,add,[CE] illegal start of expression, ,if(rowData!= null) { if(rowKey.equals(rowKey)) { return rowData.getObject(column); }
+compilation error,233,add,[CE] variable column is already defined in method getObject(Comparable,Comparable), ,int column = rowData.getColumnIndex(column);
+compilation error,75,replace,[CE] cannot find symbol, super();  ,this.columnKeys = new ArrayList();
+compilation error,215,add,[CE] illegal start of expression, ,if(rowKey == null || rowKey == null) {
+patch is same with buggy,233,replace,, return  rowData.getObject(column);  ,return rowData.getObject(column);
+compilation error,312,replace,[CE] class or interface expected, this.rowKeys.remove(rowIndex);  ,this.rows.add(row);
+patch is same with buggy,150,replace,, return  this.rowKeys.indexOf(key)+  1;  ,return this.rowKeys.indexOf(key)+ 1;
+patch is same with buggy,314,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+compilation error,377,add,[CE] incompatible types, ,List rowKeys =(KeyedObjects)iterator.next();
+increase failing tests,120,replace, [FE] AssertionFailedError, result  =  rowData.getObject(columnKey);  ,if(rowData.getObject(index) == columnKey) { result = rowData.getObject(columnKey); }
+compilation error,227,add,[CE] illegal start of expression, ,if(column >= 0) {
+patch is same with buggy,304,replace,, for(int  item  =  0,  itemCount  =  row.getItemCount();  item  <  0;  ,for(int item = 0, itemCount = row.getItemCount(); item < 0;
+compilation error,375,add,[CE] not a statement, ,List this.rows =(this.rows == null)? null : this.rows.get(index);
+compilation error,375,add,[CE] incompatible types, ,List rowKeys =(this.rows == null)? null : this.rows.get(index);
+compilation error,375,add,[CE] not a statement, ,List this.rows =(this.rows == null)? null : this.rows.iterator();
+compilation error,269,add,[CE] variable row might not have been initialized, ,this.rows.add(row);
+compilation error,174,replace,[CE] incompatible types, this.rowKeys.remove(column);  ,List rowKeys =(KeyedObjects2D)this.rowKeys.get(column);
+patch is same with buggy,375,replace,, this.rows.clear();  ,this.rows.clear();
+compilation error,114,add,[CE] cannot find symbol, ,keyedObjects rowKeys =(KeyedObjects)this.rows.get(row);
+patch is same with buggy,312,replace,, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex);
+compilation error,312,replace,[CE] class or interface expected, this.rowKeys.remove(rowIndex);  ,this.rowKeys.remove(rowIndex, rowKey);
+patch is same with buggy,357,replace,, this.columnKeys.remove(columnKey);  ,this.columnKeys.remove(columnKey);
+patch is same with buggy,174,replace,, return(Comparable)this.columnKeys.get(column  -  1);  ,return(Comparable)this.columnKeys.get(column - 1);
+patch is same with buggy,174,replace,, return(Comparable)this.columnKeys.get(column  -  1);  , 
+compilation error,375,replace,[CE] not a statement, this.rows.remove(index);  ,List this.rows =(List)this.rows.get(index);
+patch is same with buggy,302,replace,, int  columnIndex  =  getColumnIndex(columnKey);  ,int columnIndex = getColumnIndex(columnKey);
+compilation error,302,replace,[CE] method get in interface List cannot be applied to given types;, int  columnIndex  =  getColumnIndex(columnKey);  ,int columnIndex = getColumnIndex(columnKey)&&(this.columnKeys!= null? this.columnKeys.get(columnKey): null);
+compilation error,304,replace,[CE] ';' expected, this.columnKeys.remove(columnKey);  ,row.remove(columnKey);
+compilation error,371,add,[CE] not a statement, ,if(index < 0) { throw new UnknownKeyException("Index is less than 1: " + columnKey); bodied
+compilation error,371,add,[CE] illegal start of expression, ,if(index < 0) { throw new UnknownKeyException("Index is less than 1: " + columnKey); &&!this.rows.remove(index); }
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  ,Collections.remove(index, rowKey);
+patch is same with buggy,232,replace,, this.rows.remove(row);  ,this.rows.remove(row);
+compilation error,232,replace,[CE] no suitable method found for remove(int,Comparable), this.rows.remove(row);  ,this.rows.remove(row, columnKey);
+patch is same with buggy,232,replace,, KeyedObjects  rowData  =(KeyedObjects)this.rows.get(0);  ,KeyedObjects rowData =(KeyedObjects)this.rows.get(0);
+increase failing tests,330,replace, [FE]  Size, if(this.rowKeys!=  null)  {  this.rowKeys.remove(rowIndex);  }  ,this.rowKeys.remove(rowIndex); if(this.rows!= null) { this.rowKeys.remove(rowIndex); }
+patch is same with buggy,346,replace,, rowKeys.remove(index);  rows.remove(rowKey);  ,rowKeys.remove(index); rows.remove(rowKey);
+compilation error,300,add,[CE] cannot find symbol, ,boolean allNull = isAll();
+increase failing tests,99,add, [FE]  Size, ,this.columnKeys.remove(this.rowKeys.size() - 1);
+compilation error,346,replace,[CE] illegal start of expression, rowKeys.remove(index);  rowKeys.remove(rowKey);  ,if(!rowKeys.contains(rowKey)) { rowKeys.remove(index); rowKeys.remove(rowKey); }
+patch is same with buggy,99,replace,, return  this.columnKeys.size()  -  1;  ,return this.columnKeys.size() - 1;

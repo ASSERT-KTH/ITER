@@ -1,0 +1,4 @@
+increase failing tests,296,replace, [FE] ArrayIndexOutOfBoundsException testRestrictVariablesToNonNegative,for (int i = 0; i < height; i++) { ,for(int i = 0; i < width; i++) {
+increase failing tests,296,replace, [FE] AssertionError testRestrictVariablesToNonNegative,for (int i = 0; i < height; i++) { ,for(int i = 1; i < height; i++) {
+compilation error,296,replace,[CE] cannot find symbol length,for (int i = 0; i < height; i++) { ,for(int i = 0; i < length; i++) {
+compilation error,296,replace,[CE] illegal start of type,for (int i = 0; i < height; i++) { , 

@@ -72,12 +72,18 @@ if __name__ == '__main__':
 #             os.system("cp -rf ./build/lib/*" + "  ./lib/")
 #             os.system("cp -rf ./lib/classes/*" + "  ./lib/")
     if "Lang" in project:
-        if os.path.exists("./target"):
+        if os.path.exists("./target") and os.path.exists("./target/tests"):
             os.system("mkdir build")
             os.system("mkdir build-tests")
             os.system("cp -rf ./target/classes/*" + "  ./build/")
             os.system("cp -rf ./target/tests/*" + "  ./build/")
             os.system("cp -rf ./target/tests/*" + "  ./build-tests/")
+        elif os.path.exists("./target") and os.path.exists("./target/test-classes"):
+            os.system("mkdir build")
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")
 
             
 

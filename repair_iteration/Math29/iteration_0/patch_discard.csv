@@ -1,0 +1,202 @@
+compilation error,360,add,[CE] cannot find symbol,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getValue());
+compilation error,360,add,[CE] method getEntry in class RealVector cannot be applied to given types;,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getEntry());
+compilation error,360,add,[CE] package org.apache.commons.math.exception does not exist,,  OpenIntToDoubleHashMap entries = v.getEntry();
+compilation error,360,add,[CE] package org.apache.commons.math.exception does not exist,,  final OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getValue());
+compilation error,179,replace,[CE] package org.apache.commons.math.exception does not exist,public OpenMapRealVector(OpenMapRealVector v) { ,public final OpenMapRealVector(OpenMapRealVector v) {
+compilation error,179,replace,[CE] package org.apache.commons.math.exception does not exist,public OpenMapRealVector(OpenMapRealVector v) { ,final public OpenMapRealVector(OpenMapRealVector v) {
+compilation error,179,replace,[CE] invalid method declaration; return type required,public OpenMapRealVector(OpenMapRealVector v) { ,public MapRealVector(OpenMapRealVector v) {
+compilation error,179,replace,[CE] <identifier> expected,public OpenMapRealVector(OpenMapRealVector v) { , 
+compilation error,592,replace,[CE] package org.apache.commons.math.exception does not exist,entries.remove(index); ,entries.put(index, value);
+compilation error,592,replace,[CE] package org.apache.commons.math.exception does not exist,entries.remove(index); ,entries.add(index);
+compilation error,592,replace,[CE] package org.apache.commons.math.exception does not exist,entries.remove(index); ,entries.put(index, new Double(value));
+compilation error,592,replace,[CE] illegal start of type,entries.remove(index); , 
+compilation error,364,replace,[CE] package org.apache.commons.math.exception does not exist,iter.advance(); ,iter.next();
+compilation error,364,replace,[CE] illegal start of expression,iter.advance(); ,iter.next(); res.setEntry(entry.getValue(), v.getValue());
+compilation error,364,replace,[CE] illegal start of expression,iter.advance(); ,iter.next(); res.setEntry(v.getValue(), v.getValue());
+compilation error,364,replace,[CE] package org.apache.commons.math.exception does not exist,iter.advance(); ,iter.next(); res.setEntry(iter.getValue(), v.getValue());
+compilation error,364,replace,[CE] package org.apache.commons.math.exception does not exist,iter.advance(); , 
+compilation error,363,replace,[CE] package org.apache.commons.math.exception does not exist,while (iter.hasNext()) { ,while(iter.hasNext() && iter.getValue() > 0) {
+compilation error,363,replace,[CE] package org.apache.commons.math.exception does not exist,while (iter.hasNext()) { ,while(iter.hasNext() && iter.value() > 0) {
+compilation error,363,replace,[CE] package org.apache.commons.math.exception does not exist,while (iter.hasNext()) { ,while(iter.next()) {
+compilation error,363,replace,[CE] illegal start of type,while (iter.hasNext()) { , 
+compilation error,180,add,[CE] package org.apache.commons.math.exception does not exist,,  this(v.getKey(), v.getValue());
+compilation error,180,add,[CE] package org.apache.commons.math.exception does not exist,,  v =(OpenMapRealVector)v.getEntry();
+compilation error,180,add,[CE] package org.apache.commons.math.exception does not exist,,  v =(OpenMapRealVector)v.iterator();
+compilation error,180,add,[CE] package org.apache.commons.math.exception does not exist,,  v =(OpenMapRealVector)v.newInstance();
+compilation error,180,add,[CE] package org.apache.commons.math.exception does not exist,,  super(v);
+compilation error,363,add,[CE] package org.apache.commons.math.exception does not exist,,  res.setEntry(iter.getValue(), iter.value());
+compilation error,363,add,[CE] illegal start of expression,,  while(iter.hasNext()) { res.setEntry(entry.getValue(), iter.value());
+compilation error,363,add,[CE] package org.apache.commons.math.exception does not exist,,  res.setEntry(entry.getValue(), iter.value());
+compilation error,363,add,[CE] illegal start of expression,,  while(iter.hasNext()) { res.setEntry(entry.getKey(), iter.value());
+compilation error,363,add,[CE] illegal start of expression,,  while(iter.hasNext()) { res.setEntry(entry.getKey(), entry.getValue());
+compilation error,364,add,[CE] package org.apache.commons.math.exception does not exist,,  res.setEntry(iter.next());
+compilation error,364,add,[CE] package org.apache.commons.math.exception does not exist,,  res.setEntry(entry.next());
+compilation error,364,add,[CE] package org.apache.commons.math.exception does not exist,,  Iterator.next() = iter.next(); res.setEntry(v.getValue(), v.getValue());
+compilation error,364,add,[CE] package org.apache.commons.math.exception does not exist,,  Iterator.next() = iter.next(); res.setEntry(entry.getValue(), v.getValue());
+compilation error,364,add,[CE] package org.apache.commons.math.exception does not exist,,  Iterator.next() = iter.next(); res.setEntry(entry, new OpenMapRealVector(v.getValue()));
+compilation error,360,replace,[CE] invalid method declaration; return type required,checkVectorDimensions(v.getDimension()); ,checkVectorDimensions(v.getMinimumDimension());
+compilation error,360,replace,[CE] invalid method declaration; return type required,checkVectorDimensions(v.getDimension()); ,checkVectorDimensions(v.getDimension() + 1);
+compilation error,360,replace,[CE] invalid method declaration; return type required,checkVectorDimensions(v.getDimension()); ,checkVectorDimensions(v.getDimension(), v.getValue());
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(iter.next());
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(entry.getValue(), iter.value());
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(entry.getValue(), v.getValue());
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(entry.getValue());
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(iter.getValue(), iter.value());
+compilation error,179,add,[CE] invalid method declaration; return type required,,  this(v.getKey(), v.getValue());
+compilation error,179,add,[CE] invalid method declaration; return type required,,  this(v.getKey(), v.getValue()); entries = new OpenIntToDoubleHashMap(v.getEntry());
+compilation error,179,add,[CE] invalid method declaration; return type required,,  this(v.getValue(), DEFAULT_ZERO_TOLERANCE); entries = new OpenIntToDoubleHashMap(v.getEntry());
+compilation error,179,add,[CE] invalid method declaration; return type required,,  this(v.getKey(), v.getValue()); entries = new OpenIntToDoubleHashMap(v.getEntry()).entrySet();
+compilation error,179,add,[CE] invalid method declaration; return type required,,  this(v.getValue(), DEFAULT_ZERO_TOLERANCE);
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return res == null? new OpenMapRealVector() : res;
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return res!= null? new OpenMapRealVector() : res;
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return v;
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return iter;
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; , 
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = v.getEntry();
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap();
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getEntry());
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getDimension());
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getValue());
+compilation error,365,replace,[CE] invalid method declaration; return type required,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() / v.getEntry(iter.key()));
+compilation error,365,replace,[CE] invalid method declaration; return type required,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.next()));
+compilation error,365,replace,[CE] invalid method declaration; return type required,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() - 1 * v.getEntry(iter.key()));
+compilation error,180,replace,[CE] invalid method declaration; return type required,virtualSize = v.getDimension(); ,virtualSize = v.getSize();
+compilation error,180,replace,[CE] invalid method declaration; return type required,virtualSize = v.getDimension(); ,virtualSize = v.getVisibility();
+compilation error,180,replace,[CE] invalid method declaration; return type required,virtualSize = v.getDimension(); ,virtualSize = v.getValue();
+compilation error,180,replace,[CE] invalid method declaration; return type required,virtualSize = v.getDimension(); ,virtualSize = v.getDelimiter();
+compilation error,374,add,[CE] invalid method declaration; return type required,,  res.setEntry(v.getValue(), iter.value());
+compilation error,374,add,[CE] invalid method declaration; return type required,,  res.setEntry(v.getValue(), iter.value()));
+compilation error,374,add,[CE] invalid method declaration; return type required,,  res.setEntry(v, iter.value());
+compilation error,374,add,[CE] invalid method declaration; return type required,,  res.setEntry(v.value(), iter.value());
+compilation error,374,add,[CE] invalid method declaration; return type required,,  res.setEntry(v.key(), iter.value());
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = res.getEntry();
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = res.entrySet();
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getDimension());
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = res.getOpenIntToDoubleHashMap();
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getDelimiter());
+compilation error,592,add,[CE] invalid method declaration; return type required,,  entries.put(index, number);
+compilation error,592,add,[CE] invalid method declaration; return type required,,  value = entries.get(index);
+compilation error,592,add,[CE] invalid method declaration; return type required,,  entries.put(index, 1);
+compilation error,592,add,[CE] invalid method declaration; return type required,,  openMapEntry();
+compilation error,361,replace,[CE] invalid method declaration; return type required,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(v);
+compilation error,361,replace,[CE] invalid method declaration; return type required,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(v.getValue());
+compilation error,361,replace,[CE] invalid method declaration; return type required,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(v.size());
+compilation error,362,replace,[CE] invalid method declaration; return type required,Iterator iter = entries.iterator(); ,Iterator iter = res.iterator();
+compilation error,362,replace,[CE] invalid method declaration; return type required,Iterator iter = entries.iterator(); ,Iterator iter = this.entries.iterator();
+compilation error,362,replace,[CE] invalid method declaration; return type required,Iterator iter = entries.iterator(); ,Iterator iter = this.entrySets.iterator();
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(new OpenIntToDoubleHashMap(v.getValue()));
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(new OpenIntToDoubleHashMap());
+compilation error,365,add,[CE] invalid method declaration; return type required,,  iter.next(); res.setEntry(new IntToDoubleHashMap(v.getValue()));
+compilation error,365,add,[CE] invalid method declaration; return type required,,  res.setEntry(new OpenIntToDoubleHashMap(v));
+compilation error,365,add,[CE] invalid method declaration; return type required,,  iter.next(); res.setEntry(new OpenIntToDoubleHashMap(v));
+compilation error,180,add,[CE] invalid method declaration; return type required,,  super();
+compilation error,180,add,[CE] invalid method declaration; return type required,,  super(v.getDimension());
+compilation error,180,add,[CE] invalid method declaration; return type required,,  super(v.getValue());
+compilation error,180,add,[CE] invalid method declaration; return type required,,  super(v.getDegree());
+compilation error,361,replace,[CE] invalid method declaration; return type required,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(new IntToDoubleHashMap());
+compilation error,361,replace,[CE] invalid method declaration; return type required,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(v.getIntToDoubleHashMap());
+compilation error,361,replace,[CE] invalid method declaration; return type required,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(this, v);
+compilation error,592,add,[CE] invalid method declaration; return type required,,  double value = entries.get(index);
+compilation error,592,add,[CE] invalid method declaration; return type required,,  closeEntry();
+compilation error,592,add,[CE] invalid method declaration; return type required,,  entries.put(index, index + 1);
+compilation error,592,add,[CE] invalid method declaration; return type required,,  openEntries();
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getInt());
+compilation error,361,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getEntryCount());
+compilation error,363,replace,[CE] invalid method declaration; return type required,while (iter.hasNext()) { ,while(iter.isEmpty()) {
+compilation error,363,replace,[CE] invalid method declaration; return type required,while (iter.hasNext()) { ,while(iter.hasNext()!= null) {
+compilation error,360,replace,[CE] invalid method declaration; return type required,checkVectorDimensions(v.getDimension()); ,checkVectorDimensions(v.getDimension(), DEFAULT_ZERO_TOLERANCE);
+compilation error,360,replace,[CE] invalid method declaration; return type required,checkVectorDimensions(v.getDimension()); ,checkIntDimensions(v.getDimension());
+compilation error,592,replace,[CE] invalid method declaration; return type required,entries.remove(index); ,entries.add(index, value);
+compilation error,364,replace,[CE] invalid method declaration; return type required,iter.advance(); ,iter.next(); res.setEntry(new OpenMapRealVector(v, DEFAULT_ZERO_TOLERANCE));
+compilation error,364,replace,[CE] invalid method declaration; return type required,iter.advance(); ,iter.next(); res.setEntry(new IntToDoubleHashMap(v.getValue()));
+compilation error,364,replace,[CE] invalid method declaration; return type required,iter.advance(); ,iter.next(); res.setEntry(new OpenIntToDoubleHashMap(v.getValue()));
+compilation error,180,replace,[CE] invalid method declaration; return type required,virtualSize = v.getDimension(); ,virtualSize = v.getVisibleIndex();
+compilation error,180,replace,[CE] invalid method declaration; return type required,virtualSize = v.getDimension(); ,realSize = v.getSize();
+compilation error,179,add,[CE] invalid method declaration; return type required,,  super(v.getDimension(), DEFAULT_ZERO_TOLERANCE);
+compilation error,179,add,[CE] invalid method declaration; return type required,,  super();
+compilation error,179,add,[CE] invalid method declaration; return type required,,  this.value = v.getValue();
+compilation error,179,add,[CE] invalid method declaration; return type required,,  super(v.getDimension());
+compilation error,362,replace,[CE] invalid method declaration; return type required,Iterator iter = entries.iterator(); ,Iterator iter = this.entrys.iterator();
+compilation error,360,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = createEntry(v);
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = res.hashMap();
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries = res.values();
+compilation error,362,add,[CE] invalid method declaration; return type required,,  OpenIntToDoubleHashMap entries =(OpenIntToDoubleHashMap)res.clone();
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return res.value;
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return res.iterator();
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return res.entrySet();
+compilation error,374,replace,[CE] invalid method declaration; return type required,return res; ,return res.newInstance();
+compilation error,374,add,[CE] invalid method declaration; return type required,,  OpenMapRealVector res = new OpenMapRealVector(v.getValue());
+compilation error,374,add,[CE] invalid method declaration; return type required,,  res.put(key, value);
+compilation error,374,add,[CE] invalid method declaration; return type required,,  OpenMapRealVector res =(OpenMapRealVector)entries.get(v);
+compilation error,374,add,[CE] invalid method declaration; return type required,,  OpenMapRealVector res =(OpenMapRealVector)v.getEntry();
+compilation error,374,add,[CE] invalid method declaration; return type required,,  OpenMapRealVector res =(OpenMapRealVector)v.get();
+compilation error,365,replace,[CE] invalid method declaration; return type required,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() * v.getValue()));
+compilation error,365,replace,[CE] invalid method declaration; return type required,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() / 2 * v.getEntry(iter.key()));
+compilation error,365,replace,[CE] invalid method declaration; return type required,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() / 1 * v.getEntry(iter.key()));
+compilation error,364,add,[CE] invalid method declaration; return type required,,  Iterator iter =(OpenMapRealVector)iter.next();
+compilation error,364,add,[CE] invalid method declaration; return type required,,  res.put(null, iter.next());
+compilation error,364,add,[CE] <identifier> expected,,  Iterator iter =(OpenMapRealVector)entries.next();
+compilation error,364,add,[CE] <identifier> expected,,  res.put(v, iter.next());
+compilation error,179,replace,[CE] <identifier> expected,public OpenMapRealVector(OpenMapRealVector v) { ,openMapRealVector(OpenMapRealVector v) {
+compilation error,179,replace,[CE] <identifier> expected,public OpenMapRealVector(OpenMapRealVector v) { ,public OpenMapRealVector(OpenMapRealVector v, DEFAULT_ZERO_TOLERANCE) {
+compilation error,363,add,[CE] <identifier> expected,,  Iterator iter = this.entries.iterator();
+compilation error,363,add,[CE] <identifier> expected,,  iter.next();
+compilation error,363,add,[CE] <identifier> expected,,  Iterator iter = this.entrySet().iterator();
+compilation error,363,add,[CE] <identifier> expected,,  Iterator iter = res.next();
+compilation error,363,add,[CE] <identifier> expected,,  Iterator iter = res.iterator();
+compilation error,592,add,[CE] <identifier> expected,,  entries.put(index, new OpenIntToDoubleHashMap(value));
+compilation error,592,add,[CE] <identifier> expected,,  entries.put(index, new OpenIntToDoubleHashMap(value, index));
+compilation error,592,add,[CE] <identifier> expected,,  entries.put(index, new OpenIntToDoubleHashMap(value), value);
+compilation error,592,add,[CE] <identifier> expected,,  entries.put(index, new OpenIntToDoubleHashMap(value, index + 1));
+compilation error,374,add,[CE] <identifier> expected,,  OpenMapRealVector res = new OpenMapRealVector(v.getValue()); res.setEntry(entry.getValue(), v.getValue());
+compilation error,374,add,[CE] <identifier> expected,,  OpenMapRealVector res = new OpenMapRealVector(v.getValue() * Math.max(res.size() - 1, v.size()));
+compilation error,374,add,[CE] <identifier> expected,,  OpenMapRealVector res = new OpenMapRealVector(v.getValue()); res.setEntry(iter.value(), v.getValue());
+compilation error,374,add,[CE] <identifier> expected,,  OpenMapRealVector res = new OpenMapRealVector(v.getValue()); res.setEntry(entry.getValue(), entry.getValue());
+compilation error,364,add,[CE] <identifier> expected,,  res.setIterator(iter.next());
+compilation error,364,add,[CE] <identifier> expected,,  res.setNext(iter.next());
+compilation error,364,add,[CE] <identifier> expected,,  iter.next(); res.setEntry(new OpenIntToDoubleHashMap(v));
+compilation error,364,add,[CE] <identifier> expected,,  res.setIterator(new OpenIntToDoubleHashMap());
+compilation error,360,add,[CE] <identifier> expected,,  final OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap();
+compilation error,360,add,[CE] <identifier> expected,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.size());
+compilation error,360,add,[CE] <identifier> expected,,  final OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getEntry());
+compilation error,363,replace,[CE] <identifier> expected,while (iter.hasNext()) { ,while(iter.hasNext() &&!res.equals(v.getValue())) {
+compilation error,363,replace,[CE] <identifier> expected,while (iter.hasNext()) { ,while(iter.hasNext() &&!res.isMultiply(v)) {
+compilation error,363,replace,[CE] <identifier> expected,while (iter.hasNext()) { ,while(iter.hasNext() &&!res.containsKey(v.getValue())) {
+compilation error,360,replace,[CE] <identifier> expected,checkVectorDimensions(v.getDimension()); ,checkEnumElementDimensions(v.getDimension());
+compilation error,360,replace,[CE] <identifier> expected,checkVectorDimensions(v.getDimension()); ,checkState(v.getDimension());
+compilation error,360,replace,[CE] <identifier> expected,checkVectorDimensions(v.getDimension()); ,checkDeserialization(v.getDimension());
+compilation error,363,add,[CE] <identifier> expected,,  Iterator < OpenMapRealVector> iter = v.iterator();
+compilation error,363,add,[CE] <identifier> expected,,  res.setEntry(new OpenIntToDoubleHashMap(v.getValue()));
+compilation error,363,add,[CE] <identifier> expected,,  res.setEntry(new OpenIntToDoubleHashMap());
+compilation error,363,add,[CE] <identifier> expected,,  res.setEntry(new OpenIntToDoubleHashMap(v));
+compilation error,363,add,[CE] <identifier> expected,,  Iterator < OpenMapRealVector> iter = v.next();
+compilation error,592,replace,[CE] <identifier> expected,entries.remove(index); ,entries.put(index, new OpenIntToDoubleHashMap());
+compilation error,365,replace,[CE] <identifier> expected,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() * v.getValue(iter.key()));
+compilation error,365,replace,[CE] <identifier> expected,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() * 1 - iter.getEntry(iter.key()));
+compilation error,365,replace,[CE] <identifier> expected,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() * the size of v.getEntry(iter.key()));
+compilation error,365,replace,[CE] <identifier> expected,res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key())); ,res.setEntry(iter.key(), iter.value() * entries.get(iter.key()));
+compilation error,374,replace,[CE] <identifier> expected,return res; ,return res == null? null : res;
+compilation error,374,replace,[CE] <identifier> expected,return res; ,return res!= null? null : res;
+compilation error,362,replace,[CE] <identifier> expected,Iterator iter = entries.iterator(); ,Iterator iter = openIntToDoubleHashMap.iterator();
+compilation error,179,add,[CE] <identifier> expected,,  this(v, DEFAULT_ZERO_TOLERANCE);
+compilation error,179,add,[CE] <identifier> expected,,  this(v.getValue(), v.getDimension());
+compilation error,179,add,[CE] <identifier> expected,,  this.entry =(Entry)entries.iterator();
+compilation error,361,add,[CE] <identifier> expected,,  final OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap();
+compilation error,361,add,[CE] <identifier> expected,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getAccess());
+compilation error,364,replace,[CE] <identifier> expected,iter.advance(); ,for(Iterator < OpenMapRealVector> iter = iter.next(); iter.hasNext();) { Entry < K, V> entry =(Entry)entries.get(iter.next()); if(entry.getValue().equals(entry.getValu
+compilation error,364,replace,[CE] <identifier> expected,iter.advance(); ,for(Iterator < OpenMapRealVector> iter = iter.next(); iter.hasNext();) { Entry < K, V> entry =(Entry)entries.get(iter.next()); if(entry.getValue().equals(entry.getVal
+compilation error,364,replace,[CE] <identifier> expected,iter.advance(); ,for(Iterator < OpenInt> iter = iter.next(); iter.hasNext();) { Entry < K, V> entry =(Entry)entries.get(iter.next()); if(entry.getValue().equals(v.getValu
+compilation error,362,add,[CE] <identifier> expected,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getAccess());
+compilation error,362,add,[CE] <identifier> expected,,  OpenIntToDoubleHashMap entries = new OpenIntToDoubleHashMap(v.getEntry());
+compilation error,362,add,[CE] <identifier> expected,,  OpenIntToDoubleHashMap entries = getEntries();
+compilation error,180,add,[CE] <identifier> expected,,  super(); v = new OpenMapRealVector(v.getValue());
+compilation error,180,add,[CE] <identifier> expected,,  super(); v = new OpenMapRealVector(v.getSize());
+compilation error,180,add,[CE] <identifier> expected,,  super(); v = new OpenMapRealVector(v);
+compilation error,361,replace,[CE] <identifier> expected,OpenMapRealVector res = new OpenMapRealVector(this); ,openMapRealVector res = new OpenMapRealVector(v);
+compilation error,361,replace,[CE] <identifier> expected,OpenMapRealVector res = new OpenMapRealVector(this); ,OpenMapRealVector res = new OpenMapRealVector(new RectangleInsets(v.getEntry()));
+compilation error,179,replace,[CE] <identifier> expected,public OpenMapRealVector(OpenMapRealVector v) { ,public OpenMapRealVector(OpenMapRealVector.class) {
+compilation error,179,replace,[CE] <identifier> expected,public OpenMapRealVector(OpenMapRealVector v) { ,public MapRealVector(OpenMapRealVector.class) {
+compilation error,180,replace,[CE] <identifier> expected,virtualSize = v.getDimension(); ,virtualSize =(v == null)? v.getDimension() : v.getDimension();
+compilation error,180,replace,[CE] <identifier> expected,virtualSize = v.getDimension(); ,virtualSize =(v == null)? v.getDimension() : v.getInitialValue();
+compilation error,365,add,[CE] <identifier> expected,,  res.setIterator(new OpenIntToDoubleHashMap());
+compilation error,365,add,[CE] <identifier> expected,,  res.setIterator(iter.next());

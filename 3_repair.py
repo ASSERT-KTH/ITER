@@ -36,9 +36,6 @@ def inRevertList(save_to_revert,patch_revert):
         return flag
               
 
-
-# bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-
 def getBugInfo(bugid):
     bugid=str(bugid).replace(' ','')
     with open(TEST_PATH) as testfile:
@@ -130,6 +127,12 @@ def test_execute_info(project):
             os.system("cp -rf ./target/classes/*" + "  ./build/")
             os.system("cp -rf ./target/tests/*" + "  ./build/")
             os.system("cp -rf ./target/tests/*" + "  ./build-tests/")
+        elif os.path.exists("./target") and os.path.exists("./target/test-classes"):
+            os.system("mkdir build")
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")
 
     
     with open("FL_execution.txt","r") as exec_script:
@@ -252,7 +255,7 @@ def add_action(originFile,patch,startNo,endNo,project):
     
     #construct patched file
     newStr=''    
-    #replace
+    #add
     with open(originFile,'r') as old_file:
         lines=old_file.readlines()
         for i in range(0,len(lines)):
@@ -339,7 +342,7 @@ def test( model, tokenizer, device, loader, index,project):
 
                 if not os.path.exists(patch_path):
                     with open(patch_path, 'w') as csvfile:
-                        csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\toriginal_failing_test_number\toriginal_buggy\taction\tpatch\texecution_result\tdiagnosis\tprevious_bug_id\tnew_failing_test_number\n')
+                        csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\toriginal_failing_test_number\taction\tpatch\toriginal_buggy\texecution_result\tdiagnosis\tprevious_bug_id\tnew_failing_test_number\tthis_action')
                                                                                       
                 for i in range(0,return_sequences):
                     #avoid the prediction is same with buggy
@@ -352,6 +355,7 @@ def test( model, tokenizer, device, loader, index,project):
                         prediction=" "
                     if 'add' in action:
                         prediction=previous_patch+'  '+prediction
+                    
                     prediction=prediction.replace('\n','')    
                     
                     print('buggy line NB: '+buggy_line)
@@ -386,19 +390,25 @@ def test( model, tokenizer, device, loader, index,project):
                         print('='*50)
                         print(' '*50)
 
-#                         if '[CE]' in diagnosis:
-
-#                             with open(patch_minimization, 'a') as patch_minimization_file:
-#                                 patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+                        if '[CE]' in diagnosis:
+                            if 'not a statement' in diagnosis:
+                                break
+                            if 'incompatible' in diagnosis:
+                                break
+                            if 'illegal' in diagnosis:
+                                break
+                            with open(patch_minimization, 'a') as patch_minimization_file:
+                                patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+                            break
+                                
 
 
                          #patch minimization
-                             # Rule 4: discard the patch with increase failing test number                      
+                        # Rule 4: discard the patch with increase failing test number                      
                         print('new_failing_test_number:',new_failing_test_number)
                         print('original_failing_test_number:',original_failing_test_number)
 
                         if 'compilable' in execution_result and 'None' not in str(new_failing_test_number) and int(original_failing_test_number)<int(new_failing_test_number):
-
                             with open(patch_minimization, 'a') as patch_minimization_file:
                                 patch_minimization_file.write('increase failing tests,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
 
@@ -425,10 +435,10 @@ def test( model, tokenizer, device, loader, index,project):
                                     with open(patch_path, 'a') as csvfile:
                                         filewriter = csv.writer(csvfile, delimiter='\t',escapechar=' ',quoting=csv.QUOTE_NONE)
                                         if 'compilable' in execution_result:
-                                            filewriter.writerow([str(new_bugid),new_BR_add,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'add',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
-                                            filewriter.writerow([str(new_bugid+1),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
+                                            filewriter.writerow([str(new_bugid),new_BR_add,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'add',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number,action]) 
+                                            filewriter.writerow([str(new_bugid+1),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number,action]) 
                                         else:
-                                            filewriter.writerow([str(new_bugid),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
+                                            filewriter.writerow([str(new_bugid),new_BR_replace,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,'replace',prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number,action]) 
 
 
 
@@ -450,8 +460,8 @@ def getGeneratorDataLoader(filepath,tokenizer,batchsize):
         
 def run_test(project):
     for m in [5,8,10]:
-        gen = T5ForConditionalGeneration.from_pretrained('./SelfAPR/model_SelfAPR/SelfAPR'+str(m),output_hidden_states=True)       
-        gen_tokenizer = T5Tokenizer.from_pretrained('./SelfAPR/model_SelfAPR/SelfAPR'+str(m),truncation=True)
+        gen = T5ForConditionalGeneration.from_pretrained('./ItRepair/model_ItRepair/ItRepair'+str(m),output_hidden_states=True)       
+        gen_tokenizer = T5Tokenizer.from_pretrained('./ItRepair/model_ItRepair/ItRepair'+str(m),truncation=True)
         gen_tokenizer.add_tokens(['[PATCH]','[BUG]','{', '}','<','^','<=','>=','==','!=','<<','>>','[CE]','[FE]','[CONTEXT]','[BUGGY]','[CLASS]','[METHOD]','[RETURN_TYPE]','[VARIABLES]','[Delete]'])   
         gen = gen.to(device)       
         test_loader=getGeneratorDataLoader(TEST_PATH,gen_tokenizer,1)

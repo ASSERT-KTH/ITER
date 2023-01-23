@@ -1,0 +1,23 @@
+compilation error,136,replace,[CE] inconvertible types,if ((Boolean) tree.getAttribute()) { ,if(( boolean)tree.getAttribute()) {
+compilation error,136,replace,[CE] illegal start of type,if ((Boolean) tree.getAttribute()) { , 
+compilation error,63,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sort(tree);
+compilation error,63,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sort(tree); SortedTuple.sort(vertices[0], vertices[1], vertices[2], vertices[3]);
+compilation error,63,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.valueOf(true); SortedTuple sortingKey = SortedTuple.valueOf(tree);
+compilation error,63,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sort(tree); SortedTuple.sort(vertices[0], vertices[1], vertices[2]);
+compilation error,136,add,[CE] incompatible types,,  final Vector2D[][] setSize = getTree(true);
+compilation error,136,add,[CE] no suitable constructor found for Vector2D(Vector2D[][],int,int),,  setSize(new Vector2D(v, 0, v.length));
+compilation error,136,add,[CE] incompatible types,,  v[0][0] = getTree(true);
+compilation error,64,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sort(tree); sortingKey = new SortedTuple();
+compilation error,64,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sorted(); SortedTuple[][] vertices = new SortedTuple();
+compilation error,64,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sorted(); SortedTuple.sort(vertices, tree);
+compilation error,64,add,[CE] cannot find symbol sortingKey,,  sortingKey = SortedTuple.sort(tree);
+compilation error,64,add,[CE] cannot find symbol,,  SortedTuple sortingKey = SortedTuple.sort(tree);
+compilation error,135,add,[CE] abstract method computeGeometricalProperties() in AbstractRegion cannot be accessed directly,,  super.computeGeometricalProperties();
+compilation error,135,add,[CE] method setSize in class AbstractRegion<S,T> cannot be applied to given types;,,  setSize(0, v.length);
+compilation error,51,add,[CE] cannot return a value from method whose result type is void,,  return(Polygons)sortingKey.clone();
+compilation error,51,add,[CE] cannot return a value from method whose result type is void,,  return(PolygonsSet)this.vertices.clone();
+compilation error,51,add,[CE] cannot find symbol sorted,,  sorted.addAll(vertices);
+compilation error,51,add,[CE] cannot find symbol sortingKey,,  sortingKey = SortedTuple.sort(vertices);
+compilation error,51,add,[CE] cannot return a value from method whose result type is void,,  return(PolygonsSet)this.vertices.get();
+compilation error,330,replace,[CE] incompatible types,return null; ,return this;
+compilation error,330,replace,[CE] incompatible types,return null; ,return selectedSegment;

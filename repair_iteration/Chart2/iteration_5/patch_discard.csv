@@ -1,0 +1,26 @@
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(includeInterval) { throw new NullPointerException(" -- 1 "); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(includeInterval) { throw new NullPointerException(" -- 1"); }
+compilation error,756,add,[CE] illegal start of expression, ,if(!includeInterval) { lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(lvalue)) { minimum = Math.min(minimum, lvalue); }? maximum : Math.max(maximum,
+patch is same with buggy,756,replace,, uvalue  =  intervalXYData.getStartXValue(series,  item);  if(!includeInterval)  {  lvalue  =  intervalXYData.getEndXValue(series,  item);  }  ,uvalue = intervalXYData.getStartXValue(series, item); if(!includeInterval) { lvalue = intervalXYData.getEndXValue(series, item); }
+patch is same with buggy,756,replace,, uvalue  =  intervalXYData.getStartXValue(series,  item);  if(!includeInterval)  {  lvalue  =  intervalXYData.getEndXValue(series,  item);  }  ,uvalue = intervalXYData.getStartXValue(series, item); if(!includeInterval) { lvalue = intervalXYData.getEndXValue(series, item); }
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  --  1  : ");  ,throw new NullPointerException(" -- 1 : ");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  --  1  : ");  ,throw new NullPointerException(" -- 1 :");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -- ");  ,throw new NullPointerException(" --");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -- ");  ,throw new NullPointerException(" -- ");
+compilation error,780,add,[CE] incompatible types, ,return new NullPointerException(" --");
+compilation error,780,replace,[CE] missing return statement, throw  new  NullPointerException( "  -- ");  ,if(includeInterval) { throw new NullPointerException(" -- 1 :"); }
+compilation error,780,replace,[CE] incompatible types, throw  new  NullPointerException( "  -- ");  ,return new NullPointerException(" -- 1 : ");
+compilation error,756,replace,[CE] 'else' without 'if', uvalue  =  intervalXYData.getStartXValue(series,  item);  if(!includeInterval)  {  lvalue  =  intervalXYData.getEndXValue(series,  item);  }  ,if(!includeInterval) { uvalue = intervalXYData.getStartXValue(series, item); if(!includeInterval) { lvalue = intervalXYData.getEndXValue(series, item); }
+compilation error,756,replace,[CE] 'else' without 'if', uvalue  =  intervalXYData.getStartXValue(series,  item);  if(!includeInterval)  {  lvalue  =  intervalXYData.getEndXValue(series,  item);  }  ,if(includeInterval) { uvalue = intervalXYData.getStartXValue(series, item); if(!includeInterval) { lvalue = intervalXYData.getEndXValue(series, item); }
+compilation error,756,add,[CE] 'else' without 'if', ,if(!includeInterval) { uvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(uvalue)) { minimum = Math.min(minimum, lvalue); }
+compilation error,756,add,[CE] 'else' without 'if', ,if(!includeInterval) { lvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(uvalue)) { minimum = Math.min(minimum, lvalue); }
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  --  1  : ");  ,throw new NullPointerException(" -- 1 :");
+compilation error,756,add,[CE] 'else' without 'if', ,if(!includeInterval) { uvalue = intervalXYData.getStartXValue(series, item); if(!Double.isNaN(uvalue)) { minimum = Math.min(minimum, uvalue); }
+compilation error,756,add,[CE] 'else' without 'if', ,if(!includeInterval) { uvalue = intervalXYData.getStartXValue(series, item); if(!minimum) { minimum = Math.min(minimum, lvalue); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(includeInterval) { throw new NullPointerException(" -- 1 "); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(includeInterval) { throw new NullPointerException(" -- 1 "); }
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  -- ");  ,throw new NullPointerException(" -- ");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  --  1  : ");  ,throw new NullPointerException(" -- 1 : ");
+patch is same with buggy,780,replace,, throw  new  NullPointerException( "  --  1  : ");  ,throw new NullPointerException(" -- 1 :");
+patch is same with buggy,756,replace,, uvalue  =  intervalXYData.getStartXValue(series,  item);  if(!includeInterval)  {  lvalue  =  intervalXYData.getEndXValue(series,  item);  }  ,uvalue = intervalXYData.getStartXValue(series, item); if(!includeInterval) { lvalue = intervalXYData.getEndXValue(series, item); }
+compilation error,756,replace,[CE] not a statement, uvalue  =  intervalXYData.getStartXValue(series,  item);  if(!includeInterval)  {  lvalue  =  intervalXYData.getEndXValue(series,  item);  }  ,uvalue = intervalXYData.getStartXValue(series, item); if(!includeInterval) { lvalue = intervalXYData.getEndXValue(series, item); bodega

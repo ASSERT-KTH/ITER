@@ -1,0 +1,33 @@
+compilation error,109,replace,[CE] ,} ,if(in!= null) { ClassLoaderAwareObjectInputStream in = readObject(); if(in.readObject()!= objectData[]) { throw new SerializationException("IOException on closing cloned object data", ex); }
+compilation error,109,replace,[CE] illegal start of expression,} ,if(in!= null) { ClassLoaderAwareObjectInputStream in = readObject(); if(in.close()!= null) { in.close(); }
+compilation error,109,replace,[CE] illegal start of expression,} ,if(in!= null) { ClassLoaderAwareObjectInputStream in = readObject(); if(in.close() == null) { in.close(); }
+compilation error,109,replace,[CE] ,} ,if(in!= null) { ClassLoaderAwareObjectInputStream in = readObject(); if(in.readObject()!= objectData[]) { throw new SerializationException(""); }
+compilation error,109,replace,[CE] illegal start of expression,} , 
+compilation error,104,replace,[CE] ')' expected,if (in != null) { ,if(in } null) {
+compilation error,104,replace,[CE] 'try' without 'catch' or 'finally',if (in != null) { , 
+compilation error,83,add,[CE] incompatible types,,  byte[] classLoader = object.getClass().getClassLoader();
+compilation error,83,add,[CE] variable objectData is already defined in method <T>clone(T),,  byte[] objectData = serialize(object);
+compilation error,83,add,[CE] cannot find symbol,,  boolean readObject = object.readObject();
+compilation error,83,add,[CE] variable objectData is already defined in method <T>clone(T),,  byte[] objectData = serializeObject(object);
+compilation error,83,add,[CE] incompatible types,,  byte[] classLoader = object.getClass().getClassLoader(); this.readObject = object;
+compilation error,95,replace,[CE] cannot find symbol,T readObject = (T) in.readObject(); ,T readObject =(T)in.readArray();
+compilation error,95,replace,[CE] clone() has protected access in Object,T readObject = (T) in.readObject(); ,T readObject =(T)in.clone();
+compilation error,95,replace,[CE] illegal start of type,T readObject = (T) in.readObject(); , 
+compilation error,103,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)in.readObject();
+compilation error,103,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)readObject.clone();
+compilation error,103,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)readObject;
+compilation error,103,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)in.readObject(); readObject =(T)in.readObject();
+compilation error,103,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)readObject.clone(); readObject =(T)in.readObject();
+compilation error,99,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)in.readObject();
+compilation error,99,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)readObject.clone();
+compilation error,99,add,[CE] variable objectData is already defined in method <T>clone(T),,  byte[] objectData =(byte[])in.readObject();
+compilation error,99,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)readObject;
+compilation error,99,add,[CE] variable in is already defined in method <T>clone(T),,  ClassLoaderAwareObjectInputStream in =(ClassLoaderAwareObjectInputStream)super.clone();
+compilation error,85,replace,[CE] incompatible types,ClassLoaderAwareObjectInputStream in = null; ,ClassLoaderAwareObjectInputStream in = bais;
+compilation error,85,replace,[CE] constructor ClassLoaderAwareObjectInputStream in class ClassLoaderAwareObjectInputStream cannot be applied to given types;,ClassLoaderAwareObjectInputStream in = null; ,ClassLoaderAwareObjectInputStream in = new ClassLoaderAwareObjectInputStream(bais);
+compilation error,85,replace,[CE] incompatible types,ClassLoaderAwareObjectInputStream in = null; ,ClassLoaderAwareObjectInputStream in = object;
+compilation error,85,replace,[CE] '(' or '[' expected,ClassLoaderAwareObjectInputStream in = null; ,ClassLoaderAwareObjectInputStream in = new ClassLoaderAwareObjectInputStream;
+compilation error,85,replace,[CE] cannot find symbol in,ClassLoaderAwareObjectInputStream in = null; , 
+compilation error,105,replace,[CE] cannot find symbol,in.close(); ,in.closeAsObject();
+compilation error,105,replace,[CE] cannot find symbol,in.close(); ,in.closeArchive();
+compilation error,105,replace,[CE] cannot find symbol,in.close(); ,in.closeAwareObject();

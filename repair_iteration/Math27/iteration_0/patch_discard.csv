@@ -1,0 +1,7 @@
+increase failing tests,555,replace, [FE] AssertionError testPercentage,return new Fraction(numerator * i, denominator); ,return new Fraction(numerator / i, denominator);
+increase failing tests,555,replace, [FE] AssertionError testPercentage,return new Fraction(numerator * i, denominator); ,return new Fraction(denominator * i, denominator);
+increase failing tests,555,replace, [FE] AssertionError testPercentage,return new Fraction(numerator * i, denominator); ,return new Fraction(numerator * i, denominator + 1);
+compilation error,555,replace,[CE] missing return statement,return new Fraction(numerator * i, denominator); , 
+increase failing tests,261,replace, [FE] MathArithmeticException testAdd,if (den < 0) { ,if(den > 0) {
+increase failing tests,261,replace, [FE] AssertionError testMath835,if (den < 0) { ,if(den == 0) {
+compilation error,261,replace,[CE] illegal start of type,if (den < 0) { , 

@@ -1,0 +1,86 @@
+compilation error,395,replace,[CE] cannot find symbol,fieldKeyValues= createKeyValues(symbols.getWeekdays(), symbols.getShortWeekdays()); ,fieldKeyValues= createKeyValues(symbols.getDayOfWeek(), symbols.getDayOfWeek());
+compilation error,396,add,[CE] cannot find symbol,,  fieldKeyValues = createKeyValues(symbols.getDayOfWeek(), null);
+compilation error,396,replace,[CE] cannot find symbol,break; ,fieldKeyValues= createKeyValues(symbols.getDayOfWeek(), null); break;
+compilation error,406,replace,[CE] cannot find symbol tzNames,KeyValue[] prior = nameValues.putIfAbsent(fieldInt, fieldKeyValues); ,KeyValue[] prior = tzNames.getIfAbsent(fieldInt, fieldKeyValues);
+compilation error,406,add,[CE] variable fieldInt is already defined in method getDisplayNames(int),,  Integer fieldInt = nameValues.get(field);
+compilation error,381,add,[CE] cannot find symbol,,  String[] shortEras = toArray(fieldKeyValues.get(fieldInt));
+compilation error,407,replace,[CE] cannot find symbol previous,if(prior!=null) { ,if(previous!= null) {
+compilation error,382,replace,[CE] no suitable method found for getInstance(KeyValue[]),DateFormatSymbols symbols= DateFormatSymbols.getInstance(locale); ,DateFormatSymbols symbols = DateFormatSymbols.getInstance(fieldKeyValues);
+compilation error,436,add,[CE] method copy in class FastDateParser cannot be applied to given types;,,  copy(shortValues, copy(longValues, 0, longValues));
+compilation error,407,add,[CE] cannot find symbol,,  prior = nameValues.getIfAbsent(fieldInt);
+compilation error,435,replace,[CE] method copy in class FastDateParser cannot be applied to given types;,copy(fieldKeyValues, copy(fieldKeyValues, 0, longValues), shortValues); ,copy(fieldKeyValues, copy(longValues, 0, shortValues), IGNORE_CASE_COMPARATOR);
+increase failing tests,434,replace, [FE] NullPointerException testAmPm,KeyValue[] fieldKeyValues= new KeyValue[count(longValues)+count(shortValues)]; ,KeyValue[] fieldKeyValues = new KeyValue[count(longValues)+ 1];
+compilation error,434,replace,[CE] ']' expected,KeyValue[] fieldKeyValues= new KeyValue[count(longValues)+count(shortValues)]; ,KeyValue[] fieldKeyValues = new KeyValue[count(longValues)+ 0, shortValues)];
+compilation error,555,replace,[CE] cannot find symbol EMPTY_STRATEGY,return DAY_OF_WEEK_STRATEGY; ,return EMPTY_STRATEGY;
+compilation error,555,add,[CE] orphaned case,,  if(formatField.length() >= 2?TEXT_YEAR_STRATEGY :NUMBER_YEAR_STRATEGY); case 'F': return formatField.substring(1, formatField.length() -1); }
+compilation error,434,add,[CE] no suitable method found for parseLong(String[]),,  int count = Long.parseLong(longValues);
+compilation error,382,add,[CE] cannot find symbol Maps,,  Locale locale = Maps.newHashMap();
+compilation error,411,add,[CE] cannot find symbol tzNames,,  tzNames.put(fieldInt, fieldKeyValues);
+compilation error,395,add,[CE] cannot find symbol keyValues,,  keyValues = createKeyValues(symbols.getDayOfWeek(), null);
+compilation error,411,replace,[CE] cannot find symbol prior,return fieldKeyValues; ,return prior;
+compilation error,180,add,[CE] cannot find symbol tzNames,,  Pattern parsePattern =(Pattern)tzNames.get(this.parsePattern);
+compilation error,436,replace,[CE] no suitable method found for sort(KeyValue[],int,String[]),Arrays.sort(fieldKeyValues, IGNORE_CASE_COMPARATOR); ,Arrays.sort(fieldKeyValues, 0, longValues);
+compilation error,380,replace,[CE] cannot find symbol tzNames,KeyValue[] fieldKeyValues= nameValues.get(fieldInt); ,KeyValue[] fieldKeyValues = tzNames.get(fieldInt);
+increase failing tests,379,replace, [FE] AssertionFailedError testLocales_Long_BC,Integer fieldInt = Integer.valueOf(field); ,Integer fieldInt = Integer.valueOf(0);
+increase failing tests,381,replace, [FE] NullPointerException testAmPm,if(fieldKeyValues==null) { ,if(fieldKeyValues!= null) {
+increase failing tests,381,replace, [FE] NullPointerException testAmPm,if(fieldKeyValues==null) { ,if(fieldKeyValues!= null || fieldKeyValues.length == 0) {
+increase failing tests,381,replace, [FE] NullPointerException testAmPm,if(fieldKeyValues==null) { ,if(fieldKeyValues!= null || fieldKeyValues.length < 0) {
+increase failing tests,435,add, [FE] NullPointerException testAmPm,,  Arrays.sort(fieldKeyValues, IGNORE_CASE_COMPARATOR);
+compilation error,435,add,[CE] ';' expected,,  Arrays.sort(fieldKeyValues, 0, longValues), shortValues);
+compilation error,383,add,[CE] cannot find symbol,,  String[] shortEras = toArray(symbols.getDisplayNames(Calendar.SHORT, locale)); fieldKeyValues = createKeyValues(shortEras, shortEras);
+compilation error,435,add,[CE] cannot find symbol keyValues,,  System.arraycopy(keyValues, 0, longValues, shortValues, 0);
+compilation error,406,replace,[CE] cannot find symbol tzNames,KeyValue[] prior = nameValues.putIfAbsent(fieldInt, fieldKeyValues); ,KeyValue[] prior = tzNames.putIfAbsent(fieldInt, prior);
+compilation error,382,replace,[CE] no suitable method found for getInstance(Integer),DateFormatSymbols symbols= DateFormatSymbols.getInstance(locale); ,DateFormatSymbols symbols = DateFormatSymbols.getInstance(fieldInt);
+compilation error,380,replace,[CE] cannot find symbol keyValues,KeyValue[] fieldKeyValues= nameValues.get(fieldInt); ,KeyValue[] fieldKeyValues = keyValues.get(fieldInt);
+compilation error,411,replace,[CE] cannot find symbol prior,return fieldKeyValues; ,return(fieldKeyValues == null? prior : fieldKeyValues.values());
+compilation error,434,add,[CE] method copy in class FastDateParser cannot be applied to given types;,,  KeyValue[] strategies = new KeyValue[count(longValues)+count(shortValues)]; copy(strategies, 0, longValues, shortValues);
+compilation error,379,add,[CE] cannot find symbol tzNames,,  Locale locale = tzNames.get(field);
+compilation error,407,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(prior);
+compilation error,411,add,[CE] cannot find symbol prior,,  prior = nameValues.get(fieldInt);
+compilation error,435,replace,[CE] method copy in class FastDateParser cannot be applied to given types;,copy(fieldKeyValues, copy(fieldKeyValues, 0, longValues), shortValues); ,copy(fieldKeyValues, copy(shortValues, 0, longValues), shortValues);
+compilation error,381,replace,[CE] cannot find symbol fieldValues,if(fieldKeyValues==null) { ,if(fieldKeyValues == null || fieldValues.length == 0) {
+compilation error,379,replace,[CE] no suitable method found for valueOf(int,int),Integer fieldInt = Integer.valueOf(field); ,Integer fieldInt = Integer.valueOf(field, 16);
+compilation error,180,replace,[CE] incomparable types: String and Pattern,return parsePattern; ,return(pattern == parsePattern)? parsePattern : new Pattern(tz.getParsePattern());
+compilation error,381,add,[CE] cannot find symbol tzNames,,  Locale locale = tzNames.get(fieldInt);
+compilation error,380,add,[CE] cannot find symbol tzNames,,  Locale locale = tzNames.get(fieldInt);
+compilation error,555,replace,[CE] cannot find symbol EMPTY_EXTERN_STRATEGY,return DAY_OF_WEEK_STRATEGY; ,return EMPTY_EXTERN_STRATEGY;
+compilation error,180,add,[CE] cannot find symbol tz,,  Pattern parsePattern = Pattern.compile(tz.getParsePattern());
+compilation error,436,add,[CE] method copy in class FastDateParser cannot be applied to given types;,,  copy(shortValues, copy(shortValues, 0, longValues));
+compilation error,382,add,[CE] cannot find symbol tzNames,,  Locale locale = tzNames.get(fieldInt);
+compilation error,406,add,[CE] variable fieldInt is already defined in method getDisplayNames(int),,  Integer fieldInt = nameValues.size();
+compilation error,434,replace,[CE] ';' expected,KeyValue[] fieldKeyValues= new KeyValue[count(longValues)+count(shortValues)]; ,KeyValue[] fieldKeyValues = new KeyValue[longValues.length+1] +count(shortValues.length+1)];
+compilation error,436,replace,[CE] non-static variable this cannot be referenced from a static context,Arrays.sort(fieldKeyValues, IGNORE_CASE_COMPARATOR); ,Arrays.sort(fieldKeyValues, this.nameValues);
+compilation error,407,replace,[CE] cannot find symbol,if(prior!=null) { ,if(prior!= null && prior.getType() == Token.FUNCTION) {
+compilation error,396,add,[CE] cannot find symbol,,  fieldKeyValues = createKeyValues(dayOfWeek(), null);
+compilation error,395,add,[CE] cannot find symbol KeyValues,,  KeyValues = createKeyValues(symbols.getDayOfWeek(), null);
+compilation error,395,replace,[CE] cannot find symbol,fieldKeyValues= createKeyValues(symbols.getWeekdays(), symbols.getShortWeekdays()); ,fieldKeyValues= createKeyValues(symbols.getDayOfWeek(), symbols.getDAY_OF_Week());
+compilation error,411,add,[CE] cannot find symbol,,  nameValues = strategies.get(fieldInt);
+increase failing tests,380,replace, [FE] StackOverflowError testAmPm,KeyValue[] fieldKeyValues= nameValues.get(fieldInt); ,KeyValue[] fieldKeyValues = getDisplayNames(fieldInt);
+compilation error,435,replace,[CE] method copy in class FastDateParser cannot be applied to given types;,copy(fieldKeyValues, copy(fieldKeyValues, 0, longValues), shortValues); ,copy(fieldKeyValues, copy(longValues, 0, shortValues), 0);
+compilation error,383,add,[CE] cannot find symbol tzNames,,  tzNames.put(fieldKeyValues, symbols);
+compilation error,395,replace,[CE] cannot find symbol,fieldKeyValues= createKeyValues(symbols.getWeekdays(), symbols.getShortWeekdays()); ,fieldKeyValues= createKeyValues(symbols.getDayOfWeek(), symbols.getDays());
+compilation error,435,add,[CE] no suitable method found for sort(KeyValue[],int,String[],String[]),,  Arrays.sort(fieldKeyValues, 0, longValues, shortValues);
+compilation error,436,replace,[CE] no suitable method found for sort(KeyValue[],int),Arrays.sort(fieldKeyValues, IGNORE_CASE_COMPARATOR); ,Arrays.sort(fieldKeyValues, 0);
+compilation error,434,add,[CE] no suitable method found for min(String[],String[]),,  int count = Math.min(longValues, shortValues);
+compilation error,407,add,[CE] cannot find symbol tzNames,,  prior = tzNames.get(fieldInt);
+compilation error,395,add,[CE] variable symbols is already defined in method getDisplayNames(int),,  Calendar symbols = Calendar.getInstance(locale);
+compilation error,436,add,[CE] method copy in class FastDateParser cannot be applied to given types;,,  copy(shortValues, 0, longValues);
+compilation error,180,add,[CE] non-static method toString() cannot be referenced from a static context,,  Pattern parsePattern =(Pattern)getParsePattern(); parsePattern.apply(Pattern.toString());
+compilation error,396,add,[CE] method getDisplayNames in class Calendar cannot be applied to given types;,,  fieldKeyValues = toArray(c.getDisplayNames(Calendar.DAY_OF_WEEK, locale));
+compilation error,407,replace,[CE] cannot find symbol,if(prior!=null) { ,if(prior!= null && prior.getValue()!= null) {
+compilation error,382,add,[CE] cannot find symbol,,  Locale locale = Calendar.getLocale();
+compilation error,411,replace,[CE] : expected,return fieldKeyValues; ,return(fieldKeyValues == null? KeyValues.FULL_VALUE_NUMBER_INT || fieldKeyValues.length == 0)? null : fieldKeyValues;
+compilation error,406,replace,[CE] cannot find symbol,KeyValue[] prior = nameValues.putIfAbsent(fieldInt, fieldKeyValues); ,KeyValue[] prior = strategies.get(fieldInt);
+compilation error,406,add,[CE] variable fieldInt is already defined in method getDisplayNames(int),,  Integer fieldInt = symbols.getField(field);
+compilation error,381,add,[CE] method getLocale in class FastDateParser cannot be applied to given types;,,  Locale locale = getLocale(fieldInt);
+compilation error,434,replace,[CE] ']' expected,KeyValue[] fieldKeyValues= new KeyValue[count(longValues)+count(shortValues)]; ,KeyValue[] fieldKeyValues = new KeyValue[0, longValues)+count(shortValues)];
+increase failing tests,555,add, [FE] StringIndexOutOfBoundsException testLocales_ShortNoEra_AD,,  formatField = formatField.substring(0, formatField.length() - 3);
+increase failing tests,555,add, [FE] StringIndexOutOfBoundsException testLocales_ShortNoEra_AD,,  case 'Y': formatField.substring(0, formatField.length() - 3);
+increase failing tests,555,add, [FE] StringIndexOutOfBoundsException testLocales_ShortNoEra_AD,,  formatField = formatField.substring(0, formatField.length() - 2);
+increase failing tests,555,add, [FE] StringIndexOutOfBoundsException testLocales_ShortNoEra_AD,,  case 'Y': formatField.substring(0, formatField.length() - 2);
+increase failing tests,555,add, [FE] StringIndexOutOfBoundsException testLocales_ShortNoEra_AD,,  formatField = formatField.substring(2, formatField.length() -1);
+compilation error,555,replace,[CE] bad operand types for binary operator '+',return DAY_OF_WEEK_STRATEGY; ,return DAY_OF_WEEK_STRATEGY + 1;
+compilation error,379,replace,[CE] no suitable method found for valueOf(Locale),Integer fieldInt = Integer.valueOf(field); ,Integer fieldInt = Integer.valueOf(locale);
+compilation error,383,replace,[CE] cannot find symbol key,switch(field) { ,switch(key) {
+compilation error,396,replace,[CE] cannot find symbol Preconditions,break; ,if(field!= Calendar.DAY_OF_WEEK) { break; } else { Preconditions.checkState(fieldKeyValues.length == 2); break; }
+compilation error,379,add,[CE] method getDisplayNames in class FastDateParser cannot be applied to given types;,,  ConcurrentMap nameValues = getDisplayNames(field, null);

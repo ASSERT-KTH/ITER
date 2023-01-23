@@ -1,0 +1,85 @@
+compilation error,285,add,[CE] cannot find symbol,,  Strategy[] strategies = cal.getStrategy();
+compilation error,283,replace,[CE] method setTime in class Calendar cannot be applied to given types;,cal.clear(); ,cal.setTime(timeZone);
+compilation error,283,add,[CE] cannot find symbol,,  Strategy[] strategies = matcher.getStrategy();
+compilation error,537,add,[CE] empty character literal,,  if(formatField.length() > 0) { if(formatField.charAt(0) == ''') { return new CopyQuotedStrategy(formatField); }
+increase failing tests,251,replace, [FE] ParseException testShortDateStyleWithLocales,if(date==null) { ,if(date!= null) {
+compilation error,251,replace,[CE] cannot find symbol,if(date==null) { ,if(date!= null ||!date.isLocal()) {
+compilation error,290,replace,[CE] cannot find symbol strategy,return cal.getTime(); ,return strategy.getTime();
+increase failing tests,287,replace, [FE] IndexOutOfBoundsException testShortDateStyleWithLocales,strategy.setCalendar(this, cal, matcher.group(i)); ,strategy.setCalendar(this, cal, matcher.group(i+1));
+compilation error,287,replace,[CE] method setCalendar in interface Strategy cannot be applied to given types;,strategy.setCalendar(this, cal, matcher.group(i)); ,strategy.setCalendar(this, cal, matcher.group(i), strategy);
+compilation error,180,add,[CE] cannot find symbol tzNames,,  Pattern parsePattern =(Pattern)tzNames.get(this.parsePattern);
+compilation error,282,replace,[CE] no suitable method found for getInstance(Locale,TimeZone),Calendar cal= Calendar.getInstance(timeZone, locale); ,Calendar cal = Calendar.getInstance(locale, timeZone);
+compilation error,287,add,[CE] method add in class Calendar cannot be applied to given types;,,  cal.add(strategy);
+compilation error,260,add,[CE] cannot find symbol,,  date = parse(source, new ParsePattern());
+compilation error,286,add,[CE] cannot find symbol,,  Strategy[] strategies = parsePattern.create(cal, i);
+compilation error,251,add,[CE] cannot find symbol,,  Locale locale = parse(source, new ParsePattern());
+increase failing tests,538,replace, [FE] StringIndexOutOfBoundsException testLocaleMatches,formatField= formatField.substring(1, formatField.length()-1); ,formatField= formatField.substring(1, formatField.length() -2);
+increase failing tests,538,replace, [FE] StringIndexOutOfBoundsException testLocaleMatches,formatField= formatField.substring(1, formatField.length()-1); ,formatField= formatField.substring(2, formatField.length() -1);
+compilation error,288,add,[CE] cannot find symbol,,  return strategy.get(cal.get(i));
+increase failing tests,537,replace, [FE] AssertionError testLANG_832,if(formatField.length()>2) { ,if(formatField.length() > 1) {
+compilation error,537,replace,[CE] empty character literal,if(formatField.length()>2) { ,if(formatField.length() > 1 && formatField.charAt(0) == ''') {
+compilation error,285,replace,[CE] cannot find symbol strategy,for(int i=0; i<strategies.length;) { ,for(int i=0; i < strategy.length;) {
+compilation error,282,add,[CE] cannot find symbol,,  Strategy[] strategies = matcher.getStrategy();
+compilation error,286,replace,[CE] cannot find symbol Strategies,Strategy strategy= strategies[i++]; ,Strategy strategy= Strategies[i++];
+increase failing tests,538,add, [FE] StringIndexOutOfBoundsException testLocaleMatches,,  formatField = formatField.substring(0, formatField.length() - 2);
+increase failing tests,538,add, [FE] StringIndexOutOfBoundsException testLocaleMatches,,  formatField = formatField.substring(0, formatField.length() -1);
+compilation error,538,add,[CE] unreachable statement,,  return new CopyQuotedStrategy(formatField.substring(0, formatField.length() - 2));
+compilation error,276,add,[CE] cannot find symbol,,  Strategy[] strategies = new Strategy[parsePattern.size() ];
+increase failing tests,250,replace, [FE] ParseException testShortDateStyleWithLocales,Date date= parse(source, new ParsePosition(0)); ,Date date = parse(source, new ParsePosition(1));
+compilation error,250,replace,[CE] cannot find symbol,Date date= parse(source, new ParsePosition(0)); ,Date date = parse(source, new ParsePattern(1));
+compilation error,276,replace,[CE] cannot find symbol,int offset= pos.getIndex(); ,int offset= source.getIndex();
+compilation error,289,replace,[CE] cannot find symbol,pos.setIndex(offset+matcher.end()); ,pos.setIndex(offset+matcher.length());
+compilation error,250,add,[CE] cannot find symbol,,  Locale locale = parse(source, new ParsePattern());
+compilation error,289,add,[CE] variable matcher is already defined in method parse(String,ParsePosition),,  Matcher matcher = strategy.getInstance(timeZone, locale);
+compilation error,180,add,[CE] cannot find symbol tz,,  Pattern parsePattern = Pattern.compile(tz.getParsePattern());
+compilation error,286,add,[CE] cannot find symbol,,  Strategies[] strategies = parseStrategy(source, i);
+compilation error,276,add,[CE] cannot find symbol,,  Strategy[] strategies = parsePattern.getStrategy();
+increase failing tests,286,replace, [FE] NumberFormatException testShortDateStyleWithLocales,Strategy strategy= strategies[i++]; ,Strategy strategy = strategies[i];
+compilation error,282,replace,[CE] no suitable method found for getInstance(String,TimeZone,Locale),Calendar cal= Calendar.getInstance(timeZone, locale); ,Calendar cal= Calendar.getInstance(source, timeZone, locale);
+compilation error,290,add,[CE] cannot find symbol,,  pos.setPosition(offset+matcher.end());
+compilation error,251,replace,[CE] cannot find symbol,if(date==null) { ,if(date == null || date.length() == 0) {
+compilation error,180,replace,[CE] cannot find symbol tz,return parsePattern; ,return(pattern == null)? parsePattern : new Pattern(tz.getParsePattern());
+compilation error,283,add,[CE] cannot find symbol,,  Strategy[] strategies = parseStrategy(source, pos);
+compilation error,537,replace,[CE] empty character literal,if(formatField.length()>2) { ,if(formatField.length() > 1 && formatField.charAt(1) == ''') {
+compilation error,260,add,[CE] variable date is already defined in method parse(String),,  Date date = parse(source, new ParsePattern());
+compilation error,537,add,[CE] unreachable statement,,  return getStrategy(formatField.substring(1));
+compilation error,250,add,[CE] cannot find symbol,,  Locale locale = parse(source, TimeZoneStrategy.getDefault());
+compilation error,538,add,[CE] unreachable statement,,  return getStrategy(formatField.substring(1));
+compilation error,285,add,[CE] cannot find symbol,,  Strategy[] strategies = parseStrategy(source, pos);
+compilation error,289,add,[CE] variable offset is already defined in method parse(String,ParsePosition),,  int offset = matcher.getOffset();
+compilation error,250,replace,[CE] cannot find symbol,Date date= parse(source, new ParsePosition(0)); ,Date date = parse(source, new ParsePattern(0));
+compilation error,287,replace,[CE] no suitable method found for group(int,Strategy),strategy.setCalendar(this, cal, matcher.group(i)); ,strategy.setCalendar(this, cal, matcher.group(i, strategy));
+compilation error,282,add,[CE] cannot find symbol,,  TimeZone timeZone = Matcher.parse(source, pos);
+compilation error,287,add,[CE] variable matcher is already defined in method parse(String,ParsePosition),,  Strategy matcher = parseStrategy(source, i);
+compilation error,251,add,[CE] cannot find symbol,,  Locale locale = parsePattern();
+increase failing tests,285,replace, [FE] AssertionError testShortDateStyleWithLocales,for(int i=0; i<strategies.length;) { ,for(int i=0; i < strategies.length - 1;) {
+compilation error,285,replace,[CE] ';' expected,for(int i=0; i<strategies.length;) { ,for(int i=0; i < strategies.length);) {
+compilation error,288,add,[CE] method setTime in class Calendar cannot be applied to given types;,,  cal.setTime(offset); return strategy;
+compilation error,276,replace,[CE] cannot find symbol,int offset= pos.getIndex(); ,int offset= parsePattern.getIndex();
+compilation error,289,replace,[CE] cannot find symbol,pos.setIndex(offset+matcher.end()); ,pos.setIndex(offset+matcher.intValue());
+compilation error,283,replace,[CE] cannot find symbol,cal.clear(); ,Strategy[] strategies = cal.getStrategy();
+compilation error,290,replace,[CE] bad operand types for binary operator '-',return cal.getTime(); ,return cal.getTime() - 1;
+compilation error,250,add,[CE] constructor ParseException in class ParseException cannot be applied to given types;,,  Locale locale = getLocale(); if(locale == null || locale.equals(JAPANESE_IMPERIAL)) { throw new ParseException(""); }
+compilation error,289,replace,[CE] cannot find symbol strategy,pos.setIndex(offset+matcher.end()); ,pos.setIndex(offset+strategy.end());
+compilation error,290,replace,[CE] package strategy does not exist,return cal.getTime(); ,return strategy.cal.getTime();
+compilation error,251,replace,[CE] cannot find symbol,if(date==null) { ,if(date == null || date.format() == JAPANESE_IMPERIAL) {
+increase failing tests,276,replace, [FE] StringIndexOutOfBoundsException testShortDateStyleWithLocales,int offset= pos.getIndex(); ,int offset = pos.getIndex() - 1;
+compilation error,276,replace,[CE] no suitable method found for indexOf(ParsePosition),int offset= pos.getIndex(); ,int offset = source.indexOf(pos);
+compilation error,289,add,[CE] variable offset is already defined in method parse(String,ParsePosition),,  int offset = matcher.getTime();
+compilation error,282,replace,[CE] no suitable method found for getInstance(String,ParsePosition),Calendar cal= Calendar.getInstance(timeZone, locale); ,Calendar cal = Calendar.getInstance(source, pos);
+compilation error,283,add,[CE] cannot find symbol,,  Strategy[] strategies = Calendar.getStrategy(cal, pos);
+compilation error,290,add,[CE] cannot find symbol,,  matcher.setValue(source, pos);
+compilation error,260,add,[CE] no suitable method found for parse(String,Locale),,  date = parse(source, JAPANESE_IMPERIAL);
+compilation error,283,replace,[CE] no suitable constructor found for Date(TimeZone,Locale),cal.clear(); ,cal.setTime(new Date(timeZone, locale));
+compilation error,260,replace,[CE] cannot find symbol date,return date; ,return date.date;
+compilation error,286,add,[CE] ';' expected,,  Strategies[] strategies =(Strategies[i])matcher.find(source, i);
+compilation error,282,add,[CE] cannot find symbol,,  TimeZone timeZone = Matcher.getTimeZone(source, pos);
+compilation error,287,replace,[CE] cannot find symbol,strategy.setCalendar(this, cal, matcher.group(i)); ,strategy.setCalendar(this, cal, matcher.get(i));
+compilation error,180,add,[CE] non-static method toString() cannot be referenced from a static context,,  Pattern parsePattern =(Pattern)getParsePattern(); parsePattern.apply(Pattern.toString());
+compilation error,285,replace,[CE] ';' expected,for(int i=0; i<strategies.length;) { ,for(int i=0; i < strategies.length, 0;) {
+compilation error,276,add,[CE] cannot find symbol,,  Locale locale = pos.getLocale();
+compilation error,286,replace,[CE] cannot find symbol Strategies,Strategy strategy= strategies[i++]; ,Strategy strategy =(Strategies[i++] == null)? strategies[i++] : strategies[i++];
+compilation error,285,add,[CE] cannot find symbol,,  Strategies[] strategies = Calendar.getStrategy(cal);
+compilation error,537,replace,[CE] cannot find symbol,if(formatField.length()>2) { ,if(formatField.length() > 1 && isSupported(formatField.charAt(0))) {
+compilation error,537,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(formatField);
+compilation error,251,add,[CE] cannot find symbol,,  Locale locale = source.getLocale();

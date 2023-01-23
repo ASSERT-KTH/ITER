@@ -1,279 +1,39 @@
-patch is same with buggy,,super(); ,super();
-compilation error,[CE] cannot find symbol,super(); ,super(StandardToolTipTagFragmentGenerator.size() - 1);
-compilation error,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,super(); ,super(StandardToolTipTagFragmentGenerator.DEFAULT_LOAD_FACTOR, true);
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,super(StandardTipTagFragmentGenerator.DEFAULT_LOAD_FACTOR, true);
-compilation error,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,super(); ,super(StandardToolTipTagFragmentGenerator.DEFAULT_LOAD_FACTOR, false);
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,super(StandardTipTagFragmentGenerator.DEFAULT_LOAD_FACTOR, false);
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,super(StandardTipTagFragmentGenerator.size() - 1);
-compilation error,[CE] cannot find symbol DEFAULT_LOAD_FACTOR,super(); ,super(StandardToolTipTagFragmentGenerator.DEFAULT_LOAD_FACTOR);
-compilation error,[CE] cannot find symbol,super(); ,super(StandardToolTipTagFragmentGenerator.size());
-compilation error,[CE] cannot find symbol,super(); ,super(StandardToolTipTagFragmentGenerator.getInstance());
-compilation error,[CE] cannot find symbol tagFragment,,if(this.tagFragment!= null) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol,,if(isToolTipTagFragment()) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol,,if(isToolTipTagFragment()) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { Preconditions.checkState(this.toolTipTagFragmentGenerator()); }
-compilation error,[CE] cannot find symbol tagFragment,,if(this.tagFragment!= null) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] illegal start of expression,,if(this.tagFragment!= null) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); >>
-compilation error,[CE] generics are not supported in -source 1.4,,if(this.tagFragment!= null) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); <
-compilation error,[CE] ';' expected,,if(isToolTipTagFragment()) { this.toolTipTagFragmentGenerator = getToolTipTagFragmentGenerator(); } else { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator()
-compilation error,[CE] ';' expected,,if(isToolTipTagFragment()) { this.toolTipTagFragmentGenerator = getToolTipTagFragmentGenerator(); } else { this.toolTipTagFragmentGenerator = new StandardToolTipTagTagFragmentGenerator()
-compilation error,[CE] ';' expected,,if(isToolTipTagFragment()) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.toolTipTagFragmentGenerator() = new StandardToolTipTagFragmentGenerator()
-compilation error,[CE] cannot find symbol,,if(isToolTipTagFragment()) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { Preconditions.checkState(this.toolTipTagFragmentGenerator); }
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator();
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator = getToolTipTagFragmentGenerator();
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)super();
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator =!this.toolTipTagFragmentGenerator();
-compilation error,[CE] generics are not supported in -source 1.4,} ,this.toolTipTagFragmentGenerator = new HashSet < StandardToolTipTagFragment>();
-compilation error,[CE] ';' expected,} ,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator);
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator;
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGeneratorInstance();
-compilation error,[CE] illegal start of expression,} ,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator.generate();
-compilation error,[CE] cannot find symbol toolTipTagFragmentGenerator,,this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol toolTipTagFragmentGenerator,,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator();
-compilation error,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this(null);
-compilation error,[CE] cannot find symbol toolTipTagFragmentGenerator,,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)super();
-compilation error,[CE] cannot find symbol toolTipTagFragmentGenerator,,this.toolTipTagFragmentGenerator =(StandardTipTagFragment)this.toolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol,,this(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] ';' expected,,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator);
-compilation error,[CE] cannot find symbol,,this.toolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol toolTipTagFragmentGenerator,,this.toolTipTagFragmentGenerator =(StandardToolTipTagFragment)this.toolTipTagFragmentGenerator;
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt=";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return "title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt=";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText +"" alt=";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText + "" alt=""";
-compilation error,[CE] cannot find symbol toolTipTagFragmentGenerator,,this.toolTipTagFragmentGenerator.generateToolTipFragment(toolTipText);
-compilation error,[CE] cannot find symbol,,super.generateToolTipFragment(toolTipText);
-compilation error,[CE] cannot find symbol,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator.generateToolTipFragment(toolTipText); }
-compilation error,[CE] cannot find symbol,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.generateToolTipFragment(toolTipText); }
-compilation error,[CE] illegal start of expression,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator.generateToolTipFragment(toolTipText); } else { this.toolTipTagFragmentGenerator =
-compilation error,[CE] ,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator.generateToolTipFragment(toolTipText); } else { toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator
-compilation error,[CE] <identifier> expected,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator.generateToolTipFragment(toolTipText); } else { ToolTipTagTagFragmentGenerator.
-compilation error,[CE] cannot find symbol,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator.generateToolTipFragment(); }
-compilation error,[CE] not a statement,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.generateToolTipFragment(); if(toolTipText.length() > 0) { tool
-compilation error,[CE] cannot find symbol,,if(toolTipText instanceof StandardToolTipTagFragment) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.generateToolTipFragment(); }
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkState(this.tagFragmentGenerator == null); this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkState(this.tagFragmentGenerator!= null); this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(this); this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkState(this.tagFragmentGenerator.isEmpty()); this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] call to super must be first statement in constructor,,super();
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkArgument(!this.tagFragmentGenerator.isEmpty()); this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] cannot find symbol,,this(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkState(this.tagFragmentGenerator.isEmpty()); this.tagFragmentGenerator = StandardToolTipTagFragmentGenerator.newInstance();
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkState(this.tagFragmentGenerator == null); this.tagFragmentGenerator = StandardToolTipTagFragmentGenerator.newInstance();
-compilation error,[CE] cannot find symbol tagFragmentGenerator,,Preconditions.checkState(this.tagFragmentGenerator!= null); this.tagFragmentGenerator = StandardToolTipTagFragmentGenerator.newInstance();
-compilation error,[CE] illegal start of expression,} ,setStandardToolTipTagFragmentGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipTagFragmentGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setStandardToolTipTagFragmentGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setStandardTipTagFragmentGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setStandardToolTipTagFragmentGenerator(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setStandardToolTipTagFragmentGenerator(getDefaultToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setStandardToolTipTagFragmentGenerator(",");
-compilation error,[CE] illegal start of expression,} ,setDefaultToolTipTagFragmentGenerator();
-compilation error,[CE] illegal start of expression,} ,setDefaultToolTipTagFragmentGenerator(null);
-compilation error,[CE] illegal start of expression,} ,setDefaultToolTipTagFragmentGenerator(false);
-patch is same with buggy,,super(); ,super();
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTipTagFragmentGenerator();
-compilation error,[CE] constructor Object in class Object cannot be applied to given types;,super(); ,super(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,super(); ,super(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTipTagFragment();
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTipTagFragmentGenerators();
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTipGenerator();
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTip();
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTipCodec();
-compilation error,[CE] cannot find symbol,super(); ,checkMethodStandardToolTipGenerators();
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText + "" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return " title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title=" + toolTipText +"" alt="""";
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 1); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length()); }
-compilation error,[CE] variable toolTipText is already defined in method generateToolTipFragment(String),,ToolTipTagFragmentGenerator toolTipText = ToolTipTagGenerator.generateToolTipFragment(toolTipText);
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 1); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = toolTipText.substring(0, toolTipText.length()); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = new StandardToolTipTagFragmentGenerator().generateToolTipFragment(); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 2); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() > 0) { toolTipText = new StandardToolTipTagFragmentGenerator().generateToolTipFragment(); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 3); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText == null) { if(toolTipText.length() == 0) { toolTipText = toolTipText.substring(1); }
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(it.hasNext()) { throw new IllegalArgumentException(""); }
-compilation error,[CE] cannot find symbol JsonScope,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(it.hasNext()) { throw new IllegalArgumentException(""); }
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { if(!isAssignableFrom(i)) { throw new IllegalArgumentException(""); }
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < this.tooltips.size(); i++) { if(getImmutableFlag(i)) { throw new IllegalArgumentException(""); }
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { if(!isAssignableFrom(i)) { return ISOChronology.getInstanceUTC(); }
-compilation error,[CE] ')' expected,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); Arrays.sort(this.toolTipTagFragmentGenerator
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(it.hasNext()) {
-compilation error,[CE] cannot find symbol JsonScope,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] illegal start of expression,,for(int i = 0; i < JsonScope.WHOLE_COLLECTION; i++) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(it.hasNext()) { throw new RuntimeException(""); }
-compilation error,[CE] cannot find symbol,,setBaseToolTipTagFragmentGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.generator());
-compilation error,[CE] cannot find symbol,,setBaseToolTipTagFragmentGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.getInstance());
-compilation error,[CE] cannot find symbol instance,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.instance);
-compilation error,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.class);
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(new TagFragmentGenerator());
-compilation error,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,,Preconditions.checkNotNull(StandardTipTagFragmentGenerator.getInstance());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.getName());
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt="""";
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { throw new IllegalArgumentException(""); }
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] not a statement,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!hasNext()) { this.toolTipTagFragmentGenerator
-compilation error,[CE] illegal start of expression,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(this.toolTipTagFragmentGenerator!= null) { throw new IllegalArgumentException(""); }
-compilation error,[CE] illegal start of expression,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(this.toolTipTagFragmentGenerator == null) { throw new IllegalArgumentException(""); }
-compilation error,[CE] not a statement,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(this.toolTipTagFragmentGenerator!= null) { this.toolTip
-compilation error,[CE] not a statement,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(this.toolTipTagFragmentGenerator == null) { this.toolTip
-compilation error,[CE] not a statement,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(this.toolTipTagFragmentGenerator < null) { this.toolTip
-compilation error,[CE] ')' expected,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!this.toolTipTagFragmentGenerator
-patch is same with buggy,,super(); ,super();
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_DOCUMENT_INIT_ERROR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_INIT_ERROR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] ';' expected,super(); ,super(), StandardToolTipTagFragmentGenerator.DEFAULT_INIT_ERROR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] reached end of file while parsing,,while(toolTipText.length() > 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 2);
-compilation error,[CE] reached end of file while parsing,,while(toolTipText.length() > 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 3);
-compilation error,[CE] reached end of file while parsing,,while(toolTipText.length() > 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 1);
-compilation error,[CE] reached end of file while parsing,,while(toolTipText.length() > 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 4);
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText instanceof StandardToolTipTag) { for(String alt : toolTipText.getAlternates()) { this.toolTipTagFragmentGenerator.generateToolTipFragment(","); }
-compilation error,[CE] cannot find symbol Preconditions,,Preconditions.checkArgument(toolTipText.length() > 0);
-compilation error,[CE] ,,if(toolTipText instanceof StandardToolTipTag) { String alt = toolTipText.substring(0, toolTipText.length() - 2); if(alt!= "" || alt == "") { return new StandardToolTipTag
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText instanceof StandardToolTipTag) { for(String alt : toolTipText.getAlternates()) { this.toolTipTagFragmentGenerator.generateToolTipFragment("/"); }
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText instanceof StandardToolTipTag) { for(String alt : toolTipText.getAlternates()) { this.toolTipTagFragmentGenerator.generateToolTipFragment("alt="); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { throw new IllegalArgumentException(""); }
-compilation error,[CE] not a statement,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!super.hasNext()) { this.toolTipTagFragmentGenerator
-compilation error,[CE] ,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.newInstance()); if(this.tagFragmentGenerator!= null) { throw new IllegalArgumentException(""); }
-compilation error,[CE] not a statement,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!super.hasNext()) { this.toolTipTagFragmentGen
-compilation error,[CE] ';' expected,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.newInstance()); if(this.tagFragmentGenerator instanceof StandardToolTipTag
-compilation error,[CE] ,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.newInstance()); if(this.tagFragmentGenerator!= null) { throw new IllegalArgumentException("
-compilation error,[CE] ')' expected,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!this.tagFlag && isSameTagFragmentGenerator
-compilation error,[CE] ';' expected,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = ToolTipTagFragmentGenerator.newInstance()); if(this.tagFragmentGenerator!= null) { this.tag
-compilation error,[CE] not a statement,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!super.hasNext()) { this.toolTipTagFragment
-compilation error,[CE] ')' expected,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); if(!this.tagFlag && isStandardTagFragmentGenerator
-patch is same with buggy,,super(); ,super();
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_THRESHOLD);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_INIT_ERROR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_MASK, DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_TYPE);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_LOAD_FACTOR, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_TIMING_FONT);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_MASK, DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_THRESHOLD);
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,super(); ,super(DefaultToolTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR, DEFAULT_TIMING_PROPERTY);
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setToolTipGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setToolTipGenerator(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,this.setToolTipGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new BasicToolTipGenerator());
-compilation error,[CE] illegal start of expression,} ,setBaseToolTipGenerator(getDefaultToolTipGenerator());
-compilation error,[CE] illegal start of expression,} ,setToolTipGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] generics are not supported in -source 1.4,} ,setBaseToolTipGenerator(new HashMap < String,Object>());
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { throw new IllegalArgumentException(""); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 2); }
-compilation error,[CE] cannot find symbol Validate,,Validate.isTrue(toolTipText.length() == 0);
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 3); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 2); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { return toolTipText.substring(0, toolTipText.length() - 2); }
-compilation error,[CE] cannot find symbol Preconditions,,Preconditions.checkArgument(toolTipText.length() == 0);
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { return this; }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { toolTipText = toolTipText.substring(0, toolTipText.length() - 3); }
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 1); }
-compilation error,[CE] cannot find symbol,,setBaseToolTipGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,setBaseToolTipGenerator(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTip()) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol,,setBaseToolTipGenerator(new BasicToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTip()) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGeneratorInstance(); }
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTip()) { throw new IllegalArgumentException(""); }
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTip()) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = null; }
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTip()) { throw new IllegalArgumentException(""); } else { Preconditions.checkNotNull(standardToolTipTagFragmentGenerator()); }
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTip()) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new BasicToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol,,if(super.isStandardToolTipTagFragmentGenerator()) { throw new IllegalArgumentException(""); }
-compilation error,[CE] call to super must be first statement in constructor,,super();
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(standardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,this(new DefaultToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.size());
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol DefaultToolTipTagFragmentGenerator,,Preconditions.checkNotNull(DefaultToolTipTagFragmentGenerator);
-compilation error,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator.generate());
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt=";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt="+""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt="""";
-patch is same with buggy,,super(); ,super();
-compilation error,[CE] cannot find symbol,super(); ,checkInvariant();
-compilation error,[CE] cannot find symbol,super(); ,setToolTipTagFragmentGenerator(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,super(); ,setToolTipTagFragmentGenerator("", new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,checkAndUpdate(StandardTipTagFragmentGenerator.DEFAULT_TITLE_FONT, DEFAULT_CAPACITY, DEFAULT_LOAD_FACTOR);
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,checkAndUpdate(StandardTipTagFragmentGenerator.DEFAULT_TITLE_FONT);
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,checkAndUpdate(StandardTipTagFragmentGenerator.DEFAULT_CAPACITY, DEFAULT_TITLE_FONT);
-compilation error,[CE] cannot find symbol StandardTipTagFragmentGenerator,super(); ,checkAndUpdate(StandardTipTagFragmentGenerator.DEFAULT_TITLE_FONT, Base64Variants.getDefaultVariant());
-compilation error,[CE] cannot find symbol,super(); ,checkAndFixToolTipTags(new StandardToolTipTagFragmentGenerator());
-compilation error,[CE] cannot find symbol,super(); ,setToolTipTagGenerator(new StandardToolTipTagGenerator());
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { throw new IllegalArgumentException(""); } else { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.toolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { throw new IllegalStateException(""); } else { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { throw new IllegalArgumentException(""); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator(); } else { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { throw new IllegalStateException(""); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] cannot find symbol Feature,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { throw new IllegalArgumentException(""); }
-compilation error,[CE] not a statement,,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.toolTipTagFragmentGenerator
-compilation error,[CE] illegal start of expression,,while(" { " + getClass().getName()) { this.tag = new StandardToolTipTagFragmentGenerator();
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText + "" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return """ + toolTipText +"" alt="""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"title="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return"titled="" + toolTipText +"" alt=""";
-compilation error,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" =" + toolTipText +"" alt=""";
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.split()) { if(toolTipText.length() == 0) { return new StandardToolTipTagFragmentGenerator
-compilation error,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { return new StandardToolTipTagFragmentGenerator(); }
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.getSimpleName()) { if(toolTipText.length() == 0) { return new StandardToolTipTagFragmentGenerator
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.split()) { if(toolTipText.equals("")) { return this; }
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.split()) { if(toolTipText.length() == 0) { return this; }
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.split()) { if(toolTipText.length() == 0) { return">"; }
-compilation error,[CE] unclosed string literal,,if(toolTipText!= null) { if(toolTipText.length() == 0) { return" <
-compilation error,[CE] cannot find symbol Validate,,Validate.notNull(toolTipText);
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.getSimpleName()) { if(toolTipText.equals("")) { return this; }
-compilation error,[CE] for-each loops are not supported in -source 1.4,,if(toolTipText!= null) { for(String toolTipText : toolTipText.split()) { if(toolTipText.length() == 0) { return" title="; }
+patch is same with buggy,54,replace,,super(); ,super();
+compilation error,54,replace,[CE] constructor Object in class Object cannot be applied to given types;,super(); ,super(">");
+compilation error,54,add,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this(null);
+compilation error,54,add,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this(null, null);
+compilation error,65,replace,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt=""";
+compilation error,65,replace,[CE] missing return statement,return " title=\"" + toolTipText + "\" alt=\"\""; , 
+compilation error,55,replace,[CE] illegal start of expression,} ,if(this.tagFragment!= null) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
+compilation error,55,replace,[CE] illegal start of expression,} ,if(getToolTipTags().isEmpty()) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
+compilation error,55,replace,[CE] illegal start of expression,} , 
+compilation error,55,add,[CE] cannot find symbol tagFragment,,if(this.tagFragment!= null) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
+compilation error,65,add,[CE] cannot find symbol,,if(toolTipText instanceof StandardToolTipTagFragment) { ToolTipTagTagFragmentGenerator.generateToolTipTagFragment(toolTipText); }
+compilation error,65,add,[CE] ,,if(toolTipText instanceof StandardToolTipTagFragment) { ToolTipTagTagFragmentGenerator.generateToolTipTagFragment(toolTipText); } else { toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator
+compilation error,65,add,[CE] ,,if(toolTipText instanceof StandardToolTipTagFragment) { ToolTipTagTagFragmentGenerator.generateToolTipTagFragment(toolTipText); } else { toolTipTagFragmentGenerator = new StandardToolTipTag
+compilation error,55,add,[CE] cannot find symbol,,if(super.isStandardToolTip()) { throw new IllegalArgumentException(""); }
+compilation error,55,add,[CE] cannot find symbol,,if(super.isStandardToolTip()) { throw new IllegalArgumentException(""); } else { Preconditions.checkNotNull(standardToolTipTagFragmentGenerator()); }
+compilation error,55,add,[CE] cannot find symbol,,if(super.isStandardToolTip()) { StandardToolTipTagFragmentGenerator(); } else { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
+compilation error,54,add,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardToolTipTagFragmentGenerator());
+compilation error,54,add,[CE] cannot find symbol,,Preconditions.checkNotNull(StandardTipTagFragmentGenerator());
+patch is same with buggy,54,replace,,super(); ,super();
+compilation error,54,replace,[CE] constructor Object in class Object cannot be applied to given types;,super(); ,super(" { ");
+compilation error,65,add,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { throw new IllegalArgumentException(""); }
+compilation error,65,add,[CE] reached end of file while parsing,,if(toolTipText!= null) { if(toolTipText.length() == 0) { toolTipText = ToolTipText.substring(0, toolTipText.length() - 2); }
+compilation error,65,add,[CE] cannot find symbol Validate,,Validate.isTrue(toolTipText.length() == 0);
+compilation error,65,replace,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return""" + toolTipText +"" alt="""";
+compilation error,55,replace,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new StandardToolTipTagFragmentGenerator());
+compilation error,55,replace,[CE] illegal start of expression,} ,setBaseToolTipGenerator(new DefaultToolTipTagFragmentGenerator());
+compilation error,65,add,[CE] cannot find symbol Validate,,Validate.notNull(toolTipText);
+compilation error,65,add,[CE] cannot find symbol Validate,,Validate.notNull(toolTipText); this.toolTipText = toolTipText;
+compilation error,65,add,[CE] cannot find symbol Validate,,Validate.notNull(toolTipText); this.toolTipText = toolTipText.toString();
+patch is same with buggy,54,replace,,super(); ,super();
+compilation error,54,replace,[CE] cannot find symbol,super(); ,checkInvariant();
+compilation error,55,add,[CE] cannot find symbol Feature,,if(isEnabled(Feature.AUTO_CLOSE_TARGET)&& isEnabled(Feature.FLAG_DEFAULT_LOAD_FACTOR)) { this.tagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
+compilation error,55,add,[CE] cannot find symbol Feature,,if(isEnabled(Feature.AUTO_CLOSE_TARGET)&& isEnabled(Feature.FLAG_DEFAULT_LOAD_FACTOR)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator(); }
+compilation error,55,add,[CE] ';' expected,,if(isEnabled(Feature.AUTO_CLOSE_TARGET)&& isEnabled(Feature.FLAG_DEFAULT_LOAD_FACTOR)) { this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator()); }
+compilation error,65,replace,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText + "" alt="""";
+compilation error,65,replace,[CE] ,return " title=\"" + toolTipText + "\" alt=\"\""; ,return" title="" + toolTipText + "" alt=""";
+compilation error,54,add,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,,this("n");
+compilation error,55,replace,[CE] illegal start of expression,} ,if(isEnabled(Feature.AUTO_CLOSE_TARGET)) { throw new IllegalArgumentException(""); }
+compilation error,55,replace,[CE] illegal start of expression,} ,if(isEnabled(Feature.QUOTE_FIELD_NAMES)) { throw new IllegalArgumentException(""); }

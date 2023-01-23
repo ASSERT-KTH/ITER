@@ -1,0 +1,10 @@
+increase failing tests,75,replace, [FE] ArrayIndexOutOfBoundsException testMath789, int  r  =(index  <  0)?  0  :  b.length;  ,int r =(b.length < 0)? 0 : b.length;
+increase failing tests,71,replace, [FE] AssertionError testMath789, for(int  i  =  0;  i  <  indent;  ++i)  {  ,for(int i = 0; i < small; ++i) {
+increase failing tests,72,replace, [FE] NonPositiveDefiniteMatrixException testMath789,   b[i]  =  b[i];  ,b[i] = c[i];
+increase failing tests,67,replace, [FE] AssertionError testMath789,   ,double[][] b =(double[][])c.clone();
+increase failing tests,67,replace, [FE] AssertionError testMath789,   ,double[][] b =(double[][])c;
+increase failing tests,75,replace, [FE] ArrayIndexOutOfBoundsException testMath789,   if(c[i][i]  >  b[i][i])  {  for(int  i  =  0;  i  <  order;  ++i)  {  c[i][i]  =  b;  }  ,int r = matrix.getRowDimension();
+increase failing tests,76,replace, [FE] NotStrictlyPositiveException testMath789, for(boolean  loop  =  false;  loop  >  0;)  {  ,for(boolean loop = false; r > 0;) {
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[6][order];  ,final double[][] b = new double[256][0];
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[6][order];  ,final double[][] b = new double[256][1];
+increase failing tests,67,replace, [FE] ArrayIndexOutOfBoundsException testMath789, final  double[][]  b  =  new  double[6][order];  ,final double[][] b = new double[256][00];

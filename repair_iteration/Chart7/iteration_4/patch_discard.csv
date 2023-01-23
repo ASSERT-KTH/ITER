@@ -1,0 +1,595 @@
+compilation error,321,add,[CE] incompatible types, ,this.minEndIndex =(index << 0)? 0 : index;
+compilation error,552,add,[CE] unreachable statement, ,return(this.maxMiddleIndex > 0? this.maxMiddleIndex : 0);
+compilation error,302,add,[CE] illegal start of expression, ,if(this.minMiddleIndex >= this.maxMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); >>
+compilation error,310,add,[CE] cannot find symbol minimumMiddleIndex, ,this.minimumMiddleIndex = index / 2;
+compilation error,131,add,[CE] cannot find symbol mMiddleIndex, ,this.minMiddleIndex = Math.min(minMiddleIndex, mMiddleIndex);
+compilation error,288,replace,[CE] cannot find symbol e, if(this.minMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.maxEndIndex >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,288,replace,, if(this.minMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  , 
+increase failing tests,271,replace, [FE] AssertionFailedError, index  =(index  <  0)?  index  -  1  :  index;  ,index =(index > 0)? index - 1 : index;
+increase failing tests,271,replace, [FE] AssertionFailedError, index  =(index  <  0)?  index  -  1  :  index;  ,index =(index >= 0)? index - 1 : 0;
+patch is same with buggy,246,replace,, if(item.getPeriod()  ==  null)  {  this.data.add(item);  }  , 
+compilation error,249,add,[CE] illegal start of expression, ,if(item.getPeriod()!= null) { updateBounds(item.getPeriod(), this.data.size() + 1); fireSeriesChanged(); >>
+patch is same with buggy,130,replace,, if(this.domain!=  domain)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(this.domain!= domain) { this.domain = domain; this.range = range; }
+patch is same with buggy,131,replace,, this.minEndIndex  =  0;  ,this.minEndIndex = 0;
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index * 2; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index * 2; }
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(this.minEndIndex,  minStartIndex);  ,this.minEndIndex = Math.min(this.minEndIndex, minStartIndex);
+patch is same with buggy,131,replace,, this.minStartIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxMiddleIndex;  ,this.minStartIndex = minMiddleIndex; this.maxEndIndex = maxMiddleIndex;
+increase failing tests,332,add, [FE]  Size, ,this.minEndIndex = index + 3;
+patch is same with buggy,332,replace,, this.maxEndIndex  =  -index  -  2;  ,this.maxEndIndex = -index - 2;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index - 1; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index - 1; }
+patch is same with buggy,552,replace,, if(this.maxMiddleIndex  <  0)  {  return  this.maxMiddleIndex;  }  ,if(this.maxMiddleIndex < 0) { return this.maxMiddleIndex; }
+compilation error,552,replace,[CE] missing return statement, if(this.maxMiddleIndex  <  0)  {  return  this.maxMiddleIndex;  }  ,if(this.maxMiddleIndex > 0) { return this.maxMiddleIndex; }
+compilation error,317,add,[CE] illegal start of expression, ,if(this.minEndIndex < index * 2) { this.minEndIndex = index * 2; >>
+compilation error,317,add,[CE] illegal start of expression, ,if(this.minMiddleIndex > index) { this.minEndIndex = index * 2; if(this.maxMiddleIndex < index) { this.minEndIndex = index * 2; }
+compilation error,317,add,[CE] illegal start of expression, ,if(this.minMiddleIndex > index) { this.minEndIndex = index * 2; if(this.maxMiddleIndex > index) { this.minEndIndex = index * 2; }
+increase failing tests,321,replace, [FE] AssertionFailedError, this.minEndIndex  =  index  *  2  +  1;  ,this.minEndIndex =(index < 1)? 1 : index + 1;
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  minEndIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minMiddleIndex = minEndIndex; this.maxEndIndex = maxStartIndex;
+increase failing tests,131,add, [FE]  Size, ,this.minMiddleIndex = minMiddleIndex + 2;
+increase failing tests,131,add, [FE]  Size, ,this.minMiddleIndex = minMiddleIndex + 3;
+compilation error,130,add,[CE] bad operand types for binary operator '<', ,this.domain = domain; if(this.range < range) { this.range = range; }
+compilation error,130,add,[CE] cannot find symbol Range, ,if(this.domain!= null) { this.domain = domain; } else if(this.range!= Range) { this.data = new ArrayList(); }
+compilation error,321,add,[CE] incompatible types, ,this.minEndIndex =(index >> 1)? 1 : index;
+patch is same with buggy,552,replace,, return  this.maxMiddleIndex  /(this.minMiddleIndex  >=  0?  this.maxMiddleIndex  :  data.size());  ,return this.maxMiddleIndex /(this.minMiddleIndex >= 0? this.maxMiddleIndex : data.size());
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+compilation error,302,replace,[CE] cannot find symbol e, if(this.maxMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex < 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,321,replace,, this.maxEndIndex  =  index  *  2;  ,this.maxEndIndex = index * 2;
+patch is same with buggy,131,replace,, this.data  =  new  ArrayList();  ,this.data = new ArrayList();
+compilation error,131,replace,[CE] cannot find symbol, this.data  =  new  ArrayList();  ,this.data = new ArrayListWithCapacity(2);
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { this.range = range; if(this.data == null) { this.data = new ArrayList(); }
+compilation error,130,replace,[CE] illegal start of expression, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  if(this.range!=  range)  {  this.range  =  range;  }  ,if(this.domain!= null) { this.domain = domain; if(this.range!= range) { this.range = range; }
+compilation error,130,replace,[CE] illegal start of expression, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  if(this.range!=  range)  {  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; if(this.range!= range) { this.range = range; }
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  maxStartIndex);  , 
+patch is same with buggy,130,replace,, if(domain  ==  null)  {  this.data  =  new  ArrayList();  }  else  if(domain!=  null)  {  this.data  =  new  ArrayList();  }  ,if(domain == null) { this.data = new ArrayList(); } else if(domain!= null) { this.data = new ArrayList(); }
+patch is same with buggy,130,replace,, if(domain  ==  null)  {  this.data  =  new  ArrayList();  }  else  if(domain!=  null)  {  this.data  =  new  ArrayList();  }  , 
+compilation error,246,add,[CE] illegal start of expression, ,if(this.data!= null) { this.data.add(item); >>
+compilation error,130,add,[CE] not a statement, ,if(this.domain!= domain) { this.domain; this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) } this.domain = domain; this.range = range; }
+patch is same with buggy,310,replace,, this.maxMiddleIndex  =  index  /  2;  ,this.maxMiddleIndex = index / 2;
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex >= index) } this.maxMiddleIndex = index - 1; }
+patch is same with buggy,271,replace,, this.minStartIndex  =(index  <=  0)?  this.minStartIndex  :  index;  , 
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minEndIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+patch is same with buggy,321,replace,, this.minEndIndex  =  index  *  2  +  1;  ,this.minEndIndex = index * 2 + 1;
+compilation error,305,add,[CE] generics are not supported in -source 1.4, ,if(e > maxMiddle && e) < this.maxMiddleIndex) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e < this.maxMiddleIndex) }
+compilation error,304,add,[CE] possible loss of precision, ,int midMiddle = e +(e - s)/ 2;
+compilation error,130,add,[CE] illegal start of expression, ,if(domain == null) { this.domain = domain; this.range = range; >>
+compilation error,306,replace,[CE] variable s is already defined in method updateBounds(TimePeriod,int), if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,long s = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || e > -1) {
+compilation error,288,replace,[CE] cannot find symbol e, if(this.maxStartIndex  >=  index)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.maxStartIndex >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,317,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex >= index + 3) { this.maxMiddleIndex = index + 3; >>
+compilation error,305,add,[CE] illegal start of expression, ,if(e > this.maxMiddleIndex || e < this.maxMiddleIndex) }
+compilation error,305,add,[CE] illegal start of expression, ,if(e > this.maxMiddleIndex || e >> this.maxMiddleIndex) {
+compilation error,131,add,[CE] possible loss of precision, ,this.minStartIndex = Math.min(0.0, this.maxStartIndex);
+patch is same with buggy,310,replace,, this.minMiddleIndex  =  index  *  2;  ,this.minMiddleIndex = index * 2;
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.minMiddleIndex = -2;
+compilation error,131,add,[CE] illegal start of expression, ,this.minMiddleIndex = --;
+patch is same with buggy,306,replace,, if(this.maxMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  +  1;  }  ,if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxEndIndex);  ,this.minMiddleIndex = Math.min(minStartIndex, minEndIndex); this.maxEndIndex = Math.max(maxEndIndex, maxEndIndex);
+patch is same with buggy,130,replace,, if(this.domain!=  null  &&  this.range!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(this.domain!= null && this.range!= null) { this.domain = domain; this.range = range; }
+compilation error,130,replace,[CE] illegal start of expression, this.domain  =  domain;  if(this.range!=  null)  {  this.domain  =  domain;  }  ,if(domain!= null) { this.domain = domain; if(this.range!= null) { this.domain = range; }
+compilation error,130,replace,[CE] illegal start of expression, this.domain  =  domain;  if(this.range!=  null)  {  this.domain  =  domain;  }  ,if(this.domain!= null) { this.domain = domain; if(this.range!= null) { this.domain = range; }
+patch is same with buggy,130,replace,, this.domain  =  domain;  if(this.range!=  null)  {  this.domain  =  domain;  }  , 
+patch is same with buggy,321,replace,, this.maxEndIndex  =  index  /  2;  ,this.maxEndIndex = index / 2;
+compilation error,332,add,[CE] cannot find symbol minimumEndIndex, ,this.minimumEndIndex = index / 2;
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e < -1) {
+compilation error,131,add,[CE] unexpected type, ,this.minEndIndex = ----(this.maxEndIndex + 1);
+compilation error,552,replace,[CE] cannot find symbol count, if(this.maxMiddleIndex  <  0)  {  return  this.maxMiddleIndex;  }  ,return this.data.get(count);
+patch is same with buggy,130,replace,, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  {  this.data  =  new  ArrayList();  }  ,if(this.domain!= null) { this.domain = domain; } else { this.data = new ArrayList(); }
+compilation error,130,replace,[CE] cannot find symbol, this.maxMiddleIndex  =  this.maxMiddleIndex  +  getMaxMiddleIndex();  ,this.maxMiddleIndex = this.maxMiddleIndex + getDomainMiddleIndex();
+compilation error,130,replace,[CE] cannot find symbol, this.maxMiddleIndex  =  this.maxMiddleIndex  +  getMaxMiddleIndex();  ,this.maxMiddleIndex = this.maxMiddleIndex + getDomain();
+patch is same with buggy,278,replace,, long  min  =  getDataItem(this.minStartIndex).getPeriod().getEnd().getTime();  ,long min = getDataItem(this.minStartIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,278,replace,, long  min  =  getDataItem(this.minStartIndex).getPeriod().getEnd().getTime();  , 
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minStartIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, minStartIndex);
+patch is same with buggy,317,replace,, this.maxMiddleIndex  =  index  -  2;  ,this.maxMiddleIndex = index - 2;
+patch is same with buggy,131,replace,, this.maxEndIndex  =  -1;  ,this.maxEndIndex = -1;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.max(maxEndIndex,  maxMiddleIndex);  ,this.maxEndIndex = Math.max(maxEndIndex, maxMiddleIndex);
+compilation error,131,add,[CE] cannot find symbol minMethodIndex, ,this.minStartIndex = Math.min(minStartIndex, minMethodIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || s >> -e) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || s <= -e) {
+patch is same with buggy,130,replace,, this.domain  =  domain  + "_DOMAIN_DESCRIPTION ";  ,this.domain = domain +"_DOMAIN_DESCRIPTION";
+patch is same with buggy,130,replace,, this.domain  =  domain  + "_DOMAIN_DESCRIPTION ";  ,this.domain = domain + "_DOMAIN_DESCRIPTION";
+patch is same with buggy,130,replace,, this.domain  =  domain  + "_DOMAIN_DESCRIPTION ";  , 
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.min(maxEndIndex,  -1);  , 
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index * 2 + 1; >>
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index * 2 + 1;!=
+increase failing tests,131,add, [FE]  Size, ,this.minEndIndex = Math.max(minEndIndex, 1);
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(maxEndIndex,  minMiddleIndex);  , 
+compilation error,131,add,[CE] ';' expected, ,this.minMiddleIndex = Math.min(this.minMiddleIndex, this.maxMiddleIndex));
+compilation error,130,add,[CE] 'else' without 'if', ,else if(domain!= null) { this.data = new ArrayList(); } else if(range!= null) { this.data = new ArrayList(); }
+compilation error,131,replace,[CE] cannot find symbol maximumMiddleIndex, this.maxEndIndex  =  Math.min(maxEndIndex,  -1);  ,this.minEndIndex = minEndIndex; this.maxMiddleIndex = maximumMiddleIndex;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+compilation error,131,add,[CE] cannot find symbol middleIndex, ,this.minMiddleIndex = Math.max(middleIndex, maxStartIndex);
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minEndIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, minEndIndex);
+compilation error,310,add,[CE] cannot find symbol minimMiddleIndex, ,this.minimMiddleIndex = index * 2;
+compilation error,321,add,[CE] cannot find symbol miniEndIndex, ,this.miniEndIndex = index / 2;
+patch is same with buggy,332,replace,, this.maxEndIndex  =  -index  -  2;  ,this.maxEndIndex = -index - 2;
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.min(maxEndIndex,  minMiddleIndex);  ,this.maxEndIndex = Math.min(maxEndIndex, minMiddleIndex);
+patch is same with buggy,305,replace,, if(e  >  maxMiddle  &&  e  <  -e)  {  ,if(e > maxMiddle && e < -e) {
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.minMiddleIndex = maxMiddleIndex + 1;
+compilation error,552,replace,[CE] ';' expected, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,return(this.maxMiddleIndex * this.data.size())+ 1);
+patch is same with buggy,321,replace,, this.minEndIndex  =(index  >=  0)?  0  :  index;  ,this.minEndIndex =(index >= 0)? 0 : index;
+compilation error,302,add,[CE] illegal start of expression, ,if(middle < this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); >>
+increase failing tests,321,replace, [FE]  Size, this.minEndIndex  =  index  *  2  +  1;  ,this.minEndIndex =(index >= 0)? 1 : index + 1;
+compilation error,317,add,[CE] cannot find symbol miniEndIndex, ,this.miniEndIndex = index * 3;
+increase failing tests,321,add, [FE]  Size, ,this.maxEndIndex =(index < 0)? 1 : index + 1;
+patch is same with buggy,246,replace,, if(this.data!=  null)  {  this.data.add(item);  }  ,if(this.data!= null) { this.data.add(item); }
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index * 2 + 1; if(this.maxMiddle > maxMiddle) {
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > maxMiddle) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > maxMiddle) { this.maxMiddleIndex = index + 1; }
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || e == -e) }
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || e == -e) >>
+increase failing tests,130,add, [FE] AssertionFailedError, ,this.minMiddleIndex = this.minMiddleIndex + getMinMiddleIndex();
+compilation error,130,add,[CE] cannot find symbol minimumMiddleIndex, ,this.minimumMiddleIndex = this.minimumMiddleIndex + getMinMiddleIndex();
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.minMiddleIndex =(this.minMiddleIndex < 0? 0 : minMiddleIndex);
+patch is same with buggy,317,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+compilation error,306,add,[CE] illegal start of expression, ,if(e > maxMiddle) { if(index > 0) { index = index + 1; e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,306,add,[CE] illegal start of expression, ,if(e > maxMiddle) { long minStart = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); if(middle > maxMiddle) { return; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index + 1; }
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.minMiddleIndex = Math.max(minMiddleIndex, 0);
+increase failing tests,131,add, [FE]  Size, ,this.minMiddleIndex = Math.max(minMiddleIndex, 1);
+patch is same with buggy,305,replace,, if(s  >  maxMiddle)  {  this.maxMiddleIndex  =  index;  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  }  ,if(s > maxMiddle) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); }
+compilation error,305,replace,[CE] illegal start of type, if(s  >  maxMiddle)  {  this.maxMiddleIndex  =  index;  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  }  ,if(e > maxMiddle) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); }
+patch is same with buggy,321,replace,, this.minEndIndex  =(index  <  0)?  1  :  index  +  1;  ,this.minEndIndex =(index < 0)? 1 : index + 1;
+compilation error,131,add,[CE] cannot find symbol minimumMiddleIndex, ,this.minMiddleIndex = Math.min(minimumMiddleIndex, 0);
+compilation error,131,add,[CE] cannot find symbol millisecondIndex, ,this.minMiddleIndex = Math.min(millisecondIndex, 0);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index + 1; }
+compilation error,306,add,[CE] <identifier> expected, ,if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index / 2 + 1; } else { this.minMiddleIndex = index; e++; s = getDataItem(this.minMiddleIndex).getPeriod().
+compilation error,306,add,[CE] illegal start of expression, ,if(this.minMiddleIndex > index) { this.maxMiddleIndex = index - 1; >>
+compilation error,332,add,[CE] possible loss of precision, ,this.maxEndIndex = index * 3 + getDataItem(this.maxEndIndex).getPeriod().getEnd().getTime();
+compilation error,321,add,[CE] cannot find symbol minEnd, ,this.minEndIndex = index * 3 + getDataItem(this.minEndIndex, end - minEnd);
+compilation error,321,add,[CE] cannot find symbol, ,this.minEndIndex = index * 3 + getDataItem(this.minEndIndex).getPeriod().getTime();
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex >= index) } this.maxMiddleIndex = index + 1; }
+compilation error,302,replace,[CE] cannot find symbol e, if(this.minMiddleIndex  >=  this.maxMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex > 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+increase failing tests,131,replace, [FE] AssertionFailedError, this.maxStartIndex  =  maxEndIndex;  ,this.minMiddleIndex = this.minMiddleIndex + 1;
+patch is same with buggy,131,replace,, this.minEndIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minEndIndex = minMiddleIndex; this.maxEndIndex = maxStartIndex;
+compilation error,321,add,[CE] incompatible types, ,this.minEndIndex =(index << 0)? 1 : index;
+compilation error,552,replace,[CE] ';' expected, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,for(int i = this.maxMiddleIndex; i < this.minMiddleIndex; i++) { int count = this.maxMiddleIndex; i++) { this.data.get(i); }
+compilation error,131,add,[CE] incompatible types, ,this.minMiddleIndex = new ArrayList();
+compilation error,131,add,[CE] incompatible types, ,this.range = new ArrayList();
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex > index) { this.maxMiddleIndex = index + 2; >>
+patch is same with buggy,552,replace,, int  count  =  this.data.size();  ,int count = this.data.size();
+compilation error,552,replace,[CE] missing return statement, int  count  =  this.data.size();  ,int count = this.data.size() - 1;
+patch is same with buggy,321,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+compilation error,306,add,[CE] illegal start of expression, ,if(e > maxMiddle) { if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index + 1; e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,306,add,[CE] ';' expected, ,if(e > maxMiddle) { long minEnd = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); if(middle > maxMiddle) { this.maxMiddleIndex = index + 1; e = getDataItem
+compilation error,288,add,[CE] illegal start of expression, ,if(this.minMiddleIndex >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); >>
+compilation error,131,add,[CE] ';' expected, ,this.minMiddleIndex = Math.max(minMiddleIndex, minMiddleIndex));
+patch is same with buggy,332,replace,, this.maxEndIndex  =  index  /  2;  ,this.maxEndIndex = index / 2;
+increase failing tests,332,replace, [FE] AssertionFailedError, this.maxEndIndex  =  index  /  2;  ,this.maxEndIndex = index / 2 + 1;
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,if(end > minEnd) { this.minEndIndex = index * 2; if(end > minEnd) { this.minEndIndex = index * 2; }
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,if(end > minEnd) { this.minEndIndex = index * 2; if(end > maxEnd) { this.minEndIndex = index * 2; }
+compilation error,130,add,[CE] 'else' without 'if', ,else if(this.domain!= null) { this.domain = domain; } else if(this.range!= range) { this.range = range; }
+patch is same with buggy,552,replace,, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,return(this.maxMiddleIndex > 0)? this.maxMiddleIndex : 0;
+compilation error,271,add,[CE] incompatible types, ,index =(index >> 0)? index - 1 : index;
+increase failing tests,271,add, [FE] AssertionFailedError, ,index =(index <= 0)? index - 1 : index;
+patch is same with buggy,130,replace,, if(domain  ==  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain == null) { this.domain = domain; this.range = range; }
+patch is same with buggy,332,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+compilation error,552,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex < 0) { this.maxMiddleIndex = getDataItemCount(); if(this.maxMiddleIndex > 0) { return this.maxMiddleIndex /(this.minMiddleIndex -
+compilation error,552,add,[CE] <identifier> expected, ,if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = getDataItemCount(); if(this.maxMiddleIndex < 0) { return this.maxMiddleIndex /(this.minMiddleIndex - 1? this.
+compilation error,552,add,[CE] ')' expected, ,if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = getDataItemCount(); if(this.maxMiddleIndex < 0) { return this.maxMiddleIndex /(this.minMiddleIndex % this
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index + 1; }
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,if(this.maxMiddleIndex > index * 2) { this.maxMiddleIndex = index * 2 + 1; >>
+increase failing tests,131,add, [FE]  Size, ,this.minMiddleIndex = this.minMiddleIndex + 2;
+patch is same with buggy,271,replace,, this.minStartIndex  =(index  >=  1)?  this.minStartIndex  :  index;  ,this.minStartIndex =(index >= 1)? this.minStartIndex : index;
+increase failing tests,321,add, [FE]  Size, ,this.maxEndIndex = index + 3;
+compilation error,131,replace,[CE] no suitable method found for max(int,String), this.minStartIndex  =  Math.max(minStartIndex,  minStartIndex);  ,this.minStartIndex = Math.max(minStartIndex, range);
+compilation error,552,replace,[CE] illegal start of expression, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,if(this.maxMiddleIndex < 0) { this.maxMiddleIndex = getDataItemCount(); if(this.maxMiddleIndex > 0) { return this.data.size(); }
+compilation error,317,add,[CE] illegal start of expression, ,this.minEndIndex = index + 2; if(this.minEndIndex >= index) { this.minEndIndex = index + 2;
+patch is same with buggy,131,replace,, this.minStartIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxMiddleIndex);  ,this.minStartIndex = Math.min(minStartIndex, minEndIndex); this.maxEndIndex = Math.max(maxEndIndex, maxMiddleIndex);
+compilation error,131,add,[CE] cannot find symbol maxMaxEndIndex, ,this.minStartIndex = Math.min(minStartIndex, minEndIndex); this.maxMaxEndIndex = Math.max(maxEndIndex, maxMiddleIndex);
+patch is same with buggy,271,replace,, this.maxStartIndex  =(index  >=  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index >= 0)? this.maxStartIndex : index;
+compilation error,131,add,[CE] cannot find symbol middleIndex, ,this.minMiddleIndex = Math.max(middleIndex, minMiddleIndex);
+patch is same with buggy,131,replace,, this.minStartIndex  =  minEndIndex;  , 
+compilation error,288,add,[CE] illegal start of expression, ,if(s >= this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); >>
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e < -e) }
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e >> -e) {
+compilation error,131,add,[CE] cannot find symbol endIndex, ,this.minEndIndex = Math.min(endIndex, 0);
+compilation error,131,add,[CE] cannot find symbol maxMaxMiddleIndex, ,this.minEndIndex = minEndIndex; this.maxMaxMiddleIndex = maxMiddleIndex;
+increase failing tests,131,replace, [FE] AssertionFailedError, this.minEndIndex  =  Math.min(minEndIndex,  maxStartIndex);  ,this.minStartIndex = Math.min(10, 0);
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  2;  if(this.minMiddleIndex  >=  0)  {  this.maxMiddleIndex  =  index  +  2;  }  , 
+compilation error,306,add,[CE] ';' expected, ,if(e > maxMiddle) { long minStart = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); if(middle > maxMiddle) { this.maxMiddleIndex = index + 1; e = getDataItem
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  -  1;  }  ,if(this.maxMiddleIndex > index) { if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index - 1; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { this.domain = domain; if(this.range!= null) { this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.range!= null) { this.domain = domain; if(this.range!= null) { this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.data!= null) { this.domain = domain; if(this.range!= null) { this.range = range; }
+patch is same with buggy,332,replace,, this.minEndIndex  =  -index  -  1;  ,this.minEndIndex = -index - 1;
+increase failing tests,131,replace, [FE]  Size, this.maxEndIndex  =  Math.max(maxEndIndex,  -1);  ,this.maxEndIndex = Math.max(maxEndIndex, 1);
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.max(maxEndIndex,  -1);  , 
+patch is same with buggy,246,replace,, if(this.data  ==  null)  {  this.data.add(item);  }  else  if(this.data.contains(item))  {  this.data.add(item);  }  ,if(this.data == null) { this.data.add(item); } else if(this.data.contains(item)) { this.data.add(item); }
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxEndIndex);  ,this.minEndIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxEndIndex);
+increase failing tests,306,add, [FE]  Size, ,index = index + 2; e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+increase failing tests,306,add, [FE]  Size, ,index = index + 3; e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.min(maxMiddleIndex,  maxStartIndex);  ,this.maxMiddleIndex = Math.min(maxMiddleIndex, maxStartIndex);
+increase failing tests,310,add, [FE]  Size, ,this.minMiddleIndex = index * 2 + 1;
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,if(this.minEndIndex >= index) { this.minEndIndex = index * 2; if(this.maxEndIndex >= index) { this.minEndIndex = index * 2; }
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(this.minMiddleIndex,  minStartIndex);  ,this.minMiddleIndex = Math.min(this.minMiddleIndex, minStartIndex);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  /  2  +  1;  , 
+patch is same with buggy,131,replace,, this.minEndIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minEndIndex = minMiddleIndex; this.maxEndIndex = maxStartIndex;
+patch is same with buggy,130,replace,, this.range  =  domain  +  1;  ,this.range = domain + 1;
+compilation error,131,replace,[CE] no suitable method found for max(int,String), this.minMiddleIndex  =  Math.min(maxEndIndex,  minMiddleIndex);  ,this.maxEndIndex = Math.max(maxEndIndex, range + 1);
+compilation error,306,add,[CE] illegal start of expression, ,if(this.minMiddleIndex > index) { this.maxMiddleIndex = index + 1; >>
+compilation error,306,add,[CE] illegal start of expression, ,if(this.minMiddleIndex > index) { this.maxMiddleIndex = index + 1;!=
+patch is same with buggy,131,replace,, this.minStartIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  , 
+compilation error,130,replace,[CE] illegal start of expression, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  if(this.range!=  range)  {  this.data  =  new  ArrayList();  }  ,if(this.domain!= null) { this.domain = domain; if(this.range!= range) { this.data = new ArrayList(); }
+patch is same with buggy,271,replace,, this.maxStartIndex  =(index  <  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index < 0)? this.maxStartIndex : index;
+increase failing tests,271,replace, [FE] AssertionFailedError, this.maxStartIndex  =(index  <  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index < 1)? this.maxStartIndex : index;
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index + 1; >>
+compilation error,131,add,[CE] possible loss of precision, ,this.minMiddleIndex = Math.min(0.0, minMiddleIndex);
+compilation error,131,add,[CE] cannot find symbol minimumIndex, ,this.minimumIndex = Math.max(0, getMinimumIndex() - 1);
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null && this.range!= null) { if(this.domain!= null && this.range!= null) { this.domain = domain; this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null && this.range!= null) { if(this.domain!= null && this.data!= null) { this.domain = domain; this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null && this.range!= null) { if(!this.domain.equals(domain)) { this.data = new ArrayList(); }
+increase failing tests,321,replace, [FE] AssertionFailedError, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2 + 1;
+patch is same with buggy,321,replace,, this.minEndIndex  =  index  /  2;  , 
+compilation error,130,add,[CE] illegal start of expression, ,if(range!= null) { if(domain!= null) { this.data = new ArrayList(); }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; if(this.range!= null) { this.data = new ArrayList(); }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { throw new IllegalArgumentException(""); }
+patch is same with buggy,130,replace,, if(this.domain!=  null  &&  this.range!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(this.domain!= null && this.range!= null) { this.domain = domain; this.range = range; }
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(end < minEnd) { this.minEndIndex = index * 2; if(end > end) {
+compilation error,271,add,[CE] cannot find symbol, ,index =(index >= 0)? index - 1 : period.getValue(start, index);
+compilation error,271,add,[CE] cannot find symbol, ,index =(index < 0)? index - 1 : period.getValue(start, index);
+compilation error,271,add,[CE] possible loss of precision, ,index =(index >= 0)? index - 1 : period.getStart().getTime();
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; }
+compilation error,130,add,[CE] 'else' without 'if', ,else if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range!= domain) { this.domain = domain; }
+patch is same with buggy,130,replace,, if(this.domain!=  domain)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(this.domain!= domain) { this.domain = domain; this.range = range; }
+compilation error,306,add,[CE] cannot find symbol maxMiddle, ,this.maxMiddleIndex = index + 1; if(this.maxMiddle < -1) { this.maxMiddleIndex = index + 1; }
+compilation error,306,add,[CE] cannot find symbol maxMiddle, ,this.maxMiddleIndex = index + 1; if(this.maxMiddle < 0) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,302,replace,, if(this.maxMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.maxMiddleIndex >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+increase failing tests,321,add, [FE]  Size, ,this.maxEndIndex = index / 2 + 1;
+compilation error,131,add,[CE] cannot find symbol min, ,int minMiddleIndex = Math.min(min, -1);
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.maxMiddleIndex < index) {
+patch is same with buggy,131,replace,, this.minStartIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxMiddleIndex);  ,this.minStartIndex = Math.min(minStartIndex, minEndIndex); this.maxEndIndex = Math.max(maxEndIndex, maxMiddleIndex);
+increase failing tests,130,add, [FE] AssertionFailedError, ,this.minMiddleIndex = this.minMiddleIndex - getMinMiddleIndex();
+patch is same with buggy,130,replace,, this.domain  =  domain;  if(this.range!=  null)  {  this.domain  =  domain;  }  ,this.domain = domain; if(this.range!= null) { this.domain = domain; }
+compilation error,130,replace,[CE] illegal start of expression, this.domain  =  domain;  if(this.range!=  null)  {  this.domain  =  domain;  }  ,if(this.domain!= null) { this.domain = domain; if(this.range!= null) { this.domain = domain; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+compilation error,131,replace,[CE] cannot find symbol maxSiddleIndex, this.minStartIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxMiddleIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxSiddleIndex);
+patch is same with buggy,332,replace,, this.maxEndIndex  =  index  /  2;  , 
+increase failing tests,131,replace, [FE] AssertionFailedError, this.maxStartIndex  =  maxEndIndex;  ,this.minStartIndex = this.minMiddleIndex + 1;
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null) { if(!domain.equals(range)) { this.data = new ArrayList(); }
+compilation error,306,add,[CE] illegal start of expression, ,if(this.minMiddleIndex > index) { this.maxMiddleIndex = index - 1; if(middle < maxMiddle) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || e >= -1) {
+patch is same with buggy,321,replace,, this.minEndIndex  =  index  *  2  +  1;  ,this.minEndIndex = index * 2 + 1;
+patch is same with buggy,131,replace,, this.minEndIndex  =  0;  ,this.minEndIndex = 0;
+compilation error,131,replace,[CE] possible loss of precision, this.minEndIndex  =  0;  ,this.minEndIndex = 0L;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index - 1; }
+compilation error,552,replace,[CE] missing return statement, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,this.data.remove(this.maxMiddleIndex);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  , 
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index - 1; if(this.maxMiddle > maxMiddle) {
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index - 1; if(middle < maxMiddle) {
+compilation error,304,add,[CE] possible loss of precision, ,int middleMiddle = s +(e - s)/ 2;
+compilation error,306,add,[CE] not a statement, ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > index) { this.maxMiddleIndex = index - 1; presumably
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { if(this.range!= range) { this.domain = domain; this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { if(this.range!= range) { this.data = new ArrayList(); }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { if(this.range!= null) { this.domain = domain; this.range = range; }
+patch is same with buggy,552,replace,, int  count  =  this.data.size();  ,int count = this.data.size();
+compilation error,317,add,[CE] not a statement, ,this.minEndIndex = index + 2; if(this.minEndIndex >= index) { this.minEndIndex = index + 2; presumably
+compilation error,317,add,[CE] not a statement, ,this.minEndIndex = index + 2; if(this.minEndIndex >= index) { this.minEndIndex = index + 2; figured
+compilation error,306,add,[CE] cannot find symbol minimMiddleIndex, ,this.maxMiddleIndex = index + 1; if(this.minimMiddleIndex > 0) { this.maxMiddleIndex = index + 1; }
+compilation error,552,replace,[CE] cannot find symbol, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,int result = getMiddle(); this.maxMiddleIndex = getEndIndex();
+patch is same with buggy,131,replace,, this.minEndIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minEndIndex = minMiddleIndex; this.maxEndIndex = maxStartIndex;
+compilation error,317,add,[CE] illegal start of expression, ,if(this.minEndIndex >= index + 1) { this.minEndIndex = index + 2; if(this.minEndIndex >= index + 1) { this.minEndIndex = index + 1; }
+patch is same with buggy,131,replace,, this.minEndIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minEndIndex = minMiddleIndex; this.maxEndIndex = maxStartIndex;
+patch is same with buggy,310,replace,, this.minMiddleIndex  =  index  *  2;  ,this.minMiddleIndex = index * 2;
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minStartIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, minStartIndex);
+patch is same with buggy,302,replace,, if(this.minMiddleIndex  >=  this.maxMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex >= this.maxMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > maxMiddle) { this.maxMiddleIndex = index + 1; }
+compilation error,131,add,[CE] variable minMiddleIndex might not have been initialized, ,int minMiddleIndex = Math.min(minMiddleIndex, 0);
+compilation error,321,add,[CE] incompatible types, ,this.minEndIndex =(index << 0)? 1 : index + 1;
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index - 1; if(middle > maxMiddle) {
+compilation error,130,replace,[CE] illegal start of expression, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  if(this.range!=  range)  {  this.range  =  range;  }  ,this.domain = domain; if(this.range!= range) { this.domain = domain; if(this.range!= range) { this.range = range; }
+compilation error,130,replace,[CE] illegal start of expression, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  if(this.range!=  range)  {  this.range  =  range;  }  ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; if(this.range!= range) { this.range = range; }
+patch is same with buggy,131,replace,, this.data  =  new  ArrayList();  ,this.data = new ArrayList();
+compilation error,131,replace,[CE] bad operand types for binary operator '+', this.data  =  new  ArrayList();  ,this.data = new ArrayList() + 1;
+increase failing tests,130,add, [FE] AssertionFailedError, ,this.minStartIndex = minEndIndex + getMinEndIndex();
+compilation error,249,add,[CE] illegal start of expression, ,if(item.getPeriod()!= null) { if(item.getPeriod()!= null) { updateBounds(item.getPeriod(), this.data.size() + 1); fireSeriesChanged(); }
+compilation error,249,add,[CE] illegal start of expression, ,if(item.getRange()!= null) { if(item.getPeriod()!= null) { updateBounds(item.getRange(), this.data.size() + 1); fireSeriesChanged(); }
+patch is same with buggy,321,replace,, this.minEndIndex  =(index  <  0)?  1  :  index  +  1;  ,this.minEndIndex =(index < 0)? 1 : index + 1;
+compilation error,310,add,[CE] cannot find symbol, ,this.data.add(index, new Period(middle, index + 1));
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || e == -1) {
+compilation error,131,add,[CE] cannot find symbol maximumMiddleIndex, ,this.minMiddleIndex = Math.min(minMiddleIndex, minMiddleIndex);this.maxMiddleIndex = Math.max(maxMiddleIndex, maximumMiddleIndex);
+increase failing tests,131,add, [FE]  Size, ,this.maxStartIndex = Math.max(this.maxStartIndex, 1);
+compilation error,131,add,[CE] cannot find symbol mMiddleIndex, ,this.minMiddleIndex = Math.max(minMiddleIndex, mMiddleIndex);
+patch is same with buggy,552,replace,, return(this.maxMiddleIndex  >  0)?  this.maxMiddleIndex  :  0;  ,return(this.maxMiddleIndex > 0)? this.maxMiddleIndex : 0;
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { this.domain = domain; if(this.range!= range) { this.domain = domain; if(this.range!= range) { this.data = new ArrayList(); }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { if(this.domain!= domain) { this.domain = domain; if(this.range!= range) { this.domain = domain; }
+increase failing tests,271,replace, [FE] AssertionFailedError, this.minStartIndex  =(index  <=  0)?  this.minStartIndex  :  index;  ,this.minStartIndex =(index < 0)? index : this.minStartIndex;
+patch is same with buggy,130,replace,, this.domain  =  domain  + "_DOMAIN_DESCRIPTION ";  ,this.domain = domain +"_DOMAIN_DESCRIPTION";
+compilation error,131,add,[CE] incompatible types, ,this.minMiddleIndex =(this.minMiddleIndex >> 0? 0 : minMiddleIndex);
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.max(maxEndIndex,  -1);  ,this.maxEndIndex = Math.max(maxEndIndex, -1);
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.max(maxEndIndex,  -1);  , 
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > maxMiddle) {
+compilation error,271,replace,[CE] possible loss of precision, this.maxStartIndex  =(index  >=  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index >= 0)? index : start;
+compilation error,321,add,[CE] incompatible types, ,this.minEndIndex =(index << 0)? 0 : index + 1;
+compilation error,271,replace,[CE] incompatible types, this.maxStartIndex  =(index  <  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index << 0)? this.maxStartIndex : index;
+increase failing tests,332,replace, [FE] AssertionFailedError, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2 + 1;
+patch is same with buggy,332,replace,, this.minEndIndex  =  index  /  2;  , 
+compilation error,552,add,[CE] ')' expected, ,return this.maxMiddleIndex /(this.minMiddleIndex *(this.maxMiddleIndex < 0? this.maxMiddleIndex : data.size());
+compilation error,552,add,[CE] ')' expected, ,return this.maxMiddleIndex /(this.minMiddleIndex *(this.maxMiddleIndex >> 0? this.maxMiddleIndex : data.size());
+compilation error,552,add,[CE] incompatible types, ,return this.maxMiddleIndex /(this.minMiddleIndex + 1? this.maxMiddleIndex : data.size());
+increase failing tests,246,replace, [FE] AssertionFailedError, if(item.getPeriod()  ==  null)  {  this.data.add(item);  }  ,this.data.add(item); if(item.getPeriod()!= null) { this.data.add(item); }
+compilation error,332,add,[CE] cannot find symbol endIndex, ,this.endIndex =(index < 0)? 1 : index;
+compilation error,552,add,[CE] cannot find symbol, ,int index = getIndex(this.maxMiddleIndex); if(index >= 0) { return this.data.size(); }
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxEndIndex);  , 
+patch is same with buggy,305,replace,, if(e  >  maxMiddle  &&  e  <  -e)  {  , 
+patch is same with buggy,317,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+compilation error,130,replace,[CE] cannot find symbol, this.maxMiddleIndex  =  this.maxMiddleIndex  +  getMaxMiddleIndex();  ,this.maxMiddleIndex = this.maxMiddleIndex + getMaximumMiddleIndex();
+patch is same with buggy,130,replace,, this.maxMiddleIndex  =  this.maxMiddleIndex  +  getMaxMiddleIndex();  ,this.maxMiddleIndex = this.maxMiddleIndex + getMaxMiddleIndex();
+patch is same with buggy,552,replace,, return(this.maxMiddleIndex  *  1);  ,return(this.maxMiddleIndex * 1);
+patch is same with buggy,288,replace,, if(this.maxStartIndex  >=  index)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  , 
+compilation error,131,add,[CE] cannot find symbol MIN_MiddleIndex, ,this.minMiddleIndex = Math.max(minMiddleIndex, MIN_MiddleIndex);
+compilation error,130,replace,[CE] illegal start of expression, if(this.domain!=  null)  {  this.domain  =  domain;  }  else  {  this.data  =  new  ArrayList();  }  ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; } else { this.data = new ArrayList(); }
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.maxStartIndex = maxStartIndex - 1;
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  minEndIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minMiddleIndex = minEndIndex; this.maxEndIndex = maxStartIndex;
+compilation error,552,replace,[CE] unreachable statement, if(this.maxMiddleIndex  <  0)  {  return  this.maxMiddleIndex;  }  ,return this.maxMiddleIndex; if(this.maxMiddleIndex > 0) { return this.maxMiddleIndex; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  /  2  +  1;  , 
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle || e >= -e) {
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > index - 1) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e <= -e) {
+compilation error,131,add,[CE] variable minMiddleIndex might not have been initialized, ,int minMiddleIndex = minMiddleIndex; this.maxEndIndex = maxEndIndex;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index + 1; }
+compilation error,302,add,[CE] variable middle is already defined in method updateBounds(TimePeriod,int), ,long middle = s +(e - s)/ 2;
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.minEndIndex >= 0) {
+patch is same with buggy,321,replace,, this.maxEndIndex  =  index  /  2;  , 
+compilation error,321,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int), ,long end = getDataItem(this.minEndIndex).getPeriod().getEnd() + 1;
+patch is same with buggy,305,replace,, if(s  >  maxMiddle)  {  this.maxMiddleIndex  =  index;  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  }  ,if(s > maxMiddle) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); }
+compilation error,305,replace,[CE] ';' expected, if(s  >  maxMiddle)  {  this.maxMiddleIndex  =  index;  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  }  ,if(this.maxMiddle > maxMiddle) { if(s > this.maxMiddleIndex) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime
+patch is same with buggy,130,replace,, this.range  =  domain  +  1;  ,this.range = domain + 1;
+compilation error,131,add,[CE] cannot find symbol, ,this.minMiddleIndex = getMinimumMiddleIndex();
+compilation error,131,replace,[CE] cannot find symbol maximumMiddleIndex, this.minMiddleIndex  =  Math.max(minMiddleIndex,  maxMiddleIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, maximumMiddleIndex);
+compilation error,271,replace,[CE] incompatible types for ?: neither is a subtype of the other, this.maxStartIndex  =(index  >=  0)?  this.maxStartIndex  :  index;  ,this.minStartIndex =(index < 0)? index : period.getStart();
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex -> index) { this.maxMiddleIndex = index + 1; }
+compilation error,305,add,[CE] illegal start of expression, ,if(e > this.maxMiddleIndex || e > this.maxMiddleIndex) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > this.maxMiddleIndex || e > this.minMiddleIndex) {
+compilation error,305,add,[CE] illegal start of expression, ,if(s > maxMiddle || s < -e) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e >> this.maxMiddleIndex) {
+compilation error,305,add,[CE] illegal start of expression, ,if(e > maxMiddle && e <= this.maxMiddleIndex) {
+patch is same with buggy,321,replace,, this.maxEndIndex  =  index  *  2;  ,this.maxEndIndex = index * 2;
+compilation error,552,replace,[CE] ')' expected, return  this.maxMiddleIndex  /(this.minMiddleIndex  >=  0?  this.maxMiddleIndex  :  data.size());  ,return this.maxMiddleIndex /(this.minMiddleIndex *(this.maxMiddleIndex >= 0? this.maxMiddleIndex : data.size());
+compilation error,332,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int), ,long end = getDataItem(index).getPeriod().getEnd(); this.maxEndIndex = index + 3;
+compilation error,332,add,[CE] variable end is already defined in method updateBounds(TimePeriod,int), ,long end = getDataItem(index).getPeriod().getEnd().getTime(); this.maxEndIndex = index + 3;
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+compilation error,246,add,[CE] illegal start of expression, ,else if(this.data.contains(item)) { if(this.data == null) { this.data.add(item); }
+compilation error,246,add,[CE] illegal start of expression, ,if(this.data == null) { if(this.data.size() > 0) { this.data.add(item); }
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(minEndIndex,  maxStartIndex);  , 
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  *  4;  , 
+compilation error,131,add,[CE] cannot find symbol, ,this.minEndIndex = Math.min(getMiddleIndex(), 0);
+compilation error,131,add,[CE] cannot find symbol middleIndex, ,this.minEndIndex = Math.min(middleIndex, 0);
+compilation error,306,add,[CE] illegal start of expression, ,if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index * 2 + 1; if(middle < maxMiddle) {
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  /  3;  ,this.maxMiddleIndex = index / 3;
+increase failing tests,271,replace, [FE] AssertionFailedError, index  =(index  <  0)?  index  -  1  :  index;  ,index =(index >= 0)? index - 1 : index;
+increase failing tests,271,replace, [FE]  Size, index  =(index  <  0)?  index  -  1  :  index;  ,index =(index < 0)? index - 1 : index + 1;
+patch is same with buggy,271,replace,, index  =(index  <  0)?  index  -  1  :  index;  , 
+compilation error,131,add,[CE] variable minMiddleIndex might not have been initialized, ,int minMiddleIndex = minMiddleIndex - 1;
+compilation error,131,replace,[CE] no suitable method found for max(int,String), this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minEndIndex);  ,this.maxStartIndex = Math.max(maxStartIndex, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,306,replace,[CE] cannot find symbol minMiddle, if(this.maxMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddle < -1) { this.maxMiddleIndex = index + 1; }
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index - 1; if(middle > maxMiddle) {
+patch is same with buggy,317,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+patch is same with buggy,332,replace,, this.minEndIndex  =  -index  -  1;  ,this.minEndIndex = -index - 1;
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.maxStartIndex = minStartIndex + 1;
+compilation error,302,add,[CE] illegal start of expression, ,if(this.minMiddleIndex >= this.maxMiddleIndex) { if(s < this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+increase failing tests,131,replace, [FE]  Size, this.minMiddleIndex  =  Math.min(maxEndIndex,  minMiddleIndex);  ,this.minMiddleIndex = Math.max(this.minMiddleIndex, 1);
+patch is same with buggy,131,replace,, this.maxEndIndex  =  -1;  ,this.maxEndIndex = -1;
+increase failing tests,131,add, [FE]  Size, ,this.maxStartIndex = Math.max(maxStartIndex, 1);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.maxStartIndex = Math.max(this.maxMiddleIndex, 0);
+compilation error,131,replace,[CE] no suitable method found for max(int,String), this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  maxStartIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, DEFAULT_DOMAIN_DESCRIPTION);
+compilation error,131,replace,[CE] cannot find symbol, this.maxStartIndex  =  maxEndIndex;  ,this.minStartIndex = name.length();
+increase failing tests,131,replace, [FE]  Size, this.minMiddleIndex  =  minEndIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.maxEndIndex = this.maxMiddleIndex + 2;
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minEndIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, minEndIndex);
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index - 1;
+patch is same with buggy,131,replace,, this.minEndIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minEndIndex = minMiddleIndex; this.maxEndIndex = maxStartIndex;
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxEndIndex);  ,this.minEndIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxEndIndex);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  <  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex < index - 1) { this.maxMiddleIndex = index - 1; }
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  <  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex < index - 1) { this.maxMiddleIndex = index - 1;
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.maxEndIndex >= index) { this.minEndIndex = index * 2;
+compilation error,317,replace,[CE] not a statement, if(this.minEndIndex  <  index)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.maxEndIndex >= index) { this.minEndIndex = index * 2; presumably
+compilation error,131,replace,[CE] cannot find symbol middleIndex, this.minMiddleIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxEndIndex);  ,this.maxEndIndex = Math.max(this.maxEndIndex, this.middleIndex);
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.maxMiddleIndex < index) { this.minEndIndex = index * 2;
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index  *  2)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.maxMiddleIndex < index) { this.minEndIndex = index * 2; & }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  *  4;  , 
+compilation error,306,replace,[CE] not a statement, if(this.minMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex >= 0) { this.maxMiddleIndex = index - 1; Toujours
+compilation error,317,add,[CE] illegal start of expression, ,this.minEndIndex = index * 2; if(this.maxMiddleIndex -> index) { this.minEndIndex = index * 2; }
+compilation error,317,add,[CE] incompatible types, ,this.minEndIndex = index * 2; if(this.maxMiddleIndex - index) { this.minEndIndex = index * 2; }
+increase failing tests,271,replace, [FE] AssertionFailedError, this.maxStartIndex  =(index  <  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index >= 0)? this.minStartIndex : index;
+patch is same with buggy,302,replace,, if(this.minMiddleIndex  >=  this.maxMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex >= this.maxMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,302,replace,, if(this.minMiddleIndex  >=  this.maxMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex >= this.maxMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index - 3; if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index - 3;
+compilation error,306,replace,[CE] not a statement, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index - 3; if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index - 3; Toujours
+compilation error,131,add,[CE] int cannot be dereferenced, ,this.minMiddleIndex = Math.min(minMiddleIndex, minMiddleIndex).getSize();
+compilation error,131,add,[CE] int cannot be dereferenced, ,this.minMiddleIndex = Math.min(minMiddleIndex, minMiddleIndex).getLength();
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  /  3;  , 
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minEndIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex < 0) { this.maxMiddleIndex = index + 1; Toujours
+compilation error,130,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) {
+patch is same with buggy,130,replace,, if(domain  ==  null)  {  this.domain  =  domain;  this.range  =  range;  }  , 
+patch is same with buggy,317,replace,, this.maxMiddleIndex  =  index  -  2;  ,this.maxMiddleIndex = index - 2;
+compilation error,249,add,[CE] cannot find symbol, ,if(item.getPeriod()!= null) { fireBounds(item.getPeriod(), this.data.size() + 1); fireSeriesChanged(); }
+compilation error,321,add,[CE] method updateBounds in class TimePeriodValues cannot be applied to given types;, ,updateBounds(period, getDataItem(index));
+compilation error,306,add,[CE] cannot find symbol maxMiddlingIndex, ,this.maxMiddlingIndex = index / 3;
+compilation error,131,add,[CE] cannot find symbol, ,this.minEndIndex = minEndIndex + name.getIndex();
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  ,this.minMiddleIndex = Math.min(minMiddleIndex, minStartIndex); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minMiddleIndex,  minStartIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxStartIndex);  , 
+patch is same with buggy,310,replace,, this.minMiddleIndex  =  index  *  2;  ,this.minMiddleIndex = index * 2;
+compilation error,131,add,[CE] cannot find symbol maximumMiddleIndex, ,this.minMiddleIndex = minMiddleIndex; this.maxEndIndex = maximumMiddleIndex;
+compilation error,317,add,[CE] cannot find symbol endIndex, ,this.minEndIndex = index * 3; if(this.endIndex >= index) { this.minEndIndex = index * 2; }
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.data == null) { this.data.add(range); }
+compilation error,552,replace,[CE] incompatible types for ?: neither is a subtype of the other, if(this.maxMiddleIndex  <  0)  {  return  this.maxMiddleIndex;  }  ,return(this.maxMiddleIndex == 0)? this.maxMiddleIndex : new Integer(this.maxMiddleIndex);
+compilation error,131,add,[CE] cannot find symbol minOther, ,this.minStartIndex = Math.min(minStartIndex, minOther); this.maxEndIndex = Math.max(maxEndIndex, maxStartIndex);
+compilation error,130,add,[CE] cannot find symbol minimumEndIndex, ,this.minimumEndIndex = minEndIndex + getMinimumEndIndex();
+patch is same with buggy,321,replace,, this.maxEndIndex  =  index  *  2;  ,this.maxEndIndex = index * 2;
+increase failing tests,321,replace, [FE]  Size, this.maxEndIndex  =  index  *  2;  ,this.maxEndIndex = index * 3;
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex -> index) { this.maxMiddleIndex = index + 1; }
+compilation error,306,add,[CE] incompatible types, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex - e) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,246,replace,, if(item.getPeriod()  ==  null)  {  this.data.add(item);  }  , 
+compilation error,306,replace,[CE] cannot find symbol maxMiddlingIndex, if(this.maxMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddlingIndex = index - 1;
+compilation error,306,add,[CE] not a statement, ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex >= 0) { this.maxMiddleIndex = index - 1; Toujours
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex >= 0) { this.maxMiddleIndex = index - 1;
+patch is same with buggy,332,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+patch is same with buggy,332,replace,, this.maxEndIndex  =  -index  -  2;  ,this.maxEndIndex = -index - 2;
+compilation error,131,add,[CE] cannot find symbol token, ,this.minStartIndex = Math.min(token.min, this.maxStartIndex);
+compilation error,131,add,[CE] cannot find symbol tolerance, ,this.minStartIndex = Math.min(tolerance, this.maxStartIndex);
+patch is same with buggy,271,replace,, index  =(index  <  0)?  index  -  1  :  index;  ,index =(index < 0)? index - 1 : index;
+compilation error,310,add,[CE] method getDataItem in class TimePeriodValues cannot be applied to given types;, ,this.minMiddleIndex = index * 2 + getDataItem(period);
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.minStartIndex = Math.max(minStartIndex, 0);
+patch is same with buggy,131,replace,, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minStartIndex);  ,this.maxMiddleIndex = Math.max(maxMiddleIndex, minStartIndex);
+patch is same with buggy,131,replace,, this.maxEndIndex  =  -1;  ,this.maxEndIndex = -1;
+compilation error,306,replace,[CE] incompatible types, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 3; if(this.minMiddleIndex - e) { this.maxMiddleIndex = index + 2; }
+compilation error,306,replace,[CE] not a statement, if(this.maxMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index + 1; Toujours
+compilation error,552,add,[CE] no suitable method found for add(int), ,this.data.add(this.minMiddleIndex);
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.domain!= null) { this.domain = domain; } else if(this.range!= range) { this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(domain == null) { if(this.domain!= null) { this.domain = domain; } else if(this.range!= range) { this.range = range; }
+patch is same with buggy,131,replace,, this.data  =  new  ArrayList();  ,this.data = new ArrayList();
+compilation error,131,replace,[CE] cannot find symbol, this.data  =  new  ArrayList();  ,this.data = new LinkedList();
+patch is same with buggy,131,replace,, this.minEndIndex  =  minMiddleIndex;  this.maxEndIndex  =  maxStartIndex;  , 
+compilation error,317,replace,[CE] not a statement, if(this.minEndIndex  <  index)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(end < minEnd) { this.minEndIndex = index * 2; Possibly
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index * 2; if(this.maxMiddleIndex > index * 2) { this.maxMiddleIndex = index * 2; slated
+compilation error,317,add,[CE] not a statement, ,this.minEndIndex = index + 2; if(this.minEndIndex >= index + 1) { this.minEndIndex = index + 2; slated
+compilation error,317,add,[CE] illegal start of expression, ,this.minEndIndex = index + 2; if(this.minEndIndex >= index + 1) { this.minEndIndex = index + 2;
+compilation error,305,add,[CE] ')' expected, ,if(e > maxMiddle && e studded -e) {
+patch is same with buggy,130,replace,, this.range  =  domain  +  1;  ,this.range = domain + 1;
+increase failing tests,131,add, [FE] AssertionFailedError, ,this.maxStartIndex = Math.max(this.maxStartIndex, 0);
+patch is same with buggy,332,replace,, this.minEndIndex  =  -index  -  1;  ,this.minEndIndex = -index - 1;
+patch is same with buggy,321,replace,, this.minEndIndex  =(index  <  0)?  1  :  index  +  1;  ,this.minEndIndex =(index < 0)? 1 : index + 1;
+increase failing tests,321,replace, [FE]  Size, this.minEndIndex  =(index  <  0)?  1  :  index  +  1;  ,this.minEndIndex =(index < 0)? 1 : index + 2;
+patch is same with buggy,130,replace,, this.domain  =  domain  + "_DOMAIN_DESCRIPTION ";  ,this.domain = domain +"_DOMAIN_DESCRIPTION";
+compilation error,130,replace,[CE] , this.domain  =  domain  + "_DOMAIN_DESCRIPTION ";  ,this.domain = domain +"_DOMAIN_DESCRIPTION");
+patch is same with buggy,321,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(minEndIndex,  maxStartIndex);  , 
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  2;  if(this.minMiddleIndex  >=  0)  {  this.maxMiddleIndex  =  index  +  2;  }  ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex >= 0) { this.maxMiddleIndex = index + 2; Toujours
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  +  2;  if(this.minMiddleIndex  >=  0)  {  this.maxMiddleIndex  =  index  +  2;  }  ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex >= 0) { this.maxMiddleIndex = index + 2;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  2;  if(this.minMiddleIndex  >=  0)  {  this.maxMiddleIndex  =  index  +  2;  }  , 
+patch is same with buggy,130,replace,, if(this.domain!=  domain)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(this.domain!= domain) { this.domain = domain; this.range = range; }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index + 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index + 1; slated
+compilation error,306,replace,[CE] not a statement, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex < index) { this.maxMiddleIndex = index + 1; Toujours
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 2; if(this.maxMiddleIndex -> index) { this.maxMiddleIndex = index + 1; }
+patch is same with buggy,246,replace,, if(this.data!=  null)  {  this.data.add(item);  }  ,if(this.data!= null) { this.data.add(item); }
+compilation error,306,replace,[CE] not a statement, if(this.minMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index + 1; Possibly
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > maxMiddle) { this.maxMiddleIndex = index + 1; Afterward
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > maxMiddle) { this.maxMiddleIndex = index + 1;
+compilation error,131,replace,[CE] cannot find symbol token, this.minEndIndex  =  Math.min(minEndIndex,  maxStartIndex);  ,this.minStartIndex = Math.min(token.min(minStartIndex, 0));
+increase failing tests,271,replace, [FE]  Size, this.minStartIndex  =(index  <=  0)?  this.minStartIndex  :  index;  ,this.minStartIndex =(index < 0)? this.minStartIndex : index + 1;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index + 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index + 1; Toujours
+patch is same with buggy,288,replace,, if(this.maxStartIndex  >=  index)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  , 
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null && range!= null) { if(this.domain!= null && this.range!= null) { this.domain = domain; this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null && range!= null) { if(this.domain!= null && this.range!= null) { throw new IllegalArgumentException(""); }
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null && range!= null) { if(this.domain!= null && this.range!= null) { this.data = new ArrayList(); }
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.max(maxEndIndex,  -1);  ,this.maxEndIndex = Math.max(maxEndIndex, -1);
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null && range!= null) { if(this.data == null) { this.data.add(new TimePeriodValue(name, domain, range)); }
+compilation error,131,replace,[CE] <identifier> expected, this.maxMiddleIndex  =  Math.max(maxMiddleIndex,  minEndIndex);  ,this.minStartIndex = Math.min(minStartIndex, minStartIndex).this.maxStartIndex = Math.min(maxStartIndex, minStartIndex);
+increase failing tests,306,add, [FE] AssertionFailedError, ,this.minMiddleIndex = index;
+patch is same with buggy,130,replace,, this.maxMiddleIndex  =  this.maxMiddleIndex  +  getMaxMiddleIndex();  ,this.maxMiddleIndex = this.maxMiddleIndex + getMaxMiddleIndex();
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 3; if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index + 3;
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 3; if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index + 3; Toujours
+compilation error,306,add,[CE] cannot find symbol minimumMiddle, ,this.maxMiddleIndex = index + 1; if(this.minimumMiddle >= 0) { this.maxMiddleIndex = index + 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex < index) { this.maxMiddleIndex = index + 1; Toujours
+compilation error,306,add,[CE] cannot find symbol, ,this.maxMiddleIndex = period.getDataItem(s);
+compilation error,306,add,[CE] cannot find symbol minimumMiddle, ,this.maxMiddleIndex = index - 1; if(this.minimumMiddle >= 0) { this.maxMiddleIndex = index - 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index - 1; Toujours
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.maxMiddleIndex > 0) { this.maxMiddleIndex = index - 1;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.maxMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  , 
+increase failing tests,130,add, [FE] AssertionFailedError, ,this.minStartIndex = this.minMiddleIndex + getMinMiddleIndex();
+patch is same with buggy,130,replace,, this.domain  =  domain;  if(this.range!=  null)  {  this.domain  =  domain;  }  ,this.domain = domain; if(this.range!= null) { this.domain = domain; }
+patch is same with buggy,317,replace,, this.minEndIndex  =  index  /  2;  ,this.minEndIndex = index / 2;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index + 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >=  index)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index + 1; Toujours
+compilation error,302,replace,[CE] cannot find symbol e, if(this.maxMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); }
+compilation error,302,add,[CE] not a statement, ,if(this.minMiddleIndex >= this.maxMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); meanwhile, s = getDataItem(this.minMiddleIndex).
+patch is same with buggy,552,replace,, return  this.maxMiddleIndex  /(this.minMiddleIndex  >=  0?  this.maxMiddleIndex  :  data.size());  ,return this.maxMiddleIndex /(this.minMiddleIndex >= 0? this.maxMiddleIndex : data.size());
+compilation error,131,add,[CE] cannot find symbol length, ,this.minEndIndex = Math.min(length, 0);
+increase failing tests,246,add, [FE] AssertionFailedError, ,if(this.data == null) { this.data.add(item); } else { this.data.add(item); }
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index + 2;
+compilation error,306,add,[CE] not a statement, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index + 2; slated
+compilation error,306,add,[CE] not a statement, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index + 2; Possibly
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  /  2  +  1;  ,this.maxMiddleIndex = index / 2 + 1;
+increase failing tests,332,add, [FE] AssertionFailedError, ,this.minEndIndex = -index + 1;
+patch is same with buggy,288,replace,, if(this.minMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(this.minMiddleIndex >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,288,replace,[CE] cannot find symbol e, if(this.minMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(s >= 0) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.max(minMiddleIndex,  maxMiddleIndex);  ,this.minMiddleIndex = Math.max(minMiddleIndex, maxMiddleIndex);
+compilation error,552,add,[CE] method getMaxMiddleIndex in class TimePeriodValues cannot be applied to given types;, ,this.maxMiddleIndex = getMaxMiddleIndex(this.data.size() - 1);
+compilation error,552,add,[CE] illegal start of expression, ,for(int i = 0, isize = this.data.size(); i < isize; i++) { if(this.maxMiddleIndex >= this.data.size()) { return this.maxMiddleIndex; }
+patch is same with buggy,321,replace,, this.maxEndIndex  =  index  /  2;  ,this.maxEndIndex = index / 2;
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex < index) { this.maxMiddleIndex = index + 2;
+compilation error,306,replace,[CE] not a statement, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex < index) { this.maxMiddleIndex = index + 2; Toujours
+patch is same with buggy,332,replace,, this.maxEndIndex  =  index  +  3;  , 
+compilation error,317,replace,[CE] not a statement, if(this.maxMiddleIndex  >=  index  +  3)  {  this.maxMiddleIndex  =  index  +  3;  }  ,this.minEndIndex = index + 2; if(this.minEndIndex >= index) { this.minEndIndex = index + 2; Toujours
+patch is same with buggy,246,replace,, if(this.data  ==  null)  {  this.data.add(item);  }  else  if(this.data.contains(item))  {  this.data.add(item);  }  ,if(this.data == null) { this.data.add(item); } else if(this.data.contains(item)) { this.data.add(item); }
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index - 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.maxMiddleIndex  >  index  -  1)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.maxMiddleIndex > index - 1) { this.maxMiddleIndex = index - 1; slated
+patch is same with buggy,271,replace,, this.maxStartIndex  =(index  >=  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index >= 0)? this.maxStartIndex : index;
+patch is same with buggy,332,replace,, this.maxEndIndex  =  -index  -  2;  ,this.maxEndIndex = -index - 2;
+compilation error,306,add,[CE] illegal start of expression, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex > index) { this.maxMiddleIndex = index + 2;
+compilation error,306,add,[CE] not a statement, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex > index) { this.maxMiddleIndex = index + 2; Possibly
+compilation error,306,add,[CE] not a statement, ,this.maxMiddleIndex = index + 2; if(this.minMiddleIndex > index) { this.maxMiddleIndex = index + 2; slated
+patch is same with buggy,332,replace,, this.maxEndIndex  =  index  /  2;  ,this.maxEndIndex = index / 2;
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 3; if(this.maxMiddleIndex >= index) { this.maxMiddleIndex = index + 3;
+compilation error,288,replace,[CE] cannot find symbol e, if(s  >=  this.minMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(s < this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,288,replace,, if(s  >=  this.minMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(s >= this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+patch is same with buggy,552,replace,, int  count  =  this.data.size();  ,int count = this.data.size();
+patch is same with buggy,130,replace,, this.maxEndIndex  =  maxEndIndex  +  getMaxEndIndex();  ,this.maxEndIndex = maxEndIndex + getMaxEndIndex();
+compilation error,306,replace,[CE] illegal start of expression, if(this.minMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > index) { this.maxMiddleIndex = index - 1;
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxEndIndex);  , 
+compilation error,288,replace,[CE] cannot find symbol e, if(this.minMiddleIndex  >=  0)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(s >= this.maxStartIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,317,replace,[CE] not a statement, this.minEndIndex  =  2;  ,this.minEndIndex = index + 1; if(this.minEndIndex >= index + 1) { this.minEndIndex = index + 2; slated
+compilation error,306,replace,[CE] illegal start of expression, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 2; if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index + 2;
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  maxMiddle)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 2; if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index + 2; Toujours
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= domain) { this.domain = domain; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { this.domain = domain; if(this.range!= range) { this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= domain) { if(this.range!= range) { this.data.add(name); }
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.length == 0) { this.domain = domain; this.range = range; }
+compilation error,131,add,[CE] cannot find symbol minimumEndIndex, ,this.minimumEndIndex = Math.min(this.minimumEndIndex, minEndIndex);
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.min(maxEndIndex,  minStartIndex);  , 
+compilation error,305,add,[CE] illegal start of expression, ,if(s > maxMiddle) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); >>
+increase failing tests,246,add, [FE] AssertionFailedError, ,if(this.data!= null) { this.data.add(item); } else { throw new IllegalArgumentException(""); }
+patch is same with buggy,131,replace,, this.minStartIndex  =  Math.min(minStartIndex,  minEndIndex);  this.maxEndIndex  =  Math.max(maxEndIndex,  maxMiddleIndex);  ,this.minStartIndex = Math.min(minStartIndex, minEndIndex); this.maxEndIndex = Math.max(maxEndIndex, maxMiddleIndex);
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index - 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  -  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  -  1;  }  ,this.maxMiddleIndex = index - 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index - 1; Toujours
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 3; if(this.maxMiddleIndex < index) { this.maxMiddleIndex = index + 3;
+compilation error,306,replace,[CE] not a statement, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index + 3; if(this.maxMiddleIndex < index) { this.maxMiddleIndex = index + 3; Toujours
+patch is same with buggy,131,replace,, this.minMiddleIndex  =  minEndIndex;  this.maxEndIndex  =  maxStartIndex;  ,this.minMiddleIndex = minEndIndex; this.maxEndIndex = maxStartIndex;
+patch is same with buggy,306,replace,, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index + 1; }
+compilation error,306,replace,[CE] not a statement, this.maxMiddleIndex  =  index  +  1;  if(this.minMiddleIndex  >  0)  {  this.maxMiddleIndex  =  index  +  1;  }  ,this.maxMiddleIndex = index + 1; if(this.minMiddleIndex > 0) { this.maxMiddleIndex = index + 1; Toujours
+increase failing tests,131,add, [FE]  Size, ,this.minEndIndex = Math.max(this.minEndIndex, 1);
+patch is same with buggy,130,replace,, if(this.domain!=  null  &&  this.range!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(this.domain!= null && this.range!= null) { this.domain = domain; this.range = range; }
+compilation error,271,add,[CE] no suitable method found for add(int), ,this.data.add(index);
+patch is same with buggy,131,replace,, this.minEndIndex  =  Math.min(minEndIndex,  maxStartIndex);  , 
+patch is same with buggy,302,replace,, if(middle  <  this.minMiddleIndex)  {  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime();  }  ,if(middle < this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); }
+compilation error,130,add,[CE] 'else' without 'if', ,this.domain = domain; if(this.range!= range) { this.range = range; else {
+compilation error,317,replace,[CE] illegal start of expression, if(this.minEndIndex  <  index)  {  this.minEndIndex  =  index  *  2;  }  ,this.minEndIndex = index * 2; if(this.maxEndIndex >= 0) {
+patch is same with buggy,131,replace,, this.maxEndIndex  =  Math.min(maxEndIndex,  -1);  ,this.maxEndIndex = Math.min(maxEndIndex, -1);
+increase failing tests,306,add, [FE] AssertionFailedError, ,this.minMiddleIndex = index + 1;
+increase failing tests,306,add, [FE]  Size, ,this.minMiddleIndex = index + 2;
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index * 2; if(this.minMiddleIndex >= index) { this.maxMiddleIndex = index * 2;
+compilation error,306,replace,[CE] illegal start of expression, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index - 3; if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index - 3;
+compilation error,306,replace,[CE] not a statement, if(this.maxMiddleIndex  >  index  *  2)  {  this.maxMiddleIndex  =  index  *  2  +  1;  }  ,this.maxMiddleIndex = index - 3; if(this.maxMiddleIndex > index) { this.maxMiddleIndex = index - 3; Toujours
+compilation error,131,add,[CE] cannot find symbol This, ,this.minEndIndex = Math.min(This.minEndIndex, minEndIndex);
+compilation error,317,add,[CE] cannot find symbol miniEndIndex, ,this.miniEndIndex = index / 2;
+compilation error,306,add,[CE] possible loss of precision, ,this.maxMiddleIndex = index / 2 + 1; int minStart = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();
+compilation error,306,add,[CE] cannot find symbol, ,this.maxMiddleIndex = index / 2 + 1; int minStart = getDataItem(this.minMiddleIndex).getPeriod().getTime();
+patch is same with buggy,305,replace,, if(s  >  maxMiddle)  {  this.maxMiddleIndex  =  index;  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  }  ,if(s > maxMiddle) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); }
+patch is same with buggy,305,replace,, if(s  >  maxMiddle)  {  this.maxMiddleIndex  =  index;  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  }  ,if(s > maxMiddle) { this.maxMiddleIndex = index; e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); }
+compilation error,305,replace,[CE] cannot find symbol maxMiddle, if(e  >  maxMiddle  &&  e  <  -e)  {  ,if(e > this.maxMiddle && e < this.minMiddleIndex) {
+compilation error,130,add,[CE] illegal start of expression, ,if(range == null) { if(domain!= null) { this.data = new ArrayList(); }
+compilation error,302,add,[CE] not a statement, ,if(s < this.minMiddleIndex) { long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd().getTime(); Afterward
+compilation error,310,add,[CE] cannot find symbol s, ,this.data.add(index, new TimePeriod(period, s, index + 1));
+compilation error,317,add,[CE] illegal start of expression, ,this.minEndIndex = index + 2; if(this.minEndIndex >= index) { this.minEndIndex = index + 2; >>
+compilation error,130,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range!= domain) { this.domain = domain; this.range = range; }
+compilation error,130,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.domain!= domain) { this.domain = domain; this.range = range; }
+compilation error,130,add,[CE] not a statement, ,if(domain!= null) { if(this.domain!= domain) { this.domain; this.range = range; }
+compilation error,246,add,[CE] illegal start of expression, ,else if(this.data.contains(item)) { if(this.data.contains(item)) { this.data.add(item); }
+patch is same with buggy,321,replace,, this.minEndIndex  =  index  *  2  +  1;  ,this.minEndIndex = index * 2 + 1;
+patch is same with buggy,131,replace,, this.minEndIndex  =  0;  ,this.minEndIndex = 0;
+increase failing tests,131,replace, [FE]  Size, this.minEndIndex  =  0;  ,this.minEndIndex = 1;
+patch is same with buggy,271,replace,, this.maxStartIndex  =(index  <  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index < 0)? this.maxStartIndex : index;
+increase failing tests,271,replace, [FE] AssertionFailedError, this.maxStartIndex  =(index  <  0)?  this.maxStartIndex  :  index;  ,this.maxStartIndex =(index <= 0)? this.maxStartIndex : index;
+compilation error,131,add,[CE] cannot find symbol minimumEndIndex, ,this.minimumEndIndex = -1;

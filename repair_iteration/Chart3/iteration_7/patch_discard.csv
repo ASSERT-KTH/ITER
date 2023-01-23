@@ -1,510 +1,201 @@
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(notify) { fireSeriesChanged(); fought if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because that // happens next anyway
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(notify) { fireSeriesChanged(); hopped if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because that // happens next anyway
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(notify) { fireSeriesChanged(); & } if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because that // happens next anyway
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  10;    ,this.minY = Double.NaN / 10;
-patch is same with buggy,188,replace,, this.minY  =  minY  /  10;    ,this.minY = minY / 10;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN / 2.0;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  2  /  1;    ,this.minY = Double.NaN * 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  2  /  1;    ,this.minY = Double.NaN / 2;
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  2  /  1;    ,this.minY = Double.NaN * 2 / 1;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  /  5;    ,this.minY = Double.NaN * 2 / 5;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  +  Integer.MIN_VALUE;    ,this.minY = Double.NaN * 2 + Integer.MIN_VALUE;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  7  -  1;    ,this.minY = Double.NaN * 7 - 1;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged();? true : false; // removeAgedItems(true);
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged();? true :!removeAgedItems(true);
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 10.0;
-compilation error,188,add,[CE] cannot find symbol maxX,   ,this.maxX = Double.NaN + 1L;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); bodied if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ removeAgedItems(false); &/ removeAgedItems(
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN / 2.0;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN / 2.0 + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN * 2.0;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { removeAgedItems(true);// remove items if needed, but // won't notify any, as this // happens next instead; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { removeAgedItems(true);// remove old items if needed, but // won't notify any, as this // happens next instead; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { removeAgedItems(true);// remove old items if needed, but // won't notify any, as this // happens next instead; } 
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  6  +  Integer.MIN_VALUE;    ,this.minY = Double.NaN * 6 + Integer.MIN_VALUE;
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d.getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove items if needed, but // don't notify any, because that // happens next anyway
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove items if needed, but // don't notify any, because that // happens next anyway....
-patch is same with buggy,188,replace,, this.maxY  =  maxY  *  2;    ,this.maxY = maxY * 2;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  /  4  +  1;    ,this.minY = Double.NaN * 2 / 4 + 1;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 1000;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anyone, as that
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anyone, as
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anyone
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  1000;    ,this.minY = Double.NaN * 1000;
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  2;    ,this.minY = Double.NaN / 2;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2.0;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 11 + 1;
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals( " ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(item.getPeriod().equals(item.getPeriod())&& item.getPeriod().getClass().equals(" ")) {
-compilation error,634,add,[CE] illegal start of expression,   ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged(); }, as that // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2.0;
-compilation error,194,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 2.0;
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals( " ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(" ")) {
-compilation error,584,add,[CE] unclosed string literal,   ,else if(this.timePeriodClass.equals(")) {
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN % 30.0;
-compilation error,188,replace,[CE] illegal start of expression, this.timePeriodClass  =  getTimePeriodClass();  if(range!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }    ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-patch is same with buggy,188,replace,, this.timePeriodClass  =  getTimePeriodClass();  if(range!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }    ,this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,188,replace,[CE] illegal start of expression, this.timePeriodClass  =  getTimePeriodClass();  if(range!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }    ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(domain!= null) { this.timePeriodClass = getTimePeriodClass(); }
-patch is same with buggy,188,replace,, if(this.timePeriodClass!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] illegal start of expression, if(this.timePeriodClass!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(range!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] illegal start of expression, if(this.timePeriodClass!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(domain!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 6 + 1;
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  as  that  //  happens  next  anyway;    ,if(notify) { fireSeriesChanged(); }, as // won't happen next anyway; } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, as // won't happen next
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  as  that  //  happens  next  anyway;    ,if(notify) { fireSeriesChanged(); }, as // won't happen next anyway; } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, as // won't notify
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  as  that  //  happens  next  anyway;    ,if(notify) { fireSeriesChanged(); }, as // won't happen next anyway; } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, as // won't
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 6 + Integer.MIN_VALUE;
-compilation error,193,add,[CE] cannot find symbol minItemCount,   ,this.minItemCount = Double.NaN * 6 + Integer.MIN_VALUE;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  10000;    ,this.minY = Double.NaN % 10000;
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN - 3;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anybody, because that
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anybody, because
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anyone, because that
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN - 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN / 3;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN;
-compilation error,1064,add,[CE] not a statement,   ,if(clone!= null) { copy.add(item); bodied else if(item == null) { copy.add(item); }
-compilation error,1064,add,[CE] illegal start of expression,   ,if(clone!= null) { copy.add(item); >> else if(item == null) { copy.add(item); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove items if needed, but // don't notify
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove items if needed, but // don't notify anyone
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove old items if needed, but // don't notify
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 1.5 - 1;
-patch is same with buggy,634,replace,, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &    ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ removeAgedItems(false); &/ removeAgedItems(false); &/ removeAgedItems(false); &
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ removeAgedItems(false); &/ removeAgedItems(false); &
-increase failing tests,634,replace, [FE] AssertionFailedError, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &    ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ removeAgedItems(false); &/ removeAgedItems(false); &/ removeAgedItems(false);
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  100.0;    ,this.minY = Double.NaN % 100.0;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, but // do not notify anybody, as this // happens next anyway; } if(notify) { fireSeriesChanged(); } 
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, but // do not notify anybody, as this // happens next anyway; } if(notify) { fireSeriesChanged(); } 
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, but // do not notify anyone, as this // happens next anyway; } if(notify) { fireSeriesChanged(); } 
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 2.0;
-compilation error,194,replace,[CE] cannot find symbol minX, this.minY  =  Double.NaN  /  12.0;    ,this.minX = Double.NaN / 2.0;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 5 + 1;
-compilation error,188,replace,[CE] cannot find symbol MinY, this.minY  =  maxY  -  1;    ,this.minY = MinY - 1;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, // wouldn't notify anyone, because that
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true); // remove old items if needed, // wouldn't notify anyone, because that
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }, // wouldn't notify anyone, because that // happens next anyway; }
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 10 + Integer.MIN_VALUE;
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 12.0;
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  *  2  /  7;    ,this.maxY = Double.NaN * 2 / 7;
-compilation error,188,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,[Delete]
-patch is same with buggy,188,replace,, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(domain == null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(range!= null) { if(domain == null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  10;    ,this.maxY = Double.NaN / 10;
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  -  2;    ,this.minY = Double.NaN - 2;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 20.0;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  20.0;    ,this.minY = Double.NaN / 20.0;
-increase failing tests,634,replace, [FE] AssertionFailedError, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  removeAgedItems(false);  fiance  ;!  throw  new  IllegalArgumentException( "   ");  >>  if(notify)  {  fireSeries    ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); // removeAgedItems(false); fiance ;! throw new IllegalArgumentException(" "); } if(notify) { fireSeries
-increase failing tests,634,replace, [FE] AssertionFailedError, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  removeAgedItems(false);  fiance  ;!  throw  new  IllegalArgumentException( "   ");  >>  if(notify)  {  fireSeries    ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); // removeAgedItems(false); fiance ;! throw new IllegalArgumentException( " "); } if(notify) { fireSeries
-increase failing tests,634,replace, [FE] AssertionFailedError, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  removeAgedItems(false);  fiance  ;!  throw  new  IllegalArgumentException( "   ");  >>  if(notify)  {  fireSeries    ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); // removeAgedItems(false); fiance ;! throw new IllegalArgumentException(" "); } if(notify) { fireSeries
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 2 + Integer.MIN_VALUE;
-compilation error,193,add,[CE] cannot find symbol minItemCount,   ,this.minItemCount = Double.NaN * 2 + Integer.MIN_VALUE;
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals(c)||  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals(c)|| item.getPeriod().getClass().equals("")) {
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;    ,this.minY = Double.NaN / 1000;
-patch is same with buggy,1269,replace,, if(Double.isNaN(b)||  Double.isInfinite(a)||  Double.isNaN(b  *  a))  {    ,if(Double.isNaN(b)|| Double.isInfinite(a)|| Double.isNaN(b * a)) {
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, // wouldn't notify anybody, because that
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, // wouldn't notify anyone, because that
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, // wouldn't happen next anyway; }
-patch is same with buggy,584,replace,, else  if(this.timePeriodClass.equals( " "))  {    ,else if(this.timePeriodClass.equals("")) {
-increase failing tests,584,replace, [FE] AssertionFailedError, else  if(this.timePeriodClass.equals( " "))  {    ,else if(!this.timePeriodClass.equals("")) {
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(notify) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, but // don't notify any, because that // happens next anyway......
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(notify) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, but // don't notify any, because that // happens next anyway......
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(notify) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);// remove items if needed, but // don't notify any, because that // happens next anyway......
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  3.0;    ,this.maxY = Double.NaN / 3.0;
-compilation error,188,replace,[CE] cannot find symbol MinY, this.minY  =  minY  %  1;    ,this.minY = MinY % 2;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  10  +  Integer.MIN_VALUE;    ,this.minY = Double.NaN * 10 + Integer.MIN_VALUE;
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  *  b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) }
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a  +  2))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)|| Double.isNaN(a + 1)) {
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 200;
-patch is same with buggy,1269,replace,, if(Double.isNaN(a  +  1)||  Double.isInfinite(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b))  {    ,if(Double.isNaN(a + 1)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove items if needed, but // don't notify anyone
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a),|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-patch is same with buggy,1269,replace,, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove items if needed, but // don't notify any, because that // happens next anyway.....
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; &/ removeAgedItems(false); &/ remove items if needed, but // don't notify any, because that // happens next anyway.....
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2.0;
-increase failing tests,584,replace, [FE] AssertionFailedError, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals("")|| item.getPeriod().getClass().equals(" ")) {
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals("")&& item.getPeriod().getClass().equals(" ")) {
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals("")&& item.getPeriod().getClass().equals("")) {
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  *  2  /  2;    ,this.maxY = Double.NaN * 2 / 2;
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  1;    ,this.minY = Double.NaN * 1;
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 2)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(b)|| Double.isNaN(a + 2)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)|| Double.isNaN(a + 2)) {
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, // do't notify any, as this // happens next anyway; } if(notify) { fireSeriesChanged(); } 
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, // do't notify any, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, // do't notify any, as this // happens next anyway; }
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 2 / 1;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(true);
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item); // removeAgedItems(true); // remove items if needed, but
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item); // removeAgedItems(true); // remove items if needed,
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2D  +  1;    ,this.minY = Double.NaN / 2 + 1;
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  2D  +  1;    ,this.minY = Double.NaN / 2D + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2D  +  1;    ,this.minY = Double.NaN / 2 * 1;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged();? true : false; // remove old items if needed, but // won't notify anyone, as that // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged();? true : false; // removeAgedItems(true); // remove items if needed, but // won't notify anyone, as
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged();? true : false; // remove old items if needed, but // won't notify anyone, as that // happens next anyway; } 
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2D + 1;
-compilation error,634,replace,[CE] ';' expected, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  do  not  notify  anyone,  as  that  //  happens  next  anyway;    ,if(removeAgedItems(true)) { remove old items if needed, but // do not notify anybody, as this // happens next anyway; }
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a  +  2))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 2)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a  +  2))  {    ,if(Double.isNaN(a), Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 2)) {
-increase failing tests,584,replace, [FE] AssertionFailedError, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals(item.getPeriod())|| item.getPeriod().getClass().equals(".")) {
-increase failing tests,584,replace, [FE] AssertionFailedError, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals(item.getPeriod()) || item.getPeriod().getClass().equals(".")) {
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  2.0;    ,this.maxY = Double.NaN / 2.0;
-compilation error,194,replace,[CE] ';' expected, this.maxY  =  Double.NaN  /  2.0;    ,this.maxY = Double.NaN / 2.0L;
-compilation error,634,replace,[CE] ')' expected, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  wouldn't  notify  anyone,  as  that  //  happens  next  anyway;    ,if(removeAgedItems(true)&& remove old items if needed, as // wouldn't happen next, as that // happens next anyway;
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because that // happens next anyway......
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; &/ removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because that // happens next anyway......
-compilation error,188,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN + 3;
-compilation error,194,replace,[CE] cannot find symbol minX, this.minY  =  Double.NaN  -  3;    ,this.minX = Double.NaN + 3;
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN - 3;
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  *  1;    ,this.maxY = Double.NaN * 1;
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) }
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-patch is same with buggy,188,replace,, this.minY  =  minY  %  2;    ,this.minY = minY % 2;
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b))  {    ,if(Double.isNaN(a + 1)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) }
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  *  2  /  2;    ,this.minY = Double.NaN * 2 / 7;
-compilation error,194,replace,[CE] cannot find symbol minX, this.maxY  =  Double.NaN  *  2  /  2;    ,this.minX = Double.NaN * 2 / 7;
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  won't  notify  any,  as  this  //  happens  next  anyway;    ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); }, as this // happens next anyway; }
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  won't  notify  any,  as  this  //  happens  next  anyway;    ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged(); &/ removeAgedItems(true);
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 0.5;
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; &/ removeAgedItems(false); &/ remove old items if needed, but // don't notify any, because that // happens next anyway....
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; &/ removeAgedItems(false); &/ remove old items if needed, but // don't notify any, because that // happens next anyway!
-patch is same with buggy,188,replace,, this.minY  =  minY  *  2;    ,this.minY = minY * 2;
-compilation error,193,replace,[CE] cannot find symbol minX, this.minY  =  Double.NaN  *  10  +  Integer.MIN_VALUE;    ,this.minX = Double.NaN * 7 - 1;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anyone, because that
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove old items if needed, but // wouldn't notify anyone, because
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(true);// remove items if needed, but // wouldn't notify anyone, because that
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isNaN(a  *  b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)|| item.getPeriod().getClass().equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)|| item.getPeriod().getClass().equals( " ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c) || item.getPeriod().getClass().equals(" ")) {
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 2 / 2;
-compilation error,194,add,[CE] cannot find symbol miniX,   ,this.miniX = Double.NaN * 2 / 2;
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 4 + 1;
-patch is same with buggy,584,replace,, else  if(this.timePeriodClass.equals(item.getPeriod())&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals("")) {
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 1000;
-compilation error,193,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN * 1000;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 12 + 1;
-compilation error,188,add,[CE] cannot find symbol MinY,   ,this.minY = MinY / 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 2.0;
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 12.0;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 3.0;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, but // won't notify any, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, but // won't notify any, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove old items if needed, but // won't notify any, as this // happens next anyway; } if(notify) { fireSeriesChanged();
-compilation error,634,add,[CE] illegal start of expression,   ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged(); }, as // wouldn't happen next; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); }, as // wouldn't happen next anyway; } if(notify) { fireSeriesChanged();
-compilation error,634,add,[CE] illegal start of expression,   ,if(removeAgedItems) { fireSeriesChanged(); } if(notify) { fireSeriesChanged(); } ; } if(notify) { fireSeriesChanged(); }, as // wouldn't happen next; } 
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d.getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); }
-patch is same with buggy,1269,replace,, if(Double.isNaN(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(b  +  a))  {    ,if(Double.isNaN(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  -  2;    ,this.maxY = Double.NaN - 2;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove items if needed, but // do not notify anybody
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove old items if needed, but // do not notify
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }? true : false; // removeAgedItems(true); // remove old items if needed, but // do not notify anybody
-compilation error,188,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(range!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] 'else' without 'if', if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,else if(range!= null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  do  not  notify  anybody,  as  that  //  happens  next  anyway;    ,if(true) { removeAgedItems(true);// remove old items if needed, but // do not notify anybody, as that // happens next anyway; }
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  2;    ,this.maxY = Double.NaN / 2;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;    ,this.minY = Double.NaN / 1000;
-compilation error,188,add,[CE] illegal start of expression,   ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,188,add,[CE] illegal start of expression,   ,if(domain!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,188,add,[CE] illegal start of expression,   ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(domain!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 3.0;
-compilation error,194,add,[CE] cannot find symbol miniX,   ,this.miniX = Double.NaN / 3.0;
-patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway......    ,removeAgedItems(false);// remove old items if needed, but // don't notify anybody, because that // happens next anyway......
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { removeAgedItems(true);// remove items if needed, but // won't notify anyone, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { removeAgedItems(true);// remove old items if needed, but // won't notify anyone, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { removeAgedItems(true);// remove items if needed, but // won't notify anyone, as this // happens next anyway; } if(notify) { fireSeriesChange
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 6;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, but // do not notify anyone, as that // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, but // do not notify anyone, as that // happens next anyway; } if(notify) { fireSeriesChanged(); } 
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); &/ removeAgedItems(true); // remove items if needed, but do not notify anyone, as that // happens next anyway; } if(notify) { fireSeriesChanged(); } 
-compilation error,193,replace,[CE] cannot find symbol minX, this.minY  =  Double.NaN  /  2.0;    ,this.minX = Double.NaN * 2.0 / 2;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 2 / 5;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 2 / 4 + 1;
-compilation error,188,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 2;
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(item);  }  else  if(item  ==  null)  {  copy.add(item);  }    ,if(clone!= null) { copy.add(item); } else if(item == null) { copy.add(item); }
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2.0  /  2;    ,this.minY = Double.NaN * 2.0 / 2;
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); &/ do't notify any, but // do't notify any, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged();? true : false; // removeAgedItems(true); &/ do't notify any, as this // happens next anyway; }
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); &/ do't notify any, but // do't notify any, as this // happens next anyway; } 
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN * 4;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 2.0;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 2.0;
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 12.0;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  7  -  1;    ,this.minY = Double.NaN * 7 - 1;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2.0  /  2;    ,this.minY = Double.NaN * 2.0 / 2;
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); &&!removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); Afterward ; &/ removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); &&!removeAgedItems(false); &/ remove old items if needed, but // don't notify anyone, because that
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-compilation error,188,add,[CE] no suitable method found for getDataItem(Comparable),   ,this.data = getDataItem(name);
-compilation error,188,add,[CE] cannot find symbol,   ,this.data = new ArrayList();
-compilation error,188,replace,[CE] cannot find symbol maximumY, this.maxY  =  minY  /  4;    ,this.maxY = maximumY / 4;
-compilation error,193,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 200;
-increase failing tests,584,replace, [FE] AssertionFailedError, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals(item.getPeriod())|| item.getPeriod().getClass().equals(".")) {
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,584,replace,[CE] illegal start of type, else  if(!this.timePeriodClass.equals(c)||  item.getPeriod().getClass().equals( "   "))  {    ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals(".")) { throw new SeriesException(""); }
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,188,add,[CE] no suitable method found for max(double),   ,this.maxY = Math.max(Double.NaN / 10);
-patch is same with buggy,188,replace,, this.minY  =  minY  %  2;    ,this.minY = minY % 2;
-compilation error,188,add,[CE] no suitable method found for max(double),   ,this.maxY = Math.max(Double.NaN / 2);
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)&& Double.isNaN(a * b)) {
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(getItemCount())) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(getItemCount())) { if(notify) { fireSeriesChanged(); }
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,188,replace,, this.minY  =  minY  /  10;    ,this.minY = minY / 10;
-patch is same with buggy,634,replace,, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  won't  notify  any,  as  this  //  happens  next  anyway;    ,removeAgedItems(true);// remove old items if needed, but // won't notify any, as this // happens next anyway;
-increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  won't  notify  any,  as  this  //  happens  next  anyway;    ,this.data.add(item);
-compilation error,634,replace,[CE] cannot find symbol value, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  won't  notify  any,  as  this  //  happens  next  anyway;    ,item.setValue(value);
-compilation error,634,replace,[CE] cannot find symbol items, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  won't  notify  any,  as  this  //  happens  next  anyway;    ,items.add(item);
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  12.0;    ,this.minY = Double.NaN / 2.0;
-compilation error,194,replace,[CE] cannot find symbol NaN, this.minY  =  Double.NaN  /  12.0;    ,this.maxY = Long.NaN / 2.0;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN / 2.0;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  *  1;    ,this.maxY = Double.NaN * 1;
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  -  2;    ,this.maxY = Double.NaN - 2;
-compilation error,634,add,[CE] not a statement,   ,!this.data.containsKey(item.getValue());
-compilation error,634,add,[CE] not a statement,   ,!this.data.containsKey(item.getValue()); d.addChangeListener(this);
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN / 2.0;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN / 2.0 + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN * 2.0;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  6  +  Integer.MIN_VALUE;    ,this.minY = Double.NaN * 6 + Integer.MIN_VALUE;
-compilation error,193,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 1000;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,1269,replace,, if(Double.isNaN(b)||  Double.isInfinite(a)||  Double.isNaN(b  *  a))  {    ,if(Double.isNaN(b)|| Double.isInfinite(a)|| Double.isNaN(b * a)) {
-compilation error,188,replace,[CE] illegal start of expression, this.timePeriodClass  =  getTimePeriodClass();  if(range!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }    ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,188,replace,[CE] illegal start of expression, this.timePeriodClass  =  getTimePeriodClass();  if(range!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }    ,if(timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,188,replace,[CE] 'else' without 'if', this.timePeriodClass  =  getTimePeriodClass();  if(range!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }    ,else if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,193,replace,[CE] cannot find symbol, this.minY  =  Double.NaN  /  2.0;    ,this.minY = Double.NaN * 2.0 / 2 + name.length();
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  10;    ,this.maxY = Double.NaN / 10;
-compilation error,188,replace,[CE] cannot find symbol maximumY, this.maxY  =  minY  /  1;    ,this.maxY = maximumY / 1;
-compilation error,188,replace,[CE] bad operand types for binary operator '/', this.maxY  =  minY  /  1;    ,this.maxY = range / 1;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  20.0;    ,this.minY = Double.NaN / 20.0;
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  3.0;    ,this.maxY = Double.NaN / 3.0;
-compilation error,188,replace,[CE] bad operand types for binary operator '%', this.minY  =  minY  %  1;    ,this.minY = range % 1;
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &    ,if(d == null) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &    ,if(item.getPeriod().equals(this.data.size())) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &/  removeAgedItems(false);  &    ,if(item.getPeriod().equals(this.data)) { if(notify) { fireSeriesChanged(); }
-compilation error,193,add,[CE] cannot find symbol TimePeriodClass,   ,this.timePeriodClass = TimePeriodClass.getInstance(); this.minY = Double.NaN * 1000;
-compilation error,193,add,[CE] cannot find symbol TimePeriodClass,   ,this.timePeriodClass = TimePeriodClass.getInstance(domain); this.data.add(name);
-compilation error,193,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 2.0;
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(notify) { fireSeriesChanged(); Afterward if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, because that's next anyway......
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(notify) { fireSeriesChanged(); Afterward if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, because that's next!
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway......    ,if(notify) { fireSeriesChanged(); Afterward if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove old items if needed, because that's next anyway........
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a  +  2))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)|| Double.isNaN(a + 1)) {
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;    ,this.minY = Double.NaN / 1000;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,634,replace,, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway......    ,removeAgedItems(true);// remove old items if needed, but // don't notify any, because that // happens next anyway......
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(getItemCount())) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(getItemCount() > this.maximumItemCount) { fireSeriesChanged(); }
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals("")) {
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,188,replace,, this.minY  =  maxY  -  1;    ,this.minY = maxY - 1;
-compilation error,188,replace,[CE] bad operand types for binary operator '-', this.minY  =  maxY  -  1;    ,this.minY = range - 1;
-compilation error,188,replace,[CE] illegal start of expression, if(this.timePeriodClass!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] illegal start of expression, if(this.timePeriodClass!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(range!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,this.data.add(item);
-compilation error,634,replace,[CE] cannot find symbol value, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,item.setValue(value);
-compilation error,634,replace,[CE] cannot find symbol items, removeAgedItems(true);//  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,items.add(item);
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(getItemCount())) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals("")) { if(!added) { fireSeriesChanged(); }
-patch is same with buggy,1269,replace,, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b))  {    ,if(Double.isInfinite(a), Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,193,replace,[CE] ';' expected, this.minY  =  Double.NaN  *  2  /  4  +  1;    ,this.minY = Double.NaN * 2, + 1;
-patch is same with buggy,188,replace,, this.maxY  =  maxY  /  7;    ,this.maxY = maxY / 7;
-compilation error,188,add,[CE] no suitable method found for max(double,String),   ,this.maxY = Math.max(minY, range);
-patch is same with buggy,1269,replace,, if(Double.isNaN(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(b  +  a))  {    ,if(Double.isNaN(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)|| Double.isInfinite(b + a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 1)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 2)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)|| Double.isNaN(a + 1)) {
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  1000;    ,this.minY = Double.NaN * 1000;
-patch is same with buggy,584,replace,, else  if(this.timePeriodClass.equals(item.getPeriod())&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals(" ")) {
-patch is same with buggy,584,replace,, else  if(this.timePeriodClass.equals(item.getPeriod())&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().equals("")) {
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol,   ,item.setPeriod(getItemCount() - 1);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(true);//  remove  old  items  if  needed,  as  that  //  happens  next  anyway;    ,this.data.add(item);
-compilation error,634,replace,[CE] cannot find symbol items, removeAgedItems(true);//  remove  old  items  if  needed,  as  that  //  happens  next  anyway;    ,items.add(item);
-compilation error,634,replace,[CE] cannot find symbol value, removeAgedItems(true);//  remove  old  items  if  needed,  as  that  //  happens  next  anyway;    ,item.setValue(value);
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN - 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN;
-compilation error,194,replace,[CE] ';' expected, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN -- 1;
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 10.0;
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  -  2;    ,this.minY = Double.NaN - 2;
-compilation error,188,replace,[CE] ';' expected, this.minY  =  Double.NaN  -  2;    ,this.minY = Double.NaN -- 2;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;    ,this.minY = Double.NaN / 1000;
-compilation error,188,add,[CE] class expected,   ,this.minY = double.NaN * 1;
-compilation error,1064,add,[CE] cannot find symbol Copy,   ,if(clone!= null) { Copy.add(item); } else if(item == null) { copy.add(item); }
-compilation error,1064,add,[CE] cannot find symbol,   ,if(clone!= null) { copy.add(item); } else if(item == null) { clone.add(item); }
-patch is same with buggy,584,replace,, else  if(this.timePeriodClass.equals( " "))  {    ,else if(this.timePeriodClass.equals("")) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a  +  2))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 2)) {
-compilation error,1269,replace,[CE] cannot find symbol m, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a  +  2))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(m)) {
-patch is same with buggy,188,replace,, this.maxY  =  maxY  *  2;    ,this.maxY = maxY * 2;
-compilation error,188,replace,[CE] cannot find symbol maximumY, this.maxY  =  maxY  *  2;    ,this.maxY = maximumY * 2;
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); figured
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d == null) { if(notify) { fireSeriesChanged(); }
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  1;    ,this.minY = Double.NaN * 1;
-compilation error,188,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,[Delete]
-compilation error,188,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(this.timePeriodClass!= null) { if(domain == null) { this.timePeriodClass = getTimePeriodClass(); } else if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] illegal start of expression, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,if(this.timePeriodClass!= null) { if(domain == null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.range = range; }
-compilation error,188,replace,[CE] cannot find symbol, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,this.data = new ArrayList();
-compilation error,188,replace,[CE] no suitable method found for getDataItem(Comparable), if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,this.data = getDataItem(name);
-compilation error,188,replace,[CE] cannot find symbol, if(domain  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  if(range!=  null)  {  this.range  =  range;  }    ,this.data = new ArrayList(name.size());
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals("")) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(this.data.getItemCount())) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] cannot find symbol b,   ,b.setValue(item.getValue()); b.addChangeListener(this);
-compilation error,193,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 2.0;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2.0;
-compilation error,188,replace,[CE] class expected, this.maxY  =  Double.NaN  *  1;    ,this.minY = double.NaN / 10;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN + 3;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  3;    ,this.minY = Double.NaN + 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  2  /  1;    ,this.minY = Double.NaN * 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  2  /  1;    ,this.minY = Double.NaN * 2 + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  2  /  1;    ,this.minY = Double.NaN * 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2D  +  1;    ,this.minY = Double.NaN / 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2D  +  1;    ,this.minY = Double.NaN / 2 + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2D  +  1;    ,this.minY = Double.NaN / 2;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  2;    ,this.maxY = Double.NaN / 2;
-patch is same with buggy,1269,replace,, if(Double.isNaN(a  +  1)||  Double.isInfinite(b)||  Double.isInfinite(a  +  b)||  Double.isInfinite(a  +  b))  {    ,if(Double.isNaN(a + 1)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  *  2  /  2;    ,this.minY = Double.NaN * 2 / 7;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  *  2  /  2;    ,this.minY = Double.NaN * 2 / 7 + 1;
-patch is same with buggy,188,replace,, this.minY  =  minY  *  2;    ,this.minY = minY * 2;
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  10;    ,this.minY = Double.NaN / 10;
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(getItemCount())) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals("")) { if(!added) { fireSeriesChanged(); }
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals("")&& item.getPeriod().getClass().equals(" ")) {
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals( " ")&&  item.getPeriod().getClass().equals( "   "))  {    ,else if(!this.timePeriodClass.equals(" ")&& item.getPeriod().getClass().equals(" ")) {
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals(getItemCount())) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] illegal start of expression,   ,if(item.getPeriod().equals("")) { if(!added) { fireSeriesChanged(); }
-compilation error,188,replace,[CE] cannot find symbol maximumY, this.minY  =  minY  %  4;    ,this.maxY = maximumY * 2;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  *  2  /  7;    ,this.maxY = Double.NaN * 2 / 7;
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isNaN(a  *  b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isNaN(a * b)) {
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); figured
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway....    ,if(d == null) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); figured
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(d == null) { if(notify) { fireSeriesChanged(); }
-compilation error,188,add,[CE] illegal start of expression,   ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.timePeriodClass = getTimePeriodClass(); }
-compilation error,188,add,[CE] illegal start of expression,   ,if(range!= null) { this.timePeriodClass = getTimePeriodClass(); if(range!= null) { this.data = new ArrayList(); }
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  10  +  Integer.MIN_VALUE;    ,this.minY = Double.NaN * 10 + Integer.MIN_VALUE;
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals("")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals( " ")) {
-compilation error,188,add,[CE] class expected,   ,this.minY = double.NaN / 2;
-patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  2;    ,this.minY = Double.NaN / 2;
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  100.0;    ,this.minY = Double.NaN % 100.0;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  2.0;    ,this.maxY = Double.NaN / 2.0;
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)&& item.getPeriod().getClass().equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(c)) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)) {
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(item);  }  else  if(item  ==  null)  {  copy.add(item);  }    ,if(clone!= null) { copy.add(item); } else if(item == null) { copy.add(item); }
-compilation error,1064,replace,[CE] ')' expected, if(clone!=  null)  {  copy.add(item);  }  else  if(item  ==  null)  {  copy.add(item);  }    ,if(clone == null) { if(copy.add(item); } else if(item == null) { copy.add(item); }
-compilation error,1064,replace,[CE] 'catch' without 'try', if(clone!=  null)  {  copy.add(item);  }  else  if(item  ==  null)  {  copy.add(item);  }    ,if(clone.isSeries()) { if(clone!= null) { copy.add(item); }
-compilation error,193,add,[CE] cannot find symbol NaN,   ,this.minY = Long.NaN / 6;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  +  Integer.MIN_VALUE;    ,this.minY = Double.NaN * 2 + Integer.MIN_VALUE;
-compilation error,188,add,[CE] ';' expected,   ,this.minY = Double.NaN -- 1L;
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,584,replace,[CE] illegal start of type, else  if(!this.timePeriodClass.equals(c)||  item.getPeriod().getClass().equals( "   "))  {    ,else if(this.timePeriodClass.equals("")) { throw new SeriesException(""); }
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  10000;    ,this.minY = Double.NaN % 10000;
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a + b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a + b)|| Double.isInfinite(a * b)) {
-patch is same with buggy,188,replace,, this.minY  =  minY  %  4;    ,this.minY = minY % 4;
-compilation error,634,add,[CE] illegal start of expression,   ,if(item == null) { if(!added) { fireSeriesChanged(); }
-compilation error,634,add,[CE] cannot find symbol b,   ,b.setValue(item.getValue()); b.addChangeListener(this);
-compilation error,634,add,[CE] cannot find symbol b,   ,b.setValue(item.getValue());
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  removeAgedItems(false);  fiance  ;!  throw  new  IllegalArgumentException( "   ");  >>  if(notify)  {  fireSeries    ,if(notify) { fireSeriesChanged(); fiance ;! throw new IllegalArgumentException(" "); } if(notify) { fireSeriesChanged(); } ;
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  removeAgedItems(false);  fiance  ;!  throw  new  IllegalArgumentException( "   ");  >>  if(notify)  {  fireSeries    ,if(notify) { fireSeriesChanged(); fiance ;! throw new IllegalArgumentException(" "); } if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  removeAgedItems(false);  fiance  ;!  throw  new  IllegalArgumentException( "   ");  >>  if(notify)  {  fireSeries    ,if(notify) { fireSeriesChanged(); fiance ;! throw new IllegalArgumentException(" ");
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); }
-compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); figured
-compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  items  if  needed,  but  //  don't  notify  any,  because  that  //  happens  next  anyway.....    ,if(isSeriesVisible()) { if(notify) { fireSeriesChanged(); }
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  *  b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a * b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(a  *  b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)|| Double.isInfinite(a * b)) {
+compilation error,188,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 2;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  4  +(Double.MAX_VALUE);  ,this.minY = Double.NaN * 4 +(Double.MAX_VALUE);
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  4  +(Double.MAX_VALUE);  ,this.minY = Double.NaN * 2 +(Double.MAX_VALUE);
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  2  :  0);  ,this.minY =(0 < minY? 2 : 0);
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  2.0;  ,this.maxY = Double.NaN / 2.0;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN % 3 + 1;
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN * 1;
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN * 4 +(Double.MAX_VALUE);
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); }
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  10.0;  ,this.minY = Double.NaN / 10.0;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anybody, because that // happens next anyway; }
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  %  10  +  1;  , 
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that // happens next anyway; }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that // happens next anyway; }!
+increase failing tests,634,replace, [FE] AssertionFailedError, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); // removeAgedItems(false); fiance ;!
+increase failing tests,634,replace, [FE] AssertionFailedError, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); // removeAgedItems(false); fiance ;! if(notify) { fireSeriesChanged(); } ;
+compilation error,634,add,[CE] not a statement, ,if(notify) { fireSeriesChanged(); bodied ; // removeAgedItems(false); // remove old items if necessary, // don't notify anybody, because that // happens next anyway; } ;
+patch is same with buggy,188,replace,, this.maxY  =  1;  , 
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  20.0;  ,this.minY = Double.NaN % 20.0;
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN - 2 + 1;
+patch is same with buggy,188,replace,, this.minY  =  minY  /  4;  ,this.minY = minY / 4;
+patch is same with buggy,634,replace,, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); } ; if(
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); } ; if(
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  12.0;  ,this.minY = Double.NaN / 12.0;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 10.0;
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  *  1;  , 
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }  ,if(d.getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anybody, because that // happens next anyway; }
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 3;
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 3;
+patch is same with buggy,188,replace,, this.minY  =  minY  /  2  +  1;  ,this.minY = minY / 2 + 1;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0 + 1;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 2.0;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN % 2.0;
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(notify)) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; ; // removeAgedItems(true);, // removeAgedItems(false); } ;
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(notify)) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; ; if(stillAgedItems(true);, // removeAgedItems(false); } ;
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  %  2L;  ,this.maxY = Double.NaN % 2L;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  /  2;  ,this.minY = Double.NaN * 2 / 2;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 7;
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 2.0;
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 2.0;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;  ,this.minY = Double.NaN / 1000;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  10;  ,this.minY = Double.NaN / 10;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 1000;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  2;  ,this.minY = Double.NaN / 2;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  20.0;  ,this.minY = Double.NaN % 20.0;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  2.0;  , 
+patch is same with buggy,188,replace,, this.maxY  =  minY  *  2;  ,this.maxY = minY * 2;
+compilation error,634,add,[CE] not a statement, ,if(notify) { fireSeriesChanged(); bodied ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); } ;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN * 2 / 2;
+compilation error,634,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }, // don't notify anybody, because that // happens next anyway; } if(notify) { fireSeriesChanged();
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  -  2;  , 
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  2;  ,this.maxY = Double.NaN / 2;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN % 20.0;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  2;  ,this.minY = Double.NaN * 2;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  10.0;  ,this.minY = Double.NaN % 10.0;
+patch is same with buggy,188,replace,, this.minY  =  minY  *  2;  ,this.minY = minY * 2;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; &/ removeAgedItems(false); &/ remove old items if needed, // don't notify anyone, because that // happens next anyway; }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; &/ removeAgedItems(false); &/ remove old items if needed, // don't notify anyone, because that // happens next anyway; }!
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  necessary,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }  ;  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if necessary, // don't notify anybody, because that // happens next anyway; } ;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  necessary,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }  ;  ,if(d.getSeriesCount() > 1) { if(notify) { fireSeriesChanged(); luckily ; // removeAgedItems(false); // remove old items if necessary, // don't notify anybody, because that // happens next anyway; } ;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  /  3;  , 
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(notify) { fireSeriesChanged(); & ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); } ; if(notify
+patch is same with buggy,634,replace,, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(notify  ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); } ; if(notify
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(notify  ,if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(true);, // removeAgedItems(false); } ; if(notify
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN * 2 / 3;
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  *  1;  , 
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 100 + 1;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  4  -(Double.MAX_VALUE);  ,this.minY = Double.NaN * 4 /(Double.MAX_VALUE);
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  4  -(Double.MAX_VALUE);  ,this.minY = Double.NaN * 2 -(Double.MAX_VALUE);
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  4  -(Double.MAX_VALUE);  , 
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN % 2L;
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN % 2L;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  %  100  +  1;  ,this.minY = Double.NaN % 100;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  %  100  +  1;  ,this.minY = Double.NaN % 1000 + 1;
+patch is same with buggy,188,replace,, this.minY  =  maxY  /  2;  ,this.minY = maxY / 2;
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN % 2 + 1;
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN % 2 + 1;
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  1  :  0);  ,this.minY =(0 < minY? 1 : 0);
+compilation error,188,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 2;
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  %  2L;  ,this.maxY = Double.NaN % 2L;
+compilation error,634,replace,[CE] cannot find symbol b, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,b.setValue(item.getValue());
+compilation error,634,replace,[CE] cannot find symbol, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,b.setItemCount(item.getItemCount() - 1);
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  2;  ,this.maxY = Double.NaN / 2;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  20.0;  ,this.minY = Double.NaN % 20.0;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  2;  ,this.minY = Double.NaN / 2;
+patch is same with buggy,188,replace,, this.minY  =  minY  /  4;  ,this.minY = minY / 4;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  12.0;  ,this.minY = Double.NaN / 12.0;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  2;  , 
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  *  2  /  2;  , 
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  10;  ,this.minY = Double.NaN / 10;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  20.0;  ,this.minY = Double.NaN % 20.0;
+patch is same with buggy,188,replace,, this.minY  =  minY  *  2;  ,this.minY = minY * 2;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  4  -(Double.MAX_VALUE);  ,this.minY = Double.NaN / 4 -(Double.MAX_VALUE);
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  4  -(Double.MAX_VALUE);  , 
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  *  1;  , 
+compilation error,194,add,[CE] cannot find symbol miniY, ,this.miniY = Double.NaN % 10 + 1;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(notify  ,if(d.getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(notify  ,if(d.getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); bodied ; if(notify) { fireSeriesChanged(); } ;
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  2.0;  ,this.maxY = Double.NaN / 2.0;
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  *  1;  , 
+compilation error,193,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 1000;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  1000  +  1;  ,this.minY = Double.NaN % 1000 + 1;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  10.0;  , 
+compilation error,193,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN % 2.0;
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); }
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  2;  ,this.minY = Double.NaN * 2;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(add) { if(notify) { fireSeriesChanged(); bodied ; if(notify) { fireSeriesChanged(); }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(add) { if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); }
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  2.0;  ,this.minY = Double.NaN % 2.0;
+compilation error,634,add,[CE] cannot find symbol b, ,b.append(item.getPeriod());
+compilation error,634,add,[CE] cannot find symbol b, ,b.append(item);
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;  ,this.minY = Double.NaN / 1000;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  2;  , 
+compilation error,634,replace,[CE] cannot find symbol d, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,d.getPeriod().setValue(getItemCount() - this.data.size() - 1);
+compilation error,634,replace,[CE] cannot find symbol d, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,d.getPeriod().setValue(getItemCount() - this.maximumItemCount);
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  %  10  +  1;  , 
+compilation error,194,add,[CE] cannot find symbol minimumItemCount, ,this.minimumItemCount = Long.MAX_VALUE % 2L;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  %  100  +  1;  ,this.minY = Double.NaN % 1000;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  %  100  +  1;  , 
+compilation error,634,add,[CE] illegal start of expression, ,if(getItemCount() > this.maximumItemCount) { TimeSeriesDataItem item =(TimeSeriesDataItem)c.get(item); if(add) { fireSeriesChanged(); }
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  3  +  1;  ,this.minY = Double.NaN % 3 + 1;
+compilation error,194,add,[CE] cannot find symbol miniY, ,this.miniY = Double.NaN - 2 + 1;
+increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  *  4  +(Double.MAX_VALUE);  ,this.minY = Double.NaN * 7 +(Double.MAX_VALUE);
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  4  +(Double.MAX_VALUE);  , 
+compilation error,193,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 2.0;
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(add) { if(notify) { fireSeriesChanged(); if(notify) { fireSeriesChanged(); }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(d.getItemCount() > this.maximumItemCount) { if(notify) { fireSeriesChanged(); figured
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  1  :  0);  ,this.minY =(0 < minY? 1 : 0);
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  1  :  0);  , 
+compilation error,188,replace,[CE] bad operand types for binary operator '*', this.maxY  =  minY  *  2;  ,this.maxY = range * 2;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0;
+compilation error,188,replace,[CE] cannot find symbol MinY, this.maxY  =  1;  ,this.maxY = MinY;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  10.0;  ,this.minY = Double.NaN / 10.0;
+patch is same with buggy,188,replace,, this.minY  =  minY  /  2  +  1;  ,this.minY = minY / 2 + 1;
+patch is same with buggy,188,replace,, this.maxY  =  maxY  /  7;  ,this.maxY = maxY / 7;
+compilation error,188,add,[CE] bad operand types for binary operator '/', ,this.maxY = range / 1;
+compilation error,188,replace,[CE] ')' expected, this.maxY  =  1;  ,this.maxY =(this.minY = 0, this.maxY);
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  2  :  0);  ,this.minY =(0 < minY? 2 : 0);
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  2  :  0);  , 
+compilation error,188,add,[CE] incompatible types, ,this.minY =(this.minY > 0);
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  &/  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); figured
+compilation error,194,add,[CE] cannot find symbol minItemAge, ,this.minItemAge = Double.NaN % 2L;
+patch is same with buggy,188,replace,, this.minY  =  minY  /  4;  , 
+patch is same with buggy,188,replace,, this.minY  =  maxY  -  1;  ,this.minY = maxY - 1;
+compilation error,188,add,[CE] no suitable method found for max(double), ,this.maxY = Math.max(Double.NaN / 10);
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  *  1;  , 
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  %  2L;  ,this.maxY = Double.NaN % 2L;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  1000;  ,this.minY = Double.NaN / 1000;
+patch is same with buggy,188,replace,, this.minY  =  maxY  /  2;  ,this.minY = maxY / 2;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  2;  ,this.minY = Double.NaN / 2;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  2.0;  ,this.minY = Double.NaN % 2.0;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  4  -(Double.MAX_VALUE);  ,this.minY = Double.NaN * 4 -(Double.MAX_VALUE);
+compilation error,188,replace,[CE] incompatible types, this.maxY  =  1;  ,this.maxY = range;
+patch is same with buggy,188,replace,, this.maxY  =  1;  , 
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); Afterward ; // removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that's next anyway; }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }  ,if(item.getPeriod().equals(this.data.size())) { if(notify) { fireSeriesChanged(); Afterward ; // removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  2  :  0);  ,this.minY =(0 < minY? 2 : 0);
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  /  2;  ,this.maxY = Double.NaN / 2;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0;
+patch is same with buggy,188,replace,, this.maxY  =  maxY  /  7;  , 
+patch is same with buggy,188,replace,, this.minY  =  minY  /  2  +  1;  ,this.minY = minY / 2 + 1;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  20.0;  ,this.minY = Double.NaN % 20.0;
+compilation error,188,add,[CE] class expected, ,this.minY = double.NaN / 2;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); Afterward ; // removeAgedItems(false); // remove old items if needed, // don't notify anybody, because that's next anyway; }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); slated
+patch is same with buggy,188,replace,, this.minY  =  minY  *  2;  ,this.minY = minY * 2;
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  *  1;  ,this.maxY = Double.NaN * 1;
+compilation error,188,add,[CE] class expected, ,this.minY = double.NaN + 1;
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(item.getPeriod().equals(this.data.size())) { if(notify) { fireSeriesChanged(); if(notify) { fireSeriesChanged(); }
+compilation error,634,replace,[CE] illegal start of expression, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); if(notify) { fireSeriesChanged(); }
+compilation error,634,add,[CE] illegal start of expression, ,if(!added) { if(notify) { fireSeriesChanged(); }
+compilation error,634,add,[CE] illegal start of expression, ,if(!added) { if(getNotify) { fireSeriesChanged(); }
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  10.0;  , 
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  2;  ,this.minY = Double.NaN * 2;
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  *  2;  , 
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anybody, because that's next anyway; }
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anybody,  because  that  //  happens  next  anyway;  }!  ,if(item.getPeriod().equals("")) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that's next anyway; }
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  *  4  +(Double.MAX_VALUE);  ,this.minY = Double.NaN * 4 +(Double.MAX_VALUE);
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(false);  //  remove  old  items  if  needed,  //  don't  notify  anyone,  because  that  //  happens  next  anyway;  }!  ,if(item.getPeriod().equals(this.data.size())) { if(notify) { fireSeriesChanged(); slated; // removeAgedItems(false); // remove old items if needed, // don't notify anyone, because that
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  /  10.0;  , 
+compilation error,188,replace,[CE] incompatible types, this.maxY  =  1;  ,this.maxY =(this.minY == 0);
+patch is same with buggy,188,replace,, this.maxY  =  Double.NaN  -  2;  ,this.maxY = Double.NaN - 2;
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  -  2  +  1;  ,this.maxY = Double.NaN - 2 + 1;
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  1  :  0);  ,this.minY =(0 < minY? 1 : 0);
+patch is same with buggy,188,replace,, this.minY  =(0  <  minY?  1  :  0);  , 
+patch is same with buggy,188,replace,, this.minY  =  Double.NaN  /  10;  ,this.minY = Double.NaN / 10;
+compilation error,634,add,[CE] illegal start of expression, ,if(item!= null) { if(!added) { fireSeriesChanged(); }
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  2.0;  ,this.minY = Double.NaN / 2.0;
+compilation error,188,add,[CE] no suitable method found for max(double,String), ,this.maxY = Math.max(minY, range);
+compilation error,188,add,[CE] cannot find symbol maximumY, ,this.maxY = maximumY / 1;
+patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  /  2.0;  ,this.maxY = Double.NaN / 2.0;
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  %  20.0;  ,this.minY = Double.NaN % 20.0;
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ; if(!offset) { fireSeriesChanged(); } ; if(
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(  ,if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ; if(!intValue) { fireSeriesChanged(); } ; if(
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  /  12.0;  , 
+compilation error,188,add,[CE] no suitable method found for max(double), ,this.maxY = Math.max(Double.NaN / 2);
+compilation error,634,replace,[CE] not a statement, if(notify)  {  fireSeriesChanged();  }  ;  if(notify)  {  fireSeriesChanged();  }  ;  //  removeAgedItems(true);,  //  removeAgedItems(false);  }  ;  if(notify  ,if(notify) { fireSeriesChanged(); slated ; if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ;
+compilation error,193,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 7;

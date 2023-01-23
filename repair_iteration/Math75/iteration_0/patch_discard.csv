@@ -1,0 +1,160 @@
+compilation error,408,add,[CE] cannot find symbol firstValue,,  result += getCount(firstValue);
+compilation error,408,add,[CE] variable result is already defined in method getCumFreq(Comparable<?>),,  long result = getCount(freqTable.size());
+compilation error,303,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(v);
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Number) { Long result =(NaN)freqTable.get(v); if(result > 0) { return getPct(( Number)v).doubleValue(); }
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Number) { Long result =(NaN)freqTable.get(v); if(result > 0) { return getPct(( Number)v); }
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Number) { long result =(Number)freqTable.get(v); if(result > 0) { return getResult(); }
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Number) { long result =(Number)freqTable.get(v); if(result > 0) { return getPct(new Long(v)); }
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return 0;// v is comparable, but greater than the last value &&
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getSumFreq();// v is comparable, but greater than first value }
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getCumFreq();// v is comparable, but greater than the last value }
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getSumFreq();// v is comparable, but greater than the first value &&
+compilation error,342,add,[CE] illegal start of expression,,  if(v > 0) { long result = getSumFreq(); if(v < sumFreq) { return result; }
+compilation error,342,add,[CE] illegal start of expression,,  if(v > 0) { long result = getSumFreq().doubleValue(); if(v < sumFreq) { return result; }
+compilation error,342,add,[CE] cannot find symbol result,,  result += Math.pow(10, v);
+compilation error,342,add,[CE] illegal start of expression,,  if(v > 0) { long result = getSumFreq().doubleValue(); if(v < null) { return result; }
+increase failing tests,142,replace, [FE] AssertionFailedError testPcts,freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue()));
+increase failing tests,142,replace, [FE] AssertionFailedError testPcts,freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue() - 1));
+compilation error,142,replace,[CE] ')' expected,freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue() 2));
+increase failing tests,142,replace, [FE] AssertionFailedError testPcts,freqTable.put(obj, Long.valueOf(count.longValue() + 1)); , 
+compilation error,342,replace,[CE] no suitable method found for parseLong(long),return getPct(Long.valueOf(v)); ,return getPct(Long.parseLong(v));
+compilation error,342,replace,[CE] cannot find symbol,return getPct(Long.valueOf(v)); ,return getPct(Long.toLongBits(v));
+compilation error,342,replace,[CE] cannot find symbol,return getPct(Long.valueOf(v)); ,return getPct(Long.get(v));
+increase failing tests,178,add, [FE] AssertionFailedError testPcts,,  freqTable.put(v, new Long(v));
+compilation error,178,add,[CE] long cannot be dereferenced,,  freqTable.put(v, new Long(v.longValue()));
+compilation error,178,add,[CE] cannot find symbol V,,  freqTable.put(v, new Long(V.valueOf(v)));
+compilation error,178,add,[CE] long cannot be dereferenced,,  freqTable.put(v, new Long(v.length()));
+compilation error,178,add,[CE] long cannot be dereferenced,,  freqTable.put(v, new Long(v.getLong()));
+compilation error,320,add,[CE] cannot find symbol length,,  System.arraycopy(v, 0, sumFreq, 0, v.length);
+compilation error,320,add,[CE] illegal start of expression,,  if(v!= null) { if(v.length > 0) { return Double.NaN; }
+compilation error,320,add,[CE] illegal start of expression,,  if(v!= null) { if(v.getCount() > 1) { return Double.NaN; }
+compilation error,320,add,[CE] illegal start of expression,,  if(v!= null) { if(v.getCount() > 1) { return (double)getCount(); }
+compilation error,331,add,[CE] possible loss of precision,,  long result = getPct(new Long(v));
+compilation error,331,add,[CE] illegal start of expression,,  if(v > 0) { long result = getSumFreq(); if(v < Long.MIN_VALUE) { return result; }
+compilation error,331,add,[CE] '.class' expected,,  if(v > 0) { long result = getSumFreq(); if(v < Long.MAX_VALUE) { return double; }
+compilation error,331,replace,[CE] no suitable method found for parseLong(int),return getPct(Long.valueOf(v)); ,return getPct(Long.parseLong(v));
+compilation error,331,replace,[CE] cannot find symbol FREQUENCY,return getPct(Long.valueOf(v)); ,return getPct(FREQUENCY.valueOf(v));
+compilation error,331,replace,[CE] cannot find symbol,return getPct(Long.valueOf(v)); ,return getPct(Long.get(v));
+compilation error,177,add,[CE] long cannot be dereferenced,,  freqTable.put(v, new Long(v.longValue()));
+increase failing tests,177,add, [FE] AssertionFailedError testPcts,,  freqTable.put(v, new Long(v));
+increase failing tests,177,add, [FE] AssertionFailedError testPcts,,  freqTable.put(v, new Long(Long.valueOf(v)));
+compilation error,177,add,[CE] long cannot be dereferenced,,  freqTable.put(v, new Long(v.length()));
+compilation error,177,add,[CE] long cannot be dereferenced,,  freqTable.put(v, new Long(v.getLong()));
+compilation error,177,replace,[CE] cannot find symbol,addValue(Long.valueOf(v)); ,setValue(Long.valueOf(v));
+compilation error,177,replace,[CE] cannot find symbol,addValue(Long.valueOf(v)); ,add(Long.valueOf(v));
+increase failing tests,177,replace, [FE] MathRuntimeException$4 testPcts,addValue(Long.valueOf(v)); ,addValue(Long.toString(v));
+compilation error,444,replace,[CE] no suitable method found for parseLong(long),return getCumFreq(Long.valueOf(v)); ,return getCumFreq(Long.parseLong(v));
+increase failing tests,444,replace, [FE] StackOverflowError testPcts,return getCumFreq(Long.valueOf(v)); ,return getCumFreq(Long.valueOf(v)+ 1);
+compilation error,444,replace,[CE] cannot find symbol,return getCumFreq(Long.valueOf(v)); ,return getCumFreq(Long.toLongBits(v));
+compilation error,444,replace,[CE] missing return statement,return getCumFreq(Long.valueOf(v)); , 
+increase failing tests,142,add, [FE] AssertionFailedError testPcts,,  obj = Long.valueOf(count.longValue());
+increase failing tests,142,add, [FE] AssertionFailedError testPcts,,  obj = Long.valueOf(count.longValue() + 1);
+increase failing tests,142,add, [FE] AssertionFailedError testPcts,,  obj = Long.valueOf(0);
+compilation error,386,replace,[CE] cannot find symbol value,return getCumFreq(((Integer) v).longValue()); ,return getCumFreq(((Integer)v).longValue(), value);
+compilation error,386,replace,[CE] method getSumFreq in class Frequency cannot be applied to given types;,return getCumFreq(((Integer) v).longValue()); ,return getSumFreq(((Integer)v).longValue());
+increase failing tests,386,replace, [FE] AssertionFailedError testPcts,return getCumFreq(((Integer) v).longValue()); ,return getCumFreq(((Integer)v).longValue() + 1);
+increase failing tests,386,replace, [FE] AssertionFailedError testPcts,return getCumFreq(((Integer) v).longValue()); , 
+compilation error,444,add,[CE] no suitable method found for getCumFreq(),,  freqTable.put(v, getCumFreq());
+compilation error,444,add,[CE] cannot find symbol sumFreq,,  freqTable.put(v, sumFreq);
+increase failing tests,444,add, [FE] AssertionFailedError testPcts,,  freqTable.put(v, new Long(v));
+compilation error,444,add,[CE] cannot find symbol,,  checkLimits(v,"resulting");
+compilation error,386,add,[CE] unreachable statement,,  return(( Integer)v).longValue();
+compilation error,386,add,[CE] cannot find symbol values,,  Iterator < Long> freqTable = values.iterator();
+compilation error,386,add,[CE] cannot find symbol values,,  Iterator <?> freqTable = values.iterator();
+compilation error,386,add,[CE] ';' expected,,  return(( Integer)v).longValue());
+increase failing tests,320,replace, [FE] AssertionFailedError testAdd,return (double) getCount(v) / (double) sumFreq; ,return(double)getCount(v)/(double)sumFreq + 1;
+increase failing tests,444,replace, [FE] AssertionFailedError testPcts,return getCumFreq(Long.valueOf(v)); ,return getCumFreq(Long.toString(v));
+compilation error,177,add,[CE] no suitable method found for put(Long),,  freqTable.put(new Long(v));
+compilation error,177,add,[CE] no suitable method found for put(long,boolean),,  freqTable.put(v, true);
+compilation error,177,add,[CE] cannot find symbol NumberUtils,,  freqTable.put(v, NumberUtils.toString(v));
+compilation error,177,add,[CE] cannot find symbol NumberUtils,,  freqTable.put(v, NumberUtils.valueOf(v));
+increase failing tests,142,add, [FE] StackOverflowError testPcts,,  addValue(obj);
+compilation error,177,replace,[CE] cannot find symbol FreqTable,addValue(Long.valueOf(v)); ,addValue(FreqTable.valueOf(v));
+compilation error,177,replace,[CE] cannot find symbol,addValue(Long.valueOf(v)); ,addValue(Frequency.valueOf(v));
+increase failing tests,142,replace, [FE] AssertionFailedError testPcts,freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue() / 2));
+increase failing tests,142,replace, [FE] AssertionFailedError testPcts,freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue() / 1));
+compilation error,178,add,[CE] no suitable method found for put(Long),,  freqTable.put(new Long(v));
+compilation error,178,add,[CE] cannot find symbol NumberUtils,,  freqTable.put(v, NumberUtils.valueOf(v));
+compilation error,178,add,[CE] cannot find symbol NumberUtils,,  freqTable.put(v, NumberUtils.toString(v));
+compilation error,178,add,[CE] no suitable method found for put(long,boolean),,  freqTable.put(v, true);
+compilation error,178,add,[CE] cannot find symbol NumberUtils,,  freqTable.put(v, NumberUtils.toFront(v));
+compilation error,386,add,[CE] unreachable statement,,  return getCount(((Integer)v).longValue());
+compilation error,386,replace,[CE] no suitable method found for getCumFreq(long,int),return getCumFreq(((Integer) v).longValue()); ,return getCumFreq(((Integer)v).longValue(), 1);
+compilation error,331,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(v);
+compilation error,331,add,[CE] illegal start of expression,,  for(int v = 0; v < this.sumFreq; v++) { long result = getSumFreq(); if(v > 0) { return getPct(Long.valueOf(v)); }
+compilation error,331,add,[CE] illegal start of expression,,  for(int v = 0; v < this.sumFreq; v++) { long result = getSumFreq(); if(v > 0) { return getPct(new Long(v)); }
+compilation error,331,add,[CE] illegal start of expression,,  for(int v = 0; v < this.sumFreq; v++) { long result = getSumFreq(); if(v > 0) { return getPct(Math.pow(10, v)); }
+compilation error,342,replace,[CE] non-static method toString() cannot be referenced from a static context,return getPct(Long.valueOf(v)); ,return getPct(Long.toString());
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,// v is comparable, but greater than the last value?
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,// v is comparable, but greater than the last value - 1;
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getCumFreq();// v is comparable, but greater than the last value?
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getSumFreq();// v is comparable, but greater than the last value - 1;
+increase failing tests,320,replace, [FE] AssertionFailedError testAdd,return (double) getCount(v) / (double) sumFreq; ,return(double)getCount(v)/(double)sumFreq * sumFreq;
+increase failing tests,320,replace, [FE] AssertionFailedError testAdd,return (double) getCount(v) / (double) sumFreq; ,return(double)getCount(v)/(double)sumFreq - 1;
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Comparable) { if(v instanceof Comparable) { return getCumPct(( Comparable <?>)v); }
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Comparable) { if(v instanceof Comparable) { return getComparable(( Comparable <?>)v); }
+compilation error,303,add,[CE] illegal start of expression,,  if(v instanceof Comparable) { if(v instanceof Comparable) { return(Comparable)v; }
+compilation error,303,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(v!= null);
+compilation error,342,add,[CE] cannot find symbol result,,  result = Math.max(result, getPct(v));
+compilation error,342,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(v);
+compilation error,342,add,[CE] cannot find symbol sumFreq,,  System.arraycopy(freqTable, getPct(v), 0, sumFreq);
+compilation error,342,add,[CE] cannot find symbol result,,  result = getSumFreq();
+compilation error,342,add,[CE] cannot find symbol result,,  result = Math.max(result, sumFreq);
+compilation error,331,replace,[CE] non-static method toString() cannot be referenced from a static context,return getPct(Long.valueOf(v)); ,return getPct(Long.toString());
+compilation error,408,add,[CE] cannot find symbol,,  result += getCount(freqTable.lastIndex());
+compilation error,408,add,[CE] variable result is already defined in method getCumFreq(Comparable<?>),,  long result = freqTable.getLastKey();
+compilation error,408,add,[CE] variable result is already defined in method getCumFreq(Comparable<?>),,  long result = freqTable.lastKey();
+compilation error,320,add,[CE] method arraycopy in class System cannot be applied to given types;,,  System.arraycopy(sumFreq, 0, v, 0, sumFreq);
+compilation error,320,add,[CE] no suitable method found for getCount(),,  System.arraycopy(v, 0, sumFreq, getCount() /(double)v);
+compilation error,320,add,[CE] no suitable method found for getCount(),,  System.arraycopy(v, 0, sumFreq, getCount());
+compilation error,320,add,[CE] method arraycopy in class System cannot be applied to given types;,,  System.arraycopy(sumFreq, getCount(v));
+compilation error,320,add,[CE] no suitable method found for getCount(),,  System.arraycopy(sumFreq, 0, v, getCount());
+compilation error,444,add,[CE] cannot find symbol result,,  result = getCumFreq(new Long(v));
+compilation error,444,add,[CE] cannot find symbol sumFreq,,  System.arraycopy(sumFreq, 0, sumFreq, 0, freqTable.length);
+compilation error,444,add,[CE] cannot find symbol result,,  result = freqTable.get(v);
+compilation error,444,add,[CE] cannot find symbol result,,  result = getCumFreq(new Long(v.longValue()));
+compilation error,444,add,[CE] cannot find symbol sumFreq,,  System.arraycopy(sumFreq, 0, v, 0, sumFreq.length);
+compilation error,303,replace,[CE] double cannot be dereferenced,return getCumPct((Comparable<?>) v); ,return getCumPct(( Comparable <?>)v).doubleValue();
+compilation error,178,add,[CE] long cannot be dereferenced,,  addValue(new Long(v.longValue()));
+increase failing tests,178,add, [FE] AssertionFailedError testPcts,,  addValue(new Long(v));
+increase failing tests,386,replace, [FE] AssertionFailedError testPcts,return getCumFreq(((Integer) v).longValue()); ,return getCumFreq(((Integer)v).longValue() - 1);
+compilation error,303,add,[CE] cannot find symbol result,,  result += getCount(v);
+compilation error,303,add,[CE] cannot find symbol result,,  result += getCount(v).doubleValue();
+compilation error,303,add,[CE] cannot find symbol,,  Preconditions.checkArgument(v.getType() == Token.TRY);
+compilation error,303,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkArgument(v.getClass().isArray());
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getCount();// v is comparable, but greater than last value }
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getCumFreq();// v is comparable, but greater than last value }
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getCount();// v is comparable, but greater than last value {
+compilation error,408,replace,[CE] illegal start of expression,return getSumFreq();// v is comparable, but greater than the last value } ,return getCount();// v is comparable, but greater than the last value }
+compilation error,342,add,[CE] cannot find symbol result,,  result += Math.max(v, sumFreq);
+compilation error,342,add,[CE] cannot find symbol result,,  result += getSumFreq();
+compilation error,342,add,[CE] cannot find symbol result,,  result += Math.pow(v, Math.sqrt(getResult()));
+compilation error,342,add,[CE] cannot find symbol result,,  result = Math.max(result, getMean());
+compilation error,342,add,[CE] cannot find symbol result,,  result = Math.max(result, getMean(), v);
+compilation error,331,add,[CE] cannot find symbol result,,  result = Math.max(result, getSumFreq());
+compilation error,331,add,[CE] cannot find symbol result,,  result = Math.max(result, getMean());
+compilation error,331,add,[CE] cannot find symbol result,,  result = Math.max(result, getSumFreq(), v);
+compilation error,331,add,[CE] cannot find symbol result,,  result += Math.pow(v / getSumFreq());
+compilation error,331,add,[CE] cannot find symbol result,,  result += Math.pow(v, Math.sqrt(variable));
+compilation error,342,replace,[CE] cannot find symbol,return getPct(Long.valueOf(v)); ,return getPct(Long.getValue(v));
+compilation error,386,add,[CE] no suitable method found for put(Integer),,  freqTable.put(( Integer)v).longValue();
+compilation error,386,add,[CE] long cannot be dereferenced,,  return getCount(( Integer)v).longValue();
+increase failing tests,386,add, [FE] ClassCastException testPcts,,  v =(( Integer)v).longValue();
+compilation error,386,add,[CE] no suitable method found for put(long,int),,  freqTable.put(((Integer)v).longValue(), 1);
+compilation error,142,replace,[CE] no suitable method found for put(Comparable<CAP#1>,Long,int),freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue()), 1);
+compilation error,142,replace,[CE] no suitable method found for put(Comparable<CAP#1>,Long,Long),freqTable.put(obj, Long.valueOf(count.longValue() + 1)); ,freqTable.put(obj, Long.valueOf(count.longValue()), count);
+compilation error,320,add,[CE] cannot assign a value to final variable sumFreq,,  sumFreq = Math.pow(v, sumFreq);
+compilation error,320,add,[CE] cannot assign a value to final variable sumFreq,,  sumFreq = Math.max(sumFreq, v.doubleValue());
+compilation error,320,add,[CE] cannot assign a value to final variable sumFreq,,  sumFreq = Math.max(sumFreq, v.getSumFreq());
+compilation error,320,add,[CE] cannot assign a value to final variable sumFreq,,  sumFreq = Math.abs(v);
+compilation error,320,add,[CE] cannot assign a value to final variable sumFreq,,  sumFreq = Math.sqrt(sumFreq);
+compilation error,177,add,[CE] long cannot be dereferenced,,  addValue(new Long(v.longValue()));
+compilation error,177,add,[CE] long cannot be dereferenced,,  add(new Long(v.longValue()));
+compilation error,177,add,[CE] cannot find symbol Preconditions,,  Preconditions.checkNotNull(v);
+compilation error,408,add,[CE] incompatible types,,  long last = freqTable.lastKey();
+compilation error,331,replace,[CE] cannot find symbol,return getPct(Long.valueOf(v)); ,return getPct(Long.getValue(v));
+compilation error,444,add,[CE] cannot find symbol result,,  result = Math.max(v, sumFreq);
+compilation error,444,add,[CE] cannot find symbol,,  checkLimits(v);
+compilation error,444,add,[CE] cannot find symbol result,,  result = getSumFreq();
+compilation error,444,add,[CE] cannot find symbol result,,  result += getCount(v);
+compilation error,444,add,[CE] cannot find symbol result,,  result = Math.max(v, getSumFreq());

@@ -1,0 +1,1871 @@
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ - throw  new  FractionConversionException(value,  p2,  q2);  
+ +     
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ - throw  new  FractionConversionException(value,  p2,  q2);  
+ +     
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ - throw  new  FractionConversionException(value,  p2,  q2);  
+ +     
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ - throw  new  FractionConversionException(value,  p2,  q2);  
+ +     
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ - throw  new  FractionConversionException(value,  p2,  q2);  
+ +     
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p0);    q2    =    Math.round(q2);    p2    =    Math.round(p0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2);  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1;  if(n  >  maxIterations)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1;  if(n  >  maxIterations)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1;  if(n  >  maxIterations)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1;  if(n  >  maxIterations)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1;  if(n  >  maxIterations)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(q2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    >=    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    >=    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    >=    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    >=    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    >=    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(p0    <    p1)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  p2  =  p1;  if(p0  >  p1)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(p0    <    p1)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  p2  =  p1;  if(p0  >  p1)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(p0    <    p1)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  p2  =  p1;  if(p0  >  p1)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(p0    <    p1)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  p2  =  p1;  if(p0  >  p1)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(p0    <    p1)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    }    
+ +  p0  =  p1;  p2  =  p0;  p2  =  p1;  if(p0  >  p1)  {  p0  =  p1;  p2  =  p0;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(0.0,    a1,    p2);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(0.0,  a1,  p2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(0.0,    a1,    p2);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(0.0,  a1,  p2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(0.0,    a1,    p2);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(0.0,  a1,  p2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(0.0,    a1,    p2);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(0.0,  a1,  p2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(0.0,    a1,    p2);    }    
+ +  if(n  >  maxIterations)  {  throw  new  FractionConversionException(0.0,  a1,  p2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p1  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p1  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p1  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p1  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p1    =    Math.round(p1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2);  p1  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    p2    =    Math.round(q2);    p0    =    Math.round(p0);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(a1);  p2  =  Math.round(p0);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    p2    =    Math.round(q2);    p0    =    Math.round(p0);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(a1);  p2  =  Math.round(p0);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    p2    =    Math.round(q2);    p0    =    Math.round(p0);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(a1);  p2  =  Math.round(p0);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    p2    =    Math.round(q2);    p0    =    Math.round(p0);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(a1);  p2  =  Math.round(p0);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    p2    =    Math.round(q2);    p0    =    Math.round(p0);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(a1);  p2  =  Math.round(p0);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p2);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p1);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    p2    =    Math.round(p2);    q1    =    Math.round(q1);    
+ +  p2  =  Math.round(p0);  p2  =  Math.round(p2);  q1  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    n++;    }    
+ +  if(p1  >  epsilon)  {  p1  =  p1;  p2  =  p1;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    n++;    }    
+ +  if(p1  >  epsilon)  {  p1  =  p1;  p2  =  p1;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    n++;    }    
+ +  if(p1  >  epsilon)  {  p1  =  p1;  p2  =  p1;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    n++;    }    
+ +  if(p1  >  epsilon)  {  p1  =  p1;  p2  =  p1;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    p0;    q2    =    q1;    if(n    <    maxIterations)    {    p0    =    p1;    p2    =    p0;    q2    =    q1;    n++;    }    
+ +  if(p1  >  epsilon)  {  p1  =  p1;  p2  =  p1;  q2  =  q1;  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(q0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(q0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(q0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(q0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(q0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(value,    p0,    q2);    p0    =    Math.floor(a1);    
+ +  p0  =  p1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(value,    p0,    q2);    p0    =    Math.floor(a1);    
+ +  p0  =  p1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(value,    p0,    q2);    p0    =    Math.floor(a1);    
+ +  p0  =  p1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(value,    p0,    q2);    p0    =    Math.floor(a1);    
+ +  p0  =  p1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(value,    p0,    q2);    p0    =    Math.floor(a1);    
+ +  p0  =  p1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p1  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p1  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p1  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p1  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p1  =  p1;  p2  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p2);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  p0;  q2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(p0,    q1,    q2);    
+ +  p0  =  p1;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1,    q1;    p2    =    p2;    
+ +  p0  =  p1;  p2  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(r1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(r1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(r1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(r1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(r1);  q2  =  Math.round(q2); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(0.0,    p2,    q1);    
+ +  if(p1  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(0.0,    p2,    q1);    
+ +  if(p1  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(0.0,    p2,    q1);    
+ +  if(p1  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(0.0,    p2,    q1);    
+ +  if(p1  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   throw    new    FractionConversionException(0.0,    p2,    q1);    
+ +  if(p1  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p2    =    Math.round(q0);    q2    =    Math.round(q2);    
+ +  p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  p2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    
+ +  p0  =  q2; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    q1;    
+ +  p0  =  p2;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    q1;    
+ +  p0  =  p2;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    q1;    
+ +  p0  =  p2;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    q1;    
+ +  p0  =  p2;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   p0    =    p1;    p2    =    q1;    
+ +  p0  =  p2;  p2  =  q1; 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p1  <=  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p1  <=  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p1  <=  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p1  <=  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p1  <=  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p2  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p2  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p2  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p2  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java add 306 suspicious value: 0.7071067811865475 
+ -   if(p1    <    0.0)    {    throw    new    FractionConversionException(1.0,    p2,    q2);    }    
+ +  if(p2  <  0.0)  {  throw  new  FractionConversionException(1.0,  p2,  q2);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java replace 215 suspicious value: 0.5 
+ -   p2    =(int)FastMath.floor(r1);    p1    =(int)FastMath.floor(r1);    
+ + p2  =(int)FastMath.floor(r1);  q2  =(int)FastMath.abs(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >=  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p0);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >=  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(p2);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(p1);  q2  =  Math.round(q1); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >=  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q1);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >=  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/Fraction.java add 215 suspicious value: 0.5 
+ -   p2    =    Math.round(a1);    q2    =    Math.round(q2);    a1    =    Math.round(a1);    q2    =    Math.round(q2);    
+ + p2  =  Math.round(a1);  q2  =  Math.round(q0);  a1  =  Math.round(a1);  q2  =  Math.round(q2); 
+projects/Math1/src/main/java/org/apache/commons/math3/fraction/BigFraction.java replace 306 suspicious value: 0.7071067811865475 
+ -   if(n    <    maxIterations)    {    throw    new    FractionConversionException(n,    p2,    overflow);    }    
+ +  if(n  >=  maxIterations)  {  throw  new  FractionConversionException(n,  p2,  overflow);  } 
+
+--------------------------------------------------
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java replace 275 suspicious value: 0.7071067811865475 
+ - return  true;  
+ + return  false; 
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/UniformRealDistribution.java replace 184 suspicious value: 0.7071067811865475 
+ - return  false;  
+ +  return  true; 
+
+--------------------------------------------------
+repair_iteration/Cli38/iteration_0/plausible.csv replace 340 suspicious value: 0.7071067811865475 
+ - return  false;  
+ + return  true; 
+ --------------------------------------------------
+repair_iteration/Cli38/iteration_0/plausible.csv replace 329 suspicious value: 0.7071067811865475 
+ - if  (!options.getMatchingOptions(t).isEmpty())  {  
+ + if(options.getMatchingOptions(t).isEmpty())  { 
+ --------------------------------------------------
+repair_iteration/Chart11/iteration_0/plausible.csv replace 274 suspicious value: 0.7071067811865475 
+ - PathIterator  iterator1  =  p1.getPathIterator(null);  
+ + PathIterator  iterator1  =  p2.getPathIterator(null); 
+ --------------------------------------------------
+repair_iteration/Chart11/iteration_0/plausible.csv replace 275 suspicious value: 0.7071067811865475 
+ - PathIterator  iterator2  =  p1.getPathIterator(null);  
+ + PathIterator  iterator2  =  p2.getPathIterator(null); 
+ --------------------------------------------------
+repair_iteration/Cli1/iteration_4/patches.csv
+None
+repair_iteration/Cli1/iteration_4/patches.csv
+None
+repair_iteration/Math18/iteration_0/plausible.csv replace 246 suspicious value: 0.5773502691896258 
+ - this(0);  
+ +    
+ --------------------------------------------------
+repair_iteration/Lang6/iteration_0/plausible.csv replace 95 suspicious value: 1.0 
+ - pos  +=  Character.charCount(Character.codePointAt(input,  pos));  
+ + pos  +=  Character.charCount(Character.codePointAt(input,  pt)); 
+ --------------------------------------------------
+repair_iteration/Lang6/iteration_1/patches.csv
+iteration_0 replace 94 suspicious value: 1.0 
+ - for (int pt = 0; pt < consumed; pt++) { 
+ + for(int pt = 0; pt < len; pt++) { 
+replace 94 suspicious value: 1.0 
+ -  for(int  pt  =  0;  pt  <  len;  pt++)  {  
+ + for(int pt = 1; pt < len; pt++) { 
+ --------------------------------------------------
+repair_iteration/Chart7/iteration_1/patches.csv
+iteration_0 replace 288 suspicious value: 0.31622776601683794 
+ - long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd() .getTime(); 
+ + long e = getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime(); 
+replace 288 suspicious value: 0.31622776601683794 
+ -  long  e  =  getDataItem(this.minMiddleIndex).getPeriod().getStart().getTime();  
+ + long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd().getTime(); 
+ --------------------------------------------------
+repair_iteration/Cli7/iteration_2/patches.csv
+None
+repair_iteration/Math3/iteration_0/plausible.csv replace 823 suspicious value: 0.5 
+ - final  double[]  prodHigh  =  new  double[len];  
+ + final  double[]  prodHigh  =  new  double[len  +  1]; 
+ --------------------------------------------------
+repair_iteration/Cli35/iteration_0/plausible.csv add 245 suspicious value: 0.22941573387056174 
+ - 
+ +     matchingOpts.remove(opt); 
+ --------------------------------------------------
+repair_iteration/Math12/iteration_0/plausible.csv replace 108 suspicious value: 0.7071067811865476 
+ - nextGaussian  =  r  *  FastMath.sin(alpha);  
+ +    
+ --------------------------------------------------
+repair_iteration/Math5/iteration_0/plausible.csv replace 305 suspicious value: 1.0 
+ - return  NaN;  
+ + return  INF; 
+ --------------------------------------------------
+repair_iteration/Cli2/iteration_0/plausible.csv replace 51 suspicious value: 1.0 
+ - eatTheRest  =  false;  
+ + eatTheRest  =  true; 
+ --------------------------------------------------
+repair_iteration/Math50/iteration_0/plausible.csv replace 189 suspicious value: 1.0 
+ - f0  =  computeObjectiveValue(x0);  
+ + f0  =  computeObjectiveValue(x1); 
+ --------------------------------------------------
+repair_iteration/Math50/iteration_0/plausible.csv replace 188 suspicious value: 1.0 
+ - x0  =  0.5  *  (x0  +  x1  -  FastMath.max(rtol  *  FastMath.abs(x1),  atol));  
+ + x0  =  0.5  *(x1  +  x1  -  FastMath.max(atol  *  FastMath.abs(x1),  atol)); 
+ --------------------------------------------------
+repair_iteration/Chart13/iteration_0/plausible.csv replace 450 suspicious value: 1.0 
+ - w[2]  =  size.width;  
+ + w[3]  =  size.width; 
+ --------------------------------------------------
+repair_iteration/Cli27/iteration_0/plausible.csv replace 100 suspicious value: 0.7071067811865476 
+ - selected  =  option.getOpt();  
+ + selected  =  option.getKey(); 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 145 suspicious value: 0.5 
+ - minIndex  =  i;  
+ + minIndex  =  i  -  1; 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 145 suspicious value: 0.5 
+ - minIndex  =  i;  
+ + minIndex  -=  i; 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 145 suspicious value: 0.5 
+ - minIndex  =  i;  
+ + minIndex  =  0; 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 144 suspicious value: 0.5 
+ - if  (i  <  minIndex)  {  
+ + if(i  +  1  <  minIndex)  { 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 143 suspicious value: 0.5 
+ - if  (row  ==  tableau.getBasicRow(i))  {  
+ + if(i!=  row)  { 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 145 suspicious value: 0.5 
+ - minIndex  =  i;  
+ + minIndex  =  i  -  2; 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 143 suspicious value: 0.5 
+ - if  (row  ==  tableau.getBasicRow(i))  {  
+ + if(i  ==  tableau.getNumObjectiveFunctions())  { 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 144 suspicious value: 0.5 
+ - if  (i  <  minIndex)  {  
+ + if(i  >  0)  { 
+ --------------------------------------------------
+repair_iteration/Math28/iteration_0/plausible.csv replace 138 suspicious value: 0.5 
+ - Integer  minRow  =  null;  
+ + Integer  minRow  =  col; 
+ --------------------------------------------------
+repair_iteration/Cli32/iteration_0/plausible.csv replace 938 suspicious value: 1.0 
+ - &&  (c  !=  '\n')  &&  (c  !=  '\r'))  {  
+ + &&(c  ==  'n')&&(c!=  'r'))  { 
+ --------------------------------------------------
+repair_iteration/Cli32/iteration_0/plausible.csv replace 938 suspicious value: 1.0 
+ - &&  (c  !=  '\n')  &&  (c  !=  '\r'))  {  
+ + &&(c  ==  'n'  ||  c  ==  'r'))  { 
+ --------------------------------------------------
+repair_iteration/Cli32/iteration_0/plausible.csv replace 938 suspicious value: 1.0 
+ - &&  (c  !=  '\n')  &&  (c  !=  '\r'))  {  
+ + &&(c  ==  'n')&&(c  ==  'r'))  { 
+ --------------------------------------------------
+repair_iteration/Cli32/iteration_0/plausible.csv replace 938 suspicious value: 1.0 
+ - &&  (c  !=  '\n')  &&  (c  !=  '\r'))  {  
+ + &&(c  ==  'n'  ||  c  ==  'r')&&(c  ==  'n'  ||  c  ==  't'))  { 
+ --------------------------------------------------
+repair_iteration/Chart20/iteration_0/plausible.csv replace 95 suspicious value: 1.0 
+ - super(paint,  stroke,  paint,  stroke,  alpha);  
+ + super(paint,  stroke,  outlinePaint,  outlineStroke,  alpha); 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv replace 573 suspicious value: 1.0 
+ - String  opt  =  null;  
+ + String  opt  =  token; 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv replace 573 suspicious value: 1.0 
+ - String  opt  =  null;  
+ + String  opt  =  t; 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv replace 577 suspicious value: 1.0 
+ - if  (options.hasLongOption(prefix))  {  
+ + if(!options.hasLongOption(prefix))  { 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv add 576 suspicious value: 1.0 
+ - 
+ +     opt  =  t.substring(i  +  1); 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv replace 333 suspicious value: 1.0 
+ - return  false;  
+ + return  true; 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv replace 333 suspicious value: 1.0 
+ - return  false;  
+ + return  currentOption!=  null  &&  currentOption.hasArg()  &&  currentOption.hasArg(); 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv replace 577 suspicious value: 1.0 
+ - if  (options.hasLongOption(prefix))  {  
+ + if(prefix!=  null)  { 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv add 576 suspicious value: 1.0 
+ - 
+ +     opt  =  t.substring(i  +  1,  t.length()); 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv add 576 suspicious value: 1.0 
+ - 
+ +     opt  =  Util.stripLeadingHyphens(t.substring(i  +  1)); 
+ --------------------------------------------------
+repair_iteration/Cli37/iteration_0/plausible.csv add 576 suspicious value: 1.0 
+ - 
+ +     opt  =  Util.stripLeadingHyphens(token); 
+ --------------------------------------------------
+repair_iteration/Chart12/iteration_0/plausible.csv add 146 suspicious value: 0.5 
+ - 
+ + setDataset(dataset); 
+ --------------------------------------------------
+repair_iteration/Chart12/iteration_0/plausible.csv add 145 suspicious value: 0.5 
+ - 
+ + setDataset(dataset); 
+ --------------------------------------------------
+repair_iteration/Chart1/iteration_0/plausible.csv replace 1797 suspicious value: 1.0 
+ - if  (dataset  !=  null)  {  
+ + if(dataset  ==  null)  { 
+ --------------------------------------------------
+repair_iteration/Chart1/iteration_0/plausible.csv replace 1798 suspicious value: 1.0 
+ - return  result;  
+ +    
+ --------------------------------------------------
+repair_iteration/Chart1/iteration_4/patches.csv
+None
+repair_iteration/Time2/iteration_0/plausible.csv replace 224 suspicious value: 1.0 
+ - throw  new  IllegalArgumentException( "Types  array  must  not  contain  duplicate:   "  +      types[i  -  1].getName()  +   "  and   "  +  loopType.getName());  
+ +    
+ --------------------------------------------------
+repair_iteration/Time2/iteration_2/patches.csv
+None
+repair_iteration/Time2/iteration_1/patches.csv
+iteration_0 replace 156 suspicious value: 0.2886751345948129 
+ - 
+ +   chronology = DateTimeUtils.getChronology(chronology).withUTC(); 
+iteration_0 add 224 suspicious value: 1.0 
+ - 
+ +   if(loopType.getRangeDurationType().getField(iChronology)!= null) { throw new IllegalArgumentException( " "); } 
+iteration_0 replace 224 suspicious value: 1.0 
+ - 
+ +   if(loopType.getRangeDurationType().getField(iChronology) == null) { throw new IllegalArgumentException( " "); } 
+replace 224 suspicious value: 1.0 
+ -    if(loopType.getRangeDurationType().getField(iChronology)  ==  null)  {  throw  new  IllegalArgumentException(  "  ");  }  
+ + chronology = DateTimeUtils.getChronology(chronology).withUTC(); 
+ --------------------------------------------------
+repair_iteration/Time2/iteration_1/patches.csv
+iteration_0 replace 223 suspicious value: 0.4472135954999579 
+ - if (loopType.getRangeDurationType() == null) { 
+ + if(loopType.getRangeDurationType() == null ||(compare!= 0 && loopUnitField.isSupported() == false)) { 
+replace 223 suspicious value: 0.4472135954999579 
+ -  if(loopType.getRangeDurationType()  ==  null  ||(compare!=  0  &&  loopUnitField.isSupported()  ==  false))  {  
+ + if(compare < 0 ||(compare!= 0 && loopUnitField.isSupported() == false)) { 
+ --------------------------------------------------
+repair_iteration/Time2/iteration_1/patches.csv
+iteration_0 add 223 suspicious value: 0.4472135954999579 
+ - if (loopType.getRangeDurationType() == null) { 
+ + if(loopType.getRangeDurationType() == null ||(compare!= 0 && loopUnitField.isSupported() == false)) { 
+iteration_0 replace 223 suspicious value: 0.4472135954999579 
+ - if (loopType.getRangeDurationType() == null) { 
+ + if(loopType.getRangeDurationType() == null ||(compare == 0 && loopUnitField.isSupported() == false)) { 
+replace 223 suspicious value: 0.4472135954999579 
+ -  if(loopType.getRangeDurationType()  ==  null  ||(compare  ==  0  &&  loopUnitField.isSupported()  ==  false))  {  
+ + if(compare < 0 && loopUnitField.isSupported() == false) { 
+ --------------------------------------------------
+repair_iteration/Cli13/iteration_0/plausible.csv replace 146 suspicious value: 1.0 
+ - while  (arguments.hasNext()  &&  (argumentCount  <  maximum))  {  
+ + while(arguments.hasNext()  &&(argumentCount  >  1))  { 
+ --------------------------------------------------
+repair_iteration/Cli13/iteration_0/plausible.csv replace 146 suspicious value: 1.0 
+ - while  (arguments.hasNext()  &&  (argumentCount  <  maximum))  {  
+ + while(arguments.hasNext()  &&(argumentCount  >  maximum))  { 
+ --------------------------------------------------
+repair_iteration/Cli13/iteration_0/plausible.csv replace 146 suspicious value: 1.0 
+ - while  (arguments.hasNext()  &&  (argumentCount  <  maximum))  {  
+ + while(arguments.hasNext()  &&(argumentCount  >  2))  { 
+ --------------------------------------------------
+repair_iteration/Math78/iteration_0/plausible.csv replace 98 suspicious value: 1.0 
+ - this.convergence  =  Math.abs(convergence);  
+ + this.convergence  =  Math.sqrt(convergence); 
+ --------------------------------------------------
+repair_iteration/Math75/iteration_0/plausible.csv replace 303 suspicious value: 1.0 
+ - return  getCumPct((Comparable<?>)  v);  
+ + return  getPct((  Comparable  <?>)v); 
+ --------------------------------------------------
+repair_iteration/Math95/iteration_0/plausible.csv add 148 suspicious value: 0.5773502691896258 
+ - 
+ +     ret  =  getNumeratorDegreesOfFreedom(); 
+ --------------------------------------------------
+repair_iteration/Math95/iteration_0/plausible.csv add 148 suspicious value: 0.5773502691896258 
+ - 
+ +     ret  =  getNumeratorDegreesOfFreedom()  *  p; 
+ --------------------------------------------------
+repair_iteration/Math95/iteration_0/plausible.csv add 148 suspicious value: 0.5773502691896258 
+ - 
+ +     ret  =  getNumeratorDegreesOfFreedom()  *  Math.pow(10,  p); 
+ --------------------------------------------------
+repair_iteration/Math95/iteration_0/plausible.csv replace 148 suspicious value: 0.5773502691896258 
+ - return  ret;  
+ + return  p; 
+ --------------------------------------------------

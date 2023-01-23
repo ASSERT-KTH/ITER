@@ -1,720 +1,333 @@
-compilation error,187,replace,[CE] not a statement, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(this.domain!= null) { this.domain = domain; slated else { this.range = range; }
-compilation error,187,replace,[CE] not a statement, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(this.domain!= null) { this.domain = domain; figured else if(this.range!= range) { this.domain = domain; slated else { this.range = range; }
-compilation error,187,replace,[CE] not a statement, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(this.domain!= null) { this.domain = domain; figured else & } this.range = range; }
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-patch is same with buggy,877,replace,, if(this.data.size()  >  1)  {    ,if(this.data.size() > 1) {
-increase failing tests,877,replace, [FE] AssertionFailedError, if(this.data.size()  >  1)  {    ,if(this.data!= null) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-compilation error,1292,add,[CE] missing return statement,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {    ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
-increase failing tests,584,replace, [FE] AssertionFailedError, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {    ,else if(!this.timePeriodClass.isAssignableFrom(c)|| notify) {
-compilation error,1265,replace,[CE] bad operand types for binary operator '>>', if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-compilation error,1269,add,[CE] missing return statement,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long maximum = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long maximum = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long maximum = getTimePeriod(getItemCount() / 2).getSerialIndex();
-compilation error,189,replace,[CE] illegal start of expression, if(name  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,[Delete]
-compilation error,189,replace,[CE] illegal start of expression, if(name  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { if(name == null) { this.timePeriodClass = getTimePeriodClass(); } else { this.domain = domain; this.range = range; }
-compilation error,189,replace,[CE] ')' expected, if(name  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(name == null) { if(this.timePeriodClass!= getTimePeriodClass(); } else { this.domain = domain; this.range = range; }
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)&& Double.isNaN(b)) }
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)&& Double.isNaN(b))!=
-compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);    ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2 - 1);
-compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);    ,RegularTimePeriod first = getTimePeriod(getItemCount() / 4);
-compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);    ,RegularTimePeriod first = getTimePeriod(getItemCount() - 1);
-compilation error,603,add,[CE] variable last is already defined in method add(TimeSeriesDataItem,boolean),   ,RegularTimePeriod last = getTimePeriod(getItemCount() / 2);
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)&& Double.isNaN(a)) {
-patch is same with buggy,1292,replace,, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-patch is same with buggy,653,replace,, add(period,  new  Double(value),  false);    ,add(period, new Double(value), false);
-compilation error,653,replace,[CE] cannot find symbol, add(period,  new  Double(value),  false);    ,setValue(period, new Double(value), false);
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))!=
-compilation error,627,replace,[CE] cannot find symbol, updateBoundsForAddedItem(item);    ,if(item.getItemCount() > 1) { updateBoundsForAddedItem(item); }
-patch is same with buggy,1288,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-increase failing tests,1288,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-patch is same with buggy,1058,replace,, if(this.data.size()  >  0  &&  this.data.size()  >  0)  {    ,if(this.data.size() > 0 && this.data.size() > 0) {
-patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway;    ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway;
-compilation error,634,replace,[CE] , removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway;    ,if(!removeAgedItems(false)) throw new IllegalArgumentException("");// remove old items if needed, but // don't notify anyone, because that // happens next anyway;
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN - 2;
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,637,replace,[CE] illegal start of expression, if(!notify)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  belong  to  the  same  category. ");  }    ,[Delete]
-compilation error,637,replace,[CE] class or interface expected, if(!notify)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  belong  to  the  same  category. ");  }    ,if(!added) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category."); }
-compilation error,637,replace,[CE] class or interface expected, if(!notify)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  belong  to  the  same  category. ");  }    ,if(!add) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category."); }
-compilation error,1269,replace,[CE] bad operand types for binary operator '>>', if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >> 0.0 && b <= 0.0)) {
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException( "Null 'item' argument. "); }
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0 && b <= 0.0)) {
-compilation error,695,add,[CE] cannot find symbol,   ,item.setPeriod(period);
-compilation error,695,add,[CE] cannot find symbol,   ,item.setData(item);
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)&& item.getClass().isAssignableFrom(c)) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)) {
-compilation error,584,add,[CE] illegal start of expression,   ,else if(!this.timePeriodClass.equals(c)&& item.getClass().isAssignableFrom(c)) }
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN - 1;
-compilation error,637,replace,[CE] illegal start of expression, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,[Delete]
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(notify) { throw new SeriesException("TimeSeriesDataItem item does not exist:" + this); }
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)&& Double.isNaN(b)) }
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-compilation error,1215,add,[CE] cannot find symbol minX,   ,this.minX = minIgnoreNaN(this.minX, y);
-increase failing tests,1215,add, [FE] AssertionFailedError,   ,this.minY = maxIgnoreNaN(this.minY, y);
-patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(getItemCount() / 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(getItemCount() ).getSerialIndex();
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isInfinite(b)) {
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  -  1;    ,this.minY = Double.NaN - 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  1;    ,this.minY = Double.NaN / 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  1;    ,this.minY = Double.NaN - 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN - 1L;
-compilation error,194,replace,[CE] cannot find symbol minX, this.maxY  =  Double.NaN  /  1;    ,this.minX = Double.NaN - 1L;
-compilation error,194,replace,[CE] cannot find symbol NaN, this.maxY  =  Double.NaN  /  1;    ,this.minY = Long.NaN - 1L;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN * 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN * 2;
-compilation error,194,replace,[CE] cannot find symbol minX, this.maxY  =  Double.NaN  /  1;    ,this.minX = Double.NaN * 1;
-compilation error,576,replace,[CE] illegal start of expression, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,[Delete]
-patch is same with buggy,576,replace,, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
-compilation error,576,replace,[CE] <identifier> expected, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item!= null) { throw new IllegalArgumentException("Null 'item' argument."); }
-compilation error,1292,replace,[CE] illegal start of expression, if(Double.isNaN(b)||  Double.isNaN(a))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)) }
-compilation error,1292,replace,[CE] illegal start of expression, if(Double.isNaN(b)||  Double.isNaN(a))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b))!=
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)) }
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a) || Double.isInfinite(b)) {
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(item);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(item); }
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(item);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(item); }
-compilation error,1064,replace,[CE] illegal start of expression, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(item);  }    ,if(clone!= null) { copy.add(clone); } else >> copy.add(item); }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-patch is same with buggy,879,replace,, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();    ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();    ,long max = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();    ,long max = getTimePeriod(getItemCount() / 2).getSerialIndex();
-patch is same with buggy,1292,replace,, if(Double.isNaN(b)||  Double.isNaN(a))  {    ,if(Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) }
-patch is same with buggy,879,replace,, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() / 1).getSerialIndex();
-compilation error,879,replace,[CE] illegal start of expression, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() - ).getSerialIndex();
-compilation error,879,add,[CE] illegal start of expression,   ,long min = getTimePeriod(getItemCount() - ).getSerialIndex();
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b > 0.0)) {
-compilation error,189,add,[CE] illegal start of expression,   ,if(name == null) { if(name.length() > 0) { this.timePeriodClass = getTimePeriodClass(); } else { this.domain = domain; this.range = range; }
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(b)|| Double.isNaN(a)) }
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(b)|| Double.isNaN(a))!=
-patch is same with buggy,1215,replace,, this.minY  =  minIgnoreNaN(this.minY,  y);    ,this.minY = minIgnoreNaN(this.minY, y);
-compilation error,1215,replace,[CE] cannot find symbol minX, this.minY  =  minIgnoreNaN(this.minY,  y);    ,this.minX = minIgnoreNaN(this.minX, y);
-increase failing tests,1215,replace, [FE] AssertionFailedError, this.minY  =  minIgnoreNaN(this.minY,  y);    ,this.minY = maxIgnoreNaN(this.minY, y);
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 1;
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isInfinite(c)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)) }
-patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...    ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
-compilation error,634,replace,[CE] , removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...    ,if(!removeAgedItems(false)) throw new IllegalArgumentException("");// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-patch is same with buggy,878,replace,, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long first = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long first = getTimePeriod(getItemCount() / 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long first = getTimePeriod(getItemCount()).getSerialIndex();
-patch is same with buggy,1269,replace,, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,189,replace,[CE] illegal start of expression, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }    ,[Delete]
-compilation error,189,replace,[CE] illegal start of expression, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }    ,if(name!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = name.getClass(); } else { this.data.add(name); }
-compilation error,189,replace,[CE] illegal start of expression, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }    ,if(this.timePeriodClass!= null) { if(name.getClass()!= null) { this.timePeriodClass = name.getClass(); } else { this.data.add(name); }
-increase failing tests,1265,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0)||(b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b >= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)&&(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| (a <= 0.0)&&(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)&&(b <= 0.0)) {
-compilation error,188,add,[CE] incompatible types,   ,this.timePeriodClass = new java.util.ArrayList();
-compilation error,188,add,[CE] incompatible types,   ,this.timePeriodClass = new java.util.ArrayList(); this.minY = minY;
-patch is same with buggy,188,replace,, this.maxY  =  maxY;    ,this.maxY = maxY;
-compilation error,188,replace,[CE] cannot find symbol MaxY, this.maxY  =  maxY;    ,this.maxY = MaxY;
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0)||(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)||(b <= 0.0)) {
-compilation error,1064,add,[CE] not a statement,   ,if(clone!= null) { copy.add(clone); bodied else { copy.add(clone); }
-compilation error,1064,add,[CE] illegal start of expression,   ,if(clone!= null) { copy.add(clone); } else >> copy.add(clone); }
-compilation error,1217,add,[CE] cannot find symbol,   ,item.setData(yN);
-compilation error,1217,add,[CE] cannot find symbol xN,   ,item.setValue(xN);
-compilation error,1269,replace,[CE] 'else' without 'if', if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isNaN(b)) {
-compilation error,581,replace,[CE] cannot find symbol, if(c!=  null  &&  c!=  this.timePeriodClass)  {    ,if(c!= null && c.isTimePeriodClass()) {
-compilation error,581,replace,[CE] cannot find symbol, if(c!=  null  &&  c!=  this.timePeriodClass)  {    ,if(c!= null && c.isDateTimePeriod()) {
-compilation error,581,replace,[CE] cannot find symbol, if(c!=  null  &&  c!=  this.timePeriodClass)  {    ,if(c!= null && c.isRegistered()) {
-compilation error,1057,add,[CE] cannot find symbol,   ,java.util.ArrayList(start + 1); copy.data = new java.util.ArrayList(start + 1);
-compilation error,1057,add,[CE] cannot find symbol Copy,   ,Copy.data = new java.util.ArrayList(start + 1);
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] ';' expected, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long max = getTimePeriod(getItemCount() - 2)getSerialIndex();
-compilation error,879,replace,[CE] ')' expected, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long max = getTimePeriod(getItemCount() 2).getSerialIndex();
-compilation error,1292,replace,[CE] bad operand types for binary operator '>>', if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >> 0.0 && b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b < 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b >> 0.0)) {
-patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  necessary,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway...    ,removeAgedItems(false);// remove old items if necessary, but // don't notify anybody, because that // happens next anyway...
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;    ,this.minY = Double.NaN; this.maxY = Double.NaN;
-increase failing tests,193,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;    ,if(this.minY == Double.NaN) { this.minY = Double.NaN; this.maxY = Double.NaN; }
-increase failing tests,193,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;    ,if(this.minY > 0) { this.minY = Double.NaN; this.maxY = Double.NaN; }
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals(c)&&  item.getClass().isAssignableFrom(c))  {    ,else if(!this.timePeriodClass.equals(c)&& item.getClass().isAssignableFrom(c)) {
-compilation error,1269,replace,[CE] bad operand types for binary operator '>>', if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-compilation error,1273,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)) { return b; >>
-compilation error,1273,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)) } return b; }
-increase failing tests,170,add, [FE] ClassCastException,   ,this.data.add(name);
-compilation error,170,add,[CE] generics are not supported in -source 1.4,   ,this.data.add(new ArrayList < TimePeriodClass>());
-compilation error,170,add,[CE] generics are not supported in -source 1.4,   ,this.data.add(new LinkedList < TimePeriodClass>());
-patch is same with buggy,170,replace,, this.data.clear();    ,this.data.clear();
-compilation error,170,replace,[CE] illegal start of expression, this.data.clear();    ,this.data.add(name);
-compilation error,170,replace,[CE] illegal start of expression, this.data.clear();    ,this.data.remove(name);
-patch is same with buggy,188,replace,, this.minY  =  minY;  this.range  =  range;    ,this.minY = minY; this.range = range;
-compilation error,188,replace,[CE] cannot find symbol MinY, this.minY  =  minY;  this.range  =  range;    ,this.minY = MinY; this.range = Range;
-compilation error,188,replace,[CE] cannot find symbol MinY, this.minY  =  minY;  this.range  =  range;    ,this.minY = MinY; this.range = range;
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)) }
-compilation error,193,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN; this.maxY = Double.NaN;
-compilation error,637,replace,[CE] illegal start of expression, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,[Delete]
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!added) { throw new SeriesException("TimeSeriesDataItem item is null."); }
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!add) { throw new SeriesException("TimeSeriesDataItem item is null."); }
-patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  data  item.   "  +  this.data.toString());    ,System.err.println("Unable to add cloned data item." + this.data.toString());
-compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.   "  +  this.data.toString());    ,System.err.println("Unable to add cloned data item." + this.data.get(index));
-patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  data  item.   "  +  this.data.toString());    ,System.err.println("Unable to add cloned data item. " + this.data.toString());
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)) }
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a))!=
-patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)&& Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)&& Double.isNaN(b)) }
-compilation error,581,add,[CE] illegal start of expression,   ,if(c!= null && c!= this.timePeriodClass) {
-compilation error,581,add,[CE] illegal start of expression,   ,if(c!= null && c == this.timePeriodClass) {
-compilation error,581,add,[CE] illegal start of expression,   ,if(c == null && c!= this.timePeriodClass) {
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(false);
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }?!(( TimeSeriesDataItem)item.getValue()); if(notify) { fireSeriesChanged();
-compilation error,634,add,[CE] illegal start of expression,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }?!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(false);
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;    ,int count = getItemCount();
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;    ,int count = getItemCount() - 1;
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;    ,int count = getItemCount() / 1;
-increase failing tests,878,add, [FE]  Size,   ,long first = getTimePeriod(getItemCount() / 1).getSerialIndex();
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0 && b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isNaN(b)) {
-compilation error,695,replace,[CE] illegal start of expression, item.setValue(value);    ,item.addValue(value);
-compilation error,695,replace,[CE] illegal start of expression, item.setValue(value);    ,item.setValue(value, notify);
-patch is same with buggy,695,replace,, item.setValue(value);    ,item.setValue(value);
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) }
-increase failing tests,653,add, [FE] SeriesException,   ,add(period, new Double(value), false);
-increase failing tests,653,add, [FE] SeriesException,   ,add(period, new Double(value), true);
-compilation error,653,add,[CE] no suitable constructor found for Long(double),   ,add(period, new Long(value), false);
-compilation error,1057,replace,[CE] no suitable constructor found for ArrayList(int,int), copy.data  =  new  java.util.ArrayList(end);    ,copy.data = new java.util.ArrayList(start, end);
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)|| notify) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)&& notify) {
-compilation error,187,add,[CE] not a statement,   ,if(domain!= null) { this.domain = domain; slated else { this.range = range; }
-compilation error,187,add,[CE] not a statement,   ,if(domain!= null) { this.domain = domain; figured else if(domain!= null) { this.domain = domain; this.range = range; }
-compilation error,187,add,[CE] not a statement,   ,if(domain!= null) { this.domain = domain; figured else if(range!= null) { this.domain = domain; this.range = range; }
-patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(1).getSerialIndex();    ,long duration = getTimePeriod(1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(1).getSerialIndex();    ,long duration = getTimePeriod(1).getSerialIndex() - 1;
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(1).getSerialIndex();    ,long duration = getTimePeriod(0).getSerialIndex();
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isInfinite(c)|| Double.isInfinite(b)) {
-patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,188,add,[CE] cannot find symbol MinY,   ,this.minY = MinY;
-compilation error,188,add,[CE] incompatible types,   ,this.minY = minY + domain;
-compilation error,1273,replace,[CE] missing return statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  else  if(Double.isNaN(a)||  Double.isNaN(b))  {  return  Math.min(a,  b);  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; } else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.min(a, b); }
-compilation error,1273,replace,[CE] missing return statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  else  if(Double.isNaN(a)||  Double.isNaN(b))  {  return  Math.min(a,  b);  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; } else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.min(a, b); }
-compilation error,1273,replace,[CE] not a statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  else  if(Double.isNaN(a)||  Double.isNaN(b))  {  return  Math.min(a,  b);  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; bod else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.min(a, b); }
-increase failing tests,1292,replace, [FE] AssertionFailedError, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b > 0.0)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN + 1;
-compilation error,1064,replace,[CE] not a statement, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); bodied else { copy.add(item); }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0 && b <= 0.0)) {
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(false);
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item.getValue()); if(notify) { fireSeriesChanged();
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(false); &
-compilation error,1058,add,[CE] illegal start of expression,   ,if(this.data.size() > 0 && this.data.size() > 0) {
-compilation error,1058,add,[CE] illegal start of expression,   ,if(This.data.size() > 0 && this.data.size() > 0) {
-compilation error,1058,add,[CE] illegal start of expression,   ,if(this.data.size() > 0 && this.data.size() > 0) }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(b)|| Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-patch is same with buggy,187,replace,, if(this.domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(this.domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1273,replace,[CE] missing return statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; }
-compilation error,1273,replace,[CE] missing return statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; }
-compilation error,1273,replace,[CE] not a statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; delt
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount();
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() + 1;
-patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() - 1;
-compilation error,1292,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
-compilation error,1292,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) { throw new SeriesException( "TimeSeriesDataItem item does not belong to the same category. "); }
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category. "); }
-compilation error,637,replace,[CE] illegal start of expression, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) { throw new SeriesException( "TimeSeriesDataItem item does not belong to the same category. "); >>
-patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,item =(TimeSeriesDataItem)item.clone(); if(item!= null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-increase failing tests,576,replace, [FE] IllegalArgumentException, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item!= null) { item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount();
-patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() - 1;
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() / 1;
-patch is same with buggy,1057,replace,, copy.data  =  new  java.util.ArrayList(start  +  1);    ,copy.data = new java.util.ArrayList(start + 1);
-compilation error,1057,replace,[CE] cannot find symbol index, copy.data  =  new  java.util.ArrayList(start  +  1);    ,copy.data = new java.util.ArrayList(index + 1);
-compilation error,1057,add,[CE] cannot find symbol,   ,java.util.ArrayList(end); copy.data = new java.util.ArrayList(start);
-compilation error,1057,add,[CE] cannot find symbol Copy,   ,Copy.data = new java.util.ArrayList(end);
-patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
-patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0)||(b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b < 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a), Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1212,add,[CE] illegal start of expression,   ,if(yN!= null) { yN = item.getValue(); >> else { fireSeriesChanged(); }
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  +  1;    ,this.minY = Double.NaN + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  +  1;    ,this.minY = Double.NaN - 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  +  1;    ,this.minY = Double.NaN + 2;
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(false); // remove old items if needed, but // don't notify anyone
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(false); // remove old items if needed, but // don't notify
-compilation error,634,add,[CE] not a statement,   ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(false); // remove old items if needed, but // don't notify anybody
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals("")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)|| item.getPeriod().getClass().getName().equals("")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(c)&& item.getPeriod().getClass().getName().equals("")) {
-patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway...    ,removeAgedItems(false);// remove old items if needed, but // don't notify anybody, because that // happens next anyway...
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,this.data.clear();
-compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.remove(name);    ,this.data.add(new LinkedList < TimeSeries>());
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,this.data.add(name);
-increase failing tests,878,add, [FE]  Size,   ,long duration = getTimePeriod(getItemCount() / 1).getSerialIndex();
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0)||(b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0)||(b <= 0.0)) {
-increase failing tests,1265,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0)||(b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)||(b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a << 0.0 && b <= 0.0)) {
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,this.data.add(name);
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,if(this.data!= null) { this.data.remove(name); } else { this.data.add(name); }
-compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.remove(name);    ,if(this.data!= null) { this.data.remove(name); } else { Class <?> timePeriodClass = getTimePeriodClass(); this.data.add(name); }
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(clone); }
-compilation error,1064,replace,[CE] illegal start of expression, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(clone); >>
-compilation error,1064,replace,[CE] not a statement, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(clone); Ultimately
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals( " ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals( "")) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(1).getItemCount();
-compilation error,878,replace,[CE] cannot find symbol, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(1).getDescription();
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a << 0.0 && b <= 0.0)) {
-compilation error,1217,replace,[CE] illegal start of expression, item.setValue(yN);    ,item.setValue(yN, yy);
-compilation error,1217,replace,[CE] illegal start of expression, item.setValue(yN);    ,item.setValue(yN, this.maxY);
-patch is same with buggy,1217,replace,, item.setValue(yN);    ,item.setValue(yN);
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 1;
-patch is same with buggy,1288,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0 && b <= 0.0)) {
-increase failing tests,1288,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))!=
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  -  1L;    ,this.maxY = Double.NaN - 1L;
-patch is same with buggy,1212,replace,, if(yN!=  null)  {  yN  =  item.getValue();  }  else  {  fireSeriesChanged();  }    ,if(yN!= null) { yN = item.getValue(); } else { fireSeriesChanged(); }
-compilation error,1212,replace,[CE] class or interface expected, if(yN!=  null)  {  yN  =  item.getValue();  }  else  {  fireSeriesChanged();  }    ,if(yN == null) { yN = item.getValue(); } else { fireSeriesChanged(); }
-compilation error,1212,replace,[CE] illegal start of expression, if(yN!=  null)  {  yN  =  item.getValue();  }  else  {  fireSeriesChanged();  }    ,if(yN!= null) { yN = item.getValue(); } else >> fireSeriesChanged(); }
-patch is same with buggy,1269,replace,, if(Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,877,add,[CE] illegal start of expression,   ,if(this.data.size() > 1) {
-compilation error,877,add,[CE] illegal start of expression,   ,if(!this.data.size() > 1) {
-compilation error,877,add,[CE] illegal start of expression,   ,if(this.data.size() > 1) }
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a), Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,581,replace,[CE] bad operand types for binary operator '<', if(c!=  null  &&  c!=  this.timePeriodClass)  {    ,if(c!= null && c < this.timePeriodClass) {
-increase failing tests,581,replace, [FE] NullPointerException, if(c!=  null  &&  c!=  this.timePeriodClass)  {    ,if(c!= null && c == this.timePeriodClass) {
-patch is same with buggy,581,replace,, if(c!=  null  &&  c!=  this.timePeriodClass)  {    ,if(c!= null && c!= this.timePeriodClass) {
-compilation error,189,add,[CE] illegal start of expression,   ,if(name == null) { if(getTimePeriodClass()!= null) { this.data = new ArrayList(); }
-compilation error,189,add,[CE] illegal start of expression,   ,if(name == null) { if(getTimePeriodClass()!= null) { throw new IllegalArgumentException(""); }
-compilation error,189,add,[CE] illegal start of expression,   ,if(name!= null) { if(getTimePeriodClass()!= null) { throw new IllegalArgumentException(""); }
-compilation error,1064,add,[CE] cannot find symbol,   ,if(clone!= null) { copy.add(clone); } else { clone.add(item); clone.add(item); }
-compilation error,1064,add,[CE] cannot find symbol,   ,if(clone!= null) { copy.add(clone); } else if(item.getSeriesCount() > 0) { clone.add(item.getSeriesCount()); }
-compilation error,1064,add,[CE] cannot find symbol,   ,if(clone!= null) { copy.add(clone); } else if(item.getSeriesCount() > 0) { copy.add(item.getSeriesCount()); }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(A)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-compilation error,1292,replace,[CE] ')' expected, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-compilation error,170,replace,[CE] illegal start of expression, this.data.clear();    ,this.data.add(name);
-compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.clear();    ,this.data.add(new LinkedList < TimeSeries>());
-compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.clear();    ,this.data.add(new ArrayList < TimeSeries>());
-increase failing tests,653,add, [FE] SeriesException,   ,add(period, new Double(value), true);
-increase failing tests,653,add, [FE] SeriesException,   ,add(period, new Double(value));
-compilation error,653,add,[CE] no suitable method found for add(RegularTimePeriod,Double,boolean),   ,this.data.add(period, new Double(value), true);
-patch is same with buggy,188,replace,, this.minY  =  minY;  this.range  =  range;    ,this.minY = minY; this.range = range;
-compilation error,188,replace,[CE] incompatible types, this.minY  =  minY;  this.range  =  range;    ,this.minY = range; this.range = range;
-compilation error,188,replace,[CE] incompatible types, this.minY  =  minY;  this.range  =  range;    ,this.minY = minY + range; this.range = range;
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0)||(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)||(b <= 0.0)) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-compilation error,1212,replace,[CE] illegal start of expression, if(yN!=  null)  {  yN  =  item.getValue();  }  else  {  fireSeriesChanged();  }    ,[Delete]
-patch is same with buggy,1212,replace,, if(yN!=  null)  {  yN  =  item.getValue();  }  else  {  fireSeriesChanged();  }    ,if(yN!= null) { yN = item.getValue(); } else { fireSeriesChanged(); }
-patch is same with buggy,1212,replace,, if(yN!=  null)  {  yN  =  item.getValue();  }  else  {  fireSeriesChanged();  }    ,if(yN!= null) { yN = item.getValue(); } else { fireSeriesChanged(); }
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(!Double.isNaN(a)&&!Double.isNaN(b)) {
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN * 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN * 2;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN * 2 + 1;
-compilation error,1217,add,[CE] cannot find symbol,   ,item.setDataItem(yN);
-compilation error,1217,add,[CE] cannot find symbol,   ,item.setDataItem(item);
-compilation error,653,replace,[CE] cannot find symbol, add(period,  new  Double(value),  false);    ,setValue(period, new Double(value), false);
-compilation error,653,replace,[CE] cannot find symbol, add(period,  new  Double(value),  false);    ,setValue(period, new Double(value), true);
-patch is same with buggy,1292,replace,, if(Double.isNaN(b)||  Double.isNaN(a))  {    ,if(Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,878,replace,[CE] cannot find symbol, long  duration  =  getTimePeriod(1).getSerialIndex();    ,long duration = getTimePeriod(1).getItemCount();
-patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(1).getSerialIndex();    ,long duration = getTimePeriod(1).getSerialIndex();
-compilation error,878,replace,[CE] method getSerialIndex in class RegularTimePeriod cannot be applied to given types;, long  duration  =  getTimePeriod(1).getSerialIndex();    ,long duration = getTimePeriod(1).getSerialIndex(0);
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,188,add,[CE] bad operand types for binary operator '!=',   ,this.minY = minY && this.maxY!= null && this.data.size() > 0;
-compilation error,188,add,[CE] bad operand types for binary operator '!=',   ,this.minY = minY && this.maxY!= null && this.data.contains(name);
-compilation error,581,add,[CE] illegal start of expression,   ,if(c!= null && c!= this.timePeriodClass) {
-compilation error,581,add,[CE] illegal start of expression,   ,if(c!= null && c == this.timePeriodClass) {
-compilation error,581,add,[CE] illegal start of expression,   ,if(c!= null && c < this.timePeriodClass) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a), Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,695,replace,[CE] illegal start of expression, item.setValue(value);    ,item.setValue(value, notify);
-compilation error,695,replace,[CE] illegal start of expression, item.setValue(value);    ,item.addValue(value);
-compilation error,695,replace,[CE] illegal start of expression, item.setValue(value);    ,item.setValue(value, notify);
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| (a >= 0.0 && b <= 0.0)) {
-compilation error,576,replace,[CE] illegal start of expression, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,[Delete]
-patch is same with buggy,576,replace,, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
-compilation error,576,replace,[CE] <identifier> expected, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException(""); }
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument".); }
-increase failing tests,878,add, [FE]  Size,   ,long duration = getTimePeriod(getItemCount() + 1).getSerialIndex();
-compilation error,878,add,[CE] possible loss of precision,   ,int duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a), Double.isNaN(b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals("")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals(" ")) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().getName().equals("")) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,637,replace,[CE] illegal start of expression, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,[Delete]
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) { throw new SeriesException("TimeSeriesDataItem item does not exist:" + this); }
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(notify) { throw new SeriesException("TimeSeriesDataItem item does not exist:" + this); }
-compilation error,189,replace,[CE] illegal start of expression, if(name  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,[Delete]
-compilation error,189,replace,[CE] illegal start of expression, if(name  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain == null) { if(name == null) { this.timePeriodClass = getTimePeriodClass(); } else { this.domain = domain; this.range = range; }
-compilation error,189,replace,[CE] illegal start of expression, if(name  ==  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(name == null) { this.timePeriodClass = getTimePeriodClass(); if(range == null) { this.domain = domain; this.range = range; }
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a < 0.0 && b <= 0.0)) {
-patch is same with buggy,1292,replace,, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isInfinite(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1064,replace,[CE] cannot find symbol, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(item); } else if(item.getSeriesCount() > 0) { copy.add(item); }
-compilation error,1064,replace,[CE] bad operand types for binary operator '!=', if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(item); } else if(item.getValue()!= 0) { copy.add(item); }
-compilation error,1064,replace,[CE] cannot find symbol, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(item); } else if(item.getPeriodClass().isArray()) { copy.add(item); }
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-increase failing tests,878,add, [FE]  Size,   ,long first = getTimePeriod(getItemCount() + 1).getSerialIndex();
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount();
-patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() - 1;
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount(0);
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(A)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-increase failing tests,193,add, [FE] NullPointerException,   ,this.timePeriodClass = name.getClass();
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)&& Double.isInfinite(b)) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-compilation error,1265,replace,[CE] bad operand types for binary operator '>>', if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-patch is same with buggy,188,replace,, this.maxY  =  maxY;    ,this.maxY = maxY;
-compilation error,188,replace,[CE] cannot find symbol maximumY, this.maxY  =  maxY;    ,this.maxY = maximumY;
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Math.min(a, b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)&& Double.isNaN(b)) {
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {    ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {    ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
-compilation error,584,replace,[CE] no suitable method found for add(String), else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {    ,else if(!this.timePeriodClass.isAssignableFrom(c)&& this.add(item.getPeriod().getClass().getName())) {
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,this.data.add(name);
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,fireSeriesChanged();
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,this.data.add(new TimeSeries(name));
-compilation error,1273,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }    ,[Delete]
-patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }    ,if(Double.isNaN(a)|| Double.isNaN(b)) { return b; }
-compilation error,1273,replace,[CE] missing return statement, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }    ,if(Double.isNaN(a)&& Double.isNaN(b)) { return b; }
-compilation error,1057,replace,[CE] no suitable constructor found for ArrayList(int,int), copy.data  =  new  java.util.ArrayList(end);    ,copy.data = new java.util.ArrayList(start, end);
-compilation error,1057,replace,[CE] cannot find symbol Copy, copy.data  =  new  java.util.ArrayList(end);    ,Copy.data = new java.util.ArrayList(start);
-patch is same with buggy,1288,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-increase failing tests,1288,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,695,add,[CE] cannot find symbol,   ,item.add(period, notify);
-compilation error,695,add,[CE] cannot find symbol,   ,item.add(period, value);
-compilation error,695,add,[CE] cannot find symbol,   ,item.add(period, null, notify);
-patch is same with buggy,187,replace,, if(this.domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(this.domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
-compilation error,187,replace,[CE] 'else' without 'if', if(this.domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { this.domain = domain; this.range = range; else { this.domain = domain; this.range = range; }
-compilation error,187,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,[Delete]
-patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
-compilation error,187,replace,[CE] 'else' without 'if', if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { this.domain = domain; this.range = range; else { this.domain = domain; this.range = range; }
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);    ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2 - 1);
-compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);    ,RegularTimePeriod first = getTimePeriod(getItemCount() - 1);
-compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);    ,RegularTimePeriod first = getTimePeriod(getItemCount() - 2);
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)&& Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(!Double.isNaN(a)&&!Double.isNaN(b)) {
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-increase failing tests,1265,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0)||(b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)||(b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-compilation error,1288,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-compilation error,1273,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  else  if(Double.isNaN(a)||  Double.isNaN(b))  {  return  Math.min(a,  b);  }    ,[Delete]
-compilation error,1273,replace,[CE] class or interface expected, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  else  if(Double.isNaN(a)||  Double.isNaN(b))  {  return  Math.min(a,  b);  }    ,}
-compilation error,1273,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  else  if(Double.isNaN(a)||  Double.isNaN(b))  {  return  Math.min(a,  b);  }    ,{
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals(" ")) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isNaN(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-increase failing tests,879,add, [FE]  Size,   ,long maximum = getTimePeriod(getItemCount() + 2).getSerialIndex();
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b < 0.0)) {
-increase failing tests,584,add, [FE] SeriesException,   ,else if(this.timePeriodClass.isAssignableFrom(c)&& notify) { throw new SeriesException(""); }
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(clone); }
-compilation error,1064,replace,[CE] ')' expected, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); } else if(copy.add(clone); }
-compilation error,1064,replace,[CE] illegal start of expression, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(clone);  }    ,if(clone!= null) { copy.add(clone); if( else { copy.add(clone); }
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,194,replace,, this.maxY  =  Double.NaN  -  1L;    ,this.maxY = Double.NaN - 1L;
-patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,584,add,[CE] 'else' without 'if',   ,else if(this.timePeriodClass.equals(item.getPeriod())) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)&&(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b) ||(a <= 0.0)&&(b <= 0.0)) {
-compilation error,1265,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)] ||(a <= 0.0)&&(b <= 0.0)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-patch is same with buggy,1057,replace,, copy.data  =  new  java.util.ArrayList(start  +  1);    ,copy.data = new java.util.ArrayList(start + 1);
-compilation error,187,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { if(this.data == null) { this.data = new ArrayList(); }
-compilation error,187,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { if(this.domain!= null) { throw new IllegalArgumentException(""); }
-compilation error,187,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }    ,if(domain!= null) { if(this.data == null) { throw new IllegalArgumentException(""); }
-patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,637,replace,[CE] illegal start of expression, if(!notify)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  belong  to  the  same  category. ");  }    ,[Delete]
-compilation error,637,replace,[CE] class or interface expected, if(!notify)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  belong  to  the  same  category. ");  }    ,if(!added) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category."); }
-compilation error,637,replace,[CE] class or interface expected, if(!notify)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  belong  to  the  same  category. ");  }    ,if(!add) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category."); }
-increase failing tests,170,add, [FE] ClassCastException,   ,this.data.add(name);
-compilation error,170,add,[CE] method firePropertyChange in class Series cannot be applied to given types;,   ,firePropertyChange("TimeSeries", name);
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;    ,int count = getItemCount();
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;    ,int count = getItemCount() - 1;
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;    ,int count = getItemCount(0);
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(b)|| Double.isNaN(a)) {
-compilation error,1292,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)) }
-patch is same with buggy,879,replace,, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() + 1).getSerialIndex();
-compilation error,603,add,[CE] variable last is already defined in method add(TimeSeriesDataItem,boolean),   ,RegularTimePeriod last = getTimePeriod(getItemCount() / 2);
-compilation error,603,add,[CE] variable last is already defined in method add(TimeSeriesDataItem,boolean),   ,RegularTimePeriod last = getTimePeriod(getItemCount() / 2 - 1);
-compilation error,603,add,[CE] variable last is already defined in method add(TimeSeriesDataItem,boolean),   ,RegularTimePeriod last = getTimePeriod(getItemCount() / 2 + 1);
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isInfinite(a), Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-patch is same with buggy,193,replace,, this.minY  =  Double.NaN  +  2;    ,this.minY = Double.NaN + 2;
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(c)) {
-compilation error,637,replace,[CE] illegal start of expression, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,[Delete]
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!added) { throw new SeriesException("TimeSeriesDataItem item is null."); }
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!add) { throw new SeriesException("TimeSeriesDataItem item is null."); }
-compilation error,627,add,[CE] method updateBoundsForAddedItem in class TimeSeries cannot be applied to given types;,   ,updateBoundsForAddedItem(item, notify);
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  +  1;    ,this.minY = Double.NaN + 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  +  1;    ,this.minY = Double.NaN;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  +  1;    ,this.minY = Double.NaN - 1;
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| (a <= 0.0 && b <= 0.0)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.   "  +  this.data.toString());    ,System.err.println("Unable to add cloned data item." + this.data.get(index).toString());
-compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.   "  +  this.data.toString());    ,System.err.println("Unable to add cloned data item." + this.data.get(index));
-patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  data  item.   "  +  this.data.toString());    ,System.err.println("Unable to add cloned data item." + this.data.toString());
-compilation error,1292,replace,[CE] bad operand types for binary operator '||', if(Double.isNaN(b)||  Double.isNaN(a))  {    ,if(Math.max(a, b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,193,replace,[CE] bad operand types for binary operator '!=', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;    ,if(this.minY!= null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.data.add(name); }
-compilation error,193,replace,[CE] bad operand types for binary operator '==', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;    ,if(this.minY == null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.data.add(name); }
-compilation error,193,replace,[CE] bad operand types for binary operator '!=', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;    ,if(this.minY!= null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.data.add(new Data(name, domain, range)); }
-compilation error,877,add,[CE] no suitable method found for getItemCount(int),   ,int count = getItemCount(getItemCount() - 1);
-increase failing tests,1288,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1292,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1217,replace,[CE] illegal start of expression, item.setValue(yN);    ,item.setValue(yN, this.maxY);
-patch is same with buggy,1217,replace,, item.setValue(yN);    ,item.setValue(yN);
-compilation error,1217,replace,[CE] illegal start of expression, item.setValue(yN);    ,item.setValue(yN, 0);
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(0).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(1).getItemCount();
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)) {
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,this.data.add(name);
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,if(name == null) { this.data.add(name); } else { this.data.add(name); }
-compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);    ,if(name.length() < minY) { this.data.add(name); } else { this.data.add(name); }
-increase failing tests,1215,replace, [FE] AssertionFailedError, this.minY  =  minIgnoreNaN(this.minY,  y);    ,this.minY = maxIgnoreNaN(this.minY, y);
-patch is same with buggy,1215,replace,, this.minY  =  minIgnoreNaN(this.minY,  y);    ,this.minY = minIgnoreNaN(this.minY, y);
-compilation error,1215,replace,[CE] cannot find symbol minX, this.minY  =  minIgnoreNaN(this.minY,  y);    ,this.minX = maxIgnoreNaN(this.minY, y);
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long min = getTimePeriod(getItemCount() + 2).getSerialIndex();
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b <= 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b < 0.0)) {
-compilation error,1265,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b >> 0.0)) {
-patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(getItemCount() + 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long duration = getTimePeriod(getItemCount()).getSerialIndex();
-compilation error,1058,add,[CE] illegal start of expression,   ,if(this.data.size() > 0) {
-increase failing tests,1058,add, [FE] IllegalArgumentException,   ,if(this.data.size() > 0) { throw new IllegalArgumentException(""); }
-increase failing tests,1058,add, [FE] IllegalArgumentException,   ,if(start < end) { throw new IllegalArgumentException(""); }
-compilation error,187,add,[CE] illegal start of expression,   ,if(domain!= null) { if(domain.equals("")) { throw new IllegalArgumentException(""); }
-compilation error,187,add,[CE] illegal start of expression,   ,if(domain!= null) { if(domain.equals(getDomainName())) { throw new IllegalArgumentException(""); }
-compilation error,187,add,[CE] illegal start of expression,   ,if(domain!= null) { if(domain.equals(name)) { throw new IllegalArgumentException(""); }
-patch is same with buggy,877,replace,, if(this.data.size()  >  1)  {    ,if(this.data.size() > 1) {
-compilation error,1057,add,[CE] cannot find symbol Copy,   ,Copy.data = new java.util.ArrayList(start);
-compilation error,1057,add,[CE] cannot find symbol,   ,copy.data =(List)ArrayList(start);
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() + 1;
-patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;    ,int count = getItemCount() - 1;
-compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;    ,int count = getItemCount();
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a),| Double.isNaN(b)|| Double.isNaN(a)&& Double.isNaN(b)) {
-patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isInfinite(b)) {
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-patch is same with buggy,194,replace,, this.minY  =  Double.NaN  -  1;    ,this.minY = Double.NaN - 1;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  1;    ,this.minY = Double.NaN;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN  -  1;    ,this.minY = Double.NaN * 1;
-increase failing tests,1058,replace, [FE] AssertionFailedError, if(this.data.size()  >  0  &&  this.data.size()  >  0)  {    ,if(this.data.size() > 0 && copy.data.size() > 0) {
-compilation error,189,add,[CE] illegal start of expression,   ,if(name.length() < 0) { if(!this.data.contains(name)) { this.data.add(name); }
-compilation error,189,add,[CE] illegal start of expression,   ,if(name.length() < 0) { if(this.data == null) { this.data = new ArrayList(); }
-compilation error,189,add,[CE] illegal start of expression,   ,if(name.length() < 0) { if(this.data!= null) { this.data = new ArrayList(); }
-compilation error,189,replace,[CE] illegal start of expression, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }    ,[Delete]
-compilation error,189,replace,[CE] ')' expected, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }    ,if(name == null) { if(name.getClass()!= name.getClass(); if else { this.data.add(name); }
-compilation error,189,replace,[CE] ')' expected, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }    ,if(name == null) { if(name.getClass()!= name.getClass(); if(overriden) { this.data.add(name); }
-compilation error,194,add,[CE] cannot find symbol NaN,   ,this.maxY = Long.NaN + 1;
-patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.equals(c)&&  item.getClass().isAssignableFrom(c))  {    ,else if(!this.timePeriodClass.equals(c)&& item.getClass().isAssignableFrom(c)) {
-patch is same with buggy,1269,replace,, if(Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isInfinite(a)|| Double.isInfinite(b)) {
-patch is same with buggy,878,replace,, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long first = getTimePeriod(getItemCount() - 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long first = getTimePeriod(getItemCount() + 1).getSerialIndex();
-compilation error,878,replace,[CE] cannot find symbol latest, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long first = getTimePeriod(getItemCount()).getSerialIndex();
-increase failing tests,627,replace, [FE] SeriesException, updateBoundsForAddedItem(item);    ,if(getItemCount() > this.maximumItemCount) { updateBoundsForAddedItem(item); } else { throw new SeriesException(""); }
-increase failing tests,627,replace, [FE] SeriesException, updateBoundsForAddedItem(item);    ,if(this.maximumItemCount!= this.maximumItemCount) { updateBoundsForAddedItem(item); } else { throw new SeriesException(""); }
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN - 1L;
-increase failing tests,194,replace, [FE] AssertionFailedError, this.maxY  =  Double.NaN  /  1;    ,this.minY = Double.NaN + 1L;
-compilation error,1292,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||(a  >=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
-increase failing tests,1215,add, [FE] AssertionFailedError,   ,this.minY = maxIgnoreNaN(this.minY, y);
-compilation error,1215,add,[CE] cannot find symbol minX,   ,this.minX = maxIgnoreNaN(this.minX, y);
-compilation error,194,add,[CE] cannot find symbol minX,   ,this.minX = Double.NaN / 2;
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a),| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,item =(TimeSeriesDataItem) item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
-patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }    ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
-patch is same with buggy,1064,replace,, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(item);  }    ,if(clone!= null) { copy.add(clone); } else { copy.add(item); }
-compilation error,1064,replace,[CE] ')' expected, if(clone!=  null)  {  copy.add(clone);  }  else  {  copy.add(item);  }    ,if(clone!= null) { copy.add(clone); } else if(copy.add(item); }
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long maximum = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long maximum = getTimePeriod(getItemCount() + 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();    ,long maximum = getTimePeriod(getItemCount()).getSerialIndex();
-compilation error,1273,add,[CE] 'else' without 'if',   ,} else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.max(a, b); }
-compilation error,1273,add,[CE] illegal start of expression,   ,[Delete] else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.max(a, b); }
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)&& Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] illegal start of expression,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(a)|| Double.isInfinite(b)) {
-compilation error,1269,add,[CE] ')' expected,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a), Double.isInfinite(b)) {
-compilation error,188,add,[CE] cannot find symbol,   ,this.timePeriodClass = name.getClass(); this.data = new ArrayList();
-increase failing tests,1269,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(a)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category. "); }
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category."); }
-compilation error,637,replace,[CE] class or interface expected, if(!added)  {  throw  new  SeriesException( "TimeSeriesDataItem  item  does  not  exist: "  +  this);  }    ,if(!notify) throw new SeriesException("TimeSeriesDataItem item does not belong to the same category. "); if(!notify) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category."); }
-patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0)||(b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b < 0.0)) {
-increase failing tests,1265,replace, [FE] AssertionFailedError, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0)||(b  <  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)||(b <= 0.0)) {
-compilation error,1269,replace,[CE] cannot find symbol c, if(Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0  &&  b  <=  0.0))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(c)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| (a <= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0 && b <= 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b < 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b <= 0.0)) {
-patch is same with buggy,879,replace,, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();    ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();    ,long max = getTimePeriod(getItemCount() + 2).getSerialIndex();
-compilation error,879,replace,[CE] cannot find symbol removed, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();    ,long max = getTimePeriod(getItemCount()).getSerialIndex();
-compilation error,1057,add,[CE] cannot find symbol Copy,   ,Copy.data = new java.util.ArrayList(start + 1);
-increase failing tests,634,add, [FE] AssertionFailedError,   ,this.data.add(item);
-compilation error,634,add,[CE] cannot find symbol value,   ,item.setValue(value);
-compilation error,634,add,[CE] cannot find symbol items,   ,items.add(item);
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a), Double.isNaN(b)) {
-compilation error,1292,add,[CE] ')' expected,   ,if(Double.isNaN(a), Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isNaN(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(b)) {
-compilation error,1292,add,[CE] reached end of file while parsing,   ,if(Double.isInfinite(a)|| Double.isInfinite(b)|| Double.isInfinite(a)) {
-compilation error,877,add,[CE] illegal start of expression,   ,if(this.data.size() > 1) {
-compilation error,877,add,[CE] illegal start of expression,   ,if(getItemCount() > 1) {
-compilation error,877,add,[CE] illegal start of expression,   ,if(this.data!= null) {
-patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a), Double.isNaN(b)) {
-compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {    ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
-compilation error,1269,replace,[CE] bad operand types for binary operator '>>', if(Double.isNaN(a)||  Double.isInfinite(b)||  Double.isInfinite(b))  {    ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0 && b >> 0.0)) {
+patch is same with buggy,1292,replace,, if(Double.isNaN(b)||  Double.isNaN(a))  {  ,if(Double.isNaN(b)|| Double.isNaN(a)) {
+compilation error,878,replace,[CE] cannot find symbol, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long duration = getTimePeriod(1).getItemCount();
+compilation error,1273,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) { return b; >>
+compilation error,1273,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) } return b; }
+patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anybody, because that // happens next anyway...
+compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
+compilation error,1265,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b >> 0.0)) {
+patch is same with buggy,879,replace,, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long min = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,879,replace,[CE] cannot find symbol removed, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long min = getTimePeriod(getItemCount() / 1).getSerialIndex();
+compilation error,1296,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; >>
+compilation error,1296,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) } return a; }
+compilation error,1292,add,[CE] illegal start of expression, ,if(Double.isNaN(b)|| Double.isNaN(a)) }
+compilation error,1292,add,[CE] illegal start of expression, ,if(Double.isNaN(b)|| Double.isNaN(a))!=
+compilation error,879,replace,[CE] ';' expected, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long max = getTimePeriod(getItemCount() - 2)getSerialIndex();
+compilation error,345,replace,[CE] missing return statement, int  count  =  getItemCount();  ,int count = getItemCount() - 1;
+compilation error,345,replace,[CE] missing return statement, int  count  =  getItemCount();  ,int count = getItemCount() / 2;
+patch is same with buggy,345,replace,, int  count  =  getItemCount();  , 
+patch is same with buggy,1296,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  a;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; }
+patch is same with buggy,1296,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  a;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; }
+compilation error,189,replace,[CE] illegal start of expression, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }  ,[Delete]
+compilation error,189,replace,[CE] illegal start of expression, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }  ,if(name!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = name.getClass(); } else { this.data.add(name); }
+patch is same with buggy,878,replace,, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long first = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,878,replace,[CE] cannot find symbol latest, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long first = getTimePeriod(getItemCount() / 1).getSerialIndex();
+compilation error,653,add,[CE] no suitable constructor found for Long(double), ,add(period, new Long(value), false);
+compilation error,187,add,[CE] not a statement, ,if(this.domain!= null) { this.domain = domain; slated else { this.range = range; }
+compilation error,187,add,[CE] not a statement, ,if(this.domain!= null) { this.domain = domain; figured else if(this.range!= range) { this.domain = domain; slated else { this.range = range; }
+compilation error,187,add,[CE] not a statement, ,if(this.domain!= null) { this.domain = domain; figured else & } this.range = range; }
+compilation error,1056,replace,[CE] cannot find symbol copy, System.err.println( "Failed  to  add  cloned  item.... ");  ,System.err.println("Failed to add cloned item...");
+compilation error,584,add,[CE] 'else' without 'if', ,else if(!this.timePeriodClass.isAssignableFrom(c)|| notify) {
+compilation error,584,add,[CE] 'else' without 'if', ,else if(!this.timePeriodClass.equals(c)&& notify) {
+patch is same with buggy,653,replace,, add(period,  new  Double(value),  false);  ,add(period, new Double(value), false);
+compilation error,879,add,[CE] illegal start of expression, ,long min = getTimePeriod(getItemCount() - ).getSerialIndex();
+compilation error,1292,add,[CE] illegal start of expression, ,if(Double.isNaN(a)&& Double.isNaN(b)) }
+patch is same with buggy,170,replace,, this.data.clear();  ,this.data.clear();
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 1;
+compilation error,584,add,[CE] 'else' without 'if', ,else if(!this.timePeriodClass.isAssignableFrom(c)|| item.getPeriod().getClass().getName().equals("")) {
+compilation error,584,add,[CE] 'else' without 'if', ,else if(!this.timePeriodClass.equals(c)&& item.getPeriod().getClass().getName().equals("")) {
+patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  necessary,  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if necessary, // don't notify anyone, because that // happens next anyway...
+compilation error,1292,add,[CE] ')' expected, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
+compilation error,1292,add,[CE] missing return statement, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))
+compilation error,581,replace,[CE] cannot find symbol, if(c!=  null  &&  c!=  this.timePeriodClass)  {  ,if(c!= null && c.isDateTimePeriod()) {
+compilation error,596,add,[CE] cannot find symbol notification, ,boolean added = notification;
+patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0)||(b  <  0.0))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b < 0.0)) {
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  yN  =  item.getValue();  }  ,if(yN!= null) { yN = item.getValue(); }
+compilation error,1212,replace,[CE] class or interface expected, if(yN!=  null)  {  yN  =  item.getValue();  }  ,if(yN == null) { yN = item.getValue(); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { this.domain = domain; this.range = range; >>
+compilation error,576,replace,[CE] illegal start of expression, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,[Delete]
+patch is same with buggy,576,replace,, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
+patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(1).getSerialIndex();  ,long duration = getTimePeriod(1).getSerialIndex();
+compilation error,878,replace,[CE] cannot find symbol latest, long  duration  =  getTimePeriod(1).getSerialIndex();  ,long duration = getTimePeriod(1).getSerialIndex() - 1;
+patch is same with buggy,634,replace,, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,removeAgedItems(false);// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a), Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,634,add,[CE] not a statement, ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(false);
+compilation error,634,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }?!(( TimeSeriesDataItem)item.getValue()); if(notify) { fireSeriesChanged();
+compilation error,634,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); }?!(( TimeSeriesDataItem)item.getValue()); // removeAgedItems(false);
+patch is same with buggy,596,replace,, boolean  added  =  notify;  ,boolean added = notify;
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  +  1;  ,this.minY = Double.NaN + 1;
+compilation error,634,add,[CE] illegal start of expression, ,if(notify) { fireSeriesChanged(); }, // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;  ,int count = getItemCount() - 1;
+compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);  ,if(this.data!= null) { this.data.remove(name); } else { this.data.add(name); }
+patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  , 
+compilation error,1265,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)||(a >= 0.0)&&(b <= 0.0)) {
+compilation error,1058,add,[CE] illegal start of expression, ,if(This.data.size() > 0 && this.data.size() > 0) {
+compilation error,1058,add,[CE] illegal start of expression, ,if(this.data.size() > 0 && this.data.size() > 0) }
+compilation error,1273,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) } return 0; }
+compilation error,1273,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) { return 0; >>
+compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(b)|| Double.isNaN(a)) }
+compilation error,629,add,[CE] illegal start of expression, ,if(this.data.size() > this.maximumItemCount) { fireSeriesChanged(); >>
+compilation error,629,add,[CE] illegal start of expression, ,if(this.data.size() > this.maximumItemCount) } fireSeriesChanged(); }
+patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {  ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  if(item.getValue()  ==  null)  {  item.setValue(yN);  }  ,if(yN!= null) { if(item.getValue() == null) { item.setValue(yN); }
+increase failing tests,1212,replace, [FE] NullPointerException, if(yN!=  null)  {  if(item.getValue()  ==  null)  {  item.setValue(yN);  }  ,if(yN == null) { if(item.getValue() == null) { item.setValue(yN); }
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 1;
+compilation error,1269,add,[CE] ')' expected, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)
+compilation error,1269,add,[CE] missing return statement, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b))
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN - 1L;
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN - 1L;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN + 1;
+compilation error,1212,replace,[CE] class or interface expected, if(yN!=  null)  {  yN  =  item.getValue();  }  ,if(yN == null) { yN = item.getValue(); } else { fireSeriesChanged(); }
+compilation error,634,replace,[CE] not a statement, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(false); // remove old items if needed, but // don't notify anyone
+compilation error,634,replace,[CE] not a statement, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; }!removeAgedItems(false); // remove old items if needed, but // don't notify
+patch is same with buggy,629,replace,, if(this.data.size()  >  this.maximumItemCount)  {  fireSeriesChanged();  }  ,if(this.data.size() > this.maximumItemCount) { fireSeriesChanged(); }
+compilation error,629,replace,[CE] class or interface expected, if(this.data.size()  >  this.maximumItemCount)  {  fireSeriesChanged();  }  ,this.data.remove(0); if(this.data.size() > this.maximumItemCount) { fireSeriesChanged(); }
+patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1292,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
+compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  item.... ");  ,System.err.println("Unable to add cloned data item." + this.data.get(index));
+patch is same with buggy,1058,replace,, if(this.data.size()  >  0  &&  this.data.size()  >  0)  {  ,if(this.data.size() > 0 && this.data.size() > 0) {
+increase failing tests,878,add, [FE]  Size, ,long duration = getTimePeriod(getItemCount() / 1).getSerialIndex();
+patch is same with buggy,188,replace,, this.maxY  =  maxY;  ,this.maxY = maxY;
+patch is same with buggy,187,replace,, this.domain  =  domain;  this.timePeriodClass  =  null;  ,this.domain = domain; this.timePeriodClass = null;
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { yN = item.getValue(); >>
+compilation error,170,add,[CE] generics are not supported in -source 1.4, ,this.data.add(new ArrayList < TimePeriodClass>());
+compilation error,170,add,[CE] generics are not supported in -source 1.4, ,this.data.add(new LinkedList < TimePeriodClass>());
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN; this.maxY = Double.NaN;
+compilation error,581,add,[CE] illegal start of expression, ,if(c!= null && c == this.timePeriodClass) {
+compilation error,581,add,[CE] illegal start of expression, ,if(c == null && c!= this.timePeriodClass) {
+increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,if(notify) { fireSeriesChanged(); } ; if(notify) { fireSeriesChanged(); } ; // removeAgedItems(false); &/ remove items if needed, // don't notify anyone, because that // happens next anyway
+patch is same with buggy,189,replace,, if(this.domain!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  , 
+patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;  , 
+patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  0;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return 0; }
+patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  0;  }  , 
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;  ,this.minY = Double.NaN; this.maxY = Double.NaN;
+increase failing tests,193,replace, [FE] AssertionFailedError, this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;  ,if(this.minY == Double.NaN) { this.minY = Double.NaN; this.maxY = Double.NaN; }
+compilation error,187,add,[CE] not a statement, ,if(domain!= null) { this.domain = domain; slated else { this.range = range; }
+compilation error,187,add,[CE] not a statement, ,if(domain!= null) { this.domain = domain; figured else if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] not a statement, ,if(domain!= null) { this.domain = domain; figured else if(range!= null) { this.domain = domain; this.range = range; }
+patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { this.domain = domain; this.timePeriodClass = null; } else { this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE; this.minY = MinY;
+patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) }
+patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); item.setValue(item.getValue()); }
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); item.setValue(item.getValue()); }
+compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.remove(name);  ,this.data.add(new LinkedList < TimeSeries>());
+compilation error,637,add,[CE] illegal start of expression, ,if(!added) }
+patch is same with buggy,879,replace,, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { yN = item.getValue(); >> else { fireSeriesChanged(); }
+compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  item.... ");  ,System.err.println("Unable to add cloned item...");
+patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  item.... ");  , 
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  -  1;  ,this.minY = Double.NaN - 1;
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN + 1;
+compilation error,193,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN - 2;
+patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
+compilation error,576,replace,[CE] <identifier> expected, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,item =(TimeSeriesDataItem)item.clone(); if(item!= null) { throw new IllegalArgumentException("Null 'item' argument. "); }
+compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.... "  +  clone.toString());  ,System.err.println("Unable to add cloned data item..." + this.clone.toString());
+patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  data  item.... "  +  clone.toString());  , 
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); item.setValue(item.getValue());
+compilation error,1212,add,[CE] not a statement, ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); item.setValue(item.getValue()); bodied
+compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() / 2 - 1);
+compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() / 4);
+compilation error,188,add,[CE] cannot find symbol MinY, ,this.minY = MinY;
+compilation error,188,add,[CE] incompatible types, ,this.minY = minY + domain;
+patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
+patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
+compilation error,878,replace,[CE] cannot find symbol, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long duration = getTimePeriod(1).getDuration();
+patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,187,add,[CE] cannot find symbol itemCount, ,this.itemCount = getItemCount() / 2;
+compilation error,345,add,[CE] possible loss of precision, ,int maxY = getMaxY();
+increase failing tests,878,add, [FE]  Size, ,long first = getTimePeriod(getItemCount() * 1).getSerialIndex();
+compilation error,584,add,[CE] 'else' without 'if', ,else if(this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals(" ")) {
+compilation error,189,replace,[CE] illegal start of type, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }  ,}
+compilation error,1269,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isInfinite(b)) {
+compilation error,596,replace,[CE] cannot find symbol added, boolean  added  =  notify;  ,boolean added = this.added;
+compilation error,576,add,[CE] illegal start of expression, ,if(item == null) { if(item == null) { throw new IllegalArgumentException(""); }
+compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  -  1;  ,int count = getItemCount() / 2;
+patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;  , 
+compilation error,187,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,[Delete]
+compilation error,187,replace,[CE] illegal start of expression, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.domain!= null) { this.domain = domain; this.range = range; }
+compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.... "  +  clone.toString());  ,System.err.println("Unable to add cloned data item...." + this.data.toString());
+compilation error,1273,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.max(a, b); }
+compilation error,1273,add,[CE] illegal start of expression, ,if(a <= 0.0) { if(Double.isNaN(a)|| Double.isNaN(b)) { return a; }
+patch is same with buggy,879,replace,, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,879,replace,[CE] cannot find symbol removed, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long max = getTimePeriod(getItemCount() / 2).getSerialIndex();
+patch is same with buggy,188,replace,, this.maxY  =  maxY;  ,this.maxY = maxY;
+compilation error,581,add,[CE] illegal start of expression, ,if(c!= null && c < this.timePeriodClass) {
+compilation error,576,replace,[CE] illegal start of type, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,}
+compilation error,188,add,[CE] bad operand types for binary operator '&&', ,this.minY = minY && this.range = range;
+compilation error,188,add,[CE] bad operand types for binary operator '&&', ,this.minY = minY && this.maxY = range;
+compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.remove(name);  ,this.data.add(new ArrayList < TimeSeries>(name));
+patch is same with buggy,170,replace,, this.data.remove(name);  , 
+compilation error,1273,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; } else {
+compilation error,596,add,[CE] variable added is already defined in method add(TimeSeriesDataItem,boolean), ,boolean added = this.data.contains(item);
+compilation error,877,replace,[CE] class or interface expected, int  count  =  getItemCount()  +  1;  ,int count = getItemCount() / 1;
+patch is same with buggy,187,replace,, this.domain  =  domain;  this.timePeriodClass  =  null;  ,this.domain = domain; this.timePeriodClass = null;
+compilation error,187,replace,[CE] incompatible types, this.domain  =  domain;  this.timePeriodClass  =  null;  ,this.domain = domain; this.timePeriodClass = DEFAULT_DOMAIN_DESCRIPTION;
+patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a);|| Double.isNaN(b)) {
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); item.setValue(item.getValue()); }
+compilation error,1212,replace,[CE] cannot find symbol, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); item.addValue(item.getValue()); }
+compilation error,1269,add,[CE] class expected, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain!= null) { throw new IllegalArgumentException(""); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain!= null) { throw new IllegalArgumentException("TimeSeries is incomplete."); }
+compilation error,187,add,[CE] generics are not supported in -source 1.4, ,ArrayList < TimeSeries> data = new ArrayList();
+compilation error,1292,add,[CE] class expected, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| double.isNaN(a)|| Double.isNaN(b)) {
+patch is same with buggy,879,replace,, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long min = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,187,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(domain!= null) { throw new IllegalArgumentException(""); }
+patch is same with buggy,1292,replace,, if(Double.isNaN(b)||  Double.isNaN(a))  {  , 
+increase failing tests,878,add, [FE]  Size, ,long duration = getTimePeriod(getItemCount() + 1).getSerialIndex();
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  yN  =  item.getValue();  }  ,if(yN!= null) { yN = item.getValue(); }
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  -  1;  ,this.minY = Double.NaN - 1;
+compilation error,584,add,[CE] 'else' without 'if', ,else if(!this.timePeriodClass.isAssignableFrom(c)&& item.getPeriod().getClass().getName().equals("/")) {
+patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,1292,add,[CE] class expected, ,double.isNaN(a)|| Double.isNaN(b)) {
+patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  0;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return 0; }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.domain!= null) { throw new IllegalArgumentException(""); }
+compilation error,189,add,[CE] generics are not supported in -source 1.4, ,ArrayList < TimeSeries> data = new ArrayList();
+compilation error,189,add,[CE] no suitable constructor found for TimeSeries(Class), ,this.timePeriodClass = new TimeSeries(name.getClass());
+compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(b)|| Double.isNaN(a || Double.isNaN(b)) {
+compilation error,193,replace,[CE] bad operand types for binary operator '==', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;  ,if(this.minY == null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.data.add(new TimeSeries(name, domain, range)); }
+compilation error,193,replace,[CE] bad operand types for binary operator '==', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;  ,if(this.minY == null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.timePeriodClass = new java.util.ArrayList(); }
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.maxY = Long.NaN + 1;
+compilation error,1292,replace,[CE] no suitable method found for isNaN(double,double), if(Double.isNaN(b)||  Double.isNaN(a))  {  ,if(Double.isNaN(b)|| Double.isNaN(a, b)) {
+increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(false);//  remove  old  items  if  necessary,  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,// remove old items if necessary, // don't notify anyone, because that // happens next anyway...
+compilation error,1212,add,[CE] illegal start of expression, ,if(item.getItemCount() > 0) { if(yN!= null) { yN = item.getValue(); }
+compilation error,1212,add,[CE] illegal start of expression, ,if(item.getItemCount() > 0) { if(yN == null) { yN = item.getValue(); }
+compilation error,1212,replace,[CE] illegal start of expression, if(yN!=  null)  {  yN  =  item.getValue();  }  ,[Delete]
+compilation error,1212,replace,[CE] illegal start of type, if(yN!=  null)  {  yN  =  item.getValue();  }  ,}
+patch is same with buggy,581,replace,, if(c!=  null  &&  c!=  this.timePeriodClass)  {  , 
+increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway...  ,// remove old items if needed, but // don't notify anybody, because that // happens next anyway...
+increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,// remove old items if needed, but // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return b; }
+patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  item.... ");  , 
+compilation error,170,replace,[CE] generics are not supported in -source 1.4, this.data.remove(name);  ,this.data.add(new ArrayList < TimeSeries>(getItemCount() - 1));
+compilation error,1265,add,[CE] illegal start of expression, ,if(Double.isNaN(a)&& Double.isNaN(b)||(a <= 0.0)&&(b <= 0.0)) {
+patch is same with buggy,878,replace,, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long first = getTimePeriod(getItemCount() - 1).getSerialIndex();
+patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1292,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)||
+compilation error,193,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN / 2;
+compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.... "  +  clone.toString());  ,System.err.println("Unable to add cloned data item..." + this.data.get(index).toString());
+compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() * 2);
+patch is same with buggy,629,replace,, if(this.data.size()  >  this.maximumItemCount)  {  fireSeriesChanged();  }  , 
+patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,194,add,[CE] cannot find symbol minimumItemCount, ,this.minimumItemCount = Long.MAX_VALUE - 1L;
+compilation error,170,add,[CE] generics are not supported in -source 1.4, ,this.data.add(new ArrayList < TimeSeries>(getItemCount(), name));
+compilation error,194,add,[CE] cannot find symbol NaN, ,this.maxY = Long.NaN - 1;
+patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {  ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  +  1;  ,this.minY = Double.NaN + 1;
+compilation error,1212,replace,[CE] cannot find symbol, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(item.getItemCount() > 0) { if(yN!= null) { item.setValue(yN); }
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  if(item.getValue()  ==  null)  {  item.setValue(yN);  }  ,if(yN!= null) { if(item.getValue() == null) { item.setValue(yN); }
+patch is same with buggy,1296,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  a;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return a; }
+compilation error,1292,add,[CE] reached end of file while parsing, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a + 1)) {
+compilation error,653,add,[CE] cannot find symbol c, ,c.add(period, new Double(value));
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) { return new Double(yN.doubleValue()); }
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) { yN = new Double(yN.doubleValue()); }
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) {
+patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,replace,[CE] illegal start of expression, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)||
+compilation error,637,add,[CE] cannot find symbol b, ,if(!added) { b.addChangeListener(this); } else { b.addChangeListener(item); }
+compilation error,637,add,[CE] cannot find symbol b, ,if(!added) { b.addChangeListener(this); } else { b.addChangeListener(this); }
+compilation error,1273,add,[CE] not a statement, ,Double.isNaN(a)|| Double.isNaN(b)) { return 0;
+compilation error,189,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); }
+compilation error,189,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.timePeriodClass!= null) { throw new IllegalArgumentException(""); }
+increase failing tests,634,replace, [FE] AssertionFailedError, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway...  ,// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,634,replace,[CE] illegal start of expression, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anybody,  because  that  //  happens  next  anyway...  ,if(removed) { removeAgedItems(false);// remove old items if needed, // don't notify anyone, because that // happens next anyway...
+compilation error,189,add,[CE] illegal start of expression, ,if(this.domain!= null) { if(this.range!= null) { this.timePeriodClass = getTimePeriodClass(); }
+compilation error,189,add,[CE] illegal start of expression, ,if(this.data!= null) { if(this.timePeriodClass!= null) { this.timePeriodClass = getTimePeriodClass(); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.data == null) { this.data = new ArrayList(); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(this.data == null) { throw new IllegalArgumentException(""); }
+compilation error,193,add,[CE] cannot find symbol NaN, ,this.minY = Long.NaN + 1;
+compilation error,1292,add,[CE] reached end of file while parsing, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(A)|| Double.isNaN(b)) {
+patch is same with buggy,878,replace,, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long first = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,878,replace,[CE] cannot find symbol latest, long  first  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long first = getTimePeriod(getItemCount() + 1).getSerialIndex();
+patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,877,add,[CE] no suitable method found for getItemCount(int), ,int count = getItemCount(getItemCount() - 1);
+compilation error,1292,replace,[CE] bad operand types for binary operator '||', if(Double.isNaN(b)||  Double.isNaN(a))  {  ,if(Math.max(a, b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,187,add,[CE] cannot find symbol, ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.data = new ArrayList(); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { this.domain = domain; if(domain == null) { this.data = new ArrayList(); }
+compilation error,189,add,[CE] illegal start of expression, ,if(name.length() < 0) { if(!this.data.contains(name)) { this.data.add(name); }
+compilation error,189,add,[CE] illegal start of expression, ,if(name.length() < 0) { if(this.data == null) { this.data = new ArrayList(); }
+compilation error,189,add,[CE] illegal start of expression, ,if(name.length() < 0) { if(this.data!= null) { this.data = new ArrayList(); }
+compilation error,603,replace,[CE] cannot find symbol last, RegularTimePeriod  first  =  getTimePeriod(getItemCount()  /  2);  ,RegularTimePeriod first = getTimePeriod(getItemCount() - 1);
+patch is same with buggy,1292,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1292,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a || Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,add,[CE] illegal start of expression, ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(A)|| Double.isNaN(b)) {
+patch is same with buggy,1269,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a)|| Double.isNaN(b)) {
+compilation error,1269,replace,[CE] ')' expected, if(Double.isNaN(a)||  Double.isNaN(b)||  Double.isNaN(a)||  Double.isNaN(b))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)|| Double.isNaN(a), Double.isNaN(b)) {
+compilation error,1212,add,[CE] method updateBoundsForAddedItem in class TimeSeries cannot be applied to given types;, ,if(yN!= null) { yN = item.getValue(); } else { updateBoundsForAddedItem(item, yN); }
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  yN  =  item.getValue();  }  ,if(yN!= null) { yN = item.getValue(); }
+increase failing tests,584,add, [FE] SeriesException, ,else if(this.timePeriodClass.isAssignableFrom(c)&& notify) { throw new SeriesException(""); }
+compilation error,345,add,[CE] incompatible types, ,double minY = Double.valueOf(getMaximumItemCount() - 1);
+compilation error,584,add,[CE] 'else' without 'if', ,else if(!this.timePeriodClass.equals(item.getPeriod())&& item.getPeriod().getClass().getName().equals("")) {
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.equals("")) { throw new IllegalArgumentException(""); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.isNull()) { throw new IllegalArgumentException(""); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.equals("")) { throw new SeriesException(""); }
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setItem(item.getValue()); }
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.addValue(item.getValue()); }
+compilation error,1212,add,[CE] illegal start of expression, ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setIgnoreNaN(this.minY, yy); }
+compilation error,194,add,[CE] cannot find symbol minX, ,this.minX = Double.NaN / 2;
+compilation error,878,add,[CE] possible loss of precision, ,int duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
+patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;  ,int count = getItemCount() - 1;
+patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {  ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
+patch is same with buggy,584,replace,, else  if(!this.timePeriodClass.isAssignableFrom(c)&&  notify)  {  ,else if(!this.timePeriodClass.isAssignableFrom(c)&& notify) {
+patch is same with buggy,1265,replace,, if(Double.isNaN(a)||  Double.isNaN(b)||(a  <=  0.0)||(b  <  0.0))  {  ,if(Double.isNaN(a)|| Double.isNaN(b)||(a <= 0.0)||(b < 0.0)) {
+patch is same with buggy,1212,replace,, if(yN!=  null)  {  if(item.getValue()  ==  null)  {  item.setValue(yN);  }  ,if(yN!= null) { if(item.getValue() == null) { item.setValue(yN); }
+patch is same with buggy,576,replace,, if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,if(item == null) { throw new IllegalArgumentException("Null 'item' argument."); }
+compilation error,189,replace,[CE] ')' expected, if(name!=  null)  {  this.timePeriodClass  =  name.getClass();  }  else  {  this.data.add(name);  }  ,if(name == null) { if(name.getClass()!= name.getClass(); if else { this.data.add(name); }
+patch is same with buggy,187,replace,, this.domain  =  domain;  this.timePeriodClass  =  null;  ,this.domain = domain; this.timePeriodClass = null;
+patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(1).getSerialIndex();  ,long duration = getTimePeriod(1).getSerialIndex();
+increase failing tests,193,add, [FE] NullPointerException, ,this.timePeriodClass = name.getClass();
+patch is same with buggy,188,replace,, this.maxY  =  maxY;  ,this.maxY = maxY;
+compilation error,170,replace,[CE] illegal start of expression, this.data.remove(name);  ,if(name == null) { this.data.add(name); } else { this.data.add(name); }
+compilation error,653,replace,[CE] cannot find symbol, add(period,  new  Double(value),  false);  ,setValue(period, new Double(value), false);
+patch is same with buggy,629,replace,, if(this.data.size()  >  this.maximumItemCount)  {  fireSeriesChanged();  }  ,if(this.data.size() > this.maximumItemCount) { fireSeriesChanged(); }
+patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  else  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; } else { this.domain = domain; this.range = range; }
+patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  0;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return 0; }
+patch is same with buggy,596,replace,, boolean  added  =  notify;  ,boolean added = notify;
+compilation error,596,replace,[CE] notify has private access in Series, boolean  added  =  notify;  ,boolean added = this.notify;
+patch is same with buggy,596,replace,, boolean  added  =  notify;  , 
+compilation error,188,add,[CE] bad operand types for binary operator '!=', ,this.minY = minY && this.maxY!= null && this.data.size() > 0;
+compilation error,188,add,[CE] bad operand types for binary operator '!=', ,this.minY = minY && this.maxY!= null && this.data.contains(name);
+compilation error,1068,replace,[CE] illegal start of expression, System.err.println( "Unable  to  add  cloned  data  item.... "  +  clone.toString());  ,System.err.println("Unable to add cloned data item..." + clone.getName());
+patch is same with buggy,1292,replace,, if(Double.isNaN(b)||  Double.isNaN(a))  {  ,if(Double.isNaN(b)|| Double.isNaN(a)) {
+compilation error,1212,replace,[CE] not a statement, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); remained
+compilation error,1212,replace,[CE] not a statement, if(yN!=  null)  {  if(yN!=  null)  {  double  y  =  yN.doubleValue();  item.setValue(item.getValue());  item.setValue(item.getValue());  }  ,if(yN!= null) { if(yN!= null) { double y = yN.doubleValue(); item.setValue(item.getValue()); Afterward
+patch is same with buggy,1056,replace,, System.err.println( "Failed  to  add  cloned  item.... ");  , 
+compilation error,187,add,[CE] 'else' without 'if', ,if(domain!= null) { this.domain = domain; this.range = range; else { this.domain = domain; this.range = range; }
+patch is same with buggy,1273,replace,, if(Double.isNaN(a)||  Double.isNaN(b))  {  return  b;  }  ,if(Double.isNaN(a)|| Double.isNaN(b)) { return b; }
+patch is same with buggy,581,replace,, if(c!=  null  &&  c!=  this.timePeriodClass)  {  , 
+compilation error,596,add,[CE] variable added is already defined in method add(TimeSeriesDataItem,boolean), ,final boolean added = notify;
+patch is same with buggy,1068,replace,, System.err.println( "Unable  to  add  cloned  item.... ");  , 
+compilation error,1273,add,[CE] 'else' without 'if', ,} else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.max(a, b); }
+compilation error,1273,add,[CE] illegal start of expression, ,[Delete] else if(Double.isNaN(a)|| Double.isNaN(b)) { return Math.max(a, b); }
+compilation error,637,add,[CE] method get in interface List cannot be applied to given types;, ,if(!added) { throw new SeriesException("TimeSeriesDataItem item does not belong to the same category." + this.data.get(item)); }
+compilation error,170,add,[CE] method firePropertyChange in class Series cannot be applied to given types;, ,firePropertyChange("TimeSeries", name);
+patch is same with buggy,187,replace,, if(domain!=  null)  {  this.domain  =  domain;  this.range  =  range;  }  ,if(domain!= null) { this.domain = domain; this.range = range; }
+compilation error,1265,add,[CE] ')' expected, ,if(Double.isNaN(a)|| Double.isNaN(b)] ||(a <= 0.0)&&(b <= 0.0)) {
+compilation error,653,add,[CE] no suitable method found for add(RegularTimePeriod,Double,boolean), ,this.data.add(period, new Double(value), true);
+compilation error,193,replace,[CE] bad operand types for binary operator '!=', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;  ,if(this.minY!= null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.data.add(name); }
+compilation error,193,replace,[CE] bad operand types for binary operator '==', this.minY  =  Double.NaN;  this.maxY  =  Double.NaN;  ,if(this.minY == null) { this.minY = Double.NaN; this.maxY = Double.NaN; } else { this.data.add(name); }
+patch is same with buggy,189,replace,, if(this.domain!=  null)  {  this.timePeriodClass  =  getTimePeriodClass();  }  ,if(this.domain!= null) { this.timePeriodClass = getTimePeriodClass(); }
+compilation error,634,replace,[CE] cannot find symbol, removeAgedItems(false);//  remove  old  items  if  needed,  but  //  don't  notify  anyone,  because  that  //  happens  next  anyway...  ,item.setPeriod(getItemCount() - 1);
+patch is same with buggy,879,replace,, long  min  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long min = getTimePeriod(getItemCount() - 1).getSerialIndex();
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  -  1;  ,this.minY = Double.NaN - 1;
+compilation error,345,replace,[CE] bad operand types for binary operator '==', int  count  =  getItemCount();  ,int count = getItemCount() /(this.minY == null? this.maxY : getMinY());
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.equals(getDomainName())) { throw new IllegalArgumentException(""); }
+compilation error,187,add,[CE] illegal start of expression, ,if(domain!= null) { if(domain.equals(name)) { throw new IllegalArgumentException(""); }
+patch is same with buggy,877,replace,, int  count  =  getItemCount()  -  1;  ,int count = getItemCount() - 1;
+patch is same with buggy,878,replace,, long  duration  =  getTimePeriod(getItemCount()  -  1).getSerialIndex();  ,long duration = getTimePeriod(getItemCount() - 1).getSerialIndex();
+patch is same with buggy,194,replace,, this.minY  =  Double.NaN  +  1;  ,this.minY = Double.NaN + 1;
+patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,item =(TimeSeriesDataItem)item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
+patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  ,item =(TimeSeriesDataItem) item.clone(); if(item == null) { throw new IllegalArgumentException("Null 'item' argument. "); }
+patch is same with buggy,576,replace,, item  =(TimeSeriesDataItem)item.clone();  if(item  ==  null)  {  throw  new  IllegalArgumentException( "Null  'item'  argument.   ");  }  , 
+patch is same with buggy,193,replace,, this.minY  =  Double.NaN  -  2;  ,this.minY = Double.NaN - 2;
+patch is same with buggy,879,replace,, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long max = getTimePeriod(getItemCount() - 2).getSerialIndex();
+compilation error,879,replace,[CE] cannot find symbol removed, long  max  =  getTimePeriod(getItemCount()  -  2).getSerialIndex();  ,long max = getTimePeriod(getItemCount() + 2).getSerialIndex();

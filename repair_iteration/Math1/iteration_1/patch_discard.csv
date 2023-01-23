@@ -1,0 +1,7 @@
+increase failing tests,144,replace, [FE] FractionConversionException testDigitLimitConstructor, this(value,  0,  maxDenominator,  1000);  ,this(value, 0, maxDenominator, 0);
+increase failing tests,306,replace, [FE] FractionConversionException testDigitLimitConstructor, throw  new  FractionConversionException(p0,  p2,  q2);  ,throw new FractionConversionException(p1, p2, q2);
+increase failing tests,306,replace, [FE] FractionConversionException testDigitLimitConstructor, throw  new  FractionConversionException(p0,  p2,  q2);  ,throw new FractionConversionException(p0, p1, q2);
+increase failing tests,306,replace, [FE] FractionConversionException testDigitLimitConstructor, throw  new  FractionConversionException(p0,  p2,  q2);  ,throw new FractionConversionException(p1, q2, p2);
+increase failing tests,144,replace, [FE] FractionConversionException testDigitLimitConstructor, this(value,  0,  maxDenominator,  1000);  ,this(value, 0, maxDenominator, 1);
+increase failing tests,144,replace, [FE] FractionConversionException testDigitLimitConstructor, this(value,  0,  maxDenominator,  1000);  ,this(value, 0, maxDenominator, 2);
+increase failing tests,356,replace, [FE] FractionConversionException testDigitLimitConstructor,   this(value,  0,  maxDenominator,  0);  ,this(value, 0, maxDenominator, 1);

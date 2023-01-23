@@ -1,0 +1,429 @@
+patch is same with buggy,169,replace,, this.minimumRangeValueRow  =  r;  ,this.minimumRangeValueRow = r;
+compilation error,113,add,[CE] cannot find symbol optimumRangeValue, ,this.optimumRangeValue = Double.NaN;
+patch is same with buggy,180,replace,, this.minimumRangeValueRow  =  c  +  1;  ,this.minimumRangeValueRow = c + 1;
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueColumn = r; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue =
+compilation error,180,add,[CE] ';' expected, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueColumn = r; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue = min
+patch is same with buggy,109,replace,, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN - 1;
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r * 1; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue =
+compilation error,169,add,[CE] cannot find symbol l, ,this.maximumRangeValueRow = l * 1;
+compilation error,174,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1; >>
+compilation error,174,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1;!=
+compilation error,741,add,[CE] class expected, ,this.maximumRangeValue = double.NaN - 2;
+patch is same with buggy,110,replace,, this.maximumRangeValue  =  Double.NaN;  ,this.maximumRangeValue = Double.NaN;
+compilation error,110,replace,[CE] class expected, this.maximumRangeValue  =  Double.NaN;  ,this.maximumRangeValue = double.NaN;
+compilation error,183,add,[CE] illegal start of expression, ,else if(Double.isNaN(this.minimumRangeValueColumn)) }
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r * 1; } else if(maxval < this.maximumRangeValueRow) { this.maxim
+patch is same with buggy,112,replace,, this.minimumRangeValueRow  =  1;  ,this.minimumRangeValueRow = 1;
+compilation error,109,add,[CE] cannot find symbol MaximumRangeValue, ,this.MaximumRangeValue = Double.NaN - 1;
+compilation error,110,add,[CE] cannot find symbol optimumRangeValueColumn, ,this.optimumRangeValueColumn = -1;
+patch is same with buggy,113,replace,, if(this.minimumRangeValueColumn!=  0)  {  this.minimumRangeValueColumn  =  -1;  this.minimumRangeValueColumn  =  -1;  }  ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; }
+patch is same with buggy,113,replace,, if(this.minimumRangeValueColumn!=  0)  {  this.minimumRangeValueColumn  =  -1;  this.minimumRangeValueColumn  =  -1;  }  ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; }
+compilation error,110,add,[CE] cannot find symbol optimumRangeValue, ,this.optimumRangeValue = Double.NaN;
+patch is same with buggy,155,replace,, rangeBounds  =  new  Range(this.minimumRangeValueRow,  this.maximumRangeValueColumn);  ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn);
+increase failing tests,155,replace, [FE] 5]>, rangeBounds  =  new  Range(this.minimumRangeValueRow,  this.maximumRangeValueColumn);  ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn + 1);
+compilation error,169,replace,[CE] illegal start of expression, this.maximumRangeValueRow  =  r  +  2;  ,if(c > this.maximumRangeValueRow) { if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 3; }
+patch is same with buggy,183,replace,, else  if(Double.isNaN(this.minimumRangeValueColumn))  {  ,else if(Double.isNaN(this.minimumRangeValueColumn)) {
+patch is same with buggy,115,replace,, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.00,  0.0);  }  ,if(this.rangeBounds!= null) { this.rangeBounds = new Range(0.00, 0.0); }
+patch is same with buggy,150,replace,, int  r  =  this.data.getRowIndex(rowKey)+  1;  ,int r = this.data.getRowIndex(rowKey)+ 1;
+patch is same with buggy,150,replace,, int  r  =  this.data.getRowIndex(rowKey)+  1;  ,int r = this.data.getRowIndex(rowKey)+1;
+compilation error,183,add,[CE] illegal start of expression, ,else if(c > this.minimumRangeValue) }
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValue)||(c > this.minimumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+patch is same with buggy,181,replace,, this.maximumRangeValueColumn  =  r;  ,this.maximumRangeValueColumn = r;
+compilation error,174,replace,[CE] illegal start of expression, if(Double.isNaN(this.maximumRangeValueRow))  {  this.maximumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValueRow = r + 1; >>
+compilation error,170,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueColumn)) { this.minimumRangeValueColumn = c; }
+compilation error,170,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(maxval > this.minimumRangeValueColumn) { this.minimumRangeValueColumn = c; }
+increase failing tests,178,replace, [FE] 0]>, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(this.maximumRangeValueColumn))  {  ,if(Double.isNaN(this.minimumRangeValue)&& Double.isNaN(this.maximumRangeValueColumn)) {
+patch is same with buggy,178,replace,, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(this.maximumRangeValueColumn))  {  ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(this.maximumRangeValueColumn)) {
+patch is same with buggy,110,replace,, if(this.minimumRangeValueColumn!=  0)  {  this.minimumRangeValueColumn  =  -1;  this.minimumRangeValueColumn  =  -1;  }  ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; }
+patch is same with buggy,110,replace,, if(this.minimumRangeValueColumn!=  0)  {  this.minimumRangeValueColumn  =  -1;  this.minimumRangeValueColumn  =  -1;  }  ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; }
+increase failing tests,740,replace, [FE] 5]>, this.maximumRangeValue  =  Double.NaN  +  1;  ,this.rangeBounds = new Range(this.minimumRangeValue, Double.NaN + 2);
+increase failing tests,178,replace, [FE] 0]>, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(minval))  {  ,if(Double.isNaN(minval)|| Double.isNaN(maxval)) {
+increase failing tests,178,replace, [FE] 0]>, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(minval))  {  ,if(Double.isNaN(this.minimumRangeValue)&& Double.isNaN(minval)) {
+compilation error,740,add,[CE] ')' expected, ,rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue;
+patch is same with buggy,150,replace,, this.data.addObject(item,  columnKey,  rowKey);  ,this.data.addObject(item, columnKey, rowKey);
+compilation error,172,add,[CE] illegal start of expression, ,else if(c > this.maximumRangeValueColumn) }
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.maximumRangeValueRow = c; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue = r;
+compilation error,180,add,[CE] ';' expected, ,if(Double.isNaN(this.minimumRangeValue)) { this.maximumRangeValueRow = c; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue = min
+compilation error,150,add,[CE] method removeObject in class KeyedObjects2D cannot be applied to given types;, ,this.data.removeObject(item, columnKey, rowKey);
+compilation error,110,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; >>
+patch is same with buggy,110,replace,, if(this.minimumRangeValueColumn!=  0)  {  this.maximumRangeValueColumn  =  -1;  this.minimumRangeValueColumn  =  -1;  }  , 
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  else  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  ,if(this.rangeBounds!= null) { if(this.rangeBounds == null) { this.rangeBounds = new Range(0.0, 0.0); } else { this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  else  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  ,if(this.rangeBounds == null) { if(this.rangeBounds!= null) { this.rangeBounds = new Range(0.0, 0.0); } else { this.rangeBounds = new Range(0.0, 0.0); }
+patch is same with buggy,108,replace,, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN - 1;
+increase failing tests,108,replace, [FE] AssertionFailedError, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN;
+patch is same with buggy,170,replace,, this.minimumRangeValueColumn  =  c;  ,this.minimumRangeValueColumn = c;
+patch is same with buggy,174,replace,, if(Double.isNaN(this.maximumRangeValue))  {  this.maximumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValueRow = r + 1; }
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = c + 1; } else if(maxval > this.maximumRangeValueRow) { this.maxim
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = c + 1; } else if(maxval < this.maximumRangeValueRow) { this.maxim
+patch is same with buggy,112,replace,, this.minimumRangeValueColumn  =  -2;  , 
+patch is same with buggy,107,replace,, this.rangeBounds  =  new  Range(0.0,  0.0);  ,this.rangeBounds = new Range(0.0, 0.0);
+increase failing tests,107,replace, [FE]  double), this.rangeBounds  =  new  Range(0.0,  0.0);  ,this.rangeBounds = new Range(1.0, 0.0);
+compilation error,112,add,[CE] cannot find symbol maximumRangeValueCoumn, ,this.maximumRangeValueCoumn = -1;
+patch is same with buggy,740,replace,, this.maximumRangeValue  =  Double.NaN  +  1;  ,this.maximumRangeValue = Double.NaN + 1;
+increase failing tests,740,replace, [FE] 5]>, this.maximumRangeValue  =  Double.NaN  +  1;  ,this.maximumRangeValue = Double.NaN + 2;
+patch is same with buggy,181,replace,, this.maximumRangeValueColumn  =  c;  ,this.maximumRangeValueColumn = c;
+patch is same with buggy,112,replace,, this.minimumRangeValueColumn  =  0;  this.minimumRangeValueColumn  =  0;  ,this.minimumRangeValueColumn = 0; this.minimumRangeValueColumn = 0;
+compilation error,172,add,[CE] illegal start of expression, ,else if(Double.isNaN(this.maximumRangeValueColumn)) }
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValueColumn)) {
+patch is same with buggy,173,replace,, if(Double.isNaN(this.maximumRangeValue))  {  this.maximumRangeValue  =  minval;  }  ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = minval; }
+patch is same with buggy,173,replace,, if(Double.isNaN(this.maximumRangeValue))  {  this.maximumRangeValue  =  minval;  }  , 
+patch is same with buggy,114,replace,, this.maximumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  -1;  ,this.maximumRangeValue = Double.NaN; this.minimumRangeValueColumn = -1;
+patch is same with buggy,114,replace,, this.maximumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  -1;  , 
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  ,else if(Double.isNaN(this.maximumRangeValueColumn)) {
+compilation error,109,add,[CE] cannot find symbol optimumRangeValueColumn, ,this.optimumRangeValueColumn = -1;
+patch is same with buggy,109,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+patch is same with buggy,114,replace,, this.rangeBounds  =  new  Range(1.0,  1.0);  ,this.rangeBounds = new Range(1.0, 1.0);
+patch is same with buggy,114,replace,, this.minimumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  1;  ,this.minimumRangeValue = Double.NaN; this.minimumRangeValueColumn = 1;
+patch is same with buggy,174,replace,, this.maximumRangeValueRow  =  c  +  1;  ,this.maximumRangeValueRow = c + 1;
+patch is same with buggy,174,replace,, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r;  this.maximumRangeValueColumn  =  c;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; }
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  ,else if(Double.isNaN(this.maximumRangeValueColumn)) {
+patch is same with buggy,114,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,173,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = minval; >>
+compilation error,173,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = minval;!=
+patch is same with buggy,109,replace,, this.minimumRangeValueColumn  =  0;  , 
+compilation error,113,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; >>
+patch is same with buggy,152,replace,, if(c  >=  this.minimumRangeValueColumn)  {  ,if(c >= this.minimumRangeValueColumn) {
+patch is same with buggy,180,replace,, this.minimumRangeValueRow  =  r;  this.minimumRangeValueRow  =  c;  ,this.minimumRangeValueRow = r; this.minimumRangeValueRow = c;
+compilation error,180,replace,[CE] possible loss of precision, this.minimumRangeValueRow  =  r;  this.minimumRangeValueRow  =  c;  ,this.minimumRangeValueRow = minval; this.minimumRangeValueRow = c;
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.maximumRangeValueColumn = c; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue =
+compilation error,180,add,[CE] ';' expected, ,if(Double.isNaN(this.minimumRangeValue)) { this.maximumRangeValueColumn = c; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue = min
+compilation error,162,add,[CE] incompatible types, ,Double maxval = Double.NaN / 1;
+compilation error,174,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValueColumn = r; } else if(maxval < this.maximumRangeValue) { this.maximumRangeValue =
+compilation error,174,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValueColumn = r; } else if(maxval > this.maximumRangeValue) { this.maximumRangeValue =
+patch is same with buggy,111,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,152,add,[CE] illegal start of expression, ,if(c <= this.minimumRangeValueColumn) {
+compilation error,152,add,[CE] illegal start of expression, ,if(c >= this.minimumRangeValueColumn) }
+compilation error,169,add,[CE] cannot find symbol R, ,this.minimumRangeValueRow = R;
+compilation error,180,replace,[CE] possible loss of precision, this.minimumRangeValueColumn  =  r;  ,this.minimumRangeValueColumn = minval;
+patch is same with buggy,180,replace,, this.minimumRangeValueColumn  =  r;  , 
+patch is same with buggy,740,replace,, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  ,rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue);
+patch is same with buggy,740,replace,, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  ,rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue);
+patch is same with buggy,180,replace,, this.maximumRangeValueColumn  =  c;  ,this.maximumRangeValueColumn = c;
+compilation error,740,add,[CE] cannot find symbol This, ,this.rangeBounds = new Range(This.minimumRangeValue, Double.NaN + 1);
+compilation error,180,replace,[CE] not a statement, if(Double.isNaN(this.minimumRangeValue))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r + 1; Possibly
+patch is same with buggy,180,replace,, if(Double.isNaN(this.minimumRangeValue))  {  this.minimumRangeValueRow  =  r  +  1;  }  , 
+compilation error,158,add,[CE] incompatible types, ,Double minval = Double.NaN / 1;
+compilation error,183,replace,[CE] cannot find symbol Minval, else  if(minval  >=  this.minimumRangeValue)  {  ,else if(Minval > this.minimumRangeValue) {
+compilation error,155,add,[CE] ';' expected, ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn)||(this.minimumRangeValueRow >= r && this.minimumRangeValueColumn == c)
+compilation error,155,add,[CE] ';' expected, ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn)||(this.minimumRangeValueRow == r && this.minimumRangeValueColumn == c)
+patch is same with buggy,111,replace,, this.minimumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,this.minimumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1;
+compilation error,110,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0) { this.maximumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; >>
+patch is same with buggy,174,replace,, if(Double.isNaN(this.maximumRangeValueRow))  {  this.maximumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1; }
+compilation error,181,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValueColumn = c; }
+compilation error,181,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValueColumn = c; }
+compilation error,740,add,[CE] incompatible types, ,this.minimumRangeValue = new Range(this.minimumRangeValue, Double.NaN);
+compilation error,740,add,[CE] cannot find symbol This, ,this.rangeBounds = new Range(This.minimumRangeValue, Double.NaN);
+patch is same with buggy,112,replace,, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = -1;
+compilation error,174,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; >>
+compilation error,174,add,[CE] ')' expected, ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; } else if(maxval > this.max
+compilation error,162,add,[CE] incompatible types, ,Double maxval = Double.NaN - minval + 1;
+compilation error,162,add,[CE] variable maxval is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,double maxval = Double.NaN + minval + 1;
+compilation error,183,add,[CE] 'else' without 'if', ,else if(minval <= this.minimumRangeValue) {
+patch is same with buggy,180,replace,, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r + 1; }
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValue)&& c < this.minimumRangeValueColumn) {
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValue)&& c > this.minimumRangeValueColumn) {
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValueColumn)&&(c > this.minimumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+compilation error,172,add,[CE] illegal start of expression, ,else if(Double.isNaN(this.minimumRangeValueColumn)&&(c < this.minimumRangeValueColumn || c > this.maximumRangeValueColumn)) }
+patch is same with buggy,174,replace,, this.maximumRangeValueRow  =  r;  this.maximumRangeValueRow  =  c;  ,this.maximumRangeValueRow = r; this.maximumRangeValueRow = c;
+compilation error,174,replace,[CE] illegal start of expression, this.maximumRangeValueRow  =  r;  this.maximumRangeValueRow  =  c;  ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r; this.maximumRangeValueRow = c; } else { this.maximumRangeValueRow =
+compilation error,183,add,[CE] 'else' without 'if', ,else if(minval <= this.maximumRangeValue) {
+compilation error,183,add,[CE] 'else' without 'if', ,else if(minval >> this.maximumRangeValue) {
+compilation error,172,add,[CE] illegal start of expression, ,else if(Double.isNaN(this.maximumRangeValueColumn)|| c > this.maximumRangeValueColumn)) {
+compilation error,162,add,[CE] incompatible types, ,Double maxval = Double.NaN / minval;
+compilation error,162,add,[CE] cannot find symbol naN, ,double maxval = Double.naN / minval;
+compilation error,170,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueColumn)) { this.minimumRangeValueColumn = r; }
+compilation error,170,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueColumn)) } this.minimumRangeValueColumn = r; }
+patch is same with buggy,175,replace,, this.minimumRangeValueColumn  =  c;  ,this.minimumRangeValueColumn = c;
+compilation error,183,add,[CE] illegal start of expression, ,else if(Double.isNaN(this.maximumRangeValueColumn)) }
+patch is same with buggy,741,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+patch is same with buggy,114,replace,, this.rangeBounds  =  new  Range(0.0,  5.0);  ,this.rangeBounds = new Range(0.0, 5.0);
+compilation error,181,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValueColumn)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValueColumn = r; }
+compilation error,181,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { if(Double.isNaN(this.maximumRangeValueColumn)) { this.maximumRangeValueColumn = r; }
+patch is same with buggy,110,replace,, this.minimumRangeValueColumn  =  1;  , 
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; } else if(maxval < this.maximumRangeValueRow) { this.maximumRangeValu
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; } else if(maxval < this.maximumRangeValueRow) { this.minimumRangeVal
+compilation error,111,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = Double.NaN - 1; >>
+compilation error,169,add,[CE] cannot find symbol l, ,this.maximumRangeValueRow = l + 2;
+compilation error,169,add,[CE] ')' expected, ,this.maximumRangeValueRow =(r + 2;
+patch is same with buggy,183,replace,, else  if(c  >=  this.minimumRangeValueColumn)  {  , 
+increase failing tests,107,add, [FE]  double), ,this.rangeBounds = new Range(2.0, 0.0);
+compilation error,110,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0.0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; >>
+compilation error,178,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(minval)) }
+compilation error,180,replace,[CE] illegal start of expression, if(Double.isNaN(this.minimumRangeValue))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r + 1; >>
+patch is same with buggy,113,replace,, this.minimumRangeValueColumn  =  0;  , 
+patch is same with buggy,174,replace,, this.maximumRangeValueColumn  =  r;  ,this.maximumRangeValueColumn = r;
+compilation error,183,add,[CE] illegal start of expression, ,if(c > this.maximumRangeValueColumn) }
+compilation error,183,add,[CE] illegal start of expression, ,if(c > this.maximumRangeValueColumn) >>
+compilation error,175,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.minimumRangeValueColumn =
+compilation error,175,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueColumn)) { this.minimumRangeValueColumn = c; }
+patch is same with buggy,111,replace,, this.maximumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1;
+compilation error,111,replace,[CE] bad operand types for binary operator '!=', this.maximumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,if(this.minimumRangeValue!= null) { this.maximumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1; }
+patch is same with buggy,155,replace,, Range  rangeBounds  =  new  Range(this.maximumRangeValueRow,  this.maximumRangeValueColumn);  ,Range rangeBounds = new Range(this.maximumRangeValueRow, this.maximumRangeValueColumn);
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r + 1; >>
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r + 1;!=
+compilation error,183,add,[CE] illegal start of expression, ,else if(c > this.maximumRangeValue) }
+patch is same with buggy,741,replace,, this.maximumRangeValue  =  Double.NaN  -  2;  , 
+compilation error,150,add,[CE] variable r is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int r = this.data.getColumnIndex(rowKey)+ 1;
+compilation error,150,add,[CE] variable r is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int r = this.data.getColumnIndex(columnKey)+ 1;
+patch is same with buggy,162,replace,, double  maxval  =  Double.NaN  /  minval;  ,double maxval = Double.NaN / minval;
+compilation error,741,add,[CE] class expected, ,this.maximumRangeValue = double.NaN / 2;
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = c + 1; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue =
+compilation error,180,add,[CE] ';' expected, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = c + 1; } else if(minval < this.minimumRangeValue) { this.minimumRangeValue = min
+patch is same with buggy,173,replace,, this.maximumRangeValue  =  r;  , 
+patch is same with buggy,110,replace,, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = -1;
+compilation error,113,add,[CE] class expected, ,this.maximumRangeValue = double.NaN;
+patch is same with buggy,160,replace,, updateBounds();  r  =  this.data.getRowIndex(rowKey);  ,updateBounds(); r = this.data.getRowIndex(rowKey);
+patch is same with buggy,114,replace,, this.minimumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  1;  , 
+compilation error,174,replace,[CE] cannot find symbol column, this.maximumRangeValueColumn  =  r;  ,this.maximumRangeValueColumn = column;
+compilation error,178,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(minval, this.minimumRangeValue)) {
+compilation error,178,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(minval, this.maximumRangeValue)) {
+increase failing tests,115,add, [FE]  double), ,if(this.rangeBounds!= null) { this.rangeBounds = new Range(0.1, 0.0); }
+compilation error,181,add,[CE] ';' expected, ,this.maximumRangeValueColumn = r);
+compilation error,180,replace,[CE] not a statement, if(Double.isNaN(this.minimumRangeValue))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r + 1; figured
+compilation error,110,add,[CE] unexpected type, ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; ++this.maximumRangeValueColumn = -1; }
+compilation error,110,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; - }
+compilation error,110,add,[CE] unexpected type, ,if(this.minimumRangeValueColumn!= 0.0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; ++this.maximumRangeValueColumn = -1; }
+patch is same with buggy,112,replace,, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = -1;
+compilation error,111,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = Double.NaN - 1; meanwhile
+compilation error,111,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = Double.NaN - 1; meanwhile, this.minimumRangeValueColumn = Double.NaN - 1; }
+compilation error,111,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = Double.NaN - 1; meanwhile, this.minimumRangeValue = Double.NaN - 1; }
+compilation error,162,add,[CE] illegal start of expression, ,if(item.getMaxOutlier()!= null) { if(Double.isNaN(this.maximumRangeValueRow)) { maxval = item.getMaxOutlier().doubleValue(); }
+increase failing tests,740,replace, [FE] 5]>, this.maximumRangeValue  =  Double.NaN  +  1;  ,this.maximumRangeValue = Double.NaN - 1;
+patch is same with buggy,740,replace,, this.maximumRangeValue  =  Double.NaN  +  1;  , 
+patch is same with buggy,110,replace,, this.minimumRangeValueColumn  =  1;  , 
+compilation error,180,add,[CE] cannot find symbol optimumRangeValueRow, ,this.optimumRangeValueRow = c;
+compilation error,111,replace,[CE] bad operand types for binary operator '!=', this.minimumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,if(this.minimumRangeValue!= null) { this.minimumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1; }
+compilation error,111,replace,[CE] bad operand types for binary operator '==', this.minimumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,if(this.minimumRangeValue == null) { this.minimumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1; }
+compilation error,178,replace,[CE] cannot find symbol optimumRangeValueColumn, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(minval))  {  ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(this.optimumRangeValueColumn)) {
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { if(c + 1) { this.minimumRangeValueRow = c + 1; }
+patch is same with buggy,160,replace,, updateBounds();  r  =  this.data.getRowIndex(rowKey);  ,updateBounds(); r = this.data.getRowIndex(rowKey);
+compilation error,160,replace,[CE] method getRowIndex in class KeyedObjects2D cannot be applied to given types;, updateBounds();  r  =  this.data.getRowIndex(rowKey);  ,updateBounds(); r = this.data.getRowIndex(rowKey, columnKey);
+compilation error,169,add,[CE] variable c is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int c = item.getColumnType();
+patch is same with buggy,111,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+increase failing tests,111,replace, [FE] AssertionFailedError, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN / 1;
+compilation error,740,add,[CE] cannot find symbol, ,rangeBounds.set(this.minimumRangeValue, this.maximumRangeValue);
+compilation error,174,add,[CE] ';' expected, ,this.minimumRangeValueRow = r, c;
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueColumn = r; }
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  , 
+compilation error,180,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValue)) { if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r + 2; }
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; meanwhile
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; figured
+patch is same with buggy,114,replace,, this.rangeBounds  =  new  Range(0.0,  5.0);  ,this.rangeBounds = new Range(0.0, 5.0);
+patch is same with buggy,109,replace,, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN - 1;
+compilation error,150,add,[CE] cannot find symbol, ,this.data.addobject(item, columnKey, rowKey);
+compilation error,180,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValue)) { if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r; this.minimumRangeValue
+compilation error,180,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValue)) { if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r; this.minimumRangeVal
+compilation error,170,add,[CE] variable c is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int c = item.getMinimumRangeValueColumn();
+compilation error,170,add,[CE] variable c is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int c = this.minimumRangeValueColumn;
+patch is same with buggy,169,replace,, this.minimumRangeValueRow  =  r;  ,this.minimumRangeValueRow = r;
+patch is same with buggy,109,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,170,replace,[CE] cannot find symbol column, this.minimumRangeValueColumn  =  r;  ,this.minimumRangeValueColumn = column;
+patch is same with buggy,110,replace,, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = -1;
+compilation error,181,replace,[CE] cannot find symbol b, this.maximumRangeValueColumn  =  r;  ,this.maximumRangeValueColumn = b;
+compilation error,109,add,[CE] cannot find symbol optimumRangeValue, ,this.optimumRangeValue = Double.NaN - 1;
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.maximumRangeValue)||(c < this.minimumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+patch is same with buggy,110,replace,, this.maximumRangeValue  =  Double.NaN;  ,this.maximumRangeValue = Double.NaN;
+increase failing tests,162,add, [FE] 5]>, ,if(item.getMaxOutlier()!= null) { minval = item.getMaxOutlier().doubleValue(); }
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1; meanwhile
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1; figured
+increase failing tests,152,replace, [FE] 5]>, if(c  >=  this.minimumRangeValueColumn)  {  ,if(r > this.maximumRangeValueColumn) {
+compilation error,183,add,[CE] 'else' without 'if', ,if(c > this.minimumRangeValueColumn) {
+compilation error,180,replace,[CE] illegal start of expression, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r + 1; if(c < this.minimumRangeValueColumn) {
+compilation error,169,add,[CE] variable c is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int c = this.maximumRangeValueRow + 2;
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  else  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  ,[Delete]
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  else  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  ,if(this.rangeBounds!= null) { if(this.rangeBounds == null) { this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,169,add,[CE] ';' expected, ,this.minimumRangeValueRow = r, c;
+compilation error,111,replace,[CE] bad operand types for binary operator '==', this.maximumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,if(this.minimumRangeValue == null) { this.maximumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1; }
+compilation error,180,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r + 1; figured
+compilation error,160,add,[CE] cannot find symbol, ,refreshBounds(); r = this.data.getRowIndex(rowKey);
+patch is same with buggy,107,replace,, this.rangeBounds  =  new  Range(0.0,  0.0);  ,this.rangeBounds = new Range(0.0, 0.0);
+increase failing tests,107,replace, [FE] NullPointerException, this.rangeBounds  =  new  Range(0.0,  0.0);  ,this.rangeBounds = new Range(1.0, 1.0);
+patch is same with buggy,150,replace,, this.data.addObject(item,  columnKey,  rowKey);  ,this.data.addObject(item, columnKey, rowKey);
+compilation error,174,replace,[CE] cannot find symbol row, this.maximumRangeValueRow  =  c  +  1;  ,this.maximumRangeValueRow = row + 1;
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  ,else if(Double.isNaN(this.maximumRangeValueColumn)) {
+patch is same with buggy,114,replace,, this.maximumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  -1;  ,this.maximumRangeValue = Double.NaN; this.minimumRangeValueColumn = -1;
+compilation error,113,add,[CE] cannot find symbol optimumRangeValueColumn, ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.optimumRangeValueColumn = -1; }
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.maximumRangeValue)||(c < this.maximumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+compilation error,183,add,[CE] 'else' without 'if', ,if(c > this.maximumRangeValue) {
+patch is same with buggy,181,replace,, this.maximumRangeValueColumn  =  c;  ,this.maximumRangeValueColumn = c;
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.00,  0.0);  }  ,if(this.rangeBounds!= null) { if(this.rangeBounds!= null) { this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.00,  0.0);  }  ,if(this.rangeBounds!= null) { if(this.rangeBounds!= null) { this.rangeBounds = new Range(0.0, 0.0); } else { this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,180,replace,[CE] illegal start of expression, if(Double.isNaN(this.minimumRangeValue))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r + 1; if(c < this.minimumRangeValueColumn) {
+compilation error,173,add,[CE] cannot find symbol minumRangeValue, ,this.minumRangeValue = minval;
+compilation error,155,add,[CE] method updateBounds in class DefaultBoxAndWhiskerCategoryDataset cannot be applied to given types;, ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn); updateBounds(rangeBounds, rowKey, columnKey);
+patch is same with buggy,150,replace,, int  r  =  this.data.getRowIndex(rowKey)+  1;  ,int r = this.data.getRowIndex(rowKey)+ 1;
+compilation error,150,add,[CE] cannot find symbol, ,int r = this.data.getRowIndex(rowKey)+ 1; Int c = this.data.getColumnIndex(columnKey)+ 1;
+compilation error,150,add,[CE] cannot find symbol, ,int r = this.data.getRowIndex(rowKey)+ 1; Int c = this.data.getColumnIndex(columnKey);
+patch is same with buggy,170,replace,, this.minimumRangeValueColumn  =  c;  ,this.minimumRangeValueColumn = c;
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValueColumn)&&(c < this.maximumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+compilation error,172,add,[CE] ')' expected, ,else if(Double.isNaN(this.minimumRangeValueColumn)&&(c > this.maximumRangeValueColumn || c < this.maximumRangeValueColumn || c < this.maximumR
+compilation error,183,add,[CE] 'else' without 'if', ,if(c > this.minimumRangeValue) {
+patch is same with buggy,115,replace,, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.00,  0.0);  }  ,if(this.rangeBounds!= null) { this.rangeBounds = new Range(0.00, 0.0); }
+compilation error,152,add,[CE] illegal start of expression, ,if(c >= this.maximumRangeValueColumn) {
+increase failing tests,155,replace, [FE] 5]>, rangeBounds  =  new  Range(this.minimumRangeValueRow,  this.maximumRangeValueColumn);  ,Range rangeBounds = new Range(this.minimumRangeValueColumn, this.maximumRangeValueRow);
+patch is same with buggy,109,replace,, this.minimumRangeValueColumn  =  0;  , 
+compilation error,174,replace,[CE] not a statement, if(Double.isNaN(this.maximumRangeValueRow))  {  this.maximumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValueRow = r + 1; meanwhile
+compilation error,174,replace,[CE] illegal start of expression, if(Double.isNaN(this.maximumRangeValue))  {  this.maximumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValueRow = r + 1; if(c < this.maximumRangeValueColumn) {
+patch is same with buggy,112,replace,, this.minimumRangeValueRow  =  1;  ,this.minimumRangeValueRow = 1;
+patch is same with buggy,173,replace,, this.maximumRangeValue  =  r;  , 
+patch is same with buggy,178,replace,, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(this.maximumRangeValueColumn))  {  ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(this.maximumRangeValueColumn)) {
+patch is same with buggy,178,replace,, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(this.maximumRangeValueColumn))  {  , 
+compilation error,173,replace,[CE] illegal start of expression, if(Double.isNaN(this.maximumRangeValue))  {  this.maximumRangeValue  =  minval;  }  ,this.maximumRangeValue = minval; if(Double.isNaN(this.maximumRangeValue)) {
+compilation error,180,replace,[CE] cannot find symbol column, this.minimumRangeValueColumn  =  r;  ,this.minimumRangeValueColumn = column;
+compilation error,112,add,[CE] cannot find symbol optimumRangeValueColumn, ,this.optimumRangeValueColumn = -1;
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.optimumRangeValueColumn)) {
+compilation error,155,replace,[CE] constructor Range in class Range cannot be applied to given types;, rangeBounds  =  new  Range(this.minimumRangeValueRow,  this.maximumRangeValueColumn);  ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn, c);
+patch is same with buggy,155,replace,, rangeBounds  =  new  Range(this.minimumRangeValueRow,  this.maximumRangeValueColumn);  ,rangeBounds = new Range(this.minimumRangeValueRow, this.maximumRangeValueColumn);
+patch is same with buggy,114,replace,, this.rangeBounds  =  new  Range(1.0,  1.0);  ,this.rangeBounds = new Range(1.0, 1.0);
+compilation error,180,replace,[CE] cannot find symbol row, this.minimumRangeValueRow  =  c  +  1;  ,this.minimumRangeValueRow = row + 1;
+compilation error,173,add,[CE] cannot find symbol minumRangeValue, ,this.minumRangeValue = c;
+patch is same with buggy,114,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+patch is same with buggy,741,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,183,add,[CE] 'else' without 'if', ,else if(minval >= this.maximumRangeValue) {
+compilation error,183,add,[CE] 'else' without 'if', ,else if(c < this.maximumRangeValue) {
+patch is same with buggy,108,replace,, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN - 1;
+increase failing tests,108,replace, [FE] 0]>, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN / 1;
+compilation error,111,add,[CE] cannot find symbol optimumRangeValue, ,this.optimumRangeValue = Double.NaN - 1;
+patch is same with buggy,180,replace,, this.maximumRangeValueColumn  =  c;  ,this.maximumRangeValueColumn = c;
+patch is same with buggy,740,replace,, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  ,rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue);
+patch is same with buggy,740,replace,, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  ,rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue);
+patch is same with buggy,174,replace,, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r;  this.maximumRangeValueColumn  =  c;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; }
+compilation error,169,replace,[CE] variable c is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), this.maximumRangeValueRow  =  r  +  2;  ,int c = this.maximumRangeValueRow + 3;
+compilation error,173,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = minval; figured
+compilation error,173,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = minval; zz
+patch is same with buggy,174,replace,, this.maximumRangeValueRow  =  r;  this.maximumRangeValueRow  =  c;  ,this.maximumRangeValueRow = r; this.maximumRangeValueRow = c;
+compilation error,110,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0) { this.maximumRangeValueColumn = -1; this.maximumRangeValueColumn = -1; - }
+compilation error,110,add,[CE] unexpected type, ,if(this.minimumRangeValueColumn!= 0) { this.maximumRangeValueColumn = -1; this.maximumRangeValueColumn = -1; ++this.minimumRangeValueColumn = -1; }
+compilation error,174,replace,[CE] illegal start of expression, if(Double.isNaN(this.maximumRangeValueRow))  {  this.maximumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1; if(c < this.maximumRangeValueColumn) {
+patch is same with buggy,180,replace,, this.minimumRangeValueRow  =  r;  this.minimumRangeValueRow  =  c;  ,this.minimumRangeValueRow = r; this.minimumRangeValueRow = c;
+patch is same with buggy,183,replace,, else  if(Double.isNaN(this.minimumRangeValueColumn))  {  ,else if(Double.isNaN(this.minimumRangeValueColumn)) {
+patch is same with buggy,175,replace,, this.minimumRangeValueColumn  =  c;  ,this.minimumRangeValueColumn = c;
+compilation error,183,add,[CE] ';' expected, ,int c > this.maximumRangeValueColumn) {
+patch is same with buggy,114,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,114,add,[CE] possible loss of precision, ,this.minimumRangeValueColumn = Double.NaN; this.maximumRangeValueColumn = -1;
+compilation error,170,replace,[CE] possible loss of precision, this.minimumRangeValueColumn  =  c;  ,this.minimumRangeValueColumn = minval;
+patch is same with buggy,150,replace,, int  r  =  this.data.getRowIndex(rowKey)+  1;  ,int r = this.data.getRowIndex(rowKey)+ 1;
+compilation error,174,replace,[CE] possible loss of precision, this.maximumRangeValueColumn  =  r;  ,this.maximumRangeValueColumn = maxval;
+compilation error,112,add,[CE] cannot find symbol maximumRangeValuecolumn, ,this.maximumRangeValuecolumn = -1;
+compilation error,112,add,[CE] cannot find symbol minimumRangeValuecolumn, ,this.minimumRangeValuecolumn = 0;
+patch is same with buggy,180,replace,, this.maximumRangeValueColumn  =  c;  ,this.maximumRangeValueColumn = c;
+compilation error,113,add,[CE] cannot find symbol NAN, ,this.maximumRangeValue = Double.NAN;
+patch is same with buggy,175,replace,, this.minimumRangeValueColumn  =  c;  ,this.minimumRangeValueColumn = c;
+patch is same with buggy,108,replace,, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN - 1;
+patch is same with buggy,110,replace,, this.maximumRangeValue  =  Double.NaN;  ,this.maximumRangeValue = Double.NaN;
+compilation error,174,add,[CE] cannot find symbol maximumRangeVALueColumn, ,this.maximumRangeVALueColumn = r;
+compilation error,174,add,[CE] cannot find symbol maximumRangeValueCOLumn, ,this.maximumRangeValueCOLumn = r;
+compilation error,180,replace,[CE] possible loss of precision, this.minimumRangeValueRow  =  c  +  1;  ,this.minimumRangeValueRow = minval + 1;
+patch is same with buggy,174,replace,, if(Double.isNaN(this.maximumRangeValueRow))  {  this.maximumRangeValueRow  =  r  +  1;  }  , 
+compilation error,111,replace,[CE] cannot find symbol, this.maximumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,if(Double.isNaN(this.minimumRangeValue)) { this.maximumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1; } else { this.data.addAll(this); }
+compilation error,110,add,[CE] not a statement, ,if(this.minimumRangeValueColumn!= 0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; Afterwards, this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,172,add,[CE] illegal start of expression, ,else if(Double.isNaN(this.minimumRangeValue)||(c -> this.maximumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValue)||(c < this.maximumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+patch is same with buggy,160,replace,, updateBounds();  r  =  this.data.getRowIndex(rowKey);  ,updateBounds(); r = this.data.getRowIndex(rowKey);
+patch is same with buggy,162,replace,, double  maxval  =  Double.NaN  /  minval;  ,double maxval = Double.NaN / minval;
+compilation error,174,add,[CE] illegal start of expression, ,if(Double.isNaN(this.minimumRangeValueRow)) } this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; }
+compilation error,180,add,[CE] cannot find symbol R, ,this.minimumRangeValueRow = R + 2;
+compilation error,109,add,[CE] cannot find symbol minimumRangeValuecolumn, ,this.minimumRangeValuecolumn = 0;
+compilation error,112,add,[CE] cannot find symbol maximumRangeVALueRow, ,this.maximumRangeVALueRow = 2;
+increase failing tests,178,replace, [FE] 0]>, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(this.maximumRangeValueColumn))  {  ,if(Double.isNaN(this.minimumRangeValueRow)|| Double.isNaN(this.maximumRangeValueColumn)) {
+patch is same with buggy,178,replace,, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(this.maximumRangeValueColumn))  {  ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(this.maximumRangeValueColumn)) {
+compilation error,169,add,[CE] cannot find symbol maximumRangeVALueRow, ,this.maximumRangeVALueRow = r * 1;
+compilation error,158,add,[CE] variable maxval is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,double maxval = Double.NaN / 1;
+compilation error,172,add,[CE] 'else' without 'if', ,else if(c > this.maximumRangeValuecolumn) {
+compilation error,180,add,[CE] not a statement, ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValueRow = r + 1; Afterward
+compilation error,114,add,[CE] possible loss of precision, ,this.minimumRangeValueRow = Double.NaN; this.minimumRangeValueColumn = -1;
+compilation error,740,add,[CE] constructor Range in class Range cannot be applied to given types;, ,rangeBounds = new Range(this.minimumRangeValue);
+patch is same with buggy,111,replace,, this.minimumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,this.minimumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1;
+compilation error,111,replace,[CE] cannot find symbol, this.minimumRangeValue  =  Double.NaN;  this.maximumRangeValueColumn  =  -1;  ,if(Double.isNaN(this.minimumRangeValue)) { this.minimumRangeValue = Double.NaN; this.maximumRangeValueColumn = -1; } else { this.data.addAll(this); }
+compilation error,109,add,[CE] cannot find symbol minimumRangeValueCOLumn, ,this.minimumRangeValueCOLumn = 1;
+compilation error,109,add,[CE] cannot find symbol minimumRangeValuecolumn, ,this.minimumRangeValuecolumn = 1;
+patch is same with buggy,740,replace,, this.minimumRangeValue  =  Double.NaN  +  2;  , 
+compilation error,169,add,[CE] cannot find symbol maximumRangeVALueRow, ,this.maximumRangeVALueRow = r + 2;
+compilation error,169,add,[CE] cannot find symbol R, ,this.maximumRangeValueRow = R + 2;
+patch is same with buggy,169,replace,, this.minimumRangeValueRow  =  r;  ,this.minimumRangeValueRow = r;
+compilation error,174,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValueRow)) { this.maximumRangeValueRow = r + 1; Afterward
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.maximumRangeValueColumn)&&(c < this.minimumRangeValueColumn || c > this.maximumRangeValueColumn)) {
+compilation error,174,add,[CE] cannot find symbol maximumRangeVALueRow, ,this.maximumRangeVALueRow = r * 1;
+compilation error,174,add,[CE] cannot find symbol R, ,this.maximumRangeValueRow = R * 1;
+compilation error,110,add,[CE] not a statement, ,if(this.minimumRangeValueColumn!= 0.0) { this.minimumRangeValueColumn = -1; this.minimumRangeValueColumn = -1; Afterwards, this.rangeBounds = new Range(0.0, 0.0); }
+patch is same with buggy,181,replace,, this.maximumRangeValueColumn  =  c;  ,this.maximumRangeValueColumn = c;
+compilation error,169,replace,[CE] ';' expected, this.maximumRangeValueRow  =  r  +  2;  ,this.maximumRangeValueRow = r + 3);
+patch is same with buggy,107,replace,, this.rangeBounds  =  new  Range(0.0,  0.0);  ,this.rangeBounds = new Range(0.0, 0.0);
+increase failing tests,107,replace, [FE] NullPointerException, this.rangeBounds  =  new  Range(0.0,  0.0);  ,this.rangeBounds = new Range(5.0, 5.0);
+compilation error,110,add,[CE] cannot find symbol minimumRangeValueCOLumn, ,this.minimumRangeValueCOLumn = 2;
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  ,else if(Double.isNaN(this.maximumRangeValueColumn)) {
+compilation error,173,add,[CE] ';' expected, ,this.maximumRangeValue = r);
+compilation error,173,add,[CE] ')' expected, ,this.maximumRangeValue =(r;
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  , 
+compilation error,162,add,[CE] variable maxval is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,double maxval = Float.NaN / minval;
+compilation error,109,replace,[CE] possible loss of precision, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValueColumn = Double.NaN;
+patch is same with buggy,109,replace,, this.maximumRangeValue  =  Double.NaN  -  1;  ,this.maximumRangeValue = Double.NaN - 1;
+compilation error,181,add,[CE] cannot find symbol maximumRangeValueCOLumn, ,this.maximumRangeValueCOLumn = r;
+patch is same with buggy,109,replace,, this.minimumRangeValueColumn  =  0;  , 
+patch is same with buggy,109,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,110,add,[CE] illegal start of expression, ,if(this.minimumRangeValueColumn!= 0) { this.maximumRangeValueColumn = -1; this.maximumRangeValueColumn = -1; >>
+patch is same with buggy,183,replace,, else  if(Double.isNaN(this.minimumRangeValueColumn))  {  , 
+patch is same with buggy,180,replace,, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r + 1; }
+patch is same with buggy,180,replace,, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r  +  1;  }  , 
+patch is same with buggy,114,replace,, this.maximumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  -1;  ,this.maximumRangeValue = Double.NaN; this.minimumRangeValueColumn = -1;
+compilation error,112,add,[CE] ';' expected, ,this.minimumRangeValueRow = 1,;
+patch is same with buggy,741,replace,, this.maximumRangeValue  =  Double.NaN  -  2;  , 
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.00,  0.0);  }  ,if(this.rangeBounds == null) { this.rangeBounds = new Range(0.00, 0.0); }
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.00,  0.0);  }  ,this.rangeBounds = new Range(0.00, 0.0);
+compilation error,174,add,[CE] cannot find symbol maximumRangeVALueRow, ,this.maximumRangeVALueRow = c + 1;
+compilation error,172,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.minimumRangeValue)&& c < this.maximumRangeValueColumn) {
+patch is same with buggy,741,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,180,add,[CE] cannot find symbol maximumRangeVALueColumn, ,this.maximumRangeVALueColumn = c;
+compilation error,180,add,[CE] cannot find symbol maximumRangeValueCOLumn, ,this.maximumRangeValueCOLumn = c;
+patch is same with buggy,180,replace,, this.minimumRangeValueColumn  =  r;  ,this.minimumRangeValueColumn = r;
+compilation error,181,add,[CE] cannot find symbol maximumRangeValueCOLumn, ,this.maximumRangeValueCOLumn = c;
+compilation error,181,add,[CE] cannot find symbol maximumRangeVALueColumn, ,this.maximumRangeVALueColumn = c;
+compilation error,110,add,[CE] cannot find symbol NAN, ,this.maximumRangeValue = Double.NAN;
+compilation error,169,add,[CE] cannot find symbol minimumRangeVALueRow, ,this.minimumRangeVALueRow = r;
+increase failing tests,150,add, [FE] StackOverflowError, ,this.data.addObject(this.data, columnKey, rowKey);
+patch is same with buggy,174,replace,, this.maximumRangeValueRow  =  r;  this.maximumRangeValueRow  =  c;  ,this.maximumRangeValueRow = r; this.maximumRangeValueRow = c;
+patch is same with buggy,180,replace,, this.minimumRangeValueRow  =  r;  this.minimumRangeValueRow  =  c;  ,this.minimumRangeValueRow = r; this.minimumRangeValueRow = c;
+patch is same with buggy,180,replace,, this.minimumRangeValueRow  =  r;  this.minimumRangeValueRow  =  c;  , 
+patch is same with buggy,114,replace,, this.minimumRangeValue  =  Double.NaN;  this.minimumRangeValueColumn  =  1;  , 
+patch is same with buggy,110,replace,, this.minimumRangeValueColumn  =  1;  , 
+patch is same with buggy,172,replace,, else  if(Double.isNaN(this.maximumRangeValueColumn))  {  ,else if(Double.isNaN(this.maximumRangeValueColumn)) {
+increase failing tests,155,replace, [FE] 5]>, rangeBounds  =  new  Range(this.minimumRangeValueRow,  this.maximumRangeValueColumn);  ,rangeBounds = new Range(this.minimumRangeValueRow, c);
+compilation error,111,add,[CE] 'else' without 'if', ,else if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = Double.NaN - 1; }
+compilation error,180,add,[CE] cannot find symbol maximumRangeVALueRow, ,this.maximumRangeVALueRow = c;
+patch is same with buggy,110,replace,, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = -1;
+increase failing tests,740,replace, [FE] 5]>, this.maximumRangeValue  =  Double.NaN  +  1;  ,this.maximumRangeValue = Double.NaN;
+patch is same with buggy,740,replace,, this.maximumRangeValue  =  Double.NaN  +  1;  ,this.maximumRangeValue = Double.NaN + 1;
+compilation error,115,replace,[CE] '(' expected, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  else  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  ,if(this.rangeBounds == null) { this.rangeBounds = new Range(0.0, 0.0); if else { this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,115,replace,[CE] illegal start of expression, if(this.rangeBounds!=  null)  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  else  {  this.rangeBounds  =  new  Range(0.0,  0.0);  }  ,if(this.rangeBounds == null) { this.rangeBounds = new Range(0.0, 0.0); } else { this.rangeBounds = new Range(0.0, 0.0); }
+compilation error,110,add,[CE] cannot find symbol minimumRangeValueCOLumn, ,this.minimumRangeValueCOLumn = 1;
+compilation error,110,add,[CE] cannot find symbol minimumRangeValuecolumn, ,this.minimumRangeValuecolumn = 1;
+compilation error,155,add,[CE] cannot find symbol, ,rangeBounds = Range.newInstance(this.minimumRangeValueRow, this.maximumRangeValueColumn);
+compilation error,150,add,[CE] variable r is already defined in method add(BoxAndWhiskerItem,Comparable,Comparable), ,int r = this.data.getRowIndex(rowKey)+ 1; Integer r = this.data.getColumnIndex(columnKey)+ 1;
+compilation error,174,add,[CE] cannot find symbol minimumRangeVALueRow, ,this.minimumRangeVALueRow = r;
+patch is same with buggy,111,replace,, this.minimumRangeValue  =  Double.NaN  -  1;  ,this.minimumRangeValue = Double.NaN - 1;
+compilation error,162,add,[CE] cannot find symbol NaN, ,double maxval = Number.NaN / 1;
+compilation error,111,add,[CE] not a statement, ,if(Double.isNaN(this.maximumRangeValue)) { this.maximumRangeValue = Double.NaN - 1; Afterward
+compilation error,109,add,[CE] cannot find symbol minimumRangeValueReow, ,this.minimumRangeValueReow = 1;
+compilation error,109,add,[CE] cannot find symbol minimumRangeValueArray, ,this.minimumRangeValueArray = 1;
+compilation error,170,add,[CE] cannot find symbol minimumRangeValueCOLumn, ,this.minimumRangeValueCOLumn = c;
+patch is same with buggy,114,replace,, this.rangeBounds  =  new  Range(0.0,  5.0);  ,this.rangeBounds = new Range(0.0, 5.0);
+patch is same with buggy,112,replace,, this.minimumRangeValueRow  =  1;  ,this.minimumRangeValueRow = 1;
+compilation error,181,replace,[CE] cannot find symbol column, this.maximumRangeValueColumn  =  r;  ,this.maximumRangeValueColumn = column;
+compilation error,173,add,[CE] illegal start of expression, ,if(Double.isNaN(this.maximumRangeValue)) } this.maximumRangeValue = minval; }
+compilation error,180,replace,[CE] cannot find symbol row, if(Double.isNaN(this.minimumRangeValue))  {  this.minimumRangeValueRow  =  r  +  1;  }  ,this.maximumRangeValueRow = row;
+patch is same with buggy,740,replace,, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  ,rangeBounds = new Range(this.minimumRangeValue, this.maximumRangeValue);
+compilation error,740,replace,[CE] cannot find symbol minimum, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  ,rangeBounds = new Range(this.minimum, this.maximumRangeValue);
+patch is same with buggy,740,replace,, rangeBounds  =  new  Range(this.minimumRangeValue,  this.maximumRangeValue);  , 
+patch is same with buggy,174,replace,, this.maximumRangeValueRow  =  c  +  1;  , 
+compilation error,183,add,[CE] illegal start of expression, ,else if(minval -> this.maximumRangeValue) {
+patch is same with buggy,178,replace,, if(Double.isNaN(this.minimumRangeValue)||  Double.isNaN(minval))  {  ,if(Double.isNaN(this.minimumRangeValue)|| Double.isNaN(minval)) {
+patch is same with buggy,174,replace,, if(Double.isNaN(this.minimumRangeValueRow))  {  this.minimumRangeValueRow  =  r;  this.maximumRangeValueColumn  =  c;  }  ,if(Double.isNaN(this.minimumRangeValueRow)) { this.minimumRangeValueRow = r; this.maximumRangeValueColumn = c; }
+compilation error,741,add,[CE] cannot find symbol maxmumRangeValue, ,this.maxmumRangeValue = Double.NaN - 1;
+increase failing tests,155,replace, [FE] 5]>, Range  rangeBounds  =  new  Range(this.maximumRangeValueRow,  this.maximumRangeValueColumn);  ,Range rangeBounds = new Range(c, this.maximumRangeValueColumn);
+compilation error,175,add,[CE] illegal start of expression, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueColumn)) { this.minimumRangeValueColumn = r; }
+compilation error,175,add,[CE] not a statement, ,if(c < this.minimumRangeValueColumn) { if(Double.isNaN(this.minimumRangeValueColumn)) { this.minimumRangeValueColumn = r; } else { this.maximumRangeVal
+compilation error,741,add,[CE] ';' expected, ,this.maximumRangeValue = Double.NaN -- 2;
+patch is same with buggy,150,replace,, this.data.addObject(item,  columnKey,  rowKey);  ,this.data.addObject(item, columnKey, rowKey);
+compilation error,170,add,[CE] cannot find symbol minimumRangeValueCOLumn, ,this.minimumRangeValueCOLumn = r;
+patch is same with buggy,112,replace,, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = -1;
+compilation error,112,replace,[CE] possible loss of precision, this.maximumRangeValueColumn  =  -1;  ,this.maximumRangeValueColumn = Double.NaN;

@@ -1,0 +1,9 @@
+increase failing tests,240,replace, [FE] FractionConversionException testDigitLimitConstructor, this.denominator  =(int)p1;  numerator  =  BigInteger.valueOf(p0);  ,throw new FractionConversionException(value, n, q1);
+increase failing tests,356,replace, [FE] FractionConversionException testDigitLimitConstructor, this(value,  0,  maxDenominator,  10);  ,this(value, 0, maxDenominator, 2);
+increase failing tests,240,replace, [FE] FractionConversionException testDigitLimitConstructor, this.denominator  =(int)p1;  numerator  =  BigInteger.valueOf(p0);  ,throw new FractionConversionException(n, p1, q1);
+increase failing tests,240,replace, [FE] FractionConversionException testDigitLimitConstructor, this.denominator  =(int)p1;  numerator  =  BigInteger.valueOf(p0);  ,throw new FractionConversionException(n, p2, q1);
+increase failing tests,240,replace, [FE] FractionConversionException testDigitLimitConstructor, p2  =  Math.ceil(a1);  q1  =  Math.abs(q2);  ,throw new FractionConversionException(value, p0, q1);
+increase failing tests,215,replace, [FE] FractionConversionException testDigitLimitConstructor,     p2  =(int)FastMath.floor(p2);  p2  =(int)FastMath.ceil(p2);  ,p1 =(long)FastMath.floor(p2); p2 =(long)FastMath.floor(p2);
+increase failing tests,215,replace, [FE] FractionConversionException testDigitLimitConstructor,     p2  =(int)FastMath.floor(p2);  p2  =(long)FastMath.floor(p2);  ,p1 =(long)FastMath.floor(p2); p2 =(long)FastMath.floor(q1);
+increase failing tests,240,replace, [FE] FractionConversionException testDigitLimitConstructor, p2  =  Math.floor(q1);  q1  =  Math.abs(q2);  ,throw new FractionConversionException(value, p0, q2);
+increase failing tests,144,replace, [FE] FractionConversionException testDigitLimitConstructor, this(value,  0,  maxDenominator,  9);  ,this(value, 0, maxDenominator, 3);

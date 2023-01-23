@@ -1,0 +1,190 @@
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.black;  ,this.aggregatedItemsPaint = Color.black;
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.black;  , 
+compilation error,158,add,[CE] cannot find symbol SeriesTitle, ,this.sectionPaints.put(SeriesTitle, new PiePlot());
+compilation error,158,add,[CE] cannot find symbol seriesTile, ,this.sectionPaints.put(seriesTile, new PiePlot());
+patch is same with buggy,157,replace,, this.aggregatedItemsPaint  =  Color.gray;  ,this.aggregatedItemsPaint = Color.gray;
+compilation error,111,add,[CE] variable limit is already defined in class MultiplePiePlot, ,private double limit = Double.parseDouble(0.0, 0.0);
+compilation error,111,add,[CE] variable limit is already defined in class MultiplePiePlot, ,private double limit = Double.parseDouble(true);
+compilation error,111,add,[CE] variable limit is already defined in class MultiplePiePlot, ,private double limit = Double.parseDouble(0.0, 1.0);
+compilation error,166,add,[CE] generics are not supported in -source 1.4, ,if(this.dataset instanceof CategoryDataset) { this.dataset =(CategoryDataset)this.dataset; for(Map.Entry < K, V> segmentPaint? getSectionPaint() : segmentPaints.values())
+compilation error,166,add,[CE] generics are not supported in -source 1.4, ,if(this.dataset instanceof CategoryDataset) { this.dataset =(CategoryDataset)this.dataset; for(Map.Entry < K, V> segmentPaint? getSectionPaint() : segmentPaints.values()) } this.
+patch is same with buggy,155,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,156,add,[CE] cannot find symbol aggregatedItemsPaints, ,this.aggregatedItemsPaints = new HashMap();
+compilation error,156,add,[CE] cannot find symbol aggregatedItemsPaints, ,this.aggregatedItemsPaints = new Paint(AggregatedItemsPaint.BOTTOM);
+compilation error,151,add,[CE] variable seriesTitle is already defined in constructor MultiplePiePlot(CategoryDataset), ,TextTitle seriesTitle = new TextTitle("Series Title ", new Font("SansSerif ", Font.BOLD, 11));
+compilation error,151,add,[CE] cannot find symbol, ,this.pieChart.setPaint(null);
+compilation error,153,replace,[CE] cannot find symbol seriesTitle, seriesTitle.setPosition(RectangleEdge.LEFT);  ,if(this.seriesTitle!= null) { seriesTitle.setPosition(RectangleEdge.LEFT); } else { this.seriesTitle.setPosition(RectangleEdge.RIGHT); continue; }
+compilation error,153,replace,[CE] ')' expected, seriesTitle.setPosition(RectangleEdge.LEFT);  ,if(this.seriesTitle!= null) { seriesTitle.setPosition(RectangleEdge.LEFT); } else { this.seriesTitle.setPosition(RectangleEdge.RIGHT); serieTitle.setPosition(Re
+patch is same with buggy,151,replace,, TextTitle  seriesTitle  =  new  TextTitle( "Series  Title ",  new  Font( "SansSerif ",  Font.BOLD,  10));  ,TextTitle seriesTitle = new TextTitle("Series Title ", new Font("SansSerif ", Font.BOLD, 10));
+patch is same with buggy,151,replace,, TextTitle  seriesTitle  =  new  TextTitle( "Series  Title ",  new  Font( "SansSerif ",  Font.BOLD,  10));  ,TextTitle seriesTitle = new TextTitle("Series Title ", new Font("SansSerif ", Font.BOLD, 10));
+compilation error,154,add,[CE] cannot find symbol, ,this.pieChart.setOutlineStroke(Color.white);
+compilation error,153,replace,[CE] cannot find symbol, seriesTitle.setPosition(RectangleEdge.LEFT);  ,this.pieChart.setOutlineStroke(Color.white);
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.white;  ,this.aggregatedItemsPaint = Color.white;
+patch is same with buggy,166,replace,, this.dataset  =(CategoryDataset)getDataset();  ,this.dataset =(CategoryDataset)getDataset();
+compilation error,166,replace,[CE] cannot find symbol, this.dataset  =(CategoryDataset)getDataset();  ,this.dataset =(CategoryDataset)this.dataExtractOrder.getDataset();
+patch is same with buggy,111,replace,, private  double  limit  =  2.0;  ,private double limit = 2.0;
+patch is same with buggy,155,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,155,replace,[CE] cannot find symbol, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setOutlineStroke(null);
+compilation error,154,replace,[CE] unclosed string literal, seriesTitle.setPosition(RectangleEdge.LEFT);  this.pieChart.setBackgroundPaint(null);  ,if(this.pieChart!= null) { seriesTitle.setPosition(RectangleEdge.LEFT); this.pieChart.setBackgroundPaint(null); } else { TextTitle seriesTitle = new TextTitle("Series
+compilation error,149,add,[CE] cannot find symbol, ,this.pieChart.setOutlineStroke(null);
+compilation error,149,add,[CE] cannot find symbol, ,this.pieChart.setPaint(null);
+patch is same with buggy,154,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,154,replace,[CE] cannot find symbol, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setOutlineStroke(null);
+compilation error,145,replace,[CE] cannot find symbol Maps,   ,this.sectionPaints = Maps.newHashMap();
+compilation error,145,replace,[CE] cannot find symbol,   ,this.dataset = dataset.getDataset(dataset);
+compilation error,156,add,[CE] cannot find symbol agregatedItemsPaint, ,this.agregatedItemsPaint = Color.white;
+patch is same with buggy,150,replace,, this.pieChart.setBackgroundPaint(Color.white);  ,this.pieChart.setBackgroundPaint(Color.white);
+patch is same with buggy,157,replace,, this.aggregatedItemsPaint  =  Color.green;  ,this.aggregatedItemsPaint = Color.green;
+patch is same with buggy,166,replace,, return(CategoryDataset)this.dataset;  ,return(CategoryDataset)this.dataset;
+compilation error,166,replace,[CE] incompatible types, return(CategoryDataset)this.dataset;  ,return(CategoryDataset)this.dataset? this.dataset : null;
+patch is same with buggy,111,replace,, private  double  limit  =  2.0;  ,private double limit = 2.0;
+compilation error,166,replace,[CE] cannot find symbol, return(CategoryDataset)this.dataset;  ,return(CategoryDataset)this.dataset();
+patch is same with buggy,166,replace,, return(CategoryDataset)this.dataset;  , 
+compilation error,154,add,[CE] cannot find symbol, ,this.pieChart.setPaint(Color.white);
+compilation error,157,add,[CE] cannot find symbol agregatedItemsPaint, ,this.agregatedItemsPaint = Color.gray;
+increase failing tests,145,add, [FE] NullPointerException, ,this.sectionPaints.put(dataset, dataset);
+compilation error,157,replace,[CE] cannot find symbol,   ,this.sectionPaints.add(aggregatedItemsPaint);
+compilation error,157,replace,[CE] ';' expected,   ,this.sectionPaints.add(aggregatedItemsPaint));
+compilation error,148,add,[CE] cannot find symbol columnPaints, ,this.columnPaints = new HashMap();
+compilation error,148,add,[CE] cannot find symbol columnPaint, ,this.columnPaint = Color.redeclarePaint(null);
+compilation error,148,add,[CE] cannot find symbol columnPaint, ,this.columnPaint = Color.redecorate(piePlot);
+patch is same with buggy,150,replace,, this.pieChart.setBackgroundPaint(Color.white);  ,this.pieChart.setBackgroundPaint(Color.white);
+compilation error,154,add,[CE] variable seriesTitle is already defined in constructor MultiplePiePlot(CategoryDataset), ,TextTitle seriesTitle = new TextTitle("Series Title ", new Font("SansSerif ", Font.BOLD, 12)); this.pieChart.setBackgroundPaint(null);
+compilation error,166,add,[CE] cannot find symbol, ,return(CategoryDataset)getObject();
+compilation error,148,add,[CE] cannot find symbol, ,this.pieChart.setOutlineStroke(null);
+compilation error,148,add,[CE] cannot find symbol, ,this.pieChart.setPaint(null);
+compilation error,148,add,[CE] cannot find symbol, ,this.pieChart.setLineno(null);
+compilation error,150,add,[CE] cannot find symbol, ,this.pieChart.setOutlineStroke(Color.white);
+patch is same with buggy,148,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,154,add,[CE] cannot find symbol seriesTitle, ,this.seriesTitle.setPosition(RectangleEdge.TOP);
+compilation error,154,add,[CE] method setPosition in class Title cannot be applied to given types;, ,seriesTitle.setPosition(RectangleEdge.TOP, 3);
+compilation error,154,add,[CE] no suitable constructor found for Color(String,int,int), ,seriesTitle.setBackgroundPaint(new Color("SansSerif ", Font.BOLD, 12)); seriesTitle.setPosition(RectangleEdge.TOP);
+compilation error,154,add,[CE] method setBackgroundPaint in class JFreeChart cannot be applied to given types;, ,seriesTitle.setPosition(RectangleEdge.TOP); this.pieChart.setBackgroundPaint(new Font("SansSerif ", Font.BOLD, 12));
+compilation error,151,add,[CE] cannot find symbol, ,textTitle seriesTitle = new TextTitle("Series Title ", new Font("SansSerif ", Font.BOLD, 16));
+compilation error,153,replace,[CE] ')' expected, seriesTitle.setPosition(RectangleEdge.TOP);  ,if(this.seriesTitle!= null) { seriesTitle.setPosition(RectangleEdge.TOP); } else { this.seriesTitle.setPosition(RectangleEdge.TOP); serieTitle.setPosition(
+compilation error,153,replace,[CE] ')' expected, seriesTitle.setPosition(RectangleEdge.TOP);  ,if(seriesTitle!= null) { seriesTitle.setPosition(RectangleEdge.TOP); } else { this.seriesTitle.setPosition(RectangleEdge.TOP); serieTitle.setPosition(Re
+compilation error,151,replace,[CE] cannot find symbol, this.pieChart.setBackgroundPaint(null);  ,if(!this.pieChart.isSelected()) { this.pieChart.setBackgroundPaint(null); }
+patch is same with buggy,151,replace,, this.pieChart.setBackgroundPaint(null);  , 
+compilation error,157,add,[CE] cannot find symbol, ,this.sectionPaints.add(aggregatedItemsKey);
+patch is same with buggy,158,replace,, this.sectionPaints.put(seriesTitle,  new  PiePlot());  ,this.sectionPaints.put(seriesTitle, new PiePlot());
+compilation error,158,replace,[CE] illegal start of expression, this.sectionPaints.put(seriesTitle,  new  PiePlot());  ,this.sectionPaints.put(seriesTitle, new PiePlot() + 1);
+patch is same with buggy,149,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,155,replace,[CE] cannot find symbol, this.pieChart.removeLegend();  ,this.pieChart.setLegend(null);
+compilation error,150,add,[CE] cannot find symbol, ,this.pieChart.setOutlinePaint(Color.white);
+compilation error,144,add,[CE] cannot find symbol, ,this.dataset = dataset.getDataset();
+compilation error,144,add,[CE] cannot find symbol, ,this.dataset = dataset.getDataset(this);
+patch is same with buggy,157,replace,, this.aggregatedItemsPaint  =  Color.gray;  ,this.aggregatedItemsPaint = Color.gray;
+compilation error,157,replace,[CE] ';' expected, this.aggregatedItemsPaint  =  Color.gray;  ,this.aggregatedItemsPaint = Color.gray);
+compilation error,158,add,[CE] cannot find symbol seriesStitle, ,this.sectionPaints.put(seriesStitle, new PiePlot());
+compilation error,158,add,[CE] cannot find symbol seriesItemle, ,this.sectionPaints.put(seriesItemle, new PiePlot());
+compilation error,155,add,[CE] cannot find symbol agregabledItemsKey, ,this.agregabledItemsKey = "No other";
+compilation error,154,add,[CE] cannot find symbol, ,this.pieChart.setPosition(RectangleEdge.RIGHT);
+compilation error,154,add,[CE] cannot find symbol, ,this.pieChart.setPosition(RectangleEdge.TOP);
+patch is same with buggy,151,replace,, TextTitle  seriesTitle  =  new  TextTitle( "Series  Title ",  new  Font( "SansSerif ",  Font.BOLD,  10));  ,TextTitle seriesTitle = new TextTitle("Series Title", new Font("SansSerif", Font.BOLD, 10));
+patch is same with buggy,151,replace,, TextTitle  seriesTitle  =  new  TextTitle( "Series  Title ",  new  Font( "SansSerif ",  Font.BOLD,  10));  , 
+patch is same with buggy,150,replace,, this.pieChart.setBackgroundPaint(Color.white);  ,this.pieChart.setBackgroundPaint(Color.white);
+compilation error,166,add,[CE] not a statement, ,if(this.dataset instanceof CategoryDataset) { for(PlotIndex :(( Comparable)this.dataset).getIndex()) { throw new IllegalArgumentException(""); }
+compilation error,156,add,[CE] cannot find symbol agregatedItemsPaint, ,this.agregatedItemsPaint = new HashMap();
+compilation error,145,add,[CE] cannot find symbol Preconditions, ,Preconditions.checkNotNull(dataset); this.dataExtractOrder = dataset;
+compilation error,166,add,[CE] method getDataset in class MultiplePiePlot cannot be applied to given types;, ,this.dataset = getDataset(this.limit);
+compilation error,153,add,[CE] cannot find symbol, ,this.pieChart.setPaint(Color.white);
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.white;  ,this.aggregatedItemsPaint = Color.white;
+compilation error,157,add,[CE] cannot find symbol gregatedItemsPaint, ,this.gregatedItemsPaint = Color.gray;
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.black;  ,this.aggregatedItemsPaint = Color.black;
+patch is same with buggy,151,replace,, TextTitle  seriesTitle  =  new  TextTitle( "Series  Title ",  new  Font( "SansSerif ",  Font.BOLD,  10));  ,TextTitle seriesTitle = new TextTitle("Series Title", new Font("SansSerif", Font.BOLD, 10));
+compilation error,111,add,[CE] illegal start of type, ,return PlotManager.getPlotManager().getDefaultPlot();
+compilation error,111,add,[CE] illegal start of type, ,return new MultiplePiePlot(this.limit);
+compilation error,153,replace,[CE] cannot find symbol seriesTitle, seriesTitle.setPosition(RectangleEdge.TOP);  ,this.seriesTitle.setPosition(RectangleEdge.TOP);
+compilation error,153,replace,[CE] bad operand types for binary operator '+', seriesTitle.setPosition(RectangleEdge.TOP);  ,seriesTitle.setPosition(RectangleEdge.TOP + 1);
+compilation error,150,add,[CE] cannot find symbol, ,this.pieChart.setOutlineStroke(Color.black);
+compilation error,156,add,[CE] cannot find symbol agregatedItemsPaint, ,this.agregatedItemsPaint = Color.gray;
+compilation error,155,replace,[CE] cannot find symbol, this.pieChart.removeLegend();  ,this.pieChart.removeBackgroundPaint(null);
+compilation error,148,add,[CE] cannot find symbol DOUBLE, ,this.pieChart.setPaint(Paint.DOUBLE);
+compilation error,154,add,[CE] not a statement, ,seriesTitle.setRectangleEdge.TOP);
+compilation error,148,add,[CE] cannot find symbol PieChart, ,PieChart.setBackgroundPaint(null); this.pieChart.setCrosshairPaint(null);
+compilation error,156,add,[CE] cannot find symbol agregatedItemsPaint, ,this.agregatedItemsPaint = Color.black;
+patch is same with buggy,150,replace,, this.pieChart.setBackgroundPaint(Color.white);  ,this.pieChart.setBackgroundPaint(Color.white);
+compilation error,154,replace,[CE] cannot find symbol, seriesTitle.setPosition(RectangleEdge.LEFT);  this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setPaint(null);
+patch is same with buggy,166,replace,, this.dataset  =(CategoryDataset)getDataset();  ,this.dataset =(CategoryDataset)getDataset();
+compilation error,166,replace,[CE] cannot find symbol, this.dataset  =(CategoryDataset)getDataset();  ,this.dataset =(CategoryDataset)this.dataset();
+patch is same with buggy,166,replace,, return(CategoryDataset)this.dataset;  ,return(CategoryDataset)this.dataset;
+compilation error,149,add,[CE] cannot find symbol, ,this.pieChart.setOutlinePaint(null);
+patch is same with buggy,158,replace,, this.sectionPaints.put(seriesTitle,  new  PiePlot());  ,this.sectionPaints.put(seriesTitle, new PiePlot());
+patch is same with buggy,157,replace,, this.aggregatedItemsPaint  =  Color.green;  ,this.aggregatedItemsPaint = Color.green;
+patch is same with buggy,155,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+increase failing tests,155,replace, [FE] NullPointerException, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(Color.white);
+patch is same with buggy,155,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+patch is same with buggy,155,replace,, this.aggregatedItemsKey  = "No  other ";  ,this.aggregatedItemsKey ="No other";
+patch is same with buggy,155,replace,, this.aggregatedItemsKey  = "No  other ";  ,this.aggregatedItemsKey = "No other";
+compilation error,153,add,[CE] cannot find symbol, ,seriesTitle.setSeriesKey(dataset.getItemCount() - 1);
+compilation error,155,add,[CE] cannot find symbol agregatedItemsKey, ,this.agregatedItemsKey = "Comparable";
+compilation error,111,add,[CE] illegal start of type, ,return PlotManager.getPlotManager().getMutator();
+compilation error,153,replace,[CE] method setPosition in class Title cannot be applied to given types;, seriesTitle.setPosition(RectangleEdge.LEFT);  ,seriesTitle.setPosition(RectangleEdge.LEFT, 4);
+compilation error,153,replace,[CE] cannot find symbol seriesTitle, seriesTitle.setPosition(RectangleEdge.LEFT);  ,this.seriesTitle.setPosition(RectangleEdge.LEFT);
+compilation error,153,add,[CE] cannot find symbol, ,this.pieChart.setPosition(RectangleEdge.TOP);
+patch is same with buggy,111,replace,, private  double  limit  =  2.0;  , 
+compilation error,151,replace,[CE] cannot find symbol seriesTitle, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(Color.white);
+compilation error,149,replace,[CE] cannot find symbol p, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setPaint(p);
+compilation error,154,add,[CE] bad operand types for binary operator '+', ,seriesTitle.setPosition(RectangleEdge.TOP + 1);
+compilation error,154,add,[CE] method setPosition in class Title cannot be applied to given types;, ,seriesTitle.setPosition(RectangleEdge.TOP, 0);
+compilation error,157,replace,[CE] cannot find symbol seriesKey,   ,this.aggregatedItemsPaints.put(seriesKey, dataset);
+compilation error,157,replace,[CE] cannot find symbol aggregatedItemsPaints,   ,this.aggregatedItemsPaints.add(null);
+patch is same with buggy,155,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,157,add,[CE] cannot find symbol gregoredItemsPaint, ,this.gregoredItemsPaint = Color.gray;
+compilation error,155,replace,[CE] method addChangeListener in class JFreeChart cannot be applied to given types;, this.pieChart.removeLegend();  ,this.pieChart.addChangeListener(this);
+compilation error,155,replace,[CE] cannot find symbol, this.pieChart.removeLegend();  ,this.pieChart.setValue(seriesTitle.getValue());
+patch is same with buggy,153,replace,, seriesTitle.setPosition(RectangleEdge.TOP);  ,seriesTitle.setPosition(RectangleEdge.TOP);
+compilation error,166,add,[CE] ';' expected, ,Comparable CategoryDataset dataset =(Comparable)getDataset();
+compilation error,111,add,[CE] illegal start of type, ,return new MultiplePiePlot(limit + 1);
+compilation error,154,replace,[CE] illegal start of expression, seriesTitle.setPosition(RectangleEdge.LEFT);  this.pieChart.setBackgroundPaint(null);  ,if(seriesTitle!= null) { seriesTitle.setPosition(RectangleEdge.LEFT); this.pieChart.setBackgroundPaint(null); } else { this.pieChart.addChangeListener(seriesTitle);
+compilation error,154,replace,[CE] illegal start of expression, seriesTitle.setPosition(RectangleEdge.LEFT);  this.pieChart.setBackgroundPaint(null);  ,if(this.pieChart!= null) { seriesTitle.setPosition(RectangleEdge.LEFT); this.pieChart.setBackgroundPaint(null); } else { this.pieChart.addChangeListener(seriesTitle);
+compilation error,111,add,[CE] illegal start of type, ,return super.limit();
+compilation error,111,add,[CE] illegal start of type, ,return Double.valueOf(getSlope());
+compilation error,145,add,[CE] cannot find symbol, ,this.dataExtractOrder.putAll(dataset);
+compilation error,145,add,[CE] cannot find symbol, ,this.dataExtractOrder.setDataExtractOrder(dataset);
+compilation error,157,add,[CE] not a statement, ,if(dataset instanceof CategoryDataset) { PiePlot piePlot =(PiePlot)dataset.getPlot(); PiePlot) piePlot.put(seriesKey, dataset); this.aggregatedItemsPaint.setBackgroundPaint(null); }
+compilation error,156,replace,[CE] cannot find symbol aggregatedItemsPaints,   ,this.aggregatedItemsPaints.add(null);
+patch is same with buggy,155,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+patch is same with buggy,150,replace,, this.pieChart.setBackgroundPaint(Color.white);  ,this.pieChart.setBackgroundPaint(Color.white);
+compilation error,156,add,[CE] cannot find symbol gregedItemsPaint, ,this.gregedItemsPaint = Color.black;
+patch is same with buggy,153,replace,, seriesTitle.setPosition(RectangleEdge.LEFT);  ,seriesTitle.setPosition(RectangleEdge.LEFT);
+compilation error,153,replace,[CE] bad operand types for binary operator '+', seriesTitle.setPosition(RectangleEdge.LEFT);  ,seriesTitle.setPosition(RectangleEdge.LEFT + 1);
+patch is same with buggy,154,replace,, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setBackgroundPaint(null);
+compilation error,166,add,[CE] illegal start of expression, ,if(this.dataset instanceof CategoryDataset) { CategoryDataset dataset =(CategoryDataset)this.dataset; if(dataExtractOrder == null) { this.dataset = new Dataset(dataExtractOrder); }
+compilation error,166,add,[CE] illegal start of expression, ,if(this.dataset instanceof CategoryDataset) { CategoryDataset dataset =(CategoryDataset)getDataset(this.dataset); if(data!= null) { this.dataset = new Dataset(this.dataset); }
+compilation error,150,add,[CE] cannot find symbol Node, ,this.pieChart.setOutlineStroke(Node.newNumber(0));
+compilation error,150,add,[CE] cannot find symbol Node, ,this.pieChart.setOutlineStroke(Node.newStroke(0.0f));
+compilation error,148,replace,[CE] cannot find symbol piePlot,   ,this.piePlot.setValue(new RectangleInsets(0.0, 0.0, 0.0, 0.0));
+compilation error,148,add,[CE] cannot find symbol, ,this.pieChart.setDataset(dataset);
+compilation error,153,add,[CE] cannot find symbol, ,seriesTitle.setDataExtractOrder(dataset);
+compilation error,153,add,[CE] cannot find symbol series, ,seriesTitle.setSeriesIndex(series);
+compilation error,153,add,[CE] cannot find symbol, ,seriesTitle.setSeriesKey("Series");
+patch is same with buggy,157,replace,, this.aggregatedItemsPaint  =  Color.gray;  ,this.aggregatedItemsPaint = Color.gray;
+patch is same with buggy,166,replace,, return(CategoryDataset)this.dataset;  ,return(CategoryDataset)this.dataset;
+compilation error,154,add,[CE] cannot find symbol, ,seriesTitle.setPosition(RectangleEdge.RIGHT); this.pieChart.setOutlineStroke(null);
+compilation error,154,add,[CE] cannot find symbol, ,seriesTitle.setRect(RectangleEdge.TOP);
+patch is same with buggy,150,replace,, this.pieChart.setBackgroundPaint(Color.white);  ,this.pieChart.setBackgroundPaint(Color.white);
+compilation error,155,add,[CE] , ,this.aggregatedItemsKey = No other";
+compilation error,156,add,[CE] cannot find symbol aggregatedItemsPaints, ,this.aggregatedItemsPaints.add(null); this.dataExtractOrder = DataExtractOrder.BACKSLASH;
+compilation error,151,replace,[CE] cannot find symbol, this.pieChart.setBackgroundPaint(null);  ,this.pieChart.setInsets(new RectangleInsets(0.0, 0.0, 0.0, 0.0));
+compilation error,151,replace,[CE] cannot find symbol, this.pieChart.setBackgroundPaint(null);  ,if(!this.pieChart.contains("")) { this.pieChart.setBackgroundPaint(null); } else { this.pieChart.setOutlineStroke(null); }
+compilation error,153,replace,[CE] cannot find symbol, seriesTitle.setPosition(RectangleEdge.LEFT);  ,seriesTitle.setRect(RectangleEdge.TOP);
+compilation error,166,replace,[CE] method getDataset in class MultiplePiePlot cannot be applied to given types;, this.dataset  =(CategoryDataset)getDataset();  ,this.dataset =(CategoryDataset)getDataset(0.0f);
+patch is same with buggy,166,replace,, this.dataset  =(CategoryDataset)getDataset();  , 
+compilation error,158,replace,[CE] illegal start of expression, this.sectionPaints.put(seriesTitle,  new  PiePlot());  ,this.sectionPaints.put(seriesTitle, new PiePlot(), dataExtractOrder);
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.black;  ,this.aggregatedItemsPaint = Color.black;
+compilation error,158,add,[CE] cannot find symbol, ,setPie(seriesTitle, new PiePlot());
+compilation error,154,add,[CE] cannot find symbol, ,seriesTitle.setSize(RectangleEdge.TOP);
+patch is same with buggy,156,replace,, this.aggregatedItemsPaint  =  Color.white;  ,this.aggregatedItemsPaint = Color.white;
+compilation error,149,add,[CE] cannot find symbol, ,this.pieChart.setInsets(new RectangleInsets(0.0, 5.0, 5.0, 5.0));
+compilation error,156,add,[CE] cannot find symbol gregedItemsPaint, ,this.gregedItemsPaint = Color.gray;
+compilation error,156,add,[CE] cannot find symbol aggregatedItemsFont, ,this.aggregatedItemsFont = Color.gray;
+compilation error,154,add,[CE] cannot find symbol, ,this.pieChart.setFont("Font");
+compilation error,166,replace,[CE] method getDataset in class MultiplePiePlot cannot be applied to given types;, return(CategoryDataset)this.dataset;  ,return(CategoryDataset)getDataset(this);
+compilation error,151,add,[CE] cannot find symbol, ,this.pieChart.setInsets(new RectangleInsets(0.0, 5.0, 5.0, 5.0));
+patch is same with buggy,157,replace,, this.aggregatedItemsPaint  =  Color.green;  ,this.aggregatedItemsPaint = Color.green;
+compilation error,150,add,[CE] cannot find symbol Node, ,this.pieChart.setOutlineStroke(Node.newStroke("No_SansSerif")); this.pieChart.setBackgroundPaint(Color.white);
+compilation error,166,add,[CE] illegal start of expression, ,if(this.dataset instanceof CategoryDataset) { CategoryDataset dataset =(CategoryDataset)getDataset(); if(data.length!= 0) { return this.dataset; }
+compilation error,166,add,[CE] illegal start of expression, ,if(this.dataset instanceof CategoryDataset) { CategoryDataset dataset =(CategoryDataset)getDataset(); if(data.length!= 0) { return(CategoryDataset)dataset; }
+compilation error,148,add,[CE] cannot find symbol piePlot, ,this.piePlot.setValue(new RectangleInsets(0.0, 0.0, 0.0, 0.0)); this.pieChart.setOutlineStroke(null);
+compilation error,153,add,[CE] cannot find symbol, ,this.pieChart.setDataExtractOrder(dataset);

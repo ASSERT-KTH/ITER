@@ -1,0 +1,18 @@
+compilation error,232,replace,[CE] cannot find symbol i, return  cs.length()!=  1;  ,if(cs.length() == 2 && Character.isWhitespace(cs.charAt(i))) { return false; }
+compilation error,148,replace,[CE] <identifier> expected, private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "Paths+4 ");  ,WHITESPACE_BLOCK = Pattern.compile("Paint+4");
+compilation error,232,replace,[CE] missing return statement, return  cs.length()!=  1;  ,if(strLen > 1 && Character.isWhitespace(cs.charAt(0))) { return false; }
+compilation error,788,replace,[CE] cannot find symbol cs3, return  cs1  ==  cs2  ||  cs2.equals(cs1);  ,return cs1 == cs2 || cs3.equals(cs1);
+compilation error,148,replace,[CE] <identifier> expected, private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "whitespace- ");  ,WHITESPACE_BLOCK = Pattern.compile("-");
+compilation error,148,replace,[CE] <identifier> expected, private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "p+4 ");  ,WHITESPACE_BLOCK = Pattern.compile("Paths+4");
+compilation error,224,replace,[CE] ')' expected, if(cs  ==  null  ||(strLen  =  cs.length())  <=  0)  {  ,if(cs == null ||(strLen, cs.length())!= 0) {
+compilation error,148,add,[CE] <identifier> expected, ,public  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "Width+ ");  WHITESPACE_BLOCK = Pattern.compile("Width+");
+compilation error,232,add,[CE] unreachable statement, ,return  cs.length()!=  1;  if(cs.length() == 1 && Character.isWhitespace(cs.charAt(0))) { return false; }
+compilation error,228,replace,[CE] cannot find symbol, if(!Character.isWhitespace(cs.charAt(i))  ==  false)  {  ,if(!Character.isBlank(cs.charAt(i)) == false) {
+compilation error,148,replace,[CE] <identifier> expected, private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "Paint+ ");  ,WHITESPACE_BLOCK = Pattern.compile("Paths+");
+compilation error,148,add,[CE] <identifier> expected, ,private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "Paint+ ");  WHITESPACE_BLOCK = Pattern.compile("Paint+");
+compilation error,225,replace,[CE] variable strLen might not have been initialized, throw  new  IllegalArgumentException( "  inability  to  parse  cs.charAt(strLen) ");  ,if(strLen > 0) { throw new IllegalArgumentException(""); }
+compilation error,148,replace,[CE] unclosed string literal, private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "WhoseSPACE_BLOCK+ ");  ,private static final Pattern WHITESPACE_BLOCK = Pattern.compile("WhoseSPACE_BLOCK+",");
+compilation error,225,replace,[CE] variable strLen might not have been initialized, return  cs.length()!=  0;  ,return cs.length()!= strLen;
+compilation error,225,add,[CE] unreachable statement, ,throw  new  IllegalArgumentException( "  inability  to  parse  cs.substring(strLen  +  1) ");  if(cs.length() == strLen) { throw new IllegalArgumentException(" inability to parse cs.substring(strLen + 1)"); }
+compilation error,148,replace,[CE] unclosed string literal, private  static  final  Pattern  WHITESPACE_BLOCK  =  Pattern.compile( "Width+4 ");  ,private static final Pattern WHITESPACE_BLOCK = Pattern.compile("Width+4", width+4");
+compilation error,224,replace,[CE] variable strLen might not have been initialized, if(cs!=  null  ||(strLen  =  cs.length())  ==  0)  {  ,if(cs!= null &&(strLen = cs.length()) == 0) {

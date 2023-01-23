@@ -1,0 +1,187 @@
+compilation error,165,replace,[CE] cannot find symbol,final int rows = problem.getMeasurements().length; ,final int rows = problem.getRowCount().length;
+compilation error,165,replace,[CE] cannot find symbol,final int rows = problem.getMeasurements().length; ,final int rows = problem.getRows().length;
+compilation error,73,replace,[CE] cannot find symbol,incrementJacobianEvaluationsCounter(); ,incrementJacobianEvaluations();
+compilation error,73,replace,[CE] cannot find symbol,incrementJacobianEvaluationsCounter(); ,updateJacobianEvaluations();
+compilation error,73,replace,[CE] cannot find symbol,incrementJacobianEvaluationsCounter(); ,ensureCapacity(incrementJacobianEvaluations());
+compilation error,162,add,[CE] no suitable method found for sort(EstimationProblem,EstimatedParameter[]),,  Arrays.sort(problem, parameters);
+compilation error,73,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = getResults();
+compilation error,73,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = getRows();
+compilation error,73,add,[CE] no suitable method found for fill(EstimatedParameter[],int,int),,  Arrays.fill(parameters, 0, parameters.length);
+compilation error,73,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = Arrays.get(parameters);
+compilation error,74,replace,[CE] no suitable method found for fill(double[],int,int),Arrays.fill(jacobian, 0); ,Arrays.fill(jacobian, 0, parameters.length);
+compilation error,74,replace,[CE] cannot find symbol fields,Arrays.fill(jacobian, 0); ,Arrays.fill(fields, 0);
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.getHeight());
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.getWidth());
+compilation error,77,replace,[CE] method sqrt in class Math cannot be applied to given types;,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.toString());
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.getWidth() + 1);
+compilation error,77,replace,[CE] cannot find symbol factor,double factor = -Math.sqrt(wm.getWeight()); , 
+compilation error,78,add,[CE] no suitable method found for fill(EstimatedParameter,double),,  Arrays.fill(parameters[i], factor);
+compilation error,78,add,[CE] no suitable method found for fill(EstimatedParameter),,  Arrays.fill(parameters[i]);
+compilation error,75,replace,[CE] cannot find symbol rowCount,for (int i = 0, index = 0; i < rows; i++) { ,for(int i = 0, index = 0; i < rowCount; i++) {
+compilation error,75,replace,[CE] cannot find symbol columns,for (int i = 0, index = 0; i < rows; i++) { ,for(int i = 0, index = 0; i < columns; i++) {
+compilation error,75,replace,[CE] class, interface, or enum expected,for (int i = 0, index = 0; i < rows; i++) { , 
+compilation error,77,add,[CE] cannot find symbol,,  int cols = wm.getColumnCount();
+compilation error,77,add,[CE] no suitable method found for fill(EstimatedParameter),,  Arrays.fill(parameters[i]);
+compilation error,77,add,[CE] no suitable method found for fill(EstimatedParameter,<null>),,  Arrays.fill(parameters[i], null);
+compilation error,77,add,[CE] no suitable method found for fill(WeightedMeasurement,int,EstimatedParameter),,  Arrays.fill(wm, 0, parameters[i]);
+compilation error,77,add,[CE] cannot find symbol,,  int cols = wm.getColumnIndex();
+compilation error,79,add,[CE] cannot find symbol,,  EstimatedParameter[] parameters = wm.getParameters(j, index);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,double),,  Arrays.fill(parameters[j], factor);
+compilation error,79,add,[CE] cannot find symbol,,  EstimatedParameter[] parameters = wm.getParameters(j);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter),,  Arrays.fill(parameters[j]);
+compilation error,79,add,[CE] cannot find symbol,,  EstimatedParameter[] parameters = wm.getParameters();
+compilation error,166,add,[CE] cannot assign a value to final variable rows,,  rows = problem.getRows().length;
+compilation error,166,add,[CE] cannot assign a value to final variable rows,,  rows = problem.getRowCount();
+compilation error,166,add,[CE] cannot find symbol row,,  row = problem.getRowCount();
+compilation error,166,add,[CE] illegal start of expression,,  if(rows > 0) { for(int i = 0; i < rows; ++i) { throw new EstimationException(""); }
+compilation error,166,add,[CE] cannot assign a value to final variable rows,,  rows = problem.getRows();
+compilation error,76,replace,[CE] incompatible types,WeightedMeasurement wm = measurements[i]; ,WeightedMeasurement wm = parameters[i];
+compilation error,76,replace,[CE] bad operand types for binary operator '+',WeightedMeasurement wm = measurements[i]; ,WeightedMeasurement wm = measurements[i] + 1;
+compilation error,76,replace,[CE] cannot find symbol measures,WeightedMeasurement wm = measurements[i]; ,WeightedMeasurement wm = measures[i];
+compilation error,76,replace,[CE] cannot find symbol wm,WeightedMeasurement wm = measurements[i]; , 
+compilation error,75,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = getRows();
+compilation error,75,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = calculateRows(rows, cols);
+compilation error,75,add,[CE] cannot find symbol,,  WeightedMeasurement[] rows = calculateRows(rows, cols);
+compilation error,75,add,[CE] cannot find symbol columns,,  WeightedMeasurement[] rows = calculateRows(rows, columns);
+compilation error,75,add,[CE] cannot find symbol,,  WeightedMeasurement[] rows = calculateRows();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,checkState();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,updateJacobianEvaluations();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,checkLimits();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,ensureCapacity();
+compilation error,78,replace,[CE] cannot find symbol colls,for (int j = 0; j < cols; ++j) { ,for(int j = 0; j < colls; ++j) {
+compilation error,78,replace,[CE] cannot find symbol columns,for (int j = 0; j < cols; ++j) { ,for(int j = 0; j < columns; ++j) {
+compilation error,165,add,[CE] cannot find symbol,,  final int cols = problem.getColumns().length;
+compilation error,165,add,[CE] cannot find symbol,,  final int rows = problem.getRowCount();
+compilation error,165,add,[CE] cannot find symbol,,  final int cols = problem.getColumnSize();
+compilation error,165,add,[CE] cannot find symbol,,  final int cols = problem.getColumns();
+compilation error,165,add,[CE] cannot find symbol,,  final int cols = problem.getColumnsCount();
+compilation error,79,replace,[CE] cannot find symbol coefficient,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getPartial(parameters[j], coefficient);
+compilation error,79,replace,[CE] method getPartial in class WeightedMeasurement cannot be applied to given types;,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getPartial(parameters[j], index);
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getColumns().length;
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getAllCols().length;
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getColumnCount().length;
+compilation error,76,add,[CE] no suitable method found for fill(EstimatedParameter,int),,  Arrays.fill(parameters[i], index);
+compilation error,76,add,[CE] no suitable method found for fill(EstimatedParameter),,  Arrays.fill(parameters[i]);
+compilation error,76,add,[CE] no suitable method found for fill(EstimatedParameter,<null>),,  Arrays.fill(parameters[i], null);
+compilation error,76,add,[CE] no suitable method found for fill(EstimatedParameter,int,int),,  Arrays.fill(parameters[i], 0, index);
+compilation error,76,add,[CE] no suitable method found for fill(EstimatedParameter,int),,  Arrays.fill(parameters[i], index + 1);
+compilation error,74,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = getRows();
+compilation error,74,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = calculateRowCount();
+compilation error,74,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = Arrays.get(parameters);
+compilation error,74,add,[CE] cannot find symbol,,  NumberedMeasurement[] rows = calculateRows();
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getColumns().length - 1;
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getColumnsCount().length;
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getColumns().length + 1;
+compilation error,74,replace,[CE] no suitable method found for fill(EstimatedParameter[],int,int),Arrays.fill(jacobian, 0); ,Arrays.fill(parameters, 0, parameters.length);
+compilation error,74,replace,[CE] cannot find symbol jcobian,Arrays.fill(jacobian, 0); ,Arrays.fill(jcobian, 0, parameters.length);
+compilation error,78,add,[CE] cannot find symbol,,  int cols = wm.getColumnCount();
+compilation error,78,add,[CE] cannot find symbol,,  int cols = wm.getColumns();
+compilation error,78,add,[CE] no suitable method found for fill(EstimatedParameter,<null>),,  Arrays.fill(parameters[i], null);
+compilation error,78,add,[CE] no suitable method found for fill(EstimatedParameter,int,double),,  Arrays.fill(parameters[i], 0, factor);
+compilation error,166,add,[CE] variable rows is already defined in method getCovariances(EstimationProblem),,  final int rows = problem.getRows().length;
+compilation error,166,add,[CE] variable rows is already defined in method getCovariances(EstimationProblem),,  final int rows = problem.getAllRows().length;
+compilation error,166,add,[CE] cannot find symbol,,  final int index = problem.getAllIndex();
+compilation error,166,add,[CE] cannot find symbol,,  final int index = problem.getAllIndexes().length;
+compilation error,166,add,[CE] cannot find symbol,,  final int index = problem.getRows().length;
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.getFactor());
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.getFixedMean());
+compilation error,73,add,[CE] cannot find symbol,,  double[] rows = getRowValues();
+compilation error,73,add,[CE] cannot find symbol,,  int rows = getRowCount();
+compilation error,73,add,[CE] cannot find symbol,,  int rows = calculateRowCount();
+compilation error,73,add,[CE] cannot find symbol,,  int rows = getRowIndex();
+compilation error,165,add,[CE] variable problem is already defined in method getCovariances(EstimationProblem),,  final EstimationProblem problem = ime.getCovariance();
+compilation error,165,add,[CE] variable problem is already defined in method getCovariances(EstimationProblem),,  final EstimationProblem problem = ime.getCost();
+compilation error,165,add,[CE] variable problem is already defined in method getCovariances(EstimationProblem),,  final EstimationProblem problem = ime.getCovariable();
+compilation error,165,add,[CE] variable problem is already defined in method getCovariances(EstimationProblem),,  final EstimationProblem problem = ime.getNode();
+compilation error,165,add,[CE] variable problem is already defined in method getCovariances(EstimationProblem),,  final EstimationProblem problem = ime.findProblem(problem);
+compilation error,75,replace,[CE] int cannot be dereferenced,for (int i = 0, index = 0; i < rows; i++) { ,for(int i = 0, index = 0; i < rows.length; i++) {
+compilation error,75,replace,[CE] cannot find symbol columns,for (int i = 0, index = 0; i < rows; i++) { ,for(int i = 0, index = 0; i < columns.length; i++) {
+compilation error,78,replace,[CE] cannot find symbol columns,for (int j = 0; j < cols; ++j) { ,for(int j = 0; j < columns.length; ++j) {
+compilation error,78,replace,[CE] cannot find symbol dimensions,for (int j = 0; j < cols; ++j) { ,for(int j = 0; j < dimensions.length; ++j) {
+compilation error,78,replace,[CE] cannot find symbol ,for (int j = 0; j < cols; ++j) { ,for(int j = 0; j < variables.length; ++j) {
+compilation error,73,replace,[CE] ';' expected,incrementJacobianEvaluationsCounter(); ,int incrementJacobianEvaluationsCounter();
+compilation error,73,replace,[CE] cannot find symbol,incrementJacobianEvaluationsCounter(); ,incrementJacobianEvaluations(0, 0);
+compilation error,73,replace,[CE] cannot find symbol values,incrementJacobianEvaluationsCounter(); ,incrementJacobianEvaluations(values);
+compilation error,77,add,[CE] cannot find symbol,,  int cols = wm.getColumns();
+compilation error,77,add,[CE] cannot find symbol,,  int cols = wm.getColumnsCount();
+compilation error,77,add,[CE] cannot find symbol,,  int cols = wm.getColumnSize();
+compilation error,165,replace,[CE] cannot find symbol,final int rows = problem.getMeasurements().length; ,final int rows = problem.getAllRows().length;
+compilation error,165,replace,[CE] cannot find symbol,final int rows = problem.getMeasurements().length; ,final int rows = problem.getAllRawParameters().length;
+compilation error,76,add,[CE] cannot find symbol,,  EstimatedMeasurement[] parameters = calculateParameters(i);
+compilation error,76,add,[CE] cannot find symbol,,  int cols = calculateColumnSize(i, index);
+compilation error,76,add,[CE] cannot find symbol,,  EstimatedMeasurement[] parameters = calculateParams(i, index);
+compilation error,75,add,[CE] cannot find symbol,,  double[] rows = getRowValues();
+compilation error,75,add,[CE] cannot find symbol,,  Number[] rows = getRowValues();
+compilation error,75,add,[CE] cannot find symbol,,  int rows = calculateRowCount();
+compilation error,75,add,[CE] no suitable method found for fill(EstimatedParameter[],int,int),,  Arrays.fill(parameters, 0, parameters.length);
+compilation error,74,add,[CE] cannot find symbol,,  double[] rows = getRowValues();
+compilation error,74,add,[CE] cannot find symbol,,  int rows = getRowCount();
+compilation error,74,add,[CE] cannot find symbol,,  int rows = calculateRowCount();
+compilation error,76,replace,[CE] cannot find symbol values,WeightedMeasurement wm = measurements[i]; ,WeightedMeasurement wm = values[i];
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,checkAlterParameters();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,checkInternal();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,clearResult();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,validate(problem.getResult());
+compilation error,79,replace,[CE] cannot find symbol,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getPartialValue(parameters[j]);
+compilation error,79,replace,[CE] cannot find symbol,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getFactory();
+compilation error,79,replace,[CE] ';' expected,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getFieldType(j));
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,int),,  Arrays.fill(parameters[i], index + 1);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter),,  Arrays.fill(parameters[i]);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,int),,  Arrays.fill(parameters[i], index);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,double),,  Arrays.fill(parameters[i], index + factor);
+compilation error,162,add,[CE] cannot find symbol,,  System.err.println("Unable to parse:" + problem.getName());
+compilation error,162,add,[CE] cannot find symbol,,  System.err.println("Unable to parse:" + problem.getType());
+compilation error,162,add,[CE] cannot find symbol,,  System.err.println("Unexpected parameter '" + problem.getName());
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sqrt(wm.getValue());
+compilation error,77,replace,[CE] cannot find symbol,double factor = -Math.sqrt(wm.getWeight()); ,double factor = -Math.sin(wm.getFixedMean());
+compilation error,74,replace,[CE] cannot find symbol data,Arrays.fill(jacobian, 0); ,Arrays.fill(data, null);
+compilation error,74,replace,[CE] cannot find symbol data,Arrays.fill(jacobian, 0); ,Arrays.fill(data, 0);
+compilation error,73,add,[CE] cannot find symbol,,  double[] rows = getRowCount();
+compilation error,73,add,[CE] int cannot be dereferenced,,  int rows = this.maxCostEval.getRowCount();
+compilation error,73,add,[CE] int cannot be dereferenced,,  int rows = this.maxCostEval.getRowIndex();
+compilation error,73,add,[CE] cannot find symbol values,,  double[] rows = values[size() ];
+compilation error,75,add,[CE] cannot find symbol values,,  Number[] rows = values[size() ];
+compilation error,75,add,[CE] cannot find symbol values,,  double[] rows = values[size() ];
+compilation error,75,add,[CE] cannot find symbol,,  int rows = measurements.size();
+compilation error,77,add,[CE] variable cols might not have been initialized,,  int cols = Math.min(cols, i + 1);
+compilation error,77,add,[CE] variable cols might not have been initialized,,  int cols = Math.min(cols, i);
+compilation error,77,add,[CE] cannot find symbol,,  wm.setIndex(i);
+compilation error,166,replace,[CE] cannot find symbol,final int cols = problem.getAllParameters().length; ,final int cols = problem.getColumnsCount();
+compilation error,78,replace,[CE] cannot find symbol dimensions,for (int j = 0; j < cols; ++j) { ,for(int j = 0; j < dimensions; ++j) {
+compilation error,79,add,[CE] ')' expected,,  Arrays.fill(parameters[i], index + 1]);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,<null>),,  Arrays.fill(parameters[i], null);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,double),,  Arrays.fill(parameters[i], factor);
+compilation error,79,add,[CE] no suitable method found for fill(EstimatedParameter,Double),,  Arrays.fill(parameters[i], new Double(factor));
+compilation error,166,add,[CE] cannot find symbol,,  row[][] sum = new double[rows][problem.getAllParameters().length];
+compilation error,166,add,[CE] not a statement,,  if(rows > 0) { for(int i = 0; i < rows; ++i) { problem.getAllParameters().length; }
+compilation error,166,add,[CE] illegal start of expression,,  if(rows > 0) { for(int i = 0; i < rows; ++i) { problem.getMean(); }
+compilation error,166,add,[CE] not a statement,,  if(rows > 0) { for(int i = 0; i < rows; ++i) { problem.getMeasures().length; }
+compilation error,166,add,[CE] illegal start of expression,,  if(rows > 0) { for(int i = 0; i < rows; ++i) { problem.setMean(i); }
+compilation error,162,add,[CE] cannot find symbol,,  problem.invalidate();
+compilation error,162,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(null);
+compilation error,162,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(null, null);
+compilation error,162,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(this, parameters.length);
+compilation error,162,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(this, parameters);
+compilation error,73,replace,[CE] cannot find symbol,incrementJacobianEvaluationsCounter(); ,checkInvariant();
+compilation error,73,replace,[CE] method updateJacobian in class AbstractEstimator cannot be applied to given types;,incrementJacobianEvaluationsCounter(); ,updateJacobian(false);
+compilation error,79,replace,[CE] cannot find symbol,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getFieldType(i);
+compilation error,79,replace,[CE] cannot find symbol,jacobian[index++] = factor * wm.getPartial(parameters[j]); ,jacobian[index++] = factor * wm.getImpl(parameters[j]);
+compilation error,165,add,[CE] ,,  problem = new EstimationProblem(new InvalidMatrixException("");
+compilation error,165,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(null);
+compilation error,165,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(null, parameters.length);
+compilation error,165,add,[CE] EstimationProblem is abstract; cannot be instantiated,,  problem = new EstimationProblem(this, parameters);
+compilation error,165,add,[CE] cannot find symbol,,  problem = new EstimationProblem(new InvalidMean());
+compilation error,78,add,[CE] possible loss of precision,,  int cols = Math.min(cols, factor);
+compilation error,76,replace,[CE] bad operand types for binary operator '-',WeightedMeasurement wm = measurements[i]; ,WeightedMeasurement wm = measurements[i] - 1;
+compilation error,74,add,[CE] cannot find symbol,,  double[] rows = getRowCount();
+compilation error,74,add,[CE] cannot find symbol values,,  double[] rows = values[size() ];
+compilation error,74,add,[CE] int cannot be dereferenced,,  int rows = this.maxCostEval.getRowCount();
+compilation error,74,add,[CE] cannot find symbol,,  int rows = this.maxCostEval + calculateRowCount();
+compilation error,74,add,[CE] int cannot be dereferenced,,  int rows = this.maxCostEval.getRowIndex();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,checkInvariant();
+compilation error,162,replace,[CE] cannot find symbol,updateJacobian(); ,invalidate();
+compilation error,76,add,[CE] cannot find symbol estimates,,  estimates[i] = calculateMean(parameters[i]);
+compilation error,76,add,[CE] cannot find symbol estimates,,  estimates[i] = calculateMeanParameter(parameters[i]);
+compilation error,165,replace,[CE] cannot find symbol,final int rows = problem.getMeasurements().length; ,final int rows = problem.getAllRangeParameters().length;
+compilation error,75,replace,[CE] cannot find symbol index,for (int i = 0, index = 0; i < rows; i++) { ,for(int i = 0, cols = 0; i < rows; i++) {
+compilation error,75,replace,[CE] cannot find symbol index,for (int i = 0, index = 0; i < rows; i++) { ,for(int i = 0, asPath = 0; i < rows; i++) {

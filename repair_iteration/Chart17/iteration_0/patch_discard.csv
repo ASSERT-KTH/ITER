@@ -1,10 +1,481 @@
-patch is same with buggy,,this.domain = domain; ,this.domain = domain;
-compilation error,[CE] incompatible types,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION;
-compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAIN_DESCRIPTION;
-compilation error,[CE] incompatible types,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION || DEFAULT_RANGE_DESCRIPTION;
-compilation error,[CE] ';' expected,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION;
-compilation error,[CE] incompatible types,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION * DUPLICATE_DOMAIN_DESCRIPTION;
-compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAINE_DESCRIPTION;
-compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAIN_DECRIPTION;
-compilation error,[CE] ';' expected,this.domain = domain; ,this.domain = domain? domain : DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
-compilation error,[CE] cannot find symbol,this.domain = domain; ,this.domain = domain && isRegexpAnonymousOrUndefined()? domain : DEFAULT_DOMAIN_DECRIPTION;
+patch is same with buggy,544,replace,,fireSeriesChanged(); ,fireSeriesChanged();
+compilation error,544,replace,[CE] cannot find symbol,fireSeriesChanged(); ,updateSeriesChanged();
+compilation error,544,add,[CE] cannot find symbol,,item.addChangeListener(this);
+compilation error,544,add,[CE] cannot find symbol,,item.removeChangeListener(this);
+compilation error,544,add,[CE] cannot find symbol,,item.addChangeListener(this); this.data.remove(0);
+patch is same with buggy,492,replace,,if (!item.getPeriod().getClass().equals(this.timePeriodClass)) { ,if(!item.getPeriod().getClass().equals(this.timePeriodClass)) {
+compilation error,492,replace,[CE] illegal start of type,if (!item.getPeriod().getClass().equals(this.timePeriodClass)) { , 
+patch is same with buggy,178,replace,,this.maximumItemAge = Long.MAX_VALUE; ,this.maximumItemAge = Long.MAX_VALUE;
+increase failing tests,178,replace, [FE] AssertionFailedError,this.maximumItemAge = Long.MAX_VALUE; ,this.maximumItemAge = Integer.MAX_VALUE;
+increase failing tests,178,replace, [FE] AssertionFailedError,this.maximumItemAge = Long.MAX_VALUE; , 
+compilation error,601,add,[CE] cannot find symbol,,item.addValue(value); fireSeriesChanged();
+patch is same with buggy,746,replace,,if (removed && notify) { ,if(removed && notify) {
+increase failing tests,746,replace, [FE] AssertionFailedError,if (removed && notify) { ,if(removed || notify) {
+patch is same with buggy,746,replace,,if (removed && notify) { , 
+compilation error,508,add,[CE] illegal start of expression,,if(item.getPeriod().compareTo(count)> 0) { if(!notify) { this.data.add(item); }
+compilation error,508,add,[CE] illegal start of expression,,if(item.getPeriod().compareTo(this.timePeriodClass)> 0) { if(!notify) { this.data.add(item); }
+patch is same with buggy,513,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,513,replace,[CE] no suitable method found for add(TimeSeriesDataItem,RegularTimePeriod),this.data.add(item); ,this.data.add(item, last);
+increase failing tests,513,replace, [FE] AssertionFailedError,this.data.add(item); , 
+patch is same with buggy,586,replace,,add(period, value, true); ,add(period, value, true);
+increase failing tests,586,replace, [FE]  Size,add(period, value, true); , 
+patch is same with buggy,370,replace,,return getDataItem(index).getPeriod(); ,return getDataItem(index).getPeriod();
+compilation error,370,replace,[CE] cannot find symbol,return getDataItem(index).getPeriod(); ,return getDataItem(index).getPeriodType();
+compilation error,370,replace,[CE] missing return statement,return getDataItem(index).getPeriod(); , 
+patch is same with buggy,508,replace,,added = true; ,added = true;
+patch is same with buggy,742,replace,,> this.maximumItemAge) { ,> this.maximumItemAge) {
+increase failing tests,742,replace, [FE] IllegalArgumentException,> this.maximumItemAge) { ,> this.maximumItemCount) {
+compilation error,742,replace,[CE] ,> this.maximumItemAge) { , 
+increase failing tests,176,add, [FE] NullPointerException,,if(!this.domain.equals(domain)) { this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE; this.maximumItemAge = Long.MAX_VALUE; }
+increase failing tests,176,add, [FE] NullPointerException,,if(!this.domain.equals(domain)) { this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE; this.maximumItemAge = Integer.MAX_VALUE; }
+compilation error,176,add,[CE] cannot find symbol intValue,,if(!this.domain.equals(domain)) { this.data = new java.util.ArrayList(); this.maximumItemCount = Integer.MAX_VALUE; this.maximumItemAge = intValue; }
+patch is same with buggy,857,replace,,Object clone = createCopy(0, getItemCount() - 1); ,Object clone = createCopy(0, getItemCount() - 1);
+increase failing tests,857,replace, [FE]  Size,Object clone = createCopy(0, getItemCount() - 1); ,Object clone = createCopy(0, getItemCount());
+compilation error,857,replace,[CE] cannot find symbol clone,Object clone = createCopy(0, getItemCount() - 1); , 
+increase failing tests,602,add, [FE] AssertionFailedError,,data.add(item); fireSeriesChanged();
+compilation error,602,add,[CE] cannot find symbol,,item.addValue(); fireSeriesChanged();
+patch is same with buggy,173,replace,,this.domain = domain; ,this.domain = domain;
+compilation error,179,add,[CE] cannot find symbol minimumItemAge,,this.maximumItemCount = Integer.MAX_VALUE; this.minimumItemAge = Long.MAX_VALUE;
+compilation error,179,add,[CE] cannot find symbol minimumItemAge,,this.maximumItemCount = Integer.MAX_VALUE; this.minimumItemAge = Integer.MAX_VALUE;
+compilation error,178,add,[CE] cannot find symbol minimumItemCount,,this.minimumItemCount = Integer.MAX_VALUE;
+compilation error,178,add,[CE] cannot find symbol minimumItemCount,,this.minimumItemCount = Long.MAX_VALUE;
+compilation error,178,add,[CE] cannot find symbol minimumItemCount,,this.minimumItemCount = 0;
+compilation error,179,replace,[CE] illegal start of expression,} ,this.maximumItemCount = Integer.MAX_VALUE; this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+compilation error,857,add,[CE] no suitable method found for createCopy(int),,Object clone = createCopy(getItemCount() - 1);
+compilation error,857,add,[CE] variable clone is already defined in method clone(),,Object clone = createCopy(0, getItemCount() - 2);
+compilation error,540,add,[CE] illegal start of expression,,if(item.getPeriod() > this.maximumItemCount) { if(!b.toString().equals(item.getValue())) { fireSeriesChanged(); }
+compilation error,540,add,[CE] illegal start of expression,,if(item.getPeriod() > this.maximumItemCount) { if(!b.isEmpty()) { fireSeriesChanged(); }
+compilation error,540,add,[CE] illegal start of expression,,if(item.getPeriod() > this.maximumItemCount) { if(!b.toString().equals(item.getValue())) { throw new SeriesException(""); }
+compilation error,512,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item = getDataItem(getItemCount() - 1);
+compilation error,512,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item = getDataItem(getItemCount() - last);
+compilation error,512,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item = getDataItem(last);
+increase failing tests,506,replace, [FE] ArrayIndexOutOfBoundsException,if (count == 0) { ,if(count > 0) {
+increase failing tests,506,replace, [FE] ArrayIndexOutOfBoundsException,if (count == 0) { ,if(count == 1) {
+compilation error,506,replace,[CE] illegal start of type,if (count == 0) { , 
+patch is same with buggy,176,replace,,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayList();
+compilation error,176,replace,[CE] cannot find symbol,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayListWithCapacity(this.data.size());
+patch is same with buggy,504,replace,,boolean added = false; ,boolean added = false;
+compilation error,504,replace,[CE] cannot find symbol added,boolean added = false; , 
+patch is same with buggy,507,replace,,this.data.add(item); ,this.data.add(item);
+increase failing tests,507,replace, [FE] AssertionFailedError,this.data.add(item); ,this.data.remove(item);
+increase failing tests,507,replace, [FE] AssertionFailedError,this.data.add(item); , 
+compilation error,339,add,[CE] not a statement,,TimeSeriesDataItem this =(TimeSeriesDataItem)this.data.get(index);
+compilation error,339,add,[CE] not a statement,,TimeSeriesDataItem this = getDataItem(index);
+compilation error,238,add,[CE] generics are not supported in -source 1.4,,if(this.data!= null) { this.data = new ArrayList < TimePeriodClass>(); for(int i = 0; i < this.data.size(); i++) { this.data.add(i); }
+compilation error,238,add,[CE] generics are not supported in -source 1.4,,if(this.data!= null) { this.data = new ArrayList < TimePeriodClass>(); for(int i = 0; i < this.data.size(); i++) { this.data.get(i); }
+compilation error,238,add,[CE] generics are not supported in -source 1.4,,if(this.data!= null) { this.data = new ArrayList < TimePeriodClass>(); for(int i = 0; i < this.data.size(); ++i) { this.data.add(i); }
+patch is same with buggy,153,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass);
+compilation error,153,replace,[CE] ';' expected,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass));
+compilation error,153,replace,[CE] no suitable constructor found for Series(),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); , 
+increase failing tests,879,replace, [FE] IllegalArgumentException,if (end < start) { ,if(end > start) {
+patch is same with buggy,879,replace,,if (end < start) { ,if(end < start) {
+compilation error,879,replace,[CE] <identifier> expected,if (end < start) { , 
+compilation error,489,add,[CE] incomparable types: TimeSeriesDataItem and TimeSeries,,if(item == this) { throw new IllegalArgumentException(""); }
+compilation error,489,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item = item.getDataItem(notify);
+compilation error,489,add,[CE] incomparable types: TimeSeriesDataItem and TimeSeries,,if(item == this) { throw new IllegalArgumentException("Null 'item' argument."); }
+compilation error,742,add,[CE] illegal start of expression,,&&(latest > getTimePeriod(0).getSerialIndex()))) { this.data.remove(0);
+compilation error,742,add,[CE] illegal start of expression,,&&(latest > getTimePeriod(1).getSerialIndex() - 1))) { this.data.remove(0);
+compilation error,742,add,[CE] illegal start of expression,,&&(latest > getTimePeriod(0).getSerialIndex()))) { removed = true;
+compilation error,142,replace,[CE] illegal start of expression,} ,fireSeriesChanged();
+compilation error,142,replace,[CE] generics are not supported in -source 1.4,} ,this.data = new ArrayList < TimePeriodClass>();
+compilation error,142,replace,[CE] illegal start of expression,} , 
+compilation error,492,add,[CE] generics are not supported in -source 1.4,,List < TimeSeriesDataItem> data = item.getDataItem(notify);
+compilation error,492,add,[CE] generics are not supported in -source 1.4,,List < TimeSeriesDataItem> data = item.getDataItem();
+compilation error,492,add,[CE] generics are not supported in -source 1.4,,List < TimeSeriesDataItem> data = item.getDataItem(this.data);
+patch is same with buggy,534,replace,,if (added) { ,if(added) {
+compilation error,534,replace,[CE] class or interface expected,if (added) { , 
+increase failing tests,534,add, [FE] AssertionFailedError,,this.data.add(item);
+compilation error,534,add,[CE] cannot find symbol b,,b.append(item.getPeriod().toString());
+compilation error,534,add,[CE] cannot find symbol b,,b.append(item.getPeriod());
+increase failing tests,739,replace, [FE]  Size,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); ,long latest = getTimePeriod(getItemCount() / 1).getSerialIndex();
+patch is same with buggy,739,replace,,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); ,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,739,replace,[CE] cannot find symbol latest,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); , 
+patch is same with buggy,505,replace,,int count = getItemCount(); ,int count = getItemCount();
+increase failing tests,505,replace, [FE] ArrayIndexOutOfBoundsException,int count = getItemCount(); ,int count = getItemCount() - 1;
+compilation error,505,replace,[CE] cannot find symbol count,int count = getItemCount(); , 
+patch is same with buggy,489,replace,,if (item == null) { ,if(item == null) {
+increase failing tests,489,replace, [FE] IllegalArgumentException,if (item == null) { ,if(item == null || notify) {
+compilation error,504,add,[CE] illegal start of expression,,if(notify) { if(item.getPeriod().compareTo(this.timePeriodClass) > 0) { this.data.add(item); }
+compilation error,504,add,[CE] illegal start of expression,,while(item.getPeriod()!= null) { this.data.add(item);
+compilation error,504,add,[CE] illegal start of expression,,if(notify) { if(item.getPeriod().compareTo(this.data.get(item)) > 0) { this.data.add(item); }
+compilation error,506,add,[CE] illegal start of expression,,if(count > 1) { if(item.getPeriod().compareTo(this.timePeriodClass)> 0) { this.data.add(item); added = true; }
+compilation error,506,add,[CE] illegal start of expression,,if(count > 1) { if(item.getPeriod().compareTo(count)> 0) { this.data.add(item); added = true; }
+increase failing tests,142,add, [FE] ClassCastException,,this.data.add(name);
+compilation error,879,add,[CE] illegal start of expression,,if(end > start) { if(start > end) { throw new IllegalArgumentException("Requires start <= 0."); }
+increase failing tests,879,add, [FE] IllegalArgumentException,,if(end > start) { throw new IllegalArgumentException("Requires start <= 0."); }
+increase failing tests,879,add, [FE] IllegalArgumentException,,if(end > start) { throw new IllegalArgumentException("Requires start <= end."); }
+compilation error,173,add,[CE] cannot find symbol,,java.util.ArrayList(); this.domain = domain;
+patch is same with buggy,536,replace,,if (getItemCount() > this.maximumItemCount) { ,if(getItemCount() > this.maximumItemCount) {
+patch is same with buggy,536,replace,,if (getItemCount() > this.maximumItemCount) { ,if (getItemCount() > this.maximumItemCount) {
+compilation error,536,replace,[CE] class or interface expected,if (getItemCount() > this.maximumItemCount) { , 
+patch is same with buggy,140,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class);
+increase failing tests,140,replace, [FE] IllegalArgumentException,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Date.class);
+compilation error,140,replace,[CE] no suitable constructor found for Series(),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class); , 
+patch is same with buggy,339,replace,,return (TimeSeriesDataItem) this.data.get(index); ,return(TimeSeriesDataItem)this.data.get(index);
+increase failing tests,339,replace, [FE] ArrayIndexOutOfBoundsException,return (TimeSeriesDataItem) this.data.get(index); ,return(TimeSeriesDataItem)this.data.get(index - 1);
+patch is same with buggy,339,replace,,return (TimeSeriesDataItem) this.data.get(index); , 
+patch is same with buggy,540,replace,,removeAgedItems(false);// remove old items if necessary, but   // don't notify anyone, because that     // happens next anyway... ,removeAgedItems(false);// remove old items if necessary, but // don't notify anyone, because that // happens next anyway...
+compilation error,587,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value); fireSeriesChanged();
+compilation error,587,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,data.add(period, value); fireSeriesChanged();
+compilation error,876,add,[CE] variable clone is already defined in method createCopy(int,int),,TimeSeriesDataItem clone =(TimeSeriesDataItem)super.clone();
+compilation error,876,add,[CE] variable item is already defined in method createCopy(int,int),,TimeSeriesDataItem item =(TimeSeriesDataItem)super.clone();
+compilation error,876,add,[CE] variable start is already defined in method createCopy(int,int),,int start = getItemCount();
+compilation error,505,add,[CE] illegal start of expression,,while(item.getPeriod()!= null) { this.data.add(item); added = true;
+compilation error,505,add,[CE] illegal start of expression,,while(item.getPeriod()!= null) { this.data.add(item);
+compilation error,505,add,[CE] illegal start of expression,,while(item.getPeriod()!= getItemCount()) { this.data.add(item); added = true;
+patch is same with buggy,512,replace,,if (item.getPeriod().compareTo(last) > 0) { ,if(item.getPeriod().compareTo(last)> 0) {
+increase failing tests,512,replace, [FE] AssertionFailedError,if (item.getPeriod().compareTo(last) > 0) { ,if(item.getPeriod().compareTo(last) < 0) {
+compilation error,140,add,[CE] cannot find symbol,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Time.class);
+compilation error,140,add,[CE] no suitable constructor found for TimeSeries(Comparable,String,String),,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,140,add,[CE] no suitable constructor found for TimeSeries(Comparable,String,String,int),,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, 0);
+increase failing tests,511,replace, [FE]  Size,RegularTimePeriod last = getTimePeriod(getItemCount() - 1); ,RegularTimePeriod last = getTimePeriod(getItemCount());
+patch is same with buggy,511,replace,,RegularTimePeriod last = getTimePeriod(getItemCount() - 1); ,RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+compilation error,511,replace,[CE] cannot find symbol last,RegularTimePeriod last = getTimePeriod(getItemCount() - 1); , 
+compilation error,177,add,[CE] cannot find symbol,,this.domain = domain.getName(); this.range = range;
+increase failing tests,177,add, [FE] ClassCastException,,this.data.add(name);
+compilation error,172,replace,[CE] no suitable constructor found for Series(Comparable,String,String),super(name); ,super(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,172,replace,[CE] no suitable constructor found for Series(),super(name); , 
+compilation error,740,add,[CE] illegal start of expression,,while(( latest - getTimePeriod(0).getSerialIndex())> this.maximumItemAge) { this.data.remove(0);
+compilation error,740,add,[CE] illegal start of expression,,while(( latest - getTimePeriod(0).getSerialIndex())> this.maximumItemAge) { this.data.remove(1);
+patch is same with buggy,174,replace,,this.range = range; ,this.range = range;
+compilation error,174,replace,[CE] incompatible types,this.range = range; ,this.range = 0;
+increase failing tests,507,add, [FE] AssertionFailedError,,this.data.add(item); added = true;
+increase failing tests,507,add, [FE]  Size,,this.data.remove(0);
+increase failing tests,536,add, [FE] AssertionFailedError,,this.data.add(item);
+increase failing tests,536,add, [FE] AssertionFailedError,,this.data.remove(0);
+increase failing tests,738,add, [FE] AssertionFailedError,,this.data.remove(0);
+compilation error,738,add,[CE] incompatible types,,TimeSeries timePeriodClass = getTimePeriodClass();
+increase failing tests,738,add, [FE] AssertionFailedError,,this.data.remove(0); notify = true;
+compilation error,370,add,[CE] incompatible types,,TimeSeries data = getDataItem(index);
+compilation error,370,add,[CE] no suitable method found for add(int),,this.data.add(index);
+compilation error,155,replace,[CE] illegal start of expression,} ,fireSeriesChanged();
+compilation error,155,replace,[CE] illegal start of expression,} ,this.data.add(name);
+compilation error,155,replace,[CE] illegal start of expression,} , 
+compilation error,543,add,[CE] cannot find symbol,,item.removeChangeListener(this);
+compilation error,543,add,[CE] not a statement,,item.getDataItemCount() > this.maximumItemCount;
+compilation error,543,add,[CE] cannot find symbol,,item.removeChangeListener(this); this.data.remove(0);
+patch is same with buggy,601,replace,,add(item, notify); ,add(item, notify);
+compilation error,601,replace,[CE] cannot find symbol,add(item, notify); ,setValue(item, notify);
+compilation error,172,add,[CE] call to super must be first statement in constructor,,this(name, domain, range, timePeriodClass);
+compilation error,172,add,[CE] no suitable constructor found for TimeSeries(Comparable,String,String,Class,<null>),,this(name, domain, range, timePeriodClass, null);
+compilation error,172,add,[CE] no suitable constructor found for TimeSeries(Comparable,String,String,Class,boolean),,this(name, domain, range, timePeriodClass, false);
+compilation error,586,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value);
+compilation error,586,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value); fireSeriesChanged();
+compilation error,586,add,[CE] cannot find symbol,,TimePeriodClass data = getDataItem(period); this.data.add(value);
+patch is same with buggy,514,replace,,added = true; ,added = true;
+patch is same with buggy,738,replace,,if (getItemCount() > 1) { ,if(getItemCount() > 1) {
+increase failing tests,876,replace, [FE] IllegalArgumentException,if (start < 0) { ,if(end > start) {
+increase failing tests,876,replace, [FE] IllegalArgumentException,if (start < 0) { ,if(start > 0) {
+patch is same with buggy,543,replace,,if (notify) { ,if(notify) {
+patch is same with buggy,543,replace,,if (notify) { ,if (notify) {
+compilation error,600,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value); notify = true;
+compilation error,600,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value);
+compilation error,600,add,[CE] no suitable method found for add(RegularTimePeriod,Number,boolean),,this.data.add(period, value, notify);
+patch is same with buggy,238,replace,,return this.data.size(); ,return this.data.size();
+increase failing tests,238,replace, [FE] ArrayIndexOutOfBoundsException,return this.data.size(); ,return this.data.size() - 1;
+compilation error,513,add,[CE] incompatible types,,item = item.getPeriod().compareTo(last);
+compilation error,513,add,[CE] bad operand type TimeSeriesDataItem for unary operator '-',,this.data.add(-item);
+increase failing tests,746,add, [FE] NullPointerException,,this.data.remove(0);
+increase failing tests,746,add, [FE] AssertionFailedError,,this.data.remove(0); removed = true;
+increase failing tests,746,add, [FE] NullPointerException,,this.data.remove(0); removed = false;
+compilation error,153,add,[CE] no suitable constructor found for TimeSeries(Comparable,String,String),,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+compilation error,153,add,[CE] cannot find symbol Lists,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); data = Lists.newArrayList();
+compilation error,514,add,[CE] illegal start of expression,,if(item.getPeriod().compareTo(last)> 0) { if(!notify) { this.data.add(item); }
+compilation error,514,add,[CE] illegal start of expression,,if(item.getPeriod().equals(last)) { if(!notify) { this.data.add(item); }
+compilation error,514,add,[CE] illegal start of expression,,if(item.getPeriod().compareTo(last)> 0) { this.data.add(item); if(notify) { throw new SeriesException(""); }
+compilation error,155,add,[CE] generics are not supported in -source 1.4,,this.data = new ArrayList < TimeSeries>();
+patch is same with buggy,177,replace,,this.maximumItemCount = Integer.MAX_VALUE; ,this.maximumItemCount = Integer.MAX_VALUE;
+compilation error,177,replace,[CE] possible loss of precision,this.maximumItemCount = Integer.MAX_VALUE; ,this.maximumItemCount = Long.MAX_VALUE;
+patch is same with buggy,880,replace,,throw new IllegalArgumentException("Requires start <= end."); ,throw new IllegalArgumentException("Requires start <= end.");
+compilation error,511,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(item);
+compilation error,511,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item = getDataItem(getItemCount() - 1);
+compilation error,511,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(item); added = true;
+patch is same with buggy,600,replace,,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value); ,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value);
+compilation error,600,replace,[CE] no suitable constructor found for TimeSeriesDataItem(RegularTimePeriod,Number,boolean),TimeSeriesDataItem item = new TimeSeriesDataItem(period, value); ,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value, notify);
+increase failing tests,740,replace, [FE] AssertionFailedError,boolean removed = false; ,boolean removed = true;
+patch is same with buggy,740,replace,,boolean removed = false; ,boolean removed = false;
+patch is same with buggy,175,replace,,this.timePeriodClass = timePeriodClass; ,this.timePeriodClass = timePeriodClass;
+compilation error,175,replace,[CE] cannot find symbol,this.timePeriodClass = timePeriodClass; ,this.timePeriodClass = new TimePeriodClass();
+increase failing tests,739,add, [FE] AssertionFailedError,,this.data.remove(0);
+increase failing tests,739,add, [FE] NullPointerException,,this.data.remove(0); fireSeriesChanged();
+compilation error,600,add,[CE] variable item is already defined in method add(RegularTimePeriod,Number,boolean),,TimeSeriesDataItem item = getDataItem(period);
+compilation error,600,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value); notifyListeners(new DatasetChangeEvent(this, period, notify));
+increase failing tests,587,add, [FE] SeriesException,,add(period, value); fireSeriesChanged();
+patch is same with buggy,506,replace,,if (count == 0) { ,if(count == 0) {
+increase failing tests,506,replace, [FE] ArrayIndexOutOfBoundsException,if (count == 0) { ,if(count < 0) {
+increase failing tests,738,add, [FE] AssertionFailedError,,this.data.clear();
+patch is same with buggy,511,replace,,RegularTimePeriod last = getTimePeriod(getItemCount() - 1); ,RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+patch is same with buggy,173,replace,,this.domain = domain; ,this.domain = domain;
+compilation error,505,replace,[CE] cannot find symbol getItemCount,int count = getItemCount(); ,int count = getItemCount - 1;
+patch is same with buggy,544,replace,,fireSeriesChanged(); ,fireSeriesChanged();
+increase failing tests,544,replace, [FE] AssertionFailedError,fireSeriesChanged(); ,this.data.add(item);
+increase failing tests,543,add, [FE] AssertionFailedError,,this.data.remove(0);
+compilation error,543,add,[CE] cannot find symbol,,this.data.remove(item.getItemCount() - 1);
+compilation error,543,add,[CE] cannot find symbol,,this.data.remove(item.getItemCount());
+compilation error,508,add,[CE] cannot find symbol b,,b.append(",");
+compilation error,508,add,[CE] cannot find symbol b,,b.append(".");
+patch is same with buggy,536,replace,,if (getItemCount() > this.maximumItemCount) { ,if(getItemCount() > this.maximumItemCount) {
+patch is same with buggy,738,replace,,if (getItemCount() > 1) { ,if(getItemCount() > 1) {
+compilation error,738,replace,[CE] cannot find symbol,if (getItemCount() > 1) { ,if(getItemCount() > 1 && getChronology().indexOf(this.data.size() - 1)!= this.maximumItemAge) {
+increase failing tests,505,add, [FE] SeriesException,,if(this.data!= null) { throw new SeriesException(""); }
+compilation error,505,add,[CE] illegal start of expression,,if(this.data!= null) { TimeSeriesDataItem item = getDataItem(getTimePeriodClass()); if(item.getPeriod().compareTo(this.data.get(item)) > 0) { this.data.add(item); }
+compilation error,505,add,[CE] illegal start of expression,,if(this.data!= null) { TimeSeriesDataItem item = getDataItem(getTimePeriodClass()); if(item.getPeriod().compareTo(getItemAge() - 1) > 0) { this.data.add(item); }
+increase failing tests,513,add, [FE] ClassCastException,,this.data.add(last);
+compilation error,880,add,[CE] int cannot be dereferenced,,start = end.getTime();
+compilation error,140,replace,[CE] cannot find symbol,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, TimePeriodClass.class);
+patch is same with buggy,140,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class); , 
+compilation error,142,replace,[CE] illegal start of expression,} ,this.data = getDataItem(name);
+compilation error,544,add,[CE] cannot find symbol,,this.data.add(item); notifyListeners(new SubscriberChangeEvent(this));
+compilation error,544,add,[CE] no suitable constructor found for TimeSeriesDataItem(TimeSeriesDataItem,int),,this.data.add(new TimeSeriesDataItem(item, getItemCount() - 1));
+compilation error,155,replace,[CE] illegal start of expression,} ,this.data = getDataItem(timePeriodClass);
+compilation error,155,replace,[CE] illegal start of expression,} ,this.data = createDataset(timePeriodClass);
+patch is same with buggy,600,replace,,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value); ,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value);
+compilation error,602,replace,[CE] illegal start of expression,} ,this.data.add(item); fireSeriesChanged();
+increase failing tests,514,add, [FE] ClassCastException,,this.data.add(last);
+increase failing tests,514,add, [FE] IllegalArgumentException,,if(item.getPeriod().compareTo(last)> 0) { throw new IllegalArgumentException(""); }
+increase failing tests,514,add, [FE] AssertionFailedError,,if(item.getPeriod().compareTo(last)> 0) { this.data.add(item); } else { this.data.add(item); }
+compilation error,179,replace,[CE] illegal start of expression,} ,this.data.add(new java.util.ArrayList());
+compilation error,179,replace,[CE] ')' expected,} ,if(timePeriodClass.isAssignableFrom(name)) { TimeSeries data = new ArrayList(); this.data.add(new TimeSeries(name, domain, range, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION
+compilation error,173,add,[CE] cannot find symbol Preconditions,,Preconditions.checkNotNull(timePeriodClass);
+increase failing tests,504,add, [FE] SeriesException,,this.data.add(item);
+compilation error,504,add,[CE] cannot find symbol b,,b.append(" for that time period. Duplicates are not");
+increase failing tests,504,add, [FE] SeriesException,,if(this.data!= null) { throw new SeriesException(""); }
+increase failing tests,586,add, [FE] StackOverflowError,,add(period, value);
+patch is same with buggy,504,replace,,boolean added = false; ,boolean added = false;
+increase failing tests,238,replace, [FE] IllegalArgumentException,return this.data.size(); ,return this.data.size() / 2;
+patch is same with buggy,238,replace,,return this.data.size(); , 
+compilation error,506,add,[CE] illegal start of expression,,if(count < 1) { if(item.getPeriod().compareTo(this.timePeriodClass)> 0) { this.data.add(item); added = true; }
+compilation error,506,add,[CE] illegal start of expression,,if(count > 0) { if(item.getPeriod().compareTo(this.timePeriodClass)> 0) { this.data.add(item); added = true; }
+compilation error,506,add,[CE] illegal start of expression,,if(count > 0) { if(item.getPeriod().compareTo(last)> 0) { this.data.add(item); added = true; }
+compilation error,179,add,[CE] ')' expected,,if(timePeriodClass.isAssignableFrom(domain)) { TimeSeries data = new ArrayList(); this.data.add(new TimeSeries(name, domain, range, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION
+compilation error,179,add,[CE] method isAssignableFrom in class Class cannot be applied to given types;,,if(timePeriodClass.isAssignableFrom(domain)) { this.data.add(name); } else { this.data.add(range); }
+compilation error,176,add,[CE] cannot find symbol itemCount,,this.itemCount = java.util.ArrayList();
+compilation error,176,add,[CE] cannot find symbol,,java.util.ArrayList().add(this.data);
+compilation error,153,add,[CE] no suitable constructor found for Series(Class),,super(timePeriodClass);
+increase failing tests,540,add, [FE] AssertionFailedError,,this.data.remove(0);
+compilation error,540,add,[CE] cannot find symbol,,b.append(item.getItemCount() - 1);
+increase failing tests,540,add, [FE] AssertionFailedError,,this.data.add(item);
+compilation error,174,add,[CE] cannot find symbol,,this.timePeriodClass = timePeriodClass.getDefault();
+compilation error,174,add,[CE] cannot find symbol,,this.timePeriodClass = timePeriodClass.getTime();
+patch is same with buggy,739,replace,,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); ,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,140,add,[CE] cannot find symbol,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, TimeSeries.newInstance());
+patch is same with buggy,742,replace,,> this.maximumItemAge) { ,> this.maximumItemAge) {
+increase failing tests,742,replace, [FE]  Size,> this.maximumItemAge) { ,> this.maximumItemAge + 1) {
+compilation error,175,add,[CE] incompatible types,,this.timePeriodClass = timePeriodClass.getName();
+compilation error,175,add,[CE] cannot find symbol,,this.timePeriodClass = timePeriodClass.getTime();
+patch is same with buggy,489,replace,,if (item == null) { ,if(item == null) {
+increase failing tests,489,replace, [FE] IllegalArgumentException,if (item == null) { ,if(item == null || item.getClass()!= this.timePeriodClass) {
+compilation error,742,add,[CE] ')' expected,,(( latest - getTimePeriod(0).getSerialIndex())+ 1)) { this.data.remove(0);
+compilation error,742,add,[CE] illegal start of expression,,&&(latest > getTimePeriod(0).getSerialIndex() - 1))) { this.data.remove(0);
+compilation error,742,add,[CE] ')' expected,,(( latest - getTimePeriod(0).getSerialIndex())+ 1)) { this.data.remove(0); removed = true;
+patch is same with buggy,370,replace,,return getDataItem(index).getPeriod(); ,return getDataItem(index).getPeriod();
+compilation error,370,replace,[CE] cannot find symbol,return getDataItem(index).getPeriod(); ,return getDataItem(index).getTimePeriod();
+compilation error,534,add,[CE] cannot find symbol b,,b.append("permitted. Try using the addOrUpdate() method.");
+increase failing tests,534,add, [FE] AssertionFailedError,,this.data.remove(0);
+increase failing tests,177,add, [FE] StackOverflowError,,this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+compilation error,177,add,[CE] no suitable constructor found for TimeSeries(Comparable,String,String),,this.data.add(new TimeSeries(name, domain, range));
+increase failing tests,177,add, [FE] ClassCastException,,this.data.add(new java.util.ArrayList());
+patch is same with buggy,586,replace,,add(period, value, true); ,add(period, value, true);
+compilation error,879,add,[CE] illegal start of expression,,if(end < start) { if(start > end) { throw new IllegalArgumentException(""); }
+compilation error,879,add,[CE] illegal start of expression,,if(end < start) { if(end > 0) { throw new IllegalArgumentException(""); }
+patch is same with buggy,176,replace,,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayList();
+compilation error,176,replace,[CE] cannot find symbol,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayListWithCapacity(2);
+compilation error,739,add,[CE] cannot find symbol,,int count = getTimePeriod(0).getItemCount();
+compilation error,739,add,[CE] possible loss of precision,,int count = getTimePeriod(0).getSerialIndex();
+patch is same with buggy,876,replace,,if (start < 0) { ,if(start < 0) {
+increase failing tests,876,replace, [FE] IllegalArgumentException,if (start < 0) { ,if(start >= 0) {
+patch is same with buggy,508,replace,,added = true; ,added = true;
+compilation error,507,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(index);
+compilation error,507,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)b.clone();
+patch is same with buggy,153,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass);
+compilation error,153,replace,[CE] no suitable constructor found for TimeSeries(Comparable,String,String,Class,<null>),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass, null);
+patch is same with buggy,507,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,507,replace,[CE] cannot find symbol index,this.data.add(item); ,this.data.add(item, index);
+compilation error,543,replace,[CE] notify has private access in Series,if (notify) { ,if(this.notify) {
+patch is same with buggy,514,replace,,added = true; ,added = true;
+increase failing tests,746,add, [FE] AssertionFailedError,,fireSeriesChanged();
+compilation error,178,add,[CE] cannot find symbol minimumItemAge,,this.minimumItemAge = Long.MAX_VALUE;
+patch is same with buggy,175,replace,,this.timePeriodClass = timePeriodClass; ,this.timePeriodClass = timePeriodClass;
+compilation error,175,replace,[CE] incompatible types,this.timePeriodClass = timePeriodClass; ,this.timePeriodClass = timePeriodClass? timePeriodClass : null;
+patch is same with buggy,601,replace,,add(item, notify); ,add(item, notify);
+compilation error,172,add,[CE] call to super must be first statement in constructor,,super(name); this.data = new java.util.ArrayList();
+compilation error,172,add,[CE] call to super must be first statement in constructor,,super(name); this.domain = domain;
+increase failing tests,339,add, [FE]  Size,,this.data.remove(index);
+compilation error,339,add,[CE] cannot find symbol,,TimeSeriesDataItem.getDataItem(index);
+compilation error,601,add,[CE] cannot find symbol,,item.addValue(value);
+patch is same with buggy,880,replace,,throw new IllegalArgumentException("Requires start <= end."); ,throw new IllegalArgumentException("Requires start <= end.");
+compilation error,511,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,RegularTimePeriod item = getTimePeriod(getItemCount() - 1);
+increase failing tests,511,add, [FE] SeriesException,,this.data.add(item); added = true;
+compilation error,511,add,[CE] method get in interface List cannot be applied to given types;,,item =(TimeSeriesDataItem)this.data.get(item);
+patch is same with buggy,172,replace,,super(name); ,super(name);
+increase failing tests,177,replace, [FE] AssertionFailedError,this.maximumItemCount = Integer.MAX_VALUE; ,this.maximumItemCount = Integer.MAX_VALUE + 1;
+compilation error,512,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(last);
+compilation error,512,add,[CE] method get in interface List cannot be applied to given types;,,item =(TimeSeriesDataItem)this.data.get(last);
+patch is same with buggy,857,replace,,Object clone = createCopy(0, getItemCount() - 1); ,Object clone = createCopy(0, getItemCount() - 1);
+compilation error,857,add,[CE] cannot find symbol,,Object clone = createCopy(getSeriesCount() - 1);
+patch is same with buggy,174,replace,,this.range = range; ,this.range = range;
+compilation error,174,replace,[CE] incompatible types,this.range = range; ,this.range = range? DEFAULT_DOMAIN_DESCRIPTION : range;
+compilation error,534,replace,[CE] cannot find symbol added,if (added) { ,if(this.added) {
+compilation error,534,replace,[CE] cannot find symbol add,if (added) { ,if(this.add) {
+patch is same with buggy,534,replace,,if (added) { , 
+compilation error,602,add,[CE] cannot find symbol,,item.addValue(value); fireSeriesChanged();
+patch is same with buggy,339,replace,,return (TimeSeriesDataItem) this.data.get(index); ,return(TimeSeriesDataItem)this.data.get(index);
+compilation error,492,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)item.getData(); if(added) { throw new SeriesException(""); }
+compilation error,492,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)item.clone(); if(added) { throw new SeriesException(""); }
+compilation error,492,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)item.clone();
+patch is same with buggy,513,replace,,this.data.add(item); ,this.data.add(item);
+patch is same with buggy,746,replace,,if (removed && notify) { ,if(removed && notify) {
+increase failing tests,746,replace, [FE] AssertionFailedError,if (removed && notify) { ,if(removed && this.data.isEmpty()) {
+compilation error,238,add,[CE] not a statement,,for(TimePeriodClass i = getDataItems(); i!= null; i) { if(getItemCount() == 0) { throw new IllegalArgumentException(""); }
+patch is same with buggy,512,replace,,if (item.getPeriod().compareTo(last) > 0) { ,if(item.getPeriod().compareTo(last)> 0) {
+compilation error,512,replace,[CE] cannot find symbol,if (item.getPeriod().compareTo(last) > 0) { ,if(last.getPeriod().compareTo(item)> 0) {
+patch is same with buggy,492,replace,,if (!item.getPeriod().getClass().equals(this.timePeriodClass)) { ,if(!item.getPeriod().getClass().equals(this.timePeriodClass)) {
+compilation error,370,add,[CE] cannot find symbol,,checkPeriod(index);
+compilation error,370,add,[CE] illegal start of expression,,for(int i = 0; i < index; i++) { Class timePeriodClass = getTimePeriod(index); if(getTimePeriodClass!= null) { return new TimePeriod(this.timePeriodClass); }
+compilation error,370,add,[CE] illegal start of expression,,for(int i = 0; i < index; i++) { Class timePeriodClass = getDataItem(index); if(getTimePeriodClass!= null) { return new TimePeriod(getTimePeriodClass()); }
+compilation error,536,add,[CE] cannot find symbol b,,this.data.add(item); b.append(" for that time period. Duplicates are not");
+patch is same with buggy,879,replace,,if (end < start) { ,if(end < start) {
+increase failing tests,879,replace, [FE] IllegalArgumentException,if (end < start) { ,if(end < start + 1) {
+increase failing tests,178,replace, [FE]  Size,this.maximumItemAge = Long.MAX_VALUE; ,this.maximumItemAge = Long.MAX_VALUE + 1;
+patch is same with buggy,178,replace,,this.maximumItemAge = Long.MAX_VALUE; , 
+compilation error,740,add,[CE] variable latest is already defined in method removeAgedItems(boolean),,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();
+compilation error,740,add,[CE] variable latest is already defined in method removeAgedItems(boolean),,long latest = getTimePeriod(getItemCount() - 1).getLocalMillis();
+compilation error,740,add,[CE] variable latest is already defined in method removeAgedItems(boolean),,long latest = getTimePeriod(getItemCount() + 1).getSerialIndex();
+compilation error,142,add,[CE] cannot find symbol,,this.data = createDataset(name);
+compilation error,876,add,[CE] variable clone is already defined in method createCopy(int,int),,TimeSeriesDataItem clone =(TimeSeriesDataItem)this.data.get(start);
+compilation error,876,add,[CE] cannot find symbol index,,TimeSeriesDataItem clone =(TimeSeriesDataItem)this.data.get(index);
+compilation error,489,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(item); if(added) { throw new IllegalArgumentException(""); }
+compilation error,489,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(item);
+compilation error,489,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)item.clone(); if(added) { throw new IllegalArgumentException(""); }
+patch is same with buggy,489,replace,,if (item == null) { ,if(item == null) {
+patch is same with buggy,586,replace,,add(period, value, true); ,add(period, value, true);
+compilation error,153,add,[CE] no suitable constructor found for TimeSeries(Comparable,TimeZone,String,String),,this(name, TimeZone.getDefault(), DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+patch is same with buggy,534,replace,,if (added) { , 
+patch is same with buggy,514,replace,,added = true; ,added = true;
+patch is same with buggy,153,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass);
+compilation error,153,replace,[CE] no suitable constructor found for TimeSeries(Comparable,String,String,Class,boolean),this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, timePeriodClass, false);
+compilation error,179,replace,[CE] illegal start of expression,} ,if(data == null) { this.data.add(new TimeSeries(name, domain, range, timePeriodClass)); } else { this.data.add(name); }
+compilation error,179,replace,[CE] illegal start of expression,} ,setDataItem(name); this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+compilation error,142,add,[CE] cannot find symbol Calendar,,peg(Calendar.getInstance());
+increase failing tests,142,add, [FE] ClassCastException,,this.data.add(name); fireSeriesChanged();
+patch is same with buggy,339,replace,,return (TimeSeriesDataItem) this.data.get(index); ,return(TimeSeriesDataItem)this.data.get(index);
+compilation error,857,add,[CE] variable clone is already defined in method clone(),,Object clone =(Object)super.clone();
+compilation error,507,add,[CE] cannot find symbol index,,this.data.add(-index - 1, item);
+compilation error,507,add,[CE] incompatible types,,item = getTimePeriod(getItemCount() - 1);
+compilation error,514,add,[CE] illegal start of expression,,if(notify) { if(item.getPeriod().compareTo(last)> 0) { this.data.add(item); }
+compilation error,514,add,[CE] illegal start of expression,,if(notify) { if(item.getPeriod().equals(last)) { this.data.add(item); }
+compilation error,506,add,[CE] illegal start of expression,,while(it.hasNext()) { this.data.add(item);
+compilation error,506,add,[CE] illegal start of expression,,while(item.getPeriod().equals(getItemCount())) { this.data.add(item);
+compilation error,506,add,[CE] illegal start of expression,,while(it.hasNext()) { if(count > 0) { this.data.add(item); }
+compilation error,172,add,[CE] no suitable constructor found for TimeSeries(),,this();
+compilation error,172,add,[CE] no suitable constructor found for Series(),,super();
+compilation error,876,add,[CE] for-each loops are not supported in -source 1.4,,for(TimeSeriesDataItem item : copy.data) { TimeSeriesDataItem item =(TimeSeriesDataItem)super.clone(); item.getDataItem(0)!= null; if(start < 0) { throw new IllegalArgumentException(""); }
+compilation error,876,add,[CE] for-each loops are not supported in -source 1.4,,for(TimeSeriesDataItem item : copy.data) { TimeSeriesDataItem item =(TimeSeriesDataItem)super.clone(); item.getDataItem(0) == null; if(start < 0) { throw new IllegalArgumentException(""); }
+compilation error,876,add,[CE] for-each loops are not supported in -source 1.4,,for(TimeSeriesDataItem item : copy.data) { TimeSeriesDataItem item =(TimeSeriesDataItem)super.clone(); item.getDataItem(0)!= null; if(start < 0) { throw new IllegalArgumentException("Invalid start of series."); }
+compilation error,155,replace,[CE] illegal start of expression,} ,setDataItem(name, timePeriodClass);
+patch is same with buggy,857,replace,,Object clone = createCopy(0, getItemCount() - 1); ,Object clone = createCopy(0, getItemCount() - 1);
+increase failing tests,857,replace, [FE]  Size,Object clone = createCopy(0, getItemCount() - 1); ,Object clone = createCopy(0, getItemCount() * 1);
+patch is same with buggy,880,replace,,throw new IllegalArgumentException("Requires start <= end."); ,throw new IllegalArgumentException("Requires start <= end.");
+patch is same with buggy,601,replace,,add(item, notify); ,add(item, notify);
+compilation error,601,replace,[CE] cannot find symbol,add(item, notify); ,updateBounds(item, notify);
+compilation error,508,add,[CE] illegal start of expression,,if(notify) { if(item.getPeriod().compareTo(count)> 0) { this.data.add(item); }
+compilation error,508,add,[CE] illegal start of expression,,if(notify) { if(item.getPeriod().compareTo("")> 0) { this.data.add(item); }
+compilation error,177,replace,[CE] class expected,this.maximumItemCount = Integer.MAX_VALUE; ,this.maximumItemCount = long.MAX_VALUE;
+patch is same with buggy,177,replace,,this.maximumItemCount = Integer.MAX_VALUE; , 
+compilation error,339,add,[CE] illegal start of expression,,for(int index = 0; index < this.data.size(); i++) { TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(index); if(item == null) { fireSeriesChanged(); }
+compilation error,339,add,[CE] unclosed string literal,,for(int index = 0; index < this.data.size(); i++) { TimeSeriesDataItem item =(TimeSeriesDataItem)this.data.get(index); if(item == null) { throw new IllegalArgumentException("TimeSeriesDataItem
+compilation error,339,add,[CE] variable index is already defined in method getDataItem(int),,for(int index = 0; index < this.data.size(); ++index) { TimeSeriesDataItem.getDataItem(index); }
+patch is same with buggy,739,replace,,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); ,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();
+increase failing tests,739,replace, [FE]  Size,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); ,long latest = getTimePeriod(getItemCount()).getSerialIndex();
+patch is same with buggy,738,replace,,if (getItemCount() > 1) { ,if(getItemCount() > 1) {
+compilation error,738,replace,[CE] no suitable method found for getItemCount(int),if (getItemCount() > 1) { ,if(getItemCount(1) > this.maximumItemAge) {
+patch is same with buggy,742,replace,,> this.maximumItemAge) { ,> this.maximumItemAge) {
+increase failing tests,742,replace, [FE] AssertionFailedError,> this.maximumItemAge) { ,> this.maximumItemAge - 1) {
+compilation error,172,replace,[CE] cannot find symbol,super(name); ,super(name, Domain.class);
+patch is same with buggy,172,replace,,super(name); , 
+patch is same with buggy,175,replace,,this.timePeriodClass = timePeriodClass; ,this.timePeriodClass = timePeriodClass;
+compilation error,238,add,[CE] illegal start of expression,,for(int i = 0; i < this.data.size(); i++) { TimePeriodClass data =(TimePeriodClass)this.data.get(i); if(data == null) { this.data.add(i); }
+compilation error,238,add,[CE] illegal start of expression,,for(int i = 0; i < this.data.size(); i++) { TimePeriodClass data =(TimePeriodClass)this.data.get(i); if(data!= null) { this.data.add(i); }
+compilation error,238,add,[CE] <identifier> expected,,for(int i = 0; i < this.data.size(); i++) { TimePeriodClass timePeriodClass = getTimePeriodClass(); if(timePeriodClass.getItemCount() == this.data.size()) { this.data.
+patch is same with buggy,370,replace,,return getDataItem(index).getPeriod(); ,return getDataItem(index).getPeriod();
+compilation error,370,replace,[CE] method getPeriod in class TimeSeriesDataItem cannot be applied to given types;,return getDataItem(index).getPeriod(); ,return getDataItem(index).getPeriod(0);
+patch is same with buggy,173,replace,,this.domain = domain; ,this.domain = domain;
+compilation error,175,add,[CE] cannot find symbol,,this.data = new ArrayList();
+compilation error,175,add,[CE] no suitable method found for max(int,Class),,this.maximumItemCount = Math.max(0, timePeriodClass);
+patch is same with buggy,178,replace,,this.maximumItemAge = Long.MAX_VALUE; ,this.maximumItemAge = Long.MAX_VALUE;
+patch is same with buggy,512,replace,,if (item.getPeriod().compareTo(last) > 0) { ,if(item.getPeriod().compareTo(last)> 0) {
+compilation error,512,replace,[CE] cannot find symbol,if (item.getPeriod().compareTo(last) > 0) { ,if(item.getPeriod().compareTo(last)> 0 && item.getYear().compareTo(last) < 0) {
+compilation error,174,add,[CE] cannot find symbol,,this.data = new ArrayList();
+compilation error,174,add,[CE] cannot find symbol time,,this.time = timePeriodClass.getTime();
+patch is same with buggy,536,replace,,if (getItemCount() > this.maximumItemCount) { ,if(getItemCount() > this.maximumItemCount) {
+compilation error,536,replace,[CE] no suitable method found for getItemCount(int),if (getItemCount() > this.maximumItemCount) { ,if(getItemCount(0) > this.maximumItemCount) {
+patch is same with buggy,543,replace,,if (notify) { ,if(notify) {
+compilation error,512,add,[CE] variable item is already defined in method add(TimeSeriesDataItem,boolean),,TimeSeriesDataItem item =(TimeSeriesDataItem)getDataItem(last);
+patch is same with buggy,238,replace,,return this.data.size(); ,return this.data.size();
+increase failing tests,238,replace, [FE]  Size,return this.data.size(); ,return this.data.size() + 1;
+compilation error,586,add,[CE] no suitable constructor found for Long(Number),,this.data.add(period, new Long(value));
+compilation error,586,add,[CE] no suitable method found for add(RegularTimePeriod,<null>),,this.data.add(period, null);
+compilation error,173,add,[CE] cannot find symbol,,java.util.ArrayList(); this.data = new ArrayList();
+compilation error,492,add,[CE] cannot find symbol,,this.data = item.getDataItem(item.getPeriod());
+compilation error,492,add,[CE] no suitable method found for add(TimeSeriesDataItem,boolean),,this.data.add(item, notify);
+increase failing tests,492,add, [FE] SeriesException,,this.data.add(item);
+patch is same with buggy,174,replace,,this.range = range; ,this.range = range;
+compilation error,174,replace,[CE] ';' expected,this.range = range; ,this.range = range, timePeriodClass;
+compilation error,536,add,[CE] cannot find symbol b,,this.data.add(item); b.append(" but the series already contains an observation");
+increase failing tests,178,add, [FE] StackOverflowError,,this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+compilation error,178,add,[CE] no suitable method found for add(TimeSeries,String,String,Class),,this.data.add(new TimeSeries(name), domain, range, timePeriodClass);
+patch is same with buggy,746,replace,,if (removed && notify) { ,if(removed && notify) {
+increase failing tests,746,replace, [FE] AssertionFailedError,if (removed && notify) { ,if(removed && this.data.size() > this.maximumItemAge) {
+compilation error,370,add,[CE] cannot find symbol,,checkPeriod(getDataItem(index));
+increase failing tests,370,add, [FE] AssertionFailedError,,this.data.add(getDataItem(index));
+compilation error,370,add,[CE] method getTimePeriod in class TimeSeries cannot be applied to given types;,,checkPeriod(getTimePeriod());
+compilation error,140,add,[CE] cannot find symbol TimePeriodClass,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, TimePeriodClass);
+patch is same with buggy,176,replace,,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayList();
+increase failing tests,176,replace, [FE] NullPointerException,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayList(this.data);
+compilation error,177,add,[CE] no suitable method found for add(TimeSeries,String,String,Class),,this.data.add(new TimeSeries(name), domain, range, timePeriodClass);
+increase failing tests,179,add, [FE] ClassCastException,,if(data == null) { this.data.add(name); } else { this.data.add(name); }
+patch is same with buggy,879,replace,,if (end < start) { ,if(end < start) {
+compilation error,879,replace,[CE] cannot find symbol length,if (end < start) { ,if(end < start || end > length) {
+compilation error,742,add,[CE] illegal start of expression,,&&(latest - getTimePeriod(0).getSerialIndex())) { this.data.add(remove);
+compilation error,742,add,[CE] illegal start of expression,,&&(latest - getTimePeriod(0).getSerialIndex())) { this.data.add(new ArrayList(this.maximumItemAge, this.data.size() - 1)); removed = true;
+compilation error,742,add,[CE] illegal start of expression,,&&(latest - getTimePeriod(0).getSerialIndex())) { this.data.add(new ArrayList(this.maximumItemAge, this.data.size())); removed = true;
+patch is same with buggy,507,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,602,add,[CE] cannot find symbol,,item.setValue(value); notifyListeners(new DataItem(period, notify));
+compilation error,540,add,[CE] cannot find symbol b,,b.setItem(item);
+compilation error,746,add,[CE] no suitable method found for add(long),,this.data.add(-latest); removed = true;
+compilation error,600,add,[CE] no suitable method found for add(RegularTimePeriod,Number),,this.data.add(period, value); notifyListeners(new DataItem(period, value, false));
+compilation error,600,add,[CE] variable period is already defined in method add(RegularTimePeriod,Number,boolean),,RegularTimePeriod period = getTimePeriod(period);
+patch is same with buggy,540,replace,,removeAgedItems(false);// remove old items if necessary, but   // don't notify anyone, because that     // happens next anyway... ,removeAgedItems(false);// remove old items if necessary, but // don't notify anyone, because that // happens next anyway...
+patch is same with buggy,600,replace,,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value); ,TimeSeriesDataItem item = new TimeSeriesDataItem(period, value);
+patch is same with buggy,544,replace,,fireSeriesChanged(); ,fireSeriesChanged();
+compilation error,879,add,[CE] illegal start of expression,,while(start > end) { if(end < start) { throw new IllegalArgumentException(""); }
+patch is same with buggy,876,replace,,if (start < 0) { ,if(start < 0) {
+increase failing tests,155,add, [FE] ClassCastException,,this.data.add(name); fireSeriesChanged();
+compilation error,155,add,[CE] cannot find symbol,,this.data = createList(name, timePeriodClass);
+patch is same with buggy,506,replace,,if (count == 0) { ,if(count == 0) {
+increase failing tests,511,add, [FE] SeriesException,,this.data.add(item);
+compilation error,176,add,[CE] cannot find symbol,,this.data = new ArrayList();
+compilation error,176,add,[CE] cannot find symbol ArrayList,,this.data =(List)ArrayList.newArrayList();
+compilation error,176,add,[CE] cannot find symbol,,this.data = new ArrayList(name.size());
+patch is same with buggy,513,replace,,this.data.add(item); ,this.data.add(item);
+compilation error,602,replace,[CE] illegal start of expression,} ,if(value!= null) { TimeSeriesDataItem item = new TimeSeriesDataItem(period, value, notify); item.addValue(); } else { fireSeriesChanged(); }
+compilation error,489,add,[CE] no suitable method found for add(TimeSeriesDataItem,boolean),,this.data.add(item, notify);
+increase failing tests,489,add, [FE] IllegalArgumentException,,if(item!= null) { throw new IllegalArgumentException(""); }
+compilation error,489,add,[CE] unreachable statement,,if(item!= null) { throw new IllegalArgumentException(""); } else { throw new IllegalArgumentException(""); }
+compilation error,504,replace,[CE] cannot assign a value to final variable added,boolean added = false; ,final boolean added = false;
+patch is same with buggy,504,replace,,boolean added = false; , 
+compilation error,740,replace,[CE] cannot assign a value to final variable removed,boolean removed = false; ,final boolean removed = false;
+patch is same with buggy,511,replace,,RegularTimePeriod last = getTimePeriod(getItemCount() - 1); ,RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+patch is same with buggy,492,replace,,if (!item.getPeriod().getClass().equals(this.timePeriodClass)) { ,if(!item.getPeriod().getClass().equals(this.timePeriodClass)) {
+increase failing tests,492,replace, [FE]  Size,if (!item.getPeriod().getClass().equals(this.timePeriodClass)) { ,if(!item.getPeriod().getClass().getName().equals(this.timePeriodClass)) {
+compilation error,534,add,[CE] cannot find symbol b,,b.append(" but the series already contains an observation");
+compilation error,544,add,[CE] cannot find symbol,,this.data.add(item); updateBounds(item.getPeriod(), this.data.size() - 1);
+compilation error,544,add,[CE] cannot find symbol,,this.data.add(item); notifyListeners(new DataItem(item, getPeriodClass()));
+patch is same with buggy,508,replace,,added = true; ,added = true;
+patch is same with buggy,140,replace,,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class); ,this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION, Day.class);
+increase failing tests,543,add, [FE] AssertionFailedError,,this.data.add(item);
+compilation error,543,add,[CE] cannot find symbol,,item.addChangeListener(this);
+compilation error,543,add,[CE] cannot find symbol,,item.setDataItem(getItemCount() - 1);
+compilation error,505,add,[CE] illegal start of expression,,while(item!= null && item.isSeriesKey()) { this.data.add(item);
+compilation error,505,add,[CE] illegal start of expression,,while(item!= null) { this.data.add(item);
+compilation error,601,add,[CE] method setValue in class TimeSeriesDataItem cannot be applied to given types;,,item.setValue(value, notify);

@@ -1,0 +1,184 @@
+increase failing tests,175,replace, [FE] IllegalArgumentException testRootEndpoints,double delta = x1 - x0; ,double delta = x1 / x0;
+compilation error,175,replace,[CE] cannot find symbol delta,double delta = x1 - x0; , 
+increase failing tests,179,replace, [FE] MaxIterationsExceededException testInitialGuess,while (i < maximalIterationCount) { ,while(i > maximalIterationCount) {
+increase failing tests,179,replace, [FE] MaxIterationsExceededException testInitialGuess,while (i < maximalIterationCount) { ,while(i >= maximalIterationCount) {
+compilation error,179,replace,[CE] illegal start of type,while (i < maximalIterationCount) { , 
+compilation error,193,add,[CE] variable i is already defined in method solve(double,double,double,double,double,double),,  int i = Math.min(relativeAccuracy * Math.abs(y1), absoluteAccuracy);
+compilation error,193,add,[CE] reached end of file while parsing,,  if(y2 > y1) { setResult(x1, i); if(Math.abs(y2) <= functionValueAccuracy) { result = Math.abs(y1); }
+compilation error,193,add,[CE] reached end of file while parsing,,  if(y2 > y1) { setResult(x1, i); if(Math.abs(y2) <= functionValueAccuracy) { return result; }
+compilation error,147,replace,[CE] no suitable method found for solve(double,double,double,double,double),ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(min, sign, max, yMin, yMax);
+compilation error,147,replace,[CE] no suitable method found for solve(double,double,double,double,double),ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(min, max, yMin, min, yMax);
+increase failing tests,147,replace, [FE] AssertionFailedError testInitialGuess,ret = solve(min, yMin, max, yMax, min, yMin); , 
+increase failing tests,180,replace, [FE] AssertionFailedError testInitialGuess,if (Math.abs(y2) < Math.abs(y1)) { ,if(Math.abs(y0) < Math.abs(y1)) {
+increase failing tests,180,replace, [FE] MaxIterationsExceededException testInitialGuess,if (Math.abs(y2) < Math.abs(y1)) { ,if(Math.abs(y1) < Math.abs(y2)) {
+compilation error,180,replace,[CE] illegal start of type,if (Math.abs(y2) < Math.abs(y1)) { , 
+compilation error,141,replace,[CE] ,throw new IllegalArgumentException ("Function values at endpoints do not have different signs." +   " Endpoints: [" + min + "," + max + "]" + ,throw new IllegalArgumentException"Function values at endpoints do not have different signs." +" Endpoints: [" + min + "," + max +"]" +
+compilation error,141,replace,[CE] not a statement,throw new IllegalArgumentException ("Function values at endpoints do not have different signs." +   " Endpoints: [" + min + "," + max + "]" + , 
+compilation error,194,replace,[CE] ';' expected,return result; ,return result == 0? result : Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy));
+compilation error,194,replace,[CE] incompatible types for ?: neither is a subtype of the other,return result; ,return result == 0? setResult(x1, i): result;
+increase failing tests,194,replace, [FE] AssertionFailedError testInitialGuess,return result; ,return result == 0? result : Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+increase failing tests,194,replace, [FE] AssertionFailedError testInitialGuess,return result; ,return result + 1;
+compilation error,178,replace,[CE] possible loss of precision,int i = 0; ,int i =(delta * oldDelta)/ 2.0;
+compilation error,178,replace,[CE] cannot find symbol tolerance,int i = 0; ,int i =(delta * oldDelta)* tolerance;
+compilation error,178,replace,[CE] cannot find symbol i,int i = 0; , 
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, max, min, yMax);
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, max, min, yMin);
+compilation error,151,add,[CE] no suitable method found for solve(double,double,double,double),,  ret = solve(min, max, yMin, yMax);
+increase failing tests,151,add, [FE] java.lang.IllegalArgumentException: Initial guess is not in search interval.  Initial: 16380.0  Endpoints: [0.6 testInitialGuess,,  ret = solve(min, max, yMax);
+increase failing tests,151,add, [FE] AssertionFailedError testInitialGuess,,  ret = solve(min, yMax, max);
+compilation error,180,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = oldDelta.doubleValue();
+compilation error,180,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = oldDelta.computeValue(i);
+compilation error,180,add,[CE] double cannot be dereferenced,,  double y = oldDelta.doubleValue();
+compilation error,180,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = oldDelta.doubleValue() * i;
+compilation error,180,add,[CE] not a statement,,  Math.abs(y1) < Math.abs(y2)) { x0 = x1;
+compilation error,176,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(delta, x0);
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.sqrt(delta);
+compilation error,176,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(delta, x1)- x0;
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.abs(delta);
+compilation error,176,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(delta, x1);
+compilation error,175,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(x0, x1);
+compilation error,175,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(x0, y0);
+compilation error,175,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.min(x0, y0);
+compilation error,175,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.min(x0, x1);
+compilation error,175,add,[CE] variable x1 is already defined in method solve(double,double,double,double,double,double),,  double x1 = solve(x0, y0);
+increase failing tests,194,add, [FE] AssertionFailedError testInitialGuess,,  result = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy); if(Math.abs(y2) <= functionValueAccuracy) { setResult(x1, i); }
+increase failing tests,194,add, [FE] AssertionFailedError testInitialGuess,,  result = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,194,add,[CE] reached end of file while parsing,,  if(y2 > y1) { setResult(x1, i); if(Math.abs(y2) <= functionValueAccuracy) { setResult(x1, i); }
+compilation error,194,add,[CE] reached end of file while parsing,,  if(x2 == x1) { setResult(x1, i); if(Math.abs(y2) <= functionValueAccuracy) { setResult(x1, i); }
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = solve(min, max);
+increase failing tests,147,add, [FE] java.lang.IllegalArgumentException: Initial guess is not in search interval.  Initial: 7.0  Endpoints: [0.6 testInitialGuess,,  ret = solve(min, yMin, max);
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = solve(min, yMin, max);
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = solve(min, endpoints, max);
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getValues();
+compilation error,141,add,[CE] no suitable method found for solve(double,double,double,double),,  ret = solve(min, yMin, max, sign);
+compilation error,141,add,[CE] no suitable method found for max(double),,  min = Math.min(min, sign); max = Math.max(max);
+compilation error,178,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(delta, oldDelta);
+compilation error,178,add,[CE] no suitable method found for max(double),,  int maximalIterationCount = Math.max(relativeAccuracy * oldDelta);
+compilation error,178,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(relativeAccuracy * oldDelta, absoluteAccuracy);
+compilation error,178,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.abs(delta)- oldDelta;
+compilation error,178,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(x0, x1);
+compilation error,179,add,[CE] reached end of file while parsing,,  if(i > maximalIterationCount) { if(Math.abs(y1) <= Math.abs(y2)) { functionValueAccuracy = Math.abs(y1); }
+compilation error,179,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(relativeAccuracy * oldDelta, absoluteAccuracy);
+compilation error,179,add,[CE] possible loss of precision,,  int maximalIterationCount = Math.max(delta, oldDelta);
+compilation error,179,add,[CE] reached end of file while parsing,,  if(i > maximalIterationCount) { if(Math.abs(y1) < Math.abs(y2)) { functionValueAccuracy = Math.abs(y1); }
+compilation error,179,add,[CE] no suitable method found for max(double),,  int maximalIterationCount = Math.max(relativeAccuracy * oldDelta);
+compilation error,193,replace,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,setResult(x1, i); ,setResult(x1, y1);
+compilation error,193,replace,[CE] not a statement,setResult(x1, i); ,setResult(x1, i)- 1;
+increase failing tests,151,replace, [FE] AssertionFailedError testInitialGuess,return ret; ,return ret * sign;
+increase failing tests,151,replace, [FE] AssertionFailedError testInitialGuess,return ret; ,return sign;
+increase failing tests,151,replace, [FE] AssertionFailedError testInitialGuess,return ret; ,return ret + sign;
+increase failing tests,193,add, [FE] AssertionFailedError testInitialGuess,,  double result = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,193,add,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,,  setResult(x0, y0);
+increase failing tests,193,add, [FE] AssertionFailedError testInitialGuess,,  double result = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy); x1 = x0; x2 = x2;
+increase failing tests,193,add, [FE] AssertionFailedError testRootEndpoints,,  x1 = x0; x2 = x0; x1 = x2; y1 = y2; y2 = y0;
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.sqrt(Double.doubleToLongBits(x0), Double.doubleToLongBits(y0));
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.pow(Math.abs(y0)/ oldDelta);
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.pow(Math.abs(y0));
+compilation error,175,add,[CE] ';' expected,,  double x0 = Math.pow(Math.abs(y0)* Math.log(x1)/ oldDelta));
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.sqrt(Double.doubleToLongBits(y0));
+compilation error,147,replace,[CE] no suitable method found for solve(double,double,double,double),ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(min, max, yMin, yMax);
+compilation error,147,replace,[CE] no suitable method found for solve(double,double,double,double,double),ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(min, yMin, max, yMin, yMax);
+compilation error,147,replace,[CE] cannot find symbol endpoints,ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(endpoints, min, max, yMin, yMax);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.pow(Math.abs(y0)* oldDelta);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.sqrt(delta);
+compilation error,180,add,[CE] ';' expected,,  double y1 = Math.pow(Math.abs(y0)* oldDelta));
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.max(delta, oldDelta);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.pow(Math.abs(y0));
+compilation error,178,replace,[CE] no suitable method found for min(double),int i = 0; ,int i = Math.min(relativeAccuracy * oldDelta);
+compilation error,178,replace,[CE] no suitable method found for min(double),int i = 0; ,int i = Math.min(relativeAccuracy * oldDelta)* delta;
+compilation error,176,add,[CE] ';' expected,,  double y2 = Math.pow(Math.abs(y1)/ delta));
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.pow(Math.abs(y0)/ delta);
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.pow(Math.abs(y1)/ delta);
+increase failing tests,180,replace, [FE] AssertionFailedError testInitialGuess,if (Math.abs(y2) < Math.abs(y1)) { ,if(Math.abs(y0) <= Math.abs(y1)) {
+increase failing tests,180,replace, [FE] AssertionFailedError testInitialGuess,if (Math.abs(y2) < Math.abs(y1)) { ,if(Math.abs(y0) < Math.abs(y1)||(y1 > y0)) {
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValue(endpoints.getStartMillis());
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValue(endpoints.getStartPoint());
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValue(endpoint);
+compilation error,147,add,[CE] cannot find symbol endpoints,,  sign = getStartPoint(endpoints.getLowerBound());
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValue(endpoints.getSize());
+compilation error,193,replace,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,setResult(x1, i); ,setResult(x1, i, y0);
+compilation error,193,replace,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,setResult(x1, i); ,setResult(x1, i, y1);
+compilation error,176,replace,[CE] bad operand types for binary operator '*',double oldDelta = delta; ,double oldDelta = delta *(Math.abs(y0) < Math.abs(y1));
+compilation error,176,replace,[CE] ';' expected,double oldDelta = delta; ,double oldDelta = delta * Math.pow(Math.abs(y0)* Math.log(x1), Math.log(y0)));
+compilation error,176,replace,[CE] method pow in class Math cannot be applied to given types;,double oldDelta = delta; ,double oldDelta = delta * Math.pow(Math.abs(y0)* Math.log(x2));
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, min, max);
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, min, max, sign, yMin, yMax);
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, min, max, sign, yMax);
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, min, max, yMin, yMax);
+compilation error,194,add,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,,  setResult(x2, y0);
+increase failing tests,194,add, [FE] AssertionFailedError testInitialGuess,,  setResult(x2, i);
+compilation error,178,add,[CE] ';' expected,,  double y1 = Math.pow(Math.abs(y1)/ oldDelta));
+compilation error,178,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.pow(Math.abs(y1), oldDelta);
+compilation error,178,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.sqrt(delta);
+compilation error,178,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.pow(Math.abs(y0)* oldDelta);
+compilation error,178,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.pow(Math.abs(y0)/ oldDelta);
+increase failing tests,194,replace, [FE] AssertionFailedError testInitialGuess,return result; ,return result * Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,194,replace,[CE] bad operand types for binary operator '*',return result; ,return result *(Math.abs(y2) <= Math.abs(y1));
+compilation error,194,replace,[CE] method sqrt in class Math cannot be applied to given types;,return result; ,return result * Math.sqrt(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,194,replace,[CE] bad operand types for binary operator '*',return result; ,return result *(Math.abs(y0) <= Math.abs(y1));
+compilation error,151,replace,[CE] cannot find symbol endpoints,return ret; ,return ret = solve(endpoints, min, max, yMin, yMax);
+compilation error,151,replace,[CE] no suitable method found for solve(double,double,double,double),return ret; ,return ret = solve(min, max, yMin, yMax);
+compilation error,141,add,[CE] no suitable method found for solve(double,double,double,double),,  ret = solve(min, max, yMin, sign);
+compilation error,141,add,[CE] cannot find symbol Ret,,  Ret = solve(min, yMin, max, sign);
+compilation error,179,add,[CE] not a statement,,  if(i > maximalIterationCount) { if(Math.abs(y1) < Math.abs(y0)) { x0 = x0; x1 = x2; x2 = x1; x1 = x2; x2 = x1; y
+compilation error,179,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.pow(Math.abs(y1), oldDelta);
+compilation error,179,add,[CE] ';' expected,,  double y1 = Math.pow(Math.abs(y1)/ oldDelta));
+compilation error,179,add,[CE] not a statement,,  if(i > maximalIterationCount) { if(Math.abs(y1) < Math.abs(y0)) { x0 = x0; x1 = x2; x2 = x1; x1 = x2; x2 = x3; y
+compilation error,179,add,[CE] <identifier> expected,,  if(i > maximalIterationCount) { if(Math.abs(y1) < Math.abs(y0)) { x0 = x0; x1 = x2; x2 = x1; x1 = x2; x2 = x1.
+compilation error,194,add,[CE] reached end of file while parsing,,  if(Math.abs(y2) <= functionValueAccuracy) { setResult(x1, i); if(!(Math.abs(y2) <= functionValueAccuracy)) { setResult(x2, i); }
+compilation error,194,add,[CE] reached end of file while parsing,,  if(Math.abs(y2) <= functionValueAccuracy) { setResult(x1, i); if(!(Math.abs(y2) <= functionValueAccuracy)) { setResult(x1, i); }
+compilation error,194,add,[CE] reached end of file while parsing,,  if(Math.abs(y2) <= functionValueAccuracy) { setResult(x1, i); if(!(Math.abs(y2) <= functionValueAccuracy)) { setResult(x2 - x1); }
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.exp(-x1)+ Math.exp(-x2);
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.max(x0, Math.exp(-x1), Math.exp(-x2));
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.max(x0, Math.exp(-x1), Math.exp(-x3));
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.exp(-x1);
+compilation error,175,add,[CE] variable x0 is already defined in method solve(double,double,double,double,double,double),,  double x0 = Math.max(x0, Math.exp(-x1), Math.exp(-y0));
+increase failing tests,151,replace, [FE] java.lang.IllegalArgumentException: Initial guess is not in search interval.  Initial: 7.0  Endpoints: [0.6 testInitialGuess,return ret; ,return ret = solve(min, yMin, max);
+compilation error,151,replace,[CE] no suitable method found for solve(double,double,double,double),return ret; ,return ret = solve(min, yMin, max, yMax);
+compilation error,151,replace,[CE] no suitable method found for solve(double,double,double,double),return ret; ,return ret = solve(min, yMax, yMin, sign);
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.ceil(delta);
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.floor(delta);
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.random();
+compilation error,176,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.pow(x0, Math.sqrt(delta));
+increase failing tests,151,add, [FE] java.lang.IllegalArgumentException: Initial guess is not in search interval.  Initial: 7.0  Endpoints: [0.6 testInitialGuess,,  ret = solve(min, yMin, max);
+compilation error,151,add,[CE] no suitable method found for solve(double,double,double,double),,  ret = solve(min, yMin, max, yMax);
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, min, max, yMin, sign);
+compilation error,151,add,[CE] no suitable method found for solve(double,double,double,double,double),,  ret = solve(min, yMin, max, yMin, sign);
+compilation error,151,add,[CE] cannot find symbol endpoints,,  ret = solve(endpoints, min, max, yMax);
+compilation error,141,add,[CE] no suitable method found for solve(double,double,double,double),,  ret = solve(yMin, min, max, sign);
+compilation error,141,add,[CE] no suitable method found for solve(double,double,double,double),,  ret = solve(min, yMin, sign, f.value(yMax));
+compilation error,141,add,[CE] no suitable method found for solve(double,double,double,UnivariateRealFunction),,  ret = solve(min, yMin, sign, f);
+compilation error,179,add,[CE] variable i is already defined in method solve(double,double,double,double,double,double),,  int i = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,179,add,[CE] variable i is already defined in method solve(double,double,double,double,double,double),,  int i = Math.max(relativeAccuracy * Math.abs(x0), absoluteAccuracy);
+compilation error,179,add,[CE] unreachable statement,,  setResult(x0, i); return Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,179,add,[CE] variable i is already defined in method solve(double,double,double,double,double,double),,  int i = Math.max(relativeAccuracy * Math.abs(x2), absoluteAccuracy);
+compilation error,179,add,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,,  setResult(x0, y1, oldDelta, i);
+compilation error,147,replace,[CE] no suitable method found for solve(double,double,double,double,double),ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(min, min, max, yMin, yMax);
+increase failing tests,147,replace, [FE] AssertionFailedError testInitialGuess,ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(min, min, max, yMax, yMin, yMax);
+compilation error,147,replace,[CE] no suitable method found for solve(double,double,double,double,double),ret = solve(min, yMin, max, yMax, min, yMin); ,ret = solve(yMin, min, max, yMin, yMax);
+compilation error,176,replace,[CE] ';' expected,double oldDelta = delta; ,double oldDelta = delta * Math.pow(Math.exp(1.0), Math.exp(-x1), Math.exp(-x3)));
+compilation error,175,replace,[CE] cannot find symbol Token,double delta = x1 - x0; ,double delta = x1 - x0 * Math.sqrt(Token.EMPTY);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.max(relativeAccuracy * Math.abs(x0), absoluteAccuracy);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.random();
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy); oldDelta = Math.abs(y0);
+compilation error,180,add,[CE] variable y1 is already defined in method solve(double,double,double,double,double,double),,  double y1 = Math.max(relativeAccuracy * Math.abs(x0), absoluteAccuracy); oldDelta = delta;
+compilation error,178,replace,[CE] incompatible types,int i = 0; ,int i =(delta * oldDelta * delta)? 0 : oldDelta * x1 - x0;
+compilation error,178,replace,[CE] incompatible types,int i = 0; ,int i =(delta * oldDelta * x1)? x0 : x1;
+compilation error,179,replace,[CE] cannot find symbol minimalIterationCount,while (i < maximalIterationCount) { ,while(i < minimalIterationCount) {
+increase failing tests,194,replace, [FE] AssertionFailedError testInitialGuess,return result; ,return result * Math.max(relativeAccuracy * Math.abs(x2), absoluteAccuracy);
+compilation error,194,replace,[CE] method sqrt in class Math cannot be applied to given types;,return result; ,return result * Math.sqrt(( Math.abs(y2) >= functionValueAccuracy))? result : 0;
+compilation error,194,replace,[CE] bad operand types for binary operator '*',return result; ,return result *(Math.abs(y2) <= Math.abs(y1))? result : 0;
+compilation error,193,add,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,,  setResult(x0, y1);
+compilation error,193,add,[CE] method setResult in class UnivariateRealSolverImpl cannot be applied to given types;,,  setResult(x2, y1);
+increase failing tests,180,replace, [FE] MaxIterationsExceededException testInitialGuess,if (Math.abs(y2) < Math.abs(y1)) { ,if(Math.abs(oldDelta) < Math.abs(y2)) {
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValue(min); sign = getMax();
+compilation error,147,add,[CE] cannot find symbol,,  clearResult(); sign = getValues();
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValues(); sign = getMax();
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValues();
+compilation error,147,add,[CE] variable min is already defined in method solve(double,double),,  double min = getMinimumValue(min); max = getMax();
+compilation error,178,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.sqrt(delta);
+compilation error,178,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.random();
+compilation error,178,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  int y2 = Math.min(y0, oldDelta);
+compilation error,178,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.floor(delta);
+compilation error,178,add,[CE] variable y2 is already defined in method solve(double,double,double,double,double,double),,  double y2 = Math.ceil(delta);

@@ -1,1 +1,4 @@
-patch is same with buggy,,List optList = new ArrayList(options.getOptions()); ,List optList = new ArrayList(options.getOptions());
+increase failing tests,524,add, [FE] ComparisonFailure testPrintRequiredOptionGroupUsage,,  if(optList.size() > 0) { buff.append("="); }
+increase failing tests,524,add, [FE] ComparisonFailure testPrintRequiredOptionGroupUsage,,  if(optList.size() > 0) { buff.append(":"); }
+increase failing tests,524,add, [FE] junit.framework.ComparisonFailure: expected:<usage: app []-a | -b | -c > but was:<usage: app [ testPrintRequiredOptionGroupUsage,,  if(optList.size() > 0) { buff.append(","); }
+increase failing tests,535,replace, [FE] ComparisonFailure testPrintRequiredOptionGroupUsage,if (group != null) { ,if(group == null) {

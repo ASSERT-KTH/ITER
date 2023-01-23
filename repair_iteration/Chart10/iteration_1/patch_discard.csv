@@ -1,0 +1,4 @@
+compilation error,54,add,[CE] cannot find symbol toolTipTagFragmentGenerator, ,super(); this.toolTipTagFragmentGenerator = new StandardToolTipTagFragmentGenerator();
+compilation error,54,add,[CE] generics are not supported in -source 1.4, ,super(); this.toolTipTagFragmentGenerator = new HashSet < StandardToolTipTagFragment>();
+compilation error,54,replace,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;,   ,this(new StandardToolTipTagFragmentGenerator());
+compilation error,54,add,[CE] constructor StandardToolTipTagFragmentGenerator in class StandardToolTipTagFragmentGenerator cannot be applied to given types;, ,this(new StandardToolTipTagFragmentGenerator(), null);

@@ -1,0 +1,163 @@
+increase failing tests,113,replace, [FE] AssertionFailedError testBadEndpoints,double yMin = f.value(min); ,double yMin = f.value(max);
+compilation error,113,replace,[CE] cannot find symbol x,double yMin = f.value(min); ,double yMin = f.value(x);
+compilation error,113,replace,[CE] cannot find symbol yMin,double yMin = f.value(min); , 
+increase failing tests,125,replace, [FE] AssertionFailedError testBadEndpoints,double yMax = f.value(max); ,double yMax = f.value(min);
+compilation error,125,replace,[CE] cannot find symbol,double yMax = f.value(max); ,double yMax = f.max(initial);
+compilation error,125,replace,[CE] cannot find symbol,double yMax = f.value(max); ,double yMax = f.maximum(initial);
+compilation error,125,replace,[CE] cannot find symbol yMax,double yMax = f.value(max); , 
+compilation error,184,add,[CE] no suitable method found for setResult(double,double),,  setResult(min, ret);
+compilation error,184,add,[CE] no suitable method found for setResult(double,double),,  setResult(min, ret); ret = min;
+compilation error,184,add,[CE] no suitable method found for setResult(double,double),,  setResult(min, max); ret = min;
+compilation error,184,add,[CE] no suitable method found for setResult(double,double),,  setResult(min, ret); ret = max;
+compilation error,184,add,[CE] no suitable method found for setResult(double,double),,  setResult(min, ret); ret = sign;
+compilation error,138,add,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),,  if(yInitial * yMax > 0) { return solve(f, min, initial, max, yMin, yMax); }
+compilation error,103,replace,[CE] cannot find symbol,verifySequence(min, initial, max); ,clearSequence(min, initial, max);
+compilation error,103,replace,[CE] no suitable method found for setResult(double,double),verifySequence(min, initial, max); ,setResult(initial, max);
+compilation error,103,replace,[CE] no suitable method found for setResult(double,double,double),verifySequence(min, initial, max); ,setResult(min, initial, max);
+increase failing tests,103,replace, [FE] AssertionFailedError testBadEndpoints,verifySequence(min, initial, max); , 
+compilation error,106,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max);
+compilation error,106,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(max) <= functionValueAccuracy);
+increase failing tests,106,add, [FE] AssertionFailedError testBadEndpoints,,  double functionValueAccuracy = Math.abs(max);
+compilation error,106,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(max) < functionValueAccuracy);
+increase failing tests,106,add, [FE] AssertionFailedError testBadEndpoints,,  double functionValueAccuracy = Math.abs(f.value(max));
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yInitial = f.value(initial);
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yInitial = f.value(min);
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  Double yInitial = f.value(initial);
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  final double yInitial = f.value(initial);
+compilation error,120,add,[CE] variable initial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double initial = f.value(initial);
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(min);
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(initial);
+compilation error,125,add,[CE] variable x might not have been initialized,,  double x = f.value(x);
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  Double yMin = f.value(min);
+compilation error,113,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(max);
+compilation error,113,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(min);
+compilation error,113,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(min); if(Math.abs(max) <= functionValueAccuracy) { setResult(max, 0); return result; }
+compilation error,113,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(initial); if(Math.abs(yMax) <= functionValueAccuracy) { setResult(max, 0); return result; }
+compilation error,113,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max);
+compilation error,102,replace,[CE] no suitable method found for setResult(double,double),clearResult(); ,setResult(min, max);
+compilation error,102,replace,[CE] cannot find symbol,clearResult(); ,checkResult();
+compilation error,107,replace,[CE] cannot find symbol initialAccuracy,if (Math.abs(yInitial) <= functionValueAccuracy) { ,if(Math.abs(yInitial) <= initialAccuracy) {
+compilation error,107,replace,[CE] illegal start of type,if (Math.abs(yInitial) <= functionValueAccuracy) { , 
+compilation error,107,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max);
+compilation error,107,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(yInitial) < functionValueAccuracy);
+compilation error,107,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(yInitial) <= functionValueAccuracy);
+compilation error,107,add,[CE] ';' expected,,  double functionValueAccuracy = Math.abs(yInitial) >= functionValueAccuracy);
+increase failing tests,107,add, [FE] AssertionFailedError testBadEndpoints,,  double functionValueAccuracy = Math.abs(yInitial);
+compilation error,102,add,[CE] cannot find symbol,,  super.setValue(f.value(min), max);
+increase failing tests,102,add, [FE] AssertionFailedError testBadEndpoints,,  if(f.value(min) == max) { setResult(min, 1); }
+compilation error,102,add,[CE] method value in interface UnivariateRealFunction cannot be applied to given types;,,  super.setValue(f.value(min, initial));
+compilation error,102,add,[CE] no suitable method found for setResult(double,int,double),,  if(f.value(min) == max) { setResult(min, 0, max); }
+compilation error,102,add,[CE] no suitable method found for setResult(double,double),,  if(f.value(min) == max) { setResult(min, initial); }
+increase failing tests,114,replace, [FE] AssertionFailedError testBadEndpoints,if (Math.abs(yMin) <= functionValueAccuracy) { ,if(Math.abs(yMin)!= functionValueAccuracy) {
+compilation error,114,replace,[CE] illegal start of type,if (Math.abs(yMin) <= functionValueAccuracy) { , 
+compilation error,138,replace,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),return solve(f, min, yMin, max, yMax, initial, yInitial); ,return solve(f, initial, yMin, max, yMax, yInitial);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(UnivariateRealFunction,double,double,double,double),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(f, min, max, yMin, yMax);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(double,double,double,double),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(min, ret, min, max);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(UnivariateRealFunction,double,double,double,double,double),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(f, ret, min, max, yMin, yMax);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(double,double,double,double,double),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(min, ret, max, yMin, yMax);
+compilation error,114,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max);
+compilation error,114,add,[CE] illegal start of expression,,  if(yMax > min) { if(Math.abs(yMin) <= functionValueAccuracy) { setResult(initial, 0); return result; }
+compilation error,114,add,[CE] illegal start of expression,,  if(yMax > yMin) { if(Math.abs(yMin) <= functionValueAccuracy) { setResult(initial, 0); return result; }
+compilation error,114,add,[CE] illegal start of expression,,  if(yMin < 0) { if(Math.abs(yMin) <= functionValueAccuracy) { setResult(initial, 0); return result; }
+compilation error,103,add,[CE] unreachable statement,,  setResult(initial, 0); return result;
+compilation error,103,add,[CE] method clearResult in class UnivariateRealSolverImpl cannot be applied to given types;,,  clearResult(initial, max);
+compilation error,103,add,[CE] cannot find symbol,,  checkResult(min, max);
+increase failing tests,120,replace, [FE] AssertionFailedError testBadEndpoints,if (yInitial * yMin < 0) { ,if(initial * yMin < 0) {
+increase failing tests,120,replace, [FE] AssertionFailedError testBadEndpoints,if (yInitial * yMin < 0) { ,if(initial * yMin <= 0) {
+increase failing tests,106,replace, [FE] AssertionFailedError testBadEndpoints,double yInitial = f.value(initial); ,double yInitial = f.value(max);
+compilation error,106,replace,[CE] method value in interface UnivariateRealFunction cannot be applied to given types;,double yInitial = f.value(initial); ,double yInitial = f.value(initial, max);
+increase failing tests,106,replace, [FE] AssertionFailedError testBadEndpoints,double yInitial = f.value(initial); ,double yInitial = f.value(min);
+compilation error,125,replace,[CE] cannot find symbol x,double yMax = f.value(max); ,double yMax = f.value(x);
+compilation error,125,replace,[CE] cannot find symbol internal,double yMax = f.value(max); ,double yMax = f.value(internal);
+compilation error,138,replace,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),return solve(f, min, yMin, max, yMax, initial, yInitial); ,return solve(f, min, max, yMin, initial, yInitial);
+compilation error,138,replace,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double),return solve(f, min, yMin, max, yMax, initial, yInitial); ,return solve(f, min, max, yInitial, yMax);
+compilation error,184,add,[CE] no suitable method found for setResult(double,double),,  setResult(min, max); ret = sign;
+compilation error,113,add,[CE] illegal start of expression,,  if(yMax > 0) { if(Math.abs(yMax) <= functionValueAccuracy) { setResult(max, 0); return result; }
+compilation error,113,add,[CE] illegal start of expression,,  if(yMax < 0) { if(Math.abs(yMax) <= functionValueAccuracy) { setResult(max, 0); return result; }
+compilation error,113,add,[CE] illegal start of expression,,  if(yMax < 0) { if(Math.abs(yMax) <= functionValueAccuracy) { setResult(x, yInitial); return result; }
+compilation error,113,add,[CE] illegal start of expression,,  if(yMax < 0) { if(Math.abs(yMax) <= functionValueAccuracy) { setResult(x, yMin); return result; }
+increase failing tests,107,replace, [FE] AssertionFailedError testBadEndpoints,if (Math.abs(yInitial) <= functionValueAccuracy) { ,if(Math.abs(yInitial) >= functionValueAccuracy) {
+compilation error,103,replace,[CE] illegal start of expression,verifySequence(min, initial, max); ,verifySequence(min, max, final);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(double,double,double,double,String),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(yMax, min, max, yMin, NON_BRACKETING_MESSAGE);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(boolean,double,double,double,double),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(false, min, ret, yMin, yMax);
+compilation error,184,replace,[CE] cannot find symbol math,throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(math, min, max, yMin, yMax);
+compilation error,184,replace,[CE] cannot find symbol math,throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(math, min, ret, yMin, yMax);
+compilation error,107,add,[CE] not a statement,,  double yMax = f.value(max); Math.abs(yInitial) < functionValueAccuracy) { setResult(initial, 0);
+compilation error,107,add,[CE] not a statement,,  double yMax = f.value(max); Math.abs(yInitial) < functionValueAccuracy) { setResult(initial, 0); return result;
+compilation error,107,add,[CE] not a statement,,  double yMax = f.value(max); Math.abs(yInitial) >= functionValueAccuracy) { setResult(initial, 0);
+compilation error,107,add,[CE] ';' expected,,  double yMax = f.value(max); Math.abs(yInitial) { functionValueAccuracy) { setResult(initial, 0);
+compilation error,114,replace,[CE] cannot find symbol yMax,if (Math.abs(yMin) <= functionValueAccuracy) { ,if(Math.abs(yMax) <= functionValueAccuracy) {
+compilation error,102,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(min);
+compilation error,102,add,[CE] method verifySequence in class UnivariateRealSolverImpl cannot be applied to given types;,,  clearResult(); verifySequence(min, max, f.value(min), max);
+compilation error,102,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(min); setResult(max, 0);
+compilation error,102,replace,[CE] cannot find symbol,clearResult(); ,validateSequence(min, max);
+compilation error,113,replace,[CE] method value in interface UnivariateRealFunction cannot be applied to given types;,double yMin = f.value(min); ,double yMin = f.value(min, max);
+compilation error,113,replace,[CE] cannot find symbol second,double yMin = f.value(min); ,double yMin = f.value(second);
+compilation error,103,add,[CE] ')' expected,,  clearResult(); verifySequence(min, max, f.value(min);
+compilation error,103,add,[CE] method verifySequence in class UnivariateRealSolverImpl cannot be applied to given types;,,  clearResult(); verifySequence(min, max);
+compilation error,103,add,[CE] method verifySequence in class UnivariateRealSolverImpl cannot be applied to given types;,,  clearResult(); verifySequence(min, max, f.value(min), max);
+compilation error,106,add,[CE] variable max is already defined in method solve(UnivariateRealFunction,double,double,double),,  double max = f.value(max);
+compilation error,106,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = Math.max(max, min);
+increase failing tests,106,add, [FE] AssertionFailedError testBadEndpoints,,  double x = f.value(max);
+compilation error,106,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)- min;
+compilation error,114,add,[CE] illegal start of expression,,  if(Math.abs(yMax) <= functionValueAccuracy) { if(Math.abs(yMin) <= functionValueAccuracy) { setResult(yMin, 0); return result; }
+compilation error,114,add,[CE] illegal start of expression,,  if(Math.abs(yMax) <= functionValueAccuracy) { if(yMin < 0) { return result; }
+compilation error,114,add,[CE] illegal start of expression,,  if(Math.abs(yMax) <= functionValueAccuracy) { if(Math.abs(yMin) <= functionValueAccuracy) { setResult(xMax, yMin); return result; }
+compilation error,114,add,[CE] illegal start of expression,,  if(Math.abs(yMax) <= functionValueAccuracy) { if(yMin >= 0) { return result; }
+compilation error,114,add,[CE] illegal start of expression,,  if(Math.abs(yMax) <= functionValueAccuracy) { if(Math.abs(yMin) <= functionValueAccuracy) { setResult(max, yMin); return result; }
+compilation error,138,add,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),,  if(yMin * yMax > 0) { return solve(f, min, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),,  if(yMin * yMax < 0) { return solve(f, min, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] illegal start of expression,,  if(yInitial * yMax > 0) { if(f.initial < min) { return solve(f, min, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),,  if(yInitial * yMax < 0) { return solve(f, min, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] illegal start of expression,,  if(yInitial * yMax > 0) { if(f.initial < min) { return solve(min, initial, max, yMin, yInitial, yMax); }
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(min)* Math.max(relativeAccuracy * Math.abs(x), absoluteAccuracy);
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(min)* Math.max(relativeAccuracy * Math.abs(yMin));
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(min)* Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy);
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(min)* Math.max(relativeAccuracy * Math.abs(initial));
+compilation error,120,replace,[CE] bad operand types for binary operator '<',if (yInitial * yMin < 0) { ,if(initial > yMin < 0) {
+increase failing tests,106,replace, [FE] AssertionFailedError testBadEndpoints,double yInitial = f.value(initial); ,double yInitial = f.value(initial + 1);
+increase failing tests,106,replace, [FE] AssertionFailedError testBadEndpoints,double yInitial = f.value(initial); ,double yInitial = f.value(initial)- 1;
+compilation error,103,replace,[CE] ';' expected,verifySequence(min, initial, max); ,verifySequence(min, initial, max), 0);
+compilation error,103,replace,[CE] cannot find symbol,verifySequence(min, initial, max); ,validateSequence(min, initial, max);
+increase failing tests,120,replace, [FE] AssertionFailedError testBadEndpoints,if (yInitial * yMin < 0) { ,if(min * yInitial < 0) {
+compilation error,102,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = Math.max(min, max); initial = Math.max(max, min);
+compilation error,102,add,[CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double),,  double min = f.value(min); initial = f.value(max);
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yInitial = Math.min(yInitial, f.value(initial));
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yInitial = f.value(initial); initial = f.value(initial);
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yInitial = Math.abs(yInitial).doubleValue();
+compilation error,120,add,[CE] variable yInitial is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yInitial = Math.abs(yInitial);
+compilation error,107,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)* Math.max(yInitial, yMax);
+compilation error,107,add,[CE] <identifier> expected,,  double yMax = f.value(max); final result = Math.max(result, 0);
+compilation error,107,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max); initial = yInitial + f.value(min);
+compilation error,107,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = Math.max(max, yInitial);
+compilation error,114,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max); return result;
+compilation error,114,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)* Math.max(yInitial, yMin);
+compilation error,114,add,[CE] double cannot be dereferenced,,  double yMax = f.value(max).doubleValue();
+compilation error,114,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)* Math.max(yInitial, yMax);
+compilation error,103,add,[CE] unreachable statement,,  setResult(max, 0); return result;
+compilation error,103,add,[CE] cannot find symbol x,,  setResult(x, 0);
+compilation error,113,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = Math.max(max, yInitial);
+compilation error,113,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)- 1;
+compilation error,113,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)* Math.max(yInitial, max);
+compilation error,113,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(max)+ Math.max(yInitial, max);
+increase failing tests,106,add, [FE] AssertionFailedError testBadEndpoints,,  double xx = f.value(min);
+compilation error,106,add,[CE] variable yMax is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMax = f.value(min);
+increase failing tests,106,replace, [FE] AssertionFailedError testBadEndpoints,double yInitial = f.value(initial); ,double yInitial = f.value(initial + max);
+compilation error,138,add,[CE] illegal start of expression,,  if(yMin < 0) { if(f.getMillis() < min) { return solve(min, initial, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] illegal start of expression,,  if(yInitial >= 0) { if(f.getMillis() < min) { return solve(min, initial, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] illegal start of expression,,  if(yMin * yMax > 0) { if(f.getMillis() < min) { return solve(min, initial, yInitial, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] illegal start of expression,,  if(yMin < 0) { if(f.getMillis() < min) { return solve(min, initial, yInitial, max, yMin, initial, yInitial); }
+compilation error,138,add,[CE] illegal start of expression,,  if(yMin * yMax > 0) { if(f.getMillis() < min) { return solve(min, initial, yInitial, max, yMin, initial); }
+compilation error,138,replace,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),return solve(f, min, yMin, max, yMax, initial, yInitial); ,return solve(f, min, initial, max, yMin, yMax);
+compilation error,138,replace,[CE] no suitable method found for solve(UnivariateRealFunction,double,double,double,double,double),return solve(f, min, yMin, max, yMax, initial, yInitial); ,return solve(f, min, initial, max, yMax, yInitial);
+compilation error,125,add,[CE] variable yMin is already defined in method solve(UnivariateRealFunction,double,double,double),,  double yMin = f.value(min, initial);
+compilation error,184,add,[CE] no suitable method found for setResult(double,double,double,double),,  setResult(min, sign, yMin, ret);
+compilation error,125,replace,[CE] method value in interface UnivariateRealFunction cannot be applied to given types;,double yMax = f.value(max); ,double yMax = f.value(min, initial);
+compilation error,125,replace,[CE] cannot find symbol,double yMax = f.value(max); ,double yMax = valueToJavaTime(f);
+increase failing tests,114,replace, [FE] AssertionFailedError testBadEndpoints,if (Math.abs(yMin) <= functionValueAccuracy) { ,if(Math.abs(yMin) >= functionValueAccuracy) {
+compilation error,113,replace,[CE] method value in interface UnivariateRealFunction cannot be applied to given types;,double yMin = f.value(min); ,double yMin = f.value(min, initial);
+compilation error,113,replace,[CE] ')' expected,double yMin = f.value(min); ,double yMin = f.value(min;
+compilation error,102,replace,[CE] no suitable method found for setResult(double),clearResult(); ,setResult(max);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(double,double,double,double),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(min, max, yMin, yMax);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(double,double,double,String),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(min, yMax, yMin, NON_BRACKETING_MESSAGE);
+compilation error,184,replace,[CE] no suitable method found for createIllegalArgumentException(double,double,double,String),throw MathRuntimeException.createIllegalArgumentException(  NON_BRACKETING_MESSAGE, min, max, yMin, yMax); ,throw MathRuntimeException.createIllegalArgumentException(min, max, yMin, NON_BRACKETING_MESSAGE);

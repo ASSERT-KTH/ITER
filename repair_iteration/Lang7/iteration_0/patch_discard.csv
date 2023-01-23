@@ -1,0 +1,10 @@
+compilation error,541,add,[CE] illegal start of expression,,  : throw new NumberFormatException(str +" is not a valid number.");
+compilation error,541,add,[CE] illegal start of expression,,  : throw new NumberFormatException(" is not a valid number.");
+compilation error,541,add,[CE] orphaned default,,  if(numeric.charAt(0) == '-') { String dec = NumberUtils.createDecimal(numeric); if(dec == null && exp.length > 0) { return d; }
+compilation error,541,add,[CE] orphaned default,,  if(numeric.charAt(0) == '-') { String dec = NumberUtils.createDecimal(numeric); if(dec == null && dec.length > 0) { return dec; }
+compilation error,541,add,[CE] orphaned default,,  if(numeric.charAt(0) == '-') { String dec = NumberUtils.createDecimal(numeric); if(dec == null && exp.length > 0) { return dec; }
+compilation error,514,add,[CE] variable numeric is already defined in method createNumber(String),,  String numeric = str.substring(0, str.length() - 1);
+compilation error,514,add,[CE] ')' expected,,  if(dec == null && exp == null) { String numeric = dec.toString(); if(numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric
+compilation error,514,add,[CE] orphaned case,,  if(dec == null && exp == null) { String numeric = dec.toString(); if(numeric.charAt(0) == '-' && isDigits(numeric.substring(2))) { return createBigDecimal(numeric); }
+compilation error,514,add,[CE] orphaned case,,  if(dec == null && exp == null) { String numeric = dec.toString(); if(numeric.charAt(0) == '-' && isDigits(numeric.substring(3))) { return createBigDecimal(numeric); }
+compilation error,514,add,[CE] <identifier> expected,,  if(dec == null && exp == null) { String numeric = dec.toString(); if(numeric.charAt(0) == '-' && isDigits(numeric.substring(1)) || isDigits(numeric.

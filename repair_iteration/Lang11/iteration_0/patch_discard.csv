@@ -1,0 +1,165 @@
+increase failing tests,248,replace, [FE] IllegalArgumentException testLANG805,int gap = end - start; ,int gap = end - 1;
+increase failing tests,248,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,int gap = end - start; ,int gap = end - start + 1;
+increase failing tests,248,replace, [FE] IllegalArgumentException testLANG805,int gap = end - start; ,int gap = end - 2;
+compilation error,248,replace,[CE] cannot find symbol gap,int gap = end - start; , 
+compilation error,163,add,[CE] incompatible types,,  Random RANDOM = random(count, start, end, letters, numbers);
+compilation error,163,add,[CE] cannot find symbol NumberOutput,,  Random RANDOM = NumberOutput.parseInt(count, start, end, letters, numbers);
+compilation error,163,add,[CE] cannot find symbol NumberInput,,  Random RANDOM = NumberInput.parseAsString(count, start, end, letters, numbers);
+increase failing tests,163,add, [FE] StackOverflowError testExceptions,,  random(count, start, end, letters, numbers);
+increase failing tests,247,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[2];
+increase failing tests,247,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[0];
+increase failing tests,247,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[1];
+increase failing tests,247,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[count - 1];
+compilation error,247,replace,[CE] cannot find symbol buffer,char[] buffer = new char[count]; , 
+compilation error,225,replace,[CE] cannot find symbol ch,if (count == 0) { ,if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) {
+compilation error,225,replace,[CE] ')' expected,if (count == 0) { ,if(( letters && Character.isLetter(ch)||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) {
+compilation error,225,replace,[CE] cannot find symbol ch,if (count == 0) { ,if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch))) {
+compilation error,225,replace,[CE] cannot find symbol ch,if (count == 0) { ,if(( letters && Character.isUpperCase(ch)) ||(numbers && Character.isLetter(ch)) ||(!letters &&!numbers)) {
+compilation error,225,replace,[CE] illegal start of type,if (count == 0) { , 
+compilation error,227,replace,[CE] ')' expected,} else if (count < 0) { ,} else if(count < less than 0) {
+compilation error,227,replace,[CE] unreachable statement,} else if (count < 0) { , 
+compilation error,252,replace,[CE] cannot find symbol,if (chars == null) { ,if(chars == null ||!chars.isDigit(ch)) {
+compilation error,252,replace,[CE] cannot find symbol,if (chars == null) { ,if(chars == null ||!chars.isEmpty()) {
+compilation error,252,replace,[CE] 'else' without 'if',if (chars == null) { , 
+compilation error,234,add,[CE] cannot find symbol buffer,,  char ch = buffer[count - 1];
+compilation error,234,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, 0, chars, start, 0, count);
+compilation error,234,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, 0, chars, start, 0, chars.length);
+compilation error,234,add,[CE] cannot find symbol buffer,,  char ch = buffer[count++];
+compilation error,234,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, start, buffer, 0, count);
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars.length;
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = buffer[count];
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = buffer[count++];
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars.length();
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars[count];
+increase failing tests,250,add, [FE] ArrayIndexOutOfBoundsException testLANG805,,  chars[count--] = buffer[random.nextInt(gap)+ start];
+increase failing tests,250,add, [FE] ArrayIndexOutOfBoundsException testLANG805,,  chars[count--] = buffer[random.nextInt(gap)+ 1];
+increase failing tests,250,add, [FE] ComparisonFailure testLANG805,,  chars[0] = buffer[0];
+compilation error,250,add,[CE] not a statement,,  chars[count--] buffer = new char[gap];
+increase failing tests,250,add, [FE] ComparisonFailure testLANG805,,  chars[0] = buffer[gap];
+increase failing tests,230,replace, [FE] AssertionFailedError testLANG807,if (chars != null && chars.length == 0) { ,if(chars == null || chars.length == 0) {
+increase failing tests,230,replace, [FE] AssertionFailedError testLANG807,if (chars != null && chars.length == 0) { ,if(chars == null || chars.length < 0) {
+increase failing tests,230,replace, [FE] AssertionFailedError testLANG807,if (chars != null && chars.length == 0) { ,else if(chars == null || chars.length == 0) {
+increase failing tests,230,replace, [FE] IllegalArgumentException testLANG805,if (chars != null && chars.length == 0) { ,if(chars == null || chars.length!= 0) {
+compilation error,230,replace,[CE] illegal start of type,if (chars != null && chars.length == 0) { , 
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) { count++; }
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) { throw new IllegalArgumentException(""); }
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) { end = 0; }
+compilation error,227,add,[CE] illegal start of expression,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch))) { if(!letters &&!numbers) { throw new IllegalArgumentException(""); }
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch))) { throw new IllegalArgumentException(""); }
+compilation error,234,replace,[CE] cannot find symbol ch,if (start == 0 && end == 0) { ,if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) {
+compilation error,234,replace,[CE] ')' expected,if (start == 0 && end == 0) { ,if(( letters && Character.isLetter(ch)||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) {
+compilation error,234,replace,[CE] cannot find symbol ch,if (start == 0 && end == 0) { ,if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch))) {
+compilation error,234,replace,[CE] cannot find symbol ch,if (start == 0 && end == 0) { ,if(( letters && Character.isDigit(ch)) ||(numbers && Character.isLetter(ch)) ||(!letters &&!numbers)) {
+compilation error,230,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, 0, chars, start, count - 1);
+compilation error,230,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, 0, chars, start, count + 1);
+compilation error,230,add,[CE] cannot find symbol,,  chars[] buffer = random.toCharArray();
+compilation error,230,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, 0, chars, start, end, letters, numbers);
+compilation error,230,add,[CE] cannot find symbol,,  chars[] buffer = random.toString();
+compilation error,253,add,[CE] incompatible types,,  chars = random.nextInt(gap);
+increase failing tests,253,add, [FE] AssertionFailedError testLANG807,,  buffer[gap] = chars[random.nextInt(gap)+ start];
+increase failing tests,253,add, [FE] AssertionFailedError testLANG807,,  buffer[gap] = chars[random.nextInt(gap)+ 1];
+compilation error,253,add,[CE] possible loss of precision,,  buffer[gap] = start;
+increase failing tests,253,add, [FE] AssertionFailedError testLANG807,,  buffer[gap] = chars[random.nextInt(gap)- start];
+compilation error,163,replace,[CE] no suitable method found for random(int,int,int,boolean,boolean,boolean,<null>,Random),return random(count, start, end, letters, numbers, null, RANDOM); ,return random(count, start, end, letters, numbers, false, null, RANDOM);
+compilation error,163,replace,[CE] no suitable method found for random(int,int,int,boolean,boolean,boolean,Random),return random(count, start, end, letters, numbers, null, RANDOM); ,return random(count, start, end, letters, numbers, false, RANDOM);
+compilation error,163,replace,[CE] cannot find symbol begin,return random(count, start, end, letters, numbers, null, RANDOM); ,return random(count, begin, end, letters, numbers, null, RANDOM);
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars.length;
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = NumberInput.parseInt(letters, end);
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.intValue();
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars[count-1];
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars[count];
+increase failing tests,250,replace, [FE] ComparisonFailure testLANG805,while (count-- != 0) { ,while(count-- <= 0) {
+increase failing tests,250,replace, [FE] ComparisonFailure testLANG805,while (count-- != 0) { ,while(count-- == 0) {
+increase failing tests,250,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,while (count-- != 0) { ,while(count-- >= 0) {
+increase failing tests,253,replace, [FE] AssertionFailedError testLANG807,ch = (char) (random.nextInt(gap) + start); ,ch =(char)(random.nextInt(gap)+ 1);
+compilation error,253,replace,[CE] possible loss of precision,ch = (char) (random.nextInt(gap) + start); ,ch =(char)(random.nextInt(gap)+ start)+ 1;
+compilation error,253,replace,[CE] ')' expected,ch = (char) (random.nextInt(gap) + start); ,ch =(char)(random.nextInt(gap)+ start];
+increase failing tests,248,add, [FE] ArrayIndexOutOfBoundsException testLANG807,,  System.arraycopy(buffer, start, buffer, 0, count);
+increase failing tests,248,add, [FE] ComparisonFailure testLANG805,,  chars[0] = buffer[0];
+compilation error,248,add,[CE] method arraycopy in class System cannot be applied to given types;,,  System.arraycopy(buffer, 0, buffer, start, 0, count);
+compilation error,248,add,[CE] cannot find symbol,,  chars[] buffer = new char[count];
+increase failing tests,248,add, [FE] ComparisonFailure testLANG805,,  System.arraycopy(buffer, start, buffer, 0, count); chars = buffer;
+increase failing tests,252,add, [FE] ArrayIndexOutOfBoundsException testLANG805,,  chars[count] = buffer[random.nextInt(gap)+ start];
+compilation error,252,add,[CE] cannot find symbol,,  chars[] buffer = random.nextInt(gap);
+compilation error,252,add,[CE] incompatible types,,  chars = buffer[gap];
+increase failing tests,252,add, [FE] ComparisonFailure testLANG805,,  chars[0] = buffer[0];
+compilation error,252,add,[CE] variable letters is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int letters = random.add(buffer, start, gap);
+increase failing tests,252,add, [FE] ComparisonFailure testLANG805,,  chars[random.nextInt(gap)+ start] = buffer[0];
+compilation error,252,add,[CE] cannot find symbol,,  chars = random.charArray(buffer, start, gap);
+compilation error,252,add,[CE] variable chars is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  char[] chars = random.getChars(start, end);
+compilation error,252,add,[CE] cannot find symbol,,  chars = random.charAt(buffer, start, gap);
+compilation error,252,add,[CE] incompatible types,,  chars[random.nextInt(gap)] = buffer;
+compilation error,234,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start = chars.length;
+compilation error,234,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start = chars.length();
+compilation error,234,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start =(int)(chars.length - start);
+compilation error,234,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start = chars.indexOf('-');
+compilation error,234,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start = chars.indexOf('+');
+compilation error,253,add,[CE] variable start is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int start = random.nextInt(gap);
+compilation error,253,add,[CE] int cannot be dereferenced,,  chars = new char[gap.length];
+compilation error,253,add,[CE] possible loss of precision,,  buffer[gap] = start + 1;
+increase failing tests,253,add, [FE] AssertionFailedError testLANG807,,  chars = new char[256];
+increase failing tests,253,add, [FE] AssertionFailedError testLANG807,,  chars = new char[gap];
+compilation error,248,add,[CE] method arraycopy in class System cannot be applied to given types;,,  System.arraycopy(buffer, start, 0, buffer, start, 0);
+compilation error,248,add,[CE] method arraycopy in class System cannot be applied to given types;,,  System.arraycopy(buffer, start, 0, buffer, start, end);
+compilation error,248,add,[CE] variable chars is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  char[] chars = random.get(buffer, start, end);
+increase failing tests,248,add, [FE] ComparisonFailure testLANG805,,  chars[0] = buffer[start];
+increase failing tests,250,replace, [FE] ComparisonFailure testLANG805,while (count-- != 0) { ,while(count-- < 0) {
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.add(0, start);
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.add(start, end);
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.add(numbers, start);
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.add(null, start);
+compilation error,247,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.add(start);
+compilation error,230,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, start, chars, 0, count);
+compilation error,230,add,[CE] cannot find symbol Array,,  char[] buffer =(char[])Array.newInstance();
+compilation error,230,add,[CE] cannot find symbol buffer,,  System.arraycopy(buffer, start, count, buffer, start, end);
+compilation error,230,add,[CE] cannot find symbol Arrays,,  char[] buffer =(char[])Arrays.asList(numbers);
+compilation error,230,add,[CE] cannot find symbol ch,,  char[] buffer =(char[])Arrays.asList(ch);
+compilation error,250,add,[CE] variable ch is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  char ch = buffer[random.nextInt(gap)+ start];
+compilation error,250,add,[CE] variable ch is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  char ch =(char)(random.nextInt(gap)+ start);
+compilation error,250,add,[CE] variable ch is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int ch =(char)(random.nextInt(gap)+ start);
+compilation error,250,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = random.add(buffer, start, gap);
+compilation error,250,add,[CE] variable chars is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  char[] chars = random.getChars(start, end, buffer, start);
+increase failing tests,234,replace, [FE] IllegalArgumentException testLANG805,if (start == 0 && end == 0) { ,if(( start == 0)&&(end < 0)) {
+increase failing tests,234,replace, [FE] AssertionFailedError testLANG807,if (start == 0 && end == 0) { ,if(!letters &&!numbers) {
+increase failing tests,234,replace, [FE] AssertionFailedError testLANG807,if (start == 0 && end == 0) { ,if(count > 0) {
+increase failing tests,230,replace, [FE] AssertionFailedError testLANG807,if (chars != null && chars.length == 0) { ,if(chars == null) {
+compilation error,163,replace,[CE] no suitable method found for random(int,int,int,boolean,boolean,int,Random),return random(count, start, end, letters, numbers, null, RANDOM); ,return random(count, start, end, letters, numbers, 0, RANDOM);
+compilation error,163,replace,[CE] no suitable method found for random(int,int,int,boolean,boolean,Random),return random(count, start, end, letters, numbers, null, RANDOM); ,return random(count, start, end, letters, numbers, RANDOM);
+compilation error,227,add,[CE] illegal start of expression,,  if(( start == 0)&&(end == 0)) { if(chars.length!= 1) { throw new IllegalArgumentException(""); }
+compilation error,227,add,[CE] incompatible types,,  char ch =(char[])chars.clone();
+compilation error,227,add,[CE] illegal start of expression,,  if(( start == 0)&&(end < 0)) { if(chars.length!= 1) { throw new IllegalArgumentException(""); }
+compilation error,227,add,[CE] illegal start of expression,,  if(( start == 0)&&(end == 0)) { if(chars.length!= 1) { throw new IllegalArgumentException("The char array must not be empty"); }
+compilation error,227,add,[CE] illegal start of expression,,  if(( start == 0)&&(end == 0)) { if(chars.length!= 1) { throw new IllegalArgumentException("The string array must not be empty"); }
+increase failing tests,247,replace, [FE] ComparisonFailure testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[12];
+increase failing tests,247,replace, [FE] ComparisonFailure testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[8];
+compilation error,225,replace,[CE] cannot find symbol ch,if (count == 0) { ,if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!"numbers").equals(chars[0])) {
+compilation error,227,replace,[CE] ')' expected,} else if (count < 0) { ,} else if(count < less than 0.) {
+compilation error,227,replace,[CE] ')' expected,} else if (count < 0) { ,} else if(count < less than 0.10) {
+increase failing tests,248,replace, [FE] IllegalArgumentException testLANG805,int gap = end - start; ,int gap = end - start - 1;
+compilation error,163,add,[CE] no suitable method found for random(int,int,int,boolean,boolean,Random),,  random(count, start, end, letters, numbers, RANDOM);
+compilation error,163,add,[CE] incompatible types,,  Random RANDOM = random(count, start, end, letters, numbers, null, RANDOM);
+compilation error,163,add,[CE] no suitable method found for random(int,int,int,boolean,boolean,int,Random),,  random(count, start, end, letters, numbers, 0, RANDOM);
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count =(char[])chars.clone();
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count =(char[])chars.toCharArray();
+compilation error,225,add,[CE] variable count is already defined in method random(int,int,int,boolean,boolean,char[],Random),,  int count = chars.size();
+increase failing tests,230,replace, [FE] IllegalArgumentException testLANG805,if (chars != null && chars.length == 0) { ,if(chars!= null || chars.length < 0) {
+compilation error,230,replace,[CE] bad operand types for binary operator '<',if (chars != null && chars.length == 0) { ,if(chars < null || chars.length < 0) {
+increase failing tests,248,replace, [FE] ArrayIndexOutOfBoundsException testLANG805,int gap = end - start; ,int gap = end - start + 2;
+increase failing tests,248,replace, [FE] IllegalArgumentException testLANG805,int gap = end - start; ,int gap = end - start - 2;
+increase failing tests,247,replace, [FE] ComparisonFailure testLANG805,char[] buffer = new char[count]; ,char[] buffer = new char[9];
+compilation error,247,replace,[CE] ']' expected,char[] buffer = new char[count]; ,char[] buffer = new char[128);
+compilation error,163,add,[CE] cannot find symbol,,  RANDOM.setLanguage(count, start, end, letters, numbers);
+compilation error,163,add,[CE] cannot find symbol,,  checkLenient();
+compilation error,163,add,[CE] cannot find symbol,,  checkLocalFileNames(count, start, end); letters = 0;
+compilation error,163,add,[CE] no suitable method found for random(int,int,int,boolean,boolean,int),,  random(count, start, end, letters, numbers, 0);
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) { count = 0; }
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) { count = chars[0]; }
+compilation error,227,add,[CE] cannot find symbol ch,,  if(( letters && Character.isLetter(ch)) ||(numbers && Character.isDigit(ch)) ||(!letters &&!numbers)) { continue; }
+increase failing tests,250,add, [FE] ArrayIndexOutOfBoundsException testLANG805,,  chars[count--] =(char)(random.nextInt(gap)+ start);
+increase failing tests,250,add, [FE] AssertionFailedError testLANG807,,  buffer[gap] =(char)(56320 + random.nextInt(gap)+ start);
+increase failing tests,250,add, [FE] ComparisonFailure testLANG805,,  buffer[gap] =(char)(56320 + random.nextInt(gap)+ start); count--;
+increase failing tests,250,add, [FE] AssertionFailedError testLANG807,,  buffer[gap] =(char)(56320 + random.nextInt(gap)- start);
+increase failing tests,250,add, [FE] AssertionFailedError testLANG807,,  buffer[gap] =(char)(56320 + random.nextInt(gap)- 1);
+increase failing tests,227,replace, [FE] IllegalArgumentException testLANG805,} else if (count < 0) { ,} else if(count < 0 ||(!letters &&!numbers)) {
+increase failing tests,227,replace, [FE] AssertionFailedError testLANG807,} else if (count < 0) { ,} else if(count < 0 ||(letters && numbers)) {
+compilation error,227,replace,[CE] cannot find symbol,} else if (count < 0) { ,} else if(count < 0 || random.isLetterOrDigit(letters, numbers)) {

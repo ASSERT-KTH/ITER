@@ -1,0 +1,30 @@
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,dec  =  str.substring(decPos  +  1  -  1);  dec = str.substring(decPos + 1, expPos);
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,dec  =  str.substring(decPos  +  1  -  1);  dec = str.substring(decPos - 1, expPos);
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,dec  =  str.substring(decPos  +  1  -  1);  dec = str.substring(decPos + 1, expPos - 1);
+increase failing tests,595,replace, [FE] AssertionError testCreateNumber, return  f.length;  ,return FLOAT_ONE;
+increase failing tests,595,replace, [FE] AssertionError testCreateNumber, return  f.length;  ,return FLOAT_ZERO;
+increase failing tests,573,replace, [FE] AssertionError testCreateNumber,   exp  =  str.substring(0,  str.length()  -  1);  ,exp = str.substring(0, str.length());
+increase failing tests,573,replace, [FE] StringIndexOutOfBoundsException testCreateNumber,   exp  =  str.substring(0,  str.length()  -  1);  ,exp = str.substring(0, str.length() + 1);
+increase failing tests,573,replace, [FE] AssertionError testCreateNumber,   exp  =  str.substring(0,  str.length()  -  1);  ,exp = str.substring(0, str.length())+ 1;
+increase failing tests,571,add, [FE] NumberFormatException testCreateNumber, ,    dec  =  str.substring(0,  expPos);  if(dec == null) { dec = str.substring(0, expPos); } else { throw new NumberFormatException(""); }
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,    str.substring(decPos  +  1,  str.length());  dec = str.substring(decPos + 1, str.length() - 1);
+increase failing tests,494,replace, [FE] StringIndexOutOfBoundsException testCreateNumber, dec  =  str.substring(decPos  +  1  -  1);  ,dec = str.substring(decPos + 1, expPos - 1);
+increase failing tests,571,replace, [FE] StackOverflowError testCreateNumber,   if(dec  ==  null)  {  if(expPos  >  -1  &&  expPos  <  str.length()  -  1)  {  return  createNumber(str);  }  ,return createNumber(str);
+increase failing tests,595,replace, [FE] AssertionError testCreateNumber,   if(!f.isInfinite()  &&(f.floatValue()  ==  0.0F  &&!allZeros)))  {  f  =  createFloat(str);  if(!(f.isInfinite()  ||(f.floatValue()  ==  0.0  ,int exponentPos = str.length() - 1;
+increase failing tests,573,replace, [FE] AssertionError testCreateNumber,   ,exp = str.substring(decPos + 1, str.length());
+increase failing tests,573,replace, [FE] AssertionError testCreateNumber,   ,exp = str.substring(decPos + 1);
+increase failing tests,573,replace, [FE] AssertionError testCreateNumber, exp  =  str.substring(0,  strPos);  ,exp = str.substring(0, pfxLen);
+increase failing tests,571,replace, [FE] StringIndexOutOfBoundsException testIsNumber, exp  =  str.substring(expPos  +  1,  str.length())+  1;  ,exp = str.substring(expPos + 1, str.length() - 2)+ 1;
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testIsNumber, ,dec  =  str.substring(decPos  +  1  -  1);  dec = str.substring(decPos - 1);
+increase failing tests,494,replace, [FE] StringIndexOutOfBoundsException testIsNumber, dec  =  str.substring(decPos  +  1  -  1);  ,dec = str.substring(decPos - 1);
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,dec  =  str.substring(decPos  +  1  -  1);  dec = str.substring(decPos + 1, decPos);
+increase failing tests,492,replace, [FE] StringIndexOutOfBoundsException testCreateNumber, dec  =  str.substring(decPos  +  1,  expPos  -  1);  ,dec = str.substring(expPos + 1, decPos);
+increase failing tests,571,replace, [FE] NumberFormatException testCreateNumber, exp  =  str.substring(expPos  +  1,  str.length())+  1;  ,return createBigInteger(str);
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,    str.substring(decPos  +  1,  str.length());  str.substring(decPos + 1, str.length() - 1);
+increase failing tests,494,add, [FE] StringIndexOutOfBoundsException testCreateNumber, ,    str.substring(decPos  +  1,  str.length());  dec = str.substring(decPos + 1, expPos);
+increase failing tests,573,replace, [FE] AssertionError testCreateNumber,   ,exp = str.substring(expPos + 1);
+increase failing tests,573,replace, [FE] StringIndexOutOfBoundsException testCreateNumber,   ,exp = str.substring(expPos - 1, str.length());
+increase failing tests,594,replace, [FE] AssertionError testCreateNumber,   if(f  ==  null)  {  if(!f.isInfinite()  ||(f.floatValue()  ==  0.0F  &&!allZeros)))  {  return  f;  }  ,if(f == null) {
+increase failing tests,492,replace, [FE] StringIndexOutOfBoundsException testCreateNumber, dec  =  str.substring(decPos  +  1,  expPos  -  1);  ,dec = str.substring(decPos + 1, expPos * 2);
+increase failing tests,570,replace, [FE] AssertionError testIsNumber, if(dec  >  -1  &&  expPos  >  -1  &&  expPos  <  str.length()  -  1)  {  ,if(expPos > -1 && expPos >= str.length() - 1) {
+increase failing tests,573,replace, [FE] StringIndexOutOfBoundsException testCreateNumber,   exp  =  str.substring(0,  str.length()  -  1);  ,exp = str.substring(expPos, str.length() - 1);

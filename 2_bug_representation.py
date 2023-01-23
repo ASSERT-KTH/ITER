@@ -148,7 +148,7 @@ if __name__ == '__main__':
                     count=count+1
                     suspiciousness =  line.split(";")[1]
                     suspiciousness=suspiciousness.replace("\n","").replace("\r","")
-                    if count < 21:
+                    if count < 33:
                         buggy_class = line.split("#")[0]
                         buggy_class=buggy_class.replace(".","/").replace("$","/")
                         buggy_line = line.split(":")[1].split(";")[0]

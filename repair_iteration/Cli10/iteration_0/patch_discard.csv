@@ -1,20 +1,9 @@
-patch is same with buggy,,processProperties(properties); ,processProperties(properties);
-compilation error,[CE] cannot find symbol,processProperties(properties); ,processOptions(properties);
-compilation error,[CE] cannot find symbol,processProperties(properties); ,processRequiredOptions(properties);
-compilation error,[CE] cannot find symbol,processProperties(properties); ,processAllProperties(properties);
-compilation error,[CE] method processProperties in class Parser cannot be applied to given types;,processProperties(properties); ,processProperties(properties, stopAtNonOption);
-compilation error,[CE] method processProperties in class Parser cannot be applied to given types;,processProperties(properties); ,processProperties(properties, iterator);
-compilation error,[CE] method processProperties in class Parser cannot be applied to given types;,processProperties(properties); ,processProperties(arguments);
-compilation error,[CE] cannot find symbol,processProperties(properties); ,processArguments(properties);
-compilation error,[CE] cannot find symbol args,processProperties(properties); ,processProperties(args);
-compilation error,[CE] method processArgs in class Parser cannot be applied to given types;,processProperties(properties); ,processArgs(properties);
-compilation error,[CE] variable opt is already defined in method processOption(String,ListIterator),,Option opt = getOptions().getOption(opt);
-compilation error,[CE] variable opt is already defined in method processOption(String,ListIterator),,Option opt =(Option)opt.getKey();
-compilation error,[CE] variable opt is already defined in method processOption(String,ListIterator),,Option opt =(Option)opt.getValue();
-compilation error,[CE] variable opt is already defined in method processOption(String,ListIterator),,Option opt =(Option)opt.clone();
-compilation error,[CE] cannot assign a value to final variable opt,,opt = getOptions().getOption(opt);
-compilation error,[CE] cannot find symbol option,,option = getOptions().getOption(opt);
-compilation error,[CE] variable opt is already defined in method processOption(String,ListIterator),,Option opt = options.getOption(opt);
-compilation error,[CE] cannot assign a value to final variable opt,,opt =(Option)opt.getValue();
-compilation error,[CE] cannot assign a value to final variable opt,,opt =(Option)opt.clone();
-compilation error,[CE] cannot find symbol,,opt.setSelected(opt);
+compilation error,47,replace,[CE] illegal start of expression,} ,cmd.addOption(options);
+compilation error,47,replace,[CE] illegal start of expression,} ,cmd.addAllOptions(options);
+compilation error,47,replace,[CE] illegal start of expression,} ,cmd.setOptions(options);
+compilation error,47,replace,[CE] illegal start of expression,} ,cmd.setRequiredOptions(options);
+compilation error,47,replace,[CE] illegal start of expression,} , 
+increase failing tests,404,replace, [FE] org.apache.commons.cli.MissingOptionException: Missing required options: v testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); ,getRequiredOptions().add(opt.getKey());
+increase failing tests,404,replace, [FE] MissingOptionException testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); ,getRequiredOptions().remove(opt.getValue());
+increase failing tests,404,replace, [FE] org.apache.commons.cli.MissingOptionException: Missing required options: v testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); ,getRequiredOptions().add(opt.getValue());
+increase failing tests,404,replace, [FE] MissingOptionException testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); , 

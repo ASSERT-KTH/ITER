@@ -1,0 +1,28 @@
+increase failing tests,262,replace, [FE] AssertionError testQuinticMinStatistics,v = u; ,v = w;
+increase failing tests,262,replace, [FE] TooManyEvaluationsException testMath832,v = u; ,v = fw;
+increase failing tests,262,replace, [FE] AssertionError testQuinticMinStatistics,v = u; ,v = x;
+increase failing tests,259,replace, [FE] AssertionError testQuinticMinStatistics,} else if (fu <= fv ||  Precision.equals(v, x) ||    Precision.equals(v, w)) { ,} else if(fv > x || Precision.equals(v, x)|| Precision.equals(v, w)) {
+increase failing tests,259,replace, [FE] AssertionError testQuinticMinStatistics,} else if (fu <= fv ||  Precision.equals(v, x) ||    Precision.equals(v, w)) { ,} else if(fv > 0 || Precision.equals(v, x)|| Precision.equals(v, w)) {
+increase failing tests,259,replace, [FE] AssertionError testQuinticMinStatistics,} else if (fu <= fv ||  Precision.equals(v, x) ||    Precision.equals(v, w)) { ,} else if(fv == x || Precision.equals(v, x)|| Precision.equals(v, w)) {
+increase failing tests,259,replace, [FE] AssertionError testQuinticMinStatistics,} else if (fu <= fv ||  Precision.equals(v, x) ||    Precision.equals(v, w)) { ,} else if(fv == fv || Precision.equals(v, x)|| Precision.equals(v, w)) {
+increase failing tests,259,replace, [FE] TooManyEvaluationsException testQuinticMinStatistics,} else if (fu <= fv ||  Precision.equals(v, x) ||    Precision.equals(v, w)) { , 
+increase failing tests,262,add, [FE] AssertionError testQuinticMinStatistics,,  if(u > 0 || Precision.equals(v, x)|| Precision.equals(v, w)) { continue; }
+increase failing tests,263,replace, [FE] AssertionError testQuinticMinStatistics,fv = fu; ,fv = w;
+increase failing tests,263,replace, [FE] AssertionError testQuinticMinStatistics,fv = fu; ,fv = v;
+increase failing tests,263,replace, [FE] AssertionError testMath832,fv = fu; ,fv = fw;
+increase failing tests,263,replace, [FE] AssertionError testQuinticMinStatistics,fv = fu; ,fv = x;
+increase failing tests,263,replace, [FE] AssertionError testQuinticMinStatistics,fv = fu; , 
+increase failing tests,178,replace, [FE] AssertionError testQuinticMax,d = p / q; ,d = p / r;
+increase failing tests,178,replace, [FE] AssertionError testQuinticMax,d = p / q; ,d = p * q;
+increase failing tests,178,replace, [FE] AssertionError testQuinticMax,d = p / q; ,d = p * r;
+increase failing tests,178,replace, [FE] AssertionError testQuinticMax,d = p / q; ,d = q * p;
+increase failing tests,251,replace, [FE] AssertionError testQuinticMinStatistics,b = u; ,b = a;
+increase failing tests,251,replace, [FE] AssertionError testQuinticMinStatistics,b = u; ,b = x;
+increase failing tests,251,replace, [FE] AssertionError testQuinticMinStatistics,b = u; ,b = u - 1;
+increase failing tests,251,replace, [FE] TooManyEvaluationsException testQuinticMin,b = u; ,b = fw;
+increase failing tests,183,replace, [FE] AssertionError testMath855,if (x <= m) { ,if(x > tol1) {
+increase failing tests,183,replace, [FE] AssertionError testMath855,if (x <= m) { ,if(tol1 <= x) {
+increase failing tests,183,replace, [FE] AssertionError testMath855,if (x <= m) { ,if(a > tol1) {
+increase failing tests,183,replace, [FE] AssertionError testMath855,if (x <= m) { ,if(a <= tol1) {
+increase failing tests,184,add, [FE] AssertionError testQuinticMinStatistics,,  a = b - x;
+increase failing tests,184,add, [FE] AssertionError testQuinticMin,,  x = b - x;

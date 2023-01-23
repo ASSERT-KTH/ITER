@@ -1,0 +1,25 @@
+compilation error,253,add,[CE] illegal start of expression, ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); >>
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); }
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  , 
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList  ==  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.toolTipGeneratorList  =  new  ObjectList();  }  , 
+compilation error,1791,add,[CE] cannot find symbol, ,CategoryPlot plot =(CategoryPlot)getCfgPlot();
+compilation error,1791,add,[CE] cannot find symbol, ,CategoryPlot cp =(CategoryPlot)getCycle();
+patch is same with buggy,1791,replace,, CategoryPlot  plot  =(CategoryPlot)getPlot();  ,CategoryPlot plot =(CategoryPlot)getPlot();
+compilation error,1791,replace,[CE] cannot find symbol, CategoryPlot  plot  =(CategoryPlot)getPlot();  ,CategoryPlot plot =(CategoryPlot)this.plot.getPlot();
+patch is same with buggy,1791,replace,, CategoryPlot  cp  =(CategoryPlot)getPlot();  ,CategoryPlot cp =(CategoryPlot)getPlot();
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); }
+compilation error,253,replace,[CE] illegal start of expression, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  ,if(this.baseToolTipGenerator == null) { if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); }
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); }
+compilation error,1791,add,[CE] not a statement, ,CategoryPlot this =(CategoryPlot)getPlot();
+compilation error,253,add,[CE] cannot find symbol, ,this.baseURLGenerator = new BaseToolTipGenerator();
+patch is same with buggy,1791,replace,, CategoryPlot  cp  =(CategoryPlot)getPlot();  ,CategoryPlot cp =(CategoryPlot)getPlot();
+patch is same with buggy,1791,replace,, CategoryPlot  plot  =(CategoryPlot)getPlot();  ,CategoryPlot plot =(CategoryPlot)getPlot();
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); }
+compilation error,1791,add,[CE] variable item is already defined in method getLegendItems(), ,CategoryPlot item =(CategoryPlot)getPlot();
+compilation error,253,add,[CE] cannot find symbol baseURLGeneratorList, ,if(this.baseURLGenerator!= null) { this.itemLabelGeneratorList = new ObjectList(); this.baseURLGeneratorList = new ObjectList(); }
+patch is same with buggy,1791,replace,, CategoryPlot  cp  =(CategoryPlot)getPlot();  ,CategoryPlot cp =(CategoryPlot)getPlot();
+compilation error,1791,replace,[CE] cannot find symbol, CategoryPlot  cp  =(CategoryPlot)getPlot();  ,CategoryPlot cp =(CategoryPlot)getPlotInfo();
+patch is same with buggy,253,replace,, if(this.itemLabelGeneratorList!=  null)  {  this.itemLabelGeneratorList  =  new  ObjectList();  this.urlGeneratorList  =  new  ObjectList();  }  ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.urlGeneratorList = new ObjectList(); }
+patch is same with buggy,1791,replace,, CategoryPlot  plot  =(CategoryPlot)getPlot();  ,CategoryPlot plot =(CategoryPlot)getPlot();
+compilation error,1791,replace,[CE] cannot find symbol, CategoryPlot  plot  =(CategoryPlot)getPlot();  ,CategoryPlot plot =(CategoryPlot)getPlotInfo();
+compilation error,253,add,[CE] cannot find symbol baseURLGeneratorList, ,if(this.itemLabelGeneratorList!= null) { this.itemLabelGeneratorList = new ObjectList(); this.baseURLGeneratorList = new ObjectList(); }

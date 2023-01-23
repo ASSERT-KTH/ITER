@@ -1,0 +1,9 @@
+compilation error,44,add,[CE] cannot find symbol weight,,  this.weight = weightMatrix.getWidth();
+compilation error,44,add,[CE] cannot find symbol weight,,  this.weight = weightMatrix.getLength();
+compilation error,44,add,[CE] illegal start of expression,,  if(weight!= null) { for(int dim = 0; dim < weight.length; i++) { weightMatrix.setEntry(dim, weight[i]); }
+compilation error,44,add,[CE] illegal start of expression,,  if(weight!= null) { for(int dim = 0; dim < weight.length; i++) { weightMatrix.setEntry(weight, dim); }
+compilation error,44,add,[CE] cannot find symbol weight,,  this.weight = weightMatrix.doubleValue();
+compilation error,250,replace,[CE] variable optData is already defined in method parseOptimizationData(OptimizationData...),for (OptimizationData data : optData) { ,for(OptimizationData optData : data) {
+compilation error,250,replace,[CE] variable optData is already defined in method parseOptimizationData(OptimizationData...),for (OptimizationData data : optData) { ,for(OptimizationData optData : optData) {
+compilation error,250,replace,[CE] variable optData is already defined in method parseOptimizationData(OptimizationData...),for (OptimizationData data : optData) { ,for(OptimizationData optData : data.optData) {
+compilation error,250,replace,[CE] class, interface, or enum expected,for (OptimizationData data : optData) { , 

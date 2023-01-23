@@ -1,0 +1,207 @@
+compilation error,143,add,[CE] cannot find symbol minRows,,  row =(List)this.minRows.get(i);
+compilation error,143,add,[CE] cannot find symbol minRow,,  row =(List)this.minRow.clone();
+compilation error,143,add,[CE] cannot find symbol minRow,,  row =(List)this.minRow.getColumnCount();
+compilation error,143,add,[CE] cannot find symbol,,  row = getRow(row, col);
+compilation error,143,add,[CE] cannot find symbol minRow,,  row =(List)this.minRow.get(i);
+compilation error,150,replace,[CE] illegal start of expression,} ,if(col < column) { if(minRow > col) { minRow = row; if(minRow > col) { throw new IllegalArgumentException(""); }
+compilation error,150,replace,[CE] illegal start of expression,} ,if(col < column) { if(minRow > col) { minRow = row; if(minRow > col) { return minRow; }
+compilation error,150,replace,[CE] illegal start of expression,} ,if(col < column) { if(minRow > col) { minRow = row; if(minRow > col) { minRow = row; }
+compilation error,150,replace,[CE] illegal start of expression,} ,if(col < column) { if(minRow > col) { minRow = row.getColumnCount(); if(minRow > col) { minRow = row; }
+compilation error,150,replace,[CE] illegal start of expression,} , 
+compilation error,140,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = tableau.getColumnCount();
+compilation error,140,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = table.getColumnCount();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = table.getMinimumPositions();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = tableau.getRows();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = Tableau.getIntegerSize();
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = this.minRows.get(col);
+compilation error,139,add,[CE] > expected,,  SimplexTableau < Integer row = simplexTableau.getIntegerValue();
+compilation error,139,add,[CE] > expected,,  SimplexTableau < Integer row = simplexTableau.getIntegerColumn();
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = this.minRows.get(row);
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = table.getIntegerValue();
+compilation error,143,replace,[CE] cannot find symbol table,if (row == tableau.getBasicRow(i)) { ,if(row > table.getBasicRow(i)) {
+increase failing tests,143,replace, [FE] NullPointerException testMath288,if (row == tableau.getBasicRow(i)) { ,if(row > tableau.getBasicRow(i)) {
+compilation error,143,replace,[CE] cannot find symbol table,if (row == tableau.getBasicRow(i)) { ,if(row > table.getRowWidth()) {
+compilation error,146,add,[CE] illegal start of expression,,  if(row > col) { if(minRow.getColumnCount() > 1) { minRow = row; }
+compilation error,146,add,[CE] illegal start of expression,,  if(row > col) { if(minRow.getColumnCount() > 1) { row = row; }
+compilation error,146,add,[CE] illegal start of expression,,  if(row > col) { if(minRow.getColumnCount() > 1) { minRow = column; }
+compilation error,146,add,[CE] cannot find symbol table,,  row = table.getRowIndex();
+compilation error,146,add,[CE] cannot find symbol table,,  row = table.getRowIndex(i);
+compilation error,144,add,[CE] cannot find symbol column,,  column = tableau.getColumnCount();
+compilation error,144,add,[CE] cannot find symbol,,  row = tableau.getRowIndex();
+compilation error,144,add,[CE] cannot find symbol column,,  column = tableau.getColumnIndex();
+compilation error,144,add,[CE] cannot find symbol table,,  row = table.getRowIndex();
+compilation error,144,add,[CE] cannot find symbol,,  i = tableau.getBasicColumn();
+compilation error,142,replace,[CE] cannot find symbol column,for (; i < tableau.getWidth() - 1 && minRow != row; i++) { ,for(; i < tableau.getWidth() && column!= minRow; i++) {
+increase failing tests,142,replace, [FE] UnboundedSolutionException testMath288,for (; i < tableau.getWidth() - 1 && minRow != row; i++) { ,for(; i < tableau.getWidth() && i!= row; i++) {
+compilation error,142,replace,[CE] illegal start of type,for (; i < tableau.getWidth() - 1 && minRow != row; i++) { , 
+compilation error,145,add,[CE] cannot find symbol table,,  row = table.getRowIndex(i);
+compilation error,145,add,[CE] cannot find symbol,,  row =(Integer)tableau.getPivotRow(i);
+compilation error,145,add,[CE] cannot find symbol,,  row =(Integer)tableau.getColumnFloat(col);
+compilation error,145,add,[CE] cannot find symbol,,  row =(Integer)tableau.getColumnSize();
+compilation error,145,add,[CE] cannot find symbol,,  row =(Integer)tableau.getPivotRow();
+compilation error,142,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = row.getColumnCount();
+compilation error,142,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = table.getColumnFunctions();
+compilation error,142,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = table.getColumnCount();
+compilation error,142,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = table.getColumnFunction(col);
+compilation error,142,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = table.getColumnIndex();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(Integer)this.minRow.clone();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(Integer)this.minRow.getColumnCount();
+compilation error,141,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = table.getColumnCount();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(Integer)this.minRow.toColumn();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(Integer)this.minRow;
+increase failing tests,139,replace, [FE] UnboundedSolutionException testMath828,int minIndex = tableau.getWidth(); ,int minIndex = tableau.getHeight();
+compilation error,139,replace,[CE] cannot find symbol table,int minIndex = tableau.getWidth(); ,int minIndex = table.getHeight();
+compilation error,139,replace,[CE] cannot find symbol,int minIndex = tableau.getWidth(); ,int minIndex = tableau.getColumnIndex();
+compilation error,139,replace,[CE] cannot find symbol,int minIndex = tableau.getWidth(); ,int minIndex = tableau.getColumnCount();
+increase failing tests,146,replace, [FE] AssertionError testMath288,minRow = row; ,minRow = i;
+increase failing tests,146,replace, [FE] AssertionError testMath288,minRow = row; ,minRow = row - 1;
+increase failing tests,146,replace, [FE] AssertionError testMath828,minRow = row; ,minRow = col;
+increase failing tests,146,replace, [FE] AssertionError testMath288,minRow = row; ,minRow = row - col;
+compilation error,138,replace,[CE] cannot find symbol minRow,Integer minRow = null; ,Integer minRow = this.minRow;
+compilation error,138,replace,[CE] incompatible types,Integer minRow = null; ,Integer minRow = DEFAULT_EPSILON;
+compilation error,138,replace,[CE] incompatible types,Integer minRow = null; ,Integer minRow = this;
+compilation error,138,replace,[CE] cannot find symbol row,Integer minRow = null; ,Integer minRow = row;
+compilation error,138,replace,[CE] cannot find symbol minRow,Integer minRow = null; , 
+compilation error,140,replace,[CE] cannot find symbol minRows,for (Integer row : minRatioPositions) { ,for(Integer row : minRows) {
+compilation error,140,replace,[CE] for-each not applicable to expression type,for (Integer row : minRatioPositions) { ,for(Integer row : col) {
+compilation error,140,replace,[CE] for-each not applicable to expression type,for (Integer row : minRatioPositions) { ,for(Integer row : minRow) {
+compilation error,141,replace,[CE] cannot find symbol,int i = tableau.getNumObjectiveFunctions(); ,int i = tableau.getColumnCount();
+compilation error,141,replace,[CE] cannot find symbol,int i = tableau.getNumObjectiveFunctions(); ,int i = tableau.getColumnIndex();
+compilation error,141,replace,[CE] cannot find symbol table,int i = tableau.getNumObjectiveFunctions(); ,int i = table.getHeight();
+increase failing tests,144,replace, [FE] UnboundedSolutionException testMath288,if (i < minIndex) { ,if(i > minIndex) {
+increase failing tests,144,replace, [FE] NullPointerException testMath288,if (i < minIndex) { ,if(i > minRow) {
+increase failing tests,144,replace, [FE] UnboundedSolutionException testMath288,if (i < minIndex) { ,if(minIndex < i) {
+compilation error,138,add,[CE] cannot find symbol,,  Tableau tableau = Tableau.createInstance(col);
+compilation error,138,add,[CE] cannot find symbol,,  Tableau tableau = Tableau.getInstance(col);
+compilation error,138,add,[CE] cannot find symbol,,  int column = getColumnCount();
+compilation error,138,add,[CE] variable col is already defined in method getPivotRow(SimplexTableau,int),,  int col = getColumnCount();
+compilation error,138,add,[CE] cannot find symbol,,  Tableau tableau = Tableau.createInstance(col, null);
+compilation error,150,add,[CE] cannot find symbol table,,  row = table.getColumnIndex(col);
+compilation error,150,add,[CE] cannot find symbol table,,  row = table.getColumnIndex(col); minRow = row;
+compilation error,150,add,[CE] cannot find symbol table,,  row = table.getColumnIndex();
+compilation error,150,add,[CE] cannot find symbol table,,  row = table.getColumnCount();
+compilation error,150,add,[CE] cannot find symbol table,,  row = table.getColumnIndex(col); minRow = col;
+compilation error,143,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = tableau.getLength();
+compilation error,143,add,[CE] cannot find symbol,,  row =(Integer)tableau.getRowWidth();
+compilation error,143,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = tableau.getColumnWidth();
+compilation error,143,add,[CE] cannot find symbol,,  row =(SimplexTableau)this.getRow(minIndex);
+compilation error,143,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = tableau.getLength() - 1;
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = tableau.getPositions();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = tableau.getRowWidth();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = tableau.getMinimumPositions();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = tableau.getRowCount();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions = tableau.getMinimumFunction();
+compilation error,139,replace,[CE] cannot find symbol,int minIndex = tableau.getWidth(); ,int minIndex = tableau.getMinimumFunctionIndex();
+compilation error,150,add,[CE] cannot find symbol,,  return tableau.getPivotRow(minIndex);
+compilation error,150,add,[CE] cannot find symbol,,  row =(SimplexTableau)this.getBasicRow();
+compilation error,150,add,[CE] method getBasicRow in class SimplexTableau cannot be applied to given types;,,  row =(SimplexTableau)tableau.getBasicRow();
+compilation error,150,add,[CE] cannot find symbol table,,  table.setIndex(minIndex);
+compilation error,150,add,[CE] method getPivotRow in class SimplexSolver cannot be applied to given types;,,  row =(SimplexTableau)this.getPivotRow();
+compilation error,141,replace,[CE] cannot find symbol,int i = tableau.getNumObjectiveFunctions(); ,int i = row.getNumObjectiveFunctions();
+compilation error,141,replace,[CE] cannot find symbol,int i = tableau.getNumObjectiveFunctions(); ,int i = tableau.getLength();
+compilation error,144,add,[CE] method getBasicRow in class SimplexTableau cannot be applied to given types;,,  row = tableau.getBasicRow();
+compilation error,144,add,[CE] cannot find symbol,,  row = tableau.getRowWidth();
+compilation error,144,add,[CE] variable minIndex is already defined in method getPivotRow(SimplexTableau,int),,  int minIndex = table.getMinimumObjectiveFunction();
+compilation error,144,add,[CE] variable minIndex is already defined in method getPivotRow(SimplexTableau,int),,  int minIndex = table.getBasicIndex();
+compilation error,144,add,[CE] cannot find symbol column,,  column = tableau.getColumn();
+increase failing tests,144,replace, [FE] UnboundedSolutionException testMath288,if (i < minIndex) { ,if(minIndex < 0) {
+increase failing tests,144,replace, [FE] UnboundedSolutionException testMath288,if (i < minIndex) { ,if(i > maxUlps) {
+compilation error,145,add,[CE] method getBasicRow in class SimplexTableau cannot be applied to given types;,,  row =(Integer)tableau.getBasicRow();
+compilation error,145,add,[CE] method getBasicRow in class SimplexTableau cannot be applied to given types;,,  row =(SimplexTableau)tableau.getBasicRow();
+compilation error,145,add,[CE] cannot find symbol table,,  row =(SimplexTableau)table.getBasicRow();
+compilation error,145,add,[CE] cannot find symbol column,,  column = tableau.getColumnWidth();
+compilation error,145,add,[CE] method getBasicRow in class SimplexTableau cannot be applied to given types;,,  row = tableau.getBasicRow();
+compilation error,138,replace,[CE] cannot find symbol minRow,Integer minRow = null; ,Integer minRow =(int)this.minRow;
+compilation error,138,replace,[CE] cannot find symbol minRatioPositions,Integer minRow = null; ,Integer minRow = this.minRatioPositions;
+compilation error,139,add,[CE] cannot find symbol minRows,,  List < Integer> row =(List)this.minRows.get(minRow);
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions =(List)this.minRows.get(col);
+compilation error,139,add,[CE] cannot find symbol,,  List < Integer> row = getRows();
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  List < Integer> minRatioPositions =(List)this.minRows.get(row);
+compilation error,139,add,[CE] cannot find symbol minRows,,  List < Integer> row =(List)this.minRows.get(col);
+increase failing tests,146,replace, [FE] AssertionError testMath288,minRow = row; ,minRow = row *(i - minIndex);
+increase failing tests,146,replace, [FE] MaxCountExceededException testMath828,minRow = row; ,minRow = row + 1;
+compilation error,146,add,[CE] illegal start of expression,,  if(i > 0) { if(!(minRow instanceof Integer)) { return(Integer)rhs.divide(minRow, col); }
+compilation error,146,add,[CE] illegal start of expression,,  if(i > 0) { if(!(minRow instanceof Integer)) { throw new IllegalArgumentException("Invalid row or column index selection"); }
+compilation error,146,add,[CE] illegal start of expression,,  if(i > 0) { if(!(minRow instanceof Integer)) { throw new IllegalArgumentException("Invalid row or column selection"); }
+compilation error,146,add,[CE] illegal start of expression,,  if(i > 0) { if(!(minRow instanceof Integer)) { return(Integer)rhs.get(minIndex); }
+compilation error,146,add,[CE] illegal start of expression,,  if(i > 0) { if(!(minRow instanceof Integer)) { return(Integer)rhs.intValue(); }
+increase failing tests,143,replace, [FE] NullPointerException testMath288,if (row == tableau.getBasicRow(i)) { ,if(i == tableau.getBasicRow(row)) {
+increase failing tests,143,replace, [FE] NullPointerException testMath288,if (row == tableau.getBasicRow(i)) { ,if(i == tableau.getBasicRow(i)) {
+compilation error,143,replace,[CE] cannot find symbol column,if (row == tableau.getBasicRow(i)) { ,if(i!= column) {
+compilation error,150,replace,[CE] illegal start of expression,} ,column = tableau.getColumnIndex();
+compilation error,150,replace,[CE] illegal start of expression,} ,for(int i = row.getWidth() - 1; i < minIndex; i++) { Integer column = tableau.getColumnIndex(minIndex); if(col < 0) { column = col + 1; }
+compilation error,150,replace,[CE] illegal start of expression,} ,for(int i = row.getWidth() - 1; i < minIndex; i++) { Integer column = table.getColumnIndex(minIndex); if(col < 0) { setPosition(col); }
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = row.getMinimumFunction();
+compilation error,141,add,[CE] cannot find symbol,,  row =(SimplexTableau)this.getRow();
+compilation error,141,add,[CE] cannot find symbol,,  row =(SimplexTableau)this.getRowWidth();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(int)this.minRow.clone();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(int)this.minRow.getColumn();
+compilation error,140,replace,[CE] for-each not applicable to expression type,for (Integer row : minRatioPositions) { ,for(Integer row : minIndex) {
+compilation error,140,replace,[CE] ')' expected,for (Integer row : minRatioPositions) { ,for(Integer row : minRatioPositions, col) {
+compilation error,140,replace,[CE] for-each not applicable to expression type,for (Integer row : minRatioPositions) { ,for(Integer row : minRatioPositions.size() - 1) {
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau =(SimplexTableau)this.getPivotRow();
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau =(SimplexTableau)getPivotRow();
+compilation error,138,add,[CE] cannot find symbol minRows,,  List < Integer> row =(List)this.minRows.get(col);
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau = getSimplexTableau();
+compilation error,138,add,[CE] cannot find symbol,,  List < Integer> row = getRows();
+compilation error,142,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = row.getMinimumRow();
+compilation error,142,add,[CE] cannot find symbol,,  int maxUlps = Math.max(maxUlps, row.getMinimumNumber());
+compilation error,142,add,[CE] variable maxUlps might not have been initialized,,  int maxUlps = Math.max(maxUlps, col);
+compilation error,142,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(int)this.minRow.clone();
+compilation error,142,add,[CE] variable maxUlps might not have been initialized,,  int maxUlps = Math.max(maxUlps, i);
+compilation error,145,add,[CE] cannot find symbol,,  row = tableau.getLength();
+compilation error,145,add,[CE] cannot find symbol,,  row = getRowColumn();
+compilation error,145,add,[CE] cannot find symbol table,,  row = table.getLength();
+compilation error,145,add,[CE] cannot find symbol tab,,  row =(int)tab.getColumnIndex(col);
+compilation error,140,replace,[CE] cannot find symbol minRatioPositions,for (Integer row : minRatioPositions) { ,for(Integer row : this.minRatioPositions) {
+compilation error,142,add,[CE] cannot find symbol,,  int maxUlps = Math.max(maxUlps, row.getSize());
+compilation error,142,add,[CE] cannot find symbol,,  int maxUlps = Math.max(maxUlps, row.size() - 1);
+compilation error,142,add,[CE] cannot find symbol,,  int maxUlps = Math.max(maxUlps, row.getLength());
+compilation error,140,add,[CE] cannot find symbol,,  int maxUlps = tableau.getMaxUlps();
+compilation error,140,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = tableau.getHeight();
+compilation error,140,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  int minRatioPositions = tableau.getColumnCount();
+compilation error,140,add,[CE] cannot find symbol table,,  int maxUlps = table.getMaximumFractionValue();
+compilation error,140,add,[CE] cannot find symbol table,,  int maxUlps = table.getMaxUlps();
+compilation error,150,replace,[CE] illegal start of expression,} ,if(col < 0) { for(int i = 1; i < tableau.getLength(); i++) { table.setIndex(minRow); }
+compilation error,150,replace,[CE] illegal start of expression,} ,for(int i = 1; i < tableau.getHeight(); i++) { if(!Table.contains(minRow)) { table.setIndex(minRow); }
+compilation error,150,replace,[CE] illegal start of expression,} ,if(col < 0) { for(int i = 1; i < tableau.getLength(); i++) { table.setItem(minRow); }
+compilation error,150,replace,[CE] illegal start of expression,} ,for(int i = 1; i < tableau.getHeight(); i++) { if(!Table.contains(minRow)) { minRow = col; }
+compilation error,146,add,[CE] cannot find symbol table,,  i = table.getLength();
+compilation error,146,add,[CE] cannot find symbol,,  row = getRowColumn();
+compilation error,146,add,[CE] cannot find symbol table,,  i = table.getBasicValue();
+compilation error,146,add,[CE] cannot find symbol,,  i = tableau.getBasicValue(i);
+compilation error,146,add,[CE] cannot find symbol table,,  i = table.getBasicValue(i);
+compilation error,143,replace,[CE] cannot find symbol table,if (row == tableau.getBasicRow(i)) { ,if(i == table.getBasicRow(i)) {
+compilation error,139,add,[CE] variable maxUlps might not have been initialized,,  int maxUlps = Math.max(maxUlps, col);
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  int minRatioPositions = getMinimumRowPositions();
+compilation error,139,add,[CE] variable minRatioPositions is already defined in method getPivotRow(SimplexTableau,int),,  int minRatioPositions =(int)Tableau.getPositions();
+compilation error,139,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = getMaxRow();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(int)table.getColumnCount();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(int)tabella.getColumnCount();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = table.getColumnCount();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow =(int)tabell.getColumnCount();
+compilation error,141,add,[CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int),,  int minRow = table.getColumnIndex();
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau = getPivotTableau();
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau =(SimplexTableau)getPivotTableau();
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau =(SimplexTableau)getTableau();
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau =(SimplexTableau)getObject();
+compilation error,138,add,[CE] variable tableau is already defined in method getPivotRow(SimplexTableau,int),,  SimplexTableau tableau =(SimplexTableau)getDataArea(col);
+increase failing tests,144,replace, [FE] NullPointerException testMath288,if (i < minIndex) { ,if(i < minRow) {
+increase failing tests,146,replace, [FE] NullPointerException testMath288,minRow = row; ,minRow -= row;
+increase failing tests,146,replace, [FE] OutOfRangeException testMath288,minRow = row; ,minRow = row + i;
+compilation error,143,add,[CE] cannot find symbol,,  row = tableau.getColumnLength();
+compilation error,143,add,[CE] cannot find symbol table,,  row =(int)table.getObject();
+compilation error,143,add,[CE] cannot find symbol table,,  row = table.getColumnIndex(i);
+compilation error,143,add,[CE] cannot find symbol tabella,,  row =(int)tabella.getColumnIndex(col);
+compilation error,143,add,[CE] cannot find symbol tabella,,  row =(int)tabella.getColumnCount();
+increase failing tests,142,replace, [FE] NullPointerException testMath288,for (; i < tableau.getWidth() - 1 && minRow != row; i++) { ,for(; i < tableau.getWidth() && minRow!= col; i++) {
+compilation error,142,replace,[CE] cannot find symbol column,for (; i < tableau.getWidth() - 1 && minRow != row; i++) { ,for(; i < tableau.getWidth() && minRow!= column; i++) {
+compilation error,150,add,[CE] illegal start of expression,,  if(col < 0) { int maxUlps = maxUlps - 1; if(maxUlps > col) { minRow = maxUlps; }
+compilation error,150,add,[CE] illegal start of expression,,  if(col < 0) { for(int i = row; i < tableau.getLength(); i++) { table.setIndex(minRow); }
+compilation error,150,add,[CE] illegal start of expression,,  if(col < 0) { int maxUlps = maxUlps - 1; if(maxUlps >= minRow) { maxUlps = Math.max(maxUlps, col); }
+compilation error,150,add,[CE] illegal start of expression,,  if(col < 0) { int maxUlps = maxUlps - 1; if(maxUlps >= minRow) { maxUlps = maxUlps; }
+compilation error,150,add,[CE] illegal start of expression,,  if(col < 0) { int maxUlps = Math.max(maxUlps, col); if(maxUlps >= minRow) { minRow = row; }
+increase failing tests,144,add, [FE] AssertionError testMath288,,  row = tableau.getBasicRow(i); minRow = col - 1;
+compilation error,144,add,[CE] variable minIndex is already defined in method getPivotRow(SimplexTableau,int),,  int minIndex =(int)table.getBasicValue();
+compilation error,144,add,[CE] variable minIndex is already defined in method getPivotRow(SimplexTableau,int),,  int minIndex =(int)tab.getColumnIndex(i);
+compilation error,144,add,[CE] cannot find symbol,,  row = tableau.getRowLength();

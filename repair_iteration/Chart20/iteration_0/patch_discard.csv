@@ -1,55 +1,49 @@
-compilation error,[CE] no suitable constructor found for Marker(Stroke,Stroke,Paint,Stroke,float),,super(stroke, stroke, outlinePaint, outlineStroke, alpha);
-compilation error,[CE] no suitable constructor found for Marker(double,Stroke,Paint,Stroke,float),,super(value, stroke, outlinePaint, outlineStroke, alpha);
-compilation error,[CE] cannot find symbol,,this.value = Stroke.newInstance(stroke, outlinePaint, outlineStroke, alpha);
-compilation error,[CE] no suitable constructor found for Marker(Stroke,Stroke,Paint,Stroke,float),,super(stroke, stroke, outlinePaint, outlineStroke, alpha); this.value = value;
-compilation error,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,float),,super(stroke, outlinePaint, stroke, alpha);
-compilation error,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,float),,super(stroke, outlinePaint, outlineStroke, alpha);
-compilation error,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,float),,super(stroke, outlinePaint, outlineStroke, alpha); this.value = value;
-compilation error,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,float),,super(stroke, outlinePaint, stroke, alpha); this.value = value;
-compilation error,[CE] no suitable constructor found for Marker(double,Stroke,Paint,Stroke,float),,super(value, stroke, outlinePaint, outlineStroke, alpha); this.value = value;
-compilation error,[CE] cannot find symbol,,this.value = Stroke.newInstance(stroke, outlinePaint, stroke, alpha);
-compilation error,[CE] cannot find symbol,,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlineStroke.doubleValue(); }
-compilation error,[CE] cannot find symbol,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
-compilation error,[CE] cannot find symbol,,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
-compilation error,[CE] cannot find symbol,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.floatValue(); }
-compilation error,[CE] illegal start of expression,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); >>
-compilation error,[CE] generics are not supported in -source 1.4,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); <
-compilation error,[CE] cannot find symbol,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlineStroke.doubleValue(); }
-compilation error,[CE] illegal start of expression,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); ==
-compilation error,[CE] cannot find symbol,,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.floatValue(); }
-compilation error,[CE] illegal start of expression,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); [Delete]
-compilation error,[CE] cannot find symbol ValueUtils,,this.value = ValueUtils.getValue(this.value);
-compilation error,[CE] cannot find symbol ValueUtils,,value = ValueUtils.getValue(this.value);
-compilation error,[CE] cannot find symbol ValueUtils,,value = ValueUtils.doubleValue(this.value);
-compilation error,[CE] cannot find symbol ValueUtils,,this.value = ValueUtils.doubleValue(this.value);
-compilation error,[CE] illegal start of expression,,if(value < 0.0) { value = new Double(this.value); if(value!= 0.0) { value = new Double(this.value); }
-compilation error,[CE] illegal start of expression,,if(value < 0.0) { value = new Double(this.value); if(value!= null) { value = new Double(this.value); }
-compilation error,[CE] cannot find symbol ValueUtils,,double value = ValueUtils.doubleValue(this.value);
-compilation error,[CE] illegal start of expression,,if(value < 0.0) { value = new Double(this.value); if(value == 0.0) { value = new Double(this.value); }
-compilation error,[CE] '[' expected,,value = ValueUtils.getValue(this.value); if(value < null) { value = new double; }
-compilation error,[CE] '[' expected,,value = ValueUtils.getValue(this.value); if(value < 0.0) { value = new double; }
-compilation error,[CE] incompatible types,,if(outlinePaint!= outlineStroke) { this.value = new Double(value); } else { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke,float),,if(outlineStroke!= null) { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke,float),,if(outlineStroke!= null) { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); } else { this.value = new Double(stroke, outlinePaint, alpha); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke,float),,if(outlineStroke!= null) { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); } else { this.value = new Double(value, outlinePaint, outlineStroke, alpha); }
-compilation error,[CE] illegal start of expression,,if(outlineStroke!= null) { this.value = stroke.doubleValue(); if(stroke.doubleValue() == outlineStroke) { this.value = stroke.doubleValue(); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke),,if(outlineStroke!= null) { this.value = new Double(value, stroke, outlinePaint, outlineStroke); } else { this.value = new Double(value, outlinePaint, outlineStroke, alpha); }
-compilation error,[CE] cannot find symbol,,if(outlinePaint!= outlineStroke) { this.value = paint.doubleValue(); } else { this.value = stroke.doubleValue(); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke),,if(outlinePaint!= outlineStroke) { this.value = new Double(value, stroke, outlinePaint, outlineStroke); } else { this.value = new Double(value, outlinePaint, outlineStroke, alpha); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke),,if(outlineStroke!= null) { this.value = new Double(value, stroke, outlinePaint, outlineStroke); } else { this.value = new Double(value, outlinePaint, outlineStroke); }
-compilation error,[CE] no suitable constructor found for Double(double,Stroke,Paint,Stroke,float),,if(outlinePaint!= outlineStroke) { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); } else { this.value = new Double(stroke, outlinePaint, alpha); }
-patch is same with buggy,,this.value = value; ,this.value = value;
-compilation error,[CE] bad operand types for binary operator '/',this.value = value; ,this.value = value / outlinePaint;
-compilation error,[CE] bad operand types for binary operator '/',this.value = value; ,this.value = value / stroke;
-compilation error,[CE] bad operand types for binary operator '*',this.value = value; ,this.value = value * stroke;
-compilation error,[CE] bad operand types for binary operator '/',this.value = value; ,this.value = value / outlineStroke;
-compilation error,[CE] illegal start of expression,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
-compilation error,[CE] for-each loops are not supported in -source 1.4,} ,if(outlinePaint!= outlineStroke) { for(Stroke stroke : outlinePaint.getInsets()) { this.value = stroke; }
-compilation error,[CE] illegal start of expression,} ,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlineStroke.doubleValue(); }
-compilation error,[CE] illegal start of expression,} ,setOutlinePaint(outlinePaint);
-compilation error,[CE] illegal start of expression,} ,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
-compilation error,[CE] illegal start of expression,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.floatValue(); }
-compilation error,[CE] illegal start of expression,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); >>
-compilation error,[CE] generics are not supported in -source 1.4,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); <
-compilation error,[CE] illegal start of expression,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); ==
-compilation error,[CE] illegal start of expression,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); [Delete]
+compilation error,96,add,[CE] incompatible types,,if(outlinePaint!= outlineStroke) { this.value = new Double(value); } else { this.value = new Double(value, stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,add,[CE] incompatible types,,if(outlinePaint!= outlineStroke) { this.value = new Double(value); } else { this.value = new Double(stroke, outlinePaint, outlineStroke, alpha); }
+compilation error,96,add,[CE] incompatible types,,if(outlinePaint!= outlineStroke) { this.value = new Double(value); } else { this.value = new Double(value, stroke, outlinePaint, outlineStroke); }
+compilation error,95,replace,[CE] no suitable constructor found for Marker(double,Paint,Stroke,Paint,float),super(paint, stroke, paint, stroke, alpha); ,super(value, paint, stroke, outlinePaint, alpha);
+compilation error,97,add,[CE] cannot find symbol,,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlineStroke.doubleValue(); }
+compilation error,97,add,[CE] cannot find symbol,,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
+compilation error,97,add,[CE] cannot find symbol,,if(outlineStroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
+compilation error,107,add,[CE] illegal start of expression,,if(value < 0.0) { double value = new Double(this.value); if(value!= 0.0) { value = new Double(this.value); }
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= value) { double value = new Double(getValue()); if(value < null) { value = new Double(value.doubleValue()); }
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= value) { double value = new Double(getValue()); if(value < null) { value = new Double(this.value); }
+patch is same with buggy,96,replace,,this.value = value; ,this.value = value;
+increase failing tests,107,replace, [FE] StackOverflowError,return this.value; ,return this.value * getValue();
+patch is same with buggy,107,replace,,return this.value; , 
+compilation error,95,add,[CE] no suitable constructor found for Marker(double,Stroke,Paint,Stroke,float),,super(value, stroke, outlinePaint, outlineStroke, alpha);
+compilation error,95,add,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,float),,super(stroke, outlinePaint, stroke, alpha);
+compilation error,95,add,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,float),,super(stroke, outlinePaint, outlineStroke, alpha);
+compilation error,97,replace,[CE] illegal start of expression,} ,if(outlinePaint!= outlineStroke) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.floatValue(); }
+compilation error,96,add,[CE] illegal start of expression,,if(outlineStroke!= null) { Stroke stroke = getStroke(outlineStroke); if(stroke!= null) { this.value = stroke; }
+compilation error,96,add,[CE] illegal start of expression,,if(outlineStroke!= null) { Stroke stroke = getStroke(outlineStroke); if(stroke!= outlineStroke) { this.value = stroke; }
+compilation error,96,add,[CE] illegal start of expression,,if(outlineStroke!= null) { Stroke stroke = getStroke(stroke); if(stroke!= outlineStroke) { this.value = stroke; }
+compilation error,97,replace,[CE] illegal start of expression,} ,if(outlinePaint!= null) { this.value = outlinePaint.getChars(0, outlineStroke, stroke, outlinePaint, alpha); } else { this.value = value; }
+compilation error,97,replace,[CE] illegal start of expression,} ,if(outlinePaint!= null) { this.value = outlinePaint.getChars(0, outlineStroke, stroke, outlinePaint, alpha); } else { this.value =(float)value; }
+compilation error,95,replace,[CE] no suitable constructor found for Marker(Stroke,Paint,Stroke,Paint,float),super(paint, stroke, paint, stroke, alpha); ,super(stroke, paint, outlineStroke, outlinePaint, alpha);
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= null) { double value = getValue(); if(value!= 0.0) { throw new IllegalArgumentException(""); }
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= null) { double value = getValue(); if(value!= 0.0) { this.value = getValue(); }
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= null) { double value = getValue(); if(value!= 0.0) { throw new IllegalArgumentException("IllegalArgument exception:" + this.value); }
+compilation error,95,add,[CE] '.class' expected,,super(stroke, outlinePaint, outlineStroke, float alpha);
+compilation error,95,add,[CE] no suitable constructor found for Marker(Stroke,Stroke,Paint,float),,super(stroke, outlineStroke, outlinePaint, alpha);
+compilation error,96,replace,[CE] bad operand types for binary operator '*',this.value = value; ,this.value = value * outlineStroke;
+compilation error,97,add,[CE] bad operand types for binary operator '+',,if(outlinePaint!= null && outlineStroke!= null) { this.value = outlineStroke + stroke; } else { this.value = value; }
+compilation error,97,add,[CE] incompatible types,,if(outlinePaint!= null && outlineStroke!= null) { this.value = outlineStroke; } else { this.value = new Double(0.0, outlinePaint, stroke, outlineStroke, alpha); }
+compilation error,97,add,[CE] incompatible types,,if(outlinePaint!= null && outlineStroke!= null) { this.value = outlineStroke; } else { this.value = outlineStroke; }
+increase failing tests,107,replace, [FE] AssertionFailedError,return this.value; ,return(this.value == 0)? this.value : Double.POSITIVE_INFINITY;
+compilation error,107,replace,[CE] cannot find symbol POSITIVE_VALUE,return this.value; ,return(this.value == 0)? this.value : Double.POSITIVE_VALUE;
+compilation error,96,add,[CE] cannot find symbol,,if(outlinePaint!= null) { this.value = paint.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
+compilation error,96,add,[CE] cannot find symbol,,if(stroke!= null) { this.value = paint.doubleValue(); } else { this.value = stroke.doubleValue(); }
+compilation error,96,add,[CE] cannot find symbol,,if(stroke!= null) { this.value = paint.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
+compilation error,97,add,[CE] cannot find symbol,,if(stroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlinePaint.doubleValue(); }
+compilation error,97,add,[CE] incompatible types,,if(outlinePaint!= null) { this.value = stroke; } else { this.value = outlinePaint.getPaint(); }
+compilation error,97,add,[CE] incompatible types,,if(outlinePaint!= null) { this.value = stroke; } else { this.value = outlinePaint.apply(stroke); }
+patch is same with buggy,96,replace,,this.value = value; ,this.value = value;
+compilation error,97,replace,[CE] illegal start of expression,} ,if(stroke!= null) { this.value = stroke.doubleValue(); } else { this.value = outlineStroke.floatValue(); }
+compilation error,95,add,[CE] cannot find symbol,,this.value =(float)ValueMarker.create();
+compilation error,95,add,[CE] cannot find symbol,,this.value = Stroke.newStroke(stroke, outlinePaint, outlineStroke, alpha);
+compilation error,95,add,[CE] cannot find symbol,,this.value = Stroke.newStroke(stroke, outlineStroke, stroke.booleanValue());
+increase failing tests,107,replace, [FE] AssertionFailedError,return this.value; ,return(this.value == 0.0)? this.value : Double.NaN;
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= null) { Double.value = Double.NaN; if(value == 0) { this.value = new Double(getValue()); }
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= null) { Double.value = Double.NaN; if(value == 0.0) { this.value = new Double(this.value); }
+compilation error,107,add,[CE] illegal start of expression,,if(this.value!= null) { Double.value = Double.NaN; if(value == 0) { this.value = new Double(this.value); }

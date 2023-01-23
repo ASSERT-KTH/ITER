@@ -1,0 +1,54 @@
+compilation error,140,add,[CE] cannot find symbol iPartial,,  iTypes =(DateTimeFieldType[])iTypes.clone(); this.iPartial =(DateTimeFieldType[])iPartial.clone();
+compilation error,227,replace,[CE] cannot find symbol DAY_OF_MONTH,return 0; ,return(durationField == null)? 0 : DurationFieldType.DAY_OF_MONTH;
+compilation error,222,replace,[CE] int cannot be dereferenced,if (types[i - 1].getRangeDurationType() == null) { ,if(values[i - 1].getRangeDurationType() == null) {
+compilation error,227,add,[CE] cannot find symbol Type,,  DurationFieldType iType = durationField.getType(); if(iType!= Type.OTHER) { throw new IllegalArgumentException(""); }
+compilation error,155,add,[CE] cannot find symbol iPartial,,  iPartial = DateTimeUtils.getChronology(chronology);
+compilation error,154,replace,[CE] cannot find symbol dateTimeUtils,chronology = DateTimeUtils.getChronology(chronology).withUTC(); ,chronology = dateTimeUtils.getChronology(chronology).withUTC();
+compilation error,154,add,[CE] cannot find symbol iPartial,,  iPartial = DateTimeUtils.getChronology(chronology);
+compilation error,139,add,[CE] call to this must be first statement in constructor,,  super();
+compilation error,153,replace,[CE] cannot find symbol iPartial,super(); ,super(iPartial, value);
+compilation error,223,add,[CE] unreachable statement,,  throw new IllegalArgumentException("");
+compilation error,153,add,[CE] cannot find symbol iPartial,,  iPartial = DateTimeUtils.getChronology(chronology).withUTC();
+compilation error,139,replace,[CE] cannot reference iValues before supertype constructor has been called,this(type, value, null); ,this(type, value, null, iValues);
+compilation error,222,add,[CE] variable loopType is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  DurationField loopType = lastUnitField.getDurationType().getField(iChronology);
+increase failing tests,156,replace, [FE] IllegalArgumentException testWith_argHasNoRange,if (type == null) { ,if(type == null || value >= 0) {
+increase failing tests,156,replace, [FE] IllegalArgumentException testWith_argHasNoRange,if (type == null) { ,if(type == null || value > 0) {
+compilation error,224,add,[CE] unreachable statement,,  throw new IllegalArgumentException("");
+increase failing tests,223,replace, [FE] IllegalArgumentException testToString5,if (loopType.getRangeDurationType() == null) { ,if(loopType.getRangeDurationType()!= null) {
+compilation error,140,add,[CE] ';' expected,,  iPartial =(Partial)type.getField(iChronology).withUTC());
+compilation error,156,replace,[CE] cannot find symbol,if (type == null) { ,if(type == null || type.getFieldType()!= null) {
+compilation error,155,add,[CE] cannot find symbol iPartial,,  chronology.validate(this, iPartial);
+compilation error,139,replace,[CE] cannot reference iChronology before supertype constructor has been called,this(type, value, null); ,this(type, value, null, iChronology);
+compilation error,154,add,[CE] cannot find symbol iPartial,,  iPartial =(Partial)type.clone();
+increase failing tests,222,replace, [FE] AssertionFailedError testWith3,if (types[i - 1].getRangeDurationType() == null) { ,if(types[i - 1].getRangeDurationType()!= null) {
+increase failing tests,222,replace, [FE] IllegalArgumentException testWith_baseAndArgHaveNoRange,if (types[i - 1].getRangeDurationType() == null) { ,if(iChronology.equals(lastUnitField)) {
+compilation error,222,replace,[CE] variable iTypes might not have been initialized,if (types[i - 1].getRangeDurationType() == null) { ,if(iTypes[i - 1].getRangeDurationType() == null) {
+compilation error,223,add,[CE] variable loopType is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  DurationField loopType = types[i - 1].getRangeDurationType();
+compilation error,222,add,[CE] variable loopType is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  DurationField loopType = iChronology.getRangeDurationType();
+compilation error,224,add,[CE] unclosed string literal,,  throw new IllegalArgumentException("DateTimeFieldType[] values = loopType.getRangeDurationType().getField(iChronology);
+compilation error,227,replace,[CE] cannot find symbol,return 0; ,return iType.compareTo(durationField);
+compilation error,156,add,[CE] cannot find symbol iPartial,,  iPartial = chronology.withUTC();
+compilation error,227,add,[CE] cannot find symbol Token,,  checkArgument(durationField.getType() == Token.FUNCTION);
+compilation error,223,replace,[CE] bad operand types for binary operator '<',if (loopType.getRangeDurationType() == null) { ,if(loopType.getRangeDurationType() < null) {
+compilation error,154,replace,[CE] variable iChronology might already have been assigned,chronology = DateTimeUtils.getChronology(chronology).withUTC(); ,chronology = DateTimeUtils.getChronology(chronology).withUTC(); iChronology = chronology.withUTC();
+compilation error,139,add,[CE] cannot find symbol iPartial,,  super(); iPartial =(DateTimeFieldType)type.clone();
+compilation error,153,add,[CE] cannot find symbol iPartial,,  super(); iPartial =(Partial)type;
+increase failing tests,154,replace, [FE] NullPointerException testWith_argHasNoRange,chronology = DateTimeUtils.getChronology(chronology).withUTC(); ,chronology =(chronology == null)? chronology : DateTimeUtils.getChronology(chronology).withUTC();
+compilation error,154,replace,[CE] cannot find symbol,chronology = DateTimeUtils.getChronology(chronology).withUTC(); ,chronology = DateTimeUtils.findChronology(chronology).withUTC();
+compilation error,224,add,[CE] unreachable statement,,  throw new IllegalArgumentException("Types array must be in order largest-smallest:" + types[i - 1].getName() +" &" + loopType.getName());
+compilation error,155,replace,[CE] cannot find symbol dateTimeUtils,iChronology = chronology; ,iChronology =(chronology == null)? chronology : dateTimeUtils.getChronology(chronology);
+compilation error,155,add,[CE] cannot find symbol iPartial,,  chronology = DateTimeUtils.getChronology(chronology).withUTC(); iPartial = chronology.getPartial(this, value);
+compilation error,139,replace,[CE] cannot reference iValues before supertype constructor has been called,this(type, value, null); ,this(type, value, iValues, null);
+compilation error,223,add,[CE] cannot find symbol,,  types[i - 1].setRangeDurationType(loopType.getRangeDurationType());
+compilation error,156,add,[CE] cannot find symbol iPartial,,  chronology = DateTimeUtils.getChronology(chronology).withUTC(); iPartial = new Partial(type, value, chronology);
+compilation error,153,replace,[CE] cannot find symbol partial,super(); ,checkPartial(partial, value);
+compilation error,140,add,[CE] clone() has protected access in Object,,  iTypes =(DateTimeFieldType)type.clone();
+compilation error,223,replace,[CE] incomparable types: DurationFieldType and boolean,if (loopType.getRangeDurationType() == null) { ,if(loopType.getRangeDurationType() == false) {
+compilation error,222,add,[CE] variable loopType is already defined in constructor Partial(DateTimeFieldType[],int[],Chronology),,  DurationField loopType =(DurationField)types[i - 1].getRangeDurationType();
+compilation error,227,replace,[CE] cannot find symbol,return 0; ,return(durationField == null? 0 : durationField.getDurationType());
+compilation error,153,add,[CE] call to super must be first statement in constructor,,  this(type, value, chronology);
+compilation error,222,replace,[CE] incomparable types: DurationFieldType and DurationField,if (types[i - 1].getRangeDurationType() == null) { ,if(types[i - 1].getRangeDurationType() == lastUnitField) {
+compilation error,154,add,[CE] cannot find symbol iPartial,,  chronology = DateTimeUtils.getChronology(chronology).withUTC(); iPartial = new Partial(type, value, chronology);
+compilation error,227,add,[CE] cannot find symbol Token,,  checkArgument(durationField.getType() == Token.FUNCTION); iType = durationField.getDurationType();
+compilation error,156,replace,[CE] cannot find symbol,if (type == null) { ,if(type == null || type.isArray()) {
+compilation error,139,add,[CE] cannot find symbol iPartial,,  super(); iPartial =(Partial)iPartial.getValue(value);

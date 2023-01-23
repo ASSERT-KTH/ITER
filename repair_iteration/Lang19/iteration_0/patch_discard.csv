@@ -1,0 +1,169 @@
+compilation error,40,replace,[CE] illegal start of type,if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(index + 1) == '#') { , 
+increase failing tests,41,replace, [FE] ComparisonFailure testSupplementaryUnescaping,int start = index + 2; ,int start = index + 1;
+increase failing tests,41,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,int start = index + 2; ,int start = seqEnd + 2;
+increase failing tests,41,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,int start = index + 2; ,int start = index - 2;
+increase failing tests,41,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,int start = index + 2; ,int start = index - 1;
+compilation error,41,replace,[CE] cannot find symbol start,int start = index + 2; , 
+compilation error,38,replace,[CE] cannot find symbol seqEnd,int seqEnd = input.length(); , 
+increase failing tests,44,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,char firstChar = input.charAt(start); ,char firstChar = input.charAt(seqEnd);
+increase failing tests,44,replace, [FE] ComparisonFailure testSupplementaryUnescaping,char firstChar = input.charAt(start); ,char firstChar = input.charAt(start++);
+compilation error,44,replace,[CE] cannot find symbol firstChar,char firstChar = input.charAt(start); , 
+compilation error,40,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd);
+compilation error,40,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray();
+compilation error,40,add,[CE] reached end of file while parsing,,  if(seqEnd < seqEnd) { if(!isHex) { out.write(chrs[index]); }
+compilation error,40,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd); out.write(chrs[index]);
+increase failing tests,40,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write(seqEnd);
+compilation error,44,add,[CE] incompatible types,,  char[] chrs = input.charAt(start);
+compilation error,44,add,[CE] cannot find symbol chrs,,  out.write(chrs[index]);
+compilation error,44,add,[CE] reached end of file while parsing,,  if(isHex) { char[] chrs = input.charAt(start); if(chrs == '+' || chrs == '-') { start++; }
+compilation error,44,add,[CE] incompatible types,,  char[] chrs = input.charAt(start); out.write(chrs[index]);
+compilation error,44,add,[CE] reached end of file while parsing,,  if(isHex) { char[] chrs = input.charAt(start); if(chrs == '_') { start++; }
+increase failing tests,52,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,int end = start; ,int end = firstChar;
+compilation error,52,replace,[CE] cannot find symbol chrs,int end = start; ,int end = chrs.length;
+compilation error,52,replace,[CE] cannot find symbol end,int end = start; , 
+compilation error,46,replace,[CE] cannot find symbol end,start++; ,start++; if(!isHex && firstChar!= '.' && firstChar!= ':') { end++; }
+compilation error,46,replace,[CE] bad operand type Writer for unary operator '++',start++; ,start++; if(!isHex && firstChar!= '.' && firstChar!= ':') { out++; }
+compilation error,46,replace,[CE] cannot find symbol chrs,start++; ,start++; if(!isHex && firstChar!= ':') { out.write(chrs[index]); }
+compilation error,82,replace,[CE] missing return statement,return 0; , 
+compilation error,47,replace,[CE] bad operand types for binary operator '>',isHex = true; ,if(isHex || isHex > 0) { isHex = true; }
+compilation error,45,replace,[CE] illegal start of type,if(firstChar == 'x' || firstChar == 'X') { , 
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray();
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.getChrs();
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray(); out.write(chrs);
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.getChars();
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.getChrs(); out.write(chrs);
+compilation error,41,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd);
+compilation error,41,add,[CE] cannot find symbol chrs,,  out.write(chrs[index]);
+compilation error,41,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd); out.write(chrs[index]);
+compilation error,41,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd++); out.write(chrs[index]);
+compilation error,41,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd++);
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(chrs[0]);
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(chrs[0]); out.write(chrs[1]);
+compilation error,82,add,[CE] cannot find symbol isHex,,  if(isHex? 1 : 0) { out.write(chrs[0]); out.write(chrs[1]); } else { out.write(chrs[0]); }
+compilation error,82,add,[CE] cannot find symbol isHex,,  if(isHex? 1 : 0) { out.write(chrs[0]); out.write(chrs[1]); } else { out.write(chrs[2]); }
+compilation error,82,add,[CE] cannot find symbol isHex,,  if(isHex? 1 : 0) { out.write(chrs[0]); out.write(chrs[1]); }
+increase failing tests,42,replace, [FE] ComparisonFailure testSupplementaryUnescaping,boolean isHex = false; ,boolean isHex = true;
+compilation error,42,replace,[CE] cannot find symbol isHex,boolean isHex = false; ,boolean hasHex = true;
+compilation error,42,replace,[CE] cannot find symbol real,boolean isHex = false; ,boolean isHex = real;
+compilation error,42,replace,[CE] cannot find symbol isHex,boolean isHex = false; , 
+compilation error,46,add,[CE] cannot find symbol chrs,,  out.write(chrs[index]);
+compilation error,46,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray(); out.write(chrs);
+compilation error,46,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd); out.write(chrs[index]);
+compilation error,46,add,[CE] incompatible types,,  char[] chrs = input.charAt(start); out.write(chrs[index]);
+compilation error,47,add,[CE] cannot find symbol chrs,,  out.write(chrs[index]);
+compilation error,47,add,[CE] not a statement,,  if(seqEnd < seqEnd) { -1) { char[] chrs = input.charAt(seqEnd); if(chrs == '+' || chrs == '-') { out++; }
+compilation error,47,add,[CE] not a statement,,  if(seqEnd < seqEnd) { -1) { char[] chrs = input.charAt(seqEnd); if(chrs!= '+' || chrs == '-') { out++; }
+compilation error,47,add,[CE] not a statement,,  if(seqEnd < seqEnd) { -1) { char[] chrs = input.charAt(start); if(chrs == '+' || chrs == '-') { out++; }
+compilation error,47,add,[CE] not a statement,,  if(seqEnd < seqEnd) { -1) { char[] chrs = input.charAt(start); if(chrs == '+' || firstChar == '-') { out++; }
+compilation error,42,add,[CE] incompatible types,,  char[] chrs = input.charAt(start);
+compilation error,42,add,[CE] cannot find symbol chrs,,  out.write(chrs[index]);
+compilation error,42,add,[CE] incompatible types,,  char[] chrs = input.charAt(start); out.write(chrs[index]);
+compilation error,42,add,[CE] method charAt in interface CharSequence cannot be applied to given types;,,  char[] chrs = input.charAt(start, index + 1); out.write(chrs[index]);
+compilation error,42,add,[CE] incompatible types,,  char[] chrs = input.charAt(start); out.write(chrs[index], start, seqEnd);
+compilation error,52,add,[CE] incompatible types,,  char[] chrs = input.charAt(start);
+compilation error,52,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray();
+compilation error,52,add,[CE] incompatible types,,  char[] chrs = input.charAt(firstChar);
+compilation error,52,add,[CE] char cannot be dereferenced,,  char[] chrs = input.charAt(start).toString();
+compilation error,52,add,[CE] incompatible types,,  char[] chrs = input.charAt(start); int index = start;
+compilation error,45,add,[CE] ']' expected,,  char chrs[index] = input.charAt(seqEnd);
+increase failing tests,45,add, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,,  char secondChar = input.charAt(seqEnd);
+compilation error,45,add,[CE] cannot find symbol end,,  char secondChar = input.charAt(end);
+compilation error,45,add,[CE] variable chrs is already defined in method translate(CharSequence,int,Writer),,  char chrs = input.charAt(seqEnd);
+increase failing tests,45,add, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,,  char secondChar = input.charAt(seqEnd); isHex = true;
+compilation error,44,add,[CE] reached end of file while parsing,,  if(seqEnd < seqEnd) { if(!isHex) { return 0; }
+increase failing tests,44,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write(input.charAt(start));
+compilation error,44,add,[CE] reached end of file while parsing,,  if(seqEnd < 0) { if(!isHex) { return 0; }
+compilation error,44,add,[CE] cannot find symbol,,  out.write(input.getChars(start, index));
+compilation error,44,add,[CE] reached end of file while parsing,,  if(seqEnd < seqEnd) { if(!isHex) { out.write(chrs[start]); }
+compilation error,42,add,[CE] cannot find symbol,,  out.write(input.getChars(start, index));
+increase failing tests,42,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write(input.charAt(start));
+compilation error,42,add,[CE] incompatible types,,  char[] chrs = input.charAt(index);
+compilation error,42,add,[CE] method charAt in interface CharSequence cannot be applied to given types;,,  char[] chrs = input.charAt(start, index);
+compilation error,45,add,[CE] variable seqEnd is already defined in method translate(CharSequence,int,Writer),,  char seqEnd = input.charAt(seqEnd);
+compilation error,45,add,[CE] variable seqEnd is already defined in method translate(CharSequence,int,Writer),,  char seqEnd = input.charAt(seqEnd); isHex = true;
+compilation error,45,add,[CE] reached end of file while parsing,,  if(isHex) { if(!Character.isLetter(firstChar)) { return ';'; }
+compilation error,45,add,[CE] reached end of file while parsing,,  if(!isHex) { if(firstChar == '+' || firstChar == '-') { return; }
+compilation error,45,add,[CE] reached end of file while parsing,,  if(isHex) { if(!Character.isLetter(firstChar)) { out.write(';'); }
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(chrs[index]);
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(chrs);
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(chrs[index - 1]);
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(chrs[index - start]);
+compilation error,82,add,[CE] cannot find symbol Input,,  out.write(Input.toString(index));
+compilation error,46,add,[CE] incompatible types,,  char[] chrs = input.charAt(index); out.write(chrs, start, seqEnd);
+compilation error,46,add,[CE] no suitable method found for write(char,int),,  out.write(input.charAt(start), index);
+compilation error,46,add,[CE] incompatible types,,  char[] chrs = input.charAt(index + 1); out.write(chrs, start, seqEnd);
+compilation error,46,replace,[CE] bad operand type Writer for unary operator '++',start++; ,out++;
+compilation error,46,replace,[CE] cannot find symbol end,start++; ,end++;
+compilation error,46,replace,[CE] cannot find symbol begin,start++; ,begin++;
+increase failing tests,41,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write(input.charAt(index));
+compilation error,41,add,[CE] incompatible types,,  char[] chrs = input.charAt(index);
+increase failing tests,41,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write(input.charAt(index + 1));
+increase failing tests,41,add, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,,  out.write(input.charAt(index - 1));
+compilation error,41,add,[CE] cannot find symbol,,  out.write(input.getChars(0, index));
+compilation error,40,add,[CE] incompatible types,,  char[] chrs = input.charAt(index);
+increase failing tests,40,add, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,,  out.write(input.charAt(seqEnd));
+compilation error,40,add,[CE] cannot find symbol,,  int entityValue = input.getEntityValue();
+compilation error,40,add,[CE] reached end of file while parsing,,  if(seqEnd < 0) { if(index == seqEnd) { return 0; }
+compilation error,40,add,[CE] reached end of file while parsing,,  if(seqEnd < 0) { if(index == seqEnd) { return -1; }
+compilation error,44,replace,[CE] method charAt in interface CharSequence cannot be applied to given types;,char firstChar = input.charAt(start); ,char firstChar = input.charAt(start, index);
+compilation error,47,add,[CE] cannot find symbol,,  out.write(input.getChars(start, index));
+compilation error,47,add,[CE] variable isHex is already defined in method translate(CharSequence,int,Writer),,  boolean isHex = input.length() == seqEnd;
+compilation error,82,replace,[CE] possible loss of precision,return 0; ,return 0L;
+increase failing tests,52,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,int end = start; ,int end = ';';
+compilation error,52,replace,[CE] cannot find symbol,int end = start; ,int end = _indexOf(firstChar);
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.getChars(0, index);
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = input.getChars(index);
+compilation error,38,add,[CE] variable index is already defined in method translate(CharSequence,int,Writer),,  int index = input.length();
+compilation error,41,replace,[CE] ';' expected,int start = index + 2; ,int start = index + 1, seqEnd - 1;
+increase failing tests,41,replace, [FE] ComparisonFailure testSupplementaryUnescaping,int start = index + 2; ,int start = index + 2 - 1;
+increase failing tests,41,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,int start = index + 2; ,int start = index + seqEnd;
+compilation error,52,add,[CE] reached end of file while parsing,,  int start = input.length(); while(input.charAt(start)!= ';') { start++;
+compilation error,52,add,[CE] reached end of file while parsing,,  if(isHex) { if(chrs[index] == ';') { out.write(chrs[index]); }
+compilation error,52,add,[CE] reached end of file while parsing,,  if(isHex) { if(chrs[index] == ';') { start++; }
+compilation error,52,add,[CE] incompatible types,,  char[] chrs = input.charAt(start); int start = start;
+compilation error,47,replace,[CE] ';' expected,isHex = true; ,isHex =(!isHex && firstChar!= ';')&& firstChar!= 'X' || firstChar == 'Y')&& firstChar!= 'Z' || firstChar == 'a' && firstChar <= 'z')
+compilation error,47,replace,[CE] ';' expected,isHex = true; ,isHex =(!isHex && firstChar!= ';')&& firstChar!= 'X' || firstChar == 'Y')&& firstChar!= 'Z' || firstChar == 'a' && firstChar <= 'z')&&
+compilation error,47,replace,[CE] ';' expected,isHex = true; ,isHex =(!isHex && firstChar!= ';')&& firstChar!= 'X' || firstChar == 'Y')&& firstChar!= 'Z' || firstChar == 'a' && firstChar <= 'z')- 1;
+compilation error,45,add,[CE] '.class' expected,,  if(isHex) { if(char firstChar == ';') { out.write(firstChar); }
+compilation error,45,add,[CE] variable firstChar is already defined in method translate(CharSequence,int,Writer),,  char firstChar = input.charAt(seqEnd);
+compilation error,45,add,[CE] '.class' expected,,  if(!isHex) { if(char firstChar == '+' || firstChar == '-') { out.write(firstChar); }
+compilation error,45,add,[CE] reached end of file while parsing,,  if(isHex) { if(!Character.isUpperCase(firstChar)) { out.write('.'); }
+compilation error,40,add,[CE] cannot find symbol,,  char[] chrs = getChars(input, out, seqEnd);
+compilation error,40,add,[CE] incompatible types,,  char[] chrs = input.charAt(seqEnd); out.write(chrs);
+increase failing tests,40,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(index + 1) == '#') { ,if(input.charAt(seqEnd) == '&' && index < seqEnd - 1 && input.charAt(seqEnd + 1) == '#') {
+compilation error,40,replace,[CE] cannot find symbol length,if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(index + 1) == '#') { ,if(input.charAt(seqEnd) == '&' && index < input.length - 1 && input.charAt(seqEnd + 1) == '#') {
+compilation error,40,replace,[CE] cannot find symbol length,if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(index + 1) == '#') { ,if(seqEnd == 0 && index < input.length - 1) {
+increase failing tests,40,replace, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(index + 1) == '#') { ,if(input.charAt(index) == '&' && index < seqEnd - 1 && input.charAt(seqEnd + 1) == '#') {
+compilation error,42,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray();
+compilation error,42,add,[CE] cannot find symbol,,  char[] chrs =(char[])input.toCharArray();
+compilation error,42,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray(); out.write(chrs, start, seqEnd);
+compilation error,42,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray(); out.write(chrs);
+increase failing tests,42,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write('n');
+compilation error,46,add,[CE] cannot find symbol,,  out.write(introspect(seqEnd));
+compilation error,46,add,[CE] cannot find symbol,,  out.write(introspect(firstChar));
+compilation error,41,replace,[CE] cannot find symbol length,int start = index + 2; ,int start = input.length + 2;
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(Input.toString(chrs, start, index));
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(Input.toString(chrs[index]));
+compilation error,82,add,[CE] cannot find symbol chrs,,  out.write(Input.toString(chrs));
+compilation error,82,add,[CE] method toHexString in class Integer cannot be applied to given types;,,  out.write(Integer.toHexString(input));
+compilation error,47,add,[CE] cannot find symbol,,  out.write(input.getBoolean());
+compilation error,47,add,[CE] cannot find symbol,,  out.write(introspect(firstChar));
+compilation error,47,add,[CE] cannot find symbol,,  out.write(introspect(seqEnd));
+compilation error,44,add,[CE] reached end of file while parsing,,  if(isHex) { char[] chrs = input.charAt(start++); if(chrs == '+' || chrs == '-') { start++; }
+compilation error,44,add,[CE] reached end of file while parsing,,  if(input.length == seqEnd) { boolean isHex = true; if(chrs[index] == '+' || chrs[index] == '-') { start++; }
+compilation error,44,add,[CE] reached end of file while parsing,,  if(input.length == seqEnd) { boolean isHex = true; if(chrs[index] == '+' || chrs[index] == '-') { out.write('n'); }
+increase failing tests,41,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write(seqEnd);
+increase failing tests,41,add, [FE] StringIndexOutOfBoundsException testSupplementaryUnescaping,,  out.write(input.charAt(seqEnd));
+compilation error,41,add,[CE] cannot find symbol,,  out.write(input.getChars(0, seqEnd));
+increase failing tests,41,add, [FE] ComparisonFailure testSupplementaryUnescaping,,  out.write('n');
+compilation error,41,add,[CE] cannot find symbol,,  char[] chrs = input.toCharArray(); out.write(chrs);
+compilation error,47,replace,[CE] ';' expected,isHex = true; ,isHex =(isHex == false)? true : firstChar.charAt(seqEnd) == ';' && firstChar!= 'x' || firstChar == 'X') { ++seqEnd;
+compilation error,47,replace,[CE] ';' expected,isHex = true; ,isHex =(isHex == false)? true : firstChar.charAt(seqEnd) == ';' && firstChar!= 'x' || firstChar == 'x') { ++seqEnd;
+compilation error,47,replace,[CE] ';' expected,isHex = true; ,isHex =(isHex == false)? true : firstChar.charAt(seqEnd) == ';' && firstChar!= 'x' || firstChar == 'X') { start++;
+compilation error,52,add,[CE] reached end of file while parsing,,  while(input.charAt(start)!= ';') { start++;
+compilation error,52,add,[CE] reached end of file while parsing,,  if(!isHex) { char[] chrs = input.charAt(start); if(chrs == ';') { out.write(chrs); }
+compilation error,52,add,[CE] reached end of file while parsing,,  if(!isHex) { char[] chrs = input.charAt(start); if(chrs!= ';') { out.write(chrs); }
+compilation error,52,add,[CE] reached end of file while parsing,,  if(!isHex) { char[] chrs = input.charAt(start); if(chrs == ';') { start++; }
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs =(char[])input.toCharArray();
+compilation error,38,add,[CE] cannot find symbol,,  char[] chrs = getChars(input, out);
+compilation error,38,add,[CE] no suitable method found for toString(CharSequence),,  out.write(Integer.toString(input));

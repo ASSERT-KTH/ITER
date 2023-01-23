@@ -1,18 +1,18 @@
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = stripLeadingHyphens();
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = stripLeadingHyphens(Str.substring(0, str.length() - 1));
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = stripLeadingHyphens(Str.substring(0, str.length()));
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = super.stripLeadingHyphens();
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = stripLeadingHyphens.substring(0, str.length() - 1);
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = getLeadingHyphens().substring(0, str.length() - 1);
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = stripLeadingHyphens().substring(0, str.length() - 1);
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = StripLeadingHyphens.contains(str.substring(0, str.length() - 1));
-compilation error,[CE] variable str is already defined in method stripLeadingHyphens(String),,String str = stripLeadingHyphens(Str.substring(0, str.length() - 1, str.length()));
-compilation error,[CE] ')' expected,,String str = stripLeadingHyphens(Str.substring(0, str.length() - 1);
-compilation error,[CE] illegal start of expression,,if(str.startsWith("-")) { if(str.startsWith("-")) { return str.substring(1, str.length()); }
-compilation error,[CE] illegal start of expression,,if(str.startsWith("-")) { if(str.startsWith("-")) { return str.substring(2, str.length()); }
-compilation error,[CE] illegal start of expression,,if(str.startsWith("-")) { if(str.startsWith("-")) { return str.substring(0, str.length()); }
-compilation error,[CE] illegal start of expression,,if(str.startsWith("-")) { if(str.startsWith("-")) { return str.substring(3, str.length()); }
-compilation error,[CE] illegal start of expression,,if(str.startsWith("-")) { if(str.startsWith("-")) { str.substring(1, str.length()); }
-compilation error,[CE] ,,if(str.startsWith("-")) { if(str.startsWith("-")) { return str.substring(1, str.length()); } else {
-compilation error,[CE] illegal start of expression,,if(str.startsWith("+")) { if(str.startsWith("-")) { return str.substring(1, str.length()); }
-compilation error,[CE] illegal start of expression,,if(str.startsWith("-")) { if(str.startsWith("-")) { str.substring(0, str.length()); }
+compilation error,62,replace,[CE] ,if (str.endsWith("\"")) { ,if(str.endsWith(""")|| str.endsWith(""")) {
+compilation error,62,replace,[CE] unclosed string literal,if (str.endsWith("\"")) { ,if(str.endsWith("0")|| str.endsWith(""")) {
+compilation error,62,replace,[CE] unclosed string literal,if (str.endsWith("\"")) { ,if(!str.endsWith(""")) {
+compilation error,62,replace,[CE] illegal start of type,if (str.endsWith("\"")) { , 
+compilation error,45,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str = stripLeadingHyphens(this.stripLeadingHyphens);
+compilation error,45,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str = getStripLeadingHyphens(); stripLeadingHyphens(str);
+compilation error,45,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str = stripLeadingHyphens(Str.class);
+compilation error,45,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str = getStripLeadingHyphens(); stripLeadingHyphens(str.charAt(0));
+compilation error,45,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str = getStripLeadingHyphens(); stripLeadingHyphens(str, null);
+compilation error,63,add,[CE] variable str is already defined in method stripLeadingAndTrailingQuotes(String),,  String str = new String(stripLeadingHphens.indexOf('n'));
+compilation error,63,add,[CE] variable str is already defined in method stripLeadingAndTrailingQuotes(String),,  String str = getLeadingHphens();
+compilation error,63,add,[CE] variable str is already defined in method stripLeadingAndTrailingQuotes(String),,  String str = new String(stripLeadingHphens());
+compilation error,38,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str =(String)this.stripLeadingHyphens.clone(); if(str.startsWith("-")) { return str.substring(1, str.length()); }
+compilation error,38,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str =(String)this.stripLeadingHyphens.clone(); if(str.startsWith("--")) { return str.substring(1, str.length()); }
+compilation error,38,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str =(String)this.stripLeadingHyphens.clone();
+compilation error,38,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str =(String)this.stripLeadingHyphens.clone(); if(str.startsWith("-")) { return str.substring(0, str.length()); }
+compilation error,38,add,[CE] variable str is already defined in method stripLeadingHyphens(String),,  String str =(String)this.stripLeadingHyphens.clone(); if(str.startsWith("-")) { return str.substring(3, str.length()); }
+compilation error,65,replace,[CE] non-static variable this cannot be referenced from a static context,return str; ,return this.stripLeadingQuotes;

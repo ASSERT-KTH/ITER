@@ -1,1 +1,165 @@
-patch is same with buggy,,while (i < max) { ,while(i < max) {
+compilation error,148,add,[CE] illegal start of expression,,  final String consumeRemaining = stripBoundaryQuotes(allValuesQuoted); if(consumeRemaining.equals(consumeRemaining)) { ++argumentCount;
+compilation error,148,add,[CE] cannot find symbol commandsLine,,  final String consumeRemaining = stripBoundaryQuotes(allValuesQuoted); if(consumeRemaining.equals(consumeRemaining)) { ++argumentCount; commandsLine.addValue(option, arguments.next()); }
+compilation error,146,replace,[CE] class, interface, or enum expected,while (arguments.hasNext() && (argumentCount < maximum)) { , 
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { for(int id = 0; i < arguments.size(); ++argumentCount) { processValues(option, allValues); }
+compilation error,188,replace,[CE] ')' expected,,if(values.hasMoreTokens()) { for(int id = 0; i < arguments.size(); i++argumentCount) { processValues(option, allValues); }
+compilation error,188,replace,[CE] illegal start of expression,,addValue(values.nextToken(), arguments);
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { for(int id = 0; i < arguments.size(); ++argumentCount) { processValues(option, arguments); }
+compilation error,146,add,[CE] variable argumentCount is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  int argumentCount = arguments.size();
+compilation error,146,add,[CE] cannot find symbol,,  int maximum = arguments.size();
+compilation error,146,add,[CE] cannot find symbol,,  final int maximum = arguments.size();
+compilation error,146,add,[CE] cannot find symbol options,,  final String consumeRemaining = options.getConsumeRemaining();
+compilation error,146,add,[CE] cannot find symbol options,,  final String consumeRemaining = options.get(argumentCount);
+compilation error,164,add,[CE] cannot find symbol,,  if(arguments.hasMoreTokens()) { ++argumentCount; }
+compilation error,164,add,[CE] 'else' without 'if',,  boolean subsequentSplit = arguments.hasMoreTokens() && argumentCount > maximum;
+compilation error,164,add,[CE] 'else' without 'if',,  boolean subsequentSplit = arguments.hasMoreTokens();
+compilation error,164,add,[CE] 'else' without 'if',,  boolean subsequentSplit = arguments.hasMoreTokens() && arguments.next();
+compilation error,164,add,[CE] 'else' without 'if',,  boolean subsequentSplit = options.hasMoreTokens(); arguments.remove();
+compilation error,148,replace,[CE] cannot find symbol,final String allValues = stripBoundaryQuotes(allValuesQuoted); ,final String allValues = getBoundaryQuotes(allValuesQuoted);
+compilation error,148,replace,[CE] cannot find symbol,final String allValues = stripBoundaryQuotes(allValuesQuoted); ,final String allValues = consumeBoundaryQuotes(allValuesQuoted);
+compilation error,148,replace,[CE] no suitable method found for substring(String),final String allValues = stripBoundaryQuotes(allValuesQuoted); ,final String allValues = consumeRemaining.substring(allValuesQuoted);
+compilation error,151,replace,[CE] cannot find symbol consume,if (allValuesQuoted.equals(consumeRemaining)) { ,if(allValues.equals(consume)) {
+compilation error,151,replace,[CE] 'else' without 'if',if (allValuesQuoted.equals(consumeRemaining)) { , 
+compilation error,164,replace,[CE] incomparable types: char and <null>,else if (subsequentSplit) { ,else if(subsequentSeparator!= null) {
+compilation error,164,replace,[CE] unexpected type,else if (subsequentSplit) { ,else if(subsequentSeparator instanceof StringTokenizer) {
+compilation error,164,replace,[CE] unexpected type,else if (subsequentSplit) { ,else if(subsequentSeparator instanceof String) {
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  ListIterator arguments = options.getOptions();
+compilation error,144,add,[CE] cannot find symbol,,  int argumentCount = arguments.size();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  ListIterator arguments = options.getRawClass();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  ListIterator arguments = options.getAllIterator();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  ListIterator arguments = options.getAllIterators();
+compilation error,186,replace,[CE] cannot find symbol values,commandLine.addValue(option, allValues); ,commandLine.addValue(values, allValues);
+compilation error,186,replace,[CE] cannot find symbol value,commandLine.addValue(option, allValues); ,commandLine.addValue(value, allValues);
+compilation error,158,add,[CE] cannot find symbol,,  if(commandLine.looksLikeRemaining(allValuesQuoted)) { ++argumentCount; break; }
+compilation error,158,add,[CE] 'else' without 'if',,  allValuesQuoted.remove(option.getKey());
+compilation error,158,add,[CE] cannot find symbol,,  if(commandLine.looksLikeRemaining(allValuesQuoted)) { arguments.previous(); break; }
+compilation error,158,add,[CE] 'else' without 'if',,  allValuesQuoted.add(option);
+compilation error,158,add,[CE] 'else' without 'if',,  addValue(option, arguments.previous());
+compilation error,158,replace,[CE] method looksLikeOption in interface WriteableCommandLine cannot be applied to given types;,else if (commandLine.looksLikeOption(allValuesQuoted)) { ,else if(commandLine.looksLikeOption(option)) {
+compilation error,158,replace,[CE] cannot find symbol,else if (commandLine.looksLikeOption(allValuesQuoted)) { ,else if(commandLine.isLikeOption(option)) {
+compilation error,158,replace,[CE] cannot find symbol,else if (commandLine.looksLikeOption(allValuesQuoted)) { ,else if(commandLine.looksAlikeOption(option)) {
+compilation error,144,replace,[CE] cannot find symbol length,int argumentCount = 0; ,int argumentCount = arguments.length;
+compilation error,186,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = options.getAllValues();
+compilation error,186,add,[CE] cannot assign a value to final variable allValues,,  allValues = options.getAllValues();
+compilation error,186,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  List < Option> allValues = options.getAllValues();
+compilation error,186,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { for(String allValues : options.values) { processAllValues(option, allValues); }
+compilation error,186,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { for(String allValues : options.values) { processAllValues(option, arguments); }
+compilation error,151,add,[CE] incompatible types,,  final String consumeRemaining = allValues.toCharArray();
+compilation error,151,add,[CE] clone() has protected access in Object,,  final String consumeRemaining =(String)allValues.clone();
+compilation error,151,add,[CE] cannot find symbol,,  final String consumeRemaining = allValues.values();
+compilation error,185,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = options.getAllValues();
+compilation error,185,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = options.getAllValues(); if(allValues!= null) { throw new IllegalArgumentException(""); }
+compilation error,185,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = options.getAllValues(); if(allValues!= null) { throw new OptionException(""); }
+compilation error,185,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = options.getAllValues(); arguments.add(allValues);
+compilation error,185,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = options.getAllValues(); if(allValues!= null) { arguments.add(token); }
+compilation error,147,replace,[CE] cannot find symbol,final String allValuesQuoted = (String) arguments.next(); ,final String allValuesQuoted =(String)arguments.get(argumentCount - 1);
+compilation error,147,replace,[CE] cannot find symbol,final String allValuesQuoted = (String) arguments.next(); ,final String allValuesQuoted =(String)arguments.get(argumentCount);
+compilation error,188,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { int argumentCount = arguments.size(); if(arguments.size() > 1) { processValues(option, allValues); }
+compilation error,185,replace,[CE] unexpected type,++argumentCount; ,++argumentCount += arguments.nextToken();
+compilation error,185,replace,[CE] not a statement,++argumentCount; ,++argumentCount + 1;
+compilation error,185,replace,[CE] unexpected type,++argumentCount; ,++argumentCount += arguments.size();
+compilation error,144,replace,[CE] cannot find symbol,int argumentCount = 0; ,int argumentCount = arguments.length();
+compilation error,144,replace,[CE] cannot find symbol length,int argumentCount = 0; ,int argumentCount =(arguments.length > 0)? arguments.length - 1 : 0;
+compilation error,144,replace,[CE] cannot find symbol length,int argumentCount = 0; ,int argumentCount =(arguments.length > 0)? arguments.length : 0;
+compilation error,144,add,[CE] cannot find symbol options,,  final ListIterator argument = options.getOptions();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator < Option> arguments = options.getOptions();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.getOptions();
+compilation error,144,add,[CE] cannot find symbol options,,  ListIterator argument = options.getOptions();
+compilation error,146,replace,[CE] ')' expected,while (arguments.hasNext() && (argumentCount < maximum)) { ,while(arguments.hasNext() } (argumentCount - 1)) {
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted.equals(consumeRemaining)) { if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted.equals(consumeRemaining)) { if(!commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted == null) { if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted.equals(consumeRemaining)) { if(!commandLine.isLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted.equals(consumeRemaining)) { if(commandLine.looksLikeOption(allValuesQuoted)) { addValue(option, arguments.previous()); }
+compilation error,185,replace,[CE] not a statement,++argumentCount; ,++argumentCount - 1;
+compilation error,185,replace,[CE] ';' expected,++argumentCount; ,++argumentCount for(int argumentCount - 1);
+compilation error,185,replace,[CE] ';' expected,++argumentCount; ,++argumentCount, values.hasMoreTokens());
+compilation error,147,add,[CE] incompatible types,,  final String consumeRemaining = arguments.next();
+compilation error,186,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  List allValues = options.getAllValues();
+compilation error,186,add,[CE] cannot find symbol,,  Arrays.sort(option.getDefaultValues());
+compilation error,148,replace,[CE] cannot find symbol,final String allValues = stripBoundaryQuotes(allValuesQuoted); ,final String allValues = getAllValues();
+compilation error,148,replace,[CE] cannot find symbol,final String allValues = stripBoundaryQuotes(allValuesQuoted); ,final String allValues = getAllValues(allValuesQuoted);
+compilation error,148,replace,[CE] cannot find symbol,final String allValues = stripBoundaryQuotes(allValuesQuoted); ,final String allValues = consumeRemaining(allValuesQuoted);
+compilation error,164,replace,[CE] cannot find symbol consumeSplit,else if (subsequentSplit) { ,else if(!consumeSplit) {
+compilation error,164,replace,[CE] cannot find symbol consumesQuoted,else if (subsequentSplit) { ,else if(!consumesQuoted) {
+compilation error,147,replace,[CE] cannot find symbol,final String allValuesQuoted = (String) arguments.next(); ,final String allValuesQuoted =(String)arguments.get(0);
+compilation error,147,replace,[CE] cannot find symbol,final String allValuesQuoted = (String) arguments.next(); ,final String allValuesQuoted =(String)arguments.substring(0, argumentCount);
+compilation error,146,add,[CE] cannot find symbol options,,  final ListIterator argument = options.getOptions();
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.getOptions();
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator < Option> arguments = options.getOptions();
+compilation error,146,add,[CE] cannot find symbol options,,  final ListIterator argument = options.getOptionalArg();
+compilation error,146,add,[CE] variable argumentCount is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final int argumentCount = arguments.size();
+compilation error,186,replace,[CE] cannot find symbol values,commandLine.addValue(option, allValues); ,commandLine.addValue(option, values);
+compilation error,186,replace,[CE] cannot find symbol valueDefaults,commandLine.addValue(option, allValues); ,commandLine.addValue(option, valueDefaults);
+compilation error,186,replace,[CE] cannot find symbol value,commandLine.addValue(option, allValues); ,commandLine.addValue(option, value);
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { ++argumentCount; commandLine.addValue(option, allValues); }
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { ++argumentCount; arguments.addValue(option, allValues); }
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { for(int i = 0; i < allValues.size(); ++i) { throw new ArgumentException(""); }
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { for(int id = 0; i < arguments.size(); ++idCount); }
+compilation error,164,add,[CE] not a statement,,  if(!consumeRemaining) { for(int i = 0; i < allValues.size(); ++i) { final StringTokenizer values = new StringTokenizer(allValues, String.valueOf(maximum)); arguments.remove
+compilation error,164,add,[CE] not a statement,,  if(!consumeRemaining) { for(int i = 0; i < allValues.size(); ++i) { final StringTokenizer values = new StringTokenizer(allValues, String.valueOf(minimum)); arguments.remove
+compilation error,164,add,[CE] ';' expected,,  if(!consumeRemaining) { for(int i = 0; i < allValues.size(); ++i) { final String tokenizer values = new StringTokenizer(allValues, String.valueOf(maximum)); arguments.remove
+compilation error,164,add,[CE] 'else' without 'if',,  if(!consumeRemaining) { for(int i = 0; i < arguments.size(); ++i) { final StringTokenizer values = new StringTokenizer(allValues, String.valueOf(minimum)); arguments.remove(); }
+compilation error,164,add,[CE] 'else' without 'if',,  if(!consumeRemaining) { for(int i = 0; i < arguments.size(); ++i) { final StringTokenizer values = new StringTokenizer(allValues, String.valueOf(maximum)); arguments.remove(); }
+compilation error,185,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { for(String allValues : options.getAllValues()) { throw new ResourceException(""); }
+compilation error,185,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { String allValues = options.getAllValues(); if(allValues.size() == 1 && allValues.size() > 0) { throw new ResourceException(""); }
+compilation error,185,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { String allValues = options.getAllValues(); if(allValues.size() == 1 && allValues.size() > 1) { throw new ResourceException(""); }
+compilation error,185,add,[CE] illegal start of expression,,  if(values.hasMoreTokens()) { String allValues = options.getAllValues(); if(allValues!= null) { throw new ResourceException(""); }
+compilation error,148,add,[CE] clone() has protected access in Object,,  final String consumeRemaining =(String)allValuesQuoted.clone();
+compilation error,148,add,[CE] inconvertible types,,  final String consumeRemaining =(String)allValuesQuoted.toCharArray();
+compilation error,148,add,[CE] clone() has protected access in Object,,  final String consumeRemaining =(String)allValuesQuoted.clone(); ++argumentCount;
+compilation error,151,replace,[CE] cannot find symbol valuesQuoted,if (allValuesQuoted.equals(consumeRemaining)) { ,if(allValues.equals(valuesQuoted)) {
+compilation error,188,add,[CE] cannot find symbol values,,  arguments.addValue(values.nextToken());
+compilation error,185,replace,[CE] ';' expected,++argumentCount; ,++argumentCount, values.nextToken();
+compilation error,185,replace,[CE] ';' expected,++argumentCount; ,++argumentCount, values.nextToken());
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted == null) { final String allValues = allValuesQuoted.equals(consumeRemaining); if(allValuesQuoted.equals(consumeRemaining)) { arguments.previous(); }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted == null) { final String allValues = allValuesQuoted.equals(consumeRemaining); if(allValuesQuoted.equals(consumeRemaining)) { arguments.previous(); break; }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted == null) { if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); }
+compilation error,158,add,[CE] illegal start of expression,,  if(allValuesQuoted == null) { final String allValues = allValuesQuoted.substring(0, argumentCount); if(allValuesQuoted.equals(consumeRemaining)) { arguments.previous(); }
+compilation error,146,replace,[CE] bad operand types for binary operator '&&',while (arguments.hasNext() && (argumentCount < maximum)) { ,while(arguments.next() && argumentCount <= maximum) {
+compilation error,146,replace,[CE] bad operand types for binary operator '&&',while (arguments.hasNext() && (argumentCount < maximum)) { ,while(arguments.next() &&(argumentCount % 2 == 0)) {
+compilation error,186,replace,[CE] cannot find symbol value,commandLine.addValue(option, allValues); ,commandLine.addValue(value, arguments);
+compilation error,186,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  String allValues = values.values().toString();
+compilation error,186,add,[CE] cannot assign a value to final variable allValues,,  allValues = values.values();
+compilation error,186,add,[CE] cannot find symbol Arrays,,  Arrays.sort(option, arguments);
+compilation error,186,add,[CE] cannot assign a value to final variable allValues,,  allValues = values.values().toArray(values);
+compilation error,158,replace,[CE] cannot find symbol subsequentSeparator,else if (commandLine.looksLikeOption(allValuesQuoted)) { ,else if(commandLine.isAssignableFrom(arguments.subsequentSeparator)) {
+compilation error,158,replace,[CE] cannot find symbol,else if (commandLine.looksLikeOption(allValuesQuoted)) { ,else if(commandLine.isOptionalArg()) {
+compilation error,148,add,[CE] incompatible types,,  final String consumeRemaining = arguments.next();
+compilation error,148,add,[CE] clone() has protected access in Object,,  final String consumeRemaining =(String)consumeRemaining.clone();
+compilation error,148,add,[CE] cannot find symbol values,,  final String consumeRemaining =(String)values.get(0);
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.listIterator();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.getAllIterator();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.getAllIterators();
+compilation error,144,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.values();
+compilation error,185,add,[CE] cannot find symbol value,,  allValues.add(value);
+compilation error,185,add,[CE] cannot find symbol values,,  allValues.add(values.nextToken());
+compilation error,185,add,[CE] cannot find symbol token,,  allValues.add(token);
+compilation error,185,add,[CE] cannot assign a value to final variable allValues,,  allValues = values.values();
+compilation error,185,add,[CE] cannot assign a value to final variable allValues,,  allValues = values.values().toArray(values);
+compilation error,147,add,[CE] incompatible types,,  final int consumeRemaining = arguments.next();
+compilation error,147,add,[CE] incompatible types,,  final String consumeRemaining = arguments.next(); ++argumentCount;
+compilation error,147,add,[CE] incompatible types,,  final char consumeRemaining = arguments.next();
+compilation error,164,add,[CE] cannot find symbol,,  if(arguments.size() > 0) { final StringTokenizer allValues = new StringTokenizer(allValues, String.valueOf(maximum)); arguments.remove(); }
+compilation error,164,add,[CE] variable allValues is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  if(argumentCount > 1) { final StringTokenizer allValues = new StringTokenizer(allValues, String.valueOf(maximum)); arguments.remove(); }
+compilation error,164,add,[CE] cannot find symbol,,  if(arguments.size() > 0) { final StringTokenizer allValues = new StringTokenizer(allValues, String.valueOf(maximum)); arguments.previous(); }
+compilation error,164,add,[CE] cannot find symbol,,  if(arguments.size() > 0) { ++argumentCount; }
+compilation error,164,add,[CE] cannot find symbol,,  if(arguments.size() > 0) { final StringTokenizer allValues = new StringTokenizer(allValues, null); arguments.remove(); }
+compilation error,188,replace,[CE] illegal start of expression,,allValues.add(option);
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { ++argumentCount; for(int id = 0; i < arguments.size(); i++) { values.addValue(option, arguments.nextToken()); }
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { ++argumentCount; for(int id = 0; i < arguments.size(); i++) { addValue(option, arguments.nextToken(), arguments.get(id)); }
+compilation error,188,replace,[CE] illegal start of expression,,if(values.hasMoreTokens()) { ++argumentCount; for(int id = 0; item!= allValues.size(); id++) { addValue(option, arguments); }
+compilation error,144,replace,[CE] cannot find symbol,int argumentCount = 0; ,int argumentCount =(arguments.size() > 0)? arguments.get(0): null;
+compilation error,144,replace,[CE] cannot find symbol,int argumentCount = 0; ,int argumentCount =(arguments.size() > 1)? arguments.get(0): 0;
+compilation error,144,replace,[CE] cannot find symbol,int argumentCount = 0; ,int argumentCount =(arguments.size() > 0)? arguments.get(0): 0;
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.listIterator();
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.getAstRoot(arguments.size() - 1);
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.values();
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  ListIterator arguments = options.getAllIterator();
+compilation error,146,add,[CE] variable arguments is already defined in method processValues(WriteableCommandLine,ListIterator,Option),,  final ListIterator arguments = options.getAllIterator();
+compilation error,151,replace,[CE] cannot find symbol values,if (allValuesQuoted.equals(consumeRemaining)) { ,if(allValues.equals(values)) {
+compilation error,151,replace,[CE] cannot find symbol,if (allValuesQuoted.equals(consumeRemaining)) { ,if(allValues.equals(option.getValue())) {
+compilation error,188,add,[CE] cannot find symbol values,,  if(values.hasMoreTokens()) { ++argumentCount; }
+compilation error,164,replace,[CE] cannot find symbol successiveSeparator,else if (subsequentSplit) { ,else if(!successiveSeparator) {
+compilation error,164,replace,[CE] cannot find symbol successiveSeparator,else if (subsequentSplit) { ,else if(successiveSeparator!= null) {
+compilation error,164,replace,[CE] bad operand type char for unary operator '!',else if (subsequentSplit) { ,else if(!subsequentSeparator) {

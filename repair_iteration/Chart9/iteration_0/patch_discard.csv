@@ -1,0 +1,85 @@
+increase failing tests,181,add, [FE] AssertionFailedError,,  this.maximumItemAge = Integer.MAX_VALUE;
+increase failing tests,181,add, [FE]  Size,,  this.maximumItemAge = Integer.MAX_VALUE + 1;
+increase failing tests,741,replace, [FE]  Size,long latest = getTimePeriod(getItemCount() - 1).getSerialIndex(); ,long latest = getTimePeriod(getItemCount()).getSerialIndex();
+increase failing tests,180,replace, [FE] IllegalArgumentException,this.maximumItemAge = Long.MAX_VALUE; ,this.maximumItemAge = Integer.MAX_VALUE;
+increase failing tests,180,replace, [FE] AssertionFailedError,this.maximumItemAge = Long.MAX_VALUE; , 
+increase failing tests,506,add, [FE] SeriesException,,  if(notify) { throw new SeriesException(""); }
+increase failing tests,506,add, [FE] SeriesException,,  this.data.add(item);
+increase failing tests,742,replace, [FE] AssertionFailedError,boolean removed = false; ,boolean removed = true;
+increase failing tests,341,add, [FE]  Size,,  this.data.remove(index);
+increase failing tests,589,add, [FE] SeriesException,,  add(period, value);
+increase failing tests,341,replace, [FE] ArrayIndexOutOfBoundsException,return (TimeSeriesDataItem) this.data.get(index); ,return(TimeSeriesDataItem)this.data.get(index - 1);
+increase failing tests,240,replace, [FE] ArrayIndexOutOfBoundsException,return this.data.size(); ,return this.data.size() - 1;
+increase failing tests,588,replace, [FE]  Size,add(period, value, true); , 
+increase failing tests,179,add, [FE] StackOverflowError,,  this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+increase failing tests,934,replace, [FE] IllegalArgumentException,startIndex = -(startIndex + 1); ,startIndex =(startIndex + 1);
+increase failing tests,515,replace, [FE] ClassCastException,this.data.add(item); ,this.data.add(last);
+increase failing tests,515,replace, [FE] AssertionFailedError,this.data.add(item); , 
+increase failing tests,561,replace, [FE] AssertionFailedError,add(period, value, true); , 
+increase failing tests,588,add, [FE] StackOverflowError,,  add(period, value);
+increase failing tests,879,replace, [FE] ArrayIndexOutOfBoundsException,if (start < 0) { ,if(end < 0) {
+increase failing tests,509,replace, [FE] AssertionFailedError,this.data.add(item); , 
+increase failing tests,744,replace, [FE] AssertionFailedError,> this.maximumItemAge) { ,>(latest - getTimePeriod(0).getSerialIndex())) {
+increase failing tests,509,add, [FE] AssertionFailedError,,  this.data.add(item); added = notify;
+increase failing tests,542,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,536,add, [FE] AssertionFailedError,,  this.data.add(item);
+increase failing tests,740,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,940,add, [FE] AssertionFailedError,,  endIndex = getIndex(start);
+increase failing tests,513,add, [FE] SeriesException,,  this.data.add(item);
+increase failing tests,513,add, [FE] SeriesException,,  this.data.add(item); added = notify;
+increase failing tests,514,add, [FE] ClassCastException,,  this.data.add(last); added = true;
+increase failing tests,514,add, [FE] ClassCastException,,  this.data.add(last);
+increase failing tests,546,add, [FE] AssertionFailedError,,  this.data.add(item);
+increase failing tests,546,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,944,replace, [FE] IllegalArgumentException,if (endIndex < 0) { ,if(startIndex < 0) {
+increase failing tests,545,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,941,add, [FE] AssertionFailedError,,  endIndex = getIndex(start);
+increase failing tests,941,add, [FE] IllegalArgumentException,,  this.data.add(start);
+increase failing tests,602,add, [FE] StackOverflowError,,  add(period, value, notify);
+increase failing tests,882,replace, [FE] IllegalArgumentException,if (end < start) { ,if(end > start) {
+increase failing tests,513,replace, [FE]  Size,RegularTimePeriod last = getTimePeriod(getItemCount() - 1); ,RegularTimePeriod last = getTimePeriod(getItemCount());
+increase failing tests,562,add, [FE] SeriesException,,  add(period, value);
+increase failing tests,574,add, [FE] StackOverflowError,,  add(period, value, notify);
+increase failing tests,538,add, [FE] AssertionFailedError,,  this.data.add(item);
+increase failing tests,538,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,507,replace, [FE] ArrayIndexOutOfBoundsException,int count = getItemCount(); ,int count = getItemCount() - 1;
+increase failing tests,939,replace, [FE] IllegalArgumentException,int endIndex = getIndex(end); ,int endIndex = getIndex(start);
+increase failing tests,748,replace, [FE] AssertionFailedError,if (removed && notify) { ,if(removed || notify) {
+increase failing tests,741,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,741,add, [FE] AssertionFailedError,,  fireSeriesChanged();
+increase failing tests,741,add, [FE] ArrayIndexOutOfBoundsException,,  this.data.clear();
+increase failing tests,882,add, [FE] IllegalArgumentException,,  if(end > start) { throw new IllegalArgumentException("Requires start >= end."); }
+increase failing tests,882,add, [FE] IllegalArgumentException,,  if(end > start) { throw new IllegalArgumentException("Requires start >= 0."); }
+increase failing tests,589,add, [FE] SeriesException,,  add(period, value); fireSeriesChanged();
+increase failing tests,180,add, [FE] StackOverflowError,,  this.data.add(new TimeSeries(name, domain, range, timePeriodClass));
+increase failing tests,879,replace, [FE] IllegalArgumentException,if (start < 0) { ,if(start > 0) {
+increase failing tests,744,replace, [FE] AssertionFailedError,> this.maximumItemAge) { ,> this.maximumItemAge - 1) {
+increase failing tests,933,replace, [FE] IllegalArgumentException,if (startIndex < 0) { ,if(startIndex > 0) {
+increase failing tests,740,add, [FE] AssertionFailedError,,  this.data.clear();
+increase failing tests,508,replace, [FE] ArrayIndexOutOfBoundsException,if (count == 0) { ,if(count > 0) {
+increase failing tests,178,replace, [FE] NullPointerException,this.data = new java.util.ArrayList(); ,this.data = new java.util.ArrayList(this.data);
+increase failing tests,562,add, [FE] SeriesException,,  add(period, new Double(value));
+increase failing tests,494,add, [FE] SeriesException,,  this.data.add(item);
+increase failing tests,748,add, [FE] AssertionFailedError,,  this.data.remove(0);
+increase failing tests,748,add, [FE] AssertionFailedError,,  this.data.remove(0); removed = true;
+increase failing tests,942,add, [FE] AssertionFailedError,,  this.data.add(startIndex, end);
+increase failing tests,240,replace, [FE]  Size,return this.data.size(); ,return this.data.size() + 1;
+increase failing tests,941,add, [FE] AssertionFailedError,,  this.data.add(startIndex, end);
+increase failing tests,947,replace, [FE] IllegalArgumentException,if (emptyRange) { ,if(emptyRange && startIndex < endIndex) {
+increase failing tests,513,add, [FE] SeriesException,,  this.data.add(item); added = true;
+increase failing tests,144,add, [FE] ClassCastException,,  this.data.add(name); fireSeriesChanged();
+increase failing tests,435,replace, [FE] AssertionFailedError,return Collections.binarySearch(this.data, dummy); ,return Collections.binarySearch(this.data, dummy)+ 1;
+increase failing tests,181,add, [FE] ClassCastException,,  if(data == null) { this.data.add(new TimeSeries(name, domain, range, timePeriodClass)); } else { this.data.add(name); }
+increase failing tests,181,add, [FE] ClassCastException,,  if(data == null) { this.data.add(name); } else { this.data.add(name); }
+increase failing tests,491,add, [FE] IllegalArgumentException,,  if(item!= null) { throw new IllegalArgumentException(""); }
+increase failing tests,927,replace, [FE] IllegalArgumentException,if (start.compareTo(end) > 0) { ,if(start.compareTo(end)> 0 || end.compareTo(start)> 0) {
+increase failing tests,545,add, [FE] AssertionFailedError,,  this.data.add(item);
+increase failing tests,934,add, [FE] IllegalArgumentException,,  if(startIndex < this.data.size()) { throw new IllegalArgumentException(""); }
+increase failing tests,561,add, [FE] SeriesException,,  add(period, new Double(value));
+increase failing tests,542,add, [FE] AssertionFailedError,,  this.data.add(item);
+increase failing tests,494,replace, [FE]  Size,if (!item.getPeriod().getClass().equals(this.timePeriodClass)) { ,if(!item.getPeriod().getClass().getName().equals(this.timePeriodClass)) {
+increase failing tests,748,replace, [FE] AssertionFailedError,if (removed && notify) { ,if(removed && this.data.size() > this.maximumItemAge) {
+increase failing tests,935,add, [FE] IllegalArgumentException,,  if(startIndex < this.data.size()) { throw new IllegalArgumentException(""); }
+increase failing tests,372,add, [FE] AssertionFailedError,,  this.data.add(getDataItem(index));
+increase failing tests,179,add, [FE] ClassCastException,,  this.data.add(name);
+increase failing tests,157,add, [FE] ClassCastException,,  this.data.add(name); fireSeriesChanged();

@@ -1,0 +1,188 @@
+increase failing tests,183,add, [FE] AssertionError testDensities,,  double covarianceMatrixDeterminant = Math.random();
+increase failing tests,183,add, [FE] AssertionError testDensities,,  final double covarianceMatrixDeterminant = Math.exp(-dim);
+increase failing tests,183,add, [FE] AssertionError testDensities,,  double covarianceMatrixDeterminant = Math.exp(-dim);
+increase failing tests,183,add, [FE] AssertionError testDensities,,  double covarianceMatrixDeterminant = Math.exp(-dim / 2.0);
+compilation error,183,add,[CE] cannot find symbol,,  final double covarianceMatrixDeterminant = vals.get(dim);
+compilation error,230,replace,[CE] cannot find symbol centered,for (int i = 0; i < centered.length; i++) { ,for(int i = 0; i < this.centered.length; i++) {
+compilation error,230,replace,[CE] illegal start of type,for (int i = 0; i < centered.length; i++) { , 
+compilation error,235,add,[CE] cannot find symbol i,,  sum += values[i] - getMeans();
+compilation error,235,add,[CE] cannot find symbol i,,  sum += preMultiplied[i] * centered[i];
+compilation error,235,add,[CE] cannot find symbol i,,  sum += values[i] - getMeans() [i];
+increase failing tests,235,add, [FE] ArrayIndexOutOfBoundsException testDensities,,  sum += values[preMultiplied.length];
+compilation error,235,add,[CE] ';' expected,,  sum += values[i] - getMeans());
+compilation error,233,add,[CE] cannot find symbol i,,  final double[] covarianceMatrixInverse = covarianceMatrixInverse.multiply(values[i]);
+compilation error,233,add,[CE] cannot find symbol,,  final double[] covarianceMatrixInverse = covarianceMatrixInverse.compareTo(centered);
+compilation error,233,add,[CE] cannot find symbol i,,  final double[] covarianceMatrixInverse = covarianceMatrixInverse.multiply(values[i], centered);
+compilation error,233,add,[CE] cannot find symbol,,  final double[] covarianceMatrixInverse = covarianceMatrixInverse.get(centered);
+compilation error,233,add,[CE] cannot find symbol,,  final double[] covarianceMatrixInverse = covarianceMatrixInverse.multiply(values);
+increase failing tests,233,replace, [FE] AssertionError testDensities,final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered); ,final double[] preMultiplied = covarianceMatrixInverse.preMultiply(values);
+compilation error,233,replace,[CE] cannot find symbol tmpMatrix,final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered); ,final double[] preMultiplied = tmpMatrix.preMultiply(centered);
+compilation error,233,replace,[CE] method multiply in interface RealMatrix cannot be applied to given types;,final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered); ,final double[] preMultiplied = covarianceMatrixInverse.multiply(centered);
+compilation error,178,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = vals.get(covarianceMatrixInverse);
+compilation error,178,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrixInverse().getCovarianceMatrix(vals);
+compilation error,178,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrixInverse();
+compilation error,178,add,[CE] cannot find symbol covarianceMatrixEigenvalues,,  final int covarianceMatrixDeterminant = vals.get(covarianceMatrixEigenvalues);
+compilation error,178,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrixInverse().getDimension();
+increase failing tests,236,add, [FE] AssertionError testDensities,,  sum += preMultiplied[i] - getMeans()[i];
+increase failing tests,236,add, [FE] AssertionError testDensities,,  sum += values[i] - getMeans()[i];
+compilation error,236,add,[CE] bad operand types for binary operator '-',,  sum += preMultiplied[i] - getMeans();
+increase failing tests,236,replace, [FE] AssertionError testDensities,sum += preMultiplied[i] * centered[i]; ,sum += values[i] * centered[i];
+increase failing tests,236,replace, [FE] AssertionError testDensities,sum += preMultiplied[i] * centered[i]; ,sum += values[i] * preMultiplied[i];
+compilation error,229,add,[CE] reached end of file while parsing,,  if(values.length!= values.length) { for(int i = 0; i < values.length; i++) { covarianceMatrixInverse.preMultiply(values[i]); }
+compilation error,229,add,[CE] reached end of file while parsing,,  if(values.length!= values.length) { for(int i = 0; i < values.length; i++) { covarianceMatrixInverse.evaluate(values); }
+compilation error,229,add,[CE] reached end of file while parsing,,  if(values.length!= values.length) { for(int i = 0; i < values.length; i++) { covarianceMatrixInverse.apply(values[i]); }
+compilation error,229,add,[CE] reached end of file while parsing,,  if(values.length!= values.length) { for(int i = 0; i < values.length; i++) { covarianceMatrixInverse.apply(values); }
+compilation error,229,add,[CE] reached end of file while parsing,,  if(values.length!= values.length) { for(int i = 0; i < values.length; i++) { return FastMath.exp(-0.5 * values.length); }
+increase failing tests,234,replace, [FE] AssertionError testDensities,double sum = 0; ,double sum = 1;
+increase failing tests,234,replace, [FE] AssertionError testDensities,double sum = 0; ,double sum = 2;
+increase failing tests,234,replace, [FE] AssertionError testDensities,double sum = 0; ,double sum = 0.5;
+compilation error,234,replace,[CE] cannot find symbol sum,double sum = 0; , 
+compilation error,230,add,[CE] not a statement,,  centered[] = values[values.length] - getMeans();
+compilation error,230,add,[CE] cannot find symbol,,  covarianceMatrixInverse.apply(values);
+compilation error,230,add,[CE] not a statement,,  centered[] = covarianceMatrixInverse.multiply(values[values.length]);
+compilation error,230,add,[CE] cannot find symbol,,  covarianceMatrixInverse.evaluate(values);
+compilation error,230,add,[CE] not a statement,,  centered[] = covarianceMatrixInverse.multiply(values);
+increase failing tests,229,replace, [FE] ArrayIndexOutOfBoundsException testDensities,final double[] centered = new double[values.length]; ,final double[] centered = new double[values.length + 1];
+compilation error,229,replace,[CE] ']' expected,final double[] centered = new double[values.length]; ,final double[] centered = new double[values.length [2];
+compilation error,229,replace,[CE] illegal start of expression,final double[] centered = new double[values.length]; ,static final double[] centered = new double[values.length];
+increase failing tests,235,replace, [FE] AssertionError testDensities,for (int i = 0; i < preMultiplied.length; i++) { ,for(int i = 1; i < preMultiplied.length; i++) {
+increase failing tests,183,replace, [FE] AssertionError testDensities,return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, dim / 2)* FastMath.pow(covarianceMatrixDeterminant, -0.5)* getExponentTerm(vals);
+compilation error,183,replace,[CE] cannot find symbol varianceMatrixDeterminant,return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, -dim / 2)* FastMath.pow(varianceMatrixDeterminant, -0.5)* getExponentTerm(vals);
+increase failing tests,183,replace, [FE] AssertionError testDensities,return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, -dim / 2)* FastMath.pow(covarianceMatrixDeterminant, 0.5)* getExponentTerm(vals);
+compilation error,234,add,[CE] cannot find symbol i,,  centered[i] = covarianceMatrixInverse.preMultiply(centered);
+compilation error,234,add,[CE] reached end of file while parsing,,  if(preMultiplied!= null) { for(int i = 0; i < preMultiplied.length; i++) { centered[i] = values[i] - getMeans() [i]; }
+compilation error,234,add,[CE] reached end of file while parsing,,  if(preMultiplied!= null) { for(int i = 0; i < preMultiplied.length; i++) { centered[i] = covarianceMatrixInverse.preMultiply(centered); }
+compilation error,234,add,[CE] cannot find symbol i,,  centered[i] = covarianceMatrixInverse.multiply(centered);
+compilation error,234,add,[CE] reached end of file while parsing,,  if(preMultiplied!= null) { for(int i = 0; i < preMultiplied.length; i++) { centered[i] * centered[i] = covarianceMatrixInverse.preMultiply(centered); }
+compilation error,178,replace,[CE] possible loss of precision,final int dim = getDimension(); ,final int dim = getDimension() / 2.0;
+increase failing tests,178,replace, [FE] DimensionMismatchException testDensities,final int dim = getDimension(); ,final int dim = getDimension() * 2;
+increase failing tests,178,replace, [FE] DimensionMismatchException testDensities,final int dim = getDimension(); ,final int dim = getDimension() - 1;
+increase failing tests,179,replace, [FE] DimensionMismatchException testDensities,if (vals.length != dim) { ,if(dim <= vals.length) {
+compilation error,179,replace,[CE] illegal start of type,if (vals.length != dim) { , 
+compilation error,231,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  centered[i] = covarianceMatrixInverse.multiply(values[i]);
+compilation error,231,add,[CE] bad operand types for binary operator '-',,  covarianceMatrixInverse.exp(values[i] - getMeans());
+compilation error,231,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  centered[i] = covarianceMatrixInverse.multiply(values[i], i);
+compilation error,179,add,[CE] illegal start of expression,,  if(dim > 0) { if(dim > vals.length) { throw new DimensionMismatchException(""); }
+compilation error,179,add,[CE] ';' expected,,  if(dim > 0) { if(dim > vals.length) { return FastMath.PI, dim / 2; }
+compilation error,179,add,[CE] illegal start of expression,,  if(dim > 0) { if(dim > 0) { throw new DimensionMismatchException(""); }
+compilation error,179,add,[CE] ';' expected,,  if(dim > 0) { if(dim > vals.length) { return FastMath.PI, dim / 2 * getExpponentTerm(vals); }
+compilation error,179,add,[CE] illegal start of expression,,  if(dim > 0) { int covarianceMatrixDeterminant = getCovarianceMatrixDeterminant(); if(dim > 0) { return dim; }
+compilation error,231,replace,[CE] cannot find symbol,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] - getValues() [i];
+increase failing tests,231,replace, [FE] AssertionError testDensities,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] / getMeans() [i];
+compilation error,231,replace,[CE] cannot find symbol,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] - getMean() [i];
+compilation error,179,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrixInverse();
+compilation error,179,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = calculateCovarianceMatrix(vals);
+compilation error,179,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrix(vals);
+compilation error,179,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = calculateCovarianceMatrix(vals, dim);
+compilation error,179,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrix().getDimension();
+compilation error,178,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = calculateCovarianceMatrix(vals);
+compilation error,178,add,[CE] cannot find symbol,,  final double covarianceMatrixDeterminant = calculateCovarianceMatrix(vals);
+compilation error,178,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = getCovarianceMatrix();
+compilation error,178,add,[CE] no suitable method found for abs(RealMatrix),,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse);
+compilation error,231,add,[CE] bad operand types for binary operator '-',,  centered[i] = values[i] - getMeans();
+compilation error,231,add,[CE] cannot find symbol,,  centered[i] = values[i] - getStandardDeviation();
+compilation error,231,add,[CE] cannot find symbol,,  centered[i] = values[i] - getSlope();
+compilation error,231,add,[CE] cannot find symbol,,  centered[i] = values[i] - getMean();
+compilation error,231,add,[CE] double cannot be dereferenced,,  centered[i] = values[i].doubleValue();
+increase failing tests,231,replace, [FE] AssertionError testDensities,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] * getMeans() [i];
+compilation error,231,replace,[CE] cannot find symbol,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] / getMean() [i];
+compilation error,231,replace,[CE] cannot find symbol,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] - getMean() / values[i];
+compilation error,233,add,[CE] cannot find symbol,,  final double[] covarianceMatrixInverse = getCovarianceMatrixDeterminant();
+compilation error,233,add,[CE] cannot find symbol,,  final Double covarianceMatrixInverse = getCovarianceMatrixDeterminant();
+compilation error,233,add,[CE] cannot find symbol getCovarianceMatrixInverse,,  final double[] covarianceMatrixInverse = getCovarianceMatrixInverse.multiply(values);
+compilation error,233,add,[CE] cannot find symbol,,  final double[] covarianceMatrixInverse = getCovarianceMatrixInverse();
+compilation error,233,add,[CE] cannot find symbol,,  final Double covarianceMatrixInverse = getCovarianceMatrixInverse();
+increase failing tests,178,replace, [FE] DimensionMismatchException testDensities,final int dim = getDimension(); ,final int dim = getDimension() / 2;
+compilation error,178,replace,[CE] cannot find symbol,final int dim = getDimension(); ,final int dim = getDimension() * getMean();
+increase failing tests,229,replace, [FE] DimensionMismatchException testDensities,final double[] centered = new double[values.length]; ,final double[] centered = new double[0];
+compilation error,230,add,[CE] cannot find symbol,,  covarianceMatrixInverse.incrementValues(values);
+compilation error,230,add,[CE] cannot find symbol,,  covarianceMatrixInverse.incrementValues();
+compilation error,230,add,[CE] cannot find symbol,,  covarianceMatrixInverse.validate(values);
+compilation error,230,add,[CE] cannot find symbol center,,  covarianceMatrixInverse.converge(values, center);
+increase failing tests,234,replace, [FE] AssertionError testDensities,double sum = 0; ,double sum = 1.0;
+compilation error,234,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  covarianceMatrixInverse.multiply(centered);
+compilation error,234,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  final double[] covarianceMatrixDeterminant = covarianceMatrixInverse.multiply(centered);
+compilation error,234,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  final double[] covMatEigenvalues = covarianceMatrixInverse.multiply(values);
+compilation error,234,add,[CE] method multiply in interface RealMatrix cannot be applied to given types;,,  covarianceMatrixInverse.multiply(values);
+compilation error,233,replace,[CE] no suitable method found for preMultiply(double[],int),final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered); ,final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered, values.length);
+compilation error,233,replace,[CE] method multiply in interface RealMatrix cannot be applied to given types;,final double[] preMultiplied = covarianceMatrixInverse.preMultiply(centered); ,final double[] preMultiplied = covarianceMatrixInverse.multiply(values);
+increase failing tests,236,replace, [FE] AssertionError testDensities,sum += preMultiplied[i] * centered[i]; ,sum += preMultiplied[i] * values[i];
+compilation error,229,add,[CE] variable i is already defined in method getExponentTerm(double[]),,  final int i = values.length;
+compilation error,229,add,[CE] cannot find symbol,,  test(values, 0, values.length);
+compilation error,229,add,[CE] variable i is already defined in method getExponentTerm(double[]),,  final int i = values.length - 1;
+compilation error,229,add,[CE] variable sum is already defined in method getExponentTerm(double[]),,  final double[] sum = getMeans();
+compilation error,229,add,[CE] incompatible types,,  final int sum = getMeans();
+compilation error,183,replace,[CE] dimension has private access in AbstractMultivariateRealDistribution,return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, -dim / 2)* FastMath.pow(dimension, -0.5)* getExponentTerm(vals);
+compilation error,183,replace,[CE] cannot find symbol varianceDeterminant,return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, -dim / 2)* FastMath.pow(varianceDeterminant, -0.5)* getExponentTerm(vals);
+increase failing tests,230,replace, [FE] AssertionError testDensities,for (int i = 0; i < centered.length; i++) { ,for(int i = 0; i < centered.length - 1; i++) {
+compilation error,230,replace,[CE] cannot find symbol centers,for (int i = 0; i < centered.length; i++) { ,for(int i = 0; i < centers.length; i++) {
+compilation error,235,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getResult());
+compilation error,235,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getSquareResult());
+compilation error,235,add,[CE] cannot find symbol CovarianceMatrixInverse,,  sum += Math.sqrt(CovarianceMatrixInverse.getSquareResult());
+compilation error,235,add,[CE] cannot find symbol CovarianceMatrixInverse,,  sum += Math.sqrt(CovarianceMatrixInverse.multiply(values));
+compilation error,235,add,[CE] cannot find symbol CovarianceMatrixInverse,,  sum += Math.sqrt(CovarianceMatrixInverse.getResult());
+compilation error,183,add,[CE] cannot find symbol,,  final double covarianceMatrixDeterminant = calculateCovarianceMatrix(vals);
+compilation error,183,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = calculateCovarianceMatrix(vals);
+compilation error,183,add,[CE] cannot find symbol,,  final double covarianceMatrixDeterminant = calculateCovarianceMatrix(vals, dim);
+compilation error,183,add,[CE] cannot find symbol,,  final Double covarianceMatrix = getCovarianceMatrixInverse();
+compilation error,183,add,[CE] cannot find symbol,,  final int covarianceMatrixDeterminant = calculateCovarianceMatrix(vals, dim);
+compilation error,236,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getExponentTerm(values[i]));
+compilation error,236,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getSquareResult());
+compilation error,236,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.multiply(values[i]));
+compilation error,236,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getResult());
+compilation error,236,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getExponentTerm(values[i], i));
+compilation error,230,add,[CE] method add in interface RealMatrix cannot be applied to given types;,,  covarianceMatrixInverse.add(values[0], values[1]);
+compilation error,230,add,[CE] cannot find symbol,,  covarianceMatrixInverse.set(values, centered);
+compilation error,230,add,[CE] method add in interface RealMatrix cannot be applied to given types;,,  covarianceMatrixInverse.add(values[0], values[1], values[2], values[3]);
+compilation error,230,add,[CE] cannot find symbol,,  CovarianceMatrixInverse covariance = Math.abs(centered);
+compilation error,230,add,[CE] cannot find symbol,,  CovarianceMatrixInverse covariance = Math.exp(-values[0], values[1]);
+compilation error,233,add,[CE] ')' expected,,  covarianceMatrixInverse.put(values[i] - centered]);
+compilation error,233,add,[CE] cannot find symbol center,,  covarianceMatrixInverse.add(center, values[i]);
+compilation error,233,add,[CE] cannot find symbol i,,  covarianceMatrixInverse.add(i, values[i]);
+compilation error,233,add,[CE] cannot assign a value to final variable covarianceMatrixInverse,,  covarianceMatrixInverse = Math.exp(-centered, values[i]);
+compilation error,233,add,[CE] cannot find symbol i,,  covarianceMatrixInverse.set(values[i] - centered);
+increase failing tests,235,add, [FE] AssertionError testDensities,,  sum += Math.exp(-sum / values.length);
+compilation error,235,add,[CE] cannot find symbol i,,  sum += Math.exp(-sum / values[i]);
+compilation error,235,add,[CE] ';' expected,,  sum += Math.sqrt(varianceMatrixInverse.multiply(values)));
+compilation error,179,add,[CE] cannot find symbol,,  setCovarianceMatrixDeterminant(covarianceMatrixInverse, dim);
+compilation error,179,add,[CE] cannot find symbol,,  int covarianceMatrixDeterminant = getCovarianceMatrixInverse();
+compilation error,179,add,[CE] bad operand types for binary operator '-',,  int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse - dim);
+compilation error,179,add,[CE] cannot find symbol,,  int covarianceMatrixDeterminant = getCovarianceMatrixInverse(); dim += vals.length * dim;
+compilation error,179,add,[CE] no suitable method found for abs(double,int),,  int covarianceMatrixDeterminant = Math.abs(vals[0], dim);
+compilation error,229,add,[CE] cannot find symbol,,  covarianceMatrixInverse.set(values, 0, values.length);
+compilation error,229,add,[CE] method add in interface RealMatrix cannot be applied to given types;,,  covarianceMatrixInverse.add(values);
+compilation error,229,add,[CE] cannot find symbol,,  covarianceMatrixInverse.invert(values);
+compilation error,229,add,[CE] cannot find symbol,,  covarianceMatrixInverse.validate(values);
+compilation error,229,add,[CE] cannot find symbol,,  covarianceMatrixInverse.validate(values, 0, values.length);
+compilation error,231,add,[CE] reached end of file while parsing,,  if(i < values.length) { if(i > 0) { sum += values[i] - getMeans(); }
+compilation error,231,add,[CE] cannot find symbol,,  i = getStandardDeviation();
+compilation error,231,add,[CE] reached end of file while parsing,,  if(i < values.length) { if(i > 0) { sum += values[i] - getSums(); }
+compilation error,231,add,[CE] reached end of file while parsing,,  if(i < values.length) { if(i > 0) { throw new IllegalArgumentException(""); }
+compilation error,183,replace,[CE] no suitable method found for pow(double[],double),return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, -dim / 2)* FastMath.pow(vals, -0.5)* getExponentTerm(covarianceMatrixDeterminant);
+compilation error,183,replace,[CE] no suitable method found for pow(double[],double),return FastMath.pow(2 * FastMath.PI, -dim / 2) * FastMath.pow(covarianceMatrixDeterminant, -0.5) *  getExponentTerm(vals); ,return FastMath.pow(2 * FastMath.PI, -dim / 2)* FastMath.pow(vals, -0.5)* getExponentTerm(vals);
+compilation error,236,add,[CE] bad operand types for binary operator '-',,  sum += values[i] - getMeans();
+compilation error,236,add,[CE] cannot find symbol varianceMatrixInverse,,  sum += Math.sqrt(varianceMatrixInverse.getSquareValue(values[i]));
+compilation error,236,add,[CE] ';' expected,,  sum += Math.sqrt(varianceMatrixInverse.getSquareResult(i), values[i]));
+compilation error,236,add,[CE] cannot find symbol,,  sum += values[i] - getStandardDeviation();
+compilation error,234,add,[CE] cannot find symbol,,  setResult(centered, preMultiplied);
+compilation error,234,add,[CE] cannot find symbol i,,  centered[i] =(double)getStandardDeviation();
+compilation error,234,add,[CE] cannot find symbol i,,  centered[i] = Math.round(preMultiplied);
+compilation error,234,add,[CE] cannot find symbol,,  setValues(values, centered);
+compilation error,234,add,[CE] cannot find symbol,,  setValues(values, preMultiplied);
+increase failing tests,235,replace, [FE] ArrayIndexOutOfBoundsException testDensities,for (int i = 0; i < preMultiplied.length; i++) { ,for(int i = 0; i < preMultiplied[i]; i++) {
+compilation error,235,replace,[CE] ';' expected,for (int i = 0; i < preMultiplied.length; i++) { ,for(int i = 0; i < preMultiplied[i++]) {
+compilation error,178,add,[CE] no suitable method found for abs(RealMatrix),,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse).doubleValue();
+compilation error,178,add,[CE] bad operand types for binary operator '/',,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse / vals.length);
+increase failing tests,178,add, [FE] AssertionError testDensities,,  final int covarianceMatrixDeterminant = Math.abs(vals.length - 1);
+compilation error,178,add,[CE] bad operand types for binary operator '-',,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse - vals.length);
+compilation error,229,replace,[CE] ']' expected,final double[] centered = new double[values.length]; ,final double[] centered = new double[values.length [0];
+compilation error,231,replace,[CE] cannot find symbol,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] - getStandardDeviation() [i];
+compilation error,231,replace,[CE] cannot find symbol,centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] - getNeighborEquals() [i];
+compilation error,231,replace,[CE] bad operand types for binary operator '*',centered[i] = values[i] - getMeans()[i]; ,centered[i] = values[i] - getMeans() * values[i];
+increase failing tests,178,replace, [FE] DimensionMismatchException testDensities,final int dim = getDimension(); ,final int dim = getDimension() * vals.length;
+compilation error,178,replace,[CE] cannot find symbol VALS,final int dim = getDimension(); ,final int dim = getDimension() * VALS.length;
+compilation error,183,add,[CE] no suitable method found for abs(RealMatrix),,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse).doubleValue();
+compilation error,183,add,[CE] no suitable method found for abs(RealMatrix),,  double covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse).doubleValue();
+compilation error,183,add,[CE] bad operand types for binary operator '-',,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse - covarianceMatrixDeterminant);
+compilation error,183,add,[CE] no suitable method found for abs(RealMatrix),,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse).multiply(covarianceMatrixDeterminant);
+compilation error,183,add,[CE] no suitable method found for abs(RealMatrix),,  final int covarianceMatrixDeterminant = Math.abs(covarianceMatrixInverse).multiply(covarianceMatrixInverse);

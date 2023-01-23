@@ -1,0 +1,18 @@
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(includeInterval) { throw new NullPointerException(" --"); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(includeInterval) { throw new NullPointerException(" -- "); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(!includeInterval) { throw new NullPointerException(" -- 1 "); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  , 
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(!includeInterval) { throw new NullPointerException(" --"); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  , 
+compilation error,780,replace,[CE] incompatible types, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(!includeInterval) { return new NullPointerException(" --"); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  , 
+compilation error,780,add,[CE] illegal start of expression, ,if(!includeInterval) { if(includeInterval) { throw new NullPointerException(" --"); }
+compilation error,780,add,[CE] incompatible types, ,if(includeInterval) { return new NullPointerException(" --"); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(includeInterval) { throw new NullPointerException(" --"); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(includeInterval) { throw new NullPointerException(" -- "); }
+patch is same with buggy,780,replace,, if(includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  , 
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(!includeInterval) { throw new NullPointerException(" -- 1 "); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  --  1   ");  }  ,if(!includeInterval) { throw new NullPointerException(" -- 1 "); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(!includeInterval) { throw new NullPointerException(" --"); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  ,if(!includeInterval) { throw new NullPointerException(" -- "); }
+patch is same with buggy,780,replace,, if(!includeInterval)  {  throw  new  NullPointerException( "  -- ");  }  , 
