@@ -1,8 +1,0 @@
-compilation error,349,add,[CE] cannot find symbol BasicRows,,  BasicRows.add(basicRow);
-compilation error,349,add,[CE] not a statement,,  -(restrictToNonNegative? 0 : mostNegative);
-compilation error,349,add,[CE] not a statement,,  -(restrictToNonNegative? 0 : mostNegative));
-compilation error,349,add,[CE] cannot find symbol BasicRows,,  BasicRows.add(basicRow); basicRows.add(basicRow);
-increase failing tests,315,replace, [FE] AssertionError testRestrictVariablesToNonNegative,matrix[i][j] = getEntry(i + 1, j + 1); ,matrix[i][j] = getEntry(i + 1, j + 2);
-increase failing tests,315,replace, [FE] AssertionError testRestrictVariablesToNonNegative,matrix[i][j] = getEntry(i + 1, j + 1); ,matrix[i][j] = getEntry(i + 1, j);
-increase failing tests,315,replace, [FE] AssertionError testRestrictVariablesToNonNegative,matrix[i][j] = getEntry(i + 1, j + 1); ,matrix[i][j] = getEntry(i + 1, height + 1);
-increase failing tests,315,replace, [FE] AssertionError testRestrictVariablesToNonNegative,matrix[i][j] = getEntry(i + 1, j + 1); , 

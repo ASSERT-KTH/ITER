@@ -1,8 +1,0 @@
-compilation error,188,add,[CE] possible loss of precision,,  int denominator = Math.abs(a0);
-compilation error,188,add,[CE] possible loss of precision,,  int denominator = Math.floor(a0);
-compilation error,188,add,[CE] possible loss of precision,,  this.numerator = Math.floor(a0);
-compilation error,188,add,[CE] possible loss of precision,,  int denominator = Math.abs(a0 - value);
-compilation error,178,replace,[CE] variable denominator might not have been initialized,long overflow = Integer.MAX_VALUE; ,long overflow = Integer.MAX_VALUE + denominator;
-increase failing tests,178,replace, [FE] FractionConversionException testEpsilonLimitConstructor,long overflow = Integer.MAX_VALUE; ,long overflow = Integer.MAX_VALUE + 1;
-compilation error,178,replace,[CE] cannot find symbol overflow,long overflow = Integer.MAX_VALUE; , 
-increase failing tests,188,replace, [FE] AssertionError testIntegerOverflow,this.numerator = (int) a0; ,this.numerator =(int)a0 - 1;

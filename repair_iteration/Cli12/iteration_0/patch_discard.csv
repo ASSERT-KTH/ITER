@@ -1,8 +1,0 @@
-compilation error,56,replace,[CE] cannot assign a value to final variable eatTheRest,boolean eatTheRest = false; ,final boolean eatTheRest = false;
-compilation error,56,replace,[CE] cannot find symbol eatTheRest,boolean eatTheRest = false; ,boolean eattheRest = true;
-compilation error,56,replace,[CE] cannot find symbol eatTheRest,boolean eatTheRest = false; , 
-increase failing tests,58,add, [FE] AssertionFailedError testSimpleLong,,  tokens.add("--");
-compilation error,58,add,[CE] cannot find symbol i,,  tokens.add("--"); tokens.add(arguments[i]);
-increase failing tests,58,add, [FE] AssertionFailedError testSimpleLong,,  tokens.add("--"); tokens.add("--");
-increase failing tests,58,add, [FE] AssertionFailedError testSimpleLong,,  tokens.add("--"); tokens.add(arguments[0]);
-increase failing tests,58,add, [FE] ArrayStoreException testSimpleLong,,  tokens.add("-".equals(arguments[0]));

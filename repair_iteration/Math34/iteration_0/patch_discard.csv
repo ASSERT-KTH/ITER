@@ -1,7 +1,0 @@
-increase failing tests,75,replace, [FE] NumberIsTooLargeException testChromosomes,this.populationLimit = populationLimit; ,this.populationLimit = 0;
-compilation error,75,replace,[CE] incompatible types,this.populationLimit = populationLimit; ,this.populationLimit = new ArrayList < Chromosome>(populationLimit);
-increase failing tests,75,replace, [FE] NumberIsTooLargeException testChromosomes,this.populationLimit = populationLimit; , 
-compilation error,75,add,[CE] cannot find symbol population,,  this.population = new ArrayList < Chromosome>(populationLimit);
-compilation error,75,add,[CE] incompatible types,,  this.populationLimit = chromosomes.get(populationLimit);
-compilation error,75,add,[CE] no suitable constructor found for NumberIsTooLargeException(String),,  if(populationLimit > 0) { throw new NumberIsTooLargeException(""); }
-increase failing tests,108,replace, [FE] AssertionError testAddTooManyChromosomes,if (chromosomes.size() + chromosomeColl.size() > populationLimit) { ,if(chromosomes.size() > populationLimit) {

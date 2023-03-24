@@ -1,8 +1,0 @@
-increase failing tests,148,add, [FE] AssertionFailedError testStopBursting2,,  tokens.add(token);
-compilation error,148,add,[CE] variable iter is already defined in method flatten(Options,String[],boolean),,  Iterator iter = options.iterator(); tokens.add(token);
-compilation error,148,add,[CE] variable iter is already defined in method flatten(Options,String[],boolean),,  Iterator iter = options.iterate(token); tokens.add(token);
-compilation error,148,add,[CE] variable iter is already defined in method flatten(Options,String[],boolean),,  Iterator iter = options.iterate(token);
-compilation error,148,add,[CE] cannot find symbol,,  iter.removeLast(); tokens.add(token);
-increase failing tests,189,replace, [FE] AssertionFailedError testStopBursting2,tokens.add(value); ,tokens.add("--");
-compilation error,189,replace,[CE] cannot find symbol stopAtNonOption,tokens.add(value); ,tokens.add(this.stopAtNonOption);
-increase failing tests,189,replace, [FE] AssertionFailedError testStopBursting2,tokens.add(value); ,tokens.add("-");

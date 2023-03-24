@@ -1,9 +1,0 @@
-compilation error,47,replace,[CE] illegal start of expression,} ,cmd.addOption(options);
-compilation error,47,replace,[CE] illegal start of expression,} ,cmd.addAllOptions(options);
-compilation error,47,replace,[CE] illegal start of expression,} ,cmd.setOptions(options);
-compilation error,47,replace,[CE] illegal start of expression,} ,cmd.setRequiredOptions(options);
-compilation error,47,replace,[CE] illegal start of expression,} , 
-increase failing tests,404,replace, [FE] org.apache.commons.cli.MissingOptionException: Missing required options: v testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); ,getRequiredOptions().add(opt.getKey());
-increase failing tests,404,replace, [FE] MissingOptionException testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); ,getRequiredOptions().remove(opt.getValue());
-increase failing tests,404,replace, [FE] org.apache.commons.cli.MissingOptionException: Missing required options: v testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); ,getRequiredOptions().add(opt.getValue());
-increase failing tests,404,replace, [FE] MissingOptionException testReuseOptionsTwice,getRequiredOptions().remove(opt.getKey()); , 

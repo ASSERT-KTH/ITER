@@ -1,9 +1,0 @@
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)this.events.add(handler,maxCheckInterval,convergence,maxIterationCount);
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)this.events.get(newEventHandler(handler,maxCheckInterval,convergence,maxIterationCount),newBracketingNthOrderBrentSolver(convergence,0));
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)this.events.get(newEventHandler(handler,maxCheckInterval,convergence,maxIterationCount),newBracketingNthOrderBrentSolver(convergence,1));
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)this.events.get(newEventHandler(handler,maxCheckInterval,convergence,maxIterationCount),newBracketingNthOrderBrentSolver(convergence,2));
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=this.events.add(handler,maxCheckInterval,convergence,maxIterationCount);
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java367
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java367double[]yDot=currentEvent.reset(eventT,yDot);
-projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java367double[]yDot=currentEvent.reset();

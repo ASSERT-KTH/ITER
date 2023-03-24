@@ -1,2 +1,0 @@
-increase failing tests,281,replace, [FE] AssertionError testMoments, numericalVariance  =  getNumberOfSuccesses()  /  2.0;  ,numericalVariance = getSampleSize() / 2.0;
-increase failing tests,308,replace, [FE] AssertionError testDegenerateNoSuccesses, return  FastMath.max(0,  getNumberOfSuccesses()  +  getSampleSize()  -  getPopulationSize());  if(numberOfSuccesses  >  0)  {  if(!numericalVarianceIsCalculated)  {  numericalVariance  =  Math.min(numberOfSuccesses,  numberOfSuccesses);  }  ,return FastMath.max(0, getPopulationSize() + getSampleSize() - getPopulationSize());
