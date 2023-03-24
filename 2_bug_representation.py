@@ -60,7 +60,7 @@ def getDiagnosis_fromFL(test_path):
                         if "." in diagnosis:
                             diagnosis = diagnosis.split(".")[-1]
 
-    diagnosis = ' [FE] ' + diagnosis +' '+failingtest 
+    diagnosis = ' [FE] ' + diagnosis  
     diagnosis = diagnosis.replace("\r","").replace("\n","")
     return fail_count,diagnosis
 
@@ -117,8 +117,8 @@ def getContext(buggy_class,buggy_line,start_no,end_no):
 if __name__ == '__main__':
     project=sys.argv[1]
     bug=sys.argv[2]
-#     suspiciousness_threshold=sys.argv[3]
-#     suspiciousness_threshold=float(suspiciousness_threshold)
+    suspiciousness_threshold=sys.argv[3]
+    suspiciousness_threshold=float(suspiciousness_threshold)
     rounds='0'
 
     
@@ -128,7 +128,7 @@ if __name__ == '__main__':
         print("This path does not exist: " + FL_file)
         sys.exit()
     else:
-        bug_representation_path="./repair_iteration/"+project+bug+"/iteration_"+rounds
+        bug_representation_path="./repair_iteration/"+project+bug
         if not os.path.exists(bug_representation_path):
             os.system("mkdir -p "+bug_representation_path)
         os.system("cp "+FL_file + " "+bug_representation_path)
@@ -148,11 +148,21 @@ if __name__ == '__main__':
                     count=count+1
                     suspiciousness =  line.split(";")[1]
                     suspiciousness=suspiciousness.replace("\n","").replace("\r","")
-                    if count < 33:
+                    print('suspiciousness',suspiciousness)
+                    print('suspiciousness_threshold',suspiciousness_threshold)
+                    
+                    
+                    first_suspiciousness =  lines[1].split(";")[1]
+                    first_suspiciousness=first_suspiciousness.replace("\n","").replace("\r","")
+                    print('first_suspiciousness',first_suspiciousness)
+
+
+                    if (count < 50 and  float(suspiciousness) > float(suspiciousness_threshold)) or (count < 50 and float(first_suspiciousness) == 0.0) :
                         buggy_class = line.split("#")[0]
                         buggy_class=buggy_class.replace(".","/").replace("$","/")
                         buggy_line = line.split(":")[1].split(";")[0]
-                        buggy_class=buggy_class+".java"                  
+                        buggy_class=buggy_class+".java" 
+                        print(buggy_class)
                         if os.path.exists("projects/"+project+bug+"/source/"+buggy_class):
                             print("projects/"+project+bug+"/source/"+buggy_class)
                             buggy_class = "projects/"+project+bug+"/source/"+buggy_class
@@ -162,11 +172,20 @@ if __name__ == '__main__':
                         elif os.path.exists("projects/"+project+bug+"/src/main/java/"+buggy_class):
                             print("projects/"+project+bug+"/src/main/java/"+buggy_class)
                             buggy_class = "projects/"+project+bug+"/src/main/java/"+buggy_class
+                        elif os.path.exists("projects/"+project+bug+"/gson/src/main/java/"+buggy_class):
+                            print("projects/"+project+bug+"/gson/src/main/java/"+buggy_class)
+                            buggy_class = "projects/"+project+bug+"/gson/src/main/java/"+buggy_class
+                        elif os.path.exists("projects/"+project+bug+"/src/"+buggy_class):
+                            print("projects/"+project+bug+"/src/"+buggy_class)
+                            buggy_class = "projects/"+project+bug+"/src/"+buggy_class
                             
                         
                         utils_path = "./utils/context.jar "
-                        results = os.popen("java -jar "+utils_path +buggy_class +" test-"+buggy_line).read()
-                        results = str(results)
+                        try:
+                            results = os.popen("java -jar "+utils_path +buggy_class +" test-"+buggy_line).read()
+                            results = str(results)
+                        except:
+                            results=' [CLASS] startline:'+ str(int(buggy_line)-5) + ' endline: '+str(int(buggy_line)+5)
                         if "[CLASS]" in results and "startline:" in results:
                             results = results.split("[CLASS]")[1]
                             meta = " [CLASS] " + results.split("startline:")[0]

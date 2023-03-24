@@ -64,10 +64,6 @@ while [[ "$1" = --* ]]; do
     (--sourcefiles)
       echo "source $1"
       SOURCEFILES=$1;
-      shift;;   
-    (--project)
-      echo "project $1"
-      SOURCEFILES=$1;
       shift;;      
     (--help)
       echo "$USAGE";
@@ -94,10 +90,10 @@ mkdir -p "$LIB_DIR" || die "Failed to create $LIB_DIR!"
 [ -d "$LIB_DIR" ] || die "$LIB_DIR does not exist!"
 
 JUNIT_JAR="$LIB_DIR/junit.jar"
-if [ ! -s "$JUNIT_JAR" ]; then
-  wget "https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar" -O "$JUNIT_JAR" || die "Failed to get junit-4.12.jar from https://repo1.maven.org!"
-fi
-[ -s "$JUNIT_JAR" ] || die "$JUNIT_JAR does not exist or it is empty!"
+# if [ ! -s "$JUNIT_JAR" ]; then
+#   wget "https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar" -O "$JUNIT_JAR" || die "Failed to get junit-4.12.jar from https://repo1.maven.org!"
+# fi
+# [ -s "$JUNIT_JAR" ] || die "$JUNIT_JAR does not exist or it is empty!"
 
 HAMCREST_JAR="$LIB_DIR/hamcrest-core.jar"
 if [ ! -s "$HAMCREST_JAR" ]; then
@@ -108,8 +104,7 @@ fi
 BUILD_DIR="$SCRIPT_DIR/build"
 SRC_DIR="$SCRIPT_DIR/build"
 TEST_DIR="$SCRIPT_DIR/build-tests"
-
-$CLOSURE_JAR = ''
+CUSTOM_JAR="$SCRIPT_DIR/build/lib/rhino.jar:$SCRIPT_DIR/lib/guava.jar:$SCRIPT_DIR/lib/caja-r4314.jar:$SCRIPT_DIR/lib/ant-launcher.jar:$SCRIPT_DIR/lib/ant.jar:$SCRIPT_DIR/lib/json.jar:$SCRIPT_DIR/lib/protobuf-java.jar:$SCRIPT_DIR/lib/jarjar.jar:$SCRIPT_DIR/lib/libtrunk_rhino_parser_jarjared.jar:$SCRIPT_DIR/lib/hamcrest-core-1.1.jar:$SCRIPT_DIR/lib/guava-r06.jar:$SCRIPT_DIR/lib/junit.jar:$SCRIPT_DIR/lib/hamcrest-core.jar"
 
 # ------------------------------------------------------------------------- Main
 
@@ -129,8 +124,13 @@ echo "Compile source and test cases ..."
 echo "Collect list of unit test cases to run ..."
 
 UNIT_TESTS_FILE="$BUILD_DIR/tests.txt"
+
+echo java -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR:$CUSTOM_JAR \
+  com.gzoltar.cli.Main listTestMethods $TEST_DIR \
+    --outputFile "$UNIT_TESTS_FILE" \
+    --includes "$FAILTESTS"
     
-java -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR:$CLOSURE_JAR \
+java -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR:$CUSTOM_JAR \
   com.gzoltar.cli.Main listTestMethods $TEST_DIR \
     --outputFile "$UNIT_TESTS_FILE" \
     --includes "$FAILTESTS" || die "Collection of unit test cases has failed!"
@@ -150,7 +150,7 @@ if [ "$INSTRUMENTATION" == "online" ]; then
 
   # Perform instrumentation at runtime and run each unit test case in isolation
   java -javaagent:$GZOLTAR_AGENT_RT_JAR=destfile=$SER_FILE,buildlocation=$BUILD_DIR,includes="$SOURCEFILES",excludes="",inclnolocationclasses=false,output="file" \
-    -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR:$LIB_DIR \
+    -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR:$LIB_DIR:$CUSTOM_JAR \
     com.gzoltar.cli.Main runTestMethods \
       --testMethods "$UNIT_TESTS_FILE" \
       --collectCoverage || die "Coverage collection has failed!"
@@ -164,13 +164,13 @@ elif [ "$INSTRUMENTATION" == "offline" ]; then
   mkdir -p "$BUILD_DIR"
 
 
-  echo java -cp $BUILD_BACKUP_DIR:$TEST_DIR:$LIB_DIR:$GZOLTAR_AGENT_RT_JAR:$GZOLTAR_CLI_JAR \
+  echo java -cp $BUILD_BACKUP_DIR:$TEST_DIR:$LIB_DIR:$GZOLTAR_AGENT_RT_JAR:$GZOLTAR_CLI_JAR:$CUSTOM_JAR \
     com.gzoltar.cli.Main instrument \
     --outputDirectory "$BUILD_DIR" \
     $BUILD_BACKUP_DIR || die "Offline instrumentation has failed!"
 
   # Perform offline instrumentation
-  java -cp $BUILD_BACKUP_DIR:$TEST_DIR:$GZOLTAR_AGENT_RT_JAR:$GZOLTAR_CLI_JAR \
+  java -cp $BUILD_BACKUP_DIR:$TEST_DIR:$GZOLTAR_AGENT_RT_JAR:$GZOLTAR_CLI_JAR:$CUSTOM_JAR \
     com.gzoltar.cli.Main instrument \
     --outputDirectory "$BUILD_DIR" \
     $BUILD_BACKUP_DIR || die "Offline instrumentation has failed!"
@@ -178,7 +178,7 @@ elif [ "$INSTRUMENTATION" == "offline" ]; then
   echo "Run each unit test case in isolation ..."
 
   # Run each unit test case in isolation
-  java -cp $BUILD_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_AGENT_RT_JAR:$GZOLTAR_CLI_JAR \
+  java -cp $BUILD_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_AGENT_RT_JAR:$GZOLTAR_CLI_JAR:$CUSTOM_JAR \
     -Dgzoltar-agent.destfile=$SER_FILE \
     -Dgzoltar-agent.output="file" \
     com.gzoltar.cli.Main runTestMethods \
@@ -203,7 +203,7 @@ SPECTRA_FILE="$BUILD_DIR/sfl/txt/spectra.csv"
 MATRIX_FILE="$BUILD_DIR/sfl/txt/matrix.txt"
 TESTS_FILE="$BUILD_DIR/sfl/txt/tests.csv"
 
-java -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR \
+java -cp $BUILD_DIR:$TEST_DIR:$JUNIT_JAR:$HAMCREST_JAR:$GZOLTAR_CLI_JAR:$CUSTOM_JAR \
   com.gzoltar.cli.Main faultLocalizationReport \
     --buildLocation "$BUILD_DIR" \
     --granularity "line" \

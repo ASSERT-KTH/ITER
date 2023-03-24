@@ -10,7 +10,7 @@ import loader
 import torch.autograd as autograd
 import csv
 import os, gc
-import sys, subprocess,fnmatch, shutil, csv,re, datetime
+import sys, subprocess,fnmatch, shutil, csv,re, datetime,time
 
 
 def inRevertList(save_to_revert,patch_revert):
@@ -34,7 +34,14 @@ def inRevertList(save_to_revert,patch_revert):
             revertlist.write(save_to_revert+'\n')
             
         return flag
-              
+    
+    
+    
+def getNewBugId(patch_path):
+    with open(patch_path,'r') as patchfile:
+        lines = patchfile.readlines()
+        return len(lines)
+    
 
 def getBugInfo(bugid):
     bugid=str(bugid).replace(' ','')
@@ -47,10 +54,24 @@ def getBugInfo(bugid):
                 original_bug_represent=l.split('\t')[1]
                 bug_represent = l.split('\t')[1]
                 if '[FE]' in bug_represent:
+                    old_diagnostic = bug_represent.split('[FE]')[1]
+                    if '[CONTEXT]' in old_diagnostic:
+                        old_diagnostic='[FE] ' + old_diagnostic.split('[CONTEXT]')[0]
+
                     bug_represent= bug_represent.split('[FE]')[0]
+
                 elif '[CE]' in bug_represent:
+                    old_diagnostic = bug_represent.split('[CE]')[1]
+                    if '[CONTEXT]' in old_diagnostic:
+                        old_diagnostic='[CE] ' + old_diagnostic.split('[CONTEXT]')[0]
                     bug_represent= bug_represent.split('[CE]')[0]
+                    
                 original_buggy = bug_represent.split('[BUGGY] ')[1]
+                if '[CE]' in original_buggy:
+                    original_buggy=original_buggy.split('[CE]')[0]
+                elif '[FE]' in original_buggy:
+                    original_buggy=original_buggy.split('[FE]')[0]
+                    
                 buggy_class=l.split('\t')[2]
                 buggy_class=buggy_class.replace('\n','').replace('\t','').replace('\r','')
                 suspiciousness=l.split('\t')[3]
@@ -59,7 +80,7 @@ def getBugInfo(bugid):
                 failing_test_number=l.split('\t')[6]   
                 action=l.split('\t')[7]
                 previous_patch=l.split('\t')[8]
-                return buggy_class,suspiciousness,buggy_line,endbuggycode,failing_test_number,original_buggy,original_bug_represent,action,previous_patch
+                return buggy_class,suspiciousness,buggy_line,endbuggycode,failing_test_number,original_buggy,original_bug_represent,action,previous_patch,old_diagnostic
 
 
 def compilation_info():
@@ -116,11 +137,38 @@ def test_execute_info(project):
         os.system('rm -rf ./build/sfl')
     
 #     if "Cli" in project or 'Math' in project:
-    if "Cli" in project or 'Math' in project or 'Time' in project:
+    if "Cli" in project or 'Math' in project or 'Compress' in project or 'Gson' in project or 'Csv' in project or 'JacksonCore' in project  or 'JacksonDatabind' in project  or 'Jsoup' in project or 'JxPath' in project:
         if os.path.exists("./target/classes") and os.path.exists("./target/test-classes"):
             os.system("cp -rf ./target/classes/*" + "  ./build/")
             os.system("cp -rf ./target/test-classes/*" + "  ./build/")
             os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")    
+    if "Codec" in project : 
+        if os.path.exists("./target"):
+            os.system("mkdir build")
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/tests/*" + "  ./build/")
+            os.system("cp -rf ./target/tests/*" + "  ./build-tests/")     
+    if 'Time' in project:
+        if os.path.exists("./target"):
+            os.system("mkdir build")
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./target/classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build/")
+            os.system("cp -rf ./target/test-classes/*" + "  ./build-tests/")
+        elif os.path.exists("./build"):
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./build/classes/*" + "  ./build/")
+            if os.path.exists("./build/tests"):
+                os.system("cp -rf ./build/tests/*" + "  ./build/")
+                os.system("cp -rf ./build/tests/*" + "  ./build-tests/")
+    
+    if "Closure" in project:
+        if os.path.exists("./build/classes"):
+            os.system("mkdir build-tests")
+            os.system("cp -rf ./build/classes/*" + "  ./build/")
+            os.system("cp -rf ./build/test/*" + "  ./build/")
+            os.system("cp -rf ./build/test/*" + "  ./build-tests/")
     
     if "Lang" in project:
         if os.path.exists("./target") and os.path.exists("./target/tests"):
@@ -171,7 +219,7 @@ def test_execute_info(project):
                                 diagnosis = diagnosis.split(".")[-1]
 
 
-        diagnosis = ' [FE] ' + diagnosis+' '+failingtest 
+        diagnosis = ' [FE] ' + diagnosis+' '
         diagnosis = diagnosis.replace("\r","").replace("\n","")
 
     
@@ -303,8 +351,8 @@ def add_action(originFile,patch,startNo,endNo,project):
     
 
 
-def test( model, tokenizer, device, loader, index,project):    
-    return_sequences = 5
+def test( model, tokenizer, device, loader, index,project, FL):    
+    return_sequences = 10
     model.eval()
     identicalset=[]
     
@@ -332,23 +380,25 @@ def test( model, tokenizer, device, loader, index,project):
                 target = [tokenizer.decode(t, skip_special_tokens=True, clean_up_tokenization_spaces=True)for t in y]
                 target = target[0]
                 
-                buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,original_buggy,old_BR,action,previous_patch = getBugInfo(bugid.item())
+                buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,original_buggy,old_BR,action,previous_patch,old_diagnostic = getBugInfo(bugid.item())
                 
                 patch_path=TEST_PATH.replace("bugs.csv","patches.csv")
                 patch_minimization=TEST_PATH.replace("bugs.csv","patch_discard.csv")
                 patch_revert=TEST_PATH.replace("bugs.csv","revert.csv")
                 patch_plausible=TEST_PATH.replace("bugs.csv","plausible.csv")
 
-
                 if not os.path.exists(patch_path):
                     with open(patch_path, 'w') as csvfile:
-                        csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\toriginal_failing_test_number\taction\tpatch\toriginal_buggy\texecution_result\tdiagnosis\tprevious_bug_id\tnew_failing_test_number\tthis_action')
+                        csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\toriginal_failing_test_number\taction\tpatch\toriginal_buggy\texecution_result\tdiagnosis\tprevious_bug_id\tnew_failing_test_number\tthis_action\n')
                                                                                       
                 for i in range(0,return_sequences):
                     #avoid the prediction is same with buggy
                     original_buggy_no_space=original_buggy.replace(" ","")
                     prediction_no_space = preds[i].replace(" ","")
-                    prediction=preds[i]                                                       
+                    prediction=preds[i] 
+                    
+                    prediction=prediction.replace('< =','<=')
+                    prediction=prediction.replace('> =','>=')
 
                     #perform the deletion action
                     if i==return_sequences-1 and 'replace' in action:
@@ -390,38 +440,39 @@ def test( model, tokenizer, device, loader, index,project):
                         print('='*50)
                         print(' '*50)
 
-                        if '[CE]' in diagnosis:
-                            if 'not a statement' in diagnosis:
-                                break
-                            if 'incompatible' in diagnosis:
-                                break
-                            if 'illegal' in diagnosis:
-                                break
-                            with open(patch_minimization, 'a') as patch_minimization_file:
-                                patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
-                            break
+#                         if '[CE]' in diagnosis:
+#                             if 'not a statement' in diagnosis:
+#                                 continue
+#                             if 'incompatible' in diagnosis:
+#                                 continue
+#                             if 'illegal' in diagnosis:
+#                                 continue
+#                             with open(patch_minimization, 'a') as patch_minimization_file:
+#                                 patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+#                             continue
                                 
-
-
-                         #patch minimization
+                        # patch minimization
                         # Rule 4: discard the patch with increase failing test number                      
                         print('new_failing_test_number:',new_failing_test_number)
                         print('original_failing_test_number:',original_failing_test_number)
 
-                        if 'compilable' in execution_result and 'None' not in str(new_failing_test_number) and int(original_failing_test_number)<int(new_failing_test_number):
-                            with open(patch_minimization, 'a') as patch_minimization_file:
-                                patch_minimization_file.write('increase failing tests,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+#                         if 'compilable' in execution_result and 'None' not in str(new_failing_test_number) and int(original_failing_test_number)<int(new_failing_test_number):
+#                             with open(patch_minimization, 'a') as patch_minimization_file:
+#                                 patch_minimization_file.write('increase failing tests,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
 
 
-                        else:
-                            new_bugid = int(_)*int(return_sequences)*int(index)*2+i+1 
+                        if True:
+                            new_bugid = getNewBugId(patch_path)
+                            print('new_bugid:'+str(new_bugid))
+                            print('execution_result:'+execution_result)
 
                             #new bug representation based on new prediction
                             BR_context=old_BR.split('[CONTEXT]')[1]
                             context_parts = BR_context.split('[BUGGY]') 
                             if len(context_parts)>2:
-                                new_BR_replace = '[BUG] [BUGGY] '+prediction+' '+diagnosis+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
-                                new_BR_add = '[BUG] [BUGGY] '+diagnosis+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
+                                old_diagnostic='[FE]  '+old_diagnostic.split('[FE]')[-1]
+                                new_BR_replace = '[BUG] [BUGGY] '+prediction+' '+diagnosis+' '+old_diagnostic+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
+                                new_BR_add = '[BUG] [BUGGY] '+diagnosis+' '+old_diagnostic+' [CONTEXT] '+context_parts[0]+' [BUGGY] '+ prediction + ' [BUGGY] '+context_parts[2]
 
                                 new_BR_replace=new_BR_replace.replace('  ',' ')
                                 new_BR_add=new_BR_add.replace('  ',' ')
@@ -430,6 +481,20 @@ def test( model, tokenizer, device, loader, index,project):
                                     with open(patch_plausible, 'a') as csvfile:
                                         filewriter = csv.writer(csvfile, delimiter='\t',escapechar=' ',quoting=csv.QUOTE_NONE)
                                         filewriter.writerow([str(new_bugid),old_BR,buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,action,prediction,original_buggy,execution_result,diagnosis,str(bugid.item()),new_failing_test_number]) 
+                                        
+                                             
+                                    #record plausible patches in FL, iteration and rounds                  
+                                    print('a plausible patch is found!')
+                                    end = time.time() - start
+                                    print("--- %s seconds ---" % end)
+                                    if not os.path.exists(PLAUSIBLE):
+                                        os.system('touch '+PLAUSIBLE) 
+                                        with open(PLAUSIBLE,'w') as plausible:
+                                            plausible.write('FL_Ranking,Iteration,Time\n')
+                                    with open(PLAUSIBLE,'a') as plausible:
+                                        info=FL+','+str(rounds)+','+str(end)+'\n'
+                                        plausible.write(info)
+                                       
                                 else:  
                                     print('write to patches.csv:'+save_to_revert)
                                     with open(patch_path, 'a') as csvfile:
@@ -458,20 +523,15 @@ def getGeneratorDataLoader(filepath,tokenizer,batchsize):
     return target_loader
 
         
-def run_test(project):
-    for m in [5,8,10]:
-        gen = T5ForConditionalGeneration.from_pretrained('./ItRepair/model_ItRepair/ItRepair'+str(m),output_hidden_states=True)       
-        gen_tokenizer = T5Tokenizer.from_pretrained('./ItRepair/model_ItRepair/ItRepair'+str(m),truncation=True)
+def run_test(project, FL):
+    for m in [6,8,10]:
+        gen = T5ForConditionalGeneration.from_pretrained('./model_ItRepair/IteRepair'+str(m),output_hidden_states=True)       
+        gen_tokenizer = T5Tokenizer.from_pretrained('./model_ItRepair/IteRepair'+str(m),truncation=True)
         gen_tokenizer.add_tokens(['[PATCH]','[BUG]','{', '}','<','^','<=','>=','==','!=','<<','>>','[CE]','[FE]','[CONTEXT]','[BUGGY]','[CLASS]','[METHOD]','[RETURN_TYPE]','[VARIABLES]','[Delete]'])   
         gen = gen.to(device)       
         test_loader=getGeneratorDataLoader(TEST_PATH,gen_tokenizer,1)
-        if m == 5:
-            index=1
-        elif m == 8:
-            index=2
-        elif m == 10:
-            index=3
-        test(gen, gen_tokenizer, device, test_loader, index,project)
+        index=1
+        test(gen, gen_tokenizer, device, test_loader, index,project,FL)
 
 
 
@@ -485,31 +545,52 @@ if __name__ == '__main__':
     LEARNING_RATE = 1e-4
     VALID_BATCH_SIZE = 1
     MAX_LEN = 512
-    PATCH_LEN = 128 
+    PATCH_LEN = 76 
     device = 'cuda' if cuda.is_available() else 'cpu'
+    PLAUSIBLE_FLAG=False   
+    start = time.time()
 
-    for rounds in range(0,5):
-        print('Iteration '+str(rounds)+'  '+project+bug)
-        TEST_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds)+'/bugs.csv'
-        run_test(project)       
-        PATCH_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds)+'/patches.csv'
-        REVERT_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds)+'/revert.csv'
-        NEXT_REVERT_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds+1)+'/revert.csv'
+    BUGS_PATH='repair_iteration/'+project+bug+'/bugs.csv'
+    PLAUSIBLE='repair_iteration/'+project+bug+'/plausible.csv'
 
 
-        NEXT_ROUND_PATH='repair_iteration/'+project+bug+'/iteration_'+str(rounds+1)        
-        if os.path.exists(PATCH_PATH):
-            os.system('rm -rf '+NEXT_ROUND_PATH)
-            os.system('mkdir -p '+NEXT_ROUND_PATH)
-            os.system('cp '+PATCH_PATH+'  '+NEXT_ROUND_PATH+'/bugs.csv')
-            os.system('cp '+REVERT_PATH+'  '+NEXT_ROUND_PATH)
+    if os.path.exists(BUGS_PATH):
+        with open(BUGS_PATH,'r') as bug_path:
+            all_buggy = bug_path.readlines()
+            
+            for i in range(1,len(all_buggy)-1,2):   
+                              
+                print(str(i))
+                bug_str=all_buggy[0]+all_buggy[i]+all_buggy[i+1]
+                
+                root='repair_iteration/'+project+bug+'/'+str(int(i/2)+1)
+                TEST_PATH = root +'/iteration_0/bugs.csv'
+                os.system('mkdir -p '+ 'repair_iteration/'+project+bug+'/'+str(int(i/2)+1)+'/iteration_0/' )
+                os.system('touch '+  TEST_PATH)
+
+                with open(TEST_PATH,'w') as target_bug:
+                    target_bug.write(bug_str)
+                
+                for rounds in range(0,3):
+                    print('Iteration '+str(rounds)+'  '+project+bug +' FL: '+str(int(i/2)+1))
+                    TEST_PATH = root +'/iteration_'+str(rounds)+'/bugs.csv'
+
+                    run_test(project,str(int(i/2)+1))
+                    PATCH_PATH=root+'/iteration_'+str(rounds)+'/patches.csv' 
+                    REVERT_PATH=root+'/iteration_'+str(rounds)+'/revert.csv'
+                    NEXT_REVERT_PATH=root+'/iteration_'+str(rounds+1)+'/revert.csv'
+                    NEXT_ROUND_PATH=root+'/iteration_'+str(rounds+1)  
+                                                                                    
+                    
+                    # parse the patches generated in previous iteration as the bugs to be repaired in next iterat
+                    with open(PATCH_PATH,'r') as next_bugs:
+                        lines = next_bugs.readlines()
+                        if len(lines)==1:
+                            print('break iteration for '+ project+bug + ' with FL '+str(int(i/2)+1) + ' in round '+ str(rounds))
+                            break
+                        else:
+                            os.system('rm -rf '+NEXT_ROUND_PATH)
+                            os.system('mkdir -p '+NEXT_ROUND_PATH)
+                            os.system('cp '+PATCH_PATH+'  '+NEXT_ROUND_PATH+'/bugs.csv')
+                            os.system('cp '+REVERT_PATH+'  '+NEXT_ROUND_PATH)
         
-        
-    
-    
-    
-    
-    
-    
-    
- 
