@@ -1,0 +1,11 @@
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760uvalue=dataset.getXValue(series,lvalue);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760uvalue=dataset.getXValue(series,0);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760Integerlvalue=dataset.getXValue(series,item);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760if(!Double.isNaN(uvalue)){
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760if(!Double.isNaN(lvalue)){
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760if(Double.isNaN(lvalue)){
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760Integeruvalue=dataset.getXValue(series,item);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760intuvalue=dataset.getXValue(series,item);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760uvalue=dataset.getXValue(series,item);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java760if(includeInterval&&!Double.isNaN(uvalue)){

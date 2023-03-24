@@ -1,0 +1,16 @@
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368compose(operand,operandOffset,function,result,resultOffset);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368compose(resultOffset,operandOffset,function,result,n);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368compose(resultOffset,operandOffset,function,n,resultOffset);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368n=Math.min(resultOffset,n);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368n=Math.min(resultOffset,v);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368n=Math.max(resultOffset,v);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368compose(resultOffset,function,operand,offset);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368function[n]=function[n];
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368if(n>0){function[n]=Math.abs(v-1);}else{operand[n]=Math.abs(v-1);}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368if(n>0){function[n]=Math.abs(v*f);}else{operand[n]=Math.abs(v*f);}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368compose(result,n,function,operandOffset,resultOffset);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368compose(operand,resultOffset,function,n,resultOffset);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368if(n>0){for(inti=0;i<n;i++){operand[i]=function[i];}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368if(n>0){for(inti=0;i<n;i++){operand[i]=Math.pow(10.0,v);}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1368if(n>0){for(inti=0;i<n;i++){operand[i]=Math.pow(1+i);}

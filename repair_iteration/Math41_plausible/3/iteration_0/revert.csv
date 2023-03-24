@@ -1,0 +1,15 @@
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318if(test(values,weights,begin,length)){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318if(isBiasCorrected&&test(values,weights,begin,length)){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318if(test(values,begin,length)){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318if(isBiasCorrected||test(values,weights,begin,length)){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318incMoment=isBiasCorrected?Boolean.TRUE:Boolean.FALSE;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318var=evaluate(values,weights,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318doublem=evaluate(values,weights,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318incMoment=isBiasCorrected?Double.POSITIVE_INFINITY:Double.NaN;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318var=evaluate(values,values,weights,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318incMoment=isBiasCorrected;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318incMoment=isBiasCorrected&&isBiasCorrected;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318if(test(values,weights,var,begin,length)){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318incMoment=isBiasCorrected();
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java318var=evaluate(values,values,begin,length);

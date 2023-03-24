@@ -1,0 +1,15 @@
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum2=0.0;for(inti=begin;i<begin+length;i++){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum2=0.0;for(inti=begin;i<begin+length;i++){values[i]-mean;accum2+=weights[i]*(dev*value);}
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum2=0.0;for(inti=begin;i<begin+length;i++){values[i]-mean;accum2+=values[i]*(dev*value);}
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum2=0.0;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubledev=0.0;for(inti=begin;i<begin+length;i++){values[i]-mean;accum2+=weights[i]*(dev*dev);}
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=0.0;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=1.0;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=Double.NaN;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=values[0].doubleValue();
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubledev=0.0;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=10.0;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=(length>1)?1.0:0.0;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=Math.abs(values[begin+length]);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java510doubleaccum=Math.abs(values.length);

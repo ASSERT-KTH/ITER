@@ -1,0 +1,12 @@
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373returntrue;
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373returnfalse;
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(this.isResolved()){returnfalse;}
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(this.isResolved()){returntrue;}
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(this.forAnnotations!=null){returnfalse;}
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(!this.isResolved()){returnfalse;}
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(!this.isResolved()){returntrue;}
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(this.forAnnotations==null){returnfalse;}
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373return(this.isResolved()&&this.validator!=null);
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373returnsuper.setValidator(validator);
+projects/Closure4/src/com/google/javascript/rhino/jstype/NamedType.java373if(this.slotType!=null){returnfalse;}

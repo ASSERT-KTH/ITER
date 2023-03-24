@@ -1,0 +1,16 @@
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,Object>entry:reverseAbbreviationMap.entrySet()){addAbbreviation(entry.getKey(),entry.getValue());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,Object>entry:reverseAbbreviationMap.entrySet()){addAbbreviation(primitive,entry.getKey());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,Object>entry:reverseAbbreviationMap.entrySet()){addAbbreviation(primitive,entry.toString());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,Object>entry:reverseAbbreviationMap.entrySet()){addAbbreviation(primitive,entry.getValue());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118wrapperPrimitiveMap.put(primitive,abbreviation);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){reverseAbbreviationMap.put(primitive,abbreviation);}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118reverseAbbreviationMap.put(primitive,abbreviation);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,Object>entry:primitiveWrapperMap.entrySet()){addAbbreviation(entry.getKey(),entry.getValue());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,String>entry:primitiveWrapperMap.entrySet()){addAbbreviation(primitive,entry.getKey());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){for(Map.Entry<String,Object>entry:wrapperPrimitiveMap.entrySet()){addAbbreviation(primitive,entry.getKey());}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118wrapperPrimitiveMap.put(primitive,abbreviation);reverseAbbreviationMap.put(primitive,abbreviation);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118recvWrapperMap.put(primitive,abbreviation);reverseAbbreviationMap.put(primitive,abbreviation);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118wrapperPrimitiveMap.put(primitive,abbreviation);reverseAbbreviationMap.put(primitive,primitive);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java118if(reverseAbbreviationMap!=null){removeAbbreviation(primitive,abbreviation);}

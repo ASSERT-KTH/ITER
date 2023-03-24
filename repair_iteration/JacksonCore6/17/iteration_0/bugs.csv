@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+33	[BUG] [BUGGY] protected final static JsonPointer EMPTY = new JsonPointer(); [FE] AssertionFailedError [CONTEXT] [BUGGY] protected final static JsonPointer EMPTY = new JsonPointer(); [BUGGY]  [CLASS] JsonPointer  [VARIABLES] 	projects/JacksonCore6/src/main/java/com/fasterxml/jackson/core/JsonPointer.java	0.4472135954999579	26	26	1	replace	

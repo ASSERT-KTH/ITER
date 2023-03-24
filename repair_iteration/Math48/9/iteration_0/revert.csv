@@ -1,0 +1,17 @@
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=computeObjectiveValue(x);
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172fx=computeObjectiveValue(x);
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=computeObjectiveValue(x);break;
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.max(0.5,fx);
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.max(0.5,inverted);
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172if(f1*fx<0){
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172if(f0*fx<0){
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172if(f1*fx>0){
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172if(f1*fx<=0){
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.max(fx,computeObjectiveValue(x));
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.abs(fx);
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.max(fx,getFunctionValue());
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172if(fx*f1<0){
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172if(fx*f1<=0){
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.max(fx,computeObjectiveValue(x),computeObjectiveValue(x));
+projects/Math48/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java172f1=Math.max(fx,computeObjectiveValue(x),computeObjectiveValue(x1));

@@ -1,0 +1,17 @@
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bytesCached>=(MAXIMUM_CACHE_SIZE-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bytesCached>>(MAXIMUM_CACHE_SIZE-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bytesCached>=(bitsCachedSize-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bytesCached>>(bitsCachedSize-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107intnextByte=readBits(byteOrder,MAXIMUM_CACHE_SIZE);bitsOut=nextByte+nextByte;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107intnextByte=readBits(byteOrder,MAXIMUM_CACHE_SIZE);
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107intnextByte=readBits(byteOrder,MAXIMUM_CACHE_SIZE);bitsOut.write(nextByte);
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>=(bitsCachedSize-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>>(bitsCachedSize-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut.write(ByteOrder.LITTLE_ENDIAN);
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>>(bytesCachedSize-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>=(bytesCachedSize-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>>(MAXIMUM_CACHE_SIZE-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>=(MAXIMUM_CACHE_SIZE-count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut=(bitsCached>>(Math.max(10,count))&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java107bitsOut.write(MASKS[count-1]);

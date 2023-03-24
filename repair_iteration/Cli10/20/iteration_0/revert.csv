@@ -1,0 +1,14 @@
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Iteratoriterator=options.iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Iteratoriterator=options.keySet().iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173iterator.next();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Optioniterator=options.getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Optionoption=options.getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173while(iterator.hasNext()){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173while(iterator.hasNext()&&iterator.hasNext()){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173while(iterator.hasNext()&&iterator.next()!=null){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Iterator<String>iterator=options.iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Iterator<String>iterator=options.keySet().iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Optioncmd=options.getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Iteratoriterator=requiredOptions.iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java173Optioncmd=options.getOption(getArguments());

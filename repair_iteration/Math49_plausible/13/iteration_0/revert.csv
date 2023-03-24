@@ -1,0 +1,14 @@
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667Entrycurrent=(Entry)entries.get(index);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entries.put(index,value);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entry=(Entry)entries.get(index);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entries.put(index,newEntry(value));
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entry.setValue(value);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entries.remove(index);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entries.put(index,newOpenIntToDoubleHashMap(value));
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entries.put(index,newDouble(value));
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entry=(OpenIntToDoubleHashMap)entries.get(index);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entry=(OpenIntToDoubleHashMap)this.entries.get(index);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entry=(OpenIntToDoubleHashMap)entries.get(index-1);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667Entrycurrent=entries.get(index);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java667entries.put(index,DEFAULT_ZERO_TOLERANCE);

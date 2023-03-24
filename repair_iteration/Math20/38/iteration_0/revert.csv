@@ -1,0 +1,12 @@
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400int[]arindex=sortedIndices(fitness);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400int[]weights=sortedIndices(fitness);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400int[]arindex=sortedIndices(fitness,1);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400RealMatrixxold=xmean;//forspeedupofEq.(2)and(3)RealMatrixbestArx=selectColumns(arx,MathArrays.copyOf(arindex,mu));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400RealMatrixxold=selectColumns(arx,MathArrays.copyOf(arindex,mu));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400RealMatrixxold=selectEvolutionPaths(arx,MathArrays.copyOf(arindex,mu));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400xmean=updateEvolutionPaths(fitness,xmean);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400xmean=updateEvolutionPaths(zmean,xold);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400RealMatrixxold=selectStatistics(arx,MathUtils.multiply(weights));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400RealMatrixxold=selectStatistics(arx,MathArrays.copyOf(arindex,mu));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java400xmean=updateEvolutionPaths(xmean,arx);

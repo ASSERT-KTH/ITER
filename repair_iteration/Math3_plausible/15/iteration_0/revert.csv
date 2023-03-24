@@ -1,0 +1,13 @@
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLowSum=ai*bHigh;
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLowSum=ai*bi;
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLowSum+=prodHighNext;
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLow=aLow*bLow-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLow=ai*bLow-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLow=aLow*bHigh-(((prodHigh[i]-aHigh*bHigh)-ai*bHigh)-
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoublebLow=aLow*bHigh-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-aHigh*bHigh)-aLow*bHigh);
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoublebLow=aLow*bLow-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-aHigh*bHigh)-aLow*bHigh);
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoubleprodLow=aLow*bHigh-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoublebHigh=bHigh-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-aHigh*bHigh)-aLow*bHigh);
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837doublebHigh=prodHigh[i]-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-aHigh*bHigh)-aLow*bHigh);
+projects/Math3/src/main/java/org/apache/commons/math3/util/MathArrays.java837finaldoublebHigh=bHigh-(((prodHigh[i]-aHigh*bHigh)-aLow*bHigh)-aHigh*bHigh);

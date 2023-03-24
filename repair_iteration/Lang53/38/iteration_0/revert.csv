@@ -1,0 +1,15 @@
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735offset=val.get(fields[i][0]);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735intmin=val.getActualMinimum(fields[i][0]);intmax=val.get(fields[i][0])-min;
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735val.set(fields[i][0],val.get(fields[i][0])-offset);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735intmax=val.get(fields[i][0]);offset=val.get(fields[i][0])-min;
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735val.set(fields[i][0],val.get(fields[i][0])-min);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735roundUp=offset>((max-min)/2);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735roundUp=offset>((max-min)/2+1);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735intmax=val.getActualMaximum(fields[i][0]);offset=val.get(fields[i][0])-max;
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735offset=val.get(fields[i][0])-min;
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735intmax=val.getActualMaximum(fields[i][0]);offset=val.get(fields[i][0])-min;
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735roundUp=offset+((max-min)/2);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735roundUp=offset-((max-min)/2);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735if(offset!=0){val.set(fields[i][0],val.get(fields[i][0])-min);}
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java735intmin=val.getActualMinimum(fields[i][0]);

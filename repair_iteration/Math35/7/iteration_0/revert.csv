@@ -1,0 +1,13 @@
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.populationLimit=populationLimit;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.populationLimit=populationLimit+elitismRate;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.populationLimit=populationLimit-populationLimit;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.populationLimit=populationLimit+elitismRate+1;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.elitismRate=populationLimit;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.elitismRate=elitismRate;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.elitismRate=elitismRate+populationLimit;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.elitismRate=elitismRate*populationLimit;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65super(populationLimit,elitismRate);
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.populationLimit=populationLimit+getPopulationLimit();
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.elitismRate=populationLimit+elitismRate;
+projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java65this.elitismRate=PopulationLimit.doubleValue();

@@ -1,0 +1,16 @@
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i+1);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i+2);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i+1,className.length());
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256inti=className.lastIndexOf(PACKAGE_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256inti=className.lastIndexOf(INNER_CLASS_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256inti=className.lastIndexOf(PACKAGE_SEPARATOR_CHAR,-1);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256inti=className.lastIndexOf(IAST_CLASS_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256StringclassName=className.substring(0,i);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256inti=className.lastIndexOf(INDENT_CLASS_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i+3);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i+1,className.lastIndexOf(PACKAGE_SEPARATOR_CHAR));
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256returnclassName.substring(0,i+1,className.lastIndexOf(INNER_CLASS_SEPARATOR_CHAR));
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256i=className.lastIndexOf(PACKAGE_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java256i=className.lastIndexOf(INNER_CLASS_SEPARATOR_CHAR);

@@ -1,0 +1,10 @@
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345g2.draw(line);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345g2.setStroke(errorIndicatorStroke);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345g2.setPaint(errorIndicatorStroke);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345CategoryItemLabelGeneratorgenerator=getItemLabelGenerator(row,column);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345CategoryItemLabelGeneratorgenerator=getItemLabelGenerator(row,column,bar);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345CategoryItemLabelGeneratorgenerator=getItemLabelGenerator(row,column-1);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345g2.draw(line);line=newLine2D.Double(lowVal,rectY+rectHeight*0.25,highVal,rectY+rectHeight*0.75);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345g2.draw(line);line=newLine2D.Double(lowVal,rectY+rectHeight*0.25,lowVal,rectY+rectHeight*0.75);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java345g2.draw(line);line=newLine2D.Double(highVal,rectY+rectHeight*0.25,highVal,rectY+rectHeight*0.75);

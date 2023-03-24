@@ -1,0 +1,12 @@
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128writeEOFRecord();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(isEnabled(Feature.QUOTE_FIELD_NAMES)||isEnabled(Feature.QUOTE_FIELD_NAMES)){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(isEnabled(Feature.QUOTE_FIELD_NAMES)||isEnabled(Feature.QUOTE_FIELD_NAMES)){writeEOFRecord();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(!finished){writeEOFRecord();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(isEnabled(Feature.QUOTE_FIELD_NAMES)){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(isEnabled(Feature.AUTO_CLOSE_ERROR)){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(!finished){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(closed){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(haveUnclosedEntry){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(recordBuf!=null){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java128if(haveUnclosedEntry){writeEOFRecord();}

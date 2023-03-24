@@ -1,0 +1,10 @@
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560intdecPos=str.length();
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Stringdec=str.substring(0,str.length()-1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Stringdec=str.substring(decPos+1,str.length());
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Integerdec=str.substring(decPos+1,str.length());
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560intdecPos=str.lastIndexOf('.');
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Integerdec=str.substring(decPos+1,str.length()-1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Integerdec=createInteger(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Integerdec=str.substring(decPos+1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java560Integerdec=str.substring(decPos+1,expPos);

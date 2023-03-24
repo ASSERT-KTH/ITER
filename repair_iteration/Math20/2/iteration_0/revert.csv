@@ -1,0 +1,12 @@
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.data[0]=newdouble[1];
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.sigmaHistory=newDouble(this.historySize);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.sigmaHistory=newDouble(getSigmaHistory());
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241}
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.data[0]=newDouble(this.data[0].doubleValue());
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this(DEFAULT_RANDOMGENERATOR,DEFAULT_CHECKFEASABLECOUNT);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this(DEFAULT_RANDOMGENERATOR);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this(DEFAULT_RANDOMGENERATOR,DEFAULT_SIZE);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.statistics=newdouble[DEFAULT_CHECKFEASABLECOUNT];
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.statistics=newdouble[DEFAULT_CHECKFEASABLECOUNT+1];
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java241this.statistics=newdouble[DEFAULT_SIZE];

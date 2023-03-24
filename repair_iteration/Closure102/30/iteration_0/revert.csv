@@ -1,0 +1,17 @@
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=parent.getParent();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=parent.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=n.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=n.getLastChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=n.getParent();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Nodeparent=n.getParent();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252if(n.getType()==Token.LABEL){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252if(n.getType()==Token.LABEL||n.getType()==Token.NAME){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252if(n.getType()==Token.LABEL||n.getType()==Token.FUNCTION){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252if(n.getType()==Token.LABEL||n.getType()==Token.STRING){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=parent.getLastChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Noden=parent.getNext();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252if(NodeUtil.isStatementBlock(n)||n.getType()==Token.LABEL){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252if(parent.getType()==Token.LABEL){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Preconditions.checkState(n.getType()==Token.NAME);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java252Preconditions.checkState(n.getType()==Token.FUNCTION);

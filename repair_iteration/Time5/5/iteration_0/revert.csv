@@ -1,0 +1,10 @@
+projects/Time5/src/main/java/org/joda/time/Period.java1630
+projects/Time5/src/main/java/org/joda/time/Period.java1630years=FieldUtils.safeAdd(years,months/12);
+projects/Time5/src/main/java/org/joda/time/Period.java1630years=FieldUtils.safeAdd(years,months%12);
+projects/Time5/src/main/java/org/joda/time/Period.java1630result=result.withSeconds(years);
+projects/Time5/src/main/java/org/joda/time/Period.java1630if(years!=0){
+projects/Time5/src/main/java/org/joda/time/Period.java1630if(years!=0||months!=0){
+projects/Time5/src/main/java/org/joda/time/Period.java1630intmonths=months%12;
+projects/Time5/src/main/java/org/joda/time/Period.java1630if(years!=0){result=result.withMonths(years);}
+projects/Time5/src/main/java/org/joda/time/Period.java1630if(years!=0){result=result.withYears(years);}
+projects/Time5/src/main/java/org/joda/time/Period.java1630if(years!=0){result=result.withDays(years);}

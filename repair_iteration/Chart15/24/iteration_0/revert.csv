@@ -1,0 +1,9 @@
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494if(dataset!=null){
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494Preconditions.checkNotNull(dataset);
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494Preconditions.checkState(dataset!=null);
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494Preconditions.checkState(dataset.getItemCount()>0);
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494this.pieIndex=dataset.getPieIndex();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494Preconditions.checkState(this.pieIndex!=dataset.getPieIndex());
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494this.labelDistributor=DEFAULT_LABEL_FONT;
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java494this.labelFont=dataset.getLabelFont();

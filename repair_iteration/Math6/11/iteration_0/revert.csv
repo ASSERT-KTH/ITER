@@ -1,0 +1,16 @@
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375lastResult=fitfun.value(dimension);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375if(dimension==0){for(inti=0;i<dimension.length;++i){checkFeasableCount[i]=guess[i];}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375if(dimension==0){for(inti=0;i<dimension.length;++i){checkFeasableCount+=guess[i];}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375initializeCMA(guess);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375checkFeasableCount=checkFeasableCount-guess.length;
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375checkFeasableCount=checkFeasableCount;
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375validate(guess);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375luate(dimension);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375if(dimension==0){for(inti=0;i<dimension;i++){checkFeasableCount+=guess.length;}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375if(dimension==0){for(inti=0;i<dimension;i++){addFitness(period);}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375checkFeasableCount(dimension);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375checkFeasableCount=guess.length;
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375lastResult=newPointValuePair(dimension);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375if(dimension!=0){for(inti=0;i<dimension.length;++i){addFitness(fitfun.value(dimension[i]));}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java375if(dimension!=0){for(inti=0;i<dimension.length;++i){addFitness(fitfun[i]);}

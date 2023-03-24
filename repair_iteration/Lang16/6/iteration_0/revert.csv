@@ -1,0 +1,16 @@
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.lastIndexOf('.');
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.lastIndexOf('.',expPos);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.length();
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484Stringexp=str.substring(0,expPos);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484IntegerexpPos=str.indexOf('.')+1;
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(0,expPos);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(0,expPos+1);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(0,expPos-1);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(0,expPos+2);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(1,expPos);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.lastIndexOf('.')+expPos;
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.indexOf('')+1;
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>-1){if(expPos>-1){thrownewNumberFormatException(str+"isnotavalidnumber.");}
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>-1){if(expPos<str.length()){thrownewNumberFormatException(str+"isnotavalidnumber.");}
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>-1){if(expPos>str.length()){thrownewNumberFormatException(str+"isnotavalidnumber.");}

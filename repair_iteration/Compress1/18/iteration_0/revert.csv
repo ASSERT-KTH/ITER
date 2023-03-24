@@ -1,0 +1,14 @@
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150ensureOpen();
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150if(!closed){ensureOpen();}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150this.cpioEntry.setPath(e.getPath());
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150this.cpioEntry.setCurrentName(e.getFormat());
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150e.setCurrentTime(System.currentTimeMillis());
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150this.cpioEntry.setValue(e.getValue());
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150openArchiveEntry();
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150super.putNextEntry(e);
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150if(this.closed){ensureOpen();}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150if(this.closed){ensureOpen();}else{System.err.println("Archiveentry:"+e.getFormat());}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150if(this.closed){ensureOpen();}else{System.out.println("Archiveentry:"+e.getFormat());}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150this.cpioEntry.setPaint(e.getPaint());
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java150this.cpioEntry=e;

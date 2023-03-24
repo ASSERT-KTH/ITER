@@ -1,0 +1,15 @@
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591}elseif(entries.containsKey(index)){
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591}elseif(entries.containsKey(value)){
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591}elseif(!entries.containsKey(index)){
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591}elseif(entries.containsKey(key)){
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591}elseif(!entries.containsKey(value)){
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591Entrycurrent=(Entry)iter.next();
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591entries.put(index,newEntry(value));
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591entries.put(index,value);
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591entry.setValue(value);
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591iter.remove();
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591Iterator<Entry>iter=entries.iterator();
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591Entrycurrent=(Entry)entries.get(index);
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591Iterator<Entry>iter=this.entries.iterator();
+projects/Math29/src/main/java/org/apache/commons/math3/linear/OpenMapRealVector.java591Iteratoriter=entries.iterator();

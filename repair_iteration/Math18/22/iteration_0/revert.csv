@@ -1,0 +1,12 @@
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362dimension=guess.length;
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362dimension=guess.length-1;
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(isActiveCMA){for(inti=0;i<guess.length;++i){checkParameters();}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(isActiveCMA){for(inti=0;i<guess.length;i++){checkParameters();}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362lastResult=fitfun.value(getStartPoint());
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(guess!=null){for(inti=0;i<guess.length;++i){checkParameters();}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(guess!=null){for(inti=0;i<guess.length;++i){checkParameters(i,getStartPoint());}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(guess!=null){for(inti=0;i<guess.length;++i){checkParameters(i);}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(guess!=null){for(inti=0;i<guess.length;++i){ensureCapacity(i);}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(guess!=null){for(inti=0;i<guess.length;++i){setFitnessHistory(fitfun[i]);}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java362if(guess!=null){for(inti=0;i<guess.length;++i){setFitnessHistory(fitfun.value(i));}

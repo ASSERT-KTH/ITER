@@ -1,0 +1,15 @@
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130tokens.add(token);
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130tokens.add("-");
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130Iterator<String>iter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130inttokenLength=token.length();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130Iterator<String>iter=arguments.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130elseif(token.startsWith("-")){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130elseif(token.startsWith("-")||token.startsWith("--")){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130elseif(options.hasOption(token)){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130elseif(token.startsWith("--")){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130token=stopAtNonOption?stopAtNonOption:null;
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130token=stopAtNonOption?stopAtNonOption:token;
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130Iteratoriter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130Iterator<String>iter=options.entities().iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java130elseif(!stopAtNonOption&&token.startsWith("-")){

@@ -1,0 +1,14 @@
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334printHelp(defaultWidth,cmdLineSyntax,null,options,null,false);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334PrintHelp(defaultWidth,cmdLineSyntax,null,options,null,false);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334StringdefaultWidth,cmdLineSyntax,null,options,null,false);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334printHelp(defaultWidth,cmdLineSyntax,null,options,null,true);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334PrintHelp(defaultWidth,cmdLineSyntax,null,options,null,true);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334printHelp(defaultWidth,cmdLineSyntax,null,options,defaultLeftPad,false);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334printHelp(defaultWidth,cmdLineSyntax,null,options,true);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334intdefaultWidth=cmdLineSyntax.length();
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334if(cmdLineSyntax!=null){if(defaultWidth==cmdLineSyntax.length()){return;}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334if(cmdLineSyntax!=null){if(defaultWidth>=cmdLineSyntax.length()){return;}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334if(cmdLineSyntax!=null){if(defaultWidth>=cmdLineSyntax.length()){printHelp(defaultWidth,cmdLineSyntax,null,options,null,false);}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334if(cmdLineSyntax!=null){if(defaultWidth>=cmdLineSyntax.length()){printHelp(defaultWidth,cmdLineSyntax,null,options,null,true);}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java334intdefaultWidth=defaultWidth+cmdLineSyntax.length();

@@ -1,0 +1,13 @@
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558returngetNextTarEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558returngetNextEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?null:currEntry.getNextEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?null:getNextTarEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?getNextTarEntry():currEntry;
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?null:currEntry.getNext();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?null:currEntry.getNextValue();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?currEntry:getNextTarEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(currEntry==null)?null:currEntry.getNextTarEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558returngetNextArchiveEntry();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(TarArchiveEntry)currEntry.clone();
+projects/Compress32/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java558return(TarArchiveEntry)currEntry.getValue();

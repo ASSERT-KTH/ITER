@@ -1,0 +1,14 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370stateInitialized=stateInitialized||stateInitialized.isLastStep();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370stateInitialized=stateInitialized.getInitialized();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370stateInitialized=stateInitialized.convert(eventT,y);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370for(finalEventStateremaining:occuringEvents){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370for(finalEventStateremaining:events){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370for(finalEventStateremaining:eventStates){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370if(isLastStep){for(finalEventStateremaining:eventsInitialized){remaining.stepAccepted(eventT,eventY);}returneventT;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370if(isLastStep){for(finalEventStateremaining:stateInitialized){remaining.stepAccepted(eventT,eventY);}returneventT;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370if(isLastStep){for(finalEventStateremaining:eventsInitialized){remaining.stepAccepted(eventT,eventY);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370if(eventT!=null){for(finalEventStateeventT:eventsInitialized){currentT=eventT;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370if(eventT!=null){for(finalEventStateeventT:eventsInitialized){interpolator.setInitialized(eventT,eventY);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370if(eventT!=null){for(finalEventStateeventT:eventsInitialized){interpolator.setInitialized(eventT,false);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java370for(finalEventStateremaining:eventT.events){

@@ -1,0 +1,9 @@
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520result.multiply=x.multiply;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520result=newInstance(x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520result.multiply=(double)x.multiply;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520result.sign=(byte)(sign*x.sign);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520result.multiply=Math.max(result.length,0);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520if(x.nans==FINITE){result.sign=(byte)(sign*x.sign);returnnewInstance(x);}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520if(x.nans==FINITE){result.sign=(byte)(sign*x.sign);returnresult;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1520if(x.nans==FINITE){result=newInstance(x);}

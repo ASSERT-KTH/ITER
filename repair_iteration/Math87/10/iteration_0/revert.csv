@@ -1,0 +1,17 @@
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326IntegerbasicRow=getBasicRow(getNumObjectiveFunctions()+getOriginalNumDecisionVariables());
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326IntegerbasicRow=getBasicRow(getNumDecisionVariables()+getOriginalNumDecisionVariables());
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326IntegerbasicRow=getBasicRow(getNumSlackVariables()+getOriginalNumDecisionVariables());
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326IntegerbasicRow=getBasicRow(getNumObjectiveFunctions()/getOriginalNumDecisionVariables());
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Set<Integer>basicRows=Sets.newHashSet();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Set<Integer>baseRows=Sets.newHashSet();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Integer[]coefficients=newint[getRhsOffset()+getOriginalNumDecisionVariables()];
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Set<Integer>baseRows=Sets.newHashSet(coefficients);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Set<Integer>basicRows=Sets.newHashSet(coefficients);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326double[]coefficients=newdouble[getNumDecisionVariables()];
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326intzIndex=getRhsOffset();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326IntegerzIndex=getRhsOffset();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Integer[]coefficients=getBasicRows();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326double[]coefficients=newdouble[getNumDecisionVariables().length];
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326IntegerbasicRow=getBasicRow(getNumVariables()+getOriginalNumDecisionVariables());
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java326Integer[]coefficients=newint[getNumDecisionVariables()];

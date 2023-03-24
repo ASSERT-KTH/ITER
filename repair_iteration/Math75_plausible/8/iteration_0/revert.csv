@@ -1,0 +1,17 @@
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320return(double)getCount(v)/(double)sumFreq;
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320return(double)getCount(sumFreq)/(double)v;
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320(double)getCount(v)/(double)sumFreq;
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq<=0){sumFreq=Math.max(sumFreq,sumFreq);sumFreq=Math.min(sumFreq,sumFreq);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq<=0){sumFreq=Math.max(sumFreq,sumFreq);sumFreq=Math.min(sumFreq,sumFreq);}else{thrownewIllegalArgumentException("");}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq<=0){sumFreq=Math.max(sumFreq,sumFreq);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq==0){sumFreq=Math.max(sumFreq,sumFreq);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq>0){for(inti=0,sumFreq=sumFreq;i<freqTable.size();++i){sumFreq+=freqTable.get(i);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq>0){for(inti=0,sumFreq=sumFreq;i<freqTable.size();++i){sumFreq*=freqTable.get(i);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq>0){for(inti=0;i<sumFreq;++i){sumFreq+=freqTable.get(i);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq>0){for(inti=0,sumFreq=sumFreq;i<freqTable.size();++i){sumFreq+=freqTable.getPct(i);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320longsumFreq=getSumFreq();
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq>0){sumFreq=getSumFreq();if(sumFreq>0){sumFreq=Math.max(sumFreq,sumFreq);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320if(sumFreq>0){sumFreq=getSumFreq();if(sumFreq<=0){sumFreq=Math.max(sumFreq,sumFreq);}
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320doublesumFreq=getSumFreq();
+projects/Math75/src/main/java/org/apache/commons/math/stat/Frequency.java320return(double)getCount(sumFreq)/(double)sumFreq;

@@ -1,0 +1,15 @@
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377if(lambda!=null){for(intk=0;k<maxIterations;k++){if(!isActiveCMA){returnnewPointValuePair(getStartPoint(),isMinimize?bestValue:-bestValue);}
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377if(lambda!=null){for(intk=0;k<maxIterations;k++){if(!isActiveCMA){returnnewPointValuePair(getStartPoint(),isMinimize?bestValue:-
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377if(lambda!=null){for(intk=0;k<maxIterations;k++){if(!isActiveCMA){returnnewPointValuePair(getStartPoint(),isMinimize?bestValue:
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377RealMatrixarx=zeros(dimension,lambda);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377RealMatrixarx=randn1(dimension,lambda);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377RealMatrixarx=zeros(lambda,dimension);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377LatinIterator<PointValuePair>lambda=isActiveCMA?arz.getLowerBound():arz.getLowerBound();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377LatinIterator<PointValuePair>lambda=isActiveCMA?arz.getLimit():arz.getLimit();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377LatinIterator<PointValuePair>lambda=isActiveCMA?getStartPoint():arz;
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377RealMatrixarx=zeros(dimension,arz);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377double[]lambda=getStartPoint().getLambda();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377LatinIterator<PointValuePair>lambda=getStartIterator();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377LatinIterator<PointValuePair>lambda=getStartPoint();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java377RealMatrixarx=randn2(dimension,lambda);

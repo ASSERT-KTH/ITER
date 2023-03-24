@@ -1,0 +1,11 @@
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181stopTime=System.currentTimeMillis();
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181stopTime=System.currentTimeMillis();this.splitState=STATE_STOPPED;
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181stopTime=System.currentTimeMillis();this.runningState=STATE_STOPPED;
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181if(this.runningState!=STATE_RUNNING){thrownewIllegalStateException("Stopwatchmustberunningtosuspend.");}
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181this.runningState=STATE_STOPPED;
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181}
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181this.splitState=System.currentTimeMillis();
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181this.startTime=System.currentTimeMillis();
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181stopTime=System.currentTimeMillis();this.splitState=STATE_SPLIT;
+projects/Lang55/src/java/org/apache/commons/lang/time/StopWatch.java181longsplitState=System.currentTimeMillis();stopTime=System.currentTimeMillis();

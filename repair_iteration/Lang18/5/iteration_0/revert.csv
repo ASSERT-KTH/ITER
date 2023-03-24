@@ -1,0 +1,13 @@
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562if(tokenLen==1){
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562if(tokenLen==2){
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562rule=selectNumberRule(Calendar.HOUR,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562if(tokenLen==2){rule=newTimeZoneNameRule(mTimeZone,mLocale,TimeZone.SHORT);}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562if(tokenLen==1){rule=newTimeZoneNameRule(mTimeZone,mLocale,TimeZone.SHORT);}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562rule=selectNumberRule(Calendar.HOUR,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562if(tokenLen==2){rule=newTimeZoneNameRule(mTimeZone,mLocale,TimeZone.SHORT);}else{rule=newTimeZoneNameRule(mTimeZone,mLocale,TimeZone.
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562rule=selectNumberRule(mTimeZone,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562RuletokenLen=selectNumberRule(Calendar.HOUR,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562rule=selectNumberRule(Calendar.HOUR,tokenLen-1);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562rule=selectNumberRule(mValue,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java562if(tokenLen>=2){

@@ -1,0 +1,15 @@
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409OptionGroupgroup=getOptions().getOptionGroup(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optiongroup=getOptions().getOptionGroup(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optionoption=(Option)iter.next();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optiongroup=getOptions().getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optiongroup=getOptions().getGroup(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409if(getOptions().getOptionGroup(opt)!=null){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409if(getOptions().getOptionGroup(opt)==null){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optionoption=getOptions().getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optionopt=getOptions().getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optionoption=options.getOption(opt);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409OptionGroupgroup=getOptions().getOptionGroup(opt);if(group.isRequired()){getRequiredOptions().remove(group);}
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409Optiongroup=getOptions().getOptionGroup(opt);if(group.isRequired()){getRequiredOptions().remove(group);}
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409if(hasOption){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java409if(getOptions().getOptionGroup(opt)!=null&&getOptions().contains(opt.getKey())){

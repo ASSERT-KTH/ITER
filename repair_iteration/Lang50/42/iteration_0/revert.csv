@@ -1,0 +1,13 @@
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290cDateInstanceCache.put(key,locale);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290Localelocale=Locale.getDefault();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290cDateInstanceCache.put(key,key);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290cDateInstanceCache.put(key,this);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290FastDateFormatformat=(FastDateFormat)cDateInstanceCache.get(key);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290FastDateFormatformat=(FastDateFormat)cDateInstanceCache.get(key,style);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290FastDateFormatformat=(FastDateFormat)cDateInstanceCache.get(key,timeZone);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290FastDateFormatformat=(FastDateFormat)cDateInstanceCache.get(key,locale);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290if(locale==null){locale=Locale.getDefault();}
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290cDateInstanceCache.put(key,null);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290cDateInstanceCache.put(key,newPair(locale));
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java290cDateInstanceCache.put(key,newPair(style,locale));

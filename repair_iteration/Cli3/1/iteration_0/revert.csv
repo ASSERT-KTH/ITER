@@ -1,0 +1,17 @@
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){returncreateValue(str,(Class<?>)obj);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str.isPrimitive()){returncreateValue(str,(Class<?>)obj);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48Stringstr=(obj==null)?null:str.toLowerCase();
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){thrownewIllegalArgumentException("");}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str.length()==0){returncreateValue(str,(Class<?>)obj);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48returncreateValue(str,(Class)obj);
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48returncreateValue(str,obj);
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48returncreateValue(str,(Class<?>)obj);
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48returnsuper.createValue(str,obj);
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48returngetValue(str,obj);
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str==null||str.length()==0){returncreateValue
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).getName();if(str==null||str.length()==0){returncreateValue
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str==null||str.length()==0){returngetValue();}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str==null){returncreateValue(str,(Class<?>)obj);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str!=null){returncreateValue(str,(Class<?>)obj);}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java48if(objinstanceofClass<?>){Stringstr=((Class<?>)obj).toString();if(str.length()==0){returnnull;}

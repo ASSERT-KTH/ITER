@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+51	[BUG] [BUGGY] protected final static int[] _icLatin1 = CharTypes.getInputCodeLatin1(); [FE] ArrayIndexOutOfBoundsException [CONTEXT] [BUGGY] protected final static int[] _icLatin1 = CharTypes.getInputCodeLatin1(); [BUGGY]  [CLASS] ReaderBasedJsonParser  [VARIABLES] 	projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java	0.5773502691896258	26	26	1	replace	

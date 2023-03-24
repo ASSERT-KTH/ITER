@@ -1,0 +1,13 @@
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361PointValuePairoptimum=newPointValuePair(getStartPoint(),isMinimize?bestValue:-bestValue);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361PointValuePairoptimum=newPointValuePair(getStartPoint(),bestValue?bestValue:-bestValue);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361PointValuePairoptimum=newPointValuePair(getStartPoint(),isActive?bestValue:-bestValue);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=bestValue.doubleValue();
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=bestValue;
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=bestValue.value();
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=maxIterations;
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=maxIterations-1;
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=Math.max(bestValue,getEndPoint());
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=Math.max(bestValue,getMaximumFitness());
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361bestValue=Math.min(bestValue,getMaximumFitness());
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java361PointValuePairoptimum=newPointValuePair(getEndPoint(),bestValue?bestValue:-bestValue);

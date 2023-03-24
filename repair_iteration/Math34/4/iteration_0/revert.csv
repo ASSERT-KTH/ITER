@@ -1,0 +1,17 @@
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108intpopulationLimit=chromosomeColl.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108intpopulationLimit=chromosomes.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108chromosomes.clear();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108Collection<Chromosome>chromosomesColl=Collections.emptyList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108Collection<Chromosome>chromosomes=Collections.newArrayList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108if(chromosomes.size()+chromosomeColl.size()>populationLimit){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108if(chromosomes.size()+populationLimit>chromosomeColl.size()){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108if(chromosomes.size()*chromosomeColl.size()>populationLimit){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108if(chromosomes.size()+populationLimit>0){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108if(chromosomes.size()>populationLimit){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108if(chromosomes.size()<populationLimit){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108chromosomeColl=Collections.emptyList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108intpopulationLimit=Collections.emptyList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108intchromosomeLimit=this.chromosomeColl.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108intchromosomeLimit=Collections.emptyList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java108intpopulationLimit=this.chromosomes.size();

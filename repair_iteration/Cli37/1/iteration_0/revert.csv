@@ -1,0 +1,16 @@
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.indexOf("=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Optionoption=options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Integerpos=(Integer)options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Integerpos=token.indexOf("=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Integerpos=getLongPrefix(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.lastIndexOf("=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.indexOf("-");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.indexOf(":");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.indexOf("n");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.indexOf("-=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Optionoptions=options.getOptions(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Optionoptions=option.getOptions();
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319intpos=token.indexOf("+");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319Integerpos=options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java319if(token.startsWith("-")){returnfalse;}

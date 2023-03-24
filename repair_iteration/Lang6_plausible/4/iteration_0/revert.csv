@@ -1,0 +1,17 @@
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76char[]c=input.getChars();
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){out.write(c);}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input!=null){out.write(c);}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76char[]c=input.getChars(pos,out);
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76out.write(c);
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(out==null){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null||out==null){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){out=input.getChars(0,out);}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input!=null){out=input.getChars(0,out);}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){thrownewIllegalArgumentException("TheWritermustnotbenull.");}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){thrownewIllegalArgumentException("TheWritermustnotbenull");}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76intpt=input.length();
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){thrownewIllegalArgumentException("TheWritermustnotbenull".);}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(input==null){thrownewIllegalArgumentException("TheWritermustnotbenull!");}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java76if(out==null||input.length()==0){

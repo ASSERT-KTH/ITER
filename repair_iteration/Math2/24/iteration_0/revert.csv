@@ -1,0 +1,8 @@
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103if(sampleSize>populationSize){
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103if(populationSize>populationSize){
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103intsampleSize=rng.getSampleSize();
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103intsampleSize=numberOfSuccesses;
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103intsampleSize=numberOfSuccesses-populationSize;
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103if(numberOfSuccesses>populationSize){
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java103this.populationSize=numberOfSuccesses;

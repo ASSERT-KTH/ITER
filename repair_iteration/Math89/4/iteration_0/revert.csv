@@ -1,0 +1,15 @@
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59}
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable=newTreeMap();
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.setIndex(FieldUtils.safeMultiply(getValue()));
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.setIndex(FieldUtils.safeAdd(getValue()));
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59this.freqTable=newTreeMap();
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.setComparator(this);
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.setComparator(false);
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.putAll(freqTable);
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.putAll(this);
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.add(freqTable);
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.setIndex(FieldUtils.safeAdd(getValue(),freqTable));
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59freqTable.addAll(freqTable);
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59this.freqTable=freqTable.clone();
+projects/Math89/src/java/org/apache/commons/math/stat/Frequency.java59this.freqTable=freqTable.get();

@@ -1,0 +1,13 @@
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.SPACE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(TernaryValue.getType(c)==Character.SPACE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(TreeValue.getType(c)==Character.SPACE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(StringValue.getType(c)==Character.SPACE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.FALSE)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.FIELD_NAME)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Tree.getType(c)==Character.SPACE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.BLOCK)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.BOM)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)!=Character.SPACE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.VALUE_SEPARATOR)?TernaryValue.TRUE:TernaryValue.FALSE;
+projects/Closure75/src/com/google/javascript/jscomp/NodeUtil.java387return(Character.getType(c)==Character.VALUE_STRING)?TernaryValue.TRUE:TernaryValue.FALSE;

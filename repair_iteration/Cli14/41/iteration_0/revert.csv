@@ -1,0 +1,17 @@
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=(Option)i.next();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251CommandLinecommandLine=(CommandLine)i.next();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=(Option)optionMap.get(i);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=(Option)option.clone();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=(Option)option.getAnonymousCommandLine();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251option.validate(commandLine);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251option.validate(option);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251option.validateOption(option);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251CommandLinecommandLine=option.getCommandLine();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=option.getCommandLine();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=(Option)option.getArgument();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251option.validate(unknown);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251option.validate(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251CommandLinecommandLine=((Group)i.next()).getCommandLine();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251CommandLinecommandLine=((Group)i.next()).getAnonymousCommandLine();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java251OptioncommandLine=options.get(i.next());

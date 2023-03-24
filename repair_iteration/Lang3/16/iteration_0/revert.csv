@@ -1,0 +1,15 @@
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621booleanisAllZeros=(str==null)?false:str.length();
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621booleanisAllZeros=(str==null)?true:str.length();
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621booleanisAllZeros=(str==null)||(str.length()==0);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621booleanisAllZeros=(str==null)||(str.length()!=0);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621booleanisAllZeros=(str==null)?false:str.length()>0;
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null){
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null||str.length()==0){
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621booleanisAllZeros=(str==null)||str.length()==0;
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null||str.length()!=0){
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null||str.length()==0){returnfalse;}
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null){returnfalse;}
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621intstr=str.lastIndexOf('.');
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null||str.length()==0){returntrue;}
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java621if(str==null||str.length()!=0){returnfalse;}

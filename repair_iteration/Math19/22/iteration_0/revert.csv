@@ -1,0 +1,11 @@
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[i][0]=Math.log(dimension);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[0]=Math.max(sigmaArray[0],lambda[1]);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[i][0]=Math.max(sigmaArray[i].length);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574for(inti=0;i<guess.length;i++){
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574for(inti=1;i<guess.length;i++){
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574init(sigmaArray,false);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[0]=Math.max(sigmaArray[0],1);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[0]=Math.floor(lambda)/guess;
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[0]=Math.abs(sigmaArray[0].doubleValue());
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java574sigmaArray[0]=Math.abs(sigmaArray[0]);

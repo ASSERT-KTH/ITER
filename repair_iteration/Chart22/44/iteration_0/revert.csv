@@ -1,0 +1,10 @@
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.rows.remove(rowIndex);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.rowKeys.remove(rowIndex);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314introwIndex=row.getItemCount();
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.rows.remove(item);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.rowKeys.remove(item);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.rows.remove(rowIndex-1);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.columnKeys.remove(columnKey);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314introwIndex=row.getItemIndex(columnKey);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java314this.rowKeys.remove(rowKey);

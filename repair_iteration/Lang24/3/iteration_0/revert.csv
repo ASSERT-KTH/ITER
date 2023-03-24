@@ -1,0 +1,17 @@
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480thrownewNumberFormatException(str+"isnotavalidnumber.");
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480thrownewNumberFormatException(mant+"isnotavalidnumber.");
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480thrownewNumberFormatException(str+"isnotavalidnumber.",expPos);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480thrownewNumberFormatException("Expectednumericnumber:"+str+"isnotavalidnumber.");
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480intexpPos=str.indexOf('.');
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480IntegerdecPos=str.indexOf('.');
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480mant=str.substring(0,decPos);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480mant=str.substring(0,str.length()-1);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480intexpPos=str.indexOf('.',expPos);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480thrownewNumberFormatException(decPos+"isnotavalidnumber.");
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480thrownewNumberFormatException("Expectednumber:"+str+"isnotavalidnumber.");
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480mant=str.substring(0,expPos);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480intdecPos=str.indexOf('.');
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480intdecPos=str.indexOf('.',expPos);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480Stringstr=str.substring(0,expPos);
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java480Stringstr=str.substring(0,decPos);

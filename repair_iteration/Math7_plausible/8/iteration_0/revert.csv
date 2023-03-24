@@ -1,0 +1,11 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)handler.clone();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)this.handlers.get(name);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=(EventHandler)this.handler.getDataItem(name);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127addEventHandler(handler,maxCheckInterval,convergence,maxIterationCount,newBracketingNthOrderBrentSolver(convergence,5));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127addEventHandler(handler,maxCheckInterval,convergence,maxIterationCount,newBracketingNthOrderBrentSolver(convergence,0));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127addEventHandler(handler,maxCheckInterval,convergence,maxIterationCount,newBracketingNthOrderBrentSolver(convergence,1));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127addEventHandler(handler,maxCheckInterval,convergence,maxIterationCount,newBracketingNthOrderBrentSolver(maxIterationCount,1));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127addEventHandler(handler,maxCheckInterval,convergence,maxIterationCount,newBracketingNthOrderBrentSolver(maxIterationCount,5));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=getEventHandler(handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java127EventHandlerhandler=getEventHandler(handler,maxCheckInterval,convergence);

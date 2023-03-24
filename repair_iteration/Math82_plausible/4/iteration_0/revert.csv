@@ -1,0 +1,15 @@
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155returntrue;
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155returnfalse;
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155if(MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon)<0){returnfalse;}
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155if(MathUtils.compareTo(tableau.getEntry(i,i),0,epsilon)<0){returnfalse;}
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155if(!MathUtils.compareTo(tableau.getEntry(i,i),0,epsilon)<0){returnfalse;}
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155intpivotVal=MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon);
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155if(MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon)<0){returntrue;}
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155intpivotVal=MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon)<0;
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155if(MathUtils.compareTo(tableau.getEntry(i,i),0,epsilon)<0){returntrue;}
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155doublepivotVal=MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon)<0;
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155doublepivotVal=MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon);
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155return!setOptimalValue(getOptimalValue());
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155return!isOptimalValue(tableau,epsilon);
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java155return!setOptimalValue(getOptimalValue(i));

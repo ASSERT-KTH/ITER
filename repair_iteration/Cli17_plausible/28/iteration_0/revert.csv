@@ -1,0 +1,13 @@
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106while(iter.hasNext()){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106while(iter.hasNext()&&iter.hasNext()){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106while(iter.hasNext()&&iter.next().startsWith("-")){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106Iteratoriter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106OptioncurrentOption=options.getOption("stopAtNonOption");
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106Iterator<String>iter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106Iteratoriter=arguments.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106OptioncurrentOption=options.getOption(arguments[0]);
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106Iteratoriter=Arrays.asList(arguments).iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106OptioncurrentOption=options.getOption(options);
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106while(!stopAtNonOption&&iter.hasNext()){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java106OptioncurrentOption=options.getOption("stopAtNonOption");tokens.add(currentOption);

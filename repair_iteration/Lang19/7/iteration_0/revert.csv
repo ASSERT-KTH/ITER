@@ -1,0 +1,16 @@
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46start++;
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46intstart=index+1;
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46if(!isHex){start++;}
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46if(index==seqEnd){start++;}
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46charfirstChar=input.charAt(start);
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46charfirstChar=input.charAt(index+1);
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46charfirstChar=input.charAt(index);
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46intfirstChar=input.charAt(index+1);
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46intfirstChar=input.length();
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46start=index+1;
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46if(start==-1){start++;}else{out.write(chrs[index++]);}
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46out.write('n');
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46nfe=input.getNumberFormatException();
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46intend=input.length();
+projects/Lang19/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java46nfe.printStackTrace();

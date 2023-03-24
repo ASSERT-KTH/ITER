@@ -1,0 +1,8 @@
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242_textBuffer.setCurrentLength(outPtr);
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242_textBuffer.setCurrentLength(outBuf.length);
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242_textBuffer.setCurrentLength(outPtr+1);
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242_textBuffer.setCurrentLength(outBuf,outPtr);
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242if(outPtr>=outBuf.length){_textBuffer.setCurrentLength(outPtr);}
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242if(outPtr>=outBuf.length){_textBuffer.setCurrentLength(outPtr);}else{outBuf=_textBuffer.finishCurrentSegment();outPtr=0;}
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1242if(outPtr>=outBuf.length){_textBuffer.setCurrentLength(outPtr);}else{outBuf[outPtr++]=c;}

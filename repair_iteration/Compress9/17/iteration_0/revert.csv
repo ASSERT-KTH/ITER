@@ -1,0 +1,16 @@
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129writeEOFRecord();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(haveUnclosedEntry){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(!finished){writeEOFRecord();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(isEnabled(Feature.QUOTE_FIELD_NAMES)){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(haveUnclosedEntry){writeEOFRecord();}else{buffer.flushBlock();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(isEnabled(Feature.AUTO_CLOSE_ERROR)){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(haveUnclosedEntry){writeEOFRecord();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(isEnabled(Feature.QUOTE_FIELD_NAMES)){writeEOFRecord();}else{buffer.flushBlock();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(haveUnclosedEntry){writeEOFRecord();}else{buffer.flushBlock();System.arraycopy(assemBuf,0,recordBuf,0,currSize);}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(haveUnclosedEntry){writeEOFRecord();}else{buffer.flushBlock();System.arraycopy(assemBuf,0,buffer,0,currSize);}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(!finished){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(finished){writeEOFRecord();}else{buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(!finished){writeEOFRecord();}else{buffer.flushBlock();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(finished){writeEOFRecord();}else{buffer.flushBlock();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java129if(!finished){writeEOFRecord();}else{buffer.close();}

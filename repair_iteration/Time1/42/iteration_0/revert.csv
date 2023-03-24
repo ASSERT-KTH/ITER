@@ -1,0 +1,14 @@
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92if(type==null){DurationFieldTypetype=cCache.getDurationFieldType();if(type!=null||type.isSupported()){returntrue;}
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92if(type==null){DurationFieldTypetype=cCache.getDurationFieldType();if(type.isSupported()){returntrue;}
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92if(type==null){DurationFieldTypetype=getType();if(type.isSupported()){returntrue;}
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92returnfalse;
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92returntrue;
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92if(type==null)returnfalse;if(type.isSupported()){returntrue;}
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92return(type==null)&&!type.isSupported();
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92if(type==null){DurationFieldTypetype=cCache.getDurationFieldType();if(type!=null){returntrue;}
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92if(type==null){DurationFieldTypetype=cCache.getDurationFieldType(iType);if(type!=null){returntrue;}
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92DurationFieldTypetype=cCache.getDurationFieldType(iType);
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92DurationFieldTypetype=cCache.getDurationFieldType();
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92DurationFieldTypetype=getType();
+projects/Time1/src/main/java/org/joda/time/field/UnsupportedDurationField.java92return(iType==null)&&iType.isSupported();

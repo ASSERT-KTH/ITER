@@ -1,0 +1,16 @@
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80ListvalueList=(List)values.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80ListvalueList=(List)this.values.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80ListvalueList=(List)this.defaultValues.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80ArrayListvalueList=(ArrayList)values.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Set<String>values=Sets.newHashSet();
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Set<String>values=Sets.newHashSet(option.getValues());
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Set<String>values=Sets.newHashSet(option.getName());
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Set<String>values=Sets.newHashSet(defaultValues.size());
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Set<String>values=Sets.newHashSet(defaultValues);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Optionoption=option.getOption(value);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Optionoption=option.getOption();
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Optionoption=option.getOption(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Optionoption=option.getValue();
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Preconditions.checkNotNull(value);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java80Optionoption=option.getAssignmentTo();

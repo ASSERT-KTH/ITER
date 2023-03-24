@@ -1,0 +1,11 @@
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(n)&&variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(n)||variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isLhs(n,n.getParent())&&variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isAssignmentOp(n)&&variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(n)&&variable!=null||variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(n)&&variable.equals(n.getString())||isVariableReadBeforeKill(n,variable)){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(n)&&variable!=null&&n.getString().equals(variable)){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(!NodeUtil.isName(n)&&variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(n)&&variable==null||variable.equals(n.getString())){
+projects/Closure88/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java325if(NodeUtil.isName(child)&&variable.equals(n.getString())){

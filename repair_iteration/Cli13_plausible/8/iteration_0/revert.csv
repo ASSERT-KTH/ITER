@@ -1,0 +1,17 @@
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185StringargumentCount=options.getArgumentCount();
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185Argumentsarguments=options.getArgumentCount();
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185StringargumentCount=options.getArgumentCount();arguments.add(argumentCount);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185Argumentargument=options.getArgument(token);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185StringargumentCount=arguments.get(token);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185++argumentCount;
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount>1){++argumentCount;}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount>arguments.size()){++argumentCount;}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount>argumentCount){++argumentCount;}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185Argumentargument=options.getArgument(argumentCount);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185StringargumentCount=options.getArgumentCount()-1;
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount==1){++argumentCount;}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount==2){++argumentCount;}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount>1){++argumentCount;}else{commandLine.addValue(option,values.nextToken());}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185if(argumentCount>1){++argumentCount;}else{commandLine.addValue(option,allValues);}
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java185StringargumentCount=values.get(0).toString();

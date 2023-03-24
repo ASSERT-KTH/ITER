@@ -1,0 +1,17 @@
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46privateMapoptions=newHashMap();
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46privatefinalMapoptions=newHashMap();
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46privateMapoptions=newLinkedHashMap();
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46privateMapoptions=newHashMap(System.err);
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46if(options==null){options.putAll(Arrays.asList(options));}
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46if(options!=null){options.putAll(Arrays.asList(options));}
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46if(options==null){options=newHashMap();}else{options.putAll(Arrays.asList(options));}
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46if(options==null){options.putAll(Arrays.asList(options));}else{options.putAll(options);}
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46if(options!=null){options.putAll(Arrays.asList(options));}else{options.putAll(options);}
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46if(options==null){options.putAll(Arrays.asList(options));}else{options=newHashMap();}
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46protectedMapoptions=newHashMap();
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46Arrays.sort(this.options);
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46Arrays.sort(options);
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46Sets.newHashSet();
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46this.options.put("Error",newIllegalArgumentException());
+projects/Cli1/src/java/org/apache/commons/cli/CommandLine.java46this.options.put("Error",newIllegalArgumentException(""));

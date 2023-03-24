@@ -1,0 +1,15 @@
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=str.substring(decPos+1);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438intexpPos=str.lastIndexOf('.');
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=str.substring(decPos+1,expPos);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=str.substring(decPos+2);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438intexpPos=str.indexOf('.');
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=null;
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=str;
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=mant;
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438dec=newString(decPos+1);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438intexpPos=str.indexOf('')+1;
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438if(expPos>-1){dec=str.substring(decPos+1);}else{dec=null;}
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438if(expPos>-1){dec=str.substring(decPos+1);}
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438if(dec==null){dec=str.substring(decPos+1);}
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java438if(expPos>-1){dec=str.substring(decPos+1,expPos);}else{dec=null;}

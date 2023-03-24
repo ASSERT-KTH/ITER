@@ -1,0 +1,12 @@
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(state.evaluateStep(interpolator)){occuringEvents.add(state);}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(!state.evaluateStep(interpolator)){occuringEvents.add(state);}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(state.evaluateStep(interpolator)){occuringEvents.remove(state);}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(state.evaluateStep(interpolator)){eventT=state.evaluateStep(interpolator);}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(state.evaluateStep(interpolator)){continue;}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(state.evaluateStep(interpolator)){occuringEvents.clear();}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306returnorderingSign*Double.compare(es0.getEventTime(),es1.getEventTime());
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306returnorderingSign*Double.compare(eventT.getEventTime(),es1.getEventTime());
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(!ignuringSign.isEmpty()){eventT=state.evaluateStep(interpolator);}
+projects/Math44/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java306for(finalEventStatestate:eventsStates){if(state.evaluateStep(interpolator)){break;}

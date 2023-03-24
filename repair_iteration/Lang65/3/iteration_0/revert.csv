@@ -1,0 +1,14 @@
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.setTime(date);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547Dategval=gval.getTime();
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.set(Calendar.MILLISECOND,field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547Calendargval=Calendar.getInstance();
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.set(Calendar.DATE,field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.setTime(date,field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.setTime(field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.set(date,field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.setTime(date);modify(gval,field,false);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.set(Calendar.MILLISECOND,0);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.setTime(date+field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.set(Calendar.MILLISECOND,999);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java547gval.setTime(time);

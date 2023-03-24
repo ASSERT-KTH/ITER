@@ -1,0 +1,13 @@
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52privatestaticfinaldoubleMIN_RELATIVE_TOLERANCE=2*FastMath.ulp(1d);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52privatestaticfinaldoubleMIN_RELATIVE_TOLERANCE=1d*FastMath.ulp(2d);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52privatestaticfinaldoubleMIN_RELATIVE_TOLERANCE=2*FastMath.max(1d,1d);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52if(isOptimizer()){for(inti=1;i<=10;i++){returnMIN_RELATIVE_TOLERANCE*FastMath.ulp(i);}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52if(isOptimizer()){for(inti=1;i<=10;i++){returnMIN_RELATIVE_TOLERANCE*FastMath.sqrt(i);}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52if(isOptimizer()){for(inti=1;i<=10;i++){returnMIN_RELATIVE_TOLERANCE;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52Validate.notNull(getOptimizer());
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52Validate.notEmpty(getOptimizer());
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52Validate.notNull(this);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52privatestaticfinaldoubleMIN_RELATIVE_TOLERANCE=1d*FastMath.ulp(1d);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52privatestaticfinaldoubleMIN_RELATIVE_TOLERANCE=2*FastMath.log(1d);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java52Validate.notNull(getValue());

@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+5	[BUG] [BUGGY] [FE] AssertionFailedError [CONTEXT] public boolean matches() { return _nextSegment == null; } [CLASS] JsonPointer [METHOD] matches [RETURN_TYPE] boolean  [VARIABLES] JsonPointer EMPTY _nextSegment next String _asString _matchingPropertyName fullString input segment boolean int _matchingElementIndex  	projects/JacksonCore6/src/main/java/com/fasterxml/jackson/core/JsonPointer.java	0.5	137	137	1	replace	

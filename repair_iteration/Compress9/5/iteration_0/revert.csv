@@ -1,0 +1,13 @@
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(newFileInputStream(longFileMode));
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(longFileMode);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(LONGFILE_ERROR,longFileMode);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(LONGFILE_ERROR);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(LONGFILE_ERROR,Long.MAX_VALUE);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(newFileInputStream(fileMode));
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=TarArchiveOutputStream.getInputStream(longFileMode);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54longFileMode=TarArchiveOutputStream.currentTimeMillis();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54longFileMode=System.currentTimeMillis();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54longFileMode=LONGFILE_ERROR;
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java54TarArchiveOutputStreamoutputStream=newTarArchiveOutputStream(newFile(longFileMode));

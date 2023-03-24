@@ -1,0 +1,7 @@
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399return0.5*exp(-x);
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399return0.5*exp(x);
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399if(x>20){return0.5*exp(x);}
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399x=-x;
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399if(x<0){return0.5*exp(x);}
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java399if(x>20){return0.5*exp(-x);}

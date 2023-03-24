@@ -1,0 +1,14 @@
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155samplingMatrix=covMatEigenvectors.multiply(tmpMatrix);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155samplingMatrix=covMatEigenvectors.multiplyEntry(dim,col);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155samplingMatrix=covMatEigenvectors.multiply(covarianceMatrix);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155if(covMatEigenvectors!=null){finalRealMatrixtmpMatrix=covMatEigenvectors.transpose();for(introw=0;row<dim;row++){tmpMatrix.multiplyEntry(row,col,covariance);}
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155if(covMatEigenvectors!=null){finalRealMatrixtmpMatrix=covMatEigenvectors.transpose();for(introw=0;row<dim;row++){double[][]covariances=
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155if(covMatEigenvectors!=null){finalRealMatrixtmpMatrix=covMatEigenvectors.transpose();for(introw=0;row<dim;row++){tmpMatrix.multiplyEntry(row,col,covariance
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155if(covMatEigenvectors!=null){RealMatrixtmpMatrix=covMatEigenvectors.transpose();for(introw=0;row<dim;row++){FastMath.sqrt(covMatEigenvalues[row]);for(
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155Array2DRowRealMatrixtmpMatrix=Array2DRowRealMatrix.transpose();
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155if(covMatEigenvectors!=null){RealMatrixtmpMatrix=covMatEigenvectors.transpose();for(introw=0;row<dim;row++){FastMath.sqrt(covMatEigenvalues[row]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155samplingMatrix=covMatEigenvectors.multiplyEntry(tmpMatrix);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155Array2DRowRealMatrixtmpMatrix=FastMath.sqrt(covMatEigenvalues[row]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155if(covMatEigenvectors!=null){RealMatrixtmpMatrix=covMatEigenvectors.transpose();for(introw=0;row<dim;row++){FastMath.sqrt(covMatEigenvalues[row]);for
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java155samplingMatrix=covMatEigenvectors.multiply(tmpMatrixDeterminant);

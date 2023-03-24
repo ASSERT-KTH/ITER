@@ -1,0 +1,13 @@
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541if(Double.isInfinite(boundaries[1][i]-boundaries[0][i])){
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541if(Double.isInfinite(boundaries[0][i]-boundaries[1][i])){
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541if(Double.isNaN(boundaries[1][i]-boundaries[0][i])){
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[0][i]=Math.max(0,boundaries[1][i]);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[0][i]=uB[i];
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[0][i]=Math.max(0,boundaries[1][i].length());
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541if(Double.isInfinite(boundaries[0][i]-lB[0][i])){
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[0][i]=lB[i].doubleValue();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[0][i]=Math.abs(lB[i]-lB[i]);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[0][i]=Math.abs(lB[i]);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541if(Double.isInfinite(boundaries[1][i]-boundaries[0][i])||Double.isInfinite(boundaries[1][i]-boundaries[0][i])){
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java541boundaries[i]=Math.abs(lB[i]);

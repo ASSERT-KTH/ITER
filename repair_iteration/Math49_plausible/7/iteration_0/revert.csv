@@ -1,0 +1,17 @@
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Iteratoriter=entries.iterator();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Iterator<Entry>iter=entries.iterator();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Entry<K,V>current=entry.getValue();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Entry<K,V>entry=entries.entrySet();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74publicOpenMapRealVector(intdimension,doubleepsilon){
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74this(dimension,DEFAULT_ZERO_TOLERANCE,epsilon);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74this.entries=newOpenMapRealVector(dimension,DEFAULT_ZERO_TOLERANCE);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74this(dimension,DEFAULT_ZERO_TOLERANCE);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74publicOpenMapRealVector(doubledimension,doubleepsilon){
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74publicOpenMapRealVector(intdimension,intepsilon){
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Iteratoriter=this.entries.iterator();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Iterator<Entry>iter=entries.entrySet().iterator();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74Entry<K,V>current=iter.getEntry(virtualSize);
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74iter=newOpenIntToDoubleHashMap();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74this.entries=entries.iterator().next();
+projects/Math49/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java74this(DateTimeUtils.currentTimeMillis(),dimension,epsilon);

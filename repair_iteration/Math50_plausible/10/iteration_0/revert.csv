@@ -1,0 +1,14 @@
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublex=x1-((f1*(x1-x0))/(f1-f0));
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublex=rtol-((f1*(x1-x0))/(f1-f0));
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublex=atol-((f1*(x1-x0))/(f1-f0));
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef0=getFunctionValue();
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef1=getFunctionValue();
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef1=getFunctionValue(f1);
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef1=getFunctionValue(f0);
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef0=getFunctionValue(f1);
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublex=f0-((f1*(x1-x0))/(f1-f1));
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublex=x0-((f1*(x1-x0))/(f1-f0));
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef0=computeObjectiveValue(f0);
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublef0=((f1*(x1-x0))/(f0-f0));
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java160finaldoublex=inverted-((f1*(x1-x0))/(f1-f0));

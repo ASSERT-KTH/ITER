@@ -1,0 +1,12 @@
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.substring(0,index));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(StringUtils.defaultString(lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(StringUtils.defaultString(upper));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.substring(0,index),lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.substring(index+1));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(StringUtils.defaultString(appendToEnd));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.charAt(index+1));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.substring(index,upper));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.substring(index,lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(str.substring(index,index+1));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java632result.append(",");

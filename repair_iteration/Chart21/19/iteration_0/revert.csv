@@ -1,0 +1,9 @@
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163intr=item.getRowCount();
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(columnKey!=null){intmaxval=item.getMinOutlier().doubleValue();if(maxval>this.maximumRangeValueColumn){minval=item.getMaxOutlier().doubleValue();}
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(columnKey!=null){intmaxval=item.getMaxOutlier().doubleValue();if(maxval>this.maximumRangeValueColumn){minval=item.getMinOutlier().doubleValue();}
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(item.getMaxOutlier()!=null){
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(columnKey==null){intmaxval=item.getMinOutlier().doubleValue();if(maxval>this.maximumRangeValueRow){maxval=item.getMaxOutlier().doubleValue();}
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(columnKey==null){intmaxval=item.getMaxOutlier().doubleValue();if(maxval>this.maximumRangeValueRow){maxval=item.getMaxOutlier().doubleValue();}
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(columnKey==null){this.maximumRangeValue=item.getMaximumRangeValue();}
+projects/Chart21/source/org/jfree/data/statistics/DefaultBoxAndWhiskerCategoryDataset.java163if(columnKey==null){this.minimumRangeValue=item.getMinOutlier();}

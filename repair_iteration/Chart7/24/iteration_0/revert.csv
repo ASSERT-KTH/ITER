@@ -1,0 +1,9 @@
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247this.data.add(item);
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247this.data.remove(item.getPeriod());
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247this.data.clear();
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247updateBounds(item.getPeriod(),this.data.size()-1);
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247updateBounds(item.getPeriod(),this.data.size());
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247updateBounds(this.data.size(),item.getPeriod());
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247this.data.remove(item);
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java247this.data.add(item);fireSeriesChanged();

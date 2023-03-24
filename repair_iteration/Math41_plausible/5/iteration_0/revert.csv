@@ -1,0 +1,13 @@
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320var=evaluate(values,weights,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320doublem=evaluate(values,weights,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320doublevar=evaluate(values,weights,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320incMoment=isBiasCorrected;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320var=evaluate(values,values,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320if(length==1){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320if(length>1){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320var=evaluate(values,weights,m,begin,length);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320incMoment=isBiasCorrected&&isBiasCorrected;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320if(length<1){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320if(length==0){
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java320var=evaluate(values,values,weights,begin,length);

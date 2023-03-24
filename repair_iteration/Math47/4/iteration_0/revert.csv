@@ -1,0 +1,14 @@
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.0&&divisor.getImaginary()==0.0){
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.0||divisor.getImaginary()==0.0){
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.5&&divisor.getImaginary()==0.5){
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.0&&divisor.getImaginary()==0.0){returnNaN;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.0||divisor.getImaginary()==0.0){returnNaN;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.0||divisor.getImaginary()==0.0){thrownewIllegalArgumentException("");}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor.getReal()==0.0&&divisor.getImaginary()==0.0){returnZERO;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256MathUtils.checkNotNull(divisor);
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor!=null){if(divisor.getReal()==0.0&&divisor.getImaginary()==0.0){returnNaN;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor!=null){if(divisor.getReal()==0.0||divisor.getImaginary()==0.0){returnNaN;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor!=null){if(divisor.isNaN()||divisor.getImaginary()==0.0){returnNaN;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor!=null){if(divisor.isInfinite()||divisor.getImaginary()==0.0){returnNaN;}
+projects/Math47/src/main/java/org/apache/commons/math/complex/Complex.java256if(divisor!=null){if(divisor.isNaN()||divisor.isNaN()){returnNaN;}

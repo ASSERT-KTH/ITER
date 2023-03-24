@@ -1,0 +1,14 @@
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240if(values.size()<minimum){
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240if(values.size()>minimum){
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240if(values.size()<maximum){
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240if(values.size()<=minimum){
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=(ValueImpl)values.get(0);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=options.getValue(option);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=option.validate();
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=getValue(option);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=options.getValue(commandLine);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240if(values.size()<1){
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=option.validate(commandLine);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=option.validate(commandLine,values);
+projects/Cli13/src/java/org/apache/commons/cli2/option/ArgumentImpl.java240Validatorvalidator=options.validate(commandLine);

@@ -1,0 +1,17 @@
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markerlayer=(Marker)this.backgroundRangeMarkers.get(index);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markerlayer=(Marker)this.backgroundRangeMarkers.get(newInteger(index));
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markerlayer=(Marker)this.foregroundRangeMarkers.get(index);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441markers=(ArrayList)this.foregroundRangeMarkers.get(newInteger(index));
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markermarker=(Marker)this.foregroundRangeMarkers.get(newInteger(index));
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441markers=(List)this.foregroundRangeMarkers.get(newInteger(index));
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441intindex=this.foregroundRangeMarkers.size();
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441intindex=this.backgroundRangeMarkers.size();
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441intindex=this.layer.indexOf(marker);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markermarker=(Marker)this.backgroundRangeMarkers.get(newInteger(index));
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441intindex=this.backgroundRangeMarkers.size()-1;
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markerlayer=(Marker)this.foregroundRangeMarkers.get(newInteger(index));
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441intindex=this.layer.indexOf(marker,this.backgroundRangeMarkers);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441intindex=this.foregroundRangeMarkers.size()-1;
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441Markerlayer=(Marker)this.foregroundRangeMarkers.get(index-1);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2441markers=(List)this.backgroundRangeMarkers.get(newInteger(index));

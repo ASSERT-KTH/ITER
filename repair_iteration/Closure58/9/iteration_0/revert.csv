@@ -1,0 +1,17 @@
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120computeEscaped(jsScope,escaped,compiler);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120escaped=Sets.newHashSet();
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120computeEscaped(jsScope,escaped,compiler,cfg);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120escaped.add(jsScope);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120ensureEscaped(jsScope,escaped,compiler);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120computeEscaped(jsScope,escaped,compiler,this.liveSet);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120escaped=Sets.newHashSet(jsScope);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120Preconditions.checkState(escaped!=jsScope);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120computeEscaped(jsScope,escaped,compiler,this.cfg);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120append(jsScope,escaped,compiler);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120computeEscaped(jsScope,escaped,compiler,liveSet);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120Preconditions.checkState(escaped==jsScope);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120computeEscaped(jsScope,escaped,compiler,baseUri);
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120Set<String>liveSet=Sets.newHashSet();
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120Set<Node>liveSet=Sets.newHashSet();
+projects/Closure58/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java120escaped=Sets.newHashSet(escaped);

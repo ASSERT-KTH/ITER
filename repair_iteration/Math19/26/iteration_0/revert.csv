@@ -1,0 +1,14 @@
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579sigmaArray[i][0]=Math.log(inputSigma[i])/2;
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigmaArray[i][0]=Math.max(inputSigma[i],max);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579sigmaArray[i][0]=Math.log(inputSigma[i])/range;
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579sigma=max(insigma);//overallstandarddeviation//initializeterminationcriteria
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579sigma=insigmaArray[insigma].length;
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579sigma=insigmaArray[insigma];
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigma.add(inputSigma);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigmaArray[i]=Math.max(inputSigma[i],0);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigmaArray[i]=Math.max(inputSigma[i],max);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579sigma=insigma;
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigma=insigma.initialize(lambda);
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigma=insigma.initialize();
+projects/Math19/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java579insigma=insigma.initialize(lambda,guess);

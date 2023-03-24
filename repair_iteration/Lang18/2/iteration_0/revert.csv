@@ -1,0 +1,13 @@
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.DAY_OF_MONTH,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.YEAR,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.MONTH,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.SECOND,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.HOUR,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.G,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.WEEK_OF_YEAR,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493if(tokenLen==1){break;}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.ERA,ERAs);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.DAY_OF_YEAR,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java493rule=selectNumberRule(Calendar.GIVE,tokenLen);

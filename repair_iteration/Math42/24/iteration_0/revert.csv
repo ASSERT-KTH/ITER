@@ -1,0 +1,15 @@
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188Array2DRowRealMatrixmatrix=newArray2DRowRealMatrix(height,height);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188Array2DRowRealMatrixmatrix=newArray2DRowRealMatrix(width,height);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188Array2DRowRealMatrixmatrix=newArray2DRowRealMatrix(height,width);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188Array2DRowRealMatrixmatrix=newArray2DRowRealMatrix(width,width);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188Array2DRowRealMatrixmatrix=newArray2DRowRealMatrix(height);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188matrix.setEntry(0,0,-1);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188matrix.setEntry(0,0,height);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188matrix.setEntry(0,0,height-1);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188matrix.setEntry(0,0,width-1);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188matrix.setEntry(0,0,1);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188matrix.setEntry(0,0,0);
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188RealVectorobjectiveCoefficients=maximize?f.getOptionalVector():f.getOptionalVector();
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188intzIndex=(getNumObjectiveFunctions()==2)?0:1;
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java188Array2DRowRealMatrixmatrix=newArray2DRowRealMatrix();

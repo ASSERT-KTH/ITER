@@ -1,0 +1,10 @@
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71if(chromosomes.size()>populationLimit){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71if(chromosomes.size()<populationLimit){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71chromosomes=newArrayList<Chromosome>();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71chromosomes=Lists.newArrayList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71chromosomes=newArrayList<Chromosome>(populationLimit);
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71finalintpopulationLimit=chromosomes.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71intpopulationLimit=chromosomes.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71chromosomes=Collections.emptyList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java71this.chromosomes=newArrayList<Chromosome>();

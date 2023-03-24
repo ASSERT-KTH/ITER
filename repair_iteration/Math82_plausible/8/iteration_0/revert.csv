@@ -1,0 +1,17 @@
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(MathUtils.compareTo(tableau.getEntry(0,i),0,epsilon)<0){
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(MathUtils.compareTo(tableau.getEntry(i,i),0,DEFAULT_EPSILON)<0){
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(!MathUtils.compareTo(tableau.getEntry(i,i),0,epsilon)<0){
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(MathUtils.compareTo(tableau.getEntry(i,i),0,DEFAULT_EPSILON)<=0){
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)tableau.getEntry(i);
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)this.tableau.getEntry(i);
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)tableau.getValue(i);
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)tableau.getObjective();
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151intepsilon=tableau.getEpsilon();
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(MathUtils.compareTo(tableau.getEntry(i,i),0,epsilon)==0){
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(MathUtils.compareTo(tableau.getEntry(i,i),0,epsilon)<0){
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)tableau.getEpsilon();
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)this.tableau.getObjective();
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)tableau.clone();
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151SimplexTableauepsilon=(SimplexTableau)tableau.getObject();
+projects/Math82/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java151if(!MathUtils.compareTo(tableau.getEntry(i,i),0,DEFAULT_EPSILON)<0){

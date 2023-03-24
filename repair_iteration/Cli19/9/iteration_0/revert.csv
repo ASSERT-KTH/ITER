@@ -1,0 +1,15 @@
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276tokens.add("-"+ch);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276if(stopAtNonOption){tokens.add("-"+ch);}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276if(stopAtNonOption){if(options.hasOption(ch)){tokens.add("-"+ch);}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276OptioncurrentOption=options.getOption(ch);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276if(stopAtNonOption){tokens.add("-"+ch);}else{thrownewIllegalArgumentException("");}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276currentOption=options.getOption(ch);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276currentOption=options.getOption(ch,stopAtNonOption);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276currentOption=options.getOption(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276currentOption=options.getOption(ch+1);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276Optionoptions=options.getOption(ch);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276options.add("-"+ch);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276tokens.add("-"+ch);break;
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276currentOption=options.getOption(ch-1);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java276if(stopAtNonOption){tokens.add(token.substring(i+1));break;}

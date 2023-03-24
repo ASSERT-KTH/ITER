@@ -1,0 +1,16 @@
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554doublepj=permutation[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554doublepj=permutation[i].doubleValue();
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554double[]jacobian[i][pj]=Math.sqrt(permutation[i]);
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554double[]jacobian[i][pj]=Math.abs(permutation[i]);
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554intpj=permutation[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554sum+=jacobian[i][pj]*qy[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554sum+=diag[i][pj]*qy[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554sum+=permutation[i][pj]*qy[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554sum+=solveCols[i][pj]*qy[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554sum+=parl[i][pj]*qy[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554sum+=qy[i][pj]*jacobian[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554intpj=permutation[i].doubleValue();
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554doublej=permutation[i];
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554doublepj=Math.sqrt(permutation[i]);
+projects/Math64/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java554doubleqy=Math.sqrt(pj);

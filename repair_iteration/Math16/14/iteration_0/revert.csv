@@ -1,0 +1,12 @@
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514b=Math.max(a,b);
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514b=(Double)a.doubleToLongBits(b);
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514b=(Double)a.doubleToRawLongBits(b);
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514returnb;
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514returna;
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514if(bits<0){returnb;}
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514b=Math.max(0,b);
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514b=Math.max(a,b)/2.0;
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514if(b==0){returnDouble.NaN;}
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514if(b!=1){returnDouble.NaN;}
+projects/Math16/src/main/java/org/apache/commons/math3/util/FastMath.java3514returnDouble.NaN;

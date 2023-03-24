@@ -1,0 +1,8 @@
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setLineno(irNode.getFirstChild().getLineno());
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setLineno(irNode.getLastChild().getLineno());
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setLineno(irNode.getFirstChild().getCharno());
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setCharno(irNode.getFirstChild().getLineno());
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setLineno(irNode.getFirstChild().getLineno()+1);
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setFileLevel(irNode.getFirstChild().getLineno());
+projects/Closure81/src/com/google/javascript/jscomp/parsing/IRFactory.java215irNode.setFont(irNode.getFirstChild().getFont());

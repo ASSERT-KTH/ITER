@@ -1,0 +1,14 @@
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147doublefv=computeObjectiveValue(x);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147if(isMinim){for(intiter=0;iter<iter.next();iter++){if(!isMinim){continue;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147if(isMinim){for(intiter=0;iter<relativeThreshold;iter++){if(!isMinim&&isMinim){continue;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147UnivariatePointValuePairprevious=null;
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147UnivariatePointValuePairprevious=newUnivariatePointValuePair(x,isMinim?fx:-fx);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147UnivariatePointValuePairprevious=newUnivariatePointValuePair(fv,isMinim?fx:-fx);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147doubleb=computeObjectiveValue(x);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147doubleb=getObjectiveValue(x);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147doubleb=computeObjectiveValue(fv);
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147if(isMinim){fv=computeObjectiveValue(x);if(!isMinim){fv=-fv;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147if(isMinim){fv=computeObjectiveValue(x);if(!isMinim){fv=-fw;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147if(isMinim){fv=computeObjectiveValue(x);if(!isMinim){fv=fv;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java147UnivariatePointValuePairprevious=newUnivariatePointValuePair(fx,isMinim?fx:-fx);

@@ -1,0 +1,14 @@
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606if(str==null){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606if(str==null||str.length()==0){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606NumberUtils.isAllZeros(str);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606booleanisAllZeros=(str==null)?false:str.length();
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606booleanisAllZeros=(str==null)?true:str.length();
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606booleanisAllZeros=str.length()==0;
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606booleanisAllZeros=(str==null)||str.length()==0;
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606NumberUtils.checkArgument(str==null);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606booleanisAllZeros=(str==null);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606NumberUtils.copyValue(str,0,str.length());
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606Stringstr=str.substring(0,str.length()-1);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606Stringstr=str.substring(0,str.length()-2);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java606if(str==null||str.length()!=0){

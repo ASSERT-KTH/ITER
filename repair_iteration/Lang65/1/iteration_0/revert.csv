@@ -1,0 +1,15 @@
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543if(date==null){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543if(date==null||field==0){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=(Date)date.clone();
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=truncate(date,field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=(Date)date.getTime();
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=newDate(field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=getDate(field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=getChronology().dayOfMonth().set(getMillis(),field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=getChronology().dayOfMonth().get(field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543if(date==null||field==Integer.MIN_VALUE){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543if(date==null||field==-1){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543if(date==null||field<0){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543int[][]fields=getFields();
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java543Datedate=newDate(field.getTime());

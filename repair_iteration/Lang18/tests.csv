@@ -1,0 +1,16 @@
+name,outcome,runtime,stacktrace
+org.apache.commons.lang3.time.FastDateFormatTest#testSimpleDate,PASS,351167065,
+org.apache.commons.lang3.time.FastDateFormatTest#testShortDateStyleWithLocales,PASS,56737427,
+org.apache.commons.lang3.time.FastDateFormatTest#testMilleniumBug,PASS,21690870,
+org.apache.commons.lang3.time.FastDateFormatTest#test_getInstance,PASS,35678673,
+org.apache.commons.lang3.time.FastDateFormatTest#testLowYearPadding,PASS,24764569,
+org.apache.commons.lang3.time.FastDateFormatTest#testLang303,PASS,254480740,
+org.apache.commons.lang3.time.FastDateFormatTest#testLang538,PASS,28063684,
+org.apache.commons.lang3.time.FastDateFormatTest#testLang645,PASS,29782772,
+org.apache.commons.lang3.time.FastDateFormatTest#test_getInstance_String_TimeZone_Locale,PASS,35157738,
+org.apache.commons.lang3.time.FastDateFormatTest#test_changeDefault_Locale_DateInstance,PASS,32603844,
+org.apache.commons.lang3.time.FastDateFormatTest#test_getInstance_String,PASS,35502817,
+org.apache.commons.lang3.time.FastDateFormatTest#test_getInstance_String_TimeZone,PASS,16708020,
+org.apache.commons.lang3.time.FastDateFormatTest#test_getInstance_String_Locale,PASS,19094883,
+org.apache.commons.lang3.time.FastDateFormatTest#testFormat,FAIL,58963235,junit.framework.ComparisonFailure: expected:<AD AD AD AD 2003 [2003 03 20]03 January Jan 01 1 ...> but was:<AD AD AD AD 2003 [03 03 ]03 January Jan 01 1 ...> at junit.framework.Assert.assertEquals(Assert.java:100) at junit.framework.Assert.assertEquals(Assert.java:107) at junit.framework.TestCase.assertEquals(TestCase.java:269) at org.apache.commons.lang3.time.FastDateFormatTest.testFormat(FastDateFormatTest.java:220) at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.lang.reflect.Method.invoke(Method.java:498) at junit.framework.TestCase.runTest(TestCase.java:176) at junit.framework.TestCase.runBare(TestCase.java:141) at junit.framework.TestResult$1.protect(TestResult.java:122) at junit.framework.TestResult.runProtected(TestResult.java:142) at junit.framework.TestResult.run(TestResult.java:125) at junit.framework.TestCase.run(TestCase.java:129) at junit.framework.TestSuite.runTest(TestSuite.java:252) at junit.framework.TestSuite.run(TestSuite.java:247) at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:86) at org.junit.runner.JUnitCore.run(JUnitCore.java:137) at org.junit.runner.JUnitCore.run(JUnitCore.java:115) at com.gzoltar.internal.core.test.junit.JUnitTestTask.call(JUnitTestTask.java:67) at com.gzoltar.internal.core.test.junit.JUnitTestTask.call(JUnitTestTask.java:27) at java.util.concurrent.FutureTask.run(FutureTask.java:266) at java.lang.Thread.run(Thread.java:750)
+org.apache.commons.lang3.time.FastDateFormatTest#test_changeDefault_Locale_DateTimeInstance,PASS,31096097,

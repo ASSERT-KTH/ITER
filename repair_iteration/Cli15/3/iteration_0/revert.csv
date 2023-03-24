@@ -1,0 +1,15 @@
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList==null){
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList!=null){
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82Valuevalue=(Value)this.defaultValues.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82Valuevalue=(Value)valueList.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82Valuevalue=(Value)valueList.get(0);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82Valuevalue=(Value)this.defaultSwitches.get(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82Valuevalue=(Value)this.defaultValues.get(0);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList!=null){valueList=newArrayList();}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList==null){valueList=newArrayList();}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList!=null){defaultValues.add(option);}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList==null||valueList.size()==0){
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList!=null){for(Optionvalue:valueList.values()){valueList.add(value);}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList!=null){for(Optionoption:valueList.values()){valueList.add(option);}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java82if(valueList!=null){for(Optionvalue:options.values()){valueList.add(value);}

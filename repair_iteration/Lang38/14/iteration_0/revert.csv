@@ -1,0 +1,15 @@
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832returnformat(calendar,newStringBuffer(mMaxLengthEstimate)).toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832returnformat(calendar,newStringBuffer(mField)).toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832returnthis.format(calendar,newStringBuffer(mMaxLengthEstimate)).toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832returnformat(calendar,newStringBuffer(mSize)).toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832StringBuffermMaxLengthEstimate=newStringBuffer(mMaxLengthEstimate);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832StringBuffermMaxLengthEstimate=newStringBuffer(mMaxLengthEstimate).toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832StringBuffermMaxLengthEstimate=newStringBuffer(mMaxLengthEstimate.length());
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832StringBufferbuf=newStringBuffer(mMaxLengthEstimate);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832StringBuffermMaxLengthEstimate=newStringBuffer();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832StringBuffermMaxLengthEstimate=newStringBuffer(mField.length());
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832returnformat(calendar,newStringBuffer(mMinLengthEstimate)).toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832if(mMaxLengthEstimate==null){mMaxLengthEstimate=calendar.get(mMaxLengthEstimate);mMaxLengthEstimate=calendar.get(mMaxLengthEstimate);}
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832if(mMaxLengthEstimate==null){mMaxLengthEstimate=Calendar.getInstance(mField);mMaxLengthEstimate=calendar.get(mMaxLengthEstimate);}
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java832returnformat(calendar,newStringBuffer(mMaxLengthEstimate+1)).toString();

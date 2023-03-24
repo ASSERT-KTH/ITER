@@ -1,0 +1,16 @@
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)=='\''){
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)=='''){
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1>=length&&pattern.charAt(i+1)=='''){
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624c=pattern.charAt(i);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624c=pattern.charAt(i+1);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624i=pattern.length();
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624inLiteral=!inLiteral;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624c=pattern.charAt(i++);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)!='''){
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624buf.append(''');
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)=='''){buf.append(''');}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)=='''){buf.append(c);}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)=='''){buf.append(''');}else{inLiteral=false;}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length&&pattern.charAt(i+1)=='''){buf.append(''');}else{inLiteral=true;}
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java624if(i+1<length||pattern.charAt(i+1)=='''){

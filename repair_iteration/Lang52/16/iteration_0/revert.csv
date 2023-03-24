@@ -1,0 +1,16 @@
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180intsz=str.length();
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180sz=str.length();
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write("u"+hex(sz));
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write("u00"+hex(sz));
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write("u"+hex(ch));
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180for(inti=0;i<sz;i++){
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180for(inti=0;i<sz.length;i++){
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180for(inti=0;i<sz+1;i++){
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180for(inti=0;i<str.length;i++){
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write("u000"+hex(sz));
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write("u00"+hex(ch));
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write("u000"+hex(ch));
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180charch=str.charAt(0);
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180charch=str.charAt(sz);
+projects/Lang52/src/java/org/apache/commons/lang/StringEscapeUtils.java180out.write('n');

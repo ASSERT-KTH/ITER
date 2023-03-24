@@ -1,0 +1,14 @@
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537}
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537validate();
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537this.skipHeaderRecord=skipHeaderRecord;
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537if(quoteMode!=null){for(inti=0;i<headerComments.length;++i){if(!recordSeparator.equals(headerComments[i])){continue;}
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537if(quoteMode!=null){for(inti=0;i<headerComments.length;i++){if(!recordSeparator.equals(headerComments[i])){continue;}
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537if(!allowMissingColumnNames){thrownewIllegalArgumentException("");}
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537if(!allowMissingColumnNames){this.recordSeparator=ignoreSurroundingSpaces;}
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537System.arraycopy(header,0,this.recordSeparator,header,0,header.length);
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537if(!allowMissingColumnNames){for(inti=0;i<headerComments.length;++i){String[]headerComments=headerComments[i];}
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537this.quoteCharacter=quoteCharacter==null?null:quoteCharacter.clone();
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537this.commentMarker=quoteMode==null?null:quoteMode.clone();
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537this.commentMarker=quoteMode==null?null:quoteMode.toString();
+projects/Csv14/src/main/java/org/apache/commons/csv/CSVFormat.java537this.recordSeparator=toStringArray(recordSeparator);

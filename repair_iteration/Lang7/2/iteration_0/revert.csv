@@ -1,0 +1,14 @@
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486Stringstr=str.substring(0,expPos);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486mant=str.substring(0,expPos);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486Stringstr=str.substring(expPos+1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486Stringstr=str.substring(expPos+1,str.length());
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486Stringstr=str.substring(0,expPos+1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486thrownewNumberFormatException(str+"isnotavalidnumber.");
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486thrownewNumberFormatException("Expectednumber:"+str+"isnotavalidnumber.");
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486thrownewNumberFormatException("expPosisnotavalidnumber.");
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486thrownewNumberFormatException(str+"isnotavalidnumber.",expPos);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486mant=str.substring(expPos+1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486mant=str.substring(expPos+1,str.length());
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486thrownewNumberFormatException(str+",expPosisnotavalidnumber.");
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java486thrownewNumberFormatException(str+",isnotavalidnumber.");

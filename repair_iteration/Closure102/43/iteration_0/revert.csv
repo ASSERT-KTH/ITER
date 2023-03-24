@@ -1,0 +1,17 @@
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Nodec=next.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Nodec=next.getNext();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Nodec=n.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356NodeTraversal.traverse(compiler,n,this);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Nodenext=c.getNext();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Context.reportCodeChange();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356next=c.getNext();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356next=c.getLastChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356next=c.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356next=c.getParent();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356n=c.getNext();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356NodeTraversal.traverse(compiler,n,newScopeTicklingCallback());
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Nodec=n.getNext();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356next=c.next();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356c.removeChild(n);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java356Context.checkState(c.getType()==Token.FUNCTION);

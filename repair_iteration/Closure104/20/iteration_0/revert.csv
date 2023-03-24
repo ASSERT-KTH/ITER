@@ -1,0 +1,17 @@
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=(Set<JSType>)alternates.clone();
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=newHashSet<JSType>();
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=newArrayList<JSType>(alternates.size());
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=newArrayList<JSType>();
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=newHashSet<JSType>(alternates);
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=newArrayList<JSType>(alternates);
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78}
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=Sets.newHashSet();
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=Collections.emptySet();
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=newLinkedList<JSType>();
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78this.alternates=Sets.newHashSet(alternates);
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78System.arraycopy(alternates,0,this.alternates,0,alternates.size());
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78System.arraycopy(alternates,0,this.alternates,0,alternates.length);
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78if(alternates!=null){for(JSTypeRegistry<?>registry:alternates){this.registry=registry;}
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78if(alternates!=null){for(JSTypeRegistry<?>registry:alternates){thrownewIllegalArgumentException("");}
+projects/Closure104/src/com/google/javascript/rhino/jstype/UnionType.java78if(alternates!=null){for(JSTypeRegistry<?>registry:alternates){returnregistry;}

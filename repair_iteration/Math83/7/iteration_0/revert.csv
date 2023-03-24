@@ -1,0 +1,15 @@
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314for(intj=0;j<width-1;j++){
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314for(intj=0;j<height-1;j++){
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314for(intj=0;j<width+1;j++){
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314intwidth=getWidth()-numArtificialVariables-1;
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314intwidth=getRhsOffset();
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314intzIndex=getRhsOffset();
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314intwidth=getWidth()-numArtificialVariables+1;
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314intwidth=getWidth()-numArtificialVariables;
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314for(intj=0;j<width-2;j++){
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314matrix[i][i]=getEntry(i+1,getRhsOffset());
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314matrix[i][i]=getEntry(i+1,getRhsOffset(),i);
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314((LinearObjectiveFunction)matrix).remove(i);
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314intwidth=getRhsOffset()-i;
+projects/Math83/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java314for(intj=0;j<size-1;j++){

@@ -1,0 +1,13 @@
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344writeCentralDirectoryEnd();
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344writeCentralDirectoryEnd(cdLength);
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{offsets.clear();}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{thrownewIOException("");}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{offsets.add(cdLength);}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{offsets.remove(cdLength);}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344writeCentralDirectory(cdLength);
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344writeCentralDirectoryStart();
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{out.close();}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{writeCentralDirectoryFileHeader(cdLength);}
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java344if(cdLength>0){writeCentralDirectoryEnd();}else{writeCentralDirectoryHeader(cdLength);}

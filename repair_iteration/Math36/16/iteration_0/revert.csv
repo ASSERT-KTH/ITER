@@ -1,0 +1,16 @@
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138if(BigInteger.ZERO.compareTo(den)>0){
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138if(den.compareTo(BigInteger.ZERO)>0){
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138if(num.compareTo(den)>0){
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138if(den.compareTo(BigInteger.ZERO)<0){
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138num=num.divide(gcd);den=den.divide(gcd);
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138num=num.divide(gcd);
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138num=num.divide(gcd);numerator=den.divide(gcd);
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138num=num.negate();
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138BigIntegernum=num.negate();
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138if(BigInteger.ZERO.compareTo(den)<0){
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138BigIntegerden=num.negate();
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138BigIntegernum=num.divide(gcd);
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138BigIntegerdenominator=num.negate();
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138BigIntegernum=num.add(den);
+projects/Math36/src/main/java/org/apache/commons/math/fraction/BigFraction.java138BigIntegerden=gcd.negate();

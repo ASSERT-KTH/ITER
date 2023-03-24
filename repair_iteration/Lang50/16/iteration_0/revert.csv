@@ -1,0 +1,11 @@
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471if(locale==null){
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471if(locale!=null){
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Localelocale=Locale.getDefault();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Localelocale=(Locale)cDateTimeInstanceCache.get(locale);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Localelocale=cDateTimeInstanceCache.get(key);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Localelocale=(Locale)cDateTimeInstanceCache.get(key);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Localelocale=(Locale)cDateTimeInstanceCache.get(dateStyle);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471if(locale==null||locale!=null){
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Objectlocale=cDateTimeInstanceCache.get(key);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java471Objectlocale=getInstance(dateStyle,timeStyle,locale);

@@ -1,0 +1,15 @@
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563Stringstr=str.substring(0,str.length()-1);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563intdecPos=str.length();
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563intdecPos=str.lastIndexOf('.');
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563intdecPos=str.indexOf('.');
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563Integerstr=createInteger(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563returncreateInteger(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563returncreateLong(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563returncreateBigDecimal(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563returncreateBigInteger(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563returncreateDouble(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563Integerdec=createInteger(str);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563intdecPos=str.indexOf('.')+1;
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563returncreateInteger(dec);
+projects/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java563Stringstr=str.substring(decPos+1,str.length());

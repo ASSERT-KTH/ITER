@@ -1,0 +1,14 @@
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395returngetNextTarEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395returngetNextEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?null:getNextTarEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?null:currEntry.getNextEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?getNextTarEntry():null;
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?getNextTarEntry():currEntry;
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?currEntry:getNextTarEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?null:currEntry.getNext();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?null:currEntry.getNextTarEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(currEntry==null)?null:newArchiveEntry(currEntry.getValue());
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(TarArchiveEntry)this.currEntry.clone();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395returngetNextArchiveEntry();
+projects/Compress12/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java395return(TarArchiveEntry)currEntry.clone();

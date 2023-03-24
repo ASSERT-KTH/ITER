@@ -1,0 +1,17 @@
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,decompressConcatenated);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,decompressUntilEOF);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,signatureLength)){returnnewGzipCompressorInputStream(in,decompressConcatenated);}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,signatureLength)){returnnewGzipCompressorInputStream(in);}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,signatureLength)){returnnewGzipCompressorInputStream(in,decompressConcatenated);}else{in.mark(signatureLength);}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,signatureLength)||GzipCompressorInputStream.matches(signature,signatureLength)){returnnewGzipCompressorInputStream(in,decompressConcatenated);}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,signatureLength)){returnnewGzipCompressorInputStream(in,decompressConcatenated);}else{in.reset();}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,signatureLength)||GzipCompressorInputStream.matches(signature,signatureLength)){returnnewGzipCompressorInputStream(in);}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,DEFLATE);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,0);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,UntilEOF);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225if(GzipCompressorInputStream.matches(signature,UntilEOF)){returnnewGzipCompressorInputStream(in,decompressConcatenated);}
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,decompressConcatenated,UntilEOF);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,decompressConcatenated,DEFLATE);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,decompressConcatenated,0);
+projects/Compress33/src/main/java/org/apache/commons/compress/compressors/CompressorStreamFactory.java225returnnewGzipCompressorInputStream(in,decompressConcatenated,signatureLength);

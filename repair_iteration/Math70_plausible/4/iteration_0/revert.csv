@@ -1,0 +1,16 @@
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80m=UnivariateRealSolverUtils.midpoint(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80Doublefmin=UnivariateRealSolverUtils.midpoint(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i<maximalIterationCount){min=UnivariateRealSolverUtils.midpoint(min,max);}
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80verifyInterval(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80doublem=UnivariateRealSolverUtils.midpoint(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80validateInterval(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80solve(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80checkInterval(min,max);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i<maximalIterationCount){min=UnivariateRealSolverUtils.midpoint(min,max);max=UnivariateRealSolverUtils.midpoint(min,max);fmin=f.value(max);}
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i<maximalIterationCount){min=UnivariateRealSolverUtils.midpoint(min,max);max=UnivariateRealSolverUtils.midpoint(min,max);m=UnivariateRealSolverUtils.midpoint(min,max);}
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i<maximalIterationCount){m=UnivariateRealSolverUtils.midpoint(min,max);fmin=f.value(max);}
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80verifyInterval(max,min);
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i<maximalIterationCount){m=UnivariateRealSolverUtils.midpoint(min,max);m=UnivariateRealSolverUtils.midpoint(min,max);fm=f.value(max);}
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i<maximalIterationCount){m=UnivariateRealSolverUtils.midpoint(min,max);fm=f.value(max);}
+projects/Math70/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java80if(i>=maximalIterationCount){m=UnivariateRealSolverUtils.midpoint(min,max);fm=f.value(max);}

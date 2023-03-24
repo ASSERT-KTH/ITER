@@ -1,0 +1,13 @@
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628intindex=StringUtils.indexOf(str,"",lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628result.append(str.substring(0,index));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628result.append(StringUtils.defaultString(lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628result.append(StringUtils.defaultString(index),lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628if(index==-1){
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628if(index==0){
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628result.append(StringUtils.indexOf(str,lower),index);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628result.append(StringUtils.indexOf(str,lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628if(index>=-1){
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628if(index<0){
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628if(index>=0){
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java628result.append(StringUtils.indexOf(str,"",lower));

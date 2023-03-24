@@ -1,0 +1,8 @@
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=f.filterStartObject();
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=_exposedContext.filterStartObject();
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=_exposedContext.createChildObjectContext(f,true);
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=_nextTokenWithBuffering(_headContext);
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=_exposedContext.createChildObjectContext(f,false);
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=_nextTokenWithBuffering(_exposedContext);
+projects/JacksonCore21/src/main/java/com/fasterxml/jackson/core/filter/FilteringParserDelegate.java356f=_nextTokenWithBuffering(_headContext.getParent());

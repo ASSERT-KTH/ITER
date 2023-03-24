@@ -1,0 +1,10 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307state.reinitializeBegin(currentT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307state.reinitializeBegin(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307state.reinitializeBegin(previousT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307if(previousT>t){if(state.isForward()){continue;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307if(previousT>t){if(state.isForward()){orderingSign=true;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307if(currentT>tEnd){for(EventStateremaining:state.getRemaining()){returnorderingSign*State.compare(remainingT*currentT,remaining);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307if(currentT>tEnd){for(EventStateremaining:state.getRemaining()){returnorderingSign*State.compare(remainingT,remaining);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java307if(currentT>tEnd){for(EventStateremaining:state.getRemaining()){returnorderingSign*State.compare(remainingT*currentT);}

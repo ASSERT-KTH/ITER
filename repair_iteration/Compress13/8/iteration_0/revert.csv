@@ -1,0 +1,16 @@
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=(ZipArchiveEntry<K,V>)entry.getValue();
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=(ZipArchiveEntry<K,V>)entry.clone();
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=getEntry();
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=getEntry(internalAttributes);
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=(ZipArchiveEntry<K,V>)entry.getKey();
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=newZipArchiveEntry<K,V>(internalAttributes);
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81finalZipArchiveEntry<K,V>entry=getEntry(internalAttributes);
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81ZipArchiveEntry<K,V>entry=(ZipArchiveEntry<K,V>)entry.getValue();internalAttributes=entry.getValue();
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81if(internalAttributes<0){internalAttributes=0;}else{ZipArchiveEntryentry=(ZipArchiveEntry)super.getEntry(internalAttributes);internalAttributes=entry.getValue();}
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81if(internalAttributes<=0){internalAttributes=0;}else{ZipArchiveEntryentry=(ZipArchiveEntry)super.getEntry(internalAttributes);internalAttributes=entry.getValue();}
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81if(internalAttributes<0){internalAttributes=1;}else{ZipArchiveEntryentry=(ZipArchiveEntry)internalAttributes.get(0);internalAttributes=entry.getValue();}
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81if(internalAttributes<0){internalAttributes=0;}else{ZipArchiveEntryentry=newZipArchiveEntry(internalAttributes);internalAttributes=entry.getValue();}
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81Arrays.fill(internalAttributes);
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81if(internalAttributes<0){internalAttributes=0;}else{ZipArchiveEntryentry=(ZipArchiveEntry)super.getEntry();internalAttributes=entry.getValue();}
+projects/Compress13/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java81if(internalAttributes<0){internalAttributes=0;}else{ZipArchiveEntryentry=(ZipArchiveEntry)super.entrySet().iterator().next();internalAttributes=entry.getValue();}

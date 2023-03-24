@@ -1,0 +1,15 @@
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,scope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeUtil.removeChild(parent,n);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273Nodeparent=n.getParent();
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,this);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeUtil.removeChild(n,parent);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,parent);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273Preconditions.checkState(n.getType()==Token.NAME);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,continuations);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,modifiedVar,scope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,parent,continuations);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,newAssign());
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273Nodec=n.getFirstChild();
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273NodeTraversal.traverse(compiler,n,parent,scope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java273Preconditions.checkState(n.getType()==Token.VAR);

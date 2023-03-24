@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+5	[BUG] [BUGGY] if (nextRecord != null) { [FE] NullPointerException [CONTEXT] [BUGGY] if (nextRecord != null) { [BUGGY] headerRecord = nextRecord.values(); } } else { if (this.format.getSkipHeaderRecord()) { this.nextRecord(); } headerRecord = formatHeader; }   [CLASS] CSVParser 1 [METHOD] initializeHeader [RETURN_TYPE] Map  	projects/Csv11/src/main/java/org/apache/commons/csv/CSVParser.java	0.31622776601683794	369	369	1	replace	

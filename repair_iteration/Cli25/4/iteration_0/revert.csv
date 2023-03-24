@@ -1,0 +1,11 @@
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,false);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,true);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444printHelp(pw,width,cmdLineSyntax,header,options,rightPad,descPad,footer,false);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444PrintWriterpw=newPrintWriter(width,cmdLineSyntax);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444}
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444junit.framework.ComparisonFailure:Shortargumentsdidnotsplitasexpected;
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444PrintWriterpw=newPrintWriter(width,cmdLineSyntax);pw.println(header);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444if(optionComparator!=null){Comparatorcomparator=optionComparator.getOptionalComparator();if(comparator!=null){printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,false);}
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java444if(optionComparator!=null){Comparatorcomparator=optionComparator.getOptionComparator();if(comparator!=null){printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,false);}

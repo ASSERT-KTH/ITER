@@ -1,0 +1,17 @@
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327char[]chars=str.toCharArray();
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz==chars.length){if(chars[start]=='0'||chars[start+1]=='x'){returntrue;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz==chars.length){if(chars[start]=='0'&&chars[start+1]=='x'){returntrue;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz==chars.length){if(chars[start]=='0'&&chars[start+1]=='x'){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz==chars.length){if(chars[start]=='0'||chars[start+1]=='x'){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327booleanallowSigns=false;
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327booleanallowSigns=true;
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(chars==null){if(hasExp||hasDecPoint){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(chars==null){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(chars==null){if(!hasExp){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(chars==null){if(hasDecPoint){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz>start+1){if(chars[start]=='0'||chars[start+1]=='x'){returntrue;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz>start+1){if(chars[start]=='0'||chars[start+1]=='x'){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz>start+1){if(chars[start]=='0'&&chars[start+1]=='x'){returnfalse;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327if(sz>start+1){if(chars[start]=='0'&&chars[start+1]=='x'){returntrue;}
+projects/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java1327booleanallowsSigns=true;

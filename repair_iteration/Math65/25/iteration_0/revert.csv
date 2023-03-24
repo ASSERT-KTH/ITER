@@ -1,0 +1,17 @@
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312if(rows<=cols){
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312if(rows==cols){
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312if(cols<=rows){
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312if(rows!=cols){
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312if(rows<cols){
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312intcols=getColumnCount();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=getRowCount();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312intcols=Math.min(getChiSquare(),cols);
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312intcols=getCols();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312intcols=Math.min(getColumnCount(),cols);
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=getRows();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=getColumnsCount();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=Math.min(cols.length,cols);
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=getColumnCount();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=getIterations();
+projects/Math65/src/main/java/org/apache/commons/math/optimization/general/AbstractLeastSquaresOptimizer.java312introws=Math.min(getRows(),cols);

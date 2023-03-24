@@ -1,0 +1,14 @@
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231double[]preMultiplied=values[i]-getMeans()[i];
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]-getMeans()[i];
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231double[]preMultiplied=values[i]-getMeans()[i].preMultiply(centered);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]/getMeans()[i];
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]-getMean();
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]-getValues()[i];
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i].doubleValue();
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]*getMeans().length;
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]*getMeans()[i];
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231centered[i]=values[i]-getMeanValues()[i];
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231double[]values=centered.getValues();
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231double[]values=getMeans();
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java231double[]values=getMeans().toArray(centered);

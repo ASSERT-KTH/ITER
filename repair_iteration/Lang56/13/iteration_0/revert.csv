@@ -1,0 +1,17 @@
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mTimeZone=TimeZone.getDefault();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547Localelocale=Locale.getDefault();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mTimeZoneForced=TimeZone.getDefault();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547Patternpattern=Pattern.compile(mPattern);
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547Patternpattern=Pattern.compile(mPattern,timeZone);
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547timeZone=TimeZone.getDefault();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547timeZone=TimeZone.getInstance();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547timeZone=TimeZone.getTimeZone(pattern);
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547timeZone=TimeZone.getInstance(pattern);
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mStandard=TimeZone.getDefault();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mPattern=Pattern.compile(mPattern,pattern);
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547timeZone=DateTimeZone.getDefault();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547timeZone=TimeZone.getTimeZone(null);
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mPattern=pattern.toString();
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mPattern=Pattern.compile("u000");
+projects/Lang56/src/java/org/apache/commons/lang/time/FastDateFormat.java547mPattern=Pattern.compile("%s");

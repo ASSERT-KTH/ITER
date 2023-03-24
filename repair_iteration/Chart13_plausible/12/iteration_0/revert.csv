@@ -1,0 +1,10 @@
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295RectangleConstraintc2=newRectangleConstraint(0.0,newRange(Math.min(w[2],width),LengthConstraintType.RANGE,0.0,null,LengthConstraintType.NONE);
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295RectangleConstraintc2=newRectangleConstraint(0.0,newRange(Math.min(w[2],maxW),LengthConstraintType.RANGE,0.0,null,LengthConstraintType.NONE);
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295RectangleConstraintc2=newRectangleConstraint(0.0,newRange(Math.min(w[2],width),LengthConstraintType.NONE,0.0,null,LengthConstraintType.NONE);
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295if(this.leftBlock!=null){
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295RectangleConstraintc2=newRectangleConstraint(0.0,newRange(Math.min(w[2],maxW),maxW,LengthConstraintType.RANGE,0.0,null,LengthConstraintType.NONE);
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295Size2Dsize=this.leftBlock.arrange(g2,c2);
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295if(this.rightBlock!=null){Size2Dsize=this.rightBlock.arrange(g2,c2);w[2]=size.width;h[2]=size.height;}
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295if(this.rightBlock!=null){Size2Dsize=this.rightBlock.arrange(g2,c2);w[2]=size.width;h[2]=size.height;}else{RectangleConstraintc3=newRectangleConstraint(0.0,newRange(Math.min(w[2],maxW),
+projects/Chart13/source/org/jfree/chart/block/BorderArrangement.java295if(this.rightBlock!=null){Size2Dsize=this.rightBlock.arrange(g2,c2);w[2]=size.width;h[1]=size.height;}

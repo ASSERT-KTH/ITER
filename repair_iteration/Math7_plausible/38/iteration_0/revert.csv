@@ -1,0 +1,10 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers.add(handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers.clear();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers.add(getStepSize(),handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109addHandler(handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers.add(handler,expandable);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers=(StepHandler)this.statesInitialized.get(handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers=(StepHandler)this.eventsStates.get(handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109stepHandlers.add(newStepHandler(handler));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java109this.eventsStates.add(handler);

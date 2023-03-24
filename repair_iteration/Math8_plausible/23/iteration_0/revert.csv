@@ -1,0 +1,13 @@
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102if(probs!=null){for(inti=0;i<samples.size();i++){finalPair<T,Double>sample=samples.get(i);probs[i]=sample.getValue();}
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102if(probs!=null){for(inti=0;i<samples.size();i++){finalPair<T,Double>sample=samples.get(i);probs[i]=sample.getKey();}
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102if(probs!=null){for(inti=0;i<samples.size();i++){finalPair<T,Double>sample=samples.get(i);probabilities[i]=sample.getValue();}
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102}
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102RandomGeneratorrandomGenerator=newRandomGenerator(singletons.get(i).getValue());
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102RandomGeneratorrandomGenerator=newRandomGenerator(singletons.get(i),probs);randomGenerator.setValue(rng);
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102RandomGeneratorrandomGenerator=newRandomGenerator(singletons.get(i),probs);randomGenerator.addValue(rng);
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102returnnewDouble(singleton.getValue());
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102returnnewDouble(singletons.size());
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102rng.setValue(probs[i]);
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102rng.setValue(probs);
+projects/Math8/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java102rng.addValue(probs);

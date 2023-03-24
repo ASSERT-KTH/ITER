@@ -1,0 +1,17 @@
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247result=Math.max(relativeAccuracy*Math.abs(x1),absoluteAccuracy);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247x1=x0;x2=x0;y0=y1;y1=y2;y2=y0;
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247result=Math.max(relativeAccuracy*Math.abs(x2),absoluteAccuracy);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247doublex1=x0;x2=x0;y0=y1;y1=y2;y2=y0;
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247x1=x0;x2=x0;y0=y1;y1=y2;
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247setResult(x1,i);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247setResult(x1,y1);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247setResult(x1,y0);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247setResult(x1,i+1);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247if(Math.abs(y1)<=functionValueAccuracy){setResult(x1,i);returnresult;}
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247if(Math.abs(y1)<=functionValueAccuracy){setResult(x0,i);returnresult;}
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247x1=x0;y0=x1;y1=y2;y2=y0;
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247inti=Math.max(relativeAccuracy*Math.abs(x1),absoluteAccuracy);
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247x1=x0;x2=x1;y0=y1;y1=y2;y2=y0;
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247x1=x0;y0=x1;y1=y2;y1=y0;
+projects/Math72/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java247setResult(x1,i,y1);

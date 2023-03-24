@@ -1,0 +1,16 @@
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<4?shortWeekdays:weekdays);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<2?shortWeekdays:weekdays);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<3?shortWeekdays:weekdays);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<4?weekdays:shortWeekdays);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<1?shortWeekdays:weekdays);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.DAY_OF_WEEK,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.EAST,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.WEEK_OF_DAY,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.DAY_OF_WEEK,tokenLen);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.HOUR_OF_DAY,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.EXPR_WEEK,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<4?shortWeekdays:weekdays+1);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=newTextField(Calendar.DAY_OF_WEEK,tokenLen<4?shortWeekdays:weekdays,month);
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.WEEKDAY,tokenLen);break;
+projects/Lang18/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java531rule=selectNumberRule(Calendar.WEEK,tokenLen);break;

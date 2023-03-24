@@ -1,0 +1,16 @@
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this(pattern,timeZone,locale);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this(pattern,TimeZone.getDefault(),locale);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105super(pattern,timeZone,locale);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this(pattern,timeZone,null,locale);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this(pattern,timeZone,locale,true);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=pattern;
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=Pattern.compile(pattern,timeZone);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=pattern.trim();
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=pattern,timeZone;
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=Pattern.compile(pattern);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=Pattern.compile(pattern,locale);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105Preconditions.checkNotNull(pattern);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105Preconditions.checkState(pattern==null);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=pattern==null?pattern:"null";
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java105this.pattern=pattern==null?pattern:"";

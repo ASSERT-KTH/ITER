@@ -1,0 +1,14 @@
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612Dfpresult=newInstance(this);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612Dfpresult=newInstance(x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612Dfpresult=newDfp(x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612finalint[]nans=(int[])x.clone();
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612finalint[]nans=newint[x+1];
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612finalint[]nans=getNaN();
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612Dfpresult=newInstance(this,x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612if(x<0){finalint[]nans=newint[x];for(inti=0;i<nans;++i){result.add(nans[i]);}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612if(x<0){finalint[]nans=newint[x];for(inti=0;i<nans.length;++i){result.add(nans[i]);}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612if(x<0){finalint[]nans=newint[x];for(inti=0;i<nans;i++){result.add(nans[i]);}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612if(x<0){finalint[]nans=getNaN().multiply(x);if(nans==0){returnthis;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612if(x<0){finalint[]nans=getNaN().multiply(x);if(nans!=0){returnthis;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1612intnans=Math.min(x,MAX_EXP);

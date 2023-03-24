@@ -1,0 +1,11 @@
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result.sign=(byte)(sign*x.sign);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result=newInstance(x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result.sign=(byte)(nans*x.sign);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result=newInstance(this);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result=dotrap(DfpField.FLAG_INVALID,x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result=dotrap(DfpField.FLAG_INVALID,this);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532result=dotrap(DfpField.FLAG_INVALID);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532if(x.nans==FINITE){field.setIEEEFlagsBits(DfpField.FLAG_INVALID);returnresult;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532if(x.nans==FINITE){field.setIEEEFlagsBits(DfpField.FLAG_INVALID);result=newInstance(this);}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1532if(x.nans==FINITE){field.setIEEEFlagsBits(DfpField.FLAG_INVALID);}

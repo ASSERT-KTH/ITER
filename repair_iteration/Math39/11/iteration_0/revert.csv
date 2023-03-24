@@ -1,0 +1,14 @@
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]yDotK=newdouble[stages][y.length];
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]b=b.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]a=b.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]yDotK=newdouble[c.length][y.length];
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]yDotK=newdouble[c.length+1][y.length];
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finalRungeKuttaStepInterpolatorinterpolator=(RungeKuttaStepInterpolator)prototype.copy();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finalRungeKuttaStepInterpolatorinterpolator=(RungeKuttaStepInterpolator)prototype.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]yDotK=(double[][])stages.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]yDotK=newdouble[stages][y.length+1];
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]a=c.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]b=c.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finaldouble[][]yDotK=y.clone();
+projects/Math39/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java207finalRungeKuttaStepInterpolatorinterpolator=(RungeKuttaStepInterpolator)protocol.clone();

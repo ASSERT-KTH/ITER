@@ -1,0 +1,13 @@
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542if(timeZone==null){
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542if(timeZone!=null){
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mTimeZoneForced=(timeZone!=null);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mTimeZoneForced=(timeZone==null);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542Localelocale=Locale.getDefault();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mStandard=Pattern.compile(mPattern);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mTimeZoneForced=TimeZone.getDefault();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mTimeZoneForced=(timeZone==null)?null:timeZone.getDefault();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mTimeZoneForced=(timeZone==null)?null:TimeZone.getDefault();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mPattern=pattern.toLowerCase();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mPattern=pattern.toString();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java542mPattern=Pattern.compile(mPattern);

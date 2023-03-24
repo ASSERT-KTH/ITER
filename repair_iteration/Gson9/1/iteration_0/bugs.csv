@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+1	[BUG] [BUGGY] out.write(value ? "true" : "false"); [FE] NullPointerException [CONTEXT] [BUGGY] out.write(value ? "true" : "false"); [BUGGY] return this; } [CLASS] JsonWriter [METHOD] value [RETURN_TYPE] JsonWriter  boolean value 	projects/Gson9/gson/src/main/java/com/google/gson/stream/JsonWriter.java	0.35355339059327373	467	467	1	replace	

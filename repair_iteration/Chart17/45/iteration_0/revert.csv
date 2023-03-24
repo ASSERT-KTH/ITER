@@ -1,0 +1,11 @@
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(this.data!=null){for(inti=0;i<this.data.size();i++){timePeriodClass.removeChangeListener(this);}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746this.data.remove(0);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(this.data!=null){for(inti=0;i<this.data.size();i++){removeAgedItems(i,data.get(i));}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(removed&&notify){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746booleannotify=this.data.remove(0);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746intrange=getRangeIndex(latest);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(removed&&update){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(removed&&this.data.size()>latest){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(this.data!=null){for(inti=0;i<this.data.size();i++){TimeSeriesDataseries=(TimeSeries)this.data.get(i);if(series.getItemCount()>latest){fireSeriesChanged();}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java746if(this.data!=null){for(inti=0;i<this.data.size();i++){TimeSeriesDataseries=(TimeSeries)this.data.get(i);if(series.getItemCount(1)>latest){removed

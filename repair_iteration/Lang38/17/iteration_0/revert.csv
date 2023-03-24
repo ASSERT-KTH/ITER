@@ -1,0 +1,17 @@
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887StringBufferbuf=newStringBuffer(mRules.length);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Calendarcalendar=Calendar.getInstance();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887StringBufferbuf=newStringBuffer(mRules.length+1);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887StringBufferbuf=calendar.append(mRules[0].appendTo(buf));
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887StringBufferbuf=newStringBuffer();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=mRules;
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=mRules.toArray(newRule[mRules.size()]);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=newRule[mRules.length];
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=calendar.getRules();
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=newRule[mRules.size()];
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Calendarcalendar=Calendar.getInstance(calendar);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887intlen=mRules.length;
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=this.mRules;
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Rule[]rules=mRules==null?rules:newRule[mRules.length];
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887StringBufferbuf=newStringBuffer(mFiles.length);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java887Calendarcalendar=Calendar.getInstance(mTimeZone);

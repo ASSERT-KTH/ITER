@@ -1,0 +1,15 @@
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode;
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnnewBlock;
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.cloneTree();
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224elseif(irNode.getType()==Token.NAME){returnnewBlock;}elseif(irNode.getType()==Token.EXPR_RESULT){returnnewBlock;}
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224elseif(irNode.getType()==Token.VAR){returnnewBlock;}elseif(irNode.getType()==Token.EXPR_RESULT){returnnewBlock;}
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.getType()==Token.EXPR_RESULT;
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224elseif(irNode.getType()==Token.VAR){returnnewBlock;}elseif(irNode.getType()==Token.FUNCTION){returnnewBlock;}
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224elseif(irNode.getType()==Token.NAME){returnnewBlock;}elseif(irNode.getType()==Token.FUNCTION){returnnewBlock;}
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnnode;
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.getType()==Token.EXPR_RESERVED;
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.getType()==Token.BLOCK;
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.getFirstChild();
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.getParent();
+projects/Closure42/src/com/google/javascript/jscomp/parsing/IRFactory.java224returnirNode.removeFirstChild();

@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+29	[BUG] [BUGGY] hdrMap.put(header, Integer.valueOf(i)); [FE] NullPointerException [CONTEXT] [BUGGY] hdrMap.put(header, Integer.valueOf(i)); [BUGGY] } } } return hdrMap; } [CLASS] CSVParser 1 [METHOD] initializeHeader [RETURN_TYPE] Map  	projects/Csv11/src/main/java/org/apache/commons/csv/CSVParser.java	0.2672612419124244	389	389	1	replace	

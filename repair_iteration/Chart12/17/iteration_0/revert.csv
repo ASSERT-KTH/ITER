@@ -1,0 +1,9 @@
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157this.sectionPaints=newHashMap();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157this.sectionPaints.clear();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157PiePlotpiePlot=(PiePlot)dataset.clone();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157this.sectionPaints=newLinkedHashMap();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157this.sectionPaints=newTreeMap();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157PiePlotpiePlot=(PiePlot)dataset.getPlot();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157this.sectionPaints.put(seriesTitle,piePlot);
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java157PiePlotpiePlot=newPiePlot(dataset.getPlot());

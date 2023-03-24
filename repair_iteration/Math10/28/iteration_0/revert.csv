@@ -1,0 +1,13 @@
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351n=n*q[n-1];
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351n=n*q[n-2];
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351n=Math.max(v,n);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(k>2){
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(k>1){
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(k>0){
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(v>0){for(intk=n-1;k>=0;k-=2){v=v*x2+q[k];}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(v>0){for(intk=n-1;k>=0;k-=2){q[k-1]=v*x2+q[k];}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(v>0){for(intk=n-1;k>=0;k-=2){v=v*x2+q[k-3];}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(v>0){for(intk=n-1;k>=0;k-=2){v*=x2+q[k];}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(v>0){for(intk=n-1;k>=0;k-=2){v*=x2;}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1351if(v>0){

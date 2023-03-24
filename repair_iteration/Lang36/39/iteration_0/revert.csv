@@ -1,0 +1,17 @@
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>-1){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(dec==null){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(decPos>-1){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(dec!=null){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(0,decPos);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(0,expPos);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.lastIndexOf('.');
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484IntegerexpPos=str.indexOf('.');
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.indexOf('.')+1;
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(decPos+1);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484mant=str.substring(decPos+1,expPos);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484IntegerexpPos=str.indexOf('')+1;
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>-1&&expPos<str.length()-1){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>-1&&expPos<str.length()){
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484intexpPos=str.indexOf('.');
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java484if(expPos>0){

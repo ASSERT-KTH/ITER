@@ -1,0 +1,13 @@
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706roundUp=offset>((max-min)/2);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706roundUp=offset>((max-min)/2+1);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706offset=val.get(fields[i][0]);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706val.set(fields[i][0],val.get(fields[i][0])-offset);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706intmax=val.get(fields[i][0]);offset=val.get(fields[i][0])-min;
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706val.set(fields[i][0],val.get(fields[i][0])-min);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706intmax=val.get(fields[i][0]);offset=val.get(fields[i][0])-max;
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706intmax=val.getActualMaximum(fields[i][0]);offset=val.get(fields[i][0])-max;
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706offset=val.get(fields[i][0])-min;
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706intmax=val.getActualMaximum(fields[i][0]);offset=val.get(fields[i][0])-min;
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706roundUp=offset+((max-min)/2);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java706intmax=val.getActualMaximum(fields[i][0]);

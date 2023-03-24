@@ -1,0 +1,16 @@
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184StringclassName=getShortClassName(className);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>className=className.toLowerCase();
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>className=className.getRawClass();
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184StringclassName=getClassName(className);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>className=className.replace('','/');
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184if(className==null){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184if(className==null||className.length()==0){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184if(className==null||className!=null){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184if(className==null){returnStringUtils.EMPTY;}
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>primitive=getPrimitive(className);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>primitive=getReverse(className);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184if(className==null||ClassUtils.isStatic(className)){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>className=className.trim();
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184char[]className=className.toCharArray();
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java184Class<?>className=className.substring(1);

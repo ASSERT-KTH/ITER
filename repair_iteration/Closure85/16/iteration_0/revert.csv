@@ -1,0 +1,17 @@
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109tryRemoveUnconditionalBranching(n);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109if(removeNoOpStatements&&!NodeUtil.mayHaveSideEffects(n)){tryRemoveUnconditionalBranching(n);}
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109tryRemoveUnconditionalBranching(t,n);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109if(removeNoOpStatements&&!NodeUtil.mayHaveSideEffects(n)){tryRemoveUnconditionalBranching(n);}else{removeDeadExprStatementSafely(n);}
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109if(removeNoOpStatements&&!NodeUtil.mayHaveSideEffects(parent)){tryRemoveUnconditionalBranching(n);}
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109if(removeNoOpStatements&&!NodeUtil.mayHaveSideEffects(n)){tryRemoveUnconditionalBranching(n);}else{return;}
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109if(removeNoOpStatements&&!NodeUtil.mayHaveSideEffects(gNode)){tryRemoveUnconditionalBranching(n);}
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109if(removeNoOpStatements&&!NodeUtil.mayHaveSideEffects(n)){tryRemoveUnconditionalBranching(n);}else{removeDeadExprStatementSafely(gNode);}
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109tryRemoveUnconditionalBranching(gNode);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109tryRemoveUnconditionalBranching(t);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109tryRemoveDeadExprStatement(n);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109removeDeadExprStatementSafely(n);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109n.removeChild(parent);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109tryRemoveUnconditionalBranching(curCfg);
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109t.getCompiler().reportCodeChange();
+projects/Closure85/src/com/google/javascript/jscomp/UnreachableCodeElimination.java109n.removeChild(curCfg);

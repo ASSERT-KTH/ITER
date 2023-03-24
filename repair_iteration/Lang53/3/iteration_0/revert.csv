@@ -1,0 +1,15 @@
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437if(date==null){
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437if(date==null||field==0){
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=getChronology().round(field);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437int[][]fields=getFields();
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=(Date)this.fields.get(field);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=newDate(field);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=getChronology().round(date,field);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=(Date)getChronology().round(field);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=newDate(field.getTime());
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437if(date==null||field==Integer.MIN_VALUE){
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437if(date==null||field==-1){
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=Calendar.getInstance();
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437Datedate=getDate(field);
+projects/Lang53/src/java/org/apache/commons/lang/time/DateUtils.java437if(date==null||field<0){

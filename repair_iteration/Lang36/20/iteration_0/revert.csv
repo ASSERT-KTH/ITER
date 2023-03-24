@@ -1,0 +1,12 @@
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557intdecPos=str.length();
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557Stringdec=str.substring(decPos+1,str.length());
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557Integerdec=str.substring(decPos+1,str.length());
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557Stringdec=str.substring(0,str.length()-1);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557intdecPos=str.lastIndexOf('.');
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557NumberFormatExceptione=createNumber(str,dec);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557NumberFormatExceptione=createNumber(str);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557NumberFormatExceptione=newNumberFormatException(dec);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557NumberFormatExceptione=newNumberFormatException(str,dec);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557Integerdec=str.substring(decPos+1);
+projects/Lang36/src/java/org/apache/commons/lang3/math/NumberUtils.java557intdecPos=str.indexOf('.');

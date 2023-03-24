@@ -1,0 +1,17 @@
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615typeArgs=getTypeArguments(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615typeVarAssigns=getTypeArguments(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615typeParams=getTypeParameters(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615if(typeVarAssigns==null){typeVarAssigns=getTypeArguments(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);}
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615if(typeVarAssigns==null){typeVarAssigns=getTypeArguments(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);}else{typeVarAssigns=newHashMap<TypeVariable<
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}else{
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}elseif(ownerTypeinstanceofTypeVariable<?>){
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}elseif(!typeVarAssigns.contains(parameterizedOwnerType)){
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}elseif(typeVarAssigns==null){
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}elseif(ownerTypeinstanceofTypeVariable<?>||ownerTypeinstanceofTypeVariable<?>){
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615typeArg=getTypeArguments(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615if(typeVarAssigns==null){typeVarAssigns=newHashMap<TypeVariable<?>,Type>();}
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}elseif(ownerTypeinstanceofClass<?>){
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615}elseif(!typeVarAssigns.contains(parameterizedType)){
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615Type[]subtypeVarAssigns=getTypeArguments(parameterizedOwnerType,getRawType(parameterizedOwnerType),subtypeVarAssigns);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java615if(typeVarAssigns==null){typeVarAssigns=newHashMap<TypeVariable<?>();}

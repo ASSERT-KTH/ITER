@@ -1,0 +1,12 @@
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+slackVar++]=1;//slack}elseif(constraint.getRelationship()==Relationship.GEQ){
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+slackVar++]=-1;//slack}elseif(constraint.getRelationship()==Relationship.LEQ){
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+height++]=1;//slack}elseif(constraint.getRelationship()==Relationship.LEQ){
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+slackVar++]=1;//slack}elseif(constraint.getRelationship()==Relationship.LEQ){
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+slackVar++]=1;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getArtificialVariableOffset()+slackVar++]=1;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+slackVar++]=-1;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getArtificialVariableOffset()+slackVar++]=-1;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVar()+slackVar++]=1;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVar()+slackVar++]=-1;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java170matrix[row][getSlackVariableOffset()+1]=-1;//slack}elseif(constraint.getRelationship()==Relationship.LEQ){

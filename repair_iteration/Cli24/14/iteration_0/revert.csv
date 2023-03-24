@@ -1,0 +1,16 @@
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=DEFAULT_ARG_NAME;
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=null;
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=NO_ARG_NAME;
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=DEFAULT_OBJECT_NAME;
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128this.defaultArgName=defaultArgName;
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName.equals("")){defaultArgName=null;}
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName.equals("")){defaultArgName=getDefaultArgName();}
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName!=null){defaultArgName=getDefaultArgName();}
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName==null){defaultArgName=getDefaultArgName();}
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=this.defaultArgName;
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128Validate.notNull(defaultArgName);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128Preconditions.checkArgument(!defaultArgName.equals(""));
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128Preconditions.checkArgument(defaultArgName==null);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128Preconditions.checkArgument(defaultArgName!=null);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=getDefaultArgName();

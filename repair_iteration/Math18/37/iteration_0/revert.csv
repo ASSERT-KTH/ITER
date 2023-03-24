@@ -1,0 +1,11 @@
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384arxk=xmean.add(BD.multiply(arz.getColumnMatrix(k)).scalarMultiply(sigma));//m+sig*Normal(0,C)}else{
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384arxk=xmean.add(times(diagD,arz.getColumnMatrix(k)).scalarMultiply(sigma));
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384Arxk=xmean.add(times(diagD,arz.getColumnMatrix(k)).scalarMultiply(sigma));
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384Fitfunfitfun=Fitfun.getInstance();
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384Fitfunfitfun=Fitfun.getInstance(dimension);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384Fitfunfitfun=Fitfun.getFunction(i);
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384sig=xmean.add(times(diagD,arz.getRowMatrix(k)));
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384sig=xmean.add(times(diagD,arz.getRowMatrix(i)));
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384sig=xmean.add(times(diagD,arz.getDiagC()));
+projects/Math18/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java384sig=xmean.add(times(diagD,arz.getColumnMatrix(k)).scalarMultiply(sigma));

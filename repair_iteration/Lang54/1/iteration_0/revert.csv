@@ -1,0 +1,13 @@
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){thrownewIllegalArgumentException("Invalidlocaleformat:"+str);}
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){returnnewLocale(str.substring(0,2),str.substring(3,5),str.substring(6));}
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){returnnewLocale(str.substring(0,2),str.substring(3,5),str.substring(5));}
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){returnnewLocale(str.substring(0,2),str.substring(3,5),str.substring(3));}
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116thrownewIllegalArgumentException("Invalidlocaleformat:"+str);
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116thrownewIllegalArgumentException("Invalidlocaleformat:"+str.substring(2));
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116Throwables.thrownewIllegalArgumentException("Invalidlocaleformat:"+str);
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116thrownewIllegalArgumentException("Invalidlocaleformat:"+str.substring(1));
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){returnnewLocale(str.substring(0,2),str.substring(3,6),str.substring(6));}
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116if(ch3<'A'||ch3>'Z'||ch4<'A'||ch4>'Z'){returnnewLocale(str.substring(0,2),str.substring(3,5));}
+projects/Lang54/src/java/org/apache/commons/lang/LocaleUtils.java116thrownewIllegalArgumentException("Invalidlocaleformat:'"+str);

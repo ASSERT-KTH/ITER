@@ -1,0 +1,13 @@
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(buffer!=null){buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(buffer==null){buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(initialCapacity<=0){thrownewIllegalArgumentException("");}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112buffer[initialCapacity]=Character.toLowerCase(buffer,0,initialCapacity);
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(initialCapacity<=0){buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(initialCapacity<=0){buffer=newchar[initialCapacity];}else{buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(buffer!=null){buffer=newchar[initialCapacity];}else{buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112}elseif(initialCapacity<=size){buffer=newchar[initialCapacity];buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(buffer==null){buffer=newchar[initialCapacity];}else{buffer=newchar[initialCapacity];}
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112System.arraycopy(buffer,0,buffer,0,initialCapacity);
+projects/Lang59/src/java/org/apache/commons/lang/text/StrBuilder.java112if(buffer!=null){buffer=newchar[initialCapacity];}else{buffer.append('n');}

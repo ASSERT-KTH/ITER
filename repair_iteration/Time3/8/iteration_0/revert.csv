@@ -1,0 +1,10 @@
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474instant=iInstant.getMillis();
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474iInstant=iField.withMillis(instant);
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474instant=iInstant.withMillis(instant);
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474}
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474setMillis(getChronology().millisOfSecond().set(getMillis(),instant));
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474setMillis(getChronology().millisOfDay().set(getMillis(),instant));
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474iInstant=iField.getInstant(instant);
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474instant=iRoundingField.roundHalfEven(instant);break;
+projects/Time3/src/main/java/org/joda/time/MutableDateTime.java474instant=iRoundingField.roundHalfEven(instant);

@@ -1,0 +1,17 @@
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if((x.nans==INFINITE&&nans==FINITE&&mant[mant.length-1]==0)||(nans==INFINITE&&x.nans==FINITE&&x.mant[mant.length-1]==0)){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if((nans==INFINITE&&nans==FINITE)||(nans==INFINITE&&x.nans==FINITE&&x.mant[mant.length-1]==0)){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if((nans==INFINITE&&nans==FINITE&&x.mant[mant.length-1]==0)||(nans==INFINITE&&x.nans==FINITE&&x.mant[mant.length-1]==0)){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536result.nans=QNAN;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536result.nans=x.nans;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536x.nans=rsign;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if(x.nans==FINITE&&mant[mant.length-1]==0)||(nans==INFINITE&&x.nans==FINITE&&x.mant[mant.length-1]==0)){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if(x.nans==FINITE&&mant[mant.length-1]==0)||(nans==FINITE&&x.nans==FINITE&&x.mant[mant.length-1]==0)){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536result=dotrap(DfpField.FLAG_INVALID,x);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536result=dotrap(DfpField.FLAG_INVALID,x,null);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536result=dotrap(DfpField.FLAG_INVALID,x,0);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if(x.nans==FINITE&&mant[mant.length-1]==0){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536if(x.nans==FINITE&&mant[mant.length-1]!=0){
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536x.sign=(byte)(sign*x.sign);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536x.nans=QNAN;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1536x.sign=(byte)(sign*DfpField.FLAG_INVALID);

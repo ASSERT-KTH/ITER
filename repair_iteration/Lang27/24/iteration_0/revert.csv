@@ -1,0 +1,11 @@
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556intexpPos=str.length();
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556IntegerexpPos=str.substring(0,str.length()-1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556intexpPos=str.lastIndexOf('.');
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556intexpPos=str.indexOf('.');
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556IntegerexpPos=str.indexOf('.');
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556if(expPos>-1&&expPos<str.length()-1){
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556if(expPos>-1&&expPos<str.length()){
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556IntegerexpPos=createInteger(str);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556intexpPos=str.indexOf('.')+1;
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java556if(expPos>0&&expPos<str.length()-1){

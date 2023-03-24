@@ -1,0 +1,14 @@
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624buff.append("-").append(option.getOpt());
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624buff.append("-").append(option.getLongOpt());
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.getOpt()!=null){buff.append("-").append(option.getOpt());}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624append("-").append(option.getOpt());
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.getOpt()!=null){buff.append("<").append(option.getOpt());}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624buff.append("<").append(option.getOpt());
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.hasOpt()){buff.append("-").append(option.getOpt());}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.hasOpt()&&option.getOpt()!=null){buff.append("<").append(option.getOpt());}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.hasOpt()){buff.append("<").append(option.getOpt());}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.hasOpt()&&options.getOpt()!=null){buff.append("<").append(option.getOpt());}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.hasOpt()){buff.append("<").append(option.getOpt());}else{buff.append(">");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624buff.append("n").append(option.getOpt());
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java624if(option.getOpt()!=null){buff.append("<").append(option.getOpt());}else{buff.append(">");}

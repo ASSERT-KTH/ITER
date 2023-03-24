@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+19	[BUG] [BUGGY] break; [FE] NullPointerException [CONTEXT] [BUGGY] break; [BUGGY]  case NONEMPTY_ARRAY: // another in array out.append(','); newline(); break; case DANGLING_NAME: // value for name out.append(separator); replaceTop(NONEMPTY_OBJECT); break; [CLASS] JsonWriter [METHOD] beforeValue [RETURN_TYPE] void  	projects/Gson9/gson/src/main/java/com/google/gson/stream/JsonWriter.java	0.2581988897471611	634	634	1	replace	

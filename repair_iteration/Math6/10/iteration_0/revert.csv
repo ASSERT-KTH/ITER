@@ -1,0 +1,12 @@
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374lastResult=fitfun.value(getStartPoint());
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374lastResult=fitfun.next();
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374lastResult=fitfun.value(isMinimize);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374dimension=guess.length;
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374dimension=guess.length-1;
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374lastResult=fitfun.value(guess);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374if(guess!=null){for(inti=0;i<guess.length;++i){addFitness(fitfun[i]);}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374if(guess!=null){if(isActiveCMA){returnfitfun;}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374if(guess!=null){if(isActiveCMA){returnnewPointValuePair(getStartPoint(),isMinimize?getEndPoint():0);}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374if(guess!=null){if(isActiveCMA){returnnewPointValuePair(getStartPoint(),isMinimize?bestValue:-guess);}
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java374if(guess!=null){if(isActiveCMA){returnnewPointValuePair(getStartPoint(),isMinimize?getEndPoint():1);}

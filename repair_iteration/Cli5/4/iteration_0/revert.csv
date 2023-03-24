@@ -1,0 +1,17 @@
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42returnstr.substring(1,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42returnstr.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42returnstr.substring(0,str.length()-1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42if(str.length()==0){returnstr.substring(1,str.length());}
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=Util.stripLeadingHyphens(str);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=(String)this.stripLeadingHyphens.get(str);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=(String)this.stripLeadingHyphens.clone();
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=getStripLeadingHyphens();
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=this.stripLeadingHyphens(str);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=(str==null)?null:str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=(str==null)?null:str.substring(1,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42Stringstr=this.stripLeadingHyphens();
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42returnstr.substring(1,str.length()-1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42if(str!=null){returnstr.substring(0,str.length());}else{returnstr.substring(0,str.length()-1);}
+projects/Cli5/src/java/org/apache/commons/cli/Util.java42if(str.length()==0){returnstr.substring(0,str.length()-1);}else{returnstr.substring(0,str.length()-1);}

@@ -1,0 +1,17 @@
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=0;i<getHeight();i++){matrix[i-1][col++]=table.getEntry(i,j);}
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=0;i<getHeight();i++){matrix[i-1][col++]=column.getEntry(i,j);}
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=0;i<getHeight();i++){matrix[i-1][col++]=columnLabels[i-1][
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=0;i<getHeight();i++){columnLabels[i-1][col++]=matrix[i-1][getWidth()-columnsToDrop.
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=0;i<getHeight();i++){columnLabels[i-1][col++]=matrix[i-1][
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352for(inti=1;i<getHeight();i++){
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352for(inti=0;i<getHeight();i++){
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352for(inti=0;i<getWidth();i++){
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=1;i<getHeight();i++){matrix[i-1][col++]=table.getEntry(i,j);}
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(inti=1;i<getHeight();i++){matrix[i-1][col++]=column.getEntry(i,j);}
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(intj=0;j<getHeight();j++){matrix[i-1][col++]=column.getEntry(j,j);}
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352For(inti=0;i<getHeight();i++){
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(intj=0;j<getHeight();j++){if(!columnsToDrop.contains(j)){matrix[i-1][col++]=column
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(intj=0;j<getHeight();j++){columnLabels.remove((int)columnsToDrop.get(j));}
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(intj=0;j<getHeight();j++){if(!columnsToDrop.contains(j)){matrix[i-1][col++]=table.getEntry(
+projects/Math42/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java352if(columnsToDrop!=null){for(intj=0;j<getHeight();j++){if(!columnsToDrop.contains(j)){matrix[i-1][col++]=table.getEntry

@@ -1,0 +1,13 @@
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612Collection<LegendItem>result=this.dataset.getLegendItems();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612Collection<LegendItem>result=this.dataset.getAllItems();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612Collection<LegendItem>this.dataset=getDataset();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612if(this.dataset==null){
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612if(this.dataset!=null){
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612LegendItemCollectionresult=newLegendItemCollection();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612LegendItemCollectionresult=(LegendItemCollection)this.dataset.get(result);
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612LegendItemCollectionresult=(LegendItemCollection)this.dataset.getValue(n);
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612Iteratoriterator=this.datasets.iterator();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612Iteratoriterator=this.dataset.iterator();
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612Collections.sort(this.datasets);
+projects/Chart15/source/org/jfree/chart/plot/PiePlot.java2612if(this.dataset==null||this.dataset.getKeys()!=null){

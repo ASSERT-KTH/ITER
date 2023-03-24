@@ -1,0 +1,17 @@
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut*MAXIMUM_CACHE_SIZE;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut-1;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnthis.bitsCachedSize;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut&MASKS_SIZE;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut.length;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut&MASKS[count];
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut&Math.max(bitsCachedSize,MAXIMUM_CACHE_SIZE);
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut&Math.max(bitsCachedSize,MAXIMUM_CACHE_SIZE)+1;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut&Math.max(bitsCachedSize,MAXIMUM_CACHE_SIZE));
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut.read(ByteOrder.BYTE_SIZE,MAXIMUM_CACHE_SIZE);
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut<<4&&bitsCachedSize>MAXIMUM_CACHE_SIZE;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut<<4?bitsOut:MAXIMUM_CACHE_SIZE;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut.toByteArray();
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut<<8?bitsOut:MAXIMUM_CACHE_SIZE;
+projects/Compress40/src/main/java/org/apache/commons/compress/utils/BitInputStream.java108returnbitsOut<<4?bitsOut:(bytesCached>MAXIMUM_CACHE_SIZE);

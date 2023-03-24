@@ -1,0 +1,12 @@
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149tmpMatrix.multiplyEntry(row,col,covariances);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149double[][]covariances=covMatEigenvectors.getColumns();
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149tmpMatrix.multiplyEntry(row,col,covariances[col]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149finaldoublefactor=FastMath.sqrt(covMatEigenvalues[row]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149finaldoublefactor=FastMath.sqrt(covMatEigenvalues[row],covariances[row]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149finaldoublefactor=FastMath.sqrt(covMatEigenvalues[row],covarianceMatrixDeterminant);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149double[][]covariances=FastMath.sqrt(covMatEigenvalues[row]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149double[][]covariances=covMatEigenvectors.multiplyEntry(row,col);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149double[][]covariances=covMatEigenvectors.multiplyEntry(row,col,covariances);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149doublefactor=FastMath.sqrt(covMatEigenvalues[row]);
+projects/Math11/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java149double[][]covariances=covMatEigenvectors.toArray();

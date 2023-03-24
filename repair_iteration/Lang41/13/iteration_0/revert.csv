@@ -1,0 +1,16 @@
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className.length()==0){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className.length()==0||className.charAt(className.length()-1)!='/'){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className.length()==0||className.charAt(className.length()-1)!=':'){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intlastDotIdx=className.lastIndexOf(PACKAGE_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187ClassUtils.getShortClassName(className);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intlastDotIdx=className.lastIndexOf(PACKAGE_SEPARATOR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intlastDotIdx=className.lastIndexOf(CLASS_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intlastDotIdx=className.lastIndexOf(PACKAGE_SEPARATOR_CHAR)+1;
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intlastDotIdx=className.lastIndexOf(CLASS_SEPARATOR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className==null||className.length()==0){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className.length()==0||className.endsWith(".class")){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intclassName=className.lastIndexOf(PACKAGE_SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187intlastDotIdx=className.lastIndexOf(SEPARATOR_CHAR);
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className.length()==0||className.charAt(0)!='/'){
+projects/Lang41/src/java/org/apache/commons/lang/ClassUtils.java187if(className.length()==0||className.length()==0){

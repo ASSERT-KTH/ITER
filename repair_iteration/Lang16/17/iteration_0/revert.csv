@@ -1,0 +1,14 @@
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559returncreateInteger(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559returncreateLong(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559returncreateBigDecimal(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559returncreateBigInteger(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559returncreateDouble(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559Stringstr=str.substring(0,str.length()-1);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559intdecPos=str.length();
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559intdecPos=str.lastIndexOf('.');
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559Integerstr=createInteger(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559intdecPos=str.indexOf('.');
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559Integerdec=createInteger(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559intdecPos=str.indexOf('.')+1;
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java559returncreateInteger(dec);

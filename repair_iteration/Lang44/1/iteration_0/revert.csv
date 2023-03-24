@@ -1,0 +1,17 @@
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139if(val==null){
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139if(val==null||val.length()==0){
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139if(val==null||val.equals("null")){
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=getNumberValue(val);
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=(Number)val.clone();
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=getNumber(val);
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=(Number)null;
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=createNumber(val);
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=getNullValue();
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=getValue(val);
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=createNumber(val.toCharArray());
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139if(val==null||val.equals("-")){
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139if(val==null||!val.equals("-")){
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Stringval=val.toLowerCase();
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Stringval=val.trim();
+projects/Lang44/src/java/org/apache/commons/lang/NumberUtils.java139Numberval=newDouble(val.length());

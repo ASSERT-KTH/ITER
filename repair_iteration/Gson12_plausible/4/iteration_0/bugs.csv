@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+7	[BUG] [BUGGY] private String[] pathNames = new String[32]; [FE] ArrayIndexOutOfBoundsException [CONTEXT] [BUGGY] private String[] pathNames = new String[32]; [BUGGY]  [CLASS] JsonTreeReader 1  [VARIABLES] 	projects/Gson12/gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java	1.0	62	62	2	replace	

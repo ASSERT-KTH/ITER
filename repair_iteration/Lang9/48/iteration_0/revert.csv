@@ -1,0 +1,17 @@
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(currentFormatField!=null){if(!patternMatcher.lookingAt()){nextStrategy=null;break;}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142PatternpatternMatcher=patternMatcher.group();
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142PatternpatternMatcher=Pattern.compile(regex.toString());
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(currentFormatField!=null){if(!patternMatcher.lookingAt()||patternMatcher.group()==nextFormatField){nextStrategy=null;break;}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(currentFormatField!=null){if(!patternMatcher.lookingAt()){nextStrategy=null;break;}currentFormatField=patternMatcher.group();}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142currentStrategy=nextStrategy;
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142currentStrategy=getStrategy(nextFormatField);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142currentStrategy=nextFormatField;
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142currentStrategy=getStrategy(currentFormatField);
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142currentStrategy=patternMatcher.group();
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(currentFormatField!=null){if(!patternMatcher.lookingAt()){nextStrategy=null;break;}currentFormatField=getFormat(nextFormatField);}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(currentFormatField!=null){if(!patternMatcher.lookingAt()){patternMatcher=null;break;}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(patternMatcher!=null){patternMatcher.group();nextStrategy=getStrategy(nextFormatField);}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(patternMatcher!=null){PatternpatternMatcher=patternMatcher.group();currentFormatField=patternMatcher.group();}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(patternMatcher!=null){patternMatcher.group();nextFormatField=getStrategy(nextFormatField);}
+projects/Lang9/src/main/java/org/apache/commons/lang3/time/FastDateParser.java142if(patternMatcher!=null){PatternpatternMatcher=patternMatcher.group();nextFormatField=patternMatcher.group();}

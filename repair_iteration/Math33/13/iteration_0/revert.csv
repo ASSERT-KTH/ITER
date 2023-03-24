@@ -1,0 +1,13 @@
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+slackVar++,1);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(0,getSlackVariableOffset()+slackVar++,1);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+slackVar++,-1);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+slackVar++,0);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+slackVar++,2);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+slackVar++,1);//slack}elseif(constraint.getRelationship()==Relationship.GEQ){
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+width++,1);//slack}elseif(constraint.getRelationship()==Relationship.LEQ){
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(row,getSlackVariableOffset()+width++,1);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(0,getSlackVariableOffset()+slackVar++,-1);//slack}elseif(constraint.getRelationship()==Relationship.LEQ){
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(0,getSlackVariableOffset()+slackVar++,0);
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(0,getSlackVariableOffset()+slackVar++,0);//slack}elseif(constraint.getRelationship()==Relationship.LEQ){
+projects/Math33/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java224matrix.setEntry(0,getSlackVariableOffset()+slackVar++,-1);

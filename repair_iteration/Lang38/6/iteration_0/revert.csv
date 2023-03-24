@@ -1,0 +1,10 @@
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=selectNumberRule(Calendar.HOUR,tokenLen);break;
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=selectNumberRule(Calendar.HOUR,tokenLen);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=selectNumberRule(Calendar.HOUR_OF_DAY,tokenLen);break;
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=selectNumberRule(Calendar.HOUR_OF_DAY,tokenLen);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=newTwelveHourField(selectNumberRule(Calendar.HOUR,tokenLen));break;
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=newTwelveHourField(selectNumberRule(Calendar.HOUR_OF_DAY,tokenLen));
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=selectNumberRule(Calendar.HOUR_OF_DAY,tokenLen+1);
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=newTwelveHourField(selectNumberRule(Calendar.HOUR,tokenLen));
+projects/Lang38/src/java/org/apache/commons/lang3/time/FastDateFormat.java633rule=selectNumberRule(Calendar.HOUR_OF_DAY,tokenLen-1);

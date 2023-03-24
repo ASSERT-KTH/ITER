@@ -1,0 +1,9 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325intstepStart=state.evaluateStep(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325state.evaluateStep(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325Statestate=state.evaluateStep(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325occuringEvents.add(state);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325occuringEvents.add(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325occuringEvents.add(event);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325if(state.evaluateStep(interpolator)){return0;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java325if(state.evaluateStep(interpolator)){thrownewIllegalStateException("");}

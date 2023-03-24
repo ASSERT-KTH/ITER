@@ -1,0 +1,17 @@
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f0=f1;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175x0=x0;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175x0=f1;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175x0=x1;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f1=f0;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f0=fx;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f0=f1*fx;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f0=f1+fx;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f0=x0;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f1=fx0;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f1=x0;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175f1=fx;
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175if(f1*fx<0){x0=x1;}
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175if(f1*fx<0){x0=x1;}else{x0=x0;}
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175if(f1*fx<0){x0=x1;}else{break;}
+projects/Math50/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java175if(f1*fx<=0){x0=x1;}else{x0=x0;}

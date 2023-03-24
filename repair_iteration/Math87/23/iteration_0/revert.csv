@@ -1,0 +1,15 @@
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.f=f;
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.f=f.getFunction();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.tableau=newRealMatrixImpl(createTableau(goalType==GoalType.MAXIMIZE));
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.tableau=newRealMatrixImpl(createTableau(goalType==GoalType.DEFAULT));
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.tableau=newRealMatrixImpl(createTableau(goalType==GoalType.LEFT));
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.tableau=newRealMatrixImpl(createTableau(goalType==GoalType.SHORT));
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.tableau=newRealMatrixImpl(createTableau(goalType==GoalType.LEQ));
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.f=f.getFunctions();
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this(f,goalType,constraintToNonNegative,epsilon);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this(f,goalType,constrainToNonNegative,epsilon);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this(f,goalType,constraints,epsilon);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this(f,goalType,null,epsilon);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this(f,goalType,constraints,epsilon,null);
+projects/Math87/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java105this.tableau=newRealMatrixImpl(createTableau(goalType==GoalType.PREFIX));

@@ -1,0 +1,14 @@
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68intpopulationLimit=chromosomes.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68finalintpopulationLimit=chromosomes.size();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68this.chromosomes=newArrayList<Chromosome>(chromosomes.size());
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68chromosomes=newArrayList<Chromosome>();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68chromosomes=Lists.newArrayList();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<=0){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<=0||populationLimit>chromosomes.size()){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<0){
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68this.chromosomes=newArrayList<Chromosome>();
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<=0){thrownewNotPositiveException(LocalizedFormats.POPULATION_LIMIT_NOT_POSITIVE,populationLimit);}
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<=0){thrownewNotPositiveException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE);}
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<=0){thrownewNotPositiveException(LocalizedFormats.POPULATION_LIMIT_NOT_POSITIVE);}
+projects/Math34/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java68if(populationLimit<=0){thrownewNotPositiveException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,populationLimit);}

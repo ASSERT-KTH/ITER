@@ -1,0 +1,16 @@
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=StringUtils.indexOf(str,"",lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=StringUtils.indexOf(str,lower,upper);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=StringUtils.indexOf(str,0,lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=StringUtils.indexOf(str,upper,lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=StringUtils.indexOf(str,lower,1);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(str.substring(0,lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(str.substring(0,index));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(StringUtils.defaultString(lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(StringUtils.indexOf(str,lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(StringUtils.defaultString(str));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(StringUtils.indexOf(lower,"",lower));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=StringUtils.indexOf(str,lower,-1);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627intindex=str.indexOf('',lower);
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627result.append(str.substring(0,upper));
+projects/Lang45/src/java/org/apache/commons/lang/WordUtils.java627Stringstr=str.substring(0,lower);

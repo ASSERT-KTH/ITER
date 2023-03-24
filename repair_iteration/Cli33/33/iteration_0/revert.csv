@@ -1,0 +1,15 @@
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875pos=findWrapPos(text,width,0);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875pos=findWrapPos(text,width,nextLineTabStop);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875pos=findWrapPos(text,width,1);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875pos=findWrapPos(text,width,3);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875pos=findWrapPos(text,width,2);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875if(pos==-1){
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875if(pos==nextLineTabStop){
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875if(nextLineTabStop==-1){
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875sb.append(text);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875sb.append(padding+text.substring(pos).trim());
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875if(pos<=-1){
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875if(pos>-1){
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875sb.append(defaultWidth+text.substring(pos));
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java875sb.append(defaultWidth+text.substring(pos).trim());

@@ -1,0 +1,17 @@
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457Stringdec=str.substring(0,str.length()-1);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457Stringnumeric=str.substring(0,str.length()-1);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457Characterdec=Character.getDigit(numeric.charAt(0));
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457Stringdec=str.substring(0,str.length()-2);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457returncreateLong(numeric);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457returncreateBigInteger(numeric);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457returncreateInteger(numeric);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457returncreateBigDecimal(numeric);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457Integerdec=createInteger(numeric);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457Numericdec=str.substring(0,str.length()-1);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457NumberFormatExceptione=newNumberFormatException(str);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457NumberFormatExceptione=newNumberFormatException(str,dec);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457if(dec==null&&exp==null&&isDigits(numeric.substring(1))&&(numeric.charAt(0)=='-'||Character.isDigit(numeric.charAt(0)))){returncreateLong
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457if(dec==null&&exp==null&&isDigits(numeric.substring(1))&&(numeric.charAt(0)=='-'||Character.isDigit(numeric.charAt(0)))){returncreateLong(nu
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457if(dec==null&&exp==null&&isDigits(numeric.substring(1))&&(numeric.charAt(0)=='-'||Character.isDigit(numeric.charAt(0)))){returncreateBigInteger(numeric);}
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java457if(dec==null&&exp==null&&isDigits(numeric.substring(1))||(numeric.charAt(0)=='-'&&Character.isDigit(numeric.charAt(0)))){returncreateLong

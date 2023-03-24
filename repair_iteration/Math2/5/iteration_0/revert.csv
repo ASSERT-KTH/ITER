@@ -1,0 +1,13 @@
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283doublenumberOfSuccesses=getNumberOfSuccesses();
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283doublenumberOfSuccesses=calculateNumberOfSuccesses();
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283if(numericalVarianceIsCalculated){if(numericalVarianceIsCalculated){numericalVariance=calculateNumericalVariance();}
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283returnnumericalVariance;
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283returnthis.numericalVariance;
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283returnthis.numericalVarianceIsCalculated;
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283returnMath.sqrt(numericalVarianceIsCalculated);
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283if(numericalVarianceIsCalculated){if(numericalVarianceIsCalculated){numericalVariance=calculateNumericalVariance();numericalVarianceIsCalculated=true;}
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283if(numericalVarianceIsCalculated){for(inti=0;i<numberOfSuccesses;++i){if(!numericalVarianceIsCalculated){numericalVariance=calculateNumericalVariance();}
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283if(numericalVarianceIsCalculated){for(inti=0;i<numberOfSuccesses;++i){if(!numericalVarianceIsCalculated){numericalVariance=calculateNumberOfSuccesses
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283if(numericalVarianceIsCalculated){for(inti=0;i<numberOfSuccesses;++i){if(!numericalVarianceIsCalculated){numericalVariance=calculateNumericalVariance();
+projects/Math2/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java283returnnumericalVarianceIsCalculated;

@@ -1,0 +1,14 @@
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556NumberUtils.isAllZeros(str);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556booleanisAllZeros=(str==null)?false:str.length();
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556booleanisAllZeros=(str==null)?true:str.length();
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556booleanisAllZeros=str.length()==0;
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556booleanisAllZeros=(str==null)||str.length()==0;
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556if(str==null){
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556if(str==null||str.length()==0){
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556NumberUtils.checkArgument(str==null);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556booleanisAllZeros=(str==null);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556NumberUtils.copyValue(str,0,str.length());
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556Stringstr=str.substring(0,str.length()-1);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556Stringstr=str.substring(0,str.length()-2);
+projects/Lang58/src/java/org/apache/commons/lang/math/NumberUtils.java556if(str==null||str.length()!=0){

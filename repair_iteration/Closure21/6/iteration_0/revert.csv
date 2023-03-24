@@ -1,0 +1,7 @@
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121if(ancestorType!=Token.EXPR_RESULT&&ancestorType!=Token.BLOCK)return;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121if(ancestorType!=Token.EXPR_RESULT||ancestorType!=Token.BLOCK)return;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121if(ancestorType==Token.EXPR_RESULT&&ancestorType!=Token.BLOCK)return;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121if(ancestorType==Token.EXPR_RESULT||ancestorType!=Token.BLOCK)return;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121if(ancestorType>=Token.EXPR_RESULT&&ancestorType!=Token.BLOCK)return;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java121if(ancestorType!=Token.EXPR_RESULT&&ancestorType==Token.BLOCK)return;

@@ -1,0 +1,16 @@
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992BigDecimal[]out=newBigDecimal[v.length];
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992BigDecimal[]out=newBigDecimal[nRows];
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992intnRows=this.getRowDimension();
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992finalintnRows=this.getRowDimension();
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992BigDecimal[]data=v.toArray(newBigDecimal[nRows]);
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992for(introw=0;row<nRows;row++){
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992for(introw=0;row<nRows+1;row++){
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992for(introw=0;row<nCols;row++){
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992BigDecimal[][]out=newBigDecimal[v.length][out.length];
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992BigDecimal[]data=out.toArray(newBigDecimal[nRows]);
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992BigDecimal[][]out=newBigDecimal[v.length][data.length];
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992intnCols=this.getColumnDimension();
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992for(inti=0;i<nRows;i++){if(data[i][i].multiply(v[i])!=out[i]){out[i]=data[i].multiply(v[i]);}
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992for(inti=0;i<nRows;i++){if(data[i][i].multiply(v[i])==out[i]){out[i]=data[i].multiply(v[i]);}
+projects/Math98/src/java/org/apache/commons/math/linear/BigMatrixImpl.java992for(inti=0;i<nRows;i++){if(v[i][i]!=null){out[i]=data[i].multiply(v[i]);}

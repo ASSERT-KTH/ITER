@@ -1,0 +1,13 @@
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix.setEntry(i,0,weight[i]);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix.setEntry(i,i,weight[i]);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix.setEntry(i,0,weight[i].getValue());
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix=MathUtils.createRealMatrix(weight[i],i);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix=MathUtils.createRealMatrix(weight[i]);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix=MathUtils.createRealMatrix(weight,i);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix.setEntry(i,weight[i],weight[i]);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix.setEntry(i,weight,weight[i]);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45weightMatrix.setEntry(0,i,weight[i]);
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45Weight[]weight=(weight[i]<0)?null:weight[i].getMatrix();
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45Weight[]weight=getMean();
+projects/Math14/src/main/java/org/apache/commons/math3/optim/nonlinear/vector/Weight.java45Weight[]weight=(weight[i]<0)?null:weight[i].getValue();

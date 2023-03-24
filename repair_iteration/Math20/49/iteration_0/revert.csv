@@ -1,0 +1,11 @@
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415sigma*=Math.exp(Math.min(1.0,(normps/chiN-1.)*cs/damps));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415sigma*=Math.exp(Math.min(0.0,(normps/chiN-1.)*cs/damps));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415sigma*=Math.exp(Math.min(1.0,(normps/chiN-1.)*cs/damps));bestFitness=bestFitness;
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415if(bestValue>bestFitness){
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415if(bestFitness>bestValue){
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415sigma*=Math.exp(Math.min(0.0,(normps/chiN-1)*cs/damps));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415sigma*=Math.exp(Math.min(1.0,(normps/chiN-1)*cs/damps));
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415bestValue=Math.min(bestFitness,sigma);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415bestValue=Math.max(bestFitness,sigma);
+projects/Math20/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java415bestValue=sigma;

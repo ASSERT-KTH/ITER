@@ -1,0 +1,15 @@
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620val.set(Calendar.YEAR,field,round);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620val.set(Calendar.DAY_OF_MONTH,field,round);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620int[][]fields=val.get(Calendar.YEAR);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620val.set(Calendar.MONTH,field,round);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620int[][]fields=val.get(Calendar.SECOND);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620if(val.get(Calendar.YEAR)>280000000){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620if(val.get(Calendar.YEAR)==280000000){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620if(val.get(Calendar.YEAR)>0){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620if(val.get(Calendar.YEAR)>310000000){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620val.set(Calendar.YEAR,field);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620int[][]fields=val.getValues();
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620if(val.get(Calendar.YEAR)!=280000000){
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620val.set(Calendar.MILLISECOND,round);
+projects/Lang65/src/java/org/apache/commons/lang/time/DateUtils.java620if(val.get(Calendar.YEAR)>=280000000){

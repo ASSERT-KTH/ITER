@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+21	[BUG] [BUGGY] if (_resultString != null) { [FE] NullPointerException [CONTEXT] [BUGGY] if (_resultString != null) { [BUGGY] return (_resultArray = _resultString.toCharArray()); }  if (!_hasSegments)return _currentSegment;  return contentsAsArray(); } [CLASS] TextBuffer [METHOD] getTextBuffer [RETURN_TYPE] char[]  	projects/JacksonCore8/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	1.0	303	303	1	replace	

@@ -1,0 +1,9 @@
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303rectWidth=Math.min(transY2,transY1);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303doublerectHeight=state.getBarWidth();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303rectX=Math.min(transY2,transY1);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303Rectangle2Dbar=newRectangle2D.Double(rectX,rectY,rectWidth,rectHeight);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303Rectangle2Dbar=newRectangle2D.Double(rectX,rectY,rectWidth,rectHeight+1);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303rectHeight=state.getBarWidth();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303rectHeight=Math.abs(transY2-transY1);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java303rectWidth=Math.abs(transY2-transY1);

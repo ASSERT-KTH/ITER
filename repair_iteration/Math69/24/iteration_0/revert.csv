@@ -1,0 +1,17 @@
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195outMatrix.setEntry(i,i,1d);
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195for(inti=0;i<nVars;i++){doubled=correlation(matrix.getRowDimension(),matrix.getRowDimension());outMatrix.setEntry(i,i,1d);}
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195for(inti=0;i<nVars;i++){doubled=correlation(matrix.getRowDimension(),matrix.getRowDimension());outMatrix.setEntry(d,i,1d);}
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195intnObs=matrix.getNumberOfObservations();
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195for(inti=0;i<nVars;i++){doubled=correlation(matrix.getRowDimension(),matrix.getRowDimension());outMatrix.setEntry(j,i,d);}
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195outMatrix.setEntry(i,i,1);
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195outMatrix.setEntry(i,j,1d);
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195outMatrix.setEntry(i,i,corr);
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195OutMatrixoutMatrix=newBlockRealMatrix(nVars,nVars);
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195OutMatrixoutMatrix=(OutMatrix)outMatrix.clone();
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195OutMatrixoutMatrix=(OutMatrix)matrix.clone();
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195outMatrix.setEntry(i,i,3d);
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195doubled=correlation(matrix.getDimension(),matrix.getDimension());
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195doubled=correlation(matrix.getDimension(),matrix.getColumnDimension());
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195doubled=correlation(matrix.getDimension(),matrix.getRowDimension());
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java195doubled=correlation(matrix.getDouble(i),matrix.getDouble(j));

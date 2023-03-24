@@ -1,0 +1,11 @@
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927if(start.compareTo(end)>0){
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927if(start.compareTo(end)==0){
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927intstartIndex=getIndex(start);
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927TimeSeriescopy=(TimeSeries)this.data.get(startIndex);
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927TimeSeriescopy=(TimeSeries)this.data.get(start);
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927intstartIndex=getIndex(start);if(startIndex<0){thrownewIllegalArgumentException("Requiresstartonorbeforeend.");}
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927intstartIndex=getIndex(start);if(startIndex<0){thrownewIllegalArgumentException("Requiresstartonorbeforeendindex.");}
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927if(start.compareTo(end)<0){
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927intstart=getIndex(start);
+projects/Chart9/source/org/jfree/data/time/TimeSeries.java927intstartIndex=getIndex(end);

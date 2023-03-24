@@ -1,0 +1,14 @@
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496returnsuper.optimizeInternal(maxEval,FunctionUtils.toDifferentiableMultivariateVectorFunction(f),optData);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496returnsuper.optimizeInternal(maxEval,FunctionUtils.toDifferentiableMultivariateVectorFunction(optData),f);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496if(optData!=null){for(inti=0;i<maxEval;i++){optData[i]=f.getOptimizedValue();}
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496if(optData!=null){for(inti=0;i<maxEval;i++){optData[i]=f.getOptimizer().toDifferentiableMultivariateVectorFunction(i);}
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496if(optData!=null){for(inti=0;i<maxEval;i++){optData[i]=f.clone();}
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496returnsuper.optimizeInternal(maxEval,FunctionUtils.toDifferentiableVectorFunction(optData),f);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496intmaxEval=Math.min(maxEval,optData.length);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496finalintmaxEval=Math.min(maxEval,optData.length);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496if(optData!=null){for(inti=0,cols=optData.length;i<cols;i++){double[][]cov=f.getVarianceSingularityThreshold();for(intj=
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496if(optData!=null){for(inti=0,cols=optData.length;i<cols;++i){double[][]weightedJacobianData=f.weightedJacobian
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496if(optData!=null){for(inti=0,cols=optData.length;i<cols;++i){double[][]weightedJacobianData=f.weightedJacobianData[i]
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496returnsuper.optimizeInternal(maxEval,FunctionUtils.toDifferentiableMultivariateVectorFunction(f,optData));
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java496returnsuper.optimizeInternal(maxEval,FunctionUtils.toDifferentiableMultivariateVectorFunction(f),optData,jF);

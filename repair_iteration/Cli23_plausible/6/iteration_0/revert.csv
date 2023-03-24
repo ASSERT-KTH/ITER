@@ -1,0 +1,15 @@
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112publicStringdefaultOptPrefix=DEFAULT_OPT_PREFIX;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112publicStringdefaultOptPrefix=null;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112publicStringdefaultOptPrefix=NO_OPT_PREFIX;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112publicStringdefaultOptPrefix=DEFAULT_OPT_PREFIX+1;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112Preconditions.checkNotNull(defaultOptPrefix);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112Preconditions.checkState(defaultOptPrefix==null);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112Preconditions.checkState(defaultOptPrefix!=null);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112DefaultOptPrefix=defaultOptPrefix;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112Preconditions.checkState(!defaultOptPrefix.equals(""));
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112publicStringdefaultOptPrefix=DEFAULT_OPT_PREFIX+"n";
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112Preconditions.checkArgument(defaultOptPrefix==null);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112Preconditions.checkArgument(defaultOptPrefix!=null);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112this.defaultOptPrefix=defaultOptPrefix;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java112publicStringdefaultOptPrefix=DEFAULT_OPT_PREFIX+":";

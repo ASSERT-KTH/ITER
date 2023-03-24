@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+17	[BUG] [BUGGY] private static final Object SENTINEL_CLOSED = new Object(); [FE] ArrayIndexOutOfBoundsException [CONTEXT] [BUGGY] private static final Object SENTINEL_CLOSED = new Object(); [BUGGY]  [CLASS] JsonTreeReader 1  [VARIABLES] 	projects/Gson12/gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java	1.0	46	46	2	replace	

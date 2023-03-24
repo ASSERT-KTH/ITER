@@ -1,0 +1,15 @@
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intcols=problem.getMeasurements().length;
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intcols=problem.getColumns().length;
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intmax=Math.max(max,jTj.length);
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172jTj[i][j]=sum;
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intcols=problem.getRowCount();
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172for(intk=0;k<max;k+=cols){
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172for(intk=0;k<rows;k+=cols){
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172for(intk=0;k<rows;k+=max){
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172for(intk=0;k<rows;k+=2){
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intcols=problem.getAllParameters().length;
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intmax=Math.min(cols,sum);
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intcols=problem.getColumnsCount();
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intmax=Math.max(remainder,jTj.length);
+projects/Math100/src/java/org/apache/commons/math/estimation/AbstractEstimator.java172intmax=Math.min(cols,jTj.length);

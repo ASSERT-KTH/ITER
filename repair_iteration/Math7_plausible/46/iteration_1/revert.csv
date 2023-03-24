@@ -1,0 +1,16 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308state.reinitializeBegin(currentT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308state.reinitializeBegin(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308state.reinitializeBegin(previousT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308statesInitialized=true;
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308statesInitialized=false;
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308stateInitialized=false;
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308intstepStart=getStep(currentT,yDot);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308intstepStart=getStep(previousT,yDot);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308intstepStart=getStep(previousT,currentT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308state.removeBegin(previousT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308stateInitialized=true;
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308state.reinitializeBegin(previousT,interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308state.reinitializeBegin(previousT,currentT);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308intstepStart=getStep(currentT,yEnd);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java308intstepStart=getStep(currentT,yDot,state);

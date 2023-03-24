@@ -1,0 +1,14 @@
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045intstrLen=str.length();
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045Stringstr=searchStr.substring(0,searchStr.length()-1);
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045intindex=str.indexOf(searchStr);
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045intindex=str.indexOf(searchStr)+1;
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045Stringstr=searchStr.substring(0,searchStr.length()-2);
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045if(str==null||searchStr==null){
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045if(str==null||searchStr!=null){
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045if(searchStr==null||str==null){
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045intindex=str.lastIndexOf(searchStr);
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045intindex=str.indexOf(searchStr)-1;
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045if(str==null||searchStr==null){returnfalse;}
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045if(str==null||searchStr==null){returntrue;}
+projects/Lang40/src/java/org/apache/commons/lang/StringUtils.java1045if(str==null||searchStr==null||str.length()==0){

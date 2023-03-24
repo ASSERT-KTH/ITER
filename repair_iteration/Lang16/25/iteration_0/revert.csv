@@ -1,0 +1,16 @@
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448if(StringUtils.isBlank(str)){
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448if(StringUtils.isBlank(str)||StringUtils.isEmpty(str)){
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448if(StringUtils.isBlank(str)||StringUtils.isBlank(str)){
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Stringstr=str.substring(0,str.length()-1);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Numberstr=createNumber(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Stringstr=str.substring(0,str.length()-2);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Numberstr=getNumber(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448if(StringUtils.isBlank(str)||str.startsWith("-")){
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448NumberUtils.isBlank(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448NumberUtils.setBlank(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Integerstr=createInteger(str);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448NumberUtils.copyValue(str,0);
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448if(str==null||StringUtils.isBlank(str)){
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Stringstr=str.trim();
+projects/Lang16/src/main/java/org/apache/commons/lang3/math/NumberUtils.java448Numberstr=createString(str);

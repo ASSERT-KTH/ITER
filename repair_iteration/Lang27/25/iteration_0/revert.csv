@@ -1,0 +1,17 @@
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557Stringstr=str.substring(0,str.length()-1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557intexpPos=str.length();
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557Stringstr=str.substring(expPos+1,str.length());
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557intexpPos=str.lastIndexOf('.');
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557Stringstr=str.substring(expPos+1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557exp=str.substring(expPos+1,str.length());
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557exp=str.substring(expPos+1,str.length()-1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557exp=str.substring(expPos+1,str.length()-2);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557exp=str.substring(expPos+1,str.length()+1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557exp=str.substring(0,str.length()-1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557Stringdec=str.substring(expPos+1,str.length());
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557Stringdec=str.substring(0,expPos);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557Stringdec=str.substring(expPos+1,str.length()-1);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557exp=str.substring(expPos+1,str.length()-3);
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557intdecPos=str.lastIndexOf('.');
+projects/Lang27/src/main/java/org/apache/commons/lang3/math/NumberUtils.java557intexpPos=str.indexOf('.');

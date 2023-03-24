@@ -1,0 +1,15 @@
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108if(initialCapacity<=0){
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108if(initialCapacity<=CAPACITY){
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108if(initialCapacity==0){
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108IntegerinitialCapacity=getInitialCapacity();buffer=newchar[initialCapacity];
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108StrBuilder.this.buffer=newchar[initialCapacity];
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108IntegerinitialCapacity=getInitialCapacity();
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108this.buffer=newchar[initialCapacity];
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108IntegerinitialCapacity=getInitialCapacity();buffer=newString(initialCapacity);
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108super();
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108IntegerinitialCapacity=getInitialCapacity(initialCapacity);buffer=newchar[initialCapacity];
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108if(initialCapacity<0){
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108StrBuilder.this.append(buffer,0,Integer.toString(initialCapacity));
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108IntegerinitialCapacity=getInitialCapacity();buffer=newCharacter(initialCapacity);
+projects/Lang47/src/java/org/apache/commons/lang/text/StrBuilder.java108IntegerinitialCapacity=getInitialCapacity();buffer=(char)initialCapacity;

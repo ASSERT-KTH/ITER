@@ -1,0 +1,17 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192for(finalIncrementorstepHandler:state.getStepHandlers()){StepHandlerstepHandler=stepHandlers.get(t0);setStateInitialized(false);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192for(finalIncrementorstepHandler:state.getStepHandlers()){StepHandlerstepHandler=stepHandlers.get(t0);setStateInitialized(false);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192for(finalIncrementorstepHandler:state.getStepHandlers()){StepHandlerstepHandler=stepHandlers.get(t0);setStateInitialized(true);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192state.getEventHandler().init(t0,y0,t);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192initState(t0,y0,t);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192if(state.getEventHandler()!=null){for(finalIncrementorstepHandler:stepHandlers){handler.init(t0,y0,t);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192if(state.getEventHandler()!=null){if(isLastStep){setStateInitialized(true);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192if(state.getEventHandler()!=null){if(isLastStep){setStateInitialized(false);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192initStep(t0,y0,t);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192initStep(t0,y0,state.getStep());
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192if(state.getState()!=state.getState()){for(finalIncrementorstepHandler:stepHandlers){stepHandler.init(t0,y0,t);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192if(state.getState()!=state.getState()){for(finalIncrementorstepHandler:stepHandlers){handler.init(t0,y0,t);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192if(state.getState()!=state.getState()){for(finalIncrementorstepHandler:stepHandlers){methodHandler.init(t0,y0,t);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192initStep(t0,y0,state);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java192stepHandlers=state.getStepHandlers();

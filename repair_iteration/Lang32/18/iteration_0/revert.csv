@@ -1,0 +1,15 @@
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362reflectionAppend(object,clazz,builder,testTransients,excludeFields);
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362clazz=clazz.getSuperclass();reflectionAppend(object,clazz,builder,testTransients,excludeFields);
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362ReflectionBuilderbuilder=newReflectionBuilder(initialNonZeroOddNumber,multiplierNonZeroOddNumber,reflectUpToClass,excludeFields);
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362ReflectionBuilderbuilder=newReflectionBuilder(initialNonZeroOddNumber,multiplierNonZeroOddNumber,testTransients,excludeFields);
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362ReflectionBuilderbuilder=newReflectionBuilder(initialNonZeroOddNumber,multiplierNonZeroOddNumber);
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362while(clazz.getSuperclass()!=null&&clazz!=reflectUpToClass){
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362while(clazz.getSuperclass()!=null&&clazz==reflectUpToClass){
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362while(clazz.getSuperclass()!=null||clazz!=reflectUpToClass){
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362intiConstant=multiplierNonZeroOddNumber;
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362intiConstant=multiplierNonZeroOddNumber+clazz.getItemCount();
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362intiConstant=multiplierNonZeroOddNumber+builder.length();
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362while(clazz.getSuperclass()!=null&&clazz!=reflectUpToClass){clazz=clazz.getSuperclass();reflectionAppend(object,clazz,builder,testTransients,excludeFields);}
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362while(clazz.getSuperclass()!=null&&clazz!=reflectUpToClass){clazz=clazz.getSuperclass();reflectionAppend(object,clazz,builder,testTransients,excludeFields);
+projects/Lang32/src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java362while(clazz.getSuperclass()!=null&&clazz!=reflectUpToClass){clazz=clazz.getSuperclass();reflectionAppend(object,clazz,builder,testTransients,excludedFields);}

@@ -1,0 +1,16 @@
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.maxEvaluations=maxEvaluations;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.maxEvaluations=starts;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.maxEvaluations=0;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=generator;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=GeneratorUtilities.generator(generator);
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=GeneratorGenerator.createGenerator(generator);
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75Preconditions.checkNotNull(generator);
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75super(generator);
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=GeneratorGenerator.UNDEFINED;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=GeneratorGenerator.INSTANCE;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=GeneratorGenerator.UNDEFINITION;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=Generator.VALUE_PAIR;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.generator=Generator.UNDEFINED;
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.maxEvaluations=maxEvaluations+generator.getMaxEvaluations();
+projects/Math62/src/main/java/org/apache/commons/math/optimization/univariate/MultiStartUnivariateRealOptimizer.java75this.maxEvaluations=maxEvaluations-starts;

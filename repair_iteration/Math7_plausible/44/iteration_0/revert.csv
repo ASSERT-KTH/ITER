@@ -1,0 +1,15 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(!statesInitialized){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(eventsStates!=null){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(!eventsStates){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(previousT!=currentT){if(isLastStep){eventsStates.add(currentT);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(previousT!=currentT){if(!isLastStep){eventsStates.add(currentT);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(previousT!=currentT){if(isLastStep){eventsInitialized=true;}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304Iterator<EventState>iterator=eventsStates.iterator();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304Iterator<EventState>iterator=events.iterator();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304Iterator<EventState>iterator=eventsStates.values().iterator();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(!currentT){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304Iterator<EventState>eventsStates=this.events.iterator();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304Iterator<EventState>eventsStates=getEventStates();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(previousT>currentT){if(eventT>0){eventStates.add(currentT);}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java304if(!isLastStep){

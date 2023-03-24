@@ -1,0 +1,12 @@
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362if((n&0x1)==0){if((n&0x3)==0){v*=x;}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362if((n&0x1)==0){if((n&0x2)==0){v*=x;}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362n=Math.min(coeff,v);
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362function[n]=coeff*v;
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362function[n]=v*coeff;
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362function[n]=coeff*f;
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362function[0]=coeff*v;
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362if((n&0x1)==0){if((n&0x3)==0){coeff*=f;}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362if((n&0x1)==0){coeff*=f;}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362if((n&0x1)==0){if((n&0x3)==0){coeff*=v;}
+projects/Math10/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java1362if((n&0x1)==0){if((n&0x3)==0){v*=f;}

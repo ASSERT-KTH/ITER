@@ -1,0 +1,11 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110this.eventsStates.add(handler);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110add(newInteger(stepSize));
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110if(!stepHandlers.contains(handler)){thrownewIllegalStateException("");}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110if(!stepHandlers.contains(handler)){thrownewIllegalArgumentException("");}
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110this.eventsStates.add(handler);fireSeriesChanged();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110this.eventsStates.add(handler);fireInitializingStep();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110if(stepHandlers!=null){for(inti=0;i<stepHandlers.size();++i){StepHandlerhandler=(StepHandler)stepHandlers.get(i);if(handler.
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110if(stepHandlers!=null){for(inti=stepStart;i<stepHandlers.size();++i){StepHandlerhandler=(StepHandler)stepHandlers.get(i);if(!
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java110if(stepHandlers!=null){for(inti=stepStart;i<stepHandlers.size();++i){StepHandlerhandler=(StepHandler)stepHandlers.get(i);if(handler.

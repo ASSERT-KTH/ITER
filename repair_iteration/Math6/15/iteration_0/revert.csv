@@ -1,0 +1,14 @@
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379PointValuePairoptimum=newPointValuePair(getStartPoint(),isMinimize?bestValue:-bestValue);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379PointValuePairoptimum=newPointValuePair(getStartPoint(),dimension?bestValue:-bestValue);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379PointValuePairoptimum=newPointValuePair(getStartPoint(),isActive?bestValue:-bestValue);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=bestValue.doubleValue();
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=bestValue.value();
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=bestValue.value(getStartPoint());
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=Math.max(bestValue,maxIterations);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=getMaximumFitness();
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=Math.max(bestValue,dimension);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379PointValuePairoptimum=newPointValuePair(getEndPoint(),isMinimize?bestValue:-bestValue);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=Math.abs(bestValue);
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=Math.max(bestValue,getFitnessHistory());
+projects/Math6/src/main/java/org/apache/commons/math3/optim/nonlinear/scalar/noderiv/CMAESOptimizer.java379bestValue=Math.min(bestValue,dimension);

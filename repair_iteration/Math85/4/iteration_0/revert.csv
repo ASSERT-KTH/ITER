@@ -1,0 +1,11 @@
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173intmaximumIterations=function.getMaximumIterations();
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173intmaximumIterations=function.numIterations();
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173intmaximumIterations=Math.max(initial,upperBound);
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173intmaximumIterations=Math.max(initial,lowerBound);
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173if(maximumIterations<=0){
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173if(maximumIterations<0){
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173if(maximumIterations>0){
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173if(maximumIterations==0){
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173intmaximumIterations=Math.min(initial.length,upperBound);
+projects/Math85/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java173intinitial=function.getInitialValue();

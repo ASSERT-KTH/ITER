@@ -1,0 +1,17 @@
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input==null){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input==null||input.length()==0){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input==null||input.length()!=0){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(input.length()*2);
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(input.length()*2);translate(writer,input);
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(Integer.toString(input.length()));
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(input.length()*2);translate(input,writer);
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(Integer.toString(input));
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(output.length()*2);
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(Integer.toString(input.length()*2));
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input==null||input.length()<2){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input==null||input.length()>0){
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54booleaninput=input.length()>0;
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input!=null){returninput.toString();}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54StringWriterwriter=newStringWriter(input.length()*2);if(writer!=null){returnwriter.toString();}
+projects/Lang6/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java54if(input!=null){input=newString(input.length()*2);returninput.toString();}

@@ -1,0 +1,15 @@
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2*(1-tDistribution.cumulativeProbability(t));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2*(1-t.cumulativeProbability(t));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2*(2-tDistribution.cumulativeProbability(t));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2*(1-t.cumulativeProbability(r));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171t=Math.abs(r*Math.sqrt((nObs-2)/(1-r*t)));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171t=Math.abs(r*Math.sqrt((nObs-2)/(1-r*r)));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171doublet=Math.abs(r*Math.sqrt((nObs-2)/(1-r*t)));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171doublet=Math.abs(r*Math.sqrt((nObs-2)/(1-r*r)));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171t=Math.abs(r*Math.sqrt((nObs-2)/(1-r*d)));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2*(1-tDistribution.cumulativeProbability(r));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171intnumberOfObservations=correlationMatrix.getColumnDimension();
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2d*(1-tDistribution.cumulativeProbability(t));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171out[i][j]=2-tDistribution.cumulativeProbability(t));
+projects/Math69/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java171intnObs=correlationMatrix.getColumnDimension();

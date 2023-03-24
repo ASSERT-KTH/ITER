@@ -1,0 +1,12 @@
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323if(state.evaluateStep(interpolator)){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323if(!state.evaluateStep(interpolator)){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323if(!state.evaluate(interpolator)){
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323EventState[]remaining=newEventState[orderingSign.size()];
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323EventState[]remaining=state.getRemainingEvents();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323EventState[]remaining=newEventState[orderingSign.size()-1];
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323finalEventStateremaining=state.evaluateStep(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323finalEventStateremaining=state.evaluate(remainingEvents);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323Statestate=state.evaluate();
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323EventStateremaining=state.evaluateStep(interpolator);
+projects/Math7/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java323EventStateremaining=state.evaluateStep();

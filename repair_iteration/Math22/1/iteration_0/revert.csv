@@ -1,0 +1,14 @@
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(isSupportLowerBoundInclusive()){returnfalse;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(!isSupportLowerBoundInclusive()){returnfalse;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(isSupportLowerBoundInclusive()){if(!numeratorDegreesOfFreedom){returnfalse;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275returntrue;
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275returnfalse;
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275returnnumeratorDF.isSupportLowerBoundInclusive();
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(isSupportLowerBoundInclusive()){if(numeratorDegreesOfFreedom==null){returnfalse;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(isSupportLowerBoundInclusive()){if(numeratorDegreesOfFreedom!=null){returnfalse;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275return!isSupportLowerBoundInclusive();
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275return(numeratorDegreesOfFreedom>0)||(numeratorDegreesOfFreedom>0)||(numeratorDF<denominatorDF)||(numeratorDF>denominatorDF)||(numeratorDF>denominator
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(numeratorDegreesOfFreedom==null){for(inti=0,len=denominatorDegreesOfFreedom.size();i<len;++i){numericalVarianceIsCalculated=true;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(numeratorDegreesOfFreedom==null){for(inti=0,len=denominatorDegreesOfFreedom.size();i<len;++i){numericalVarianceIsCalculated=false;}
+projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java275if(numeratorDegreesOfFreedom==null){for(inti=0,len=denominatorDegreesOfFreedom.size();i<len;++i){numericalVarianceIsCalculated=true;

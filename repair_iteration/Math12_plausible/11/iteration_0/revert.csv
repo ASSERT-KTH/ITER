@@ -1,0 +1,9 @@
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109}else{
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109}elseif(nextGaussian!=Double.NaN){
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109}elseif(nextGaussian==Double.NaN){
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109nextGaussian=r*FastMath.sin(alpha);
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109nextGaussian=r*FastMath.cos(alpha);
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109nextGaussian=r*FastMath.sin(nextGaussian);
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109}elseif(Double.isNaN(nextGaussian)){
+projects/Math12/src/main/java/org/apache/commons/math3/random/BitsStreamGenerator.java109}elseif(nextGaussian!=null){

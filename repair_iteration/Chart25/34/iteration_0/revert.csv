@@ -1,0 +1,9 @@
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublehighVal=rangeAxis.valueToJava2D(meanValue.doubleValue()+valueDelta,dataArea,yAxisLocation);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublehighVal=rangeAxis.valueToJava2D(meanValue.doubleValue()-valueDelta,dataArea,yAxisLocation);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublelowVal=rangeAxis.valueToJava2D(meanValue.doubleValue()-valueDelta,dataArea,yAxisLocation);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublelowVal=rangeAxis.valueToJava2D(meanValue.doubleValue()-valueDelta,dataArea,0);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318DoublevalueDelta=dataset.getStdDevValue(row,column).doubleValue();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublelowVal=rangeAxis.valueToJava2D(meanValue.doubleValue()-valueDelta,dataArea,rectHeight);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublelowVal=rangeAxis.valueToJava2D(meanValue.doubleValue()+valueDelta,dataArea,yAxisLocation);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java318doublevalueDelta=dataset.getStdDevValue(row,column).doubleValue();

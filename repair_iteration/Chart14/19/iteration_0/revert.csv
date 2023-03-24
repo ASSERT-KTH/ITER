@@ -1,0 +1,12 @@
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293intindex=indexOf(markers.get(index));
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293intindex=indexOf(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293intindex=indexOf(markers.size()-1);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293booleanremoved=markers.remove(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293booleanremoved=this.markers.remove(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293XYPlotlayer=(XYPlot)this.markers.get(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293XYPlotlayer=(XYPlot)super.removeDomainMarker(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293XYPlotlayer=(XYPlot)markers.get(index);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293booleanremoved=marker!=null&&markers.remove(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293Markerlayer=marker.getMarker();
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2293intindex=indexOf(markers,layer);

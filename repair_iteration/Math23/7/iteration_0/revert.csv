@@ -1,0 +1,13 @@
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266if(b==null){if(fu<=fv||Precision.equals(v,x)){v=w;fv=w;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266if(b==null){if(fu<=fv||Precision.equals(v,x)){v=w;fv=fw;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266b=b;
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266}elseif(fu<=fv||Precision.equals(v,x)||Precision.equals(v,w)){
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266}elseif(fu<=fw||Precision.equals(v,x)||Precision.equals(v,w)){
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266}elseif(fu<=fv||Precision.equals(w,x)||Precision.equals(v,fv)){
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266if(!isMinimum){for(intx=0;x<iter.next();x++){v=fx;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266if(!isMinimum){for(intx=0;x<iter.next();x++){v=w;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266if(fu>GOLDEN_SECTION){if(!isMinimim){returnnull;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266if(fu>GOLDEN_SECTION){v=w;fv=fx;}
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266}elseif(fu<=fv||Precision.equals(w,x)||Precision.equals(v,w)){
+projects/Math23/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java266}elseif(fu<=w||Precision.equals(v,x)||Precision.equals(v,w)){

@@ -1,0 +1,9 @@
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630returnresult;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630result.nans=QNAN;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630returnresult.nans;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630result=dotrap(DfpField.FLAG_INVALID,MULTIPLY_TRAP,newInstance(getZero()));
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630result=dotrap(DfpField.FLAG_INVALID,MULTIPLY_TRAP,newInstance(getZero()),result);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630if(x<0||x>=RADIX){field.setIEEEFlagsBits(DfpField.FLAG_INVALID);result=newInstance(getZero());result.nans=QNAN;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630if(x<0||x>=RADIX){field.setIEEEFlagsBits(DfpField.FLAG_INVALID);result=newInstance(getZero());result.nans=QNAN;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1630if(x<0||x==RADIX){field.setIEEEFlagsBits(DfpField.FLAG_INVALID);result=newInstance(getZero());result.nans=QNAN;}

@@ -1,0 +1,17 @@
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198double[]tmpX=newdouble[x.length];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198double[]xA=newdouble[x.length];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublesignChangeIndex=x[0];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublesignChangeIndex=x.length-1;
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198tmpX[0]=x[0];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublexA=x[signChangeIndex-1];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublexA=x[x.length-1];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublexA=tmpX[signChangeIndex-1];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublexA=y[signChangeIndex-1];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublexA=x[tmpX.length-1];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublesignChangeIndex=tmpX.length;
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198doublesignChangeIndex=x.length;
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198intsignChangeIndex=0;
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198double[]signChangeIndex=newdouble[x.length];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198double[]signChangeIndex=newdouble[x.length-1];
+projects/Math40/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java198intsignChangeIndex=Math.min(1,x.length);

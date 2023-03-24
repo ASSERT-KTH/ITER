@@ -1,0 +1,10 @@
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375Iteratoriterator=this.rows.iterator();
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375this.rows.remove(index);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375intthis.rows=getRowIndex(index);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375Iteratoriterator=this.columnKeys.iterator();
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375Iteratoriterator=this.rows.values().iterator();
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375KeyedObjectsrowData=(KeyedObjects)this.rows.get(index);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375KeyedObjectsrowData=(KeyedObjects)this.rows.get(index-1);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375ListrowData=(List)this.rows.get(index);
+projects/Chart22/source/org/jfree/data/KeyedObjects2D.java375Collections.reverse(this.rows);

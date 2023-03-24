@@ -1,0 +1,12 @@
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarArchiveInputStream(in,entryEncoding);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224||TAR.equalsIgnoreCase(archiverName)){returnnewTarArchiveInputStream(in,entryEncoding);}
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224if(ZIP.equalsIgnoreCase(archiverName)){returnnewTarArchiveInputStream(in,entryEncoding);}
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarArchiveInputStream(in,entryEncoding,TAR);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarArchiveInputStream(in,entryEncoding,archiverName);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarArchiveInputStream(in,entryEncoding,ARJ);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224if(entryEncoding!=null){returnnewTarArchiveInputStream(in,entryEncoding);}
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarInputStream(in,entryEncoding);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarArchiveInputStream(in,TAR);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarNumberArchiveInputStream(in,entryEncoding);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java224returnnewTarArchiveInputStream(in,entryEncoding.encode(archiverName));

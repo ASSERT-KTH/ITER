@@ -1,0 +1,9 @@
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271computeMustDef(c.getFirstChild(),cfgNode,output,conditional);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271computeMustDef(c.getLastChild(),cfgNode,output,conditional);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271computeMustDef(c.getFirstChild(),cfgNode,output,true);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271computeMustDef(c.getFirstChild(),cfgNode,output,false);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271computeMustDef(n.getFirstChild(),cfgNode,output,conditional);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271computeMustDef(n.getLastChild(),cfgNode,output,conditional);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271addToDefIfLocal(c.getString(),conditional?null:cfgNode,c.getFirstChild(),output);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java271if(c.hasChildren()){computeMustDef(c.getFirstChild(),cfgNode,output,conditional);}

@@ -1,0 +1,15 @@
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492dec=str.substring(decPos+1,expPos);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492dec=str.substring(decPos+1,expPos+1);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492dec=str.substring(decPos+1,expPos+2);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492dec=str.substring(decPos+1,expPos-1);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492dec=str.substring(decPos+1,exponentPos);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intexpPos=str.lastIndexOf('.');
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intexpPos=str.length();
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intexpPos=str.lastIndexOf('.',expPos);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492StringexpPos=str.substring(0,str.length()-1);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intexpPos=str.indexOf('.',expPos);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intdecPos=str.lastIndexOf('.');
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intdecPos=str.lastIndexOf('.',expPos);
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intexpPos=str.indexOf('.');
+projects/Lang3/src/main/java/org/apache/commons/lang3/math/NumberUtils.java492intexpPos=str.indexOf('.')+1;

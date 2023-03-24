@@ -1,0 +1,12 @@
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423double[][]weights=f.getMatrixes();
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423intcols=Math.min(weights.length,maxEval);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423double[][]weights=f.getMean();
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423returnoptimizeInternal(maxEval,FunctionUtils.toMultivariateDifferentiableVectorFunction(f),newTarget(target),
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423returnoptimizeInternal(maxEval,f,newTarget(target),
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423returnoptimizeInternal(target,FunctionUtils.toMultivariateDifferentiableVectorFunction(f),newTarget(maxEval),
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423intmaxEval=Math.min(maxEval,f.getMaxEval());
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423intmaxEval=Math.min(maxEval,f.length);
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423intmaxEval=Math.max(maxEval,f.getMaxY());
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423double[][]weights=f.getMeanValues();
+projects/Math13/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java423returnoptimize(maxEval,f,newTarget(target),

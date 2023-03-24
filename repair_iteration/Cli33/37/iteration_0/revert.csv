@@ -1,0 +1,17 @@
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(padding,0,len);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(padding,0,len);padding=newchar[len];
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966char[]padding=newchar[len];
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(padding==null){padding=newchar[len];}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(len<=0){padding=newchar[len];}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(padding,'');
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(buffer,padding,'');
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(padding,1,len);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(pattern,'');
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(padding==null){padding=newchar[len];System.arraycopy(padding,0,padding,0,len);}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(padding==null){padding=newchar[len];System.arraycopy(padding,0,padding,0,len);padding=padding;}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(padding==null){padding=newchar[len];System.arraycopy(padding,0,padding,0,len);padding+=len;}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(padding,1);
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(padding==null){padding=newchar[len];padding+=len;}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966if(padding==null){padding=newchar[len];padding=padding;}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java966Arrays.fill(padding,0,len);padding=padding;

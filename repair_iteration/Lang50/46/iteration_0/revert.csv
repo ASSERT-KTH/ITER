@@ -1,0 +1,16 @@
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringkey=formatter.toPattern();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297cDateInstanceCache.put(key,formatter);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringkey=cDateInstanceCache.get(key);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Localelocale=Locale.getDefault();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringkey=formatter.toString();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringpattern=formatter.toPattern();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringpattern=formatter.toString();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringpattern=formatter.getPattern();
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringpattern=formatter.toPattern(this.timeZone);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297if(formatter!=null){if(locale==null){locale=Locale.getDefault();}
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297if(formatter!=null){if(timeZone==null){locale=Locale.getDefault();}
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297cDateInstanceCache.put(key,format);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringpattern=formatter.toPattern(this);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297Stringpattern=formatter.toPattern(mDaylight);
+projects/Lang50/src/java/org/apache/commons/lang/time/FastDateFormat.java297inttimeZone=cDateInstanceCache.get(mValue);

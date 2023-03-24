@@ -1,0 +1,17 @@
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416OptionGroupgroup=getOptions().getOptionGroup(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416Groupgroup=getOptions().getGroup(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416group.setSelected(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416OptionGroupgroup=getOptions().getOptionGroup(group);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group!=null){requiredOptions.add(group);}
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isSelected()){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()||group.isSelected()){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group!=null&&group.isRequired()){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416Optiongroup=getOptions().getOptionGroup(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416Groupgroup=getOptions().getOptionGroup(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()&&group.getKey()!=null){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()){getRequiredOptions().remove(group);}
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()){requiredOptions.add(group);}
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()){requiredOptions.remove(group);}
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java416if(group.isRequired()||group.setSelected(opt)){

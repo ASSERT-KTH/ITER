@@ -1,0 +1,16 @@
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374Numberim=parseNumber(source,getRealFormat(),pos);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374pos.setIndex(initialIndex);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=source.substring(startIndex,endIndex).compareTo(getImaginaryCharacter());
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374pos.setErrorIndex(initialIndex);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=source.substring(startIndex,endIndex);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=getImaginaryCharacter().length();
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=getImaginaryCharacter().length()+1;
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=source.length();
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=getRealFormat().length();
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374charn=getImaginaryCharacter().length();
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374charc=source.charAt(initialIndex);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374charc=source.charAt(startIndex);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374charc=source.charAt(pos.getIndex());
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374charc=source.charAt(initialIndex+1);
+projects/Math101/src/java/org/apache/commons/math/complex/ComplexFormat.java374intn=getImaginaryCharacter().length()-1;

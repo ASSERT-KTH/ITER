@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+1	[BUG] [BUGGY] return lineCounter; [FE] AssertionError [CONTEXT] int getLineNumber() { [BUGGY] return lineCounter; [BUGGY] } [CLASS] ExtendedBufferedReader [METHOD] getLineNumber [RETURN_TYPE] int  [VARIABLES] int END_OF_STREAM UNDEFINED c current i lastChar len length lineCounter offset boolean  	projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	0.2886751345948129	159	159	1	replace	

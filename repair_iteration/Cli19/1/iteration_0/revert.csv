@@ -1,0 +1,13 @@
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234tokens.add(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234if(stopAtNonOption){eatTheRest=true;tokens.add(token);}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234if(stopAtNonOption){eatTheRest=false;tokens.add(token);}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234if(stopAtNonOption){currentOption=options.getOption(token);tokens.add(token);}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234if(stopAtNonOption){tokens.add(token);}
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234elseif(stopAtNonOption){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234elseif(stopAtNonOption||currentOption!=null){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234elseif(stopAtNonOption||currentOption==null){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234elseif(stopAtNonOption&&currentOption!=null){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234OptioncurrentOption=options.getOption(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234OptioncurrentOption=options.getOption(token);tokens.add(currentOption);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java234elseif(stopAtNonOption&&currentOption.hasArg()){

@@ -1,0 +1,13 @@
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654result.mant[mant.length-1]=rh;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654result.mant[mant.length-1]=lostdigit;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654result.mant[mant.length-1]=x;
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654finalintrh=result.round(lostdigit);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654finalintr=result.round(lostdigit);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654finalint[]rh=result.getField();
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654result=dotrap(result,MULTIPLY_TRAP,result,lostdigit);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654result=dotrap(result,MULTIPLY_TRAP,result);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654result=dotrap(result,MULTIPLY_TRAP,result,null);
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654if(mant.length==0){for(inti=0;i<mant.length;i++){finalintr=mant[i]*x+rh;rh=r/RADIX;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654if(mant.length==0){for(inti=0;i<mant.length;i++){finalintr=mant[i]*x+lostdigit;rh=r/RADIX;}
+projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1654if(mant.length==0){for(inti=0;i<mant.length;i++){finalintr=mant[i]*x+rh;lostdigit=r-lostdigit*RADIX;}

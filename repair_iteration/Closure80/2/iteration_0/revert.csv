@@ -1,0 +1,12 @@
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isImmutableValue(value.getLastChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isImmutableValue(value.getFirstChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isLiteralValue(value.getFirstChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||Locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||NodeUtil.isImmutableValue(value.getLastChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||NodeUtil.isImmutableValue(value.getFirstChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||NodeUtil.isImmutableValue(value.getFirstChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChil
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||NodeUtil.isImmutableValue(value.getLastChild())||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChil
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isAssignmentOp(value)||locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));
+projects/Closure80/src/com/google/javascript/jscomp/NodeUtil.java2870returnNodeUtil.isVarDeclaration(value)||(locals.apply(value)&&evaluatesToLocalValue(value.getLastChild(),locals));

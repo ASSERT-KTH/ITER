@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+21	[BUG] [BUGGY] [FE] AssertionFailedError [CONTEXT] final static String MIN_LONG_STR_NO_SIGN = String.valueOf(Long.MIN_VALUE).substring(1); [CLASS] NumberInput  [VARIABLES] 	projects/JacksonCore1/src/main/java/com/fasterxml/jackson/core/io/NumberInput.java	0.5	19	19	1	replace	

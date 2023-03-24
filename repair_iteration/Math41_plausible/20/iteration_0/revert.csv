@@ -1,0 +1,14 @@
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515doubledev=values[i]-mean;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515intdev=values[i]-mean;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515doubledev=values[i]/mean;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum2+=dev*mean;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=weights[i]*(dev*dev);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=weights[i]*(dev/dev);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=weights[i]*dev;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=dev*weights[i];
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515doubledev=values[i]*mean;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=dev*mean;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=values[i]*dev;
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum+=values[i]*(dev*dev);
+projects/Math41/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java515accum2+=dev;

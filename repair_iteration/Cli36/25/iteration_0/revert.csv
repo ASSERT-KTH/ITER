@@ -1,0 +1,15 @@
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57returnthis;
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57returnnull;
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57return(optionMap!=null)?null:optionMap.get(option.getKey());
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57return(this.optionMap!=null)?null:this.optionMap.get(option.getKey());
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57return(optionMap!=null)?null:optionMap.values().toArray(this);
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57optionMap.put(option.getKey(),option);
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57this.optionMap.put(option.getKey(),option);
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57Stringselected=option.getSelectedValue();
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57OptionGrouprequired=optionMap.get(option.getValue());
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57optionMap.put(option.getValue(),option);
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57OptionGrouprequired=optionMap.get(option.getSelectedIndex());
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57return(option==null)?null:option.getValue();
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57return(option!=null)?null:option.getValue();
+projects/Cli36/src/main/java/org/apache/commons/cli/OptionGroup.java57return(option==null)?null:option.getKey();
