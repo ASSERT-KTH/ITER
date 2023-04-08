@@ -11,7 +11,7 @@
  │
  ├── 1_localize_fault.py: script to obtain ranked list of bug under repair
  │
- ├── 2_execute_perturbation.py: script to prepare bug representation of the ranked FL
+ ├── 2_bug_representation.py: script to prepare bug representation of the ranked FL
  │
  ├── 3_repair.py: script to iterative repair
  │
@@ -35,4 +35,32 @@
 * setup Defect4J export PATH = $PATH:your/path/defects4j/framework/bin
 * configure Gzoltar:
 --formula "ochiai"  --metric "entropy" --granularity "line" --inclPublicMethods --inclStaticConstructors  --inclDeprecatedMethods 
+
+
+## Checkout the buggy program and produce a ranked list for the bug. 
+```
+python3 1_localize_fault.py projectID bugID
+e.g., python3 1_localize_fault.py Chart 1
+```
+**The result will be found under projects/Chart1/build/sfl/txt/ochiai.ranking.csv**
+
+
+## Transform the FL to input representation, where the suspicious_threshold by default configures to 0.1 and we consider at most top-50 ranked suspicious statements.
+```
+python3 2_bug_representation.py projectID bugID suspicious_threshold 
+e.g., python3 2_bug_representation.py Chart 1 0.1
+```
+**The result will be found under repair_iteration/Chart1/bugs.csv**
+
+
+## Iterative Program Repair
+```
+python3 3_repair.py projectID bugID 
+e.g., python3 3_repair.py Chart 1 
+```
+**The result will be found under repair_iteration/Chart1/1,...,n, where n is the ranked position of suspucious statements **
+
+
+
+
 
