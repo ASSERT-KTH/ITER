@@ -140,7 +140,7 @@ if __name__ == '__main__':
         with open(bug_representation_path+'/bugs.csv', 'w') as csvfile:
             csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\tfailing_test_number\taction\tpatch\n')
         
-        with open(FL_file,"r") as fl:
+        with open(bug_representation_path+'/ochiai.ranking.csv',"r") as fl:
             lines = fl.readlines()
             count=0
             for line in lines:
