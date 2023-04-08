@@ -15,8 +15,8 @@ import sys, subprocess,fnmatch, shutil, csv,re, datetime
 
 
 if __name__ == '__main__':
-    for i in range(9,10):
-        PROJECT='Chart'
+    for i in range(1,106):
+        PROJECT='Math'
         TEST_PATH='repair_iteration/'+PROJECT+str(i)+'/iteration_0'
         os.system('rm -rf '+TEST_PATH)
         os.system("python3 1_localize_fault.py "+PROJECT +" "+str(i))
