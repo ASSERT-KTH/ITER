@@ -17,6 +17,8 @@
  │
  ├── 3_repair.py: script to iterative repair
  │
+ ├── 4_trace_patches.py:  script to trace plausible patches over iterations
+ │
  ├──utils/context.jar: tool to obtain the context of bug under repair, used by 2_execute_perturbation.py
  │
  ├── run_gzoltar_fl.sh: script to execute gzoltar, used by 1_localize_fault.py
@@ -47,7 +49,8 @@ e.g., python3 1_localize_fault.py Chart 1
 **The result will be found under projects/Chart1/build/sfl/txt/ochiai.ranking.csv**
 
 
-## Transform the FL to input representation, where the suspicious_threshold by default configures to 0.1 and we consider at most top-50 ranked suspicious statements.
+## Transform the FL to input representation
+The suspicious_threshold by default configures to 0.1 and we consider at most top-50 ranked suspicious statements.
 ```
 python3 2_bug_representation.py projectID bugID suspicious_threshold 
 e.g., python3 2_bug_representation.py Chart 1 0.1
@@ -61,6 +64,13 @@ python3 3_repair.py projectID bugID
 e.g., python3 3_repair.py Chart 1 
 ```
 **The result will be found under repair_iteration/Chart1/1,...,n, where n is the ranked position of suspucious statements**
+
+
+## Trace patches
+```
+python3 4_trace_patches.py 
+```
+**The result will be found in patches.csv**
 
 
 
