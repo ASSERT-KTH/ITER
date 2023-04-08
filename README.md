@@ -1,20 +1,38 @@
-### set up 
-export PATH = $PATH:your/path/defects4j/framework/bin
-configure JAVA_HOME to jdk1.8
 
-### start_initial.py 
-With this script, we get the initial status of the bug.
-You can find all the fault localization files are generated under folder the build folder the buggy project.
-```
-start_initial.py Project Bug
-For example: start_initial.py Chart 1
-The FL related files are generated under Chart1/build/sfl/txt. 
-The ranking list is generated in ochiai.ranking.csv.
+# ITER: Iterative Neural Repair for Multi-Location Patches (paper under review)
+
+
+## Folder Structure
+ ```bash
+ ├── repair_iteration: in this folder, you will find all repair iterations of considered bugs
+ │────────The folder is structured as ** repair_iteration/BugID/RankedFL/Iterations **
+ │ 
+ ├── gzoltar: in this folder, you will find the FL dependency used in ITER
+ │
+ ├── 1_localize_fault.py: script to obtain ranked list of bug under repair
+ │
+ ├── 2_execute_perturbation.py: script to prepare bug representation of the ranked FL
+ │
+ ├── 3_repair.py: script to iterative repair
+ │
+ ├──utils/context.jar: tool to obtain the context of bug under repair, used by 2_execute_perturbation.py
+ │
+ ├── run_gzoltar_fl.sh: script to execute gzoltar, used by 1_localize_fault.py
+ │
+ ├── patches.csv: the file to compare with the state-of-the-art
+ 
 ```
 
-### run_gzoltar_fl.sh 
-This script localize fauty lines with Gzoltar tool. This script is called by **start_initial.py**. Specifically, we use the following parameters. 
-```
-Gzoltar Version: 1.7.3
+
+
+
+## Prerequisites
+* JDK 1.8
+* Pytorch==1.7.1
+* transformers>=4.10.0
+* pip install transformers
+* pip install sentencepiece
+* setup Defect4J export PATH = $PATH:your/path/defects4j/framework/bin
+* configure Gzoltar:
 --formula "ochiai"  --metric "entropy" --granularity "line" --inclPublicMethods --inclStaticConstructors  --inclDeprecatedMethods 
-```
+
