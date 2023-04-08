@@ -46,7 +46,7 @@ if __name__ == '__main__':
     #copy run.sh to the target project
     if "Closure" in project:
         os.system("cp run_gzoltar_fl_Closure-after.sh ./projects/"+project+bug)
-        os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure-after.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
+        os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
     else:
         os.system("cp run_gzoltar_fl.sh ./projects/"+project+bug)
     
