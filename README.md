@@ -9,6 +9,8 @@
  │ 
  ├── gzoltar: in this folder, you will find the FL dependency used in ITER
  │
+ ├── Generate_Iterative_Sample.py: script to generate iterative training samples.
+ │
  ├── 1_localize_fault.py: script to obtain ranked list of bug under repair
  │
  ├── 2_bug_representation.py: script to prepare bug representation of the ranked FL
@@ -58,7 +60,7 @@ e.g., python3 2_bug_representation.py Chart 1 0.1
 python3 3_repair.py projectID bugID 
 e.g., python3 3_repair.py Chart 1 
 ```
-**The result will be found under repair_iteration/Chart1/1,...,n, where n is the ranked position of suspucious statements **
+**The result will be found under repair_iteration/Chart1/1,...,n, where n is the ranked position of suspucious statements**
 
 
 
