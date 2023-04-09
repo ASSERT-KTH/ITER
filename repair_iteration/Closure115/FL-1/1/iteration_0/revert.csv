@@ -1,0 +1,14 @@
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnCanInlineResult.NO;
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731if(hasSideEffects&&NodeUtil.canBeSideEffected(cArg)){returnCanInlineResult.NO;}
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731if(hasSideEffects&&NodeUtil.mayHaveSideEffects(cArg)){returnCanInlineResult.NO;}
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnNodeUtil.getNameReferenceCount(block,fnParam.getString())>1;
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnNodeUtil.getNameReferenceCount(block,fnParam.getString())>1){returnCanInlineResult.NO;}
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnCanInlineResult.NO||NodeUtil.mayEffectMutableState(cArg,fnParam.getString())||NodeUtil.mayEffectMutableState(block,fnParam.getString())
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnCanInlineResult.NO||NodeUtil.mayEffectMutableState(cArg,fnParam.getString())||NodeUtil.mayEffectMutableState(block,fnParam.getString()
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnNodeUtil.getNameReferenceCount(block,fnParam.getString())>1){returnCanInlineResult.NO;
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnNodeUtil.getNameReferenceCount(block,fnParam.getString())>0;
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnCanInlineResult.NO||NodeUtil.mayEffectMutableState(cArg,fnParam.getString())||NodeUtil.mayEffectMutableState(cArg,fnParam.getString())
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnCanInlineResult.NO||NodeUtil.mayEffectMutableState(cArg,fnParam.getString())||NodeUtil.mayEffectMutableState(cArg,fnParam.getString()
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnCanInlineResult.NO||NodeUtil.mayEffectMutableState(cArg,fnParam.getString())||NodeUtil.mayEffectMutableState(block,fnParam.getString
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnNodeUtil.mayEffectMutableState(cArg,hasSideEffects)?CanInlineResult.NO:CanInlineResult.NO;
+projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java731returnNodeUtil.mayHaveSideEffects(cArg)?CanInlineResult.NO:CanInlineResult.AFTER_PREPARATION;
