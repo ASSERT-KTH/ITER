@@ -229,21 +229,21 @@ def test_execute_info(project):
         
         
 
-def executePatch(originFile,patch,startNo,endNo,action,project):  
+def executePatch(originFile,patch,startNo,endNo,action,project,origin_failing_test):  
     
     print('executePatch',action)
     
     if 'replace' in action:
-        result, diagnosis, failing_test_count = replace_action(originFile,patch,startNo,endNo,project)
+        result, diagnosis, failing_test_count = replace_action(originFile,patch,startNo,endNo,project,origin_failing_test)
     
     elif 'add' in action:
-        result, diagnosis, failing_test_count = add_action(originFile,patch,startNo,endNo,project)
+        result, diagnosis, failing_test_count = add_action(originFile,patch,startNo,endNo,project,origin_failing_test)
     
         
     return result, diagnosis, failing_test_count,action
     
 
-def replace_action(originFile,patch,startNo,endNo,project):   
+def replace_action(originFile,patch,startNo,endNo,project,origin_failing_test):   
     filename = originFile.split('/')[-1]
     project_bug = originFile.split('/')[1]   
     diagnosis=''    
@@ -285,16 +285,21 @@ def replace_action(originFile,patch,startNo,endNo,project):
         exec_result='non-compiled'
         
 
-    #reset the original buggy file
-    os.chdir("../../")
-    os.system("mv ./projects/"+filename +"  "+originFile)
-
+        
+   #check if failing test number reduce
+    if 'compilable' in exec_result and str(failing_test_count).isnumeric() and int(origin_failing_test)>int(failing_test_count):
+        #keep this partial fix
+        os.chdir("../../")
+    else:
+        #reset the original buggy file
+        os.chdir("../../")
+        os.system("mv ./projects/"+filename +"  "+originFile)                       
 
     return exec_result, diagnosis, failing_test_count
 
 
 
-def add_action(originFile,patch,startNo,endNo,project):   
+def add_action(originFile,patch,startNo,endNo,project,origin_failing_test):   
     filename = originFile.split('/')[-1]
     project_bug = originFile.split('/')[1]   
     diagnosis=''    
@@ -338,10 +343,14 @@ def add_action(originFile,patch,startNo,endNo,project):
     else:
         exec_result='non-compiled'
         
-
-    #reset the original buggy file
-    os.chdir("../../")
-    os.system("mv ./projects/"+filename +"  "+originFile)
+    #check if failing test number reduce
+    if 'compilable' in exec_result and str(failing_test_count).isnumeric() and int(origin_failing_test)>int(failing_test_count):
+        #keep this partial fix
+        os.chdir("../../")
+    else:
+        #reset the original buggy file
+        os.chdir("../../")
+        os.system("mv ./projects/"+filename +"  "+originFile)
 
 
     return exec_result, diagnosis, failing_test_count
@@ -352,7 +361,7 @@ def add_action(originFile,patch,startNo,endNo,project):
 
 
 def test( model, tokenizer, device, loader, index,project, FL):    
-    return_sequences = 10
+    return_sequences = 50
     model.eval()
     identicalset=[]
     
@@ -383,7 +392,6 @@ def test( model, tokenizer, device, loader, index,project, FL):
                 buggy_class,suspiciousness,buggy_line,endbuggycode,original_failing_test_number,original_buggy,old_BR,action,previous_patch,old_diagnostic = getBugInfo(bugid.item())
                 
                 patch_path=TEST_PATH.replace("bugs.csv","patches.csv")
-                patch_minimization=TEST_PATH.replace("bugs.csv","patch_discard.csv")
                 patch_revert=TEST_PATH.replace("bugs.csv","revert.csv")
                 patch_plausible=TEST_PATH.replace("bugs.csv","plausible.csv")
 
@@ -392,6 +400,7 @@ def test( model, tokenizer, device, loader, index,project, FL):
                         csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\toriginal_failing_test_number\taction\tpatch\toriginal_buggy\texecution_result\tdiagnosis\tprevious_bug_id\tnew_failing_test_number\tthis_action\n')
                                                                                       
                 for i in range(0,return_sequences):
+                    continue_repair=True
                     #avoid the prediction is same with buggy
                     original_buggy_no_space=original_buggy.replace(" ","")
                     prediction_no_space = preds[i].replace(" ","")
@@ -399,6 +408,9 @@ def test( model, tokenizer, device, loader, index,project, FL):
                     
                     prediction=prediction.replace('< =','<=')
                     prediction=prediction.replace('> =','>=')
+                    prediction=prediction.replace('= =','==')
+                    prediction=prediction.replace('! =','!=')
+
 
                     #perform the deletion action
                     if i==return_sequences-1 and 'replace' in action:
@@ -432,36 +444,55 @@ def test( model, tokenizer, device, loader, index,project, FL):
                         print('='*50)                        
 
                     elif not existFlag:
-                        execution_result,diagnosis,new_failing_test_number,action = executePatch(buggy_class,prediction,buggy_line,endbuggycode,action,project)                        
+                        execution_result,diagnosis,new_failing_test_number,action = executePatch(buggy_class,prediction,buggy_line,endbuggycode,action,project,original_failing_test_number)                        
 
                         #patch minimization
-                        # Rule 2: discard the patch with compilation error                                   
                         print(execution_result, diagnosis)
                         print('='*50)
                         print(' '*50)
 
-#                         if '[CE]' in diagnosis:
-#                             if 'not a statement' in diagnosis:
-#                                 continue
-#                             if 'incompatible' in diagnosis:
-#                                 continue
-#                             if 'illegal' in diagnosis:
-#                                 continue
-#                             with open(patch_minimization, 'a') as patch_minimization_file:
-#                                 patch_minimization_file.write('compilation error,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
-#                             continue
                                 
                         # patch minimization
                         # Rule 4: discard the patch with increase failing test number                      
                         print('new_failing_test_number:',new_failing_test_number)
                         print('original_failing_test_number:',original_failing_test_number)
 
-#                         if 'compilable' in execution_result and 'None' not in str(new_failing_test_number) and int(original_failing_test_number)<int(new_failing_test_number):
-#                             with open(patch_minimization, 'a') as patch_minimization_file:
-#                                 patch_minimization_file.write('increase failing tests,'+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+'\n')
+                        ## save the partial fix that reduce the original failing tests
+                        ## reexcute FL
+                        if 'compilable' in execution_result and 'None' not in str(new_failing_test_number) and int(original_failing_test_number)>int(new_failing_test_number) and str(new_failing_test_number).isnumeric():
+                            project_bug = buggy_class.split('/')[1] 
+                            print('partial fix is found!')
+                            print(project+','+buggy_class+','+buggy_line+','+action+','+diagnosis+','+original_buggy+','+prediction+','+str(original_failing_test_number)+','+str(new_failing_test_number))
+                            with open(Partial_Fix, 'a') as patch_partial_file:
+                                patch_partial_file.write(project_bug+'\t'+'FL-'+fl+'\t'+buggy_class+'\t'+buggy_line+'\t'+suspiciousness+'\t'+action+'\t'+diagnosis+'\t'+original_buggy+'\t'+prediction+'\t'+str(original_failing_test_number)+'\t'+str(new_failing_test_number)+'\n')
+                                
+                              
+                            print(project_bug)
+                            if 'Math' in project_bug:
+                                proj='Math'
+                                project_bug = project_bug.replace('Math','')
+                            elif 'Closure' in project_bug:
+                                proj='Closure'
+                                project_bug = project_bug.replace('Closure','')
+                            elif 'Lang' in project_bug:
+                                proj='Lang'
+                                project_bug = project_bug.replace('Lang','')                           
+                            elif 'Chart' in project_bug:
+                                proj='Chart'
+                                project_bug = project_bug.replace('Chart','')
+                            elif 'Time' in project_bug:
+                                proj='Time'
+                                project_bug = project_bug.replace('Time','')
+
+                            continue_repair=False
+                            cmd='nohup python3 ITER_FL.py ' + proj+'  '+project_bug  + ' '+str(new_failing_test_number) +' ' +' & '
+#                             out = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+                            os.system(cmd)
+                            sys.exit(0)
 
 
-                        if True:
+
+                        if continue_repair:
                             new_bugid = getNewBugId(patch_path)
                             print('new_bugid:'+str(new_bugid))
                             print('execution_result:'+execution_result)
@@ -548,29 +579,48 @@ if __name__ == '__main__':
     PATCH_LEN = 76 
     device = 'cuda' if cuda.is_available() else 'cpu'
     PLAUSIBLE_FLAG=False   
+    PARTIAL_FIX_FLAG=False   
+
     start = time.time()
 
     BUGS_PATH='repair_iteration/'+project+bug+'/bugs.csv'
     PLAUSIBLE='repair_iteration/'+project+bug+'/plausible.csv'
+    Partial_Fix='repair_iteration/'+project+bug+'/partial.csv'
 
 
     if os.path.exists(BUGS_PATH):
         with open(BUGS_PATH,'r') as bug_path:
             all_buggy = bug_path.readlines()
             
-            for i in range(1,len(all_buggy)-1,2):   
-                              
-                print(str(i))
-                bug_str=all_buggy[0]+all_buggy[i]+all_buggy[i+1]
+            #fault localization iteration
+            #suspicious statement iteration
+            if os.path.exists('repair_iteration/'+project+bug+'/'+'FL-2'):
+                fl='3'
+            elif os.path.exists('repair_iteration/'+project+bug+'/'+'FL-1'):
+                fl='2'
+            else:
+                fl='1'
                 
-                root='repair_iteration/'+project+bug+'/'+str(int(i/2)+1)
+                
+            print('FL:'+str(fl))
+            for i in range(1,len(all_buggy)-1,2):   
+
+                print(str(i))
+                bug_str=all_buggy[0]+all_buggy[i]
+
+                root='repair_iteration/'+project+bug+'/'+'FL-'+fl+'/'+str(int(i/2)+1)
                 TEST_PATH = root +'/iteration_0/bugs.csv'
-                os.system('mkdir -p '+ 'repair_iteration/'+project+bug+'/'+str(int(i/2)+1)+'/iteration_0/' )
+                os.system('mkdir -p '+ root+'/iteration_0/' )
                 os.system('touch '+  TEST_PATH)
+                os.system('cp  repair_iteration/'+project+bug+'/bugs.csv  repair_iteration/'+project+bug+'/'+'FL-'+fl)
+                os.system('cp  repair_iteration/'+project+bug+'/tests.csv  repair_iteration/'+project+bug+'/'+'FL-'+fl)
+                os.system('cp  repair_iteration/'+project+bug+'/ochiai.ranking.csv' +'  repair_iteration/'+project+bug+'/'+'FL-'+fl)
+
 
                 with open(TEST_PATH,'w') as target_bug:
                     target_bug.write(bug_str)
-                
+
+                #repair attemp iteration
                 for rounds in range(0,3):
                     print('Iteration '+str(rounds)+'  '+project+bug +' FL: '+str(int(i/2)+1))
                     TEST_PATH = root +'/iteration_'+str(rounds)+'/bugs.csv'
@@ -580,8 +630,8 @@ if __name__ == '__main__':
                     REVERT_PATH=root+'/iteration_'+str(rounds)+'/revert.csv'
                     NEXT_REVERT_PATH=root+'/iteration_'+str(rounds+1)+'/revert.csv'
                     NEXT_ROUND_PATH=root+'/iteration_'+str(rounds+1)  
-                                                                                    
-                    
+
+
                     # parse the patches generated in previous iteration as the bugs to be repaired in next iterat
                     with open(PATCH_PATH,'r') as next_bugs:
                         lines = next_bugs.readlines()

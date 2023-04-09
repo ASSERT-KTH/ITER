@@ -5,6 +5,8 @@ def getDiagnosis(project,bug):
     failingtest = ''
     faildiag = ''
     project_info="defects4j info -p "+ project +" -b " +bug
+    project_info="defects4j test"
+
     result = os.popen(project_info).read()
     if 'Root cause in triggering tests:' in str(result):
         result=str(result).split('Root cause in triggering tests:')[1]
@@ -118,6 +120,7 @@ if __name__ == '__main__':
     project=sys.argv[1]
     bug=sys.argv[2]
     suspiciousness_threshold=sys.argv[3]
+    last_iteration_failing_test_count=sys.argv[4]
     suspiciousness_threshold=float(suspiciousness_threshold)
     rounds='0'
 
@@ -134,9 +137,16 @@ if __name__ == '__main__':
         os.system("cp "+FL_file + " "+bug_representation_path)
         os.system("cp "+TEST_file + " "+bug_representation_path)
 
-#         diagnosis = getDiagnosis(project,bug)
         failing_test_number, diagnosis = getDiagnosis_fromFL(TEST_file)
-        print(failing_test_number)
+        
+        if str(last_iteration_failing_test_count).isnumeric() and int(last_iteration_failing_test_count)!=0:
+            print('last_iteration_failing_test_count:'+ str(last_iteration_failing_test_count) )
+            failing_test_number=str(last_iteration_failing_test_count)
+            
+            
+        
+        
+        print('failing_test_number: '+str(failing_test_number))
         with open(bug_representation_path+'/bugs.csv', 'w') as csvfile:
             csvfile.write('bugid\tbuggy\tbuggy_class\tsuspiciousness\tbuggy_line\tendbuggycode\tfailing_test_number\taction\tpatch\n')
         

@@ -5,14 +5,23 @@ import sys, os, subprocess,fnmatch, shutil, csv, re, datetime
 if __name__ == '__main__':
     project=sys.argv[1]
     bug=sys.argv[2]
+    checkout=sys.argv[3]
+    checkout.replace(' ','')
+    if checkout in 'init':
+        checkout=True
+    else:
+        checkout=False
+        
     
-    if os.path.exists("./projects/"+project+bug):
-        os.system("rm -rf ./projects/"+project+bug)
     
     #checkout the project
-    checkout_project="defects4j checkout -p " + project +" -v "+ bug+"b  -w ./projects/"+project+bug
-    os.system(checkout_project)
-
+    if checkout:
+        if os.path.exists("./projects/"+project+bug):
+            os.system("rm -rf ./projects/"+project+bug)
+        checkout_project="defects4j checkout -p " + project +" -v "+ bug+"b  -w ./projects/"+project+bug
+        os.system(checkout_project)
+    
+    
    
     #get project information
     project_info="defects4j info -p "+ project +" -b " +bug
@@ -46,7 +55,7 @@ if __name__ == '__main__':
     #copy run.sh to the target project
     if "Closure" in project:
         os.system("cp run_gzoltar_fl_Closure-after.sh ./projects/"+project+bug)
-        os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
+        os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure-after.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
     else:
         os.system("cp run_gzoltar_fl.sh ./projects/"+project+bug)
     
