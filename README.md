@@ -43,8 +43,8 @@
 
 ## Checkout the buggy program and produce a ranked list for the bug. 
 ```
-python3 1_localize_fault.py projectID bugID
-e.g., python3 1_localize_fault.py Chart 1
+python3 1_localize_fault.py projectID bugID init
+e.g., python3 1_localize_fault.py Chart 1 init
 ```
 **The result will be found under projects/Chart1/build/sfl/txt/ochiai.ranking.csv**
 
@@ -52,8 +52,8 @@ e.g., python3 1_localize_fault.py Chart 1
 ## Transform the FL to input representation
 The suspicious_threshold by default configures to 0.1 and we consider at most top-50 ranked suspicious statements.
 ```
-python3 2_bug_representation.py projectID bugID suspicious_threshold 
-e.g., python3 2_bug_representation.py Chart 1 0.1
+python3 2_bug_representation.py projectID bugID suspicious_threshold init
+e.g., python3 2_bug_representation.py Chart 1 0.1 init
 ```
 **The result will be found under repair_iteration/Chart1/bugs.csv**
 
