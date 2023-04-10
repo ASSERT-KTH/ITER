@@ -17,7 +17,7 @@
  │
  ├── 3_repair.py: script to iterative repair
  │
- ├── 4_trace_patches.py:  script to trace plausible patches over iterations
+ ├── 4_trace_patches.py:  script to trace plausible patches over iterations, this script generates patches.csv
  │
  ├── ITER_FL.py: script to be called by 3_repair to re-execute FL.
  │
