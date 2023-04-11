@@ -5,7 +5,7 @@
 ## Folder Structure
  ```bash
  ├── repair_iteration: in this folder, you will find all repair iterations of considered bugs
- │────────The folder is structured as ** repair_iteration/BugID/FL_Iteration/Suspicious_Statement/Iterations **
+ │────────The folder is structured as ** repair_iteration/BugID/FL_Iteration/Ranked_Suspicious_Statement/Iterations **
  │ 
  ├── gzoltar: in this folder, you will find the FL dependency used in ITER
  │
@@ -44,12 +44,12 @@
 
 
 ## How to read *repair_iteration* folder
-* repair_iteration/BugID/FL_Iteration/Suspicious_Statement/Iterations  (single test failure bug does not has FL iteration folder)
+* repair_iteration/BugID/FL_Iteration/Ranked_Suspicious_Statement/Iterations  (single test failure bug does not has FL iteration folder)
 
 ```
 Example: 
 >> repair_iteration/Math46/FL-2/1
-indicates the second iteration (FL-2) of fault localization with 1st suspicious statement (1).
+indicates the second iteration (FL-2) of fault localization with 1st ranked suspicious statement (1).
 each suspicious statement has its iteration_0/iteration_1/iteration_2.
 each iteration has its bugs.csv, patches.csv and revert.csv(to avoid the duplicated patches).
 ```
