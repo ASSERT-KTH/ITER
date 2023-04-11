@@ -48,7 +48,8 @@
 
 ```
 Example: 
-repair_iteration/Math46/FL-2/1/ -> second iteration of fault localization, the number 1 indicates the 1st suspicious statement
+>> repair_iteration/Math46/FL-2/1
+indicates the second iteration (FL-2) of fault localization with 1st suspicious statement (1).
 each suspicious statement has its iteration_0/iteration_1/iteration_2.
 each iteration has its bugs.csv, patches.csv and revert.csv(to avoid the duplicated patches).
 ```
