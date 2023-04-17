@@ -1,0 +1,35 @@
+Cli8 -  FL is ranked in the 5 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 812
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol max Repair Action: replace 
+ - pos = findWrapPos(text, width, nextLineTabStop); 
+ + pos = findWrapPos(text, width, max);
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLineTabStop Repair Action: replace 
+ - pos = findWrapPos(text, width, max); 
+ + pos = findWrapPos(text, width, this.nextLineTabStop);
+Iteration: 2, Repair Action: replace 
+ - pos = findWrapPos(text, width, this.nextLineTabStop); 
+ + pos = findWrapPos(text, width, this.defaultLeftPad); 
+ ----------------------------------------------------------------------------------------------------
+Cli8 -  FL is ranked in the 5 position(s) with a suspicious value: 0.7071067811865475
+
+
+Number of failing tests: 1 
+Buggy Location: 812
+Patch Found in iteration 0 
+Repair Action: replace 
+ - pos  =  findWrapPos(text,  width,  nextLineTabStop);  
+ + pos  =  findWrapPos(text,  width,  1); 
+ --------------------------------------------------
+Cli8 -  FL is ranked in the 5 position(s) with a suspicious value: 0.7071067811865475
+
+
+Number of failing tests: 1 
+Buggy Location: 812
+Patch Found in iteration 0 
+Repair Action: replace 
+ - pos  =  findWrapPos(text,  width,  nextLineTabStop);  
+ + pos  =  findWrapPos(text,  width,  0); 
+ --------------------------------------------------

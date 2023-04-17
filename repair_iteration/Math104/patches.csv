@@ -1,0 +1,78 @@
+Math104 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 162
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - } else if (a >= 1.0 && x > a) { 
+ + } else if (a >= 1.0 && x < a) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + } else if (a >= 1.0 && x < a) { else if (a >= 1.0 && x < a) {
+Iteration: 2, Repair Action: replace 
+ - } else if (a >= 1.0 && x < a) { else if (a >= 1.0 && x < a) { 
+ + } else if(x >= 1.0) { 
+ ----------------------------------------------------------------------------------------------------
+Math104 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 162
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - } else if (a >= 1.0 && x > a) { 
+ + } else if (a >= 1.0 && x < a) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + } else if (a >= 1.0 && x < a) { else if (a >= 1.0 && x < a) {
+Iteration: 2, Repair Action: replace 
+ - } else if (a >= 1.0 && x < a) { else if (a >= 1.0 && x < a) { 
+ + } else if(x!= 0.0) { 
+ ----------------------------------------------------------------------------------------------------
+Math104 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 162
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - } else if (a >= 1.0 && x > a) { 
+ + } else if (x >= 1.0 && a > a) {
+Iteration: 1, Diagnostic: [CE] variable ret might not have been initialized Repair Action: add 
+ + } else if (x >= 1.0 && a > a) { } else if (x!= 1.0 && a > a) {
+Iteration: 2, Repair Action: replace 
+ - } else if (x >= 1.0 && a > a) { } else if (x!= 1.0 && a > a) { 
+ + } else if(x >= 1.0 && a > epsilon) { 
+ ----------------------------------------------------------------------------------------------------
+Math104 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 162
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - } else if (a >= 1.0 && x > a) { 
+ + } else if (x >= 1.0 && a > a) {
+Iteration: 1, Diagnostic: [CE] variable ret might not have been initialized Repair Action: add 
+ + } else if (x >= 1.0 && a > a) { } else if (x!= 1.0 && a > a) {
+Iteration: 2, Repair Action: replace 
+ - } else if (x >= 1.0 && a > a) { } else if (x!= 1.0 && a > a) { 
+ + } else if(x == 1.0 && a > epsilon) { 
+ ----------------------------------------------------------------------------------------------------
+Math104 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 162
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - } else if (a >= 1.0 && x > a) { 
+ + } else if (a >= 1.0 && x < a) {
+Iteration: 1, Repair Action: replace 
+ - } else if (a >= 1.0 && x < a) { 
+ + } else if(x >= 0.0) { 
+ ----------------------------------------------------------------------------------------------------
+Math104 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 162
+Patch Found in iteration 0 
+Repair Action: replace 
+ - }  else  if  (a  >=  1.0  &&  x  >  a)  {  
+ + }  else  if(a  >=  1.0  &&  x  ==  a)  { 
+ --------------------------------------------------

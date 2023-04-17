@@ -1,0 +1,26 @@
+Math70 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 72
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - return solve(min, max); 
+ + return solve(initial, max);
+Iteration: 1, Diagnostic: [CE] variable min is already defined in method solve(UnivariateRealFunction,double,double,double) Repair Action: add 
+ + return solve(initial, max); double min = getMinimumSize();
+Iteration: 2, Repair Action: replace 
+ - return solve(initial, max); double min = getMinimumSize(); 
+ + return solve(f, initial, max); 
+ ----------------------------------------------------------------------------------------------------
+Math70 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 72
+
+Iteration: 0, Diagnostic: [CE] no suitable method found for solve(UnivariateRealFunction,double) Repair Action: replace 
+ - return solve(min, max); 
+ + return solve(f, max);
+Iteration: 1, Repair Action: replace 
+ - return solve(f, max); 
+ + return solve(f, min, max); 
+ ----------------------------------------------------------------------------------------------------

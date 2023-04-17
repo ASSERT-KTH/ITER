@@ -1,0 +1,114 @@
+Math44 -  FL is ranked in the 40 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 287
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  Iterator < EventState> iterator = eventsStates.iterator();
+Iteration: 1, Diagnostic: [CE] variable iterator is already defined in method acceptStep(AbstractStepInterpolator,double[],double[],double) Repair Action: add 
+ +   Iterator < EventState> iterator = eventsStates.iterator(); Iterator < EventState> iterator = eventsStates.iterator(); isLastStep = false;
+Iteration: 2, Repair Action: replace 
+ -   Iterator < EventState> iterator = eventsStates.iterator(); Iterator < EventState> iterator = eventsStates.iterator(); isLastStep = false; 
+ + Iterator < EventState> iterator = eventsStates.iterator(); isLastStep = false; 
+ ----------------------------------------------------------------------------------------------------
+Math44 -  FL is ranked in the 40 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 287
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  Iterator < EventState> iterator = eventsStates.iterator();
+Iteration: 1, Repair Action: replace 
+ -  Iterator < EventState> iterator = eventsStates.iterator(); 
+ + Iterator < EventState> iterator = this.eventsStates.iterator(); 
+ ----------------------------------------------------------------------------------------------------
+Math44 -  FL is ranked in the 40 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 287
+Patch Found in iteration 0 
+Repair Action: replace 
+ - statesInitialized  =  true;  
+ + statesInitialized  =  false; 
+ --------------------------------------------------
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 283
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if (! statesInitialized) { 
+ + if(isLastStep) {
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if(isLastStep) { 
+ + if(previousT > currentT) {
+Iteration: 2, Repair Action: replace 
+ - if(previousT > currentT) { 
+ + if(currentT > previousT) { 
+ ----------------------------------------------------------------------------------------------------
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 283
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if (! statesInitialized) { 
+ + if(isLastStep) {
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if(isLastStep) { 
+ + if(eventsStates.size() == 1) {
+Iteration: 2, Repair Action: replace 
+ - if(eventsStates.size() == 1) { 
+ + if(eventsStates.size() > 1) { 
+ ----------------------------------------------------------------------------------------------------
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 283
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if (! statesInitialized) { 
+ + if(isLastStep) {
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if(isLastStep) { 
+ + if(eventsStates.size() == 1) {
+Iteration: 2, Repair Action: replace 
+ - if(eventsStates.size() == 1) { 
+ + if(eventsStates.size()!= 1) { 
+ ----------------------------------------------------------------------------------------------------
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 283
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if (! statesInitialized) { 
+ + if(isLastStep) {
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if(isLastStep) { 
+ + if(eventsStates.size() == 1) {
+Iteration: 2, Repair Action: replace 
+ - if(eventsStates.size() == 1) { 
+ + if(eventsStates.size() >= 1) { 
+ ----------------------------------------------------------------------------------------------------
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 283
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!  statesInitialized)  {  
+ + if  (!isLastStep)  { 
+ --------------------------------------------------
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 283
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!  statesInitialized)  {  
+ + if(eventsStates!=  null)  { 
+ --------------------------------------------------

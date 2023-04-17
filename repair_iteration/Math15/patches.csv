@@ -1,0 +1,33 @@
+Math15 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1542
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - return pow(-x, y); 
+ + return pow(-x, y + 1);
+Iteration: 1, Repair Action: replace 
+ - return pow(-x, y + 1); 
+ + return -pow(-x, y + 1); 
+ ----------------------------------------------------------------------------------------------------
+Math15 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1542
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  y = Math.pow(-x, y);
+Iteration: 1, Repair Action: replace 
+ -  y = Math.pow(-x, y); 
+ + y = Math.pow(-1, y); 
+ ----------------------------------------------------------------------------------------------------
+Math15 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1542
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  pow(-x,  y);  
+ + return  -pow(-x,  y); 
+ --------------------------------------------------

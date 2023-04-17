@@ -1,0 +1,244 @@
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.runningState = STATE_UNSTARTED;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_UNSTARTED; }
+Iteration: 2, Repair Action: replace 
+ -   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_UNSTARTED; } 
+ + if(this.runningState!= STATE_RUNNING) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_STOPPED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.runningState = STATE_UNSTARTED;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_UNSTARTED; }
+Iteration: 2, Repair Action: replace 
+ -   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_UNSTARTED; } 
+ + if(this.runningState!= STATE_RUNNING) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.runningState = STATE_UNSTARTED;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_STOPPED; }
+Iteration: 2, Repair Action: replace 
+ -   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_STOPPED; } 
+ + if(this.runningState!= STATE_RUNNING) { this.runningState = STATE_SUSPENDED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_STOPPED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  stopTime = System.currentTimeMillis();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   stopTime = System.currentTimeMillis(); System.currentTimeMillis();
+Iteration: 2, Repair Action: replace 
+ -   stopTime = System.currentTimeMillis(); System.currentTimeMillis(); 
+ + if(this.runningState == STATE_RUNNING) { stopTime = System.currentTimeMillis(); System.currentTimeMillis(); } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.runningState = STATE_UNSTARTED;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.runningState = STATE_UNSTARTED; this.runningState = STATE_UNSTARTED;
+Iteration: 2, Repair Action: replace 
+ -   this.runningState = STATE_UNSTARTED; this.runningState = STATE_UNSTARTED; 
+ + if(this.runningState!= STATE_RUNNING) { this.runningState = STATE_UNSTARTED; this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - stopTime = System.currentTimeMillis(); 
+ + stopTime = System.currentTimeMillis() + 1;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ + stopTime = System.currentTimeMillis() + 1; stopTime = System.currentTimeMillis() + 1;
+Iteration: 2, Repair Action: replace 
+ - stopTime = System.currentTimeMillis() + 1; stopTime = System.currentTimeMillis() + 1; 
+ + if(this.runningState!= STATE_SUSPENDED) { stopTime = System.currentTimeMillis(); stopTime = System.currentTimeMillis(); } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  stopTime = System.currentTimeMillis();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   stopTime = System.currentTimeMillis(); System.currentTimeMillis();
+Iteration: 2, Repair Action: replace 
+ -   stopTime = System.currentTimeMillis(); System.currentTimeMillis(); 
+ + if(this.runningState!= STATE_SUSPENDED) { stopTime = System.currentTimeMillis(); System.currentTimeMillis(); } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.runningState = STATE_UNSTARTED;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; }
+Iteration: 2, Repair Action: replace 
+ -   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; } 
+ + if(this.runningState!= STATE_RUNNING) { this.runningState = STATE_SUSPENDED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+
+Number of failing tests: 1 
+Buggy Location: 118
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.runningState = STATE_UNSTARTED;
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; }
+Iteration: 2, Repair Action: replace 
+ -   this.runningState = STATE_UNSTARTED; if(this.runningState!= STATE_UNSTARTED) { this.runningState = STATE_UNSTARTED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; } 
+ + if(this.runningState!= STATE_RUNNING) { this.runningState = STATE_STOPPED; } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); Thread.currentThread().interrupt(); 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); if(this.runningState!= STATE_RUNNING) { Thread.currentThread().interrupt(); } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_SUSPENDED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); if(this.runningState!= STATE_RUNNING) { Thread.currentThread().interrupt(); } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_STOPPED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); if(this.runningState!= STATE_RUNNING) { Thread.currentThread().interrupt(); } else { stopTime = System.currentTimeMillis(); this.runningState = STATE_UNSTARTED; } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); if(this.runningState!= STATE_RUNNING) { Thread.currentThread().interrupt(); } 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); Thread.currentThread().interrupt(); this.runningState = STATE_STOPPED; 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); Thread.currentThread().interrupt(); this.runningState = STATE_SUSPENDED; 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); Thread.currentThread().interrupt(); this.runningState = STATE_UNSTARTED; 
+ ----------------------------------------------------------------------------------------------------
+Lang55 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 179
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend. "); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if(this.runningState!= STATE_RUNNING) { throw new IllegalStateException( "Stopwatch must be running to suspend.  "); } 
+ + Thread.currentThread().interrupt();
+Iteration: 2, Repair Action: add 
+ - 
+ + Thread.currentThread().interrupt(); Thread.currentThread().interrupt(); this.runningState = STATE_RUNNING; 
+ ----------------------------------------------------------------------------------------------------

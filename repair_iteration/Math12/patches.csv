@@ -1,0 +1,73 @@
+Math12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.7071067811865476
+
+Number of failing tests: 3 
+Buggy Location: 108
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - nextGaussian = r * FastMath.sin(alpha); 
+ + nextGaussian = random * FastMath.sin(alpha);
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: add 
+ + nextGaussian = random * FastMath.sin(alpha); double nextGaussian = random * FastMath.sin(alpha);
+Iteration: 2, Repair Action: replace 
+ - nextGaussian = random * FastMath.sin(alpha); double nextGaussian = random * FastMath.sin(alpha); 
+ + double nextGaussian = random * FastMath.sin(alpha); 
+ ----------------------------------------------------------------------------------------------------
+Math12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.7071067811865476
+
+Number of failing tests: 3 
+Buggy Location: 108
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - nextGaussian = r * FastMath.sin(alpha); 
+ + nextGaussian = random * FastMath.sin(alpha);
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: add 
+ + nextGaussian = random * FastMath.sin(alpha); double nextGaussian = random * FastMath.sin(alpha);
+Iteration: 2, Repair Action: replace 
+ - nextGaussian = random * FastMath.sin(alpha); double nextGaussian = random * FastMath.sin(alpha); 
+ + double nextGaussian = random * FastMath.sin(r); 
+ ----------------------------------------------------------------------------------------------------
+Math12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.7071067811865476
+
+Number of failing tests: 3 
+Buggy Location: 108
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - nextGaussian = r * FastMath.sin(alpha); 
+ + nextGaussian = random * FastMath.sin(alpha);
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - nextGaussian = random * FastMath.sin(alpha); 
+ + nextGaussian = x * FastMath.sin(alpha);
+Iteration: 2, Repair Action: replace 
+ - nextGaussian = x * FastMath.sin(alpha); 
+ + nextGaussian = x * FastMath.sin(nextGaussian); 
+ ----------------------------------------------------------------------------------------------------
+Math12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.7071067811865476
+
+
+Number of failing tests: 3 
+Buggy Location: 108
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     double  nextGaussian  =  r  *  FastMath.sin(x); 
+ --------------------------------------------------
+Math12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.7071067811865476
+
+
+Number of failing tests: 3 
+Buggy Location: 108
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     double  nextGaussian  =  random  *  FastMath.sin(x); 
+ --------------------------------------------------
+Math12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.7071067811865476
+
+
+Number of failing tests: 3 
+Buggy Location: 108
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     double  nextGaussian  =  r  *  FastMath.sin(alpha); 
+ --------------------------------------------------

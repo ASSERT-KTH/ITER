@@ -1,0 +1,51 @@
+Math46 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math46/src/main/java/org/apache/commons/math/complex/Complex.java, buggy location: 260, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+- return isZero ? NaN : INF; 
++ return divisor.isZero? NaN : INF;
+
+Number of failing tests: 1 
+Buggy Location: 297
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - return isZero ? NaN : INF; 
+ + return isNaN? NaN : INF;
+Iteration: 1, Repair Action: replace 
+ - return isNaN? NaN : INF; 
+ + return isNaN? INF : NaN; 
+ ----------------------------------------------------------------------------------------------------
+Math46 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math46/src/main/java/org/apache/commons/math/complex/Complex.java, buggy location: 260, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+- return isZero ? NaN : INF; 
++ return divisor.isZero? NaN : INF;
+
+Number of failing tests: 1 
+Buggy Location: 297
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol isDivisor Repair Action: replace 
+ - return isZero ? NaN : INF; 
+ + return isDivisor? NaN : INF;
+Iteration: 1, Repair Action: replace 
+ - return isDivisor? NaN : INF; 
+ + return isInfinite? NaN : NaN; 
+ ----------------------------------------------------------------------------------------------------
+Math46 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math46/src/main/java/org/apache/commons/math/complex/Complex.java, buggy location: 260, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+- return isZero ? NaN : INF; 
++ return divisor.isZero? NaN : INF;
+
+Number of failing tests: 1 
+Buggy Location: 297
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol isNull Repair Action: replace 
+ - return isZero ? NaN : INF; 
+ + return isNull? NaN : INF;
+Iteration: 1, Repair Action: replace 
+ - return isNull? NaN : INF; 
+ + return isNaN? NaN : NaN; 
+ ----------------------------------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+Math105 -  FL is ranked in the 13 position(s) with a suspicious value: 0.3333333333333333
+
+Number of failing tests: 1 
+Buggy Location: 108
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  ybar = Math.abs(xbar);
+Iteration: 1, Repair Action: replace 
+ -  ybar = Math.abs(xbar); 
+ + ybar = Math.min(y, xbar); 
+ ----------------------------------------------------------------------------------------------------
+Math105 -  FL is ranked in the 12 position(s) with a suspicious value: 0.3333333333333333
+
+Number of failing tests: 1 
+Buggy Location: 107
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  x = Math.max(x, y);
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  x = Math.max(x, y); 
+ + x = Math.max(x, y - 1);
+Iteration: 2, Repair Action: add 
+ - 
+ + x = Math.max(x, y - 1); x = Math.max(x, y - 1); 
+ ----------------------------------------------------------------------------------------------------
+Math105 -  FL is ranked in the 12 position(s) with a suspicious value: 0.3333333333333333
+
+Number of failing tests: 1 
+Buggy Location: 107
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  x = Math.max(x, y);
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  x = Math.max(x, y); 
+ + x = Math.max(x, y - 1);
+Iteration: 2, Repair Action: add 
+ - 
+ + x = Math.max(x, y - 1); x = Math.max(x, y - 2); 
+ ----------------------------------------------------------------------------------------------------

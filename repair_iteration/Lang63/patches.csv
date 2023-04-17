@@ -1,0 +1,1316 @@
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - return newdiff; 
+ + return startValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - return startValue; 
+ + return startValue - endValue;
+Iteration: 2, Repair Action: replace 
+ - return startValue - endValue; 
+ + return startValue - newdiff; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - return newdiff; 
+ + return newdiff - 1;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - return newdiff - 1; 
+ + return newdiff - 1 + 1;
+Iteration: 2, Repair Action: replace 
+ - return newdiff - 1 + 1; 
+ + return endValue - 1 + 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  newdiff = Math.max(newdiff, endValue);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   newdiff = Math.max(newdiff, endValue); newdiff = Math.max(newdiff, endValue);
+Iteration: 2, Repair Action: add 
+ - 
+ +     newdiff  =  Math.max(newdiff,  endValue);  newdiff = Math.max(newdiff, endValue); newdiff = Math.min(newdiff, endValue); newdiff = Math.max(newdiff, endValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  newdiff = Math.max(newdiff, endValue);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   newdiff = Math.max(newdiff, endValue); newdiff = Math.max(newdiff, endValue);
+Iteration: 2, Repair Action: add 
+ - 
+ +     newdiff  =  Math.max(newdiff,  endValue);  newdiff = Math.max(newdiff, endValue); newdiff = Math.max(newdiff, endValue); newdiff = Math.min(newdiff, endValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  newdiff = Math.max(newdiff, endValue);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   newdiff = Math.max(newdiff, endValue); newdiff = Math.max(newdiff, endValue - difference);
+Iteration: 2, Repair Action: add 
+ - 
+ +     newdiff  =  Math.max(newdiff,  endValue);  newdiff = Math.max(newdiff, endValue - difference); newdiff = Math.min(newdiff, endValue); newdiff = Math.max(newdiff, endValue - difference); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  newdiff = Math.max(newdiff, endValue);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   newdiff = Math.max(newdiff, endValue); newdiff = Math.max(newdiff, endValue - startValue);
+Iteration: 2, Repair Action: add 
+ - 
+ +     newdiff  =  Math.max(newdiff,  endValue);  newdiff = Math.max(newdiff, endValue - startValue); newdiff = Math.min(newdiff, endValue); newdiff = Math.max(newdiff, endValue - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - return newdiff; 
+ + return startValue;
+Iteration: 1, Repair Action: replace 
+ - return startValue; 
+ + return 0; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  newdiff = Math.max(newdiff, endValue);
+Iteration: 1, Repair Action: add 
+ - 
+ +   newdiff = Math.max(newdiff, endValue); newdiff = Math.min(newdiff, endValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 439
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - return newdiff; 
+ + return newdiff - endValue;
+Iteration: 1, Repair Action: replace 
+ - return newdiff - endValue; 
+ + return newdiff * endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 439
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     newdiff  =  Math.min(newdiff,  endValue); 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 439
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     newdiff  =  Math.min(newdiff,  endValue)/  2; 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 439
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  newdiff;  
+ + return  newdiff  -  startValue; 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff + 1 * difference - 1);
+Iteration: 2, Repair Action: add 
+ - 
+ + end.add(field, newdiff + 1 * difference - 1); start.add(field, newdiff + 1 * difference - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds might not have been initialized Repair Action: replace 
+ -  int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(milliseconds, startValue - endValue);
+Iteration: 2, Repair Action: replace 
+ - int milliseconds = Math.min(milliseconds, startValue - endValue); 
+ + int milliseconds = Math.min(newdiff, startValue - endValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable days is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int days = startValue - startValue; int days = startValue + startValue;
+Iteration: 2, Repair Action: replace 
+ -   int days = startValue - startValue; int days = startValue + startValue; 
+ + int days = startValue + endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable days is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int days = startValue - startValue; int days = startValue + startValue;
+Iteration: 2, Repair Action: replace 
+ -   int days = startValue - startValue; int days = startValue + startValue; 
+ + int days = endValue + startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   int seconds = startValue - startValue; int minutes = startValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int minutes = startValue - startValue; 
+ + int seconds = endValue - startValue; int minutes = endValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   int seconds = startValue - startValue; int minutes = startValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int minutes = startValue - startValue; 
+ + int seconds = startValue - endValue; int minutes = startValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   int seconds = startValue - startValue; int minutes = startValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int minutes = startValue - startValue; 
+ + int seconds = endValue - startValue; int minutes = startValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff / 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff / 1); 
+ + end.add(field, newdiff / 2); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff / 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff / 1); 
+ + end.add(newdiff, field / 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff * 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff * 1); 
+ + end.add(newdiff, field * 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff + 2);
+Iteration: 2, Repair Action: add 
+ - 
+ + end.add(field, newdiff + 2); start.add(field, newdiff + 2); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + end.add(field, newdiff + 1); end.add(field, newdiff + 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff + 1); end.add(field, newdiff + 1); 
+ + if(startValue == endValue) { end.add(field, newdiff + 1); } 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable days is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int days = startValue - startValue; int days = endValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int days = startValue - startValue; int days = endValue - startValue; 
+ + long days = startValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(newdiff, newdiff - startValue);
+Iteration: 2, Repair Action: replace 
+ - end.add(newdiff, newdiff - startValue); 
+ + end.add(newdiff, startValue - newdiff); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(newdiff, newdiff - startValue);
+Iteration: 2, Repair Action: replace 
+ - end.add(newdiff, newdiff - startValue); 
+ + end.add(newdiff, newdiff - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + end.add(field, newdiff + 1 * difference ); int end.add(field, newdiff + 1 * difference );
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); int end.add(field, newdiff + 1 * difference ); 
+ + if(newdiff == 0) { end.add(field, newdiff + 1 * difference ); } 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + end.add(field, newdiff + 1); end.add(field, newdiff + 1);
+Iteration: 2, Repair Action: add 
+ - 
+ + end.add(field,  newdiff  +  1);  end.add(field, newdiff + 1); start.add(field, newdiff + 1); end.add(field, newdiff + 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(newdiff, field - startValue);
+Iteration: 2, Repair Action: replace 
+ - end.add(newdiff, field - startValue); 
+ + end.add(newdiff, startValue - field); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff + 1 * difference - 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference - 1); 
+ + end.add(newdiff, newdiff + 1 * difference - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.max(endValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.max(endValue, difference - startValue); 
+ + int milliseconds = Math.max(newdiff, endValue - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff / 1);
+Iteration: 2, Repair Action: add 
+ - 
+ + end.add(field, newdiff / 1); start.add(field, newdiff / 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff * 1);
+Iteration: 2, Repair Action: add 
+ - 
+ + end.add(field, newdiff * 1); start.add(field, newdiff * 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + end.add(field, newdiff + 1 * difference ); end.add(field, newdiff + 1 * difference );
+Iteration: 2, Repair Action: add 
+ - 
+ + end.add(field,  newdiff  +  1  *  difference  );  end.add(field, newdiff + 1 * difference ); start.add(field, newdiff + 1 * difference ); end.add(field, newdiff + 1 * difference ); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff + 2);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff + 2); 
+ + end.add(newdiff, newdiff + 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(startValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(startValue, difference - startValue); 
+ + int milliseconds = Math.min(startValue, endValue - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(startValue, newdiff + 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(startValue, newdiff + 1); 
+ + end.add(newdiff, startValue + 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(startValue, newdiff + 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(startValue, newdiff + 1); 
+ + end.add(startValue, newdiff - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds might not have been initialized Repair Action: replace 
+ -  int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(milliseconds, endValue - newdiff);
+Iteration: 2, Repair Action: replace 
+ - int milliseconds = Math.min(milliseconds, endValue - newdiff); 
+ + int milliseconds = Math.min(newdiff, endValue - newdiff); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds might not have been initialized Repair Action: replace 
+ -  int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(milliseconds, endValue - newdiff);
+Iteration: 2, Repair Action: replace 
+ - int milliseconds = Math.min(milliseconds, endValue - newdiff); 
+ + int milliseconds = Math.min(newdiff, endValue - difference); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable seconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int seconds = startValue - startValue; int seconds = startValue + startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int seconds = startValue + startValue; 
+ + int seconds = startValue + endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.max(endValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.max(endValue, difference - startValue); 
+ + int milliseconds = Math.min(startValue, difference - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable seconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int seconds = startValue - startValue; int seconds = startValue + startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int seconds = startValue + startValue; 
+ + int seconds = endValue + startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(startValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(startValue, difference - startValue); 
+ + int milliseconds = Math.min(endValue, difference - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ +   int days = startValue - startValue; int days = startValue - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int days = startValue - startValue; int days = startValue - startValue); 
+ + int days = endValue * startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(startValue, difference - endValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable seconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int seconds = startValue - startValue; int seconds = startValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int seconds = startValue - startValue; 
+ + int seconds =(endValue - startValue)/ 2; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(field, newdiff / 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff / 1); 
+ + end.add(field, newdiff / difference); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff + 1 * difference - 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference - 1); 
+ + end.add(field, newdiff - 1 * difference - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff + 1 * difference - 1);
+Iteration: 2, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference - 1); 
+ + end.add(field, newdiff + 1 / difference - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.max(endValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.max(endValue, difference - startValue); 
+ + int milliseconds = Math.max(endValue, newdiff - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable seconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int seconds = startValue - startValue; int seconds = startValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int seconds = startValue - startValue; 
+ + int seconds = field - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(newdiff, field - startValue);
+Iteration: 2, Repair Action: replace 
+ - end.add(newdiff, field - startValue); 
+ + end.add(newdiff, field - newdiff); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(newdiff, field - startValue);
+Iteration: 2, Repair Action: replace 
+ - end.add(newdiff, field - startValue); 
+ + end.add(newdiff, field - 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Diagnostic: [CE] variable milliseconds is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(startValue, difference - startValue);
+Iteration: 2, Repair Action: replace 
+ -   int milliseconds = Math.min(endValue, difference - startValue); int milliseconds = Math.min(startValue, difference - startValue); 
+ + int milliseconds = Math.min(endValue, endValue - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Diagnostic: [CE] variable days is already defined in method reduceAndCorrect(Calendar,Calendar,int,int) Repair Action: add 
+ +   int days = startValue - startValue; int days = endValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int days = startValue - startValue; int days = endValue - startValue; 
+ + int days = endValue - startValue + 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   int seconds = startValue - startValue; int minutes = startValue - startValue;
+Iteration: 2, Repair Action: replace 
+ -   int seconds = startValue - startValue; int minutes = startValue - startValue; 
+ + int seconds = endValue - startValue; int minutes = startValue - endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff + 1 - difference ); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int days = startValue - startValue; 
+ + int days = endValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int days = startValue - startValue; 
+ + int days = startValue - endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int days = startValue - startValue; 
+ + int days = startValue - newdiff; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int days = startValue - startValue; 
+ + int days = newdiff - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int seconds = startValue - startValue; 
+ + int seconds = endValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int seconds = startValue - startValue; 
+ + int seconds = newdiff - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int seconds = startValue - startValue; 
+ + int seconds = startValue - newdiff; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int seconds = startValue - startValue; 
+ + int seconds = startValue - endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Repair Action: replace 
+ - end.add(field, newdiff + 1); 
+ + end.add(newdiff, field + 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1);
+Iteration: 1, Repair Action: add 
+ - 
+ + end.add(field, newdiff + 1); start.add(field, newdiff + 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Repair Action: replace 
+ -  int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(newdiff, endValue - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Repair Action: replace 
+ -  int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(newdiff, difference - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Repair Action: add 
+ - 
+ + end.add(field, newdiff + 1 * difference ); start.add(field, newdiff + 1 * difference ); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Repair Action: add 
+ - 
+ + end.add(field, newdiff - startValue); start.add(field, newdiff - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff + 1 * difference - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff + 1 * difference );
+Iteration: 1, Repair Action: replace 
+ - end.add(field, newdiff + 1 * difference ); 
+ + end.add(field, newdiff - 1 * difference ); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int milliseconds = Math.min(endValue, difference - startValue);
+Iteration: 1, Repair Action: replace 
+ -  int milliseconds = Math.min(endValue, difference - startValue); 
+ + int milliseconds = Math.min(endValue, newdiff - startValue); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int seconds = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int seconds = startValue - startValue; 
+ + int seconds = difference - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int days = startValue - startValue; 
+ + int days = startValue / startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(field, newdiff - startValue + 1); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  int days = startValue - startValue;
+Iteration: 1, Repair Action: replace 
+ -  int days = startValue - startValue; 
+ + int days = difference - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 438
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - end.add( field, newdiff ); 
+ + end.add(field, newdiff - startValue);
+Iteration: 1, Repair Action: replace 
+ - end.add(field, newdiff - startValue); 
+ + end.add(field, newdiff - 2); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 438
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     newdiff  =  Math.min(newdiff,  endValue); 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 438
+Patch Found in iteration 0 
+Repair Action: replace 
+ - end.add(  field,  newdiff  );  
+ + end.add(field,  newdiff  -  difference); 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 438
+Patch Found in iteration 0 
+Repair Action: replace 
+ - end.add(  field,  newdiff  );  
+ + end.add(field,  newdiff  -  1); 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 438
+Patch Found in iteration 0 
+Repair Action: replace 
+ - end.add(  field,  newdiff  );  
+ + end.add(field,  difference  -  startValue); 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue - endValue + 1;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue + 1; 
+ + int newdiff = startValue - endValue / 1;
+Iteration: 2, Repair Action: replace 
+ - int newdiff = startValue - endValue / 1; 
+ + int newdiff = endValue - startValue / 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue - endValue + 1;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue + 1; 
+ + int newdiff = startValue - endValue / 1;
+Iteration: 2, Repair Action: replace 
+ - int newdiff = startValue - endValue / 1; 
+ + int newdiff = difference - endValue / 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ArithmeticException Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue / endValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue / endValue; 
+ + int newdiff = startValue / difference;
+Iteration: 2, Repair Action: replace 
+ - int newdiff = startValue / difference; 
+ + int newdiff = endValue / difference; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ArithmeticException Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue / endValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue / endValue; 
+ + int newdiff = startValue / difference;
+Iteration: 2, Repair Action: replace 
+ - int newdiff = startValue / difference; 
+ + int newdiff = difference / startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue - endValue + 1;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue + 1; 
+ + int newdiff = startValue - endValue / 1;
+Iteration: 2, Repair Action: replace 
+ - int newdiff = startValue - endValue / 1; 
+ + int newdiff = difference - startValue / 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ArithmeticException Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue / endValue;
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue / endValue; 
+ + int newdiff = startValue * endValue;
+Iteration: 2, Repair Action: replace 
+ - int newdiff = startValue * endValue; 
+ + int newdiff = 0 * endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ArithmeticException Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue / endValue;
+Iteration: 1, Repair Action: replace 
+ - int newdiff = startValue / endValue; 
+ + int newdiff = endValue / startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ArithmeticException Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue / endValue;
+Iteration: 1, Repair Action: replace 
+ - int newdiff = startValue / endValue; 
+ + int newdiff = difference / endValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol newdiff Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + int newdiff = end.get(field); 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue - endValue + 1;
+Iteration: 1, Repair Action: replace 
+ - int newdiff = startValue - endValue + 1; 
+ + int newdiff = endValue - startValue + 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue - endValue + 1;
+Iteration: 1, Repair Action: replace 
+ - int newdiff = startValue - endValue + 1; 
+ + int newdiff = difference - endValue + 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol newdiff Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + int newdiff = startValue - startValue; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 437
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int newdiff = startValue - endValue; 
+ + int newdiff = startValue - endValue + 1;
+Iteration: 1, Repair Action: replace 
+ - int newdiff = startValue - endValue + 1; 
+ + int newdiff = difference - startValue + 1; 
+ ----------------------------------------------------------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 437
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  newdiff  =  startValue  -  endValue;  
+ + int  newdiff  =  endValue  -  startValue; 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 437
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  newdiff  =  startValue  -  endValue;  
+ + int  newdiff  =  startValue  -  endValue  -  1; 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 437
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  newdiff  =  startValue  -  endValue;  
+ + int  newdiff  =  startValue  -  endValue  -  difference; 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 437
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  newdiff  =  startValue  -  endValue;  
+ + int  newdiff  =  difference  -  endValue; 
+ --------------------------------------------------
+Lang63 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 437
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  newdiff  =  startValue  -  endValue;  
+ + int  newdiff  =  difference  -  startValue; 
+ --------------------------------------------------

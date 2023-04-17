@@ -1,0 +1,423 @@
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 2, Repair Action: add 
+ - 
+ +     if(commandLine  ==  null  ||  commandLine.equals(arg))  {  return  false;  }  if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine!= null || commandLine.equals(arg)) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 2, Repair Action: add 
+ - 
+ +     if(commandLine  ==  null  ||  commandLine.equals(arg))  {  return  false;  }  if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine!= null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 2, Repair Action: add 
+ - 
+ +     if(commandLine  ==  null  ||  commandLine.equals(arg))  {  return  false;  }  if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine!= null || commandLine.equals(arg)) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine == null || commandLine.equals(arg)) { return false; }
+Iteration: 1, Repair Action: add 
+ - 
+ +   if(commandLine == null || commandLine.equals(arg)) { return false; } if(commandLine!= null || commandLine.equals(arg)) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 193
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + return  false; 
+ --------------------------------------------------
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 193
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + return(arg  ==  null)||(arg.length()  ==  0); 
+ --------------------------------------------------
+Cli13 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 193
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + return(arg  ==  null)&&(arg.length()  >  0); 
+ --------------------------------------------------
+Cli13 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 203
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - processValues(commandLine, args, this); 
+ + processValues(commandLine, args, null);
+Iteration: 1, Diagnostic: [CE] variable commandLine is already defined in method process(WriteableCommandLine,ListIterator) Repair Action: add 
+ + processValues(commandLine, args, null); WriteableCommandLine commandLine = getWriteableCommandLine();
+Iteration: 2, Repair Action: replace 
+ - processValues(commandLine, args, null); WriteableCommandLine commandLine = getWriteableCommandLine(); 
+ + if(args == null) { processValues(commandLine, args, null); } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 203
+Patch Found in iteration 0 
+Repair Action: replace 
+ - processValues(commandLine,  args,  this);  
+ +    
+ --------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { 
+ + if(arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ + if(!commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ + if(commandLine.looksLikeOption(allValuesQuoted)|| arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ + else if(commandLine!= null || commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ + else if(commandLine.looksLikeOption(consumeRemaining)&& arguments.hasNext()) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine.looksLikeOption(consumeRemaining)&& arguments.hasNext()) { 
+ + else if(commandLine.hasOption(option)&& arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+Iteration: 1, Diagnostic: [CE] method looksLikeOption in interface WriteableCommandLine cannot be applied to given types; Repair Action: add 
+ +   if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } if(commandLine.looksLikeOption(defaultValues)) { arguments.previous(); break; }
+Iteration: 2, Repair Action: replace 
+ -   if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } if(commandLine.looksLikeOption(defaultValues)) { arguments.previous(); break; } 
+ + if(commandLine!= null) { if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+Iteration: 1, Diagnostic: [CE] method looksLikeOption in interface WriteableCommandLine cannot be applied to given types; Repair Action: add 
+ +   if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } if(commandLine.looksLikeOption(defaultValues)) { arguments.previous(); break; }
+Iteration: 2, Repair Action: replace 
+ -   if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } if(commandLine.looksLikeOption(defaultValues)) { arguments.previous(); break; } 
+ + if(commandLine!= null) { if(commandLine.looksLikeOption(allValues)) { arguments.previous(); break; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { 
+ + if(commandLine!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { 
+ + if(commandLine!= null || commandLine.looksLikeOption(allValuesQuoted)) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { else if(commandLine!= null && commandLine.looksLikeOption(option)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { else if(commandLine!= null && commandLine.looksLikeOption(option)) { 
+ + else if(commandLine!= null && commandLine.hasOption(option)) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(defaultValuesQuoted)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(defaultValuesQuoted)) { 
+ + if(!allValues.isEmpty()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { 
+ + if(arguments!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { else if(commandLine!= null && commandLine.looksLikeOption(alwaysQuoted)) {
+Iteration: 2, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { else if(commandLine!= null && commandLine.looksLikeOption(alwaysQuoted)) { 
+ + else if(commandLine!= null && arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; }
+Iteration: 1, Diagnostic: [CE] 'else' without 'if' Repair Action: add 
+ +   if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } List < ComparisonFailure> arguments = stripBoundaryQuotes(allValuesQuoted);
+Iteration: 2, Repair Action: replace 
+ -   if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } List < ComparisonFailure> arguments = stripBoundaryQuotes(allValuesQuoted); 
+ + if(arguments.hasNext()) { if(commandLine.looksLikeOption(allValuesQuoted)) { arguments.previous(); break; } 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) {
+Iteration: 1, Repair Action: replace 
+ - else if(commandLine!= null && commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine!= null || commandLine.looksLikeOption(allValuesQuoted)) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 158
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - else if (commandLine.looksLikeOption(allValuesQuoted)) { 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) {
+Iteration: 1, Repair Action: replace 
+ - else if(commandLine.looksLikeOption(allValuesQuoted)&& arguments.hasNext()) { 
+ + else if(commandLine.looksLikeOption(allValuesQuoted)|| arguments.hasNext()) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 158
+Patch Found in iteration 0 
+Repair Action: replace 
+ - else  if  (commandLine.looksLikeOption(allValuesQuoted))  {  
+ + else  if(!commandLine.looksLikeOption(allValuesQuoted))  { 
+ --------------------------------------------------
+Cli13 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - int argumentCount = 0; 
+ + int argumentCount = 1;
+Iteration: 1, Repair Action: replace 
+ - int argumentCount = 1; 
+ + int argumentCount = 2; 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - while (arguments.hasNext() && (argumentCount < maximum)) { 
+ + while(arguments.hasNext() ||(argumentCount < maximum)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol maximal Repair Action: replace 
+ - while(arguments.hasNext() ||(argumentCount < maximum)) { 
+ + while(arguments.hasNext() &&(argumentCount < maximal)) {
+Iteration: 2, Repair Action: replace 
+ - while(arguments.hasNext() &&(argumentCount < maximal)) { 
+ + while(arguments.hasNext() &&(argumentCount < argumentCount)) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - while (arguments.hasNext() && (argumentCount < maximum)) { 
+ + while(arguments.hasNext() ||(argumentCount < maximum)) {
+Iteration: 1, Diagnostic: [FE] NoSuchElementException Repair Action: replace 
+ - while(arguments.hasNext() ||(argumentCount < maximum)) { 
+ + while(arguments.hasNext() ||(argumentCount > maximum)) {
+Iteration: 2, Repair Action: replace 
+ - while(arguments.hasNext() ||(argumentCount > maximum)) { 
+ + while(arguments.hasNext() &&(argumentCount > maximum)) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - while (arguments.hasNext() && (argumentCount < maximum)) { 
+ + while(arguments.hasNext()) {
+Iteration: 1, Repair Action: replace 
+ - while(arguments.hasNext()) { 
+ + while(arguments.hasNext() && argumentCount > maximum) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - while (arguments.hasNext() && (argumentCount < maximum)) { 
+ + while(arguments.hasNext()) {
+Iteration: 1, Repair Action: replace 
+ - while(arguments.hasNext()) { 
+ + while(arguments.hasNext() && argumentCount >= maximum) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - while (arguments.hasNext() && (argumentCount < maximum)) { 
+ + while(arguments.hasNext()) {
+Iteration: 1, Repair Action: replace 
+ - while(arguments.hasNext()) { 
+ + while(arguments.hasNext() && argumentCount > 1) { 
+ ----------------------------------------------------------------------------------------------------
+Cli13 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - while (arguments.hasNext() && (argumentCount < maximum)) { 
+ + while(arguments.hasNext()) {
+Iteration: 1, Repair Action: replace 
+ - while(arguments.hasNext()) { 
+ + while(arguments.hasNext() && argumentCount == maximum) { 
+ ----------------------------------------------------------------------------------------------------

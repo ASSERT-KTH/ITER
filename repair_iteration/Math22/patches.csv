@@ -1,0 +1,386 @@
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol supportUpperBoundInclusive Repair Action: replace 
+ - return false; 
+ + return this.supportUpperBoundInclusive <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this.supportUpperBoundInclusive <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return DEFAULT_INVERSE_ABSOLUTE_ACCURACY <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol supportUpperBoundInclusive Repair Action: replace 
+ - return false; 
+ + return this.supportUpperBoundInclusive <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this.supportUpperBoundInclusive <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return DEFAULT_INVERSE_ABSOLUTE_ACCURACY <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol supportUpperBoundInclusive Repair Action: replace 
+ - return false; 
+ + return this.supportUpperBoundInclusive <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this.supportUpperBoundInclusive <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return DEFAULT_INVERSE_ABSOLUTE_ACCURACY <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || DEFAULT_INVERSE_ABSOLUTE_ACCURACY == DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] incomparable types: UniformRealDistribution and double Repair Action: replace 
+ - return false; 
+ + return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return this.lower!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] incomparable types: UniformRealDistribution and double Repair Action: replace 
+ - return false; 
+ + return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return this.lower!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower < DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] incomparable types: UniformRealDistribution and double Repair Action: replace 
+ - return false; 
+ + return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return this.upper!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] incomparable types: UniformRealDistribution and double Repair Action: replace 
+ - return false; 
+ + return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return this.lower >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] incomparable types: UniformRealDistribution and double Repair Action: replace 
+ - return false; 
+ + return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return this.upper >= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Number of failing tests: 1 
+Buggy Location: 184
+
+Iteration: 0, Diagnostic: [CE] incomparable types: UniformRealDistribution and double Repair Action: replace 
+ - return false; 
+ + return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY;
+Iteration: 1, Repair Action: replace 
+ - return this!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY && this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ + return this.lower!= DEFAULT_INVERSE_ABSOLUTE_ACCURACY || this.lower <= DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ ----------------------------------------------------------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  true; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY!=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ||  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ||  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ||  DEFAULT_INVERSE_ABSOLUTE_ACCURACY!=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ||  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ||  DEFAULT_INVERSE_ABSOLUTE_ACCURACY!=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  lower  <=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  lower!=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return  this.upper  ==  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  ||  this.upper  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  this.upper!=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY; 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return(this.lower  <=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY  &&  this.upper  >  DEFAULT_INVERSE_ABSOLUTE_ACCURACY)||(this.upper  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY); 
+ --------------------------------------------------
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java, buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return(this.lower  <=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY)||(this.upper  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY); 
+ --------------------------------------------------

@@ -1,0 +1,22 @@
+Math8 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 189
+
+Iteration: 0, Diagnostic: [FE] ArrayStoreException Repair Action: replace 
+ - for (int i = 0; i < sampleSize; i++) { 
+ + for(int i = 0; i < out.length; i++) {
+Iteration: 1, Repair Action: replace 
+ - for(int i = 0; i < out.length; i++) { 
+ + for(int i = 0; i < out.length - 1; i++) { 
+ ----------------------------------------------------------------------------------------------------
+Math8 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 189
+Patch Found in iteration 0 
+Repair Action: replace 
+ - for  (int  i  =  0;  i  <  sampleSize;  i++)  {  
+ + for(int  i  =  1;  i  <  sampleSize;  i++)  { 
+ --------------------------------------------------

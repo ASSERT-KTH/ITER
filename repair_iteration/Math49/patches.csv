@@ -1,0 +1,126 @@
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE;
+Iteration: 1, Diagnostic: [CE] variable epsilon might already have been assigned Repair Action: add 
+ + this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; epsilon = virtualSize + DEFAULT_ZERO_TOLERANCE;
+Iteration: 2, Repair Action: replace 
+ - this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; epsilon = virtualSize + DEFAULT_ZERO_TOLERANCE; 
+ + this.epsilon = dimension + DEFAULT_ZERO_TOLERANCE; epsilon = virtualSize + DEFAULT_ZERO_TOLERANCE; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE;
+Iteration: 1, Diagnostic: [CE] variable epsilon might already have been assigned Repair Action: add 
+ + this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; epsilon = epsilon + DEFAULT_ZERO_TOLERANCE;
+Iteration: 2, Repair Action: replace 
+ - this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; 
+ + this.epsilon = dimension + DEFAULT_ZERO_TOLERANCE; epsilon = dimension + DEFAULT_ZERO_TOLERANCE; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon;
+Iteration: 1, Diagnostic: [CE] variable epsilon might already have been assigned Repair Action: add 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon; Iterator iter = entries.iterator();
+Iteration: 2, Repair Action: replace 
+ - this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon; Iterator iter = entries.iterator(); 
+ + this.epsilon = dimension + DEFAULT_ZERO_TOLERANCE; Iterator iter = entries.iterator(); 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon;
+Iteration: 1, Diagnostic: [CE] variable epsilon might already have been assigned Repair Action: add 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon; Iterator iter = entries.iterator();
+Iteration: 2, Repair Action: replace 
+ - this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon; Iterator iter = entries.iterator(); 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + dimension; Iterator iter = entries.iterator(); 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE;
+Iteration: 1, Repair Action: replace 
+ - this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; 
+ + this.epsilon = dimension + DEFAULT_ZERO_TOLERANCE; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE;
+Iteration: 1, Repair Action: replace 
+ - this.epsilon = epsilon + DEFAULT_ZERO_TOLERANCE; 
+ + this.epsilon = virtualSize + DEFAULT_ZERO_TOLERANCE; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon;
+Iteration: 1, Repair Action: replace 
+ - this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon; 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + dimension; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon;
+Iteration: 1, Repair Action: replace 
+ - this.epsilon = DEFAULT_ZERO_TOLERANCE + epsilon; 
+ + this.epsilon = dimension + epsilon; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 77
+
+Iteration: 0, Diagnostic: [FE] MathRuntimeException$6 Repair Action: replace 
+ - this.epsilon = epsilon; 
+ + this.epsilon = epsilon * DEFAULT_ZERO_TOLERANCE;
+Iteration: 1, Repair Action: replace 
+ - this.epsilon = epsilon * DEFAULT_ZERO_TOLERANCE; 
+ + this.epsilon = epsilon / DEFAULT_ZERO_TOLERANCE; 
+ ----------------------------------------------------------------------------------------------------
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+
+
+Number of failing tests: 1 
+Buggy Location: 77
+Patch Found in iteration 0 
+Repair Action: replace 
+ - this.epsilon  =  epsilon;  
+ + this.epsilon  =  dimension; 
+ --------------------------------------------------

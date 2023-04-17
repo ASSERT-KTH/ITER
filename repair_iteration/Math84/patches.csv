@@ -1,0 +1,118 @@
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator == null) { if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 2, Repair Action: replace 
+ - if(comparator == null) { if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(contracted!= null) { if(comparator.compare(contracted, best) < 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator == null) { if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 2, Repair Action: replace 
+ - if(comparator == null) { if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(contracted!= null) { if(comparator.compare(contracted, best) >= 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: add 
+ +   if(comparator.compare(contracted, best) < 0) { return; } if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 2, Repair Action: replace 
+ -   if(comparator.compare(contracted, best) < 0) { return; } if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(simplex!= null) { if(comparator.compare(contracted, best) < 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator == null) { if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 2, Repair Action: replace 
+ - if(comparator == null) { if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator!= null) { if(comparator.compare(contracted, best) == 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator.compare(contracted, best)!= 0) { return; }
+Iteration: 2, Repair Action: replace 
+ - if(comparator.compare(contracted, best)!= 0) { return; } 
+ + if(contracted!= null) { if(comparator.compare(contracted, best)!= 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator.compare(contracted, best)!= 0) { return; }
+Iteration: 2, Repair Action: replace 
+ - if(comparator.compare(contracted, best)!= 0) { return; } 
+ + if(comparator!= null) { if(comparator.compare(contracted, best)!= 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator.compare(contracted, best) == 0) { return; }
+Iteration: 2, Repair Action: replace 
+ - if(comparator.compare(contracted, best) == 0) { return; } 
+ + if(contracted!= null) { if(comparator.compare(contracted, best) == 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 2 
+Buggy Location: 90
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  if(comparator.compare(contracted, best) < 0) { return; }
+Iteration: 1, Repair Action: replace 
+ -  if(comparator.compare(contracted, best) < 0) { return; } 
+ + if(comparator!= null) { if(comparator.compare(contracted, best) < 0) { return; } 
+ ----------------------------------------------------------------------------------------------------
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+
+
+Number of failing tests: 2 
+Buggy Location: 90
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (comparator.compare(contracted,  best)  <  0)  {  
+ + if  (comparator.compare(contracted,  best)  ==  0)  { 
+ --------------------------------------------------
