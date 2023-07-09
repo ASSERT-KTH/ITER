@@ -1,0 +1,50 @@
+return this.dataset;
+return this.interiorGap;
+return this.circular;
+return this.labelGenerator;
+return this.labelGap;
+return this.maximumLabelWidth;
+PiePlotState state = new PiePlotState(info);
+state.setPassesRequired(2);
+state.setTotal(DatasetUtilities.calculatePieDatasetTotal(
+LegendItemCollection result = new LegendItemCollection();
+if (this.dataset == null) {
+return result;
+super();
+private transient Paint shadowPaint = Color.gray;
+private double shadowXOffset = 4.0f;
+private double shadowYOffset = 4.0f;
+private boolean simpleLabels = true;
+private double maximumLabelWidth = 0.14;
+private double labelGap = 0.025;
+private double labelLinkMargin = 0.025;
+private transient Paint labelLinkPaint = Color.black;
+private transient Stroke labelLinkStroke = new BasicStroke(0.5f);
+this.dataset = dataset;
+if (dataset != null) {
+this.pieIndex = 0;
+this.interiorGap = DEFAULT_INTERIOR_GAP;
+this.circular = true;
+this.startAngle = DEFAULT_START_ANGLE;
+this.direction = Rotation.CLOCKWISE;
+this.minimumArcAngleToDraw = DEFAULT_MINIMUM_ARC_ANGLE_TO_DRAW;
+this.sectionPaintMap = new PaintMap();
+this.baseSectionPaint = Color.gray;
+this.sectionOutlinesVisible = true;
+this.sectionOutlinePaintMap = new PaintMap();
+this.baseSectionOutlinePaint = DEFAULT_OUTLINE_PAINT;
+this.sectionOutlineStrokeMap = new StrokeMap();
+this.baseSectionOutlineStroke = DEFAULT_OUTLINE_STROKE;
+this.explodePercentages = new TreeMap();
+this.labelGenerator = new StandardPieSectionLabelGenerator();
+this.labelFont = DEFAULT_LABEL_FONT;
+this.labelPaint = DEFAULT_LABEL_PAINT;
+this.labelBackgroundPaint = DEFAULT_LABEL_BACKGROUND_PAINT;
+this.labelOutlinePaint = DEFAULT_LABEL_OUTLINE_PAINT;
+this.labelOutlineStroke = DEFAULT_LABEL_OUTLINE_STROKE;
+this.labelShadowPaint = DEFAULT_LABEL_SHADOW_PAINT;
+this.labelLinksVisible = true;
+this.labelDistributor = new PieLabelDistributor(0);
+this.simpleLabels = false;
+this.simpleLabelOffset = new RectangleInsets(UnitType.RELATIVE, 0.18,
+this.labelPadding = new RectangleInsets(2, 2, 2, 2);

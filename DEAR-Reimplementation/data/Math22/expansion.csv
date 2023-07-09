@@ -1,0 +1,12 @@
+org.apache.commons.math3.distribution.FDistribution:270-return Double.POSITIVE_INFINITY;
+org.apache.commons.math3.distribution.FDistribution:271-}
+org.apache.commons.math3.distribution.FDistribution:274-public boolean isSupportLowerBoundInclusive() {
+org.apache.commons.math3.distribution.FDistribution:275-return true;
+org.apache.commons.math3.distribution.FDistribution:276-}
+org.apache.commons.math3.distribution.FDistribution:279-public boolean isSupportUpperBoundInclusive() {
+org.apache.commons.math3.distribution.FDistribution:280-return false;
+org.apache.commons.math3.distribution.UniformRealDistribution:179-return true;
+org.apache.commons.math3.distribution.UniformRealDistribution:180-}
+org.apache.commons.math3.distribution.UniformRealDistribution:183-public boolean isSupportUpperBoundInclusive() {
+org.apache.commons.math3.distribution.UniformRealDistribution:184-return false;
+org.apache.commons.math3.distribution.UniformRealDistribution:185-}

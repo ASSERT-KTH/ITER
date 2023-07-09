@@ -1,0 +1,7 @@
+return getCost(root, Integer.MAX_VALUE);
+CompiledSizeEstimator estimator = new CompiledSizeEstimator(costThreshhold);
+estimator.add(root);
+return estimator.getCost();
+static final int ESTIMATED_IDENTIFIER_COST = ESTIMATED_IDENTIFIER.length();
+private InlineCostEstimator() {
+}

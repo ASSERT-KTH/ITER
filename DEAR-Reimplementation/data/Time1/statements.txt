@@ -1,0 +1,50 @@
+throw new IllegalArgumentException("Types array must be in order largest-smallest: " +
+if (durationField.isSupported()) {
+return 1;
+}
+iValues = (int[]) values.clone();
+}
+iTypes = (DateTimeFieldType[]) types.clone();
+chronology.validate(this, values);
+DurationField lastUnitField = null;
+for (int i = 0; i < types.length; i++) {
+DateTimeFieldType loopType = types[i];
+DurationField loopUnitField = loopType.getDurationType().getField(iChronology);
+if (i > 0) {
+int compare = lastUnitField.compareTo(loopUnitField);
+if (compare < 0) {
+} else if (compare == 0) {
+lastUnitField = loopUnitField;
+for (int i = 0; i < types.length; i++) {
+if (types[i] == null) {
+if (types.length == 0) {
+if (values.length != types.length) {
+return iTypes[index].getField(chrono);
+this(types, values, null);
+if (values == null) {
+super();
+chronology = DateTimeUtils.getChronology(chronology).withUTC();
+iChronology = chronology;
+if (types == null) {
+return iTypes.length;
+return iChronology;
+private UnsupportedDurationField(DurationFieldType type) {
+iType = type;
+}
+if (cCache == null) {
+cCache = new HashMap<DurationFieldType, UnsupportedDurationField>(7);
+field = null;
+field = cCache.get(type);
+if (field == null) {
+field = new UnsupportedDurationField(type);
+cCache.put(type, field);
+return field;
+return false;
+return 0;
+return iType;
+return iType.getName();
+return true;
+throw unsupported();
+throw unsupported();
+throw unsupported();
+throw unsupported();

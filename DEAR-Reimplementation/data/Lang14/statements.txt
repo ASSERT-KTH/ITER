@@ -1,0 +1,50 @@
+if (cs1 == cs2) {
+return true;
+if (cs1 == null || cs2 == null) {
+return cs1.equals(cs2);
+private static final Pattern WHITESPACE_BLOCK = Pattern.compile("\\s+");
+super();
+}
+return cs == null || cs.length() == 0;
+return !StringUtils.isEmpty(cs);
+if (cs == null || (strLen = cs.length()) == 0) {
+return true;
+for (int i = 0; i < strLen; i++) {
+if (Character.isWhitespace(cs.charAt(i)) == false) {
+return false;
+return true;
+return !StringUtils.isBlank(cs);
+return str == null ? null : str.trim();
+String ts = trim(str);
+return isEmpty(ts) ? null : ts;
+return str == null ? EMPTY : str.trim();
+return strip(str, null);
+if (str == null) {
+return null;
+str = strip(str, null);
+return str.length() == 0 ? null : str;
+return str == null ? EMPTY : strip(str, null);
+if (isEmpty(str)) {
+return str;
+str = stripStart(str, stripChars);
+return stripEnd(str, stripChars);
+if (str == null || (strLen = str.length()) == 0) {
+return str;
+int start = 0;
+if (stripChars == null) {
+while (start != strLen && Character.isWhitespace(str.charAt(start))) {
+start++;
+} else if (stripChars.length() == 0) {
+return str;
+while (start != strLen && stripChars.indexOf(str.charAt(start)) != INDEX_NOT_FOUND) {
+start++;
+return str.substring(start);
+if (str == null || (end = str.length()) == 0) {
+return str;
+if (stripChars == null) {
+while (end != 0 && Character.isWhitespace(str.charAt(end - 1))) {
+end--;
+} else if (stripChars.length() == 0) {
+return str;
+while (end != 0 && stripChars.indexOf(str.charAt(end - 1)) != INDEX_NOT_FOUND) {
+end--;

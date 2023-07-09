@@ -1,0 +1,17 @@
+public ChecksumCalculatingInputStream(final Checksum checksum, final InputStream in) {
+this.checksum = checksum;
+this.in = in;
+}
+final int ret = in.read();
+if (ret >= 0) {
+checksum.update(ret);
+return ret;
+return read(b, 0, b.length);
+final int ret = in.read(b, off, len);
+if (ret >= 0) {
+checksum.update(b, off, ret);
+return ret;
+if (read() >= 0) {
+return 1;
+return 0;
+return checksum.getValue();

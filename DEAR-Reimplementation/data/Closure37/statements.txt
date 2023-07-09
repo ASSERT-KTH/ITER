@@ -1,0 +1,50 @@
+} catch (Exception unexpectedException) {
+throwUnexpectedException(unexpectedException);
+String message = unexpectedException.getMessage();
+if (inputId != null) {
+compiler.throwInternalError(message, unexpectedException);
+node.setLength(source.getLength());
+return position - lineIndex - 1;
+return Token.ASSIGN;
+traverseBranch(fnName, n);
+reservedKeywords = null;
+break;
+for (Comment comment : node.getComments()) {
+if (comment.getCommentType() == CommentType.JSDOC &&
+} else if (comment.getCommentType() == CommentType.BLOCK_COMMENT) {
+}
+if (jsDocParser.getFileOverviewJSDocInfo() != fileOverviewInfo) {
+return false;
+JsDocInfoParser jsDocParser = createJsDocInfoParser(comment, irNode);
+parsedComments.add(comment);
+if (!handlePossibleFileOverviewJsDoc(jsDocParser)) {
+return jsDocParser.retrieveAndResetParsedJSDocInfo();
+irNode.setJSDocInfo(jsDocInfo);
+Node irNode = transformDispatcher.processName(node, true);
+JSDocInfo jsDocInfo = handleJsDoc(node, irNode);
+if (jsDocInfo != null) {
+setSourceInfo(irNode, node);
+return irNode;
+String comment = node.getValue();
+int lineno = node.getLineno();
+int position = node.getAbsolutePosition();
+int numOpeningChars = 3;
+JsDocInfoParser jsdocParser =
+jsdocParser.setFileLevelJsDocBuilder(fileLevelJsDocBuilder);
+jsdocParser.setFileOverviewJSDocInfo(fileOverviewInfo);
+jsdocParser.parse();
+return jsdocParser;
+switch (token) {
+return Token.BLOCK;
+return Token.EXPR_RESULT;
+return new Node(type, child1, child2).clonePropsFrom(templateNode);
+traverseFunction(n, parent);
+break;
+Preconditions.checkState(n.getChildCount() == 3);
+Preconditions.checkState(n.isFunction());
+final Node fnName = n.getFirstChild();
+boolean isFunctionExpression = (parent != null)
+if (!isFunctionExpression) {
+traverseBranch(fnName, n);
+curNode = n;
+pushScope(n);

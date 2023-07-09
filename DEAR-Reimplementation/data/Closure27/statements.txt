@@ -1,0 +1,50 @@
+Node block = new Node(Token.BLOCK);
+return block;
+Preconditions.checkState(mayBeStatement(stmt));
+Preconditions.checkState(tryBody.isBlock());
+Preconditions.checkState(catchNode.isCatch());
+Node catchBody = block(catchNode).copyInformationFrom(catchNode);
+Preconditions.checkState(expr.isName());
+Preconditions.checkState(body.isBlock());
+return new Node(Token.CATCH, expr, body);
+return Node.newString(Token.NAME, name);
+switch (n.getType()) {
+return false;
+Preconditions.checkState(tryBody.isLabelName());
+Preconditions.checkState(finallyBody.isBlock());
+Node tryNode = tryCatch(tryBody, catchNode);
+private IR() {}
+return new Node(Token.EMPTY);
+Preconditions.checkState(name.isName());
+Preconditions.checkState(params.isParamList());
+Preconditions.checkState(body.isBlock());
+return new Node(Token.FUNCTION, name, params, body);
+return new Node(Token.PARAM_LIST);
+Preconditions.checkState(param.isName());
+return new Node(Token.PARAM_LIST, param);
+Node paramList = paramList();
+for (Node param : params) {
+Preconditions.checkState(param.isName());
+paramList.addChildToBack(param);
+return paramList;
+Node paramList = paramList();
+for (Node param : params) {
+Preconditions.checkState(param.isName());
+paramList.addChildToBack(param);
+}
+return paramList;
+Node block = new Node(Token.BLOCK, stmt);
+return block;
+Node block = new Node(Token.BLOCK);
+for (Node stmt : stmts) {
+Preconditions.checkState(mayBeStatement(stmt));
+block.addChildToBack(stmt);
+return block;
+Node block = new Node(Token.SCRIPT);
+for (Node stmt : stmts) {
+Preconditions.checkState(mayBeStatement(stmt));
+block.addChildToBack(stmt);
+return block;
+Preconditions.checkState(name.isName() && !name.hasChildren());
+Preconditions.checkState(mayBeExpression(value));
+name.addChildToFront(value);

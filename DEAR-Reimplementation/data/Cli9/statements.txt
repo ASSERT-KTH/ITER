@@ -1,0 +1,50 @@
+Iterator iter = getRequiredOptions().iterator();
+StringBuffer buff = new StringBuffer("Missing required option");
+buff.append(getRequiredOptions().size() == 1 ? "" : "s");
+buff.append(": ");
+while (iter.hasNext())
+buff.append(iter.next());
+throw new MissingOptionException(buff.toString());
+public abstract class Parser implements CommandLineParser {
+this.options = options;
+this.requiredOptions = options.getRequiredOptions();
+}
+return options;
+return requiredOptions;
+return parse(options, arguments, null, false);
+for (Iterator it = options.helpOptions().iterator(); it.hasNext();) {
+Option opt = (Option) it.next();
+opt.clearValues();
+}
+setOptions(options);
+cmd = new CommandLine();
+boolean eatTheRest = false;
+if (arguments == null)
+List tokenList = Arrays.asList(flatten(getOptions(),
+ListIterator iterator = tokenList.listIterator();
+while (iterator.hasNext())
+processProperties(properties);
+checkRequiredOptions();
+if (properties == null)
+return;
+if (getRequiredOptions().size() > 0)
+String t = (String) iterator.next();
+if ("--".equals(t))
+else if ("-".equals(t))
+else if (t.startsWith("-"))
+if (stopAtNonOption && !getOptions().hasOption(t))
+processOption(t, iterator);
+if (eatTheRest)
+}
+boolean hasOption = getOptions().hasOption(arg);
+if (!hasOption)
+final Option opt = getOptions().getOption(arg);
+if (opt.isRequired())
+if (getOptions().getOptionGroup(opt) != null)
+if (opt.hasArg())
+cmd.addOption(opt);
+}
+return parse(options, arguments, properties, false);
+return parse(options, arguments, null, stopAtNonOption);
+arguments = new String[0];
+eatTheRest = true;

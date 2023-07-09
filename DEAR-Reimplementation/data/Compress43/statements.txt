@@ -1,0 +1,50 @@
+preClose();
+entry.bytesRead = entry.entry.getSize();
+final Zip64Mode effectiveMode = getEffectiveZip64Mode(entry.entry);
+final boolean actuallyNeedsZip64 = checkIfNeedsZip64(effectiveMode);
+closeEntry(actuallyNeedsZip64, phased);
+}
+final ZipArchiveEntry ae = new ZipArchiveEntry(entry);
+if (hasZip64Extra(ae)) {
+final boolean is2PhaseSource = ae.getCrc() != ZipArchiveEntry.CRC_UNKNOWN
+putArchiveEntry(ae, is2PhaseSource);
+copyFromZipInputStream(rawStream);
+closeCopiedEntry(is2PhaseSource);
+}
+if (entry == null) {
+ZipUtil.checkRequestedFeatures(entry.entry);
+entry.hasWritten = true;
+while ((length = src.read(copyBuffer)) >= 0 )
+streamCompressor.writeCounted(copyBuffer, 0, length);
+count( length );
+}
+putLong(ze.getCrc(), buf, LFH_CRC_OFFSET);
+putLong(ze.getCompressedSize(), buf, LFH_COMPRESSED_SIZE_OFFSET);
+putLong(ze.getSize(), buf, LFH_ORIGINAL_SIZE_OFFSET);
+public ZipArchiveOutputStream(final OutputStream out) {
+protected boolean finished = false;
+private String comment = "";
+private int level = DEFAULT_COMPRESSION;
+private boolean hasCompressionLevelChanged = false;
+private int method = java.util.zip.ZipEntry.DEFLATED;
+private final List<ZipArchiveEntry> entries =
+private long cdOffset = 0;
+private long cdLength = 0;
+private final Map<ZipArchiveEntry, EntryMetaData> metaData =
+private String encoding = DEFAULT_ENCODING;
+private ZipEncoding zipEncoding =
+private boolean useUTF8Flag = true;
+private boolean fallbackToUTF8 = false;
+private UnicodeExtraFieldPolicy createUnicodeExtraFields = UnicodeExtraFieldPolicy.NEVER;
+private boolean hasUsedZip64 = false;
+private Zip64Mode zip64Mode = Zip64Mode.AsNeeded;
+private final byte[] copyBuffer = new byte[32768];
+private final Calendar calendarInstance = Calendar.getInstance();
+this.out = out;
+this.channel = null;
+def = new Deflater(level, true);
+streamCompressor = StreamCompressor.create(out, def);
+}
+} else if (phased) {
+} else if (zipMethod == DEFLATED || channel != null) {
+System.arraycopy(LZERO, 0, buf, LFH_COMPRESSED_SIZE_OFFSET, WORD);

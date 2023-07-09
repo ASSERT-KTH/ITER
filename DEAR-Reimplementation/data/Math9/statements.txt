@@ -1,0 +1,45 @@
+final Line reverted = new Line(zero, zero.subtract(direction));
+return reverted;
+return direction;
+public Line(final Vector3D p1, final Vector3D p2) throws MathIllegalArgumentException {
+reset(p1, p2);
+}
+final Vector3D delta = p2.subtract(p1);
+final double norm2 = delta.getNormSq();
+if (norm2 == 0.0) {
+this.direction = new Vector3D(1.0 / FastMath.sqrt(norm2), delta);
+zero = new Vector3D(1.0, p1, -p1.dotProduct(delta) / norm2, delta);
+}
+public Line(final Line line) {
+this.direction = line.direction;
+this.zero= line.zero;
+}
+throw new MathIllegalArgumentException(LocalizedFormats.ZERO_NORM);
+return zero;
+return point.subtract(zero).dotProduct(direction);
+return new Vector3D(1.0, zero, abscissa, direction);
+return new Vector1D(getAbscissa((Vector3D) point));
+return pointAt(((Vector1D) point).getX());
+final double angle = Vector3D.angle(direction, line.direction);
+return ((angle < 1.0e-10) || (angle > (FastMath.PI - 1.0e-10))) && contains(line.zero);
+return distance(p) < 1.0e-10;
+final Vector3D d = p.subtract(zero);
+final Vector3D n = new Vector3D(1.0, d, -d.dotProduct(direction), direction);
+return n.getNorm();
+final Vector3D normal = Vector3D.crossProduct(direction, line.direction);
+final double n = normal.getNorm();
+if (n < Precision.SAFE_MIN) {
+return distance(line.zero);
+final double offset = line.zero.subtract(zero).dotProduct(normal) / n;
+return FastMath.abs(offset);
+final double cos = direction.dotProduct(line.direction);
+final double n = 1 - cos * cos;
+if (n < Precision.EPSILON) {
+return zero;
+final Vector3D delta0 = line.zero.subtract(zero);
+final double a= delta0.dotProduct(direction);
+final double b= delta0.dotProduct(line.direction);
+return new Vector3D(1, zero, (a - b * cos) / n, direction);
+final Vector3D closest = closestPoint(line);
+return line.contains(closest) ? closest : null;
+return new SubLine(this, new IntervalsSet());

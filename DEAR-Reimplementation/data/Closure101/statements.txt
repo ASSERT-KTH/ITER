@@ -1,0 +1,50 @@
+Matcher matcher = argPattern.matcher(arg);
+if (matcher.matches()) {
+processedArgs.add(matcher.group(1));
+String value = matcher.group(2);
+Matcher quotesMatcher = quotesPattern.matcher(value);
+if (quotesMatcher.matches()) {
+processedArgs.add(value);
+} else {
+super();
+private final Flags flags = new Flags();
+initConfigFromFlags(args, System.err);
+}
+Pattern argPattern = Pattern.compile("(--[a-zA-Z_]+)=(.*)");
+Pattern quotesPattern = Pattern.compile("^['\"](.*)['\"]$");
+List<String> processedArgs = Lists.newArrayList();
+for (String arg : args) {
+CmdLineParser parser = new CmdLineParser(flags);
+parser.parseArgument(processedArgs.toArray(new String[] {}));
+}
+getCommandLineConfig()
+}
+CompilerOptions options = new CompilerOptions();
+options.setCodingConvention(new ClosureCodingConvention());
+CompilationLevel level = flags.compilation_level;
+level.setOptionsForCompilationLevel(options);
+if (flags.debug) {
+WarningLevel wLevel = flags.warning_level;
+wLevel.setOptionsForWarningLevel(options);
+for (FormattingOption formattingOption : flags.formatting) {
+if (flags.process_closure_primitives) {
+options.closurePass = true;
+initOptionsFromFlags(options);
+return options;
+return new Compiler(getErrorPrintStream());
+super(out, err);
+private final Flags flags = new Flags();
+initConfigFromFlags(args, err);
+}
+processedArgs.add(quotesMatcher.group(1));
+processedArgs.add(arg);
+} catch (CmdLineException e) {
+err.println(e.getMessage());
+parser.printUsage(err);
+throw e;
+level.setDebugOptionsForCompilationLevel(options);
+formattingOption.applyToOptions(options);
+}
+List<JSSourceFile> externs = super.createExterns();
+if (!flags.use_only_custom_externs) {
+List<JSSourceFile> defaultExterns = getDefaultExterns();

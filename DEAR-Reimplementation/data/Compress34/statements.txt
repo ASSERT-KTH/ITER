@@ -1,0 +1,50 @@
+this.gid = ZipUtil.longToBig(l);
+}
+return getLocalFileDataLength();
+public long getUID() { return ZipUtil.bigToLong(uid); }
+public long getGID() { return ZipUtil.bigToLong(gid); }
+this.uid = ZipUtil.longToBig(l);
+}
+int uidSize = trimLeadingZeroesForceMinLength(uid.toByteArray()).length;
+int gidSize = trimLeadingZeroesForceMinLength(gid.toByteArray()).length;
+return new ZipShort(3 + uidSize + gidSize);
+byte[] uidBytes = uid.toByteArray();
+byte[] gidBytes = gid.toByteArray();
+uidBytes = trimLeadingZeroesForceMinLength(uidBytes);
+gidBytes = trimLeadingZeroesForceMinLength(gidBytes);
+byte[] data = new byte[3 + uidBytes.length + gidBytes.length];
+reverse(uidBytes);
+reverse(gidBytes);
+int pos = 0;
+data[pos++] = unsignedIntToSignedByte(version);
+data[pos++] = unsignedIntToSignedByte(uidBytes.length);
+System.arraycopy(uidBytes, 0, data, pos, uidBytes.length);
+pos += uidBytes.length;
+data[pos++] = unsignedIntToSignedByte(gidBytes.length);
+System.arraycopy(gidBytes, 0, data, pos, gidBytes.length);
+return data;
+reset();
+this.version = signedByteToUnsignedInt(data[offset++]);
+int uidSize = signedByteToUnsignedInt(data[offset++]);
+byte[] uidBytes = new byte[uidSize];
+System.arraycopy(data, offset, uidBytes, 0, uidSize);
+offset += uidSize;
+this.uid = new BigInteger(1, reverse(uidBytes)); // sign-bit forced positive
+int gidSize = signedByteToUnsignedInt(data[offset++]);
+byte[] gidBytes = new byte[gidSize];
+System.arraycopy(data, offset, gidBytes, 0, gidSize);
+this.gid = new BigInteger(1, reverse(gidBytes)); // sign-bit forced positive
+}
+if (array == null) {
+int pos = 0;
+for (byte b : array) {
+if (b == 0) {
+pos++;
+final int MIN_LENGTH = 1;
+byte[] trimmedArray = new byte[Math.max(MIN_LENGTH, array.length - pos)];
+int startPos = trimmedArray.length - (array.length - pos);
+System.arraycopy(array, pos, trimmedArray, startPos, trimmedArray.length - startPos);
+return trimmedArray;
+public X7875_NewUnix() {
+private int version = 1; // always '1' according to current info-zip spec.
+reset();

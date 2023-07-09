@@ -1,0 +1,50 @@
+left = n.getFirstChild();
+validator.expectNumber(
+ensureTyped(t, n, NUMBER_TYPE);
+break;
+validator.expectNumber(
+ensureTyped(t, n, ARRAY_TYPE);
+break;
+leftType = getJSType(n.getFirstChild());
+rightType = getJSType(n.getLastChild());
+if (rightType.isNumber()) {
+ensureTyped(t, n, BOOLEAN_TYPE);
+break;
+String sourceName = functionJSDocInfo.getSourceName();
+CompilerInput functionSource = compiler.getInput(sourceName);
+isExtern = functionSource.isExtern();
+ctorType.getAllImplementedInterfaces()) {
+return;
+FunctionType functionType = (FunctionType) childType;
+boolean isExtern = false;
+JSDocInfo functionJSDocInfo = functionType.getJSDocInfo();
+if(functionJSDocInfo != null) {
+if (functionType.isConstructor() &&
+visitParameterList(t, n, functionType);
+ensureTyped(t, n, functionType.getReturnType());
+} else {
+visitGetElem(t, n);
+typeable = false;
+break;
+Node left = n.getFirstChild();
+Node right = n.getLastChild();
+validator.expectIndexMatch(t, n, getJSType(left), getJSType(right));
+ensureTyped(t, n);
+}
+Preconditions.checkState(ctor.isConstructor() || ctor.isInterface());
+}
+FunctionType superClass = ctorType.getSuperClassConstructor();
+boolean superClassHasProperty = superClass != null &&
+boolean superInterfacesHasProperty = false;
+if (ctorType.isInterface()) {
+boolean declaredOverride = info != null && info.isOverride();
+boolean foundInterfaceProperty = false;
+if (ctorType.isConstructor()) {
+if (!declaredOverride && !superClassHasProperty
+ctor = maybeSuperInstanceType.getConstructor();
+if (ctor == null) {
+return false;
+checkDeclaredPropertyInheritance(
+if (hasUnknownOrEmptySupertype(ctorType)) {
+Preconditions.checkArgument(ctor.isConstructor() || ctor.isInterface());
+Preconditions.checkArgument(!ctor.isUnknownType());

@@ -1,0 +1,50 @@
+super(ctxt, features);
+protected int[] _quadBuffer = new int[16];
+protected boolean _tokenIncomplete = false;
+_inputStream = in;
+_objectCodec = codec;
+_symbols = sym;
+_inputBuffer = inputBuffer;
+_inputPtr = start;
+_inputEnd = end;
+_bufferRecyclable = bufferRecyclable;
+}
+private final static int[] _icUTF8 = CharTypes.getInputCodeUtf8();
+protected final static int[] _icLatin1 = CharTypes.getInputCodeLatin1();
+private final static int[] _icWS = CharTypes.getInputCodeWS();
+return new JsonLocation(_ioContext.getSourceReference(),
+_numTypesValid = NR_UNKNOWN;
+if (_currToken == JsonToken.FIELD_NAME) {
+if (_tokenIncomplete) {
+int i = _skipWSOrEnd();
+if (i < 0) { // end-of-input
+_tokenInputTotal = _currInputProcessed + _inputPtr - 1;
+_tokenInputRow = _currInputRow;
+_tokenInputCol = _inputPtr - _currInputRowStart - 1;
+_binaryValue = null;
+if (i == INT_RBRACKET) {
+if (i == INT_RCURLY) {
+if (_parsingContext.expectComma()) {
+if (!_parsingContext.inObject()) {
+return _nextTokenNotInObject(i);
+if (i == INT_QUOTE) {
+switch (i) {
+_parsingContext = _parsingContext.createChildObjectContext(_tokenInputRow, _tokenInputCol);
+return (_currToken = JsonToken.START_OBJECT);
+final int[] codes = _icWS;
+while ((_inputPtr < _inputEnd) || loadMore()) {
+final int i = _inputBuffer[_inputPtr++] & 0xFF;
+switch (codes[i]) {
+return i;
+return _objectCodec;
+_objectCodec = c;
+}
+int count = _inputEnd - _inputPtr;
+if (count < 1) {
+return 0;
+int origPtr = _inputPtr;
+out.write(_inputBuffer, origPtr, count);
+return count;
+return _inputStream;
+_currInputProcessed += _inputEnd;
+_currInputRowStart -= _inputEnd;

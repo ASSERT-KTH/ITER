@@ -1,0 +1,50 @@
+namespace = new GlobalNamespace(compiler, externs, root);
+ReferenceCollectingCallback.Reference aliasRef =
+Node newNode = alias.node.cloneTree();
+aliasRef.getParent().replaceChild(aliasRef.getNode(), newNode);
+newNodes.add(newNode);
+name.removeRef(ref);
+int size = aliasRefs.references.size();
+Set<Node> newNodes = Sets.newHashSetWithExpectedSize(size - 1);
+for (int i = 1; i < size; i++) {
+aliasParent.replaceChild(alias.node, IR.nullNode());
+compiler.reportCodeChange();
+namespace.scanNewNodes(alias.scope, newNodes);
+return true;
+Scope scope = alias.scope;
+Var aliasVar = scope.getVar(aliasParent.getString());
+ReferenceCollectingCallback collector =
+(new NodeTraversal(compiler, collector)).traverseAtScope(scope);
+ReferenceCollection aliasRefs = collector.getReferences(aliasVar);
+if (aliasRefs.isWellDefined()
+if (inlineAliasIfPossible(ref, namespace)) {
+Node aliasParent = alias.node.getParent();
+if (aliasParent.isName()) {
+Ref ref = n.getDeclaration();
+String fnName = ref.node.getString();
+addStubsForUndeclaredProperties(
+}
+updateFunctionDeclarationAtFunctionNode(n, canCollapseChildNames);
+if (!canCollapseChildNames) {
+List<Ref> refs = Lists.newArrayList(name.getRefs());
+for (Ref ref : refs) {
+if (ref.type == Type.ALIASING_GET && ref.scope.isLocal()) {
+}
+Preconditions.checkState(n.canCollapseUnannotatedChildNames());
+Preconditions.checkArgument(NodeUtil.isStatementBlock(parent));
+Preconditions.checkNotNull(addAfter);
+int numStubs = 0;
+if (n.props != null) {
+return numStubs;
+updateObjLitOrFunctionDeclaration(n, alias, canCollapseChildNames);
+Ref decl = n.getDeclaration();
+if (decl == null) {
+if (decl.getTwin() != null) {
+switch (decl.node.getParent().getType()) {
+}
+flattenReferencesToCollapsibleDescendantNames(n, n.getBaseName());
+}
+collapseDeclarationOfNameAndDescendants(n, n.getBaseName());
+}
+Name name = workList.pop();
+if (name.type == Name.Type.GET || name.type == Name.Type.SET) {

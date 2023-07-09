@@ -1,0 +1,35 @@
+Node expressionWithScopeCall = scopeCall.getParent();
+Node scopeClosureBlock = scopeCall.getLastChild().getLastChild();
+scopeClosureBlock.detachFromParent();
+expressionWithScopeCall.getParent().replaceChild(
+NodeUtil.tryMergeBlock(scopeClosureBlock);
+}
+compiler.reportCodeChange();
+for (AliasUsage aliasUsage : traversal.getAliasUsages()) {
+for (Node aliasDefinition : traversal.getAliasDefinitionsInOrder()) {
+for (Node scopeCall : traversal.getScopeCalls()) {
+if (traversal.getAliasUsages().size() > 0 ||
+AliasTransformationHandler transformationHandler) {
+this.compiler = compiler;
+this.preprocessorSymbolTable = preprocessorSymbolTable;
+this.transformationHandler = transformationHandler;
+}
+static final DiagnosticType GOOG_SCOPE_USED_IMPROPERLY = DiagnosticType.error(
+static final DiagnosticType GOOG_SCOPE_HAS_BAD_PARAMETERS =
+static final DiagnosticType GOOG_SCOPE_REFERENCES_THIS = DiagnosticType.error(
+static final DiagnosticType GOOG_SCOPE_USES_RETURN = DiagnosticType.error(
+static final DiagnosticType GOOG_SCOPE_USES_THROW = DiagnosticType.error(
+static final DiagnosticType GOOG_SCOPE_ALIAS_REDEFINED = DiagnosticType.error(
+static final DiagnosticType GOOG_SCOPE_NON_ALIAS_LOCAL = DiagnosticType.error(
+hotSwapScript(root, null);
+}
+Traversal traversal = new Traversal();
+NodeTraversal.traverse(compiler, root, traversal);
+if (!traversal.hasErrors()) {
+}
+aliasUsage.applyAlias();
+}
+if (aliasDefinition.getParent().isVar() &&
+aliasDefinition.getParent().detachFromParent();
+aliasDefinition.detachFromParent();
+}

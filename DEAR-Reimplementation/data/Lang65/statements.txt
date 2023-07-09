@@ -1,0 +1,50 @@
+if (date == null) {
+Calendar gval = Calendar.getInstance();
+gval.setTime(date);
+modify(gval, field, false);
+return gval.getTime();
+if (val.get(Calendar.YEAR) > 280000000) {
+boolean roundUp = false;
+for (int i = 0; i < fields.length; i++) {
+for (int j = 0; j < fields[i].length; j++) {
+if (fields[i][j] == field) {
+if (round && roundUp) {
+return;
+int offset = 0;
+boolean offsetSet = false;
+switch (field) {
+if (!offsetSet) {
+int min = val.getActualMinimum(fields[i][0]);
+int max = val.getActualMaximum(fields[i][0]);
+offset = val.get(fields[i][0]) - min;
+roundUp = offset > ((max - min) / 2);
+val.set(fields[i][0], val.get(fields[i][0]) - offset);
+public static final TimeZone UTC_TIME_ZONE = TimeZone.getTimeZone("GMT");
+private static final int[][] fields = {
+super();
+}
+if (date1 == null || date2 == null) {
+throw new IllegalArgumentException("The date must not be null");
+Calendar cal1 = Calendar.getInstance();
+cal1.setTime(date1);
+Calendar cal2 = Calendar.getInstance();
+cal2.setTime(date2);
+return isSameDay(cal1, cal2);
+if (cal1 == null || cal2 == null) {
+throw new IllegalArgumentException("The date must not be null");
+return (cal1.get(Calendar.ERA) == cal2.get(Calendar.ERA) &&
+if (date1 == null || date2 == null) {
+throw new IllegalArgumentException("The date must not be null");
+return date1.getTime() == date2.getTime();
+if (cal1 == null || cal2 == null) {
+throw new IllegalArgumentException("The date must not be null");
+return cal1.getTime().getTime() == cal2.getTime().getTime();
+if (cal1 == null || cal2 == null) {
+throw new IllegalArgumentException("The date must not be null");
+return (cal1.get(Calendar.MILLISECOND) == cal2.get(Calendar.MILLISECOND) &&
+if (str == null || parsePatterns == null) {
+throw new IllegalArgumentException("Date and Patterns must not be null");
+SimpleDateFormat parser = null;
+ParsePosition pos = new ParsePosition(0);
+for (int i = 0; i < parsePatterns.length; i++) {
+if (i == 0) {

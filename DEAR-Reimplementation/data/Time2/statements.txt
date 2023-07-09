@@ -1,0 +1,50 @@
+throw new IllegalArgumentException("Types array must not contain duplicate: " +
+return 0;
+if (loopType.getRangeDurationType() == null) {
+if (types[i - 1].getRangeDurationType() == null) {
+this(type, value, null);
+}
+super();
+chronology = DateTimeUtils.getChronology(chronology).withUTC();
+iChronology = chronology;
+if (type == null) {
+iTypes = new DateTimeFieldType[] {type};
+iValues = new int[] {value};
+chronology.validate(this, iValues);
+}
+DateTimeFieldType[] newTypes = new DateTimeFieldType[iTypes.length + 1];
+int[] newValues = new int[newTypes.length];
+int i = 0;
+DurationField unitField = fieldType.getDurationType().getField(iChronology);
+if (unitField.isSupported()) {
+System.arraycopy(iTypes, 0, newTypes, 0, i);
+System.arraycopy(iValues, 0, newValues, 0, i);
+newTypes[i] = fieldType;
+newValues[i] = value;
+System.arraycopy(iTypes, i, newTypes, i + 1, newTypes.length - i - 1);
+System.arraycopy(iValues, i, newValues, i + 1, newValues.length - i - 1);
+Partial newPartial = new Partial(newTypes, newValues, iChronology);
+int index = indexOf(fieldType);
+if (index == -1) {
+if (fieldType == null) {
+return iTypes[index];
+super();
+chronology = DateTimeUtils.getChronology(chronology).withUTC();
+iChronology = chronology;
+if (types == null) {
+if (values == null) {
+if (values.length != types.length) {
+if (types.length == 0) {
+for (int i = 0; i < types.length; i++) {
+if (types[i] == null) {
+DurationField lastUnitField = null;
+for (int i = 0; i < types.length; i++) {
+DateTimeFieldType loopType = types[i];
+DurationField loopUnitField = loopType.getDurationType().getField(iChronology);
+if (i > 0) {
+int compare = lastUnitField.compareTo(loopUnitField);
+if (compare < 0 || (compare != 0 && loopUnitField.isSupported() == false)) {
+} else if (compare == 0) {
+lastUnitField = loopUnitField;
+return iChronology;
+return iTypes[index].getField(chrono);

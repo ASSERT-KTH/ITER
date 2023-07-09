@@ -1,0 +1,50 @@
+public static final TypeAdapter<Class> CLASS = new TypeAdapter<Class>() {
+public static final TypeAdapterFactory CLASS_FACTORY = newFactory(Class.class, CLASS);
+public static final TypeAdapter<BitSet> BIT_SET = new TypeAdapter<BitSet>() {
+public static final TypeAdapterFactory BIT_SET_FACTORY = newFactory(BitSet.class, BIT_SET);
+public static final TypeAdapter<Boolean> BOOLEAN = new TypeAdapter<Boolean>() {
+public static final TypeAdapter<Boolean> BOOLEAN_AS_STRING = new TypeAdapter<Boolean>() {
+public static final TypeAdapterFactory BOOLEAN_FACTORY
+public static final TypeAdapter<Number> BYTE = new TypeAdapter<Number>() {
+public static final TypeAdapterFactory BYTE_FACTORY
+public static final TypeAdapter<Number> SHORT = new TypeAdapter<Number>() {
+public static final TypeAdapterFactory SHORT_FACTORY
+public static final TypeAdapter<Number> INTEGER = new TypeAdapter<Number>() {
+public static final TypeAdapterFactory INTEGER_FACTORY
+public static final TypeAdapter<AtomicInteger> ATOMIC_INTEGER = new TypeAdapter<AtomicInteger>() {
+public static final TypeAdapterFactory ATOMIC_INTEGER_FACTORY =
+public static final TypeAdapter<AtomicBoolean> ATOMIC_BOOLEAN = new TypeAdapter<AtomicBoolean>() {
+public static final TypeAdapterFactory ATOMIC_BOOLEAN_FACTORY =
+public static final TypeAdapter<AtomicIntegerArray> ATOMIC_INTEGER_ARRAY = new TypeAdapter<AtomicIntegerArray>() {
+public static final TypeAdapterFactory ATOMIC_INTEGER_ARRAY_FACTORY =
+public static final TypeAdapter<Number> LONG = new TypeAdapter<Number>() {
+public static final TypeAdapter<Number> FLOAT = new TypeAdapter<Number>() {
+public static final TypeAdapter<Number> DOUBLE = new TypeAdapter<Number>() {
+public static final TypeAdapter<Number> NUMBER = new TypeAdapter<Number>() {
+public static final TypeAdapterFactory NUMBER_FACTORY = newFactory(Number.class, NUMBER);
+public static final TypeAdapter<Character> CHARACTER = new TypeAdapter<Character>() {
+public static final TypeAdapterFactory CHARACTER_FACTORY
+public static final TypeAdapter<String> STRING = new TypeAdapter<String>() {
+public static final TypeAdapter<BigDecimal> BIG_DECIMAL = new TypeAdapter<BigDecimal>() {
+public static final TypeAdapter<BigInteger> BIG_INTEGER = new TypeAdapter<BigInteger>() {
+public static final TypeAdapterFactory STRING_FACTORY = newFactory(String.class, STRING);
+public static final TypeAdapter<StringBuilder> STRING_BUILDER = new TypeAdapter<StringBuilder>() {
+public static final TypeAdapterFactory STRING_BUILDER_FACTORY =
+public static final TypeAdapter<StringBuffer> STRING_BUFFER = new TypeAdapter<StringBuffer>() {
+public static final TypeAdapterFactory STRING_BUFFER_FACTORY =
+public static final TypeAdapter<URL> URL = new TypeAdapter<URL>() {
+public static final TypeAdapterFactory URL_FACTORY = newFactory(URL.class, URL);
+public static final TypeAdapter<URI> URI = new TypeAdapter<URI>() {
+public static final TypeAdapterFactory URI_FACTORY = newFactory(URI.class, URI);
+public static final TypeAdapter<InetAddress> INET_ADDRESS = new TypeAdapter<InetAddress>() {
+public static final TypeAdapterFactory INET_ADDRESS_FACTORY =
+public static final TypeAdapter<UUID> UUID = new TypeAdapter<UUID>() {
+public static final TypeAdapterFactory UUID_FACTORY = newFactory(UUID.class, UUID);
+public static final TypeAdapter<Currency> CURRENCY = new TypeAdapter<Currency>() {
+public static final TypeAdapterFactory CURRENCY_FACTORY = newFactory(Currency.class, CURRENCY);
+public static final TypeAdapterFactory TIMESTAMP_FACTORY = new TypeAdapterFactory() {
+public static final TypeAdapter<Calendar> CALENDAR = new TypeAdapter<Calendar>() {
+public static final TypeAdapterFactory CALENDAR_FACTORY =
+public static final TypeAdapter<Locale> LOCALE = new TypeAdapter<Locale>() {
+public static final TypeAdapterFactory LOCALE_FACTORY = newFactory(Locale.class, LOCALE);
+public static final TypeAdapter<JsonElement> JSON_ELEMENT = new TypeAdapter<JsonElement>() {

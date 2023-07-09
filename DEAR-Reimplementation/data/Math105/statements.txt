@@ -1,0 +1,50 @@
+super();
+private double sumX = 0d;
+private double sumXX = 0d;
+private double sumY = 0d;
+private double sumYY = 0d;
+private double sumXY = 0d;
+private long n = 0;
+private double xbar = 0;
+private double ybar = 0;
+}
+if (n == 0) {
+xbar = x;
+ybar = y;
+double dx = x - xbar;
+double dy = y - ybar;
+sumXX += dx * dx * (double) n / (double) (n + 1.0);
+sumYY += dy * dy * (double) n / (double) (n + 1.0);
+sumXY += dx * dy * (double) n / (double) (n + 1.0);
+xbar += dx / (double) (n + 1.0);
+ybar += dy / (double) (n + 1.0);
+sumX += x;
+sumY += y;
+n++;
+}
+return sumYY - sumXY * sumXY / sumXX;
+for (int i = 0; i < data.length; i++) {
+addData(data[i][0], data[i][1]);
+}
+sumX = 0d;
+sumXX = 0d;
+sumY = 0d;
+sumYY = 0d;
+sumXY = 0d;
+n = 0;
+}
+return n;
+double b1 = getSlope();
+return getIntercept(b1) + b1 * x;
+return getIntercept(getSlope());
+if (n < 2) {
+return Double.NaN; //not enough data
+if (Math.abs(sumXX) < 10 * Double.MIN_VALUE) {
+return Double.NaN; //not enough variation in x
+return sumXY / sumXX;
+if (n < 2) {
+return Double.NaN;
+return sumYY;
+return getRegressionSumSquares(getSlope());
+if (n < 3) {
+return Double.NaN;

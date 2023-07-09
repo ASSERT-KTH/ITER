@@ -1,0 +1,50 @@
+final char[] buf = _charBuffer;
+while (len > 0) {
+int len2 = Math.min(buf.length, len);
+text.getChars(offset, offset+len2, buf, 0);
+writeRaw(buf, 0, len2);
+_reportError("Split surrogate on writeRaw() input (last character)");
+super(ctxt, features, codec);
+_outputStream = out;
+_bufferRecyclable = true;
+_outputBuffer = ctxt.allocWriteEncodingBuffer();
+_outputEnd = _outputBuffer.length;
+_outputMaxContiguous = _outputEnd >> 3;
+_charBuffer = ctxt.allocConcatBuffer();
+_charBufferLength = _charBuffer.length;
+if (isEnabled(Feature.ESCAPE_NON_ASCII)) {
+}
+private final static byte[] HEX_CHARS = CharTypes.copyHexBytes();
+private final static byte[] NULL_BYTES = { 'n', 'u', 'l', 'l' };
+private final static byte[] TRUE_BYTES = { 't', 'r', 'u', 'e' };
+private final static byte[] FALSE_BYTES = { 'f', 'a', 'l', 's', 'e' };
+int len3 = len+len+len;
+if ((_outputTail + len3) > _outputEnd) {
+if (_outputEnd < len3) { // wouldn't be enough...
+_writeSegmentedRaw(cbuf, offset, len);
+final int end = _outputEnd;
+final byte[] bbuf = _outputBuffer;
+final int inputEnd = offset + len;
+while (offset < inputEnd) {
+int ch = (int) cbuf[offset];
+if (ch >= 0x80) {
+break inner_loop;
+if (_outputTail >= end) {
+bbuf[_outputTail++] = (byte) ch;
+if (++offset >= inputEnd) {
+}
+if ((_outputTail + 3) >= _outputEnd) {
+char ch = cbuf[offset++];
+if (ch < 0x800) { // 2-byte?
+offset = _outputRawMultiByteChar(ch, cbuf, offset, inputEnd);
+}
+int status = _writeContext.writeValue();
+if (status == JsonWriteContext.STATUS_EXPECT_NAME) {
+if (_cfgPrettyPrinter == null) {
+switch (status) {
+return;
+if (ch >= SURR1_FIRST) {
+if (ch <= SURR2_LAST) { // yes, outside of BMP
+if (inputOffset >= inputEnd || cbuf == null) { // nope... have to note down
+_outputSurrogates(ch, cbuf[inputOffset]);
+return inputOffset+1;

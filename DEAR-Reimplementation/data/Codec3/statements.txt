@@ -1,0 +1,50 @@
+super();
+protected int maxCodeLen = 4;
+}
+private static final String[] SILENT_START =
+private static final String[] L_R_N_M_B_H_F_V_W_SPACE =
+private static final String[] ES_EP_EB_EL_EY_IB_IL_IN_IE_EI_ER =
+private static final String[] L_T_K_S_N_M_B_Z =
+value = cleanInput(value);
+if (value == null) {
+boolean slavoGermanic = isSlavoGermanic(value);
+int index = isSilentStart(value) ? 1 : 0;
+DoubleMetaphoneResult result = new DoubleMetaphoneResult(this.getMaxCodeLen());
+while (!result.isComplete() && index <= value.length() - 1) {
+switch (value.charAt(index)) {
+index = handleAEIOUY(value, result, index);
+break;
+result.append('P');
+index = charAt(value, index + 1) == 'B' ? index + 2 : index + 1;
+break;
+index = handleC(value, result, index);
+break;
+index = handleD(value, result, index);
+break;
+index = handleG(value, result, index, slavoGermanic);
+break;
+index = handleH(value, result, index);
+break;
+result.append('K');
+index = charAt(value, index + 1) == 'K' ? index + 2 : index + 1;
+break;
+index = handleL(value, result, index);
+break;
+result.append('M');
+index = conditionM0(value, index) ? index + 2 : index + 1;
+break;
+result.append('N');
+index = charAt(value, index + 1) == 'N' ? index + 2 : index + 1;
+break;
+index = handleP(value, result, index);
+break;
+index = handleR(value, result, index, slavoGermanic);
+break;
+index = handleS(value, result, index, slavoGermanic);
+break;
+index = handleT(value, result, index);
+break;
+result.append('F');
+index = charAt(value, index + 1) == 'V' ? index + 2 : index + 1;
+break;
+index = handleW(value, result, index);

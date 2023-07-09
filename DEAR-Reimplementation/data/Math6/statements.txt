@@ -1,0 +1,50 @@
+return iterations.getCount();
+if (bestFitness < (isMinimize ? stopFitness : -stopFitness)) {
+final double[][] d = new double[m.getRowDimension()][1];
+for (int i = 0; i < m.getColumnDimension(); i++) {
+d[i][0] = m.getEntry(i, i);
+return new Array2DRowRealMatrix(d, false);
+isMinimize = getGoalType().equals(GoalType.MINIMIZE);
+final FitnessFunction fitfun = new FitnessFunction();
+final double[] guess = getStartPoint();
+dimension = guess.length;
+initializeCMA(guess);
+iterations = 0;
+double bestValue = fitfun.value(guess);
+push(fitnessHistory, bestValue);
+PointValuePair optimum
+PointValuePair lastResult = null;
+for (iterations = 1; iterations <= maxIterations; iterations++) {
+final RealMatrix arz = randn1(dimension, lambda);
+final RealMatrix arx = zeros(dimension, lambda);
+final double[] fitness = new double[lambda];
+for (int k = 0; k < lambda; k++) {
+RealMatrix arxk = null;
+for (int i = 0; i < checkFeasableCount + 1; i++) {
+if (diagonalOnly <= 0) {
+if (i >= checkFeasableCount ||
+copyColumn(arxk, 0, arx, k);
+fitness[k] = fitfun.value(arx.getColumn(k)); // compute fitness
+}
+final int[] arindex = sortedIndices(fitness);
+final RealMatrix xold = xmean; // for speed up of Eq. (2) and (3)
+final RealMatrix bestArx = selectColumns(arx, MathArrays.copyOf(arindex, mu));
+xmean = bestArx.multiply(weights);
+final RealMatrix bestArz = selectColumns(arz, MathArrays.copyOf(arindex, mu));
+final RealMatrix zmean = bestArz.multiply(weights);
+final boolean hsig = updateEvolutionPaths(zmean, xold);
+if (diagonalOnly <= 0) {
+sigma *= Math.exp(Math.min(1, (normps/chiN - 1) * cs / damps));
+final double bestFitness = fitness[arindex[0]];
+final double worstFitness = fitness[arindex[arindex.length - 1]];
+if (bestValue > bestFitness) {
+bestValue = bestFitness;
+lastResult = optimum;
+optimum = new PointValuePair(fitfun.repair(bestArx.getColumn(0)),
+if (getConvergenceChecker() != null &&
+if (stopFitness != 0) { // only if stopFitness is defined
+final double[] sqrtDiagC = sqrt(diagC).getColumn(0);
+final double[] pcCol = pc.getColumn(0);
+for (int i = 0; i < dimension; i++) {
+if (sigma * Math.max(Math.abs(pcCol[i]), sqrtDiagC[i]) > stopTolX) {
+break;

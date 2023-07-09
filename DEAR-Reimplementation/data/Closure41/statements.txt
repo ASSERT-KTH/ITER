@@ -1,0 +1,50 @@
+JSType maybeBaseType =
+if (maybeBaseType != null &&
+baseType = (ObjectType) maybeBaseType;
+} else {
+fnType.setPrototypeBasedOn(baseType);
+if (isConstructor) {
+parameterType = oldParameterType.getJSType();
+isOptionalParam = oldParameterType.isOptionalArg();
+isVarArgs = oldParameterType.isVarArgs();
+returnType = typeRegistry.getNativeType(VOID_TYPE);
+returnTypeInferred = true;
+returnType = oldType.getReturnType();
+returnTypeInferred = oldType.isReturnTypeInferred();
+if (paramsParent == null) {
+FunctionParamBuilder paramBuilder =
+Iterator<Node> oldParams = oldType.getParameters().iterator();
+boolean warnedAboutArgList = false;
+boolean oldParamsListHitOptArgs = false;
+for (Node currentParam = paramsParent.getFirstChild();
+currentParam != null; currentParam = currentParam.getNext()) {
+if (oldParams.hasNext()) {
+Node oldParam = oldParams.next();
+Node newParam = paramBuilder.newParameterFromNode(oldParam);
+oldParamsListHitOptArgs = oldParamsListHitOptArgs ||
+if (currentParam.getNext() != null && newParam.isVarArgs()) {
+} else {
+parametersNode = paramBuilder.build();
+return this;
+oldParameterType = parametersNode.getFirstChild();
+oldParameterType = oldParameterType.getNext();
+return true;
+boolean isInstanceObject = existingType.isInstanceType();
+if (isInstanceObject || fnName.equals("Function")) {
+FunctionType existingFn =
+if (existingFn.getSource() == null) {
+existingFn.setSource(contents.getSourceNode());
+if (!existingFn.hasEqualCallType(fnType)) {
+return existingFn;
+return true;
+if (!builder.addOptionalParams(paramType) && !warnedAboutArgList) {
+if (!builder.addVarArgs(paramType) && !warnedAboutArgList) {
+inferThisType(info);
+if (thisType == null) {
+ObjectType objType = ObjectType.cast(type);
+if (objType != null && (info == null || !info.hasType())) {
+thisType = objType;
+return this;
+returnType = typeRegistry.getNativeType(UNKNOWN_TYPE);
+maybeSetBaseType(fnType);
+if (getScopeDeclaredIn().isGlobal() && !fnName.isEmpty()) {

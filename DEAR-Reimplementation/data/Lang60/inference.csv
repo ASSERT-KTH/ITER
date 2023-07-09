@@ -1,0 +1,1225 @@
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1675-return true;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1672-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1675-return true;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1673-for (int i = 0; i < thisBuf.length; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1675-return true;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1674-if (thisBuf[i] == ch) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1675-return true;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1202-int len = (str == null ? 0 : str.length());[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1203-if (len > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1204-int index = indexOf(str, 0);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1205-if (index >= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1209-return this;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1206-deleteImpl(index, index + len, len);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1209-return this;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1115-size -= len;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1114-System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1116-}	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1115-size -= len;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1116-}[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1761-startIndex = (startIndex < 0 ? 0 : startIndex);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1762-if (str == null || startIndex >= size) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1765-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1766-if (strLen == 1) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1769-if (strLen == 0) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1772-if (strLen > size) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1775-char[] thisBuf = buffer;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1776-int len = size - strLen + 1;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1778-for (int i = startIndex; i < len; i++) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1779-for (int j = 0; j < strLen; j++) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:1781-continue outer;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1780-if (str.charAt(j) != thisBuf[i + j]) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:1784-return i;	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1781-continue outer;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:121-super();	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:1784-return i;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:122-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:121-super();[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:122-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:126-append(str);	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:125-buffer = new char[str.length() + CAPACITY];[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:128-}	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:126-append(str);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:469-if (str == null) {	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:128-}[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:469-if (str == null) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:472-int strLen = str.length();[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:474-int len = length();	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:473-if (strLen > 0) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:474-int len = length();[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:475-ensureCapacity(len + strLen);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:477-size += strLen;	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:476-str.getChars(0, strLen, buffer, len);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:479-return this;	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:477-size += strLen;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:182-return size;	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:479-return this;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:182-return size;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:233-return this;	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:228-if (capacity > buffer.length) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:233-return this;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:99-}	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:98-this(CAPACITY);[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:99-}[CLS]org.apache.commons.lang.text.StrBuilder:107-super();	0
+org.apache.commons.lang.text.StrBuilder:99-}[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:99-}[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:99-}[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:99-}[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:99-}[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:107-super();[CLS]org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {	0
+org.apache.commons.lang.text.StrBuilder:107-super();[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:107-super();[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:107-super();[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:107-super();[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;	0
+org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:108-if (initialCapacity <= 0) {[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;[CLS]org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];	0
+org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:109-initialCapacity = CAPACITY;[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];[CLS]org.apache.commons.lang.text.StrBuilder:112-}	0
+org.apache.commons.lang.text.StrBuilder:111-buffer = new char[initialCapacity];[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0
+org.apache.commons.lang.text.StrBuilder:112-}[CLS]org.apache.commons.lang.text.StrBuilder:123-buffer = new char[CAPACITY];	0

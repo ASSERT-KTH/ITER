@@ -1,0 +1,50 @@
+throw new ArithmeticException("The denominator must not be zero");
+numerator/=2; denominator/=2;
+if (numerator==Integer.MIN_VALUE ||
+throw new ArithmeticException("overflow: can't negate");
+numerator = -numerator;
+denominator = -denominator;
+if (numerator == 0) {
+return equals(ZERO) ? this : ZERO;
+int gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
+if (gcd == 1) {
+return this;
+return Fraction.getFraction(numerator / gcd, denominator / gcd);
+if (u>0) { u=-u; } // make u negative
+if (v>0) { v=-v; } // make v negative
+int k=0;
+while ((u&1)==0 && (v&1)==0 && k<31) { // while u and v are both even...
+if (k==31) {
+int t = ((u&1)==1) ? v : -(u/2)/*B3*/;
+while ((t&1)==0) { // while t is even..
+if (t>0) {
+u = -t;
+v = t;
+t = (v - u)/2;
+} while (t!=0);
+return -u*(1<<k); // gcd is u*2^k
+if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {
+return 1;
+return ZERO; // normalize zero.
+if (obj == this) {
+if (obj instanceof Fraction == false) {
+Fraction other = (Fraction) obj;
+return (getNumerator() == other.getNumerator() &&
+if (numerator==Integer.MIN_VALUE ||
+numerator = -numerator;
+denominator = -denominator;
+u/=2; v/=2; k++; // cast out twos.
+return numerator;
+return denominator;
+super();
+private transient int hashCode = 0;
+private transient String toString = null;
+private transient String toProperString = null;
+this.numerator = numerator;
+this.denominator = denominator;
+}
+public static final Fraction ZERO = new Fraction(0, 1);
+public static final Fraction ONE = new Fraction(1, 1);
+public static final Fraction ONE_HALF = new Fraction(1, 2);
+public static final Fraction ONE_THIRD = new Fraction(1, 3);
+public static final Fraction TWO_THIRDS = new Fraction(2, 3);

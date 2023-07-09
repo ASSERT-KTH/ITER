@@ -1,0 +1,46 @@
+return chromosomes.iterator();
+this.chromosomes.addAll(chromosomeColl);
+}
+if (chromosomes.size() + chromosomeColl.size() > populationLimit) {
+}
+this(Collections.<Chromosome> emptyList(), populationLimit);
+this.populationLimit = populationLimit;
+this.chromosomes = new ArrayList<Chromosome>(populationLimit);
+this.chromosomes.addAll(chromosomes);
+}
+if (chromosomes.size() > populationLimit) {
+public ListPopulation(final List<Chromosome> chromosomes, final int populationLimit) {
+if (chromosomes == null) {
+if (populationLimit <= 0) {
+throw new NullArgumentException();
+throw new NotPositiveException(LocalizedFormats.POPULATION_LIMIT_NOT_POSITIVE, populationLimit);
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,
+if (chromosomes == null) {
+throw new NullArgumentException();
+if (chromosomes.size() > populationLimit) {
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,
+this.chromosomes.clear();
+this.chromosomes.addAll(chromosomes);
+}
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,
+return Collections.unmodifiableList(chromosomes);
+return chromosomes;
+if (chromosomes.size() >= populationLimit) {
+throw new NumberIsTooLargeException(LocalizedFormats.LIST_OF_CHROMOSOMES_BIGGER_THAN_POPULATION_SIZE,
+this.chromosomes.add(chromosome);
+}
+Chromosome bestChromosome = this.chromosomes.get(0);
+for (Chromosome chromosome : this.chromosomes) {
+if (chromosome.compareTo(bestChromosome) > 0) {
+bestChromosome = chromosome;
+}
+return bestChromosome;
+return this.populationLimit;
+if (populationLimit <= 0) {
+throw new NotPositiveException(LocalizedFormats.POPULATION_LIMIT_NOT_POSITIVE, populationLimit);
+if (populationLimit < chromosomes.size()) {
+throw new NumberIsTooSmallException(populationLimit, chromosomes.size(), true);
+this.populationLimit = populationLimit;
+}
+return this.chromosomes.size();
+return this.chromosomes.toString();

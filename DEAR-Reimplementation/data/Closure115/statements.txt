@@ -1,0 +1,50 @@
+return CanInlineResult.NO;
+if (hasSideEffects && NodeUtil.canBeSideEffected(cArg)) {
+if (cArg != null) {
+} else if (type == DecompositionType.DECOMPOSABLE) {
+return CallSiteType.DECOMPOSABLE_EXPRESSION;
+if (fnParam != null) {
+Preconditions.checkState(block.hasOneChild());
+Node stmt = block.getFirstChild();
+if (stmt.isReturn()) {
+hasSideEffects = NodeUtil.mayHaveSideEffects(stmt.getFirstChild(), compiler);
+return new ExpressionDecomposer(
+CallSiteType callSiteType = classifyCallSite(callNode);
+callSiteType.prepare(this, callNode);
+}
+Node fnParam = NodeUtil.getFunctionParameters(fnNode).getFirstChild();
+while (cArg != null || fnParam != null) {
+ExpressionDecomposer decomposer = new ExpressionDecomposer(
+DecompositionType type = decomposer.canExposeExpression(
+if (type == DecompositionType.MOVABLE) {
+return CallSiteType.EXPRESSION;
+return CanInlineResult.AFTER_PREPARATION;
+return canInlineReferenceDirectly(callNode, fnNode);
+if (!isDirectCallNodeReplacementPossible(fnNode)) {
+Node block = fnNode.getLastChild();
+boolean hasSideEffects = false;
+if (block.hasChildren()) {
+Node cArg = callNode.getFirstChild().getNext();
+if (!callNode.getFirstChild().isName()) {
+return true;
+callCost += (numArgs * NAME_COST_ESTIMATE) + ((numArgs - 1) * COMMA_COST);
+Node expressionRoot = ExpressionDecomposer.findExpressionRoot(callNode);
+if (expressionRoot != null) {
+if (blockInlines > 0 && costDeltaBlock > 0) {
+return true;
+return inlineFunction(callNode, fnNode, fnName);
+Node parent = callNode.getParent();
+Node grandParent = parent.getParent();
+CallSiteType callSiteType = classifyCallSite(callNode);
+Preconditions.checkArgument(callSiteType != CallSiteType.UNSUPPORTED);
+boolean isCallInLoop = NodeUtil.isWithinLoop(callNode);
+String resultName = null;
+boolean needsDefaultReturnResult = true;
+switch (callSiteType) {
+FunctionToBlockMutator mutator = new FunctionToBlockMutator(
+Node newBlock = mutator.mutate(
+Node greatGrandParent = grandParent.getParent();
+switch (callSiteType) {
+return newBlock;
+if (ref.module != fnModule &&
+if (callSiteType == CallSiteType.DECOMPOSABLE_EXPRESSION

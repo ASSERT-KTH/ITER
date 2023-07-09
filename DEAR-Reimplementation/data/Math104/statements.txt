@@ -1,0 +1,43 @@
+} else if (a >= 1.0 && x > a) {
+double n = 0.0; // current element index
+double an = 1.0 / a; // n-th element in the series
+double sum = an; // partial sum
+while (Math.abs(an) > epsilon && n < maxIterations) {
+n = n + 1.0;
+an = an * (x / (a + n));
+sum = sum + an;
+if (n >= maxIterations) {
+ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * sum;
+} else if (x < a || a < 1.0) {
+ContinuedFraction cf = new ContinuedFraction() {
+ret = 1.0 / cf.evaluate(x, epsilon, maxIterations);
+ret = Math.exp(-x + (a * Math.log(x)) - logGamma(a)) * ret;
+double g = 607.0 / 128.0;
+double sum = 0.0;
+for (int i = lanczos.length - 1; i > 0; --i) {
+sum = sum + (lanczos[i] / (x + i));
+sum = sum + lanczos[0];
+double tmp = x + g + .5;
+ret = ((x + .5) * Math.log(tmp)) - tmp +
+} else if (x == 0.0) {
+} else if (x == 0.0) {
+if (Double.isNaN(x) || (x <= 0.0)) {
+return ret;
+return regularizedGammaP(a, x, DEFAULT_EPSILON, Integer.MAX_VALUE);
+if (Double.isNaN(a) || Double.isNaN(x) || (a <= 0.0) || (x < 0.0)) {
+return ret;
+return regularizedGammaQ(a, x, DEFAULT_EPSILON, Integer.MAX_VALUE);
+if (Double.isNaN(a) || Double.isNaN(x) || (a <= 0.0) || (x < 0.0)) {
+return ret;
+private static double[] lanczos =
+private static final double HALF_LOG_2_PI = 0.5 * Math.log(2.0 * Math.PI);
+super();
+}
+ret = Double.NaN;
+ret = Double.NaN;
+ret = 0.0;
+ret = 1.0 - regularizedGammaQ(a, x, epsilon, maxIterations);
+throw new MaxIterationsExceededException(maxIterations);
+ret = Double.NaN;
+ret = 1.0;
+ret = 1.0 - regularizedGammaP(a, x, epsilon, maxIterations);

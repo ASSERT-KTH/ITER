@@ -1,0 +1,50 @@
+return new DefaultPrettyPrinter(this);
+this(base, base._rootSeparator);
+}
+{
+protected Indenter _arrayIndenter = FixedSpaceIndenter.instance;
+protected Indenter _objectIndenter = DefaultIndenter.SYSTEM_LINEFEED_INSTANCE;
+protected boolean _spacesInObjectEntries = true;
+_arrayIndenter = base._arrayIndenter;
+_objectIndenter = base._objectIndenter;
+_spacesInObjectEntries = base._spacesInObjectEntries;
+_nesting = base._nesting;
+_separators = base._separators;
+_objectFieldValueSeparatorWithSpaces = base._objectFieldValueSeparatorWithSpaces;
+_rootSeparator = rootSeparator;
+}
+this(DEFAULT_ROOT_VALUE_SEPARATOR);
+}
+public DefaultPrettyPrinter(SerializableString rootSeparator) {
+protected Indenter _arrayIndenter = FixedSpaceIndenter.instance;
+protected Indenter _objectIndenter = DefaultIndenter.SYSTEM_LINEFEED_INSTANCE;
+protected boolean _spacesInObjectEntries = true;
+_rootSeparator = rootSeparator;
+withSeparators(DEFAULT_SEPARATORS);
+}
+public final static SerializedString DEFAULT_ROOT_VALUE_SEPARATOR = new SerializedString(" ");
+_separators = separators;
+_objectFieldValueSeparatorWithSpaces = " " + separators.getObjectFieldValueSeparator() + " ";
+return this;
+this((rootSeparator == null) ? null : new SerializedString(rootSeparator));
+}
+if (_rootSeparator == rootSeparator ||
+return this;
+return new DefaultPrettyPrinter(this, rootSeparator);
+return withRootSeparator((rootSeparator == null) ? null : new SerializedString(rootSeparator));
+_arrayIndenter = (i == null) ? NopIndenter.instance : i;
+}
+_objectIndenter = (i == null) ? NopIndenter.instance : i;
+}
+if (i == null) {
+i = NopIndenter.instance;
+if (_arrayIndenter == i) {
+return this;
+DefaultPrettyPrinter pp = new DefaultPrettyPrinter(this);
+pp._arrayIndenter = i;
+return pp;
+if (i == null) {
+i = NopIndenter.instance;
+if (_objectIndenter == i) {
+return this;
+DefaultPrettyPrinter pp = new DefaultPrettyPrinter(this);

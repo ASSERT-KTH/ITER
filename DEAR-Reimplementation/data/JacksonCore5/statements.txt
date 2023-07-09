@@ -1,0 +1,50 @@
+return NumberInput.parseInt(str);
+if (len == 10) {
+return new JsonPointer(input, input.substring(1), EMPTY);
+protected JsonPointer() {
+_nextSegment = null;
+_matchingPropertyName = "";
+_matchingElementIndex = -1;
+_asString = "";
+}
+protected JsonPointer(String fullString, String segment, JsonPointer next) {
+_asString = fullString;
+_nextSegment = next;
+_matchingPropertyName = segment;
+_matchingElementIndex = _parseIndex(segment);
+protected final static JsonPointer EMPTY = new JsonPointer();
+if ((input == null) || input.length() == 0) {
+if (input.charAt(0) != '/') {
+return _parseTail(input);
+final int len = str.length();
+if (len == 0 || len > 10) {
+for (int i = 0; i < len; ++i) {
+char c = str.charAt(i++);
+if (c > '9' || c < '0') {
+final int end = input.length();
+for (int i = 1; i < end; ) {
+char c = input.charAt(i);
+if (c == '/') { // common case, got a segment
+++i;
+if (c == '~' && i < end) { // possibly, quote
+}
+}
+return EMPTY;
+throw new IllegalArgumentException("Invalid input: JSON Pointer expression must start with '/': "+"\""+input+"\"");
+public static JsonPointer valueOf(String input) { return compile(input); }
+public boolean matches() { return _nextSegment == null; }
+public String getMatchingProperty() { return _matchingPropertyName; }
+public int getMatchingIndex() { return _matchingElementIndex; }
+public boolean mayMatchProperty() { return _matchingPropertyName != null; }
+public boolean mayMatchElement() { return _matchingElementIndex >= 0; }
+if (_nextSegment == null || !_matchingPropertyName.equals(name)) {
+return null;
+return _nextSegment;
+if ((index != _matchingElementIndex) || (index < 0)) {
+return null;
+return _nextSegment;
+return _nextSegment;
+@Override public String toString() { return _asString; }
+@Override public int hashCode() { return _asString.hashCode(); }
+if (o == this) return true;
+if (o == null) return false;

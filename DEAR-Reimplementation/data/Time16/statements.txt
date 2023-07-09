@@ -1,0 +1,50 @@
+StringBuffer buf = new StringBuffer(requirePrinter().estimatePrintedLength());
+printTo(buf, instant);
+return buf.toString();
+long millis = DateTimeUtils.getInstantMillis(instant);
+Chronology chrono = DateTimeUtils.getInstantChronology(instant);
+printTo(buf, millis, chrono);
+}
+DateTimeParser parser = requireParser();
+if (instant == null) {
+long instantMillis = instant.getMillis();
+Chronology chrono = instant.getChronology();
+long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);
+chrono = selectChronology(chrono);
+DateTimeParserBucket bucket = new DateTimeParserBucket(
+int newPos = parser.parseInto(bucket, text, position);
+instant.setMillis(bucket.computeMillis(false, text));
+if (iOffsetParsed && bucket.getOffsetInteger() != null) {
+} else if (bucket.getZone() != null) {
+chrono = chrono.withZone(bucket.getZone());
+instant.setChronology(chrono);
+if (iZone != null) {
+return newPos;
+DateTimePrinter printer = requirePrinter();
+chrono = selectChronology(chrono);
+DateTimeZone zone = chrono.getZone();
+int offset = zone.getOffset(instant);
+long adjustedInstant = instant + offset;
+if ((instant ^ adjustedInstant) < 0 && (instant ^ offset) >= 0) {
+printer.printTo(buf, adjustedInstant, chrono.withUTC(), offset, zone, iLocale);
+}
+DateTimePrinter printer = iPrinter;
+if (printer == null) {
+return printer;
+if (locale == getLocale() || (locale != null && locale.equals(getLocale()))) {
+return new DateTimeFormatter(iPrinter, iParser, locale,
+return iLocale;
+DateTimeParser parser = iParser;
+if (parser == null) {
+return parser;
+super();
+iPrinter = printer;
+iParser = parser;
+iLocale = locale;
+iOffsetParsed = offsetParsed;
+iChrono = chrono;
+iZone = zone;
+iPivotYear = pivotYear;
+iDefaultYear = defaultYear;
+}
+chrono = DateTimeUtils.getChronology(chrono);

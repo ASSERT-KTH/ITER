@@ -1,0 +1,50 @@
+result = Long.toString(peekedLong);
+} else if (p == PEEKED_LONG) {
+} else if (p == PEEKED_BUFFERED) {
+return JsonToken.NUMBER;
+if (last == NUMBER_CHAR_NONE) {
+negative = true;
+last = NUMBER_CHAR_SIGN;
+continue;
+peekedLong = negative ? value : -value;
+pos += i;
+return peeked = PEEKED_LONG;
+return result;
+if (last == NUMBER_CHAR_SIGN || last == NUMBER_CHAR_NONE) {
+value = -(c - '0');
+last = NUMBER_CHAR_DIGIT;
+} else if (p == PEEKED_DOUBLE_QUOTED) {
+for (; true; i++) {
+} else if (p == PEEKED_SINGLE_QUOTED) {
+peeked = PEEKED_NONE;
+pathIndices[stackSize - 1]++;
+return result;
+break charactersOfNumber;
+if (last == NUMBER_CHAR_DIGIT && fitsInLong && (value != Long.MIN_VALUE || negative)) {
+if (p == PEEKED_UNQUOTED) {
+int p = peeked;
+if (p == PEEKED_NONE) {
+switch (p) {
+this.lenient = lenient;
+}
+return PEEKED_NONE;
+if (!isLiteral(c)) {
+return false;
+result = peekNumber();
+if (result != PEEKED_NONE) {
+char[] buffer = this.buffer;
+int p = pos;
+int l = limit;
+long value = 0; // Negative to accommodate Long.MIN_VALUE more easily.
+boolean negative = false;
+boolean fitsInLong = true;
+int last = NUMBER_CHAR_NONE;
+int i = 0;
+if (p + i == l) {
+char c = buffer[p + i];
+switch (c) {
+if (c < '0' || c > '9') {
+} else if (c == 'n' || c == 'N') {
+} else if (c == 'f' || c == 'F') {
+p = doPeek();
+int p = peeked;

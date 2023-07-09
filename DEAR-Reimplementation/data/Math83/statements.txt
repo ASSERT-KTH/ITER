@@ -1,0 +1,50 @@
+coefficients[i] = 0;
+return null;
+int width = getWidth() - numArtificialVariables - 1;
+int height = getHeight() - 1;
+double[][] matrix = new double[height][width];
+for (int i = 0; i < height; i++) {
+for (int j = 0; j < width - 1; j++) {
+matrix[i][j] = getEntry(i + 1, j + 1);
+matrix[i][width - 1] = getEntry(i + 1, getRhsOffset());
+this.tableau = new Array2DRowRealMatrix(matrix);
+this.numArtificialVariables = 0;
+}
+matrix[0][0] = -1;
+} else if (constraint.getRelationship() == Relationship.GEQ) {
+matrix[0][getArtificialVariableOffset() + artificialVar] = 1;
+matrix[row][getArtificialVariableOffset() + artificialVar++] = 1;
+int row = getBasicRow(getArtificialVariableOffset() + artificialVar);
+subtractRow(0, row, 1.0);
+double[] coefficients = new double[getOriginalNumDecisionVariables()];
+Integer negativeVarBasicRow = getBasicRow(getNegativeDecisionVariableOffset());
+double mostNegative = negativeVarBasicRow == null ? 0 : getEntry(negativeVarBasicRow, getRhsOffset());
+Set<Integer> basicRows = new HashSet<Integer>();
+for (int i = 0; i < coefficients.length; i++) {
+Integer basicRow = getBasicRow(getNumObjectiveFunctions() + i);
+if (basicRows.contains(basicRow)) {
+basicRows.add(basicRow);
+coefficients[i] =
+return new RealPointValuePair(coefficients, f.getValue(coefficients));
+return getNumObjectiveFunctions() + numDecisionVariables + numSlackVariables;
+return getNumObjectiveFunctions() + getOriginalNumDecisionVariables();
+return restrictToNonNegative ? numDecisionVariables : numDecisionVariables - 1;
+} else if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {
+if (numArtificialVariables == 0) {
+final double epsilon) {
+this.f= f;
+this.constraints= constraints;
+this.restrictToNonNegative= restrictToNonNegative;
+this.epsilon= epsilon;
+this.numDecisionVariables = getNumVariables() + (restrictToNonNegative ? 0 : 1);
+this.numSlackVariables= getConstraintTypeCounts(Relationship.LEQ) +
+this.numArtificialVariables = getConstraintTypeCounts(Relationship.EQ) +
+this.tableau = new Array2DRowRealMatrix(createTableau(goalType == GoalType.MAXIMIZE));
+initialize();
+}
+List<LinearConstraint> constraints = getNormalizedConstraints();
+int width = numDecisionVariables + numSlackVariables +
+int height = constraints.size() + getNumObjectiveFunctions();
+double[][] matrix = new double[height][width];
+if (getNumObjectiveFunctions() == 2) {
+int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;

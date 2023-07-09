@@ -1,0 +1,50 @@
+throw new JsonGenerationException("No native support for writing embedded objects",
+protected JsonGenerator() { }
+if (state) enable(f); else disable(f);
+return this;
+int oldState = getFeatureMask();
+int newState = (oldState & ~mask) | (values & mask);
+return setFeatureMask(newState);
+return 0;
+throw new IllegalArgumentException("No FormatFeatures defined for generator of type "+getClass().getName());
+throw new UnsupportedOperationException("Generator of type "+getClass().getName()+" does not support schema of type '"
+public FormatSchema getSchema() { return null; }
+_cfgPrettyPrinter = pp;
+return this;
+return _cfgPrettyPrinter;
+public JsonGenerator setHighestNonEscapedChar(int charCode) { return this; }
+public int getHighestEscapedChar() { return 0; }
+public CharacterEscapes getCharacterEscapes() { return null; }
+public JsonGenerator setCharacterEscapes(CharacterEscapes esc) { return this; }
+throw new UnsupportedOperationException();
+return null;
+return -1;
+JsonStreamContext ctxt = getOutputContext();
+return (ctxt == null) ? null : ctxt.getCurrentValue();
+JsonStreamContext ctxt = getOutputContext();
+if (ctxt != null) {
+ctxt.setCurrentValue(v);
+}
+public boolean canUseSchema(FormatSchema schema) { return false; }
+public boolean canWriteObjectId() { return false; }
+public boolean canWriteTypeId() { return false; }
+public boolean canWriteBinaryNatively() { return false; }
+public boolean canOmitFields() { return true; }
+public boolean canWriteFormattedNumbers() { return false; }
+writeStartArray();
+}
+writeStartObject();
+setCurrentValue(forValue);
+}
+writeFieldName(Long.toString(id));
+}
+if (array == null) {
+throw new IllegalArgumentException("null array");
+_verifyOffsets(array.length, offset, length);
+writeStartArray();
+for (int i = offset, end = offset+length; i < end; ++i) {
+writeNumber(array[i]);
+writeEndArray();
+}
+if (array == null) {
+throw new IllegalArgumentException("null array");

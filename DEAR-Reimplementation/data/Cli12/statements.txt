@@ -1,0 +1,25 @@
+if (options.hasOption(arg.substring(0, 2)))
+tokens.add(arg.substring(0, 2)); // -D
+tokens.add(arg.substring(2)); // property=value
+public class GnuParser extends Parser {
+List tokens = new ArrayList();
+boolean eatTheRest = false;
+for (int i = 0; i < arguments.length; i++)
+String arg = arguments[i];
+if ("--".equals(arg))
+else if ("-".equals(arg))
+else if (arg.startsWith("-"))
+String opt = Util.stripLeadingHyphens(arg);
+if (options.hasOption(opt))
+}
+if (eatTheRest)
+return (String[]) tokens.toArray(new String[tokens.size()]);
+eatTheRest = stopAtNonOption;
+tokens.add(arg);
+eatTheRest = true;
+tokens.add("--");
+tokens.add("-");
+tokens.add(arg);
+tokens.add(arg);
+for (i++; i < arguments.length; i++)
+tokens.add(arguments[i]);

@@ -1,0 +1,33 @@
+while (bitsCachedSize < count) {
+final long nextByte = in.read();
+if (nextByte < 0) {
+if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
+bitsCachedSize += 8;
+}
+if (byteOrder == ByteOrder.LITTLE_ENDIAN) {
+bitsCachedSize -= count;
+return bitsOut;
+public BitInputStream(final InputStream in, final ByteOrder byteOrder) {
+private long bitsCached = 0;
+private int bitsCachedSize = 0;
+this.in = in;
+this.byteOrder = byteOrder;
+}
+private static final long[] MASKS = new long[MAXIMUM_CACHE_SIZE + 1];
+for (int i = 1; i <= MAXIMUM_CACHE_SIZE; i++) {
+MASKS[i] = (MASKS[i - 1] << 1) + 1;
+}
+if (count < 0 || count > MAXIMUM_CACHE_SIZE) {
+bitsCached <<= 8;
+bitsCached |= nextByte;
+bitsOut = (bitsCached >> (bitsCachedSize - count)) & MASKS[count];
+bitsCached |= (nextByte << bitsCachedSize);
+bitsOut = (bitsCached & MASKS[count]);
+bitsCached >>>= count;
+in.close();
+}
+bitsCached = 0;
+bitsCachedSize = 0;
+}
+throw new IllegalArgumentException("count must not be negative or greater than " + MAXIMUM_CACHE_SIZE);
+return nextByte;

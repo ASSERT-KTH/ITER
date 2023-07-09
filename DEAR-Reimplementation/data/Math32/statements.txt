@@ -1,0 +1,50 @@
+super(boundary);
+}
+final BSPTree<Euclidean2D> tree = getTree(false);
+if ((Boolean) tree.getAttribute()) {
+return null;
+super();
+}
+super(tree);
+}
+return new PolygonsSet(tree);
+final Vector2D[][] v = getVertices();
+if (v.length == 0) {
+} else if (v[0][0] == null) {
+double sum= 0;
+double sumX = 0;
+double sumY = 0;
+for (Vector2D[] loop : v) {
+double x1 = loop[loop.length - 1].getX();
+double y1 = loop[loop.length - 1].getY();
+for (final Vector2D point : loop) {
+final double x0 = x1;
+final double y0 = y1;
+x1 = point.getX();
+y1 = point.getY();
+final double factor = x0 * y1 - y0 * x1;
+sum+= factor;
+sumX += factor * (x0 + x1);
+sumY += factor * (y0 + y1);
+if (sum < 0) {
+setSize(sum / 2);
+setBarycenter(new Vector2D(sumX / (3 * sum), sumY / (3 * sum)));
+}
+if (vertices == null) {
+if (getTree(false).getCut() == null) {
+final SegmentsBuilder visitor = new SegmentsBuilder();
+getTree(true).visit(visitor);
+final AVLTree<ComparableSegment> sorted = visitor.getSorted();
+final ArrayList<List<ComparableSegment>> loops = new ArrayList<List<ComparableSegment>>();
+while (!sorted.isEmpty()) {
+final AVLTree<ComparableSegment>.Node node = sorted.getSmallest();
+final List<ComparableSegment> loop = followLoop(node, sorted);
+if (loop != null) {
+loops.add(loop);
+}
+vertices = new Vector2D[loops.size()][];
+int i = 0;
+for (final List<ComparableSegment> loop : loops) {
+if (loop.size() < 2) {
+} else if (loop.get(0).getStart() == null) {
+final Vector2D[] array = new Vector2D[loop.size()];

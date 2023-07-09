@@ -1,0 +1,50 @@
+this(new Date());
+}
+public Week(int week, int year) {
+if ((week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR)) {
+throw new IllegalArgumentException(
+this.week = (byte) week;
+this.year = (short) year;
+peg(Calendar.getInstance());
+}
+public Week(int week, Year year) {
+if ((week < FIRST_WEEK_IN_YEAR) && (week > LAST_WEEK_IN_YEAR)) {
+throw new IllegalArgumentException(
+this.week = (byte) week;
+this.year = (short) year.getYear();
+peg(Calendar.getInstance());
+}
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
+}
+this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
+}
+public Week(Date time, TimeZone zone, Locale locale) {
+if (time == null) {
+throw new IllegalArgumentException("Null 'time' argument.");
+if (zone == null) {
+throw new IllegalArgumentException("Null 'zone' argument.");
+if (locale == null) {
+throw new IllegalArgumentException("Null 'locale' argument.");
+Calendar calendar = Calendar.getInstance(zone, locale);
+calendar.setTime(time);
+int tempWeek = calendar.get(Calendar.WEEK_OF_YEAR);
+if (tempWeek == 1
+this.week = 1;
+this.year = (short) (calendar.get(Calendar.YEAR) + 1);
+this.week = (byte) Math.min(tempWeek, LAST_WEEK_IN_YEAR);
+int yyyy = calendar.get(Calendar.YEAR);
+if (calendar.get(Calendar.MONTH) == Calendar.JANUARY
+yyyy--;
+this.year = (short) yyyy;
+peg(calendar);
+}
+return new Year(this.year);
+return this.year;
+return this.week;
+return this.firstMillisecond;
+return this.lastMillisecond;
+this.firstMillisecond = getFirstMillisecond(calendar);
+this.lastMillisecond = getLastMillisecond(calendar);
+}
+if (this.week != FIRST_WEEK_IN_YEAR) {
+result = new Week(this.week - 1, this.year);

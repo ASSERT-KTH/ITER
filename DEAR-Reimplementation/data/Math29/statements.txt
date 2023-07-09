@@ -1,0 +1,50 @@
+OpenMapRealVector res = new OpenMapRealVector(this);
+Iterator iter = entries.iterator();
+while (iter.hasNext()) {
+iter.advance();
+res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key()));
+return res;
+checkVectorDimensions(v.getDimension());
+entries.remove(index);
+public OpenMapRealVector(OpenMapRealVector v) {
+virtualSize = v.getDimension();
+entries = new OpenIntToDoubleHashMap(v.getEntries());
+epsilon = v.epsilon;
+}
+return entries;
+} else if (entries.containsKey(index)) {
+OpenMapRealVector res = new OpenMapRealVector(this);
+Iterator iter = entries.iterator();
+while (iter.hasNext()) {
+iter.advance();
+res.setEntry(iter.key(), iter.value() / v.getEntry(iter.key()));
+return res;
+checkVectorDimensions(v.getDimension());
+if (!isDefaultValue(value)) {
+entries.put(index, value);
+}
+checkIndex(index);
+return entries.get(index);
+checkIndex(index);
+entries.put(key, value);
+return virtualSize;
+this(values, DEFAULT_ZERO_TOLERANCE);
+}
+public OpenMapRealVector(double[] values, double epsilon) {
+virtualSize = values.length;
+entries = new OpenIntToDoubleHashMap(0.0);
+this.epsilon = epsilon;
+for (int key = 0; key < values.length; key++) {
+double value = values[key];
+if (!isDefaultValue(value)) {
+}
+return FastMath.abs(value) < epsilon;
+this(0, DEFAULT_ZERO_TOLERANCE);
+}
+this(dimension, DEFAULT_ZERO_TOLERANCE);
+}
+public OpenMapRealVector(int dimension, double epsilon) {
+virtualSize = dimension;
+entries = new OpenIntToDoubleHashMap(0.0);
+this.epsilon = epsilon;
+}

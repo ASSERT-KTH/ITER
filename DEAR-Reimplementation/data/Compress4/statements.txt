@@ -1,0 +1,50 @@
+if(entry != null) {
+cdOffset = written;
+for (Iterator i = entries.iterator(); i.hasNext(); ) {
+writeCentralFileHeader((ZipArchiveEntry) i.next());
+cdLength = written - cdOffset;
+writeCentralDirectoryEnd();
+offsets.clear();
+entries.clear();
+}
+if (entry == null) {
+return;
+long realCrc = crc.getValue();
+crc.reset();
+if (entry.getMethod() == DEFLATED) {
+def.finish();
+while (!def.finished()) {
+deflate();
+entry.setSize(ZipUtil.adjustToLong(def.getTotalIn()));
+entry.setCompressedSize(ZipUtil.adjustToLong(def.getTotalOut()));
+entry.setCrc(realCrc);
+def.reset();
+written += entry.getCompressedSize();
+if (raf != null) {
+writeDataDescriptor(entry);
+entry = null;
+}
+closeArchiveEntry();
+entry = ((ZipArchiveEntry) archiveEntry);
+entries.add(entry);
+if (entry.getMethod() == -1) { // not specified
+entry.setMethod(method);
+if (entry.getTime() == -1) { // not specified
+entry.setTime(System.currentTimeMillis());
+if (entry.getMethod() == STORED && raf == null) {
+if (entry.getMethod() == DEFLATED && hasCompressionLevelChanged) {
+writeLocalFileHeader(entry);
+}
+finish();
+if (raf != null) {
+if (out != null) {
+}
+int len = def.deflate(buf, 0, buf.length);
+if (len > 0) {
+writeOut(buf, 0, len);
+}
+boolean encodable = zipEncoding.canEncode(ze.getName());
+if (!encodable && fallbackToUTF8) {
+entryEncoding = zipEncoding;
+ByteBuffer name = entryEncoding.encode(ze.getName());
+if (createUnicodeExtraFields != UnicodeExtraFieldPolicy.NEVER) {

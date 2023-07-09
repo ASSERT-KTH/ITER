@@ -1,0 +1,50 @@
+super(0, false);
+this.name = name;
+this.description = description;
+this.minimum = minimum;
+this.maximum = maximum;
+this.options = Collections.unmodifiableList(options);
+final List newAnonymous = new ArrayList();
+final SortedMap newOptionMap = new TreeMap(ReverseStringComparator.getInstance());
+final Set newPrefixes = new HashSet();
+for (final Iterator i = options.iterator(); i.hasNext();) {
+final Option option = (Option) i.next();
+if (option instanceof Argument) {
+final Set triggers = option.getTriggers();
+for (Iterator j = triggers.iterator(); j.hasNext();) {
+newOptionMap.put(j.next(), option);
+newPrefixes.addAll(option.getPrefixes());
+}
+this.anonymous = Collections.unmodifiableList(newAnonymous);
+this.optionMap = Collections.unmodifiableSortedMap(newOptionMap);
+this.prefixes = Collections.unmodifiableSet(newPrefixes);
+}
+if (arg == null) {
+if (optionMap.containsKey(arg)) {
+return true;
+return prefixes;
+String previous = null;
+while (arguments.hasNext()) {
+final String arg = (String) arguments.next();
+if (arg == previous) {
+previous = arg;
+final Option opt = (Option) optionMap.get(arg);
+if (opt != null) {
+arguments.previous();
+opt.process(commandLine, arguments);
+} // [END process each command line token
+}
+int present = 0;
+Option unexpected = null;
+for (final Iterator i = options.iterator(); i.hasNext();) {
+final Option option = (Option) i.next();
+boolean validate = option.isRequired() || option instanceof Group;
+if (validate) {
+option.validate(commandLine);
+if (commandLine.hasOption(option)) {
+if (++present > maximum) {
+option.validate(commandLine);
+super.defaults(commandLine);
+for (final Iterator i = options.iterator(); i.hasNext();) {
+final Option option = (Option) i.next();
+option.defaults(commandLine);

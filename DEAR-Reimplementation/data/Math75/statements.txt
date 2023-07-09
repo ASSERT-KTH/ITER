@@ -1,0 +1,50 @@
+return getCumPct((Comparable<?>) v);
+return getPct(Long.valueOf(v));
+return getPct(Long.valueOf(v));
+return getCumFreq(((Integer) v).longValue());
+return getCumFreq(Long.valueOf(v));
+addValue(Long.valueOf(v));
+}
+return (double) getCount(v) / (double) sumFreq;
+return getSumFreq();// v is comparable, but greater than the last value
+freqTable.put(obj, Long.valueOf(count.longValue() + 1));
+result += iterator.next().longValue();
+result = count.longValue();
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+if (v instanceof Integer) {
+Comparator<Comparable<?>> c = (Comparator<Comparable<?>>) freqTable.comparator();
+if (c == null) {
+c = new NaturalComparator();
+long result = 0;
+Long value = freqTable.get(v);
+if (value != null) {
+result = value.longValue();
+}
+if (c.compare(v, freqTable.firstKey()) < 0) {
+if (c.compare(v, freqTable.lastKey()) >= 0) {
+return (double) getCumFreq(v) / (double) sumFreq;
+}
+long result = 0;
+Iterator<Long> iterator = freqTable.values().iterator();
+while (iterator.hasNext()){
+return result;
+if (v instanceof Integer) {
+long result = 0;
+Long count =freqTable.get(v);
+if (count != null) {
+}
+return result;
+if (getSumFreq() == 0) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+Comparable<?> obj = v;
+if (v instanceof Integer) {
+Long count = freqTable.get(obj);
+if (count == null) {
+freqTable.put(obj, Long.valueOf(1));
+}
+}
+addValue(Long.valueOf(v));
+public Frequency() {
+freqTable = new TreeMap<Comparable<?>, Long>();

@@ -1,0 +1,50 @@
+this(new BlockRealMatrix(data));
+}
+TDistribution tDistribution = new TDistributionImpl(nObs - 2);
+int nVars = correlationMatrix.getColumnDimension();
+double[][] out = new double[nVars][nVars];
+for (int i = 0; i < nVars; i++) {
+for (int j = 0; j < nVars; j++) {
+if (i == j) {
+out[i][j] = 0d;
+double r = correlationMatrix.getEntry(i, j);
+double t = Math.abs(r * Math.sqrt((nObs - 2)/(1 - r * r)));
+out[i][j] = 2 * (1 - tDistribution.cumulativeProbability(t));
+return new BlockRealMatrix(out);
+nObs = matrix.getRowDimension();
+correlationMatrix = computeCorrelationMatrix(matrix);
+}
+int nVars = matrix.getColumnDimension();
+RealMatrix outMatrix = new BlockRealMatrix(nVars, nVars);
+for (int i = 0; i < nVars; i++) {
+for (int j = 0; j < i; j++) {
+double corr = correlation(matrix.getColumn(i), matrix.getColumn(j));
+outMatrix.setEntry(i, j, corr);
+outMatrix.setEntry(j, i, corr);
+outMatrix.setEntry(i, i, 1d);
+return outMatrix;
+}
+public PearsonsCorrelation(RealMatrix matrix) {
+checkSufficientData(matrix);
+for(int i=0; i<xArray.length; i++) {
+regression.addData(xArray[i], yArray[i]);
+return regression.getR();
+int nRows = matrix.getRowDimension();
+int nCols = matrix.getColumnDimension();
+if (nRows < 2 || nCols < 2) {
+SimpleRegression regression = new SimpleRegression();
+if(xArray.length == yArray.length && xArray.length > 1) {
+super();
+correlationMatrix = null;
+nObs = 0;
+}
+public PearsonsCorrelation(Covariance covariance) {
+RealMatrix covarianceMatrix = covariance.getCovarianceMatrix();
+if (covarianceMatrix == null) {
+throw MathRuntimeException.createIllegalArgumentException("covariance matrix is null");
+nObs = covariance.getN();
+correlationMatrix = covarianceToCorrelation(covarianceMatrix);
+}
+public PearsonsCorrelation(RealMatrix covarianceMatrix, int numberOfObservations) {
+nObs = numberOfObservations;
+correlationMatrix = covarianceToCorrelation(covarianceMatrix);

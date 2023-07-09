@@ -1,0 +1,48 @@
+super(checker);
+}
+parseOptimizationData(optData);
+for (OptimizationData data : optData) {
+if (data instanceof Weight) {
+weightMatrixSqrt = squareRoot(((Weight) data).getWeight());
+public Weight(double[] weight) {
+final int dim = weight.length;
+weightMatrix = org.apache.commons.math3.linear.MatrixUtils.createRealMatrix(dim, dim);
+for (int i = 0; i < dim; i++) {
+weightMatrix.setEntry(i, i, weight[i]);
+}
+return weightMatrix.copy();
+return weightMatrixSqrt.multiply(MatrixUtils.createRealMatrix(computeJacobian(params)));
+final ArrayRealVector r = new ArrayRealVector(residuals);
+return FastMath.sqrt(r.dotProduct(getWeight().operate(r)));
+return FastMath.sqrt(getChiSquare() / getTargetSize());
+return cost * cost;
+return weightMatrixSqrt.copy();
+this.cost = cost;
+}
+final RealMatrix j = computeWeightedJacobian(params);
+final RealMatrix jTj = j.transpose().multiply(j);
+final DecompositionSolver solver
+return solver.getInverse().getData();
+final int nC = params.length;
+final double[] sig = new double[nC];
+final double[][] cov = computeCovariances(params, covarianceSingularityThreshold);
+for (int i = 0; i < nC; ++i) {
+sig[i] = FastMath.sqrt(cov[i][i]);
+return sig;
+return super.optimize(optData);
+final double[] target = getTarget();
+if (objectiveValue.length != target.length) {
+throw new DimensionMismatchException(target.length,
+final double[] residuals = new double[target.length];
+for (int i = 0; i < target.length; i++) {
+residuals[i] = target[i] - objectiveValue[i];
+return residuals;
+break;
+}
+final EigenDecomposition dec = new EigenDecomposition(m);
+return dec.getSquareRoot();
+public Weight(RealMatrix weight) {
+if (weight.getColumnDimension() != weight.getRowDimension()) {
+throw new NonSquareMatrixException(weight.getColumnDimension(),
+weightMatrix = weight.copy();
+}

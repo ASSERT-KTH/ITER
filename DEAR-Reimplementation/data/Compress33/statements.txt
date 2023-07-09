@@ -1,0 +1,50 @@
+if (in == null) {
+if (!in.markSupported()) {
+final byte[] signature = new byte[12];
+in.mark(signature.length);
+int signatureLength = IOUtils.readFully(in, signature);
+in.reset();
+if (BZip2CompressorInputStream.matches(signature, signatureLength)) {
+return new BZip2CompressorInputStream(in, decompressConcatenated);
+if (GzipCompressorInputStream.matches(signature, signatureLength)) {
+return new GzipCompressorInputStream(in, decompressConcatenated);
+if (Pack200CompressorInputStream.matches(signature, signatureLength)) {
+if (FramedSnappyCompressorInputStream.matches(signature, signatureLength)) {
+if (ZCompressorInputStream.matches(signature, signatureLength)) {
+if (XZUtils.matches(signature, signatureLength) &&
+if (LZMAUtils.matches(signature, signatureLength) &&
+}
+throw new CompressorException("No Compressor found for the stream signature.");
+public CompressorStreamFactory() {
+private volatile boolean decompressConcatenated = false;
+this.decompressUntilEOF = null;
+}
+public CompressorStreamFactory(boolean decompressUntilEOF) {
+private volatile boolean decompressConcatenated = false;
+this.decompressUntilEOF = Boolean.valueOf(decompressUntilEOF);
+this.decompressConcatenated = decompressUntilEOF;
+}
+if (this.decompressUntilEOF != null) {
+this.decompressConcatenated = decompressConcatenated;
+}
+return new Pack200CompressorInputStream(in);
+return decompressConcatenated;
+throw new IllegalStateException("Cannot override the setting defined by the constructor");
+throw new IllegalArgumentException("Stream must not be null.");
+throw new IllegalArgumentException("Mark is not supported.");
+return new FramedSnappyCompressorInputStream(in);
+return new ZCompressorInputStream(in);
+return new XZCompressorInputStream(in, decompressConcatenated);
+return new LZMACompressorInputStream(in);
+} catch (IOException e) {
+throw new CompressorException("Failed to detect Compressor from InputStream.", e);
+if (name == null || in == null) {
+throw new IllegalArgumentException(
+if (GZIP.equalsIgnoreCase(name)) {
+return new GzipCompressorInputStream(in, decompressConcatenated);
+if (BZIP2.equalsIgnoreCase(name)) {
+return new BZip2CompressorInputStream(in, decompressConcatenated);
+if (XZ.equalsIgnoreCase(name)) {
+return new XZCompressorInputStream(in, decompressConcatenated);
+if (LZMA.equalsIgnoreCase(name)) {
+return new LZMACompressorInputStream(in);

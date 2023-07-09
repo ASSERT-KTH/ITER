@@ -1,0 +1,50 @@
+this.moduleGraph = new JSModuleGraph(modules);
+}
+if (synthesizedExternsInput == null) {
+synthesizedExternsInput = newExternInput(SYNTHETIC_EXTERNS);
+return synthesizedExternsInput;
+SourceAst ast = new SyntheticAst(name);
+if (inputsById.containsKey(ast.getInputId())) {
+CompilerInput input = new CompilerInput(ast, true);
+putCompilerInput(input.getInputId(), input);
+externsRoot.addChildToFront(ast.getAstRoot(this));
+externs.add(0, input);
+return input;
+level = newLevel;
+return hasRegExpGlobalReferences;
+CheckLevel level = error.getDefaultLevel();
+if (warningsGuard != null) {
+CheckLevel newLevel = warningsGuard.level(error);
+if (newLevel != null) {
+if (level.isOn()) {
+}
+return moduleGraph;
+for (CodeChangeHandler handler : codeChangeHandlers) {
+handler.reportChange();
+}
+}
+JSModule module = new JSModule(SINGLETON_MODULE_NAME);
+for (SourceFile input : inputs) {
+module.add(input);
+}
+initModules(externs, Lists.newArrayList(module), options);
+}
+return externAndJsRoot;
+if (options == null) {
+}
+initCompilerOptionsIfTesting();
+return toSource(n, null, true);
+CodePrinter.Builder builder = new CodePrinter.Builder(n);
+builder.setPrettyPrint(options.prettyPrint);
+builder.setLineBreak(options.lineBreak);
+builder.setPreferLineBreakAtEndOfFile(options.preferLineBreakAtEndOfFile);
+builder.setSourceMap(sourceMap);
+builder.setSourceMapDetailLevel(options.sourceMapDetailLevel);
+builder.setTagAsStrict(firstOutput &&
+builder.setLineLengthThreshold(options.lineLengthThreshold);
+Charset charset = options.outputCharset != null ?
+builder.setOutputCharset(charset);
+return builder.build();
+}
+if (hasErrors()) {
+optimize();

@@ -1,0 +1,50 @@
+throw new IllegalStateException("The header contains duplicate names: " + Arrays.toString(header));
+final Set<String> set = new HashSet<String>(header.length);
+set.addAll(Arrays.asList(header));
+if (set.size() != header.length) {
+if (header != null) {
+if (escape == null && quotePolicy == Quote.NONE) {
+this.header = header.clone();
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+if (escape != null && escape.equals(commentStart)) {
+if (quoteChar != null && quoteChar.equals(commentStart)) {
+if (commentStart != null && delimiter == commentStart.charValue()) {
+if (escape != null && delimiter == escape.charValue()) {
+if (quoteChar != null && delimiter == quoteChar.charValue()) {
+final String nullString, final String[] header, final boolean skipHeaderRecord) {
+if (isLineBreak(delimiter)) {
+this.delimiter = delimiter;
+this.quoteChar = quoteChar;
+this.quotePolicy = quotePolicy;
+this.commentStart = commentStart;
+this.escape = escape;
+this.ignoreSurroundingSpaces = ignoreSurroundingSpaces;
+this.ignoreEmptyLines = ignoreEmptyLines;
+this.recordSeparator = recordSeparator;
+this.nullString = nullString;
+if (header == null) {
+this.header = null;
+this.skipHeaderRecord = skipHeaderRecord;
+}
+public static final CSVFormat DEFAULT = new CSVFormat(COMMA, DOUBLE_QUOTE_CHAR, null, null, null,
+public static final CSVFormat RFC4180 = DEFAULT.withIgnoreEmptyLines(false);
+public static final CSVFormat EXCEL = DEFAULT.withIgnoreEmptyLines(false);
+public static final CSVFormat TDF =
+public static final CSVFormat MYSQL =
+return c == LF || c == CR;
+return c != null && isLineBreak(c.charValue());
+if (isLineBreak(delimiter)) {
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+return withEscape(Character.valueOf(escape));
+if (isLineBreak(escape)) {
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+if (isLineBreak(quoteChar)) {
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+return withRecordSeparator(String.valueOf(recordSeparator));
+return new CSVFormat(delimiter, quoteChar, quotePolicy, commentStart, escape,
+throw new IllegalArgumentException("The delimiter cannot be a line break");
+return new CSVFormat(delimiter, null, null, null, null, false, false, null, null, null, false);
+if (this == obj) {
+return true;

@@ -1,0 +1,50 @@
+if (this.plotLines != draw) {
+this.plotLines = draw;
+this.notifyListeners(new RendererChangeEvent(this));
+}
+super();
+private boolean plotLines = false;
+private transient Paint groupPaint = Color.black;
+private transient Stroke groupStroke = new BasicStroke(1.0f);
+private transient Icon minIcon = getIcon(new Arc2D.Double(-4, -4, 8, 8, 0,
+private transient Icon maxIcon = getIcon(new Arc2D.Double(-4, -4, 8, 8, 0,
+private transient Icon objectIcon = getIcon(new Line2D.Double(-4, 0, 4, 0),
+private int lastCategory = -1;
+}
+final int width = shape.getBounds().width;
+final int height = shape.getBounds().height;
+final GeneralPath path = new GeneralPath(shape);
+return new Icon() {
+final int width = shape.getBounds().width;
+final int height = shape.getBounds().height;
+final GeneralPath path = new GeneralPath(shape);
+return new Icon() {
+return this.plotLines;
+return this.groupPaint;
+if (paint == null) {
+throw new IllegalArgumentException("Null 'paint' argument.");
+this.groupPaint = paint;
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.groupStroke;
+if (stroke == null) {
+throw new IllegalArgumentException("Null 'stroke' argument.");
+this.groupStroke = stroke;
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.objectIcon;
+if (icon == null) {
+throw new IllegalArgumentException("Null 'icon' argument.");
+this.objectIcon = icon;
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.maxIcon;
+if (icon == null) {
+throw new IllegalArgumentException("Null 'icon' argument.");
+this.maxIcon = icon;
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.minIcon;
+if (icon == null) {
+throw new IllegalArgumentException("Null 'icon' argument.");
+this.minIcon = icon;

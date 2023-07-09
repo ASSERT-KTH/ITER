@@ -1,0 +1,50 @@
+return StringUtils.EMPTY;
+return StringUtils.EMPTY;
+if (cls == null) {
+return getPackageName(cls.getName());
+if (cls == null) {
+return getShortClassName(cls.getName());
+out = out.replace(INNER_CLASS_SEPARATOR_CHAR, PACKAGE_SEPARATOR_CHAR);
+if (className == null) {
+int i = className.lastIndexOf(PACKAGE_SEPARATOR_CHAR);
+if (i == -1) {
+return className.substring(0, i);
+if (className == null) {
+if (className.length() == 0) {
+int lastDotIdx = className.lastIndexOf(PACKAGE_SEPARATOR_CHAR);
+int innerIdx = className.indexOf(
+String out = className.substring(lastDotIdx + 1);
+if (innerIdx != -1) {
+return out;
+public static final String PACKAGE_SEPARATOR = String.valueOf(PACKAGE_SEPARATOR_CHAR);
+public static final String INNER_CLASS_SEPARATOR = String.valueOf(INNER_CLASS_SEPARATOR_CHAR);
+private static final Map<Class<?>, Class<?>> primitiveWrapperMap = new HashMap<Class<?>, Class<?>>();
+primitiveWrapperMap.put(Boolean.TYPE, Boolean.class);
+primitiveWrapperMap.put(Byte.TYPE, Byte.class);
+primitiveWrapperMap.put(Character.TYPE, Character.class);
+primitiveWrapperMap.put(Short.TYPE, Short.class);
+primitiveWrapperMap.put(Integer.TYPE, Integer.class);
+primitiveWrapperMap.put(Long.TYPE, Long.class);
+primitiveWrapperMap.put(Double.TYPE, Double.class);
+primitiveWrapperMap.put(Float.TYPE, Float.class);
+primitiveWrapperMap.put(Void.TYPE, Void.TYPE);
+private static final Map<Class<?>, Class<?>> wrapperPrimitiveMap = new HashMap<Class<?>, Class<?>>();
+for (Class<?> primitiveClass : primitiveWrapperMap.keySet()) {
+Class<?> wrapperClass = primitiveWrapperMap.get(primitiveClass);
+if (!primitiveClass.equals(wrapperClass)) {
+wrapperPrimitiveMap.put(wrapperClass, primitiveClass);
+}
+private static final Map<String, String> abbreviationMap = new HashMap<String, String>();
+private static final Map<String, String> reverseAbbreviationMap = new HashMap<String, String>();
+addAbbreviation("int", "I");
+addAbbreviation("boolean", "Z");
+addAbbreviation("float", "F");
+addAbbreviation("long", "J");
+addAbbreviation("short", "S");
+addAbbreviation("byte", "B");
+addAbbreviation("double", "D");
+addAbbreviation("char", "C");
+}
+abbreviationMap.put(primitive, abbreviation);
+reverseAbbreviationMap.put(abbreviation, primitive);
+}

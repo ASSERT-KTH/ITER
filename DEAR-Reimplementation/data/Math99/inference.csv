@@ -1,0 +1,1225 @@
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:711-return 0;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:714-return lcm;	1
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:540-int u = p;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:541-int v = q;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:543-return (Math.abs(u) + Math.abs(v));[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:711-return 0;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:714-return lcm;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:540-int u = p;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:541-int v = q;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:710-if (a==0 || b==0){[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:714-return lcm;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:540-int u = p;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:541-int v = q;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:711-return 0;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:714-return lcm;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:540-int u = p;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:541-int v = q;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:713-int lcm = Math.abs(mulAndCheck(a / gcd(a, b), b));[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:540-int u = p;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:541-int v = q;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:714-return lcm;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:541-int v = q;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:540-int u = p;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:541-int v = q;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:550-if (u > 0) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:542-if ((u == 0) || (v == 0)) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:551-u = -u;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:550-if (u > 0) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:553-if (v > 0) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:551-u = -u;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:554-v = -v;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:553-if (v > 0) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:557-int k = 0;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:554-v = -v;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:557-int k = 0;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:560-u /= 2;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:558-while ((u & 1) == 0 && (v & 1) == 0 && k < 31) { // while u and v are[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:561-v /= 2;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:560-u /= 2;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:561-v /= 2;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:564-if (k == 31) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:562-k++; // cast out twos.[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:564-if (k == 31) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:571-int t = ((u & 1) == 1) ? v : -(u / 2)/* B3 */;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:577-while ((t & 1) == 0) { // while t is even..[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:581-if (t > 0) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:578-t /= 2; // cast out twos[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:582-u = -t;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:581-if (t > 0) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:584-v = t;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:582-u = -t;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:584-v = t;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:590-} while (t != 0);	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:587-t = (v - u) / 2;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:590-} while (t != 0);[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:591-return -u * (1 << k); // gcd is u*2^k[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:748-long m = ((long)x) * ((long)y);[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:752-return (int)m;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:749-if (m < Integer.MIN_VALUE || m > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:752-return (int)m;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:66-super();	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:413-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:67-}	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:66-super();[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:67-}[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:80-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:81-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:84-return (int)s;	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:82-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:84-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:114-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:98-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:114-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:120-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:116-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:121-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:120-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:121-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:124-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:123-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:124-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:124-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:124-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:124-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:124-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:124-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:130-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:126-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:130-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:130-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:130-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:130-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:138-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:137-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:138-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:138-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0
+org.apache.commons.math.util.MathUtils:140-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:144-return ret;	0

@@ -1,0 +1,50 @@
+return this.visible;
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+}
+String axisLabel = getLabel();
+if (axisLabel != null && !axisLabel.equals("")) {
+FontMetrics fm = g2.getFontMetrics(getLabelFont());
+Rectangle2D bounds = TextUtilities.getTextBounds(axisLabel, g2, fm);
+RectangleInsets insets = getLabelInsets();
+bounds = insets.createOutsetRectangle(bounds);
+double angle = getLabelAngle();
+if (edge == RectangleEdge.LEFT || edge == RectangleEdge.RIGHT) {
+angle = angle - Math.PI / 2.0;
+}
+double y = bounds.getCenterY();
+AffineTransform transformer
+= AffineTransform.getRotateInstance(angle, x, y);
+result = labelBounds.getBounds2D();
+}
+
+throw new IllegalArgumentException("Null 'state' argument.");
+return state;
+RectangleInsets insets = getLabelInsets();
+g2.setFont(font);
+g2.setPaint(getLabelPaint());
+FontMetrics fm = g2.getFontMetrics();
+Rectangle2D labelBounds = TextUtilities.getTextBounds(label, g2, fm);
+Shape hotspot = null;
+
+AffineTransform t = AffineTransform.getRotateInstance(
+ChartRenderingInfo owner = plotState.getOwner();
+EntityCollection entities = owner.getEntityCollection();
+if (entities != null) {
+entities.add(new AxisLabelEntity(this, hotspot,
+this.labelToolTip, this.labelURL));
+}
+}
+getLabelAngle(), labelBounds.getCenterX(),
+labelBounds = rotatedLabelBounds.getBounds2D();
+float w = (float) labelBounds.getWidth();
+float h = (float) labelBounds.getHeight();

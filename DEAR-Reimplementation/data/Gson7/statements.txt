@@ -1,0 +1,50 @@
+throw new IllegalStateException("Expected an int but was " + peek()
+throw new IllegalStateException("Expected a long but was " + peek()
+pos--; // Don't consume the first character in an unquoted string.
+if (isLiteral((char) c)) {
+return peeked = PEEKED_UNQUOTED_NAME;
+} else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {
+checkLenient();
+} else if (p == PEEKED_SINGLE_QUOTED || p == PEEKED_DOUBLE_QUOTED) {
+if (p == PEEKED_NUMBER) {
+return true;
+return JsonToken.STRING;
+result.append('.');
+if (pathNames[i] != null) {
+}
+last = NUMBER_CHAR_EXP_DIGIT;
+int p = peeked;
+if (p == PEEKED_NONE) {
+if (p == PEEKED_LONG) {
+if (p == PEEKED_NUMBER) {
+return lenient;
+int p = peeked;
+if (p == PEEKED_NONE) {
+p = doPeek();
+return p != PEEKED_END_OBJECT && p != PEEKED_END_ARRAY;
+return JsonToken.BEGIN_OBJECT;
+if (last == NUMBER_CHAR_DIGIT || last == NUMBER_CHAR_FRACTION_DIGIT) {
+last = NUMBER_CHAR_EXP_E;
+continue;
+} else if (last == NUMBER_CHAR_EXP_E || last == NUMBER_CHAR_EXP_SIGN) {
+StringBuilder result = new StringBuilder().append('$');
+for (int i = 0, size = stackSize; i < size; i++) {
+switch (stack[i]) {
+return result.toString();
+return lineNumber + 1;
+return pos - lineStart + 1;
+if (!lenient) {
+return; // not a security token!
+switch (p) {
+for (int i = 0; i < NON_EXECUTE_PREFIX.length; i++) {
+if (buffer[pos + i] != NON_EXECUTE_PREFIX[i]) {
+this.lenient = lenient;
+}
+consumeNonExecutePrefix();
+nextNonWhitespace(true);
+pos--;
+if (pos + NON_EXECUTE_PREFIX.length > limit && !fillBuffer(NON_EXECUTE_PREFIX.length)) {
+if (last == NUMBER_CHAR_DIGIT) {
+last = NUMBER_CHAR_DECIMAL;
+continue;
+last = NUMBER_CHAR_FRACTION_DIGIT;

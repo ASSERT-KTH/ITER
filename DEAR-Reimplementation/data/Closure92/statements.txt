@@ -1,0 +1,50 @@
+Node assign = n.getFirstChild();
+value = assign.getLastChild();
+providedNames.get(prefixNs).addProvide(
+providedNames.put(
+Node name = n.getFirstChild();
+value = name.getFirstChild();
+String prefixNs = ns.substring(0, pos);
+pos = ns.indexOf('.', pos + 1);
+if (providedNames.containsKey(prefixNs)) {
+}
+if (!n.getBooleanProp(Node.IS_NAMESPACE)) {
+Node value = null;
+if (n.getType() == Token.EXPR_RESULT) {
+} else if (n.getType() == Token.VAR) {
+return value != null
+String ns = arg.getString();
+if (providedNames.containsKey(ns)) {
+registerAnyProvidedPrefixes(ns, parent, t.getModule());
+providedNames.put(
+return true;
+int pos = ns.indexOf('.');
+while (pos != -1) {
+}
+processProvideCall(t, n, parent);
+Node left = n.getFirstChild();
+Node arg = left.getNext();
+if (verifyProvide(t, left, arg)) {
+}
+if (!verifyArgument(t, methodName, arg)) {
+for (String part : arg.getString().split("\\.")) {
+if (!NodeUtil.isValidPropertyName(part)) {
+return verifyArgument(t, methodName, arg, Token.STRING);
+} else if (arg.getNext() != null) {
+return true;
+DiagnosticType diagnostic = null;
+if (arg == null) {
+} else if (arg.getType() != desiredType) {
+if (diagnostic != null) {
+} else if ("provide".equals(methodName)) {
+} else if ("require".equals(methodName)) {
+} else if (!isExpr) {
+String methodName = name.getNext().getString();
+if ("base".equals(methodName)) {
+}
+} else if (n.getType() == Token.ASSIGN &&
+boolean rewriteNewDateGoogNow) {
+private final Map<String, ProvidedName> providedNames =
+private final List<UnrecognizedRequire> unrecognizedRequires =
+private final Set<String> exportedVariables = Sets.newHashSet();
+this.compiler = compiler;

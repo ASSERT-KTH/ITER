@@ -1,0 +1,50 @@
+return;
+return REGISTRY.get();
+return getRegistry().contains(new IDKey(value));
+if (isRegistered(object)) {
+register(object);
+Field[] fields = clazz.getDeclaredFields();
+AccessibleObject.setAccessible(fields, true);
+for (Field field : fields) {
+if (!ArrayUtils.contains(excludeFields, field.getName())
+Object fieldValue = field.get(object);
+builder.append(fieldValue);
+}
+unregister(object);
+}
+}
+Class<?> clazz = object.getClass();
+reflectionAppend(object, clazz, builder, testTransients, excludeFields);
+while (clazz.getSuperclass() != null && clazz != reflectUpToClass) {
+clazz = clazz.getSuperclass();
+reflectionAppend(object, clazz, builder, testTransients, excludeFields);
+return builder.toHashCode();
+return reflectionHashCode(17, 37, object, false, null, null);
+getRegistry().add(new IDKey(value));
+}
+getRegistry().remove(new IDKey(value));
+}
+HashCodeBuilder builder = new HashCodeBuilder(initialNonZeroOddNumber, multiplierNonZeroOddNumber);
+if (object == null) {
+iTotal = iTotal * iConstant + object.hashCode();
+if (object == null) {
+if(object.getClass().isArray()) {
+return this;
+if (multiplierNonZeroOddNumber == 0) {
+if (multiplierNonZeroOddNumber % 2 == 0) {
+iConstant = multiplierNonZeroOddNumber;
+iTotal = initialNonZeroOddNumber;
+}
+return iTotal;
+if (initialNonZeroOddNumber % 2 == 0) {
+public HashCodeBuilder(int initialNonZeroOddNumber, int multiplierNonZeroOddNumber) {
+private int iTotal = 0;
+if (initialNonZeroOddNumber == 0) {
+private static final ThreadLocal<Set<IDKey>> REGISTRY = new ThreadLocal<Set<IDKey>>() {
+public HashCodeBuilder() {
+private int iTotal = 0;
+iConstant = 37;
+iTotal = 17;
+}
+throw new IllegalArgumentException("HashCodeBuilder requires a non zero initial value");
+throw new IllegalArgumentException("HashCodeBuilder requires an odd initial value");

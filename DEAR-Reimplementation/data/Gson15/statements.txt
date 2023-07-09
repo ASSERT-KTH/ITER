@@ -1,0 +1,50 @@
+throw new IllegalArgumentException("Numeric values must be finite, but was " + value);
+this.lenient = lenient;
+}
+writeDeferredName();
+if (Double.isNaN(value) || Double.isInfinite(value)) {
+writeDeferredName();
+return open(EMPTY_ARRAY, "[");
+beforeValue();
+push(empty);
+out.write(openBracket);
+return this;
+stack[stackSize - 1] = topOfStack;
+}
+}
+switch (peek()) {
+replaceTop(NONEMPTY_DOCUMENT);
+break;
+}
+public JsonWriter(Writer out) {
+private int[] stack = new int[32];
+private int stackSize = 0;
+push(EMPTY_DOCUMENT);
+private String separator = ":";
+private boolean serializeNulls = true;
+if (out == null) {
+this.out = out;
+}
+REPLACEMENT_CHARS = new String[128];
+for (int i = 0; i <= 0x1f; i++) {
+REPLACEMENT_CHARS[i] = String.format("\\u%04x", (int) i);
+REPLACEMENT_CHARS['"'] = "\\\"";
+REPLACEMENT_CHARS['\\'] = "\\\\";
+REPLACEMENT_CHARS['\t'] = "\\t";
+REPLACEMENT_CHARS['\b'] = "\\b";
+REPLACEMENT_CHARS['\n'] = "\\n";
+REPLACEMENT_CHARS['\r'] = "\\r";
+REPLACEMENT_CHARS['\f'] = "\\f";
+HTML_SAFE_REPLACEMENT_CHARS = REPLACEMENT_CHARS.clone();
+HTML_SAFE_REPLACEMENT_CHARS['<'] = "\\u003c";
+HTML_SAFE_REPLACEMENT_CHARS['>'] = "\\u003e";
+HTML_SAFE_REPLACEMENT_CHARS['&'] = "\\u0026";
+HTML_SAFE_REPLACEMENT_CHARS['='] = "\\u003d";
+HTML_SAFE_REPLACEMENT_CHARS['\''] = "\\u0027";
+}
+if (stackSize == stack.length) {
+stack[stackSize++] = newTop;
+}
+if (stackSize == 0) {
+return stack[stackSize - 1];
+if (deferredName != null) {

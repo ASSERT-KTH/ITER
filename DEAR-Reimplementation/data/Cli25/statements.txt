@@ -1,0 +1,50 @@
+nextLineTabStop = width - 1;
+--pos;
+printHelp(pw, width, cmdLineSyntax, header, options, leftPad, descPad, footer, false);
+}
+printWrapped(pw, width, header);
+printWrapped(pw, width, footer);
+printWrapped(pw, width, 0, text);
+}
+public class HelpFormatter
+public int defaultWidth = DEFAULT_WIDTH;
+public int defaultLeftPad = DEFAULT_LEFT_PAD;
+public int defaultDescPad = DEFAULT_DESC_PAD;
+public String defaultSyntaxPrefix = DEFAULT_SYNTAX_PREFIX;
+public String defaultNewLine = System.getProperty("line.separator");
+public String defaultOptPrefix = DEFAULT_OPT_PREFIX;
+public String defaultLongOptPrefix = DEFAULT_LONG_OPT_PREFIX;
+public String defaultArgName = DEFAULT_ARG_NAME;
+protected Comparator optionComparator = new OptionComparator();
+private static class OptionComparator implements Comparator
+return optionComparator;
+if ((cmdLineSyntax == null) || (cmdLineSyntax.length() == 0))
+if (autoUsage)
+printUsage(pw, width, cmdLineSyntax);
+if ((header != null) && (header.trim().length() > 0))
+printOptions(pw, width, options, leftPad, descPad);
+if ((footer != null) && (footer.trim().length() > 0))
+}
+int argPos = cmdLineSyntax.indexOf(' ') + 1;
+printWrapped(pw, width, defaultSyntaxPrefix.length() + argPos, defaultSyntaxPrefix + cmdLineSyntax);
+}
+StringBuffer sb = new StringBuffer();
+renderOptions(sb, width, options, leftPad, descPad);
+pw.println(sb.toString());
+}
+StringBuffer sb = new StringBuffer(text.length());
+renderWrappedText(sb, width, nextLineTabStop, text);
+pw.println(sb.toString());
+}
+final String lpad = createPadding(leftPad);
+final String dpad = createPadding(descPad);
+int max = 0;
+List prefixList = new ArrayList();
+List optList = options.helpOptions();
+Collections.sort(optList, getOptionComparator());
+for (Iterator i = optList.iterator(); i.hasNext();)
+Option option = (Option) i.next();
+optBuf = new StringBuffer(8);
+if (option.getOpt() == null)
+optBuf.append(lpad).append(defaultOptPrefix).append(option.getOpt());
+if (option.hasLongOpt())

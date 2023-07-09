@@ -1,0 +1,50 @@
+} catch (ClassNotFoundException ex) {
+throw new SerializationException("ClassNotFoundException while reading cloned object data", ex);
+try {
+ByteArrayInputStream bais = new ByteArrayInputStream(objectData);
+ClassLoaderAwareObjectInputStream in = null;
+in = new ClassLoaderAwareObjectInputStream(bais, object.getClass().getClassLoader());
+T readObject = (T) in.readObject();
+if (in != null) {
+in.close();
+}
+throw new SerializationException("IOException on closing cloned object data InputStream.", ex);
+byte[] objectData = serialize(object);
+if (object == null) {
+return baos.toByteArray();
+}
+ByteArrayOutputStream baos = new ByteArrayOutputStream(512);
+serialize(obj, baos);
+out.writeObject(obj);
+out.close();
+ObjectOutputStream out = null;
+out = new ObjectOutputStream(outputStream);
+if (out != null) {
+}
+if (outputStream == null) {
+super();
+}
+return null;
+return readObject;
+} catch (IOException ex) {
+} catch (IOException ex) {
+throw new SerializationException("IOException while reading cloned object data", ex);
+throw new IllegalArgumentException("The OutputStream must not be null");
+} catch (IOException ex) { // NOPMD
+}
+} catch (IOException ex) {
+throw new SerializationException(ex);
+try {
+if (inputStream == null) {
+throw new IllegalArgumentException("The InputStream must not be null");
+ObjectInputStream in = null;
+in = new ObjectInputStream(inputStream);
+return in.readObject();
+if (in != null) {
+in.close();
+}
+} catch (IOException ex) { // NOPMD
+} catch (ClassNotFoundException ex) {
+throw new SerializationException(ex);
+} catch (IOException ex) {
+throw new SerializationException(ex);

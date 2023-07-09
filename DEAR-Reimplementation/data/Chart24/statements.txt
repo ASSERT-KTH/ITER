@@ -1,0 +1,25 @@
+double v = Math.max(value, this.lowerBound);
+v = Math.min(v, this.upperBound);
+int g = (int) ((value - this.lowerBound) / (this.upperBound
+return new Color(g, g, g);
+this(0.0, 1.0);
+}
+public GrayPaintScale(double lowerBound, double upperBound) {
+if (lowerBound >= upperBound) {
+this.lowerBound = lowerBound;
+this.upperBound = upperBound;
+}
+throw new IllegalArgumentException(
+return this.lowerBound;
+return this.upperBound;
+if (obj == this) {
+return true;
+if (!(obj instanceof GrayPaintScale)) {
+return false;
+GrayPaintScale that = (GrayPaintScale) obj;
+if (this.lowerBound != that.lowerBound) {
+return false;
+if (this.upperBound != that.upperBound) {
+return false;
+return true;
+return super.clone();

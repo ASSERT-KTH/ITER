@@ -1,0 +1,50 @@
+return new CSVPrinter(new OutputStreamWriter(new FileOutputStream(out), charset), this);
+quote = true;
+final boolean trailingDelimiter) {
+this.delimiter = delimiter;
+this.quoteCharacter = quoteChar;
+this.quoteMode = quoteMode;
+this.commentMarker = commentStart;
+this.escapeCharacter = escape;
+this.ignoreSurroundingSpaces = ignoreSurroundingSpaces;
+this.allowMissingColumnNames = allowMissingColumnNames;
+this.ignoreEmptyLines = ignoreEmptyLines;
+this.recordSeparator = recordSeparator;
+this.nullString = nullString;
+this.headerComments = toStringArray(headerComments);
+this.header = header == null ? null : header.clone();
+this.skipHeaderRecord = skipHeaderRecord;
+this.ignoreHeaderCase = ignoreHeaderCase;
+this.trailingDelimiter = trailingDelimiter;
+this.trim = trim;
+validate();
+}
+public static final CSVFormat DEFAULT = new CSVFormat(COMMA, DOUBLE_QUOTE_CHAR, null, null, null, false, true, CRLF,
+public static final CSVFormat EXCEL = DEFAULT.withIgnoreEmptyLines(false).withAllowMissingColumnNames();
+public static final CSVFormat INFORMIX_UNLOAD = DEFAULT.withDelimiter(PIPE).withEscape(BACKSLASH)
+public static final CSVFormat INFORMIX_UNLOAD_CSV = DEFAULT.withDelimiter(COMMA).withQuote(DOUBLE_QUOTE_CHAR)
+public static final CSVFormat MYSQL = DEFAULT.withDelimiter(TAB).withEscape(BACKSLASH).withIgnoreEmptyLines(false)
+public static final CSVFormat RFC4180 = DEFAULT.withIgnoreEmptyLines(false);
+public static final CSVFormat TDF = DEFAULT.withDelimiter(TAB).withIgnoreSurroundingSpaces();
+return c == LF || c == CR;
+return c != null && isLineBreak(c.charValue());
+return recordSeparator;
+if (values == null) {
+return null;
+if (isLineBreak(delimiter)) {
+if (quoteCharacter != null && delimiter == quoteCharacter.charValue()) {
+if (escapeCharacter != null && delimiter == escapeCharacter.charValue()) {
+if (commentMarker != null && delimiter == commentMarker.charValue()) {
+if (quoteCharacter != null && quoteCharacter.equals(commentMarker)) {
+if (escapeCharacter != null && escapeCharacter.equals(commentMarker)) {
+if (escapeCharacter == null && quoteMode == QuoteMode.NONE) {
+if (header != null) {
+}
+return this.withAllowMissingColumnNames(true);
+return new CSVFormat(delimiter, quoteCharacter, quoteMode, commentMarker, escapeCharacter,
+if (isLineBreak(delimiter)) {
+return new CSVFormat(delimiter, quoteCharacter, quoteMode, commentMarker, escapeCharacter,
+return withEscape(Character.valueOf(escape));
+if (isLineBreak(escape)) {
+return new CSVFormat(delimiter, quoteCharacter, quoteMode, commentMarker, escape, ignoreSurroundingSpaces,
+return new CSVFormat(delimiter, quoteCharacter, quoteMode, commentMarker, escapeCharacter,

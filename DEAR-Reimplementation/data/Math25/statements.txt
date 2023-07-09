@@ -1,0 +1,4 @@
+super(optimizer);
+}
+return fit(new HarmonicOscillator.Parametric(), initialGuess);
+return fit((new ParameterGuesser(getObservations())).guess());

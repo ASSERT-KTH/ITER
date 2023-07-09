@@ -1,0 +1,50 @@
+if (isNaN()) {
+return 37 * (17 * MathUtils.hash(imaginary) +
+ret = (Double.doubleToRawLongBits(real) == Double.doubleToRawLongBits(rhs.getReal())) && (Double.doubleToRawLongBits(imaginary) == Double.doubleToRawLongBits(rhs.getImaginary()));
+if (rhs.isNaN()) {
+}
+Complex rhs = (Complex)other;
+} else if (other == null) {
+return createComplex(real * rhs.real - imaginary * rhs.imaginary,
+if (this == other) {
+return ret;
+if (Double.isInfinite(real) || Double.isInfinite(imaginary) ||
+if (isNaN() || rhs.isNaN()) {
+return new Complex(real, imaginary);
+return real;
+return Double.isNaN(real) || Double.isNaN(imaginary);
+super();
+this.real = real;
+this.imaginary = imaginary;
+}
+public static final Complex I = new Complex(0.0, 1.0);
+public static final Complex NaN = new Complex(Double.NaN, Double.NaN);
+public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);
+public static final Complex ONE = new Complex(1.0, 0.0);
+public static final Complex ZERO = new Complex(0.0, 0.0);
+if (isNaN()) {
+return Double.NaN;
+if (isInfinite()) {
+return Double.POSITIVE_INFINITY;
+if (Math.abs(real) < Math.abs(imaginary)) {
+if (imaginary == 0.0) {
+return Math.abs(real);
+double q = real / imaginary;
+return (Math.abs(imaginary) * Math.sqrt(1 + q*q));
+if (real == 0.0) {
+return Math.abs(imaginary);
+double q = imaginary / real;
+return (Math.abs(real) * Math.sqrt(1 + q*q));
+return createComplex(real + rhs.getReal(),
+if (isNaN()) {
+return NaN;
+return createComplex(real, -imaginary);
+if (isNaN() || rhs.isNaN()) {
+return NaN;
+double c = rhs.getReal();
+double d = rhs.getImaginary();
+if (c == 0.0 && d == 0.0) {
+return NaN;
+if (rhs.isInfinite() && !isInfinite()) {
+return ZERO;
+if (Math.abs(c) < Math.abs(d)) {

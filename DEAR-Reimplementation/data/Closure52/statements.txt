@@ -1,0 +1,50 @@
+cc.addNumber(d);
+double d = getSimpleNumber(key);
+if (!Double.isNaN(d)) {
+if (l < NodeUtil.MAX_POSITIVE_INTEGER_NUMBER) {
+return l;
+Preconditions.checkState(c.getType() == Token.STRING);
+String key = c.getString();
+if (!c.isQuotedString() &&
+add(":");
+addExpr(c.getFirstChild(), 1);
+return len > 0;
+long l = Long.parseLong(s);
+int len = s.length();
+for (int index = 0; index < len; index++) {
+char c = s.charAt(index);
+if (c < '0' || c > '9') {
+if (isSimpleNumber(s)) {
+if (c != first) {
+if (c.getType() == Token.GET || c.getType() == Token.SET) {
+addExpr(n, minPrecedence, Context.OTHER);
+}
+boolean needsParens = (context == Context.START_OF_EXPR);
+if (needsParens) {
+add("{");
+for (Node c = first; c != null; c = c.getNext()) {
+add("}");
+if (needsParens) {
+Preconditions.checkState(childCount == 0);
+cc.addNumber(n.getDouble());
+break;
+Preconditions.checkState(childCount == 1);
+addIdentifier(n.getString());
+cc.addOp("=", true);
+if (first.getType() == Token.COMMA) {
+addExpr(first, 0, getContextForNoInOperator(context));
+break;
+if (first != null) {
+add("var ");
+addList(first, false, getContextForNoInOperator(context));
+cc.endStatement();
+return (context == Context.IN_FOR_INIT_CLAUSE
+boolean isFirst = n == firstInList;
+if (isFirst) {
+addLeftExpr(n, isArrayOrFunctionArgument ? 1 : 0, lhsContext);
+addExpr(n, minPrecedence, context);
+}
+for (Node n = firstInList; n != null; n = n.getNext()) {
+}
+if ((NodeUtil.precedence(n.getType()) < minPrecedence) ||
+add(n, context);

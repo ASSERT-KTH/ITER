@@ -1,0 +1,200 @@
+if (plot == null) {
+this.plot = plot;
+}
+LegendItemCollection result = new LegendItemCollection();
+if (this.plot == null) {
+return result;
+int index = this.plot.getIndexOf(this);
+CategoryDataset dataset = this.plot.getDataset(index);
+if (dataset != null) {
+return result;
+protected AbstractCategoryItemRenderer() {
+this.itemLabelGeneratorList = new ObjectList();
+this.toolTipGeneratorList = new ObjectList();
+this.urlGeneratorList = new ObjectList();
+this.legendItemLabelGenerator
+this.backgroundAnnotations = new ArrayList();
+this.foregroundAnnotations = new ArrayList();
+}
+return 1;
+return this.plot;
+throw new IllegalArgumentException("Null 'plot' argument.");
+CategoryItemLabelGenerator generator = (CategoryItemLabelGenerator)
+if (generator == null) {
+generator = this.baseItemLabelGenerator;
+return generator;
+return (CategoryItemLabelGenerator) this.itemLabelGeneratorList.get(
+setSeriesItemLabelGenerator(series, generator, true);
+}
+this.itemLabelGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.baseItemLabelGenerator;
+setBaseItemLabelGenerator(generator, true);
+}
+this.baseItemLabelGenerator = generator;
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+CategoryToolTipGenerator result = null;
+result = getSeriesToolTipGenerator(row);
+if (result == null) {
+result = this.baseToolTipGenerator;
+return result;
+return (CategoryToolTipGenerator) this.toolTipGeneratorList.get(series);
+setSeriesToolTipGenerator(series, generator, true);
+}
+this.toolTipGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+if (plot == null) {
+this.plot = plot;
+}
+LegendItemCollection result = new LegendItemCollection();
+if (this.plot == null) {
+return result;
+int index = this.plot.getIndexOf(this);
+CategoryDataset dataset = this.plot.getDataset(index);
+if (dataset != null) {
+return result;
+protected AbstractCategoryItemRenderer() {
+this.itemLabelGeneratorList = new ObjectList();
+this.toolTipGeneratorList = new ObjectList();
+this.urlGeneratorList = new ObjectList();
+this.legendItemLabelGenerator
+this.backgroundAnnotations = new ArrayList();
+this.foregroundAnnotations = new ArrayList();
+}
+return 1;
+return this.plot;
+throw new IllegalArgumentException("Null 'plot' argument.");
+CategoryItemLabelGenerator generator = (CategoryItemLabelGenerator)
+if (generator == null) {
+generator = this.baseItemLabelGenerator;
+return generator;
+return (CategoryItemLabelGenerator) this.itemLabelGeneratorList.get(
+setSeriesItemLabelGenerator(series, generator, true);
+}
+this.itemLabelGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.baseItemLabelGenerator;
+setBaseItemLabelGenerator(generator, true);
+}
+this.baseItemLabelGenerator = generator;
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+CategoryToolTipGenerator result = null;
+result = getSeriesToolTipGenerator(row);
+if (result == null) {
+result = this.baseToolTipGenerator;
+return result;
+return (CategoryToolTipGenerator) this.toolTipGeneratorList.get(series);
+setSeriesToolTipGenerator(series, generator, true);
+}
+this.toolTipGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+if (plot == null) {
+this.plot = plot;
+}
+LegendItemCollection result = new LegendItemCollection();
+if (this.plot == null) {
+return result;
+int index = this.plot.getIndexOf(this);
+CategoryDataset dataset = this.plot.getDataset(index);
+if (dataset != null) {
+return result;
+protected AbstractCategoryItemRenderer() {
+this.itemLabelGeneratorList = new ObjectList();
+this.toolTipGeneratorList = new ObjectList();
+this.urlGeneratorList = new ObjectList();
+this.legendItemLabelGenerator
+this.backgroundAnnotations = new ArrayList();
+this.foregroundAnnotations = new ArrayList();
+}
+return 1;
+return this.plot;
+throw new IllegalArgumentException("Null 'plot' argument.");
+CategoryItemLabelGenerator generator = (CategoryItemLabelGenerator)
+if (generator == null) {
+generator = this.baseItemLabelGenerator;
+return generator;
+return (CategoryItemLabelGenerator) this.itemLabelGeneratorList.get(
+setSeriesItemLabelGenerator(series, generator, true);
+}
+this.itemLabelGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.baseItemLabelGenerator;
+setBaseItemLabelGenerator(generator, true);
+}
+this.baseItemLabelGenerator = generator;
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+CategoryToolTipGenerator result = null;
+result = getSeriesToolTipGenerator(row);
+if (result == null) {
+result = this.baseToolTipGenerator;
+return result;
+return (CategoryToolTipGenerator) this.toolTipGeneratorList.get(series);
+setSeriesToolTipGenerator(series, generator, true);
+}
+this.toolTipGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+if (plot == null) {
+this.plot = plot;
+}
+LegendItemCollection result = new LegendItemCollection();
+if (this.plot == null) {
+return result;
+int index = this.plot.getIndexOf(this);
+CategoryDataset dataset = this.plot.getDataset(index);
+if (dataset != null) {
+return result;
+protected AbstractCategoryItemRenderer() {
+this.itemLabelGeneratorList = new ObjectList();
+this.toolTipGeneratorList = new ObjectList();
+this.urlGeneratorList = new ObjectList();
+this.legendItemLabelGenerator
+this.backgroundAnnotations = new ArrayList();
+this.foregroundAnnotations = new ArrayList();
+}
+return 1;
+return this.plot;
+throw new IllegalArgumentException("Null 'plot' argument.");
+CategoryItemLabelGenerator generator = (CategoryItemLabelGenerator)
+if (generator == null) {
+generator = this.baseItemLabelGenerator;
+return generator;
+return (CategoryItemLabelGenerator) this.itemLabelGeneratorList.get(
+setSeriesItemLabelGenerator(series, generator, true);
+}
+this.itemLabelGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+return this.baseItemLabelGenerator;
+setBaseItemLabelGenerator(generator, true);
+}
+this.baseItemLabelGenerator = generator;
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));
+}
+CategoryToolTipGenerator result = null;
+result = getSeriesToolTipGenerator(row);
+if (result == null) {
+result = this.baseToolTipGenerator;
+return result;
+return (CategoryToolTipGenerator) this.toolTipGeneratorList.get(series);
+setSeriesToolTipGenerator(series, generator, true);
+}
+this.toolTipGeneratorList.set(series, generator);
+if (notify) {
+notifyListeners(new RendererChangeEvent(this));

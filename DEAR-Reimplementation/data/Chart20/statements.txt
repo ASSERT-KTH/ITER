@@ -1,0 +1,22 @@
+super(paint, stroke, paint, stroke, alpha);
+this.value = value;
+}
+return this.value;
+super();
+this.value = value;
+}
+this(value, paint, stroke, paint, stroke, 1.0f);
+}
+this.value = value;
+notifyListeners(new MarkerChangeEvent(this));
+}
+if (obj == this) {
+return true;
+if (!super.equals(obj)) {
+return false;
+if (!(obj instanceof ValueMarker)) {
+return false;
+ValueMarker that = (ValueMarker) obj;
+if (this.value != that.value) {
+return false;
+return true;

@@ -1,0 +1,50 @@
+_gotName = false;
+++_index;
+return STATUS_OK_AFTER_COLON;
+super();
+protected JsonWriteContext _child = null;
+_type = type;
+_parent = parent;
+_dups = dups;
+_index = -1;
+}
+return new JsonWriteContext(TYPE_ROOT, null, dd);
+JsonWriteContext ctxt = _child;
+if (ctxt == null) {
+_child = ctxt = new JsonWriteContext(TYPE_OBJECT, this, (_dups == null) ? null : _dups.child());
+return ctxt;
+if (_type == TYPE_OBJECT) {
+if (_type == TYPE_ARRAY) {
+++_index;
+return (_index == 0) ? STATUS_OK_AS_IS : STATUS_OK_AFTER_SPACE;
+_type = type;
+_index = -1;
+_currentName = null;
+_gotName = false;
+_currentValue = null;
+if (_dups != null) { _dups.reset(); }
+return this;
+_dups = dups;
+return this;
+return _currentValue;
+_currentValue = v;
+}
+public static JsonWriteContext createRootContext() { return createRootContext(null); }
+JsonWriteContext ctxt = _child;
+if (ctxt == null) {
+_child = ctxt = new JsonWriteContext(TYPE_ARRAY, this, (_dups == null) ? null : _dups.child());
+return ctxt;
+return ctxt.reset(TYPE_ARRAY);
+return ctxt.reset(TYPE_OBJECT);
+@Override public final JsonWriteContext getParent() { return _parent; }
+@Override public final String getCurrentName() { return _currentName; }
+return _dups;
+if (_gotName) {
+return JsonWriteContext.STATUS_EXPECT_VALUE;
+_gotName = true;
+_currentName = name;
+if (_dups != null) { _checkDup(_dups, name); }
+return (_index < 0) ? STATUS_OK_AS_IS : STATUS_OK_AFTER_COMMA;
+if (dd.isDup(name)) { throw new JsonGenerationException("Duplicate field '"+name+"'"); }
+}
+int ix = _index;

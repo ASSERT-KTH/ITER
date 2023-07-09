@@ -1,0 +1,50 @@
+throw new IllegalArgumentException("Requires start <= end.");
+Object clone = createCopy(0, getItemCount() - 1);
+this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION,
+}
+if (start < 0) {
+if (end < start) {
+this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION,
+}
+super(name);
+this.domain = domain;
+this.range = range;
+this.timePeriodClass = timePeriodClass;
+this.data = new java.util.ArrayList();
+this.maximumItemCount = Integer.MAX_VALUE;
+this.maximumItemAge = Long.MAX_VALUE;
+}
+return this.data.size();
+return (TimeSeriesDataItem) this.data.get(index);
+return getDataItem(index).getPeriod();
+if (item == null) {
+if (!item.getPeriod().getClass().equals(this.timePeriodClass)) {
+boolean added = false;
+int count = getItemCount();
+if (count == 0) {
+this.data.add(item);
+added = true;
+RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+if (item.getPeriod().compareTo(last) > 0) {
+this.data.add(item);
+added = true;
+if (added) {
+if (getItemCount() > this.maximumItemCount) {
+removeAgedItems(false);// remove old items if necessary, but
+if (notify) {
+fireSeriesChanged();
+}
+add(period, value, true);
+}
+TimeSeriesDataItem item = new TimeSeriesDataItem(period, value);
+add(item, notify);
+}
+if (getItemCount() > 1) {
+long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();
+boolean removed = false;
+> this.maximumItemAge) {
+if (removed && notify) {
+}
+return this.domain;
+String old = this.domain;
+this.domain = description;

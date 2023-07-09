@@ -1,0 +1,50 @@
+final SevenZArchiveEntry entry = new SevenZArchiveEntry();
+entry.setDirectory(inputFile.isDirectory());
+entry.setName(entryName);
+entry.setLastModifiedDate(new Date(inputFile.lastModified()));
+return entry;
+write(b, 0, b.length);
+}
+if (len > 0) {
+}
+header.write(NID.kEmptyFile);
+final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+final DataOutputStream out = new DataOutputStream(baos);
+writeBits(out, emptyFiles, emptyStreamCounter);
+out.flush();
+final byte[] contents = baos.toByteArray();
+writeUint64(header, contents.length);
+header.write(contents);
+++numLastModifiedDates;
+header.write(NID.kMTime);
+final ByteArrayOutputStream baos = new ByteArrayOutputStream();
+final DataOutputStream out = new DataOutputStream(baos);
+if (numLastModifiedDates != files.size()) {
+out.write(0);
+final BitSet mTimes = new BitSet(files.size());
+for (int i = 0; i < files.size(); i++) {
+mTimes.set(i, files.get(i).getHasLastModifiedDate());
+writeBits(out, mTimes, files.size());
+} else {
+out.write(0);
+for (final SevenZArchiveEntry entry : files) {
+if (entry.getHasLastModifiedDate()) {
+out.writeLong(Long.reverseBytes(
+}
+out.flush();
+final byte[] contents = baos.toByteArray();
+writeUint64(header, contents.length);
+header.write(contents);
+finish();
+final SevenZArchiveEntry entry = (SevenZArchiveEntry) archiveEntry;
+files.add(entry);
+}
+if (currentOutputStream != null) {
+final SevenZArchiveEntry entry = files.get(files.size() - 1);
+if (fileBytesWritten > 0) {
+entry.setHasStream(false);
+entry.setSize(0);
+entry.setCompressedSize(0);
+entry.setHasCrc(false);
+currentOutputStream = null;
+crc32.reset();

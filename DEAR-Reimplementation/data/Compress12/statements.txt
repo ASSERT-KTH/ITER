@@ -1,0 +1,50 @@
+return getNextTarEntry();
+this(is, TarBuffer.DEFAULT_BLKSIZE, TarBuffer.DEFAULT_RCDSIZE);
+}
+public TarArchiveInputStream(InputStream is, int blockSize, int recordSize) {
+this.buffer = new TarBuffer(is, blockSize, recordSize);
+this.readBuf = null;
+this.hasHitEOF = false;
+}
+if (hasHitEOF) {
+if (currEntry != null) {
+byte[] headerBuf = getRecord();
+if (hasHitEOF) {
+currEntry = new TarArchiveEntry(headerBuf);
+if (hasHitEOF) {
+byte[] headerBuf = buffer.readRecord();
+if (headerBuf == null) {
+} else if (buffer.isEOFRecord(headerBuf)) {
+return hasHitEOF ? null : headerBuf;
+this(is, blockSize, TarBuffer.DEFAULT_RCDSIZE);
+}
+buffer.close();
+}
+return buffer.getRecordSize();
+if (entrySize - entryOffset > Integer.MAX_VALUE) {
+return Integer.MAX_VALUE;
+return (int) (entrySize - entryOffset);
+byte[] skipBuf = new byte[BUFFER_SIZE];
+long skip = numToSkip;
+while (skip > 0) {
+int realSkip = (int) (skip > skipBuf.length ? skipBuf.length : skip);
+int numRead = read(skipBuf, 0, realSkip);
+if (numRead == -1) {
+break;
+skip -= numRead;
+}
+return (numToSkip - skip);
+}
+return null;
+long numToSkip = entrySize - entryOffset;
+while (numToSkip > 0) {
+long skipped = skip(numToSkip);
+if (skipped <= 0) {
+throw new RuntimeException("failed to skip current tar entry");
+numToSkip -= skipped;
+}
+readBuf = null;
+currEntry = null;
+return null;
+entryOffset = 0;
+entrySize = currEntry.getSize();
