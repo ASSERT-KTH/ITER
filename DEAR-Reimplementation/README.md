@@ -17,6 +17,11 @@
  │                                            out.txt.  This script outputs TrainingBugExpansion.csv.
  │
  ├── 7_TrainBERTBugExpansion.py: This script trains the BERT model with TrainingBugExpansion.csv.
+ │
+ ├── 8_ConstructInferenceBugExpansionData.py: This script constructs the inference dataset for testing.
+ │
+ ├── 9_InferenceBugExpansion.py: This script uses the trained BERT model to predict whether the statement should be expanded.
+
 
 
  
