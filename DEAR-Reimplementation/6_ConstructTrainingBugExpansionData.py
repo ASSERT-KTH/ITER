@@ -71,9 +71,8 @@ if __name__ == '__main__':
                         label='1' #Positive          
                         print(count)
                         print(bugid)                       
-                        for loop in range(1,100):
-                            with open('TrainingPairs.csv','a') as paircsv:
-                                paircsv.write(buggy+'\t'+label+'\n')
+                        with open('TrainingBugExpansion.csv','a') as paircsv:
+                            paircsv.write(buggy+'\t'+label+'\n')
                     else:
                         label='0' #Negative
                     
