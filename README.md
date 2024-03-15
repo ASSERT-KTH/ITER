@@ -1,5 +1,17 @@
 
-# ITER: Iterative Neural Repair for Multi-Location Patches (paper under review)
+# ITER: Iterative Neural Repair for Multi-Location Patches
+
+ITER is a neural program repair system with an original training and inference loop enabling  advanced multi-location patches. See [the paper](http://arxiv.org/pdf/2304.12015).
+
+```bibtex
+@inproceedings{2304.12015,
+ title = {ITER: Iterative Neural Repair for Multi-Location Patches},
+ booktitle = {Proceedings of International Conference on Software Engineering},
+ year = {2024},
+ author = {He Ye and Martin Monperrus},
+ url = {http://arxiv.org/pdf/2304.12015},
+}
+```
 
 
 ## Folder Structure
