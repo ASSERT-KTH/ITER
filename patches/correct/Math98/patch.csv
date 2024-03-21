@@ -1,0 +1,17 @@
+Partial patch is found in FL-1
+Buggy class:projects/Math98/src/java/org/apache/commons/math/linear/RealMatrixImpl.java
+buggy location: 779, suspucious value: 0.4082482904638631
+Original failing tests: 2 -> Current failing tests: 1
+
+- final double[] out = new double[v.length]; 
++ final double[] out = new double[nRows];
+
+Math98 -  FL is ranked in the FL-2 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+Number of failing tests: 1 
+Buggy Location: 991
+Patch Found in iteration 0 
+Repair Action: replace 
+ - final  BigDecimal[]  out  =  new  BigDecimal[v.length];  
+ + final  BigDecimal[]  out  =  new  BigDecimal[nRows]; 
+ --------------------------------------------------
+

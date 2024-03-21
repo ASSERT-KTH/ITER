@@ -1,6 +1,20 @@
-Math40/23
-
+ ----------------------------------------------------------------------------------------------------
 Math40 -  FL is ranked in the 23 position(s) with a suspicious value: 0.3333333333333333
+
+Number of failing tests: 1 
+Buggy Location: 236
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol nextX Repair Action: add 
+ +  if(nextX > MAXIMAL_AGING) { targetY = -REDUCTION_FACTOR * yA; } else { targetY = -REDUCTION_FACTOR * xB; }
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ -  if(nextX > MAXIMAL_AGING) { targetY = -REDUCTION_FACTOR * yA; } else { targetY = -REDUCTION_FACTOR * xB; } 
+ + if(agingA > MAXIMAL_AGING) { targetY = -REDUCTION_FACTOR * xB; } else { targetY = -REDUCTION_FACTOR * yA; }
+Iteration: 2, Repair Action: add 
+ - 
+ + if(agingA > MAXIMAL_AGING) { targetY = -REDUCTION_FACTOR * xB; } else { targetY = -REDUCTION_FACTOR * yA; } if(agingA > MAXIMAL_AGING) { targetY = -REDUCTION_FACTOR * xB; } else { targetY = -REDUCTION_FACTOR * yB; } 
+ ----------------------------------------------------------------------------------------------------
+Math40 -  FL is ranked in the 23 position(s) with a suspicious value: 0.3333333333333333
+
 Number of failing tests: 1 
 Buggy Location: 236
 

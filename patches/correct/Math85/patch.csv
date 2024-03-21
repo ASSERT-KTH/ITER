@@ -1,0 +1,9 @@
+
+Math85 -  FL is ranked in the 15 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 198
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (fa  *  fb  >=  0.0  )  {  
+ + if  (fa  *  fb  >  0.0)  { 
+ --------------------------------------------------

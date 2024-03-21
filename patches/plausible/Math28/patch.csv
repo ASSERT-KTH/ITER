@@ -1,5 +1,684 @@
+--------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
 
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +   minIndex = i; i = i;
+Iteration: 2, Repair Action: replace 
+ -   minIndex = i; i = i; 
+ + minIndex = 0; i = 0; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Diagnostic: [CE] cannot find symbol minuteIndex Repair Action: add 
+ +   minIndex = i; minRow = row; minuteIndex = i; minRow = row;
+Iteration: 2, Repair Action: replace 
+ -   minIndex = i; minRow = row; minuteIndex = i; minRow = row; 
+ + minRow = row; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ + minIndex = i + 1; i = i + 1;
+Iteration: 2, Repair Action: add 
+ - 
+ + minIndex  =  i  +  1;  i = i + 1; minIndex = i + 1; i = i + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ + minIndex = i + 1; i = i + 1;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i + 1; i = i + 1; 
+ + minIndex = row + 1; i = i + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ + minIndex = i + 1; i = i + 1;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i + 1; i = i + 1; 
+ + minIndex = col + 1; i = i + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol table Repair Action: add 
+ +  i = table.getBasicRow(i);
+Iteration: 1, Diagnostic: [CE] cannot find symbol table Repair Action: replace 
+ -  i = table.getBasicRow(i); 
+ + i = table.getBasicRow(i).intValue();
+Iteration: 2, Repair Action: replace 
+ - i = table.getBasicRow(i).intValue(); 
+ + i = tableau.getBasicRow(i).intValue(); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = i; minRow = row + 1;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i; minRow = row + 1; 
+ + minIndex = row; minRow = row + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = i; minRow = row + 1;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i; minRow = row + 1; 
+ + minIndex = 0; minRow = row + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol table Repair Action: add 
+ +  i = table.getBasicRow(i); minIndex = i;
+Iteration: 1, Diagnostic: [CE] cannot find symbol table Repair Action: replace 
+ -  i = table.getBasicRow(i); minIndex = i; 
+ + i = table.getBasicRow(i); minIndex = i + 1;
+Iteration: 2, Repair Action: replace 
+ - i = table.getBasicRow(i); minIndex = i + 1; 
+ + i = tableau.getBasicRow(i); minIndex = i + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = i + 1; minRow = row;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i + 1; minRow = row; 
+ + minIndex = row + 1; minRow = i; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i;
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ +   minIndex = i; minIndex = i);
+Iteration: 2, Repair Action: replace 
+ -   minIndex = i; minIndex = i); 
+ + minIndex = 0; minIndex = 0; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol table Repair Action: add 
+ +  i = table.getBasicRow(i); minIndex = i;
+Iteration: 1, Diagnostic: [CE] cannot find symbol table Repair Action: replace 
+ -  i = table.getBasicRow(i); minIndex = i; 
+ + minIndex = table.getBasicRow(i);
+Iteration: 2, Repair Action: replace 
+ - minIndex = table.getBasicRow(i); 
+ + minIndex = tableau.getBasicRow(i); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +   minIndex = i; i = i;
+Iteration: 2, Repair Action: replace 
+ -   minIndex = i; i = i; 
+ + minIndex = row; i = i; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +   minIndex = i; i = i;
+Iteration: 2, Repair Action: replace 
+ -   minIndex = i; i = i; 
+ + minIndex = col; i = i; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = i + 1; minRow = row;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i + 1; minRow = row; 
+ + minIndex = row + 1; minRow = row; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ + minIndex = i + 1; minIndex = i + 1;
+Iteration: 2, Repair Action: replace 
+ - minIndex = i + 1; minIndex = i + 1; 
+ + minIndex = i + 3; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +   minIndex = i; minRow = row; minIndex = i; minRow = row;
+Iteration: 2, Repair Action: replace 
+ -   minIndex = i; minRow = row; minIndex = i; minRow = row; 
+ + minIndex = -1; minRow = row; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Repair Action: replace 
+ - minIndex = i + 1; 
+ + minIndex = row + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Repair Action: replace 
+ - minIndex = i + 1; 
+ + minIndex = i + 2; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - minIndex = i; 
+ + minIndex = i + 1;
+Iteration: 1, Repair Action: replace 
+ - minIndex = i + 1; 
+ + minIndex = col + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol table Repair Action: add 
+ +  i = table.getBasicRow(i); minIndex = i;
+Iteration: 1, Repair Action: replace 
+ -  i = table.getBasicRow(i); minIndex = i; 
+ + i = tableau.getBasicRow(i); minIndex = i; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol table Repair Action: add 
+ +  i = table.getBasicRow(i);
+Iteration: 1, Repair Action: replace 
+ -  i = table.getBasicRow(i); 
+ + i = tableau.getBasicRow(i); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol table Repair Action: add 
+ +  row = table.getBasicRow(i);
+Iteration: 1, Repair Action: replace 
+ -  row = table.getBasicRow(i); 
+ + row = tableau.getBasicRow(i); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = col; minRow = row; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = 0; minRow = row; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: add 
+ +  minIndex = i; minRow = row;
+Iteration: 1, Repair Action: replace 
+ -  minIndex = i; minRow = row; 
+ + minIndex = row; minRow = i; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ +  minRow = row.getBasicRow(i);
+Iteration: 1, Repair Action: replace 
+ -  minRow = row.getBasicRow(i); 
+ + minRow = tableau.getBasicRow(i); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+
+Number of failing tests: 1 
+Buggy Location: 145
+Patch Found in iteration 0 
+Repair Action: replace 
+ - minIndex  =  i;  
+ + minIndex  =  col; 
+ --------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+
+Number of failing tests: 1 
+Buggy Location: 145
+Patch Found in iteration 0 
+Repair Action: replace 
+ - minIndex  =  i;  
+ + minIndex  =  i  +  col; 
+ --------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+
+Number of failing tests: 1 
+Buggy Location: 145
+Patch Found in iteration 0 
+Repair Action: replace 
+ - minIndex  =  i;  
+ + minIndex  =  row; 
+ --------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+
+Number of failing tests: 1 
+Buggy Location: 145
+Patch Found in iteration 0 
+Repair Action: replace 
+ - minIndex  =  i;  
+ + minIndex  =  0; 
+ --------------------------------------------------
+Math28 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5
+
+
+Number of failing tests: 1 
+Buggy Location: 145
+Patch Found in iteration 0 
+Repair Action: replace 
+ - minIndex  =  i;  
+ + minIndex  -=  i; 
+ --------------------------------------------------
+Math28 -  FL is ranked in the 9 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 146
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - minRow = row; 
+ + minRow = col;
+Iteration: 1, Repair Action: add 
+ - 
+ + minRow = col; minIndex = col; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatioPositions.size()) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if (i < minIndex || col < minRatioPositions.size()) { if (i < minIndex || col >= minRatioPositions.size()) {
+Iteration: 2, Repair Action: replace 
+ - if (i < minIndex || col < minRatioPositions.size()) { if (i < minIndex || col >= minRatioPositions.size()) { 
+ + if (i < minIndex || col >= minRatioPositions.size()) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (minIndex < minRow) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if (minIndex < minRow) { if (minIndex >= minRow) {
+Iteration: 2, Repair Action: replace 
+ - if (minIndex < minRow) { if (minIndex >= minRow) { 
+ + if (minIndex >= 0) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { 
+ + if (i < minIndex || col < 0) {
+Iteration: 2, Repair Action: replace 
+ - if (i < minIndex || col < 0) { 
+ + if (i < minIndex || col > 0) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if (i < minIndex || col < minRatio) { if (i < minIndex || col >= minRatio) {
+Iteration: 2, Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { if (i < minIndex || col >= minRatio) { 
+ + if (i < minRatio || col > minRatio) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] UnboundedSolutionException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i > minIndex) {
+Iteration: 1, Diagnostic: [FE] UnboundedSolutionException Repair Action: replace 
+ - if (i > minIndex) { 
+ + if (i > maxUlps) {
+Iteration: 2, Repair Action: replace 
+ - if (i > maxUlps) { 
+ + if (minIndex > maxUlps) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if (i < minIndex || col < minRatio) { if (i < minIndex || col >= minRatio) {
+Iteration: 2, Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { if (i < minIndex || col >= minRatio) { 
+ + if (i < minIndex || col >= DEFAULT_EPSILON) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { 
+ + if (minIndex < minRow || col > minRatio) {
+Iteration: 2, Repair Action: replace 
+ - if (minIndex < minRow || col > minRatio) { 
+ + if (minIndex < 0 || col > 0) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] UnboundedSolutionException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i > minIndex) {
+Iteration: 1, Repair Action: replace 
+ - if (i > minIndex) { 
+ + if (i > 0) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { 
+ + if (i < minIndex || col > minRatio) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { 
+ + if (i < minIndex || col > minRatioPositions.size()) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { 
+ + if (i < minIndex || col > maxUlps) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 7 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 144
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - if (i < minIndex) { 
+ + if (i < minIndex || col < minRatio) {
+Iteration: 1, Repair Action: replace 
+ - if (i < minIndex || col < minRatio) { 
+ + if (i < minIndex || col >= col) { 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (row == tableau.getBasicRow(i)) { 
+ + if(i == tableau.getBasicRow(i)) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(i == tableau.getBasicRow(i)) { if(i == Table.getBasicRow(i)) {
+Iteration: 2, Repair Action: replace 
+ - if(i == tableau.getBasicRow(i)) { if(i == Table.getBasicRow(i)) { 
+ + if(i < minIndex) { 
+ ----------------------------------------------------------------------------------------------------
 Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = 0;
+Iteration: 1, Diagnostic: [CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int) Repair Action: add 
+ + Integer minRow = 0; Integer minRow =(int)Math.ceil(col);
+Iteration: 2, Repair Action: replace 
+ - Integer minRow = 0; Integer minRow =(int)Math.ceil(col); 
+ + Integer minRow =(int)Math.ceil(col); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = this.maxUlps;
+Iteration: 1, Diagnostic: [CE] cannot find symbol minUlps Repair Action: replace 
+ - Integer minRow = this.maxUlps; 
+ + Integer minRow = this.minUlps - 1;
+Iteration: 2, Repair Action: replace 
+ - Integer minRow = this.minUlps - 1; 
+ + Integer minRow = col - 1; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = 0;
+Iteration: 1, Diagnostic: [CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int) Repair Action: add 
+ + Integer minRow = 0; Integer minRow =(int)Math.rint(col);
+Iteration: 2, Repair Action: replace 
+ - Integer minRow = 0; Integer minRow =(int)Math.rint(col); 
+ + Integer minRow =(int)Math.rint(col - 1); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = 0;
+Iteration: 1, Diagnostic: [CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int) Repair Action: add 
+ + Integer minRow = 0; Integer minRow =(int)Math.floor(col);
+Iteration: 2, Repair Action: replace 
+ - Integer minRow = 0; Integer minRow =(int)Math.floor(col); 
+ + Integer minRow =(int)Math.floor(col); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = 0;
+Iteration: 1, Diagnostic: [CE] variable minRow is already defined in method getPivotRow(SimplexTableau,int) Repair Action: add 
+ + Integer minRow = 0; Integer minRow =(int)Math.floor(col);
+Iteration: 2, Repair Action: replace 
+ - Integer minRow = 0; Integer minRow =(int)Math.floor(col); 
+ + Integer minRow =(int)Math.floor(col - 1); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = 0;
+Iteration: 1, Repair Action: replace 
+ - Integer minRow = 0; 
+ + Integer minRow = 2; 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] MaxCountExceededException Repair Action: replace 
+ - Integer minRow = null; 
+ + Integer minRow = 0;
+Iteration: 1, Repair Action: replace 
+ - Integer minRow = 0; 
+ + Integer minRow =(int)Math.rint(col); 
+ ----------------------------------------------------------------------------------------------------
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+
 Number of failing tests: 1 
 Buggy Location: 138
 Patch Found in iteration 0 

@@ -1,0 +1,14 @@
+Math32 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 136
+
+Iteration: 0, Diagnostic: [FE] ClassCastException Repair Action: replace 
+ - if ((Boolean) tree.getAttribute()) { 
+ + if(tree!= null &&(Boolean)tree.getAttribute()) {
+Iteration: 1, Repair Action: replace 
+ - if(tree!= null &&(Boolean)tree.getAttribute()) { 
+ + if(tree.getCut() != null &&(Boolean)tree.getAttribute()) { 
+ Iteration: 2, Repair Action: replace 
+ - if(tree.getCut() != null &&(Boolean)tree.getAttribute()) { 
+ + if(tree.getCut() == null &&(Boolean)tree.getAttribute()) { 

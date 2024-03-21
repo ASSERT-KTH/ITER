@@ -1,5 +1,544 @@
+ --------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
 
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ + ret = d /(p - 2.0); p = d /(p - 2.0);
+Iteration: 2, Repair Action: replace 
+ - ret = d /(p - 2.0); p = d /(p - 2.0); 
+ + ret = d /(p * 2.0); p = d /(p - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ + ret = p /(d - 2.0); d = p /(d - 2.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  p  /(d  -  2.0);  d = p /(d - 2.0); ret = p /(d - 2.0); d = p /(d - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ + ret = p /(d - 2.0); d = p /(d - 2.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  p  /(d  -  2.0);  d = p /(d - 2.0); d = p /(d - 2.0); d = p /(d - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d /(p - 2.0); 
+ + ret = d /(p - 1.0);
+Iteration: 2, Repair Action: replace 
+ - ret = d /(p - 1.0); 
+ + ret = d /(d * 1.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ + ret = d /(p - 2.0); p = d /(p - 2.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  d  /(p  -  2.0);  p = d /(p - 2.0); d = d /(p - 2.0); p = d /(p - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ + ret = d /(p - 2.0); ret = d /(p - 2.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  d  /(p  -  2.0);  ret = d /(p - 2.0); d = d /(p - 2.0); ret = d /(p - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = p /(d - 2.0); 
+ + ret = p /(d - 1.0);
+Iteration: 2, Repair Action: replace 
+ - ret = p /(d - 1.0); 
+ + ret = p /(d * 1.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ + ret = d /(p - 2.0); ret = d /(p - 3.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  d  /(p  -  2.0);  ret = d /(p - 3.0); d = d /(p - 3.0); ret = d /(p - 3.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ + ret = d /(p - 2.0); ret = d /(p - 3.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  d  /(p  -  2.0);  ret = d /(p - 3.0); d = d /(p - 2.0); ret = d /(p - 3.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   ret = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   ret = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ + ret = getDenominatorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d /(p - 2.0); 
+ + ret = d /(p - 1.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret = d /(p - 1.0); d = d /(p - 1.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   ret = getNumeratorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   ret = getNumeratorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom(); 
+ + ret = getDenominatorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [CE] illegal start of type Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d / (d < < 2.0);
+Iteration: 1, Diagnostic: [CE] illegal start of type Repair Action: replace 
+ - ret = d / (d < < 2.0); 
+ + ret = d /(d < < 1.0);
+Iteration: 2, Repair Action: replace 
+ - ret = d /(d < < 1.0); 
+ + ret = d /(d + 1.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   ret = getNumeratorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   ret = getNumeratorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom(); 
+ + ret = getNumeratorDegreesOfFreedom(); d = getDenominatorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   ret = getNumeratorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   ret = getNumeratorDegreesOfFreedom(); d = getNumeratorDegreesOfFreedom(); 
+ + ret = getDenominatorDegreesOfFreedom(); d = getDenominatorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = p /(d - 2.0); 
+ + ret = p /(d - 1.0);
+Iteration: 2, Repair Action: replace 
+ - ret = p /(d - 1.0); 
+ + ret = p /(d / 1.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   ret = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   ret = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ + ret = getNumeratorDegreesOfFreedom(); ret = getDenominatorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   ret = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   ret = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ + ret = getDenominatorDegreesOfFreedom(); ret = getDenominatorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d /(p - 2.0); 
+ + ret = d /(p - 1.0);
+Iteration: 2, Repair Action: replace 
+ - ret = d /(p - 1.0); 
+ + ret = d /(p * 1.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  d = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   d = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   d = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ + d = getNumeratorDegreesOfFreedom(); ret = getDenominatorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ + ret = p /(d - 2.0); p = p /(d - 2.0);
+Iteration: 2, Repair Action: replace 
+ - ret = p /(d - 2.0); p = p /(d - 2.0); 
+ + ret = p /(d / 2.0); p = p /(d / 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  d = getNumeratorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   d = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom();
+Iteration: 2, Repair Action: replace 
+ -   d = getNumeratorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ + d = getDenominatorDegreesOfFreedom(); ret = getNumeratorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ + ret = p /(d - 2.0); d = p /(d - 2.0);
+Iteration: 2, Repair Action: add 
+ - 
+ + ret  =  p  /(d  -  2.0);  d = p /(d - 2.0); ret = d /(d - 2.0); d = p /(d - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ +  ret = getNumberDenominatorDegreesOfFreedom();
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ -  ret = getNumberDenominatorDegreesOfFreedom(); 
+ + ret = getNumberDenominatorDegreesOfFreedom() / denominatorDegreesOfFreedom;
+Iteration: 2, Repair Action: replace 
+ - ret = getNumberDenominatorDegreesOfFreedom() / denominatorDegreesOfFreedom; 
+ + ret = getDenominatorDegreesOfFreedom() / denominatorDegreesOfFreedom; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Repair Action: replace 
+ - ret = d /(p - 2.0); 
+ + ret = d /(p * 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Repair Action: replace 
+ - ret = d /(p - 2.0); 
+ + ret = d /(p + 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Repair Action: add 
+ - 
+ + ret = d /(p - 2.0); d = d /(p - 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = d /(p - 2.0);
+Iteration: 1, Repair Action: replace 
+ - ret = d /(p - 2.0); 
+ + ret = d /(p / 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - ret = d / (d - 2.0); 
+ + ret = p /(d - 2.0);
+Iteration: 1, Repair Action: replace 
+ - ret = p /(d - 2.0); 
+ + ret = p /(d / 2.0); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Repair Action: replace 
+ -  ret = getNumeratorDegreesOfFreedom(); 
+ + ret = getDenominatorDegreesOfFreedom(); 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 147
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  ret = getNumeratorDegreesOfFreedom();
+Iteration: 1, Repair Action: replace 
+ -  ret = getNumeratorDegreesOfFreedom(); 
+ + ret = getNumeratorDegreesOfFreedom() + 1; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5773502691896258
+
+
+Number of failing tests: 1 
+Buggy Location: 147
+Patch Found in iteration 0 
+Repair Action: replace 
+ - ret  =  d  /  (d  -  2.0);  
+ + ret  =  d  /  (d  *  2.0); 
+ --------------------------------------------------
 Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 148
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - return ret; 
+ + return ret / denominatorDegreesOfFreedom;
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - return ret / denominatorDegreesOfFreedom; 
+ + return ret * denominatorDegreesOfFreedom;
+Iteration: 2, Repair Action: replace 
+ - return ret * denominatorDegreesOfFreedom; 
+ + return p * denominatorDegreesOfFreedom; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 148
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol denominatorDegrees_OfFreedom Repair Action: replace 
+ - return ret; 
+ + return ret / denominatorDegrees_OfFreedom;
+Iteration: 1, Diagnostic: [CE] cannot find symbol denominatorDegrees_OfFreedom Repair Action: replace 
+ - return ret / denominatorDegrees_OfFreedom; 
+ + return p / denominatorDegrees_OfFreedom;
+Iteration: 2, Repair Action: replace 
+ - return p / denominatorDegrees_OfFreedom; 
+ + return p / d; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 148
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol denominatorDegrees_OfFreedom Repair Action: replace 
+ - return ret; 
+ + return ret / denominatorDegrees_OfFreedom;
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - return ret / denominatorDegrees_OfFreedom; 
+ + return ret / p;
+Iteration: 2, Repair Action: replace 
+ - return ret / p; 
+ + return d / p; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 148
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - return ret; 
+ + return ret / denominatorDegreesOfFreedom;
+Iteration: 1, Repair Action: replace 
+ - return ret / denominatorDegreesOfFreedom; 
+ + return p / denominatorDegreesOfFreedom; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 148
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - return ret; 
+ + return ret / denominatorDegreesOfFreedom;
+Iteration: 1, Repair Action: replace 
+ - return ret / denominatorDegreesOfFreedom; 
+ + return d / denominatorDegreesOfFreedom; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 148
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - return ret; 
+ + return ret - p;
+Iteration: 1, Repair Action: replace 
+ - return ret - p; 
+ + return d - p; 
+ ----------------------------------------------------------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+
+Number of failing tests: 1 
+Buggy Location: 148
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  ret;  
+ + return  p; 
+ --------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+
+Number of failing tests: 1 
+Buggy Location: 148
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  ret;  
+ + return  d; 
+ --------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+
+Number of failing tests: 1 
+Buggy Location: 148
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     ret  =  getNumeratorDegreesOfFreedom(); 
+ --------------------------------------------------
+Math95 -  FL is ranked in the 5 position(s) with a suspicious value: 0.5773502691896258
+
+
 Number of failing tests: 1 
 Buggy Location: 148
 Patch Found in iteration 0 

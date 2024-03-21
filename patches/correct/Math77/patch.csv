@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Math77/src/main/java/org/apache/commons/math/linear/OpenMapRealVector.java
+buggy location: 499, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+-  double  max  =(DEFAULT_ZERO_TOLERANCE  <=  DEFAULT_ZERO_TOLERANCE  ||  DEFAULT_ZERO_TOLERANCE  >  DEFAULT_ZERO_TOLERANCE)?  DEFAULT_ZERO_TOLERANCE  :  1;  
++ double max =(DEFAULT_ZERO_TOLERANCE < DEFAULT_ZERO_TOLERANCE || DEFAULT_ZERO_TOLERANCE > DEFAULT_ZERO_TOLERANCE)? DEFAULT_ZERO_TOLERANCE : 9;
+
+Math77 -  FL is ranked in the FL-2 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 721
+Patch Found in iteration 0 
+Repair Action: replace 
+ - max  +=  Math.max(max,  Math.abs(a));  
+ + max  =  Math.max(max,  Math.abs(a)); 
+ --------------------------------------------------

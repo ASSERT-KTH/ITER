@@ -1,0 +1,9 @@
+
+Math30 -  FL is ranked in the 15 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 173
+Patch Found in iteration 0 
+Repair Action: replace 
+ - final  int  n1n2prod  =  n1  *  n2;  
+ + final  double  n1n2prod  =  n1  *  n2; 
+ --------------------------------------------------

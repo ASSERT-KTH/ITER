@@ -1,5 +1,28 @@
-
 Math7 -  FL is ranked in the 44 position(s) with a suspicious value: 0.3333333333333333
+
+Number of failing tests: 1 
+Buggy Location: 304
+
+Iteration: 0, Diagnostic: [CE] bad operand type double for unary operator '!' Repair Action: replace 
+ - if (! statesInitialized) { 
+ + if(!currentT) {
+Iteration: 1, Repair Action: replace 
+ - if(!currentT) { 
+ + if(previousT!= currentT) { 
+ ----------------------------------------------------------------------------------------------------
+Math7 -  FL is ranked in the 44 position(s) with a suspicious value: 0.3333333333333333
+
+
+Number of failing tests: 1 
+Buggy Location: 304
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!  statesInitialized)  {  
+ + if(eventsStates!=  null)  { 
+ --------------------------------------------------
+Math7 -  FL is ranked in the 44 position(s) with a suspicious value: 0.3333333333333333
+
+
 Number of failing tests: 1 
 Buggy Location: 304
 Patch Found in iteration 0 

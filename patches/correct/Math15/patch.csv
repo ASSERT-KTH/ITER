@@ -1,0 +1,14 @@
+
+  ----------------------------------------------------------------------------------------------------
+Math15 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1541
+Patch Found in iteration 1 
+Repair Action: replace 
+ - if (y >= TWO_POWER_52 || y <= -TWO_POWER_52) {
+ + if (y >= TWO_POWER_52 * 2 || y <= -TWO_POWER_52) {
+Repair Action: replace 
+ - if (y >= TWO_POWER_52 || y <= -TWO_POWER_52) {
+ + if (y >= TWO_POWER_52 * 2 || y <= -TWO_POWER_52*2) {
