@@ -1,0 +1,25 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Codec1/src/java/org/apache/commons/codec/language/Metaphone.java
+buggy location: 88, suspucious value: 0.4472135954999579
+Original failing tests: 5 -> Current failing tests: 3
+
+- return txt.toUpperCase() ; 
++ return txt.toUpperCase(java.util.Locale.ENGLISH).toString();
+
+Partial patch is found in FL-2
+Buggy class:projects/Codec1/src/java/org/apache/commons/codec/language/Caverphone.java
+buggy location: 168, suspucious value: 0.4082482904638631
+Original failing tests: 3 -> Current failing tests: 2
+
+- return caverphone(pString); 
++ return(pString!= null)? null : caverphone(pString);
+
+Codec1 -  FL is ranked in the FL-3 -  FL is ranked in the 1 position(s) with a suspicious value: 0.2886751345948129
+Number of failing tests: 2 
+Buggy Location: 53
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  str.toUpperCase();  
+ + return  str.toUpperCase(java.util.Locale.ENGLISH);
+ --------------------------------------------------

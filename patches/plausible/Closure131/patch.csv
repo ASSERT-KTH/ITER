@@ -1,0 +1,24 @@
+Closure131/FL-2/4
+
+Partial patch is found in FL-1
+Buggy class:projects/Closure131/src/com/google/javascript/rhino/TokenStream.java
+buggy location: 193, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+- if (length == 0 || !Character.isJavaIdentifierStart(s.charAt(0))) { 
++ if (length >= 0 ||!Character.isJavaIdentifierPart(s.charAt(0))) {
+
+
+
+Closure131 -  FL is ranked in the FL-2 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5
+Number of failing tests: 1 
+Buggy Location: 198
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if ( !Character.isJavaIdentifierPart(s.charAt(i))) { 
+ + if(!Character.isJavaIdentifierPart(s.charAt(i)) ||!Character.isJavaIdentifierPart(s.charAt(0))) {
+Iteration: 1, Repair Action: replace 
+ - if(i == 0) { 
+ + if(i == 0 ||!Character.isJavaIdentifierStart(s.charAt(i))) { 
+ ----------------------------------------------------------------------------------------------------

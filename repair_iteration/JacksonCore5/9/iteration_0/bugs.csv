@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-17	[BUG] [BUGGY] } [FE] NumberFormatException [CONTEXT] protected JsonPointer() { _nextSegment = null; _matchingPropertyName = ""; _matchingElementIndex = -1; _asString = ""; [BUGGY] } [BUGGY]  [CLASS] JsonPointer [METHOD] <init> [RETURN_TYPE] JsonPointer()  [VARIABLES] JsonPointer EMPTY _nextSegment String _asString _matchingPropertyName boolean int _matchingElementIndex  	projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java	0.5	60	60	1	replace	

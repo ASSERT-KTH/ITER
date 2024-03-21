@@ -1,0 +1,144 @@
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = mapping.get(name + 1);
+Iteration: 1, Repair Action: replace 
+ - final Integer index = mapping.get(name + 1); 
+ + final Integer index = mapping.get(name + 2); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = mapping.get(name + 1);
+Iteration: 1, Repair Action: replace 
+ - final Integer index = mapping.get(name + 1); 
+ + final Integer index = recordNumber.get(name + 1); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol index Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + String index = name.substring(0, name.length() - 1); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol index Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + Integer index = recordNumber(name); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol index Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + Integer index = mapping.get(name); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol index Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + String index = name.substring(0, name.length() - 2); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = mapping.get(name.intValue());
+Iteration: 1, Repair Action: replace 
+ - final Integer index = mapping.get(name.intValue()); 
+ + final Integer index = mapping.get(mapping.intValue()); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] java.lang.Exception: Unexpected exception Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = this.mapping.get(name);
+Iteration: 1, Repair Action: add 
+ - 
+ + final Integer index = this.mapping.get(name); final Integer index = this.mapping.get(name); 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] java.lang.Exception: Unexpected exception Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = this.mapping.get(name);
+Iteration: 1, Repair Action: add 
+ - 
+ + final Integer index = this.mapping.get(name); if(this.mapping!= null) { final Integer index = this.mapping.get(name); } else { final Integer index = this.mapping.get(name); } 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] java.lang.Exception: Unexpected exception Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = this.mapping.get(name);
+Iteration: 1, Repair Action: add 
+ - 
+ + final Integer index = this.mapping.get(name); if(name!= null) { final Integer index = this.mapping.get(name); } else { final Integer index = this.mapping.get(name); } 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] java.lang.Exception: Unexpected exception Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = this.mapping.get(name);
+Iteration: 1, Repair Action: add 
+ - 
+ + final Integer index = this.mapping.get(name); if(this.mapping!= null) { final Integer index = this.mapping.get(name); } 
+ ----------------------------------------------------------------------------------------------------
+Csv2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 84
+
+Iteration: 0, Diagnostic: [FE] java.lang.Exception: Unexpected exception Repair Action: replace 
+ - final Integer index = mapping.get(name); 
+ + final Integer index = this.mapping.get(name);
+Iteration: 1, Repair Action: add 
+ - 
+ + final Integer index = this.mapping.get(name); if(this.mapping!= null) { final Integer index = this.mapping.get(name); if(index!= null) { throw new IllegalStateException( " "); } 
+ ----------------------------------------------------------------------------------------------------

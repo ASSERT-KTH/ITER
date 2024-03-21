@@ -1,0 +1,9 @@
+
+Math80 -  FL is ranked in the 14 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 1135
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  j  =  4  *  n  -  1;  
+ + int  j  =  4  *  pingPong  -  1; 
+ --------------------------------------------------

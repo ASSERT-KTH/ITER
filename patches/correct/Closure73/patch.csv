@@ -1,0 +1,9 @@
+
+Closure73 -  FL is ranked in the 8 position(s) with a suspicious value: 0.2672612419124244
+Number of failing tests: 1 
+Buggy Location: 1045
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (c  >  0x1f  &&  c  <=  0x7f)  {  
+ + if(c  >  0x1f  &&  c  <  0x7f)  { 
+ --------------------------------------------------

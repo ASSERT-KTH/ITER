@@ -1,0 +1,9 @@
+
+Math84 -  FL is ranked in the 11 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 2 
+Buggy Location: 90
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (comparator.compare(contracted,  best)  <  0)  {  
+ + if  (comparator.compare(contracted,  best)  ==  0)  { 
+ --------------------------------------------------

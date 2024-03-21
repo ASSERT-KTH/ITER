@@ -1,0 +1,215 @@
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue; 
+ + if(ancestorType!= Token.COMMA || ancestorType == Token.FOR)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue; 
+ + if(ancestorType == Token.COMMA || ancestorType!= Token.FOR)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue; 
+ + if(ancestorType >= Token.COMMA || ancestorType == Token.FOR)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.FOR)continue; 
+ + if(ancestorType == Token.FOR || ancestorType == Token.COMMA)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType!= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType!= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue; 
+ + if(ancestorType == Token.COMMA || ancestorType!= Token.EXPR_RESULT)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType!= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType!= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue; 
+ + if(ancestorType >= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType!= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType!= Token.COMMA || ancestorType == Token.EXPR_RESULT)continue; 
+ + if(ancestorType!= Token.COMMA && ancestorType == Token.EXPR_RESULT)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ + if(ancestorType!= Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ + if(ancestorType == Token.COMMA || ancestorType!= Token.BLOCK)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ + if(ancestorType == Token.COMMA && ancestorType == Token.BLOCK)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ + if(ancestorType >= Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [CE] 'else' without 'if' Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.BLOCK)continue; 
+ + if(ancestorType!= Token.COMMA && ancestorType == Token.BLOCK)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.FUNCTION)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.FUNCTION)continue; 
+ + if(ancestorType!= Token.COMMA && ancestorType == Token.FUNCTION)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue; 
+ + if(ancestorType == Token.COMMA || ancestorType!= Token.NAME)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue; 
+ + if(ancestorType >= Token.COMMA || ancestorType == Token.NAME)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue; 
+ + if(ancestorType == Token.COMMA && ancestorType == Token.NAME)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType == Token.COMMA || ancestorType == Token.NAME)continue; 
+ + if(ancestorType!= Token.COMMA && ancestorType == Token.NAME)continue; 
+ ----------------------------------------------------------------------------------------------------
+Closure22 -  FL is ranked in the Closure22_plausible -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 114
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: There should be one warning Repair Action: replace 
+ - if (ancestorType == Token.COMMA) continue; 
+ + if(ancestorType!= Token.COMMA)continue;
+Iteration: 1, Repair Action: replace 
+ - if(ancestorType!= Token.COMMA)continue; 
+ + if(ancestorType!= Token.COMMA || ancestorType!= Token.NEW)continue; 

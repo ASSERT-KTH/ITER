@@ -1,0 +1,19 @@
+
+Lang59 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5773502691896258
+Number of failing tests: 1 
+Buggy Location: 879
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ +  if(width > 0) { for(int i = 0; i < width; i++) { ensureCapacity(i + length); }
+Iteration: 1, Repair Action: replace 
+ -  if(width > 0) { for(int i = 0; i < width; i++) { ensureCapacity(i + length); } 
+ + if(width > 0) { for(int i = 0; i < width; i++) { ensureCapacity(size + padChar); } 
+ ----------------------------------------------------------------------------------------------------
+Lang59 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5773502691896258
+Number of failing tests: 1 
+Buggy Location: 884
+
+Iteration: 0
+ -  str.getChars(0, strLen, buffer, size);
+ +  str.getChars(0, width, buffer, size);
+ ----------------------------------------------------------------------------------------------------

@@ -1,0 +1,790 @@
+JacksonCore25 -  FL is ranked in the 32 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 243
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - int count = _reader.read(_inputBuffer, 0, _inputBuffer.length); 
+ + int count = _reader.read(_inputBuffer, 0, bufSize);
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - int count = _reader.read(_inputBuffer, 0, bufSize); 
+ + int count = _reader.read(_inputBuffer, 0, _inputPtr);
+Iteration: 2, Repair Action: replace 
+ - int count = _reader.read(_inputBuffer, 0, _inputPtr); 
+ + int count = _reader.read(_inputBuffer, 0, _inputPtr + 1); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 32 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 243
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - int count = _reader.read(_inputBuffer, 0, _inputBuffer.length); 
+ + int count = _reader.read(_inputBuffer, 0, bufSize);
+Iteration: 1, Repair Action: replace 
+ - int count = _reader.read(_inputBuffer, 0, bufSize); 
+ + int count = _reader.read(_inputBuffer, 0, bufSize + 1); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 32 position(s) with a suspicious value: 0.5773502691896258
+
+
+Number of failing tests: 1 
+Buggy Location: 243
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  count  =  _reader.read(_inputBuffer,  0,  _inputBuffer.length);  
+ + int  count  =  _reader.read(_inputBuffer,  0,  _inputBuffer.length  -  1); 
+ --------------------------------------------------
+JacksonCore25 -  FL is ranked in the 33 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 244
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected token START_ARRAY Repair Action: replace 
+ - if (count > 0) { 
+ + if(count == 0) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected token START_ARRAY Repair Action: replace 
+ - if(count == 0) { 
+ + if(count == 1) {
+Iteration: 2, Repair Action: replace 
+ - if(count == 1) { 
+ + if(count > 1) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 36 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 247
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected token START_ARRAY Repair Action: replace 
+ - return true; 
+ + return(count == 0)? true : false;
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected token START_ARRAY Repair Action: replace 
+ - return(count == 0)? true : false; 
+ + return(count == 1)? true : false;
+Iteration: 2, Repair Action: replace 
+ - return(count == 1)? true : false; 
+ + return(count == 1)? false : true; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 36 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 247
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected token START_ARRAY Repair Action: replace 
+ - return true; 
+ + return count == 0;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - return count == 0; 
+ + return count!= 0;
+Iteration: 2, Repair Action: replace 
+ - return count!= 0; 
+ + return count!= 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 8 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1956
+
+Iteration: 0, Diagnostic: [CE] <identifier> expected Repair Action: replace 
+ - if (_inputPtr >= _inputEnd) { 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + if(_inputPtr >= _inputEnd) { if(!_tokenIncomplete) { break; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 34 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 245
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = 0; 
+ + _inputPtr =(count > 0)? 0 : count;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + _inputPtr =(count > 0)? 0 : count; _inputPtr =(count > 0)? 0 : count;
+Iteration: 2, Repair Action: replace 
+ - _inputPtr =(count > 0)? 0 : count; _inputPtr =(count > 0)? 0 : count; 
+ + _inputPtr =(count > 1)? 0 : count; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol length Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _symbols.length;
+Iteration: 1, Diagnostic: [CE] cannot find symbol length Repair Action: replace 
+ - final int maxCode = _symbols.length; 
+ + final int maxCode = _symbols.length + 1;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode = _symbols.length + 1; 
+ + final int maxCode = outBuf.length + 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Diagnostic: [CE] variable maxCode is already defined in method _handleOddName2(int,int,int[]) Repair Action: add 
+ + final int maxCode =(codes!= null)? codes.length : 0; final int maxCode =(codes == null)? codes.length : 0;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; final int maxCode =(codes == null)? codes.length : 0; 
+ + int maxCode =(codes == null)? codes.length : 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _inputBuffer.length;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = _inputBuffer.length; 
+ + final int maxCode = _inputBuffer.length - 1;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode = _inputBuffer.length - 1; 
+ + final int maxCode = outBuf.length - 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; 
+ + final int maxCode =(codes!= null)? codes.length : 1;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 1; 
+ + final int maxCode =(codes == null)? codes.length : 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; 
+ + final int maxCode =(codes!= null)? codes.length : 1;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 1; 
+ + final int maxCode =(codes!= null)? 0 : 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _inputPtr;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = _inputPtr; 
+ + final int maxCode = _inputEnd;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode = _inputEnd; 
+ + final int maxCode = 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; 
+ + final int maxCode =(codes == null)? 0 : codes.length;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode =(codes == null)? 0 : codes.length; 
+ + final int maxCode =(codes!= null)? 0 : codes.length + 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Diagnostic: [CE] variable maxCode is already defined in method _handleOddName2(int,int,int[]) Repair Action: add 
+ + final int maxCode =(codes!= null)? codes.length : 0; final int maxCode =(codes == null)? codes.length : 0;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; final int maxCode =(codes == null)? codes.length : 0; 
+ + final int maxCode =(outPtr == 0)? codes.length : 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Diagnostic: [CE] variable maxCode is already defined in method _handleOddName2(int,int,int[]) Repair Action: add 
+ + final int maxCode =(codes!= null)? codes.length : 0; final int maxCode =(codes == null)? codes.length : 0;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; final int maxCode =(codes == null)? codes.length : 0; 
+ + final int maxCode =(_inputPtr == 0)? codes.length : 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol length Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _symbols.length;
+Iteration: 1, Diagnostic: [CE] cannot find symbol length Repair Action: replace 
+ - final int maxCode = _symbols.length; 
+ + final int maxCode = _symbols.length - 1;
+Iteration: 2, Repair Action: replace 
+ - final int maxCode = _symbols.length - 1; 
+ + final int maxCode = codes.length - 1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; 
+ + final int maxCode =(codes == null)? codes.length : 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode =(codes!= null)? codes.length : 0;
+Iteration: 1, Repair Action: replace 
+ - final int maxCode =(codes!= null)? codes.length : 0; 
+ + final int maxCode =(codes!= null)? 0 : codes.length; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _inputPtr;
+Iteration: 1, Repair Action: replace 
+ - final int maxCode = _inputPtr; 
+ + final int maxCode = _inputPtr - startPtr; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _inputBuffer.length;
+Iteration: 1, Repair Action: replace 
+ - final int maxCode = _inputBuffer.length; 
+ + final int maxCode = _inputBuffer.length - startPtr; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1953
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - final int maxCode = codes.length; 
+ + final int maxCode = _inputBuffer.length;
+Iteration: 1, Repair Action: replace 
+ - final int maxCode = _inputBuffer.length; 
+ + final int maxCode = _inputBuffer[outPtr]; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 7 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1953
+Patch Found in iteration 0 
+Repair Action: replace 
+ - final  int  maxCode  =  codes.length;  
+ + final  int  maxCode  =  outBuf.length; 
+ --------------------------------------------------
+JacksonCore25 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1961
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char c = _inputBuffer[_inputPtr]; 
+ + char c = _inputBuffer[0];
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char c = _inputBuffer[0]; 
+ + char c =(_inputPtr < 1)? _inputBuffer[0] : _inputBuffer[0];
+Iteration: 2, Repair Action: replace 
+ - char c =(_inputPtr < 1)? _inputBuffer[0] : _inputBuffer[0]; 
+ + char c =(_inputPtr < 1)? _inputBuffer[1] : _inputBuffer[1]; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1961
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol c Repair Action: replace 
+ - char c = _inputBuffer[_inputPtr]; 
+ + 
+Iteration: 1, Diagnostic: [CE] possible loss of precision Repair Action: add 
+ + char c = codes[outPtr];
+Iteration: 2, Repair Action: replace 
+ - char c = codes[outPtr]; 
+ + char c = outBuf[outPtr]; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1961
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char c = _inputBuffer[_inputPtr]; 
+ + char c = _inputBuffer[_inputPtr++];
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + char c = _inputBuffer[_inputPtr++]; Char c = _inputBuffer[_inputPtr++];
+Iteration: 2, Repair Action: replace 
+ - char c = _inputBuffer[_inputPtr++]; Char c = _inputBuffer[_inputPtr++]; 
+ + char c = _inputBuffer[_inputPtr++]; c = _inputBuffer[_inputPtr++]; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1961
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char c = _inputBuffer[_inputPtr]; 
+ + char c = _inputBuffer[0];
+Iteration: 1, Repair Action: replace 
+ - char c = _inputBuffer[0]; 
+ + char c = _inputBuffer[1]; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1961
+Patch Found in iteration 0 
+Repair Action: replace 
+ - char  c  =  _inputBuffer[_inputPtr];  
+ + char  c  =  _inputBuffer[_inputPtr  +  1]; 
+ --------------------------------------------------
+JacksonCore25 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1961
+Patch Found in iteration 0 
+Repair Action: replace 
+ - char  c  =  _inputBuffer[_inputPtr];  
+ + char  c  =  _inputBuffer[outPtr]; 
+ --------------------------------------------------
+JacksonCore25 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1962
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - int i = (int) c; 
+ + char i = (char)c;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char i = (char)c; 
+ + char i =(c >= '.')?(char)c : c;
+Iteration: 2, Repair Action: replace 
+ - char i =(c >= '.')?(char)c : c; 
+ + char i =(c == '.')?(char)c : 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1962
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - int i = (int) c; 
+ + char i = (char)c;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char i = (char)c; 
+ + char i =(c == 'n')? (char)c : c;
+Iteration: 2, Repair Action: replace 
+ - char i =(c == 'n')? (char)c : c; 
+ + char i =(c == 'n')? (char)c : 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1962
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - int i = (int) c; 
+ + char i = (char)c;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char i = (char)c; 
+ + char i =(c == 'n')? (char)c : _inputBuffer[_inputPtr];
+Iteration: 2, Repair Action: replace 
+ - char i =(c == 'n')? (char)c : _inputBuffer[_inputPtr]; 
+ + char i =(c == 'n')? (char)c : _inputBuffer[_inputPtr + 1]; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1962
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - int i = (int) c; 
+ + char i = (char)c;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - char i = (char)c; 
+ + char i = c;
+Iteration: 2, Repair Action: replace 
+ - char i = c; 
+ + char i = 0; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1962
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol i Repair Action: replace 
+ - int i = (int) c; 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + int i = _textBuffer.getCurrentSegmentSize(); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 11 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1962
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  i  =  (int)  c;  
+ + int  i  =(int)c  +  1; 
+ --------------------------------------------------
+JacksonCore25 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1964
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (codes[i] != 0) { 
+ + if (codes[i] == 0) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if (codes[i] == 0) { if (codes[i] >= 0) {
+Iteration: 2, Repair Action: replace 
+ - if (codes[i] == 0) { if (codes[i] >= 0) { 
+ + if(i < maxCode) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1807
+
+Iteration: 0, Diagnostic: [CE] missing return statement Repair Action: replace 
+ - return _handleOddName2(start, hash, codes); 
+ + 
+Iteration: 1, Diagnostic: [CE] method findSymbol in class CharsToNameCanonicalizer cannot be applied to given types; Repair Action: add 
+ + return _symbols.findSymbol(_inputBuffer, start, ptr);
+Iteration: 2, Repair Action: replace 
+ - return _symbols.findSymbol(_inputBuffer, start, ptr); 
+ + return _symbols.findSymbol(_inputBuffer, start, hash, ptr); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1807
+
+Iteration: 0, Diagnostic: [CE] missing return statement Repair Action: replace 
+ - return _handleOddName2(start, hash, codes); 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + return _symbols.findSymbol(_inputBuffer, start, ptr - start, hash); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [CE] Repair Action: replace 
+ - if (i <= maxCode) { 
+ + 
+Iteration: 1, Diagnostic: [CE] variable c is already defined in method _handleOddName2(int,int,int[]) Repair Action: add 
+ + if(i < maxCode) { for(int c = 0; c < codes.length; ++i) { outBuf[outPtr++] = codec; }
+Iteration: 2, Repair Action: replace 
+ - if(i < maxCode) { for(int c = 0; c < codes.length; ++i) { outBuf[outPtr++] = codec; } 
+ + if(i < maxCode) { for(int j = 0; j < codes.length; ++j) { outBuf[outPtr++] = c; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i < maxCode || codes[i] == 0) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if (i < maxCode || codes[i] == 0) { if (i < maxCode || codes[i]!= 0) {
+Iteration: 2, Repair Action: replace 
+ - if (i < maxCode || codes[i] == 0) { if (i < maxCode || codes[i]!= 0) { 
+ + if(i < _inputEnd) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i < maxCode || codes[i] == 0) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if (i < maxCode || codes[i] == 0) { if (i < maxCode || codes[i]!= 0) {
+Iteration: 2, Repair Action: replace 
+ - if (i < maxCode || codes[i] == 0) { if (i < maxCode || codes[i]!= 0) { 
+ + if(i < _inputPtr) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i < maxCode || codes[i] == 0) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if (i < maxCode || codes[i] == 0) { if (i < maxCode || codes[i]!= 0) {
+Iteration: 2, Repair Action: replace 
+ - if (i < maxCode || codes[i] == 0) { if (i < maxCode || codes[i]!= 0) { 
+ + if(i < 0 || i < maxCode) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i < maxCode || codes[i] == 0) {
+Iteration: 1, Repair Action: replace 
+ - if (i < maxCode || codes[i] == 0) { 
+ + if(i < maxCode && codes[i] == 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i >= maxCode) {
+Iteration: 1, Repair Action: replace 
+ - if (i >= maxCode) { 
+ + if (i > maxCode) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i == maxCode) {
+Iteration: 1, Repair Action: replace 
+ - if (i == maxCode) { 
+ + if (i == 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if (i <= maxCode) { 
+ + if (i < maxCode || codes[i]!= 0) {
+Iteration: 1, Repair Action: replace 
+ - if (i < maxCode || codes[i]!= 0) { 
+ + if (i < maxCode && codes[i]!= 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [CE] Repair Action: replace 
+ - if (i <= maxCode) { 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + if(i < maxCode) { if(codes[i]!= 0) { break; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1963
+
+Iteration: 0, Diagnostic: [CE] Repair Action: replace 
+ - if (i <= maxCode) { 
+ + 
+Iteration: 1, Repair Action: replace 
+ -  
+ + if(i < maxCode) { if(codes[i] == 0) { break; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1963
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (i  <=  maxCode)  {  
+ + if  (i  <  maxCode)  { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr = ptr-1;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + _inputPtr = ptr-1; _inputPtr = ptr-2;
+Iteration: 2, Repair Action: add 
+ - 
+ + _inputPtr  =  ptr-1;  _inputPtr = ptr-2; int _inputPtr = ptr-1; _inputPtr = ptr-2; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr = ptr-1;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + _inputPtr = ptr-1; _inputPtr = ptr-2;
+Iteration: 2, Repair Action: replace 
+ - _inputPtr = ptr-1; _inputPtr = ptr-2; 
+ + _inputPtr = ptr-3; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr = ptr-1;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + _inputPtr = ptr-1; _inputPtr = ptr-2;
+Iteration: 2, Repair Action: replace 
+ - _inputPtr = ptr-1; _inputPtr = ptr-2; 
+ + _inputPtr = ptr-4; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr += start;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr += start; 
+ + _inputPtr += i;
+Iteration: 2, Repair Action: replace 
+ - _inputPtr += i; 
+ + _inputPtr -= i; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr += start;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr += start; 
+ + _inputPtr += ptr;
+Iteration: 2, Repair Action: replace 
+ - _inputPtr += ptr; 
+ + _inputPtr -= ptr; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr = ptr-1;
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + _inputPtr = ptr-1; _inputPtr = ptr-2;
+Iteration: 2, Repair Action: add 
+ - 
+ + _inputPtr  =  ptr-1;  _inputPtr = ptr-2; if(ptr < inputLen) { _inputPtr = ptr-1; _inputPtr = ptr-2; } else { return _handleOddName2(start, hash, codes); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr = ptr-1;
+Iteration: 1, Repair Action: replace 
+ - _inputPtr = ptr-1; 
+ + _inputPtr = start-1; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 1806
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - _inputPtr = ptr; 
+ + _inputPtr = ptr-1;
+Iteration: 1, Repair Action: replace 
+ - _inputPtr = ptr-1; 
+ + _inputPtr = ptr-2; 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1806
+Patch Found in iteration 0 
+Repair Action: replace 
+ - _inputPtr  =  ptr;  
+ + _inputPtr  =  i; 
+ --------------------------------------------------
+JacksonCore25 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 1806
+Patch Found in iteration 0 
+Repair Action: replace 
+ - _inputPtr  =  ptr;  
+ + _inputPtr  =  ptr  -  start; 
+ --------------------------------------------------

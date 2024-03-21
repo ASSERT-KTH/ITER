@@ -1,0 +1,48 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Closure79/src/com/google/javascript/jscomp/VarCheck.java
+buggy location: 137, suspucious value: 0.5962847939999439
+Original failing tests: 5 -> Current failing tests: 1
+
+- createSynthesizedExternVar(varName); 
++ t.getCompiler().reportCodeChange();
+
+Partial patch is found in FL-1
+Buggy class:projects/Closure79/src/com/google/javascript/jscomp/VarCheck.java
+buggy location: 220, suspucious value: 0.4472135954999579
+Original failing tests: 5 -> Current failing tests: 1
+
+-  
++     nameNode.putBooleanProp(Node.IS_CONSTANT_NAME,  true);  if(compiler.getCodingConvention().isConstant(varName)) { nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true); } else { compiler.reportCodeChange(); }
+
+Partial patch is found in FL-1
+Buggy class:projects/Closure79/src/com/google/javascript/jscomp/VarCheck.java
+buggy location: 220, suspucious value: 0.4472135954999579
+Original failing tests: 5 -> Current failing tests: 1
+-  varsToDeclareInExterns.remove(varName); 
++    compiler.reportCodeChange(); varsToDeclareInExterns.remove(varName);
+
+Closure79 -  FL is ranked in the FL-2 -  FL is ranked in the 4 position(s) with a suspicious value: 0.1889822365046136
+Number of failing tests: 1 
+Buggy Location: 120
+Patch Found in iteration 0 
+Repair Action: replace 
+ - new  NodeTraversal(  compiler,  new  NormalizeStatements(compiler,  assertOnChange))  .traverse(root);  
+ + new  NodeTraversal(compiler,  new  NormalizeStatements(compiler,  assertOnChange),  null).traverseRoots(externs,  root); 
+----------------------------------------------------------------------------------------------------
+Closure79 -  FL is ranked in the FL-2 -  FL is ranked in the 4 position(s) with a suspicious value: 0.1889822365046136
+Partial patch is found in FL-1
+Buggy class:projects/Closure79/src/com/google/javascript/jscomp/VarCheck.java, buggy location: 220, suspucious value: 0.4472135954999579
+Original failing tests: 5 -> Current failing tests: 1
+
+-  
++     nameNode.putBooleanProp(Node.IS_CONSTANT_NAME,  true);  if(compiler.getCodingConvention().isConstant(varName)) { nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true); } else { compiler.reportCodeChange(); }
+
+
+Number of failing tests: 1 
+Buggy Location: 120
+Patch Found in iteration 0 
+Repair Action: replace 
+ - new  NodeTraversal(  compiler,  new  NormalizeStatements(compiler,  assertOnChange))  .traverse(root);  
+ + new  NodeTraversal(compiler,  new  NormalizeStatements(compiler,  assertOnChange)).traverseRoots(externs,  root); 
+ --------------------------------------------------

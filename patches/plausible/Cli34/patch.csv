@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Cli34/src/main/java/org/apache/commons/cli/OptionBuilder.java
+buggy location: 84, suspucious value: 0.42640143271122083
+Original failing tests: 2 -> Current failing tests: 1
+
+-   type  =  null;  
++ for(int i = 0; i < numberOfArgs; i++) { type = String.class; }
+
+Cli34 -  FL is ranked in the FL-2 -  FL is ranked in the 3 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 224
+Patch Found in iteration 0 
+Repair Action: replace 
+ - OptionBuilder.numberOfArgs  =  Option.UNLIMITED_VALUES;  
+ + OptionBuilder.numberOfArgs  =(instance  ==  null?  Option.UNLIMITED_VALUES  :  Integer.MAX_VALUE); 
+ --------------------------------------------------

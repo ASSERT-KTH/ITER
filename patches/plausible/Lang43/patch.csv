@@ -1,0 +1,15 @@
+
+Lang43 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 158
+Patch Found in iteration 0 
+Repair Action: replace 
+ - appendQuotedString(pattern,  pos,  stripCustom,  true);  
+ + appendQuotedString(pattern,  pos,  stripCustom,  false); 
+ --------------------------------------------------
+Lang43 -  FL is ranked in the 6 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 422
+Patch Found in iteration 0 
+Repair Action: add  
+ + next(pos);

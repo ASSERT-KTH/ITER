@@ -1,0 +1,13 @@
+Csv4/1
+
+Csv4 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 288
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - return new LinkedHashMap<String, Integer>(this.headerMap); 
+ + return(this.headerMap!= null)? null : new LinkedHashMap < String, Integer>(this.headerMap);
+Iteration: 1, Repair Action: replace 
+ - return(this.headerMap!= null)? null : new LinkedHashMap < String, Integer>(this.headerMap); 
+ + return(this.headerMap == null)? null : new LinkedHashMap < String, Integer>(this.headerMap); 
+ ----------------------------------------------------------------------------------------------------

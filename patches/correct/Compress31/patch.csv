@@ -1,0 +1,17 @@
+
+Compress31 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 2 
+Buggy Location: 136
+Patch Found in iteration 0 
+Repair Action: replace 
+ - break;  
+ + throw  new  IllegalArgumentException( "currentByte  must  be  in  the  range  [ "  +  currentByte  + "] "); 
+ --------------------------------------------------
+ Compress31 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 2 
+Buggy Location: 136
+Patch Found in iteration 0 
+Repair Action: replace 
+ - break;  
+ + 
+ --------------------------------------------------

@@ -1,0 +1,9 @@
+
+Lang57 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+Number of failing tests: 11 
+Buggy Location: 223
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  cAvailableLocaleSet.contains(locale);  
+ + return  cAvailableLocaleList.contains(locale); 
+ --------------------------------------------------

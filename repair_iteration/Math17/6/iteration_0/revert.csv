@@ -1,9 +1,0 @@
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519result=newInstance(x);
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519if(x.nans==FINITE){result=newInstance(x);}
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519if(x.nans==FINITE){if(isNaN()){returnthis;}
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519result=newInstance(this);
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519result=newInstance(x.nans);
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519if(x.nans==FINITE){result=newInstance(this);}
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519if(x.sign!=FINITE){if(!isNaN()){returnthis;}
-projects/Math17/src/main/java/org/apache/commons/math3/dfp/Dfp.java1519result=newInstance(x.sign);

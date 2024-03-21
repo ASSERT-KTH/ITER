@@ -1,0 +1,14 @@
+Chart5/2
+
+Chart5 -  FL is ranked in the 2 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 564
+
+Iteration: 0, Diagnostic: [FE] java.lang.IndexOutOfBoundsException: Index: -1 Repair Action: add 
+ +  this.data.add(new XYDataItem(x, y));
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.data.add(new XYDataItem(x, y)); this.data.add(new XYDataItem(x, y));
+Iteration: 2, Repair Action: replace 
+ -   this.data.add(new XYDataItem(x, y)); this.data.add(new XYDataItem(x, y)); 
+ + if(this.autoSort) { this.data.add(new XYDataItem(x, y)); } else { this.data.add(new XYDataItem(x, y)); } 
+ ----------------------------------------------------------------------------------------------------

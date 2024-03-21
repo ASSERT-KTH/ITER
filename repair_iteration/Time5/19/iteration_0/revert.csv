@@ -1,9 +1,0 @@
-projects/Time5/src/main/java/org/joda/time/Period.java1624
-projects/Time5/src/main/java/org/joda/time/Period.java1624millis+=(((long)getMinutes())*((long)DateTimeConstants.MILLIS_PER_MINUTE));
-projects/Time5/src/main/java/org/joda/time/Period.java1624millis+=(((long)getDays())*((long)DateTimeConstants.MILLIS_PER_DAY));
-projects/Time5/src/main/java/org/joda/time/Period.java1624Periodresult=newPeriod(millis,type,ISOChronology.getInstanceUTC());
-projects/Time5/src/main/java/org/joda/time/Period.java1624Periodresult=newPeriod(millis,millis,ISOChronology.getInstanceUTC());
-projects/Time5/src/main/java/org/joda/time/Period.java1624Periodresult=newPeriod(millis,type,ISOChronology.getInstanceUTC(),millis);
-projects/Time5/src/main/java/org/joda/time/Period.java1624Periodresult=newPeriod(millis,millis,ISOChronology.getInstance());
-projects/Time5/src/main/java/org/joda/time/Period.java1624millis+=getMinutes()*((long)DateTimeConstants.MILLIS_PER_MINUTE);
-projects/Time5/src/main/java/org/joda/time/Period.java1624millis+=getMinutes()*((long)DateTimeConstants.MILLIS_PER_MINUTE));

@@ -1,3 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-43	[BUG] [BUGGY] return new File(str); [FE] NoClassDefFoundError [CONTEXT] public static File createFile(String str) { [BUGGY] return new File(str); [BUGGY] } [CLASS] TypeHandler [METHOD] createFile [RETURN_TYPE] File  String str [VARIABLES] boolean String str  	projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java	1.0	240	240	1	replace	
-44	[BUG] [BUGGY] [FE] NoClassDefFoundError [CONTEXT] public static File createFile(String str) { [BUGGY] [BUGGY] return new File(str); } [CLASS] TypeHandler [METHOD] createFile [RETURN_TYPE] File  String str [VARIABLES] boolean String str  	projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java	1.0	240	240	1	add	

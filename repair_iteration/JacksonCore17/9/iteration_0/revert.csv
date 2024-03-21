@@ -1,7 +1,0 @@
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105_bufferRecyclable=true;
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105_bufferRecyclable=false;
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105if(_bufferRecyclable){_bufferRecyclable=true;}else{System.arraycopy(_charBuffer,0,_charBuffer,0,_charBufferLength);_bufferRecyclable=false;}
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105if(_bufferRecyclable){_bufferRecyclable=true;}else{_outputBuffer=ctxt.allocWriteEncodingBuffer();_outputTail=out;}
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105if(_bufferRecyclable!=false){_bufferRecyclable=true;}
-projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java105if(_bufferRecyclable==false){_bufferRecyclable=true;}

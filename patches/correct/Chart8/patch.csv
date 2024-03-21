@@ -1,0 +1,10 @@
+Chart8 -  FL is ranked in the 19 position(s) with a suspicious value: 0.0
+
+
+Number of failing tests: 1 
+Buggy Location: 175
+Patch Found in iteration 0 
+Repair Action: replace 
+ - this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());  
+ + this(time, zone, Locale.getDefault()); 
+

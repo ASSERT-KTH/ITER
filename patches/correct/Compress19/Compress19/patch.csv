@@ -1,0 +1,14 @@
+
+Compress19 -  FL is ranked in the FL-1 -  FL is ranked in the 14 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 259
+Patch Found in iteration 1 
+Repair Action: replace 
+ - if  (rawCentralDirectoryData.length  !=  expectedLength)  {  
+ + if  (expectedLength  <  rawCentralDirectoryData.length)  { 
+ 
+ Repair Action: replace 
+ - if  (expectedLength  <  rawCentralDirectoryData.length)  {  
+ + if  (expectedLength  >  rawCentralDirectoryData.length)  { 
+ 
+ 

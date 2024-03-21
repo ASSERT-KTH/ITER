@@ -1,0 +1,771 @@
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree() " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree() " + node.toStringTree()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree() " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getString()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.getString()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node cannot be refined. " + node.getClass()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [FE] java.lang.IllegalArgumentException: Node cannot be refined. Node defined with node.toStringTree() Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [FE] java.lang.IllegalArgumentException: Node cannot be refined. Node defined with node.toStringTree() Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [FE] java.lang.IllegalArgumentException: Node cannot be refined. Node defined with node.toStringTree() Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node defined with node.toStringTree(), " + node.toStringTree()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node has been refined. " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node has been refined. " + node.getQualifiedName()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node has been refined. " + node.getQualifiedName()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node cannot be refined. " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. can be refined. " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. node " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. node. " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.toStringTree()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.toStringTree()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node cannot be refined. " + node.toStringTree()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.toStringTree()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.toStringTree()); 
+ + new IllegalArgumentException( "Node cannot be refined. can be refined. " + node.toStringTree()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.toStringTree()); new IllegalArgumentException(  "Node cannot be refined. n  " + node.toStringTree()); 
+ + new IllegalArgumentException( "Node cannot be refined. node " + node.toStringTree()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getName());
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node named: " + node.getName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node named: " + node.getName()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node named: " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +   Preconditions.checkNotNull(type); Preconditions.checkNotNull(type);
+Iteration: 2, Repair Action: replace 
+ -   Preconditions.checkNotNull(type); Preconditions.checkNotNull(type); 
+ + Preconditions.checkState(type!= null); Preconditions.checkNotNull(type); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getLineno());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getLineno()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with type " + node.getLineno());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with type  " + node.getLineno()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node defined with type " + node.getLineno()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Diagnostic: [CE] variable qualifiedName might not have been initialized Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getString()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); }
+Iteration: 2, Repair Action: replace 
+ - if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined.  " + node.getString()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); } 
+ + if(node.getType() == Token.NAME && node.getString().length() > 0) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getString()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Diagnostic: [CE] variable qualifiedName might not have been initialized Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getString()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); }
+Iteration: 2, Repair Action: replace 
+ - if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined.  " + node.getString()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); } 
+ + if(node.getType() == Token.NAME && node.getString().equals( "name ")) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getString()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Diagnostic: [FE] IllegalStateException Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkState(node.getType() == Token.FUNCTION);
+Iteration: 2, Repair Action: replace 
+ - Preconditions.checkState(node.getType() == Token.FUNCTION); 
+ + Preconditions.checkState(node.getType()!= Token.FUNCTION); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Diagnostic: [FE] IllegalStateException Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkState(node.getType() == Token.FUNCTION);
+Iteration: 2, Repair Action: replace 
+ - Preconditions.checkState(node.getType() == Token.FUNCTION); 
+ + Preconditions.checkState(node.getType() == Token.FUNCTION || node.getJSType()!= type); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [CE] variable qualifiedName might not have been initialized Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); }
+Iteration: 2, Repair Action: replace 
+ - if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined.  " + node.toStringTree()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); } 
+ + if(node.getType() == Token.NAME || node.getType() == Token.FUNCTION) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [CE] variable qualifiedName might not have been initialized Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); }
+Iteration: 2, Repair Action: replace 
+ - if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined.  " + node.toStringTree()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); } 
+ + if(node.getType() == Token.FUNCTION) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Diagnostic: [CE] variable qualifiedName might not have been initialized Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); }
+Iteration: 2, Repair Action: replace 
+ - if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined.  " + node.toStringTree()); } else { scope.inferQualifiedSlot(node, qualifiedName, origType, type); } 
+ + if(node.getType() == Token.NAME || node.getType() == Token.GETPROP) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. Node can be refined. " + node.toStringTree()); }
+Iteration: 2, Repair Action: replace 
+ - if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. Node can be refined. " + node.toStringTree()); } 
+ + if(node == null) { throw new IllegalArgumentException( "Node cannot be refined. Node can be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkArgument(type!= null && type.isUnknownType());
+Iteration: 2, Repair Action: replace 
+ - Preconditions.checkArgument(type!= null && type.isUnknownType()); 
+ + Preconditions.checkArgument(type!= null || type.isUnknownType()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Diagnostic: [CE] variable node is already defined in method declareNameInScope(FlowScope,Node,JSType) Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); Node node = node.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getString()); Node node = node.getFirstChild(); 
+ + node = node.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. can be refined. " + node.toStringTree()); }
+Iteration: 2, Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. can be refined. " + node.toStringTree()); } 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. can be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node type must be in the range [ " + node.getString());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node type must be in the range [ " + node.getString()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node type must be in the range [ " + node.getString()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [CE] Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); if(Node cannot be refined. n " + node.getQualifiedName()) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); }
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getQualifiedName()); if(Node cannot be refined. n  " + node.getQualifiedName()) { throw new IllegalArgumentException( "Node cannot be refined. n  " + node.getQualifiedName()); } 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. node: " + node.toStringTree()); }
+Iteration: 2, Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. node: " + node.toStringTree()); } 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. node: " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. node: " + node.toStringTree()); }
+Iteration: 2, Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. node: " + node.toStringTree()); } 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined, node: " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getName());
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node named with qualified name ' " + node.getName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node named with qualified name ' " + node.getName()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node named with qualified name ' " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name  " + node.getQualifiedName()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name " + node.getQualifiedName()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node must be in the range [ " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node must be in the range [ " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node must be in the range [ " + node.getQualifiedName() + "] "); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getLineno());
+Iteration: 1, Diagnostic: [CE] Repair Action: add 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getLineno()); Node cannot be refined. n " + node.getLineno()); scope.inferQualifiedSlot(node, qualifiedName, origType, type);
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Node cannot be refined. n  " + node.getLineno()); Node cannot be refined. n  " + node.getLineno()); scope.inferQualifiedSlot(node, qualifiedName, origType, type); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getLineno()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name ' " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name ' " + node.getQualifiedName()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name ' " + node.getQualifiedName()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name ' " + node.getQualifiedName());
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name ' " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. Node defined with qualified name ' " + node.getQualifiedName() + "' "); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Diagnostic: [FE] IllegalStateException Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkState(node.getType() == Token.NAME);
+Iteration: 2, Repair Action: replace 
+ - Preconditions.checkState(node.getType() == Token.NAME); 
+ + Preconditions.checkState(node.getType()!= Token.NAME); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Repair Action: replace 
+ - if(type!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + type.toStringTree());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + type.toStringTree()); 
+ + new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getString()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); 
+ + if(node.getType() == Token.NAME) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + new IllegalArgumentException( "Node cannot be refined. " + node.getQualifiedName()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Repair Action: replace 
+ - if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(node == null) { throw new IllegalArgumentException( "Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); }
+Iteration: 1, Repair Action: replace 
+ - if(node!= null) { throw new IllegalArgumentException( "Node cannot be refined. n " + node.toStringTree()); } 
+ + if(node == null) { throw new IllegalArgumentException( "Node cannot be refined. Node cannot be refined. " + node.toStringTree()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkState(type!= null); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkArgument(type!= null); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkState(!type.isUnknownType()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getLineno());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getLineno()); 
+ + new IllegalArgumentException( "Node cannot be refined. " + node.getLineno()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] UnsupportedOperationException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getString()); 
+ + if(node == null) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getString()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. \n " + node.toStringTree()); 
+ + throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName());
+Iteration: 1, Repair Action: replace 
+ - throw new IllegalArgumentException( "Node cannot be refined. n " + node.getQualifiedName()); 
+ + if(type == null) { throw new IllegalArgumentException( "Node cannot be refined. " + node.getQualifiedName()); } 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 175
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: add 
+ +  Preconditions.checkNotNull(type);
+Iteration: 1, Repair Action: replace 
+ -  Preconditions.checkNotNull(type); 
+ + Preconditions.checkArgument(!type.isUnknownType()); 
+ ----------------------------------------------------------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 175
+Patch Found in iteration 0 
+Repair Action: replace 
+ - throw  new  IllegalArgumentException( "Node  cannot  be  refined.  \n "  +  node.toStringTree());  
+ + if(node.getType()  ==  Token.NAME)  {  throw  new  IllegalArgumentException( "Node  cannot  be  refined.  n "  +  node.toStringTree());  } 
+ --------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 175
+Patch Found in iteration 0 
+Repair Action: replace 
+ - throw  new  IllegalArgumentException( "Node  cannot  be  refined.  \n "  +  node.toStringTree());  
+ + if(type  ==  null)  {  throw  new  IllegalArgumentException( "Node  cannot  be  refined.  n "  +  node.toStringTree());  } 
+ --------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 175
+Patch Found in iteration 0 
+Repair Action: replace 
+ - throw  new  IllegalArgumentException( "Node  cannot  be  refined.  \n "  +  node.toStringTree());  
+ + if(node  ==  null)  {  throw  new  IllegalArgumentException( "Node  cannot  be  refined.  n "  +  node.toStringTree());  } 
+ --------------------------------------------------
+Closure19 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 175
+Patch Found in iteration 0 
+Repair Action: replace 
+ - throw  new  IllegalArgumentException( "Node  cannot  be  refined.  \n "  +  node.toStringTree());  
+ + new  IllegalArgumentException( "Node  cannot  be  refined.  n "  +  node.toStringTree()); 
+ --------------------------------------------------

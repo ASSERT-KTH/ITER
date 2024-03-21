@@ -1,0 +1,74 @@
+Cli40 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 103
+
+Iteration: 0, Diagnostic: [CE] no suitable method found for createValue(String) Repair Action: replace 
+ - return null; 
+ + return(T)createValue(str);
+Iteration: 1, Diagnostic: [FE] java.lang.Exception: Unexpected exception Repair Action: replace 
+ - return(T)createValue(str); 
+ + return(T)createValue(str, str);
+Iteration: 2, Repair Action: replace 
+ - return(T)createValue(str, str); 
+ + return(T)createValue(str, PatternOptionBuilder.URL_VALUE); 
+ ----------------------------------------------------------------------------------------------------
+Cli40 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 103
+
+Iteration: 0, Diagnostic: [CE] non-static variable this cannot be referenced from a static context Repair Action: replace 
+ - return null; 
+ + return this;
+Iteration: 1, Repair Action: replace 
+ - return this; 
+ + return(T)createURL(str); 
+ ----------------------------------------------------------------------------------------------------
+Cli40 -  FL is ranked in the 2 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 97
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  else if(PatternOptionBuilder.URL_VALUE == clazz) { return (T)createURL(str); }
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: add 
+ +   else if(PatternOptionBuilder.URL_VALUE == clazz) { return (T)createURL(str); } else if(PatternOptionBuilder.URL_VALUE == clazz) { return (T)createURL(str); }
+Iteration: 2, Repair Action: add 
+ - 
+ +     else  if(PatternOptionBuilder.URL_VALUE  ==  clazz)  {  return  (T)createURL(str);  }  else if(PatternOptionBuilder.URL_VALUE == clazz) { return (T)createURL(str); } else if(PatternOptionBuilder.URL_VALUE!= clazz) { return (T)createURL(str); } 
+ ----------------------------------------------------------------------------------------------------
+Cli40 -  FL is ranked in the 2 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 97
+
+Iteration: 0, Diagnostic: [CE] bad operand types for binary operator '>=' Repair Action: replace 
+ - else if (PatternOptionBuilder.URL_VALUE == clazz) { 
+ + else if(PatternOptionBuilder.URL_VALUE >= clazz) {
+Iteration: 1, Repair Action: replace 
+ - else if(PatternOptionBuilder.URL_VALUE >= clazz) { 
+ + else if(PatternOptionBuilder.URL_VALUE == clazz || PatternOptionBuilder.URL_VALUE!= clazz) { 
+ ----------------------------------------------------------------------------------------------------
+Cli40 -  FL is ranked in the 2 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 97
+
+Iteration: 0, Diagnostic: [CE] bad operand types for binary operator '>=' Repair Action: replace 
+ - else if (PatternOptionBuilder.URL_VALUE == clazz) { 
+ + else if(PatternOptionBuilder.URL_VALUE >= clazz) {
+Iteration: 1, Repair Action: replace 
+ - else if(PatternOptionBuilder.URL_VALUE >= clazz) { 
+ + else if(PatternOptionBuilder.URL_VALUE!= clazz || PatternOptionBuilder.URL_VALUE == clazz) { 
+ ----------------------------------------------------------------------------------------------------
+Cli40 -  FL is ranked in the 2 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 97
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: add 
+ +  else if(PatternOptionBuilder.URL_VALUE == clazz) { return (T)createURL(str); }
+Iteration: 1, Repair Action: add 
+ - 
+ +   else if(PatternOptionBuilder.URL_VALUE == clazz) { return (T)createURL(str); } else if(PatternOptionBuilder.URL_VALUE!= clazz) { return (T)createURL(str); } 

@@ -1,0 +1,608 @@
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild(); 
+ + Node elseBlock = allCatchNodes.getFirstChild(); Node thenBlock = n.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+ Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  Node elseBlock = n.getFirstChild();
+ -  tryMinimizeExits(finallyBlock, exitType, labelName);
+ +  
+ ---------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild(); 
+ + Node elseBlock = n.getFirstChild(); Node thenBlock = n.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = allCatchNodes.getFirstChild(); Node elseBlock = allCatchNodes.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = allCatchNodes.getFirstChild(); Node elseBlock = allCatchNodes.getLastChild(); 
+ + Node elseBlock = allCatchNodes.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Diagnostic: [CE] cannot find symbol falseBlock Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getNext();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock!= null? tryBlock : finallyBlock.getNext(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); }
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: replace 
+ -  if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); } 
+ + While(finallyBlock!= null && finallyBlock.isLabel()) { tryMinimizeExits(finallyBlock, exitType, labelName); }
+Iteration: 2, Repair Action: replace 
+ - While(finallyBlock!= null && finallyBlock.isLabel()) { tryMinimizeExits(finallyBlock, exitType, labelName); } 
+ + while(finallyBlock!= null && finallyBlock.isLabel()) { tryMinimizeExits(finallyBlock, exitType, labelName); } 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild(); 
+ + Node elseBlock = allCatchNodes.getFirstChild(); Node otherBlock = n.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild(); 
+ + Node elseBlock = finallyBlock.getFirstChild(); Node otherBlock = n.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild(); 
+ + Node elseBlock = n.getLastChild(); Node otherBlock = n.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node otherBlock = n.getFirstChild(); 
+ + Node elseBlock = n.getFirstChild(); Node otherBlock = n.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getLastChild() : n.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = allCatchNodes.getFirstChild(); Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = allCatchNodes.getFirstChild(); Node elseBlock = finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? null : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] cannot find symbol falseBlock Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? tryBlock : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - tryMinimizeExits(finallyBlock, exitType, labelName); 
+ + tryMinimizeExits(n, exitType, labelName);
+Iteration: 1, Diagnostic: [FE] StackOverflowError Repair Action: add 
+ + tryMinimizeExits(n, exitType, labelName); tryMinimizeExits(n, exitType, labelName);
+Iteration: 2, Repair Action: replace 
+ - tryMinimizeExits(n, exitType, labelName); tryMinimizeExits(n, exitType, labelName); 
+ + if(finallyBlock.isLabel()) { tryMinimizeExits(n, exitType, labelName); } 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Diagnostic: [CE] cannot find symbol falseBlock Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock == null? falseBlock : finallyBlock.getNext();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finallyBlock == null? falseBlock : finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock == null? tryBlock : finallyBlock.getNext(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getNext();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock.getFirstChild(); Node thenBlock = finallyBlock.getNext(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getNext();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock.getParent(); Node thenBlock = finallyBlock.getNext(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getNext();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getParent(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [CE] cannot find symbol finalBlock Repair Action: replace 
+ -  Node elseBlock = n.getFirstChild(); 
+ + Node elseBlock = finalBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finalBlock.getFirstChild(); 
+ + Node nextBlock = finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finalementBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finalementBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getFirstChild() : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock.getFirstChild(); Node thenBlock = finallyBlock.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getLastChild(); Node thenBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock.getNext(); Node thenBlock = finallyBlock.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finalementBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finalementBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock == null? finallyBlock.getFirstChild() : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getFirstChild() : finallyBlock.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? tryBlock.getFirstChild() : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); }
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); } if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); }
+Iteration: 2, Repair Action: replace 
+ -   if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); } if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); } 
+ + Preconditions.checkState(finallyBlock!= null); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild(); 
+ + Node elseBlock = finallyBlock.getFirstChild(); Node thenBlock = n.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - tryMinimizeExits(finallyBlock, exitType, labelName); 
+ + tryMinimizeExits(n, exitType, labelName);
+Iteration: 1, Diagnostic: [CE] illegal start of type Repair Action: add 
+ + tryMinimizeExits(n, exitType, labelName); tryMinimizeExits(n, exitType, labelName); }
+Iteration: 2, Repair Action: replace 
+ - tryMinimizeExits(n, exitType, labelName); tryMinimizeExits(n, exitType, labelName); } 
+ + if(finallyBlock == null) { tryMinimizeExits(n, exitType, labelName); } 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] cannot find symbol falseBlock Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getLastChild(); Node elseBlock = finalementBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getLastChild(); Node elseBlock = finalementBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getLastChild() : finallyBlock.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [CE] cannot find symbol finalBlock Repair Action: replace 
+ -  Node elseBlock = n.getFirstChild(); 
+ + Node elseBlock = finalBlock.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finalBlock.getFirstChild(); 
+ + Node otherBlock = finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Diagnostic: [CE] variable elseBlock is already defined in method tryMinimizeExits(Node,int,String) Repair Action: add 
+ +   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getLastChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = finallyBlock.getFirstChild(); Node elseBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getLastChild() : null; 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Diagnostic: [CE] cannot find symbol falseBlock Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getNext();
+Iteration: 2, Repair Action: replace 
+ - Node elseBlock = finallyBlock!= null? falseBlock : finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock : finallyBlock.getNext(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); }
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ -  if(finallyBlock!= null) { tryMinimizeExits(finallyBlock, exitType, labelName); } 
+ + triesMinimizeExits(finallyBlock, exitType, labelName);
+Iteration: 2, Repair Action: replace 
+ - triesMinimizeExits(finallyBlock, exitType, labelName); 
+ + if(finallyBlock == null) { tryMinimizeExits(finallyBlock, exitType, labelName); } 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = n.getFirstChild();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild();
+Iteration: 2, Repair Action: replace 
+ -   Node elseBlock = n.getFirstChild(); Node thenBlock = n.getFirstChild(); 
+ + Node elseBlock = n.getFirstChild(); Node thenBlock = finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = allCatchNodes.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getFirstChild() : allCatchNodes.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = allCatchNodes.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getLastChild() : allCatchNodes.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = allCatchNodes.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? allCatchNodes.getFirstChild() : finallyBlock; 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = n.getLastChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock.getParent(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = allCatchNodes.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock : allCatchNodes.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getNext() : null; 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getLastChild() : finallyBlock.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getFirstChild(); 
+ + Node elseBlock = finallyBlock!= null? finallyBlock.getFirstChild() : null; 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = allCatchNodes.getFirstChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = allCatchNodes.getFirstChild(); 
+ + Node elseBlock = finallyBlock == null? finallyBlock.getFirstChild() : allCatchNodes.getFirstChild(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getLastChild();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getLastChild(); 
+ + Node elseBlock = finallyBlock.cloneTree(); 
+ ----------------------------------------------------------------------------------------------------
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  Node elseBlock = finallyBlock.getNext();
+Iteration: 1, Repair Action: replace 
+ -  Node elseBlock = finallyBlock.getNext(); 
+ + Node elseBlock = finallyBlock == null? finallyBlock.getNext() : null; 
+ ----------------------------------------------------------------------------------------------------

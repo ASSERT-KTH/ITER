@@ -1,0 +1,9 @@
+
+Math28 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+Number of failing tests: 1 
+Buggy Location: 138
+Patch Found in iteration 0 
+Repair Action: replace 
+ - Integer  minRow  =  null;  
+ + Integer  minRow  =  col; 
+ --------------------------------------------------

@@ -1,0 +1,351 @@
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal!= 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal!= 0) { } else if(nextLocal >= 0) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal!= 0) { } else if(nextLocal >= 0) { 
+ + } else if(instantLocal >= 0) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal!= 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal!= 0) { } else if(nextLocal >= 0) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal!= 0) { } else if(nextLocal >= 0) { 
+ + } else if(instantLocal!= 0) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < = 0) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - } else if(offsetLocal < = 0) { 
+ + } else if(offsetLocal < = 1) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < = 1) { 
+ + } else if(offsetLocal!= 1) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(nextLocal < offsetLocal) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if(nextLocal < offsetLocal) { 
+ + } else if(instantLocal < offsetLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(instantLocal < offsetLocal) { 
+ + } else if(instantLocal >= offsetLocal) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(nextLocal < offsetLocal) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if(nextLocal < offsetLocal) { 
+ + } else if(instantLocal < offsetLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(instantLocal < offsetLocal) { 
+ + } else if(instantLocal > offsetLocal) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(nextLocal < offsetLocal) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if(nextLocal < offsetLocal) { 
+ + } else if(offsetLocal < nextLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < nextLocal) { 
+ + } else if(offsetLocal < instantLocal) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] bad operand type long for unary operator '!' Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(!instantAdjusted && offsetLocal > 0) {
+Iteration: 1, Diagnostic: [CE] bad operand type long for unary operator '!' Repair Action: replace 
+ - } else if(!instantAdjusted && offsetLocal > 0) { 
+ + } else if(!instantAdjusted || offsetLocal > 0) {
+Iteration: 2, Repair Action: replace 
+ - } else if(!instantAdjusted || offsetLocal > 0) { 
+ + } else if(instantLocal > 0 || offsetLocal > 0) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal == 0) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + } else if(offsetLocal == 0) { } else if(OffsetLocal < = 0) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal == 0) { } else if(OffsetLocal < = 0) { 
+ + } else if(offsetLocal == offsetAdjusted) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > nextLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > nextLocal) { 
+ + } else if(offsetLocal < 0 || instantLocal > offsetLocal) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > nextLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > nextLocal) { 
+ + } else if(offsetLocal < 0 || instantLocal > offsetAdjusted) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > nextLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > nextLocal) { 
+ + } else if(offsetLocal < 0 || instantAdjusted > offsetLocal) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol offsetPrev Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || offsetPrev > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || offsetPrev > getOffset(instantLocal)) { 
+ + } else if(instantLocal < 0 || instantLocal > getOffset(instantLocal)) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol offsetPrev Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || offsetPrev > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || offsetPrev > getOffset(instantLocal)) { 
+ + } else if(offsetLocal < 0 || instantLocal > getOffset(instantLocal)) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) { 
+ + } else if(instantLocal >= offsetAdjusted) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) { 
+ + } else if(instantLocal!= offsetAdjusted) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal!= 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if(offsetLocal!= 0) { 
+ + } else if(nextLocal!= offsetLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(nextLocal!= offsetLocal) { 
+ + } else if(instantLocal!= offsetLocal) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal!= 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal!= 0) { } else if(nextLocal >= 0) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal!= 0) { } else if(nextLocal >= 0) { 
+ + } else if(offsetAdjusted >= 0) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > getOffset(instantLocal)) { 
+ + } else if(instantLocal > getOffset(instantLocal)) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantLocal > getOffset(instantLocal)) { 
+ + } else if(instantLocal >= getOffset(instantLocal)) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal!= 0) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: add 
+ + } else if(offsetLocal!= 0) { } else if(nextLocal!= 0) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal!= 0) { } else if(nextLocal!= 0) { 
+ + } else if(instantAdjusted!= 0) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(nextLocal < offsetLocal) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol nextLocal Repair Action: replace 
+ - } else if(nextLocal < offsetLocal) { 
+ + } else if(offsetLocal < nextLocal) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < nextLocal) { 
+ + } else if(offsetLocal < instantAdjusted) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) { 
+ + } else if(instantAdjusted > getOffset(instantLocal)) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetLocal < 0) {
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ + } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) {
+Iteration: 2, Repair Action: replace 
+ - } else if(offsetLocal < 0) { } else if(offsetLocal < 0 || instantAdjusted > getOffset(instantLocal)) { 
+ + } else if(instantLocal!= getOffset(instantLocal)) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+Number of failing tests: 1 
+Buggy Location: 900
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol offsetPrev Repair Action: replace 
+ - } else if (offsetLocal > 0) { 
+ + } else if(offsetPrev > 0) {
+Iteration: 1, Repair Action: replace 
+ - } else if(offsetPrev > 0) { 
+ + } else if(instantLocal > 0) { 
+ ----------------------------------------------------------------------------------------------------
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+
+
+Number of failing tests: 1 
+Buggy Location: 900
+Patch Found in iteration 0 
+Repair Action: replace 
+ - }  else  if  (offsetLocal  >  0)  {  
+ + }  else  if(offsetLocal  >=  0)  { 
+ --------------------------------------------------

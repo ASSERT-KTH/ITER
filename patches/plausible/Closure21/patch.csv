@@ -1,0 +1,9 @@
+
+Closure21 -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+Number of failing tests: 1 
+Buggy Location: 117
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (n  ==  parent.getLastChild())  {  
+ + if(parent.getType()  ==  Token.EXPR_RESULT  &&  n  ==  parent.getLastChild())  { 
+ --------------------------------------------------

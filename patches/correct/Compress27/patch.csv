@@ -1,0 +1,9 @@
+
+Compress27 -  FL is ranked in the FL-1 -  FL is ranked in the 20 position(s) with a suspicious value: 0.4472135954999579
+Number of failing tests: 1 
+Buggy Location: 133
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (start  ==  end)  {  
+ + if(start  <  0  ||  end  >  '9')  { 
+ --------------------------------------------------

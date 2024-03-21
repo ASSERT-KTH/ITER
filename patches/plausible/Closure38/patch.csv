@@ -1,0 +1,17 @@
+
+Closure38 -  FL is ranked in the 6 position(s) with a suspicious value: 0.19245008972987526
+Number of failing tests: 1 
+Buggy Location: 245
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (x  <  0  &&  prev  ==  '-')  {  
+ + if  (prev  <  0  ||  prev  ==  '-')  { 
+ --------------------------------------------------
+ Closure38 -  FL is ranked in the 6 position(s) with a suspicious value: 0.19245008972987526
+Number of failing tests: 1 
+Buggy Location: 245
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (x  <  0  &&  prev  ==  '-')  {  
+ + if  (x  <=  0  &&  prev  ==  '-')  { 
+ --------------------------------------------------

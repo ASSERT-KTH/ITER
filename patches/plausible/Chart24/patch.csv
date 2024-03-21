@@ -1,0 +1,18 @@
+
+Chart24 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 126
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  g  =  (int)  ((value  -  this.lowerBound)  /  (this.upperBound  -  this.lowerBound)  *  255.0);  
+ + int  g  =  (int)((  value  -  this.lowerBound)/  this.upperBound  -  this.lowerBound)*  255; 
+ --------------------------------------------------
+ 
+Chart24 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 126
+Patch Found in iteration 0 
+Repair Action: replace 
+ - int  g  =  (int)  ((value  -  this.lowerBound)  /  (this.upperBound  -  this.lowerBound)  *  255.0);  
+ + int  g  =  (int)((  v  -  this.lowerBound)/  this.upperBound  -  this.lowerBound)*  255.0; 
+ --------------------------------------------------

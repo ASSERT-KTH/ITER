@@ -1,0 +1,22 @@
+Cli23 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 88
+
+Iteration: 0, Diagnostic: [CE] <identifier> expected Repair Action: add 
+ +  DefaultDescPad = defaultDescPad;
+Iteration: 1, Repair Action: replace 
+ -  DefaultDescPad = defaultDescPad; 
+ + DefaultDescPad = DEFAULT_DEC_PAD; 
+ ----------------------------------------------------------------------------------------------------
+Cli23 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 88
+
+Iteration: 0, Diagnostic: [CE] <identifier> expected Repair Action: replace 
+ - public int defaultDescPad = DEFAULT_DESC_PAD; 
+ + public int defaultDescPad = 0;
+Iteration: 1, Repair Action: replace 
+ - public int defaultDescPad = 0; 
+ + public int defaultDescPad = 0L; 

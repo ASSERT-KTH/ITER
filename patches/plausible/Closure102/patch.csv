@@ -1,0 +1,124 @@
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +  NodeTraversal.traverse(compiler, root, this);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +   NodeTraversal.traverse(compiler, root, this); t.traverse(compiler, root, this);
+Iteration: 2, Repair Action: replace 
+ -   NodeTraversal.traverse(compiler, root, this); t.traverse(compiler, root, this); 
+ + NodeTraversal.traverse(compiler, externs, this); t.traverse(compiler, root, this); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +  NodeTraversal.traverse(compiler, root, this);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +   NodeTraversal.traverse(compiler, root, this); t.traverse(compiler, root, this);
+Iteration: 2, Repair Action: replace 
+ -   NodeTraversal.traverse(compiler, root, this); t.traverse(compiler, root, this); 
+ + t.traverse(compiler, root, this); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +  NodeTraversal.traverse(compiler, externs, this);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +   NodeTraversal.traverse(compiler, externs, this); t.traverse(compiler, externs, this);
+Iteration: 2, Repair Action: replace 
+ -   NodeTraversal.traverse(compiler, externs, this); t.traverse(compiler, externs, this); 
+ + NodeTraversal.traverse(compiler, root, this); t.traverse(compiler, externs, this); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +  NodeTraversal.traverse(compiler, externs, this);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +   NodeTraversal.traverse(compiler, externs, this); t.traverse(compiler, externs, this);
+Iteration: 2, Repair Action: replace 
+ -   NodeTraversal.traverse(compiler, externs, this); t.traverse(compiler, externs, this); 
+ + t.traverse(compiler, externs, this); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +  NodeTraversal.traverse(compiler, root, this);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +   NodeTraversal.traverse(compiler, root, this); NodeTraversal.traverse(compiler, root, this);
+Iteration: 2, Repair Action: replace 
+ -   NodeTraversal.traverse(compiler, root, this); NodeTraversal.traverse(compiler, root, this); 
+ + NodeTraversal.traverse(compiler, externs, this); NodeTraversal.traverse(compiler, root, this); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +  NodeTraversal.traverse(compiler, externs, this);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: function f(){arguments=Array.prototype.slice.call(arguments Repair Action: add 
+ +   NodeTraversal.traverse(compiler, externs, this); NodeTraversal.traverse(compiler, externs, this);
+Iteration: 2, Repair Action: replace 
+ -   NodeTraversal.traverse(compiler, externs, this); NodeTraversal.traverse(compiler, externs, this); 
+ + NodeTraversal.traverse(compiler, root, this); NodeTraversal.traverse(compiler, externs, this); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: var FOO=true Repair Action: add 
+ +  t.traverseRoots(externs, root);
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: var FOO=true Repair Action: add 
+ +   t.traverseRoots(externs, root); t.traverseRoots(externs, root);
+Iteration: 2, Repair Action: replace 
+ -   t.traverseRoots(externs, root); t.traverseRoots(externs, root); 
+ + if(externs.getType() == Token.EXPR_RESULT) { t.traverseRoots(externs, root); t.traverseRoots(externs, root); } 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [CE] no suitable method found for traverse(AbstractCompiler,MakeDeclaredNamesUnique) Repair Action: add 
+ +  NodeTraversal.traverse(compiler, renamer);
+Iteration: 1, Repair Action: replace 
+ -  NodeTraversal.traverse(compiler, renamer); 
+ + NodeTraversal.traverse(compiler, root, renamer); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 92
+
+Iteration: 0, Diagnostic: [CE] no suitable method found for traverse(AbstractCompiler,MakeDeclaredNamesUnique) Repair Action: add 
+ +  NodeTraversal.traverse(compiler, renamer);
+Iteration: 1, Repair Action: replace 
+ -  NodeTraversal.traverse(compiler, renamer); 
+ + NodeTraversal.traverse(compiler, externs, renamer); 
+ ----------------------------------------------------------------------------------------------------
+Closure102 -  FL is ranked in the 22 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 91
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol externals Repair Action: replace 
+ - NodeTraversal t = new NodeTraversal(compiler, renamer); 
+ + NodeTraversal t = new NodeTraversal(compiler, externals);
+Iteration: 1, Repair Action: replace 
+ - NodeTraversal t = new NodeTraversal(compiler, externals); 
+ + NodeTraversal t = new NodeTraversal(compiler, this); 

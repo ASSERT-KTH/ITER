@@ -1,0 +1,9 @@
+
+Chart9 -  FL is ranked in the 14 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 944
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (endIndex  <  0)  {  
+ + if(startIndex  >  endIndex)  { 
+ --------------------------------------------------

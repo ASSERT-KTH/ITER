@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java
+buggy location: 698, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- 
++   if (axis==null) { throw new IllegalArgumentException (" "); }
+
+Chart19 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 974
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     if  (axis==null)  {  throw  new  IllegalArgumentException  ( "   ");  } 
+ --------------------------------------------------

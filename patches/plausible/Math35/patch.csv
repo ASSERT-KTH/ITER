@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Math35/src/main/java/org/apache/commons/math3/genetics/ElitisticListPopulation.java
+buggy location: 51, suspucious value: 0.7071067811865475
+Original failing tests: 4 -> Current failing tests: 2
+
+- this.elitismRate = elitismRate; 
++ setElitismRate( elitismRate ) ; 
+
+Math35 -  FL is ranked in the FL-2 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4082482904638631
+Number of failing tests: 2 
+Buggy Location: 65
+Patch Found in iteration 0 
+Repair Action: replace 
+ - this.elitismRate  =  elitismRate;  
+ + setElitismRate  (    elitismRate  )  ;   
+ --------------------------------------------------

@@ -1,0 +1,13 @@
+Cli7/FL-1/4
+
+Cli7 -  FL is ranked in the FL-1 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - private final Set options = new HashSet(); 
+ + private final List options = new LinkedList();
+Iteration: 1, Repair Action: replace 
+ - private final List options = new LinkedList(); 
+ + private final java.util.List options = new java.util.ArrayList(); 
+ ----------------------------------------------------------------------------------------------------

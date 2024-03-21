@@ -1,0 +1,12 @@
+Codec4/1
+
+Codec4 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 2 
+Buggy Location: 931
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ +  byte[] pArray = getEncodeBase64(pArray, 0, pArray.length);
+Iteration: 1, Repair Action: replace 
+ -  byte[] pArray = getEncodeBase64(pArray, 0, pArray.length); 
+ + byte[] pArray = getEncodeBase64(pArray, 0, pArray.length - 2); 
+ ----------------------------------------------------------------------------------------------------

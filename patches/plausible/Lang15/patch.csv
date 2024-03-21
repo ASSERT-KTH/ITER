@@ -1,0 +1,15 @@
+Lang15/49
+
+Lang15 -  FL is ranked in the 49 position(s) with a suspicious value: 0.6324555320336759
+Number of failing tests: 2 
+Buggy Location: 675
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - if (cls.getTypeParameters().length > 0 || toClass.equals(cls)) { 
+ + if (toClass.getTypeParameters().length > 0 || toClass.equals(cls)) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if (toClass.getTypeParameters().length > 0 || toClass.equals(cls)) { if (toClass.getTypeParameters().length == 0 || toClass.equals(cls)) {
+Iteration: 2, Repair Action: replace 
+ - if (toClass.getTypeParameters().length > 0 || toClass.equals(cls)) { if (toClass.getTypeParameters().length == 0 || toClass.equals(cls)) { 
+ + if(typeVarAssigns.size() > 0 || toClass.getTypeParameters().length == 0 || toClass.equals(cls)) { 
+ ----------------------------------------------------------------------------------------------------

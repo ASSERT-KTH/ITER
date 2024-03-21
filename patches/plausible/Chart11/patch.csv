@@ -1,0 +1,9 @@
+
+Chart11 -  FL is ranked in the 5 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 275
+Patch Found in iteration 0 
+Repair Action: replace 
+ - PathIterator  iterator2  =  p1.getPathIterator(null);  
+ + PathIterator  iterator2  =  p2.getPathIterator(null); 
+ --------------------------------------------------

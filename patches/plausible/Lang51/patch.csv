@@ -1,0 +1,116 @@
+Lang51 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 672
+
+Iteration: 0, Diagnostic: [FE] StringIndexOutOfBoundsException Repair Action: replace 
+ - if (ch == 'y') { 
+ + if(ch == 'y' || ch == 'H') {
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if(ch == 'y' || ch == 'H') { 
+ + if(ch == 'Y' || ch == 'H') {
+Iteration: 2, Repair Action: replace 
+ - if(ch == 'Y' || ch == 'H') { 
+ + if(ch == 'Y' || ch!= 'H') { 
+ ----------------------------------------------------------------------------------------------------
+Lang51 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 672
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (ch == 'y') { 
+ + if(ch =='s') {
+Iteration: 1, Diagnostic: [FE] StringIndexOutOfBoundsException Repair Action: replace 
+ - if(ch =='s') { 
+ + if(ch =='s' || ch == 'y') {
+Iteration: 2, Repair Action: replace 
+ - if(ch =='s' || ch == 'y') { 
+ + if(ch!='s' || ch == 'y') { 
+ ----------------------------------------------------------------------------------------------------
+Lang51 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 672
+
+Iteration: 0, Diagnostic: [FE] StringIndexOutOfBoundsException Repair Action: replace 
+ - if (ch == 'y') { 
+ + if(ch == 'y' || ch == 'H') {
+Iteration: 1, Diagnostic: [CE] orphaned case Repair Action: add 
+ + if(ch == 'y' || ch == 'H') { if(ch == 'y' || ch!= 'H') {
+Iteration: 2, Repair Action: replace 
+ - if(ch == 'y' || ch == 'H') { if(ch == 'y' || ch!= 'H') { 
+ + if(ch == 'y' || ch!= 'H') { 
+ ----------------------------------------------------------------------------------------------------
+Lang51 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 672
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (ch == 'y') { 
+ + if(ch == 'e') {
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if(ch == 'e') { 
+ + if(ch == 'e' || ch == 'E') {
+Iteration: 2, Repair Action: replace 
+ - if(ch == 'e' || ch == 'E') { 
+ + if(ch == 'e' || ch!= 'E') { 
+ ----------------------------------------------------------------------------------------------------
+Lang51 -  FL is ranked in the 10 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 672
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (ch == 'y') { 
+ + if(ch == 't') {
+Iteration: 1, Repair Action: replace 
+ - if(ch == 't') { 
+ + if(ch == 't' || ch == 'y') { 
+ ----------------------------------------------------------------------------------------------------
+Lang51 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 677
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (ch == 'Y') { 
+ + if(ch == 't') {
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if(ch == 't') { 
+ + if(ch == 't' || ch == 'y') {
+Iteration: 2, Repair Action: replace 
+ - if(ch == 't' || ch == 'y') { 
+ + if(ch == 't' || ch == 'Y') { 
+ ----------------------------------------------------------------------------------------------------
+Lang51 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 677
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     if(ch  ==  't')  {  return  (str.charAt(1)  ==  'e'  ||  str.charAt(1)  ==  'E')&&  (str.charAt(2)  =='s'  ||  str.charAt(2)  =='s');  } 
+ --------------------------------------------------
+Lang51 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 677
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     if(ch  ==  't')  {  return  (str.charAt(1)  ==  'e'  ||  str.charAt(1)  ==  'E')&&  (str.charAt(2)  =='s'  ||  str.charAt(2)  ==  'S');  } 
+ --------------------------------------------------
+Lang51 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 677
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     if(ch  ==  't')  {  return  (str.charAt(1)  ==  'y'  &&  str.charAt(1)  ==  'Y') &&  (str.charAt(2)  =='s'  ||  str.charAt(2)  ==  'S');  } 
+ --------------------------------------------------

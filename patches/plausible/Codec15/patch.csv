@@ -1,0 +1,41 @@
+
+Codec15 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; }
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ -  if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; } 
+ + if(firstCode == 'H' || firstCode == preHWChar || 'W' == preHWChar) { return 0; }
+Iteration: 2, Repair Action: replace 
+ - if(firstCode == 'H' || firstCode == preHWChar || 'W' == preHWChar) { return 0; } 
+ + if(firstCode == mappedChar || firstCode == preHWChar || 'W' == preHWChar) { return 0; } 
+ ----------------------------------------------------------------------------------------------------
+Codec15 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; }
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +   if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; } if(firstCode == mappedChar || 'h' == preHWChar || 'W' == preHWChar) { return 0; }
+Iteration: 2, Repair Action: replace 
+ -   if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; } if(firstCode == mappedChar || 'h' == preHWChar || 'W' == preHWChar) { return 0; } 
+ + if(firstCode == mappedChar || 'h' == preHWChar || 'W' == preHWChar) { return 0; } 
+ ----------------------------------------------------------------------------------------------------
+Codec15 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 193
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; }
+Iteration: 1, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ -  if(firstCode == mappedChar || 'H' == preHWChar || 'W' == preHWChar) { return 0; } 
+ + if(firstCode == 'H' || firstCode == preHWChar || 'W' == preHWChar) { return 0; }
+Iteration: 2, Repair Action: replace 
+ - if(firstCode == 'H' || firstCode == preHWChar || 'W' == preHWChar) { return 0; } 
+ + if(firstCode == mappedChar || firstCode == preHWChar || 'W' == preHWChar) { return 0; } 
+ ----------------------------------------------------------------------------------------------------

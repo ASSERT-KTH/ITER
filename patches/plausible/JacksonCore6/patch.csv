@@ -1,0 +1,231 @@
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [CE] variable typeAdapter is already defined in method getTypeAdapter(ConstructorConstructor,Gson,TypeToken<?>,JsonAdapter) Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); TypeAdapter typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); TypeAdapter typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter = typeAdapter.nullSafe(); typeAdapter = typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter = typeAdapter.nullSafe(); typeAdapter = typeAdapter == null? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter == null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter = typeAdapter == null? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSupported();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSupported(); 
+ + if(typeAdapter!= null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter = typeAdapter; } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter = typeAdapter == null? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter!= null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter = typeAdapter!= null? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [CE] variable typeAdapter is already defined in method getTypeAdapter(ConstructorConstructor,Gson,TypeToken<?>,JsonAdapter) Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); TypeAdapter typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); TypeAdapter typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter == null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter = typeAdapter == null? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Diagnostic: [CE] variable typeAdapter is already defined in method getTypeAdapter(ConstructorConstructor,Gson,TypeToken<?>,JsonAdapter) Repair Action: add 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); TypeAdapter typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe();
+Iteration: 2, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); TypeAdapter typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter == null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); typeAdapter = typeAdapter!= null? typeAdapter.nullSafe() : null; } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 67
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - typeAdapter = typeAdapter.nullSafe(); 
+ + typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe();
+Iteration: 1, Repair Action: replace 
+ - typeAdapter =(typeAdapter!= null)? null : typeAdapter.nullSafe(); 
+ + if(typeAdapter == null) { typeAdapter =(typeAdapter == null)? null : typeAdapter.nullSafe(); } 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 2 
+Buggy Location: 67
+Patch Found in iteration 0 
+Repair Action: replace 
+ - typeAdapter  =  typeAdapter.nullSafe();  
+ + typeAdapter  =(typeAdapter  ==  null)?  null  :  typeAdapter.nullSafe(); 
+ --------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 2 
+Buggy Location: 67
+Patch Found in iteration 0 
+Repair Action: replace 
+ - typeAdapter  =  typeAdapter.nullSafe();  
+ +    
+ --------------------------------------------------
+Gson6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 2 
+Buggy Location: 67
+Patch Found in iteration 0 
+Repair Action: replace 
+ - typeAdapter  =  typeAdapter.nullSafe();  
+ + typeAdapter  =(typeAdapter  ==  null?  null  :  typeAdapter.nullSafe()); 
+ --------------------------------------------------
+Gson6 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 43
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - JsonAdapter annotation = targetType.getRawType().getAnnotation(JsonAdapter.class); 
+ + JsonAdapter annotation = targetType.getAnnotation(JsonAdapter.class);
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - JsonAdapter annotation = targetType.getAnnotation(JsonAdapter.class); 
+ + JsonAdapter annotation = JsonAdapter.getAnnotation(JsonAdapter.class);
+Iteration: 2, Repair Action: replace 
+ - JsonAdapter annotation = JsonAdapter.getAnnotation(JsonAdapter.class); 
+ + JsonAdapter annotation = JsonAdapter.class.getAnnotation(JsonAdapter.class); 
+ ----------------------------------------------------------------------------------------------------
+Gson6 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 2 
+Buggy Location: 43
+Patch Found in iteration 0 
+Repair Action: replace 
+ - JsonAdapter  annotation  =  targetType.getRawType().getAnnotation(JsonAdapter.class);  
+ + JsonAdapter  annotation  =  targetType!=  null?  null  :  targetType.getRawType().getAnnotation(JsonAdapter.class); 
+ --------------------------------------------------
+Gson6 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 2 
+Buggy Location: 44
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (annotation  ==  null)  {  
+ + if(annotation  ==  null  ||  annotation!=  null)  { 
+ --------------------------------------------------

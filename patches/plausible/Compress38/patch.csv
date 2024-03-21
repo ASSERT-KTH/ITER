@@ -1,0 +1,635 @@
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_ERROR) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_ERROR Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_ERROR) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ERROR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ERROR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; } 
+ + if(linkFlag == MILLIS_PER_SECOND || linkFlag == MILLIS_PER_SECOND) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_ERROR) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_ERROR Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_ERROR) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ERROR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ERROR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; } 
+ + if(linkFlag == MAX_NAMELEN || linkFlag == MAX_NAMELEN) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_LIST Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_LIST || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_LIST || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return true; } 
+ + if(linkFlag == LF_DIR || linkFlag == LF_DIR) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_LIST Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_LIST || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_LIST || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return true; } 
+ + if(linkFlag == MILLIS_PER_SECOND || linkFlag == MILLIS_PER_SECOND) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_EXTENDS Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return true; } 
+ + if(linkFlag == MAX_NAMELEN || linkFlag == MAX_NAMELEN) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "./ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith( "./  ")|| getName().endsWith( "/  ")); 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "./ ")|| getName().endsWith( "/ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "./ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith( "./  ")|| getName().endsWith( "/  ")); 
+ + return(getName().endsWith( "./. ")|| getName().endsWith( "./.* ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_EXTENDS Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS || linkFlag == EMPTY_TAR_ARCHIVE_SECOND) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS || linkFlag == EMPTY_TAR_ARCHIVE_SECOND) { return true; } 
+ + if(linkFlag == MILLIS_PER_SECOND || linkFlag == MAX_NAMELEN) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_DIR) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_DIR Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_DIR) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_DIR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_DIR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; } 
+ + if(linkFlag == LF_DIR || linkFlag == LF_DIR) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: add 
+ + if(getName().endsWith( "/ ")) { return true; } if(getName().endsWith( "/ ")) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(getName().endsWith(  "/  ")) { return true; } if(getName().endsWith( "/  ")) { return true; } 
+ + Thread.currentThread().setContextClassLoader(TarArchiveEntry.class.getClassLoader()); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().startsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "./ ")|| getName().endsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().startsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().startsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( ".zip ")|| getName().endsWith( ".zip ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().startsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().startsWith( "/ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if(getName().endsWith( "/ ")) { return true; } 
+ + [Delete]
+Iteration: 2, Repair Action: replace 
+ - [Delete] 
+ + if(!getName().endsWith( "/ ")) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().startsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().startsWith( "/ ")); 
+ + return(getName().endsWith( "./ ")|| getName().startsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().startsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().startsWith( "/ ")); 
+ + return(getName().endsWith( ".js ")|| getName().startsWith( ".js ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().startsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().startsWith( "/ ")); 
+ + return(getName().endsWith( ".zip ")|| getName().startsWith( ".zip ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_LITERAL Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_LITERAL || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_LITERAL || linkFlag == EMPTY_TAR_ARCHIVE_LIST) { return true; } 
+ + if(linkFlag == DEFAULT_FILE_MODE || linkFlag == DEFAULT_FILE_MODE) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_DIR) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_DIR Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_DIR) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_DIR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_DIR || linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES) { return false; } 
+ + if(linkFlag == DEFAULT_FILE_MODE || linkFlag == DEFAULT_FILE_MODE) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [CE] incomparable types: byte and TarArchiveEntry[] Repair Action: replace 
+ - return true; 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; }
+Iteration: 1, Diagnostic: [CE] cannot find symbol EMPTY_TAR_ARCHIVE_EXTENDS Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_ENTRIES || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; } 
+ + if(linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; }
+Iteration: 2, Repair Action: replace 
+ - if(linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS || linkFlag == EMPTY_TAR_ARCHIVE_EXTENDS) { return true; } 
+ + if(linkFlag == LF_DIR) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "/ ")|| getName().endsWith( "./ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith(  "/  ")|| getName().endsWith( "./  ")); 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "./ ")|| getName().endsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "/ ")|| getName().endsWith( "./ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith(  "/  ")|| getName().endsWith( "./  ")); 
+ + return(getName().endsWith( "./ ")|| getName().endsWith( "./ ")|| getName().endsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith(  "/  ")|| getName().endsWith( "/  ")); 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith(  "/  ")|| getName().endsWith( "/  ")); 
+ + return(getName().endsWith( ".js ")|| getName().endsWith( ".js ")|| getName().endsWith( ".js ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().startsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().startsWith( "/ ")); 
+ + return(getName().startsWith( "./ ")|| getName().startsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: add 
+ + if(getName().endsWith( "/ ")) { return true; } if(getName().endsWith( ")/ ")) { return true; }
+Iteration: 2, Repair Action: add 
+ - 
+ + if(getName().endsWith(  "/  "))  {  return  true;  }  if(getName().endsWith( ")/  ")) { return true; } if(getName().endsWith( "/ ")) { return true; } if(getName().endsWith( "/ ")) { return true; } if(getName().endsWith( "/ ")) { return true; } if(getName().endsWith( ")/ ")) 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if(getName().endsWith( "/ ")) { return true; } 
+ + [Delete]
+Iteration: 2, Repair Action: replace 
+ - [Delete] 
+ + if(getName().endsWith( ".js ")|| getName().endsWith( ".js ")) { return true; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if(getName().endsWith( "/ ")) { return true; } 
+ + [Delete]
+Iteration: 2, Repair Action: replace 
+ - [Delete] 
+ + if(getName().endsWith( ".js ")|| getName().endsWith( ".js ")) { return false; } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if(getName().endsWith( "/ ")) { return true; } 
+ + [Delete]
+Iteration: 2, Repair Action: replace 
+ - [Delete] 
+ + if(getName().endsWith( ".js ")|| getName().endsWith( ".js ")) { throw new IllegalArgumentException( " "); } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + if(getName().endsWith( "/ ")) { return true; }
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if(getName().endsWith( "/ ")) { return true; } 
+ + [Delete]
+Iteration: 2, Repair Action: replace 
+ - [Delete] 
+ + if(getName().endsWith( ".js ")|| getName().endsWith( ".js ")) { throw new IllegalStateException( " "); } 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().startsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().startsWith( "/ ")); 
+ + return(getName().endsWith( ".jpg ")|| getName().startsWith( ".jpg ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().startsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().startsWith( "/ ")); 
+ + return(getName().endsWith( ".java ")|| getName().startsWith( ".java ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); return(getName().endsWith( "./ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith(  "/  ")|| getName().endsWith(  "/  ")); return(getName().endsWith( "./  ")|| getName().endsWith( "/  ")); 
+ + return(getName().endsWith( ".prototype. ")|| getName().endsWith( ".prototype. ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "./ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "./ ")); 
+ + return(getName().endsWith( ".java ")|| getName().endsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().startsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( ".js ")|| getName().endsWith( ".js ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Diagnostic: [FE] IOException Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 2, Repair Action: replace 
+ - return(getName().startsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().startsWith( ".jpg ")|| getName().endsWith( ".jpg ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( "./ ")|| getName().endsWith( "./ ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( ".js ")|| getName().endsWith( ".js ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( ".zip ")|| getName().endsWith( ".zip ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( ".jpg ")|| getName().endsWith( ".jpg ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 860
+
+Iteration: 0, Diagnostic: [FE] IOException Repair Action: replace 
+ - return true; 
+ + return(getName().endsWith( "/ ")|| getName().endsWith( "/ "));
+Iteration: 1, Repair Action: replace 
+ - return(getName().endsWith( "/ ")|| getName().endsWith( "/ ")); 
+ + return(getName().endsWith( ".java ")|| getName().endsWith( ".java ")); 
+ ----------------------------------------------------------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 860
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + return  false; 
+ --------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 860
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + if(!getName().endsWith( "/ "))  {  return  true;  } 
+ --------------------------------------------------
+Compress38 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 860
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ +    

@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java
+buggy location: 100, suspucious value: 0.7071067811865476
+Original failing tests: 3 -> Current failing tests: 1
+
+-  
++ if(option.getOpt()  ==  null)  {  selected  =  option.getOpt();  }  while(option.getOpt()!= null) { selected = option.getOpt(); }
+
+Cli27 -  FL is ranked in the 2 position(s) with a suspicious value: 0.7071067811865476
+Number of failing tests: 3 
+Buggy Location: 100
+Patch Found in iteration 0 
+Repair Action: replace 
+ - selected  =  option.getOpt();  
+ + selected  =  option.getKey(); 
+ --------------------------------------------------

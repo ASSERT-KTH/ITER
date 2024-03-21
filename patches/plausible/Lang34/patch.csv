@@ -1,0 +1,49 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Lang34/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+buggy location: 148, suspucious value: 0.7006490497453707
+Original failing tests: 27 -> Current failing tests: 1
+
+- return REGISTRY.get() != null ? REGISTRY.get() : Collections.<Object, Object>emptyMap(); 
++ return REGISTRY!= null? REGISTRY.get() : Collections. < Object, Object>emptyMap();
+
+Partial patch is found in FL-1
+Buggy class:projects/Lang34/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+buggy location: 148, suspucious value: 0.7006490497453707
+Original failing tests: 27 -> Current failing tests: 10
+
+- return REGISTRY.get() != null ? REGISTRY.get() : Collections.<Object, Object>emptyMap(); 
++ return REGISTRY.get() == null? REGISTRY.get() : Collections. < Object, Object>emptyMap();
+
+Partial patch is found in FL-2
+Buggy class:projects/Lang34/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+buggy location: 475, suspucious value: 0.42640143271122083
+Original failing tests: 10 -> Current failing tests: 1
+
+- register(value); 
++ if(detail) { appendSummarySize(buffer, fieldName, (( Map <?>)value).size()); } else { appendSummarySize(buffer, fieldName, null); }
+
+Partial patch is found in FL-2
+Buggy class:projects/Lang34/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+buggy location: 475, suspucious value: 0.42640143271122083
+Original failing tests: 10 -> Current failing tests: 1
+
+- register(value); 
++  
+
+Partial patch is found in FL-2
+Buggy class:projects/Lang34/src/main/java/org/apache/commons/lang3/builder/ToStringStyle.java
+buggy location: 475, suspucious value: 0.42640143271122083
+Original failing tests: 10 -> Current failing tests: 2
+
+-  if(value  instanceof  Collection)  {  appendSummarySize(buffer,  fieldName,((  Collection  <?>)value).size());  }  else  {  appendSummarySize(buffer,  fieldName,  ((  Collection  <?>)value).size());  }  
++ while(value instanceof Collection <?>) { appendSummarySize(buffer, fieldName,(( Collection <?>)value).size()); }
+
+Lang34 -  FL is ranked in the FL-2 -  FL is ranked in the 28 position(s) with a suspicious value: 0.674199862463242
+Number of failing tests: 1 
+Buggy Location: 164
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  m.containsKey(value);  
+ + return(m!=  null)&&  m.containsKey(value); 
+ --------------------------------------------------

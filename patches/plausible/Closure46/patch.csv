@@ -1,0 +1,579 @@
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isConstructor()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType() || that.isConstructor()) { if(That.isRecordType() || that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isConstructor()) { if(That.isRecordType() || that.isConstructor()) { 
+ + if(this.isRecordType() || that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isConstructor()) { 
+ + if(!that.isUnknownType() ||!that.isConstructor()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isInferred()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isInferred()) { 
+ + if(that.isRecordType() ||!that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isConstructor()) { 
+ + if(!that.isRecordType() ||!that.isConstructor()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isInferred()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isInferred()) { 
+ + if(that.isRecordType() ||!that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isConstructor()) { 
+ + if(this.isRecordType() ||!that.isConstructor()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType() ||!that.isUnknownType()) { if(this.isRecordType() ||!that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { if(this.isRecordType() ||!that.isUnknownType()) { 
+ + if(this.isRecordType() ||!that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isUnknownType()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType() || that.isUnknownType()) { if(that.isRecordType() || this.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isUnknownType()) { if(that.isRecordType() || this.isUnknownType()) { 
+ + if(that.isRecordType() || this.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isConstructor()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() || that.isConstructor()) { 
+ + if(that.isRecordType() || that.isInterface()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isInterface()) { 
+ + if(this.isRecordType() || that.isInterface()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ + if(!that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Diagnostic: [CE] illegal start of type Repair Action: add 
+ + if(that.isRecordType()) { if(that.isRecordType()) < return super.getLeastSupertype(that);
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType()) { if(that.isRecordType()) < return super.getLeastSupertype(that); 
+ + if(this.isRecordType()) { if(that.isRecordType()) { return super.getLeastSupertype(that); } 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isUnknownType()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType() || that.isUnknownType()) { if(this.isRecordType() || that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isUnknownType()) { if(this.isRecordType() || that.isUnknownType()) { 
+ + if(this.isRecordType() || that.isEquivalentTo(getLeastSupertype(that))) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isUnknownType()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType() || that.isUnknownType()) { if(!that.isRecordType() || that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isUnknownType()) { if(!that.isRecordType() || that.isUnknownType()) { 
+ + if(!that.isRecordType() || that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType()) { 
+ + if(that.isRecordType() || that.isAllType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isAllType()) { 
+ + if(this.isRecordType() || that.isAllType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isInferred()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isInferred()) { 
+ + if(that.isRecordType() ||!that.isAllType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isAllType()) { 
+ + if(!that.isRecordType() ||!that.isAllType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType()) { 
+ + if(that.isRecordType() || that.isFunctionType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() || that.isFunctionType()) { 
+ + if(this.isRecordType() || that.isFunctionType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isFunctionType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isFunctionType()) { 
+ + if(that.isFunctionType() ||!that.isFunctionType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isFunctionType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isFunctionType()) { 
+ + if(that.isUnknownType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isFunctionType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isFunctionType()) { 
+ + if(!that.isUnknownType() ||!that.isFunctionType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType() ||!that.isUnknownType()) { if(That.isRecordType() ||!that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { if(That.isRecordType() ||!that.isUnknownType()) { 
+ + if(that!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if(that.isRecordType()) { 
+ + if(that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType()) { 
+ + if(that!= null || that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isInferred()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isInferred()) { 
+ + if(that.isRecordType() ||!that.isAllType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isAllType()) { 
+ + if(this.isRecordType() ||!that.isAllType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() &&!that.isRecordType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() &&!that.isRecordType()) { 
+ + if(that!= null || that.isUnknownType() &&!that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isFunctionType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isFunctionType()) { 
+ + if(that!= null || that.isUnknownType() ||!that.isFunctionType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + if(that.isRecordType()) { if(that.isRecordType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType()) { if(that.isRecordType()) { 
+ + if(that!= null || that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isConstructor()) { 
+ + if(that!= null || that.isUnknownType() ||!that.isConstructor()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() || that.isFunctionType() ||!that.isRecordType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() || that.isFunctionType() ||!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isUnknownType() || that.isFunctionType() ||!that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that.isConstructor() || that.isUnknownType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that.isUnknownType() || that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ + if(that!= null || that.isConstructor() || that.isRecordType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isConstructor() || that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isConstructor() || that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that!= null || that.isConstructor() || that.isUnknownType() ||!that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isConstructor()) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if(that.isRecordType() || that.isConstructor()) { 
+ + if(that.isUnknownType() || that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() || that.isConstructor()) { 
+ + if(that!= null || that.isUnknownType() || that.isConstructor()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if(that.isRecordType()) { 
+ + if(that.isUnknownType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType()) { 
+ + if(that.isUnknownType() || that.isSubtype(getNativeType(JSTypeNative.UNKNOWN_TYPE))) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isInferred()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isRecordType() ||!that.isInferred()) { 
+ + if(that.isRecordType() ||!that.isAllType()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isAllType()) { 
+ + if(that.isAllType() ||!that.isAllType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isConstructor()) {
+Iteration: 2, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isConstructor()) { 
+ + if(that.isUnknownType() ||!that.isInterface()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isConstructor()) {
+Iteration: 1, Repair Action: replace 
+ - if(that.isRecordType() || that.isConstructor()) { 
+ + if(this.isRecordType() || that.isConstructor()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { 
+ + if(!that.isRecordType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() ||!that.isUnknownType()) {
+Iteration: 1, Repair Action: replace 
+ - if(that.isRecordType() ||!that.isUnknownType()) { 
+ + if(this.isRecordType() ||!that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType() || that.isUnknownType()) {
+Iteration: 1, Repair Action: replace 
+ - if(that.isRecordType() || that.isUnknownType()) { 
+ + if(this.isRecordType() || that.isUnknownType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] NullPointerException Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isRecordType()) {
+Iteration: 1, Repair Action: replace 
+ - if(that.isRecordType()) { 
+ + if(this.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+Number of failing tests: 3 
+Buggy Location: 142
+
+Iteration: 0, Diagnostic: [FE] junit.framework.AssertionFailedError: Expected: ({a: number Repair Action: replace 
+ - if (!that.isRecordType()) { 
+ + if(that.isUnknownType() ||!that.isRecordType()) {
+Iteration: 1, Repair Action: replace 
+ - if(that.isUnknownType() ||!that.isRecordType()) { 
+ + if(that!= null || that.isUnknownType() ||!that.isRecordType()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+
+Number of failing tests: 3 
+Buggy Location: 142
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!that.isRecordType())  {  
+ + if(that.isRecordType()  ||!that.isRecordType())  { 
+ --------------------------------------------------
+Closure46 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5222329678670935
+
+
+Number of failing tests: 3 
+Buggy Location: 142
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!that.isRecordType())  {  
+ + if(that!=  null  ||!that.isRecordType())  { 
+ --------------------------------------------------

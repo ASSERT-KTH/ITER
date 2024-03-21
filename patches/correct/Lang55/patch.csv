@@ -1,0 +1,9 @@
+
+Lang55 -  FL is ranked in the 7 position(s) with a suspicious value: 0.4472135954999579
+Number of failing tests: 1 
+Buggy Location: 118
+Patch Found in iteration 0 
+Repair Action: replace 
+ - stopTime  =  System.currentTimeMillis();  
+ + if(this.runningState  ==  STATE_RUNNING)  {  stopTime  =  System.currentTimeMillis();  }  else  {  this.runningState  =  STATE_STOPPED;  } 
+ --------------------------------------------------

@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart4/source/org/jfree/chart/plot/XYPlot.java
+buggy location: 1745, suspucious value: 0.82915619758885
+Original failing tests: 22 -> Current failing tests: 1
+
+-  for(int  i  =  1;  i  <  this.datasets.size();  i++)  {  
++ for(int i = 0; --i < this.datasets.size(); i++) {
+
+Chart4 -  FL is ranked in the 8 position(s) with a suspicious value: 0.8424235391742319
+Number of failing tests: 22 
+Buggy Location: 4493
+Patch Found in iteration 0 
+Repair Action: replace 
+ - Collection  c  =  r.getAnnotations();  
+ + Collection  c  =  this.getAnnotations(); 
+ --------------------------------------------------

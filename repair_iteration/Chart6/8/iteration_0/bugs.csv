@@ -1,3 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-15	[BUG] [BUGGY] return (Shape) get(index); [FE] AssertionFailedError [CONTEXT] public Shape getShape(int index) { [BUGGY] return (Shape) get(index); [BUGGY] } [CLASS] ShapeList [METHOD] getShape [RETURN_TYPE] Shape  int index [VARIABLES] boolean int index  	projects/Chart6/source/org/jfree/chart/util/ShapeList.java	0.7071067811865475	70	70	2	replace	
-16	[BUG] [BUGGY] [FE] AssertionFailedError [CONTEXT] public Shape getShape(int index) { [BUGGY] [BUGGY] return (Shape) get(index); } [CLASS] ShapeList [METHOD] getShape [RETURN_TYPE] Shape  int index [VARIABLES] boolean int index  	projects/Chart6/source/org/jfree/chart/util/ShapeList.java	0.7071067811865475	70	70	2	add	

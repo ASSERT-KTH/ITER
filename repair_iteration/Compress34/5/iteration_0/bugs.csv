@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-9	[BUG] [BUGGY] public long getGID() { return ZipUtil.bigToLong(gid); } [FE] AssertionError [CONTEXT] [BUGGY] public long getGID() { return ZipUtil.bigToLong(gid); } [BUGGY]  [CLASS] X7875_NewUnix [METHOD] getGID [RETURN_TYPE] long  [VARIABLES] BigInteger ONE_THOUSAND gid uid ZipShort HEADER_ID boolean long serialVersionUID int version  	projects/Compress34/src/main/java/org/apache/commons/compress/archivers/zip/X7875_NewUnix.java	0.7071067811865475	105	105	1	replace	

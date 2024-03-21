@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-21	[BUG] [BUGGY] return; [FE] NullPointerException [CONTEXT] [BUGGY] return; [BUGGY] } out.write("\n"); for (int i = 1, size = stackSize; i < size; i++) { out.write(indent); } } [CLASS] JsonWriter [METHOD] newline [RETURN_TYPE] void  	projects/Gson9/gson/src/main/java/com/google/gson/stream/JsonWriter.java	0.24253562503633297	589	589	1	replace	

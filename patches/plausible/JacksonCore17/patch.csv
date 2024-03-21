@@ -1,0 +1,630 @@
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ + if(ch == SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ + if(ch < MAX_BYTES_TO_BUFFER) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ + if(ch < MAX_BYTES_TO_BUFFER) { if(ch > SURR2_LAST) { return inputOffset; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ + if(ch == SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ + if(ch < MAX_BYTES_TO_BUFFER) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch > SURR1_FIRST) {
+Iteration: 1, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - if(ch > SURR1_FIRST) { 
+ + if(ch > MAX_BYTES_TO_BUFFER) {
+Iteration: 2, Repair Action: replace 
+ - if(ch > MAX_BYTES_TO_BUFFER) { 
+ + if(ch == MAX_BYTES_TO_BUFFER) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ + if(ch < SURR1_FIRST || ch > SURR2_LAST) { if(inputEnd > MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(inputEnd < = MAX_BYTES_TO_BUFFER) { return inputOffset; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(inputEnd < = MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ + if(ch < SURR1_FIRST || ch > SURR2_LAST) { if(inputEnd < MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(inputEnd < = MAX_BYTES_TO_BUFFER) { return inputOffset+1; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(inputEnd < = MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ + if(ch < SURR1_FIRST || ch > SURR2_LAST) { if(inputEnd < MAX_BYTES_TO_BUFFER) { return inputOffset+1; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch > SURR1_FIRST) {
+Iteration: 1, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - if(ch > SURR1_FIRST) { 
+ + if(ch > MAX_BYTES_TO_BUFFER) {
+Iteration: 2, Repair Action: replace 
+ - if(ch > MAX_BYTES_TO_BUFFER) { 
+ + if(ch > SURR2_LAST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ + if(ch < SURR1_FIRST || ch > SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] ']' expected Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + 
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: add 
+ + if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; }
+Iteration: 2, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ + if(ch < SURR2_LAST) { if(ch > MAX_BYTES_TO_BUFFER) { return inputOffset; } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR1_FIRST || ch > SURR2_LAST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR1_FIRST || ch > SURR2_LAST) { 
+ + if(ch == SURR1_FIRST || ch == SURR2_LAST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch >= SURR2_FIRST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch >= SURR2_FIRST) { 
+ + if(ch == SURR2_FIRST || ch > SURR2_LAST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch > SURR1_FIRST || ch < SURR2_LAST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch > SURR1_FIRST || ch < SURR2_LAST) { 
+ + if(ch == SURR1_FIRST || ch >= SURR2_LAST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR1_FIRST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR1_FIRST) { 
+ + if(ch == SURR1_FIRST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR2_FIRST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR2_FIRST) { 
+ + if(ch == SURR2_FIRST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR2_LAST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { 
+ + if(ch == SURR2_LAST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR2_LAST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { 
+ + if(ch < MAX_BYTES_TO_BUFFER) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR1_FIRST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR1_FIRST) { 
+ + if(ch < SURR1_FIRST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+Number of failing tests: 1 
+Buggy Location: 1883
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - if (ch >= SURR1_FIRST) { 
+ + if(ch < = SURR2_LAST) {
+Iteration: 1, Repair Action: replace 
+ - if(ch < = SURR2_LAST) { 
+ + if(ch < MAX_BYTES_TO_BUFFER || ch > SURR2_LAST) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 46 position(s) with a suspicious value: 0.7071067811865475
+
+
+Number of failing tests: 1 
+Buggy Location: 1883
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (ch  >=  SURR1_FIRST)  {  
+ + if(ch  <  SURR1_FIRST  ||  ch  >  SURR2_LAST)  { 
+ --------------------------------------------------
+JacksonCore17 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 535
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - text.getChars(offset, offset+len2, buf, 0); 
+ + text.getChars(0, offset+len2, buf, len2);
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + text.getChars(0, offset+len2, buf, len2); text.getChars(0, offset+len2, buf, len2);
+Iteration: 2, Repair Action: replace 
+ - text.getChars(0, offset+len2, buf, len2); text.getChars(0, offset+len2, buf, len2); 
+ + if(len2 == 0) { text.getChars(0, offset+len2, buf, len2); text.getChars(0, offset+len2, buf, len2); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 535
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - text.getChars(offset, offset+len2, buf, 0); 
+ + text.getChars(0, offset+len2, buf, len2);
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + text.getChars(0, offset+len2, buf, len2); text.getChars(0, offset+len2, buf, len2);
+Iteration: 2, Repair Action: replace 
+ - text.getChars(0, offset+len2, buf, len2); text.getChars(0, offset+len2, buf, len2); 
+ + if(len2 < 0) { text.getChars(0, offset+len2, buf, len2); text.getChars(0, offset+len2, buf, len2); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 535
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - text.getChars(offset, offset+len2, buf, 0); 
+ + text.getChars(0, offset+len2, buf, 0);
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: add 
+ + text.getChars(0, offset+len2, buf, 0); text.getChars(0, offset+len2, buf, 0);
+Iteration: 2, Repair Action: replace 
+ - text.getChars(0, offset+len2, buf, 0); text.getChars(0, offset+len2, buf, 0); 
+ + if(len2 == 0) { text.getChars(0, offset+len2, buf, 0); text.getChars(0, offset+len2, buf, 0); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 535
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - text.getChars(offset, offset+len2, buf, 0); 
+ + text.getChars(0, offset+len2, buf, len2);
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - text.getChars(0, offset+len2, buf, len2); 
+ + if(len2 > 0) { text.getChars(0, offset+len2, buf, len2); }
+Iteration: 2, Repair Action: replace 
+ - if(len2 > 0) { text.getChars(0, offset+len2, buf, len2); } 
+ + if(len2 < 0) { text.getChars(0, offset+len2, buf, len2); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 535
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - text.getChars(offset, offset+len2, buf, 0); 
+ + text.getChars(0, offset+len2, buf, 0);
+Iteration: 1, Repair Action: replace 
+ - text.getChars(0, offset+len2, buf, 0); 
+ + text.getChars(0, len2, buf, 0); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 535
+Patch Found in iteration 0 
+Repair Action: replace 
+ - text.getChars(offset,  offset+len2,  buf,  0);  
+ +    
+ --------------------------------------------------
+JacksonCore17 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 536
+Patch Found in iteration 0 
+Repair Action: replace 
+ - writeRaw(buf,  0,  len2);  
+ +    
+ --------------------------------------------------
+JacksonCore17 -  FL is ranked in the 5 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 536
+Patch Found in iteration 0 
+Repair Action: replace 
+ - writeRaw(buf,  0,  len2);  
+ + _verifyValueWrite( "write  text  value "); 
+ --------------------------------------------------
+JacksonCore17 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 525
+
+Iteration: 0, Diagnostic: [CE] incompatible types Repair Action: replace 
+ - final char[] buf = _charBuffer; 
+ + char[] buf = text;
+Iteration: 1, Repair Action: replace 
+ - char[] buf = text; 
+ + char[] buf = text.toCharArray(); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 525
+
+Iteration: 0, Diagnostic: [CE] incompatible types Repair Action: replace 
+ - final char[] buf = _charBuffer; 
+ + final char[] buf = text;
+Iteration: 1, Repair Action: replace 
+ - final char[] buf = text; 
+ + final char[] buf = text.toCharArray(); 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null) {
+Iteration: 1, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while(buf!= null) { 
+ + while(buf!= null && isEnabled(Feature.QUOTE_FIELD_NAMES)) {
+Iteration: 2, Repair Action: replace 
+ - while(buf!= null && isEnabled(Feature.QUOTE_FIELD_NAMES)) { 
+ + while(buf == null && isEnabled(Feature.QUOTE_FIELD_NAMES)) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null && buf.length > 0) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - while(buf!= null && buf.length > 0) { 
+ + while(buf!= null && buf.length < = 0) {
+Iteration: 2, Repair Action: replace 
+ - while(buf!= null && buf.length < = 0) { 
+ + while(buf!= null && buf.length == 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ - while (len > 0) { 
+ + 
+Iteration: 1, Diagnostic: [CE] class, interface, or enum expected Repair Action: add 
+ + _verifyValueWrite( "write text value "); if(buf!= null) { writeRaw(buf, 0, buf.length); }
+Iteration: 2, Repair Action: replace 
+ - _verifyValueWrite( "write text value "); if(buf!= null) { writeRaw(buf, 0, buf.length); } 
+ + if(buf == null) { _verifyValueWrite( "write text value "); if(buf!= null) { writeRaw(buf, 0, buf.length); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ - while (len > 0) { 
+ + 
+Iteration: 1, Diagnostic: [FE] JsonGenerationException Repair Action: add 
+ + if(buf!= null) { if(_outputTail >= _outputEnd) { writeRaw(buf, 0, buf.length); }
+Iteration: 2, Repair Action: replace 
+ - if(buf!= null) { if(_outputTail >= _outputEnd) { writeRaw(buf, 0, buf.length); } 
+ + if(buf == null) { if(_outputTail >= _outputEnd) { writeRaw(buf, 0, buf.length); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ - while (len > 0) { 
+ + 
+Iteration: 1, Diagnostic: [CE] class, interface, or enum expected Repair Action: add 
+ + _verifyValueWrite( "write text value "); if(buf!= null) { throw new IllegalArgumentException( " "); }
+Iteration: 2, Repair Action: replace 
+ - _verifyValueWrite( "write text value "); if(buf!= null) { throw new IllegalArgumentException( " "); } 
+ + if(buf == null) { _verifyValueWrite( "write text value "); if(buf!= null) { throw new IllegalArgumentException( " "); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null && len > 0) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + while(buf!= null && len > 0) { if(buf!= null && len > 0) { for(int len = buf.length; len < len; len++) { writeRaw(buf, 0, len); }
+Iteration: 2, Repair Action: replace 
+ - while(buf!= null && len > 0) { if(buf!= null && len > 0) { for(int len = buf.length; len < len; len++) { writeRaw(buf, 0, len); } 
+ + while(buf!= null && len < 0) { if(buf!= null && buf.length > 0) { writeRaw(buf, 0, buf.length); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null && buf.length > 0) {
+Iteration: 1, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while(buf!= null && buf.length > 0) { 
+ + while(buf!= null && buf.length >= 0) {
+Iteration: 2, Repair Action: replace 
+ - while(buf!= null && buf.length >= 0) { 
+ + while(buf!= null && buf.length < 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - while (len > 0) { 
+ + while (len < = 0) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - while (len < = 0) { 
+ + while (offset < = 0) {
+Iteration: 2, Repair Action: replace 
+ - while (offset < = 0) { 
+ + while (offset < 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - while (len > 0) { 
+ + while (len < = 0) {
+Iteration: 1, Diagnostic: [CE] illegal start of expression Repair Action: replace 
+ - while (len < = 0) { 
+ + while (offset < = 0) {
+Iteration: 2, Repair Action: replace 
+ - while (offset < = 0) { 
+ + while (offset == 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf.length > 0) {
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: add 
+ + while(buf.length > 0) { if(buf.length > 0) { while(buf.length > 0) { }
+Iteration: 2, Repair Action: replace 
+ - while(buf.length > 0) { if(buf.length > 0) { while(buf.length > 0) { } 
+ + while(buf == null) { if(buf.length > 0) { } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [CE] class, interface, or enum expected Repair Action: replace 
+ - while (len > 0) { 
+ + 
+Iteration: 1, Diagnostic: [CE] class, interface, or enum expected Repair Action: add 
+ + _verifyValueWrite( "write text value "); if(buf!= null) { writeRaw(buf, 0, buf.length); }
+Iteration: 2, Repair Action: replace 
+ - _verifyValueWrite( "write text value "); if(buf!= null) { writeRaw(buf, 0, buf.length); } 
+ + if(text.length() == 0) { _verifyValueWrite( "write text value "); if(buf!= null) { writeRaw(buf, 0, buf.length); } 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null && buf.length > 0) {
+Iteration: 1, Repair Action: replace 
+ - while(buf!= null && buf.length > 0) { 
+ + while(buf == null && buf.length > 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null && len > 0) {
+Iteration: 1, Repair Action: replace 
+ - while(buf!= null && len > 0) { 
+ + while(buf!= null && len < 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf.length > 0) {
+Iteration: 1, Repair Action: replace 
+ - while(buf.length > 0) { 
+ + while(buf.length < 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf.length > 0) {
+Iteration: 1, Repair Action: replace 
+ - while(buf.length > 0) { 
+ + while(buf.length == 0) { 
+ ----------------------------------------------------------------------------------------------------
+JacksonCore17 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 533
+
+Iteration: 0, Diagnostic: [FE] JsonGenerationException Repair Action: replace 
+ - while (len > 0) { 
+ + while(buf!= null) {
+Iteration: 1, Repair Action: replace 
+ - while(buf!= null) { 
+ + while(buf == null) { 
+ ----------------------------------------------------------------------------------------------------

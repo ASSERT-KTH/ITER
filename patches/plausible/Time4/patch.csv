@@ -1,0 +1,23 @@
+Time4 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 464
+
+Iteration: 0, Diagnostic: [CE] no suitable constructor found for Partial(Chronology,int[],DateTimeFieldType[]) Repair Action: replace 
+ - Partial newPartial = new Partial(iChronology, newTypes, newValues); 
+ + Partial newPartial = new Partial(iChronology, newValues, newTypes);
+Iteration: 1, Repair Action: replace 
+ - Partial newPartial = new Partial(iChronology, newValues, newTypes); 
+ + Partial newPartial = new Partial(newTypes, newValues); 
+ ----------------------------------------------------------------------------------------------------
+Time4 -  FL is ranked in the 23 position(s) with a suspicious value: 0.2773500981126146
+
+Number of failing tests: 1 
+Buggy Location: 464
+
+Iteration: 0, Diagnostic: [CE] no suitable constructor found for Partial(Chronology,int[],DateTimeFieldType[]) Repair Action: replace 
+ - Partial newPartial = new Partial(iChronology, newTypes, newValues); 
+ + Partial newPartial = new Partial(iChronology, newValues, newTypes);
+Iteration: 1, Repair Action: replace 
+ - Partial newPartial = new Partial(iChronology, newValues, newTypes); 
+ + Partial newPartial = new Partial(newTypes, newValues, iChronology); 

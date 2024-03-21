@@ -1,0 +1,555 @@
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  eatTheRest = false; tokens.clear();
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +   eatTheRest = false; tokens.clear(); eatTheRest = false; tokens.clear(); currentOption = null;
+Iteration: 2, Repair Action: replace 
+ -   eatTheRest = false; tokens.clear(); eatTheRest = false; tokens.clear(); currentOption = null; 
+ + tokens.clear(); eatTheRest = true; tokens.clear(); currentOption = null; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  ArrayList tokens = new ArrayList();
+Iteration: 1, Diagnostic: [CE] variable tokens is already defined in method init() Repair Action: add 
+ +   ArrayList tokens = new ArrayList(); ArrayList tokens = new ArrayList(); this.eatTheRest = true;
+Iteration: 2, Repair Action: replace 
+ -   ArrayList tokens = new ArrayList(); ArrayList tokens = new ArrayList(); this.eatTheRest = true; 
+ + ArrayList tokens = new ArrayList(); this.eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  tokens.add( "-- ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ -  tokens.add( "-- "); 
+ + tokens.remove( "-- ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.remove( "-- "); tokens.remove( "-- "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  eatTheRest = false; tokens.clear();
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +   eatTheRest = false; tokens.clear(); tokens.clear();
+Iteration: 2, Repair Action: add 
+ - 
+ +     eatTheRest  =  false;  tokens.clear();  tokens.clear(); eatTheRest = true; tokens.clear(); tokens.clear(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  tokens.add( "-- ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +   tokens.add( "-- "); tokens.add( "-- "); eatTheRest = true;
+Iteration: 2, Repair Action: add 
+ - 
+ +     tokens.add(  "--  ");  tokens.add( "--  "); eatTheRest = true; tokens.clear(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  tokens.clear();
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ -  tokens.clear(); 
+ + tokens.add( "n ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "n "); tokens.add( "n "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; 
+ + currentOption = Option.OK_OPTIONAL;
+Iteration: 2, Repair Action: add 
+ - 
+ + currentOption = Option.OK_OPTIONAL; currentOption = Option.OK_OPTIONAL; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; 
+ + currentOption = Option.OK_OPTIONAL;
+Iteration: 2, Repair Action: add 
+ - 
+ + currentOption = Option.OK_OPTIONAL; tokens.clear(); currentOption = Option.OK_OPTIONAL; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; 
+ + currentOption = Option.OK_OPTIONAL;
+Iteration: 2, Repair Action: add 
+ - 
+ + currentOption = Option.OK_OPTIONAL; ArrayList < Option> tokens = new ArrayList < Option>(tokens.size()); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; 
+ + currentOption = Option.OK_OPTIONAL;
+Iteration: 2, Repair Action: add 
+ - 
+ + currentOption = Option.OK_OPTIONAL; tokens.clear(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; 
+ + currentOption = Option.OK_OPTIONAL;
+Iteration: 2, Repair Action: add 
+ - 
+ + currentOption = Option.OK_OPTIONAL; ArrayList < Option> tokens = new ArrayList < Option>(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ + currentOption = Option.OK_STANDARD; ArrayList < Option> tokens = new ArrayList < Option>(tokens);
+Iteration: 2, Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; ArrayList < Option> tokens = new ArrayList < Option>(tokens); 
+ + currentOption = Option.OK_STANDARD; tokens = new ArrayList < Option>(tokens); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ + currentOption = Option.OK_STANDARD; ArrayList < Option> tokens = new ArrayList < Option>(tokens);
+Iteration: 2, Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; ArrayList < Option> tokens = new ArrayList < Option>(tokens); 
+ + options.add(Option.OK_STANDARD); tokens.addAll(tokens); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  eatTheRest = false; tokens.clear();
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ -  eatTheRest = false; tokens.clear(); 
+ + if(tokens == null) { eatTheRest = false; tokens.clear(); }
+Iteration: 2, Repair Action: replace 
+ - if(tokens == null) { eatTheRest = false; tokens.clear(); } 
+ + if(tokens!= null) { eatTheRest = true; tokens.clear(); } 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  tokens.clear(); currentOption = null;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +   tokens.clear(); currentOption = null; eatTheRest = false; tokens.clear(); currentOption = null;
+Iteration: 2, Repair Action: replace 
+ -   tokens.clear(); currentOption = null; eatTheRest = false; tokens.clear(); currentOption = null; 
+ + if(!eatTheRest) { tokens.clear(); currentOption = null; eatTheRest = true; tokens.clear(); currentOption = null; } 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  eatTheRest = false; tokens.clear();
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ -  eatTheRest = false; tokens.clear(); 
+ + if(!eatTheRest) { eatTheRest = false; tokens.clear(); }
+Iteration: 2, Repair Action: replace 
+ - if(!eatTheRest) { eatTheRest = false; tokens.clear(); } 
+ + if(!eatTheRest) { eatTheRest = true; tokens.clear(); } 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  eatTheRest = false; tokens.clear();
+Iteration: 1, Repair Action: add 
+ - 
+ +   eatTheRest = false; tokens.clear(); eatTheRest = true; tokens.clear(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ +  tokens.clear(); currentOption = null;
+Iteration: 1, Repair Action: add 
+ - 
+ +   tokens.clear(); currentOption = null; eatTheRest = true; tokens.clear(); currentOption = null; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 53
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - currentOption = null; 
+ + currentOption = Option.OK_STANDARD;
+Iteration: 1, Repair Action: replace 
+ - currentOption = Option.OK_STANDARD; 
+ + currentOption = Options.OK_STANDARD; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 53
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     eatTheRest  =  true;  tokens.clear(); 
+ --------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "n ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "n "); 
+ + tokens.add( " ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "  "); tokens.add( " "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "- ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "- "); 
+ + tokens.add( "-n ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "-n "); tokens.add( "-n "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "u ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "u "); 
+ + tokens.add( "none ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "none "); tokens.add( "none "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "u ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "u "); 
+ + tokens.add( "utf-8 ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "utf-8 "); tokens.add( "utf-8 "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "u ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "u "); 
+ + tokens.add( "this ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "this "); tokens.add( "this "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "-- ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "-- "); 
+ + tokens.add( "--n ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "--n "); tokens.add( "--n "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "-- ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "-- "); 
+ + tokens.remove( "-- ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.remove( "-- "); tokens.remove( "-- "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "- ");
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.add( "- "); 
+ + tokens.remove( "- ");
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.remove( "- "); tokens.remove( "- "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "-- ");
+Iteration: 1, Diagnostic: [FE] ArrayStoreException Repair Action: replace 
+ - tokens.add( "-- "); 
+ + tokens.add( "-- ".equals(this.options));
+Iteration: 2, Repair Action: add 
+ - 
+ + tokens.add( "-- ".equals(this.options)); tokens.add( "-- ".equals(this.options)); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "-- ");
+Iteration: 1, Repair Action: add 
+ - 
+ + tokens.add( "-- "); tokens.add( "-- "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "n ");
+Iteration: 1, Repair Action: add 
+ - 
+ + tokens.add( "n "); tokens.add( "n "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "- ");
+Iteration: 1, Repair Action: add 
+ - 
+ + tokens.add( "- "); tokens.add( "- "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + tokens.add( "u ");
+Iteration: 1, Repair Action: add 
+ - 
+ + tokens.add( "u "); tokens.add( "u "); eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 52
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - tokens.clear(); 
+ + 
+Iteration: 1, Repair Action: add 
+ - 
+ +   eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 51
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - eatTheRest = false; 
+ + this.eatTheRest = false;
+Iteration: 1, Diagnostic: [CE] variable tokens might not have been initialized Repair Action: add 
+ + this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>(tokens.size());
+Iteration: 2, Repair Action: replace 
+ - this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>(tokens.size()); 
+ + this.eatTheRest = true; tokens = new ArrayList < Option>(tokens.size()); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 51
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - eatTheRest = false; 
+ + this.eatTheRest = false;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ + this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>();
+Iteration: 2, Repair Action: replace 
+ - this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>(); 
+ + this.eatTheRest = true; ArrayList < Option> tokens = new ArrayList < Option>(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 51
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - eatTheRest = false; 
+ + this.eatTheRest = false;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ + this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>();
+Iteration: 2, Repair Action: replace 
+ - this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>(); 
+ + this.eatTheRest = true; tokens = new ArrayList < Option>(); 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 51
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - eatTheRest = false; 
+ + this.eatTheRest = false;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ + this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>(); this.eatTheRest = false;
+Iteration: 2, Repair Action: replace 
+ - this.eatTheRest = false; ArrayList < Option> tokens = new ArrayList < Option>(); this.eatTheRest = false; 
+ + ArrayList < Option> tokens = new ArrayList < Option>(); this.eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 51
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - eatTheRest = false; 
+ + this.eatTheRest = false;
+Iteration: 1, Diagnostic: [FE] UnrecognizedOptionException Repair Action: add 
+ + this.eatTheRest = false; this.eatTheRest = false;
+Iteration: 2, Repair Action: replace 
+ - this.eatTheRest = false; this.eatTheRest = false; 
+ + this.eatTheRest = true; this.eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 51
+
+Iteration: 0, Diagnostic: [FE] UnrecognizedOptionException Repair Action: replace 
+ - eatTheRest = false; 
+ + this.eatTheRest = false;
+Iteration: 1, Repair Action: replace 
+ - this.eatTheRest = false; 
+ + this.eatTheRest = true; 
+ ----------------------------------------------------------------------------------------------------
+Cli2 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 51
+Patch Found in iteration 0 
+Repair Action: replace 
+ - eatTheRest  =  false;  
+ + eatTheRest  =  true; 

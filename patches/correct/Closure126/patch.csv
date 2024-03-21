@@ -1,0 +1,25 @@
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  Node elseBlock = n.getFirstChild();
+ -  tryMinimizeExits(finallyBlock, exitType, labelName);
+ +  
+ ---------------------------------------------------------------------------
+
+Closure126 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 2 
+Buggy Location: 143
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - tryMinimizeExits(finallyBlock, exitType, labelName); 
+ + tryMinimizeExits(n, exitType, labelName);
+Iteration: 1, Diagnostic: [CE] illegal start of type Repair Action: add 
+ + tryMinimizeExits(n, exitType, labelName); tryMinimizeExits(n, exitType, labelName); }
+Iteration: 2, Repair Action: replace 
+ - tryMinimizeExits(n, exitType, labelName); tryMinimizeExits(n, exitType, labelName); } 
+ + if(finallyBlock == null) { tryMinimizeExits(n, exitType, labelName); } 
+ ----------------------------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+
+Time19 -  FL is ranked in the 1 position(s) with a suspicious value: 0.11547005383792514
+Number of failing tests: 1 
+Buggy Location: 900
+Patch Found in iteration 0 
+Repair Action: replace 
+ - }  else  if  (offsetLocal  >  0)  {  
+ + }  else  if(offsetLocal  >=  0)  { 
+ --------------------------------------------------

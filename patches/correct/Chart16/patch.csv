@@ -1,0 +1,25 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java
+buggy location: 207, suspucious value: 0.7559289460184544
+Original failing tests: 8 -> Current failing tests: 6
+
+- this.seriesKeys = null; 
++ this.seriesKeys = new Comparable[] { } ;
+
+Partial patch is found in FL-2
+Buggy class:projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java
+buggy location: 208, suspucious value: 0.6546536707079772
+Original failing tests: 6 -> Current failing tests: 1
+
+- this.categoryKeys = null; 
++ this.categoryKeys = new Comparable[] { } ;
+
+Chart16 -  FL is ranked in the FL-3 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 338
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (categoryKeys.length  !=  this.startData[0].length)  {  
+ + if  (this.startData.length!=  categoryKeys.length)  { 
+ --------------------------------------------------

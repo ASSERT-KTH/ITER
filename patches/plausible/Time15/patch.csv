@@ -1,0 +1,13 @@
+Time15/2
+
+Time15 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 138
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - return -val1; 
+ + if(val1 < val2) { return -val2; } else { safeMultiply(val1, val2); }
+Iteration: 1, Repair Action: replace 
+ - if(val1 < val2) { return -val2; } else { safeMultiply(val1, val2); } 
+ + if(val2 < val1) { return -val1; } else { safeMultiply(val2, val1); } 
+ ----------------------------------------------------------------------------------------------------

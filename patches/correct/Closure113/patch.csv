@@ -1,0 +1,10 @@
+ Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(provided!=  null  ||   requiresLevel.isOn() )  { 
+ --------------------------------------------------

@@ -1,0 +1,9 @@
+
+Math44 -  FL is ranked in the 36 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 283
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!  statesInitialized)  {  
+ + if(eventsStates!=  null)  { 
+ --------------------------------------------------

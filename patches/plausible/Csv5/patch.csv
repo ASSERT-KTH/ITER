@@ -1,0 +1,23 @@
+Csv5 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 117
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - } else if (format.isEscaping()) { 
+ + 
+Iteration: 1, Repair Action: add 
+ - 
+ +   if(newRecord) { out.append(format.getDelimiter()); } 
+ ----------------------------------------------------------------------------------------------------
+Csv5 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 117
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - } else if (format.isEscaping()) { 
+ + 
+Iteration: 1, Repair Action: add 
+ - 
+ +   if(newRecord) { out.append( "n "); } 

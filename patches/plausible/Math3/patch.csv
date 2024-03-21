@@ -1,0 +1,9 @@
+
+Math3 -  FL is ranked in the 3 position(s) with a suspicious value: 0.5
+Number of failing tests: 1 
+Buggy Location: 823
+Patch Found in iteration 0 
+Repair Action: replace 
+ - final  double[]  prodHigh  =  new  double[len];  
+ + final  double[]  prodHigh  =  new  double[len  +  1]; 
+ --------------------------------------------------

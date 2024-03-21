@@ -1,3 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-1	[BUG] [BUGGY] return new LinkedHashMap<String, Integer>(this.headerMap); [FE] NullPointerException [CONTEXT] [BUGGY] return new LinkedHashMap<String, Integer>(this.headerMap); [BUGGY] } [CLASS] CSVParser 1 [METHOD] getHeaderMap [RETURN_TYPE] Map  	projects/Csv4/src/main/java/org/apache/commons/csv/CSVParser.java	0.7071067811865475	288	288	1	replace	
-2	[BUG] [BUGGY] [FE] NullPointerException [CONTEXT] [BUGGY] [BUGGY] return new LinkedHashMap<String, Integer>(this.headerMap); } [CLASS] CSVParser 1 [METHOD] getHeaderMap [RETURN_TYPE] Map  	projects/Csv4/src/main/java/org/apache/commons/csv/CSVParser.java	0.7071067811865475	288	288	1	add	

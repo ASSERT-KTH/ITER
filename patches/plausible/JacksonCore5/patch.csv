@@ -1,0 +1,787 @@
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezone)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if (!cleaned.equals(timezone)) { 
+ + if(clean.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(clean.equals(timezoneId)) { 
+ + if(act.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned!= null && cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned == null && cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned == null || cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.length() == 0) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.length() == 0) { 
+ + if(cleaned == null || cleaned.length() == 0) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.length() == 0) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.length() == 0) { 
+ + if(cleaned!= null && cleaned.length() == 0) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezone)) {
+Iteration: 1, Diagnostic: [CE] illegal start of type Repair Action: add 
+ + if (!cleaned.equals(timezone)) { if (!cleaned.equals(timezone)) < throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +timezone.getID()); }
+Iteration: 2, Repair Action: replace 
+ - if (!cleaned.equals(timezone)) { if (!cleaned.equals(timezone)) < throw new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +timezone.getID()); } 
+ + if(cleaned == null) { if (!cleaned.equals(timezone)) { throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +timezone.getID()); } 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezoneIndicator)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if (!cleaned.equals(timezoneIndicator)) { 
+ + if(clean.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(clean.equals(timezoneIndicator)) { 
+ + if(act.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol cleane Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(cleane.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleane.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol cleane Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(cleane.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleane.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(timezone.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.equals(timezoneId)) { 
+ + if(cleaned == null && cleaned.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null || cleaned.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null || cleaned.equals(timezoneId)) { 
+ + if(cleaned == null || cleaned.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezoneIndicator)) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned!= null ||!cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null ||!cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned == null &&!cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned!= null ||!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null ||!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(cleaned == null &&!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezone)) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezone)) { 
+ + if(cleaned!= null ||!cleaned.equals(timezone)) {
+Iteration: 2, Repair Action: replace 
+ - if(cleaned!= null ||!cleaned.equals(timezone)) { 
+ + if(cleaned == null &&!cleaned.equals(timezone)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(clean.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(clean.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ + if(act.equals(timezoneId)&&!cleaned.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezone)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if (!cleaned.equals(timezone)) { 
+ + if(clean.equals(timezone)) {
+Iteration: 2, Repair Action: replace 
+ - if(clean.equals(timezone)) { 
+ + if(act.equals(timezone)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if (!cleaned.equals(timezone)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if (!cleaned.equals(timezone)) { 
+ + if(clean.equals(timezone)) {
+Iteration: 2, Repair Action: replace 
+ - if(clean.equals(timezone)) { 
+ + if(timezoneId.equals(timezone)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(clean == null) {
+Iteration: 2, Repair Action: replace 
+ - if(clean == null) { 
+ + if(timezoneId == null) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null &&!cleaned.equals(timezoneId)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol clean Repair Action: replace 
+ - if(cleaned!= null &&!cleaned.equals(timezoneId)) { 
+ + if(clean == null &&!cleaned.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(clean == null &&!cleaned.equals(timezoneId)) { 
+ + if(cleaned == null &&!act.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null ||!cleaned.equals(timezoneId)) {
+Iteration: 1, Repair Action: replace 
+ - if(cleaned!= null ||!cleaned.equals(timezoneId)) { 
+ + if(cleaned == null &&!cleaned.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned == null) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 18 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 237
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!cleaned.equals(timezoneId)) { 
+ + if(cleaned!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(cleaned!= null) { 
+ + if(cleaned!= null && cleaned.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned);
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned);
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ ", given, resolves to " +cleaned); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned);
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned); JsonSyntaxException e = new JsonSyntaxException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned);
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned); JsonSyntaxException e = new JsonSyntaxException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned); 
+ + Throwable msg = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ ", given, resolves to " +cleaned.toString()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); 
+ + Throwable reason = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned);
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolved to  " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolved to  " +cleaned); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned);
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolved to  " +cleaned); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolved to  " +cleaned); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ ", given, resolved to " +cleaned); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); JsonSyntaxException e = new JsonSyntaxException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); JsonSyntaxException e = new JsonSyntaxException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolves to  " +cleaned.toString()); 
+ + Throwable msg = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to " +cleaned.toString()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezone.getID() +  " given, resolves to  " +timezone.getID()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezone.getID() +  " given, resolves to  " +timezone.getID()); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezone.getID() +  " given, resolves to  " +timezone.getID()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezone.getID() +  " given, resolves to  " +timezone.getID()); 
+ + Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + ", given, resolves to " +timezone.getID()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID());
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID());
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezone.getID() +  " given, resolves to  " +timezone.getID()); Throwable cause = new IndexOutOfBoundsException( "Mismatching time zone indicator:  "+timezone.getID() +  " given, resolves to  " +timezone.getID()); 
+ + Throwable reason = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezone.getID() + " given, resolves to " +timezone.getID()); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 238
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolves to "  +timezone.getID()); 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned);
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned); JsonSyntaxException e = new JsonSyntaxException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned);
+Iteration: 2, Repair Action: replace 
+ - throw new IndexOutOfBoundsException(  "Mismatching time zone indicator:  "+timezoneId+  " given, resolved to  " +cleaned); JsonSyntaxException e = new JsonSyntaxException( "Mismatching time zone indicator:  "+timezoneId+  " given, resolved to  " +cleaned); 
+ + Throwable msg = new IndexOutOfBoundsException( "Mismatching time zone indicator: "+timezoneId+ " given, resolved to " +cleaned); 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 19 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 238
+Patch Found in iteration 0 
+Repair Action: replace 
+ - throw  new  IndexOutOfBoundsException( "Mismatching  time  zone  indicator:   "+timezoneId+ "  given,  resolves  to   "      +timezone.getID());  
+ +    
+ --------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [CE] 'catch' without 'try' Repair Action: add 
+ + if(act!= null) { if(action!= null) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null) { if(action!= null) { 
+ + if(timezoneId == null) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [CE] 'catch' without 'try' Repair Action: add 
+ + if(act!= null) { if(action!= null) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null) { if(action!= null) { 
+ + if(timezoneOffset == timezone.getID()) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null && timezoneId!= UTC_ID) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null && timezoneId!= UTC_ID) { 
+ + if(act == null && timezoneId!= UTC_ID) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null && timezoneId!= UTC_ID) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null && timezoneId!= UTC_ID) { 
+ + if(act!= null && timezoneId == UTC_ID) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(!act.equals(timezone)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol uTC_ID Repair Action: replace 
+ - if(!act.equals(timezone)) { 
+ + if(!uTC_ID.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(!uTC_ID.equals(timezoneId)) { 
+ + if(!timezoneId.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol indicator Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(!act.equals(timezoneId)&&!indicator.equals(timezoneId)) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol output Repair Action: replace 
+ - if(!act.equals(timezoneId)&&!indicator.equals(timezoneId)) { 
+ + if(!output.equals(timezoneId)&&!act.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(!output.equals(timezoneId)&&!act.equals(timezoneId)) { 
+ + if(!timezoneId.equals(timezoneId)&&!act.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [CE] 'catch' without 'try' Repair Action: add 
+ + if(act!= null) { if(act == null) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null) { if(act == null) { 
+ + if(timezoneOffset == null) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null && hasT) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null && hasT) { 
+ + if(act == null && hasT) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null ||!hasT) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null ||!hasT) { 
+ + if(act == null ||!hasT) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null ||!hasT) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null ||!hasT) { 
+ + if(act == null &&!hasT) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null ||!act.equals(timezone)) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null ||!act.equals(timezone)) { 
+ + if(act == null &&!act.equals(timezone)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null ||!act.equals(timezoneIndicator)) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null ||!act.equals(timezoneIndicator)) { 
+ + if(act == null &&!act.equals(timezoneIndicator)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null ||!act.equals(timezoneId)) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null ||!act.equals(timezoneId)) { 
+ + if(act == null &&!act.equals(timezoneId)) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null && act.length() > 0) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null && act.length() > 0) { 
+ + if(act!= null && act.length() == 0) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null && act.length() > 0) {
+Iteration: 2, Repair Action: replace 
+ - if(act!= null && act.length() > 0) { 
+ + if(act == null && act.length() > 0) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(!act.equals(timezone)) {
+Iteration: 1, Diagnostic: [CE] 'catch' without 'try' Repair Action: add 
+ + if(!act.equals(timezone)) { if(!act.equals(timezone)) {
+Iteration: 2, Repair Action: replace 
+ - if(!act.equals(timezone)) { if(!act.equals(timezone)) { 
+ + if(timezone.getID()!= timezone.getID()) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(act!= null) { 
+ + if(act == null) { 
+ ----------------------------------------------------------------------------------------------------
+Gson5 -  FL is ranked in the 16 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 230
+
+Iteration: 0, Diagnostic: [FE] JsonSyntaxException Repair Action: replace 
+ - if (!act.equals(timezoneId)) { 
+ + if(act!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(act!= null) { 
+ + if(act!= null &&!hasT) { 
+ ----------------------------------------------------------------------------------------------------

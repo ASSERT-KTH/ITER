@@ -1,9 +1,0 @@
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061FontMetricsfm=g2.getFontMetrics(getLabelFont());
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061Rectangle2Dbounds=TextUtilities.getTextBounds(axisLabel,g2,fm);
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061Rectangle2Dbounds=TextUtilities.getLabelBounds(axisLabel,g2,fm);
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061RectangleInsetsinsets=getLabelInsets();
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061RectangleInsetsinsets=getLabelInsets(bounds);
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061ShapelabelBounds=getLabelBounds(g2,edge);
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061ShapelabelBounds=fm.createOutsetRectangle(bounds);
-projects/Chart26/source/org/jfree/chart/axis/Axis.java1061FontMetricsfm=g2.getFontMetrics(getLabelFont()).getFontMetrics(getLabelFont());

@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+
+ Csv6 -  FL is ranked in the 3 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 181
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - map.put(entry.getKey(), values[col]);
+ + if (values.length > 0 ) { map.put(entry.getKey(), values[col]); }
+Iteration: 1, Repair Action: replace 
+ - if (values.length > 0 ) { map.put(entry.getKey(), values[col]); }
+ +  if (values.length > col) { map.put(entry.getKey(), values[col]); }

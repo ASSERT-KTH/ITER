@@ -1,0 +1,911 @@
+Chart26/2
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 19
+
+-  return  this.visible  &&  this.tickMarksVisible;  
++ return axisLineVisible && this.tickMarksVisible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  this.labelToolTip  ==  null  ||  owner.getEntityCollection()  ==  null?  this.labelToolTip  :  owner.getEntityCollection();  
++ EntityCollection entities = owner == null || this.labelToolTip.equals(owner.getEntityCollection())? null : owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont()); g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont()); g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    TextAnchor.CENTER,  getLabelAngle()  +  Math.PI  /  2.0,  TextAnchor.CENTER);  state.cursorRight(insets.getLeft()  +  labelBounds.getWidth()  +  insets.getRight());  
++ state.cursorRight(insets.getLeft() + labelBounds.getWidth() + insets.getRight());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    
++ if(owner!= null) { EntityCollection entities = owner.getEntityCollection(); entities.add(new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL)); }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    Font  labelFont  =  getLabelFont();  
++ Font labelFont = getLabelFont().getFont(label);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    
++ if(owner!= null) { EntityCollection entities = owner.getEntityCollection(); entities.add(new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL)); }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  
++ g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  
++ g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont()); g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    TextAnchor.CENTER,  getLabelAngle()  +  Math.PI  /  2.0,  TextAnchor.CENTER);  state.cursorRight(insets.getLeft()  +  labelBounds.getWidth()  +  insets.getRight());  
++ state.cursorRight(insets.getLeft() + labelBounds.getWidth() + insets.getRight());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    
++ if(owner!= null) { EntityCollection entities = owner.getEntityCollection(); entities.add(new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL)); }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  
++ g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont()); g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  this.labelFont  =  DEFAULT_AXIS_LABEL_STROKE;  }  
++ this.labelFont = DEFAULT_AXIS_LABEL_STROKE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(labelToolTip  ==  DEFAULT_AXIS_LABEL_STROKE)  {  return  false;  }  
++ if(labelToolTip == DEFAULT_AXIS_LABEL_STROKE) { return false; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible  ==  DEFAULT_AXIS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint == DEFAulT_ACCEPTED);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++ return  this.visible  &&  this.axisLineVisible;  if(this.visible) { return this.visible || this.axisLineVisible; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  this.labelPaint  =  DEFAULT_AXIS_LABEL_STROKE;  }  
++ this.labelPaint = DEFAULT_AXIS_LABEL_STROKE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(isVisible())  {  return  true;  }  
++ if(isVisible()) { return true; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  this.tickMarksVisible  =  DEFAULT_AXIS_LABEL_STROKE;  }  
++ this.tickMarksVisible = DEFAULT_AXIS_LABEL_STROKE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  this.tickMarksVisible  =  true;  }  
++ this.tickMarksVisible = true;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  this.labelToolTip  =  DEFAULT_AXIS_LABEL_STROKE;  }  
++ this.labelToolTip = DEFAULT_AXIS_LABEL_STROKE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     if(isVisible())  {  throw  new  IllegalArgumentException( " ");  }  if(isVisible()) { throw new IllegalArgumentException(" "); }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible  >=  DEFAULT_AXIS_LABELS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint >= DEFAulT_BAD_LONG);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(isVisible())  {  if(this.visible!=  null)  {  this.visible  =  false;  }  
++ if(isVisible()) { this.visible = false; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  this.fixedDimension  =  DEFAULT_AXIS_LABEL_STROKE;  }  
++ this.fixedDimension = DEFAULT_AXIS_LABEL_STROKE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible!=  DEFAULT_AXIS_LABELS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint == DEFAulT_BAD_MARK_VISIBLE);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible  ==  DEFAULT_AXIS_LABELS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint == DEFAulT_BAD_LONG);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(labelToolTip  ==  DEFAULT_AXIS_LABEL_STROKE)  {  return  true;  }  
++ if(labelToolTip == DEFAULT_AXIS_LABEL_STROKE) { return true; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(isVisible())  {  if(this.visible!=  null)  {  this.visible  =  true;  }  
++ this.visible = isVisible();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(tickMarksVisible  ==  DEFAULT_AXIS_LABEL_STROKE)  {  return  this.visible;  }  
++ if(tickMarksVisible == DEFAULT_AXIS_LABEL_STROKE) { return this.visible; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible  ==  DEFAULT_AXIS_LABELS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint == defulT_AxIS_LABELS_VISIBLE);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(tickMarksVisible  ==  DEFAULT_AXIS_VISIBLE)  {  return  false;  }  
++ if(tickMarksVisible!= DEFAULT_AXIS_VISIBLE) { return false; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible!=  DEFAULT_AXIS_LABELS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint == defulT_Base64LabelFont);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(this.visible!=  DEFAULT_AXIS_LINE_STROKE)  {  if(tickMarksVisible  ==  DEFAULT_AXIS_VISIBLE)  {  return  this.visible;  }  
++ if(tickMarksVisible == DEFAULT_AXIS_VISIBLE) { return this.visible; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++ return  this.visible  &&  this.tickMarksVisible;  if(this.visible) { return this.visible || this.tickMarksVisible; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible  ==  DEFAULT_AXIS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint == defulT_AxIS_VISIBLE);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)&&  axisLineVisible  <=  DEFAULT_AXIS_VISIBLE  ||  axisLineVisible  >  DEFAULT_AXI_LABELS_VISIBLE;  
++ return(axisLineVisible <= DEFAULT_AXI_LINE_STROKE)&& axisLineFactory <= DEFLATED || axisLinePaint > DEFAULT_AXI_LABELS_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  &&  this.isVisible)||(this.axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE  ||  this.axisLineVisible  >=  DEFAULT_AXIS_LABELS_VISIBLE);  
++ return(this.axisLineVisible && this.visible)||(this.axislineSTROKE!= DEFAULT_AXIS_LINE_VISIBLE || this.axisLinePaint >= defulT_AxIS_LABELS_VISIBLE);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    if(tickMarksVisible  ==  DEFAULT_AXIS_LABEL_VISIBLE)  {  if(this.visible!=  DEFAULT_AXIS_LABEL_STROKE)  {  return  this.visible;  }  
++ if(this.visible!= DEFAULT_AXIS_LABEL_STROKE) { return this.visible; }
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return  this.visible  &&  this.tickMarksVisible;  
++ return this.visible && this.tickMarksVisible!= DEFAULT_AXIS_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)&&  axisLineVisible  <=  DEFAULT_AXIS_VISIBLE  ||  axisLineVisible  >  DEFAULT_AXI_LABELS_VISIBLE;  
++ return(axisLineVisible <= DEFAULT_AXI_LINE_STROKE)&& this.visible <= DEFulT_AXIS_VISIBLE || axislineVisibility > defULT_AXI_LABELS_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible!=  DEFAULT_AXIS_LINE_STROKE)&&  this.axisLineStroke;  
++ return(this.axisLineStroke!= DEFAULT_AXIS_LINE_STROKE)&& this.visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible  <=  DEFAULT_AXIS_LINE_STROKE)&&  this.visible  >  DEFulT_AXI_LABELS_VISIBLE;  
++ return(this.visible <= DEFAULT_AXI_LINE_STROKE)&& this.visible > DEFulT_GADIAN_VIDEOPER;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return  this.visible  &&  this.tickMarksVisible;  this.visible  &&  this.tickMarksVisible;  
++ this.visible &= this.tickMarksVisible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE)&&  axisLineFont  <=  DEFAulT_AXI_LABELS_VISIBLE;  
++ return(axisLineVisible!= DEFAULT_AXI_LINE_STROKE)&& axisLineFont <= DEFAulT_BAD_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible  ==  DEFAULT_AXIS_LINE_STROKE)&&  this.visible!=  DEFAulT_AXIT_LABEL_VISIBLE;  
++ return(this.visible == DEFAULT_AXIT_LINE_STROKE)&& this.visible!= DEFAulT_AXI_LABEL_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)?  this.visible  :  DEFAULT_AXIT_Axis_LINE_Visible;  
++ return(this.visible < DEFAULT_AXIT_LINE_STROKE)? this.visible : DEFAulT_ANALYSIS_Visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)?  this.visible  :  DEFulT_AXI_LINE_Visible;  
++ return(this.visible < DEFAULT_AXI_LINE_STROKE)? this.visible : DEFulT_AXIS_LINE_Visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  >  DEFAULT_AXIS_LINE_STROKE)|&(this.visible  >=  defult_AXI_LABEL_STRIK);  
++ return(this.visible > DEFAULT_AXI_LINE_STROKE)& axisLineVisible =(this.visible >= defult_AxI_LABEL_STRIK);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)?  this.visible  :  DEFAULT_AXIT_Axis_LINE_Visible;  
++ return(this.visible <= DEFAULT_AXIT_LINE_STROKE)? this.visible : DEFulT_AXI_Visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible!=  DEFAULT_AXIS_LINE_STROKE)&&  axisLineFont  <=  DEFAulT_AXI_LABELS_VISIBLE;  
++ return(axisLineVisible!= DEFAULT_AXI_LINE_STROKE)& axisLineFont <= DEFAulT_BADLIST;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible  <=  DEFAULT_AXIS_LINE_STROKE)&&  this.visible  >  DEFulT_AXI_LABELS_VISIBLE;  
++ return(this.visible <= DEFAULT_AXI_LINE_STROKE)&& this.visible > DEFulT_GAD_MARK_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  >>  DEFAULT_AXIS_LINE_STROKE)&  axisLineVisible  <=  DEFulT_AXI_LABELS_VISIBLE;  
++ return(this.visible & DEFAULT_AXI_LINE_STROKE)| axisLineVisible <= DEFulT_AXI_LABELS_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)?  this.visible  :  DEFAulT_AXI_LINE_Visible;  
++ return(this.visible <= DEFAULT_AXI_LINE_STROKE)? this.visible : DEFAulT_AXIS_LINE_Visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible  ==  DEFAULT_AXIS_LINE_STROKE)&&  this.visible!=  DEFAulT_AXIT_LABEL_VISIBLE;  
++ return(this.visible == DEFAULT_AXIT_LINE_STROKE)&& this.axisLineVisible!= defult_Axit_LABEL_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible  <=  DEFAULT_AXIS_LENGTH)&&  this.visible  <=  DEFulT_AXI_LINE_STROKE  ||  axisLinePaint  >  definalTokenLabelStroke);  
++ return(this.visible <= DEFAULT_AXI_LINE_STROKE || axisLinePaint > definalTokenLabelStroke);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return  this.visible  &&  this.tickMarksVisible;  this.visible  &&  this.tickMarksVisible;  
++ this.visible = this.visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <  DEFAULT_AXIS_LINE_STROKE)&&  axisLineVisible  <=  DEFulT_AXI_LABELS_VISIBLE;  
++ return(this.visible < DEFAULT_AXI_LINE_STROKE)&& axisLineVisible >= defult_axis_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  <=  DEFAULT_AXIS_LINE_STROKE)?  this.visible  :  DEFAULT_AXIT_Axis_LINE_Visible;  
++ return(this.visible <= DEFAULT_AXIT_LINE_STROKE)? this.visible : DEFulT_AXIS_LINE_Visible;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(axisLineVisible  <=  DEFAULT_AXIS_LINE_STROKE)&&  this.visible  >  DEFulT_AXI_LABELS_VISIBLE;  
++ return(this.visible <= DEFAULT_AXI_LINE_STROKE)&& this.axisLineVisible > defult_axI_LABELS_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 314, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  return(this.visible  >>  DEFAULT_AXIS_LINE_STROKE)&  axisLineVisible  <=  DEFulT_AXI_LABELS_VISIBLE;  
++ return(this.visible >> DEFAULT_AXI_LINE_STROKE)& axisLineVisible <= DEFulT_AXIS_LABELS_VISIBLE;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(insets.getTop(),  insets.getBottom()):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new EntityCollection(insets.getTop() + 1, insets.getBottom()): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(width,  height):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new EntitiesCollection(width, height): owner.getEntityCOLlection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.setEntityCollection(entityCollection);  
++ EntityCollection entities = owner.setEntities(hotspot);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  AxisLabelEntity(this,  hotspot,  this.labelToolTip,  this.labelURL);  
++ EntityCollection entities = hotspot!= null? owner.getEntityCOLlection() : new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection()  ||  this.labelToolTip!=  null?  this.labelToolTip  :  owner.getEntityCollection();  
++ EntityCollection entities = owner.getEntityCollection() && this.labelToolTip!= null? this.labelToolTip : owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getOwnerEntityCollection();  
++ EntityCollection entities = owner.getOwnerEntITYCOLLECTION();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  
++ g2.setPaint(getLabelPaint());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner  ==  null?  new  EntityCollection(0,  0):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new Entitycollection(0, 0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getOwnerEntityCollection();  
++ EntityCollection entities = owner.getOwnerEntITYCOLLECTION();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(width,  height):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new EntitiesCollection(width, height): owner.getEntityCOLlection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection()  ||  this.labelToolTip.equals(owner.getLabelToolTip());  
++ EntityCollection entities = owner.getEntities() || this.labelToolTip.equals(owner.getLabelToolTip());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  AxisLabelEntity(  hotspot,  this.labelToolTip,  this.labelURL);  
++ EntityCollection entities = owner!= null? owner.getEntitycollection() : new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(1.0f,  1.0f):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new Entitycollection(1.0f, 0.0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    AxisLabelEntity  hotspot  =  new  AxisLabelEntity(this,  hotspot,  this.labelToolTip,  this.labelURL);  state.cursorRight(insets.getLeft()  +  labelBounds.getWidth()  +  insets.getRight());  
++ AxisLabelEntity hotspot = new AxisLabelENTITY(this, label, this.labelURL); state.cursorRight(insets.getLeft() + labelBounds.getWidth() / insets.getRight());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(insets.getTopIndex(),  insets.getBottomIndex()):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new EntityCollection(insets.getTopIndex() + 1, insets.getBottomIndex()): owner.getEntityCOLlection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection()  ||  this.labelToolTip  ==  null?  this.labelToolTip  :  owner.getEntityCollection();  
++ EntityCollection entities = owner.getEntityCollection() && this.labelToolTip == null? this.labelToolTip : owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(labelToolTip,  hotspot.getLabelToolTip()):  owner.getEntityCollection();  
++ EntityCollection entities = hotspot!= null? new EntityCOLlection(labelToolTip, hotspot.getLabelToolTip()): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection()  ||  this.labelToolTip!=  null?  this.labelToolTip  :  new  AxisLabelEntity(this,  hotspot,  this.labelURL);  
++ EntityCollection entities = owner.getEntities() || this.labelToolTip!= null? this.labelURL : new AxisLabelEntity(this, hotspot, this.labelToolTip);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  AxisLabelEntity(  hotspot,  this.labelToolTip,  this.labelURL);  
++ EntityCollection entities = owner!= null? owner.getEntitycollection() : new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(hotspot,  this.labelToolTip,  this.labelURL):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new EntityCollection(this.labelToolTip, hotspot, this.labelURL): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  
++     g2.setFont(getLabelFont());  g2.setPaint(getLabelPaint());  g2.setFont(getLabelFont());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection()  ||  this.labelToolTip  ==  null?  this.labelToolTip  :  owner.getEntityCollection();  
++ EntityCollection entities = owner.getEntityCollection() && this.labelToolTip == null? this.labelToolTip : owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner  ==  null?  new  EntityCollection(0,  0):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new Entitycollection(0, 0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    AxisLabelEntity  hotspot  =  new  AxisLabelEntity(this,  hotspot,  this.labelToolTip,  this.labelURL);  state.cursorRight(insets.getLeft()  +  labelBounds.getWidth()  +  
++ AxisLabelEntity hotspot = new AxisLabelEntity(this, hotspot, this.labelURL);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection(),  hotspot;  
++ EntityCollection entities = owner.getEntitiesCOLlection(), hotspot;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  BasicAxisLabelEntity(this,  hotspot,  this.labelToolTip,  this.labelURL);  
++ EntityCollection entities = owner!= null? this.labelToolTip.getEntitycollection() : new BasicAxisLabelEntity(this, hotspot, this.labelURL);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection(0);  
++ EntityCollection entities = owner.getEntities();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  getLabelEntityCollection()  :  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? getLabelEntitycollection() : owner.getEntityCOLlection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  hotspot.getEntityCollection();  
++ EntityCollection entities = owner.getEntities();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  ChartRenderingInfo(hotspot,  this.labelToolTip,  this.labelURL);  
++ EntityCollection entities = owner!= null? this.labelToolTip.getEntitycollection() : new ChartRenderingInfo(hotspot, this.labelToolTip, this.labelURL);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  hotspot.getEntityCollection();  
++ EntityCollection entities = owner.getEntities();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  getLabelEntityCollection()  :  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? getLabelEntitycollection() : owner.getEntityCOLlection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(1.0f,  1.0f):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new Entitycollection(1.0f, 0.0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(0,  0):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new Entitycollection(0, 0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection()  ||  this.labelToolTip!=  null?  new  AxisLabelEntity(this,  hotspot,  this.labelToolTip,  this.labelURL):  null;  
++ EntityCollection entities = owner.getEntities() || hotspot!= null? new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL): null;
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  ChartRenderingInfo(hotspot,  getLabelAngle()  +  Math.PI  /  2.0,  TextAnchor.CENTER);  
++ EntityCollection entities = owner!= null? owner.getEntitycollection() : new ChartRenderingInfo(labelAngle, getLabelAngle() + Math.PI / 2.0, TextAnchor.CENTER);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-    State.cursorLeft(insets.getLeft()  +  labelBounds.getWidth()  +  insets.getRight());  
++ State.cursorLeft(insets.getLeft() + labelBounds.getWidth() / insets.getRight());
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  AxisLabelEntity(  hotspot,  this.labelURL,  this.labelToolTip);  
++ EntityCollection entities = owner!= null? owner.getEntityCOLlection() : new AxisLabelEntity(this, hotspot, this.labelURL, this.labelToolTip);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  new  EntityCollection(0,  0):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new Entitycollection(0, 0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  this  :  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? this : owner.getEntityCOLLECTION();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner.getEntityCollection(false,  getLabelAngle()  +  Math.PI  /  2.0,  TextAnchor.CENTER);  
++ EntityCollection entities = owner.getEntityCOLlection(false, getLabelAngle() + Math.PI / 2.0, hotspot, TextAnchor.CENTER);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  property.getEntityCollection();  
++ EntityCollection entities = owner.getEntityCOLLECTION();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner  ==  null?  new  EntityCollection(1.0,  1.0,  1.0):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? new EntityCollection(1.0, 0.0, 5.0): owner.getEntityCollection();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  EntityCollection(insets.left  +  insets.top  +  insets.top  +  insets.top  +  insets.bottom);  
++ EntityCollection entities = owner!= null? owner.getEntitycollection() : new EntityCollection(insets.left + insets.top + insets.bottom + insets.right);
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  getLabelEntityCollection(owner):  owner.getEntityCollection();  
++ EntityCollection entities = owner!= null? getLabelEntitycollection(owner): owner.getEntityCOLLECTION();
+
+Partial patch is found in FL-1
+Buggy class:projects/Chart26/source/org/jfree/chart/axis/Axis.java
+buggy location: 1192, suspucious value: 0.9574271077563381
+Original failing tests: 22 -> Current failing tests: 2
+
+-  EntityCollection  entities  =  owner!=  null?  owner.getEntityCollection()  :  new  AxisLabelEntity(  hotspot,  this.labelToolTip,  this.labelURL);  
++ EntityCollection entities = owner!= null? owner.getEntitycollection() : new AxisLabelEntity(this, hotspot, this.labelToolTip, this.labelURL);
+
+Chart26 -  FL is ranked in the 2 position(s) with a suspicious value: 0.9574271077563381
+Number of failing tests: 22 
+Buggy Location: 342
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - return this.label; 
+ + return(label == null)? null : label;
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return(label == null)? null : label; return(label == null)? null : label;
+Iteration: 2, Repair Action: replace 
+ - return(label == null)? null : label; return(label == null)? null : label; 
+ + return(label!= null)? null : label; 
+ ----------------------------------------------------------------------------------------------------

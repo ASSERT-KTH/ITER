@@ -1,0 +1,67 @@
+Closure104 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 291
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  result = builder.build();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   result = builder.build(); result = builder.build();
+Iteration: 2, Repair Action: add 
+ - 
+ +     result  =  builder.build();  result = builder.build(); result = builder.build(); result = builder.build(); if(this.isObject() && that.isObject()) { return getNativeType(JSTypeNative.NO_OBJECT_TYPE); } 
+ ----------------------------------------------------------------------------------------------------
+ Closure104 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 291
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if (result != null) {
+ +  if (result.isObject()) {
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if (result.isObject()) {
+ +  if (result.isNoType()) {
+Iteration: 2, Repair Action: add 
+ -  if (result.isNoType()) {
+ +  if (!result.isNoType()) {  
+ ----------------------------------------------------------------------------------------------------
+Closure104 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 291
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  result = builder.build();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   result = builder.build(); result = builder.build();
+Iteration: 2, Repair Action: add 
+ - 
+ +     result  =  builder.build();  result = builder.build(); result = builder.build(); result = builder.build(); if(this.isObject()) { return getNativeType(JSTypeNative.NO_OBJECT_TYPE); } 
+ ----------------------------------------------------------------------------------------------------
+Closure104 -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 292
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  result = builder.build();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   result = builder.build(); result = builder.build();
+Iteration: 2, Repair Action: add 
+ - 
+ +     result  =  builder.build();  result = builder.build(); result = builder.build(); result = builder.build(); if(this.isObject() && that.isObject()) { return getNativeType(JSTypeNative.NO_OBJECT_TYPE); } 
+ ----------------------------------------------------------------------------------------------------
+Closure104 -  FL is ranked in the 9 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 292
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  result = builder.build();
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   result = builder.build(); result = builder.build();
+Iteration: 2, Repair Action: add 
+ - 
+ +     result  =  builder.build();  result = builder.build(); result = builder.build(); result = builder.build(); if(this.isObject()) { return getNativeType(JSTypeNative.NO_OBJECT_TYPE); } 
+ ----------------------------------------------------------------------------------------------------

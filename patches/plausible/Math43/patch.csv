@@ -1,0 +1,33 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Math43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java
+buggy location: 158, suspucious value: 0.48038446141526137
+Original failing tests: 6 -> Current failing tests: 4
+
+- if (!(meanImpl instanceof Mean)) { 
++ if(meanImpl!= null) {
+
+Partial patch is found in FL-2
+Buggy class:projects/Math43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java
+buggy location: 161, suspucious value: 0.48038446141526137
+Original failing tests: 4 -> Current failing tests: 2
+
+- if (!(varianceImpl instanceof Variance)) { 
++ if(varianceImpl!= null) {
+
+Partial patch is found in FL-3
+Buggy class:projects/Math43/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java
+buggy location: 164, suspucious value: 0.48038446141526137
+Original failing tests: 2 -> Current failing tests: 1
+
+-  if(n  <=  0  ||!(geoMeanImpl  instanceof  GeometricMean))  {  ((  GeometricMean)geoMeanImpl).increment(value);  
++ while(n <= 0 ||!(geoMeanImpl instanceof GeometricMean)) { (( GeometricMean)geoMeanImpl).increment(value);
+
+Math43 -  FL is ranked in the FL-3 -  FL is ranked in the 34 position(s) with a suspicious value: 0.48038446141526137
+Number of failing tests: 2 
+Buggy Location: 164
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (!(geoMeanImpl  instanceof  GeometricMean))  {  
+ + if(geoMeanImpl!=  geoMean)  { 
+ --------------------------------------------------

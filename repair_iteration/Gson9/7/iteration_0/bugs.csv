@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-13	[BUG] [BUGGY] break; [FE] NullPointerException [CONTEXT] [BUGGY] break; [BUGGY]  case DANGLING_NAME: // value for name out.append(separator); replaceTop(NONEMPTY_OBJECT); break; default: throw new IllegalStateException("Nesting problem."); } } [CLASS] JsonWriter [METHOD] beforeValue [RETURN_TYPE] void  	projects/Gson9/gson/src/main/java/com/google/gson/stream/JsonWriter.java	0.31622776601683794	639	639	1	replace	

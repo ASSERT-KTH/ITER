@@ -1,0 +1,72 @@
+Csv6 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 212
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - return putIn(new HashMap<String, String>(values.length)); 
+ + return putIn(new HashMap < String, String>(values.length + 1));
+Iteration: 1, Repair Action: add 
+ - 
+ + return putIn(new HashMap < String, String>(values.length + 1)); ArrayList < String> values = new ArrayList < String>(values.length + 1); 
+ ----------------------------------------------------------------------------------------------------
+Csv6 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 212
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - return putIn(new HashMap<String, String>(values.length)); 
+ + return putIn(new HashMap < String, String>(values.length + 1));
+Iteration: 1, Repair Action: add 
+ - 
+ + return putIn(new HashMap < String, String>(values.length + 1)); ArrayList < String> values = new ArrayList < String>(values.length + 1); putIn(new HashMap < String, String>(values.length + 1)); 
+ ----------------------------------------------------------------------------------------------------
+Csv6 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 212
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - return putIn(new HashMap<String, String>(values.length)); 
+ + return putIn(new HashMap < String, String>(values.length + 1));
+Iteration: 1, Repair Action: add 
+ - 
+ + return putIn(new HashMap < String, String>(values.length + 1)); ArrayList < String> values = Lists.newArrayList(); 
+ ----------------------------------------------------------------------------------------------------
+Csv6 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 212
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - return putIn(new HashMap<String, String>(values.length)); 
+ + return putIn(new HashMap < String, String>(values.length + 1));
+Iteration: 1, Repair Action: add 
+ - 
+ + return putIn(new HashMap < String, String>(values.length + 1)); Map.Entry < String, String> entry =(Map.Entry < String, String>)this.values.entrySet(); 
+ ----------------------------------------------------------------------------------------------------
+Csv6 -  FL is ranked in the 1 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 212
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - return putIn(new HashMap<String, String>(values.length)); 
+ + return putIn(new HashMap < String, String>(values.length + 1));
+Iteration: 1, Repair Action: add 
+ - 
+ + return putIn(new HashMap < String, String>(values.length + 1)); Map.Entry < String, String> entry =(Map.Entry < String, String>)this.values.get(0); 
+----------------------------------------------------------------------------------------------------
+
+ Csv6 -  FL is ranked in the 3 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 181
+
+Iteration: 0, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - map.put(entry.getKey(), values[col]);
+ + if (values.length > 0 ) { map.put(entry.getKey(), values[col]); }
+Iteration: 1, Repair Action: replace 
+ - if (values.length > 0 ) { map.put(entry.getKey(), values[col]); }
+ +  if (values.length > col) { map.put(entry.getKey(), values[col]); }

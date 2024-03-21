@@ -1,0 +1,22 @@
+Chart12 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5
+Number of failing tests: 1 
+Buggy Location: 149
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +  this.pieChart.setBackgroundPaint(null);
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ +   this.pieChart.setBackgroundPaint(null); this.pieChart.setBackgroundPaint(null); if(this.dataset!= null) { this.pieChart = new JFreeChart(piePlot); } else { this.pieChart.setBackgroundPaint(null); }
+Iteration: 2, Repair Action: add 
+ - 
+ +     this.pieChart.setBackgroundPaint(null);  this.pieChart.setBackgroundPaint(null); if(this.dataset!= null) { this.pieChart = new JFreeChart(piePlot); } else { this.pieChart.setBackgroundPaint(null); } this.pieChart.setBackgroundPaint(null); this.pieChart.setBackgroundPaint(null); if(this.dataset!= null) { this.dataset.addChangeListener(this); } 
+ ----------------------------------------------------------------------------------------------------
+ 
+ 
+Chart12 -  FL is ranked in the 6 position(s) with a suspicious value: 0.5
+Number of failing tests: 1 
+Buggy Location: 145
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: add 
+ -  this.dataset = dataset;
+ +  setDataset(dataset);
+

@@ -1,0 +1,9 @@
+
+Math32 -  FL is ranked in the 4 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 136
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  ((Boolean)  tree.getAttribute())  {  
+ + if(tree.getAttribute()  ==  null)  { 
+ --------------------------------------------------

@@ -1,0 +1,110 @@
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 43 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 453
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (this.rightBlock  !=  null)  {  
+ + if(this.rightBlock!=  null  &&  this.bottomBlock!=  null)  { 
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 44 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 454
+
+Iteration: 0, Diagnostic: [FE] java.lang.IllegalArgumentException: Range(double Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]),  LengthConstraintType.RANGE, h[2], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.RANGE, h[3], null,
+Iteration: 1, Diagnostic: [FE] java.lang.IllegalArgumentException: Range(double Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.RANGE, h[3], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.FIXED, h[3], null,
+Iteration: 2, Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.FIXED, h[3], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getHeight() - w[2]), LengthConstraintType.FIXED, h[3], null, 
+ ----------------------------------------------------------------------------------------------------
+Chart13 -  FL is ranked in the 44 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 454
+
+Iteration: 0, Diagnostic: [FE] java.lang.IllegalArgumentException: Range(double Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]),  LengthConstraintType.RANGE, h[2], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.FIXED, h[2], null,
+Iteration: 1, Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.FIXED, h[2], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[3]), LengthConstraintType.FIXED, h[2], null, 
+ ----------------------------------------------------------------------------------------------------
+Chart13 -  FL is ranked in the 44 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 454
+
+Iteration: 0, Diagnostic: [FE] java.lang.IllegalArgumentException: Range(double Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]),  LengthConstraintType.RANGE, h[2], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.FIXED, h[2], null,
+Iteration: 1, Repair Action: replace 
+ - RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[2]), LengthConstraintType.FIXED, h[2], null, 
+ + RectangleConstraint c4 = new RectangleConstraint(0.0, new Range(0.0, constraint.getWidth() - w[3]), LengthConstraintType.FIXED, h[3], null, 
+ ----------------------------------------------------------------------------------------------------
+Chart13 -  FL is ranked in the 44 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 454
+Patch Found in iteration 0 
+Repair Action: replace 
+ - RectangleConstraint  c4  =  new  RectangleConstraint(0.0,    new  Range(0.0,  constraint.getWidth()  -  w[2]),      LengthConstraintType.RANGE,  h[2],  null,  
+ + RectangleConstraint  c4  =  new  RectangleConstraint(0.0,  new  Range(0.0,  constraint.getWidth()  -  w[3]),  LengthConstraintType.RANGE,  h[3],  null, 
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 44 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 454
+Patch Found in iteration 0 
+Repair Action: replace 
+ - RectangleConstraint  c4  =  new  RectangleConstraint(0.0,    new  Range(0.0,  constraint.getWidth()  -  w[2]),      LengthConstraintType.RANGE,  h[2],  null,  
+ + RectangleConstraint  c4  =  new  RectangleConstraint(0.0,  new  Range(0.0,  constraint.getWidth()  -  w[3]),  LengthConstraintType.RANGE,  h[2],  null, 
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 44 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 454
+Patch Found in iteration 0 
+Repair Action: replace 
+ - RectangleConstraint  c4  =  new  RectangleConstraint(0.0,    new  Range(0.0,  constraint.getWidth()  -  w[2]),      LengthConstraintType.RANGE,  h[2],  null,  
+ + RectangleConstraint  c4  =  new  RectangleConstraint(0.0,  new  Range(0.0,  constraint.getHeight()  -  w[2]),  LengthConstraintType.RANGE,  h[3],  null, 
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 42 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 452
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     w[2]  =  constraint.getWidth(); 
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 41 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 450
+Patch Found in iteration 0 
+Repair Action: replace 
+ - w[2]  =  size.width;  
+ + w[3]  =  size.width; 
+ --------------------------------------------------
+Chart13 -  FL is ranked in the 41 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 450
+Patch Found in iteration 0 
+Repair Action: replace 
+ - w[2]  =  size.width;  
+ +    
+ --------------------------------------------------

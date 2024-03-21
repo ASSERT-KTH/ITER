@@ -1,0 +1,9 @@
+
+Codec3 -  FL is ranked in the FL-1 -  FL is ranked in the 84 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 1 
+Buggy Location: 455
+Patch Found in iteration 0 
+Repair Action: replace 
+ - }  else  if  (contains(value,  index  +  1,  4,   "IER "))  {  
+ + }  else  if  (contains(value,  index  +  1,  4  -  1,   "IER "))  { 
+ --------------------------------------------------

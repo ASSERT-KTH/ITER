@@ -1,0 +1,17 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Math22/src/main/java/org/apache/commons/math3/distribution/FDistribution.java
+buggy location: 275, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return true; 
++ return false;
+
+Math22 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 184
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  false;  
+ + return(this.lower  <=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY)||(this.upper  >=  DEFAULT_INVERSE_ABSOLUTE_ACCURACY); 
+ --------------------------------------------------

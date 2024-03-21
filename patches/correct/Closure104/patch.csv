@@ -1,0 +1,14 @@
+ Closure104 -  FL is ranked in the 8 position(s) with a suspicious value: 0.5773502691896258
+
+Number of failing tests: 1 
+Buggy Location: 291
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if (result != null) {
+ +  if (result.isObject()) {
+Iteration: 1, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ -  if (result.isObject()) {
+ +  if (result.isNoType()) {
+Iteration: 2, Repair Action: add 
+ -  if (result.isNoType()) {
+ +  if (!result.isNoType()) {  

@@ -1,0 +1,21 @@
+
+Lang51 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 677
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +      return  (str.charAt(1)  ==  'e'  ||  str.charAt(1)  ==  'E')&&  (str.charAt(2)  =='s'  ||  str.charAt(2)  ==  'S');  
+ --------------------------------------------------
+Lang51 -  FL is ranked in the 12 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 677
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     if(ch  ==  't')  {  return  (str.charAt(1)  ==  'y'  &&  str.charAt(1)  ==  'Y') &&  (str.charAt(2)  =='s'  ||  str.charAt(2)  ==  'S');  } 
+ --------------------------------------------------

@@ -1,9 +1,0 @@
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165intindex=stream.readInt();
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165ObjectInputStreamstream=(ObjectInputStream)stream.readObject();
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165ObjectInputStreamstream=(ObjectInputStream)this.data.get(index);
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165setShape(index,SerialUtilities.readShape(stream));
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165setShape(i,SerialUtilities.readShape(stream));
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165setShape(index,SerialUtilities.readShape(stream),i);
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165Objectstream=SerialUtilities.readObject(stream);
-projects/Chart6/source/org/jfree/chart/util/ShapeList.java165this.shape=stream.readInt();

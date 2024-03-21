@@ -1,0 +1,29 @@
+Gson12/20
+
+Gson12 -  FL is ranked in the 20 position(s) with a suspicious value: 1.0
+Number of failing tests: 2 
+Buggy Location: 261
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol START_OBJECT Repair Action: replace 
+ - popStack(); 
+ + if(stackSize > 0) { popStack(); } else { JsonToken.START_OBJECT = null; nextName(); pathNames[stackSize - 1] = null; }
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if(stackSize > 0) { popStack(); } else { JsonToken.START_OBJECT = null; nextName(); pathNames[stackSize - 1] = null; } 
+ + if(stackSize > 0) { popStack(); } else { JsonToken START_OBJECT = null; nextName(); pathNames[stackSize - 1] = null; }
+Iteration: 2, Repair Action: add 
+ - 
+ + if(stackSize > 0) { popStack(); } else { JsonToken START_OBJECT = null; nextName(); pathNames[stackSize - 1] = null; } if(stackSize > 0) { popStack(); } else { JsonToken START_OBJECT = null; return; } 
+ ----------------------------------------------------------------------------------------------------
+Gson12/20
+
+Gson12 -  FL is ranked in the 20 position(s) with a suspicious value: 1.0
+Number of failing tests: 2 
+Buggy Location: 262
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol START_OBJECT Repair Action: replace 
+ - pathNames[stackSize - 1] = "null"; 
+ + if(stackSize > 0) { pathNames[stackSize - 1] = "null"; } else { JsonToken.START_OBJECT = null; nextName(); pathNames[stackSize - 1] = null; }
+Iteration: 1, Diagnostic: [FE] ArrayIndexOutOfBoundsException Repair Action: replace 
+ - if(stackSize > 0) { popStack(); } else { JsonToken.START_OBJECT = null; nextName(); pathNames[stackSize - 1] = null; } 
+ + if(stackSize > 0) { pathNames[stackSize - 1] = "null"; } 
+ 

@@ -1,0 +1,15 @@
+Closure115 -  FL is ranked in the FL-1 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7905694150420948
+Partial patch is found in FL-1
+Buggy class:projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java, buggy location: 731, suspucious value: 0.7905694150420948
+Original failing tests: 5 -> Current failing tests: 2
+
+- return CanInlineResult.NO; 
++ return NodeUtil.mayHaveSideEffects(cArg)? CanInlineResult.NO : CanInlineResult.AFTER_PREPARATION;
+
+
+Number of failing tests: 5 
+Buggy Location: 731
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  CanInlineResult.NO;  
+ + if(hasSideEffects  &&  NodeUtil.mayHaveSideEffects(cArg))  {  return  CanInlineResult.NO;  } 

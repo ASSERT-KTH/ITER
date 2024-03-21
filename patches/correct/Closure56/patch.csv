@@ -1,0 +1,25 @@
+
+Partial patch is found in FL-1
+Buggy class:projects/Closure56/src/com/google/javascript/jscomp/SourceFile.java
+buggy location: 242, suspucious value: 0.8660254037844387
+Original failing tests: 3 -> Current failing tests: 2
+
+- return null; 
++ return(js.indexOf('n', pos) == -1)? null : js.substring(pos);
+
+Partial patch is found in FL-2
+Buggy class:projects/Closure56/src/com/google/javascript/jscomp/SourceFile.java
+buggy location: 242, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+
+- return(js.indexOf('n', pos) == -1)? null : js.substring(pos); 
++ return(js.indexOf('n', pos) == 0)? null : js.substring(pos);
+
+Closure56 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 0.7071067811865475
+Number of failing tests: 2 
+Buggy Location: 242
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return(js.indexOf('n',  pos)  ==  -1)?  null  :  js.substring(pos);  
+ + return(js.indexOf('r',  pos)  ==  -1)?  null  :  js.substring(pos); 
+ --------------------------------------------------

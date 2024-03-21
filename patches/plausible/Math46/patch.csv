@@ -1,0 +1,20 @@
+Math46/FL-2/1
+
+Partial patch is found in FL-1
+Buggy class:projects/Math46/src/main/java/org/apache/commons/math/complex/Complex.java
+buggy location: 260, suspucious value: 0.7071067811865475
+Original failing tests: 2 -> Current failing tests: 1
+- return isZero ? NaN : INF; 
++ return divisor.isZero? NaN : INF;
+
+Math46 -  FL is ranked in the FL-2 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 297
+
+Iteration: 0, Diagnostic: [CE] incompatible types Repair Action: replace 
+ - return isZero ? NaN : INF; 
+ + return isZero? NaN : divisor;
+Iteration: 1, Repair Action: replace 
+ - return isZero? NaN : divisor; 
+ + return isZero? NaN : NaN; 
+ ----------------------------------------------------------------------------------------------------

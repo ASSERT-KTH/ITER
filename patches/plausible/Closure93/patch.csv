@@ -1,0 +1,7 @@
+Closure93 -  FL is ranked in the 116 position(s) with a suspicious value: 0
+
+Number of failing tests: 1
+Buggy Location: 789
+
+    -   int indexOfDot = namespace.indexOf('.');            
+    +   int indexOfDot = namespace.lastIndexOf('.');

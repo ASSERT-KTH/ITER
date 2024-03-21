@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-9	[BUG] [BUGGY] closed = false; [FE] AssertionFailedError [CONTEXT] public ArArchiveInputStream( final InputStream pInput ) { input = pInput; [BUGGY] closed = false; [BUGGY] } [CLASS] ArArchiveInputStream [METHOD] <init> [RETURN_TYPE] InputStream)  InputStream pInput [VARIABLES] boolean closed InputStream input pInput long offset  	projects/Compress2/src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java	0.7071067811865475	49	49	1	replace	

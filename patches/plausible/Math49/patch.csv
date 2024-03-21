@@ -1,0 +1,9 @@
+
+Math49 -  FL is ranked in the 10 position(s) with a suspicious value: 0.5773502691896258
+Number of failing tests: 1 
+Buggy Location: 77
+Patch Found in iteration 0 
+Repair Action: replace 
+ - this.epsilon  =  epsilon;  
+ + this.epsilon  =  dimension; 
+ --------------------------------------------------

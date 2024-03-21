@@ -1,0 +1,16 @@
+Lang26/3
+
+Lang26 -  FL is ranked in the 3 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 820
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol mDaylight Repair Action: replace 
+ - Calendar c = new GregorianCalendar(mTimeZone); 
+ + Calendar c = new GregorianCalendar(mDaylight);
+Iteration: 1, Repair Action: replace 
+ - Calendar c = new GregorianCalendar(mDaylight); 
+ + Calendar c = new GregorianCalendar(mTimeZone,mDaylight); 
+Iteration: 2, Repair Action: replace 
+ - Calendar c = new GregorianCalendar(mTimeZone,mDaylight); 
+ + Calendar c = new GregorianCalendar(mTimeZone,mLocale); 
+ ----------------------------------------------------------------------------------------------------

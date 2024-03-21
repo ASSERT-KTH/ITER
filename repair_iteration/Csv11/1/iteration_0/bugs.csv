@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-1	[BUG] [BUGGY] this.record.add(input.equalsIgnoreCase(nullString) ? null : input); [FE] NullPointerException [CONTEXT] [BUGGY] this.record.add(input.equalsIgnoreCase(nullString) ? null : input); [BUGGY] } } [CLASS] CSVParser 1 [METHOD] addRecordValue [RETURN_TYPE] void  	projects/Csv11/src/main/java/org/apache/commons/csv/CSVParser.java	1.0	259	259	1	replace	

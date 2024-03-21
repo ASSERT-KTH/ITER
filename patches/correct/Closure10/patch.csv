@@ -1,0 +1,65 @@
+Closure10 -  FL is ranked in the 37 position(s) with a suspicious value: 0.21320071635561041
+
+Number of failing tests: 1 
+Buggy Location: 1417
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - return allResultsMatch(n, MAY_BE_STRING_PREDICATE); 
+ + return mayBeString(n, recurse);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return mayBeString(n, recurse); return mayBeString(n, recurse);
+Iteration: 2, Repair Action: replace 
+ - return mayBeString(n, recurse); return mayBeString(n, recurse); 
+ + if(n.getType() == Token.FUNCTION) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); } 
+ ----------------------------------------------------------------------------------------------------
+Closure10 -  FL is ranked in the 37 position(s) with a suspicious value: 0.21320071635561041
+
+Number of failing tests: 1 
+Buggy Location: 1417
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - return allResultsMatch(n, MAY_BE_STRING_PREDICATE); 
+ + return mayBeString(n, recurse);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return mayBeString(n, recurse); return mayBeString(n, recurse);
+Iteration: 2, Repair Action: replace 
+ - return mayBeString(n, recurse); return mayBeString(n, recurse); 
+ + if(NodeUtil.isFunctionDeclaration(n)) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); } 
+ ----------------------------------------------------------------------------------------------------
+Closure10 -  FL is ranked in the 37 position(s) with a suspicious value: 0.21320071635561041
+
+Number of failing tests: 1 
+Buggy Location: 1417
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - return allResultsMatch(n, MAY_BE_STRING_PREDICATE); 
+ + return mayBeString(n, recurse);
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + return mayBeString(n, recurse); if(NodeUtil.isFunction(n)) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); }
+Iteration: 2, Repair Action: replace 
+ - return mayBeString(n, recurse); if(NodeUtil.isFunction(n)) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); } 
+ + if(NodeUtil.isAssignmentOp(n)) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); } 
+ ----------------------------------------------------------------------------------------------------
+Closure10 -  FL is ranked in the 37 position(s) with a suspicious value: 0.21320071635561041
+
+Number of failing tests: 1 
+Buggy Location: 1417
+
+Iteration: 0, Diagnostic: [FE] StackOverflowError Repair Action: replace 
+ - return allResultsMatch(n, MAY_BE_STRING_PREDICATE); 
+ + return mayBeString(n, recurse);
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + return mayBeString(n, recurse); if(n.getType() == Token.FUNCTION) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); }
+Iteration: 2, Repair Action: replace 
+ - return mayBeString(n, recurse); if(n.getType() == Token.FUNCTION) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); } 
+ + if(n.getType() == Token.BLOCK) { return mayBeString(n, recurse); } else { return mayBeStringHelper(n); } 
+ ----------------------------------------------------------------------------------------------------
+Closure10 -  FL is ranked in the 37 position(s) with a suspicious value: 0.21320071635561041
+
+
+Number of failing tests: 1 
+Buggy Location: 1417
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  allResultsMatch(n,  MAY_BE_STRING_PREDICATE);  
+ + return  mayBeStringHelper(n); 

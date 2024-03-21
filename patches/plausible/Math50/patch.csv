@@ -1,0 +1,9 @@
+
+Math50 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 188
+Patch Found in iteration 0 
+Repair Action: replace 
+ - x0  =  0.5  *  (x0  +  x1  -  FastMath.max(rtol  *  FastMath.abs(x1),  atol));  
+ +    
+ --------------------------------------------------

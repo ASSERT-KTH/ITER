@@ -1,0 +1,15 @@
+Math81/13
+
+Math81 -  FL is ranked in the 13 position(s) with a suspicious value: 0.5773502691896258
+Number of failing tests: 1 
+Buggy Location: 1481
+
+Iteration: 0, Diagnostic: [CE] ';' expected Repair Action: add 
+ +  a2 = Math.max(tType, a2);
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: replace 
+ -  a2 = Math.max(tType, a2); 
+ + a2 = Math.max(tType, gam);
+Iteration: 2, Repair Action: replace 
+ - a2 = Math.max(tType, gam); 
+ + a2 = Math.max(tType, dN); 
+ ----------------------------------------------------------------------------------------------------

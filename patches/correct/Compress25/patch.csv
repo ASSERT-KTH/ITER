@@ -1,0 +1,14 @@
+Compress25/FL-1/53
+
+Compress25 -  FL is ranked in the FL-1 -  FL is ranked in the 53 position(s) with a suspicious value: 0.4082482904638631
+Number of failing tests: 1 
+Buggy Location: 181
+
+Iteration: 0, Diagnostic: [FE] arrays first differed Repair Action: add 
+ +  InputStream in = new PushbackInputStream(inputStream, buf.limit());
+Iteration: 1, Diagnostic: [CE] variable in is already defined in constructor ZipArchiveInputStream(InputStream,String,boolean,boolean) Repair Action: add 
+ +   InputStream in = new PushbackInputStream(inputStream, buf.limit()); InputStream in = new PushbackInputStream(inputStream); buf.limit();
+Iteration: 2, Repair Action: replace 
+ -   InputStream in = new PushbackInputStream(inputStream, buf.limit()); InputStream in = new PushbackInputStream(inputStream); buf.limit(); 
+ + InputStream in = new PushbackInputStream(inputStream); buf.limit(0); 
+ ----------------------------------------------------------------------------------------------------

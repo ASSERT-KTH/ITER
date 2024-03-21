@@ -1,0 +1,675 @@
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.NAME) {
+Iteration: 1, Diagnostic: [CE] cannot find symbol right Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.NAME) { 
+ + if(right!= null || left.getType() == Token.NAME) {
+Iteration: 2, Repair Action: replace 
+ - if(right!= null || left.getType() == Token.NAME) { 
+ + if(n!= null || left.getType() == Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && left.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && left.getType() == Token.NAME) { 
+ + if(left!= null || left.getType() == Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && left.getType() == Token.VAR) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && left.getType() == Token.VAR) { 
+ + if(left!= null || left.getType() == Token.VAR) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null && parent.getType() == Token.EXPR_RESULT) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null || parent.getType() == Token.FUNCTION) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(left!= null && left.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(left!= null && left.getType() == Token.FUNCTION) { 
+ + if(left!= null || left.getType() == Token.FUNCTION) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(left!= null && left.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(left!= null && left.getType() == Token.FUNCTION) { 
+ + if(left!= null && left.getType() == Token.GETPROP) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(parent!= null && parent!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(provided!= null || parent!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(parent!= null && provided == null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(parent!= null && left!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(provided == null || parent!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.GETPROP) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.GETPROP) { 
+ + if(parent!= null || parent.getType() == Token.GETPROP) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.GETPROP) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.GETPROP) { 
+ + if(provided == null || parent.getType() == Token.GETPROP) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.GETPROP) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.GETPROP) { 
+ + if(parent!= null || left.getType() == Token.GETPROP) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.GETPROP) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.GETPROP) { 
+ + if(left!= null || left.getType() == Token.GETPROP) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.GETPROP) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.GETPROP) { 
+ + if(left!= null || parent.getType() == Token.GETPROP) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided == null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided == null || parent.getType() == Token.REQUIRE) { 
+ + if(parent == null || parent.getType() == Token.EXPR_RESULT) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided == null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided == null || parent.getType() == Token.REQUIRE) { 
+ + if(provided == null || parent.getType() == Token.STRING) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent.getType() == Token.VAR) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent.getType() == Token.VAR) { 
+ + if(parent!= null || parent.getType() == Token.VAR) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.NAME) { 
+ + if(parent!= null || left.getType() == Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.NAME) { 
+ + if(provided == null || left.getType() == Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.NAME) { 
+ + if(left!= null || parent.getType() == Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null || parent.getType() == Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null || parent.getType() == Token.EXPR_RESULT) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.FUNCTION) { 
+ + if(provided == null || parent.getType() == Token.FUNCTION) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null || parent.getType() == Token.EMPTY) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null || parent.getType() == Token.STRING) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.FUNCTION) { 
+ + if(parent!= null || left.getType() == Token.FUNCTION) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && left.getType() == Token.STRING) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && left.getType() == Token.STRING) { 
+ + if(left!= null || left.getType() == Token.STRING) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.REQUIRE) { 
+ + if(parent!= null || parent.getType() == Token.ASSIGN) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.REQUIRE) { 
+ + if(parent!= null || parent.getType() == Token.CALL) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.FUNCTION) { 
+ + if(left!= null || left.getType() == Token.EXPR_RESULT) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.FUNCTION) { 
+ + if(provided == null || left.getType() == Token.FUNCTION) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.FUNCTION) { 
+ + if(left!= null || left.getType() == Token.EMPTY) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.STRING) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.STRING) { 
+ + if(parent!= null || left.getType() == Token.STRING) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.STRING) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.STRING) { 
+ + if(provided == null || left.getType() == Token.STRING) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.STRING) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.STRING) { 
+ + if(left!= null || parent.getType() == Token.STRING) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(left!= null && left.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(left!= null && left.getType() == Token.NAME) { 
+ + if(left!= null && left.getType() == Token.NAME || parent.hasChildren()) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.REQUIRE) { 
+ + if(parent!= null || parent.getType() == Token.OBJECTLIT) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.FUNCTION) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.FUNCTION) { 
+ + if(left!= null || left.getType() == Token.NEW) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided == null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided == null || parent.getType() == Token.REQUIRE) { 
+ + if(provided == null || parent.getType() == Token.ASSIGN) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || left.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || left.getType() == Token.NAME) { 
+ + if(provided == null || left.getType()!= Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.NAME) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.NAME) { 
+ + if(provided == null || parent.getType()!= Token.NAME) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null || parent.getType() == Token.GETPROP) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null || parent.getType() == Token.GETPROP) { 
+ + if(parent!= null || parent.getType() == Token.GETELEM) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(provided == null && parent!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && parent!= null) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && parent!= null) { 
+ + if(left!= null && parent!= null) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided == null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided == null || parent.getType() == Token.REQUIRE) { 
+ + if(provided == null || parent.getType() == Token.VAR) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided == null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided == null || parent.getType() == Token.REQUIRE) { 
+ + if(provided == null || parent.getType() == Token.SCRIPT) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol REQUIRE Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided == null || parent.getType() == Token.REQUIRE) {
+Iteration: 1, Repair Action: replace 
+ - if(provided == null || parent.getType() == Token.REQUIRE) { 
+ + if(provided == null || parent.getType() == Token.CALL) { 
+ ----------------------------------------------------------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 329
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - if (provided != null) { 
+ + if(provided!= null && left.getType() == Token.VAR) {
+Iteration: 1, Repair Action: replace 
+ - if(provided!= null && left.getType() == Token.VAR) { 
+ + if(provided == null || left.getType() == Token.VAR) { 
+ ----------------------------------------------------------------------------------------------------
+ Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(provided!=  null  ||   requiresLevel.isOn() )  { 
+ --------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(parent!=  null)  { 
+ --------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(provided  ==  null)  { 
+ --------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(provided!=  null  ||  parent.hasChildren())  { 
+ --------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(provided  ==  null  ||  parent.getType()  ==  Token.NAME)  { 
+ --------------------------------------------------
+Closure113 -  FL is ranked in the 2 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 329
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (provided  !=  null)  {  
+ + if(provided  ==  null  ||  parent.hasChildren())  { 
+ --------------------------------------------------

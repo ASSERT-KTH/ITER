@@ -1,2 +1,0 @@
-Closure79	FL-1	projects/Closure79/src/com/google/javascript/jscomp/VarCheck.java	137	0.5962847939999439	replace	 [FE] RuntimeException 	createSynthesizedExternVar(varName); 	t.getCompiler().reportCodeChange();	5	1
-Closure79	FL-1	projects/Closure79/src/com/google/javascript/jscomp/VarCheck.java	220	0.4472135954999579	add	 [FE] RuntimeException 	 	    nameNode.putBooleanProp(Node.IS_CONSTANT_NAME,  true);  if(compiler.getCodingConvention().isConstant(varName)) { nameNode.putBooleanProp(Node.IS_CONSTANT_NAME, true); } else { compiler.reportCodeChange(); }	5	1

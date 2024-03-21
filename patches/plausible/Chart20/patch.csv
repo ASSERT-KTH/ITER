@@ -1,0 +1,13 @@
+Chart20/1
+
+Chart20 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 95
+
+Iteration: 0, Diagnostic: [CE] no suitable constructor found for Marker(Paint,Stroke,Stroke,float) Repair Action: replace 
+ - super(paint, stroke, paint, stroke, alpha); 
+ + super(paint, stroke, outlineStroke, alpha);
+Iteration: 1, Repair Action: replace 
+ - super(paint, stroke, outlineStroke, alpha); 
+ + super(paint, stroke, outlinePaint, outlineStroke, alpha); 
+ ----------------------------------------------------------------------------------------------------

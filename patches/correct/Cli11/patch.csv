@@ -1,0 +1,22 @@
+
+ Cli11 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 634
+
+Iteration: 0, Diagnostic: [FE] ComparisonFailure Repair Action: add 
+ +  if(option.hasArgName()) { buff.append( " < ").append(option.getArgName()).append( "> "); }
+Iteration: 1, Repair Action: add 
+ - 
+ +   if(option.hasArgName()) { buff.append( " <  ").append(option.getArgName()).append( "> "); } if(option.hasArgName()) { buff.append( " < ").append(option.getArgName()).append( "> "); } 
+ ----------------------------------------------------------------------------------------------------
+  Cli11 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 634
+
+Patch Found in iteration 0 
+Repair Action: replace 
+ - buff.append( "  < ").append(option.getArgName()).append( "> ");  
+ + if(option.hasArgName())  {  buff.append( "  <   ").append(option.getArgName()).append( "> ");  } 

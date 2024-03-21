@@ -1,0 +1,10 @@
+
+
+Cli27 -  FL is ranked in the 2 position(s) with a suspicious value: 0.7071067811865476
+Number of failing tests: 3 
+Buggy Location: 100
+Patch Found in iteration 0 
+Repair Action: replace 
+ - selected  =  option.getOpt();  
+ + selected  =  option.getKey(); 
+ --------------------------------------------------

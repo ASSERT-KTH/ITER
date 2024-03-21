@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-5	[BUG] [BUGGY] _inputLen = 0; [FE] NullPointerException [CONTEXT] [BUGGY] _inputLen = 0; [BUGGY]  _inputBuffer = null; _resultString = null; _resultArray = null;  if (_hasSegments) { clearSegments(); } } [CLASS] TextBuffer [METHOD] resetWithEmpty [RETURN_TYPE] void  	projects/JacksonCore8/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	1.0	158	158	1	replace	

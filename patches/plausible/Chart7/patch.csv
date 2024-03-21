@@ -1,0 +1,11 @@
+
+Chart7 -  FL is ranked in the 49 position(s) with a suspicious value: 0.31622776601683794
+Number of failing tests: 1 
+Buggy Location: 300
+Patch Found in iteration 0 
+Repair Action: replace 
+ - long  s  =  getDataItem(this.minMiddleIndex).getPeriod().getStart()  .getTime();  
+ - long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()  .getTime(); 
+ + long  s  =  getDataItem(this.maxMiddleIndex).getPeriod().getEnd().getTime(); 
+ + long e = getDataItem(this.maxMiddleIndex).getPeriod().getEnd()  .getTime(); 
+ --------------------------------------------------

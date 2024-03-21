@@ -1,0 +1,13 @@
+Math101/FL-1/11
+
+Math101 -  FL is ranked in the FL-1 -  FL is ranked in the 11 position(s) with a suspicious value: 0.2886751345948129
+Number of failing tests: 2 
+Buggy Location: 376
+
+Iteration: 0, Diagnostic: [FE] AssertionFailedError Repair Action: replace 
+ - int endIndex = startIndex + n; 
+ + int endIndex = startIndex + n - 1;
+Iteration: 1, Repair Action: replace 
+ - int endIndex = startIndex + n - 1; 
+ + int endIndex = source.length() + n - 1; 
+ ----------------------------------------------------------------------------------------------------

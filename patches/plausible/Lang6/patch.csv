@@ -1,0 +1,16 @@
+
+Lang6 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 54
+Patch Found in iteration 0 
+Repair Action: add 
+ - 
+ +     if(input!=  null)  {  return  input.toString();  } 
+ -------------------------------------------------------------------------------
+Lang6 -  FL is ranked in the 13 position(s) with a suspicious value: 1.0
+Number of failing tests: 1 
+Buggy Location: 95
+Patch Found in iteration 0 
+Repair Action: replace 
+ -     pos += Character.charCount(Character.codePointAt(input, pos));
+ +     pos += Character.charCount(Character.codePointAt(input, pt));

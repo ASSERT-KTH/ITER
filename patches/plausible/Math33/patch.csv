@@ -1,0 +1,9 @@
+
+Math33 -  FL is ranked in the 18 position(s) with a suspicious value: 0.24253562503633297
+Number of failing tests: 1 
+Buggy Location: 338
+Patch Found in iteration 0 
+Repair Action: replace 
+ - if  (Precision.compareTo(entry,  0d,  maxUlps)  >  0)  {  
+ + if  (restrictToNonNegative  &&  Precision.compareTo(entry,  0d,  maxUlps)>  0)  { 
+ --------------------------------------------------

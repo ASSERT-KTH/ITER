@@ -1,2 +1,0 @@
-bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
-23	[BUG] [BUGGY] if (!_hasSegments)return _currentSegment; [FE] NullPointerException [CONTEXT] [BUGGY] if (!_hasSegments)return _currentSegment; [BUGGY]  return contentsAsArray(); } [CLASS] TextBuffer [METHOD] getTextBuffer [RETURN_TYPE] char[]  	projects/JacksonCore8/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	1.0	307	307	1	replace	
