@@ -1,0 +1,16 @@
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iteratoriter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iterator<Option>iter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iteratoriter=currentOption.getOptions().iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iterator<Option>tokens=currentOption.getOptions();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iterator<Option>tokens=iter.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173if(eatTheRest){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173if(stopAtNonOption){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173if(!stopAtNonOption){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173if(stopAtNonOption||eatTheRest){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iteratoriter=options.iterator();tokens.add(iter.next());
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iterator<Option>tokens=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173if(stopAtNonOption||stopAtNonOption){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iteratoriter=options.entrySet().iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173Iterator<Option>iter=options.entrySet().iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java173iter.remove();

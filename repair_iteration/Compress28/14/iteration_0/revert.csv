@@ -1,0 +1,13 @@
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returntotalRead;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnentryOffset;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset,numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset,entryOffset);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset,hasHitEOF);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset,entryOffset+numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591if(entryOffset>entrySize){returnentryOffset;}
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset+numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnhasHitEOF;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.readAndClose(buf,offset,numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset+1,numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java591returnis.read(buf,offset+entryOffset);

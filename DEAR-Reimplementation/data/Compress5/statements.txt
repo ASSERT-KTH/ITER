@@ -1,0 +1,50 @@
+boolean useUnicodeExtraFields) {
+private final Inflater inf = new Inflater(true);
+private final CRC32 crc = new CRC32();
+private final byte[] buf = new byte[ZipArchiveOutputStream.BUFFER_SIZE];
+private ZipArchiveEntry current = null;
+private boolean closed = false;
+private boolean hitCentralDirectory = false;
+private int readBytesOfEntry = 0, offsetInBuffer = 0;
+private int bytesReadFromStream = 0;
+private int lengthOfLastRead = 0;
+private boolean hasDataDescriptor = false;
+zipEncoding = ZipEncodingHelper.getZipEncoding(encoding);
+this.useUnicodeExtraFields = useUnicodeExtraFields;
+in = new PushbackInputStream(inputStream, buf.length);
+}
+if (closed || hitCentralDirectory) {
+if (current != null) {
+closeEntry();
+byte[] lfh = new byte[LFH_LEN];
+readFully(lfh);
+}
+ZipLong sig = new ZipLong(lfh);
+if (sig.equals(ZipLong.CFH_SIG)) {
+if (!sig.equals(ZipLong.LFH_SIG)) {
+int off = WORD;
+current = new ZipArchiveEntry();
+int versionMadeBy = ZipShort.getValue(lfh, off);
+off += SHORT;
+current.setPlatform((versionMadeBy >> ZipFile.BYTE_SHIFT)
+final int generalPurposeFlag = ZipShort.getValue(lfh, off);
+final boolean hasEFS =
+final ZipEncoding entryEncoding =
+hasDataDescriptor = (generalPurposeFlag & 8) != 0;
+off += SHORT;
+current.setMethod(ZipShort.getValue(lfh, off));
+off += SHORT;
+long time = ZipUtil.dosToJavaTime(ZipLong.getValue(lfh, off));
+current.setTime(time);
+off += WORD;
+if (!hasDataDescriptor) {
+current.setCrc(ZipLong.getValue(lfh, off));
+off += WORD;
+current.setCompressedSize(ZipLong.getValue(lfh, off));
+off += WORD;
+current.setSize(ZipLong.getValue(lfh, off));
+off += WORD;
+int fileNameLen = ZipShort.getValue(lfh, off);
+off += SHORT;
+int extraLen = ZipShort.getValue(lfh, off);
+off += SHORT;

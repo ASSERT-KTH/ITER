@@ -1,0 +1,17 @@
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append(",");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append("");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append(".");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append("n");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultLongOptPrefix).append(app).append("");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append(app).append("");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultNewLine).append(app).append("");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultLongOptPrefix).append(app).append(",");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append(app).append(",");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514OptionGroupgroup=options.getGroup();
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514FontMetricsfmt=getFontMetrics(defaultSyntaxPrefix).getFontMetrics();
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514FontMetricsfmt=getFontMetrics(defaultSyntaxPrefix).getFont();
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514FontMetricsfmt=getFontMetrics(optionComparator);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514FontMetricsfmt=getFontMetrics(defaultSyntaxPrefix);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append(";").append(";");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java514StringBufferbuff=newStringBuffer(defaultSyntaxPrefix).append(",").append(";");

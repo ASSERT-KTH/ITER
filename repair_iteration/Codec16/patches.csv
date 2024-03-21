@@ -1,0 +1,1645 @@
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Alphabet must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Platform must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bluespace must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Padding must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Padding must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Padding must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UsageHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UsageHex must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad space must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "The pad must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Decode must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Sep must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Sep must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Sep must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace: " + pad); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.n "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.n "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [CE] cannot find symbol sep Repair Action: add 
+ +  if(useHex) { System.arraycopy(sep, 0, this.lineSeparator, 0, pad); }
+Iteration: 1, Diagnostic: [CE] ';' expected Repair Action: replace 
+ -  if(useHex) { System.arraycopy(sep, 0, this.lineSeparator, 0, pad); } 
+ + logically(useHex) { System.arraycopy(this.lineSeparator, 0, this.lineSeparator, 0, this.decodeSize); }
+Iteration: 2, Repair Action: replace 
+ - logically(useHex) { System.arraycopy(this.lineSeparator, 0, this.lineSeparator, 0, this.decodeSize); } 
+ + if(!useHex) { System.arraycopy(this.lineSeparator, 0, this.lineSeparator, 0, this.decodeSize); } 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace "); IllegalArgumentException( "Whitespace must not be in alphabet or blackspace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); IllegalArgumentException(  "Whitespace must not be in alphabet or blackspace  "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or blackspace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "Bytes must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace! "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "UseHex must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "UseHex must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "UseHex must not be in alphabet or whitespace: "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace.. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace.n "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace.... "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "pad must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "pad must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "pad must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Encoding must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace.  "); 
+ + new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that the pad does not exist. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ + new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] cannot find symbol Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); throw new IllegalArgumentException(  "Bad useHex must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the useHex is null. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the useHex is null. "); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the useHex is null. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that it does. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that it does. "); 
+ + new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that it does. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "The pad must not be in alphabet or whitespace "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "The pad must not be in alphabet or whitespace  "); Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace  "); 
+ + Throwable cause = new IllegalArgumentException( "The pad must not be in alphabet or whitespace, "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that this pad does not exist. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that this pad does not exist. "); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that this pad does not exist. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the pad does not exist: " + pad);
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the pad does not exist: " + pad); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the pad does not exist: " + pad); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Bad space must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); throw new IllegalArgumentException(  "Bad space must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Bad space must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that your pad does not exist. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that your pad does not exist. "); 
+ + new IllegalArgumentException( "Bad useHex must not be in alphabet or whitespace. Please check that your pad does not exist. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that it does. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that it does. "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that it does. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + if(!useHex) { throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); } 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the pad does not exist. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the useHex is null. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the useHex is null. "); 
+ + new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the useHex is null. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace.  "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace.  "); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that your useHex is null. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that your useHex is null. "); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that your useHex is null. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the pad does not exist. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ + new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); 
+ + if(!useHex) { throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); } 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace  "); 
+ + if(!useHex) { throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); } 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] <identifier> expected Repair Action: add 
+ + throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); Throwables.throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Decode must not be in alphabet or whitespace  "); Throwables.throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace  "); 
+ + if(!useHex) { throw new IllegalArgumentException( "Decode must not be in alphabet or whitespace "); } 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Try again. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that it does. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Whitespace must not be in alphabet or whitespace.  "); Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace.  "); 
+ + Throwable cause = new IllegalArgumentException( "Whitespace must not be in alphabet or whitespace. Please check that the pad does not exist. "); 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+Number of failing tests: 1 
+Buggy Location: 309
+
+Iteration: 0, Diagnostic: [FE] IllegalArgumentException Repair Action: replace 
+ - throw new IllegalArgumentException( "pad must not be in alphabet or whitespace "); 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 1, Diagnostic: [CE] unreachable statement Repair Action: add 
+ + throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace ");
+Iteration: 2, Repair Action: replace 
+ - throw new IllegalArgumentException(  "Bytes must not be in alphabet or whitespace  "); throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace  "); 
+ + if(!useHex) { throw new IllegalArgumentException( "Bytes must not be in alphabet or whitespace. "); } 
+ ----------------------------------------------------------------------------------------------------
+Codec16 -  FL is ranked in the 1 position(s) with a suspicious value: 1.0
+
+
+Number of failing tests: 1 
+Buggy Location: 309
+Patch Found in iteration 0 
+Repair Action: replace 
+ - throw  new  IllegalArgumentException( "pad  must  not  be  in  alphabet  or  whitespace ");  
+ +    
+ --------------------------------------------------

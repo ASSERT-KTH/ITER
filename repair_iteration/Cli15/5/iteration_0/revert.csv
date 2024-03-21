@@ -1,0 +1,11 @@
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84valueList.add(value);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84valueList.clear();
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84valueList.addAll(valueList);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84valueList.add(this);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84valueList.add(option);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84values.put(option,valueList);
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84if(valueList!=null){values.put(option,valueList);}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84if(valueList!=null){values.put(option,valueList);}else{defaultValues.put(option,valueList);}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84if(valueList==null){values.put(option,valueList);}
+projects/Cli15/src/java/org/apache/commons/cli2/commandline/WriteableCommandLineImpl.java84if(valueList!=null){values.put(option,valueList);}else{defaultValues.add(option);}

@@ -1,0 +1,7 @@
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058if(this.data.size()>0){
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058TimeSeriescopy=(TimeSeries)this.data.get(start);
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058TimeSeriescopy=(TimeSeries)copy.clone();
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058TimeSeriescopy=(TimeSeries)copy.data.get(start);
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058TimeSeriescopy=(TimeSeries)copy.get(start);
+projects/Chart3/source/org/jfree/data/time/TimeSeries.java1058Collections.sort(copy);

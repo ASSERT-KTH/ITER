@@ -1,0 +1,30 @@
+return 0.0;
+return Double.MAX_VALUE;
+double d = getDenominatorDegreesOfFreedom();
+ret = d / (d - 2.0);
+return ret;
+return super.inverseCumulativeProbability(p);
+double n = getNumeratorDegreesOfFreedom();
+double m = getDenominatorDegreesOfFreedom();
+ret = Beta.regularizedBeta((n * x) / (m + n * x),
+if (p == 0) {
+if (p == 1) {
+if (x <= 0.0) {
+return ret;
+return numeratorDegreesOfFreedom;
+return denominatorDegreesOfFreedom;
+super();
+setNumeratorDegreesOfFreedom(numeratorDegreesOfFreedom);
+setDenominatorDegreesOfFreedom(denominatorDegreesOfFreedom);
+}
+if (degreesOfFreedom <= 0.0) {
+this.numeratorDegreesOfFreedom = degreesOfFreedom;
+}
+if (degreesOfFreedom <= 0.0) {
+this.denominatorDegreesOfFreedom = degreesOfFreedom;
+}
+ret = 0.0;
+return 0d;
+return Double.POSITIVE_INFINITY;
+throw new IllegalArgumentException(
+throw new IllegalArgumentException(

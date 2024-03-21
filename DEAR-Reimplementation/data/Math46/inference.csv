@@ -1,0 +1,1225 @@
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:329-return isNaN;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:260-return isZero ? NaN : INF;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:329-return isNaN;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:1183-return "(" + real + ", " + imaginary + ")";[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:329-return isNaN;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:587-return this.add(I).divide(I.subtract(this)).log()[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:329-return isNaN;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:258-if (divisor.isZero) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:329-return isNaN;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:253-MathUtils.checkNotNull(divisor);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:329-return isNaN;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:254-if (isNaN || divisor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:583-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:329-return isNaN;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:276-double q = d / c;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:583-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:276-double q = d / c;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:277-double denominator = d * q + c;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:430-return INF;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:278-return createComplex((imaginary * q + real) / denominator,[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:430-return INF;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:122-return Double.POSITIVE_INFINITY;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:164-return createComplex(real + addend.getReal(),[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:263-if (divisor.isInfinite() && !isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:267-final double c = divisor.getReal();[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:268-final double d = divisor.getImaginary();[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:270-if (FastMath.abs(c) < FastMath.abs(d)) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:497-return createComplex(real - subtrahend.getReal(),[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:159-MathUtils.checkNotNull(addend);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:160-if (isNaN || addend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:492-MathUtils.checkNotNull(subtrahend);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:493-if (isNaN || subtrahend.isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:754-return createComplex(FastMath.log(abs()),[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:328-if (c.isNaN) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:327-Complex c = (Complex)other;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:328-if (c.isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:425-if (Double.isInfinite(real) ||[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:379-return isNaN;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:326-if (other instanceof Complex){[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:750-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:379-return isNaN;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:750-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:421-MathUtils.checkNotNull(factor);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:422-if (isNaN || factor.isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:100-this.real = real;	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:99-public Complex(double real, double imaginary) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:100-this.real = real;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:101-this.imaginary = imaginary;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:103-isNaN = Double.isNaN(real) || Double.isNaN(imaginary);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:104-isInfinite = !isNaN &&[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:107-}	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:106-isZero = real == 0 && imaginary == 0;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:107-}[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:58-public static final Complex I = new Complex(0.0, 1.0);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:61-public static final Complex NaN = new Complex(Double.NaN, Double.NaN);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:64-public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:66-public static final Complex ONE = new Complex(1.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:323-if (this == other) {	0
+org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:68-public static final Complex ZERO = new Complex(0.0, 0.0);[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:323-if (this == other) {[CLS]org.apache.commons.math.complex.Complex:121-if (isInfinite()) {	0
+org.apache.commons.math.complex.Complex:323-if (this == other) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:323-if (this == other) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:323-if (this == other) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:323-if (this == other) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:121-if (isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:118-if (isNaN) {	0
+org.apache.commons.math.complex.Complex:121-if (isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:121-if (isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:121-if (isInfinite()) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:118-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:392-return isInfinite;	0
+org.apache.commons.math.complex.Complex:118-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:118-if (isNaN) {[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:392-return isInfinite;[CLS]org.apache.commons.math.complex.Complex:368-return real;	0
+org.apache.commons.math.complex.Complex:392-return isInfinite;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0
+org.apache.commons.math.complex.Complex:368-return real;[CLS]org.apache.commons.math.complex.Complex:359-return imaginary;	0

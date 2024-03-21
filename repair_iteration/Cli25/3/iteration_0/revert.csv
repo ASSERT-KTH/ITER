@@ -1,0 +1,14 @@
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,false);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,true);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443printHelp(pw,width,cmdLineSyntax,header,options,rightPad,descPad,footer,false);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw=newPrintWriter(width,cmdLineSyntax,header,options,leftPad,descPad,footer);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw=newPrintWriter(width,cmdLineSyntax);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw=newPrintWriter(width,cmdLineSyntax,header,options,leftPad,descPad,footer,false);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw=newPrintWriter();
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw=newPrintWriter(width,cmdLineSyntax,header);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,null);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443printHelp(pw,width,cmdLineSyntax,header,options,leftPad,descPad,footer);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,false);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443PrintWriterpw,width,cmdLineSyntax,header,options,leftPad,descPad,footer,true);
+projects/Cli25/src/java/org/apache/commons/cli/HelpFormatter.java443pw.flush();

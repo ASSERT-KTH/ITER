@@ -1,0 +1,3 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+5	[BUG] [BUGGY] return getRenderer(0); [FE] NullPointerException [CONTEXT] [BUGGY] return getRenderer(0); [BUGGY] } [CLASS] XYPlot [METHOD] getRenderer [RETURN_TYPE] XYItemRenderer  	projects/Chart4/source/org/jfree/chart/plot/XYPlot.java	0.8709883407113854	1576	1576	22	replace	
+6	[BUG] [BUGGY] [FE] NullPointerException [CONTEXT] [BUGGY] [BUGGY] return getRenderer(0); } [CLASS] XYPlot [METHOD] getRenderer [RETURN_TYPE] XYItemRenderer  	projects/Chart4/source/org/jfree/chart/plot/XYPlot.java	0.8709883407113854	1576	1576	22	add	

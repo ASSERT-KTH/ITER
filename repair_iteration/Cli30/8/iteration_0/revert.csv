@@ -1,0 +1,12 @@
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286e.printStackTrace();
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286Optioncmd=options.getOption(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286Optionoption=options.getOption(opt);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286Optionoption=options.getOption(value);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286Optioncmd=options.getOption(option);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286elseif(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value)))
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286elseif(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value))){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286elseif(!("yes".equalsIgnoreCase(value)||"false".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value))){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286options.addValueForProcessing(value);
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286elseif(!("yes".equalsIgnoreCase(value)||"true".equalsIgnoreCase(value)||"false".equalsIgnoreCase(value)||"1".equalsIgnoreCase(value))){
+projects/Cli30/src/main/java/org/apache/commons/cli/Parser.java286Optioncmd=options.getOption(value);

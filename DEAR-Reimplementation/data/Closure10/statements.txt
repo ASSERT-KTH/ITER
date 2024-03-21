@@ -1,0 +1,50 @@
+return allResultsMatch(n.getFirstChild().getNext(), p)
+case Token.GT: return ">";
+String s = trimJsWhiteSpace(rawJsString);
+if (s.length() == 0) {
+if (s.length() > 2
+if (s.length() > 3
+if (s.equals("infinity")
+return Double.parseDouble(s);
+int start = 0;
+int end = s.length();
+&& isStrWhiteSpaceChar(s.charAt(end - 1)) == TernaryValue.TRUE) {
+&& isStrWhiteSpaceChar(s.charAt(start)) == TernaryValue.TRUE) {
+return s.substring(start, end);
+switch (c) {
+return (Character.getType(c) == Character.SPACE_SEPARATOR)
+case Token.IN: return 9;
+return false;
+return getStringNumberValue(n.getString());
+if (rawJsString.contains("\u000b")) {
+case Token.HOOK: return 2;// ?: operator
+return null;
+result.srcrefTree(srcref);
+return mayBeStringHelper(n);
+return false;
+switch (type) {
+case Token.ADD:return 11;
+case Token.ADD: return "+";
+return false;
+return true;
+return false;
+return allResultsMatch(n, BOOLEAN_RESULT_PREDICATE);
+switch (n.getType()) {
+return n.isGetProp() || n.isGetElem();
+result = IR.number(value);
+return !mayBeString(n.getFirstChild())
+return mayBeString(n, true);
+if (recurse) {
+return allResultsMatch(n, MAY_BE_STRING_PREDICATE);
+return !isNumericResult(n) && !isBooleanResult(n)
+} else if (value == Double.NEGATIVE_INFINITY) {
+switch (n.getType()) {
+return p.apply(n);
+return allResultsMatch(n, NUMBERIC_RESULT_PREDICATE);
+switch (n.getType()) {
+if (Double.isNaN(value)) {
+} else if (value == Double.POSITIVE_INFINITY) {
+if (srcref != null) {
+return result;
+return n.getDouble();
+switch (n.getType()) {

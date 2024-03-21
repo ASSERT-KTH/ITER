@@ -1,0 +1,16 @@
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436if(marker==null){
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436if(markers==null){
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.backgroundRangeMarkers.get(index);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.markers.get(index);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.foregroundRangeMarkers.get(index);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436if(marker==null||!marker.isEmpty()){
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=getMarker();
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.markers.get(index-1);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.markers.get(index+1);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.foregroundRangeMarkers.get(index-1);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436if(markers==null||!markers.isEmpty()){
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=getMarker(index);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436Markermarker=(Marker)this.backgroundRangeMarkers.get(index-1);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436if(markers==null||!markers.contains(marker)){
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2436if(marker==null||marker.isEmpty()){

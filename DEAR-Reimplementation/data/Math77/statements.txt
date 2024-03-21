@@ -1,0 +1,50 @@
+double max = 0;
+Iterator iter = entries.iterator();
+while (iter.hasNext()) {
+iter.advance();
+max += iter.value();
+return max;
+double sum = 0;
+for (double a : data) {
+sum += a * a;
+return Math.sqrt(sum);
+double sum = 0;
+for (double a : data) {
+sum += Math.abs(a);
+return sum;
+double max = 0;
+for (double a : data) {
+max += Math.max(max, Math.abs(a));
+return max;
+return new OpenMapSparseIterator();
+this(values, DEFAULT_ZERO_TOLERANCE);
+}
+public OpenMapRealVector(double[] values, double epsilon) {
+virtualSize = values.length;
+entries = new OpenIntToDoubleHashMap(0.0);
+this.epsilon = epsilon;
+for (int key = 0; key < values.length; key++) {
+double value = values[key];
+if (!isDefaultValue(value)) {
+entries.put(key, value);
+}
+return Math.abs(value) < epsilon;
+public ArrayRealVector(double[] d) {
+data = d.clone();
+}
+private static final RealVectorFormat DEFAULT_FORMAT =
+this(0, DEFAULT_ZERO_TOLERANCE);
+}
+this(dimension, DEFAULT_ZERO_TOLERANCE);
+}
+public OpenMapRealVector(int dimension, double epsilon) {
+virtualSize = dimension;
+entries = new OpenIntToDoubleHashMap(0.0);
+this.epsilon = epsilon;
+}
+protected OpenMapRealVector(OpenMapRealVector v, int resize) {
+virtualSize = v.getDimension() + resize;
+entries = new OpenIntToDoubleHashMap(v.entries);
+epsilon = v.epsilon;
+}
+this(dimension, expectedSize, DEFAULT_ZERO_TOLERANCE);

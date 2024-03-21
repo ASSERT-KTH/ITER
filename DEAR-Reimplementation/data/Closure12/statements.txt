@@ -1,0 +1,50 @@
+GraphNode<Node, Branch> n = getCfg().getNode(defNode);
+Preconditions.checkNotNull(n);
+FlowState<ReachingUses> state = n.getAnnotation();
+return state.getOut().mayUseMap.get(jsScope.getVar(name));
+Node name = n.getFirstChild();
+if (!conditional) {
+removeFromUseIfLocal(name.getString(), output);
+if (!n.isAssign()) {
+computeMayUse(name.getNext(), cfgNode, output, conditional);
+} else {
+computeMayUse(varName.getFirstChild(), cfgNode, output, conditional);
+if (!conditional) {
+removeFromUseIfLocal(varName.getString(), output);
+return;
+use.mayUseMap.put(var, node);
+addToUseIfLocal(n.getString(), cfgNode, output);
+return;
+use.mayUseMap.removeAll(var);
+Node varName = n.getFirstChild();
+Preconditions.checkState(n.hasChildren(), "AST should be normalized");
+if (varName.hasChildren()) {
+return;
+computeMayUse(c, cfgNode, output, conditional);
+super(cfg, new ReachingUsesJoinOp());
+this.jsScope = jsScope;
+this.escaped = Sets.newHashSet();
+computeEscaped(jsScope, escaped, compiler);
+}
+return false;
+return new ReachingUses();
+return new ReachingUses();
+ReachingUses output = new ReachingUses(input);
+boolean conditional = hasExceptionHandler(n);
+computeMayUse(n, n, output, conditional);
+return output;
+return false;
+switch (n.getType()) {
+return;
+if (NodeUtil.isAssignmentOp(n) && n.getFirstChild().isName()) {
+for (Node c = n.getLastChild(); c != null; c = n.getChildBefore(c)) {
+}
+Var var = jsScope.getVar(name);
+if (var == null || var.scope != jsScope) {
+if (!escaped.contains(var)) {
+}
+Var var = jsScope.getVar(name);
+if (var == null || var.scope != jsScope) {
+if (!escaped.contains(var)) {
+}
+computeMayUse(

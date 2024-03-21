@@ -1,0 +1,15 @@
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210returnfalse;
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210returntrue;
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()==Token.NAME){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.NAME){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.NAME){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()==Token.VAR){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.VAR){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.GETPROP){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.BLOCK){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.STRING){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.NEW){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.getType()!=Token.CATCH){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java2210if(c.getType()==Token.FUNCTION||c.hasChildren()){returnfalse;}

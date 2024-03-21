@@ -1,0 +1,17 @@
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463pfxLen=str.length();
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463pfxLen+=str.length();
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463if(pfxLen==0){pfxLen+=str.length();}
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463pfxLen=str.length()+pfx.length();
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463if(pfxLen==0){pfxLen=str.length();}
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463break;
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463thrownewNumberFormatException("");
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463thrownewNumberFormatException("Invalidnumber:"+pfx);
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463((Number)hex_prefixes).setLength(0);
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463((Number)hex_prefixes).add(pfx);
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463if(pfxLen==0){returncreateBigInteger(pfx);}
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463pfxLen=0;
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463if(pfxLen==0){break;}
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463returncreateBigInteger(str);
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463((Number)hex_prefixes).append(pfx);
+projects/Lang1/src/main/java/org/apache/commons/lang3/math/NumberUtils.java463((Number)hex_prefixes).append('-');

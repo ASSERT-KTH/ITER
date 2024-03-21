@@ -1,0 +1,11 @@
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCrc(realCrc);
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCompressedSize(ZipUtil.adjustToLong(def.getTotalOut()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setSize(ZipUtil.adjustToLong(def.getTotalOut()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCompressedSize(ZipUtil.adjustToLong(def.getTotalIn()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setSize(ZipUtil.adjustToLong(def.getTotalIn()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCrc(raf);
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCompressedSize(ZipUtil.adjustToLong(def.getTotalCrc()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCompressedSize(Long.toHexString(def.getTotalOut()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCompressedSize(Long.toHexString(def.getTotalIn()));
+projects/Compress4/src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java369entry.setCompressedSize(ZipUtil.adjustToLong(def.getTotalDestination()));

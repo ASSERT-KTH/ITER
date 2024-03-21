@@ -1,0 +1,15 @@
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170Iteratoriter=options.iterator();
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170iter.remove();
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170Iterator<Object>iter=options.iterator();
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170tokens.add(iter.next());
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170iter.next();
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170while(iter.hasNext()){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170while(iter.hasNext()&&iter.hasNext()){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170while(iter.hasNext()&&iter.next()!=null){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170Iterator<Option>options=options.iterator();
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170tokens.add(iter.getValue());
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170while(iter.hasNext()&&stopAtNonOption){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170Iteratoriter=options.iterator();tokens.add(iter.next());
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170Iteratoriter=options.entrySet().iterator();
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java170Iteratoriter=options.getIterator("stopAtNonOption");

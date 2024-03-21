@@ -1,0 +1,12 @@
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190tokens.add("--");
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){thrownewIllegalArgumentException("");}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){tokens.add("--");tokens.add(value);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){stopAtNonOption=true;tokens.add("--");tokens.add(value);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){tokens.add("--");tokens.add(value);}else{options.add("--");}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){tokens.add("--");tokens.add(token);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){stopAtNonOption=stopAtNonOption;tokens.add("--");tokens.add(value);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){stopAtNonOption=false;tokens.add("--");tokens.add(value);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){stopAtNonOption=StopAtNonOption.stopAtNonOption;tokens.add("--");tokens.add(value);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java190if(stopAtNonOption){stopAtNonOption=stopAtNonOption;tokens.add("--");}

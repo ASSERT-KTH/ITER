@@ -1,0 +1,50 @@
+offset += 1;
+int endOffset = indexOfNonDigit(date, offset + 1); // assume at least one digit
+int parseEndOffset = Math.min(endOffset, offset + 3); // parse up to 3 digits
+int fraction = parseInt(date, offset, parseEndOffset);
+switch (parseEndOffset - offset) { // number of digits parsed
+milliseconds = fraction;
+offset = endOffset;
+} else if (timezoneIndicator == '+' || timezoneIndicator == '-') {
+String timezoneOffset = date.substring(offset);
+offset += timezoneOffset.length();
+if ("+0000".equals(timezoneOffset) || "+00:00".equals(timezoneOffset)) {
+timezone = TIMEZONE_UTC;
+String timezoneId = "GMT" + timezoneOffset;
+timezone = TimeZone.getTimeZone(timezoneId);
+String act = timezone.getID();
+if (!act.equals(timezoneId)) {
+String cleaned = act.replace(":", "");
+if (!cleaned.equals(timezoneId)) {
+throw new IndexOutOfBoundsException("Mismatching time zone indicator: "+timezoneId+" given, resolves to "
+} else {
+} catch (IndexOutOfBoundsException e) {
+fail = e;
+}
+String input = (date == null) ? null : ('"' + date + "'");
+String msg = fail.getMessage();
+if (msg == null || msg.isEmpty()) {
+ParseException ex = new ParseException("Failed to parse date [" + input + "]: " + msg, pos.getIndex());
+ex.initCause(fail);
+throw ex;
+for (int i = offset; i < string.length(); i++) {
+char c = string.charAt(i);
+if (c < '0' || c > '9') return i;
+private static final TimeZone TIMEZONE_UTC = TimeZone.getTimeZone(UTC_ID);
+Exception fail = null;
+int offset = pos.getIndex();
+int year = parseInt(date, offset, offset += 4);
+if (checkOffset(date, offset, '-')) {
+offset += 1;
+int month = parseInt(date, offset, offset += 2);
+if (checkOffset(date, offset, '-')) {
+offset += 1;
+int day = parseInt(date, offset, offset += 2);
+int hour = 0;
+int minutes = 0;
+int seconds = 0;
+int milliseconds = 0; // always use 0 otherwise returned date will include millis of current time
+boolean hasT = checkOffset(date, offset, 'T');
+if (!hasT && (date.length() <= offset)) {
+if (hasT) {
+hour = parseInt(date, offset += 1, offset += 2);

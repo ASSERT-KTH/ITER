@@ -1,0 +1,50 @@
+v = externsScope.getVar(name);
+GlobalNamespace(AbstractCompiler compiler, Node externsRoot, Node root) {
+private boolean generated = false;
+private int currentPreOrderIndex = 0;
+private List<Name> globalNames = new ArrayList<Name>();
+private Map<String, Name> nameMap = new HashMap<String, Name>();
+this.compiler = compiler;
+this.externsRoot = externsRoot;
+this.root = root;
+}
+return externsRoot != null;
+return getOwnSlot(name);
+ensureGenerated();
+return nameMap.get(name);
+if (!generated) {
+process();
+}
+ensureGenerated();
+return globalNames;
+if (externsRoot != null) {
+inExterns = true;
+NodeTraversal.traverse(compiler, externsRoot, new BuildGlobalNamespace());
+inExterns = false;
+NodeTraversal.traverse(compiler, root, new BuildGlobalNamespace());
+generated = true;
+}
+String topVarName = getTopVarName(name);
+return isGlobalVarReference(topVarName, s);
+int firstDotIndex = name.indexOf('.');
+return firstDotIndex == -1 ? name : name.substring(0, firstDotIndex);
+Scope.Var v = s.getVar(name);
+if (v == null && externsScope != null) {
+return v != null && !v.isLocal();
+return s.getParent() == null;
+this(compiler, null, root);
+}
+return root.getParent();
+return null;
+return compiler.getTypeRegistry().getNativeObjectType(GLOBAL_THIS);
+ensureGenerated();
+return Collections.unmodifiableList(slot.getRefs());
+return this;
+ensureGenerated();
+return Collections.unmodifiableCollection(getNameIndex().values());
+ensureGenerated();
+return nameMap;
+BuildGlobalNamespace builder = new BuildGlobalNamespace();
+for (AstChange info : newNodes) {
+if (!info.node.isQualifiedName() && !NodeUtil.isObjectLitKey(info.node)) {
+continue;

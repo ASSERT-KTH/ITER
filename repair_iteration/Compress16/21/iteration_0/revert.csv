@@ -1,0 +1,14 @@
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234signatureLength=in.read(tarheader);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234if(signatureLength==512){signatureLength=in.read(tarheader);}
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234if(signatureLength==512){signatureLength=in.read(tarheader);}else{thrownewIllegalArgumentException("");}
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234signatureLength=in.read(tarheader.length);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234signatureLength=in.read();
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234if(signatureLength==512){signatureLength=in.read(tarheader);}else{returnnewArchiveInputStream(in);}
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234if(signatureLength==512){signatureLength=in.read(tarheader);}else{returnnewTarArchiveInputStream(in);}
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234SignatureLengthsignatureLength=in.read(tarheader);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234tarheader=in.read(tarheader);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234tarheaderLength=in.read(tarheader);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234signatureLength=in.read(tarheader)+1;
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234signatureLength=in.read(signatureLength);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java234if(signatureLength==512){signatureLength=in.read(tarheader);}else{thrownewIllegalStateException("");}

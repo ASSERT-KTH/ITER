@@ -1,0 +1,50 @@
+super(UNREADABLE_READER);
+private Object[] stack = new Object[32];
+private int stackSize = 0;
+private String[] pathNames = new String[32];
+private int[] pathIndices = new int[32];
+push(element);
+}
+private static final Reader UNREADABLE_READER = new Reader() {
+private static final Object SENTINEL_CLOSED = new Object();
+if (stackSize == 0) {
+Object o = peekStack();
+if (o instanceof Iterator) {
+} else if (o instanceof JsonObject) {
+return JsonToken.BEGIN_OBJECT;
+return stack[stackSize - 1];
+Object result = stack[--stackSize];
+stack[stackSize] = null;
+return result;
+if (peek() == JsonToken.NAME) {
+popStack();
+pathNames[stackSize - 1] = "null";
+if (stackSize == stack.length) {
+stack[stackSize++] = newTop;
+}
+expect(JsonToken.BEGIN_ARRAY);
+JsonArray array = (JsonArray) peekStack();
+push(array.iterator());
+pathIndices[stackSize - 1] = 0;
+}
+expect(JsonToken.END_ARRAY);
+popStack(); // empty iterator
+popStack(); // array
+if (stackSize > 0) {
+pathIndices[stackSize - 1]++;
+}
+expect(JsonToken.BEGIN_OBJECT);
+JsonObject object = (JsonObject) peekStack();
+push(object.entrySet().iterator());
+}
+expect(JsonToken.END_OBJECT);
+popStack(); // empty iterator
+popStack(); // object
+if (stackSize > 0) {
+pathIndices[stackSize - 1]++;
+}
+JsonToken token = peek();
+return token != JsonToken.END_OBJECT && token != JsonToken.END_ARRAY;
+return JsonToken.END_DOCUMENT;
+boolean isObject = stack[stackSize - 2] instanceof JsonObject;
+Iterator<?> iterator = (Iterator<?>) o;

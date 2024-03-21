@@ -1,0 +1,13 @@
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98returntryFoldLiteralConstructor(node);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98returntryFoldCallConstructor(node);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98if(node.getType()==Token.CALL){returntryFoldLiteralConstructor(node);}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98returntryFoldStandardConstructors(node);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98if(node.getType()==Token.GETPROP){returntryFoldLiteralConstructor(node);}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98if(node.getType()==Token.CALL){returntryFoldLiteralConstructor(node);}else{node=tryFoldStandardConstructors(node);}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98if(node.getType()==Token.NAME){returntryFoldLiteralConstructor(node);}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98if(node.getType()==Token.FUNCTION){returntryFoldLiteralConstructor(node);}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98returntryFoldCallConstructors(node);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98if(node.getType()==Token.CALL){returntryFoldLiteralConstructors(node);}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98Nodenode=tryFoldCallConstructors(node);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java98returntryFoldLiteralConstructors(node);

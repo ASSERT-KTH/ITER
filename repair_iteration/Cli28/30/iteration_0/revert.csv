@@ -1,0 +1,17 @@
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174ListIteratoriterator=tokenList.listIterator();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174ListIteratoriterator=tokenList.iterator();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174ListIteratoriterator=options.listIterator();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174List<String>tokenList=Arrays.asList(flatten(getOptions(),arguments,stopAtNonOption));
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174List<String>tokenList=Arrays.asList(flatten(getOptions(),options,stopAtNonOption));
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174List<String>tokenList=Arrays.asList(flatten(getOptions(),arguments));
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174List<String>tokenList=Arrays.asList(flatten(getOptions(),arguments,null));
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174Optiongroup=options.getOptionGroup(tokenList);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174Optiongroup=options.getOptionGroup();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174ListIteratoriterator=tokenList.values().listIterator();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174OptionGroupgroup=options.getOptionGroup(tokenList);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174OptionGroupgroup=options.getOptionGroup();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174OptionGroupgroup=options.getOptionGroup(opt);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174Arrays.sort(tokenList);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174ListIteratoriterator=this.tokenList.listIterator();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java174ListIteratoriterator=requiredOptions.listIterator();

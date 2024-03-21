@@ -1,0 +1,50 @@
+addValue((Comparable<?>) v);
+public Frequency() {
+freqTable = new TreeMap();
+}
+public Frequency(Comparator comparator) {
+freqTable = new TreeMap(comparator);
+}
+NumberFormat nf = NumberFormat.getPercentInstance();
+StringBuffer outBuffer = new StringBuffer();
+outBuffer.append("Value \t Freq. \t Pct. \t Cum Pct. \n");
+Iterator iter = freqTable.keySet().iterator();
+while (iter.hasNext()) {
+Object value = iter.next();
+outBuffer.append(value);
+outBuffer.append('\t');
+outBuffer.append(getCount(value));
+outBuffer.append('\t');
+outBuffer.append(nf.format(getPct(value)));
+outBuffer.append('\t');
+outBuffer.append(nf.format(getCumPct(value)));
+outBuffer.append('\n');
+}
+return outBuffer.toString();
+}
+Object obj = v;
+if (v instanceof Integer) {
+obj = Long.valueOf(((Integer) v).longValue());
+Long count = (Long) freqTable.get(obj);
+if (count == null) {
+freqTable.put(obj, Long.valueOf(1));
+freqTable.put(obj, Long.valueOf(count.longValue() + 1));
+}
+} catch (ClassCastException ex) {
+throw new IllegalArgumentException("Value not comparable to existing values.");
+}
+addValue(Long.valueOf(v));
+}
+addValue(Long.valueOf(v.longValue()));
+}
+addValue(Long.valueOf(v));
+}
+addValue(Character.valueOf(v));
+}
+freqTable.clear();
+}
+return freqTable.keySet().iterator();
+long result = 0;
+Iterator iterator = freqTable.values().iterator();
+while (iterator.hasNext()){
+result += ((Long) iterator.next()).longValue();

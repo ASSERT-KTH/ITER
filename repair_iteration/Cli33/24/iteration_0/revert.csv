@@ -1,0 +1,12 @@
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805intx=0;
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805charx=0;
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805floatx=0;
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805intx=1;
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805sb.append("<").append(argName!=null?option.getArgName():getArgName()).append(">");
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805sb.append("<").append(argName==null?option.getArgName():getArgName()).append(">");
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805if(optList.size()>max){optBuf.append(createPadding(max-optBuf.length()));}
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805sb.append("<").append(argName!=null?optBuf.getArgName():getArgName()).append(">");
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805sb.append("<").append(argName!=null?option.getArgName():getArgName());
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805sb.append("<").append(argName!=null?option.getArgName():getArgName()));
+projects/Cli33/src/main/java/org/apache/commons/cli/HelpFormatter.java805if(optList.size()<max){optBuf.append(createPadding(max-optBuf.length()));}

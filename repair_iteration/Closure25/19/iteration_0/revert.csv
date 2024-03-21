@@ -1,0 +1,15 @@
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281break;
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281scope=traverseObjectLiteral(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281scope=traverseObjectLit(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281scope=traverseBooleanLiteral(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281scope=traverseLitLiteral(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281scope=traverseObjLit(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281scope=traverseBoolean(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281n=n.getJSDocInfo();
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281if(scope!=null){break;}
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281shadow=traverseObjectLiteral(n,scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281n.setJSType(castType);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281n.removeChild(scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281n.addChildToFront(scope);
+projects/Closure25/src/com/google/javascript/jscomp/TypeInference.java281n=n.getFirstChild();

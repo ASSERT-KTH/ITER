@@ -1,0 +1,11 @@
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88}
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88System.arraycopy(assemBuf,0,this.assemBuf,0,recordSize);
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88System.arraycopy(assemBuf,0,assemBuf,0,recordSize);
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88System.arraycopy(assemBuf,0,this.assemBuf,0,recordSize);out=os;
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88this.buffer=newTarBuffer(blockSize,recordSize);
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88this.recordBuf=newbyte[recordSize];
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88this.buffer=newTarBuffer(os,blockSize,recordSize);
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88this.buffer=newTarBuffer(out,blockSize,recordSize);
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88System.arraycopy(assemBuf,0,this.recordBuf,0,recordSize);
+projects/Compress3/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java88System.arraycopy(assemBuf,0,this.recordBuf,0,recordSize);out=os;

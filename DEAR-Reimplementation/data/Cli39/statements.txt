@@ -1,0 +1,42 @@
+return createFile(str);
+return new File(str);
+else if (PatternOptionBuilder.FILE_VALUE == clazz)
+else if (PatternOptionBuilder.EXISTING_FILE_VALUE == clazz)
+else if (PatternOptionBuilder.DATE_VALUE == clazz)
+else if (PatternOptionBuilder.CLASS_VALUE == clazz)
+else if (PatternOptionBuilder.NUMBER_VALUE == clazz)
+return createValue(str, (Class<?>) obj);
+if (PatternOptionBuilder.STRING_VALUE == clazz)
+else if (PatternOptionBuilder.OBJECT_VALUE == clazz)
+public class TypeHandler
+return str;
+return createObject(str);
+return createNumber(str);
+return createDate(str);
+return createClass(str);
+return createFile(str);
+else if (PatternOptionBuilder.FILES_VALUE == clazz)
+return createFiles(str);
+else if (PatternOptionBuilder.URL_VALUE == clazz)
+return createURL(str);
+return null;
+cl = Class.forName(classname);
+}
+catch (final ClassNotFoundException cnfe)
+throw new ParseException("Unable to find the class: " + classname);
+return cl.newInstance();
+catch (final Exception e)
+throw new ParseException(e.getClass().getName() + "; Unable to create an instance of: " + classname);
+if (str.indexOf('.') != -1)
+return Double.valueOf(str);
+return Long.valueOf(str);
+catch (final NumberFormatException e)
+throw new ParseException(e.getMessage());
+return Class.forName(classname);
+catch (final ClassNotFoundException e)
+throw new ParseException("Unable to find the class: " + classname);
+throw new UnsupportedOperationException("Not yet implemented");
+return new URL(str);
+catch (final MalformedURLException e)
+throw new ParseException("Unable to parse the URL: " + str);
+throw new UnsupportedOperationException("Not yet implemented");

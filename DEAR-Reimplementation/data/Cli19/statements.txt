@@ -1,0 +1,50 @@
+else if (stopAtNonOption)
+tokens.add(token.substring(i + 1));
+break;
+burstToken(token, stopAtNonOption);
+for (int i = 1; i < token.length(); i++)
+String ch = String.valueOf(token.charAt(i));
+if (options.hasOption(ch))
+tokens.add("-" + ch);
+currentOption = options.getOption(ch);
+if (currentOption.hasArg() && (token.length() != (i + 1)))
+}
+else if (options.hasOption(token))
+processOptionToken(token, stopAtNonOption);
+if (options.hasOption(token))
+}
+tokens.add(token);
+else if (stopAtNonOption)
+if (token.length() == 2)
+public class PosixParser extends Parser {
+private List tokens = new ArrayList();
+eatTheRest = false;
+tokens.clear();
+currentOption = null;
+}
+init();
+this.options = options;
+Iterator iter = Arrays.asList(arguments).iterator();
+while (iter.hasNext())
+String token = (String) iter.next();
+if (token.startsWith("--"))
+else if ("-".equals(token))
+else if (token.startsWith("-"))
+gobble(iter);
+}
+return (String[]) tokens.toArray(new String[tokens.size()]);
+if (eatTheRest)
+}
+if (token.indexOf('=') != -1)
+tokens.add(token.substring(0, token.indexOf('=')));
+tokens.add(token.substring(token.indexOf('=') + 1, token.length()));
+tokens.add(token);
+tokens.add(token);
+tokens.add(token);
+process(token);
+while (iter.hasNext())
+tokens.add(iter.next());
+if (currentOption != null && currentOption.hasArg())
+if (currentOption.hasArg())
+tokens.add(value);
+currentOption = null;

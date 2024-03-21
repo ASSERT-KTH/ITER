@@ -1,0 +1,14 @@
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259computeMustDef(n.getLastChild(),cfgNode,output,true);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259computeMustDef(n.getLastChild(),cfgNode,output,false);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259computeMustDef(n.getFirstChild(),cfgNode,output,true);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getLastChild()!=cfgNode){computeMustDef(n.getLastChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259computeMustDef(n.getLastChild(),cfgNode,output,conditional);
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getLastChild()==cfgNode){computeMustDef(n.getLastChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getType()==Token.FUNCTION){computeMustDef(n.getLastChild(),cfgNode,output,true);}else{computeMustDef(n.getLastChild(),cfgNode,output,false);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getType()==Token.FUNCTION){computeMustDef(n.getLastChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(conditional){computeMustDef(n.getLastChild(),cfgNode,output,true);}else{computeMustDef(n.getLastChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(!conditional){computeMustDef(n.getLastChild(),cfgNode,output,true);}else{computeMustDef(n.getLastChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getType()==Token.NAME){computeMustDef(n.getLastChild(),cfgNode,output,true);}else{computeMustDef(n.getLastChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getType()==Token.NAME){computeMustDef(n.getLastChild(),cfgNode,output,true);}else{computeMustDef(n.getFirstChild(),cfgNode,output,true);}
+projects/Closure30/src/com/google/javascript/jscomp/MustBeReachingVariableDef.java259if(n.getType()==Token.NAME){computeMustDef(n.getLastChild(),cfgNode,output,true);}else{computeMustDef(n.getLastChild(),cfgNode,output,false);}

@@ -1,0 +1,32 @@
+throw MathRuntimeException.createIllegalArgumentException(LocalizedFormats.NOT_POSITIVE_POISSON_MEAN, p);
+this(p, DEFAULT_EPSILON, DEFAULT_MAX_ITERATIONS);
+}
+public PoissonDistributionImpl(double p, double epsilon, int maxIterations) {
+private int maxIterations = DEFAULT_MAX_ITERATIONS;
+private double epsilon = DEFAULT_EPSILON;
+if (p <= 0) {
+mean = p;
+normal = new NormalDistributionImpl(p, FastMath.sqrt(p));
+this.epsilon = epsilon;
+this.maxIterations = maxIterations;
+}
+this(p, epsilon, DEFAULT_MAX_ITERATIONS);
+}
+this(p, DEFAULT_EPSILON, maxIterations);
+}
+return mean;
+if (x < 0 || x == Integer.MAX_VALUE) {
+ret = 0.0;
+} else if (x == 0) {
+ret = FastMath.exp(-mean);
+ret = FastMath.exp(-SaddlePointExpansion.getStirlingError(x) -
+return ret;
+if (x < 0) {
+return 0;
+if (x == Integer.MAX_VALUE) {
+return 1;
+return Gamma.regularizedGammaQ((double) x + 1, mean, epsilon, maxIterations);
+return normal.cumulativeProbability(x + 0.5);
+return (int) FastMath.min(randomData.nextPoisson(mean), Integer.MAX_VALUE);
+return 0;
+return Integer.MAX_VALUE;

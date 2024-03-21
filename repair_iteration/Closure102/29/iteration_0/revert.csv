@@ -1,0 +1,16 @@
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235switch(n.getType()){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235switch(n.getFirstChild()){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235switch(n.getType(),parent){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235switch(parent.getType()){
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Noden=n.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Noden=parent.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Noden=n.getLastChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Nodeparent=n.getParent();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Noden=parent.getParent();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Context.checkState(n.getType()==Token.FUNCTION);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235NodeTraversal.traverse(compiler,n,parent);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Context.checkState(n.getType()==Token.NAME);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Nodeexpr=n.getFirstChild();
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235Context.checkState(n.getType()==Token.VAR);
+projects/Closure102/src/com/google/javascript/jscomp/Normalize.java235switch(n.getString()){

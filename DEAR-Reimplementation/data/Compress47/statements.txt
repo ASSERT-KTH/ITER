@@ -1,0 +1,50 @@
+if (ae instanceof ZipArchiveEntry) {
+final ZipArchiveEntry ze = (ZipArchiveEntry) ae;
+return ZipUtil.canHandleEntryData(ze)
+return !entry.getGeneralPurposeBit().usesDataDescriptor()
+if (!closed) {
+closed = true;
+in.close();
+inf.end();
+}
+}
+this(inputStream, ZipEncodingHelper.UTF8);
+}
+this(inputStream, encoding, true);
+}
+this(inputStream, encoding, useUnicodeExtraFields, false);
+}
+final boolean allowStoredEntriesWithDataDescriptor) {
+private final Inflater inf = new Inflater(true);
+private final ByteBuffer buf = ByteBuffer.allocate(ZipArchiveOutputStream.BUFFER_SIZE);
+private CurrentEntry current = null;
+private boolean closed = false;
+private boolean hitCentralDirectory = false;
+private ByteArrayInputStream lastStoredEntry = null;
+private boolean allowStoredEntriesWithDataDescriptor = false;
+private final byte[] lfhBuf = new byte[LFH_LEN];
+private final byte[] skipBuf = new byte[1024];
+private final byte[] shortBuf = new byte[SHORT];
+private final byte[] wordBuf = new byte[WORD];
+private final byte[] twoDwordBuf = new byte[2 * DWORD];
+private int entriesRead = 0;
+this.encoding = encoding;
+zipEncoding = ZipEncodingHelper.getZipEncoding(encoding);
+this.useUnicodeExtraFields = useUnicodeExtraFields;
+in = new PushbackInputStream(inputStream, buf.capacity());
+this.allowStoredEntriesWithDataDescriptor =
+buf.limit(0);
+}
+private static final byte[] LFH = ZipLong.LFH_SIG.getBytes();
+private static final byte[] CFH = ZipLong.CFH_SIG.getBytes();
+private static final byte[] DD = ZipLong.DD_SIG.getBytes();
+boolean firstEntry = true;
+if (closed || hitCentralDirectory) {
+return null;
+if (current != null) {
+closeEntry();
+firstEntry = false;
+long currentHeaderOffset = getBytesRead();
+if (firstEntry) {
+readFirstLocalFileHeader(lfhBuf);
+readFully(lfhBuf);

@@ -1,0 +1,11 @@
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267this.minStartIndex=index;
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267this.minStartIndex=index+1;
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267this.minStartIndex=index-1;
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267intindex=getIndex(index);
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267intindex=getDataItem(this.minStartIndex).getPeriod().getStart().getTime();
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267intindex=getDataItem(this.minStartIndex).getPeriod().getEnd().getTime();
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267this.minStartIndex=0;
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267this.minStartIndex=start;
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267intindex=getDataItemIndex(start).getPeriod().getStart().getTime();
+projects/Chart7/source/org/jfree/data/time/TimePeriodValues.java267intindex=getDataItemIndex(start).getPeriod().getEnd().getTime();

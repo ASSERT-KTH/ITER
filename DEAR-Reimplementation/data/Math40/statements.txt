@@ -1,0 +1,50 @@
+this.allowed = allowedSolution;
+return super.solve(maxEval, f, min, max, startValue);
+this.maximalOrder = maximalOrder;
+this.allowed = AllowedSolution.ANY_SIDE;
+}
+--end;
+super(relativeAccuracy, absoluteAccuracy, functionValueAccuracy);
+if (maximalOrder < 2) {
+nbPoints= 2;
+signChangeIndex = 1;
+targetY = -REDUCTION_FACTOR * yB;
+final double[] tmpX = new double[x.length];
+double xA= x[signChangeIndex - 1];
+double yA= y[signChangeIndex - 1];
+double absYA = FastMath.abs(yA);
+int agingA = 0;
+double xB= x[signChangeIndex];
+double yB= y[signChangeIndex];
+double absYB = FastMath.abs(yB);
+int agingB = 0;
+final double xTol = getAbsoluteAccuracy() +
+if (((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy())) {
+if (agingA >= MAXIMAL_AGING) {
+} else if (agingB >= MAXIMAL_AGING) {
+targetY = 0;
+int start = 0;
+int end = nbPoints;
+System.arraycopy(x, start, tmpX, start, end - start);
+nextX = guessX(targetY, tmpX, y, start, end);
+if (!((nextX > xA) && (nextX < xB))) {
+if (signChangeIndex - start >= end - signChangeIndex) {
+nextX = Double.NaN;
+} while (Double.isNaN(nextX) && (end - start > 1));
+if (Double.isNaN(nextX)) {
+final double nextY = computeObjectiveValue(nextX);
+if (Precision.equals(nextY, 0.0, 1)) {
+if ((nbPoints > 2) && (end - start != nbPoints)) {
+nbPoints = end - start;
+System.arraycopy(x, start, x, 0, nbPoints);
+System.arraycopy(y, start, y, 0, nbPoints);
+signChangeIndex -= start;
+} elseif (nbPoints == x.length) {
+System.arraycopy(x, signChangeIndex, x, signChangeIndex + 1, nbPoints - signChangeIndex);
+x[signChangeIndex] = nextX;
+System.arraycopy(y, signChangeIndex, y, signChangeIndex + 1, nbPoints - signChangeIndex);
+y[signChangeIndex] = nextY;
+++nbPoints;
+if (nextY * yA <= 0) {
+xB = nextX;
+yB = nextY;

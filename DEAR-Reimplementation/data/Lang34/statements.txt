@@ -1,0 +1,50 @@
+buffer.append(arrayStart);
+int length = Array.getLength(array);
+for (int i = 0; i < length; i++) {
+Object item = Array.get(array, i);
+if (i > 0) {
+if (item == null) {
+appendInternal(buffer, fieldName, item, arrayContentDetail);
+buffer.append(arrayEnd);
+}
+buffer.append(arraySeparator);
+match = false;
+break;
+return REGISTRY.get() != null ? REGISTRY.get() : Collections.<Object, Object>emptyMap();
+Map<Object, Object> m = getRegistry();
+return m.containsKey(value);
+if (isRegistered(value)
+if (value != null) {
+synchronized (ToStringStyle.class) {
+m = REGISTRY.get();
+if (m != null) {
+m.remove(value);
+if (m.isEmpty()) {
+REGISTRY.remove();
+}
+}
+if (this.fieldSeparatorAtEnd == false) {
+removeLastFieldSeparator(buffer);
+appendContentEnd(buffer);
+unregister(object);
+}
+int len = buffer.length();
+int sepLen = fieldSeparator.length();
+if (len > 0 && sepLen > 0 && len >= sepLen) {
+boolean match = true;
+for (int i = 0; i < sepLen; i++) {
+if (buffer.charAt(len - 1 - i) != fieldSeparator.charAt(sepLen - 1 - i)) {
+if (match) {
+}
+buffer.append(contentEnd);
+}
+register(value);
+if (value instanceof Collection<?>) {
+} else if (value instanceof Map<?, ?>) {
+} else if (value instanceof long[]) {
+unregister(value);
+}
+}
+if (value != null) {
+synchronized (ToStringStyle.class) {
+m = REGISTRY.get();

@@ -1,0 +1,13 @@
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958break;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()==Token.THIS){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()!=Token.THIS){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()==Token.GETELEM){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()==Token.STRING){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()==Token.FUNCTION){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()==Token.NAME){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958n=left.getNext();
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()!=Token.GETELEM){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()!=Token.STRING){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958n=left.getFirstChild();
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java958if(right.getType()!=Token.NAME){break;}

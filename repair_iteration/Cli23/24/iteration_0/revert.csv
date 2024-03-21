@@ -1,0 +1,17 @@
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688StringBuffersb=newStringBuffer(text.length());
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688StringBuffersb=newStringBuffer(text.length()+1);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688StringBuffersb=newStringBuffer(text.length()+width);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688StringBuffersb=newStringBuffer(nextLineTabStop.length());
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688StringBuffersb=newStringBuffer(text.length()+2);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(width,text.length());renderWrappedText(pw,width,nextLineTabStop,text);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(text.length());renderWrappedText(pw,width,nextLineTabStop,text);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(width,nextLineTabStop);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(width,text);renderWrappedText(pw,width,nextLineTabStop,text);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(width,nextLineTabStop,text);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688StringBuffersb=newStringBuffer(text.length()+3);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688FontMetricsfmt=pw.getFontMetrics();
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688pw.println(text);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(width,text);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688pw.println();
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java688PrintWriterpw=newPrintWriter(width,width,nextLineTabStop);

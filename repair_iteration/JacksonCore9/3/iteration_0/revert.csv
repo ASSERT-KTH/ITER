@@ -1,0 +1,8 @@
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401returndefaultValue;
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401return_currToken;
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401return(_currToken==null||_currToken==JsonToken.VALUE_NULL||!_currToken.isScalarValue())?defaultValue:null;
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401return(defaultValue==null)?null:defaultValue;
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401return(_currToken==null||_currToken==JsonToken.VALUE_NULL)?null:defaultValue;
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401return(_currToken==null||_currToken==JsonToken.VALUE_NULL||!_currToken.isScalarValue());
+projects/JacksonCore9/src/main/java/com/fasterxml/jackson/core/base/ParserMinimalBase.java401return(_currToken==null)?null:_currToken.toString();

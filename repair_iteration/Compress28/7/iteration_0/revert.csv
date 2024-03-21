@@ -1,0 +1,16 @@
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return-1;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return0;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573thrownewIllegalStateException("");
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead<0)?-1:1;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead>entrySize)?-1:1;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead>entrySize)?-1:0;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead==0)?-1:1;
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(totalRead>=0)?-1:(int)Math.rint(offset,entrySize);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(totalRead>=0)?-1:(int)Math.floor(offset+entrySize);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(totalRead==0)?-1:(int)Math.floor(offset+entrySize);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(totalRead>=0)?-1:(int)Math.pow(10,entrySize);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead<0)?-1:(int)Math.pow(10,numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead<0)?-1:(int)Math.ceil(buf,offset+entrySize);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead<0)?-1:(int)Math.rint(offset,numToRead);
+projects/Compress28/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java573return(numToRead<0)?-1:(int)Math.floor(numToRead);

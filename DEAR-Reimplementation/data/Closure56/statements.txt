@@ -1,0 +1,50 @@
+return null;
+String js = "";
+js = getCode();
+}
+int pos = 0;
+int startLine = 1;
+if (lineNumber >= lastLine) {
+pos = lastOffset;
+startLine = lastLine;
+for (int n = startLine; n < lineNumber; n++) {
+lastOffset = pos;
+lastLine = lineNumber;
+if (js.indexOf('\n', pos) == -1) {
+int nextpos = js.indexOf('\n', pos);
+if (nextpos == -1) {
+pos = nextpos + 1;
+return code;
+public SourceFile(String fileName) {
+private boolean isExternFile = false;
+private String originalPath = null;
+private int[] lineOffsets = null;
+private String code = null;
+if (fileName == null || fileName.isEmpty()) {
+this.fileName = fileName;
+this.lastOffset = 0;
+this.lastLine = 1;
+}
+code = sourceCode;
+}
+this.originalPath = originalPath;
+}
+return fileName;
+isExternFile = newVal;
+}
+return new Preloaded(fileName, code);
+return js.substring(pos, js.indexOf('\n', pos));
+throw new IllegalArgumentException("a source must have a name");
+if (lineOffsets == null) {
+findLineOffsets();
+if (lineno < 1 || lineno > lineOffsets.length) {
+throw new IllegalArgumentException(
+return lineOffsets[lineno - 1];
+if (lineOffsets == null) {
+findLineOffsets();
+return lineOffsets.length;
+String[] sourceLines = getCode().split("\n");
+lineOffsets = new int[sourceLines.length];
+for (int ii = 1; ii < sourceLines.length; ++ii) {
+lineOffsets[ii] =
+}

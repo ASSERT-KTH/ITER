@@ -1,0 +1,50 @@
+return;
+ensureTyped(t, n, NULL_TYPE);
+break;
+ensureTyped(t, n, t.getScope().getTypeOfThis());
+break;
+info = varInfo;
+JSType valueType = getJSType(value);
+JSType nameType = var.getType();
+nameType = (nameType == null) ? getNativeType(UNKNOWN_TYPE) : nameType;
+JSDocInfo info = name.getJSDocInfo();
+if (info == null) {
+checkEnumAlias(t, info, value);
+if (var.isTypeInferred()) {
+if (var.isTypeInferred()) {
+visitVar(t, n);
+typeable = false;
+break;
+JSDocInfo varInfo = n.hasOneChild() ? n.getJSDocInfo() : null;
+for (Node name : n.children()) {
+Node value = name.getFirstChild();
+Var var = t.getScope().getVar(name.getString());
+if (value != null) {
+}
+}
+checkPropertyInheritanceOnGetpropAssign(
+if (reportUnknownTypes.isOn()) {
+unknownCount++;
+JSType rvalueType = getJSType(assign.getLastChild());
+Var var = t.getScope().getVar(lvalue.getQualifiedName());
+if (var != null) {
+JSType leftType = getJSType(lvalue);
+if (lvalue.isQualifiedName()) {
+check(externsRoot, true);
+inferJSDocInfo.process(node, null);
+ctorType.getAllImplementedInterfaces()) {
+return;
+ctor = maybeSuperInstanceType.getConstructor();
+if (ctor == null) {
+Preconditions.checkState(ctor.isConstructor() || ctor.isInterface());
+}
+FunctionType superClass = ctorType.getSuperClassConstructor();
+boolean superClassHasProperty = superClass != null &&
+boolean superClassHasDeclaredProperty = superClass != null &&
+boolean superInterfaceHasProperty = false;
+boolean superInterfaceHasDeclaredProperty = false;
+if (ctorType.isInterface()) {
+boolean declaredOverride = info != null && info.isOverride();
+boolean foundInterfaceProperty = false;
+if (ctorType.isConstructor()) {
+if (!declaredOverride

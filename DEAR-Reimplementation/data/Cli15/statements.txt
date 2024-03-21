@@ -1,0 +1,50 @@
+if (option instanceof Argument) {
+List valueList = (List) values.get(option);
+if (valueList == null) {
+valueList = new ArrayList();
+values.put(option, valueList);
+valueList.add(value);
+}
+for (final Iterator i = prefixes.iterator(); i.hasNext();) {
+final String prefix = (String) i.next();
+if (trigger.startsWith(prefix)) {
+}
+return false;
+final List arguments) {
+private final Map optionToProperties = new HashMap();
+private final List options = new ArrayList();
+private final Map nameToOption = new HashMap();
+private final Map values = new HashMap();
+private final Map switches = new HashMap();
+private final Map defaultValues = new HashMap();
+private final Map defaultSwitches = new HashMap();
+this.prefixes = rootOption.getPrefixes();
+this.normalised = arguments;
+}
+options.add(option);
+nameToOption.put(option.getPreferredName(), option);
+for (Iterator i = option.getTriggers().iterator(); i.hasNext();) {
+nameToOption.put(i.next(), option);
+}
+final boolean present = options.contains(option);
+return present;
+return (Option) nameToOption.get(trigger);
+List valueList = (List) values.get(option);
+if ((valueList == null) || valueList.isEmpty()) {
+if ((valueList == null) || valueList.isEmpty()) {
+return valueList == null ? Collections.EMPTY_LIST : valueList;
+List valueList = (List) values.get(option);
+if (valueList == null) {
+valueList = Collections.EMPTY_LIST;
+return valueList;
+if (defaults == null) {
+defaultValues.put(option, defaults);
+}
+addOption(option);
+addOption(option);
+if (switches.containsKey(option)) {
+throw new IllegalStateException(ResourceHelper.getResourceHelper().getMessage(ResourceConstants.SWITCH_ALREADY_SET));
+switches.put(option, value ? Boolean.TRUE : Boolean.FALSE);
+}
+valueList = defaultValues;
+valueList = (List) this.defaultValues.get(option);

@@ -1,0 +1,50 @@
+return false;
+} else if (!NodeUtil.isLiteralValue(
+hasPropertyAssign = true;
+} else {
+assign.remove();
+compiler.reportCodeChange();
+}
+traverseFunction(n, scope);
+continuations.put(var, new Continuation(n, scope));
+return;
+var = scope.getVar(n.getFirstChild().getString());
+if (assign.isPropertyAssign) {
+}
+return false;
+Node value = var.getInitialValue();
+assignedToUnknownValue = value != null &&
+} else {
+markReferencedVar(var);
+} else if (toRemove.isVar() &&
+} else if (parent != null) {
+NodeUtil.removeChild(parent, toRemove);
+compiler.reportCodeChange();
+} else if (parent != null &&
+} else if (toRemove.isVar() &&
+while ((lastArg = argList.getLastChild()) != null) {
+} else {
+} else if (NodeUtil.isFunctionExpression(toRemove)) {
+Node argList = getFunctionArgList(function);
+boolean modifyCallers = modifyCallSites
+if (!modifyCallers) {
+}
+return function.getFirstChild().getNext();
+removeUnreferencedFunctionArgs(fnScope);
+}
+Preconditions.checkState(n.getChildCount() == 3);
+Preconditions.checkState(n.isFunction());
+final Node body = n.getLastChild();
+Preconditions.checkState(body.getNext() == null &&
+Scope fnScope =
+traverseNode(body, n, fnScope);
+collectMaybeUnreferencedVars(fnScope);
+allFunctionScopes.add(fnScope);
+}
+Node function = fnScope.getRootNode();
+Preconditions.checkState(function.isFunction());
+if (NodeUtil.isGetOrSetKey(function.getParent())) {
+Assign maybeAssign = Assign.maybeCreateAssign(n);
+if (maybeAssign != null) {
+var = scope.getVar(maybeAssign.nameNode.getString());
+if (var != null) {

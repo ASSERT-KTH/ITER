@@ -1,0 +1,50 @@
+NameInformation nameInfo = new NameInformation();
+nameInfo.name = classes.subclassName;
+nameInfo.onlyAffectsClassDef = true;
+nameInfo.superclass = classes.superclassName;
+return nameInfo;
+return getRhsSubexpressions(n.getFirstChild());
+Node lhs = n.getFirstChild();
+Node rhs = lhs.getNext();
+return Lists.newArrayList(lhs, rhs);
+JsName parentJsName = getName(parentName, true);
+recordReference(curJsName.name, parentJsName.name, RefType.REGULAR);
+recordReference(parentJsName.name, curJsName.name, RefType.REGULAR);
+curJsName = parentJsName;
+return Lists.newArrayList(rhs);
+replacements.addAll(getSideEffectNodes(rhs));
+}
+String parentName = curName.substring(0, curName.lastIndexOf('.'));
+if (!globalNames.contains(parentName)) {
+curName = parentName;
+}
+List<Node> subexpressions = Lists.newArrayList();
+NodeTraversal.traverse(
+List<Node> replacements =
+for (Node subexpression : subexpressions) {
+return replacements;
+Node rhs = n.getFirstChild();
+if (rhs != null) {
+List<Node> nodes = Lists.newArrayList();
+for (Node child : n.children()) {
+nodes.addAll(getRhsSubexpressions(child));
+}
+return nodes;
+refNode.remove();
+if (valueConsumedByParent(n, parent)) {
+} else if (n.isAssign() && !parent.isFor()) {
+replaceTopLevelExpressionWithRhs(parent, n);
+}
+switch (parent.getType()) {
+break;
+switch (n.getType()) {
+break;
+List<Node> replacements = Lists.newArrayList();
+for (Node rhs : getRhsSubexpressions(n)) {
+if (parent.isFor()) {
+changeProxy.replaceWith(parent, n, replacements);
+}
+if (NodeUtil.isAssignmentOp(parent)) {
+switch (parent.getType()) {
+return false;
+switch (n.getType()) {

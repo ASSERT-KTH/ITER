@@ -1,0 +1,14 @@
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg==null){
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg==null||!optionMap.containsKey(arg)){
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg==null||!arg.equals("")){
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg==null||arg.length()==0){
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118Optionoption=optionMap.getOption(arg);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118Optionoption=optionMap.get(arg);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118Optionoption=option.getOption();
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118Optionoption=options.getOption(arg);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118Stringdescription=option.getDescription();
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg==null||optionMap.containsKey(arg)){
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg==null||options.containsKey(arg)){
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118Optionoption=option.getOption(arg);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java118if(arg!=null){

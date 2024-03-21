@@ -1,0 +1,50 @@
+t = _parseNumber(i);
+break;
+boolean negative = (ch == INT_MINUS);
+int ptr = _inputPtr;
+int startPtr = ptr-1; // to include sign/digit already read
+final int inputLen = _inputEnd;
+if (negative) { // need to read the next digit
+if (ch == INT_0) {
+int intLen = 1; // already got one
+if (ptr >= _inputEnd) {
+ch = (int) _inputBuffer[ptr++];
+if (ch < INT_0 || ch > INT_9) {
+break int_loop;
+++intLen;
+int fractLen = 0;
+if (ch == '.') { // yes, fraction
+int expLen = 0;
+if (ch == 'e' || ch == 'E') { // and/or exponent
+--ptr; // need to push back following separator
+_inputPtr = ptr;
+int len = ptr-startPtr;
+_textBuffer.resetWithShared(_inputBuffer, startPtr, len);
+return reset(negative, intLen, fractLen, expLen);
+return (_currToken = _parseNumber(i));
+char[] outBuf = _textBuffer.emptyAndGetCurrentSegment();
+int outPtr = 0;
+boolean negative = (c == INT_MINUS);
+if (negative) {
+if (c == INT_0) {
+outBuf[outPtr++] = (char) c;
+int intLen = 1;
+int end = _inputPtr + outBuf.length;
+if (end > _inputEnd) {
+end = _inputEnd;
+if (_inputPtr >= end) {
+c = (int) _inputBuffer[_inputPtr++] & 0xFF;
+if (c < INT_0 || c > INT_9) {
+break;
+++intLen;
+if (outPtr >= outBuf.length) {
+outBuf[outPtr++] = (char) c;
+if (c == '.' || c == 'e' || c == 'E') {
+--_inputPtr; // to push back trailing char (comma etc)
+_textBuffer.setCurrentLength(outPtr);
+return resetInt(negative, intLen);
+super(ctxt, features);
+protected boolean _tokenIncomplete = false;
+_reader = r;
+_inputBuffer = ctxt.allocTokenBuffer();
+_objectCodec = codec;

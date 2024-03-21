@@ -1,0 +1,11 @@
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798Collection<LegendItem>result=dataset.getLegendItems();
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798result.add(dataset);
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798Collection<LegendItem>result=dataset.getLegendItems(index);
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798returnresult;
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798returnthis.dataset;
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798LegendItemitem=dataset.getLegendItem(index);
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798LegendItemitem=getLegendItem(index,dataset.getIndexOf(this));
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798LegendItemitem=getLegendItem(index,dataset);
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798returnthis.plot;
+projects/Chart1/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java1798LegendItemitem=getLegendItem(index,index);

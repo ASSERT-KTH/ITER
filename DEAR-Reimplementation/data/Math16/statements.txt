@@ -1,0 +1,50 @@
+if (hiPrec != null) {
+return Double.POSITIVE_INFINITY;
+long bits = Double.doubleToRawLongBits(a);
+if (bits == 0x8000000000000000L) {
+return a;
+if (x != x) {
+if (x > 20) {
+return exp(x, 0.0, null);
+return (x < 0.0) ? -x : (x == 0.0) ? 0.0 : x; // -0.0 => +0.0
+if (Double.isInfinite(x)) {
+return abs(x - Double.longBitsToDouble(Double.doubleToLongBits(x) ^ 1));
+if (a > b) {
+if (a < b) {
+return b;
+if (a != b) {
+return 0.5 * exp(x);
+return 0.5 * exp(-x);
+result = tempC*z + tempB + tempA;
+if (x < 0.0) {
+intVal = (int) x;
+if (intVal > 709) {
+intPartA = ExpIntTable.EXP_INT_TABLE_A[EXP_INT_TABLE_MAX_INDEX+intVal];
+intPartB = ExpIntTable.EXP_INT_TABLE_B[EXP_INT_TABLE_MAX_INDEX+intVal];
+final int intFrac = (int) ((x - intVal) * 1024.0);
+final double fracPartA = ExpFracTable.EXP_FRAC_TABLE_A[intFrac];
+final double fracPartB = ExpFracTable.EXP_FRAC_TABLE_B[intFrac];
+final double epsilon = x - (intVal + intFrac / 1024.0);
+double z = 0.04168701738764507;
+z = z * epsilon + 0.1666666505023083;
+z = z * epsilon + 0.5000000000042687;
+z = z * epsilon + 1.0;
+z = z * epsilon + -3.940510424527919E-20;
+double tempA = intPartA * fracPartA;
+double tempB = intPartA * fracPartB + intPartB * fracPartA + intPartB * fracPartB;
+final double tempC = tempB + tempA;
+if (extra != 0.0) {
+if (hiPrec != null) {
+return result;
+if (x < -20) {
+private static final double LN_QUICK_COEF[][] = {
+private static final double LN_HI_PREC_COEF[][] = {
+private static final double SINE_TABLE_A[] =
+private static final double SINE_TABLE_B[] =
+private static final double COSINE_TABLE_A[] =
+private static final double COSINE_TABLE_B[] =
+private static final double TANGENT_TABLE_A[] =
+private static final double TANGENT_TABLE_B[] =
+private static final long RECIP_2PI[] = new long[] {
+private static final long PI_O_4_BITS[] = new long[] {
+private static final double EIGHTHS[] = {0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0, 1.125, 1.25, 1.375, 1.5, 1.625};

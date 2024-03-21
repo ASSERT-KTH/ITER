@@ -1,0 +1,17 @@
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName.equals("")){defaultArgName=null;}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName.equals("")){defaultArgName=getDefaultArgName();}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName!=null){defaultArgName=getDefaultArgName();}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName.equals("")){defaultArgName=getDefaultArgName();}else{defaultArgName=null;}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName==null){defaultArgName=getDefaultArgName();}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=DEFAULT_ARG_NAME;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=null;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=this.defaultArgName;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=getDefaultArgName();
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128Preconditions.checkArgument(defaultArgName==null);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128Preconditions.checkArgument(!defaultArgName.equals(""));
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128Preconditions.checkArgument(defaultArgName!=null);
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128OptionComparator.this.defaultArgName=defaultArgName;
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128if(defaultArgName!=null){defaultArgName=System.getProperty("line.separator");}
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128publicStringdefaultArgName=DEFAULT_ARG_NAME+":"+System.currentTimeMillis();
+projects/Cli23/src/java/org/apache/commons/cli/HelpFormatter.java128this.defaultArgName=defaultArgName;

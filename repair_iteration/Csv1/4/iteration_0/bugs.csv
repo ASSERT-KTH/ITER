@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+7	[BUG] [BUGGY] super.reset(); [FE] AssertionError [CONTEXT] int lookAhead() throws IOException { super.mark(1); int c = super.read(); [BUGGY] super.reset(); [BUGGY]  return c; } [CLASS] ExtendedBufferedReader [METHOD] lookAhead [RETURN_TYPE] int  [VARIABLES] int END_OF_STREAM UNDEFINED c current i lastChar len length lineCounter offset boolean  	projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	0.2581988897471611	148	148	1	replace	

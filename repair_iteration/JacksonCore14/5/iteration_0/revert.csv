@@ -1,0 +1,11 @@
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106}
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106if(managedResource){if(_bufferRecycler!=null){_bufferRecycler=br;}
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106_base64Buffer=br.getBase64Buffer();
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106if(managedResource){if(_bufferRecycler==null){_bufferRecycler=br;}
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106if(managedResource){_bufferRecycler=br;}else{_bufferRecycler=br;}
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106this(br,sourceRef,managedResource);
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106_nameCopyBuffer=br._nameCopyBuffer;
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106_nameCopyBuffer=br.getNameCopyBuffer();
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106_base64Buffer=br.toByteBuffer();
+projects/JacksonCore14/src/main/java/com/fasterxml/jackson/core/io/IOContext.java106_encoding=br.getEncoding();

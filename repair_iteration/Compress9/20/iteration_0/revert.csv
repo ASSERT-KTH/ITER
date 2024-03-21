@@ -1,0 +1,16 @@
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132writeEOFRecord();buffer.flushBlock();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132writeEOFRecord();buffer.flushBlock();finished=true;
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132if(!closed){buffer.flushBlock();finished=true;}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132os.write(assemBuf,0,buffer.length);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132os.write(buffer,0,buffer.length);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132finalOutputStreamout=buffer.getOutputStream();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132os.flush();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132out.write(assemBuf,0,assemLen);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132out.write(assemBuf,0,buffer.length);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132writeEOFRecord();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132os.close();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132os.flushBuffer();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132out.write(assemBuf,0,assemLen);buffer.flush();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java132out.write(assemBuf,0,assemLen);writeEOFRecord();

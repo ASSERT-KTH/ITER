@@ -1,0 +1,50 @@
+return escapeJavaStyleString(str, true);
+escapeJavaStyleString(out, str, true);
+out.write('\\');
+return null;
+throw new IllegalArgumentException("The Writer must not be null");
+out.write('\\');
+out.write('"');
+break;
+if (str == null) {
+StringWriter writer = new StringWriter(str.length() * 2);
+escapeJavaStyleString(writer, str, escapeSingleQuotes);
+return writer.toString();
+if (out == null) {
+if (str == null) {
+sz = str.length();
+for (int i = 0; i < sz; i++) {
+char ch = str.charAt(i);
+if (ch > 0xfff) {
+} else if (ch > 0xff) {
+} else if (ch > 0x7f) {
+} else if (ch < 32) {
+switch (ch) {
+if (escapeSingleQuote) {
+out.write('\'');
+break;
+out.write(ch);
+}
+super();
+}
+return escapeJavaStyleString(str, false);
+escapeJavaStyleString(out, str, false);
+}
+}
+} catch (IOException ioe) {
+ioe.printStackTrace();
+return null;
+return;
+out.write("\\u" + hex(ch));
+out.write("\\u0" + hex(ch));
+out.write("\\u00" + hex(ch));
+switch (ch) {
+out.write('\\');
+out.write('b');
+break;
+out.write('\\');
+out.write('n');
+break;
+out.write('\\');
+out.write('t');
+break;

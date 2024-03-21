@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+11	[BUG] [BUGGY] this.mapping = mapping; [FE] NullPointerException [CONTEXT] [BUGGY] this.mapping = mapping; [BUGGY] this.comment = comment; } [CLASS] CSVRecord [METHOD] <init> [RETURN_TYPE] String,long)  String[] values Integer> mapping String comment final long recordNumber 	projects/Csv9/src/main/java/org/apache/commons/csv/CSVRecord.java	0.24253562503633297	55	55	1	replace	

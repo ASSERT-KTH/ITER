@@ -1,0 +1,9 @@
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248if(seriesCount>1){
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248if(seriesCount>0){
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248intseriesCount=getRowCount();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248intseriesCount=getColumnCount();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248IntegerseriesMargin=getItemMargin();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248NumberseriesCount=dataset.getSeriesCount();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248rectY=rectY+row*(state.getBarWidth()+seriesCount);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java248rectY=rectY+row*(state.getBarWidth()+column);

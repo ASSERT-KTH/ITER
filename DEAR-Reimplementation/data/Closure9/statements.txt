@@ -1,0 +1,23 @@
+this(compiler, filenamePrefix, true);
+}
+filename = filename.substring(filenamePrefix.length());
+boolean reportDependencies) {
+this.compiler = compiler;
+this.filenamePrefix = filenamePrefix.endsWith(MODULE_SLASH) ?
+this.reportDependencies = reportDependencies;
+}
+return toModuleName(normalizeSourceName(filename));
+return MODULE_NAME_PREFIX +
+if (filename.indexOf(filenamePrefix) == 0) {
+return filename;
+NodeTraversal
+}
+return module;
+requiredFilename = requiredFilename.replaceAll("\\.js$", "");
+currentFilename = currentFilename.replaceAll("\\.js$", "");
+if (requiredFilename.startsWith("." + MODULE_SLASH) ||
+requiredFilename = (new URI(currentFilename)).resolve(new URI(requiredFilename))
+}
+} catch (URISyntaxException e) {
+throw new RuntimeException(e);
+return toModuleName(requiredFilename);

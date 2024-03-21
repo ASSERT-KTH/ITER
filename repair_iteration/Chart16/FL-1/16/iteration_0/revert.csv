@@ -1,0 +1,13 @@
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690intsize=this.categoryKeys.size();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690this.categoryKeys=(ColumnKey)this.categoryKeys.get(column);
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690this.categoryKeys=(ColumnKey)this.categoryKeys.get(0);
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690returnthis.categoryKeys.length;
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690returnthis.categoryKeys.length-1;
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690returnthis.categoryKeys.size();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690intindex=this.categoryKeys.indexOf(category);
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690this.categoryKeys=Collections.emptyList();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690intindex=this.categoryKeys.size();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690returnthis.categoryKeys.length+1;
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690this.categoryKeys=Collections.binarySearch(this.categoryKeys);
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java690this.categoryKeys=(ArrayList)this.categoryKeys.clone();

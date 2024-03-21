@@ -1,0 +1,50 @@
+} else if (that.isSubtype(this)) {
+UnionTypeBuilder builder = new UnionTypeBuilder(registry);
+for (JSType alternate : alternates) {
+if (alternate.isSubtype(that)) {
+}
+if (that instanceof UnionType) {
+JSType result = builder.build();
+if (result != null) {
+return result;
+return true;
+return false;
+for (JSType t : alternates) {
+if (t.isUnknownType()) {
+}
+return false;
+for (JSType element : alternates) {
+if (!element.isSubtype(that)) {
+super(registry);
+this.alternates = alternates;
+}
+return alternates;
+for (JSType type : getAlternates()) {
+type.forgiveUnknownNames();
+}
+}
+for (JSType t : alternates) {
+if (t.matchesNumberContext()) {
+return true;
+}
+return false;
+for (JSType t : alternates) {
+if (t.matchesStringContext()) {
+return true;
+}
+return false;
+for (JSType t : alternates) {
+if (t.matchesObjectContext()) {
+return true;
+}
+return false;
+JSType propertyType = null;
+for (JSType alternate : getAlternates()) {
+if (alternate.isNullType() || alternate.isVoidType()) {
+continue;
+JSType altPropertyType = alternate.findPropertyType(propertyName);
+if (altPropertyType == null) {
+continue;
+if (propertyType == null) {
+propertyType = altPropertyType;
+propertyType = propertyType.getLeastSupertype(altPropertyType);

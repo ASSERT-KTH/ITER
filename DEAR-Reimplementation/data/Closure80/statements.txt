@@ -1,0 +1,50 @@
+return isSimpleOperatorType(n.getType());
+return NodeUtil.isImmutableValue(value.getLastChild())
+if (value.getBooleanProp(Node.INCRDECR_PROP)) {
+return evaluatesToLocalValue(value.getFirstChild(), locals);
+return true;
+return locals.apply(value);
+return true;
+if (isAssignmentOp(value)
+return true;
+throw new IllegalStateException(
+return false;
+return true;
+Preconditions.checkState(n.getType() == Token.CALL);
+return (n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0;
+return true;
+return n.getType() == Token.STRING;
+return evaluatesToLocalValue(value.getLastChild(), locals);
+return evaluatesToLocalValue(value.getFirstChild(), locals)
+return evaluatesToLocalValue(value.getFirstChild().getNext(), locals)
+return locals.apply(value);
+return callHasLocalResult(value)
+return true;
+Node getNode = call.getFirstChild();
+if (isGet(getNode)) {
+Node propNode = getNode.getLastChild();
+return isString(propNode) && "toString".equals(propNode.getString());
+return false;
+return false;
+Preconditions.checkState(n.getType() == Token.NEW);
+return n.isOnlyModifiesThisCall();
+switch (n.getType()) {
+return p.apply(n);
+return valueCheck(n, BOOLEAN_RESULT_PREDICATE);
+switch (n.getType()) {
+return false;
+switch (n.getType()){
+return true;
+return false;
+return isImmutableValue(value) || locals.apply(value);
+return newHasLocalResult(value)
+switch (n.getType()) {
+String name = n.getString();
+return "undefined".equals(name)
+return evaluatesToLocalValue(value, Predicates.<Node>alwaysFalse());
+switch (value.getType()) {
+switch (type) {
+return true;
+return n.getType() == Token.GETPROP
+private static final Set<String> CONSTRUCTORS_WITHOUT_SIDE_EFFECTS =
+private static final Set<String> BUILTIN_FUNCTIONS_WITHOUT_SIDEEFFECTS =

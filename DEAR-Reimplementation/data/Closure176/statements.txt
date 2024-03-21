@@ -1,0 +1,50 @@
+redeclareSimpleVar(scope, node, narrowed);
+if (node.isThis()) {
+scope = scope.createChildFlowScope();
+if (node.isGetProp()) {
+return scope;
+scope = narrowScope(scope, n, narrowed);
+JSType iParameterType = getJSType(iParameter);
+Node iArgument = n.getChildAtIndex(i + 1);
+JSType iArgumentType = getJSType(iArgument);
+inferPropertyTypesToMatchConstraint(iArgumentType, iParameterType);
+JSType restrictedParameter = iParameterType
+if (restrictedParameter != null) {
+i++;
+}
+if (i + 1 >= childCount) {
+FunctionType fnType = functionType.toMaybeFunctionType();
+n.setJSType(fnType.getReturnType());
+backwardsInferenceFromCallSite(n, fnType);
+scope = traverseCall(n, scope);
+break;
+scope = traverseChildren(n, scope);
+Node left = n.getFirstChild();
+JSType functionType = getJSType(left).restrictByNotNullOrUndefined();
+if (functionType.isFunctionType()) {
+} else if (functionType.isEquivalentTo(
+scope = tightenTypesAfterAssertions(scope, n);
+return scope;
+Node left = callNode.getFirstChild();
+Node firstParam = left.getNext();
+AssertionFunctionSpec assertionFunctionSpec =
+if (assertionFunctionSpec == null || firstParam == null) {
+return scope;
+Preconditions.checkState(nameNode.isName());
+String varName = nameNode.getString();
+if (varType == null) {
+if (isUnflowable(syntacticScope.getVar(varName))) {
+scope.inferSlotType(varName, varType);
+}
+}
+return false;
+return;
+boolean updatedFnType = inferTemplatedTypesForCall(n, fnType);
+if (updatedFnType) {
+updateTypeOfParameters(n, fnType);
+updateBind(n);
+}
+CodingConvention.Bind bind =
+if (bind == null) {
+int i = 0;
+int childCount = n.getChildCount();

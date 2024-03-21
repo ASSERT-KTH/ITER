@@ -1,0 +1,14 @@
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36if(str.startsWith("--")){
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36if(str.startsWith("--")||str.startsWith("--")){
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36if(str.startsWith("-")||str.startsWith("-")){
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36if(str.startsWith("-")||str.startsWith("--")){
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36while(str.startsWith("-")){str=str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36while(str.startsWith("-")){str=str.substring(0,str.length()-1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36Stringstr=(String)this.stripLeadingHyphens.get(str);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36Stringstr=getStripLeadingHyphens();
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36while(str.startsWith("-")){str=str.substring(1,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36Stringstr=(str==null)?null:str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36while(str.startsWith("-")){str=str.substring(0,str.length()-2);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36}elseif(str.startsWith("-")){returnstr.substring(0,str.length());}
+projects/Cli5/src/java/org/apache/commons/cli/Util.java36if(str.endsWith(".java")){

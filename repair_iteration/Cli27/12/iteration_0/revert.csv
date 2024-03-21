@@ -1,0 +1,17 @@
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92this.selected=option.getOpt();
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92this.selected=option.getSelected();
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92if(selected==null){selected=option.getOpt();}
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92Stringselected=option.getSelectedString();
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92Stringselected=option.getText();
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92return;
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92thrownewAlreadySelectedException("");
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92thrownewIllegalArgumentException("");
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92thrownewIllegalStateException("");
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92thrownewUnsupportedOperationException("");
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92optionMap.put(option.getKey(),option);
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92Optionoption=option.getOption();
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92optionMap.put(option.getKey(),selected);
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92Optionoption=optionMap.get(option);
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92if(selected!=null){thrownewIllegalArgumentException("");}
+projects/Cli27/src/java/org/apache/commons/cli/OptionGroup.java92Optionoption=optionMap.get(selected);

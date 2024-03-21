@@ -1,0 +1,7 @@
+Supplier<String> safeNameIdSupplier) {
+this.compiler = compiler;
+this.safeNameIdSupplier = safeNameIdSupplier;
+}
+ReferenceCollectingCallback callback = new ReferenceCollectingCallback(
+callback.process(externs, root);
+}

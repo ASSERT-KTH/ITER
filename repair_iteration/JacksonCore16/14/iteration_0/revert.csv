@@ -1,0 +1,11 @@
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150returntrue;
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150returnfalse;
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150if(delegate!=null){returnfalse;}
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150if(delegate!=null){returntrue;}
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150if(delegate==null){returnfalse;}
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150return(delegate==null&&delegate!=null)||(delegate!=null&&delegate.equals(_nextParser));
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150return(delegate==null&&delegate!=null)||(delegate!=null&&delegate.equals(_parsers[_nextParser++]));
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150return(delegate==null&&delegate!=null)||(delegate!=null&&delegate.equals(_parsers[_nextParser]));
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150returndelegate!=null;
+projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java150return(delegate==null)?false:delegate.switchToNext();

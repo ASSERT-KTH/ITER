@@ -1,0 +1,50 @@
+q[0] = oldHashArea[offset];
+addName(name, q, 1);
+break;
+offset = _findOffsetForAdd(calcHash(q[0]));
+_hashArea[offset] = q[0];
+_hashArea[offset+3] = 1;
+break;
+offset = _spilloverEnd;
+_spilloverEnd += 4;
+if (_spilloverEnd >= hashArea.length) {
+return offset;
+int hash = q1 ^ _seed;
+hash += (hash >>> 16); // to xor hi- and low- 16-bits
+hash ^= (hash >>> 12);
+return hash;
+if (len > q.length) {
+int qoff = oldHashArea[offset+1];
+System.arraycopy(oldHashArea, qoff, q, 0, len);
+addName(name, q, len);
+public int bucketCount() { return _hashSize; }
+if (tertSlots <= 1024) { // buckets of 16 slots (up to 1024 == 64 x 16)
+return 6;
+int spillCount = (_spilloverEnd - _spilloverStart()) >> 2;
+if ((spillCount > (1 + _count >> 7))
+_needRehash = true;
+rehash();
+int offset2 = _secondaryStart + ((offset >> 3) << 2);
+if (hashArea[offset2+3] == 0) {
+return offset2;
+offset2 = _tertiaryStart + ((offset >> (_tertiaryShift + 2)) << _tertiaryShift);
+final int bucketSize = (1 << _tertiaryShift);
+for (int end = offset2 + bucketSize; offset2 < end; offset2 += 4) {
+if (hashArea[offset2+3] == 0) {
+return offset2;
+_needRehash = false;
+_hashShared = false;
+final int[] oldHashArea = _hashArea;
+final String[] oldNames = _names;
+final int oldSize = _hashSize;
+final int oldCount = _count;
+final int newSize = oldSize + oldSize;
+final int oldEnd = _spilloverEnd;
+if (newSize > MAX_T_SIZE) {
+_hashArea = new int[oldHashArea.length + (oldSize<<3)];
+_hashSize = newSize;
+_secondaryStart = (newSize << 2); // 4 ints per entry
+_tertiaryStart = _secondaryStart + (_secondaryStart >> 1); // right after secondary
+_tertiaryShift = _calcTertiaryShift(newSize);
+_names = new String[oldNames.length << 1];
+nukeSymbols(false);

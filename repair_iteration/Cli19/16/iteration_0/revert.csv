@@ -1,0 +1,15 @@
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146elseif(stopAtNonOption){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146elseif(stopAtNonOption&&options.hasOption(token)){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146elseif(stopAtNonOption||options.hasOption(token)){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146elseif(stopAtNonOption||arguments.contains(token)){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146Iterator<String>iter=options.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146Iteratoriter=options.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146Iterator<Option>iter=options.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146Iterator<String>iter=arguments.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146tokens.add(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146elseif(stopAtNonOption&&arguments.length>0){
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146Iterator<Option>iter=options.getOptions().iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146Optioniter=options.getOption(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146iter.remove();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java146iter=options.iterator();

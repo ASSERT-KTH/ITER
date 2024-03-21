@@ -1,0 +1,16 @@
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(type!='*'){
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='*'){
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='.'){
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt=='*'){
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111gbuilder.setOption(opt);
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111abuilder.withOption(opt);
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111gbuilder.addArgument(argument);
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111gbuilder.addArgument(abuilder.create());
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111gbuilder.addArgument(abuilder.getValue());
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='+'){
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111OptionBuilderobuilder=OptionBuilder.create();
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='['){abuilder.reset();abuilder.withValidator(validator(opt));}
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='['){abuilder.reset();abuilder.withOption(opt);}
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='['){abuilder.addValidator(validator(opt));}
+projects/Cli7/src/java/org/apache/commons/cli2/builder/PatternBuilder.java111if(opt!='['){

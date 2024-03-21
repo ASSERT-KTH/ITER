@@ -1,0 +1,14 @@
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append('n');
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append(defaultNewLine);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694pw.flush();
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append(",");
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append('ufffd');
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694renderWrappedText(sb,width,nextLineTabStop,text);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694printWrapped(sb,width,nextLineTabStop,text);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694pw.println(sb.toString());
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append("n");
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694pw.println(text);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append(defaultLeftPad);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append(defaultWidth,nextLineTabStop);
+projects/Cli24/src/java/org/apache/commons/cli/HelpFormatter.java694sb.append(",").append(defaultNewLine);

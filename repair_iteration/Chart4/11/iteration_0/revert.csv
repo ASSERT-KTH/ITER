@@ -1,0 +1,12 @@
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYDatasetdataset=(XYDataset)this.datasets.get(i);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYDatasetdataset=this.datasets.get(i);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746this.datasets.put(i,dataset);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746if(this.datasets.get(i)==dataset){
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746if(this.renderers.get(i)==dataset){
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746if(this.renderers.get(i)==null){
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYItemRendererresult=(XYItemRenderer)this.renderers.get(i);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYItemRendererresult=(XYItemRenderer)this.datasets.get(i);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYItemRendererresult=(XYItemRenderer)this.itemRenderers.get(i);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYItemRendererresult=this.renderers.get(i);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java1746XYItemRendererresult=this.datasets.get(i);

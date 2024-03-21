@@ -1,0 +1,50 @@
+Node value = callTarget.getNext();
+if (value != null) {
+Node addition = IR.add(
+n.getParent().replaceChild(n, addition);
+reportCodeChange();
+return addition;
+return n;
+result = tryFoldSimpleFunctionCall(node);
+if (result == node) {
+result = tryFoldImmediateCallToBoundFunction(node);
+Preconditions.checkState(n.isCall());
+Node callTarget = n.getFirstChild();
+if (callTarget != null && callTarget.isName() &&
+return n;
+Preconditions.checkState(n.isCall());
+Node callTarget = n.getFirstChild();
+Bind bind = getCodingConvention().describeFunctionBind(callTarget, false);
+if (bind != null) {
+return n;
+Node result =tryFoldLiteralConstructor(node);
+if (result == node) {
+return result;
+Preconditions.checkArgument(n.isCall()
+Node constructorNameNode = n.getFirstChild();
+Node newLiteralNode = null;
+if (isASTNormalized() && Token.NAME == constructorNameNode.getType()) {
+return tryReplaceUndefined(node);
+if (isASTNormalized()
+return n;
+PeepholeSubstituteAlternateSyntax(boolean late) {
+private final int STRING_SPLIT_OVERHEAD = ".split('.')".length();
+this.late = late;
+}
+switch(node.getType()) {
+return tryReplaceIf(node);
+return node; //Nothing changed
+for (Node child = n.getFirstChild();
+child != null; child = child.getNext()){
+if (child.isIf()){
+return n;
+private static final int AND_PRECEDENCE = NodeUtil.precedence(Token.AND);
+private static final int OR_PRECEDENCE = NodeUtil.precedence(Token.OR);
+private static final int NOT_PRECEDENCE = NodeUtil.precedence(Token.NOT);
+static final DiagnosticType INVALID_REGULAR_EXPRESSION_FLAGS =
+static final Predicate<Node> DONT_TRAVERSE_FUNCTIONS_PREDICATE
+private static final ImmutableSet<String> STANDARD_OBJECT_CONSTRUCTORS =
+private static final Pattern REGEXP_FLAGS_RE = Pattern.compile("^[gmi]*$");
+Node result = tryRemoveRedundantExit(node);
+if (result != node) {
+return result;

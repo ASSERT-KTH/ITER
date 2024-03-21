@@ -1,0 +1,1 @@
+Closure115	FL-1	projects/Closure115/src/com/google/javascript/jscomp/FunctionInjector.java	731	0.7905694150420948	replace	 [FE] AssertionFailedError 	return CanInlineResult.NO; 	return NodeUtil.mayHaveSideEffects(cArg)? CanInlineResult.NO : CanInlineResult.AFTER_PREPARATION;	5	2

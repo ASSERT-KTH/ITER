@@ -1,0 +1,50 @@
+this.entry = readNewEntry(false);
+ret = new CpioArchiveEntry(FORMAT_NEW);
+this(in, BLOCK_SIZE);
+}
+public CpioArchiveInputStream(final InputStream in, int blockSize) {
+private boolean closed = false;
+private long entryBytesRead = 0;
+private boolean entryEOF = false;
+private final byte tmpbuf[] = new byte[4096];
+private long crc = 0;
+private final byte[] TWO_BYTES_BUF = new byte[2];
+private final byte[] FOUR_BYTES_BUF = new byte[4];
+private final byte[] SIX_BYTES_BUF = new byte[6];
+this.in = in;
+this.blockSize = blockSize;
+}
+ensureOpen();
+while (read(this.tmpbuf, 0, this.tmpbuf.length) != -1) { // NOPMD
+this.entryEOF = true;
+}
+if (this.closed) {
+}
+ensureOpen();
+if (this.entry != null) {
+closeEntry();
+readFully(TWO_BYTES_BUF, 0, TWO_BYTES_BUF.length);
+if (CpioUtil.byteArray2long(TWO_BYTES_BUF, false) == MAGIC_OLD_BINARY) {
+} else if (CpioUtil.byteArray2long(TWO_BYTES_BUF, true)
+System.arraycopy(TWO_BYTES_BUF, 0, SIX_BYTES_BUF, 0,
+readFully(SIX_BYTES_BUF, TWO_BYTES_BUF.length,
+String magicString = ArchiveUtils.toAsciiString(SIX_BYTES_BUF);
+if (magicString.equals(MAGIC_NEW)) {
+this.entryBytesRead = 0;
+this.entryEOF = false;
+this.crc = 0;
+if (this.entry.getName().equals(CPIO_TRAILER)) {
+return this.entry;
+if (bytes > 0) {
+}
+ensureOpen();
+if (off < 0 || len < 0 || off > b.length - len) {
+} else if (len == 0) {
+if (this.entry == null || this.entryEOF) {
+if (this.entryBytesRead == this.entry.getSize()) {
+skip(entry.getDataPadCount());
+this.entryEOF = true;
+if (this.entry.getFormat() == FORMAT_NEW_CRC
+return -1; // EOF for this entry
+int tmplength = (int) Math.min(len, this.entry.getSize()
+if (tmplength < 0) {

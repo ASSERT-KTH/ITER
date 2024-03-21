@@ -1,0 +1,50 @@
+super(0, required);
+this.name = name;
+this.description = description;
+this.minimum = minimum;
+this.maximum = maximum;
+this.options = Collections.unmodifiableList(options);
+final List newAnonymous = new ArrayList();
+final SortedMap newOptionMap = new TreeMap(ReverseStringComparator.getInstance());
+final Set newPrefixes = new HashSet();
+for (final Iterator i = options.iterator(); i.hasNext();) {
+final Option option = (Option) i.next();
+option.setParent(this);
+if (option instanceof Argument) {
+final Set triggers = option.getTriggers();
+for (Iterator j = triggers.iterator(); j.hasNext();) {
+newOptionMap.put(j.next(), option);
+newPrefixes.addAll(option.getPrefixes());
+}
+this.anonymous = Collections.unmodifiableList(newAnonymous);
+this.optionMap = Collections.unmodifiableSortedMap(newOptionMap);
+this.prefixes = Collections.unmodifiableSet(newPrefixes);
+}
+if (arg == null) {
+if (optionMap.containsKey(arg)) {
+return true;
+final Map tailMap = optionMap.tailMap(arg);
+for (final Iterator iter = tailMap.values().iterator(); iter.hasNext();) {
+final Option option = (Option) iter.next();
+if (option.canProcess(commandLine, arg)) {
+}
+if (looksLikeOption(commandLine, arg)) {
+return false;
+return prefixes;
+String previous = null;
+while (arguments.hasNext()) {
+final String arg = (String) arguments.next();
+if (arg == previous) {
+previous = arg;
+final Option opt = (Option) optionMap.get(arg);
+if (opt != null) {
+arguments.previous();
+opt.process(commandLine, arguments);
+if (looksLikeOption(commandLine, arg)) {
+final Collection values = optionMap.tailMap(arg).values();
+boolean foundMemberOption = false;
+for (Iterator i = values.iterator(); i.hasNext() && !foundMemberOption;) {
+final Option option = (Option) i.next();
+if (option.canProcess(commandLine, arg)) {
+}
+if (!foundMemberOption) {

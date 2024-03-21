@@ -1,0 +1,17 @@
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574for(i=t.length()-2;i>1;i--){
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574for(i=t.length();i>1;i--){
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574for(i=t.length();i>1){
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Stringvalue=Util.stripLeadingHyphens(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Optioncmd=options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Stringvalue=t.substring(0,i);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Stringvalue=(String)options.get(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Stringvalue=Util.stripLeadingHyphens(opt);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Optionoption=options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Optionoptions=options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574Optionoption=options.getOption(opt);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574if(opt!=null){opt=getLongPrefix(token);}
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574if(opt!=null){opt=token.substring(0,i);}
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574if(options.hasOption(opt)){opt=option;break;}
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574if(options.hasOption(opt)){opt=option.substring(0,i);}
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java574if(options.hasOption(opt)){opt=options.getLongPrefix(token);}

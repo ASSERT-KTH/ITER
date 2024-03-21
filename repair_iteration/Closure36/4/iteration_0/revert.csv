@@ -1,0 +1,15 @@
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77this.compiler=compiler;
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{this.inlineAllStrings=inlineAllStrings;}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77this.compiler=compilerinstanceofUnknownCompiler?(UnknownCompiler)compiler:compiler;
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77this.compiler=compilerinstanceofAbstractCompiler?((AbstractCompiler)compiler).getCompiler():compiler;
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77this.compiler=compilerinstanceofAbstractCompiler?((AbstractCompiler)compiler).inlineAllStrings:null;
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77this.compiler=compilerinstanceofAbstractCompiler?(AbstractCompiler)compiler:compiler;
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{Preconditions.checkNotNull(compiler);this.inlineAllStrings=inlineAllStrings;}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{System.arraycopy(compiler,0,this.inlineAllStrings,0,inlineAllStrings);}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{AbstractCompilercompiler=newAbstractCompiler(compiler);compiler.reportCodeChange();}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{System.arraycopy(compiler,0,this.inlineAllStrings,1,inlineAllStrings);}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{this.inlineAllStrings=newHashSet<Var>();}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{Preconditions.checkState(compiler.isInline());this.inlineAllStrings=inlineAllStrings;}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{Preconditions.checkState(compiler.isInlined());this.inlineAllStrings=inlineAllStrings;}
+projects/Closure36/src/com/google/javascript/jscomp/InlineVariables.java77if(compiler!=null){this.compiler=compiler;}else{this.inlineAllStrings=newHashMap<Var,InliningBehavior>();}

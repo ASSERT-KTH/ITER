@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+39	[BUG] [BUGGY] protected Indenter _objectIndenter = DefaultIndenter.SYSTEM_LINEFEED_INSTANCE; [FE] AssertionFailedError [CONTEXT] [BUGGY] protected Indenter _objectIndenter = DefaultIndenter.SYSTEM_LINEFEED_INSTANCE; [BUGGY]  [CLASS] DefaultPrettyPrinter NopIndenter FixedSpaceIndenter  [VARIABLES] 	projects/JacksonCore23/src/main/java/com/fasterxml/jackson/core/util/DefaultPrettyPrinter.java	0.35355339059327373	60	60	1	replace	

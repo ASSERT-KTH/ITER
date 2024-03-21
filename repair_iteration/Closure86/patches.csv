@@ -1,0 +1,30 @@
+Closure86 -  FL is ranked in the 2 position(s) with a suspicious value: 0.6236095644623235
+
+
+Number of failing tests: 7 
+Buggy Location: 2465
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + return  false; 
+ --------------------------------------------------
+Closure86 -  FL is ranked in the 2 position(s) with a suspicious value: 0.6236095644623235
+
+
+Number of failing tests: 7 
+Buggy Location: 2465
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + if(!NodeUtil.isFunctionDeclaration(value))  return  false;  if(!NodeUtil.isFunctionDeclaration(value))  {  return  false;  } 
+ --------------------------------------------------
+Closure86 -  FL is ranked in the 2 position(s) with a suspicious value: 0.6236095644623235
+
+
+Number of failing tests: 7 
+Buggy Location: 2465
+Patch Found in iteration 0 
+Repair Action: replace 
+ - return  true;  
+ + if(!NodeUtil.isFunctionDeclaration(value))  return  false;  if(!NodeUtil.isFunctionDeclaration(value))  {  return  true;  } 
+ --------------------------------------------------

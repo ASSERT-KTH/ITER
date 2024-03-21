@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+27	[BUG] [BUGGY] private final static int[] _icWS = CharTypes.getInputCodeWS(); [FE] AssertionFailedError [CONTEXT] [BUGGY] private final static int[] _icWS = CharTypes.getInputCodeWS(); [BUGGY]  [CLASS] UTF8StreamJsonParser  [VARIABLES] 	projects/JacksonCore3/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java	0.7071067811865475	34	34	1	replace	

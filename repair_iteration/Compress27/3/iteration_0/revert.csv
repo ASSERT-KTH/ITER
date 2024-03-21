@@ -1,0 +1,16 @@
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118start++;
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118end++;
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<length){start++;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<=length){start++;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(length>start){start++;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(length>end){start++;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<end){start++;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118start=end-1;
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118start=end+1;
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118start+=length;
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<length){start++;}else{thrownewIllegalArgumentException("");}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<length){start++;}else{System.arraycopy(buffer,start+1,buffer,start+1,end);return0L;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<length){start++;}else{System.arraycopy(buffer,start+1,buffer,start+1,end);return0;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<=length){start++;}else{System.arraycopy(buffer,start+1,buffer,start+1,end);return0L;}
+projects/Compress27/src/main/java/org/apache/commons/compress/archivers/tar/TarUtils.java118if(end<=length){start++;}else{System.arraycopy(buffer,start+1,buffer,start+1,end);return0;}

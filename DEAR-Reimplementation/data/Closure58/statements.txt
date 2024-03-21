@@ -1,0 +1,50 @@
+if (!NodeUtil.isForIn(n)) {
+Node lhs = n.getFirstChild();
+Node rhs = lhs.getNext();
+if (NodeUtil.isVar(lhs)) {
+addToSetIfLocal(lhs, kill);
+super(cfg, new LiveVariableJoinOp());
+this.jsScope = jsScope;
+this.escaped = Sets.newHashSet();
+computeEscaped(jsScope, escaped, compiler);
+}
+return false;
+return new LiveVariableLattice(jsScope.getVarCount());
+final BitSet gen = new BitSet(input.liveSet.size());
+final BitSet kill = new BitSet(input.liveSet.size());
+boolean conditional = false;
+List<DiGraphEdge<Node, Branch>> edgeList = getCfg().getOutEdges(node);
+for (DiGraphEdge<Node, Branch> edge : edgeList) {
+if (Branch.ON_EX.equals(edge.getValue())) {
+}
+computeGenKill(node, gen, kill, conditional);
+LiveVariableLattice result = new LiveVariableLattice(input);
+result.liveSet.andNot(kill);
+result.liveSet.or(gen);
+return result;
+switch (n.getType()) {
+return;
+Preconditions.checkState(NodeUtil.isName(node));
+return escaped;
+return jsScope.getVar(var).index;
+return new LiveVariableLattice(jsScope.getVarCount());
+conditional = true;
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill,
+return;
+computeGenKill(NodeUtil.getConditionExpression(n), gen, kill,
+lhs = lhs.getLastChild();
+addToSetIfLocal(lhs, gen);
+computeGenKill(rhs, gen, kill, conditional);
+return;
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {
+if (c.hasChildren()) {
+computeGenKill(c.getFirstChild(), gen, kill, conditional);
+if (!conditional) {
+addToSetIfLocal(c, kill);
+return;
+computeGenKill(n.getFirstChild(), gen, kill, conditional);
+computeGenKill(n.getLastChild(), gen, kill, true);
+return;
+computeGenKill(n.getFirstChild(), gen, kill, conditional);
+computeGenKill(n.getFirstChild().getNext(), gen, kill, true);
+computeGenKill(n.getLastChild(), gen, kill, true);

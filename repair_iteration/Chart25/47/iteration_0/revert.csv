@@ -1,0 +1,9 @@
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347if(generator!=null&&isItemLabelVisible(row,column)){
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347g2.setPaint(generator);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347g2.setStroke(errorIndicatorStroke);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347g2.draw(line);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347FontMetricsfmt=getFontMetrics(row,column);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347if(generator!=null&&isItemLabelVisible(row,column)&&isItemLabelVisibleInLegend(row,column)){
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347g2.setPaint(generator.getItemPaint(row,column));
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java347g2.setPaint(generator.getItemOutlinePaint(row,column));

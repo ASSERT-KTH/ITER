@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+21	[BUG] [BUGGY] private final byte[] TWO_BYTES_BUF = new byte[2]; [FE] IllegalArgumentException [CONTEXT] [BUGGY] private final byte[] TWO_BYTES_BUF = new byte[2]; [BUGGY]  [CLASS] CpioArchiveInputStream  [VARIABLES] 	projects/Compress20/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java	0.7071067811865475	81	81	1	replace	

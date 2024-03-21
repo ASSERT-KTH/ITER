@@ -1,0 +1,10 @@
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166this.dataset=(CategoryDataset)this.dataset.clone();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166this.dataset=getDataset();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166this.dataset=dataset.getDataset();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166returnthis.dataset;
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166returnthis.dataset.getDataset();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166return(this.dataset!=null)?this.dataset:newCategoryDataset(this.dataset);
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166this.dataset=(CategoryDataset)this.dataset.getData();
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166returnthis.dataset!=null?this.dataset:newCategoryDataset(this.limit);
+projects/Chart12/source/org/jfree/chart/plot/MultiplePiePlot.java166this.dataset=dataset.getData();

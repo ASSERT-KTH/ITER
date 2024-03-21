@@ -1,0 +1,15 @@
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(rhs.detachFromParent());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(rhs.getLastChild());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(assign,rhs.detachFromParent());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(rhs.getFirstChild());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(assign.detachFromParent());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(n.detachFromParent());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(assign);
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(assignment.detachFromParent());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(assign.getFirstChild());
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232if(rhs.getType()==Token.FUNCTION){lhs.addChildToBack(rhs.detachFromParent());}
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232if(rhs.getType()==Token.VAR){lhs.addChildToBack(rhs.detachFromParent());}
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232lhs.addChildToBack(rhs);
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232if(rhs.getType()==Token.FUNCTION){lhs.addChildToBack(rhs.detachFromParent());}else{lhs.removeChild(rhs.getString());}
+projects/Closure8/src/com/google/javascript/jscomp/CollapseVariableDeclarations.java232if(rhs.getType()==Token.VAR){lhs.addChildToBack(rhs.detachFromParent());}else{lhs.removeChild(rhs.getString());}

@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+83	[BUG] [BUGGY] if ("base".equals(methodName)) { [FE] AssertionFailedError [CONTEXT] GOOG.equals(name.getString())) {    String methodName = name.getNext().getString(); [BUGGY] if ("base".equals(methodName)) { [BUGGY] processBaseClassCall(t, n); } else if (!isExpr) {  break; } else if ("require".equals(methodName)) { [CLASS] 	projects/Closure92/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java	0.11704114719613057	158	158	1	replace	

@@ -1,0 +1,14 @@
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(dups!=null){if(!_gotName){thrownewIllegalArgumentException("");}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME){if(dups!=null){thrownewIllegalArgumentException("");}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME){if(!gotName){thrownewIllegalArgumentException("");}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME){thrownewIllegalArgumentException("");}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME||type==STATUS_OK_AS_IS){thrownewIllegalArgumentException("");}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME||type==STATUS_OK_AS_IS){thrownewIllegalStateException("");}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME||type==STATUS_OK_AS_IS){if(dups!=null){returnJsonWriteContext.createJsonWriteContext(parent);}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75if(type==STATUS_EXPECT_NAME||type==STATUS_OK_AS_IS){if(dups!=null){_dups=newJsonWriteContext(parent);}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75_currentValue=(JsonWriteContext)parent.clone();
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75_currentValue=JsonWriteContext.createRootContext();
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75_currentValue=parent.getValue();
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java75_currentValue=getCurrentValue();

@@ -1,0 +1,50 @@
+if (cs == null || searchChars == null) {
+int csLen = cs.length();
+int searchLen = searchChars.length;
+for (int i = 0; i < csLen; i++) {
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLen; j++) {
+if (searchChars[j] == ch) {
+return false;
+return cs == null || cs.length() == 0;
+if (cs == null || invalidChars == null) {
+return containsNone(cs, invalidChars.toCharArray());
+if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) {
+int csLen = cs.length();
+int searchLen = searchChars.length;
+for (int i = 0; i < csLen; i++) {
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLen; j++) {
+if (searchChars[j] == ch) {
+return i;
+return true;
+return true;
+if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) {
+int csLength = cs.length();
+int searchLength = searchChars.length;
+int csLast = csLength - 1;
+int searchLast = searchLength - 1;
+for (int i = 0; i < csLength; i++) {
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLength; j++) {
+if (searchChars[j] == ch) {
+if (i < csLast && j < searchLast && ch >= Character.MIN_HIGH_SURROGATE && ch <= Character.MAX_HIGH_SURROGATE) {
+return false;
+if (isEmpty(cs) || isEmpty(searchChars)) {
+return indexOfAny(cs, searchChars.toCharArray());
+if (isEmpty(str) || isEmpty(searchChars)) {
+int strLen = str.length();
+for (int i = 0; i < strLen; i++) {
+char ch = str.charAt(i);
+if (searchChars.indexOf(ch) < 0) {
+return i;
+if (searchChars == null) {
+return containsAny(cs, searchChars.toCharArray());
+if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) {
+int csLen = cs.length();
+int searchLen = searchChars.length;
+for (int i = 0; i < csLen; i++) {
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLen; j++) {
+if (searchChars[j] == ch) {
+continue outer;

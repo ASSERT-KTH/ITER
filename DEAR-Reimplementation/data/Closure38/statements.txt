@@ -1,0 +1,50 @@
+add(String.valueOf(x));
+append(op);
+}
+char prev = getLastChar();
+boolean negativeZero = isNegativeZero(x);
+if (x < 0 && prev == '-') {
+if ((long) x == x && !negativeZero) {
+}
+return x == 0.0 && Math.copySign(1, x) == -1.0;
+void endFile() {}
+maybeCutLine();
+maybeEndStatement();
+char first = op.charAt(0);
+char prev = getLastChar();
+if ((first == '+' || first == '-') && prev == first) {
+} else if (Character.isLetter(first) &&
+} else if (prev == '-' && first == '>') {
+appendOp(op, binOp);
+if (binOp) {
+}
+add(identifier);
+}
+endStatement(false);
+}
+} else if (statementStarted) {
+statementNeedsEnded = true;
+if (needSemiColon) {
+}
+abstract class CodeConsumer {
+boolean statementNeedsEnded = false;
+boolean statementStarted = false;
+boolean sawFunction = false;
+return true;
+if (statementNeedsEnded) {
+statementStarted = true;
+}
+maybeEndStatement();
+if (newcode.length() == 0) {
+char c = newcode.charAt(0);
+if ((isWordChar(c) || c == '\\') &&
+} else if (c == '/' && getLastChar() == '/') {
+append(newcode);
+}
+return (ch == '_' ||
+}
+}
+append("{");
+}
+append("}");
+}

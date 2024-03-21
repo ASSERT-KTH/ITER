@@ -1,0 +1,50 @@
+irNode.setLineno(irNode.getFirstChild().getLineno());
+irNode.setCharno(irNode.getFirstChild().getCharno());
+return Token.BLOCK;
+switch (token) {
+return position;
+return Node.newString(type, value).clonePropsFrom(templateNode);
+ErrorReporter errorReporter) {
+private final Set<String> ALLOWED_DIRECTIVES = Sets.newHashSet("use strict");
+Node rootNodeJsDocHolder = new Node(Token.SCRIPT);
+Node.FileLevelJsDocBuilder fileLevelJsDocBuilder =
+JSDocInfo fileOverviewInfo = null;
+this.sourceString = sourceString;
+this.sourceName = sourceName;
+this.config = config;
+this.errorReporter = errorReporter;
+this.transformDispatcher = new TransformDispatcher();
+this.templateNode = createTemplateNode();
+}
+Node templateNode = new Node(Token.SCRIPT);
+templateNode.putProp(Node.SOURCENAME_PROP, sourceName);
+return templateNode;
+IRFactory irFactory = new IRFactory(sourceString, node.getSourceName(),
+Node irNode = irFactory.transform(node);
+if (node.getComments() != null) {
+irFactory.setFileOverviewJsDoc(irNode);
+return irNode;
+irNode.setJSDocInfo(rootNodeJsDocHolder.getJSDocInfo());
+if (fileOverviewInfo != null) {
+}
+Comment comment = node.getJsDocNode();
+if (comment != null) {
+return null;
+JSDocInfo jsDocInfo = handleJsDoc(node);
+Node irNode = justTransform(node);
+if (jsDocInfo != null) {
+if (irNode.getType() == Token.FUNCTION &&
+if (irNode.getLineno() == -1) {
+int lineno = node.getLineno();
+irNode.setLineno(lineno);
+int charno = position2charno(node.getAbsolutePosition());
+irNode.setCharno(charno);
+return irNode;
+int lineIndex = sourceString.lastIndexOf('\n', position);
+if (lineIndex == -1) {
+return transformDispatcher.process(node);
+return new Node(type).clonePropsFrom(templateNode);
+for (Comment comment : node.getComments()) {
+if (comment.getCommentType() == JSDOC && !comment.isParsed()) {
+irFactory.handlePossibleFileOverviewJsDoc(comment);
+}

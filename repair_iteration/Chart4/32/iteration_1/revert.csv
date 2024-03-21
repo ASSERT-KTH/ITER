@@ -1,0 +1,12 @@
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intresult=this.rangeAxes.indexOf(axis);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intresult=this.rangeAxis.indexOf(axis);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intresult=this.rangeAxes.size();
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intresult=this.rangeAxis.lastIndexOf(axis);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intaxis=this.rangeAxes.indexOf(axis);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intaxis=this.rangeAxes.indexOf(axis)+1;
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intresult=this.rangeAxes.size()-1;
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intresult=this.rangeAxis.indexOf(axis)+1;
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406intaxis=this.rangeAxes.indexOf(this.rangeAxis);
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406if(this.rangeAxis!=null){intresult=this.rangeAxis.indexOf(axis);}
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4406if(this.rangeAxes!=null){intresult=this.rangeAxes.indexOf(axis);}

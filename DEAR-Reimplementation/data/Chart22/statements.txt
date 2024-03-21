@@ -1,0 +1,50 @@
+public KeyedObjects2D() {
+this.rowKeys = new java.util.ArrayList();
+this.columnKeys = new java.util.ArrayList();
+this.rows = new java.util.ArrayList();
+}
+if (rowKey == null) {
+if (columnKey == null) {
+int rowIndex = this.rowKeys.indexOf(rowKey);
+if (rowIndex >= 0) {
+this.rowKeys.add(rowKey);
+row = new KeyedObjects();
+this.rows.add(row);
+row.setObject(columnKey, object);
+int columnIndex = this.columnKeys.indexOf(columnKey);
+if (columnIndex < 0) {
+this.columnKeys.add(columnKey);
+}
+return this.rowKeys.indexOf(key);
+return this.columnKeys.indexOf(key);
+if (rowKey == null) {
+if (columnKey == null) {
+int row = this.rowKeys.indexOf(rowKey);
+if (row < 0) {
+int column = this.columnKeys.indexOf(columnKey);
+if (column < 0) {
+if (row >= 0) {
+KeyedObjects rowData = (KeyedObjects) this.rows.get(row);
+return rowData.getObject(columnKey);
+int index = getColumnIndex(columnKey);
+if (index < 0) {
+Iterator iterator = this.rows.iterator();
+while (iterator.hasNext()) {
+KeyedObjects rowData = (KeyedObjects) iterator.next();
+rowData.removeValue(columnKey);
+return (Comparable) this.columnKeys.get(column);
+setObject(null, rowKey, columnKey);
+boolean allNull = true;
+int rowIndex = getRowIndex(rowKey);
+KeyedObjects row = (KeyedObjects) this.rows.get(rowIndex);
+for (int item = 0, itemCount = row.getItemCount(); item < itemCount;
+if (row.getObject(item) != null) {
+item++) {
+if (allNull) {
+this.rowKeys.remove(rowIndex);
+this.rows.remove(rowIndex);
+}
+int index = getRowIndex(rowKey);
+removeRow(index);
+}
+Comparable columnKey = getColumnKey(columnIndex);

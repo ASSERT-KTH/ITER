@@ -1,0 +1,16 @@
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139returnToken.EXPR_RESULT;
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(token.equals(Token.EXPR_VOID)){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139returnToken.EXPR_VOID;
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139caseToken.EXPR_VOID:returnToken.EXPR_RESULT;
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139caseToken.EXPR_RESULT:returnToken.EXPR_VOID;
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139caseEXPR_VOID:returnToken.EXPR_RESULT;
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139caseEXPR_RESULT:returnToken.EXPR_RESULT;
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(Token.EXPR_VOID!=Token.EXPR_RESULT){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(Token.EXPR_RESULT!=Token.EXPR_VOID){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(Token.EXPR_RESULT==Token.EXPR_VOID){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(Token.EXPR_RESULT!=Token.EMPTY){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(Token.EXPR_RESULT!=Token.EXPR_VOID){returnToken.EXPR_RESULT;}else{returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(Token.EXPR_RESULT!=Token.EOF){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(token==Token.EXPR_RESULT){returnToken.EXPR_RESULT;}
+projects/Closure84/src/com/google/javascript/jscomp/parsing/IRFactory.java1139if(token==Token.EXPR_VOID){returnToken.EXPR_RESULT;}

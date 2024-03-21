@@ -1,0 +1,10 @@
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451returnnewIcon(){
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451returnpath==null?null:path.toString();
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451Pathpath=newPath(shape);
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451ShapegroupStroke=getGroupStroke(shape);
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451Pathpath=newPath(shape.getPaint());
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451returnpath==null?null:path.getIcon();
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451path.transform(AffineTransform.getTranslateInstance(x,y));
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451path.transform(AffineTransform.getTranslateInstance(width,height));
+projects/Chart23/source/org/jfree/chart/renderer/category/MinMaxCategoryRenderer.java451path.transform(AffineTransform.getTranslateInstance(x,y));returnpath;

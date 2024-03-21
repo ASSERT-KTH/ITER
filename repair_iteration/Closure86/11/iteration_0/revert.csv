@@ -1,0 +1,13 @@
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if(callNode.getType()!=Token.NEW){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if(callNode.getType()==Token.NEW){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if(callNode.getType()==Token.NAME){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if(callNode.getType()==Token.NEW||callNode.getType()!=Token.NAME){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if(callNode.getType()==Token.NEW||callNode.getType()!=Token.FUNCTION){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if(callNode.getType()==Token.FUNCTION||callNode.getType()!=Token.NEW){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if((callNode.getType()==Token.NEW)||(callNode.getType()!=Token.FUNCTION)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if((callNode.getType()==Token.NEW)||(callNode.getType()!=Token.GETPROP)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if((callNode.getType()==Token.NEW)&&(callNode.getFirstChild()!=null||callNode.getFirstChild().getType()!=Token.FUNCTION)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if((callNode.getType()==Token.NEW)||(callNode.getType()!=Token.CALL)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if((callNode.getType()==Token.NEW)&&(callNode.getFirstChild()!=null||callNode.getFirstChild().getType()!=Token.THIS)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java686if((callNode.getType()==Token.NEW)&&(callNode.getFirstChild()!=null||callNode.getFirstChild().getType()!=Token.BLOCK)){

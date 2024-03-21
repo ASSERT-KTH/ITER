@@ -1,0 +1,50 @@
+super(checker);
+}
+return optimizeInternal(maxEval,
+return super.optimizeInternal(maxEval, FunctionUtils.toDifferentiableMultivariateVectorFunction(f), optData);
+super.setUp();
+jacobianEvaluations = 0;
+weightMatrixSqrt = squareRoot(getWeight());
+final EigenDecomposition dec = new EigenDecomposition(m);
+protected AbstractLeastSquaresOptimizer() {}
+return jacobianEvaluations;
+final RealMatrix weightedJacobian = computeWeightedJacobian(point);
+weightedResidualJacobian = weightedJacobian.scalarMultiply(-1).getData();
+}
+++jacobianEvaluations;
+final DerivativeStructure[] dsPoint = new DerivativeStructure[params.length];
+final int nC = params.length;
+for (int i = 0; i < nC; ++i) {
+dsPoint[i] = new DerivativeStructure(nC, 1, i, params[i]);
+final DerivativeStructure[] dsValue = jF.value(dsPoint);
+final int nR = getTarget().length;
+if (dsValue.length != nR) {
+throw new DimensionMismatchException(dsValue.length, nR);
+final double[][] jacobianData = new double[nR][nC];
+for (int i = 0; i < nR; ++i) {
+int[] orders = new int[nC];
+for (int j = 0; j < nC; ++j) {
+orders[j] = 1;
+jacobianData[i][j] = dsValue[i].getPartialDerivative(orders);
+orders[j] = 0;
+return weightMatrixSqrt.multiply(MatrixUtils.createRealMatrix(jacobianData));
+objective = computeObjectiveValue(point);
+final double[] res = computeResiduals(objective);
+cost = computeCost(res);
+final ArrayRealVector residuals = new ArrayRealVector(res);
+weightedResiduals = weightMatrixSqrt.operate(residuals).toArray();
+}
+final ArrayRealVector r = new ArrayRealVector(residuals);
+return FastMath.sqrt(r.dotProduct(getWeight().operate(r)));
+return FastMath.sqrt(getChiSquare() / rows);
+return cost * cost;
+return weightMatrixSqrt.copy();
+this.cost = cost;
+}
+return getCovariances(DEFAULT_SINGULARITY_THRESHOLD);
+return computeCovariances(point, threshold);
+final RealMatrix j = computeWeightedJacobian(params);
+final RealMatrix jTj = j.transpose().multiply(j);
+final DecompositionSolver solver
+return solver.getInverse().getData();
+if (rows <= cols) {

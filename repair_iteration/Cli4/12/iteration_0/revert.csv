@@ -1,0 +1,17 @@
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157List<String>tokenList=Arrays.asList(flatten(this.options,arguments,stopAtNonOption));
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157List<String>tokenList=Arrays.asList(flatten(this.options,options,stopAtNonOption));
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157List<String>tokenList=Arrays.asList(flatten(this.options,argument,stopAtNonOption));
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157Optioncmd=options.getOption(tokenList);
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157Optioncmd=options.getOption(this.options,arguments);
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157ListIteratoriterator=tokenList.listIterator();
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157ListIteratoriterator=this.tokenList.listIterator();
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157ListIteratoriterator=this.options.listIterator();
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157ListIteratoriterator=tokenList.iterator();
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157ListIteratoriterator=options.listIterator();
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157Optioncmd=options.getOptions(tokenList);
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157Optionoption=options.getOption(tokenList);
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157Arrays.sort(tokenList);
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157List<String>requiredOptions=newArrayList<String>(tokenList.size());
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157Optioncmd=options.getOption(tokenList,stopAtNonOption);
+projects/Cli4/src/java/org/apache/commons/cli/Parser.java157ListIteratoriterator=this.requiredOptions.listIterator();

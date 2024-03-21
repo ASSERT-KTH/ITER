@@ -1,0 +1,14 @@
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=DWORD;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=remaining;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=LFH_MUST_HAVE_BOTH_SIZES_MSG;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset-=DWORD;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=2;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=length;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=LFH_MUST_HAVE_BOTH_SIZES_MSG.length;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=relativeHeaderOffset;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=RelativeHeaderOffset;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=RELATIVE_SIZE;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=RELATIVE_HeaderOffset;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=DWORD+relativeHeaderOffset;
+projects/Compress19/src/main/java/org/apache/commons/compress/archivers/zip/Zip64ExtendedInformationExtraField.java203offset+=DWORD,relativeHeaderOffset;

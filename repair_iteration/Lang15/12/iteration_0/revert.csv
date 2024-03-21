@@ -1,0 +1,17 @@
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193Class<?>toClass=getRawType(type);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193Class<?>toClass=getRawType(toParameterizedType);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193TypetoParameterizedType=toParameterizedType.getRawType();
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193TypetoTypeArg=toParameterizedType.getRawType();
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193TypetoParameterizedType=toParameterizedType.getSuperclass();
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193returntrue;
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193returnfalse;
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193if(toParameterizedType.equals(type)){returnfalse;}
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193if(toParameterizedType.equals(type)){returntrue;}
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193if(type.equals(toParameterizedType)){returnfalse;}
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193TypetoParameterizedType=getTypeArguments(type,toClass);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193TypetoParameterizedType=toParameterizedType.getAssignedType();
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193return!toParameterizedType.isAssignableFrom(type)||!toParameterizedType.equals(type);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193return!toParameterizedType.isAssignableFrom(type)||!toParameterizedType.isUnknownType();
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193return!toParameterizedType.equals(type)&&!toParameterizedType.isAssignableFrom(type);
+projects/Lang15/src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java193TypetoParameterizedType=toParameterizedType.getConstructor();

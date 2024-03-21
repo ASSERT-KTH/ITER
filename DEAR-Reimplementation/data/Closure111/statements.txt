@@ -1,0 +1,25 @@
+super(convention, typeRegistry);
+private final Visitor<JSType> restrictToArrayVisitor =
+private final Visitor<JSType> restrictToNotArrayVisitor =
+private final Visitor<JSType> restrictToObjectVisitor =
+private final Visitor<JSType> restrictToNotObjectVisitor =
+this.restricters =
+}
+if (condition.isCall() && condition.getChildCount() == 2) {
+Node callee = condition.getFirstChild();
+Node param = condition.getLastChild();
+if (callee.isGetProp() && param.isQualifiedName()) {
+JSType paramType =getTypeIfRefinable(param, blindScope);
+Node left = callee.getFirstChild();
+Node right = callee.getLastChild();
+if (left.isName() && "goog".equals(left.getString()) &&
+Function<TypeRestriction, JSType> restricter =
+if (restricter != null) {
+return restrictParameter(param, paramType, blindScope, restricter,
+type = restriction.apply(new TypeRestriction(type, outcome));
+if (type != null) {
+FlowScope informed = blindScope.createChildFlowScope();
+declareNameInScope(informed, parameter, type);
+return informed;
+return nextPreciserScopeKnowingConditionOutcome(
+return blindScope;

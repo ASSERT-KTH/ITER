@@ -1,0 +1,50 @@
+MathUtils.checkNotNull(rhs);
+return createComplex(real + rhs.getReal(),
+return isNaN;
+return new Complex(realPart, imaginaryPart);
+return real;
+return imaginary;
+super();
+this.real = real;
+this.imaginary = imaginary;
+isNaN = Double.isNaN(real) || Double.isNaN(imaginary);
+isInfinite = !isNaN &&
+}
+public static final Complex I = new Complex(0.0, 1.0);
+public static final Complex NaN = new Complex(Double.NaN, Double.NaN);
+public static final Complex INF = new Complex(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY);
+public static final Complex ONE = new Complex(1.0, 0.0);
+public static final Complex ZERO = new Complex(0.0, 0.0);
+if (isNaN) {
+return Double.NaN;
+if (isInfinite()) {
+return Double.POSITIVE_INFINITY;
+if (FastMath.abs(real) < FastMath.abs(imaginary)) {
+if (imaginary == 0.0) {
+return FastMath.abs(real);
+double q = real / imaginary;
+return FastMath.abs(imaginary) * FastMath.sqrt(1 + q * q);
+if (real == 0.0) {
+return FastMath.abs(imaginary);
+double q = imaginary / real;
+return FastMath.abs(real) * FastMath.sqrt(1 + q * q);
+if (isNaN) {
+return NaN;
+return createComplex(real, -imaginary);
+MathUtils.checkNotNull(rhs);
+if (isNaN || rhs.isNaN) {
+return NaN;
+double c = rhs.getReal();
+double d = rhs.getImaginary();
+if (c == 0.0 && d == 0.0) {
+return NaN;
+if (rhs.isInfinite() && !isInfinite()) {
+return ZERO;
+if (FastMath.abs(c) < FastMath.abs(d)) {
+double q = c / d;
+double denominator = c * q + d;
+return createComplex((real * q + imaginary) / denominator,
+double q = d / c;
+double denominator = d * q + c;
+return createComplex((imaginary * q + real) / denominator,
+if (this == other) {

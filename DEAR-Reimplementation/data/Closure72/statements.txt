@@ -1,0 +1,50 @@
+AbstractCompiler compiler, Supplier<String> safeNameIdSupplier) {
+this.compiler = compiler;
+this.safeNameIdSupplier = safeNameIdSupplier;
+}
+Node newFnNode = fnNode.cloneTree();
+makeLocalNamesUnique(newFnNode, isCallInLoop);
+Set<String> namesToAlias =
+LinkedHashMap<String, Node> args =
+boolean hasArgs = !args.isEmpty();
+if (hasArgs) {
+Node newBlock = NodeUtil.getFunctionBody(newFnNode);
+newBlock.detachFromParent();
+if (hasArgs) {
+if (isCallInLoop) {
+String labelName = getLabelNameForFunction(fnName);
+Node injectableBlock = replaceReturns(
+Preconditions.checkState(injectableBlock != null);
+return injectableBlock;
+Supplier<String> idSupplier = compiler.getUniqueNameIdSupplier();
+NodeTraversal.traverse(
+}
+String name = (fnName == null || fnName.isEmpty()) ? "anon" : fnName;
+return "JSCompiler_inline_label_" + name + "_" + safeNameIdSupplier.get();
+Preconditions.checkNotNull(block);
+Preconditions.checkNotNull(labelName);
+Node root = block;
+boolean hasReturnAtExit = false;
+int returnCount = NodeUtil.getNodeTypeReferenceCount(
+if (returnCount > 0) {
+if (resultMustBeSet && !hasReturnAtExit && resultName != null) {
+return root;
+FunctionArgumentInjector.maybeAddTempsForCallArguments(
+Node inlineResult = aliasAndInlineArguments(newBlock,
+Preconditions.checkState(newBlock == inlineResult);
+fixUnitializedVarDeclarations(newBlock);
+if (NodeUtil.isLoopStructure(n)) {
+return;
+if (NodeUtil.isVar(n)) {
+Node name = n.getFirstChild();
+if (!name.hasChildren()) {
+Node srcLocation = name;
+name.addChildToBack(NodeUtil.newUndefinedNode(srcLocation));
+return;
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {
+fixUnitializedVarDeclarations(c);
+}
+if (namesToAlias == null || namesToAlias.isEmpty()) {
+Node result = FunctionArgumentInjector.inject(
+Preconditions.checkState(result == fnTemplateRoot);
+return result;

@@ -1,0 +1,10 @@
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171returnSTATUS_OK_AFTER_COLON;
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171if(_type==TYPE_OBJECT){returnSTATUS_OK_AFTER_COLON;}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171if(_type==TYPE_AFTER_SPACE){returnSTATUS_OK_AFTER_COLON;}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171if(_type==TYPE_ARRAY){returnSTATUS_OK_AFTER_COLON;}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171if(_type==TYPE_AS_IS){returnSTATUS_OK_AFTER_COLON;}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171if(_gotName){returnSTATUS_OK_AFTER_COLON;}
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171return0;
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171return(_index<0)?STATUS_OK_AFTER_COLON:STATUS_OK_AS_IS;
+projects/JacksonCore7/src/main/java/com/fasterxml/jackson/core/json/JsonWriteContext.java171return(_index<0)?STATUS_OK_AS_IS:STATUS_OK_AFTER_COLON;

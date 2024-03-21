@@ -1,0 +1,12 @@
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327for(inti=0;i<this.datasets.size();i++){
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327mappedAxes.add(newInteger(axisIndex));
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327Map.Entry<Integer,Integer>entry=this.datasetToDomainAxisMap.get(newInteger(axisIndex));
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327Map.Entry<Integer,Integer>entry=this.datasetToDomainAxisMap.entrySet();
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327if(axisIndex!=null){for(inti=0;i<this.datasets.size();i++){if(mappedAxes.contains(axisIndex)){result.add(this.datasets.get(i));}
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327if(axisIndex!=null){for(inti=0;i<this.datasets.size();i++){if(mappedAxes.contains(axisIndex)){result.add(newInteger(axisIndex));}
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327if(axisIndex!=null){for(inti=0;i<this.datasets.size();i++){ListmappedAxes=newArrayList();mappedAxes.add(newInteger(axisIndex));}
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327for(inti=0;i<this.datasetToDomainAxesMap.size();i++){
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327if(axisIndex!=null){if(axisIndex.equals(ZERO)){result.add(newInteger(axisIndex));}
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327if(axisIndex!=null){for(inti=0;i<this.datasets.size();i++){result.add(this.datasets.get(i);}
+projects/Chart4/source/org/jfree/chart/plot/XYPlot.java4327if(axisIndex!=null){for(inti=0;i<this.datasets.size();i++){result.add(newInteger(axisIndex));}

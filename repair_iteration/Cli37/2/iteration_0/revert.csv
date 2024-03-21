@@ -1,0 +1,17 @@
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=pos==-1?token:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=token==-1?token:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=token!=-1?token:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=token==null?token:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=token==null?-1:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320intpos=token.indexOf("=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320pos=token.indexOf("=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Optionoption=options.getOption(pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Integerpos=token.indexOf("=");
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Optionoption=options.getOption(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=token!=null?token:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Optionoptions=options.getOptions(pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Optionoptions=option.getOptions();
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Optionoptions=options.getOptions(token);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=token.length()==-1?token:token.substring(0,pos);
+projects/Cli37/src/main/java/org/apache/commons/cli/DefaultParser.java320Stringt=pos==-1?token:token.substring(0,pos+1);

@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+1	[BUG] [BUGGY] if (out instanceof Flushable) { [FE] NoClassDefFoundError [CONTEXT] public void flush() throws IOException { [BUGGY] if (out instanceof Flushable) { [BUGGY] ((Flushable) out).flush(); } } [CLASS] CSVPrinter [METHOD] flush [RETURN_TYPE] void  [VARIABLES] CSVFormat format boolean newRecord Appendable out  	projects/Csv13/src/main/java/org/apache/commons/csv/CSVPrinter.java	0.7071067811865475	100	100	10	replace	

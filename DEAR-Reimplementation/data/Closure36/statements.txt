@@ -1,0 +1,14 @@
+return Predicates.<Var>alwaysTrue();
+boolean inlineAllStrings) {
+private final IdentifyConstants identifyConstants = new IdentifyConstants();
+this.compiler = compiler;
+this.mode = mode;
+this.inlineAllStrings = inlineAllStrings;
+}
+ReferenceCollectingCallback callback = new ReferenceCollectingCallback(
+callback.process(externs, root);
+}
+switch (mode) {
+return new IdentifyLocals();
+return new IdentifyConstants();
+throw new IllegalStateException();

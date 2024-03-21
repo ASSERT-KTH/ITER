@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+51	[BUG] [BUGGY] println(); [FE] AssertionError [CONTEXT] public void printRecord(final Object... values) throws IOException { for (final Object value : values) { print(value); } [BUGGY] println(); [BUGGY] } [CLASS] CSVPrinter [METHOD] printRecord [RETURN_TYPE] void  values [VARIABLES] CSVFormat format Object value boolean newRecord quote Object[] values Appendable out  	projects/Csv5/src/main/java/org/apache/commons/csv/CSVPrinter.java	0.7071067811865475	358	358	1	replace	

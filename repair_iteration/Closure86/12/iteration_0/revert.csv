@@ -1,0 +1,14 @@
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffectsCall()){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(!callNode.isNoSideEffectsCall()){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.getType()==Token.CALL&&callNode.isNoSideEffectsCall()){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.getType()==Token.NAME&&callNode.isNoSideEffectsCall()){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffectsCall()||callNode.getType()==Token.FUNCTION){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffectsCall()||callNode.getType()==Token.NAME){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffectsCall()||callNode.getType()!=Token.FUNCTION){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(!constructCallHasSideEffects(callNode,compiler)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(!callNode.isNoSideEffects()){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(!constructCallHasSideEffects(callNode)){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffects()||callNode.getType()!=Token.NAME){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffects()||callNode.getType()!=Token.FUNCTION){
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java691if(callNode.isNoSideEffects()||callNode.getType()!=Token.STRING){

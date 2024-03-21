@@ -1,0 +1,15 @@
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74privateMap<String,Name>nameMap=newHashMap<String,Name>();
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74privatefinalMap<String,Name>nameMap=newHashMap<String,Name>();
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74protectedMap<String,Name>nameMap=newHashMap<String,Name>();
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74publicMap<String,Name>nameMap=newHashMap<String,Name>();
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74NameTraversal.traverse(compiler,newBuildGlobalNamespace());
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74Preconditions.checkState(nameMap.size()>0);
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74Preconditions.checkNotNull(nameMap);
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74Preconditions.checkState(nameMap.size()==0);
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74NameTraversal.traverse(compiler,this);
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74Preconditions.checkState(!nameMap.contains(""));
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74privateMap<String,Name>nameMap=newLinkedHashMap<String,Name>();
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74NameTraversal.traverse(compiler,newAssertionFailedError());
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74NameTraversal.traverse(this,newBuildGlobalNamespace());
+projects/Closure119/src/com/google/javascript/jscomp/GlobalNamespace.java74NameTraversal.traverse(compiler,newAstChange());

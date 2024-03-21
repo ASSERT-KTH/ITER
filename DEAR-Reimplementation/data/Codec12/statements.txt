@@ -1,0 +1,31 @@
+super(in);
+private final byte[] singleByte = new byte[1];
+this.doEncode = doEncode;
+this.baseNCodec = baseNCodec;
+}
+baseNCodec.decode(buf, 0, c);
+int readLen = 0;
+while (readLen == 0) {
+if (!baseNCodec.hasData()) {
+byte[] buf = new byte[doEncode ? 4096 : 8192];
+int c = in.read(buf);
+if (doEncode) {
+readLen = baseNCodec.readResults(b, offset, len);
+return readLen;
+} else if (len == 0) {
+} else if (offset < 0 || len < 0) {
+} else if (offset > b.length || offset + len > b.length) {
+final byte b = singleByte[0];
+return b < 0 ? 256 + b : b;
+if (b == null) {
+int r = read(singleByte, 0, 1);
+while (r == 0) {
+if (r > 0) {
+r = read(singleByte, 0, 1);
+return EOF;
+throw new NullPointerException();
+throw new IndexOutOfBoundsException();
+throw new IndexOutOfBoundsException();
+return 0;
+baseNCodec.encode(buf, 0, c);
+return false; // not an easy job to support marks

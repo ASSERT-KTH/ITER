@@ -1,0 +1,50 @@
+maybeThisType = ObjectType.cast(
+thisType = maybeThisType;
+thisType.setValidator(new ThisTypeValidator());
+compiler.report(JSError.make(sourceName, errorRoot, warning, args));
+}
+min = i;
+return info.getParameterCount() > 0 ||
+worklist.add(child);
+i++;
+if (!n.isOptionalArg() && !n.isVarArgs()) {
+}
+return templateTypeName;
+return true;
+return params.getChildCount();
+int i = 0;
+int min = 0;
+for (Node n : getParameters()) {
+return min;
+Node params = getParametersNode();
+if (params != null) {
+Node lastParam = params.getLastChild();
+if (lastParam == null || !lastParam.isVarArgs()) {
+Node n = getParametersNode();
+if (n != null) {
+return n.children();
+} else if (info.getImplementedInterfaceCount() > 0) {
+return call.returnType;
+returnType = typeRegistry.getNativeType(VOID_TYPE);
+returnTypeInferred = true;
+boolean hasNonEmptyReturns = false;
+List<Node> worklist = Lists.newArrayList(functionBlock);
+while (!worklist.isEmpty()) {
+Node current = worklist.remove(worklist.size() - 1);
+int cType = current.getType();
+if (cType == Token.RETURN && current.getFirstChild() != null ||
+} else if (NodeUtil.isStatementBlock(current) ||
+for (Node child = current.getFirstChild();
+child != null; child = child.getNext()) {
+}
+if (!hasNonEmptyReturns) {
+fnType = new FunctionBuilder(typeRegistry)
+maybeSetBaseType(fnType);
+} else if (isInterface) {
+Preconditions.checkArgument(functionBlock.getType() == Token.BLOCK);
+if (returnType == null) {
+return this;
+return true;
+return true;
+if (!builder.addOptionalParams(paramType) && !warnedAboutArgList) {
+if (!builder.addVarArgs(paramType) && !warnedAboutArgList) {

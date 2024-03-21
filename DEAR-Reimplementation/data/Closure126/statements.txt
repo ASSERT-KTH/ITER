@@ -1,0 +1,50 @@
+Node finallyBlock = n.getLastChild();
+tryMinimizeExits(finallyBlock, exitType, labelName);
+tryMinimizeExits(n.getLastChild(), Token.RETURN, null);
+return !n.hasChildren();
+Node tryBlock = n.getFirstChild();
+tryMinimizeExits(tryBlock, exitType, labelName);
+Node allCatchNodes = NodeUtil.getCatchBlock(n);
+if (NodeUtil.hasCatchHandler(allCatchNodes)) {
+if (NodeUtil.hasFinally(n)) {
+MinimizeExitPoints(AbstractCompiler compiler) {
+this.compiler = compiler;
+}
+switch (n.getType()) {
+}
+if (matchingExitNode(n, exitType, labelName)) {
+NodeUtil.removeChild(n.getParent(), n);
+compiler.reportCodeChange();
+return;
+if (n.isIf()) {
+if (n.isTry()) {
+if (n.isLabel()) {
+if (!n.isBlock() || n.getLastChild() == null) {
+return;
+for (Node c : n.children()) {
+if (c.isIf()) {
+if (c == n.getLastChild()) {
+break;
+}
+for (Node c = n.getLastChild(); c != null; c = n.getLastChild()) {
+tryMinimizeExits(c, exitType, labelName);
+if (c == n.getLastChild()) {
+break;
+}
+if (n.getType() == type) {
+if (type == Token.RETURN) {
+return false;
+return n.hasChildren()
+tryMinimizeExits(
+break;
+tryMinimizeExits(NodeUtil.getLoopCodeBlock(n), Token.CONTINUE, null);
+break;
+Preconditions.checkState(allCatchNodes.hasOneChild());
+Node catchNode = allCatchNodes.getFirstChild();
+Node catchCodeBlock = catchNode.getLastChild();
+tryMinimizeExits(catchCodeBlock, exitType, labelName);
+return;
+ifNode.addChildToBack(newDestBlock);
+} else if (destBlock.isEmpty()) {
+} else if (destBlock.isBlock()) {
+newDestBlock = destBlock;

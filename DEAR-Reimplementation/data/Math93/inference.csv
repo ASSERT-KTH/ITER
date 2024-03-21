@@ -1,0 +1,1225 @@
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:374-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:394-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:397-double logSum = 0;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:350-return factorials[n];[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:374-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);	1
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:394-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:397-double logSum = 0;	1
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:345-long result = Math.round(factorialDouble(n));[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:374-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:394-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:397-double logSum = 0;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:346-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:394-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:397-double logSum = 0;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:374-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:394-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:397-double logSum = 0;	1
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:377-return Math.floor(Math.exp(factorialLog(n)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:397-double logSum = 0;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:394-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:397-double logSum = 0;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:398-for (int i = 2; i <= n; i++) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:401-return logSum;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:399-logSum += Math.log((double)i);[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[]	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:401-return logSum;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:63-super();	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:316-private static final long[] factorials = new long[][CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:64-}	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:63-super();[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:64-}[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:77-long s = (long)x + (long)y;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:78-if (s < Integer.MIN_VALUE || s > Integer.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:81-return (int)s;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:79-throw new ArithmeticException("overflow: add");[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:81-return (int)s;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:111-if (a > b) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:95-return addAndCheck(a, b, "overflow: add");[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:111-if (a > b) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:117-if (a < 0) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:113-ret = addAndCheck(b, a, msg);[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:118-if (b < 0) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:117-if (a < 0) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:118-if (b < 0) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:121-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:120-if (Long.MIN_VALUE - b <= a) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:121-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:127-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:123-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:127-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:135-ret = a + b;	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:134-if (a <= Long.MAX_VALUE - b) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:135-ret = a + b;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:141-return ret;	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:137-throw new ArithmeticException(msg);[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:170-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:141-return ret;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:170-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:174-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:171-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:174-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:175-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:179-return 1;	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:178-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:179-return 1;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:182-return n;	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:181-if ((k == 1) || (k == n - 1)) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:182-return n;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:185-long result = Math.round(binomialCoefficientDouble(n, k));[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException(	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:186-if (result == Long.MAX_VALUE) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:190-return result;	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:187-throw new ArithmeticException([CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:190-return result;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:238-if (n < k) {	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:216-return Math.floor(Math.exp(binomialCoefficientLog(n, k)) + 0.5);[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:238-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:238-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:238-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:238-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:238-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:238-if (n < k) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:242-if (n < 0) {	0
+org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:239-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:242-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException(	0
+org.apache.commons.math.util.MathUtils:242-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:242-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:242-if (n < 0) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {	0
+org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:243-throw new IllegalArgumentException([CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:247-return 0;	0
+org.apache.commons.math.util.MathUtils:246-if ((n == k) || (k == 0)) {[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0
+org.apache.commons.math.util.MathUtils:247-return 0;[CLS]org.apache.commons.math.util.MathUtils:249-if ((k == 1) || (k == n - 1)) {	0

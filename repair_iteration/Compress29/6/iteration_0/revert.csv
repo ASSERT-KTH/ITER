@@ -1,0 +1,11 @@
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewArjArchiveInputStream(in,entryEncoding);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210if(entryEncoding!=null){returnnewArjArchiveInputStream(in,entryEncoding);}
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewArjArchiveInputStream(in,entryEncoding,archiverName);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewArjArchiveInputStream(in,entryEncoding,ARJ);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewArjArchiveInputStream(in,archiverName);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210if(entryEncoding!=null){returnnewArjArchiveInputStream(in,entryEncoding);}else{returnARJ;}
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210if(entryEncoding!=null){returnnewArjArchiveInputStream(in,entryEncoding);}else{thrownewIllegalArgumentException("");}
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewArchiveInputStream(in,entryEncoding);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewZipArchiveInputStream(in,entryEncoding);
+projects/Compress29/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java210returnnewArjJarArchiveInputStream(in,entryEncoding);

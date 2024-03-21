@@ -1,0 +1,12 @@
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.COMMA)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType!=Token.COMMA)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType!=Token.EXPR_RESULT||ancestorType==Token.COMMA)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.EXPR_RESULT||ancestorType==Token.COMMA)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType!=Token.COMMA||ancestorType==Token.EXPR_RESULT)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType!=Token.COMMA||ancestorType==Token.BLOCK)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.COMMA||ancestorType==Token.EXPR_RESULT)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.COMMA||ancestorType==Token.BLOCK)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.COMMA)return;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.COMMA||ancestorType==Token.SEMI)continue;
+projects/Closure21/src/com/google/javascript/jscomp/CheckSideEffects.java120if(ancestorType==Token.COMMA||ancestorType==Token.NAME)continue;

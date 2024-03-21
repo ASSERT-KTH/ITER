@@ -1,0 +1,50 @@
+return parsePattern;
+if(formatField.length()>2) {
+formatField= formatField.substring(1, formatField.length()-1);
+return date;
+Calendar cal= Calendar.getInstance(timeZone, locale);
+cal.clear();
+for(int i=0; i<strategies.length;) {
+Strategy strategy= strategies[i++];
+strategy.setCalendar(this, cal, matcher.group(i));
+}
+pos.setIndex(offset+matcher.end());
+return cal.getTime();
+Date date= parse(source, new ParsePosition(0));
+if(date==null) {
+int offset= pos.getIndex();
+Matcher matcher= parsePattern.matcher(source.substring(offset));
+if(!matcher.lookingAt()) {
+collector.add(currentStrategy);
+return DAY_OF_MONTH_STRATEGY;
+for(int i= 0; i<value.length(); ++i) {
+char c= value.charAt(i);
+switch(c) {
+regex.append(c);
+return regex;
+return new CopyQuotedStrategy(formatField);
+protected FastDateParser(String pattern, TimeZone timeZone, Locale locale) {
+this.pattern = pattern;
+this.timeZone = timeZone;
+this.locale = locale;
+init();
+}
+thisYear= Calendar.getInstance(timeZone, locale).get(Calendar.YEAR);
+nameValues= new ConcurrentHashMap<Integer, KeyValue[]>();
+StringBuilder regex= new StringBuilder();
+List<Strategy> collector = new ArrayList<Strategy>();
+Matcher patternMatcher= formatPattern.matcher(pattern);
+if(!patternMatcher.lookingAt()) {
+currentFormatField= patternMatcher.group();
+Strategy currentStrategy= getStrategy(currentFormatField);
+patternMatcher.region(patternMatcher.end(), patternMatcher.regionEnd());
+if(!patternMatcher.lookingAt()) {
+nextStrategy = null;
+break;
+String nextFormatField= patternMatcher.group();
+nextStrategy = getStrategy(nextFormatField);
+if(currentStrategy.addRegex(this, regex)) {
+currentFormatField= nextFormatField;
+currentStrategy= nextStrategy;
+}
+if(currentStrategy.addRegex(this, regex)) {

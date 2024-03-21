@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+57	[BUG] [BUGGY] public static final CSVFormat TDF = DEFAULT .withDelimiter(TAB)  .withIgnoreSurroundingSpaces(); [FE] NoClassDefFoundError [CONTEXT] [BUGGY] public static final CSVFormat TDF = DEFAULT   .withDelimiter(TAB)      .withIgnoreSurroundingSpaces(); [BUGGY] .withDelimiter(TAB) .withIgnoreSurroundingSpaces(); [CLASS] CSVFormat Predefined  [VARIABLES] 	projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java	0.39816652969059774	489	491	13	replace	

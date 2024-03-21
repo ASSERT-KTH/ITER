@@ -1,0 +1,17 @@
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348}
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.add(fnScope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.add(n);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.remove(n);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.remove(fnScope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348AllFunctionScopes.add(fnScope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.clear();
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.add(scope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.addAll(fnScopes);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348allFunctionScopes.remove(parentScope);
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348if(isPropertyAssign){for(Nodec=n.getFirstChild();c!=null;c=c.getNext()){traverseNode(c,n,fnScope);}
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348if(isPropertyAssign){for(Nodec=n.getFirstChild();c!=null;c=c.getNext()){traverseNode(c,n,parentScope);}
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348if(isPropertyAssign){for(finalNodec=n.getFirstChild();c!=null;c=c.getNext()){traverseNode(c,n,parentScope);}
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348if(isPropertyAssign){for(finalNodec=n.getFirstChild();c!=null;c=c.getNext()){traverseNode(c,n,fnScope);}
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348if(isPropertyAssign){for(Nodec=n.getFirstChild();c!=null;c=c.getNext()){Preconditions.checkState(c.getType()==Token.FUNCTION);}
+projects/Closure1/src/com/google/javascript/jscomp/RemoveUnusedVars.java348if(isPropertyAssign){for(Nodec=n.getFirstChild();c!=null;c=c.getNext()){traverseFunction(c,n,fnScope);}

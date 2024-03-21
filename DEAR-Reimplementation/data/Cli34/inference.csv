@@ -1,0 +1,1225 @@
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:294-return instance;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:188-return type;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:113-return instance;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:208-return longOpt;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:288-return required;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:292-OptionBuilder.type = newType;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:188-return type;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:113-return instance;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:208-return longOpt;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:288-return required;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:294-return instance;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:113-return instance;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:208-return longOpt;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:288-return required;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:188-return type;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:113-return instance;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:208-return longOpt;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:288-return required;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:111-OptionBuilder.numberOfArgs = 1;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:208-return longOpt;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:288-return required;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:113-return instance;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:288-return required;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:208-return longOpt;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:288-return required;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:178-return opt;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:257-return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:178-return opt;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:152-return instance;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:150-OptionBuilder.required = true;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:152-return instance;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:224-OptionBuilder.numberOfArgs = Option.UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:158-if (opt == null)	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:362-option.setOptionalArg(optionalArg);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:163-return opt;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:158-if (opt == null)[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:247-return longOpt != null;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:163-return opt;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:247-return longOpt != null;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:380-return valuesep > 0;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:338-return numberOfArgs > 1 || numberOfArgs == UNLIMITED_VALUES;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:400-switch (numberOfArgs)	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:380-return valuesep > 0;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:406-processValue(value);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:400-switch (numberOfArgs)[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:408-}	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:406-processValue(value);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:424-if (hasValueSeparator())	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:408-}[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:453-add(value);	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:424-if (hasValueSeparator())[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:454-}	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:453-add(value);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:467-if (!acceptsArg())	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:454-}[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:473-values.add(value);	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:467-if (!acceptsArg())[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.Option:474-}	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:473-values.add(value);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.Option:540-return values;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:474-}[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.Option:640-Option option = (Option) super.clone();	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:540-return values;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.Option:641-option.values = new ArrayList(values);	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:640-Option option = (Option) super.clone();[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.Option:642-return option;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:641-option.values = new ArrayList(values);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:642-return option;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:72-{	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.Option:681-return (hasArg() || hasArgs() || hasOptionalArg()) && (numberOfArgs <= 0 || values.size() < numberOfArgs);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:74-}	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:72-{[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:74-}[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:48-private static int numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:65-reset();	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:60-private static OptionBuilder instance = new OptionBuilder();[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:66-}	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:65-reset();[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:81-description = null;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:66-}[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:82-argName = null;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:81-description = null;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:83-longopt = null;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:82-argName = null;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:84-type = null;	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:83-longopt = null;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:85-required = false;	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:84-type = null;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:85-required = false;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:87-optionalArg = false;	0
+org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:86-numberOfArgs = Option.UNINITIALIZED;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:87-optionalArg = false;[CLS]org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;	0
+org.apache.commons.cli.OptionBuilder:87-optionalArg = false;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:87-optionalArg = false;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:87-optionalArg = false;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:87-optionalArg = false;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;[CLS]org.apache.commons.cli.OptionBuilder:89-}	0
+org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:88-valuesep = (char) 0;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:89-}[CLS]org.apache.commons.cli.OptionBuilder:353-Option option = null;	0
+org.apache.commons.cli.OptionBuilder:89-}[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:89-}[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:353-Option option = null;[CLS]org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);	0
+org.apache.commons.cli.OptionBuilder:353-Option option = null;[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0
+org.apache.commons.cli.OptionBuilder:357-option = new Option(opt, description);[CLS]org.apache.commons.cli.OptionBuilder:360-option.setLongOpt(longopt);	0

@@ -1,0 +1,50 @@
+return new Vector3D(v1.y * v2.z - v1.z * v2.y, v1.z * v2.x - v1.x * v2.z, v1.x * v2.y - v1.y * v2.x);
+return x;
+return y;
+return z;
+public Vector3D(double x, double y, double z) {
+this.x = x;
+this.y = y;
+this.z = z;
+}
+public static final Vector3D ZERO = new Vector3D(0, 0, 0);
+public static final Vector3D PLUS_I = new Vector3D(1, 0, 0);
+public static final Vector3D MINUS_I = new Vector3D(-1, 0, 0);
+public static final Vector3D PLUS_J = new Vector3D(0, 1, 0);
+public static final Vector3D MINUS_J = new Vector3D(0, -1, 0);
+public static final Vector3D PLUS_K = new Vector3D(0, 0, 1);
+public static final Vector3D MINUS_K = new Vector3D(0, 0, -1);
+public static final Vector3D NaN = new Vector3D(Double.NaN, Double.NaN, Double.NaN);
+public static final Vector3D POSITIVE_INFINITY =
+public static final Vector3D NEGATIVE_INFINITY =
+private static final Vector3DFormat DEFAULT_FORMAT =
+public Vector3D(double alpha, double delta) {
+double cosDelta = FastMath.cos(delta);
+this.x = FastMath.cos(alpha) * cosDelta;
+this.y = FastMath.sin(alpha) * cosDelta;
+this.z = FastMath.sin(delta);
+}
+public Vector3D(double a, Vector3D u) {
+this.x = a * u.x;
+this.y = a * u.y;
+this.z = a * u.z;
+}
+public Vector3D(double a1, Vector3D u1, double a2, Vector3D u2) {
+this.x = a1 * u1.x + a2 * u2.x;
+this.y = a1 * u1.y + a2 * u2.y;
+this.z = a1 * u1.z + a2 * u2.z;
+}
+double a3, Vector3D u3) {
+this.x = a1 * u1.x + a2 * u2.x + a3 * u3.x;
+this.y = a1 * u1.y + a2 * u2.y + a3 * u3.y;
+this.z = a1 * u1.z + a2 * u2.z + a3 * u3.z;
+}
+double a3, Vector3D u3, double a4, Vector3D u4) {
+this.x = a1 * u1.x + a2 * u2.x + a3 * u3.x + a4 * u4.x;
+this.y = a1 * u1.y + a2 * u2.y + a3 * u3.y + a4 * u4.y;
+this.z = a1 * u1.z + a2 * u2.z + a3 * u3.z + a4 * u4.z;
+}
+return FastMath.abs(x) + FastMath.abs(y) + FastMath.abs(z);
+return FastMath.sqrt (x * x + y * y + z * z);
+return x * x + y * y + z * z;
+return FastMath.max(FastMath.max(FastMath.abs(x), FastMath.abs(y)), FastMath.abs(z));

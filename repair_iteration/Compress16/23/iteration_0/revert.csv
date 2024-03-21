@@ -1,0 +1,10 @@
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(TarArchiveInputStream.matches(tarheader,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(TarArchiveInputStream.matches(dumpsig,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(DumpArchiveInputStream.matches(dumpsig,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(!TarArchiveInputStream.matches(tarheader,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(!TarArchiveInputStream.matches(dumpsig,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(TarArchiveInputStream.matches(signature,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(ZarArchiveInputStream.matches(dumpsig,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(DUMP.matches(tarheader,signatureLength)){
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java236if(DUMP.matches(dumpsig,signatureLength)){

@@ -1,0 +1,13 @@
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87setFormat(format);
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.format=format;
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.names=newHashMap();
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.names=newHashMap<String,String>();
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87if(format!=null){setFormat(format);}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87if(format==null){setFormat(format);}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.names=newHashMap<String,Object>();
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.names=newHashMap<String,Integer>();
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87setFormat(this.format);
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87if(format!=null){setFormat(format);}else{out.close();}
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.entryFormat=format;
+projects/Compress1/src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveOutputStream.java87this.names=newHashMap<String,String>(format);

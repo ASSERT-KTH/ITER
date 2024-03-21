@@ -1,0 +1,12 @@
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.CLASS_VALUE==clazz){return(T)createClass(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85}elseif(PatternOptionBuilder.CLASS_VALUE==clazz){return(T)createClass(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.FILE_VALUE==clazz){return(T)createFile(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){return(T)createString(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85}elseif(PatternOptionBuilder.FILE_VALUE==clazz){return(T)createFile(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.FILE_VALUE==clazz){
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.FILE_VALUE!=clazz){
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.FILES_VALUE==clazz){
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85}elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){return(T)createString(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85}elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){return(T)createRaw(str);}
+projects/Cli40/src/main/java/org/apache/commons/cli/TypeHandler.java85elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){

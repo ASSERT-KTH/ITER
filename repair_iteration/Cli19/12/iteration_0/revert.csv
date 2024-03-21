@@ -1,0 +1,13 @@
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134processOptionToken(token,stopAtNonOption);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134processOptionToken(token,stopAtNonOption,options);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134processOptionToken(token,stopAtNonOption,arguments);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134acceptToken(token,stopAtNonOption);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134tokens.add(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134Iterator<String>iter=options.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134OptioncurrentOption=options.getOption(token);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134Iterator<String>iter=arguments.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134tokens.add("-");
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134eatTheRest=processOptionToken(token,stopAtNonOption);
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134Iterator<Option>iter=options.iterator();
+projects/Cli19/src/java/org/apache/commons/cli/PosixParser.java134Iterator<String>iter=tokens.iterator();

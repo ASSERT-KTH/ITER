@@ -1,0 +1,12 @@
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288floatd1=iterator1.currentSegment(seg2);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288floatd1=iterator1.currentSegment(seg1);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288floatd2=iterator1.currentSegment(seg1);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288if(!Arrays.equals(d1,d2)){
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288PathIteratoriterator1=getPathIterator(seg1);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288PathIteratoriterator1=p1.getPathIterator();
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288PathIteratoriterator1=p2.getPathIterator();
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288floatSQRT2=iterator1.currentSegment(seg2);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288floatSQRT2=iterator1.currentSegment(seg1);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288intd2=iterator2.currentSegment(seg1);
+projects/Chart11/source/org/jfree/chart/util/ShapeUtilities.java288if(!Arrays.equals(d1,d2)&&!seg1.equals(seg2)){

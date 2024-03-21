@@ -1,0 +1,36 @@
+base64.setInitialBuffer(b, offset, len);
+this(in, false);
+}
+super(in);
+private final byte[] singleByte = new byte[1];
+this.doEncode = doEncode;
+this.base64 = new Base64(false);
+}
+if (!base64.hasData()) {
+byte[] buf = new byte[doEncode ? 4096 : 8192];
+int c = in.read(buf);
+if (c > 0 && b.length == len) {
+if (doEncode) {
+base64.decode(buf, 0, c);
+return base64.readResults(b, offset, len);
+} else if (len == 0) {
+} else if (offset < 0 || len < 0) {
+} else if (offset > b.length || offset + len > b.length) {
+if (b == null) {
+super(in);
+private final byte[] singleByte = new byte[1];
+this.doEncode = doEncode;
+this.base64 = new Base64(lineLength, lineSeparator);
+}
+int r = read(singleByte, 0, 1);
+while (r == 0) {
+r = read(singleByte, 0, 1);
+if (r > 0) {
+return singleByte[0] < 0 ? 256 + singleByte[0] : singleByte[0];
+return -1;
+throw new NullPointerException();
+throw new IndexOutOfBoundsException();
+throw new IndexOutOfBoundsException();
+return 0;
+base64.encode(buf, 0, c);
+return false; // not an easy job to support marks

@@ -1,0 +1,50 @@
+if (!(data instanceof StatisticalCategoryDataset)) {
+StatisticalCategoryDataset statData = (StatisticalCategoryDataset) data;
+PlotOrientation orientation = plot.getOrientation();
+if (orientation == PlotOrientation.HORIZONTAL) {
+}
+drawHorizontalItem(g2, state, dataArea, plot, domainAxis,
+RectangleEdge xAxisLocation = plot.getDomainAxisEdge();
+double rectY = domainAxis.getCategoryStart(column, getColumnCount(),
+int seriesCount = getRowCount();
+int categoryCount = getColumnCount();
+if (seriesCount > 1) {
+rectY = rectY + row * state.getBarWidth();
+Number meanValue = dataset.getMeanValue(row, column);
+double value = meanValue.doubleValue();
+double base = 0.0;
+double lclip = getLowerClip();
+double uclip = getUpperClip();
+if (uclip <= 0.0) {// cases 1, 2, 3 and 4
+else if (lclip <= 0.0) { // cases 5, 6, 7 and 8
+if (value >= uclip) {
+if (value <= lclip) {
+RectangleEdge yAxisLocation = plot.getRangeAxisEdge();
+double transY1 = rangeAxis.valueToJava2D(base, dataArea, yAxisLocation);
+double transY2 = rangeAxis.valueToJava2D(value, dataArea,
+double rectX = Math.min(transY2, transY1);
+double rectHeight = state.getBarWidth();
+double rectWidth = Math.abs(transY2 - transY1);
+Rectangle2D bar = new Rectangle2D.Double(rectX, rectY, rectWidth,
+Paint seriesPaint = getItemPaint(row, column);
+g2.setPaint(seriesPaint);
+g2.fill(bar);
+if (isDrawBarOutline() && state.getBarWidth() > 3) {
+double valueDelta = dataset.getStdDevValue(row, column).doubleValue();
+double highVal = rangeAxis.valueToJava2D(meanValue.doubleValue()
+double lowVal = rangeAxis.valueToJava2D(meanValue.doubleValue()
+if (this.errorIndicatorStroke != null) {
+g2.setStroke(this.errorIndicatorStroke);
+if (this.errorIndicatorPaint != null) {
+g2.setPaint(this.errorIndicatorPaint);
+Line2D line = null;
+line = new Line2D.Double(lowVal, rectY + rectHeight / 2.0d,
+g2.draw(line);
+line = new Line2D.Double(highVal, rectY + rectHeight * 0.25,
+g2.draw(line);
+line = new Line2D.Double(lowVal, rectY + rectHeight * 0.25,
+g2.draw(line);
+CategoryItemLabelGenerator generator = getItemLabelGenerator(row,
+if (generator != null && isItemLabelVisible(row, column)) {
+EntityCollection entities = state.getEntityCollection();
+if (entities != null) {

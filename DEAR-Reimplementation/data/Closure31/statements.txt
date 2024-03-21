@@ -1,0 +1,50 @@
+static final DiagnosticType MODULE_DEPENDENCY_ERROR =
+static final DiagnosticType MISSING_ENTRY_ERROR = DiagnosticType.error(
+public static final DiagnosticType OPTIMIZE_LOOP_ERROR = DiagnosticType.error(
+public static final DiagnosticType MOTION_ITERATIONS_ERROR =
+private static final Logger logger =
+private static final DiagnosticType EMPTY_MODULE_LIST_ERROR =
+private static final DiagnosticType EMPTY_ROOT_MODULE_ERROR =
+static final DiagnosticType DUPLICATE_INPUT =
+static final DiagnosticType DUPLICATE_EXTERN_INPUT =
+this((PrintStream) null);
+}
+public Compiler(PrintStream stream) {
+CompilerOptions options = null;
+private PassConfig passes = null;
+private final Map<String, Node> injectedLibraries = Maps.newLinkedHashMap();
+private String externExports = null;
+private int uniqueNameId = 0;
+private boolean useThreads = true;
+private boolean hasRegExpGlobalReferences = true;
+private final StringBuilder debugLog = new StringBuilder();
+CodingConvention defaultCodingConvention = new ClosureCodingConvention();
+private Config parserConfig = null;
+private final com.google.javascript.rhino.ErrorReporter oldErrorReporter =
+private final ErrorReporter defaultErrorReporter =
+private GlobalVarReferenceMap globalRefMap = null;
+private volatile double progress = 0.0;
+private final PassFactory sanityCheck =
+private Tracer currentTracer = null;
+private String currentPassName = null;
+private int syntheticCodeId = 0;
+protected final CodeChangeHandler.RecentChange recentChange =
+private final List<CodeChangeHandler> codeChangeHandlers =
+private CompilerInput synthesizedExternsInput = null;
+addChangeHandler(recentChange);
+outStream = stream;
+}
+this();
+setErrorManager(errorManager);
+}
+Preconditions.checkNotNull(
+this.errorManager = errorManager;
+}
+boolean colorize = options.shouldColorizeErrorOutput();
+return options.errorFormat.toFormatter(this, colorize);
+this.options = options;
+if (errorManager == null) {
+if (outStream == null) {
+setErrorManager(
+PrintStreamErrorManager printer =
+printer.setSummaryDetailLevel(options.summaryDetailLevel);

@@ -1,0 +1,6 @@
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java586intnewLen=(len==MAX_SEGMENT_LEN)?(MAX_SEGMENT_LEN+1):Math.min(MAX_SEGMENT_LEN,len+(len>>1));
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java586intnewLen=(len==MIN_SEGMENT_LEN)?(MAX_SEGMENT_LEN+1):Math.min(MAX_SEGMENT_LEN,len+(len>>1));
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java586intnewLen=(len==MAX_SEGMENT_LEN)?(MAX_SEGMENT_LEN+1):Math.min(MAX_SEGMENT_LEN,len+(len>=1));
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java586
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java586intnewLen=(len==0)?(MAX_SEGMENT_LEN+1):Math.min(MAX_SEGMENT_LEN,len+(len>>1));
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java586intnewLen=(len==1)?(MAX_SEGMENT_LEN+1):Math.min(MAX_SEGMENT_LEN,len+(len>>1));

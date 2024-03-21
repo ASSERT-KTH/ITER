@@ -1,0 +1,50 @@
+this(0);
+}
+this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS,
+}
+lambda = 4 + (int) (3. * Math.log(dimension));
+boundaries = new double[2][];
+boundaries[0] = lB;
+boundaries[1] = uB;
+hasFiniteBounds = true;
+break;
+for (int i = 0; i < lB.length; i++) {
+if (Double.isInfinite(lB[i]) ||
+if (hasInfiniteBounds) {
+isMinimize = getGoalType().equals(GoalType.MINIMIZE);
+final FitnessFunction fitfun = new FitnessFunction();
+final double[] guess = fitfun.encode(getStartPoint());
+dimension = guess.length;
+initializeCMA(guess);
+iterations = 0;
+double bestValue = fitfun.value(guess);
+}
+if (lambda <= 0) {
+double[][] sigmaArray = new double[guess.length][1];
+for (int i = 0; i < guess.length; i++) {
+final double range =(boundaries == null) ? 1.0 : boundaries[1][i] - boundaries[0][i];
+sigmaArray[i][0] = ((inputSigma == null) ? 0.3 : inputSigma[i]) / range;
+RealMatrix insigma = new Array2DRowRealMatrix(sigmaArray, false);
+sigma = max(insigma); // overall standard deviation
+stopTolUpX = 1e3 * max(insigma);
+stopTolX = 1e-11 * max(insigma);
+stopTolFun = 1e-12;
+stopTolHistFun = 1e-13;
+mu = lambda / 2; // number of parents/points for recombination
+logMu2 = Math.log(mu + 0.5);
+weights = log(sequence(1, mu, 1)).scalarMultiply(-1.).scalarAdd(logMu2);
+double sumw = 0;
+double sumwq = 0;
+for (int i = 0; i < mu; i++) {
+double w = weights.getEntry(i, 0);
+sumw += w;
+sumwq += w * w;
+weights = weights.scalarMultiply(1. / sumw);
+mueff = sumw * sumw / sumwq; // variance-effectiveness of sum w_i x_i
+cc = (4. + mueff / dimension) /
+cs = (mueff + 2.) / (dimension + mueff + 3.);
+damps = (1. + 2. * Math.max(0, Math.sqrt((mueff - 1.) /
+ccov1 = 2. / ((dimension + 1.3) * (dimension + 1.3) + mueff);
+ccovmu = Math.min(1 - ccov1, 2. * (mueff - 2. + 1. / mueff) /
+ccov1Sep = Math.min(1, ccov1 * (dimension + 1.5) / 3.);
+ccovmuSep = Math.min(1 - ccov1, ccovmu * (dimension + 1.5) / 3.);

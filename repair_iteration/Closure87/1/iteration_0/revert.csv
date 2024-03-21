@@ -1,0 +1,16 @@
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnn;
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnparent;
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268return(parent==null)?null:parent.getFirstChild();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268return(parent==null)?null:parent.getParent();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268return(parent!=null)?null:parent.getFirstChild();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268return(parent!=null)?null:parent.getParent();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268return(parent==null)?null:parent.getNext();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268return(parent!=null)?null:parent.getNext();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNodeUtil.newLiteralValue(cond,false);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNode.newString(Token.NAME,cond.getFirstChild().getString());
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNodeUtil.newLiteralValue(cond,true);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNode.newString(Token.NAME,parent.getFirstChild().getString());
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNode.newString(Token.NAME,cond.getFirstChild());
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNode.newString(Token.NAME,cond.getString());
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java268returnNode.newString(Token.NAME,parent);

@@ -1,0 +1,50 @@
+return pow(-x, y);
+if (y >= TWO_POWER_52 || y <= -TWO_POWER_52) {
+final double lns[] = new double[2];
+if (y == 0.0) {
+if (x != x) { // X is NaN
+if (x == 0) {
+if (x == Double.POSITIVE_INFINITY) {
+if (y == Double.POSITIVE_INFINITY) {
+if (x == Double.NEGATIVE_INFINITY) {
+if (y == Double.NEGATIVE_INFINITY) {
+if (x < 0) {
+if (y < 8e298 && y > -8e298) {
+double tmp1 = y * HEX_40000000;
+ya = y + tmp1 - tmp1;
+yb = y - ya;
+} else {
+final double lores = log(x, lns);
+if (Double.isInfinite(lores)){ // don't allow this to be converted to NaN
+double lna = lns[0];
+double lnb = lns[1];
+double tmp1 = lna * HEX_40000000;
+double tmp2 = lna + tmp1 - tmp1;
+lnb += lna - tmp2;
+lna = tmp2;
+final double aa = lna * ya;
+final double ab = lna * yb + lnb * ya + lnb * yb;
+lna = aa+ab;
+lnb = -(lna - aa - ab);
+double z = 1.0 / 120.0;
+z = z * lnb + (1.0 / 24.0);
+z = z * lnb + (1.0 / 6.0);
+z = z * lnb + 0.5;
+z = z * lnb + 1.0;
+z = z * lnb;
+final double result = exp(lna, z, null);
+return result;
+if (x < 1.01 && x > 0.99 && hiPrec == null) {
+double tmp = epsilon * HEX_40000000;
+double aa = epsilon + tmp - tmp;
+double ab = epsilon - aa;
+double xa = aa;
+double xb = ab;
+final double numer = bits & 0x3ffffffffffL;
+final double denom = TWO_POWER_52 + (bits & 0x000ffc0000000000L);
+aa = numer - xa*denom - xb * denom;
+xb += aa / denom;
+final double[] lnCoef_last = LN_HI_PREC_COEF[LN_HI_PREC_COEF.length-1];
+double ya = lnCoef_last[0];
+double yb = lnCoef_last[1];
+for (int i = LN_HI_PREC_COEF.length - 2; i >= 0; i--) {

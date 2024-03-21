@@ -1,0 +1,50 @@
+if (this == obj) {
+if (obj == null || getClass() != obj.getClass()) {
+ZipArchiveEntry other = (ZipArchiveEntry) obj;
+if (name == null) {
+if (other.name != null) {
+return true;
+super(name);
+private int method = -1;
+private int internalAttributes = 0;
+private int platform = PLATFORM_FAT;
+private long externalAttributes = 0;
+private LinkedHashMap/*<ZipShort, ZipExtraField>*/ extraFields = null;
+private String name = null;
+}
+super(entry);
+private int method = -1;
+private int internalAttributes = 0;
+private int platform = PLATFORM_FAT;
+private long externalAttributes = 0;
+private LinkedHashMap/*<ZipShort, ZipExtraField>*/ extraFields = null;
+private String name = null;
+setName(entry.getName());
+byte[] extra = entry.getExtra();
+if (extra != null) {
+setExtraFields(ExtraFieldUtils.parse(extra));
+setExtra();
+setMethod(entry.getMethod());
+}
+this((java.util.zip.ZipEntry) entry);
+setInternalAttributes(entry.getInternalAttributes());
+setExternalAttributes(entry.getExternalAttributes());
+setExtraFields(entry.getExtraFields());
+}
+this("");
+}
+this(inputFile.isDirectory() && !entryName.endsWith("/") ?
+if (inputFile.isFile()){
+setSize(inputFile.length());
+setTime(inputFile.lastModified());
+}
+ZipArchiveEntry e = (ZipArchiveEntry) super.clone();
+e.extraFields = extraFields != null ? (LinkedHashMap) extraFields.clone() : null;
+e.setInternalAttributes(getInternalAttributes());
+e.setExternalAttributes(getExternalAttributes());
+e.setExtraFields(getExtraFields());
+return e;
+return method == STORED || method == DEFLATED;
+return method;
+if (method < 0) {
+throw new IllegalArgumentException(

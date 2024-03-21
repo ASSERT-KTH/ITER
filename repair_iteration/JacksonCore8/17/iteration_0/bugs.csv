@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+33	[BUG] [BUGGY] final static char[] NO_CHARS = new char[0]; [FE] NullPointerException [CONTEXT] [BUGGY] final static char[] NO_CHARS = new char[0]; [BUGGY]  [CLASS] TextBuffer  	projects/JacksonCore8/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	0.4472135954999579	29	29	1	replace	

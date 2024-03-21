@@ -1,0 +1,50 @@
+return false;
+return VariableLiveness.KILL;
+} else if (state == VariableLiveness.KILL) {
+if (NodeUtil.isLhs(n, n.getParent())) {
+if (!ControlFlowGraph.isEnteringNewCfgNode(child)) { // Not a FUNCTION
+VariableLiveness state = isVariableReadBeforeKill(child, variable);
+if (state != VariableLiveness.MAYBE_LIVE) {
+return state;
+if (!ControlFlowGraph.isEnteringNewCfgNode(sibling)) {
+VariableLiveness state = isVariableReadBeforeKill(sibling, variable);
+if (state == VariableLiveness.READ) {
+if (NodeUtil.isName(n) && variable.equals(n.getString())) {
+for (Node child = n.getFirstChild();
+child != null; child = child.getNext()) {
+if (n.hasChildren()) {
+tryRemoveAssignment(t, n.getFirstChild(), state);
+for(Node sibling = n.getNext(); sibling != null;
+while (n != exprRoot) {
+n = n.getParent();
+n.removeChild(rhs);
+n.getParent().replaceChild(n, rhs);
+return false;
+compiler.reportCodeChange();
+return;
+if (state.getIn().isLive(var) &&
+if (NodeUtil.isAssign(n)) {
+if (state.getOut().isLive(var)) {
+Var var = scope.getVar(name);
+if (liveness.getEscapedLocals().contains(var)) {
+if (rhs != null &&
+tryRemoveAssignment(t, rhs, exprRoot, state);
+rhs = lhs.getNext();
+ControlFlowGraph<Node> cfg = t.getControlFlowGraph();
+liveness = new LiveVariablesAnalysis(cfg, scope, compiler);
+liveness.analyze();
+tryRemoveDeadAssignments(t, cfg);
+}
+Iterable<DiGraphNode<Node, Branch>> nodes = cfg.getDirectedGraphNodes();
+for (DiGraphNode<Node, Branch> cfgNode : nodes) {
+FlowState<LiveVariableLattice> state =
+Node n = cfgNode.getValue();
+if (n == null) {
+continue;
+switch (n.getType()) {
+tryRemoveAssignment(t, n, state);
+}
+}
+tryRemoveAssignment(t, n, n, state);
+}
+Node parent = n.getParent();

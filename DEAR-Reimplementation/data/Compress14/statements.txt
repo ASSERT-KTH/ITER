@@ -1,0 +1,50 @@
+longresult = 0;
+int end = offset + length;
+int start = offset;
+if (length < 2){
+boolean allNUL = true;
+for (int i = start; i < end; i++){
+if (buffer[i] != 0){
+allNUL = false;
+break;
+if (allNUL) {
+while (start < end){
+if (buffer[start] == ' '){
+trailer = buffer[end-1];
+if (trailer == 0 || trailer == ' '){
+end--;
+trailer = buffer[end-1];
+if (trailer == 0 || trailer == ' '){
+end--;
+for ( ;start < end; start++) {
+final byte currentByte = buffer[start];
+if (currentByte < '0' || currentByte > '7'){
+throw new IllegalArgumentException(
+result = (result << 3) + (currentByte - '0'); // convert from ASCII
+return result;
+if ((buffer[offset] & 0x80) == 0) {
+return parseOctal(buffer, offset, length);
+String string = new String(buffer, offset, length);
+string=string.replaceAll("\0", "{NUL}"); // Replace NULs to allow string to be printed
+final String s = "Invalid byte "+currentByte+" at offset "+(current-offset)+" in '"+string+"' len="+length;
+return s;
+StringBuffer result = new StringBuffer(length);
+intend = offset + length;
+for (int i = offset; i < end; ++i) {
+byte b = buffer[i];
+if (b == 0) { // Trailing null
+break;
+result.append((char) (b & 0xFF)); // Allow for sign-extension
+return result.toString();
+private TarUtils(){
+}
+throw new IllegalArgumentException("Length "+length+" must be at least 2");
+return 0L;
+start++;
+throw new IllegalArgumentException(
+long val = buffer[offset] & 0x7f;
+for (int i = 1; i < length; i++) {
+if (val >= (1L << (63 - 8))) {
+throw new IllegalArgumentException(
+val = (val << 8) + (buffer[offset + i] & 0xff);
+return val;

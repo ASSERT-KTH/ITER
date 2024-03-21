@@ -1,0 +1,15 @@
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128Noden=n.getFirstChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128Noden=n.getLastChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128Nodec=n.getFirstChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128Preconditions.checkState(n.isTry());
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128Noden=n.getNext();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodeelseBlock=n.getFirstChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodetryBlock=n.getFirstChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodetryBlock=n.getLastChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodetryBlock=n.getNext();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodetryBlock=n.getTree();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodetryBlock=n.getParent();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128Nodec=n.getNext();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128NodetryBlock=n.removeFirstChild();
+projects/Closure126/src/com/google/javascript/jscomp/MinimizeExitPoints.java128n.removeChild(labelName);

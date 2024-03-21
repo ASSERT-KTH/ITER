@@ -1,0 +1,10 @@
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481XYPlotlayer=(XYPlot)this.marker.clone();
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481Markermarker=(Marker)this.marker.clone();
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481XYPlotlayer=(XYPlot)super.removeRangeMarker(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481returnremoveRangeMarker(0,marker,layer);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481returnremoveRangeMarker(0,layer,marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481returnremoveRangeMarker(0,Layer.NONE,marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481Markermarker=(Marker)this.layer.clone();
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481Markermarker=getMarker(marker);
+projects/Chart14/source/org/jfree/chart/plot/XYPlot.java2481returnremoveRangeMarker(0,this.marker,layer);

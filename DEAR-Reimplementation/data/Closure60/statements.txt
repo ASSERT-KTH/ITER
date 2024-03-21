@@ -1,0 +1,50 @@
+if (!mayHaveSideEffects(n)) {
+return TernaryValue.TRUE;
+switch (n.getType()) {
+return TernaryValue.forBoolean(n.getString().length() > 0);
+return TernaryValue.forBoolean(n.getDouble() != 0);
+return TernaryValue.FALSE;
+return TernaryValue.FALSE;
+String name = n.getString();
+if ("undefined".equals(name)
+return TernaryValue.FALSE;
+return TernaryValue.TRUE;
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {
+return false;
+if (checkForNewObjects) {
+if (checkForNewObjects) {
+return mayHaveSideEffects(n, null);
+return checkForStateChangeHelper(n, false, compiler);
+switch (n.getType()) {
+for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {
+return false;
+return n.getType() == Token.GETPROP
+static final long MAX_POSITIVE_INTEGER_NUMBER = (long)Math.pow(2, 53);
+private static final Set<String> CONSTRUCTORS_WITHOUT_SIDE_EFFECTS =
+private static final Set<String> BUILTIN_FUNCTIONS_WITHOUT_SIDEEFFECTS =
+private static final Set<String> OBJECT_METHODS_WITHOUT_SIDEEFFECTS =
+private static final Set<String> REGEXP_METHODS =
+private static final Set<String> STRING_REGEXP_METHODS =
+static final NumbericResultPredicate NUMBERIC_RESULT_PREDICATE =
+static final BooleanResultPredicate BOOLEAN_RESULT_PREDICATE =
+static final MayBeStringResultPredicate MAY_BE_STRING_PREDICATE =
+static final Predicate<Node> MATCH_NOT_FUNCTION = new MatchNotFunction();
+private NodeUtil() {}
+switch (n.getType()) {
+return getImpureBooleanValue(n.getLastChild());
+TernaryValue value = getImpureBooleanValue(n.getLastChild());
+return value.not();
+TernaryValue lhs = getImpureBooleanValue(n.getFirstChild());
+TernaryValue rhs = getImpureBooleanValue(n.getLastChild());
+return lhs.and(rhs);
+TernaryValue lhs = getImpureBooleanValue(n.getFirstChild());
+TernaryValue rhs = getImpureBooleanValue(n.getLastChild());
+return lhs.or(rhs);
+TernaryValue trueValue = getImpureBooleanValue(
+TernaryValue falseValue = getImpureBooleanValue(n.getLastChild());
+if (trueValue.equals(falseValue)) {
+return trueValue;
+return TernaryValue.UNKNOWN;
+return TernaryValue.TRUE;
+return getPureBooleanValue(n);
+return getPureBooleanValue(n.getLastChild()).not();

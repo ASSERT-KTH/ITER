@@ -1,0 +1,11 @@
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410returnthis.labelPaint;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410return(this.labelPaint!=null)?this.labelPaint:this.labelPaint;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=getLabelPaint();
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=Paint.create(this.labelPaint);
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=getLabelPaint(true);
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=Paint.white;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=Paint.NONE;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=newPaint(this.labelToolTip);
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410this.labelPaint=newPaint(this.labelToolTip,this.tickMarkPaint);
+projects/Chart26/source/org/jfree/chart/axis/Axis.java410return(this.labelPaint!=null)?this.labelPaint:newPaint(this.labelPaint);

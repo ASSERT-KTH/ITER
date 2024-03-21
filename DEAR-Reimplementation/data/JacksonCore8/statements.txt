@@ -1,0 +1,50 @@
+_inputStart = -1; // indicates shared buffer not used
+_currentSize = 0;
+_inputLen = 0;
+_inputBuffer = null;
+_resultString = null;
+_resultArray = null;
+if (_hasSegments) {
+}
+if (_inputStart >= 0) return _inputBuffer;
+if (_resultArray != null)return _resultArray;
+if (_resultString != null) {
+if (!_hasSegments)return _currentSegment;
+public TextBuffer(BufferRecycler allocator) {
+private boolean _hasSegments = false;
+_allocator = allocator;
+}
+final static char[] NO_CHARS = new char[0];
+if (_allocator == null) {
+resetWithEmpty();
+if (_currentSegment != null) {
+resetWithEmpty();
+char[] buf = _currentSegment;
+_currentSegment = null;
+_allocator.releaseCharBuffer(BufferRecycler.CHAR_TEXT_BUFFER, buf);
+}
+clearSegments();
+_resultString = null;
+_resultArray = null;
+_inputBuffer = buf;
+_inputStart = start;
+_inputLen = len;
+if (_hasSegments) {
+clearSegments();
+}
+_inputBuffer = null;
+_inputStart = -1; // indicates shared buffer not used
+_inputLen = 0;
+_resultString = null;
+_resultArray = null;
+if (_hasSegments) {
+clearSegments();
+} else if (_currentSegment == null) {
+_currentSegment = buf(len);
+_currentSize = _segmentSize = 0;
+append(buf, start, len);
+}
+_inputBuffer = null;
+_inputStart = -1;
+_inputLen = 0;
+_resultString = value;

@@ -1,0 +1,16 @@
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38Stringstr=(str==null)?null:str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38Stringstr=(str!=null)?null:str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38Stringstr=Util.stripLeadingHyphens(str);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38Stringstr=getStripLeadingHyphens();
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38Stringstr=(str==null)?null:str.substring(2,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38returnstr.substring(2,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38returnstr.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38returnstr.substring(1,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38returnstr.substring(2,str.length()+1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38returnstr.substring(2,str.length()-1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38Stringstr=(str==null)?"null":str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38while(str.startsWith("-")){str=str.substring(0,str.length());
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38while(str.startsWith("-")){str=str.substring(0,str.length()-1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38while(str.endsWith("-")){str=str.substring(0,str.length()-1);
+projects/Cli5/src/java/org/apache/commons/cli/Util.java38while(str.startsWith("-")){str=str.substring(0,str.length()-2);

@@ -1,0 +1,14 @@
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.STRING_VALUE==clazz){returncreateString(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){returncreateNumber(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.VALUE_STRING_VALUE==clazz){returncreateString(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){returncreateString(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){returncreateNull(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66if(PatternOptionBuilder.STRING_VALUE==clazz){
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66if(PatternOptionBuilder.STRING_VALUE==clazz||PatternOptionBuilder.STRING_VALUE==clazz){
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66if(!PatternOptionBuilder.STRING_VALUE.equals(clazz)){
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.VALUE_STRING==clazz){returncreateString(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.INTEGER_VALUE==clazz){returncreateInternal(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.NUMBER_VALUE==clazz){returncreateBigInteger(str);}
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66if(PatternOptionBuilder.STRING_VALUE==clazz||Character.isUpperCase(clazz)){
+projects/Cli39/src/main/java/org/apache/commons/cli/TypeHandler.java66elseif(PatternOptionBuilder.TYPE_ARRAY==clazz){returncreateType(str);}

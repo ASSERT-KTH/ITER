@@ -1,0 +1,11 @@
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writevalue");
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writetextvalue");
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writebuffervalue");
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writestringvalue");
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writetextvalue");if(ch<0x80){offset=_outputRawMultiByteChar(ch,cbuf,offset,len);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writetextvalue");if(ch<0x80){offset=_outputRawMultiByteChar(ch,cbuf,offset,inputEnd);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_flushBuffer();
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writetextvalue");if(ch<0x20||ch>0x7F){bbuf[_outputTail++]=(byte)(0x80|(ch&0x3f));}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writetextvalue");if(ch<0x20||ch>0x7F){_writeSegmentedRaw(ch,cbuf,offset,len);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java660_verifyValueWrite("writetextvalue");if(ch<0x20||ch>0x7F){bbuf[_outputTail++]=(byte)(0x80|(ch>>6));bbuf[_outputTail++]=

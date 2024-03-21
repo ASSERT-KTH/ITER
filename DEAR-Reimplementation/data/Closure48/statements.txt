@@ -1,0 +1,50 @@
+NodeTraversal.traverse(compiler, functionNode.getLastChild(),
+JSType type = functionNode.getJSType();
+if (type != null && type.isFunctionType()) {
+FunctionType fnType = type.toMaybeFunctionType();
+ObjectType fnThisType = fnType.getTypeOfThis();
+if (!fnThisType.isUnknownType()) {
+}
+newScope = new Scope(parent, root);
+LocalScopeBuilder localScopeBuilder = new LocalScopeBuilder(newScope);
+scopeBuilder = localScopeBuilder;
+localScopeBuilder.build();
+return functionAnalysisResults.get(n);
+if (n == null) {
+return typeRegistry.getNativeType(nativeType);
+this(compiler, compiler.getCodingConvention());
+}
+Scope newScope = null;
+AbstractScopeBuilder scopeBuilder = null;
+if (parent == null) {
+(new FirstOrderFunctionAnalyzer(compiler, functionAnalysisResults))
+newScope = createInitialScope(root);
+GlobalScopeBuilder globalScopeBuilder = new GlobalScopeBuilder(newScope);
+scopeBuilder = globalScopeBuilder;
+NodeTraversal.traverse(compiler, root, scopeBuilder);
+} else {
+scopeBuilder.resolveStubDeclarations();
+scopeBuilder.resolveTypes();
+for (Node functionNode : scopeBuilder.nonExternFunctions) {
+if (parent == null) {
+codingConvention.defineDelegateProxyPrototypeProperties(
+return newScope;
+CodingConvention codingConvention) {
+private final List<ObjectType> delegateProxyPrototypes = Lists.newArrayList();
+private final Map<String, String> delegateCallingConventions =
+private final Map<Node, AstFunctionContents> functionAnalysisResults =
+this.compiler = compiler;
+this.validator = compiler.getTypeValidator();
+this.codingConvention = codingConvention;
+this.typeRegistry = compiler.getTypeRegistry();
+this.typeParsingErrorReporter = typeRegistry.getErrorReporter();
+}
+static final String DELEGATE_PROXY_SUFFIX =
+static final DiagnosticType MALFORMED_TYPEDEF =
+static final DiagnosticType ENUM_INITIALIZER =
+static final DiagnosticType CTOR_INITIALIZER =
+static final DiagnosticType IFACE_INITIALIZER =
+static final DiagnosticType CONSTRUCTOR_EXPECTED =
+static final DiagnosticType UNKNOWN_LENDS =
+static final DiagnosticType LENDS_ON_NON_OBJECT =
+NodeTraversal.traverse(

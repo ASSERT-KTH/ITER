@@ -1,0 +1,13 @@
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652validate();
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(recordSeparator!=null){for(inti=0;i<headerComments.length;i++){String[]headerComments=newString[headerComments.size()];System.arraycopy(headerComments,0,headerComments,0,headerComments.length);}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(recordSeparator!=null){for(inti=0;i<headerComments.length;i++){String[]headerComments=newString[headerComments.size()];System.arraycopy(headerComments,0,headerComments,0,
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(recordSeparator!=null){for(inti=0;i<headerComments.length;i++){String[]headerComments=newString[headerComments.size()];System.arraycopy(headerComments,0,headerComments,
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){thrownewIllegalArgumentException("");}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){this.recordSeparator=nullString;}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){for(inti=0;i<headerComments.length;++i){chardelimiter=headerComments[i];}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){for(inti=0;i<headerComments.length;++i){chardelimiter=headerComments[i].charAt(i);}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){for(inti=0;i<headerComments.size();++i){CharTypes.appendCharacter(commentStart,delimiter);}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){for(inti=0;i<headerComments.size();++i){CharTypes.appendCharacter(commentStart);}
+projects/Csv15/src/main/java/org/apache/commons/csv/CSVFormat.java652if(!allowMissingColumnNames){for(inti=0;i<headerComments.size();++i){CharTypes.appendCharacter(quoteCharacter);}

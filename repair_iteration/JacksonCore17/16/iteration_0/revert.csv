@@ -1,0 +1,11 @@
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121if(isEnabled(Feature.ESCAPE_NON_ASCII)){setHighestNonEscapedChar(127);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121if(isEnabled(Feature.ESCAPE_NON_ASCII)){setHighestNonEscapedChar(127);}else{setHighestNonEscapedChar(128);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121if(isEnabled(Feature.ESCAPE_NON_ASCII)){setHighestNonEscapedChar(127);}else{out.write(_charBuffer,0,_charBufferLength);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121if(isEnabled(Feature.ESCAPE_NULL_ASCII)){setHighestNonEscapedChar(127);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121if(!isEnabled(Feature.ESCAPE_NON_ASCII)){setHighestNonEscapedChar(127);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121_outputTail=ctxt.allocConcatBuffer();
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121_reportError("CurrentcontextnotanARRAYbut"+ctxt.getMessage());
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121if(_outputTail>MAX_BYTES_TO_BUFFER){out.write(_charBufferLength);}else{out.write(_charBufferLength);}
+projects/JacksonCore17/src/main/java/com/fasterxml/jackson/core/json/UTF8JsonGenerator.java121_reportError("CurrentcontextnotanARRAYbut"+getMessage());

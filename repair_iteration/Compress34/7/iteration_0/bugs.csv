@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+13	[BUG] [BUGGY] } [FE] AssertionError [CONTEXT] public void setUID(long l) { this.uid = ZipUtil.longToBig(l); [BUGGY] } [BUGGY]  [CLASS] X7875_NewUnix [METHOD] setUID [RETURN_TYPE] void  long l [VARIABLES] BigInteger ONE_THOUSAND gid uid ZipShort HEADER_ID boolean long l serialVersionUID int version  	projects/Compress34/src/main/java/org/apache/commons/compress/archivers/zip/X7875_NewUnix.java	0.7071067811865475	114	114	1	replace	

@@ -1,0 +1,9 @@
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.drawSharedDomainAxis=true;
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.drawSharedDomainAxis=false;
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.domainAxes.set(0,domainAxis);
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472if(domainAxis!=null){
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.drawSharedDomainAxis=super.getRangeAxisLocation(AxisLocation.TOP_OR_LEFT);
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.drawSharedDomainAxis=super.getRangeAxisLocation(AxisLocation.TOP_OR_LEFT,false);
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.drawSharedDomainAxis=super.getRangeAxisLocation(AxisLocation.TOP_OR_LEFT,true);
+projects/Chart19/source/org/jfree/chart/plot/CategoryPlot.java472this.domainAxis.set(0,domainAxis);

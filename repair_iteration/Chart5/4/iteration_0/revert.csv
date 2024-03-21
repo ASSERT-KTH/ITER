@@ -1,0 +1,15 @@
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570this.data.remove(index);
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570this.data.remove(0);
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570intgetItemCount();
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(getItemCount()>this.maximumItemCount){
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(getItemCount()>this.maximumItemCount-1){
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(getItemCount()<this.maximumItemCount){
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570this.data.remove(index-1,newXYDataItem(x,y));
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(this.allowDuplicateXValues){this.data.remove(index-1,newXYDataItem(x,y));}else{this.data.remove(index-1,newXYDataItem(x,y));}
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(this.allowDuplicateXValues){this.data.remove(index-1,newXYDataItem(x,y));}else{this.data.add(newXYDataItem(x,y));}
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(getItemCount()>this.maximumItemCount&&this.data.size()>this.maximumItemCount){
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(this.allowDuplicateXValues){if(getItemCount()>this.maximumItemCount){this.data.remove(0);}
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570this.data.add(newXYDataItem(x,y));
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(this.allowDuplicateXValues){if(this.data.size()>this.maximumItemCount){this.data.remove(0);}
+projects/Chart5/source/org/jfree/data/xy/XYSeries.java570if(getItemCount()>this.maximumItemCount&&this.data.size()>1){

@@ -1,0 +1,14 @@
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821reportCodeChange();
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821parent.replaceChild(n,newNode);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821n.removeChild(parent);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821n.removeChild(newNode);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821parent.replaceChild(newNode,newNode);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821NodeTraversal.traverse(compiler,newNode,this);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821NodeTraversal.traverse(compiler,n,newNode,this);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821NodeTraversal.traverse(compiler,n,newNode);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821NodeTraversal.traverse(compiler,n,newNode,false);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821if(newNode.getType()==Token.NAME){reportCodeChange();}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821parent.removeChild(newNode);
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821if(newNode.getType()==Token.VAR){reportCodeChange();}
+projects/Closure87/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java821if(newNode.getType()==Token.FUNCTION){reportCodeChange();}

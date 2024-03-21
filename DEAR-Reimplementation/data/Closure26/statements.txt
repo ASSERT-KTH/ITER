@@ -1,0 +1,24 @@
+NodeTraversal
+}
+boolean reportDependencies) {
+this.compiler = compiler;
+this.filenamePrefix = filenamePrefix.endsWith(File.separator) ?
+this.reportDependencies = reportDependencies;
+}
+public static final String DEFAULT_FILENAME_PREFIX = "." + File.separator;
+return toModuleName(normalizeSourceName(filename));
+return MODULE_NAME_PREFIX +
+if (filename.indexOf(filenamePrefix) == 0) {
+return filename;
+requiredFilename = requiredFilename.replaceAll("\\.js$", "");
+currentFilename = currentFilename.replaceAll("\\.js$", "");
+if (requiredFilename.startsWith("." + File.separator) ||
+return toModuleName(requiredFilename);
+requiredFilename = (new URI(currentFilename)).resolve(new URI(requiredFilename))
+}
+this(compiler, filenamePrefix, true);
+}
+return module;
+} catch (URISyntaxException e) {
+throw new RuntimeException(e);
+filename = filename.substring(filenamePrefix.length());

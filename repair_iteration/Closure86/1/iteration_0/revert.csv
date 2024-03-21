@@ -1,0 +1,16 @@
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762returnfalse;
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762returntrue;
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(!callNode.isOnlyModifiesThisCall()&&evaluatesToLocalValue(nameNode.getLastChild())){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(callNode.isOnlyModifiesThisCall()||evaluatesToLocalValue(nameNode.getLastChild())){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(!callNode.isOnlyModifiesThisCall()||evaluatesToLocalValue(nameNode.getLastChild())){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(!callNode.isOnlyModifiesThisCall()||evaluatesToLocalValue(callNode.getLastChild())){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(callNode.isOnlyModifiesThisCall()||evaluatesToLocalValue(callNode.getLastChild())){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(JSC_PROPERTY_NAME.equals("Math")||JSC_PROPERTY_NAME.equals("Property")){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(callNode.isOnlyModifiesThisCall()||evaluatesToLocalValue(nameNode.getFirstChild())){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(JSC_PROPERTY_NAME.equals("Math")||JSC_PROPERTY_NAME.equals("Name")){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762if(JSC_PROPERTY_NAME.equals("Property")||JSC_PROPERTY_NAME.equals("Math")){returnfalse;}
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762returnJSC_PROPERTY_NAME_FN.equals("Math")&&OBJECT_METHODS_WITHOUT_SIDEEFFECTS.contains(nameNode.getLastChild
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762returnJSC_PROPERTY_NAME_FN.equals("Math")&&OBJECT_METHODS_WITHOUT_SIDEEFFECTS.contains(nameNode.getLastChild().getString()));
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762returnJSC_PROPERTY_NAME_FN.equals("Math")&&OBJECT_METHODS_WITHOUT_SIDEEFFECTS.contains(nameNode.getFirstChild().getString()));
+projects/Closure86/src/com/google/javascript/jscomp/NodeUtil.java762returnJSC_PROPERTY_NAME_FN.equals("Math")&&OBJECT_METHODS_WITHOUT_SIDEEFFECTS.contains(nameNode.getLastChil

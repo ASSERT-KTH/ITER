@@ -1,0 +1,50 @@
+int pos = token.indexOf("=");
+String t = pos == -1 ? token : token.substring(0, pos);
+if (!options.getMatchingOptions(t).isEmpty())
+else if (getLongPrefix(token) != null && !token.startsWith("--"))
+return false;
+String t = Util.stripLeadingHyphens(token);
+String opt = null;
+for (i = t.length() - 2; i > 1; i--)
+String prefix = t.substring(0, i);
+if (options.hasLongOption(prefix))
+return opt;
+public class DefaultParser implements CommandLineParser
+return parse(options, arguments, null);
+return parse(options, arguments, properties, false);
+this.options = options;
+this.stopAtNonOption = stopAtNonOption;
+skipParsing = false;
+currentOption = null;
+expectedOpts = new ArrayList(options.getRequiredOptions());
+for (OptionGroup group : options.getOptionGroups())
+cmd = new CommandLine();
+if (arguments != null)
+for (String argument : arguments)
+handleToken(argument);
+checkRequiredArgs();
+handleProperties(properties);
+checkRequiredOptions();
+return cmd;
+if (properties == null)
+return;
+if (!expectedOpts.isEmpty())
+}
+if (currentOption != null && currentOption.requiresArg())
+}
+currentToken = token;
+if (skipParsing)
+else if ("--".equals(token))
+else if (currentOption != null && currentOption.acceptsArg() && isArgument(token))
+currentOption.addValueForProcessing(Util.stripLeadingAndTrailingQuotes(token));
+else if (token.startsWith("--"))
+else if (token.startsWith("-") && !"-".equals(token))
+handleShortAndLongOption(token);
+if (currentOption != null && !currentOption.acceptsArg())
+currentOption = null;
+}
+return !isOption(token) || isNegativeNumber(token);
+return isLongOption(token) || isShortOption(token);
+return token.startsWith("-") && token.length() >= 2 && options.hasShortOption(token.substring(1, 2));
+if (!token.startsWith("-") || token.length() == 1)
+String t = Util.stripLeadingHyphens(token);

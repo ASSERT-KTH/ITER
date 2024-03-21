@@ -1,0 +1,11 @@
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245returnnewTarArchiveInputStream(in);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245tais=newTarArchiveInputStream(newByteArrayInputStream(tarheader));tais.getNextEntry();
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245tais=newTarArchiveInputStream(newByteArrayInputStream(tarheader));
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245if(tais!=null){returnnewTarArchiveInputStream(in);}
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245if(tais==null){returnnewTarArchiveInputStream(in);}
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245tais=newTarArchiveInputStream(newByteArrayInputStream(tarheader),tais.getNextEntry());
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245tais=newTarArchiveInputStream(newByteArrayInputStream(signatureLength));
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245tais=newTarArchiveInputStream(newByteArrayInputStream(signatureLength));tais.getNextEntry();
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245returnnewTarArchiveInputStream(tais);
+projects/Compress16/src/main/java/org/apache/commons/compress/archivers/ArchiveStreamFactory.java245returntais;

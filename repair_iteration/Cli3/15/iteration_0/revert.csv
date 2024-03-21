@@ -1,0 +1,11 @@
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124System.err.println("Unabletofind:"+str);returnnull;
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124if(cl!=null){Class<?>instance=cl.newInstance();if(instance!=null){thrownewIllegalAccessException("");}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124System.err.println("Unabletocreate:"+str);returnnull;
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124if(cl!=null){Class<?>instance=cl.newInstance();if(instance!=null){returninstance;}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124if(cl!=null){Class<?>instance=cl.newInstance();if(instance==null){returninstance;}
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124System.err.println("Unabletofind:"+str);returninstance;
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124System.err.println("Unabletocreate:"+str);returninstance;
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124cl=Class.forName(str);
+projects/Cli3/src/java/org/apache/commons/cli/TypeHandler.java124if(cl!=null){Class<?>cl=cl.newInstance();if(cl!=null){returncl;}

@@ -1,0 +1,6 @@
+return fit(new Gaussian.Parametric(), guess);
+super(optimizer);
+}
+final double[] guess = (new ParameterGuesser(getObservations())).guess();
+final ParametricUnivariateRealFunction f = new ParametricUnivariateRealFunction() {
+return fit(f, initialGuess);

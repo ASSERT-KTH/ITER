@@ -1,0 +1,50 @@
+return false;
+return true;
+return locals.apply(value);
+return evaluatesToLocalValue(value, Predicates.<Node>alwaysFalse());
+switch (value.getType()) {
+String name = n.getString();
+return "undefined".equals(name)
+return NodeUtil.constructorCallHasSideEffects(n, compiler);
+return node.getType() == Token.THIS;
+return constructorCallHasSideEffects(callNode, null);
+if (callNode.getType() != Token.NEW) {
+if (callNode.isNoSideEffectsCall()) {
+Node nameNode = callNode.getFirstChild();
+if (nameNode.getType() == Token.NAME &&
+return true;
+return has(node, new MatchNodeType(type), traverseChildrenPred);
+if (pred.apply(node)) {
+if (!traverseChildrenPred.apply(node)) {
+for (Node c = node.getFirstChild(); c != null; c = c.getNext()) {
+return false;
+case Token.NEG:return 13;
+return false;
+Preconditions.checkState(n.getType() == Token.CALL);
+return (n.getSideEffectFlags() & Node.FLAG_LOCAL_RESULTS) > 0;
+case Token.ASSIGN: return 1;
+case Token.ASSIGN: return "=";
+return isImmutableValue(value) || locals.apply(value);
+return true;
+switch (n.getType()) {
+return true;
+return n.getType() == Token.GETPROP
+return functionCallHasSideEffects(callNode, null);
+return NodeUtil.functionCallHasSideEffects(n, compiler);
+if (callNode.hasOneChild()
+if (callNode.isOnlyModifiesThisCall()
+if (nameNode.getFirstChild().getType() == Token.NAME) {
+if (compiler != null && !compiler.hasRegExpGlobalReferences()) {
+if (callNode.getType() != Token.CALL) {
+if (callNode.isNoSideEffectsCall()) {
+Node nameNode = callNode.getFirstChild();
+if (nameNode.getType() == Token.NAME) {
+} else if (nameNode.getType() == Token.GETPROP) {
+return true;
+return n.getType() == Token.NEW;
+char c = s.charAt(index);
+if (c > LARGEST_BASIC_LATIN) {
+switch (type) {
+return 15;
+switch (operator) {
+default: return null;

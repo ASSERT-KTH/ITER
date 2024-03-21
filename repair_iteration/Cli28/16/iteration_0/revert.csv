@@ -1,0 +1,13 @@
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50}
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.addAll(options.getRequiredOptions());
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.clear();
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.add(options.getRequiredOptions());
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.add(options.getRequiredOption());
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.addAll(options.getRequiredOptions(),options);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50if(options!=null){cmd.addOption(this.requiredOptions);}else{cmd.addOption(this.requiredOptions);}
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50if(options!=null){cmd.addOption(this.requiredOptions);}
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.addAll(options.getRequiredOptions());cmd.addAll(this.requiredOptions);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50if(options!=null){cmd.setOptions(this.requiredOptions);}
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50super.setOptions(options);
+projects/Cli28/src/java/org/apache/commons/cli/Parser.java50this.requiredOptions.addAll(options.getRequiredOptions());requiredOptions.addAll(options.getRequiredOptions());

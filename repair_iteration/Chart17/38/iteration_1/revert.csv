@@ -1,0 +1,13 @@
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=newTimeSeriesDataItem(period,value);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=newTimeSeriesDataItem(period,value);add(item,notify);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=(TimeSeriesDataItem)this.data.get(period);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=newTimeSeriesDataItem(value,period);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=newTimeSeriesDataItem(period,value,notify);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600this.data.add(period,value);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=newTimeSeriesDataItem(value,period,notify);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=(TimeSeriesDataItem)this.data.get(value);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600if(value==null){TimeSeriesDataItemitem=newTimeSeriesDataItem(period,value);add(item,notify);}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600if(value!=null){TimeSeriesDataItemitem=newTimeSeriesDataItem(period,value);add(item,notify);}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600this.data.add(period,value,notify);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java600TimeSeriesDataItemitem=newTimeSeriesDataItem(period,value.getValue());

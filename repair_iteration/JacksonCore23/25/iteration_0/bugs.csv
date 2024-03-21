@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+49	[BUG] [BUGGY] public final static SerializedString DEFAULT_ROOT_VALUE_SEPARATOR = new SerializedString(" "); [FE] AssertionFailedError [CONTEXT] [BUGGY] public final static SerializedString DEFAULT_ROOT_VALUE_SEPARATOR = new SerializedString(" "); [BUGGY]  [CLASS] DefaultPrettyPrinter NopIndenter FixedSpaceIndenter  [VARIABLES] 	projects/JacksonCore23/src/main/java/com/fasterxml/jackson/core/util/DefaultPrettyPrinter.java	0.35355339059327373	28	28	1	replace	

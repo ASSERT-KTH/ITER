@@ -1,0 +1,46 @@
+final double dev = x - mean;
+return 0.5 * (1.0 + Erf.erf((dev) /
+this(mean, sd, DEFAULT_INVERSE_ABSOLUTE_ACCURACY);
+}
+public NormalDistributionImpl(double mean, double sd, double inverseCumAccuracy) {
+if (sd <= 0) {
+this.mean = mean;
+standardDeviation = sd;
+solverAbsoluteAccuracy = inverseCumAccuracy;
+}
+private static final double SQRT2PI = FastMath.sqrt(2 * FastMath.PI);
+throw new NotStrictlyPositiveException(LocalizedFormats.STANDARD_DEVIATION, sd);
+this(0, 1);
+}
+return mean;
+return standardDeviation;
+final double x0 = x - mean;
+final double x1 = x0 / standardDeviation;
+return FastMath.exp(-0.5 * x1 * x1) / (standardDeviation * SQRT2PI);
+} catch (MaxIterationsExceededException ex) {
+if (x < (mean - 20 * standardDeviation)) { // JDK 1.5 blows at 38
+return 0;
+} else if (x > (mean + 20 * standardDeviation)) {
+return 1;
+throw ex;
+return solverAbsoluteAccuracy;
+if (p == 0) {
+return Double.NEGATIVE_INFINITY;
+if (p == 1) {
+return Double.POSITIVE_INFINITY;
+return super.inverseCumulativeProbability(p);
+return randomData.nextGaussian(mean, standardDeviation);
+if (p < 0.5) {
+ret = -Double.MAX_VALUE;
+ret = mean;
+return ret;
+if (p < 0.5) {
+ret = mean;
+ret = Double.MAX_VALUE;
+return ret;
+if (p < 0.5) {
+ret = mean - standardDeviation;
+} else if (p > 0.5) {
+ret = mean + standardDeviation;
+ret = mean;
+return ret;

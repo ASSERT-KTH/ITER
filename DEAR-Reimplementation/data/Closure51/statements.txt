@@ -1,0 +1,50 @@
+append(op);
+}
+char prev = getLastChar();
+if (x < 0 && prev == '-') {
+if ((long) x == x) {
+long value = (long) x;
+long mantissa = value;
+int exp = 0;
+if (Math.abs(x) >= 100) {
+if (exp > 2) {
+add(Long.toString(value));
+} else {
+}
+void endFile() {}
+maybeCutLine();
+maybeEndStatement();
+char first = op.charAt(0);
+char prev = getLastChar();
+if ((first == '+' || first == '-') && prev == first) {
+} else if (Character.isLetter(first) &&
+} else if (prev == '-' && first == '>') {
+appendOp(op, binOp);
+if (binOp) {
+}
+add(identifier);
+}
+endStatement(false);
+}
+} else if (statementStarted) {
+statementNeedsEnded = true;
+if (needSemiColon) {
+}
+abstract class CodeConsumer {
+boolean statementNeedsEnded = false;
+boolean statementStarted = false;
+boolean sawFunction = false;
+return true;
+if (statementNeedsEnded) {
+statementStarted = true;
+}
+maybeEndStatement();
+if (newcode.length() == 0) {
+char c = newcode.charAt(0);
+if ((isWordChar(c) || c == '\\') &&
+append(newcode);
+}
+return (ch == '_' ||
+}
+}
+append("{");

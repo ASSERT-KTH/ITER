@@ -1,0 +1,18 @@
+public JsonAdapterAnnotationTypeAdapterFactory(ConstructorConstructor constructorConstructor) {
+this.constructorConstructor = constructorConstructor;
+}
+JsonAdapter annotation = targetType.getRawType().getAnnotation(JsonAdapter.class);
+if (annotation == null) {
+return (TypeAdapter<T>) getTypeAdapter(constructorConstructor, gson, targetType, annotation);
+Class<?> value = annotation.value();
+if (TypeAdapter.class.isAssignableFrom(value)) {
+} else if (TypeAdapterFactory.class.isAssignableFrom(value)) {
+Class<TypeAdapterFactory> typeAdapterFactory = (Class<TypeAdapterFactory>) value;
+typeAdapter = constructorConstructor.get(TypeToken.get(typeAdapterFactory))
+} else {
+typeAdapter = typeAdapter.nullSafe();
+return null;
+Class<TypeAdapter<?>> typeAdapterClass = (Class<TypeAdapter<?>>) value;
+typeAdapter = constructorConstructor.get(TypeToken.get(typeAdapterClass)).construct();
+throw new IllegalArgumentException(
+return typeAdapter;

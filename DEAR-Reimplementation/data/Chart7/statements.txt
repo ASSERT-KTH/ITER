@@ -1,0 +1,50 @@
+return this.maxMiddleIndex;
+this.minStartIndex = index;
+this.minMiddleIndex = index;
+this.minEndIndex = index;
+TimePeriodValue item = new TimePeriodValue(period, value);
+add(item);
+}
+this(name, DEFAULT_DOMAIN_DESCRIPTION, DEFAULT_RANGE_DESCRIPTION);
+}
+super(name);
+private int minStartIndex = -1;
+private int maxStartIndex = -1;
+private int minMiddleIndex = -1;
+private int maxMiddleIndex = -1;
+private int minEndIndex = -1;
+private int maxEndIndex = -1;
+this.domain = domain;
+this.range = range;
+this.data = new ArrayList();
+}
+return (TimePeriodValue) this.data.get(index);
+if (item == null) {
+this.data.add(item);
+updateBounds(item.getPeriod(), this.data.size() - 1);
+fireSeriesChanged();
+}
+long start = period.getStart().getTime();
+long end = period.getEnd().getTime();
+long middle = start + ((end - start) / 2);
+if (this.minStartIndex >= 0) {
+long minStart = getDataItem(this.minStartIndex).getPeriod()
+if (start < minStart) {
+}
+this.minStartIndex = index;
+if (this.maxStartIndex >= 0) {
+long maxStart = getDataItem(this.maxStartIndex).getPeriod()
+if (start > maxStart) {
+this.maxStartIndex = index;
+}
+this.maxStartIndex = index;
+if (this.minMiddleIndex >= 0) {
+long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()
+long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()
+long minMiddle = s + (e - s) / 2;
+if (middle < minMiddle) {
+}
+this.minMiddleIndex = index;
+if (this.maxMiddleIndex >= 0) {
+long s = getDataItem(this.minMiddleIndex).getPeriod().getStart()
+long e = getDataItem(this.minMiddleIndex).getPeriod().getEnd()

@@ -1,0 +1,14 @@
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intpos=findWrapPos(text,width,0);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intpos=findWrapPos(text,nextLineTabStop,0);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intpos=findWrapPos(text,width,1);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intpos=findWrapPos(text,width,3);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intpos=findWrapPos(text,width,2);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829sb.append(rtrim(text.substring(0,nextLineTabStop))).append(defaultNewLine);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829sb.append(rtrim(text.substring(0,pos))).append(defaultNewLine);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829sb.append(rtrim(text.substring(0,nextLineTabStop)));
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829sb.append(rtrim(text.substring(0,text.length()-1))).append(defaultNewLine);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829sb.append(rtrim(text.substring(0,pos)));
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intx=findWrapPos(text,width,0);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829intpos=findWrapPos(text,width,nextLineTabStop);
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java829sb.append(rtrim(text.substring(0,nextLineTabStop)).append(defaultNewLine);

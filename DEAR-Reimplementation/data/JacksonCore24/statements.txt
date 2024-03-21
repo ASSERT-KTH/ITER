@@ -1,0 +1,50 @@
+int rawLen = rawNum.length();
+if (rawLen < 1000) {
+if (JsonParser.Feature.INCLUDE_SOURCE_IN_LOCATION.enabledIn(_features)) {
+return _ioContext.getSourceReference();
+throw _constructError(msg);
+return rawNum;
+throw _constructError(String.format(msg, arg1, arg2));
+_reportTooLongIntegral(expType, numStr);
+final String numDesc = _longIntegerDesc(rawNum);
+_reportError("Numeric value (%s) out of range of %s", numDesc,
+if (len <= 18) { // definitely fits AND is easy to parse using 2 int parse calls
+if ((_numTypesValid & NR_LONG) == 0) {
+int len = _intLength;
+if (len <= 9) {
+int result = (int) _numberLong;
+if (((long) result) != _numberLong) {
+_reportError("Numeric value ("+getText()+") out of range of int");
+if (_numTypesValid == NR_UNKNOWN) {
+if ((expType == NR_INT) || (expType == NR_LONG)) {
+reportOverflowLong(getText());
+_reportError(String.format("Numeric value (%s) out of range of long (%d - %s)",
+if (rawNum.startsWith("-")) {
+return String.format("[Integer with %d digits]", rawLen);
+if (_numTypesValid == NR_UNKNOWN) {
+if (_currToken == JsonToken.VALUE_NUMBER_INT) {
+if ((_numTypesValid & NR_INT) != 0) {
+if ((_numTypesValid & NR_LONG) != 0) {
+if ((_numTypesValid & NR_BIGINT) != 0) {
+return _numberBigInt;
+if (_currToken == JsonToken.VALUE_NUMBER_INT) {
+} else if ((_numTypesValid & NR_BIGINT) != 0) {
+if (BI_MIN_LONG.compareTo(_numberBigInt) > 0
+reportOverflowLong();
+if ((_numTypesValid & NR_INT) == 0) { // wasn't an int natively?
+convertNumberToInt(); // let's make it so, if possible
+if ((_numTypesValid & NR_LONG) != 0) {
+protected ParserMinimalBase(int features) { super(features); }
+protected final static byte[] NO_BYTES = new byte[0];
+protected final static int[] NO_INTS = new int[0];
+protected final static BigInteger BI_MIN_INT = BigInteger.valueOf(Integer.MIN_VALUE);
+protected final static BigInteger BI_MAX_INT = BigInteger.valueOf(Integer.MAX_VALUE);
+protected final static BigInteger BI_MIN_LONG = BigInteger.valueOf(Long.MIN_VALUE);
+protected final static BigInteger BI_MAX_LONG = BigInteger.valueOf(Long.MAX_VALUE);
+protected final static BigDecimal BD_MIN_LONG = new BigDecimal(BI_MIN_LONG);
+protected final static BigDecimal BD_MAX_LONG = new BigDecimal(BI_MAX_LONG);
+protected final static BigDecimal BD_MIN_INT = new BigDecimal(BI_MIN_INT);
+protected final static BigDecimal BD_MAX_INT = new BigDecimal(BI_MAX_INT);
+super(features);
+protected int _currInputRow = 1;
+protected int _tokenInputRow = 1;

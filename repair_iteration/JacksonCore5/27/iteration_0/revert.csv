@@ -1,0 +1,11 @@
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c=='/'){//commoncase,gotasegmentreturnnewJsonPointer(input,input.substring(1,i),_parseTail(input.substring(i)));
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c=='/'){
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c==''){
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c==':'){
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c!='/'){
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c=='/'){returnnewJsonPointer(input,input.substring(0,i),_parseTail(input.substring(i)));}
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c==''){returnnewJsonPointer(input,input.substring(0,i),_parseTail(input.substring(i)));}
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c=='/'||c=='*'){returnnewJsonPointer(input,input.substring(0,i),_parseTail(input.substring(i)));}
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c=='/'||c==''){returnnewJsonPointer(input,input.substring(0,i),_parseTail(input.substring(i)));}
+projects/JacksonCore5/src/main/java/com/fasterxml/jackson/core/JsonPointer.java213if(c=='/'||c=='*'){returnnewJsonPointer(input,input.substring(1,i),_parseTail(input.substring(i)));}

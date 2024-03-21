@@ -1,0 +1,50 @@
+final int nRows = this.getRowDimension();
+final int nCols = this.getColumnDimension();
+if (v.length != nCols) {
+final double[] out = new double[v.length];
+for (int row = 0; row < nRows; row++) {
+final double[] dataRow = data[row];
+double sum = 0;
+for (int i = 0; i < nCols; i++) {
+sum += dataRow[i] * v[i];
+out[row] = sum;
+if (v.length != this.getColumnDimension()) {
+final int nRows = this.getRowDimension();
+final int nCols = this.getColumnDimension();
+final BigDecimal[] out = new BigDecimal[v.length];
+for (int row = 0; row < nRows; row++) {
+BigDecimal sum = ZERO;
+for (int i = 0; i < nCols; i++) {
+sum = sum.add(data[row][i].multiply(v[i]));
+out[row] = sum;
+if (d[r].length != nCols) {
+if (d[r].length != nCols) {
+public RealMatrixImpl(double[][] d, boolean copyArray) {
+protected double data[][] = null;
+protected double lu[][] = null;
+protected int[] permutation = null;
+protected int parity = 1;
+if (copyArray) {
+if (d == null) {
+final int nRows = d.length;
+if (nRows == 0) {
+final int nCols = d[0].length;
+if (nCols == 0) {
+for (int r = 1; r < nRows; r++) {
+data = d;
+lu = null;
+}
+public BigMatrixImpl(BigDecimal[][] d, boolean copyArray) {
+protected BigDecimal data[][] = null;
+protected BigDecimal lu[][] = null;
+protected int[] permutation = null;
+protected int parity = 1;
+private int roundingMode = BigDecimal.ROUND_HALF_UP;
+private int scale = 64;
+if (copyArray) {
+if (d == null) {
+final int nRows = d.length;
+if (nRows == 0) {
+final int nCols = d[0].length;
+if (nCols == 0) {
+for (int r = 1; r < nRows; r++) {

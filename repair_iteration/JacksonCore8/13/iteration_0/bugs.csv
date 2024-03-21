@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+25	[BUG] [BUGGY] public TextBuffer(BufferRecycler allocator) { [FE] NullPointerException [CONTEXT] [BUGGY] public TextBuffer(BufferRecycler allocator) { [BUGGY] _allocator = allocator; } [CLASS] TextBuffer [METHOD] <init> [RETURN_TYPE] BufferRecycler)  BufferRecycler allocator 	projects/JacksonCore8/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java	0.4472135954999579	121	121	1	replace	

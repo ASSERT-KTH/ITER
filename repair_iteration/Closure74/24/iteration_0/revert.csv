@@ -1,0 +1,14 @@
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936break;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936result=lhType==rhType;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936result=lhType!=rhType;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936if(result==null){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936result=lhType==rhType;break;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936result=lhType>>rhType;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936rhType=lhType==rhType;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936if(result!=null){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936result=lhType>=rhType;
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936if(result==lhType){break;}
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936n=left.getNext();
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936n=left.getFirstChild();
+projects/Closure74/src/com/google/javascript/jscomp/PeepholeFoldConstants.java936if(compareResult==null){break;}

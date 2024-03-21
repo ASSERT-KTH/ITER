@@ -1,0 +1,50 @@
+registerMismatch(rightType, leftType, null);
+registerMismatch(rightType, leftType, null);
+info = parent.getJSDocInfo();
+report(JSError.make(sourceName, n, DUP_VAR_DECLARATION,
+FunctionType fnTypeA = found.toMaybeFunctionType();
+FunctionType fnTypeB = required.toMaybeFunctionType();
+Iterator<Node> paramItA = fnTypeA.getParameters().iterator();
+Iterator<Node> paramItB = fnTypeB.getParameters().iterator();
+while (paramItA.hasNext() && paramItB.hasNext()) {
+registerIfMismatch(
+if (found != null && required != null &&
+}
+JSDocInfo info = n.getJSDocInfo();
+if (info == null) {
+allowDupe =
+return false;
+if ((leftType.isConstructor() || leftType.isEnumType()) && (rightType.isConstructor() || rightType.isEnumType())) {
+if (!(allowDupe ||
+mismatches.add(new TypeMismatch(found, required, error));
+if (found.isFunctionType() &&
+}
+found = found.restrictByNotNullOrUndefined();
+required = required.restrictByNotNullOrUndefined();
+if (found.canAssignTo(required) || required.canAssignTo(found)) {
+if (!rightType.canAssignTo(leftType)) {
+compiler.report(error);
+if (shouldReport) {
+return error;
+Var newVar = var;
+boolean allowDupe = false;
+if (n.isGetProp() ||
+JSType varType = var.getType();
+if (varType != null &&
+if (var.input == null) {
+return newVar;
+return true;
+if (!leftType.isNoType() && !rightType.canAssignTo(leftType)) {
+ObjectType instance = type.getInstanceType();
+for (ObjectType implemented : type.getAllImplementedInterfaces()) {
+}
+if (!type.isNoType() && !type.isUnknownType() &&
+return true;
+this.shouldReport = report;
+}
+TypeValidator(AbstractCompiler compiler) {
+private boolean shouldReport = true;
+private final List<TypeMismatch> mismatches = Lists.newArrayList();
+this.compiler = compiler;
+this.typeRegistry = compiler.getTypeRegistry();
+this.allValueTypes = typeRegistry.createUnionType(

@@ -1,0 +1,50 @@
+return getOffset(instant) == getStandardOffset(instant);
+int offset = getOffset(instantUTC);
+long instantLocal = instantUTC + offset;
+if ((instantUTC ^ instantLocal) < 0 && (instantUTC ^ offset) >= 0) {
+return instantLocal;
+int offsetLocal = getOffset(instantLocal);
+int offset = getOffset(instantLocal - offsetLocal);
+if (offsetLocal != offset) {
+long instantUTC = instantLocal - offset;
+if ((instantLocal ^ instantUTC) < 0 && (instantLocal ^ offset) < 0) {
+return instantUTC;
+if (hoursOffset == 0 && minutesOffset == 0) {
+if (minutesOffset < 0 || minutesOffset > 59) {
+int offset = 0;
+int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, 60);
+if (hoursInMinutes < 0) {
+minutesOffset = FieldUtils.safeAdd(hoursInMinutes, minutesOffset);
+offset = FieldUtils.safeMultiply(minutesOffset, DateTimeConstants.MILLIS_PER_MINUTE);
+}
+return forOffsetMillis(offset);
+String id = printOffset(millisOffset);
+return fixedOffsetZone(id, millisOffset);
+if (offset == 0) {
+if (iFixedOffsetCache == null) {
+iFixedOffsetCache = new HashMap<String, SoftReference<DateTimeZone>>();
+Reference<DateTimeZone> ref = iFixedOffsetCache.get(id);
+if (ref != null) {
+zone = new FixedDateTimeZone(id, null, offset, offset);
+iFixedOffsetCache.put(id, new SoftReference<DateTimeZone>(zone));
+return zone;
+StringBuffer buf = new StringBuffer();
+if (offset >= 0) {
+buf.append('+');
+int hours = offset / DateTimeConstants.MILLIS_PER_HOUR;
+FormatUtils.appendPaddedInteger(buf, hours, 2);
+offset -= hours * (int) DateTimeConstants.MILLIS_PER_HOUR;
+int minutes = offset / DateTimeConstants.MILLIS_PER_MINUTE;
+buf.append(':');
+FormatUtils.appendPaddedInteger(buf, minutes, 2);
+offset -= minutes * DateTimeConstants.MILLIS_PER_MINUTE;
+if (offset == 0) {
+return buf.toString();
+super(base, zone);
+}
+return iZone.convertLocalToUTC(localInstant, false);
+protected DateTimeZone(String id) {
+if (id == null) {
+iID = id;
+}
+public static final DateTimeZone UTC = new FixedDateTimeZone("UTC", "UTC", 0, 0);

@@ -1,0 +1,50 @@
+appendUsage(buffer, helpSettings, comp, "|");
+}
+final Set helpSettingsCopy = new HashSet(helpSettings);
+final boolean optional =
+final boolean expanded =
+final boolean named =
+final boolean arguments = helpSettingsCopy.contains(DisplaySetting.DISPLAY_GROUP_ARGUMENT);
+final boolean outer = helpSettingsCopy.contains(DisplaySetting.DISPLAY_GROUP_OUTER);
+helpSettingsCopy.remove(DisplaySetting.DISPLAY_GROUP_OUTER);
+final boolean both = named && expanded;
+if (optional) {
+if (named) {
+if (both) {
+if (expanded) {
+if (both) {
+if (optional && outer) {
+if (arguments) {
+if (optional && !outer) {
+}
+final StringBuffer buffer = new StringBuffer();
+appendUsage(buffer, DisplaySetting.ALL, null);
+return buffer.toString();
+buffer.append('[');
+if (!helpSettingsCopy.contains(DisplaySetting.DISPLAY_GROUP_EXPANDED)) {
+childSettings = new HashSet(helpSettingsCopy);
+childSettings.remove(DisplaySetting.DISPLAY_OPTIONAL);
+if (comp == null) {
+list = options;
+for (final Iterator i = list.iterator(); i.hasNext();) {
+final Option option = (Option) i.next();
+option.appendUsage(buffer, childSettings, comp);
+if (i.hasNext()) {
+buffer.append(separator);
+}
+buffer.append(']');
+for (final Iterator i = anonymous.iterator(); i.hasNext();) {
+buffer.append(' ');
+final Option option = (Option) i.next();
+option.appendUsage(buffer, helpSettingsCopy, comp);
+}
+if (arguments.hasNext()) {
+final String argument = (String) arguments.next();
+arguments.previous();
+return canProcess(commandLine, argument);
+return false;
+return required;
+}
+}
+if (arg == null) {
+if (optionMap.containsKey(arg)) {

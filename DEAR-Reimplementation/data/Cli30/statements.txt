@@ -1,0 +1,50 @@
+Option opt = getOptions().getOption(option);
+String value = properties.getProperty(option);
+if (opt.hasArg())
+return parse(options, arguments, properties, false);
+for (Enumeration e = properties.propertyNames(); e.hasMoreElements();)
+String option = e.nextElement().toString();
+if (!cmd.hasOption(option))
+else if (!("yes".equalsIgnoreCase(value)
+cmd.addOption(opt);
+updateRequiredOptions(opt);
+OptionGroup group = getOptions().getOptionGroup(opt);
+if (group.isRequired())
+group.setSelected(opt);
+OptionGroup group = (OptionGroup) it.next();
+group.setSelected(null);
+}
+Option opt = options.getOption(option);
+String value = properties.getProperty(option);
+if (opt.hasArg())
+arguments = new String[0];
+for (Enumeration e = properties.propertyNames(); e.hasMoreElements();)
+String option = e.nextElement().toString();
+if (!cmd.hasOption(option))
+processProperties(properties);
+if (properties == null)
+ListIterator iterator = tokenList.listIterator();
+while (iterator.hasNext())
+this.options = options;
+this.requiredOptions = new ArrayList(options.getRequiredOptions());
+}
+return options;
+for (Iterator it = options.helpOptions().iterator(); it.hasNext();)
+for (Iterator it = options.getOptionGroups().iterator(); it.hasNext();)
+setOptions(options);
+cmd = new CommandLine();
+boolean eatTheRest = false;
+if (arguments == null)
+List tokenList = Arrays.asList(flatten(getOptions(), arguments, stopAtNonOption));
+else if (!("yes".equalsIgnoreCase(value)
+OptionGroup group = options.getOptionGroup(option);
+if (group.isRequired())
+group.setSelected(option);
+public abstract class Parser implements CommandLineParser
+OptionGroup group = (OptionGroup) it.next();
+group.setSelected(null);
+}
+handleOption(opt);
+cmd.addOption(opt);
+}
+Option opt = (Option) getOptions().getOption(arg).clone();

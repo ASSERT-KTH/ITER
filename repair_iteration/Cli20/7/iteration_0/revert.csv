@@ -1,0 +1,17 @@
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269for(inti=1;i<token.length();i++){
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269for(inti=0;i<token.length();i++){
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269for(inti=2;i<token.length();i++){
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269tokens.add("-"+ch);
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269if(stopAtNonOption){tokens.add("-"+ch);}
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269tokens.add("-"+ch);currentOption=options.getOption(ch);
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269if(stopAtNonOption){thrownewIllegalArgumentException("");}
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269if(stopAtNonOption){tokens.add("-"+ch);continue;}
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269TokenBuffertoken=newTokenBuffer(token.length());
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269TokenBuffertoken=newTokenBuffer(token.length()-1);
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269Tokentoken=newToken(token.charAt(0));
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269TokenBuffertoken=newTokenBuffer(token.length()+1);
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269For(inti=0;i<token.length();i++){
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269if(stopAtNonOption){tokens.add(token.substring(i+1));}
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269if(stopAtNonOption){tokens.add(token);}
+projects/Cli20/src/java/org/apache/commons/cli/PosixParser.java269if(stopAtNonOption){tokens.add(token.substring(1));}

@@ -1,0 +1,34 @@
+public MultiDirectional() {
+this.khi = 2.0;
+this.gamma = 0.5;
+}
+incrementIterationsCounter();
+final RealPointValuePair[] original = simplex;
+final RealPointValuePair best = original[0];
+final RealPointValuePair reflected = evaluateNewSimplex(original, 1.0, comparator);
+if (comparator.compare(reflected, best) < 0) {
+final RealPointValuePair contracted = evaluateNewSimplex(original, gamma, comparator);
+if (comparator.compare(contracted, best) < 0) {
+}
+final double[] xSmallest = original[0].getPointRef();
+final int n = xSmallest.length;
+simplex = new RealPointValuePair[n + 1];
+simplex[0] = original[0];
+for (int i = 1; i <= n; ++i) {
+final double[] xOriginal= original[i].getPointRef();
+final double[] xTransformed = new double[n];
+for (int j = 0; j < n; ++j) {
+xTransformed[j] = xSmallest[j] + coeff * (xSmallest[j] - xOriginal[j]);
+simplex[i] = new RealPointValuePair(xTransformed, Double.NaN, false);
+evaluateSimplex(comparator);
+return simplex[0];
+final RealPointValuePair[] reflectedSimplex = simplex;
+final RealPointValuePair expanded = evaluateNewSimplex(original, khi, comparator);
+if (comparator.compare(reflected, expanded) <= 0) {
+simplex = reflectedSimplex;
+return;
+return;
+public MultiDirectional(final double khi, final double gamma) {
+this.khi = khi;
+this.gamma = gamma;
+}

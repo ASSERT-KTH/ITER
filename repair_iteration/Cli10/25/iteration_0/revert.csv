@@ -1,0 +1,16 @@
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(stopAtNonOption&&!getOptions().hasOption(t)){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(stopAtNonOption||!getOptions().hasOption(t)){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(!stopAtNonOption&&!getOptions().hasOption(t)){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(stopAtNonOption&&!getOptions().contains(t)){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(stopAtNonOption&&!getOptions().hasArg(t)){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199||t.startsWith("-")){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199t=iterator.next();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199Iterator<Option>iterator=options.iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199Stringstr=t.substring(0,t.length()-1);
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199Iteratoriterator=options.iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199Iterator<String>iterator=options.iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199Iterator<String>iterator=options.keySet().iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199Iterator<Option>iterator=options.keySet().iterator();
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(stopAtNonOption){
+projects/Cli10/src/java/org/apache/commons/cli/Parser.java199if(stopAtNonOption||getOptions().hasOption(t)){

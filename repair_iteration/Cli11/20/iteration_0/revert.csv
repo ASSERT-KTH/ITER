@@ -1,0 +1,14 @@
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(!required){buff.append("]");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642buff.append("<").append(defaultSyntaxPrefix).append(">");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(!required){buff.append(";");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642buff.append("]");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(!required){buff.append("[");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642OptionoptionComparator=option.getOptionComparator();
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(option.getOptions().contains(option.getOptions())){buff.append("]");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(option.getOptions()!=null){buff.append("]");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(option!=null){buff.append("]");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(option.getOptions().contains(option)){buff.append("]");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(buff!=null){buff.append("]");}
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642buff.append("<").append(defaultWidth).append(">");
+projects/Cli11/src/java/org/apache/commons/cli/HelpFormatter.java642if(buff!=null){buff.append("[null]");}

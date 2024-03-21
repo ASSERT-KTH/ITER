@@ -1,0 +1,30 @@
+Compress46 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 529
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - final long TWO_TO_32 = 0x100000000L; 
+ + final long TWO_TO_32 = 0x100000000L + 2;
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - final long TWO_TO_32 = 0x100000000L + 2; 
+ + final long TWO_TO_32 = 0x100000000L * 2;
+Iteration: 2, Repair Action: replace 
+ - final long TWO_TO_32 = 0x100000000L * 2; 
+ + final long TWO_TO_32 = 0x100000000L / 2; 
+ ----------------------------------------------------------------------------------------------------
+Compress46 -  FL is ranked in the 4 position(s) with a suspicious value: 0.5
+
+Number of failing tests: 1 
+Buggy Location: 529
+
+Iteration: 0, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - final long TWO_TO_32 = 0x100000000L; 
+ + long TWO_TO_32 = 0x100000000L;
+Iteration: 1, Diagnostic: [FE] AssertionError Repair Action: replace 
+ - long TWO_TO_32 = 0x100000000L; 
+ + long TWO_TO_32 = 0x100000000L + 2;
+Iteration: 2, Repair Action: replace 
+ - long TWO_TO_32 = 0x100000000L + 2; 
+ + long TWO_TO_32 = 0x100000000L / 2; 
+ ----------------------------------------------------------------------------------------------------

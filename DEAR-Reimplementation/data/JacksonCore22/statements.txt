@@ -1,0 +1,50 @@
+@Override public JsonToken currentToken() { return _currToken; }
+return _matchCount;
+public int getIntValue() throws IOException { return delegate.getIntValue(); }
+public NumberType getNumberType() throws IOException { return delegate.getNumberType(); }
+super(p);
+rootFilter = f;
+_itemFilter = f;
+_headContext = TokenFilterContext.createRootContext(f);
+_includePath = includePath;
+_allowMultipleMatches = allowMultipleMatches;
+}
+if (!_allowMultipleMatches && (_currToken != null) && (_exposedContext == null)) {
+TokenFilterContext ctxt = _exposedContext;
+if (ctxt != null) {
+JsonToken t = delegate.nextToken();
+if (t == null) {
+switch (t.id()) {
+f = _itemFilter;
+if (f == TokenFilter.INCLUDE_ALL) {
+if (f == null) { // does this occur?
+f = _headContext.checkValue(f);
+if (f == null) {
+if (f != TokenFilter.INCLUDE_ALL) {
+f = f.filterStartObject();
+_itemFilter = f;
+if (f == TokenFilter.INCLUDE_ALL) {
+_headContext = _headContext.createChildObjectContext(f, false);
+if (_includePath) {
+boolean returnEnd = _headContext.isStartHandled();
+f = _headContext.getFilter();
+if ((f != null) && (f != TokenFilter.INCLUDE_ALL)) {
+f.filterFinishArray();
+_headContext = _headContext.getParent();
+_itemFilter = _headContext.getFilter();
+if (returnEnd) {
+return (_currToken = t);
+return _nextToken2();
+JsonToken t = delegate.nextToken();
+if (t == null) { // is this even legal?
+switch (t.id()) {
+JsonStreamContext ctxt = _filterContext();
+if (_currToken == JsonToken.START_OBJECT || _currToken == JsonToken.START_ARRAY) {
+return ctxt.getCurrentName();
+if (_exposedContext != null) {
+final String name = delegate.getCurrentName();
+f = _headContext.setFieldName(name);
+if (f == TokenFilter.INCLUDE_ALL) {
+if (f == null) {
+f = f.includeProperty(name);
+if (f == null) {

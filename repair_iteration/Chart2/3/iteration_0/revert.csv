@@ -1,0 +1,11 @@
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284returnnull;
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284returnthis;
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284if(includeInterval){returnthis;}else{returnnewRange(minimum,maximum);}
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284this.minimum=dataset.getMinimumValue();
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284this.minimum=dataset.getMaximum();
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284this.minimum=dataset.getMinimum();
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284if(includeInterval){returnnull;}else{returnnewRange(minimum,maximum);}
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284this.minimum=Math.min(minimum,maximum);
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284this.minimum=dataset.getMinimumField();
+projects/Chart2/source/org/jfree/data/general/DatasetUtilities.java1284if(includeInterval){returnthis;}

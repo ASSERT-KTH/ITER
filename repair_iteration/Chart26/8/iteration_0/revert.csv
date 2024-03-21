@@ -1,0 +1,11 @@
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631if(this.tickLabelsVisible!=null){if(this.tickLabelsVisible!=null){returnfalse;}
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631if(this.tickLabelsVisible!=null){if(this.tickLabelsVisible!=null){this.tickLabelsVisible=false;}
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631this.tickLabelsVisible=true;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631returnthis.tickLabelsVisible;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631return(this.tickLabelsVisible!=null)?false:this.tickLabelsVisible;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631returnthis.tickLabelsVisible<DEFAULT_AXIS_LINE_STROKE;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631if(this.tickLabelsVisible!=null){if(this.tickLabelsVisible!=null){this.tickLabelsVisible=true;}
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631returnthis.tickLabelsVisible==DEFAULT_AXIS_LABELS_VISIBLE;
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631this.tickLabelsVisible=getTickLabelsVisible();
+projects/Chart26/source/org/jfree/chart/axis/Axis.java631if(this.tickLabelsVisible!=null){if(this.tickLabelsVisible!=null){returntrue;}

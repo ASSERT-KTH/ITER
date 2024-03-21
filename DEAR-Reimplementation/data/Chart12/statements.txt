@@ -1,0 +1,50 @@
+return this.dataset;
+this(null);
+}
+super();
+private double limit = 0.0;
+this.dataset = dataset;
+PiePlot piePlot = new PiePlot(null);
+this.pieChart = new JFreeChart(piePlot);
+this.pieChart.removeLegend();
+this.dataExtractOrder = TableOrder.BY_COLUMN;
+this.pieChart.setBackgroundPaint(null);
+TextTitle seriesTitle = new TextTitle("Series Title",
+seriesTitle.setPosition(RectangleEdge.BOTTOM);
+this.pieChart.setTitle(seriesTitle);
+this.aggregatedItemsKey = "Other";
+this.aggregatedItemsPaint = Color.lightGray;
+this.sectionPaints = new HashMap();
+}
+if (this.dataset != null) {
+this.dataset.removeChangeListener(this);
+this.dataset = dataset;
+if (dataset != null) {
+setDatasetGroup(dataset.getGroup());
+dataset.addChangeListener(this);
+datasetChanged(new DatasetChangeEvent(this, dataset));
+}
+return this.pieChart;
+if (pieChart == null) {
+throw new IllegalArgumentException("Null 'pieChart' argument.");
+if (!(pieChart.getPlot() instanceof PiePlot)) {
+throw new IllegalArgumentException("The 'pieChart' argument must "
+this.pieChart = pieChart;
+fireChangeEvent();
+}
+return this.dataExtractOrder;
+if (order == null) {
+throw new IllegalArgumentException("Null 'order' argument");
+this.dataExtractOrder = order;
+fireChangeEvent();
+}
+return this.limit;
+this.limit = limit;
+fireChangeEvent();
+}
+return this.aggregatedItemsKey;
+if (key == null) {
+throw new IllegalArgumentException("Null 'key' argument.");
+this.aggregatedItemsKey = key;
+fireChangeEvent();
+}

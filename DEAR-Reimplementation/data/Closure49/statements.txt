@@ -1,0 +1,50 @@
+Renamer renamer = nameStack.peek();
+if (renamer.stripConstIfReplaced()) {
+n.setString(newName);
+t.getCompiler().reportCodeChange();
+}
+return newName;
+renamer.addDeclaredName(n.getString());
+String name = c.getString();
+renamer.addDeclaredName(name);
+renamer = nameStack.peek().forChildScope();
+for (Node c = declarationRoot.getFirstChild().getNext().getFirstChild(); c != null; c = c.getNext()) {
+Node functionBody = declarationRoot.getLastChild();
+findDeclaredNames(functionBody, null, renamer);
+}else
+nameStack.pop();
+Renamer renamer = nameStack.peek().forChildScope();
+String name = n.getFirstChild().getString();
+if (name != null && !name.isEmpty() && parent != null
+nameStack.push(renamer);
+break;
+nameStack.pop();
+break;
+findDeclaredNames(c, n, renamer);
+}
+return null;
+MakeDeclaredNamesUnique(Renamer renamer) {
+private Deque<Renamer> nameStack = new ArrayDeque<Renamer>();
+this.rootRenamer = renamer;
+}
+Node declarationRoot = t.getScopeRoot();
+if (nameStack.isEmpty()) {
+Preconditions.checkState(
+Preconditions.checkState(t.inGlobalScope());
+renamer = rootRenamer;
+if (declarationRoot.getType() == Token.FUNCTION) {
+nameStack.push(renamer);
+}
+if (!t.inGlobalScope()) {
+}
+switch (n.getType()) {
+return true;
+switch (n.getType()) {
+String newName = getReplacementName(n.getString());
+if (newName != null) {
+}
+for (Renamer names : nameStack) {
+String newName = names.getReplacementName(oldName);
+if (newName != null) {
+if (parent == null
+if (NodeUtil.isVarDeclaration(n)) {

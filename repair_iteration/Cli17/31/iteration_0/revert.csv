@@ -1,0 +1,17 @@
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif("-".equals(token)){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif("-".equals(token)||token.startsWith("-")){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif("-".equals(token)&&token.startsWith("-")){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif("--".equals(token)){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.length()-1));tokens.add(token.substring(token.indexOf('=')+1,token.length()));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.indexOf("-")));tokens.add(token.substring(token.indexOf('=')+1,token.length()));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.length()-2));tokens.add(token.substring(token.indexOf('=')+1,token.length()));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.indexOf("=")));tokens.add(token.substring(token.indexOf('=')+1,token.length()));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126Iterator<String>iter=options.iterator();
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif(stopAtNonOption&&"-".equals(token)){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif(stopAtNonOption||"-".equals(token)){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126elseif(stopAtNonOption){
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.length()-1));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.indexOf("-")));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.indexOf("=")));
+projects/Cli17/src/java/org/apache/commons/cli/PosixParser.java126tokens.add(token.substring(0,token.length()));

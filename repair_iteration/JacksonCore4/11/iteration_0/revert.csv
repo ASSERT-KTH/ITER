@@ -1,0 +1,14 @@
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator==null){if(_hasSegments){_resultString="";}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123_resultString=getResultString();
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator==null){if(_hasSegments){_resultString=newString(_resultString);}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator!=null){if(_hasSegments){_resultString=newString(_resultString);}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator!=null){if(_allocator==null){_allocator=newBufferRecycler();}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123System.arraycopy(_allocator,0,_allocator,0,_currentSize);
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator!=null){if(!_hasSegments){_resultArray=newArrayList<BufferRecycler>();}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator!=null){if(_allocator==null){_allocator=newTextBuffer();}
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123System.arraycopy(_resultString,0,_resultArray,0,_currentSize);
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123System.arraycopy(_resultArray,0,_currentSegment,0,_currentSize);
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123System.arraycopy(_resultString,0,_resultArray,0,_inputStart);
+projects/JacksonCore4/src/main/java/com/fasterxml/jackson/core/util/TextBuffer.java123if(allocator!=null){if(_inputStart>=0){returnbuffer;}

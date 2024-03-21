@@ -1,0 +1,10 @@
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114newPrefixes.addAll(option.getPrefixes());
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114this.optionMap=Collections.unmodifiableSortedMap(optionMap);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114this.optionMap=Collections.unmodifiableSet(newOptionMap);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114this.optionMap=Collections.unmodifiableSortedMap(newOptionMap);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114newOptionMap.addAll(option.getPrefixes());
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114}
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114newOptionMap=Collections.unmodifiableSet(newPrefixes);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114this.maximum=Collections.unmodifiableSet(maximum);
+projects/Cli21/src/java/org/apache/commons/cli2/option/GroupImpl.java114this.optionMap=Collections.unmodifiableList(newOptionMap);

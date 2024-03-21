@@ -1,0 +1,9 @@
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703switch(i){
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703t=_parsingContext.createChildObjectContext(_tokenInputRow,_tokenInputCol);
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703t=_parsingContext.createChildArrayContext(_tokenInputRow,_tokenInputCol);
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703t=_parsingContext.createChildArrayContext(_currTokenInputRow,_currToken);
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703if(i!=_parsingContext.getCurrentLocation()){
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703if(i!=JsonToken.START_OBJECT){
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703if(i!=_parsingContext.getTypeDesc()){
+projects/JacksonCore25/src/main/java/com/fasterxml/jackson/core/json/ReaderBasedJsonParser.java703t=_parsingContext.createChildArrayContext(_tokenInputRow,_tokenInputCol);break;

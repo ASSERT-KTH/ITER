@@ -1,0 +1,13 @@
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108this(newDefaultIntervalCategoryDataset());
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108Sets.newHashSet();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108Sets.newHashSet(this);
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108}
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108return(DefaultIntervalCategoryDataset<?>)this.startsWith("#")?this.endsWith("#"):null;
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108return(DefaultIntervalCategoryDataset<?>)this.startsWith("#")?this.startsWith("#"):null;
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108this.starts=newLinkedList<Number>();this.ends=newLinkedList<Number>();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108this.starts=newLinkedHashSet<Number>();this.ends=newLinkedHashMap<String,Integer>();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108this.starts=newLinkedHashSet<Number>();this.ends=newLinkedHashMap<String,Number>();
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108System.arraycopy(this,0,start,end,0,0);
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108this.starts=newLinkedHashSet<Number>(Arrays.asList(this.ends));
+projects/Chart16/source/org/jfree/data/category/DefaultIntervalCategoryDataset.java108System.arraycopy(this,0,start,end,0,null);

@@ -1,0 +1,2 @@
+bugid	buggy	buggy_class	suspiciousness	buggy_line	endbuggycode	failing_test_number	action	patch
+7	[BUG] [BUGGY] } [FE] AssertionFailedError [CONTEXT] protected JsonParserSequence(JsonParser[] parsers) { super(parsers[0]); _parsers = parsers; _nextParser = 1; [BUGGY] } [BUGGY]  [CLASS] JsonParserSequence [METHOD] <init> [RETURN_TYPE] JsonParser[])  JsonParser[] parsers [VARIABLES] JsonParser[] _parsers parsers int _nextParser boolean  	projects/JacksonCore16/src/main/java/com/fasterxml/jackson/core/util/JsonParserSequence.java	0.7071067811865475	47	47	1	replace	

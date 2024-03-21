@@ -1,0 +1,6 @@
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java306
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java306g2.setPaint(seriesPaint);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java306PaintseriesPaint=getItemPaint(row,column);
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java306Graphics2Dg2=plot.getGraphics2D();
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java306if(seriesPaint!=null){g2.setPaint(seriesPaint);}
+projects/Chart25/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java306FontfontMetrics=getFontMetrics(row,column).getFontMetrics();

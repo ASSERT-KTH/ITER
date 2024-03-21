@@ -1,0 +1,50 @@
+jsdocBuilder.build(null);
+parser.addParserWarning("msg.unexpected.eof",
+return reportTypeSyntaxWarning("msg.jsdoc.missing.lp");
+return parseTypeExpression(token);
+parser.addTypeWarning(warning, stream.getLineno(), stream.getCharno());
+return null;
+skipEOLs();
+return parseFunctionType(next());
+if (token != JsDocToken.LP) {
+state = State.SEARCHING_NEWLINE;
+token = eatTokensUntilEOL();
+continue retry;
+if (token == JsDocToken.STAR && state == State.SEARCHING_ANNOTATION) {
+skipEOLs();
+token = next();
+typeNode = parseAndRecordTypeNode(token, lineno, charno);
+return parseAndRecordTypeNode(token, lineno, startCharno,
+lineno = stream.getLineno();
+charno = stream.getCharno();
+Node typeNode = null;
+if (!lookAheadForTypeAnnotation() &&
+if (annotation == Annotation.THIS) {
+type = createJSTypeExpression(typeNode);
+if (type == null) {
+boolean matchedLc = false;
+c = stream.getChar();
+if (c == ' ') {
+continue;
+} else if (c == '{') {
+stream.ungetChar(c);
+return matchedLc;
+typeNode = parseTypeExpressionAnnotation(token);
+if (token == JsDocToken.LC) {
+Node typeNode = null;
+if (onlyParseSimpleNames) {
+if (typeNode != null && !matchingLC) {
+int endCharno = stream.getCharno();
+jsdocBuilder.markTypeNode(typeNode, lineno, startCharno, endCharno,
+return typeNode;
+return basicTypeExpr;
+String string = stream.getString();
+if ("function".equals(string)) {
+Node basicTypeExpr = parseBasicTypeExpression(token);
+if (basicTypeExpr != null) {
+} else if (token == JsDocToken.LP) {
+} else if (token == JsDocToken.STRING) {
+} else if (token == JsDocToken.LB) {
+} else if (token == JsDocToken.LC) {
+return eatTokensUntilEOL(next());
+} else if (token == JsDocToken.BANG) {

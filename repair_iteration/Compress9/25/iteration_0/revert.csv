@@ -1,0 +1,12 @@
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146out.close();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146out.flush();
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(out!=null){out.close();}else{buffer.close();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146out.write(assemBuf,0,assemLen);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146out.write(assemBuf,0,buffer.length);
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(!closed){out.close();}else{buffer.close();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(!finished){out.close();}else{buffer.close();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(out!=null){out.close();}else{buffer.flush();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(out!=null){out.close();}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(out!=null){out.close();}else{buffer.write(assemBuf,0,assemLen);}
+projects/Compress9/src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStream.java146if(out!=null){out.close();}else{buffer.write(assemBuf,0,assemSize);}

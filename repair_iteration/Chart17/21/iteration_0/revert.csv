@@ -1,0 +1,13 @@
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(!item.getPeriod().getClass().equals(this.timePeriodClass)){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(notify){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(notify||!item.getPeriod().getClass().equals(this.timePeriodClass)){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492TimeSeriesDataItemitem=(TimeSeriesDataItem)this.data.get(item);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492TimeSeriesDataItemitem=(TimeSeriesDataItem)getDataItem(item);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492this.data.add(item);
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(item.getPeriod()!=null||!item.getPeriod().getClass().equals(this.timePeriodClass)){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(item.getPeriod()!=null&&item.getPeriod().getClass().equals(this.timePeriodClass)){
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492this.timePeriodClass=item.getPeriodClass();
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(notify){this.timePeriodClass=item.getPeriodClass();if(this.timePeriodClass!=null){thrownewSeriesException("");}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(notify){this.timePeriodClass=item.getTimePeriodClass();if(this.timePeriodClass!=null){thrownewSeriesException("");}
+projects/Chart17/source/org/jfree/data/time/TimeSeries.java492if(this.timePeriodClass!=item.getPeriod()||!item.getPeriod().getClass().equals(this.timePeriodClass)){

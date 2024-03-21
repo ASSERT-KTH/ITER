@@ -1,0 +1,15 @@
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226c=(int)_inputBuffer[_inputPtr++]&0xFF;
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226c=(char)_inputBuffer[_inputPtr++]&0xFF;
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226if(c<INT_0||c>INT_9){outBuf=_textBuffer.finishCurrentSegment();outPtr=0;}
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226if(c<INT_0||c>INT_9){if(outPtr>=outBuf.length){return_parserNumber2(outBuf,outPtr,negative,intLen);}
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226if(c<INT_0||c>INT_9){if(outPtr>=end){return_parserNumber2(outBuf,outPtr,negative,intLen);}
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226c=_textBuffer.finishCurrentSegment();
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226c=(byte)_inputBuffer[_inputPtr++]&0xFF;
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226c=(char)_inputBuffer[_inputPtr++]&0xF;
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226Integerc=_textBuffer.finishCurrentSegment();
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226if(c<INT_0||c>INT_9){return_parserNumber2(outBuf,outPtr,negative,intLen);}
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226Integerc=_inputStream.parseInt(negative,intLen);
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226intc=_inputStream.readInt();
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226Integerc=_inputStream.readInt();
+projects/JacksonCore2/src/main/java/com/fasterxml/jackson/core/json/UTF8StreamJsonParser.java1226Integerc=_inputStream.parseInt(negative);

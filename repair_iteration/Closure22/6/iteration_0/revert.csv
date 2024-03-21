@@ -1,0 +1,13 @@
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(n==parent.getLastChild()){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.EXPR_RESULT){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.EXPR_RESULT&&n==parent.getLastChild()){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(n==parent.getFirstChild()){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(n.getType()==Token.EXPR_RESULT){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.ASSIGN){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.CALL&&n==parent.getLastChild()){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.COMMA){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.EXPR_RESULT||parent.getType()==Token.BLOCK){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(NodeUtil.isAncestor(parent)&&n==parent.getLastChild()){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(NodeUtil.isAncestorsVar(parent)&&n==parent.getLastChild()){
+projects/Closure22/src/com/google/javascript/jscomp/CheckSideEffects.java111if(parent.getType()==Token.EXPR_RESULT||n==parent.getLastChild()){

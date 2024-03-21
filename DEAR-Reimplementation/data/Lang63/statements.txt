@@ -1,0 +1,50 @@
+days += 31;
+months -= 1;
+months += 12;
+years -= 1;
+int newdiff = startValue - endValue;
+end.add( field, newdiff );
+return newdiff;
+return formatPeriod(startMillis, endMillis, format, true, TimeZone.getDefault());
+if (Token.containsTokenWithValue(tokens, M)) {
+months += 12 * years;
+years = 0;
+hours += 24 * days;
+days = 0;
+minutes += 60 * hours;
+hours = 0;
+seconds += 60 * minutes;
+minutes = 0;
+milliseconds += 1000 * seconds;
+seconds = 0;
+long millis = endMillis - startMillis;
+if (millis < 28 * DateUtils.MILLIS_PER_DAY) {
+Token[] tokens = lexx(format);
+Calendar start = Calendar.getInstance(timezone);
+start.setTime(new Date(startMillis));
+Calendar end = Calendar.getInstance(timezone);
+end.setTime(new Date(endMillis));
+int milliseconds = end.get(Calendar.MILLISECOND) - start.get(Calendar.MILLISECOND);
+int seconds = end.get(Calendar.SECOND) - start.get(Calendar.SECOND);
+int minutes = end.get(Calendar.MINUTE) - start.get(Calendar.MINUTE);
+int hours = end.get(Calendar.HOUR_OF_DAY) - start.get(Calendar.HOUR_OF_DAY);
+int days = end.get(Calendar.DAY_OF_MONTH) - start.get(Calendar.DAY_OF_MONTH);
+int months = end.get(Calendar.MONTH) - start.get(Calendar.MONTH);
+int years = end.get(Calendar.YEAR) - start.get(Calendar.YEAR);
+while (milliseconds < 0) {
+while (seconds < 0) {
+while (minutes < 0) {
+while (hours < 0) {
+while (days < 0) {
+while (months < 0) {
+milliseconds -= reduceAndCorrect(start, end, Calendar.MILLISECOND, milliseconds);
+seconds -= reduceAndCorrect(start, end, Calendar.SECOND, seconds);
+minutes -= reduceAndCorrect(start, end, Calendar.MINUTE, minutes);
+hours -= reduceAndCorrect(start, end, Calendar.HOUR_OF_DAY, hours);
+days -= reduceAndCorrect(start, end, Calendar.DAY_OF_MONTH, days);
+months -= reduceAndCorrect(start, end, Calendar.MONTH, months);
+years -= reduceAndCorrect(start, end, Calendar.YEAR, years);
+if (!Token.containsTokenWithValue(tokens, y)) {
+if (!Token.containsTokenWithValue(tokens, M)) {
+if (!Token.containsTokenWithValue(tokens, d)) {
+if (!Token.containsTokenWithValue(tokens, H)) {

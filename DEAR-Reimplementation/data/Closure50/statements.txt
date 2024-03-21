@@ -1,0 +1,50 @@
+Node emptyStringNode = Node.newString("");
+n.getParent().replaceChild(n, emptyStringNode);
+reportCodeChange();
+return emptyStringNode;
+Preconditions.checkNotNull(prev);
+foldedSize += sb.length() + 2;
+arrayFoldedChildren.add(
+sb = null;
+arrayNode.detachChildren();
+for (Node node : arrayFoldedChildren) {
+arrayNode.addChildToBack(node);
+}
+reportCodeChange();
+return n;
+String joinString = (right == null) ? "," : NodeUtil.getStringValue(right);
+List<Node> arrayFoldedChildren = Lists.newLinkedList();
+StringBuilder sb = null;
+int foldedSize = 0;
+Node prev = null;
+Node elem = arrayNode.getFirstChild();
+while (elem != null) {
+if (sb != null) {
+foldedSize += arrayFoldedChildren.size() - 1;
+int originalSize = InlineCostEstimator.getCost(n);
+switch (arrayFoldedChildren.size()) {
+if (arrayFoldedChildren.size() == arrayNode.getChildCount()) {
+return n;
+int kJoinOverhead = "[].join()".length();
+foldedSize += kJoinOverhead;
+foldedSize += (right != null) ? InlineCostEstimator.getCost(right) : 0;
+if (foldedSize > originalSize) {
+if (!NodeUtil.isImmutableValue(right)) {
+return subtree;
+Node right = callTarget.getNext();
+if (right != null) {
+Node arrayNode = callTarget.getFirstChild();
+Node functionName = arrayNode.getNext();
+if ((arrayNode.getType() != Token.ARRAYLIT) ||
+sb.append(joinString);
+if (sb != null) {
+foldedSize += InlineCostEstimator.getCost(elem);
+arrayFoldedChildren.add(elem);
+class PeepholeReplaceKnownMethods extends AbstractPeepholeOptimization{
+private static final Locale ROOT_LOCALE = new Locale("");
+if (NodeUtil.isCall(subtree) ){
+return tryFoldKnownMethods(subtree);
+return subtree;
+subtree = tryFoldArrayJoin(subtree);
+if (subtree.getType() == Token.CALL) {
+return subtree;

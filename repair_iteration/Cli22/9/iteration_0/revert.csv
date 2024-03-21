@@ -1,0 +1,15 @@
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption&&!options.hasOption(token)){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption&&options.hasOption(token)){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption||options.hasOption(token)){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption&&options.contains(token)){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206tokens.add(token);
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption){tokens.add(token);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption){thrownewIllegalArgumentException("");}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption){options.put(token,stopAtNonOption);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption){tokens.add(token);}else{options.add(token);}
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206Optionoptions=options.getOption(token);
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption||tokens.contains(token)){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206if(stopAtNonOption){
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206booleanstopAtNonOption=options.hasOption(token);
+projects/Cli22/src/java/org/apache/commons/cli/PosixParser.java206TokenBuffertokens=newTokenBuffer(token.length());

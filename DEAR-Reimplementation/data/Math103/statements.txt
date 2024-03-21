@@ -1,0 +1,36 @@
+return 0.5 * (1.0 + Erf.erf((x - mean) /
+super();
+private double mean = 0;
+private double standardDeviation = 1;
+setMean(mean);
+setStandardDeviation(sd);
+}
+this.mean = mean;
+}
+if (sd <= 0.0) {
+standardDeviation = sd;
+}
+this(0.0, 1.0);
+}
+return mean;
+return standardDeviation;
+throw new IllegalArgumentException(
+if (p == 0) {
+return Double.NEGATIVE_INFINITY;
+if (p == 1) {
+return Double.POSITIVE_INFINITY;
+return super.inverseCumulativeProbability(p);
+if (p < .5) {
+ret = -Double.MAX_VALUE;
+ret = getMean();
+return ret;
+if (p < .5) {
+ret = getMean();
+ret = Double.MAX_VALUE;
+return ret;
+if (p < .5) {
+ret = getMean() - getStandardDeviation();
+} else if (p > .5) {
+ret = getMean() + getStandardDeviation();
+ret = getMean();
+return ret;

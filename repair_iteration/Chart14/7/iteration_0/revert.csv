@@ -1,0 +1,10 @@
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378Markermarker=(Marker)this.marker.clone();
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378Markermarker=(Marker)this.marker.cloneTree();
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378Markermarker=getMarker();
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378returnremoveRangeMarker(marker,Layer.FOREGROUND);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378returnsuper.removeRangeMarker(marker,Layer.FOREGROUND);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378returnthis.removeRangeMarker(marker,Layer.FOREGROUND);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378returnremoveRangeMarker(marker,BorderLayout.NORTH);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378Markermarker=(Marker)this.markers.get(marker);
+projects/Chart14/source/org/jfree/chart/plot/CategoryPlot.java2378Markermarker=getMarker(marker);

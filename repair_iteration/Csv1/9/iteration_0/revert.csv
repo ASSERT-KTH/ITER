@@ -1,0 +1,14 @@
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53}
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53this.lineCounter=r.readLine();
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53lastChar=r.readLine();
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53lastChar=r.lastChar;
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53this.lineCounter=r.getLineCount();
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53lastChar=r.getLastChar();
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53System.arraycopy(r,0,r,0,r.length);
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53System.arraycopy(r,0,r,0,lineCounter);
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53System.arraycopy(lineCounter,0,r,0,lineCounter);
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53System.arraycopy(lineCounter,0,lineCounter,0,r.length);
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53this.lineCounter=r.readLineCount();
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53this.lineCounter=r.getColumnCount();
+projects/Csv1/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java53System.arraycopy(r,0,r,1,lineCounter);

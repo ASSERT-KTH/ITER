@@ -1,0 +1,16 @@
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null){
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null||arg.length()==0){
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null||!optionMap.containsKey(arg)){
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null||!arg.equals("")){
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Optionoption=optionMap.getOption(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Optionoption=optionMap.get(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Optionoption=options.getOption(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Stringdescription=option.getDescription();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Optionoption=optionMap.getOption();
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null||options.containsKey(arg)){
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null||optionMap.containsKey(arg)){
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Optionoption=optionMap.narrow(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115finalStringarg=optionMap.get(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115Optionoption=option.getOption(arg);
+projects/Cli14/src/java/org/apache/commons/cli2/option/GroupImpl.java115if(arg==null||arg.length()!=0){
