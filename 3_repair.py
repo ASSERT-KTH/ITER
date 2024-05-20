@@ -85,7 +85,7 @@ def getBugInfo(bugid):
 
 def compilation_info():
     #compile
-    cmd = "timeout 90 defects4j compile"
+    cmd = "timeout 180 defects4j compile"
     exectresult='[timeout]'
     symbolVaraible=''
     result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
@@ -186,10 +186,10 @@ def test_execute_info(project):
     with open("FL_execution.txt","r") as exec_script:
         
         exec_FL = exec_script.readlines()[0]
-        exec_result = os.popen('timeout 120 '+ exec_FL).read()
+        exec_result = os.popen('timeout 720 '+ exec_FL).read()
         #if time out
         if 'DONE' not in exec_result:
-            failing_test_count=1
+            failing_test_count=10
             return failing_test_count, 'timeout'
             
         print(exec_result)
@@ -360,8 +360,8 @@ def add_action(originFile,patch,startNo,endNo,project,origin_failing_test):
     
 
 
-def test( model, tokenizer, device, loader, index,project, FL):    
-    return_sequences = 50
+def test( model, tokenizer, device, loader, index,project, FL, fl_iteration):    
+    return_sequences = 10
     model.eval()
     identicalset=[]
     
@@ -414,9 +414,12 @@ def test( model, tokenizer, device, loader, index,project, FL):
 
                     #perform the deletion action
                     if i==return_sequences-1 and 'replace' in action:
-                        prediction=" "
+                        prediction=" "    
+                       
+
                     if 'add' in action:
                         prediction=previous_patch+'  '+prediction
+                        
                     
                     prediction=prediction.replace('\n','')    
                     
@@ -483,16 +486,23 @@ def test( model, tokenizer, device, loader, index,project, FL):
                             elif 'Time' in project_bug:
                                 proj='Time'
                                 project_bug = project_bug.replace('Time','')
+                            elif 'Cli' in project_bug:
+                                proj='Cli'
+                                project_bug = project_bug.replace('Cli','')
+                            elif 'Codec' in project_bug:
+                                proj='Codec'
+                                project_bug = project_bug.replace('Codec','')
+                            elif 'Compress' in project_bug:
+                                proj='Compress'
+                                project_bug = project_bug.replace('Compress','')
 
-                            continue_repair=False
-                            cmd='nohup python3 ITER_FL.py ' + proj+'  '+project_bug  + ' '+str(new_failing_test_number) +' ' +' & '
-#                             out = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+                            cmd='nohup python3 ITER_FL.py ' + proj+'  '+project_bug  + ' '+str(new_failing_test_number) +'  & '
                             os.system(cmd)
                             sys.exit(0)
 
 
 
-                        if continue_repair:
+                        if True:
                             new_bugid = getNewBugId(patch_path)
                             print('new_bugid:'+str(new_bugid))
                             print('execution_result:'+execution_result)
@@ -523,7 +533,7 @@ def test( model, tokenizer, device, loader, index,project, FL):
                                         with open(PLAUSIBLE,'w') as plausible:
                                             plausible.write('FL_Ranking,Iteration,Time\n')
                                     with open(PLAUSIBLE,'a') as plausible:
-                                        info=FL+','+str(rounds)+','+str(end)+'\n'
+                                        info=fl_iteration+','+FL+','+str(rounds)+','+str(end)+'\n'
                                         plausible.write(info)
                                        
                                 else:  
@@ -554,15 +564,15 @@ def getGeneratorDataLoader(filepath,tokenizer,batchsize):
     return target_loader
 
         
-def run_test(project, FL):
-    for m in [6,8,10]:
+def run_test(project, FL,fl_iteration):
+    for m in [2]:
         gen = T5ForConditionalGeneration.from_pretrained('./model_ItRepair/IteRepair'+str(m),output_hidden_states=True)       
         gen_tokenizer = T5Tokenizer.from_pretrained('./model_ItRepair/IteRepair'+str(m),truncation=True)
         gen_tokenizer.add_tokens(['[PATCH]','[BUG]','{', '}','<','^','<=','>=','==','!=','<<','>>','[CE]','[FE]','[CONTEXT]','[BUGGY]','[CLASS]','[METHOD]','[RETURN_TYPE]','[VARIABLES]','[Delete]'])   
         gen = gen.to(device)       
         test_loader=getGeneratorDataLoader(TEST_PATH,gen_tokenizer,1)
         index=1
-        test(gen, gen_tokenizer, device, test_loader, index,project,FL)
+        test(gen, gen_tokenizer, device, test_loader, index,project,FL,fl_iteration)
 
 
 
@@ -594,7 +604,11 @@ if __name__ == '__main__':
             
             #fault localization iteration
             #suspicious statement iteration
-            if os.path.exists('repair_iteration/'+project+bug+'/'+'FL-2'):
+            if os.path.exists('repair_iteration/'+project+bug+'/'+'FL-4'):
+                fl='5'
+            elif os.path.exists('repair_iteration/'+project+bug+'/'+'FL-3'):
+                fl='4'
+            elif os.path.exists('repair_iteration/'+project+bug+'/'+'FL-2'):
                 fl='3'
             elif os.path.exists('repair_iteration/'+project+bug+'/'+'FL-1'):
                 fl='2'
@@ -603,8 +617,7 @@ if __name__ == '__main__':
                 
                 
             print('FL:'+str(fl))
-            for i in range(1,len(all_buggy)-1,2):   
-
+            for i in range(0,len(all_buggy)-1,2):   
                 print(str(i))
                 bug_str=all_buggy[0]+all_buggy[i]
 
@@ -616,7 +629,6 @@ if __name__ == '__main__':
                 os.system('cp  repair_iteration/'+project+bug+'/tests.csv  repair_iteration/'+project+bug+'/'+'FL-'+fl)
                 os.system('cp  repair_iteration/'+project+bug+'/ochiai.ranking.csv' +'  repair_iteration/'+project+bug+'/'+'FL-'+fl)
 
-
                 with open(TEST_PATH,'w') as target_bug:
                     target_bug.write(bug_str)
 
@@ -625,7 +637,7 @@ if __name__ == '__main__':
                     print('Iteration '+str(rounds)+'  '+project+bug +' FL: '+str(int(i/2)+1))
                     TEST_PATH = root +'/iteration_'+str(rounds)+'/bugs.csv'
 
-                    run_test(project,str(int(i/2)+1))
+                    run_test(project,str(int(i/2)+1),fl)
                     PATCH_PATH=root+'/iteration_'+str(rounds)+'/patches.csv' 
                     REVERT_PATH=root+'/iteration_'+str(rounds)+'/revert.csv'
                     NEXT_REVERT_PATH=root+'/iteration_'+str(rounds+1)+'/revert.csv'
