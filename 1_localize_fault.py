@@ -13,7 +13,6 @@ if __name__ == '__main__':
         checkout=False
         
     
-    
     #checkout the project
     if checkout:
         if os.path.exists("./projects/"+project+bug):
@@ -54,8 +53,12 @@ if __name__ == '__main__':
     
     #copy run.sh to the target project
     if "Closure" in project:
-        os.system("cp run_gzoltar_fl_Closure-after.sh ./projects/"+project+bug)
-        os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure-after.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
+        if int(bug) > 89:
+            os.system("cp run_gzoltar_fl_Closure_Bug90+.sh ./projects/"+project+bug)
+            os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure_Bug90+.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
+        else:
+            os.system("cp run_gzoltar_fl_Closure.sh ./projects/"+project+bug)
+            os.system('mv  ./projects/'+project+bug+'/run_gzoltar_fl_Closure.sh  ./projects/'+project+bug+'/run_gzoltar_fl.sh')
     else:
         os.system("cp run_gzoltar_fl.sh ./projects/"+project+bug)
     

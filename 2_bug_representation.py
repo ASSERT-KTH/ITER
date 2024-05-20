@@ -156,18 +156,16 @@ if __name__ == '__main__':
             for line in lines:
                 if ";" in line and ":" in line and "#" in line:
                     count=count+1
-                    suspiciousness =  line.split(";")[1]
+                    suspiciousness = line.split(";")[1]
                     suspiciousness=suspiciousness.replace("\n","").replace("\r","")
                     print('suspiciousness',suspiciousness)
-                    print('suspiciousness_threshold',suspiciousness_threshold)
-                    
-                    
+                    print('suspiciousness_threshold',suspiciousness_threshold)                                    
                     first_suspiciousness =  lines[1].split(";")[1]
                     first_suspiciousness=first_suspiciousness.replace("\n","").replace("\r","")
                     print('first_suspiciousness',first_suspiciousness)
 
 
-                    if (count < 50 and  float(suspiciousness) > float(suspiciousness_threshold)) or (count < 50 and float(first_suspiciousness) == 0.0) :
+                    if (count<100 and  float(suspiciousness) > float(suspiciousness_threshold)) or (count < 50 and float(first_suspiciousness) == 0.0) :
                         buggy_class = line.split("#")[0]
                         buggy_class=buggy_class.replace(".","/").replace("$","/")
                         buggy_line = line.split(":")[1].split(";")[0]
