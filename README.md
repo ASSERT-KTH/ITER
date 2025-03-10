@@ -14,7 +14,7 @@ ITER is a neural program repair system with an original training and inference l
 ```
 
 
-## Folder Structure
+## Repo Structure
  ```bash
  ├── repair_iteration: in this folder, you will find all repair iterations of considered bugs
  │────────The folder is structured as ** repair_iteration/BugID/FL_Iteration/Ranked_Suspicious_Statement/Iterations **
@@ -41,6 +41,7 @@ ITER is a neural program repair system with an original training and inference l
  
 ```
 
+In addition, the models are put on Zenodo, see <https://zenodo.org/records/14993858> (2.3GB).
 
 
 
